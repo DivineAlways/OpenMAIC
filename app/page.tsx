@@ -2,8 +2,9 @@
 
 import { useRouter } from 'next/navigation';
 import { useTheme } from '@/lib/hooks/use-theme';
-import { Sun, Moon, Monitor } from 'lucide-react';
+import { Sun, Moon, Monitor, User } from 'lucide-react';
 import { useState } from 'react';
+import { useUserProfileStore } from '@/lib/store/user-profile';
 
 const COURSES = [
   {
@@ -91,13 +92,18 @@ export default function HomePage() {
   const router = useRouter();
   const { theme, setTheme } = useTheme();
   const [themeOpen, setThemeOpen] = useState(false);
+  const { nickname, setNickname } = useUserProfileStore();
+  const [nameInput, setNameInput] = useState(nickname);
 
   return (
     <div className="min-h-screen bg-gray-950 text-white">
       {/* Header */}
       <header className="sticky top-0 z-10 bg-gray-950/80 backdrop-blur-xl border-b border-white/5 px-6 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <img src="/logo-horizontal.png" alt="OC Academy" className="h-7" />
+        <div className="flex items-center gap-2">
+          <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-500 to-violet-600 flex items-center justify-center text-xs font-black">
+            OC
+          </div>
+          <span className="font-bold text-white text-sm tracking-tight">OC Academy</span>
         </div>
         <div className="relative">
           <button
@@ -139,10 +145,31 @@ export default function HomePage() {
         <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">
           Master Crypto &amp; Web3
         </h1>
-        <p className="text-gray-400 text-lg leading-relaxed">
+        <p className="text-gray-400 text-lg leading-relaxed mb-8">
           University-level courses taught by AI instructors. Real formulas, real statistics, live
           simulations.
         </p>
+
+        {/* Name input */}
+        <div className="flex items-center gap-3 max-w-sm mx-auto">
+          <div className="flex-1 relative">
+            <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
+            <input
+              type="text"
+              placeholder="Your name (optional)"
+              value={nameInput}
+              onChange={(e) => setNameInput(e.target.value)}
+              onBlur={() => setNickname(nameInput.trim())}
+              onKeyDown={(e) => e.key === 'Enter' && setNickname(nameInput.trim())}
+              className="w-full pl-9 pr-4 py-2.5 bg-gray-800 border border-white/10 rounded-xl text-sm text-white placeholder-gray-500 focus:outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-blue-500/30 transition-all"
+            />
+          </div>
+          {nickname && (
+            <div className="text-sm text-gray-400 shrink-0">
+              Welcome, <span className="text-white font-semibold">{nickname}</span> 👋
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Course Grid */}

@@ -127,18 +127,10 @@ export function SceneSidebar({
             className="flex items-center gap-2 cursor-pointer rounded-lg px-1.5 -mx-1.5 py-1 -my-1 hover:bg-gray-100/80 dark:hover:bg-gray-800/60 active:scale-[0.97] transition-all duration-150"
             title="Back to OC Academy"
           >
-            <img
-              src="/logo-horizontal.png"
-              alt="OC Academy"
-              className="h-6"
-              onError={(e) => {
-                const img = e.currentTarget;
-                img.style.display = 'none';
-                const span = img.nextElementSibling as HTMLElement | null;
-                if (span) span.style.display = 'block';
-              }}
-            />
-            <span className="hidden text-sm font-bold text-gray-800 dark:text-gray-200">
+            <div className="w-6 h-6 rounded-md bg-gradient-to-br from-blue-500 to-violet-600 flex items-center justify-center text-[9px] font-black text-white shrink-0">
+              OC
+            </div>
+            <span className="text-sm font-bold text-gray-800 dark:text-gray-200 truncate">
               OC Academy
             </span>
           </button>

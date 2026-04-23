@@ -55,8 +55,10 @@ export function useDiscussionTTS({ enabled, agents, onAudioStateChange }: Discus
     pause: browserPause,
     resume: browserResume,
     cancel: browserCancel,
+    availableVoices,
   } = useBrowserTTS({
     rate: ttsSpeed,
+    lang: 'en-US',
     onEnd: () => {
       isPlayingRef.current = false;
       segmentDoneCounterRef.current++;
@@ -73,6 +75,8 @@ export function useDiscussionTTS({ enabled, agents, onAudioStateChange }: Discus
   browserSpeakRef.current = browserSpeak;
   const browserPauseRef = useRef(browserPause);
   browserPauseRef.current = browserPause;
+  const availableVoicesRef = useRef(availableVoices);
+  availableVoicesRef.current = availableVoices;
   const browserResumeRef = useRef(browserResume);
   browserResumeRef.current = browserResume;
 
@@ -136,7 +140,17 @@ export function useDiscussionTTS({ enabled, agents, onAudioStateChange }: Discus
     if (item.providerId === 'browser-native-tts') {
       currentProviderRef.current = item.providerId;
       onAudioStateChangeRef.current?.(item.agentId, 'playing');
-      browserSpeakRef.current(item.text, item.voiceId);
+      // Auto-select Ava voice when available (Windows/Edge: Microsoft Ava, macOS: Ava)
+      const resolvedVoice = item.voiceId !== 'default'
+        ? item.voiceId
+        : availableVoicesRef.current.find(
+            (v) =>
+              v.name.toLowerCase().includes('ava') &&
+              v.lang.startsWith('en'),
+          )?.voiceURI ??
+          availableVoicesRef.current.find((v) => v.lang.startsWith('en'))?.voiceURI ??
+          item.voiceId;
+      browserSpeakRef.current(item.text, resolvedVoice);
       return;
     }
 
