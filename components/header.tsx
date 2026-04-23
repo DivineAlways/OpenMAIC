@@ -1,7 +1,6 @@
 'use client';
 
 import {
-  Settings,
   Sun,
   Moon,
   Monitor,
@@ -17,7 +16,6 @@ import { useTheme } from '@/lib/hooks/use-theme';
 import { LanguageSwitcher } from './language-switcher';
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
-import { SettingsDialog } from './settings';
 import { cn } from '@/lib/utils';
 import { useStageStore } from '@/lib/store/stage';
 import { useMediaGenerationStore } from '@/lib/store/media-generation';
@@ -32,7 +30,6 @@ export function Header({ currentSceneTitle }: HeaderProps) {
   const { t } = useI18n();
   const { theme, setTheme } = useTheme();
   const router = useRouter();
-  const [settingsOpen, setSettingsOpen] = useState(false);
   const [themeOpen, setThemeOpen] = useState(false);
 
   // Export
@@ -74,8 +71,7 @@ export function Header({ currentSceneTitle }: HeaderProps) {
   }, [themeOpen, exportMenuOpen, handleClickOutside]);
 
   return (
-    <>
-      <header className="h-20 px-8 flex items-center justify-between z-10 bg-transparent gap-4">
+    <header className="h-20 px-8 flex items-center justify-between z-10 bg-transparent gap-4">
         <div className="flex items-center gap-3 min-w-0 flex-1">
           <button
             onClick={() => router.push('/')}
@@ -163,17 +159,6 @@ export function Header({ currentSceneTitle }: HeaderProps) {
             )}
           </div>
 
-          <div className="w-[1px] h-4 bg-gray-200 dark:bg-gray-700" />
-
-          {/* Settings Button */}
-          <div className="relative">
-            <button
-              onClick={() => setSettingsOpen(true)}
-              className="p-2 rounded-full text-gray-400 dark:text-gray-500 hover:bg-white dark:hover:bg-gray-700 hover:text-gray-800 dark:hover:text-gray-200 hover:shadow-sm transition-all group"
-            >
-              <Settings className="w-4 h-4 group-hover:rotate-90 transition-transform duration-500" />
-            </button>
-          </div>
         </div>
 
         {/* Export Dropdown */}
@@ -249,8 +234,6 @@ export function Header({ currentSceneTitle }: HeaderProps) {
             </div>
           )}
         </div>
-      </header>
-      <SettingsDialog open={settingsOpen} onOpenChange={setSettingsOpen} />
-    </>
+    </header>
   );
 }

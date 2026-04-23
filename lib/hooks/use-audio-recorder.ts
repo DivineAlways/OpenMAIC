@@ -108,14 +108,14 @@ export function useAudioRecorder(options: UseAudioRecorderOptions = {}) {
         if (asrProviderId === 'browser-native') {
           // Check if Speech Recognition is supported
           if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
-            onError?.('您的浏览器不支持语音识别功能');
+            onError?.('Speech recognition is not supported in this browser');
             return;
           }
 
           const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
           const recognition = new SpeechRecognition();
 
-          recognition.lang = asrLanguage || 'zh-CN';
+          recognition.lang = asrLanguage || 'en-US';
           recognition.continuous = false;
           recognition.interimResults = false;
 
@@ -140,7 +140,7 @@ export function useAudioRecorder(options: UseAudioRecorderOptions = {}) {
 
           recognition.onerror = (event: { error: string }) => {
             log.error('Speech recognition error:', event.error);
-            let errorMessage = '语音识别失败';
+            let errorMessage = 'Speech recognition failed';
 
             switch (event.error) {
               case 'aborted':
@@ -154,19 +154,19 @@ export function useAudioRecorder(options: UseAudioRecorderOptions = {}) {
                 }
                 return;
               case 'no-speech':
-                errorMessage = '未检测到语音输入';
+                errorMessage = 'No speech detected — please try again';
                 break;
               case 'audio-capture':
-                errorMessage = '无法访问麦克风';
+                errorMessage = 'Microphone not accessible';
                 break;
               case 'not-allowed':
-                errorMessage = '麦克风权限被拒绝';
+                errorMessage = 'Microphone permission denied';
                 break;
               case 'network':
-                errorMessage = '网络错误';
+                errorMessage = 'Network error during speech recognition';
                 break;
               default:
-                errorMessage = `语音识别错误: ${event.error}`;
+                errorMessage = `Speech recognition error: ${event.error}`;
             }
 
             onError?.(errorMessage);

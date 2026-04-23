@@ -11,6 +11,7 @@ import {
   Globe,
   AlertCircle,
   RefreshCw,
+  LayoutGrid,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { ThumbnailSlide } from '@/components/slide-renderer/components/ThumbnailSlide';
@@ -124,9 +125,22 @@ export function SceneSidebar({
           <button
             onClick={() => router.push('/')}
             className="flex items-center gap-2 cursor-pointer rounded-lg px-1.5 -mx-1.5 py-1 -my-1 hover:bg-gray-100/80 dark:hover:bg-gray-800/60 active:scale-[0.97] transition-all duration-150"
-            title={t('generation.backToHome')}
+            title="Back to OC Academy"
           >
-            <img src="/logo-horizontal.png" alt="OC Academy" className="h-6" />
+            <img
+              src="/logo-horizontal.png"
+              alt="OC Academy"
+              className="h-6"
+              onError={(e) => {
+                const img = e.currentTarget;
+                img.style.display = 'none';
+                const span = img.nextElementSibling as HTMLElement | null;
+                if (span) span.style.display = 'block';
+              }}
+            />
+            <span className="hidden text-sm font-bold text-gray-800 dark:text-gray-200">
+              OC Academy
+            </span>
           </button>
           <button
             onClick={() => onCollapseChange(true)}
@@ -446,8 +460,16 @@ export function SceneSidebar({
             })()}
         </div>
 
-        {/* Spacer to push toggle button area */}
-        <div className="mt-auto" />
+        {/* All Courses button */}
+        <div className="mt-auto px-3 pb-3 pt-2 border-t border-gray-100 dark:border-gray-800 shrink-0">
+          <button
+            onClick={() => router.push('/')}
+            className="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-semibold text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-800 dark:hover:text-gray-200 transition-all"
+          >
+            <LayoutGrid className="w-3.5 h-3.5 shrink-0" />
+            All Courses
+          </button>
+        </div>
       </div>
     </div>
   );

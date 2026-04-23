@@ -956,7 +956,7 @@ export function useChatSessions(options: UseChatSessionsOptions = {}) {
 
       // Validate model configuration before sending
       const modelConfig = getCurrentModelConfig();
-      if (!modelConfig.modelId) {
+      if (!modelConfig.modelId && !modelConfig.isServerConfigured) {
         toast.error(t('settings.modelNotConfigured'));
         return;
       }
@@ -1133,7 +1133,7 @@ export function useChatSessions(options: UseChatSessionsOptions = {}) {
 
       // Validate model configuration before starting discussion
       const modelConfig = getCurrentModelConfig();
-      if (!modelConfig.modelId) {
+      if (!modelConfig.modelId && !modelConfig.isServerConfigured) {
         toast.error(t('settings.modelNotConfigured'));
         return;
       }
