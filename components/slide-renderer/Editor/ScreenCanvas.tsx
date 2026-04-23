@@ -18,7 +18,7 @@ import { AnimatePresence } from 'motion/react';
 export function ScreenCanvas() {
   const canvasScale = useCanvasStore.use.canvasScale();
   const elements = useSceneSelector<SlideContent, PPTElement[]>(
-    (content) => content.canvas.elements,
+    (content) => content?.canvas?.elements ?? [],
   );
   const canvasRef = useRef<HTMLDivElement>(null);
 
@@ -27,7 +27,7 @@ export function ScreenCanvas() {
 
   // Get background style
   const background = useSceneSelector<SlideContent, SlideBackground | undefined>(
-    (content) => content.canvas.background,
+    (content) => content?.canvas?.background,
   );
   const { backgroundStyle } = useSlideBackgroundStyle(background);
 
