@@ -18,9 +18,9 @@ const inter = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'OpenMAIC',
+  title: 'OC Academy',
   description:
-    'The open-source AI interactive classroom. Upload a PDF to instantly generate an immersive, multi-agent learning experience.',
+    'OnlyCrypto Academy — interactive AI-powered crypto education. Learn blockchain, DeFi, trading, and more.',
 };
 
 export default function RootLayout({
