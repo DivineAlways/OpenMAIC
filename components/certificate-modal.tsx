@@ -150,14 +150,17 @@ export function CertificateModal({ courseName, score, totalPoints, onClose }: Ce
 
             {/* Header row */}
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 32 }}>
-              {/* OC Logo text fallback (html2canvas struggles with images) */}
+              {/* OC Logo */}
               <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                <div style={{
-                  width: 36, height: 36, borderRadius: 8,
-                  background: '#3b82f6',
-                  display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  fontSize: 16, fontWeight: 900, color: '#fff', fontFamily: 'Arial, sans-serif',
-                }}>OC</div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/onlycrypto-logo.jpg"
+                  alt="OnlyCrypto"
+                  width={44}
+                  height={44}
+                  style={{ borderRadius: 8, objectFit: 'cover' }}
+                  crossOrigin="anonymous"
+                />
                 <span style={{ color: '#60a5fa', fontSize: 14, fontWeight: 700, letterSpacing: '0.08em', fontFamily: 'Arial, sans-serif' }}>
                   ONLYCRYPTO
                 </span>
