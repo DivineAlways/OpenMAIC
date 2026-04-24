@@ -244,7 +244,79 @@
             }
           ]
         }
-      }
+      },
+      "actions": [
+        {
+          "id": "action_es-s1_0",
+          "type": "spotlight",
+          "elementId": "es-s1-title"
+        },
+        {
+          "id": "action_es-s1_1",
+          "type": "speech",
+          "text": "\ud83d\udee1\ufe0f Staying Safe in Crypto"
+        },
+        {
+          "id": "action_es-s1_2",
+          "type": "spotlight",
+          "elementId": "es-s1-sub"
+        },
+        {
+          "id": "action_es-s1_3",
+          "type": "speech",
+          "text": "The most important skill you'll learn"
+        },
+        {
+          "id": "action_es-s1_4",
+          "type": "spotlight",
+          "elementId": "es-s1-body"
+        },
+        {
+          "id": "action_es-s1_5",
+          "type": "speech",
+          "text": "In crypto, you are your own bank . That's amazing \u2014 but it also means if something goes wrong, there's no customer service to call. No refund button. No 'forgot password' email. That's why security is the #1 skill every crypto person must learn first."
+        },
+        {
+          "id": "action_es-s1_6",
+          "type": "spotlight",
+          "elementId": "es-s1-bt0"
+        },
+        {
+          "id": "action_es-s1_7",
+          "type": "speech",
+          "text": "\ud83d\udd11 Guard Your Keys Private key = your money. Lose it = lose everything."
+        },
+        {
+          "id": "action_es-s1_8",
+          "type": "spotlight",
+          "elementId": "es-s1-bt1"
+        },
+        {
+          "id": "action_es-s1_9",
+          "type": "speech",
+          "text": "\ud83e\udde0 Think First Scammers are smart. One wrong click can empty your wallet."
+        },
+        {
+          "id": "action_es-s1_10",
+          "type": "spotlight",
+          "elementId": "es-s1-bt2"
+        },
+        {
+          "id": "action_es-s1_11",
+          "type": "speech",
+          "text": "\u2705 Verify Always double-check addresses, websites, and senders."
+        },
+        {
+          "id": "action_es-s1_12",
+          "type": "spotlight",
+          "elementId": "es-s1-bt3"
+        },
+        {
+          "id": "action_es-s1_13",
+          "type": "speech",
+          "text": "\ud83d\udcda Keep Learning New scams appear daily. Staying informed is your best defense."
+        }
+      ]
     },
     {
       "id": "es-s2",
@@ -473,7 +545,79 @@
             }
           ]
         }
-      }
+      },
+      "actions": [
+        {
+          "id": "action_es-s2_0",
+          "type": "spotlight",
+          "elementId": "es-s2-title"
+        },
+        {
+          "id": "action_es-s2_1",
+          "type": "speech",
+          "text": "\ud83d\udea8 Common Scams"
+        },
+        {
+          "id": "action_es-s2_2",
+          "type": "spotlight",
+          "elementId": "es-s2-sub"
+        },
+        {
+          "id": "action_es-s2_3",
+          "type": "speech",
+          "text": "Know these \u2014 they could save your savings"
+        },
+        {
+          "id": "action_es-s2_4",
+          "type": "spotlight",
+          "elementId": "es-s2-body"
+        },
+        {
+          "id": "action_es-s2_5",
+          "type": "speech",
+          "text": "\ud83c\udf81 Giveaway Scam: Fake celebrity says 'Send 1 BTC, get 2 back!' \u2014 it's always a lie. &nbsp; \ud83c\udfa3 Phishing: Fake website that looks real \u2014 one typo in the URL and your login is stolen. &nbsp; \ud83d\udc8c Fake Support: 'Support' DMs asking for your seed phrase \u2014 real support NEVER does this. &nbsp; \ud83d\udcc8 Pump & Dump: G..."
+        },
+        {
+          "id": "action_es-s2_6",
+          "type": "spotlight",
+          "elementId": "es-s2-bt0"
+        },
+        {
+          "id": "action_es-s2_7",
+          "type": "speech",
+          "text": "\ud83c\udf81 Giveaway Scam Nobody ever doubles your crypto"
+        },
+        {
+          "id": "action_es-s2_8",
+          "type": "spotlight",
+          "elementId": "es-s2-bt1"
+        },
+        {
+          "id": "action_es-s2_9",
+          "type": "speech",
+          "text": "\ud83c\udfa3 Phishing Sites Fake sites steal your login"
+        },
+        {
+          "id": "action_es-s2_10",
+          "type": "spotlight",
+          "elementId": "es-s2-bt2"
+        },
+        {
+          "id": "action_es-s2_11",
+          "type": "speech",
+          "text": "\ud83d\udc8c Fake DM Support Real support never asks for seed phrase"
+        },
+        {
+          "id": "action_es-s2_12",
+          "type": "spotlight",
+          "elementId": "es-s2-bt3"
+        },
+        {
+          "id": "action_es-s2_13",
+          "type": "speech",
+          "text": "\ud83d\udcc8 Pump & Dump Hype coin, spike, crash \u2014 you hold the loss"
+        }
+      ]
     },
     {
       "id": "es-s3",

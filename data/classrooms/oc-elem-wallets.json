@@ -244,7 +244,79 @@
             }
           ]
         }
-      }
+      },
+      "actions": [
+        {
+          "id": "action_ew-s1_0",
+          "type": "spotlight",
+          "elementId": "ew-s1-title"
+        },
+        {
+          "id": "action_ew-s1_1",
+          "type": "speech",
+          "text": "\ud83d\udc5b What is a Crypto Wallet?"
+        },
+        {
+          "id": "action_ew-s1_2",
+          "type": "spotlight",
+          "elementId": "ew-s1-sub"
+        },
+        {
+          "id": "action_ew-s1_3",
+          "type": "speech",
+          "text": "Your key to your crypto \u2014 not a physical wallet"
+        },
+        {
+          "id": "action_ew-s1_4",
+          "type": "spotlight",
+          "elementId": "ew-s1-body"
+        },
+        {
+          "id": "action_ew-s1_5",
+          "type": "speech",
+          "text": "A crypto wallet doesn't actually store your coins \u2014 your coins live on the blockchain. What a wallet stores are your secret keys \u2014 the passwords that prove the coins belong to you. Think of it like a mailbox key . Your crypto is in the mailbox (blockchain). The key proves it's yours. Lose the key \u2014 ..."
+        },
+        {
+          "id": "action_ew-s1_6",
+          "type": "spotlight",
+          "elementId": "ew-s1-bt0"
+        },
+        {
+          "id": "action_ew-s1_7",
+          "type": "speech",
+          "text": "\ud83d\udd11 Public Key Like your address \u2014 safe to share"
+        },
+        {
+          "id": "action_ew-s1_8",
+          "type": "spotlight",
+          "elementId": "ew-s1-bt1"
+        },
+        {
+          "id": "action_ew-s1_9",
+          "type": "speech",
+          "text": "\ud83e\udd2b Private Key Like your house key \u2014 NEVER share"
+        },
+        {
+          "id": "action_ew-s1_10",
+          "type": "spotlight",
+          "elementId": "ew-s1-bt2"
+        },
+        {
+          "id": "action_ew-s1_11",
+          "type": "speech",
+          "text": "\ud83d\udd25 Hot Wallet Connected to internet \u2014 easy to use"
+        },
+        {
+          "id": "action_ew-s1_12",
+          "type": "spotlight",
+          "elementId": "ew-s1-bt3"
+        },
+        {
+          "id": "action_ew-s1_13",
+          "type": "speech",
+          "text": "\ud83e\uddca Cold Wallet Offline \u2014 safest for large amounts"
+        }
+      ]
     },
     {
       "id": "ew-s2",
@@ -473,7 +545,79 @@
             }
           ]
         }
-      }
+      },
+      "actions": [
+        {
+          "id": "action_ew-s2_0",
+          "type": "spotlight",
+          "elementId": "ew-s2-title"
+        },
+        {
+          "id": "action_ew-s2_1",
+          "type": "speech",
+          "text": "\ud83d\udcdd The Seed Phrase"
+        },
+        {
+          "id": "action_ew-s2_2",
+          "type": "spotlight",
+          "elementId": "ew-s2-sub"
+        },
+        {
+          "id": "action_ew-s2_3",
+          "type": "speech",
+          "text": "The master key to your entire wallet"
+        },
+        {
+          "id": "action_ew-s2_4",
+          "type": "spotlight",
+          "elementId": "ew-s2-body"
+        },
+        {
+          "id": "action_ew-s2_5",
+          "type": "speech",
+          "text": "When you set up a wallet, you get a seed phrase \u2014 usually 12 or 24 random words like: apple river cloud sunset forest key... These words can restore your entire wallet if your phone breaks. But they're also dangerous \u2014 anyone with your seed phrase owns your wallet."
+        },
+        {
+          "id": "action_ew-s2_6",
+          "type": "spotlight",
+          "elementId": "ew-s2-bt0"
+        },
+        {
+          "id": "action_ew-s2_7",
+          "type": "speech",
+          "text": "\u2705 Write on Paper Store it somewhere safe"
+        },
+        {
+          "id": "action_ew-s2_8",
+          "type": "spotlight",
+          "elementId": "ew-s2-bt1"
+        },
+        {
+          "id": "action_ew-s2_9",
+          "type": "speech",
+          "text": "\u274c No Screenshots Never photograph it"
+        },
+        {
+          "id": "action_ew-s2_10",
+          "type": "spotlight",
+          "elementId": "ew-s2-bt2"
+        },
+        {
+          "id": "action_ew-s2_11",
+          "type": "speech",
+          "text": "\u274c Never Share Not with anyone \u2014 ever"
+        },
+        {
+          "id": "action_ew-s2_12",
+          "type": "spotlight",
+          "elementId": "ew-s2-bt3"
+        },
+        {
+          "id": "action_ew-s2_13",
+          "type": "speech",
+          "text": "\u2705 Multiple Copies Store in separate safe places"
+        }
+      ]
     },
     {
       "id": "ew-s3",

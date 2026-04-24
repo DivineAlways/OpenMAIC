@@ -4,12 +4,16 @@
   "stage": {
     "id": "oc-elem-blockchain",
     "name": "What is Blockchain? (Elementary)",
-    "description": "A beginner-friendly introduction to blockchain — what it is, how blocks connect, and why it matters.",
+    "description": "A beginner-friendly introduction to blockchain \u2014 what it is, how blocks connect, and why it matters.",
     "createdAt": "2026-04-24T12:00:00.000Z",
     "updatedAt": "2026-04-24T12:00:00.000Z",
     "languageDirective": "en-US",
     "style": "academic",
-    "agentIds": ["default-1", "default-2", "default-3"],
+    "agentIds": [
+      "default-1",
+      "default-2",
+      "default-3"
+    ],
     "generatedAgentConfigs": []
   },
   "scenes": [
@@ -23,30 +27,296 @@
           "id": "eb-s1-canvas",
           "viewportSize": 1000,
           "viewportRatio": 0.5625,
-          "background": { "type": "solid", "color": "#0b1120" },
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": ["#10b981", "#3b82f6", "#8b5cf6"],
+            "themeColors": [
+              "#10b981",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
           "elements": [
-            { "id": "eb-s1-bar", "type": "shape", "left": 0, "top": 0, "width": 1000, "height": 6, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#10b981", "fixedRatio": false },
-            { "id": "eb-s1-hbg", "type": "shape", "left": 0, "top": 6, "width": 1000, "height": 96, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#0f1729", "fixedRatio": false },
-            { "id": "eb-s1-title", "type": "text", "left": 24, "top": 16, "width": 800, "height": 52, "rotate": 0, "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🔗 What is a Blockchain?</p>", "defaultFontName": "Inter", "defaultColor": "#f1f5f9" },
-            { "id": "eb-s1-sub", "type": "text", "left": 24, "top": 66, "width": 800, "height": 30, "rotate": 0, "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>A shared notebook no one can erase — Elementary Level</p>", "defaultFontName": "Inter", "defaultColor": "#64748b" },
-            { "id": "eb-s1-body", "type": "text", "left": 24, "top": 120, "width": 950, "height": 300, "rotate": 0, "content": "<p style='font-size:18px;color:#cbd5e1;line-height:1.8;'><b style='color:#10b981;'>Imagine</b> you and all your friends have the exact same notebook. Every time someone writes something new, <b style='color:#f1f5f9;'>everyone's notebook automatically gets the same update</b>. And nobody — not even a teacher — can erase what's already written!</p><br/><p style='font-size:18px;color:#cbd5e1;line-height:1.8;'>That is a blockchain. Thousands of computers around the world all share the same digital notebook at once.</p>", "defaultFontName": "Inter", "defaultColor": "#cbd5e1" },
-            { "id": "eb-s1-box1", "type": "shape", "left": 24, "top": 440, "width": 210, "height": 100, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#10b98120", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#10b981" } },
-            { "id": "eb-s1-t1", "type": "text", "left": 34, "top": 455, "width": 190, "height": 70, "rotate": 0, "content": "<p style='font-size:13px;font-weight:700;color:#10b981;text-align:center;'>📓 Shared<br/>Everyone has a copy</p>", "defaultFontName": "Inter", "defaultColor": "#10b981" },
-            { "id": "eb-s1-box2", "type": "shape", "left": 260, "top": 440, "width": 210, "height": 100, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#3b82f620", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#3b82f6" } },
-            { "id": "eb-s1-t2", "type": "text", "left": 270, "top": 455, "width": 190, "height": 70, "rotate": 0, "content": "<p style='font-size:13px;font-weight:700;color:#3b82f6;text-align:center;'>🔒 Can't Be Erased<br/>Once written, it stays</p>", "defaultFontName": "Inter", "defaultColor": "#3b82f6" },
-            { "id": "eb-s1-box3", "type": "shape", "left": 496, "top": 440, "width": 210, "height": 100, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#8b5cf620", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#8b5cf6" } },
-            { "id": "eb-s1-t3", "type": "text", "left": 506, "top": 455, "width": 190, "height": 70, "rotate": 0, "content": "<p style='font-size:13px;font-weight:700;color:#8b5cf6;text-align:center;'>🌍 No Boss<br/>No one controls it</p>", "defaultFontName": "Inter", "defaultColor": "#8b5cf6" },
-            { "id": "eb-s1-box4", "type": "shape", "left": 732, "top": 440, "width": 210, "height": 100, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#f59e0b20", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#f59e0b" } },
-            { "id": "eb-s1-t4", "type": "text", "left": 742, "top": 455, "width": 190, "height": 70, "rotate": 0, "content": "<p style='font-size:13px;font-weight:700;color:#f59e0b;text-align:center;'>👀 Open<br/>Anyone can read it</p>", "defaultFontName": "Inter", "defaultColor": "#f59e0b" }
+            {
+              "id": "eb-s1-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b981",
+              "fixedRatio": false
+            },
+            {
+              "id": "eb-s1-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "eb-s1-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83d\udd17 What is a Blockchain?</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "eb-s1-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>A shared notebook no one can erase \u2014 Elementary Level</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "eb-s1-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 300,
+              "rotate": 0,
+              "content": "<p style='font-size:18px;color:#cbd5e1;line-height:1.8;'><b style='color:#10b981;'>Imagine</b> you and all your friends have the exact same notebook. Every time someone writes something new, <b style='color:#f1f5f9;'>everyone's notebook automatically gets the same update</b>. And nobody \u2014 not even a teacher \u2014 can erase what's already written!</p><br/><p style='font-size:18px;color:#cbd5e1;line-height:1.8;'>That is a blockchain. Thousands of computers around the world all share the same digital notebook at once.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "eb-s1-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 440,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "eb-s1-t1",
+              "type": "text",
+              "left": 34,
+              "top": 455,
+              "width": 190,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#10b981;text-align:center;'>\ud83d\udcd3 Shared<br/>Everyone has a copy</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "eb-s1-box2",
+              "type": "shape",
+              "left": 260,
+              "top": 440,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "eb-s1-t2",
+              "type": "text",
+              "left": 270,
+              "top": 455,
+              "width": 190,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#3b82f6;text-align:center;'>\ud83d\udd12 Can't Be Erased<br/>Once written, it stays</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "eb-s1-box3",
+              "type": "shape",
+              "left": 496,
+              "top": 440,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#8b5cf6"
+              }
+            },
+            {
+              "id": "eb-s1-t3",
+              "type": "text",
+              "left": 506,
+              "top": 455,
+              "width": 190,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#8b5cf6;text-align:center;'>\ud83c\udf0d No Boss<br/>No one controls it</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#8b5cf6"
+            },
+            {
+              "id": "eb-s1-box4",
+              "type": "shape",
+              "left": 732,
+              "top": 440,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "eb-s1-t4",
+              "type": "text",
+              "left": 742,
+              "top": 455,
+              "width": 190,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#f59e0b;text-align:center;'>\ud83d\udc40 Open<br/>Anyone can read it</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            }
           ]
         }
-      }
+      },
+      "actions": [
+        {
+          "id": "action_eb-s1_0",
+          "type": "spotlight",
+          "elementId": "eb-s1-title"
+        },
+        {
+          "id": "action_eb-s1_1",
+          "type": "speech",
+          "text": "\ud83d\udd17 What is a Blockchain?"
+        },
+        {
+          "id": "action_eb-s1_2",
+          "type": "spotlight",
+          "elementId": "eb-s1-sub"
+        },
+        {
+          "id": "action_eb-s1_3",
+          "type": "speech",
+          "text": "A shared notebook no one can erase \u2014 Elementary Level"
+        },
+        {
+          "id": "action_eb-s1_4",
+          "type": "spotlight",
+          "elementId": "eb-s1-body"
+        },
+        {
+          "id": "action_eb-s1_5",
+          "type": "speech",
+          "text": "Imagine you and all your friends have the exact same notebook. Every time someone writes something new, everyone's notebook automatically gets the same update . And nobody \u2014 not even a teacher \u2014 can erase what's already written! That is a blockchain. Thousands of computers around the world all share..."
+        },
+        {
+          "id": "action_eb-s1_6",
+          "type": "spotlight",
+          "elementId": "eb-s1-t1"
+        },
+        {
+          "id": "action_eb-s1_7",
+          "type": "speech",
+          "text": "\ud83d\udcd3 Shared Everyone has a copy"
+        },
+        {
+          "id": "action_eb-s1_8",
+          "type": "spotlight",
+          "elementId": "eb-s1-t2"
+        },
+        {
+          "id": "action_eb-s1_9",
+          "type": "speech",
+          "text": "\ud83d\udd12 Can't Be Erased Once written, it stays"
+        },
+        {
+          "id": "action_eb-s1_10",
+          "type": "spotlight",
+          "elementId": "eb-s1-t3"
+        },
+        {
+          "id": "action_eb-s1_11",
+          "type": "speech",
+          "text": "\ud83c\udf0d No Boss No one controls it"
+        },
+        {
+          "id": "action_eb-s1_12",
+          "type": "spotlight",
+          "elementId": "eb-s1-t4"
+        },
+        {
+          "id": "action_eb-s1_13",
+          "type": "speech",
+          "text": "\ud83d\udc40 Open Anyone can read it"
+        }
+      ]
     },
     {
       "id": "eb-s2",
@@ -58,28 +328,342 @@
           "id": "eb-s2-canvas",
           "viewportSize": 1000,
           "viewportRatio": 0.5625,
-          "background": { "type": "solid", "color": "#0b1120" },
-          "theme": { "backgroundColor": "#0b1120", "themeColors": ["#10b981", "#3b82f6", "#8b5cf6"], "fontColor": "#f1f5f9", "fontName": "Inter" },
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#10b981",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
           "elements": [
-            { "id": "eb-s2-bar", "type": "shape", "left": 0, "top": 0, "width": 1000, "height": 6, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#10b981", "fixedRatio": false },
-            { "id": "eb-s2-hbg", "type": "shape", "left": 0, "top": 6, "width": 1000, "height": 96, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#0f1729", "fixedRatio": false },
-            { "id": "eb-s2-title", "type": "text", "left": 24, "top": 16, "width": 800, "height": 52, "rotate": 0, "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🧱 What is a Block?</p>", "defaultFontName": "Inter", "defaultColor": "#f1f5f9" },
-            { "id": "eb-s2-sub", "type": "text", "left": 24, "top": 66, "width": 800, "height": 30, "rotate": 0, "content": "<p style='font-size:13px;color:#64748b;'>Each block is like one page in the notebook</p>", "defaultFontName": "Inter", "defaultColor": "#64748b" },
-            { "id": "eb-s2-body", "type": "text", "left": 24, "top": 120, "width": 950, "height": 80, "rotate": 0, "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.7;'>Every time a bunch of transactions happen, they get bundled into one <b style='color:#10b981;'>block</b>. That block gets a special code called a <b style='color:#f1f5f9;'>hash</b> — like a fingerprint — then gets added to the end of the chain.</p>", "defaultFontName": "Inter", "defaultColor": "#cbd5e1" },
-            { "id": "eb-s2-blk1", "type": "shape", "left": 60, "top": 240, "width": 200, "height": 130, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#10b98115", "fixedRatio": false, "outline": { "style": "solid", "width": 2, "color": "#10b981" } },
-            { "id": "eb-s2-bt1", "type": "text", "left": 70, "top": 250, "width": 180, "height": 110, "rotate": 0, "content": "<p style='font-size:14px;font-weight:800;color:#10b981;text-align:center;'>Block 1</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:6px;'>📦 Transactions<br/>🔑 Code: #A1B2</p>", "defaultFontName": "Inter", "defaultColor": "#f1f5f9" },
-            { "id": "eb-s2-arr1", "type": "text", "left": 270, "top": 288, "width": 80, "height": 40, "rotate": 0, "content": "<p style='font-size:28px;font-weight:900;color:#3b82f6;text-align:center;'>→</p>", "defaultFontName": "Inter", "defaultColor": "#3b82f6" },
-            { "id": "eb-s2-blk2", "type": "shape", "left": 360, "top": 240, "width": 200, "height": 130, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#3b82f615", "fixedRatio": false, "outline": { "style": "solid", "width": 2, "color": "#3b82f6" } },
-            { "id": "eb-s2-bt2", "type": "text", "left": 370, "top": 250, "width": 180, "height": 110, "rotate": 0, "content": "<p style='font-size:14px;font-weight:800;color:#3b82f6;text-align:center;'>Block 2</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:6px;'>📦 Transactions<br/>🔑 Code: #C3D4</p>", "defaultFontName": "Inter", "defaultColor": "#f1f5f9" },
-            { "id": "eb-s2-arr2", "type": "text", "left": 570, "top": 288, "width": 80, "height": 40, "rotate": 0, "content": "<p style='font-size:28px;font-weight:900;color:#8b5cf6;text-align:center;'>→</p>", "defaultFontName": "Inter", "defaultColor": "#8b5cf6" },
-            { "id": "eb-s2-blk3", "type": "shape", "left": 660, "top": 240, "width": 200, "height": 130, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#8b5cf615", "fixedRatio": false, "outline": { "style": "solid", "width": 2, "color": "#8b5cf6" } },
-            { "id": "eb-s2-bt3", "type": "text", "left": 670, "top": 250, "width": 180, "height": 110, "rotate": 0, "content": "<p style='font-size:14px;font-weight:800;color:#8b5cf6;text-align:center;'>Block 3</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:6px;'>📦 Transactions<br/>🔑 Code: #E5F6</p>", "defaultFontName": "Inter", "defaultColor": "#f1f5f9" },
-            { "id": "eb-s2-fact", "type": "shape", "left": 24, "top": 410, "width": 950, "height": 70, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#f59e0b10", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#f59e0b50" } },
-            { "id": "eb-s2-ft", "type": "text", "left": 34, "top": 422, "width": 930, "height": 46, "rotate": 0, "content": "<p style='font-size:13px;color:#fbbf24;'>⚡ <b>Cool Fact:</b> If someone tried to change Block 1, its code would change — which would instantly break Block 2 and Block 3. The whole chain notices. That's why blockchains are so hard to cheat!</p>", "defaultFontName": "Inter", "defaultColor": "#fbbf24" },
-            { "id": "eb-s2-label", "type": "text", "left": 24, "top": 500, "width": 950, "height": 30, "rotate": 0, "content": "<p style='font-size:12px;color:#475569;font-weight:600;text-align:center;letter-spacing:2px;'>THE BLOCKCHAIN = ALL THE BLOCKS LINKED TOGETHER IN ORDER</p>", "defaultFontName": "Inter", "defaultColor": "#475569" }
+            {
+              "id": "eb-s2-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b981",
+              "fixedRatio": false
+            },
+            {
+              "id": "eb-s2-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "eb-s2-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83e\uddf1 What is a Block?</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "eb-s2-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;'>Each block is like one page in the notebook</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "eb-s2-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 80,
+              "rotate": 0,
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.7;'>Every time a bunch of transactions happen, they get bundled into one <b style='color:#10b981;'>block</b>. That block gets a special code called a <b style='color:#f1f5f9;'>hash</b> \u2014 like a fingerprint \u2014 then gets added to the end of the chain.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "eb-s2-blk1",
+              "type": "shape",
+              "left": 60,
+              "top": 240,
+              "width": 200,
+              "height": 130,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98115",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 2,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "eb-s2-bt1",
+              "type": "text",
+              "left": 70,
+              "top": 250,
+              "width": 180,
+              "height": 110,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:800;color:#10b981;text-align:center;'>Block 1</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:6px;'>\ud83d\udce6 Transactions<br/>\ud83d\udd11 Code: #A1B2</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "eb-s2-arr1",
+              "type": "text",
+              "left": 270,
+              "top": 288,
+              "width": 80,
+              "height": 40,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:900;color:#3b82f6;text-align:center;'>\u2192</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "eb-s2-blk2",
+              "type": "shape",
+              "left": 360,
+              "top": 240,
+              "width": 200,
+              "height": 130,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f615",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 2,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "eb-s2-bt2",
+              "type": "text",
+              "left": 370,
+              "top": 250,
+              "width": 180,
+              "height": 110,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:800;color:#3b82f6;text-align:center;'>Block 2</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:6px;'>\ud83d\udce6 Transactions<br/>\ud83d\udd11 Code: #C3D4</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "eb-s2-arr2",
+              "type": "text",
+              "left": 570,
+              "top": 288,
+              "width": 80,
+              "height": 40,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:900;color:#8b5cf6;text-align:center;'>\u2192</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#8b5cf6"
+            },
+            {
+              "id": "eb-s2-blk3",
+              "type": "shape",
+              "left": 660,
+              "top": 240,
+              "width": 200,
+              "height": 130,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf615",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 2,
+                "color": "#8b5cf6"
+              }
+            },
+            {
+              "id": "eb-s2-bt3",
+              "type": "text",
+              "left": 670,
+              "top": 250,
+              "width": 180,
+              "height": 110,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:800;color:#8b5cf6;text-align:center;'>Block 3</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:6px;'>\ud83d\udce6 Transactions<br/>\ud83d\udd11 Code: #E5F6</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "eb-s2-fact",
+              "type": "shape",
+              "left": 24,
+              "top": 410,
+              "width": 950,
+              "height": 70,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b10",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b50"
+              }
+            },
+            {
+              "id": "eb-s2-ft",
+              "type": "text",
+              "left": 34,
+              "top": 422,
+              "width": 930,
+              "height": 46,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#fbbf24;'>\u26a1 <b>Cool Fact:</b> If someone tried to change Block 1, its code would change \u2014 which would instantly break Block 2 and Block 3. The whole chain notices. That's why blockchains are so hard to cheat!</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#fbbf24"
+            },
+            {
+              "id": "eb-s2-label",
+              "type": "text",
+              "left": 24,
+              "top": 500,
+              "width": 950,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#475569;font-weight:600;text-align:center;letter-spacing:2px;'>THE BLOCKCHAIN = ALL THE BLOCKS LINKED TOGETHER IN ORDER</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#475569"
+            }
           ]
         }
-      }
+      },
+      "actions": [
+        {
+          "id": "action_eb-s2_0",
+          "type": "spotlight",
+          "elementId": "eb-s2-title"
+        },
+        {
+          "id": "action_eb-s2_1",
+          "type": "speech",
+          "text": "\ud83e\uddf1 What is a Block?"
+        },
+        {
+          "id": "action_eb-s2_2",
+          "type": "spotlight",
+          "elementId": "eb-s2-sub"
+        },
+        {
+          "id": "action_eb-s2_3",
+          "type": "speech",
+          "text": "Each block is like one page in the notebook"
+        },
+        {
+          "id": "action_eb-s2_4",
+          "type": "spotlight",
+          "elementId": "eb-s2-body"
+        },
+        {
+          "id": "action_eb-s2_5",
+          "type": "speech",
+          "text": "Every time a bunch of transactions happen, they get bundled into one block . That block gets a special code called a hash \u2014 like a fingerprint \u2014 then gets added to the end of the chain."
+        },
+        {
+          "id": "action_eb-s2_6",
+          "type": "spotlight",
+          "elementId": "eb-s2-bt1"
+        },
+        {
+          "id": "action_eb-s2_7",
+          "type": "speech",
+          "text": "Block 1 \ud83d\udce6 Transactions \ud83d\udd11 Code: #A1B2"
+        },
+        {
+          "id": "action_eb-s2_8",
+          "type": "spotlight",
+          "elementId": "eb-s2-bt2"
+        },
+        {
+          "id": "action_eb-s2_9",
+          "type": "speech",
+          "text": "Block 2 \ud83d\udce6 Transactions \ud83d\udd11 Code: #C3D4"
+        },
+        {
+          "id": "action_eb-s2_10",
+          "type": "spotlight",
+          "elementId": "eb-s2-bt3"
+        },
+        {
+          "id": "action_eb-s2_11",
+          "type": "speech",
+          "text": "Block 3 \ud83d\udce6 Transactions \ud83d\udd11 Code: #E5F6"
+        },
+        {
+          "id": "action_eb-s2_12",
+          "type": "spotlight",
+          "elementId": "eb-s2-ft"
+        },
+        {
+          "id": "action_eb-s2_13",
+          "type": "speech",
+          "text": "\u26a1 Cool Fact: If someone tried to change Block 1, its code would change \u2014 which would instantly break Block 2 and Block 3. The whole chain notices. That's why blockchains are so hard to cheat!"
+        },
+        {
+          "id": "action_eb-s2_14",
+          "type": "spotlight",
+          "elementId": "eb-s2-label"
+        },
+        {
+          "id": "action_eb-s2_15",
+          "type": "speech",
+          "text": "THE BLOCKCHAIN = ALL THE BLOCKS LINKED TOGETHER IN ORDER"
+        }
+      ]
     },
     {
       "id": "eb-s3",
@@ -91,31 +675,314 @@
           "id": "eb-s3-canvas",
           "viewportSize": 1000,
           "viewportRatio": 0.5625,
-          "background": { "type": "solid", "color": "#0b1120" },
-          "theme": { "backgroundColor": "#0b1120", "themeColors": ["#10b981", "#3b82f6", "#8b5cf6"], "fontColor": "#f1f5f9", "fontName": "Inter" },
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#10b981",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
           "elements": [
-            { "id": "eb-s3-bar", "type": "shape", "left": 0, "top": 0, "width": 1000, "height": 6, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#10b981", "fixedRatio": false },
-            { "id": "eb-s3-hbg", "type": "shape", "left": 0, "top": 6, "width": 1000, "height": 96, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#0f1729", "fixedRatio": false },
-            { "id": "eb-s3-title", "type": "text", "left": 24, "top": 16, "width": 800, "height": 52, "rotate": 0, "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🌟 Why Does Blockchain Matter?</p>", "defaultFontName": "Inter", "defaultColor": "#f1f5f9" },
-            { "id": "eb-s3-sub", "type": "text", "left": 24, "top": 66, "width": 800, "height": 30, "rotate": 0, "content": "<p style='font-size:13px;color:#64748b;'>Old way vs New way</p>", "defaultFontName": "Inter", "defaultColor": "#64748b" },
-            { "id": "eb-s3-intro", "type": "text", "left": 24, "top": 115, "width": 950, "height": 60, "rotate": 0, "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.7;'>Before blockchain, if you wanted to send money abroad, you had to trust a bank. The bank could make mistakes, charge big fees, or even freeze your money. Blockchain lets people send money directly — <b style='color:#10b981;'>no bank needed</b>.</p>", "defaultFontName": "Inter", "defaultColor": "#cbd5e1" },
-            { "id": "eb-s3-c1bg", "type": "shape", "left": 24, "top": 205, "width": 290, "height": 310, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#ef444410", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#ef444440" } },
-            { "id": "eb-s3-c1h", "type": "text", "left": 34, "top": 215, "width": 270, "height": 30, "rotate": 0, "content": "<p style='font-size:14px;font-weight:800;color:#f87171;'>🏦 Old Way (Bank)</p>", "defaultFontName": "Inter", "defaultColor": "#f87171" },
-            { "id": "eb-s3-c1b", "type": "text", "left": 34, "top": 250, "width": 270, "height": 250, "rotate": 0, "content": "<p style='font-size:12px;color:#94a3b8;line-height:2;'>✗ Bank controls your money<br/>✗ Can reject you<br/>✗ Charges big fees<br/>✗ Can freeze your account<br/>✗ Takes days to send abroad</p>", "defaultFontName": "Inter", "defaultColor": "#94a3b8" },
-            { "id": "eb-s3-vs", "type": "text", "left": 330, "top": 310, "width": 100, "height": 60, "rotate": 0, "content": "<p style='font-size:22px;font-weight:900;color:#475569;text-align:center;'>VS</p>", "defaultFontName": "Inter", "defaultColor": "#475569" },
-            { "id": "eb-s3-c2bg", "type": "shape", "left": 446, "top": 205, "width": 290, "height": 310, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#10b98110", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#10b98140" } },
-            { "id": "eb-s3-c2h", "type": "text", "left": 456, "top": 215, "width": 270, "height": 30, "rotate": 0, "content": "<p style='font-size:14px;font-weight:800;color:#34d399;'>⚡ New Way (Blockchain)</p>", "defaultFontName": "Inter", "defaultColor": "#34d399" },
-            { "id": "eb-s3-c2b", "type": "text", "left": 456, "top": 250, "width": 270, "height": 250, "rotate": 0, "content": "<p style='font-size:12px;color:#94a3b8;line-height:2;'>✓ You control your money<br/>✓ Anyone can use it<br/>✓ Tiny or zero fees<br/>✓ Nobody can freeze it<br/>✓ Transfers in seconds</p>", "defaultFontName": "Inter", "defaultColor": "#94a3b8" },
-            { "id": "eb-s3-oc", "type": "shape", "left": 760, "top": 205, "width": 215, "height": 310, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#3b82f610", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#3b82f640" } },
-            { "id": "eb-s3-och", "type": "text", "left": 770, "top": 215, "width": 195, "height": 290, "rotate": 0, "content": "<p style='font-size:13px;font-weight:800;color:#60a5fa;'>🔗 OnlyCrypto</p><p style='font-size:11px;color:#94a3b8;line-height:1.8;margin-top:8px;'>Runs on XRP Ledger — a blockchain that settles in 3-5 seconds with nearly zero fees. Payouts go directly to your wallet, automatically.</p>", "defaultFontName": "Inter", "defaultColor": "#60a5fa" }
+            {
+              "id": "eb-s3-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b981",
+              "fixedRatio": false
+            },
+            {
+              "id": "eb-s3-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "eb-s3-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83c\udf1f Why Does Blockchain Matter?</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "eb-s3-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;'>Old way vs New way</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "eb-s3-intro",
+              "type": "text",
+              "left": 24,
+              "top": 115,
+              "width": 950,
+              "height": 60,
+              "rotate": 0,
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.7;'>Before blockchain, if you wanted to send money abroad, you had to trust a bank. The bank could make mistakes, charge big fees, or even freeze your money. Blockchain lets people send money directly \u2014 <b style='color:#10b981;'>no bank needed</b>.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "eb-s3-c1bg",
+              "type": "shape",
+              "left": 24,
+              "top": 205,
+              "width": 290,
+              "height": 310,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444410",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef444440"
+              }
+            },
+            {
+              "id": "eb-s3-c1h",
+              "type": "text",
+              "left": 34,
+              "top": 215,
+              "width": 270,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:800;color:#f87171;'>\ud83c\udfe6 Old Way (Bank)</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f87171"
+            },
+            {
+              "id": "eb-s3-c1b",
+              "type": "text",
+              "left": 34,
+              "top": 250,
+              "width": 270,
+              "height": 250,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#94a3b8;line-height:2;'>\u2717 Bank controls your money<br/>\u2717 Can reject you<br/>\u2717 Charges big fees<br/>\u2717 Can freeze your account<br/>\u2717 Takes days to send abroad</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "eb-s3-vs",
+              "type": "text",
+              "left": 330,
+              "top": 310,
+              "width": 100,
+              "height": 60,
+              "rotate": 0,
+              "content": "<p style='font-size:22px;font-weight:900;color:#475569;text-align:center;'>VS</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#475569"
+            },
+            {
+              "id": "eb-s3-c2bg",
+              "type": "shape",
+              "left": 446,
+              "top": 205,
+              "width": 290,
+              "height": 310,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98110",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b98140"
+              }
+            },
+            {
+              "id": "eb-s3-c2h",
+              "type": "text",
+              "left": 456,
+              "top": 215,
+              "width": 270,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:800;color:#34d399;'>\u26a1 New Way (Blockchain)</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#34d399"
+            },
+            {
+              "id": "eb-s3-c2b",
+              "type": "text",
+              "left": 456,
+              "top": 250,
+              "width": 270,
+              "height": 250,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#94a3b8;line-height:2;'>\u2713 You control your money<br/>\u2713 Anyone can use it<br/>\u2713 Tiny or zero fees<br/>\u2713 Nobody can freeze it<br/>\u2713 Transfers in seconds</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "eb-s3-oc",
+              "type": "shape",
+              "left": 760,
+              "top": 205,
+              "width": 215,
+              "height": 310,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f610",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f640"
+              }
+            },
+            {
+              "id": "eb-s3-och",
+              "type": "text",
+              "left": 770,
+              "top": 215,
+              "width": 195,
+              "height": 290,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:800;color:#60a5fa;'>\ud83d\udd17 OnlyCrypto</p><p style='font-size:11px;color:#94a3b8;line-height:1.8;margin-top:8px;'>Runs on XRP Ledger \u2014 a blockchain that settles in 3-5 seconds with nearly zero fees. Payouts go directly to your wallet, automatically.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#60a5fa"
+            }
           ]
         }
-      }
+      },
+      "actions": [
+        {
+          "id": "action_eb-s3_0",
+          "type": "spotlight",
+          "elementId": "eb-s3-title"
+        },
+        {
+          "id": "action_eb-s3_1",
+          "type": "speech",
+          "text": "\ud83c\udf1f Why Does Blockchain Matter?"
+        },
+        {
+          "id": "action_eb-s3_2",
+          "type": "spotlight",
+          "elementId": "eb-s3-sub"
+        },
+        {
+          "id": "action_eb-s3_3",
+          "type": "speech",
+          "text": "Old way vs New way"
+        },
+        {
+          "id": "action_eb-s3_4",
+          "type": "spotlight",
+          "elementId": "eb-s3-intro"
+        },
+        {
+          "id": "action_eb-s3_5",
+          "type": "speech",
+          "text": "Before blockchain, if you wanted to send money abroad, you had to trust a bank. The bank could make mistakes, charge big fees, or even freeze your money. Blockchain lets people send money directly \u2014 no bank needed ."
+        },
+        {
+          "id": "action_eb-s3_6",
+          "type": "spotlight",
+          "elementId": "eb-s3-c1h"
+        },
+        {
+          "id": "action_eb-s3_7",
+          "type": "speech",
+          "text": "\ud83c\udfe6 Old Way (Bank)"
+        },
+        {
+          "id": "action_eb-s3_8",
+          "type": "spotlight",
+          "elementId": "eb-s3-c1b"
+        },
+        {
+          "id": "action_eb-s3_9",
+          "type": "speech",
+          "text": "\u2717 Bank controls your money \u2717 Can reject you \u2717 Charges big fees \u2717 Can freeze your account \u2717 Takes days to send abroad"
+        },
+        {
+          "id": "action_eb-s3_10",
+          "type": "spotlight",
+          "elementId": "eb-s3-c2h"
+        },
+        {
+          "id": "action_eb-s3_11",
+          "type": "speech",
+          "text": "\u26a1 New Way (Blockchain)"
+        },
+        {
+          "id": "action_eb-s3_12",
+          "type": "spotlight",
+          "elementId": "eb-s3-c2b"
+        },
+        {
+          "id": "action_eb-s3_13",
+          "type": "speech",
+          "text": "\u2713 You control your money \u2713 Anyone can use it \u2713 Tiny or zero fees \u2713 Nobody can freeze it \u2713 Transfers in seconds"
+        },
+        {
+          "id": "action_eb-s3_14",
+          "type": "spotlight",
+          "elementId": "eb-s3-och"
+        },
+        {
+          "id": "action_eb-s3_15",
+          "type": "speech",
+          "text": "\ud83d\udd17 OnlyCrypto Runs on XRP Ledger \u2014 a blockchain that settles in 3-5 seconds with nearly zero fees. Payouts go directly to your wallet, automatically."
+        }
+      ]
     },
     {
       "id": "eb-s4",
       "type": "quiz",
-      "title": "Knowledge Check — Blockchain Basics",
+      "title": "Knowledge Check \u2014 Blockchain Basics",
       "content": {
         "type": "quiz",
         "questions": [
@@ -124,13 +991,27 @@
             "type": "single",
             "question": "What is the best way to describe a blockchain?",
             "options": [
-              { "label": "A bank's private database", "value": "A" },
-              { "label": "A shared digital notebook that thousands of computers all have a copy of", "value": "B" },
-              { "label": "A website run by one company", "value": "C" },
-              { "label": "A type of password", "value": "D" }
+              {
+                "label": "A bank's private database",
+                "value": "A"
+              },
+              {
+                "label": "A shared digital notebook that thousands of computers all have a copy of",
+                "value": "B"
+              },
+              {
+                "label": "A website run by one company",
+                "value": "C"
+              },
+              {
+                "label": "A type of password",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
-            "analysis": "A blockchain is a shared digital ledger that thousands of computers all hold a copy of. No single person or company controls it — making it transparent and very hard to cheat.",
+            "answer": [
+              "B"
+            ],
+            "analysis": "A blockchain is a shared digital ledger that thousands of computers all hold a copy of. No single person or company controls it \u2014 making it transparent and very hard to cheat.",
             "points": 1
           },
           {
@@ -138,13 +1019,27 @@
             "type": "single",
             "question": "What is a 'hash' on a blockchain?",
             "options": [
-              { "label": "A type of cryptocurrency", "value": "A" },
-              { "label": "A special code (fingerprint) that identifies each block", "value": "B" },
-              { "label": "The name of a wallet", "value": "C" },
-              { "label": "A fee you pay to send money", "value": "D" }
+              {
+                "label": "A type of cryptocurrency",
+                "value": "A"
+              },
+              {
+                "label": "A special code (fingerprint) that identifies each block",
+                "value": "B"
+              },
+              {
+                "label": "The name of a wallet",
+                "value": "C"
+              },
+              {
+                "label": "A fee you pay to send money",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
-            "analysis": "A hash is a unique code — like a fingerprint — assigned to each block. If anything in the block changes, the hash changes completely, making tampering obvious to the whole network.",
+            "answer": [
+              "B"
+            ],
+            "analysis": "A hash is a unique code \u2014 like a fingerprint \u2014 assigned to each block. If anything in the block changes, the hash changes completely, making tampering obvious to the whole network.",
             "points": 1
           },
           {
@@ -152,12 +1047,26 @@
             "type": "single",
             "question": "Why is blockchain hard to cheat?",
             "options": [
-              { "label": "Because it uses very strong passwords", "value": "A" },
-              { "label": "Because a government monitors it", "value": "C" },
-              { "label": "Because changing one block breaks the codes of every block after it — the whole network notices", "value": "B" },
-              { "label": "Because only one person can add to it", "value": "D" }
+              {
+                "label": "Because it uses very strong passwords",
+                "value": "A"
+              },
+              {
+                "label": "Because a government monitors it",
+                "value": "C"
+              },
+              {
+                "label": "Because changing one block breaks the codes of every block after it \u2014 the whole network notices",
+                "value": "B"
+              },
+              {
+                "label": "Because only one person can add to it",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Every block contains the fingerprint (hash) of the one before it. Change any block and its fingerprint changes, instantly breaking every block that comes after. The network detects this immediately.",
             "points": 1
           },
@@ -166,13 +1075,27 @@
             "type": "single",
             "question": "Which of these is an advantage of blockchain over a traditional bank?",
             "options": [
-              { "label": "You need a credit score to use it", "value": "A" },
-              { "label": "Transactions take 3-5 business days", "value": "B" },
-              { "label": "Anyone can use it and transfers happen in seconds with tiny fees", "value": "C" },
-              { "label": "A company controls all the rules", "value": "D" }
+              {
+                "label": "You need a credit score to use it",
+                "value": "A"
+              },
+              {
+                "label": "Transactions take 3-5 business days",
+                "value": "B"
+              },
+              {
+                "label": "Anyone can use it and transfers happen in seconds with tiny fees",
+                "value": "C"
+              },
+              {
+                "label": "A company controls all the rules",
+                "value": "D"
+              }
             ],
-            "answer": ["C"],
-            "analysis": "Blockchain lets anyone send money to anyone in the world in seconds with very small fees — no bank account, no approval, no waiting days. That's the power of decentralized money.",
+            "answer": [
+              "C"
+            ],
+            "analysis": "Blockchain lets anyone send money to anyone in the world in seconds with very small fees \u2014 no bank account, no approval, no waiting days. That's the power of decentralized money.",
             "points": 1
           }
         ]

@@ -244,7 +244,79 @@
             }
           ]
         }
-      }
+      },
+      "actions": [
+        {
+          "id": "action_ed-s1_0",
+          "type": "spotlight",
+          "elementId": "ed-s1-title"
+        },
+        {
+          "id": "action_ed-s1_1",
+          "type": "speech",
+          "text": "\ud83c\udfd7\ufe0f What is DeFi?"
+        },
+        {
+          "id": "action_ed-s1_2",
+          "type": "spotlight",
+          "elementId": "ed-s1-sub"
+        },
+        {
+          "id": "action_ed-s1_3",
+          "type": "speech",
+          "text": "Banking without banks \u2014 powered by code"
+        },
+        {
+          "id": "action_ed-s1_4",
+          "type": "spotlight",
+          "elementId": "ed-s1-body"
+        },
+        {
+          "id": "action_ed-s1_5",
+          "type": "speech",
+          "text": "DeFi stands for Decentralized Finance . It's a way to do banking stuff \u2014 saving, borrowing, earning interest \u2014 without using a real bank . Instead of people running it, computer programs (called smart contracts) do everything automatically. No waiting, no paperwork, no business hours."
+        },
+        {
+          "id": "action_ed-s1_6",
+          "type": "spotlight",
+          "elementId": "ed-s1-bt0"
+        },
+        {
+          "id": "action_ed-s1_7",
+          "type": "speech",
+          "text": "\ud83d\udd50 Open 24/7/365 Never closed \u2014 no holidays"
+        },
+        {
+          "id": "action_ed-s1_8",
+          "type": "spotlight",
+          "elementId": "ed-s1-bt1"
+        },
+        {
+          "id": "action_ed-s1_9",
+          "type": "speech",
+          "text": "\ud83c\udf0d No Approval Anyone can use it \u2014 no application"
+        },
+        {
+          "id": "action_ed-s1_10",
+          "type": "spotlight",
+          "elementId": "ed-s1-bt2"
+        },
+        {
+          "id": "action_ed-s1_11",
+          "type": "speech",
+          "text": "\u26a1 Instant Transfers happen in seconds"
+        },
+        {
+          "id": "action_ed-s1_12",
+          "type": "spotlight",
+          "elementId": "ed-s1-bt3"
+        },
+        {
+          "id": "action_ed-s1_13",
+          "type": "speech",
+          "text": "\ud83e\udd16 Automated Code handles everything automatically"
+        }
+      ]
     },
     {
       "id": "ed-s2",
@@ -473,7 +545,79 @@
             }
           ]
         }
-      }
+      },
+      "actions": [
+        {
+          "id": "action_ed-s2_0",
+          "type": "spotlight",
+          "elementId": "ed-s2-title"
+        },
+        {
+          "id": "action_ed-s2_1",
+          "type": "speech",
+          "text": "\ud83e\udd16 What is a Smart Contract?"
+        },
+        {
+          "id": "action_ed-s2_2",
+          "type": "spotlight",
+          "elementId": "ed-s2-sub"
+        },
+        {
+          "id": "action_ed-s2_3",
+          "type": "speech",
+          "text": "Like a vending machine \u2014 put money in, get exactly what was promised"
+        },
+        {
+          "id": "action_ed-s2_4",
+          "type": "spotlight",
+          "elementId": "ed-s2-body"
+        },
+        {
+          "id": "action_ed-s2_5",
+          "type": "speech",
+          "text": "A smart contract is a program on the blockchain. When certain conditions are met, it automatically does something \u2014 no human needed. Think of a vending machine: put in money, press a button, get your snack. No cashier. No waiting. The machine just does it."
+        },
+        {
+          "id": "action_ed-s2_6",
+          "type": "spotlight",
+          "elementId": "ed-s2-bt0"
+        },
+        {
+          "id": "action_ed-s2_7",
+          "type": "speech",
+          "text": "\ud83d\udcb0 Deposit Crypto You put in $100 of ETH as collateral"
+        },
+        {
+          "id": "action_ed-s2_8",
+          "type": "spotlight",
+          "elementId": "ed-s2-bt1"
+        },
+        {
+          "id": "action_ed-s2_9",
+          "type": "speech",
+          "text": "\ud83e\udd16 Auto Lend Contract lends you $70 instantly"
+        },
+        {
+          "id": "action_ed-s2_10",
+          "type": "spotlight",
+          "elementId": "ed-s2-bt2"
+        },
+        {
+          "id": "action_ed-s2_11",
+          "type": "speech",
+          "text": "\u2705 Pay Back Return it + fee, get ETH back auto"
+        },
+        {
+          "id": "action_ed-s2_12",
+          "type": "spotlight",
+          "elementId": "ed-s2-bt3"
+        },
+        {
+          "id": "action_ed-s2_13",
+          "type": "speech",
+          "text": "\ud83c\udfe6 No Human Zero bank employees involved"
+        }
+      ]
     },
     {
       "id": "ed-s3",

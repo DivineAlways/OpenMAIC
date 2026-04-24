@@ -244,7 +244,79 @@
             }
           ]
         }
-      }
+      },
+      "actions": [
+        {
+          "id": "action_ec-s1_0",
+          "type": "spotlight",
+          "elementId": "ec-s1-title"
+        },
+        {
+          "id": "action_ec-s1_1",
+          "type": "speech",
+          "text": "\ud83e\ude99 What is Cryptocurrency?"
+        },
+        {
+          "id": "action_ec-s1_2",
+          "type": "spotlight",
+          "elementId": "ec-s1-sub"
+        },
+        {
+          "id": "action_ec-s1_3",
+          "type": "speech",
+          "text": "Digital money you can use without a bank"
+        },
+        {
+          "id": "action_ec-s1_4",
+          "type": "spotlight",
+          "elementId": "ec-s1-body"
+        },
+        {
+          "id": "action_ec-s1_5",
+          "type": "speech",
+          "text": "Cryptocurrency is digital money \u2014 like the coins and bills you use at a store, but it only exists on computers and phones. You can't hold it in your hand, but you can use it to buy things, send it to friends, or save it. The 'crypto' part means it uses secret codes called cryptography to keep everyt..."
+        },
+        {
+          "id": "action_ec-s1_6",
+          "type": "spotlight",
+          "elementId": "ec-s1-bt0"
+        },
+        {
+          "id": "action_ec-s1_7",
+          "type": "speech",
+          "text": "\ud83d\udcbb 100% Digital Lives on computers \u2014 no physical coins"
+        },
+        {
+          "id": "action_ec-s1_8",
+          "type": "spotlight",
+          "elementId": "ec-s1-bt1"
+        },
+        {
+          "id": "action_ec-s1_9",
+          "type": "speech",
+          "text": "\ud83d\udd10 Super Secure Protected by math no hacker can crack"
+        },
+        {
+          "id": "action_ec-s1_10",
+          "type": "spotlight",
+          "elementId": "ec-s1-bt2"
+        },
+        {
+          "id": "action_ec-s1_11",
+          "type": "speech",
+          "text": "\ud83c\udf10 Works Everywhere Send money to anyone in seconds"
+        },
+        {
+          "id": "action_ec-s1_12",
+          "type": "spotlight",
+          "elementId": "ec-s1-bt3"
+        },
+        {
+          "id": "action_ec-s1_13",
+          "type": "speech",
+          "text": "\ud83e\udd1d No Middleman Send directly to a friend \u2014 no bank needed"
+        }
+      ]
     },
     {
       "id": "ec-s2",
@@ -473,7 +545,79 @@
             }
           ]
         }
-      }
+      },
+      "actions": [
+        {
+          "id": "action_ec-s2_0",
+          "type": "spotlight",
+          "elementId": "ec-s2-title"
+        },
+        {
+          "id": "action_ec-s2_1",
+          "type": "speech",
+          "text": "\ud83c\udfc6 Famous Cryptocurrencies"
+        },
+        {
+          "id": "action_ec-s2_2",
+          "type": "spotlight",
+          "elementId": "ec-s2-sub"
+        },
+        {
+          "id": "action_ec-s2_3",
+          "type": "speech",
+          "text": "The big names you'll hear everywhere"
+        },
+        {
+          "id": "action_ec-s2_4",
+          "type": "spotlight",
+          "elementId": "ec-s2-body"
+        },
+        {
+          "id": "action_ec-s2_5",
+          "type": "speech",
+          "text": "There are thousands of cryptocurrencies. Bitcoin was the first (2009) \u2014 like digital gold. Ethereum can run programs called smart contracts. XRP is built for super-fast payments \u2014 it settles in 3-5 seconds and is what OnlyCrypto uses for payouts!"
+        },
+        {
+          "id": "action_ec-s2_6",
+          "type": "spotlight",
+          "elementId": "ec-s2-bt0"
+        },
+        {
+          "id": "action_ec-s2_7",
+          "type": "speech",
+          "text": "\u20bf Bitcoin (BTC) The original \u2014 only 21M will ever exist"
+        },
+        {
+          "id": "action_ec-s2_8",
+          "type": "spotlight",
+          "elementId": "ec-s2-bt1"
+        },
+        {
+          "id": "action_ec-s2_9",
+          "type": "speech",
+          "text": "\u039e Ethereum (ETH) Runs apps and smart contracts"
+        },
+        {
+          "id": "action_ec-s2_10",
+          "type": "spotlight",
+          "elementId": "ec-s2-bt2"
+        },
+        {
+          "id": "action_ec-s2_11",
+          "type": "speech",
+          "text": "\u2715 XRP 3-5 sec payments \u2014 OnlyCrypto's coin"
+        },
+        {
+          "id": "action_ec-s2_12",
+          "type": "spotlight",
+          "elementId": "ec-s2-bt3"
+        },
+        {
+          "id": "action_ec-s2_13",
+          "type": "speech",
+          "text": "\ud83c\udf0a Thousands more New coins launch every day"
+        }
+      ]
     },
     {
       "id": "ec-s3",

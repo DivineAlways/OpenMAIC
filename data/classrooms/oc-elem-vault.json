@@ -244,7 +244,79 @@
             }
           ]
         }
-      }
+      },
+      "actions": [
+        {
+          "id": "action_ev-s1_0",
+          "type": "spotlight",
+          "elementId": "ev-s1-title"
+        },
+        {
+          "id": "action_ev-s1_1",
+          "type": "speech",
+          "text": "\ud83c\udfac Learn by Watching"
+        },
+        {
+          "id": "action_ev-s1_2",
+          "type": "spotlight",
+          "elementId": "ev-s1-sub"
+        },
+        {
+          "id": "action_ev-s1_3",
+          "type": "speech",
+          "text": "Videos that explain crypto in plain language"
+        },
+        {
+          "id": "action_ev-s1_4",
+          "type": "spotlight",
+          "elementId": "ev-s1-body"
+        },
+        {
+          "id": "action_ev-s1_5",
+          "type": "speech",
+          "text": "Sometimes the best way to learn is to watch someone explain it . The OnlyCrypto video series covers the biggest concepts \u2014 from how XRP works to how copy trading can grow your money while you sleep. Each video is picked because it explains things clearly, even if you're brand new."
+        },
+        {
+          "id": "action_ev-s1_6",
+          "type": "spotlight",
+          "elementId": "ev-s1-bt0"
+        },
+        {
+          "id": "action_ev-s1_7",
+          "type": "speech",
+          "text": "\ud83d\udcdd Take Notes Write words you don't know and look them up"
+        },
+        {
+          "id": "action_ev-s1_8",
+          "type": "spotlight",
+          "elementId": "ev-s1-bt1"
+        },
+        {
+          "id": "action_ev-s1_9",
+          "type": "speech",
+          "text": "\u23f8\ufe0f Pause & Rewind Don't rush \u2014 understanding beats speed"
+        },
+        {
+          "id": "action_ev-s1_10",
+          "type": "spotlight",
+          "elementId": "ev-s1-bt2"
+        },
+        {
+          "id": "action_ev-s1_11",
+          "type": "speech",
+          "text": "\u2753 Ask Questions Use the AI Classroom to ask anything"
+        },
+        {
+          "id": "action_ev-s1_12",
+          "type": "spotlight",
+          "elementId": "ev-s1-bt3"
+        },
+        {
+          "id": "action_ev-s1_13",
+          "type": "speech",
+          "text": "\ud83d\udd04 Rewatch Same video makes more sense after you've learned more"
+        }
+      ]
     },
     {
       "id": "ev-s2",
@@ -473,7 +545,79 @@
             }
           ]
         }
-      }
+      },
+      "actions": [
+        {
+          "id": "action_ev-s2_0",
+          "type": "spotlight",
+          "elementId": "ev-s2-title"
+        },
+        {
+          "id": "action_ev-s2_1",
+          "type": "speech",
+          "text": "\ud83d\udcd6 Crypto Glossary"
+        },
+        {
+          "id": "action_ev-s2_2",
+          "type": "spotlight",
+          "elementId": "ev-s2-sub"
+        },
+        {
+          "id": "action_ev-s2_3",
+          "type": "speech",
+          "text": "Words you'll hear all the time"
+        },
+        {
+          "id": "action_ev-s2_4",
+          "type": "spotlight",
+          "elementId": "ev-s2-body"
+        },
+        {
+          "id": "action_ev-s2_5",
+          "type": "speech",
+          "text": "HODL \u2014 Hold On for Dear Life (don't sell!) &nbsp;|&nbsp; Bull Market \u2014 prices going up &nbsp;|&nbsp; Bear Market \u2014 prices going down &nbsp;|&nbsp; FOMO \u2014 Fear Of Missing Out &nbsp;|&nbsp; Dip \u2014 temporary price drop &nbsp;|&nbsp; Gas Fee \u2014 cost to process a transaction &nbsp;|&nbsp; ATH \u2014 All Time Hi..."
+        },
+        {
+          "id": "action_ev-s2_6",
+          "type": "spotlight",
+          "elementId": "ev-s2-bt0"
+        },
+        {
+          "id": "action_ev-s2_7",
+          "type": "speech",
+          "text": "\ud83d\udcc8 Bull Market Prices going up \u2014 everyone buying"
+        },
+        {
+          "id": "action_ev-s2_8",
+          "type": "spotlight",
+          "elementId": "ev-s2-bt1"
+        },
+        {
+          "id": "action_ev-s2_9",
+          "type": "speech",
+          "text": "\ud83d\udcc9 Bear Market Prices going down \u2014 people cautious"
+        },
+        {
+          "id": "action_ev-s2_10",
+          "type": "spotlight",
+          "elementId": "ev-s2-bt2"
+        },
+        {
+          "id": "action_ev-s2_11",
+          "type": "speech",
+          "text": "\ud83d\udc8e HODL Keep your coins, don't panic sell"
+        },
+        {
+          "id": "action_ev-s2_12",
+          "type": "spotlight",
+          "elementId": "ev-s2-bt3"
+        },
+        {
+          "id": "action_ev-s2_13",
+          "type": "speech",
+          "text": "\u26fd Gas Fee Small fee paid to process a transaction"
+        }
+      ]
     },
     {
       "id": "ev-s3",

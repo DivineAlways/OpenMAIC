@@ -244,7 +244,79 @@
             }
           ]
         }
-      }
+      },
+      "actions": [
+        {
+          "id": "action_ee-s1_0",
+          "type": "spotlight",
+          "elementId": "ee-s1-title"
+        },
+        {
+          "id": "action_ee-s1_1",
+          "type": "speech",
+          "text": "\ud83c\udf0d The Crypto World"
+        },
+        {
+          "id": "action_ee-s1_2",
+          "type": "spotlight",
+          "elementId": "ee-s1-sub"
+        },
+        {
+          "id": "action_ee-s1_3",
+          "type": "speech",
+          "text": "Crypto isn't just money \u2014 it's a whole ecosystem"
+        },
+        {
+          "id": "action_ee-s1_4",
+          "type": "spotlight",
+          "elementId": "ee-s1-body"
+        },
+        {
+          "id": "action_ee-s1_5",
+          "type": "speech",
+          "text": "When most people hear 'crypto' they think of Bitcoin. But the crypto world is actually massive \u2014 like how the internet isn't just email. There are games, art, banking, social media, and entire economies all built on blockchain. Here's a quick tour."
+        },
+        {
+          "id": "action_ee-s1_6",
+          "type": "spotlight",
+          "elementId": "ee-s1-bt0"
+        },
+        {
+          "id": "action_ee-s1_7",
+          "type": "speech",
+          "text": "\ud83c\udfae Gaming Play-to-earn \u2014 own your in-game items as NFTs"
+        },
+        {
+          "id": "action_ee-s1_8",
+          "type": "spotlight",
+          "elementId": "ee-s1-bt1"
+        },
+        {
+          "id": "action_ee-s1_9",
+          "type": "speech",
+          "text": "\ud83d\uddbc\ufe0f NFTs Unique digital ownership certificates"
+        },
+        {
+          "id": "action_ee-s1_10",
+          "type": "spotlight",
+          "elementId": "ee-s1-bt2"
+        },
+        {
+          "id": "action_ee-s1_11",
+          "type": "speech",
+          "text": "\ud83d\uddf3\ufe0f DAOs Groups that vote on decisions using blockchain"
+        },
+        {
+          "id": "action_ee-s1_12",
+          "type": "spotlight",
+          "elementId": "ee-s1-bt3"
+        },
+        {
+          "id": "action_ee-s1_13",
+          "type": "speech",
+          "text": "\ud83c\udf10 Web3 Apps Apps where you own your own data"
+        }
+      ]
     },
     {
       "id": "ee-s2",
@@ -473,7 +545,79 @@
             }
           ]
         }
-      }
+      },
+      "actions": [
+        {
+          "id": "action_ee-s2_0",
+          "type": "spotlight",
+          "elementId": "ee-s2-title"
+        },
+        {
+          "id": "action_ee-s2_1",
+          "type": "speech",
+          "text": "\ud83d\uddbc\ufe0f What is an NFT?"
+        },
+        {
+          "id": "action_ee-s2_2",
+          "type": "spotlight",
+          "elementId": "ee-s2-sub"
+        },
+        {
+          "id": "action_ee-s2_3",
+          "type": "speech",
+          "text": "Non-Fungible Token \u2014 a one-of-a-kind digital certificate"
+        },
+        {
+          "id": "action_ee-s2_4",
+          "type": "spotlight",
+          "elementId": "ee-s2-body"
+        },
+        {
+          "id": "action_ee-s2_5",
+          "type": "speech",
+          "text": "NFT = Non-Fungible Token. 'Non-fungible' means one of a kind . An NFT is a digital certificate on the blockchain that proves you own something unique. A $1 bill is fungible (swap it for any other $1). The Mona Lisa is non-fungible \u2014 there's only one original. NFTs make digital things work like the M..."
+        },
+        {
+          "id": "action_ee-s2_6",
+          "type": "spotlight",
+          "elementId": "ee-s2-bt0"
+        },
+        {
+          "id": "action_ee-s2_7",
+          "type": "speech",
+          "text": "\ud83c\udfb5 Music Artists sell song originals directly to fans"
+        },
+        {
+          "id": "action_ee-s2_8",
+          "type": "spotlight",
+          "elementId": "ee-s2-bt1"
+        },
+        {
+          "id": "action_ee-s2_9",
+          "type": "speech",
+          "text": "\u26bd Sports Highlight clips owned as NFTs (NBA Top Shot)"
+        },
+        {
+          "id": "action_ee-s2_10",
+          "type": "spotlight",
+          "elementId": "ee-s2-bt2"
+        },
+        {
+          "id": "action_ee-s2_11",
+          "type": "speech",
+          "text": "\ud83c\udfae Gaming Own and resell your game characters"
+        },
+        {
+          "id": "action_ee-s2_12",
+          "type": "spotlight",
+          "elementId": "ee-s2-bt3"
+        },
+        {
+          "id": "action_ee-s2_13",
+          "type": "speech",
+          "text": "\ud83d\uddbc\ufe0f Art Digital art sold for millions"
+        }
+      ]
     },
     {
       "id": "ee-s3",

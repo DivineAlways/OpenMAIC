@@ -244,7 +244,79 @@
             }
           ]
         }
-      }
+      },
+      "actions": [
+        {
+          "id": "action_et-s1_0",
+          "type": "spotlight",
+          "elementId": "et-s1-title"
+        },
+        {
+          "id": "action_et-s1_1",
+          "type": "speech",
+          "text": "\ud83d\udcc8 What is Trading?"
+        },
+        {
+          "id": "action_et-s1_2",
+          "type": "spotlight",
+          "elementId": "et-s1-sub"
+        },
+        {
+          "id": "action_et-s1_3",
+          "type": "speech",
+          "text": "Buying and selling to make a profit"
+        },
+        {
+          "id": "action_et-s1_4",
+          "type": "spotlight",
+          "elementId": "et-s1-body"
+        },
+        {
+          "id": "action_et-s1_5",
+          "type": "speech",
+          "text": "Trading means buying something when the price is low and selling it when the price is higher \u2014 keeping the difference as profit. Example: You buy 1 XRP for $2 . Later, XRP goes up to $3 . You sell it. You made $1 profit \u2014 that's trading!"
+        },
+        {
+          "id": "action_et-s1_6",
+          "type": "spotlight",
+          "elementId": "et-s1-bt0"
+        },
+        {
+          "id": "action_et-s1_7",
+          "type": "speech",
+          "text": "\ud83d\uded2 Buy Low Buy when you think price will go up"
+        },
+        {
+          "id": "action_et-s1_8",
+          "type": "spotlight",
+          "elementId": "et-s1-bt1"
+        },
+        {
+          "id": "action_et-s1_9",
+          "type": "speech",
+          "text": "\u23f3 Wait Watch the market for the right moment"
+        },
+        {
+          "id": "action_et-s1_10",
+          "type": "spotlight",
+          "elementId": "et-s1-bt2"
+        },
+        {
+          "id": "action_et-s1_11",
+          "type": "speech",
+          "text": "\ud83d\udcb0 Sell High Sell when the price goes up"
+        },
+        {
+          "id": "action_et-s1_12",
+          "type": "spotlight",
+          "elementId": "et-s1-bt3"
+        },
+        {
+          "id": "action_et-s1_13",
+          "type": "speech",
+          "text": "\ud83c\udf89 Keep Profit The difference is yours!"
+        }
+      ]
     },
     {
       "id": "et-s2",
@@ -473,7 +545,79 @@
             }
           ]
         }
-      }
+      },
+      "actions": [
+        {
+          "id": "action_et-s2_0",
+          "type": "spotlight",
+          "elementId": "et-s2-title"
+        },
+        {
+          "id": "action_et-s2_1",
+          "type": "speech",
+          "text": "\ud83e\ude9e Copy Trading"
+        },
+        {
+          "id": "action_et-s2_2",
+          "type": "spotlight",
+          "elementId": "et-s2-sub"
+        },
+        {
+          "id": "action_et-s2_3",
+          "type": "speech",
+          "text": "Follow experts \u2014 profit automatically"
+        },
+        {
+          "id": "action_et-s2_4",
+          "type": "spotlight",
+          "elementId": "et-s2-body"
+        },
+        {
+          "id": "action_et-s2_5",
+          "type": "speech",
+          "text": "Copy trading lets you automatically copy every trade an expert makes. When they buy, you buy. When they sell, you sell \u2014 at the same time, without lifting a finger. OnlyCrypto is a copy trading platform on the XRP Ledger \u2014 follow expert traders and mirror their moves automatically."
+        },
+        {
+          "id": "action_et-s2_6",
+          "type": "spotlight",
+          "elementId": "et-s2-bt0"
+        },
+        {
+          "id": "action_et-s2_7",
+          "type": "speech",
+          "text": "\ud83e\uddd1\u200d\ud83d\udcbb Expert Trades Pro buys XRP from research"
+        },
+        {
+          "id": "action_et-s2_8",
+          "type": "spotlight",
+          "elementId": "et-s2-bt1"
+        },
+        {
+          "id": "action_et-s2_9",
+          "type": "speech",
+          "text": "\u26a1 Auto Copy Your account copies instantly"
+        },
+        {
+          "id": "action_et-s2_10",
+          "type": "spotlight",
+          "elementId": "et-s2-bt2"
+        },
+        {
+          "id": "action_et-s2_11",
+          "type": "speech",
+          "text": "\ud83d\udcb0 Both Profit You earn when they earn"
+        },
+        {
+          "id": "action_et-s2_12",
+          "type": "spotlight",
+          "elementId": "et-s2-bt3"
+        },
+        {
+          "id": "action_et-s2_13",
+          "type": "speech",
+          "text": "\ud83d\ude34 While You Sleep No screen-watching needed"
+        }
+      ]
     },
     {
       "id": "et-s3",
