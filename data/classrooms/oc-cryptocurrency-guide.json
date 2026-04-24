@@ -1,0 +1,2157 @@
+{
+  "id": "oc-cryptocurrency-guide",
+  "createdAt": "2026-04-23T00:00:00.000Z",
+  "stage": {
+    "id": "oc-cryptocurrency-guide",
+    "name": "Cryptocurrency Guide",
+    "description": "Monetary theory, Bitcoin's UTXO model, elliptic curve cryptography, mining economics, and the economics of digital scarcity.",
+    "createdAt": 1745366400000,
+    "updatedAt": 1745366400000,
+    "languageDirective": "en-US",
+    "style": "professional",
+    "generatedAgentConfigs": [
+      {
+        "id": "agent-econ",
+        "name": "Dr. Rivera",
+        "role": "Monetary Economist",
+        "persona": "An economist who bridges classical monetary theory with cryptographic money systems.",
+        "avatar": "👩‍💼",
+        "color": "#f59e0b",
+        "priority": 1
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "cg-s1",
+      "type": "slide",
+      "title": "Money: From Commodity to Cryptography",
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "c-cg-s1",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
+          },
+          "theme": {
+            "backgroundColor": "#0f172a",
+            "themeColors": [
+              "#3b82f6",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "cg-s1-accent",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#f59e0b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s1-titlebg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 100,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#13203a",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s1-title",
+              "type": "text",
+              "left": 20,
+              "top": 14,
+              "width": 680,
+              "height": 56,
+              "rotate": 0,
+              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Money: From Commodity to Cryptography</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "title"
+            },
+            {
+              "id": "cg-s1-sub",
+              "type": "text",
+              "left": 20,
+              "top": 68,
+              "width": 680,
+              "height": 34,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Why Bitcoin is the hardest money ever created</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "subtitle"
+            },
+            {
+              "id": "cg-s1-pillbg0",
+              "type": "shape",
+              "left": 720,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1e293b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s1-pill0",
+              "type": "text",
+              "left": 724,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#f59e0b;'>21M</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>Hard cap</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "cg-s1-pillbg1",
+              "type": "shape",
+              "left": 848,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1e293b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s1-pill1",
+              "type": "text",
+              "left": 852,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#10b981;'>3.125</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>BTC/block</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "cg-s1-cbg0",
+              "type": "shape",
+              "left": 20,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#2a1a00",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s1-cbar0",
+              "type": "shape",
+              "left": 20,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#f59e0b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s1-ct0",
+              "type": "text",
+              "left": 32,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#f59e0b;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Properties of Sound Money</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'><b>Scarce:</b> Bitcoin hard cap = 21M coins — mathematically enforced</li><li style='margin-bottom:4px;'><b>Durable:</b> never degrades — digital information lasts forever</li><li style='margin-bottom:4px;'><b>Portable:</b> send $1B in seconds for <$0.01 in fees</li><li style='margin-bottom:4px;'><b>Divisible:</b> 1 BTC = 100,000,000 satoshis (0.00000001 BTC)</li><li style='margin-bottom:4px;'><b>Fungible:</b> each satoshi identical in protocol rules</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "cg-s1-cbg1",
+              "type": "shape",
+              "left": 344,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#0a1929",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s1-cbar1",
+              "type": "shape",
+              "left": 344,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#3b82f6",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s1-ct1",
+              "type": "text",
+              "left": 356,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#3b82f6;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Monetary Supply Comparison</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>M0 (physical cash): ~$6T globally. M1 (M0 + deposits): ~$50T</li><li style='margin-bottom:4px;'>M2 (M1 + savings): ~$100T. Total global wealth: ~$500T</li><li style='margin-bottom:4px;'>Bitcoin market cap: ~$1.7T (April 2026) — 0.3% of global wealth</li><li style='margin-bottom:4px;'>USD M2 grew 40% in 2020-2021 → inflation followed</li><li style='margin-bottom:4px;'>Bitcoin supply inflation: 0.83%/yr post-2024 halving</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "cg-s1-cbg2",
+              "type": "shape",
+              "left": 668,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#042a1e",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s1-cbar2",
+              "type": "shape",
+              "left": 668,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#10b981",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s1-ct2",
+              "type": "text",
+              "left": 680,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#10b981;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Halving & Scarcity Mechanics</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>Every 210,000 blocks (~4 years), block reward halves</li><li style='margin-bottom:4px;'>2009: 50 BTC/block. 2024: 3.125 BTC/block</li><li style='margin-bottom:4px;'>~93% of all Bitcoin already mined (April 2026)</li><li style='margin-bottom:4px;'>Last Bitcoin mined: ~year 2140</li><li style='margin-bottom:4px;'>Stock-to-Flow: SF = stock/annual_production. BTC SF ≈ 56 (gold: 60)</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cg-s2",
+      "type": "slide",
+      "title": "The UTXO Model",
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "c-cg-s2",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
+          },
+          "theme": {
+            "backgroundColor": "#0f172a",
+            "themeColors": [
+              "#3b82f6",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "cg-s2-accent",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#f59e0b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s2-titlebg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 100,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#13203a",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s2-title",
+              "type": "text",
+              "left": 20,
+              "top": 14,
+              "width": 680,
+              "height": 56,
+              "rotate": 0,
+              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>The UTXO Model</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "title"
+            },
+            {
+              "id": "cg-s2-sub",
+              "type": "text",
+              "left": 20,
+              "top": 68,
+              "width": 680,
+              "height": 34,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Unspent Transaction Outputs — Bitcoin's accounting ledger</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "subtitle"
+            },
+            {
+              "id": "cg-s2-pillbg0",
+              "type": "shape",
+              "left": 720,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1e293b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s2-pill0",
+              "type": "text",
+              "left": 724,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#f59e0b;'>85M</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>UTXO set</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "cg-s2-pillbg1",
+              "type": "shape",
+              "left": 848,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1e293b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s2-pill1",
+              "type": "text",
+              "left": 852,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#3b82f6;'>250B</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>Avg tx size</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "cg-s2-cbg0",
+              "type": "shape",
+              "left": 20,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#2a1a00",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s2-cbar0",
+              "type": "shape",
+              "left": 20,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#f59e0b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s2-ct0",
+              "type": "text",
+              "left": 32,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#f59e0b;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>How UTXO Works</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>Every Bitcoin tx consumes UTXOs as inputs, creates new UTXOs as outputs</li><li style='margin-bottom:4px;'>UTXOs must be spent entirely — change returned as new UTXO</li><li style='margin-bottom:4px;'>Your 'balance' = sum of all UTXOs locked to your address</li><li style='margin-bottom:4px;'>UTXO set size: ~85M entries (April 2026) — stored by full nodes</li><li style='margin-bottom:4px;'>Coinbase tx: first tx in every block — creates new BTC from thin air</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "cg-s2-cbg1",
+              "type": "shape",
+              "left": 344,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#0a1929",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s2-cbar1",
+              "type": "shape",
+              "left": 344,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#3b82f6",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s2-ct1",
+              "type": "text",
+              "left": 356,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#3b82f6;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>UTXO vs Account Model</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'><b>UTXO (Bitcoin):</b> parallel validation, privacy, no replay attacks</li><li style='margin-bottom:4px;'><b>Account (Ethereum):</b> simpler state, easier smart contract logic</li><li style='margin-bottom:4px;'>UTXO: nonce not needed — each UTXO is unique by construction</li><li style='margin-bottom:4px;'>Account: nonce required to prevent tx replay attacks</li><li style='margin-bottom:4px;'>XRPL uses account model with sequence numbers</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "cg-s2-cbg2",
+              "type": "shape",
+              "left": 668,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1a1040",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s2-cbar2",
+              "type": "shape",
+              "left": 668,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#8b5cf6",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s2-ct2",
+              "type": "text",
+              "left": 680,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#8b5cf6;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Transaction Fee Market</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>Fee = (tx_size_bytes) × (sat/byte_rate)</li><li style='margin-bottom:4px;'>Mempool priority: higher sat/byte → confirmed first</li><li style='margin-bottom:4px;'>Average tx size: ~250 bytes. SegWit tx: ~140 vBytes (cheaper)</li><li style='margin-bottom:4px;'>SegWit (2017): fixes tx malleability, increases block capacity</li><li style='margin-bottom:4px;'>Taproot (2021): Schnorr signatures, 20-30% fee reduction</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cg-s3",
+      "type": "slide",
+      "title": "Elliptic Curve Cryptography (secp256k1)",
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "c-cg-s3",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
+          },
+          "theme": {
+            "backgroundColor": "#0f172a",
+            "themeColors": [
+              "#3b82f6",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "cg-s3-accent",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#8b5cf6",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s3-titlebg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 100,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#13203a",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s3-title",
+              "type": "text",
+              "left": 20,
+              "top": 14,
+              "width": 680,
+              "height": 56,
+              "rotate": 0,
+              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Elliptic Curve Cryptography (secp256k1)</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "title"
+            },
+            {
+              "id": "cg-s3-sub",
+              "type": "text",
+              "left": 20,
+              "top": 68,
+              "width": 680,
+              "height": 34,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>The math that proves ownership of Bitcoin without revealing your key</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "subtitle"
+            },
+            {
+              "id": "cg-s3-pillbg0",
+              "type": "shape",
+              "left": 720,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1e293b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s3-pill0",
+              "type": "text",
+              "left": 724,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#ef4444;'>2¹²⁸</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>Attack ops</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "cg-s3-pillbg1",
+              "type": "shape",
+              "left": 848,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1e293b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s3-pill1",
+              "type": "text",
+              "left": 852,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#8b5cf6;'>256-bit</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>Key size</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "cg-s3-cbg0",
+              "type": "shape",
+              "left": 20,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1a1040",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s3-cbar0",
+              "type": "shape",
+              "left": 20,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#8b5cf6",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s3-ct0",
+              "type": "text",
+              "left": 32,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#8b5cf6;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>The Curve & Key Generation</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>Curve equation: y² = x³ + 7 (mod p), p = 2²⁵⁶ − 2³² − 977</li><li style='margin-bottom:4px;'>Generator point G: fixed public point on the curve</li><li style='margin-bottom:4px;'>Private key: random 256-bit integer k ∈ [1, n-1]</li><li style='margin-bottom:4px;'>Public key: K = k × G (elliptic curve point multiplication)</li><li style='margin-bottom:4px;'>k × G is fast; inverting (finding k from K) is computationally infeasible</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "cg-s3-cbg1",
+              "type": "shape",
+              "left": 344,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#2a0a0a",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s3-cbar1",
+              "type": "shape",
+              "left": 344,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#ef4444",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s3-ct1",
+              "type": "text",
+              "left": 356,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#ef4444;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>ECDLP & Security</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>Elliptic Curve Discrete Logarithm Problem (ECDLP)</li><li style='margin-bottom:4px;'>Best known attack: Pollard's rho — O(√n) ≈ 2¹²⁸ operations</li><li style='margin-bottom:4px;'>128-bit security level — equivalent to AES-128</li><li style='margin-bottom:4px;'>Quantum threat: Shor's algorithm could break ECDLP in O(n³)</li><li style='margin-bottom:4px;'>Bitcoin would need migration to post-quantum cryptography</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "cg-s3-cbg2",
+              "type": "shape",
+              "left": 668,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#0a1929",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s3-cbar2",
+              "type": "shape",
+              "left": 668,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#3b82f6",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s3-ct2",
+              "type": "text",
+              "left": 680,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#3b82f6;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Address Derivation</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>Public key (65 bytes) → SHA-256 → RIPEMD-160 → 20-byte hash</li><li style='margin-bottom:4px;'>Add version byte → Base58Check → Bitcoin address</li><li style='margin-bottom:4px;'>Address ≠ public key — extra privacy layer</li><li style='margin-bottom:4px;'>P2PKH, P2SH, P2WPKH (SegWit), P2TR (Taproot) — 4 address types</li><li style='margin-bottom:4px;'>Losing private key = losing funds permanently. ~4M BTC lost forever</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cg-s4",
+      "type": "slide",
+      "title": "Mining Economics",
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "c-cg-s4",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
+          },
+          "theme": {
+            "backgroundColor": "#0f172a",
+            "themeColors": [
+              "#3b82f6",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "cg-s4-accent",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#f59e0b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s4-titlebg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 100,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#13203a",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s4-title",
+              "type": "text",
+              "left": 20,
+              "top": 14,
+              "width": 680,
+              "height": 56,
+              "rotate": 0,
+              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Mining Economics</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "title"
+            },
+            {
+              "id": "cg-s4-sub",
+              "type": "text",
+              "left": 20,
+              "top": 68,
+              "width": 680,
+              "height": 34,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>The business of creating new Bitcoin — profitability mechanics</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "subtitle"
+            },
+            {
+              "id": "cg-s4-pillbg0",
+              "type": "shape",
+              "left": 720,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1e293b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s4-pill0",
+              "type": "text",
+              "left": 724,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#f59e0b;'>$26M/day</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>BTC revenue</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "cg-s4-pillbg1",
+              "type": "shape",
+              "left": 848,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1e293b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s4-pill1",
+              "type": "text",
+              "left": 852,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#3b82f6;'>700 EH/s</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>Hash rate</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "cg-s4-cbg0",
+              "type": "shape",
+              "left": 20,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#2a1a00",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s4-cbar0",
+              "type": "shape",
+              "left": 20,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#f59e0b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s4-ct0",
+              "type": "text",
+              "left": 32,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#f59e0b;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Revenue Model</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>Block reward (2024+): 3.125 BTC/block × ~$60k = ~$187k/block</li><li style='margin-bottom:4px;'>Transaction fees: 0.5–5% of block value (rises post-halving)</li><li style='margin-bottom:4px;'>144 blocks/day → ~$26M/day revenue across all miners</li><li style='margin-bottom:4px;'>Break-even: Revenue > (Hash Rate × Power × Cost/kWh)</li><li style='margin-bottom:4px;'>Hash price: $/TH/s/day — key profitability metric</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "cg-s4-cbg1",
+              "type": "shape",
+              "left": 344,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#2a0a0a",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s4-cbar1",
+              "type": "shape",
+              "left": 344,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#ef4444",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s4-ct1",
+              "type": "text",
+              "left": 356,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#ef4444;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Cost Structure</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>Electricity: largest cost — efficient miners use 0.024 J/GH</li><li style='margin-bottom:4px;'>Top ASIC (Antminer S21): 200 TH/s at 3,500W = 17.5 J/TH</li><li style='margin-bottom:4px;'>At $0.05/kWh: cost ≈ $0.021/TH/day → profitable above $40k BTC</li><li style='margin-bottom:4px;'>Hardware capex: $10-30k per ASIC, 3-5 year lifespan</li><li style='margin-bottom:4px;'>Data center, cooling, maintenance: 20-30% of total cost</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "cg-s4-cbg2",
+              "type": "shape",
+              "left": 668,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#0a1929",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s4-cbar2",
+              "type": "shape",
+              "left": 668,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#3b82f6",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s4-ct2",
+              "type": "text",
+              "left": 680,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#3b82f6;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Difficulty Adjustment</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>Adjusts every 2016 blocks to keep block time = 10 minutes</li><li style='margin-bottom:4px;'>If blocks faster: difficulty ↑. Slower: difficulty ↓</li><li style='margin-bottom:4px;'>Max adjustment per period: ±4× (prevents oscillation)</li><li style='margin-bottom:4px;'>Hashrate: ~700 EH/s and growing — difficulty all-time high</li><li style='margin-bottom:4px;'>Long-run: fee revenue must replace subsidy to secure chain</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cg-s5",
+      "type": "slide",
+      "title": "Altcoins, Ethereum & Token Standards",
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "c-cg-s5",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
+          },
+          "theme": {
+            "backgroundColor": "#0f172a",
+            "themeColors": [
+              "#3b82f6",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "cg-s5-accent",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#8b5cf6",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s5-titlebg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 100,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#13203a",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s5-title",
+              "type": "text",
+              "left": 20,
+              "top": 14,
+              "width": 680,
+              "height": 56,
+              "rotate": 0,
+              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Altcoins, Ethereum & Token Standards</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "title"
+            },
+            {
+              "id": "cg-s5-sub",
+              "type": "text",
+              "left": 20,
+              "top": 68,
+              "width": 680,
+              "height": 34,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>The ecosystem beyond Bitcoin</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "subtitle"
+            },
+            {
+              "id": "cg-s5-pillbg0",
+              "type": "shape",
+              "left": 720,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1e293b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s5-pill0",
+              "type": "text",
+              "left": 724,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#8b5cf6;'>$3.1T</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>Total market</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "cg-s5-pillbg1",
+              "type": "shape",
+              "left": 848,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1e293b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s5-pill1",
+              "type": "text",
+              "left": 852,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#10b981;'>$180B+</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>Stablecoins</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "cg-s5-cbg0",
+              "type": "shape",
+              "left": 20,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1a1040",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s5-cbar0",
+              "type": "shape",
+              "left": 20,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#8b5cf6",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s5-ct0",
+              "type": "text",
+              "left": 32,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#8b5cf6;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Market Landscape</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>Bitcoin dominance: ~55% of total crypto market cap (~$3.1T total)</li><li style='margin-bottom:4px;'>Ethereum: ~17% dominance — programmable money layer</li><li style='margin-bottom:4px;'>Altcoins: Solana, XRP, BNB, USDC — each solving different problems</li><li style='margin-bottom:4px;'>Stablecoins: $180B+ in circulation — USDT, USDC, DAI</li><li style='margin-bottom:4px;'>Crypto total market: ~$3.1T (April 2026)</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "cg-s5-cbg1",
+              "type": "shape",
+              "left": 344,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#0a1929",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s5-cbar1",
+              "type": "shape",
+              "left": 344,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#3b82f6",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s5-ct1",
+              "type": "text",
+              "left": 356,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#3b82f6;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>ERC-20 Token Standard</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>ERC-20: 6 required functions (transfer, approve, allowance, etc.)</li><li style='margin-bottom:4px;'>totalSupply(), balanceOf(), transfer(), approve(), transferFrom()</li><li style='margin-bottom:4px;'>100k+ ERC-20 tokens deployed — DeFi, governance, utility</li><li style='margin-bottom:4px;'>ERC-721: NFTs — unique token IDs, non-fungible</li><li style='margin-bottom:4px;'>ERC-1155: multi-token standard — fungible + NFT in one contract</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "cg-s5-cbg2",
+              "type": "shape",
+              "left": 668,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#042a1e",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s5-cbar2",
+              "type": "shape",
+              "left": 668,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#10b981",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s5-ct2",
+              "type": "text",
+              "left": 680,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#10b981;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Stablecoin Mechanisms</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'><b>Fiat-backed (USDT, USDC):</b> 1:1 USD reserves in bank</li><li style='margin-bottom:4px;'><b>Crypto-backed (DAI):</b> 150%+ collateralized — over-collateral</li><li style='margin-bottom:4px;'><b>Algorithmic (UST):</b> failed May 2022 — $40B wiped in 3 days</li><li style='margin-bottom:4px;'>USDC: regulated, monthly attestations, redeemable 1:1</li><li style='margin-bottom:4px;'>Central bank digital currencies (CBDCs): 130+ countries exploring</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cg-s6",
+      "type": "slide",
+      "title": "On-Chain Analysis — Reading the Blockchain",
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "c-cg-s6",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
+          },
+          "theme": {
+            "backgroundColor": "#0f172a",
+            "themeColors": [
+              "#3b82f6",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "cg-s6-accent",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#06b6d4",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s6-titlebg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 100,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#13203a",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s6-title",
+              "type": "text",
+              "left": 20,
+              "top": 14,
+              "width": 680,
+              "height": 56,
+              "rotate": 0,
+              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>On-Chain Analysis — Reading the Blockchain</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "title"
+            },
+            {
+              "id": "cg-s6-sub",
+              "type": "text",
+              "left": 20,
+              "top": 68,
+              "width": 680,
+              "height": 34,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Metrics that reveal market psychology through raw blockchain data</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "subtitle"
+            },
+            {
+              "id": "cg-s6-pillbg0",
+              "type": "shape",
+              "left": 720,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1e293b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s6-pill0",
+              "type": "text",
+              "left": 724,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#06b6d4;'>MVRV</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>Key metric</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "cg-s6-pillbg1",
+              "type": "shape",
+              "left": 848,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1e293b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s6-pill1",
+              "type": "text",
+              "left": 852,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#10b981;'>SOPR</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>Profit ratio</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "cg-s6-cbg0",
+              "type": "shape",
+              "left": 20,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#042f2e",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s6-cbar0",
+              "type": "shape",
+              "left": 20,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#06b6d4",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s6-ct0",
+              "type": "text",
+              "left": 32,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#06b6d4;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>MVRV & SOPR</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'><b>MVRV:</b> Market Value / Realized Value — expensive or cheap?</li><li style='margin-bottom:4px;'>MVRV > 3.5: historically overvalued (sell signal). < 1: undervalued</li><li style='margin-bottom:4px;'><b>SOPR:</b> Spent Output Profit Ratio = price_sold / price_paid</li><li style='margin-bottom:4px;'>SOPR > 1: average holder in profit. < 1: selling at loss</li><li style='margin-bottom:4px;'>SOPR reset at 1 during bull markets = healthy support</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "cg-s6-cbg1",
+              "type": "shape",
+              "left": 344,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#0a1929",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s6-cbar1",
+              "type": "shape",
+              "left": 344,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#3b82f6",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s6-ct1",
+              "type": "text",
+              "left": 356,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#3b82f6;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Exchange Flows</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>Exchange inflow ↑: holders moving to sell (bearish)</li><li style='margin-bottom:4px;'>Exchange outflow ↑: withdrawing to self-custody (bullish)</li><li style='margin-bottom:4px;'>BTC exchange reserve: fell from 3.2M to 2.3M BTC (2020-2024)</li><li style='margin-bottom:4px;'>Stablecoin supply on exchanges ↑: buying power building</li><li style='margin-bottom:4px;'>Whale alert: wallets >1k BTC — track accumulation/distribution</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "cg-s6-cbg2",
+              "type": "shape",
+              "left": 668,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1a1040",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "cg-s6-cbar2",
+              "type": "shape",
+              "left": 668,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#8b5cf6",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "cg-s6-ct2",
+              "type": "text",
+              "left": 680,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#8b5cf6;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>NVT & Realized Cap</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'><b>NVT ratio:</b> Network Value / Transaction Volume — P/E for Bitcoin</li><li style='margin-bottom:4px;'>High NVT: network overvalued relative to usage</li><li style='margin-bottom:4px;'><b>Realized Cap:</b> sum of each UTXO valued at last-moved price</li><li style='margin-bottom:4px;'>Realized cap more stable than market cap — removes lost coins</li><li style='margin-bottom:4px;'>MVRV = Market Cap / Realized Cap — tracks unrealized profit</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "scene-cg-07",
+      "stageId": "oc-cryptocurrency-guide",
+      "type": "interactive",
+      "title": "Interactive: Bitcoin Supply & Halving Schedule",
+      "order": 6,
+      "content": {
+        "type": "interactive",
+        "html": "<!DOCTYPE html><html><head><style>body{background:#0f172a;color:#e2e8f0;font-family:Inter,sans-serif;padding:20px;margin:0;} h2{color:#f59e0b;} .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:20px 0;} .card{background:#1e293b;border:1px solid #334155;border-radius:8px;padding:14px;text-align:center;} .card-val{font-size:22px;font-weight:700;color:#f59e0b;} .card-label{font-size:11px;color:#64748b;text-transform:uppercase;letter-spacing:1px;margin-top:4px;} .bar-container{margin:20px 0;} .bar-row{display:flex;align-items:center;gap:10px;margin-bottom:8px;} .bar-label{width:120px;font-size:13px;color:#94a3b8;text-align:right;} .bar{height:28px;border-radius:4px;background:#f59e0b;display:flex;align-items:center;padding-left:8px;font-size:12px;font-weight:700;color:#0f172a;transition:width 0.5s;} .note{color:#64748b;font-size:12px;margin-top:16px;}</style></head><body><h2>Bitcoin Halving & Supply Schedule</h2><div class='grid'><div class='card'><div class='card-val'>21,000,000</div><div class='card-label'>Max Supply (BTC)</div></div><div class='card'><div class='card-val'>19,700,000</div><div class='card-label'>Mined So Far</div></div><div class='card'><div class='card-val'>3.125 BTC</div><div class='card-label'>Current Block Reward</div></div><div class='card'><div class='card-val'>~2140</div><div class='card-label'>Last BTC Mined</div></div></div><div class='bar-container'><p style='color:#94a3b8;font-size:14px;margin-bottom:12px;'>Supply issued per era (% of 21M total):</p><div class='bar-row'><div class='bar-label'>Era 1 (2009-12)</div><div class='bar' style='width:50%'>50% — 10.5M BTC (50 BTC/block)</div></div><div class='bar-row'><div class='bar-label'>Era 2 (2012-16)</div><div class='bar' style='width:25%'>25% — 5.25M BTC (25 BTC/block)</div></div><div class='bar-row'><div class='bar-label'>Era 3 (2016-20)</div><div class='bar' style='width:12.5%;background:#f97316'>12.5% — 2.625M BTC</div></div><div class='bar-row'><div class='bar-label'>Era 4 (2020-24)</div><div class='bar' style='width:6.25%;background:#ef4444'>6.25% — 1.3125M BTC</div></div><div class='bar-row'><div class='bar-label'>Era 5+ (2024+)</div><div class='bar' style='width:3%;background:#8b5cf6'>~6.25% remaining across all future eras</div></div></div><p class='note'>Each halving cuts new supply in half. 94% of all Bitcoin will be mined by ~2032. After 2140, miners earn fees only — the security budget must come entirely from transaction demand.</p></body></html>"
+      },
+      "actions": [
+        {
+          "id": "act-cg-07-01",
+          "type": "speech",
+          "text": "This chart reveals something profound about Bitcoin's design: 94% of all Bitcoin that will ever exist has already been mined by 2032. The last Bitcoin won't be mined until 2140 — but the amounts become astronomically small. After that point, Bitcoin's security depends entirely on transaction fees."
+        }
+      ]
+    },
+    {
+      "id": "scene-cg-08",
+      "stageId": "oc-cryptocurrency-guide",
+      "type": "quiz",
+      "title": "Knowledge Check — Cryptocurrency Guide",
+      "order": 7,
+      "content": {
+        "type": "quiz",
+        "questions": [
+          {
+            "id": "q-cg-01",
+            "type": "single",
+            "question": "Alice wants to send 0.3 BTC to Bob. She has one UTXO worth 0.5 BTC. What outputs does the transaction create?",
+            "options": [
+              {
+                "label": "One output: 0.3 BTC to Bob",
+                "value": "A"
+              },
+              {
+                "label": "Two outputs: 0.3 BTC to Bob + ~0.2 BTC change back to Alice (minus fee)",
+                "value": "B"
+              },
+              {
+                "label": "The UTXO is partially spent — 0.2 BTC remains unspent on the same UTXO",
+                "value": "C"
+              },
+              {
+                "label": "Three outputs: 0.3 to Bob, 0.19 change, 0.01 fee to miner",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "UTXOs must be fully consumed. A 0.5 BTC UTXO is entirely spent as an input. The transaction creates two outputs: 0.3 BTC to Bob and approximately 0.19998 BTC back to Alice. The difference (fee) is claimed implicitly by the miner — there is no explicit fee output.",
+            "points": 2
+          },
+          {
+            "id": "q-cg-02",
+            "type": "single",
+            "question": "Bitcoin's private key is a random 256-bit integer. Approximately how many possible private keys exist?",
+            "options": [
+              {
+                "label": "10⁷⁶",
+                "value": "A"
+              },
+              {
+                "label": "2²⁵⁶ ≈ 1.16 × 10⁷⁷",
+                "value": "B"
+              },
+              {
+                "label": "10³²",
+                "value": "C"
+              },
+              {
+                "label": "2¹²⁸ ≈ 3.4 × 10³⁸",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "A 256-bit private key has 2²⁵⁶ possible values ≈ 1.158 × 10⁷⁷. For comparison, there are approximately 10⁸⁰ atoms in the observable universe. This makes brute-force search computationally impossible.",
+            "points": 2
+          },
+          {
+            "id": "q-cg-03",
+            "type": "single",
+            "question": "The MVRV ratio is currently 0.85. What does this historically indicate?",
+            "options": [
+              {
+                "label": "Market is overheated — imminent correction",
+                "value": "A"
+              },
+              {
+                "label": "Bitcoin is trading below its realized value — historical accumulation zone",
+                "value": "B"
+              },
+              {
+                "label": "Miners are unprofitable and will sell holdings",
+                "value": "C"
+              },
+              {
+                "label": "Exchange inflows are increasing sharply",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "MVRV below 1 means the current market price is below the average price at which all coins last moved (realized value). This has historically marked deep undervaluation and occurred only 4 times in Bitcoin's history — each preceded significant price appreciation.",
+            "points": 2
+          },
+          {
+            "id": "q-cg-04",
+            "type": "multiple",
+            "question": "Which of the following stablecoin types are collateralized by real assets? (Select all that apply)",
+            "options": [
+              {
+                "label": "USDC (Circle)",
+                "value": "A"
+              },
+              {
+                "label": "UST (Terra — collapsed)",
+                "value": "B"
+              },
+              {
+                "label": "DAI (MakerDAO)",
+                "value": "C"
+              },
+              {
+                "label": "USDT (Tether)",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "A",
+              "C",
+              "D"
+            ],
+            "analysis": "USDC (cash/T-bills), USDT (commercial paper + cash), and DAI (crypto collateral at 150%+) are all asset-backed. UST was algorithmic — backed by LUNA token mint/burn mechanics with no real collateral, which caused its collapse.",
+            "points": 2
+          },
+          {
+            "id": "q-cg-05",
+            "type": "single",
+            "question": "After the 2024 Bitcoin halving, the block subsidy is 3.125 BTC. What is the DAILY miner revenue at a BTC price of $70,000 (subsidy only, ignoring fees)?",
+            "options": [
+              {
+                "label": "~$7.5M",
+                "value": "A"
+              },
+              {
+                "label": "~$31.5M",
+                "value": "B"
+              },
+              {
+                "label": "~$3.6M",
+                "value": "C"
+              },
+              {
+                "label": "~$125M",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "144 blocks/day × 3.125 BTC/block = 450 BTC/day × $70,000 = $31,500,000/day in block subsidy alone. Adding transaction fees (~0.5 BTC/block) adds ~$5M more, for total ~$36.5M/day.",
+            "points": 2
+          },
+          {
+            "id": "q-cg-06",
+            "type": "short_answer",
+            "question": "Explain the Elliptic Curve Discrete Log Problem and why it makes Bitcoin's private key system secure. Include why the key derivation (K = k × G) is a one-way function.",
+            "answer": null,
+            "commentPrompt": "Full marks for: (1) defining ECDLP — given K and G, find k is computationally infeasible, (2) point multiplication is easy forward (O(log k) doublings) but no known polynomial algorithm reverses it, (3) 256-bit key space makes brute force impossible, (4) distinction between classical vs quantum threat (Shor's algorithm).",
+            "hasAnswer": false,
+            "points": 4
+          }
+        ]
+      }
+    }
+  ]
+}

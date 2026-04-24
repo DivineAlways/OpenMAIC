@@ -65,8 +65,10 @@ next-env.d.ts
 # worktrees
 .worktrees
 
-# generated data
-/data
+# generated data (classrooms are tracked — only exclude user-generated files)
+/data/classrooms/*.tmp
+/data/pptx
+/data/pdf
 /logs
 
 # docs

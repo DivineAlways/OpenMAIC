@@ -1,0 +1,2157 @@
+{
+  "id": "oc-defi-guide",
+  "createdAt": "2026-04-23T00:00:00.000Z",
+  "stage": {
+    "id": "oc-defi-guide",
+    "name": "DeFi Explained",
+    "description": "Automated market makers, AMM math, liquidity provisioning, liquidation mechanics, yield strategies, and protocol risk frameworks.",
+    "createdAt": 1745366400000,
+    "updatedAt": 1745366400000,
+    "languageDirective": "en-US",
+    "style": "professional",
+    "generatedAgentConfigs": [
+      {
+        "id": "agent-defi",
+        "name": "Prof. Nakamura",
+        "role": "DeFi Researcher",
+        "persona": "A quantitative researcher who analyzes DeFi protocols with mathematical rigor.",
+        "avatar": "🔬",
+        "color": "#10b981",
+        "priority": 1
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "df-s1",
+      "type": "slide",
+      "title": "Decentralized Finance — DeFi",
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "c-df-s1",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
+          },
+          "theme": {
+            "backgroundColor": "#0f172a",
+            "themeColors": [
+              "#3b82f6",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "df-s1-accent",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#10b981",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s1-titlebg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 100,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#13203a",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s1-title",
+              "type": "text",
+              "left": 20,
+              "top": 14,
+              "width": 680,
+              "height": 56,
+              "rotate": 0,
+              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Decentralized Finance — DeFi</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "title"
+            },
+            {
+              "id": "df-s1-sub",
+              "type": "text",
+              "left": 20,
+              "top": 68,
+              "width": 680,
+              "height": 34,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Rebuilding the financial system with open-source code and no banks</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "subtitle"
+            },
+            {
+              "id": "df-s1-pillbg0",
+              "type": "shape",
+              "left": 720,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1e293b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s1-pill0",
+              "type": "text",
+              "left": 724,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#10b981;'>$95B</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>TVL</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "df-s1-pillbg1",
+              "type": "shape",
+              "left": 848,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1e293b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s1-pill1",
+              "type": "text",
+              "left": 852,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#3b82f6;'>12 sec</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>Finality</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "df-s1-cbg0",
+              "type": "shape",
+              "left": 20,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#042a1e",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s1-cbar0",
+              "type": "shape",
+              "left": 20,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#10b981",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s1-ct0",
+              "type": "text",
+              "left": 32,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#10b981;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>What DeFi Is</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>Financial services with no banks, brokers, or intermediaries</li><li style='margin-bottom:4px;'>Smart contracts replace trust — code enforces the rules</li><li style='margin-bottom:4px;'>Total Value Locked (TVL): ~$95B across all DeFi (April 2026)</li><li style='margin-bottom:4px;'>Operates 24/7/365 — no office hours, no KYC for base protocols</li><li style='margin-bottom:4px;'>Composability: protocols stack like Lego — 'money legos'</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "df-s1-cbg1",
+              "type": "shape",
+              "left": 344,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#0a1929",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s1-cbar1",
+              "type": "shape",
+              "left": 344,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#3b82f6",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s1-ct1",
+              "type": "text",
+              "left": 356,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#3b82f6;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Core DeFi Primitives</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'><b>AMMs:</b> Uniswap, Curve — automated liquidity pools</li><li style='margin-bottom:4px;'><b>Lending:</b> Aave, Compound — borrow against collateral</li><li style='margin-bottom:4px;'><b>Yield aggregators:</b> Yearn — auto-compound across protocols</li><li style='margin-bottom:4px;'><b>Derivatives:</b> dYdX, GMX — perpetuals with no CEX</li><li style='margin-bottom:4px;'><b>Bridges:</b> cross-chain asset transfers</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "df-s1-cbg2",
+              "type": "shape",
+              "left": 668,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1a1040",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s1-cbar2",
+              "type": "shape",
+              "left": 668,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#8b5cf6",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s1-ct2",
+              "type": "text",
+              "left": 680,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#8b5cf6;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>DeFi vs TradFi</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>TradFi: 2-3 day settlement (T+2). DeFi: 12-second finality</li><li style='margin-bottom:4px;'>TradFi: 9-5 weekdays. DeFi: 24/7/365</li><li style='margin-bottom:4px;'>TradFi: minimum account sizes. DeFi: any amount, any time</li><li style='margin-bottom:4px;'>TradFi: trust institution. DeFi: verify code (open source)</li><li style='margin-bottom:4px;'>Risk shift: counterparty risk → smart contract risk</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "df-s2",
+      "type": "slide",
+      "title": "AMMs — The x × y = k Formula",
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "c-df-s2",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
+          },
+          "theme": {
+            "backgroundColor": "#0f172a",
+            "themeColors": [
+              "#3b82f6",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "df-s2-accent",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#10b981",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s2-titlebg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 100,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#13203a",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s2-title",
+              "type": "text",
+              "left": 20,
+              "top": 14,
+              "width": 680,
+              "height": 56,
+              "rotate": 0,
+              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>AMMs — The x × y = k Formula</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "title"
+            },
+            {
+              "id": "df-s2-sub",
+              "type": "text",
+              "left": 20,
+              "top": 68,
+              "width": 680,
+              "height": 34,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>How liquidity pools price assets without order books</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "subtitle"
+            },
+            {
+              "id": "df-s2-pillbg0",
+              "type": "shape",
+              "left": 720,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1e293b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s2-pill0",
+              "type": "text",
+              "left": 724,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#10b981;'>x×y=k</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>Invariant</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "df-s2-pillbg1",
+              "type": "shape",
+              "left": 848,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1e293b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s2-pill1",
+              "type": "text",
+              "left": 852,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#f59e0b;'>-0.99%</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>10 ETH slip.</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "df-s2-cbg0",
+              "type": "shape",
+              "left": 20,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#042a1e",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s2-cbar0",
+              "type": "shape",
+              "left": 20,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#10b981",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s2-ct0",
+              "type": "text",
+              "left": 32,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#10b981;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Constant Product Formula</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>x × y = k where x=token A reserves, y=token B reserves</li><li style='margin-bottom:4px;'>k stays constant across every trade — the invariant</li><li style='margin-bottom:4px;'>Price of A in terms of B = y / x at any moment</li><li style='margin-bottom:4px;'>Example: 1000 ETH + 2,000,000 USDC pool → P(ETH) = $2,000</li><li style='margin-bottom:4px;'>Uniswap V2 uses this formula — $500B+ volume lifetime</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "df-s2-cbg1",
+              "type": "shape",
+              "left": 344,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#0a1929",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s2-cbar1",
+              "type": "shape",
+              "left": 344,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#3b82f6",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s2-ct1",
+              "type": "text",
+              "left": 356,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#3b82f6;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Trade Mechanics (Worked Example)</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>Sell 10 ETH into pool: new x = 1010 ETH</li><li style='margin-bottom:4px;'>New y = 2,000,000 / 1010 = 1,980,198 USDC</li><li style='margin-bottom:4px;'>You receive: 2,000,000 - 1,980,198 = 19,802 USDC</li><li style='margin-bottom:4px;'>Effective price: 19,802 / 10 = $1,980.20 (vs $2,000 spot)</li><li style='margin-bottom:4px;'>Price impact / slippage: -0.99% on a 10 ETH trade</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "df-s2-cbg2",
+              "type": "shape",
+              "left": 668,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1a1040",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s2-cbar2",
+              "type": "shape",
+              "left": 668,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#8b5cf6",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s2-ct2",
+              "type": "text",
+              "left": 680,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#8b5cf6;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>AMM Improvements</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>Uniswap V3: concentrated liquidity — LPs pick price range</li><li style='margin-bottom:4px;'>V3 capital efficiency: 4,000× more efficient than V2</li><li style='margin-bottom:4px;'>Curve: stableswap invariant (x³y + xy³ = k) — near-zero slippage</li><li style='margin-bottom:4px;'>Balancer: up to 8 tokens, custom weights (not 50/50)</li><li style='margin-bottom:4px;'>XRPL AMM (XLS-30): built into ledger, CAM fee auction</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "df-s3",
+      "type": "slide",
+      "title": "Impermanent Loss — The LP's Hidden Cost",
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "c-df-s3",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
+          },
+          "theme": {
+            "backgroundColor": "#0f172a",
+            "themeColors": [
+              "#3b82f6",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "df-s3-accent",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#f59e0b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s3-titlebg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 100,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#13203a",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s3-title",
+              "type": "text",
+              "left": 20,
+              "top": 14,
+              "width": 680,
+              "height": 56,
+              "rotate": 0,
+              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Impermanent Loss — The LP's Hidden Cost</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "title"
+            },
+            {
+              "id": "df-s3-sub",
+              "type": "text",
+              "left": 20,
+              "top": 68,
+              "width": 680,
+              "height": 34,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>The opportunity cost of providing liquidity to an AMM</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "subtitle"
+            },
+            {
+              "id": "df-s3-pillbg0",
+              "type": "shape",
+              "left": 720,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1e293b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s3-pill0",
+              "type": "text",
+              "left": 724,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#f59e0b;'>−20%</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>IL at 4×</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "df-s3-pillbg1",
+              "type": "shape",
+              "left": 848,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1e293b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s3-pill1",
+              "type": "text",
+              "left": 852,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#ef4444;'>−5.72%</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>IL at 2×</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "df-s3-cbg0",
+              "type": "shape",
+              "left": 20,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#2a1a00",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s3-cbar0",
+              "type": "shape",
+              "left": 20,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#f59e0b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s3-ct0",
+              "type": "text",
+              "left": 32,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#f59e0b;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>IL Formula</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>IL = 2√P/(1+P) − 1, where P = price_ratio_change</li><li style='margin-bottom:4px;'>P = 1 (no change): IL = 0% — you're fine</li><li style='margin-bottom:4px;'>P = 2 (price doubles): IL = -5.72%</li><li style='margin-bottom:4px;'>P = 4 (price 4×): IL = -20%</li><li style='margin-bottom:4px;'>P = 0.5 (price halves): IL = -5.72% (symmetric)</li><li style='margin-bottom:4px;'>P = 0.1 (price drops 90%): IL = -42.5%</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "df-s3-cbg1",
+              "type": "shape",
+              "left": 344,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#0a1929",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s3-cbar1",
+              "type": "shape",
+              "left": 344,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#3b82f6",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s3-ct1",
+              "type": "text",
+              "left": 356,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#3b82f6;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Why It's 'Impermanent'</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>IL only realized when you withdraw — can recover if price reverts</li><li style='margin-bottom:4px;'>Fee income offsets IL: Uniswap charges 0.3% per trade</li><li style='margin-bottom:4px;'>High-volume pairs (ETH/USDC): fees > IL in most conditions</li><li style='margin-bottom:4px;'>Concentrated liquidity (V3): more fees but more IL risk</li><li style='margin-bottom:4px;'>If you HODLed instead: may have outperformed being an LP</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "df-s3-cbg2",
+              "type": "shape",
+              "left": 668,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1a1040",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s3-cbar2",
+              "type": "shape",
+              "left": 668,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#8b5cf6",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s3-ct2",
+              "type": "text",
+              "left": 680,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#8b5cf6;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>IL Management</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>Stablecoin pairs (USDC/DAI): near-zero IL — best for passive yield</li><li style='margin-bottom:4px;'>Correlated assets (ETH/stETH): minimal IL — move together</li><li style='margin-bottom:4px;'>Choose pairs where you'd hold both assets long-term anyway</li><li style='margin-bottom:4px;'>Calculate break-even: fees_earned > IL_amount</li><li style='margin-bottom:4px;'>IL insurance protocols exist (Bancor V3) — limited adoption</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "df-s4",
+      "type": "slide",
+      "title": "Lending Protocols & Liquidation Mechanics",
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "c-df-s4",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
+          },
+          "theme": {
+            "backgroundColor": "#0f172a",
+            "themeColors": [
+              "#3b82f6",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "df-s4-accent",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#3b82f6",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s4-titlebg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 100,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#13203a",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s4-title",
+              "type": "text",
+              "left": 20,
+              "top": 14,
+              "width": 680,
+              "height": 56,
+              "rotate": 0,
+              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Lending Protocols & Liquidation Mechanics</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "title"
+            },
+            {
+              "id": "df-s4-sub",
+              "type": "text",
+              "left": 20,
+              "top": 68,
+              "width": 680,
+              "height": 34,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Borrow against crypto without selling — and the risks</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "subtitle"
+            },
+            {
+              "id": "df-s4-pillbg0",
+              "type": "shape",
+              "left": 720,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1e293b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s4-pill0",
+              "type": "text",
+              "left": 724,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#3b82f6;'>82.5%</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>ETH LTV</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "df-s4-pillbg1",
+              "type": "shape",
+              "left": 848,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1e293b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s4-pill1",
+              "type": "text",
+              "left": 852,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#ef4444;'>HF < 1</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>Liquidation</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "df-s4-cbg0",
+              "type": "shape",
+              "left": 20,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#0a1929",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s4-cbar0",
+              "type": "shape",
+              "left": 20,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#3b82f6",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s4-ct0",
+              "type": "text",
+              "left": 32,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#3b82f6;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Aave / Compound Model</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>Deposit collateral → borrow up to LTV% of collateral value</li><li style='margin-bottom:4px;'>ETH collateral LTV: 82.5% on Aave (conservative)</li><li style='margin-bottom:4px;'>Health Factor = (collateral × liquidation_threshold) / borrow</li><li style='margin-bottom:4px;'>Health Factor < 1.0 → liquidation triggered</li><li style='margin-bottom:4px;'>Example: $10k ETH collateral, $7k USDC borrowed, HF = 1.18</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "df-s4-cbg1",
+              "type": "shape",
+              "left": 344,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#2a0a0a",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s4-cbar1",
+              "type": "shape",
+              "left": 344,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#ef4444",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s4-ct1",
+              "type": "text",
+              "left": 356,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#ef4444;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Liquidation Mechanics</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>Liquidator repays up to 50% of borrow in exchange for collateral</li><li style='margin-bottom:4px;'>Liquidation bonus: 5-15% discount on collateral seized</li><li style='margin-bottom:4px;'>Incentive: liquidators profit by keeping protocol solvent</li><li style='margin-bottom:4px;'>Cascade risk: price drop → liquidations → more sell pressure</li><li style='margin-bottom:4px;'>March 2020 'Black Thursday': ETH -50% → $8.3M bad debt on Maker</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "df-s4-cbg2",
+              "type": "shape",
+              "left": 668,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#042a1e",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s4-cbar2",
+              "type": "shape",
+              "left": 668,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#10b981",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s4-ct2",
+              "type": "text",
+              "left": 680,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#10b981;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Interest Rate Models</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>Utilization rate U = borrowed / deposited</li><li style='margin-bottom:4px;'>When U < optimal: low borrow rate (encourage borrowing)</li><li style='margin-bottom:4px;'>When U > optimal: rate spikes sharply (encourage repayment)</li><li style='margin-bottom:4px;'>Aave V3 optimal U for ETH: 80%. Above: rate jumps to 100%+</li><li style='margin-bottom:4px;'>Deposit APY = borrow_rate × U × (1 - reserve_factor)</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "df-s5",
+      "type": "slide",
+      "title": "DeFi Yield Strategies",
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "c-df-s5",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
+          },
+          "theme": {
+            "backgroundColor": "#0f172a",
+            "themeColors": [
+              "#3b82f6",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "df-s5-accent",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#10b981",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s5-titlebg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 100,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#13203a",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s5-title",
+              "type": "text",
+              "left": 20,
+              "top": 14,
+              "width": 680,
+              "height": 56,
+              "rotate": 0,
+              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>DeFi Yield Strategies</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "title"
+            },
+            {
+              "id": "df-s5-sub",
+              "type": "text",
+              "left": 20,
+              "top": 68,
+              "width": 680,
+              "height": 34,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>From safe to degen — the risk/reward spectrum of DeFi yield</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "subtitle"
+            },
+            {
+              "id": "df-s5-pillbg0",
+              "type": "shape",
+              "left": 720,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1e293b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s5-pill0",
+              "type": "text",
+              "left": 724,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#10b981;'>3.5-4%</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>stETH APR</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "df-s5-pillbg1",
+              "type": "shape",
+              "left": 848,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1e293b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s5-pill1",
+              "type": "text",
+              "left": 852,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#3b82f6;'>15-40%</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>LP APR</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "df-s5-cbg0",
+              "type": "shape",
+              "left": 20,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#042a1e",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s5-cbar0",
+              "type": "shape",
+              "left": 20,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#10b981",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s5-ct0",
+              "type": "text",
+              "left": 32,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#10b981;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Conservative Strategies</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'><b>Liquid staking:</b> stETH (Lido) — 3.5-4% APR, minimal risk</li><li style='margin-bottom:4px;'><b>Stablecoin lending:</b> USDC on Aave — 4-8% variable APR</li><li style='margin-bottom:4px;'><b>Curve stable pools:</b> USDC/USDT/DAI — 3-6% + CRV rewards</li><li style='margin-bottom:4px;'>Risk: smart contract bugs, oracle failures, depeg events</li><li style='margin-bottom:4px;'>Real yield: protocol revenue-backed, not inflationary tokens</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "df-s5-cbg1",
+              "type": "shape",
+              "left": 344,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#0a1929",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s5-cbar1",
+              "type": "shape",
+              "left": 344,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#3b82f6",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s5-ct1",
+              "type": "text",
+              "left": 356,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#3b82f6;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Intermediate Strategies</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'><b>LP provision:</b> ETH/USDC on Uniswap V3 — 15-40% APR (volatile)</li><li style='margin-bottom:4px;'><b>Yield aggregators:</b> Yearn, Convex — auto-compound</li><li style='margin-bottom:4px;'><b>Leveraged staking:</b> borrow ETH, stake, borrow more (recursive)</li><li style='margin-bottom:4px;'>Leverage amplifies both gains AND IL/liquidation risk</li><li style='margin-bottom:4px;'>Convex: boost CRV rewards by locking CVX — popular meta-protocol</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "df-s5-cbg2",
+              "type": "shape",
+              "left": 668,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1a1040",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s5-cbar2",
+              "type": "shape",
+              "left": 668,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#8b5cf6",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s5-ct2",
+              "type": "text",
+              "left": 680,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#8b5cf6;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Yield Math</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>APY = (1 + r/n)ⁿ − 1 (compound interest formula)</li><li style='margin-bottom:4px;'>Daily compound: 10% APR → 10.52% APY</li><li style='margin-bottom:4px;'>Hourly compound: 10% APR → 10.52% (negligible difference)</li><li style='margin-bottom:4px;'>Inflation-adjusted yield: real yield = nominal_APR − CPI</li><li style='margin-bottom:4px;'>If token incentives inflate faster than TVL → unsustainable</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "df-s6",
+      "type": "slide",
+      "title": "Flash Loans & MEV",
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "c-df-s6",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
+          },
+          "theme": {
+            "backgroundColor": "#0f172a",
+            "themeColors": [
+              "#3b82f6",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "df-s6-accent",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#ef4444",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s6-titlebg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 100,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#13203a",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s6-title",
+              "type": "text",
+              "left": 20,
+              "top": 14,
+              "width": 680,
+              "height": 56,
+              "rotate": 0,
+              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Flash Loans & MEV</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "title"
+            },
+            {
+              "id": "df-s6-sub",
+              "type": "text",
+              "left": 20,
+              "top": 68,
+              "width": 680,
+              "height": 34,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Zero-collateral borrowing and the dark art of block-level arbitrage</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "subtitle"
+            },
+            {
+              "id": "df-s6-pillbg0",
+              "type": "shape",
+              "left": 720,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1e293b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s6-pill0",
+              "type": "text",
+              "left": 724,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#ef4444;'>$1.38B+</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>Total MEV</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "df-s6-pillbg1",
+              "type": "shape",
+              "left": 848,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1e293b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s6-pill1",
+              "type": "text",
+              "left": 852,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#3b82f6;'>0.09%</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>Flash fee</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "df-s6-cbg0",
+              "type": "shape",
+              "left": 20,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#2a0a0a",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s6-cbar0",
+              "type": "shape",
+              "left": 20,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#ef4444",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s6-ct0",
+              "type": "text",
+              "left": 32,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#ef4444;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Flash Loans</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>Borrow millions with zero collateral — repay in same transaction</li><li style='margin-bottom:4px;'>Atomic: if repayment fails, entire tx reverts — no risk to protocol</li><li style='margin-bottom:4px;'>Aave flash loan fee: 0.09% of borrowed amount</li><li style='margin-bottom:4px;'>Legitimate use: arbitrage, collateral swaps, self-liquidation</li><li style='margin-bottom:4px;'>Attack use: manipulate oracle → exploit protocol → repay loan</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "df-s6-cbg1",
+              "type": "shape",
+              "left": 344,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#2a0a0a",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s6-cbar1",
+              "type": "shape",
+              "left": 344,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#f59e0b",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s6-ct1",
+              "type": "text",
+              "left": 356,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#f59e0b;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>MEV — Maximal Extractable Value</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>MEV = profit from reordering/inserting txs within a block</li><li style='margin-bottom:4px;'><b>Sandwich attack:</b> front-run large DEX buy, sell into it</li><li style='margin-bottom:4px;'><b>Arbitrage:</b> price discrepancy across DEXs — pure profit</li><li style='margin-bottom:4px;'><b>Liquidations:</b> race to trigger and profit from Aave/Compound</li><li style='margin-bottom:4px;'>Total MEV extracted: $1.38B+ on Ethereum since 2020</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            },
+            {
+              "id": "df-s6-cbg2",
+              "type": "shape",
+              "left": 668,
+              "top": 116,
+              "width": 310,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "roundedRect",
+              "fill": {
+                "color": "#1a1040",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0,
+              "radius": 10
+            },
+            {
+              "id": "df-s6-cbar2",
+              "type": "shape",
+              "left": 668,
+              "top": 116,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "shapeType": "rect",
+              "fill": {
+                "color": "#8b5cf6",
+                "type": "solid"
+              },
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              },
+              "opacity": 1.0
+            },
+            {
+              "id": "df-s6-ct2",
+              "type": "text",
+              "left": 680,
+              "top": 126,
+              "width": 292,
+              "height": 414,
+              "rotate": 0,
+              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#8b5cf6;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>MEV Protection & Future</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>Flashbots: private mempool — submit bundles directly to validators</li><li style='margin-bottom:4px;'>MEV-Boost: 90%+ of Ethereum validators use it (April 2026)</li><li style='margin-bottom:4px;'>PBS (Proposer-Builder Separation): separates block building roles</li><li style='margin-bottom:4px;'>Cowswap: batch auctions — prevent front-running by design</li><li style='margin-bottom:4px;'>XRPL: transaction ordering canonical — minimal MEV by design</li></ul></div>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "content"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "scene-df-07",
+      "stageId": "oc-defi-guide",
+      "type": "interactive",
+      "title": "Interactive: AMM Calculator",
+      "order": 6,
+      "content": {
+        "type": "interactive",
+        "html": "<!DOCTYPE html><html><head><style>body{background:#0f172a;color:#e2e8f0;font-family:Inter,sans-serif;padding:20px;margin:0;} h2{color:#10b981;} .row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:12px 0;} label{font-size:12px;color:#64748b;text-transform:uppercase;letter-spacing:1px;} input{width:100%;padding:10px;background:#1e293b;border:1px solid #334155;color:#f1f5f9;border-radius:6px;font-size:15px;box-sizing:border-box;margin-top:4px;} .result-box{background:#1e293b;border:1px solid #334155;border-radius:8px;padding:16px;margin-top:16px;} .result-label{font-size:12px;color:#64748b;text-transform:uppercase;letter-spacing:1px;} .result-val{font-size:26px;font-weight:700;color:#10b981;margin:4px 0;} .warn{color:#f59e0b;font-size:14px;margin-top:8px;} .il-row{display:flex;justify-content:space-between;font-size:13px;padding:4px 0;border-bottom:1px solid #1e293b;} </style></head><body><h2>AMM Swap & Impermanent Loss Calculator</h2><div class='row'><div><label>Pool: Token A reserves</label><input type='number' id='rx' value='1000' oninput='calc()'></div><div><label>Pool: Token B reserves (USDC)</label><input type='number' id='ry' value='2000000' oninput='calc()'></div></div><div class='row'><div><label>Your trade: sell Token A amount</label><input type='number' id='trade' value='10' oninput='calc()'></div><div><label>Fee tier (%)</label><input type='number' id='fee' value='0.3' step='0.01' oninput='calc()'></div></div><div class='result-box'><div class='result-label'>Spot price (before trade)</div><div class='result-val' id='spot'>--</div><div class='result-label' style='margin-top:12px;'>Token B received (after fee)</div><div class='result-val' id='received'>--</div><div class='result-label' style='margin-top:12px;'>Effective price</div><div class='result-val' id='eff'>--</div><div class='result-label' style='margin-top:12px;'>Price impact (slippage)</div><div class='result-val' id='impact'>--</div></div><div class='result-box' style='margin-top:12px;'><p style='color:#8b5cf6;font-weight:700;margin:0 0 8px;'>Impermanent Loss Table (for LP with current pool ratio)</p><div class='il-row'><span>Price change</span><span>IL vs holding</span></div><div id='il-rows'></div></div><script>function calc(){const rx=+document.getElementById('rx').value;const ry=+document.getElementById('ry').value;const trade=+document.getElementById('trade').value;const fee=+document.getElementById('fee').value/100;if(!rx||!ry||!trade)return;const spot=ry/rx;document.getElementById('spot').textContent='$'+spot.toFixed(4)+' per Token A';const tradeAfterFee=trade*(1-fee);const newRx=rx+tradeAfterFee;const newRy=(rx*ry)/newRx;const received=ry-newRy;const effPrice=received/trade;const impact=((spot-effPrice)/spot*100);document.getElementById('received').textContent=received.toFixed(2)+' Token B';document.getElementById('eff').textContent='$'+effPrice.toFixed(4);document.getElementById('impact').textContent=impact.toFixed(3)+'%';const ratios=[1.1,1.25,1.5,2,3,4,5,10];let rows='';ratios.forEach(r=>{const il=(2*Math.sqrt(r)/(1+r)-1)*100;rows+=`<div class='il-row'><span>${r}× price change</span><span style='color:${il<-5?'#ef4444':'#f59e0b'}'>${il.toFixed(2)}% IL</span></div>`;});document.getElementById('il-rows').innerHTML=rows;}calc();</script></body></html>"
+      },
+      "actions": [
+        {
+          "id": "act-df-07-01",
+          "type": "speech",
+          "text": "Use this calculator to explore the AMM mechanics yourself. Try different trade sizes and see how slippage scales. Then look at the impermanent loss table — notice how a 4x price move causes 20% IL. That's the threshold where your fee income needs to exceed to remain profitable as an LP."
+        }
+      ]
+    },
+    {
+      "id": "scene-df-08",
+      "stageId": "oc-defi-guide",
+      "type": "quiz",
+      "title": "Knowledge Check — DeFi Guide",
+      "order": 7,
+      "content": {
+        "type": "quiz",
+        "questions": [
+          {
+            "id": "q-df-01",
+            "type": "single",
+            "question": "A Uniswap v2 pool contains 500 ETH and 1,000,000 USDC. A trader sells 50 ETH (no fee for simplicity). How much USDC do they receive?",
+            "options": [
+              {
+                "label": "100,000 USDC",
+                "value": "A"
+              },
+              {
+                "label": "90,909 USDC",
+                "value": "B"
+              },
+              {
+                "label": "95,238 USDC",
+                "value": "C"
+              },
+              {
+                "label": "100,000 USDC exactly (AMMs maintain price)",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "k = 500 × 1,000,000 = 500,000,000. New x = 550. New y = 500,000,000 / 550 = 909,090.9. USDC received = 1,000,000 − 909,091 = 90,909 USDC. Effective price: $1,818/ETH vs spot $2,000 — 9.1% slippage due to large trade relative to pool size.",
+            "points": 2
+          },
+          {
+            "id": "q-df-02",
+            "type": "single",
+            "question": "You deposit ETH as collateral on Aave with 80% LTV. ETH price is $2,000 and you deposit 5 ETH ($10,000). What is your maximum borrowing capacity?",
+            "options": [
+              {
+                "label": "$10,000",
+                "value": "A"
+              },
+              {
+                "label": "$8,000",
+                "value": "B"
+              },
+              {
+                "label": "$6,000",
+                "value": "C"
+              },
+              {
+                "label": "$4,000",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Maximum borrow = collateral value × LTV = $10,000 × 80% = $8,000. Borrowing the full amount leaves health factor at exactly the liquidation threshold — in practice, leave a buffer to avoid liquidation on small price moves.",
+            "points": 2
+          },
+          {
+            "id": "q-df-03",
+            "type": "single",
+            "question": "ETH triples in price (3× from your LP entry) while you provide ETH/USDC liquidity. Approximately what is your impermanent loss using IL = 2√(P) / (1+P) − 1?",
+            "options": [
+              {
+                "label": "~3%",
+                "value": "A"
+              },
+              {
+                "label": "~13.4%",
+                "value": "B"
+              },
+              {
+                "label": "~20%",
+                "value": "C"
+              },
+              {
+                "label": "~42%",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "IL = 2√3 / (1+3) − 1 = 2 × 1.732 / 4 − 1 = 3.464 / 4 − 1 = 0.866 − 1 = −0.134 = −13.4%. A 3× price change causes 13.4% IL versus simply holding the assets.",
+            "points": 2
+          },
+          {
+            "id": "q-df-04",
+            "type": "multiple",
+            "question": "Which of the following are legitimate uses of flash loans? (Select all that apply)",
+            "options": [
+              {
+                "label": "Cross-DEX arbitrage (buy on Uniswap, sell on SushiSwap in one tx)",
+                "value": "A"
+              },
+              {
+                "label": "Collateral swap (replace ETH collateral with BTC without selling)",
+                "value": "B"
+              },
+              {
+                "label": "Long-term leveraged position with repayment over 30 days",
+                "value": "C"
+              },
+              {
+                "label": "Liquidating undercollateralized positions to earn the bonus",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "A",
+              "B",
+              "D"
+            ],
+            "analysis": "Flash loans must be borrowed and repaid within a single atomic transaction. Long-term positions (option C) are impossible — the loan must be repaid in the same block. Arbitrage, collateral swaps, and liquidation assistance are all valid uses.",
+            "points": 2
+          },
+          {
+            "id": "q-df-05",
+            "type": "single",
+            "question": "What is 'real yield' in DeFi, and which protocol is often cited as an example?",
+            "options": [
+              {
+                "label": "Yield paid in stablecoins rather than volatile tokens, regardless of source",
+                "value": "A"
+              },
+              {
+                "label": "Yield from actual protocol revenue (trading fees, liquidation fees) distributed to stakers, not inflation",
+                "value": "B"
+              },
+              {
+                "label": "Yield that is verified on-chain by oracles",
+                "value": "C"
+              },
+              {
+                "label": "Any yield above 10% APR",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Real yield means distributing actual protocol revenue — trading fees, borrowing interest, liquidation premiums — to token stakers. GMX is the canonical example: it distributes 70% of trading fees in ETH/AVAX. This contrasts with protocols that print their own governance tokens to pay yield, which is simply inflation.",
+            "points": 2
+          },
+          {
+            "id": "q-df-06",
+            "type": "short_answer",
+            "question": "Describe the mechanics of a sandwich attack MEV strategy. Include: who executes it, how it works step by step, and what the financial outcome is for each party (attacker, target, validator).",
+            "answer": null,
+            "commentPrompt": "Full marks for: (1) MEV bot monitors mempool for large pending DEX trade, (2) bot frontruns with same-direction trade at higher gas price to move price, (3) target's tx executes at worse price due to slippage, (4) bot backruns to sell into target's impact, (5) attacker profits = target's slippage loss, (6) validator earns higher fees from gas bidding war.",
+            "hasAnswer": false,
+            "points": 4
+          }
+        ]
+      }
+    }
+  ]
+}
