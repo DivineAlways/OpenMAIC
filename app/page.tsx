@@ -31,12 +31,6 @@ const COLLEGE_LEVEL_ORDER: Record<string, number> = { Beginner: 0, Intermediate:
 
 type Level = 'elementary' | 'highschool' | 'college';
 
-const LEVELS: { id: Level; label: string; emoji: string; desc: string; color: string }[] = [
-  { id: 'elementary', label: 'Elementary', emoji: '🌱', desc: 'Brand new to crypto', color: 'emerald' },
-  { id: 'highschool', label: 'High School', emoji: '📚', desc: 'Some basics down', color: 'amber' },
-  { id: 'college', label: 'College', emoji: '🎓', desc: 'Ready to go deep', color: 'blue' },
-];
-
 function CourseCard({ id, emoji, gradient, title, description, badge, scenes, onClick }: {
   id: string; emoji: string; gradient: string; title: string; description: string;
   badge?: string; scenes: number; onClick: () => void;
@@ -152,28 +146,45 @@ export default function HomePage() {
       {/* Level Selector */}
       <div className="max-w-6xl mx-auto px-6 mb-8">
         <div className="grid grid-cols-3 gap-3">
-          {LEVELS.map((level) => (
-            <button key={level.id} onClick={() => setActiveLevel(level.id)}
-              className={`p-4 rounded-2xl border text-left transition-all ${
-                activeLevel === level.id
-                  ? `border-${level.color}-500/60 bg-${level.color}-500/10 shadow-lg shadow-${level.color}-500/10`
-                  : 'border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/10'
-              }`}
-            >
-              <div className="flex items-center gap-3">
-                <span className="text-2xl">{level.emoji}</span>
-                <div className="flex-1 min-w-0">
-                  <p className={`font-black text-sm ${activeLevel === level.id ? `text-${level.color}-400` : 'text-white'}`}>
-                    {level.label}
-                  </p>
-                  <p className="text-xs text-gray-500 truncate">{level.desc}</p>
-                </div>
-                {activeLevel === level.id && (
-                  <div className={`h-2 w-2 rounded-full bg-${level.color}-400 shrink-0`} />
-                )}
+          {/* Elementary */}
+          <button onClick={() => setActiveLevel('elementary')}
+            className={`p-4 rounded-2xl border text-left transition-all ${activeLevel === 'elementary' ? 'border-emerald-500/60 bg-emerald-500/10 shadow-lg' : 'border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/10'}`}
+          >
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">🌱</span>
+              <div className="flex-1 min-w-0">
+                <p className={`font-black text-sm ${activeLevel === 'elementary' ? 'text-emerald-400' : 'text-white'}`}>Elementary</p>
+                <p className="text-xs text-gray-500 truncate">Brand new to crypto</p>
               </div>
-            </button>
-          ))}
+              {activeLevel === 'elementary' && <div className="h-2 w-2 rounded-full bg-emerald-400 shrink-0" />}
+            </div>
+          </button>
+          {/* High School */}
+          <button onClick={() => setActiveLevel('highschool')}
+            className={`p-4 rounded-2xl border text-left transition-all ${activeLevel === 'highschool' ? 'border-amber-500/60 bg-amber-500/10 shadow-lg' : 'border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/10'}`}
+          >
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">📚</span>
+              <div className="flex-1 min-w-0">
+                <p className={`font-black text-sm ${activeLevel === 'highschool' ? 'text-amber-400' : 'text-white'}`}>High School</p>
+                <p className="text-xs text-gray-500 truncate">Some basics down</p>
+              </div>
+              {activeLevel === 'highschool' && <div className="h-2 w-2 rounded-full bg-amber-400 shrink-0" />}
+            </div>
+          </button>
+          {/* College */}
+          <button onClick={() => setActiveLevel('college')}
+            className={`p-4 rounded-2xl border text-left transition-all ${activeLevel === 'college' ? 'border-blue-500/60 bg-blue-500/10 shadow-lg' : 'border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/10'}`}
+          >
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">🎓</span>
+              <div className="flex-1 min-w-0">
+                <p className={`font-black text-sm ${activeLevel === 'college' ? 'text-blue-400' : 'text-white'}`}>College</p>
+                <p className="text-xs text-gray-500 truncate">Ready to go deep</p>
+              </div>
+              {activeLevel === 'college' && <div className="h-2 w-2 rounded-full bg-blue-400 shrink-0" />}
+            </div>
+          </button>
         </div>
       </div>
 
