@@ -36,8 +36,13 @@ export default function ClassroomDetailPage() {
     try {
       await loadFromStorage(classroomId);
 
-      // If IndexedDB had no data, try server-side storage (API-generated classrooms)
-      if (!useStageStore.getState().stage) {
+      // If IndexedDB had no data OR cached scenes are missing actions (stale cache),
+      // fetch fresh data from server-side storage
+      const cachedState = useStageStore.getState();
+      const cachedScenesLackActions = cachedState.scenes.some(
+        (s) => s.type === 'slide' && (!s.actions || s.actions.length === 0),
+      );
+      if (!cachedState.stage || cachedScenesLackActions) {
         log.info('No IndexedDB data, trying server-side storage for:', classroomId);
         try {
           const res = await fetch(`/api/classroom?id=${encodeURIComponent(classroomId)}`);
