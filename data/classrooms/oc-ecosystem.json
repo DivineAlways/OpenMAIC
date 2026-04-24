@@ -1,35 +1,30 @@
 {
   "id": "oc-ecosystem",
-  "createdAt": "2026-04-23T00:00:00.000Z",
+  "createdAt": "2026-04-24T05:50:23.674092Z",
   "stage": {
     "id": "oc-ecosystem",
     "name": "Crypto in the Real World",
-    "description": "Tokenomics models, Layer 2 scaling mathematics, governance mechanisms, real-world asset tokenization, and institutional adoption.",
-    "createdAt": 1745366400000,
-    "updatedAt": 1745366400000,
+    "description": "Tokenomics, Layer-2 rollups, governance systems, RWA tokenization, and institutional crypto adoption.",
+    "createdAt": "2026-04-24T05:50:23.674088Z",
+    "updatedAt": "2026-04-24T05:50:23.674090Z",
     "languageDirective": "en-US",
-    "style": "professional",
-    "generatedAgentConfigs": [
-      {
-        "id": "agent-eco",
-        "name": "Dr. Osei",
-        "role": "Blockchain Economist",
-        "persona": "A macroeconomist studying the intersection of blockchain technology and global financial systems.",
-        "avatar": "🌐",
-        "color": "#8b5cf6",
-        "priority": 1
-      }
-    ]
+    "style": "academic",
+    "agentIds": [
+      "default-1",
+      "default-2",
+      "default-3"
+    ],
+    "generatedAgentConfigs": []
   },
   "scenes": [
     {
-      "id": "ec-s1",
+      "id": "ce-s1",
       "type": "slide",
-      "title": "Tokenomics — Designing Token Economies",
+      "title": "Tokenomics",
       "content": {
         "type": "slide",
         "canvas": {
-          "id": "c-ec-s1",
+          "id": "ce-s1-canvas",
           "viewportSize": 1000,
           "viewportRatio": 0.5625,
           "background": {
@@ -38,323 +33,329 @@
           },
           "theme": {
             "backgroundColor": "#0f172a",
-            "themeColors": [
-              "#3b82f6",
-              "#8b5cf6",
-              "#06b6d4"
-            ],
+            "themeColor": "#3b82f6",
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
           "elements": [
             {
-              "id": "ec-s1-accent",
+              "id": "ce-s1-accent",
               "type": "shape",
               "left": 0,
               "top": 0,
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "shapeType": "rect",
-              "fill": {
-                "color": "#8b5cf6",
-                "type": "solid"
-              },
+              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "viewBox": [
+                1000,
+                6
+              ],
+              "fill": "#3b82f6",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0
+              }
             },
             {
-              "id": "ec-s1-titlebg",
+              "id": "ce-s1-titlebg",
               "type": "shape",
               "left": 0,
               "top": 6,
               "width": 1000,
               "height": 100,
               "rotate": 0,
-              "shapeType": "rect",
-              "fill": {
-                "color": "#13203a",
-                "type": "solid"
-              },
+              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "viewBox": [
+                1000,
+                100
+              ],
+              "fill": "#13203a",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0
+              }
             },
             {
-              "id": "ec-s1-title",
+              "id": "ce-s1-title",
               "type": "text",
               "left": 20,
               "top": 14,
               "width": 680,
               "height": 56,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Tokenomics — Designing Token Economies</p>",
+              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Tokenomics</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9",
               "textType": "title"
             },
             {
-              "id": "ec-s1-sub",
+              "id": "ce-s1-sub",
               "type": "text",
               "left": 20,
               "top": 68,
               "width": 680,
               "height": 34,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Supply, velocity, and value capture mechanics</p>",
+              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Supply mechanics, vesting schedules, and token design</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "subtitle"
+              "defaultColor": "#f1f5f9"
             },
             {
-              "id": "ec-s1-pillbg0",
+              "id": "ce-s1-pillbg0",
               "type": "shape",
               "left": 720,
               "top": 14,
               "width": 120,
               "height": 74,
               "rotate": 0,
-              "shapeType": "roundedRect",
-              "fill": {
-                "color": "#1e293b",
-                "type": "solid"
-              },
+              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                120,
+                74
+              ],
+              "fill": "#1e293b",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0,
-              "radius": 10
+              }
             },
             {
-              "id": "ec-s1-pill0",
+              "id": "ce-s1-pill0",
               "type": "text",
               "left": 724,
               "top": 14,
               "width": 112,
               "height": 74,
               "rotate": 0,
-              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#f59e0b;'>21M</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>BTC hard cap</span></p>",
+              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>1-4 years<br/><span style=\"font-size:10px;color:#64748b;\">Vesting</span></p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "content"
+              "defaultColor": "#f1f5f9"
             },
             {
-              "id": "ec-s1-pillbg1",
+              "id": "ce-s1-pillbg1",
               "type": "shape",
-              "left": 848,
+              "left": 858,
               "top": 14,
               "width": 120,
               "height": 74,
               "rotate": 0,
-              "shapeType": "roundedRect",
-              "fill": {
-                "color": "#1e293b",
-                "type": "solid"
-              },
+              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                120,
+                74
+              ],
+              "fill": "#1e293b",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0,
-              "radius": 10
+              }
             },
             {
-              "id": "ec-s1-pill1",
+              "id": "ce-s1-pill1",
               "type": "text",
-              "left": 852,
+              "left": 862,
               "top": 14,
               "width": 112,
               "height": 74,
               "rotate": 0,
-              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#8b5cf6;'>1.5M+ ETH</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>Burned</span></p>",
+              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>varies<br/><span style=\"font-size:10px;color:#64748b;\">Inflation</span></p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "content"
+              "defaultColor": "#f1f5f9"
             },
             {
-              "id": "ec-s1-cbg0",
+              "id": "ce-s1-card0bg",
               "type": "shape",
-              "left": 20,
+              "left": 4,
               "top": 116,
-              "width": 310,
-              "height": 430,
+              "width": 308,
+              "height": 446,
               "rotate": 0,
-              "shapeType": "roundedRect",
-              "fill": {
-                "color": "#1a1040",
-                "type": "solid"
-              },
+              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                308,
+                446
+              ],
+              "fill": "#1a1040",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0,
-              "radius": 10
+              }
             },
             {
-              "id": "ec-s1-cbar0",
+              "id": "ce-s1-card0bar",
               "type": "shape",
-              "left": 20,
+              "left": 4,
               "top": 116,
               "width": 4,
-              "height": 430,
+              "height": 446,
               "rotate": 0,
-              "shapeType": "rect",
-              "fill": {
-                "color": "#8b5cf6",
-                "type": "solid"
-              },
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              },
-              "opacity": 1.0
-            },
-            {
-              "id": "ec-s1-ct0",
-              "type": "text",
-              "left": 32,
-              "top": 126,
-              "width": 292,
-              "height": 414,
-              "rotate": 0,
-              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#8b5cf6;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Supply Models</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'><b>Fixed supply (Bitcoin):</b> 21M hard cap — deflationary pressure</li><li style='margin-bottom:4px;'><b>Inflationary (Ethereum post-Merge):</b> new issuance < burn → net deflation</li><li style='margin-bottom:4px;'><b>Elastic supply:</b> algorithmic adjust (failed: UST, AMPL volatile)</li><li style='margin-bottom:4px;'>EIP-1559: base fee burned — 1.5M+ ETH burned since 2021</li><li style='margin-bottom:4px;'>Stock-to-Flow: SF = existing_supply / annual_production</li></ul></div>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "content"
-            },
-            {
-              "id": "ec-s1-cbg1",
-              "type": "shape",
-              "left": 344,
-              "top": 116,
-              "width": 310,
-              "height": 430,
-              "rotate": 0,
-              "shapeType": "roundedRect",
-              "fill": {
-                "color": "#0a1929",
-                "type": "solid"
-              },
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              },
+              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "viewBox": [
+                4,
+                446
+              ],
+              "fill": "#8b5cf6",
+              "fixedRatio": false,
               "opacity": 1.0,
-              "radius": 10
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
             },
             {
-              "id": "ec-s1-cbar1",
+              "id": "ce-s1-card0txt",
+              "type": "text",
+              "left": 16,
+              "top": 126,
+              "width": 288,
+              "height": 426,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Supply Mechanics</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Fixed supply (Bitcoin): 21M cap, deflationary \u2014 scarcity drives value narrative</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Inflationary (ETH post-Merge): new issuance (~0.3% annually) offset by EIP-1559 burns \u2014 net deflationary when usage high</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Elastic supply (AMPL): algorithmically adjusts supply to target $1 price \u2014 all wallets rebase proportionally</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Burn mechanisms: token buyback-and-burn reduces supply \u2014 ties protocol revenue to token value</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ce-s1-card1bg",
               "type": "shape",
-              "left": 344,
+              "left": 320,
+              "top": 116,
+              "width": 308,
+              "height": 446,
+              "rotate": 0,
+              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                308,
+                446
+              ],
+              "fill": "#0a1929",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
+            },
+            {
+              "id": "ce-s1-card1bar",
+              "type": "shape",
+              "left": 320,
               "top": 116,
               "width": 4,
-              "height": 430,
+              "height": 446,
               "rotate": 0,
-              "shapeType": "rect",
-              "fill": {
-                "color": "#3b82f6",
-                "type": "solid"
-              },
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              },
-              "opacity": 1.0
-            },
-            {
-              "id": "ec-s1-ct1",
-              "type": "text",
-              "left": 356,
-              "top": 126,
-              "width": 292,
-              "height": 414,
-              "rotate": 0,
-              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#3b82f6;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Velocity Problem</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>MV = PQ (Quantity Theory of Money applied to tokens)</li><li style='margin-bottom:4px;'>High velocity V → low price P — people spend immediately</li><li style='margin-bottom:4px;'>Solution: staking, locking, governance rights — reduce V</li><li style='margin-bottom:4px;'>veTokenomics (Curve): lock CRV for veCRV → voting power + yield</li><li style='margin-bottom:4px;'>Higher lock-up → reduced sell pressure → better price support</li></ul></div>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "content"
-            },
-            {
-              "id": "ec-s1-cbg2",
-              "type": "shape",
-              "left": 668,
-              "top": 116,
-              "width": 310,
-              "height": 430,
-              "rotate": 0,
-              "shapeType": "roundedRect",
-              "fill": {
-                "color": "#042a1e",
-                "type": "solid"
-              },
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              },
+              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "viewBox": [
+                4,
+                446
+              ],
+              "fill": "#3b82f6",
+              "fixedRatio": false,
               "opacity": 1.0,
-              "radius": 10
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
             },
             {
-              "id": "ec-s1-cbar2",
+              "id": "ce-s1-card1txt",
+              "type": "text",
+              "left": 332,
+              "top": 126,
+              "width": 288,
+              "height": 426,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Token Distribution</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>VC allocation: 15-30% typical \u2014 check cliff + vesting to see when they can sell</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Team allocation: 10-20% \u2014 vested over 2-4 years with 1-year cliff</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Community/ecosystem: 40-60% \u2014 distributed via airdrops, mining, grants, treasury</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Fully diluted valuation (FDV) = price \u00d7 max supply \u2014 more meaningful than market cap for inflationary tokens</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ce-s1-card2bg",
               "type": "shape",
-              "left": 668,
+              "left": 636,
+              "top": 116,
+              "width": 308,
+              "height": 446,
+              "rotate": 0,
+              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                308,
+                446
+              ],
+              "fill": "#042f2e",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
+            },
+            {
+              "id": "ce-s1-card2bar",
+              "type": "shape",
+              "left": 636,
               "top": 116,
               "width": 4,
-              "height": 430,
+              "height": 446,
               "rotate": 0,
-              "shapeType": "rect",
-              "fill": {
-                "color": "#10b981",
-                "type": "solid"
-              },
+              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "viewBox": [
+                4,
+                446
+              ],
+              "fill": "#06b6d4",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0
+              }
             },
             {
-              "id": "ec-s1-ct2",
+              "id": "ce-s1-card2txt",
               "type": "text",
-              "left": 680,
+              "left": 648,
               "top": 126,
-              "width": 292,
-              "height": 414,
+              "width": 288,
+              "height": 426,
               "rotate": 0,
-              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#10b981;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Value Accrual Mechanisms</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'><b>Fee capture:</b> protocol revenue → token holders (real yield)</li><li style='margin-bottom:4px;'><b>Buyback & burn:</b> use revenue to buy + destroy tokens</li><li style='margin-bottom:4px;'><b>Governance:</b> control protocol parameters → valuable if protocol is big</li><li style='margin-bottom:4px;'><b>Collateral:</b> required to use protocol (MKR for Maker)</li><li style='margin-bottom:4px;'>Worthless if: team can print tokens, no fee capture, no utility</li></ul></div>",
+              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Token Utility Design</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Governance: vote on protocol parameters (Uniswap UNI, Compound COMP) \u2014 'valueless' if no fee sharing</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Fee capture: protocol takes fee, distributes to stakers (dYdX, GMX) \u2014 real yield from real revenue</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Work token: must stake to participate in network (Chainlink LINK, The Graph GRT) \u2014 demand tied to usage</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Speculative premium: most token value is speculative future growth \u2014 utility alone rarely justifies price</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "content"
+              "defaultColor": "#f1f5f9"
             }
           ]
         }
-      }
+      },
+      "order": 1
     },
     {
-      "id": "ec-s2",
+      "id": "ce-s2",
       "type": "slide",
-      "title": "Layer 2 Scaling — Rollup Mathematics",
+      "title": "Layer-2 Rollups",
       "content": {
         "type": "slide",
         "canvas": {
-          "id": "c-ec-s2",
+          "id": "ce-s2-canvas",
           "viewportSize": 1000,
           "viewportRatio": 0.5625,
           "background": {
@@ -363,323 +364,329 @@
           },
           "theme": {
             "backgroundColor": "#0f172a",
-            "themeColors": [
-              "#3b82f6",
-              "#8b5cf6",
-              "#06b6d4"
-            ],
+            "themeColor": "#3b82f6",
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
           "elements": [
             {
-              "id": "ec-s2-accent",
+              "id": "ce-s2-accent",
               "type": "shape",
               "left": 0,
               "top": 0,
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "shapeType": "rect",
-              "fill": {
-                "color": "#3b82f6",
-                "type": "solid"
-              },
+              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "viewBox": [
+                1000,
+                6
+              ],
+              "fill": "#3b82f6",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0
+              }
             },
             {
-              "id": "ec-s2-titlebg",
+              "id": "ce-s2-titlebg",
               "type": "shape",
               "left": 0,
               "top": 6,
               "width": 1000,
               "height": 100,
               "rotate": 0,
-              "shapeType": "rect",
-              "fill": {
-                "color": "#13203a",
-                "type": "solid"
-              },
+              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "viewBox": [
+                1000,
+                100
+              ],
+              "fill": "#13203a",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0
+              }
             },
             {
-              "id": "ec-s2-title",
+              "id": "ce-s2-title",
               "type": "text",
               "left": 20,
               "top": 14,
               "width": 680,
               "height": 56,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Layer 2 Scaling — Rollup Mathematics</p>",
+              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Layer-2 Rollups</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9",
               "textType": "title"
             },
             {
-              "id": "ec-s2-sub",
+              "id": "ce-s2-sub",
               "type": "text",
               "left": 20,
               "top": 68,
               "width": 680,
               "height": 34,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>How rollups achieve 10-100× throughput at 90% lower cost</p>",
+              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Optimistic and ZK rollups \u2014 scaling Ethereum</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "subtitle"
+              "defaultColor": "#f1f5f9"
             },
             {
-              "id": "ec-s2-pillbg0",
+              "id": "ce-s2-pillbg0",
               "type": "shape",
               "left": 720,
               "top": 14,
               "width": 120,
               "height": 74,
               "rotate": 0,
-              "shapeType": "roundedRect",
-              "fill": {
-                "color": "#1e293b",
-                "type": "solid"
-              },
+              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                120,
+                74
+              ],
+              "fill": "#1e293b",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0,
-              "radius": 10
+              }
             },
             {
-              "id": "ec-s2-pill0",
+              "id": "ce-s2-pill0",
               "type": "text",
               "left": 724,
               "top": 14,
               "width": 112,
               "height": 74,
               "rotate": 0,
-              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#3b82f6;'>$0.003</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>L2 tx (post-4844)</span></p>",
+              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>1,000-10,000<br/><span style=\"font-size:10px;color:#64748b;\">L2 TPS</span></p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "content"
+              "defaultColor": "#f1f5f9"
             },
             {
-              "id": "ec-s2-pillbg1",
+              "id": "ce-s2-pillbg1",
               "type": "shape",
-              "left": 848,
+              "left": 858,
               "top": 14,
               "width": 120,
               "height": 74,
               "rotate": 0,
-              "shapeType": "roundedRect",
-              "fill": {
-                "color": "#1e293b",
-                "type": "solid"
-              },
+              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                120,
+                74
+              ],
+              "fill": "#1e293b",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0,
-              "radius": 10
+              }
             },
             {
-              "id": "ec-s2-pill1",
+              "id": "ce-s2-pill1",
               "type": "text",
-              "left": 852,
+              "left": 862,
               "top": 14,
               "width": 112,
               "height": 74,
               "rotate": 0,
-              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#10b981;'>40k+</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>Arbitrum tx/s</span></p>",
+              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>90% cheaper<br/><span style=\"font-size:10px;color:#64748b;\">Cost</span></p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "content"
+              "defaultColor": "#f1f5f9"
             },
             {
-              "id": "ec-s2-cbg0",
+              "id": "ce-s2-card0bg",
               "type": "shape",
-              "left": 20,
+              "left": 4,
               "top": 116,
-              "width": 310,
-              "height": 430,
+              "width": 308,
+              "height": 446,
               "rotate": 0,
-              "shapeType": "roundedRect",
-              "fill": {
-                "color": "#0a1929",
-                "type": "solid"
-              },
+              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                308,
+                446
+              ],
+              "fill": "#1a1040",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0,
-              "radius": 10
+              }
             },
             {
-              "id": "ec-s2-cbar0",
+              "id": "ce-s2-card0bar",
               "type": "shape",
-              "left": 20,
+              "left": 4,
               "top": 116,
               "width": 4,
-              "height": 430,
+              "height": 446,
               "rotate": 0,
-              "shapeType": "rect",
-              "fill": {
-                "color": "#3b82f6",
-                "type": "solid"
-              },
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              },
-              "opacity": 1.0
-            },
-            {
-              "id": "ec-s2-ct0",
-              "type": "text",
-              "left": 32,
-              "top": 126,
-              "width": 292,
-              "height": 414,
-              "rotate": 0,
-              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#3b82f6;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Rollup Types</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'><b>Optimistic Rollups:</b> assume valid, fraud proofs catch cheaters</li><li style='margin-bottom:4px;'>Arbitrum, Optimism: 2k+ tx/s, 7-day withdrawal (fraud window)</li><li style='margin-bottom:4px;'><b>ZK-Rollups:</b> validity proof — math proves correctness instantly</li><li style='margin-bottom:4px;'>zkSync, Starknet: near-instant finality, higher proof cost</li><li style='margin-bottom:4px;'>L1 Ethereum: 15 tx/s. Arbitrum: 40k+ tx/s theoretical</li></ul></div>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "content"
-            },
-            {
-              "id": "ec-s2-cbg1",
-              "type": "shape",
-              "left": 344,
-              "top": 116,
-              "width": 310,
-              "height": 430,
-              "rotate": 0,
-              "shapeType": "roundedRect",
-              "fill": {
-                "color": "#042f2e",
-                "type": "solid"
-              },
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              },
+              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "viewBox": [
+                4,
+                446
+              ],
+              "fill": "#8b5cf6",
+              "fixedRatio": false,
               "opacity": 1.0,
-              "radius": 10
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
             },
             {
-              "id": "ec-s2-cbar1",
+              "id": "ce-s2-card0txt",
+              "type": "text",
+              "left": 16,
+              "top": 126,
+              "width": 288,
+              "height": 426,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Optimistic Rollups</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Execute transactions off-chain, post compressed state diff + transaction data to Ethereum L1</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>'Optimistic' = assume all transactions valid by default \u2014 no proof required for every tx</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>7-day fraud proof window: anyone can submit proof that a submitted batch contained invalid tx</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Arbitrum, Optimism: largest L2s \u2014 $10B+ TVL, ~2000 TPS, gas 10-100\u00d7 cheaper than L1</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Sequencer centralization: single sequencer is current bottleneck \u2014 decentralization in progress</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ce-s2-card1bg",
               "type": "shape",
-              "left": 344,
+              "left": 320,
+              "top": 116,
+              "width": 308,
+              "height": 446,
+              "rotate": 0,
+              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                308,
+                446
+              ],
+              "fill": "#0a1929",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
+            },
+            {
+              "id": "ce-s2-card1bar",
+              "type": "shape",
+              "left": 320,
               "top": 116,
               "width": 4,
-              "height": 430,
+              "height": 446,
               "rotate": 0,
-              "shapeType": "rect",
-              "fill": {
-                "color": "#06b6d4",
-                "type": "solid"
-              },
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              },
-              "opacity": 1.0
-            },
-            {
-              "id": "ec-s2-ct1",
-              "type": "text",
-              "left": 356,
-              "top": 126,
-              "width": 292,
-              "height": 414,
-              "rotate": 0,
-              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#06b6d4;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>EIP-4844 — Blobs (March 2024)</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>Proto-danksharding: adds separate 'blob' data space to blocks</li><li style='margin-bottom:4px;'>Blob data: cheaper storage, auto-deleted after 18 days</li><li style='margin-bottom:4px;'>L2 fee reduction: 10-100× cheaper vs pre-4844 calldata</li><li style='margin-bottom:4px;'>Average L2 tx cost dropped from $0.30 → $0.003 post-4844</li><li style='margin-bottom:4px;'>Full danksharding: target 64 blobs/block → ~100k tx/s roadmap</li></ul></div>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "content"
-            },
-            {
-              "id": "ec-s2-cbg2",
-              "type": "shape",
-              "left": 668,
-              "top": 116,
-              "width": 310,
-              "height": 430,
-              "rotate": 0,
-              "shapeType": "roundedRect",
-              "fill": {
-                "color": "#042a1e",
-                "type": "solid"
-              },
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              },
+              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "viewBox": [
+                4,
+                446
+              ],
+              "fill": "#3b82f6",
+              "fixedRatio": false,
               "opacity": 1.0,
-              "radius": 10
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
             },
             {
-              "id": "ec-s2-cbar2",
+              "id": "ce-s2-card1txt",
+              "type": "text",
+              "left": 332,
+              "top": 126,
+              "width": 288,
+              "height": 426,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>ZK Rollups</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Post cryptographic validity proof (SNARK or STARK) with every batch \u2014 invalid tx mathematically impossible</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Proof generation: computationally expensive off-chain, but verification cheap on L1 (<1M gas)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Instant finality: once proof verified on L1, funds can be withdrawn immediately (no 7-day window)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>StarkNet (STARK), zkSync Era, Polygon zkEVM, Scroll \u2014 EVM compatibility is key challenge</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>ZK proof computation: 100-10,000\u00d7 more compute than optimistic \u2014 improving rapidly with hardware acceleration</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ce-s2-card2bg",
               "type": "shape",
-              "left": 668,
+              "left": 636,
+              "top": 116,
+              "width": 308,
+              "height": 446,
+              "rotate": 0,
+              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                308,
+                446
+              ],
+              "fill": "#042f2e",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
+            },
+            {
+              "id": "ce-s2-card2bar",
+              "type": "shape",
+              "left": 636,
               "top": 116,
               "width": 4,
-              "height": 430,
+              "height": 446,
               "rotate": 0,
-              "shapeType": "rect",
-              "fill": {
-                "color": "#10b981",
-                "type": "solid"
-              },
+              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "viewBox": [
+                4,
+                446
+              ],
+              "fill": "#06b6d4",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0
+              }
             },
             {
-              "id": "ec-s2-ct2",
+              "id": "ce-s2-card2txt",
               "type": "text",
-              "left": 680,
+              "left": 648,
               "top": 126,
-              "width": 292,
-              "height": 414,
+              "width": 288,
+              "height": 426,
               "rotate": 0,
-              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#10b981;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Cost Comparison</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>Simple ETH transfer L1: $2-15 during congestion</li><li style='margin-bottom:4px;'>Same tx on Arbitrum: $0.01-0.05 (post-4844)</li><li style='margin-bottom:4px;'>Same tx on XRPL: $0.0002 — native speed, no rollup needed</li><li style='margin-bottom:4px;'>ZK proof generation: $0.001-0.01 per tx amortized across batch</li><li style='margin-bottom:4px;'>Rollup data posted to L1: ~128 bytes per tx in blob</li></ul></div>",
+              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Data Availability</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Rollup security requires L1 to store transaction data \u2014 without it, users can't reconstruct state if sequencer disappears</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>EIP-4844 (Proto-Danksharding, March 2024): new 'blob' transaction type \u2014 128KB blobs at ~$0.01 vs $1+ calldata</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Danksharding (future): full sharding with 64 blobs per block \u2014 100,000+ TPS theoretical throughput</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Volitions (hybrid): choose per-tx whether to store data on L1 (secure) or off-chain (cheap)</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "content"
+              "defaultColor": "#f1f5f9"
             }
           ]
         }
-      }
+      },
+      "order": 2
     },
     {
-      "id": "ec-s3",
+      "id": "ce-s3",
       "type": "slide",
-      "title": "On-Chain Governance Mechanisms",
+      "title": "Governance Systems",
       "content": {
         "type": "slide",
         "canvas": {
-          "id": "c-ec-s3",
+          "id": "ce-s3-canvas",
           "viewportSize": 1000,
           "viewportRatio": 0.5625,
           "background": {
@@ -688,323 +695,329 @@
           },
           "theme": {
             "backgroundColor": "#0f172a",
-            "themeColors": [
-              "#3b82f6",
-              "#8b5cf6",
-              "#06b6d4"
-            ],
+            "themeColor": "#3b82f6",
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
           "elements": [
             {
-              "id": "ec-s3-accent",
+              "id": "ce-s3-accent",
               "type": "shape",
               "left": 0,
               "top": 0,
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "shapeType": "rect",
-              "fill": {
-                "color": "#10b981",
-                "type": "solid"
-              },
+              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "viewBox": [
+                1000,
+                6
+              ],
+              "fill": "#3b82f6",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0
+              }
             },
             {
-              "id": "ec-s3-titlebg",
+              "id": "ce-s3-titlebg",
               "type": "shape",
               "left": 0,
               "top": 6,
               "width": 1000,
               "height": 100,
               "rotate": 0,
-              "shapeType": "rect",
-              "fill": {
-                "color": "#13203a",
-                "type": "solid"
-              },
+              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "viewBox": [
+                1000,
+                100
+              ],
+              "fill": "#13203a",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0
+              }
             },
             {
-              "id": "ec-s3-title",
+              "id": "ce-s3-title",
               "type": "text",
               "left": 20,
               "top": 14,
               "width": 680,
               "height": 56,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>On-Chain Governance Mechanisms</p>",
+              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Governance Systems</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9",
               "textType": "title"
             },
             {
-              "id": "ec-s3-sub",
+              "id": "ce-s3-sub",
               "type": "text",
               "left": 20,
               "top": 68,
               "width": 680,
               "height": 34,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>DAOs, voting systems, and the Beanstalk lesson</p>",
+              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>On-chain voting, DAOs, and the limits of decentralization</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "subtitle"
+              "defaultColor": "#f1f5f9"
             },
             {
-              "id": "ec-s3-pillbg0",
+              "id": "ce-s3-pillbg0",
               "type": "shape",
               "left": 720,
               "top": 14,
               "width": 120,
               "height": 74,
               "rotate": 0,
-              "shapeType": "roundedRect",
-              "fill": {
-                "color": "#1e293b",
-                "type": "solid"
-              },
+              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                120,
+                74
+              ],
+              "fill": "#1e293b",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0,
-              "radius": 10
+              }
             },
             {
-              "id": "ec-s3-pill0",
+              "id": "ce-s3-pill0",
               "type": "text",
               "left": 724,
               "top": 14,
               "width": 112,
               "height": 74,
               "rotate": 0,
-              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#ef4444;'>$182M</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>Beanstalk hack</span></p>",
+              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>4-10% typical<br/><span style=\"font-size:10px;color:#64748b;\">Quorum</span></p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "content"
+              "defaultColor": "#f1f5f9"
             },
             {
-              "id": "ec-s3-pillbg1",
+              "id": "ce-s3-pillbg1",
               "type": "shape",
-              "left": 848,
+              "left": 858,
               "top": 14,
               "width": 120,
               "height": 74,
               "rotate": 0,
-              "shapeType": "roundedRect",
-              "fill": {
-                "color": "#1e293b",
-                "type": "solid"
-              },
+              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                120,
+                74
+              ],
+              "fill": "#1e293b",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0,
-              "radius": 10
+              }
             },
             {
-              "id": "ec-s3-pill1",
+              "id": "ce-s3-pill1",
               "type": "text",
-              "left": 852,
+              "left": 862,
               "top": 14,
               "width": 112,
               "height": 74,
               "rotate": 0,
-              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#f59e0b;'>5-15%</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>DAO turnout</span></p>",
+              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>$3B+ treasury<br/><span style=\"font-size:10px;color:#64748b;\">Largest DAO</span></p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "content"
+              "defaultColor": "#f1f5f9"
             },
             {
-              "id": "ec-s3-cbg0",
+              "id": "ce-s3-card0bg",
               "type": "shape",
-              "left": 20,
+              "left": 4,
               "top": 116,
-              "width": 310,
-              "height": 430,
+              "width": 308,
+              "height": 446,
               "rotate": 0,
-              "shapeType": "roundedRect",
-              "fill": {
-                "color": "#042a1e",
-                "type": "solid"
-              },
+              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                308,
+                446
+              ],
+              "fill": "#1a1040",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0,
-              "radius": 10
+              }
             },
             {
-              "id": "ec-s3-cbar0",
+              "id": "ce-s3-card0bar",
               "type": "shape",
-              "left": 20,
+              "left": 4,
               "top": 116,
               "width": 4,
-              "height": 430,
+              "height": 446,
               "rotate": 0,
-              "shapeType": "rect",
-              "fill": {
-                "color": "#10b981",
-                "type": "solid"
-              },
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              },
-              "opacity": 1.0
-            },
-            {
-              "id": "ec-s3-ct0",
-              "type": "text",
-              "left": 32,
-              "top": 126,
-              "width": 292,
-              "height": 414,
-              "rotate": 0,
-              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#10b981;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Governance Models</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'><b>Token voting:</b> 1 token = 1 vote — plutocracy risk</li><li style='margin-bottom:4px;'><b>Quadratic voting:</b> cost = votes². 9 votes costs 81 tokens</li><li style='margin-bottom:4px;'>QV: reduces whale dominance — fairer representation</li><li style='margin-bottom:4px;'><b>Conviction voting:</b> tokens time-locked build 'conviction'</li><li style='margin-bottom:4px;'><b>Multisig council:</b> elected representatives — faster execution</li></ul></div>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "content"
-            },
-            {
-              "id": "ec-s3-cbg1",
-              "type": "shape",
-              "left": 344,
-              "top": 116,
-              "width": 310,
-              "height": 430,
-              "rotate": 0,
-              "shapeType": "roundedRect",
-              "fill": {
-                "color": "#2a0a0a",
-                "type": "solid"
-              },
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              },
+              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "viewBox": [
+                4,
+                446
+              ],
+              "fill": "#8b5cf6",
+              "fixedRatio": false,
               "opacity": 1.0,
-              "radius": 10
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
             },
             {
-              "id": "ec-s3-cbar1",
+              "id": "ce-s3-card0txt",
+              "type": "text",
+              "left": 16,
+              "top": 126,
+              "width": 288,
+              "height": 426,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>DAO Mechanics</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Token-weighted voting: 1 token = 1 vote \u2014 plutocracy risk, whale dominance</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Delegation: transfer voting power without transferring tokens \u2014 increases participation</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Quorum requirement: minimum % of tokens must vote for proposal to pass \u2014 prevents low-participation hijacks</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Timelock: 2-7 day delay after proposal passes before execution \u2014 community can exit if unhappy</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ce-s3-card1bg",
               "type": "shape",
-              "left": 344,
+              "left": 320,
+              "top": 116,
+              "width": 308,
+              "height": 446,
+              "rotate": 0,
+              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                308,
+                446
+              ],
+              "fill": "#0a1929",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
+            },
+            {
+              "id": "ce-s3-card1bar",
+              "type": "shape",
+              "left": 320,
               "top": 116,
               "width": 4,
-              "height": 430,
+              "height": 446,
               "rotate": 0,
-              "shapeType": "rect",
-              "fill": {
-                "color": "#ef4444",
-                "type": "solid"
-              },
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              },
-              "opacity": 1.0
-            },
-            {
-              "id": "ec-s3-ct1",
-              "type": "text",
-              "left": 356,
-              "top": 126,
-              "width": 292,
-              "height": 414,
-              "rotate": 0,
-              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#ef4444;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Governance Attack — Beanstalk ($182M)</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>April 2022: attacker flash-loaned $1B in governance tokens</li><li style='margin-bottom:4px;'>Achieved majority in a single block → passed malicious proposal</li><li style='margin-bottom:4px;'>Drained $182M in protocol funds in one transaction</li><li style='margin-bottom:4px;'>Fix: time-locks on governance — 24-48h delay before execution</li><li style='margin-bottom:4px;'>Compound, Uniswap, Aave all have 48h+ time-lock now</li></ul></div>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "content"
-            },
-            {
-              "id": "ec-s3-cbg2",
-              "type": "shape",
-              "left": 668,
-              "top": 116,
-              "width": 310,
-              "height": 430,
-              "rotate": 0,
-              "shapeType": "roundedRect",
-              "fill": {
-                "color": "#0a1929",
-                "type": "solid"
-              },
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              },
+              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "viewBox": [
+                4,
+                446
+              ],
+              "fill": "#3b82f6",
+              "fixedRatio": false,
               "opacity": 1.0,
-              "radius": 10
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
             },
             {
-              "id": "ec-s3-cbar2",
+              "id": "ce-s3-card1txt",
+              "type": "text",
+              "left": 332,
+              "top": 126,
+              "width": 288,
+              "height": 426,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Governance Attacks</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>51% governance attack: acquire majority of governance tokens \u2192 pass proposal to drain treasury</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Flash loan governance: borrow tokens, vote, repay \u2014 mitigated by Snapshot (off-chain) or requiring tokens before proposal</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Voter apathy: most token holders don't vote \u2014 average participation <5% of supply on major DAOs</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Slow and expensive: on-chain governance is slow (1-2 week cycles) \u2014 unsuitable for emergency responses</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ce-s3-card2bg",
               "type": "shape",
-              "left": 668,
+              "left": 636,
+              "top": 116,
+              "width": 308,
+              "height": 446,
+              "rotate": 0,
+              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                308,
+                446
+              ],
+              "fill": "#042f2e",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
+            },
+            {
+              "id": "ce-s3-card2bar",
+              "type": "shape",
+              "left": 636,
               "top": 116,
               "width": 4,
-              "height": 430,
+              "height": 446,
               "rotate": 0,
-              "shapeType": "rect",
-              "fill": {
-                "color": "#3b82f6",
-                "type": "solid"
-              },
+              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "viewBox": [
+                4,
+                446
+              ],
+              "fill": "#06b6d4",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0
+              }
             },
             {
-              "id": "ec-s3-ct2",
+              "id": "ce-s3-card2txt",
               "type": "text",
-              "left": 680,
+              "left": 648,
               "top": 126,
-              "width": 292,
-              "height": 414,
+              "width": 288,
+              "height": 426,
               "rotate": 0,
-              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#3b82f6;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Participation Reality</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>Average DAO voter turnout: 5-15% of token supply</li><li style='margin-bottom:4px;'>Snapshot: off-chain voting (free) — most used for signaling</li><li style='margin-bottom:4px;'>On-chain: Tally, Governor Bravo — binding, costs gas</li><li style='margin-bottom:4px;'>Voter apathy: most token holders never vote at all</li><li style='margin-bottom:4px;'>Delegation: assign your votes to an active delegate</li></ul></div>",
+              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Governance Models</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Optimistic governance: proposals execute unless vetoed in X days (inverse of normal voting)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Conviction voting (Gardens): voting power accumulates over time \u2014 rewards long-term holders</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>veTokenomics (Curve): vote-escrow locks tokens for up to 4 years \u2014 longer lock = more governance power</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Multisig + governance: small multisig for emergency actions, governance for major parameter changes</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "content"
+              "defaultColor": "#f1f5f9"
             }
           ]
         }
-      }
+      },
+      "order": 3
     },
     {
-      "id": "ec-s4",
+      "id": "ce-s4",
       "type": "slide",
-      "title": "Real-World Asset (RWA) Tokenization",
+      "title": "Real-World Asset Tokenization",
       "content": {
         "type": "slide",
         "canvas": {
-          "id": "c-ec-s4",
+          "id": "ce-s4-canvas",
           "viewportSize": 1000,
           "viewportRatio": 0.5625,
           "background": {
@@ -1013,323 +1026,329 @@
           },
           "theme": {
             "backgroundColor": "#0f172a",
-            "themeColors": [
-              "#3b82f6",
-              "#8b5cf6",
-              "#06b6d4"
-            ],
+            "themeColor": "#3b82f6",
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
           "elements": [
             {
-              "id": "ec-s4-accent",
+              "id": "ce-s4-accent",
               "type": "shape",
               "left": 0,
               "top": 0,
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "shapeType": "rect",
-              "fill": {
-                "color": "#f59e0b",
-                "type": "solid"
-              },
+              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "viewBox": [
+                1000,
+                6
+              ],
+              "fill": "#3b82f6",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0
+              }
             },
             {
-              "id": "ec-s4-titlebg",
+              "id": "ce-s4-titlebg",
               "type": "shape",
               "left": 0,
               "top": 6,
               "width": 1000,
               "height": 100,
               "rotate": 0,
-              "shapeType": "rect",
-              "fill": {
-                "color": "#13203a",
-                "type": "solid"
-              },
+              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "viewBox": [
+                1000,
+                100
+              ],
+              "fill": "#13203a",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0
+              }
             },
             {
-              "id": "ec-s4-title",
+              "id": "ce-s4-title",
               "type": "text",
               "left": 20,
               "top": 14,
               "width": 680,
               "height": 56,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Real-World Asset (RWA) Tokenization</p>",
+              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Real-World Asset Tokenization</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9",
               "textType": "title"
             },
             {
-              "id": "ec-s4-sub",
+              "id": "ce-s4-sub",
               "type": "text",
               "left": 20,
               "top": 68,
               "width": 680,
               "height": 34,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Bringing the $500T traditional asset market on-chain</p>",
+              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Bringing TradFi assets on-chain</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "subtitle"
+              "defaultColor": "#f1f5f9"
             },
             {
-              "id": "ec-s4-pillbg0",
+              "id": "ce-s4-pillbg0",
               "type": "shape",
               "left": 720,
               "top": 14,
               "width": 120,
               "height": 74,
               "rotate": 0,
-              "shapeType": "roundedRect",
-              "fill": {
-                "color": "#1e293b",
-                "type": "solid"
-              },
+              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                120,
+                74
+              ],
+              "fill": "#1e293b",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0,
-              "radius": 10
+              }
             },
             {
-              "id": "ec-s4-pill0",
+              "id": "ce-s4-pill0",
               "type": "text",
               "left": 724,
               "top": 14,
               "width": 112,
               "height": 74,
               "rotate": 0,
-              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#f59e0b;'>$16T</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>2030 target</span></p>",
+              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>$10B+<br/><span style=\"font-size:10px;color:#64748b;\">RWA TVL</span></p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "content"
+              "defaultColor": "#f1f5f9"
             },
             {
-              "id": "ec-s4-pillbg1",
+              "id": "ce-s4-pillbg1",
               "type": "shape",
-              "left": 848,
+              "left": 858,
               "top": 14,
               "width": 120,
               "height": 74,
               "rotate": 0,
-              "shapeType": "roundedRect",
-              "fill": {
-                "color": "#1e293b",
-                "type": "solid"
-              },
+              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                120,
+                74
+              ],
+              "fill": "#1e293b",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0,
-              "radius": 10
+              }
             },
             {
-              "id": "ec-s4-pill1",
+              "id": "ce-s4-pill1",
               "type": "text",
-              "left": 852,
+              "left": 862,
               "top": 14,
               "width": 112,
               "height": 74,
               "rotate": 0,
-              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#3b82f6;'>$500M</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>BUIDL fund</span></p>",
+              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>5%+<br/><span style=\"font-size:10px;color:#64748b;\">T-bill yield</span></p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "content"
+              "defaultColor": "#f1f5f9"
             },
             {
-              "id": "ec-s4-cbg0",
+              "id": "ce-s4-card0bg",
               "type": "shape",
-              "left": 20,
+              "left": 4,
               "top": 116,
-              "width": 310,
-              "height": 430,
+              "width": 308,
+              "height": 446,
               "rotate": 0,
-              "shapeType": "roundedRect",
-              "fill": {
-                "color": "#2a1a00",
-                "type": "solid"
-              },
+              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                308,
+                446
+              ],
+              "fill": "#1a1040",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0,
-              "radius": 10
+              }
             },
             {
-              "id": "ec-s4-cbar0",
+              "id": "ce-s4-card0bar",
               "type": "shape",
-              "left": 20,
+              "left": 4,
               "top": 116,
               "width": 4,
-              "height": 430,
+              "height": 446,
               "rotate": 0,
-              "shapeType": "rect",
-              "fill": {
-                "color": "#f59e0b",
-                "type": "solid"
-              },
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              },
-              "opacity": 1.0
-            },
-            {
-              "id": "ec-s4-ct0",
-              "type": "text",
-              "left": 32,
-              "top": 126,
-              "width": 292,
-              "height": 414,
-              "rotate": 0,
-              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#f59e0b;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Market Opportunity</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>Tokenized RWA market: $7B (2024) → projected $16T by 2030</li><li style='margin-bottom:4px;'>BlackRock BUIDL fund: $500M+ tokenized money market on Ethereum</li><li style='margin-bottom:4px;'>Franklin Templeton: $400M+ tokenized US treasury on Stellar/Polygon</li><li style='margin-bottom:4px;'>JP Morgan Onyx: $1T+ in tokenized repo transactions processed</li><li style='margin-bottom:4px;'>Global real estate: $326T. Global bonds: $133T — huge opportunity</li></ul></div>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "content"
-            },
-            {
-              "id": "ec-s4-cbg1",
-              "type": "shape",
-              "left": 344,
-              "top": 116,
-              "width": 310,
-              "height": 430,
-              "rotate": 0,
-              "shapeType": "roundedRect",
-              "fill": {
-                "color": "#042f2e",
-                "type": "solid"
-              },
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              },
+              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "viewBox": [
+                4,
+                446
+              ],
+              "fill": "#8b5cf6",
+              "fixedRatio": false,
               "opacity": 1.0,
-              "radius": 10
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
             },
             {
-              "id": "ec-s4-cbar1",
+              "id": "ce-s4-card0txt",
+              "type": "text",
+              "left": 16,
+              "top": 126,
+              "width": 288,
+              "height": 426,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Tokenized Securities</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>US Treasury bills: Ondo Finance OUSG, Superstate \u2014 on-chain yield from off-chain T-bills</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Process: fund buys T-bills, issues on-chain tokens, holders receive yield via rebasing or accrual</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Advantage: composable DeFi yield \u2014 use T-bill tokens as collateral in Aave, earn yield while borrowing</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Regulatory: securities law applies \u2014 KYC/AML required, only accredited investors in many jurisdictions</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ce-s4-card1bg",
               "type": "shape",
-              "left": 344,
+              "left": 320,
+              "top": 116,
+              "width": 308,
+              "height": 446,
+              "rotate": 0,
+              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                308,
+                446
+              ],
+              "fill": "#0a1929",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
+            },
+            {
+              "id": "ce-s4-card1bar",
+              "type": "shape",
+              "left": 320,
               "top": 116,
               "width": 4,
-              "height": 430,
+              "height": 446,
               "rotate": 0,
-              "shapeType": "rect",
-              "fill": {
-                "color": "#06b6d4",
-                "type": "solid"
-              },
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              },
-              "opacity": 1.0
-            },
-            {
-              "id": "ec-s4-ct1",
-              "type": "text",
-              "left": 356,
-              "top": 126,
-              "width": 292,
-              "height": 414,
-              "rotate": 0,
-              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#06b6d4;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>XRPL & ISO 20022</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>ISO 20022: global financial messaging standard for banks/CBDCs</li><li style='margin-bottom:4px;'>XRPL: ISO 20022 compliant — designed for institutional use</li><li style='margin-bottom:4px;'>Ripple customers: Santander, SBI, PNC, Standard Chartered</li><li style='margin-bottom:4px;'>CBDC pilots: Palau, Montenegro, Bhutan using XRPL</li><li style='margin-bottom:4px;'>RippleNet: 350+ financial institution members (2024)</li></ul></div>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "content"
-            },
-            {
-              "id": "ec-s4-cbg2",
-              "type": "shape",
-              "left": 668,
-              "top": 116,
-              "width": 310,
-              "height": 430,
-              "rotate": 0,
-              "shapeType": "roundedRect",
-              "fill": {
-                "color": "#042a1e",
-                "type": "solid"
-              },
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              },
+              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "viewBox": [
+                4,
+                446
+              ],
+              "fill": "#3b82f6",
+              "fixedRatio": false,
               "opacity": 1.0,
-              "radius": 10
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
             },
             {
-              "id": "ec-s4-cbar2",
+              "id": "ce-s4-card1txt",
+              "type": "text",
+              "left": 332,
+              "top": 126,
+              "width": 288,
+              "height": 426,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Real Estate & Commodities</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Tokenized real estate: fractional ownership of properties \u2014 lower minimum investment, 24/7 liquidity</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Gold (Paxos PAX Gold, Tether XAUT): each token = 1 troy ounce of allocated gold in vault</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Carbon credits: on-chain carbon market \u2014 KlimaDAO, Toucan Protocol tokenize verified offsets</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Royalty streams: music royalties, IP rights tokenized \u2014 Song Campaign, Royal \u2014 micro-invest in artist revenue</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ce-s4-card2bg",
               "type": "shape",
-              "left": 668,
+              "left": 636,
+              "top": 116,
+              "width": 308,
+              "height": 446,
+              "rotate": 0,
+              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                308,
+                446
+              ],
+              "fill": "#042f2e",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
+            },
+            {
+              "id": "ce-s4-card2bar",
+              "type": "shape",
+              "left": 636,
               "top": 116,
               "width": 4,
-              "height": 430,
+              "height": 446,
               "rotate": 0,
-              "shapeType": "rect",
-              "fill": {
-                "color": "#10b981",
-                "type": "solid"
-              },
+              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "viewBox": [
+                4,
+                446
+              ],
+              "fill": "#06b6d4",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0
+              }
             },
             {
-              "id": "ec-s4-ct2",
+              "id": "ce-s4-card2txt",
               "type": "text",
-              "left": 680,
+              "left": 648,
               "top": 126,
-              "width": 292,
-              "height": 414,
+              "width": 288,
+              "height": 426,
               "rotate": 0,
-              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#10b981;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Tokenization Benefits</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'><b>Fractional ownership:</b> $1M building → 1M tokens at $1 each</li><li style='margin-bottom:4px;'><b>24/7 liquidity:</b> trade assets that normally settle T+2 days</li><li style='margin-bottom:4px;'><b>Programmable:</b> automatic dividend distribution via smart contract</li><li style='margin-bottom:4px;'><b>Global access:</b> anyone can hold fractional real estate</li><li style='margin-bottom:4px;'><b>Transparency:</b> on-chain ownership, no intermediary</li></ul></div>",
+              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Infrastructure Challenges</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Legal enforceability: token \u2260 legal ownership in most jurisdictions \u2014 requires special purpose vehicle (SPV)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Oracle dependency: RWA prices come from off-chain sources \u2014 oracle manipulation risk remains</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Redemption risk: if custodian goes bankrupt, token may not redeem for underlying asset</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Liquidity: RWA tokens are illiquid \u2014 secondary market thin, bid-ask spreads wide</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "content"
+              "defaultColor": "#f1f5f9"
             }
           ]
         }
-      }
+      },
+      "order": 4
     },
     {
-      "id": "ec-s5",
+      "id": "ce-s5",
       "type": "slide",
       "title": "Institutional Crypto Adoption",
       "content": {
         "type": "slide",
         "canvas": {
-          "id": "c-ec-s5",
+          "id": "ce-s5-canvas",
           "viewportSize": 1000,
           "viewportRatio": 0.5625,
           "background": {
@@ -1338,57 +1357,57 @@
           },
           "theme": {
             "backgroundColor": "#0f172a",
-            "themeColors": [
-              "#3b82f6",
-              "#8b5cf6",
-              "#06b6d4"
-            ],
+            "themeColor": "#3b82f6",
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
           "elements": [
             {
-              "id": "ec-s5-accent",
+              "id": "ce-s5-accent",
               "type": "shape",
               "left": 0,
               "top": 0,
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "shapeType": "rect",
-              "fill": {
-                "color": "#3b82f6",
-                "type": "solid"
-              },
+              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "viewBox": [
+                1000,
+                6
+              ],
+              "fill": "#3b82f6",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0
+              }
             },
             {
-              "id": "ec-s5-titlebg",
+              "id": "ce-s5-titlebg",
               "type": "shape",
               "left": 0,
               "top": 6,
               "width": 1000,
               "height": 100,
               "rotate": 0,
-              "shapeType": "rect",
-              "fill": {
-                "color": "#13203a",
-                "type": "solid"
-              },
+              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "viewBox": [
+                1000,
+                100
+              ],
+              "fill": "#13203a",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0
+              }
             },
             {
-              "id": "ec-s5-title",
+              "id": "ce-s5-title",
               "type": "text",
               "left": 20,
               "top": 14,
@@ -1401,432 +1420,928 @@
               "textType": "title"
             },
             {
-              "id": "ec-s5-sub",
+              "id": "ce-s5-sub",
               "type": "text",
               "left": 20,
               "top": 68,
               "width": 680,
               "height": 34,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>The wall of money coming — and why it matters for you</p>",
+              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>ETFs, custody, and enterprise blockchain</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "subtitle"
+              "defaultColor": "#f1f5f9"
             },
             {
-              "id": "ec-s5-pillbg0",
+              "id": "ce-s5-pillbg0",
               "type": "shape",
               "left": 720,
               "top": 14,
               "width": 120,
               "height": 74,
               "rotate": 0,
-              "shapeType": "roundedRect",
-              "fill": {
-                "color": "#1e293b",
-                "type": "solid"
-              },
+              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                120,
+                74
+              ],
+              "fill": "#1e293b",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0,
-              "radius": 10
+              }
             },
             {
-              "id": "ec-s5-pill0",
+              "id": "ce-s5-pill0",
               "type": "text",
               "left": 724,
               "top": 14,
               "width": 112,
               "height": 74,
               "rotate": 0,
-              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#3b82f6;'>$60B+</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>BTC ETF AUM</span></p>",
+              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>$50B+<br/><span style=\"font-size:10px;color:#64748b;\">BTC ETF AUM</span></p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "content"
+              "defaultColor": "#f1f5f9"
             },
             {
-              "id": "ec-s5-pillbg1",
+              "id": "ce-s5-pillbg1",
               "type": "shape",
-              "left": 848,
+              "left": 858,
               "top": 14,
               "width": 120,
               "height": 74,
               "rotate": 0,
-              "shapeType": "roundedRect",
-              "fill": {
-                "color": "#1e293b",
-                "type": "solid"
-              },
+              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                120,
+                74
+              ],
+              "fill": "#1e293b",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0,
-              "radius": 10
+              }
             },
             {
-              "id": "ec-s5-pill1",
+              "id": "ce-s5-pill1",
               "type": "text",
-              "left": 852,
+              "left": 862,
               "top": 14,
               "width": 112,
               "height": 74,
               "rotate": 0,
-              "content": "<p style='text-align:center;'><span style='font-size:22px;font-weight:800;color:#10b981;'>420M+</span><br><span style='font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;'>Crypto users</span></p>",
+              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>Jan 2024<br/><span style=\"font-size:10px;color:#64748b;\">Launch</span></p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "content"
+              "defaultColor": "#f1f5f9"
             },
             {
-              "id": "ec-s5-cbg0",
+              "id": "ce-s5-card0bg",
               "type": "shape",
-              "left": 20,
+              "left": 4,
               "top": 116,
-              "width": 310,
-              "height": 430,
+              "width": 308,
+              "height": 446,
               "rotate": 0,
-              "shapeType": "roundedRect",
-              "fill": {
-                "color": "#0a1929",
-                "type": "solid"
-              },
+              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                308,
+                446
+              ],
+              "fill": "#1a1040",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0,
-              "radius": 10
+              }
             },
             {
-              "id": "ec-s5-cbar0",
+              "id": "ce-s5-card0bar",
               "type": "shape",
-              "left": 20,
+              "left": 4,
               "top": 116,
               "width": 4,
-              "height": 430,
+              "height": 446,
               "rotate": 0,
-              "shapeType": "rect",
-              "fill": {
-                "color": "#3b82f6",
-                "type": "solid"
-              },
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              },
-              "opacity": 1.0
-            },
-            {
-              "id": "ec-s5-ct0",
-              "type": "text",
-              "left": 32,
-              "top": 126,
-              "width": 292,
-              "height": 414,
-              "rotate": 0,
-              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#3b82f6;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Bitcoin ETFs</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>US Spot Bitcoin ETF approved January 2024 (SEC)</li><li style='margin-bottom:4px;'>BlackRock IBIT: $20B AUM in first 50 days — fastest ETF in history</li><li style='margin-bottom:4px;'>Total spot BTC ETF AUM: $60B+ (April 2026)</li><li style='margin-bottom:4px;'>Fidelity FBTC, Ark 21Shares, VanEck all in market</li><li style='margin-bottom:4px;'>Daily BTC ETF inflows: $500M-$1B on strong days</li></ul></div>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "content"
-            },
-            {
-              "id": "ec-s5-cbg1",
-              "type": "shape",
-              "left": 344,
-              "top": 116,
-              "width": 310,
-              "height": 430,
-              "rotate": 0,
-              "shapeType": "roundedRect",
-              "fill": {
-                "color": "#042a1e",
-                "type": "solid"
-              },
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              },
+              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "viewBox": [
+                4,
+                446
+              ],
+              "fill": "#8b5cf6",
+              "fixedRatio": false,
               "opacity": 1.0,
-              "radius": 10
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
             },
             {
-              "id": "ec-s5-cbar1",
+              "id": "ce-s5-card0txt",
+              "type": "text",
+              "left": 16,
+              "top": 126,
+              "width": 288,
+              "height": 426,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Bitcoin ETFs</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>SEC approved spot Bitcoin ETFs in January 2024 \u2014 BlackRock IBIT, Fidelity FBTC, etc.</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>First-year AUM: ~$50B \u2014 fastest ETF launch in history by assets under management</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Premium/discount: ETF trades close to NAV; AP (authorized participant) arbitrages any deviation</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Tax implications: ETF gains taxed as securities; holding spot BTC has different tax treatment</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ce-s5-card1bg",
               "type": "shape",
-              "left": 344,
+              "left": 320,
+              "top": 116,
+              "width": 308,
+              "height": 446,
+              "rotate": 0,
+              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                308,
+                446
+              ],
+              "fill": "#0a1929",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
+            },
+            {
+              "id": "ce-s5-card1bar",
+              "type": "shape",
+              "left": 320,
               "top": 116,
               "width": 4,
-              "height": 430,
+              "height": 446,
               "rotate": 0,
-              "shapeType": "rect",
-              "fill": {
-                "color": "#10b981",
-                "type": "solid"
-              },
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              },
-              "opacity": 1.0
-            },
-            {
-              "id": "ec-s5-ct1",
-              "type": "text",
-              "left": 356,
-              "top": 126,
-              "width": 292,
-              "height": 414,
-              "rotate": 0,
-              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#10b981;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Crypto Adoption Metrics</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>420M+ global crypto users (Crypto.com estimate, 2024)</li><li style='margin-bottom:4px;'>Crypto adoption follows S-curve: currently in early majority phase</li><li style='margin-bottom:4px;'>Lightning Network: 5,000+ BTC capacity, $200M+ in channels</li><li style='margin-bottom:4px;'>Ethereum staking: $100B+ staked — long-term commitment signal</li><li style='margin-bottom:4px;'>Stablecoin payments: $10T+ annual volume (2024)</li></ul></div>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "content"
-            },
-            {
-              "id": "ec-s5-cbg2",
-              "type": "shape",
-              "left": 668,
-              "top": 116,
-              "width": 310,
-              "height": 430,
-              "rotate": 0,
-              "shapeType": "roundedRect",
-              "fill": {
-                "color": "#2a1a00",
-                "type": "solid"
-              },
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              },
+              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "viewBox": [
+                4,
+                446
+              ],
+              "fill": "#3b82f6",
+              "fixedRatio": false,
               "opacity": 1.0,
-              "radius": 10
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
             },
             {
-              "id": "ec-s5-cbar2",
+              "id": "ce-s5-card1txt",
+              "type": "text",
+              "left": 332,
+              "top": 126,
+              "width": 288,
+              "height": 426,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Institutional Custody</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Qualified custodian: legally defined role \u2014 must segregate assets, independent audits</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Fireblocks, Copper, Anchorage: institutional-grade MPC custody \u2014 no single private key</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Insurance: Lloyd's of London, Marsh offer crypto custody insurance \u2014 typically 1-3% of AUM annually</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Staking custody: Coinbase Prime, Kiln \u2014 institutions earn staking rewards without managing validators</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ce-s5-card2bg",
               "type": "shape",
-              "left": 668,
+              "left": 636,
+              "top": 116,
+              "width": 308,
+              "height": 446,
+              "rotate": 0,
+              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                308,
+                446
+              ],
+              "fill": "#042f2e",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
+            },
+            {
+              "id": "ce-s5-card2bar",
+              "type": "shape",
+              "left": 636,
               "top": 116,
               "width": 4,
-              "height": 430,
+              "height": 446,
               "rotate": 0,
-              "shapeType": "rect",
-              "fill": {
-                "color": "#f59e0b",
-                "type": "solid"
-              },
+              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "viewBox": [
+                4,
+                446
+              ],
+              "fill": "#06b6d4",
+              "fixedRatio": false,
+              "opacity": 1.0,
               "outline": {
                 "color": "transparent",
                 "width": 0,
                 "style": "none"
-              },
-              "opacity": 1.0
+              }
             },
             {
-              "id": "ec-s5-ct2",
+              "id": "ce-s5-card2txt",
               "type": "text",
-              "left": 680,
+              "left": 648,
               "top": 126,
-              "width": 292,
-              "height": 414,
+              "width": 288,
+              "height": 426,
               "rotate": 0,
-              "content": "<div style='padding:2px 0;'><p style='font-size:10px;font-weight:800;color:#f59e0b;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;'>Corporate Treasury Holdings</p><ul style='font-size:13px;color:#e2e8f0;line-height:1.75;padding-left:14px;margin:0;'><li style='margin-bottom:4px;'>MicroStrategy: 226,331 BTC ($15B+) — largest corporate holder</li><li style='margin-bottom:4px;'>Tesla: 9,720 BTC retained after partial sale</li><li style='margin-bottom:4px;'>Marathon Digital, Riot: publicly traded Bitcoin miners</li><li style='margin-bottom:4px;'>El Salvador: Bitcoin legal tender since 2021 — national reserve</li><li style='margin-bottom:4px;'>Nation-state adoption accelerating — US Strategic BTC Reserve 2025</li></ul></div>",
+              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Enterprise Blockchain</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Hyperledger Fabric: permissioned blockchain used by IBM, Maersk (TradeLens), HSBC for trade finance</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>JPM Coin: intra-JP Morgan settlement using permissioned Ethereum fork \u2014 real usage, closed ecosystem</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Central Bank Digital Currencies (CBDCs): 130+ countries exploring \u2014 wholesale vs retail CBDC designs</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Enterprise Ethereum Alliance: 400+ members standardizing Ethereum for enterprise \u2014 EEA token standard</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "content"
+              "defaultColor": "#f1f5f9"
             }
           ]
         }
-      }
-    },
-    {
-      "id": "scene-ec-06",
-      "stageId": "oc-ecosystem",
-      "type": "interactive",
-      "title": "Interactive: L2 Cost Comparison",
-      "order": 5,
-      "content": {
-        "type": "interactive",
-        "html": "<!DOCTYPE html><html><head><style>body{background:#0f172a;color:#e2e8f0;font-family:Inter,sans-serif;padding:20px;margin:0;} h2{color:#8b5cf6;} .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:16px 0;} .card{background:#1e293b;border:1px solid #334155;border-radius:8px;padding:14px;} .card-name{font-size:13px;font-weight:700;color:#8b5cf6;margin-bottom:8px;} .metric{display:flex;justify-content:space-between;font-size:12px;margin:4px 0;} .metric-label{color:#64748b;} .metric-val{font-weight:700;} .bar-section{margin:16px 0;} .bar-row{display:flex;align-items:center;gap:10px;margin:6px 0;} .bar-name{width:120px;font-size:12px;color:#94a3b8;text-align:right;} .bar-bg{flex:1;background:#1e293b;border-radius:4px;height:24px;overflow:hidden;} .bar-fill{height:100%;border-radius:4px;display:flex;align-items:center;padding-left:8px;font-size:11px;font-weight:700;color:#fff;transition:width 0.3s;} .note{font-size:12px;color:#475569;margin-top:16px;} </style></head><body><h2>Layer 2 vs L1 Cost & Speed Comparison</h2><div class='grid'><div class='card'><div class='card-name'>Ethereum L1</div><div class='metric'><span class='metric-label'>Avg. tx fee</span><span class='metric-val' style='color:#ef4444;'>$2-15</span></div><div class='metric'><span class='metric-label'>TPS</span><span class='metric-val'>~15</span></div><div class='metric'><span class='metric-label'>Finality</span><span class='metric-val'>~12 min</span></div><div class='metric'><span class='metric-label'>Security</span><span class='metric-val' style='color:#10b981;'>Native</span></div></div><div class='card'><div class='card-name'>Arbitrum One</div><div class='metric'><span class='metric-label'>Avg. tx fee</span><span class='metric-val' style='color:#10b981;'>$0.01-0.10</span></div><div class='metric'><span class='metric-label'>TPS</span><span class='metric-val'>~4,000</span></div><div class='metric'><span class='metric-label'>Finality</span><span class='metric-val'>7 days</span></div><div class='metric'><span class='metric-label'>Security</span><span class='metric-val' style='color:#10b981;'>L1 inherited</span></div></div><div class='card'><div class='card-name'>zkSync Era</div><div class='metric'><span class='metric-label'>Avg. tx fee</span><span class='metric-val' style='color:#10b981;'>$0.001-0.05</span></div><div class='metric'><span class='metric-label'>TPS</span><span class='metric-val'>~2,000</span></div><div class='metric'><span class='metric-label'>Finality</span><span class='metric-val'>~30 min</span></div><div class='metric'><span class='metric-label'>Security</span><span class='metric-val' style='color:#10b981;'>ZK proof</span></div></div><div class='card'><div class='card-name'>XRPL</div><div class='metric'><span class='metric-label'>Avg. tx fee</span><span class='metric-val' style='color:#10b981;'>$0.0002</span></div><div class='metric'><span class='metric-label'>TPS</span><span class='metric-val'>~1,500</span></div><div class='metric'><span class='metric-label'>Finality</span><span class='metric-val'>3-5 sec</span></div><div class='metric'><span class='metric-label'>Security</span><span class='metric-val' style='color:#f59e0b;'>RPCA/BFT</span></div></div><div class='card'><div class='card-name'>Solana</div><div class='metric'><span class='metric-label'>Avg. tx fee</span><span class='metric-val' style='color:#10b981;'>~$0.00025</span></div><div class='metric'><span class='metric-label'>TPS</span><span class='metric-val'>~3,000</span></div><div class='metric'><span class='metric-label'>Finality</span><span class='metric-val'>~400ms</span></div><div class='metric'><span class='metric-label'>Security</span><span class='metric-val' style='color:#f59e0b;'>PoH+PoS</span></div></div></div><div class='bar-section'><p style='color:#8b5cf6;font-weight:700;margin-bottom:8px;'>Relative transaction cost (Ethereum L1 = 100%)</p><div class='bar-row'><div class='bar-name'>Ethereum L1</div><div class='bar-bg'><div class='bar-fill' style='width:100%;background:#ef4444;'>100% — $5 avg</div></div></div><div class='bar-row'><div class='bar-name'>Arbitrum</div><div class='bar-bg'><div class='bar-fill' style='width:2%;background:#f59e0b;'>&nbsp;2%</div></div></div><div class='bar-row'><div class='bar-name'>zkSync</div><div class='bar-bg'><div class='bar-fill' style='width:1%;background:#10b981;'>&nbsp;1%</div></div></div><div class='bar-row'><div class='bar-name'>XRPL</div><div class='bar-bg'><div class='bar-fill' style='width:0.5%;background:#06b6d4;'>&nbsp;&lt;0.01%</div></div></div></div><p class='note'>* Finality for Optimistic Rollups (Arbitrum, Optimism) is 7 days for full L1 finality due to fraud proof window. For most applications, soft finality (trusted sequencer) is effectively instant.</p></body></html>"
       },
-      "actions": [
-        {
-          "id": "act-ec-06-01",
-          "type": "speech",
-          "text": "The cost differential is staggering. XRPL processes transactions for 0.0002 dollars — less than a tenth of a cent. Ethereum L1 costs 2 to 15 dollars for the same operation. This 10,000-to-1 cost advantage is why XRPL is the natural settlement layer for high-frequency financial applications like copy trading."
-        }
-      ]
+      "order": 5
     },
     {
-      "id": "scene-ec-07",
-      "stageId": "oc-ecosystem",
-      "type": "quiz",
-      "title": "Knowledge Check — Ecosystem",
-      "order": 6,
+      "id": "ce-s6",
+      "type": "slide",
+      "title": "Regulatory Landscape",
       "content": {
-        "type": "quiz",
-        "questions": [
-          {
-            "id": "q-ec-01",
-            "type": "single",
-            "question": "The 'token velocity problem' in tokenomics refers to what phenomenon?",
-            "options": [
-              {
-                "label": "Tokens that move too slowly through the blockchain network",
-                "value": "A"
-              },
-              {
-                "label": "High token circulation rate that prevents value accumulation — users immediately sell tokens after earning them",
-                "value": "B"
-              },
-              {
-                "label": "Tokens that have too high a transaction fee to be usable",
-                "value": "C"
-              },
-              {
-                "label": "The speed at which governance proposals pass",
-                "value": "D"
-              }
-            ],
-            "answer": [
-              "B"
-            ],
-            "analysis": "High velocity (rapid circulation) means the token never accumulates purchasing power. If users immediately sell earned tokens, price cannot rise regardless of demand. Solutions include staking mechanisms, fee discounts for holders, and governance rights — all designed to create holding incentives.",
-            "points": 2
+        "type": "slide",
+        "canvas": {
+          "id": "ce-s6-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
           },
-          {
-            "id": "q-ec-02",
-            "type": "single",
-            "question": "EIP-4844 (Proto-Danksharding) reduced L2 transaction fees primarily by:",
-            "options": [
-              {
-                "label": "Increasing the Ethereum block gas limit by 10×",
-                "value": "A"
-              },
-              {
-                "label": "Introducing cheap blob transactions for rollup data that are pruned after ~18 days",
-                "value": "B"
-              },
-              {
-                "label": "Eliminating the need for L2 fraud proofs",
-                "value": "C"
-              },
-              {
-                "label": "Moving all L2 data to IPFS decentralized storage",
-                "value": "D"
-              }
-            ],
-            "answer": [
-              "B"
-            ],
-            "analysis": "EIP-4844 introduced 'blob' transactions — a new transaction type that carries rollup data more cheaply because the data is pruned after ~18 days (not permanently stored). Rollups only need the data to be available for the fraud proof window, not forever. This reduced L2 fees by ~90% after implementation in March 2024.",
-            "points": 2
+          "theme": {
+            "backgroundColor": "#0f172a",
+            "themeColor": "#3b82f6",
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
           },
-          {
-            "id": "q-ec-03",
-            "type": "single",
-            "question": "The Beanstalk Farms $182M governance attack exploited what specific vulnerability?",
-            "options": [
-              {
-                "label": "A bug in the smart contract's arithmetic",
-                "value": "A"
-              },
-              {
-                "label": "Flash loan used to acquire 67% voting power, pass malicious proposal, drain funds — all in one transaction with no timelock",
-                "value": "B"
-              },
-              {
-                "label": "Private key compromise of the multi-sig signers",
-                "value": "C"
-              },
-              {
-                "label": "Oracle price manipulation affecting collateral valuations",
-                "value": "D"
+          "elements": [
+            {
+              "id": "ce-s6-accent",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "viewBox": [
+                1000,
+                6
+              ],
+              "fill": "#3b82f6",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
               }
-            ],
-            "answer": [
-              "B"
-            ],
-            "analysis": "Beanstalk had no timelock on governance execution. An attacker borrowed enough governance tokens via flash loan to control a majority, passed a malicious 'emergency proposal' that transferred all funds, collected them, and repaid the flash loan — all in one transaction. Timelocks exist precisely to prevent this.",
-            "points": 2
-          },
-          {
-            "id": "q-ec-04",
-            "type": "multiple",
-            "question": "Which of the following are real-world use cases of the XRP Ledger in institutional finance? (Select all that apply)",
-            "options": [
-              {
-                "label": "On-Demand Liquidity (ODL) for cross-border payments via Ripple",
-                "value": "A"
-              },
-              {
-                "label": "Tokenized US Treasury bills issued on XRPL",
-                "value": "B"
-              },
-              {
-                "label": "RLUSD stablecoin issued by Ripple on XRPL",
-                "value": "C"
-              },
-              {
-                "label": "Bitcoin mining pool settlement",
-                "value": "D"
+            },
+            {
+              "id": "ce-s6-titlebg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 100,
+              "rotate": 0,
+              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "viewBox": [
+                1000,
+                100
+              ],
+              "fill": "#13203a",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
               }
-            ],
-            "answer": [
-              "A",
-              "B",
-              "C"
-            ],
-            "analysis": "Ripple's ODL uses XRP as a bridge currency for real-time cross-border settlement. XRPL has been used for tokenized assets including RWA pilots. Ripple issued RLUSD stablecoin on XRPL. Bitcoin mining settlement (D) uses the Bitcoin blockchain, not XRPL.",
-            "points": 2
-          },
-          {
-            "id": "q-ec-05",
-            "type": "single",
-            "question": "BlackRock's IBIT Bitcoin ETF reached $20B in AUM in approximately how long — setting a record for the fastest ETF launch in history?",
-            "options": [
-              {
-                "label": "6 months",
-                "value": "A"
-              },
-              {
-                "label": "1 year",
-                "value": "B"
-              },
-              {
-                "label": "50 days",
-                "value": "C"
-              },
-              {
-                "label": "2 weeks",
-                "value": "D"
+            },
+            {
+              "id": "ce-s6-title",
+              "type": "text",
+              "left": 20,
+              "top": 14,
+              "width": 680,
+              "height": 56,
+              "rotate": 0,
+              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Regulatory Landscape</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "title"
+            },
+            {
+              "id": "ce-s6-sub",
+              "type": "text",
+              "left": 20,
+              "top": 68,
+              "width": 680,
+              "height": 34,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>MiCA, SEC enforcement, and global crypto policy</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ce-s6-pillbg0",
+              "type": "shape",
+              "left": 720,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                120,
+                74
+              ],
+              "fill": "#1e293b",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
               }
-            ],
-            "answer": [
-              "C"
-            ],
-            "analysis": "BlackRock's IBIT reached $20B AUM in approximately 50 days after approval in January 2024 — the fastest any ETF in history has reached that milestone. This dramatically exceeded expectations and signaled massive pent-up institutional demand for regulated Bitcoin exposure.",
-            "points": 2
+            },
+            {
+              "id": "ce-s6-pill0",
+              "type": "text",
+              "left": 724,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>EU June 2024<br/><span style=\"font-size:10px;color:#64748b;\">MiCA</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ce-s6-pillbg1",
+              "type": "shape",
+              "left": 858,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                120,
+                74
+              ],
+              "fill": "#1e293b",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
+            },
+            {
+              "id": "ce-s6-pill1",
+              "type": "text",
+              "left": 862,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>Unclear<br/><span style=\"font-size:10px;color:#64748b;\">US status</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ce-s6-card0bg",
+              "type": "shape",
+              "left": 4,
+              "top": 116,
+              "width": 308,
+              "height": 446,
+              "rotate": 0,
+              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                308,
+                446
+              ],
+              "fill": "#1a1040",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
+            },
+            {
+              "id": "ce-s6-card0bar",
+              "type": "shape",
+              "left": 4,
+              "top": 116,
+              "width": 4,
+              "height": 446,
+              "rotate": 0,
+              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "viewBox": [
+                4,
+                446
+              ],
+              "fill": "#8b5cf6",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
+            },
+            {
+              "id": "ce-s6-card0txt",
+              "type": "text",
+              "left": 16,
+              "top": 126,
+              "width": 288,
+              "height": 426,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>EU: MiCA</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Markets in Crypto-Assets (MiCA) regulation \u2014 effective June 2024 in full</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Stablecoin issuers: must hold 1:1 reserves, publish monthly audit reports \u2014 Circle USDC compliant</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>CASPs (Crypto Asset Service Providers): must register in EU member state, passportable across EU</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Prohibits algorithmic stablecoins (Terra-like) \u2014 must be asset-backed or e-money backed</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ce-s6-card1bg",
+              "type": "shape",
+              "left": 320,
+              "top": 116,
+              "width": 308,
+              "height": 446,
+              "rotate": 0,
+              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                308,
+                446
+              ],
+              "fill": "#0a1929",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
+            },
+            {
+              "id": "ce-s6-card1bar",
+              "type": "shape",
+              "left": 320,
+              "top": 116,
+              "width": 4,
+              "height": 446,
+              "rotate": 0,
+              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "viewBox": [
+                4,
+                446
+              ],
+              "fill": "#3b82f6",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
+            },
+            {
+              "id": "ce-s6-card1txt",
+              "type": "text",
+              "left": 332,
+              "top": 126,
+              "width": 288,
+              "height": 426,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>US Regulation</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>SEC vs CFTC turf war: SEC claims most tokens are securities; CFTC claims BTC/ETH are commodities</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Howey test: investment in common enterprise with expectation of profit from others' efforts = security</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>SEC enforcement actions: Ripple (XRP), Binance, Coinbase \u2014 using case law vs formal rulemaking</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>FIT21 bill (2024): attempts to define crypto asset classification \u2014 bipartisan support, uncertain Senate fate</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ce-s6-card2bg",
+              "type": "shape",
+              "left": 636,
+              "top": 116,
+              "width": 308,
+              "height": 446,
+              "rotate": 0,
+              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                308,
+                446
+              ],
+              "fill": "#042f2e",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
+            },
+            {
+              "id": "ce-s6-card2bar",
+              "type": "shape",
+              "left": 636,
+              "top": 116,
+              "width": 4,
+              "height": 446,
+              "rotate": 0,
+              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "viewBox": [
+                4,
+                446
+              ],
+              "fill": "#06b6d4",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
+            },
+            {
+              "id": "ce-s6-card2txt",
+              "type": "text",
+              "left": 648,
+              "top": 126,
+              "width": 288,
+              "height": 426,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Global Approaches</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Singapore (MAS): crypto payment services licensed, no retail crypto ads \u2014 pragmatic approach</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>UAE (VARA): proactive regulation, crypto hub strategy \u2014 Binance, Bybit licensed</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>China: crypto trading banned since 2021 \u2014 mining banned 2021, CBDC (digital yuan) actively deployed</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>El Salvador: Bitcoin legal tender since 2021 \u2014 Chivo wallet, Bitcoin bonds, Volcano mining proposal</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            }
+          ]
+        }
+      },
+      "order": 6
+    },
+    {
+      "id": "ce-s7",
+      "type": "slide",
+      "title": "The Future of Web3",
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ce-s7-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
           },
-          {
-            "id": "q-ec-06",
-            "type": "short_answer",
-            "question": "Explain how Optimistic Rollups and ZK Rollups differ in their security model, finality time, and computational requirements. Under what conditions would you choose one over the other?",
-            "answer": null,
-            "commentPrompt": "Full marks for: (1) Optimistic: assumes valid by default, 7-day fraud proof window for challenges, requires someone to monitor and submit fraud proof, lower computational cost; (2) ZK: generates mathematical validity proof (SNARK/STARK), no challenge period, proof verification only needed on L1, mathematically guaranteed correct, faster finality but expensive proof generation; (3) Choose Optimistic when: EVM compatibility critical, immediate deployment needed; Choose ZK when: security critical applications, need fast L1 finality, willing to pay proof generation costs.",
-            "hasAnswer": false,
-            "points": 4
-          }
-        ]
-      }
+          "theme": {
+            "backgroundColor": "#0f172a",
+            "themeColor": "#3b82f6",
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ce-s7-accent",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "viewBox": [
+                1000,
+                6
+              ],
+              "fill": "#3b82f6",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
+            },
+            {
+              "id": "ce-s7-titlebg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 100,
+              "rotate": 0,
+              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "viewBox": [
+                1000,
+                100
+              ],
+              "fill": "#13203a",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
+            },
+            {
+              "id": "ce-s7-title",
+              "type": "text",
+              "left": 20,
+              "top": 14,
+              "width": 680,
+              "height": 56,
+              "rotate": 0,
+              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>The Future of Web3</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9",
+              "textType": "title"
+            },
+            {
+              "id": "ce-s7-sub",
+              "type": "text",
+              "left": 20,
+              "top": 68,
+              "width": 680,
+              "height": 34,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>AI + blockchain, decentralized identity, and next-gen infrastructure</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ce-s7-pillbg0",
+              "type": "shape",
+              "left": 720,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                120,
+                74
+              ],
+              "fill": "#1e293b",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
+            },
+            {
+              "id": "ce-s7-pill0",
+              "type": "text",
+              "left": 724,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>Emerging<br/><span style=\"font-size:10px;color:#64748b;\">AI + crypto</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ce-s7-pillbg1",
+              "type": "shape",
+              "left": 858,
+              "top": 14,
+              "width": 120,
+              "height": 74,
+              "rotate": 0,
+              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                120,
+                74
+              ],
+              "fill": "#1e293b",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
+            },
+            {
+              "id": "ce-s7-pill1",
+              "type": "text",
+              "left": 862,
+              "top": 14,
+              "width": 112,
+              "height": 74,
+              "rotate": 0,
+              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>W3C standard<br/><span style=\"font-size:10px;color:#64748b;\">DID</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ce-s7-card0bg",
+              "type": "shape",
+              "left": 4,
+              "top": 116,
+              "width": 308,
+              "height": 446,
+              "rotate": 0,
+              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                308,
+                446
+              ],
+              "fill": "#1a1040",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
+            },
+            {
+              "id": "ce-s7-card0bar",
+              "type": "shape",
+              "left": 4,
+              "top": 116,
+              "width": 4,
+              "height": 446,
+              "rotate": 0,
+              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "viewBox": [
+                4,
+                446
+              ],
+              "fill": "#8b5cf6",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
+            },
+            {
+              "id": "ce-s7-card0txt",
+              "type": "text",
+              "left": 16,
+              "top": 126,
+              "width": 288,
+              "height": 426,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>AI & Blockchain</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Bittensor: decentralized AI training network \u2014 miners earn TAO tokens for training ML models</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Render Network: distributed GPU for AI rendering \u2014 users rent idle compute for tokens</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Proof of inference: verifiable on-chain proofs that AI model ran correctly \u2014 ZK-ML emerging</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Ocean Protocol: data marketplace \u2014 AI training data sold/bought on-chain with provenance tracking</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ce-s7-card1bg",
+              "type": "shape",
+              "left": 320,
+              "top": 116,
+              "width": 308,
+              "height": 446,
+              "rotate": 0,
+              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                308,
+                446
+              ],
+              "fill": "#0a1929",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
+            },
+            {
+              "id": "ce-s7-card1bar",
+              "type": "shape",
+              "left": 320,
+              "top": 116,
+              "width": 4,
+              "height": 446,
+              "rotate": 0,
+              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "viewBox": [
+                4,
+                446
+              ],
+              "fill": "#3b82f6",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
+            },
+            {
+              "id": "ce-s7-card1txt",
+              "type": "text",
+              "left": 332,
+              "top": 126,
+              "width": 288,
+              "height": 426,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Decentralized Identity</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>DIDs (W3C standard): decentralized identifiers \u2014 self-sovereign, no central authority</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Verifiable credentials: cryptographically signed claims (e.g., 'over 18') stored in user wallet</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>ENS (Ethereum Name Service): .eth names as on-chain identity \u2014 composable across all dApps</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Proof of humanity: on-chain verification of unique humans \u2014 Worldcoin iris scan, BrightID social graph</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ce-s7-card2bg",
+              "type": "shape",
+              "left": 636,
+              "top": 116,
+              "width": 308,
+              "height": 446,
+              "rotate": 0,
+              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "viewBox": [
+                308,
+                446
+              ],
+              "fill": "#042f2e",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
+            },
+            {
+              "id": "ce-s7-card2bar",
+              "type": "shape",
+              "left": 636,
+              "top": 116,
+              "width": 4,
+              "height": 446,
+              "rotate": 0,
+              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "viewBox": [
+                4,
+                446
+              ],
+              "fill": "#06b6d4",
+              "fixedRatio": false,
+              "opacity": 1.0,
+              "outline": {
+                "color": "transparent",
+                "width": 0,
+                "style": "none"
+              }
+            },
+            {
+              "id": "ce-s7-card2txt",
+              "type": "text",
+              "left": 648,
+              "top": 126,
+              "width": 288,
+              "height": 426,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Infrastructure Evolution</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Modular blockchains: separate execution, settlement, consensus, data availability layers \u2014 Celestia, Avail</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Shared sequencers: multiple rollups use same sequencer \u2014 atomic composability across L2s</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Full nodes in browsers: light clients with ZK proofs enable trustless verification without running node</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Cross-chain communication: IBC (Cosmos), XCMP (Polkadot), Axelar \u2014 standardized blockchain interoperability</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            }
+          ]
+        }
+      },
+      "order": 7
+    },
+    {
+      "id": "ce-s8",
+      "type": "quiz",
+      "title": "Knowledge Check \u2014 Crypto in the Real World",
+      "content": {
+        "type": "quiz"
+      },
+      "order": 8
     }
   ]
 }
