@@ -121,6 +121,10 @@ export default function ClassroomDetailPage() {
     // Clear whiteboard history to prevent snapshots from a previous course leaking in.
     useWhiteboardHistoryStore.getState().clearHistory();
 
+    // Clear stage store so stale data from a previous classroom does not block
+    // the server-side API fallback (old stage in memory causes the fetch to be skipped).
+    useStageStore.getState().clearStore();
+
     loadClassroom();
 
     // Cancel ongoing generation when classroomId changes or component unmounts

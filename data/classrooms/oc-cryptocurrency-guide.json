@@ -29,11 +29,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f59e0b",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -46,19 +50,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#f59e0b",
+              "fixedRatio": false
             },
             {
               "id": "cg-s1-titlebg",
@@ -66,287 +64,227 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "cg-s1-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Bitcoin: The UTXO Model</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
-            },
-            {
-              "id": "cg-s1-sub",
-              "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Unspent Transaction Outputs \u2014 the ledger model powering Bitcoin</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Bitcoin & XRP Fundamentals</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
             {
-              "id": "cg-s1-pillbg0",
-              "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "id": "cg-s1-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>UTXO model, supply mechanics, and what makes XRP different</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "cg-s1-pill0bg",
+              "type": "shape",
+              "left": 830,
+              "top": 14,
+              "width": 116,
+              "height": 68,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
               "fill": "#1e293b",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
               }
             },
             {
               "id": "cg-s1-pill0",
               "type": "text",
-              "left": 724,
+              "left": 834,
               "top": 14,
-              "width": 112,
-              "height": 74,
+              "width": 108,
+              "height": 68,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>21M BTC<br/><span style=\"font-size:10px;color:#64748b;\">Supply</span></p>",
+              "content": "<p style='font-size:18px;font-weight:800;color:#f59e0b;text-align:center;line-height:1.2;'>$0.0002<br/><span style=\"font-size:10px;color:#64748b;font-weight:500;\">XRP fee</span></p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#f59e0b"
             },
             {
-              "id": "cg-s1-pillbg1",
+              "id": "cg-s1-lp-bg",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 8,
+              "top": 108,
+              "width": 488,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
               }
             },
             {
-              "id": "cg-s1-pill1",
-              "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>~180M<br/><span style=\"font-size:10px;color:#64748b;\">UTXOs</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "cg-s1-card0bg",
+              "id": "cg-s1-lp-bar",
               "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s1-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
+              "left": 8,
+              "top": 108,
               "width": 4,
-              "height": 446,
+              "height": 450,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#f59e0b",
+              "fixedRatio": false
             },
             {
-              "id": "cg-s1-card0txt",
+              "id": "cg-s1-lp-txt",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 20,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>UTXO Basics</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Every Bitcoin tx consumes existing UTXOs as inputs and creates new UTXOs as outputs</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Your 'balance' = sum of all UTXOs locked to your public key \u2014 there is no account balance</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Coinbase tx (first in every block) creates new BTC from nothing \u2014 only source of new supply</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Change UTXO: if you spend 1 BTC but owe 0.3 BTC, you receive a 0.7 BTC UTXO back to yourself</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#f59e0b;margin-bottom:10px;'>Bitcoin's UTXO Model</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>Bitcoin has no 'accounts'. It tracks Unspent Transaction Outputs (UTXOs).<br/><br/>To send 1 BTC you consume existing UTXOs and create new ones — like breaking a $20 bill into change.<br/><br/>Privacy benefit: each tx uses fresh outputs. Privacy risk: UTXO graph analysis can trace flows.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             },
             {
-              "id": "cg-s1-card1bg",
+              "id": "cg-s1-rp-bg",
               "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
+              "left": 504,
+              "top": 108,
+              "width": 488,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                308,
-                446
+                1,
+                1
               ],
-              "fill": "#0a1929",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
               }
             },
             {
-              "id": "cg-s1-card1bar",
+              "id": "cg-s1-rp-bar",
               "type": "shape",
-              "left": 320,
-              "top": 116,
+              "left": 504,
+              "top": 108,
               "width": 4,
-              "height": 446,
+              "height": 450,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#22d3ee",
+              "fixedRatio": false
             },
             {
-              "id": "cg-s1-card1txt",
+              "id": "cg-s1-rp-txt",
               "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 516,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Transaction Anatomy</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Input: UTXO reference (txid + vout index) + scriptSig (unlocking script / signature)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Output: value in satoshis + scriptPubKey (locking script \u2014 usually P2PKH or P2WPKH)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Transaction fee = sum(inputs) - sum(outputs) \u2014 miners collect all fees in a block</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>SegWit (BIP141): moves witness data outside base tx, reducing fee weight by ~40%</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#22d3ee;margin-bottom:10px;'>XRP vs ETH: Key Numbers</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>XRP: 3–5 sec finality · $0.0002 fee · 1,500 tx/s<br/>ETH: ~12 sec · $1–$20 fee · ~15 tx/s L1<br/><br/>Both burn fees permanently (XRP burns all, ETH burns base fee).<br/><br/>XRP supply: 100B fixed, ~57B in circulation. ETH: no hard cap.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "cg-s1-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s1-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s1-card2txt",
-              "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Script & Locking</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Bitcoin Script is a stack-based language \u2014 intentionally NOT Turing-complete</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>P2PKH: Pay-to-Public-Key-Hash \u2014 most common, requires sig + pubkey to unlock</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>P2SH: Pay-to-Script-Hash \u2014 enables multisig; redeem script revealed at spend time</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>P2TR (Taproot): Schnorr + MAST \u2014 multisig looks identical to single-sig on-chain</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             }
           ]
         }
       },
-      "order": 1
+      "order": 1,
+      "actions": [
+        {
+          "id": "action_cg-s1_0",
+          "type": "spotlight",
+          "elementId": "cg-s1-title"
+        },
+        {
+          "id": "action_cg-s1_1",
+          "type": "speech",
+          "text": "Let's dig into the fundamentals of Bitcoin and XRP — two very different designs for moving value."
+        },
+        {
+          "id": "action_cg-s1_2",
+          "type": "spotlight",
+          "elementId": "cg-s1-sub"
+        },
+        {
+          "id": "action_cg-s1_3",
+          "type": "speech",
+          "text": "Bitcoin uses the UTXO model. XRP uses an account model. Both valid — both different trade-offs."
+        },
+        {
+          "id": "action_cg-s1_4",
+          "type": "spotlight",
+          "elementId": "cg-s1-lp-txt"
+        },
+        {
+          "id": "action_cg-s1_5",
+          "type": "speech",
+          "text": "Bitcoin has no accounts. It tracks Unspent Transaction Outputs. To send 1 BTC, you consume UTXOs — like breaking a physical bill into change. All inputs minus outputs equals the miner fee."
+        },
+        {
+          "id": "action_cg-s1_6",
+          "type": "spotlight",
+          "elementId": "cg-s1-rp-txt"
+        },
+        {
+          "id": "action_cg-s1_7",
+          "type": "speech",
+          "text": "Comparing XRP to ETH: XRP settles in 3 to 5 seconds with a 0.0002 dollar fee and handles 1500 transactions per second. Ethereum takes 12 seconds, fees can hit 20 dollars, and handles about 15 transactions per second natively."
+        },
+        {
+          "id": "action_cg-s1_8",
+          "type": "spotlight",
+          "elementId": "cg-s1-pill0"
+        },
+        {
+          "id": "action_cg-s1_9",
+          "type": "speech",
+          "text": "A fraction of a cent to move any amount of XRP anywhere in the world — that's the XRPL fee."
+        }
+      ]
     },
     {
       "id": "cg-s2",
@@ -360,11 +298,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#a855f7",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -377,19 +319,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#a855f7",
+              "fixedRatio": false
             },
             {
               "id": "cg-s2-titlebg",
@@ -397,287 +333,153 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "cg-s2-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Elliptic Curve Cryptography</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Public-Key Cryptography</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "cg-s2-sub",
               "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>secp256k1 \u2014 the curve securing every Bitcoin private key</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The math that makes your wallet address provably yours</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#64748b"
             },
             {
-              "id": "cg-s2-pillbg0",
+              "id": "cg-s2-fs-bg",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 60,
+              "top": 118,
+              "width": 880,
+              "height": 176,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#020817",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 2,
+                "color": "#a855f7"
               }
             },
             {
-              "id": "cg-s2-pill0",
+              "id": "cg-s2-fs-formula",
               "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 60,
+              "top": 130,
+              "width": 880,
+              "height": 156,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>2\u00b2\u2075\u2076<br/><span style=\"font-size:10px;color:#64748b;\">Key space</span></p>",
+              "content": "<p style='font-size:34px;font-weight:800;color:#a855f7;text-align:center;font-family:monospace;line-height:1.4;'>secp256k1: y² = x³ + 7 (mod p)</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#a855f7"
             },
             {
-              "id": "cg-s2-pillbg1",
-              "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
-              "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                120,
-                74
-              ],
-              "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s2-pill1",
+              "id": "cg-s2-fs-exp",
               "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 60,
+              "top": 312,
+              "width": 880,
+              "height": 180,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>secp256k1<br/><span style=\"font-size:10px;color:#64748b;\">Curve</span></p>",
+              "content": "<p style='font-size:15px;color:#e2e8f0;line-height:1.7;text-align:center;'>Your private key is a random 256-bit number. Your public key is derived via elliptic curve multiplication.<br/>Reversing this (finding private from public) is the Elliptic Curve Discrete Log Problem — computationally infeasible.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             },
             {
-              "id": "cg-s2-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s2-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s2-card0txt",
+              "id": "cg-s2-fs-note",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 60,
+              "top": 494,
+              "width": 880,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>The Math</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Curve: y\u00b2 = x\u00b3 + 7 over finite field Fp where p = 2\u00b2\u2075\u2076 \u2212 2\u00b3\u00b2 \u2212 977</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Generator point G is a specific point on the curve (hardcoded in the spec)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Private key k: random 256-bit integer (1 \u2264 k < n, where n \u2248 2\u00b2\u2075\u2076)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Public key K = k \u00d7 G \u2014 scalar multiplication of G by k (point addition repeated k times)</p>",
+              "content": "<p style='font-size:12px;color:#64748b;text-align:center;'>256-bit private key = 2²⁵⁶ possible values. More than atoms in the observable universe. Brute-force is physically impossible.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "cg-s2-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s2-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s2-card1txt",
-              "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>ECDSA Signing</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>To sign: generate random nonce r, compute R = r\u00d7G, s = r\u207b\u00b9(hash + k\u00d7Rx) mod n</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Signature = (Rx mod n, s) \u2014 two 256-bit integers, 64 bytes total (DER-encoded: ~71 bytes)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Reusing nonce r for two different messages reveals private key k \u2014 PS3 hack exploit</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Schnorr (BIP340): non-interactive signature aggregation, 64-byte fixed size, batch verification</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "cg-s2-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s2-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s2-card2txt",
-              "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Key Derivation \u2014 BIP32/44</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>HD wallets: master seed \u2192 master private key via HMAC-SHA512</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Child key: HMAC-SHA512(parent_pubkey \u2225 index) \u2192 child key + chain code</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>BIP44 path: m/44'/0'/0'/0/0 = purpose/coin/account/change/index</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>xpub (extended public key) lets you generate all receive addresses without exposing private keys</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#64748b"
             }
           ]
         }
       },
-      "order": 2
+      "order": 2,
+      "actions": [
+        {
+          "id": "action_cg-s2_0",
+          "type": "spotlight",
+          "elementId": "cg-s2-title"
+        },
+        {
+          "id": "action_cg-s2_1",
+          "type": "speech",
+          "text": "Public-key cryptography is the math that makes your wallet provably yours without revealing your private key."
+        },
+        {
+          "id": "action_cg-s2_2",
+          "type": "spotlight",
+          "elementId": "cg-s2-sub"
+        },
+        {
+          "id": "action_cg-s2_3",
+          "type": "speech",
+          "text": "It's based on elliptic curve mathematics — specifically secp256k1, the same curve used in Bitcoin and XRPL."
+        },
+        {
+          "id": "action_cg-s2_4",
+          "type": "spotlight",
+          "elementId": "cg-s2-fs-formula"
+        },
+        {
+          "id": "action_cg-s2_5",
+          "type": "speech",
+          "text": "The secp256k1 curve equation: y squared equals x cubed plus 7, modulo a large prime. Points on this curve form the basis of key generation."
+        },
+        {
+          "id": "action_cg-s2_6",
+          "type": "spotlight",
+          "elementId": "cg-s2-fs-exp"
+        },
+        {
+          "id": "action_cg-s2_7",
+          "type": "speech",
+          "text": "Your private key is a random 256-bit number. Your public key is derived by multiplying that number by the generator point — a one-way operation. You can share the public key freely."
+        },
+        {
+          "id": "action_cg-s2_8",
+          "type": "spotlight",
+          "elementId": "cg-s2-fs-note"
+        },
+        {
+          "id": "action_cg-s2_9",
+          "type": "speech",
+          "text": "256-bit private key means 2 to the power of 256 possible values. That's more than the number of atoms in the observable universe. Brute-force is computationally impossible with classical computers."
+        }
+      ]
     },
     {
       "id": "cg-s3",
@@ -691,11 +493,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f59e0b",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -708,19 +514,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#f59e0b",
+              "fixedRatio": false
             },
             {
               "id": "cg-s3-titlebg",
@@ -728,287 +528,374 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "cg-s3-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Mining Economics</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
-            },
-            {
-              "id": "cg-s3-sub",
-              "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>The incentive structure that secures the Bitcoin network</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Bitcoin Mining Economics</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
             {
-              "id": "cg-s3-pillbg0",
-              "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "id": "cg-s3-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>700 exahashes per second competing for 3.125 BTC</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "cg-s3-pill0bg",
+              "type": "shape",
+              "left": 830,
+              "top": 14,
+              "width": 116,
+              "height": 68,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
               "fill": "#1e293b",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
               }
             },
             {
               "id": "cg-s3-pill0",
               "type": "text",
-              "left": 724,
+              "left": 834,
               "top": 14,
-              "width": 112,
-              "height": 74,
+              "width": 108,
+              "height": 68,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>3.125 BTC<br/><span style=\"font-size:10px;color:#64748b;\">Block reward</span></p>",
+              "content": "<p style='font-size:18px;font-weight:800;color:#f59e0b;text-align:center;line-height:1.2;'>700 EH/s<br/><span style=\"font-size:10px;color:#64748b;font-weight:500;\">Global hashrate</span></p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#f59e0b"
             },
             {
-              "id": "cg-s3-pillbg1",
+              "id": "cg-s3-st0bg",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 10,
+              "top": 118,
+              "width": 191,
+              "height": 430,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
               }
             },
             {
-              "id": "cg-s3-pill1",
+              "id": "cg-s3-st0num",
               "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 10,
+              "top": 128,
+              "width": 191,
+              "height": 50,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>2028<br/><span style=\"font-size:10px;color:#64748b;\">Next halving</span></p>",
+              "content": "<p style='font-size:28px;font-weight:900;color:#f59e0b;text-align:center;'>1</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#f59e0b"
             },
             {
-              "id": "cg-s3-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s3-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s3-card0txt",
+              "id": "cg-s3-st0txt",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 18,
+              "top": 182,
+              "width": 175,
+              "height": 354,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Block Reward</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Current subsidy: 3.125 BTC per block (halved April 2024)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Halvings occur every 210,000 blocks (~4 years) \u2014 subsidy \u2192 0 around year 2140</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Fee revenue must eventually replace subsidy or miner incentives collapse</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>At $60K BTC, block reward = ~$187,500 \u2014 secures ~$15T network for ~$14B/year</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Difficulty Target</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Network sets a target: hash must start with N zeros</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#94a3b8"
             },
             {
-              "id": "cg-s3-card1bg",
+              "id": "cg-s3-st1bg",
               "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
+              "left": 207,
+              "top": 118,
+              "width": 191,
+              "height": 430,
               "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                308,
-                446
+                1,
+                1
               ],
-              "fill": "#0a1929",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
               }
             },
             {
-              "id": "cg-s3-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s3-card1txt",
+              "id": "cg-s3-st1num",
               "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 207,
+              "top": 128,
+              "width": 191,
+              "height": 50,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Difficulty Adjustment</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Retargets every 2016 blocks (~2 weeks) to maintain 10-min average block time</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>new_target = old_target \u00d7 (actual_time / 1,209,600 seconds)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Capped at 4\u00d7 change per adjustment period to prevent runaway difficulty swings</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Current difficulty: ~88 trillion \u2014 88T SHA-256\u00b2 hashes needed per valid block on average</p>",
+              "content": "<p style='font-size:28px;font-weight:900;color:#f59e0b;text-align:center;'>2</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#f59e0b"
             },
             {
-              "id": "cg-s3-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s3-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s3-card2txt",
+              "id": "cg-s3-st1txt",
               "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 215,
+              "top": 182,
+              "width": 175,
+              "height": 354,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Mining Pools & ASICs</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Solo mining: variance too high \u2014 expected block: years. Pools share rewards by hashrate contribution</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Stratum protocol: pool sends simplified work units; miners report partial proofs (shares)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>ASIC efficiency: ~30 J/TH \u2014 purpose-built chips 1000\u00d7 more efficient than GPUs</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Geographic distribution: ~65% US, ~10% Kazakhstan, ~8% Canada post-China ban</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Nonce Search</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Miners increment a nonce billions of times per second</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "cg-s3-st2bg",
+              "type": "shape",
+              "left": 404,
+              "top": 118,
+              "width": 191,
+              "height": 430,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "cg-s3-st2num",
+              "type": "text",
+              "left": 404,
+              "top": 128,
+              "width": 191,
+              "height": 50,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:900;color:#f59e0b;text-align:center;'>3</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "cg-s3-st2txt",
+              "type": "text",
+              "left": 412,
+              "top": 182,
+              "width": 175,
+              "height": 354,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Block Found</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>First miner to hit the target broadcasts the block</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "cg-s3-st3bg",
+              "type": "shape",
+              "left": 601,
+              "top": 118,
+              "width": 191,
+              "height": 430,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "cg-s3-st3num",
+              "type": "text",
+              "left": 601,
+              "top": 128,
+              "width": 191,
+              "height": 50,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:900;color:#f59e0b;text-align:center;'>4</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "cg-s3-st3txt",
+              "type": "text",
+              "left": 609,
+              "top": 182,
+              "width": 175,
+              "height": 354,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Reward</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Block subsidy (currently 3.125 BTC) + all tx fees</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "cg-s3-st4bg",
+              "type": "shape",
+              "left": 798,
+              "top": 118,
+              "width": 191,
+              "height": 430,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "cg-s3-st4num",
+              "type": "text",
+              "left": 798,
+              "top": 128,
+              "width": 191,
+              "height": 50,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:900;color:#f59e0b;text-align:center;'>5</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "cg-s3-st4txt",
+              "type": "text",
+              "left": 806,
+              "top": 182,
+              "width": 175,
+              "height": 354,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Adjustment</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Every 2016 blocks, difficulty adjusts to maintain 10-min average</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
             }
           ]
         }
       },
-      "order": 3
+      "order": 3,
+      "actions": [
+        {
+          "id": "action_cg-s3_0",
+          "type": "spotlight",
+          "elementId": "cg-s3-title"
+        },
+        {
+          "id": "action_cg-s3_1",
+          "type": "speech",
+          "text": "Bitcoin mining is a global computation race with real economic stakes."
+        },
+        {
+          "id": "action_cg-s3_2",
+          "type": "spotlight",
+          "elementId": "cg-s3-sub"
+        },
+        {
+          "id": "action_cg-s3_3",
+          "type": "speech",
+          "text": "The network is currently running at 700 exahashes per second — 700 million trillion hashes every second."
+        },
+        {
+          "id": "action_cg-s3_4",
+          "type": "spotlight",
+          "elementId": "cg-s3-st0txt"
+        },
+        {
+          "id": "action_cg-s3_5",
+          "type": "speech",
+          "text": "The difficulty target: the network requires that valid block hashes start with a certain number of zeros. This is how computational work is proved."
+        },
+        {
+          "id": "action_cg-s3_6",
+          "type": "spotlight",
+          "elementId": "cg-s3-st1txt"
+        },
+        {
+          "id": "action_cg-s3_7",
+          "type": "speech",
+          "text": "Nonce search: miners increment a nonce — a number — billions of times per second trying to find a hash that meets the target."
+        },
+        {
+          "id": "action_cg-s3_8",
+          "type": "spotlight",
+          "elementId": "cg-s3-st2txt"
+        },
+        {
+          "id": "action_cg-s3_9",
+          "type": "speech",
+          "text": "Block found: the first miner to hit the target broadcasts the block to the network. Other miners verify it instantly and start working on the next block."
+        },
+        {
+          "id": "action_cg-s3_10",
+          "type": "spotlight",
+          "elementId": "cg-s3-st3txt"
+        },
+        {
+          "id": "action_cg-s3_11",
+          "type": "speech",
+          "text": "The reward: currently 3.125 BTC per block plus all transaction fees — valued in the hundreds of thousands of dollars."
+        },
+        {
+          "id": "action_cg-s3_12",
+          "type": "spotlight",
+          "elementId": "cg-s3-st4txt"
+        },
+        {
+          "id": "action_cg-s3_13",
+          "type": "speech",
+          "text": "Difficulty adjustment: every 2016 blocks — about two weeks — the network adjusts difficulty up or down to maintain the 10-minute average block time."
+        }
+      ]
     },
     {
       "id": "cg-s4",
@@ -1022,11 +909,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#22d3ee",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1039,19 +930,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#22d3ee",
+              "fixedRatio": false
             },
             {
               "id": "cg-s4-titlebg",
@@ -1059,287 +944,180 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "cg-s4-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Altcoins & Token Standards</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Reading the Market</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "cg-s4-sub",
               "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>On-chain metrics vs technical analysis — what each reveals</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "cg-s4-vs-lbg",
+              "type": "shape",
+              "left": 8,
+              "top": 108,
+              "width": 480,
+              "height": 450,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0d0800",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
+              }
+            },
+            {
+              "id": "cg-s4-vs-ltxt",
+              "type": "text",
               "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "top": 118,
+              "width": 456,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>From Litecoin forks to ERC-20 DeFi tokens</p>",
+              "content": "<p style='font-size:16px;font-weight:800;color:#22d3ee;margin-bottom:12px;'>📈 On-Chain Analysis</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• MVRV: Market cap ÷ Realized cap — above 3.5 = historically overheated</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• SOPR: Profit ratio of moved coins — above 1 = profit-taking</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• Exchange inflow spikes = sell pressure</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• Long-term holder supply = conviction metric</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• NVT: Network Value to Transactions ratio</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#cbd5e1"
             },
             {
-              "id": "cg-s4-pillbg0",
+              "id": "cg-s4-vs-div",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 494,
+              "top": 108,
+              "width": 12,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
               "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fixedRatio": false
             },
             {
-              "id": "cg-s4-pill0",
+              "id": "cg-s4-vs-vs",
               "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 483,
+              "top": 316,
+              "width": 34,
+              "height": 36,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>$400B+<br/><span style=\"font-size:10px;color:#64748b;\">ERC-20</span></p>",
+              "content": "<p style='font-size:11px;font-weight:700;color:#475569;text-align:center;'>VS</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#475569"
             },
             {
-              "id": "cg-s4-pillbg1",
+              "id": "cg-s4-vs-rbg",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 512,
+              "top": 108,
+              "width": 480,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#00100d",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
               }
             },
             {
-              "id": "cg-s4-pill1",
+              "id": "cg-s4-vs-rtxt",
               "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 524,
+              "top": 118,
+              "width": 456,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>10+<br/><span style=\"font-size:10px;color:#64748b;\">NFT chains</span></p>",
+              "content": "<p style='font-size:16px;font-weight:800;color:#3b82f6;margin-bottom:12px;'>📊 Technical Analysis</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• RSI > 70 = overbought, < 30 = oversold</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• MACD crossover signals momentum shift</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• Bollinger Band squeeze = volatility incoming</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• Support/resistance = prior price memory</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• Volume confirmation = move has conviction</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "cg-s4-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s4-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s4-card0txt",
-              "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Bitcoin Forks</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Hard fork: protocol change requiring all nodes to upgrade \u2014 incompatible with old rules</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Bitcoin Cash (2017): increased block size 8MB\u219232MB for more TPS \u2014 sacrifices decentralization</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Bitcoin SV: further increased to 4GB blocks \u2014 nearly no adoption</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Litecoin: 4\u00d7 faster blocks (2.5 min), Scrypt PoW (ASIC-resistant initially), 84M supply cap</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "cg-s4-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s4-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s4-card1txt",
-              "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>ERC-20 Standard</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Interface: transfer(), approve(), transferFrom(), allowance(), balanceOf(), totalSupply()</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Approve + transferFrom enables DEX trading without custody \u2014 basis of all DeFi</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>ERC-20 tokens live as entries in a smart contract's mapping(address \u2192 uint256)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>ERC-777 (hooks), ERC-4626 (tokenized vaults), ERC-2612 (permit, gasless approvals) extend the standard</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "cg-s4-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s4-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s4-card2txt",
-              "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>NFT Standards</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>ERC-721: non-fungible tokens \u2014 each tokenId is unique, ownerOf(tokenId) returns one address</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>ERC-1155: multi-token \u2014 one contract, multiple token types (fungible + NFT in same contract)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Metadata: tokenURI() returns JSON with name, image, attributes \u2014 usually IPFS or Arweave</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Royalties: ERC-2981 on-chain royalty standard \u2014 marketplaces read and enforce automatically</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#cbd5e1"
             }
           ]
         }
       },
-      "order": 4
+      "order": 4,
+      "actions": [
+        {
+          "id": "action_cg-s4_0",
+          "type": "spotlight",
+          "elementId": "cg-s4-title"
+        },
+        {
+          "id": "action_cg-s4_1",
+          "type": "speech",
+          "text": "How do you actually read the market? Two main frameworks: on-chain analytics and technical analysis."
+        },
+        {
+          "id": "action_cg-s4_2",
+          "type": "spotlight",
+          "elementId": "cg-s4-sub"
+        },
+        {
+          "id": "action_cg-s4_3",
+          "type": "speech",
+          "text": "On-chain tells you what long-term holders are doing. Technical analysis tells you what traders in the order book are doing."
+        },
+        {
+          "id": "action_cg-s4_4",
+          "type": "spotlight",
+          "elementId": "cg-s4-vs-ltxt"
+        },
+        {
+          "id": "action_cg-s4_5",
+          "type": "speech",
+          "text": "On-chain analysis: MVRV ratio above 3.5 has historically signaled overheating. SOPR above 1 means holders are selling at profit. These metrics track what the blockchain itself records — wallets, flows, realized prices."
+        },
+        {
+          "id": "action_cg-s4_6",
+          "type": "spotlight",
+          "elementId": "cg-s4-vs-rtxt"
+        },
+        {
+          "id": "action_cg-s4_7",
+          "type": "speech",
+          "text": "Technical analysis: RSI above 70 suggests overbought conditions. MACD crossovers signal momentum shifts. Bollinger Bands show volatility — a squeeze often precedes a big move."
+        }
+      ]
     },
     {
       "id": "cg-s5",
@@ -1353,11 +1131,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f59e0b",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1370,19 +1152,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#f59e0b",
+              "fixedRatio": false
             },
             {
               "id": "cg-s5-titlebg",
@@ -1390,287 +1166,335 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "cg-s5-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>On-Chain Analysis</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
-            },
-            {
-              "id": "cg-s5-sub",
-              "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Reading blockchain data to understand market dynamics</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Bitcoin Halving Schedule</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
             {
-              "id": "cg-s5-pillbg0",
-              "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "id": "cg-s5-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Every ~4 years, supply issuance cuts in half</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "cg-s5-pill0bg",
+              "type": "shape",
+              "left": 830,
+              "top": 14,
+              "width": 116,
+              "height": 68,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
               "fill": "#1e293b",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
               }
             },
             {
               "id": "cg-s5-pill0",
               "type": "text",
-              "left": 724,
+              "left": 834,
               "top": 14,
-              "width": 112,
-              "height": 74,
+              "width": 108,
+              "height": 68,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>sell ratio<br/><span style=\"font-size:10px;color:#64748b;\">SOPR</span></p>",
+              "content": "<p style='font-size:18px;font-weight:800;color:#f59e0b;text-align:center;line-height:1.2;'>3.125<br/><span style=\"font-size:10px;color:#64748b;font-weight:500;\">BTC/block now</span></p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#f59e0b"
             },
             {
-              "id": "cg-s5-pillbg1",
+              "id": "cg-s5-c0bg",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 8,
+              "top": 110,
+              "width": 244,
+              "height": 430,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0f1f3d",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
               }
             },
             {
-              "id": "cg-s5-pill1",
-              "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>network value/tx<br/><span style=\"font-size:10px;color:#64748b;\">NVT</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "cg-s5-card0bg",
+              "id": "cg-s5-c0bar",
               "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s5-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
+              "left": 8,
+              "top": 110,
               "width": 4,
-              "height": 446,
+              "height": 430,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#f59e0b",
+              "fixedRatio": false
             },
             {
-              "id": "cg-s5-card0txt",
+              "id": "cg-s5-c0txt",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 20,
+              "top": 120,
+              "width": 224,
+              "height": 410,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>UTXO Age Analysis</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>HODL waves: age-stratified UTXO distribution \u2014 old coins moving = potential sell pressure</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>SOPR (Spent Output Profit Ratio): avg profit ratio of coins spent today</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>SOPR > 1 = sellers in profit; SOPR = 1 = breakeven zone (often support in bull markets)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Realized cap: sum of each UTXO valued at price when last moved \u2014 smoother than market cap</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#f59e0b;margin-bottom:6px;'>2009 Genesis</p><p style='font-size:12px;color:#cbd5e1;line-height:1.5;'>50 BTC/block · ~$0/BTC · miners = early adopters</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#cbd5e1"
             },
             {
-              "id": "cg-s5-card1bg",
+              "id": "cg-s5-c1bg",
               "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
+              "left": 252,
+              "top": 110,
+              "width": 244,
+              "height": 430,
               "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                308,
-                446
+                1,
+                1
               ],
-              "fill": "#0a1929",
+              "fill": "#0f1f3d",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
               }
             },
             {
-              "id": "cg-s5-card1bar",
+              "id": "cg-s5-c1bar",
               "type": "shape",
-              "left": 320,
-              "top": 116,
+              "left": 252,
+              "top": 110,
               "width": 4,
-              "height": 446,
+              "height": 430,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "cg-s5-c1txt",
+              "type": "text",
+              "left": 264,
+              "top": 120,
+              "width": 224,
+              "height": 410,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#f59e0b;margin-bottom:6px;'>2012 — 1st Halving</p><p style='font-size:12px;color:#cbd5e1;line-height:1.5;'>25 BTC/block · Price rose from $12 → $1,100 in 12 months</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "cg-s5-c2bg",
+              "type": "shape",
+              "left": 496,
+              "top": 110,
+              "width": 244,
+              "height": 430,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1f3d",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "cg-s5-c2bar",
+              "type": "shape",
+              "left": 496,
+              "top": 110,
+              "width": 4,
+              "height": 430,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
               ],
               "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fixedRatio": false
             },
             {
-              "id": "cg-s5-card1txt",
+              "id": "cg-s5-c2txt",
               "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 508,
+              "top": 120,
+              "width": 224,
+              "height": 410,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Network Value Metrics</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>NVT (Network Value to Transactions): market cap / daily tx volume \u2014 high NVT = overvalued</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>MVRV (Market Value to Realized Value): market cap / realized cap \u2014 >3.5 historically = top signal</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Stock-to-Flow: scarcity model based on existing supply / annual production \u2014 controversial for price prediction</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Puell Multiple: daily miner revenue / 365-day avg \u2014 high = miners likely selling</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>2016 — 2nd Halving</p><p style='font-size:12px;color:#cbd5e1;line-height:1.5;'>12.5 BTC/block · Preceded 2017 bull run to $20K</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#cbd5e1"
             },
             {
-              "id": "cg-s5-card2bg",
+              "id": "cg-s5-c3bg",
               "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
+              "left": 740,
+              "top": 110,
+              "width": 244,
+              "height": 430,
               "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                308,
-                446
+                1,
+                1
               ],
-              "fill": "#042f2e",
+              "fill": "#0f1f3d",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
               }
             },
             {
-              "id": "cg-s5-card2bar",
+              "id": "cg-s5-c3bar",
               "type": "shape",
-              "left": 636,
-              "top": 116,
+              "left": 740,
+              "top": 110,
               "width": 4,
-              "height": 446,
+              "height": 430,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#22d3ee",
+              "fixedRatio": false
             },
             {
-              "id": "cg-s5-card2txt",
+              "id": "cg-s5-c3txt",
               "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 752,
+              "top": 120,
+              "width": 224,
+              "height": 410,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Exchange Flow</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Exchange inflow spike: coins moving to exchanges usually precede selling</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Exchange reserves declining: coins leaving exchanges = long-term holding signal</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Stablecoin supply ratio: stablecoin market cap / BTC market cap \u2014 more stables = more buying power</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Whale wallet tracking: addresses with >1,000 BTC can be tracked for accumulation/distribution patterns</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#22d3ee;margin-bottom:6px;'>2020 — 3rd Halving</p><p style='font-size:12px;color:#cbd5e1;line-height:1.5;'>6.25 BTC/block · 2021 peak: $69K</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#cbd5e1"
             }
           ]
         }
       },
-      "order": 5
+      "order": 5,
+      "actions": [
+        {
+          "id": "action_cg-s5_0",
+          "type": "spotlight",
+          "elementId": "cg-s5-title"
+        },
+        {
+          "id": "action_cg-s5_1",
+          "type": "speech",
+          "text": "The Bitcoin halving is one of the most predictable supply-shock events in financial history."
+        },
+        {
+          "id": "action_cg-s5_2",
+          "type": "spotlight",
+          "elementId": "cg-s5-sub"
+        },
+        {
+          "id": "action_cg-s5_3",
+          "type": "speech",
+          "text": "Every approximately four years, the block subsidy cuts in half. New supply drops. If demand holds or increases — price tends to follow."
+        },
+        {
+          "id": "action_cg-s5_4",
+          "type": "spotlight",
+          "elementId": "cg-s5-c0txt"
+        },
+        {
+          "id": "action_cg-s5_5",
+          "type": "speech",
+          "text": "Genesis 2009: 50 BTC per block. Price was essentially zero. Miners were early believers."
+        },
+        {
+          "id": "action_cg-s5_6",
+          "type": "spotlight",
+          "elementId": "cg-s5-c1txt"
+        },
+        {
+          "id": "action_cg-s5_7",
+          "type": "speech",
+          "text": "First halving 2012: 25 BTC per block. Price rose from 12 dollars to over 1,100 dollars in the following 12 months."
+        },
+        {
+          "id": "action_cg-s5_8",
+          "type": "spotlight",
+          "elementId": "cg-s5-c2txt"
+        },
+        {
+          "id": "action_cg-s5_9",
+          "type": "speech",
+          "text": "Second halving 2016: 12.5 BTC per block. Preceded the 2017 bull run to 20 thousand dollars."
+        },
+        {
+          "id": "action_cg-s5_10",
+          "type": "spotlight",
+          "elementId": "cg-s5-c3txt"
+        },
+        {
+          "id": "action_cg-s5_11",
+          "type": "speech",
+          "text": "Third halving 2020: 6.25 BTC. By 2021 peak, Bitcoin hit 69 thousand dollars. Current reward is 3.125 BTC per block."
+        }
+      ]
     },
     {
       "id": "cg-s6",
@@ -1684,11 +1508,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#3b82f6",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1701,19 +1529,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
               "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fixedRatio": false
             },
             {
               "id": "cg-s6-titlebg",
@@ -1721,287 +1543,184 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "cg-s6-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Wallets & Key Management</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Altcoins & Market Cycles</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "cg-s6-sub",
               "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Hot, cold, hardware, and custodial options explained</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Understanding the rotation and knowing where we are</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#64748b"
             },
             {
-              "id": "cg-s6-pillbg0",
+              "id": "cg-s6-lp-bg",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 8,
+              "top": 108,
+              "width": 488,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
               }
             },
             {
-              "id": "cg-s6-pill0",
-              "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>12 or 24<br/><span style=\"font-size:10px;color:#64748b;\">Seed words</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "cg-s6-pillbg1",
+              "id": "cg-s6-lp-bar",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
-              "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                120,
-                74
-              ],
-              "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s6-pill1",
-              "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>2048 words<br/><span style=\"font-size:10px;color:#64748b;\">BIP39</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "cg-s6-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s6-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
+              "left": 8,
+              "top": 108,
               "width": 4,
-              "height": 446,
+              "height": 450,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s6-card0txt",
-              "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Wallet Types</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Hot wallet: private key on internet-connected device \u2014 convenient, higher risk (MetaMask, Exodus)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Cold wallet: private key never online \u2014 hardware device (Ledger, Trezor) or paper wallet</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Custodial: exchange holds keys on your behalf \u2014 'not your keys, not your coins'</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Multi-sig: M-of-N keys required to sign \u2014 2-of-3 splits risk across devices/locations</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "cg-s6-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s6-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
               "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fixedRatio": false
             },
             {
-              "id": "cg-s6-card1txt",
+              "id": "cg-s6-lp-txt",
               "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 20,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>BIP39 Mnemonic</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>128-256 bits of entropy + checksum \u2192 12-24 words from 2048-word wordlist</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Entropy \u2192 mnemonic \u2192 PBKDF2(mnemonic + passphrase, 'mnemonic', 2048 rounds) \u2192 512-bit seed</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>From seed: BIP32 HD derivation \u2192 unlimited child keys for any coin/account/address</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Passphrase (25th word) adds plausible deniability \u2014 different passphrase = different wallet</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#3b82f6;margin-bottom:10px;'>Altcoin Landscape</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>Smart contract platforms: ETH, SOL, AVAX<br/>Layer 2s: Arbitrum, Optimism, Base<br/>Privacy: Monero (ring sigs), Zcash (zk-SNARKs)<br/>Payments: XRP, Stellar, Litecoin<br/><br/>Evaluation checklist:<br/>• Who controls the validator set?<br/>• Is the code audited?<br/>• What is the tokenomics / unlock schedule?</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             },
             {
-              "id": "cg-s6-card2bg",
+              "id": "cg-s6-rp-bg",
               "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
+              "left": 504,
+              "top": 108,
+              "width": 488,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                308,
-                446
+                1,
+                1
               ],
-              "fill": "#042f2e",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#a855f7"
               }
             },
             {
-              "id": "cg-s6-card2bar",
+              "id": "cg-s6-rp-bar",
               "type": "shape",
-              "left": 636,
-              "top": 116,
+              "left": 504,
+              "top": 108,
               "width": 4,
-              "height": 446,
+              "height": 450,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#a855f7",
+              "fixedRatio": false
             },
             {
-              "id": "cg-s6-card2txt",
+              "id": "cg-s6-rp-txt",
               "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 516,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Security Best Practices</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Never enter seed phrase online or in any software not specifically designed for it</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Metal backup (Cryptosteel, Bilodeau) survives fire and flood \u2014 paper does not</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Hardware wallet: private key never leaves device, transaction signed on-device</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Air-gapped signing: PSBT (Partially Signed Bitcoin Transaction) passed via QR/USB between online+offline devices</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#a855f7;margin-bottom:10px;'>Market Cycles</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>Bitcoin dominance → altseason pattern:<br/>1. BTC pumps (risk-on, store of value)<br/>2. ETH follows (smart contract demand)<br/>3. Altcoins rotate up (speculation)<br/>4. Meme coins peak (euphoria top)<br/><br/>MVRV > 3.5 has historically marked cycle tops. Patience is the edge.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             }
           ]
         }
       },
-      "order": 6
+      "order": 6,
+      "actions": [
+        {
+          "id": "action_cg-s6_0",
+          "type": "spotlight",
+          "elementId": "cg-s6-title"
+        },
+        {
+          "id": "action_cg-s6_1",
+          "type": "speech",
+          "text": "The crypto market doesn't move in a straight line — it rotates through Bitcoin dominance and altseason cycles."
+        },
+        {
+          "id": "action_cg-s6_2",
+          "type": "spotlight",
+          "elementId": "cg-s6-sub"
+        },
+        {
+          "id": "action_cg-s6_3",
+          "type": "speech",
+          "text": "Understanding where you are in the cycle determines which assets tend to perform."
+        },
+        {
+          "id": "action_cg-s6_4",
+          "type": "spotlight",
+          "elementId": "cg-s6-lp-txt"
+        },
+        {
+          "id": "action_cg-s6_5",
+          "type": "speech",
+          "text": "The altcoin landscape is broad: smart contract platforms like ETH, SOL, and AVAX. Layer 2s like Arbitrum and Base. Privacy coins. DeFi protocols. Understanding categories helps you understand risk levels."
+        },
+        {
+          "id": "action_cg-s6_6",
+          "type": "spotlight",
+          "elementId": "cg-s6-rp-txt"
+        },
+        {
+          "id": "action_cg-s6_7",
+          "type": "speech",
+          "text": "The cycle pattern: Bitcoin pumps first as risk-on sentiment builds. Then Ethereum follows. Then mid-caps. Finally small-cap altcoins — highest risk, highest potential reward, last to move."
+        }
+      ]
     },
     {
       "id": "cg-s7",
@@ -2015,11 +1734,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#22d3ee",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -2032,19 +1755,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#22d3ee",
+              "fixedRatio": false
             },
             {
               "id": "cg-s7-titlebg",
@@ -2052,296 +1769,450 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "cg-s7-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Crypto Market Structure</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Owning Crypto Responsibly</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "cg-s7-sub",
               "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Exchanges, liquidity, and price discovery mechanisms</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Custody, security, strategy, and taxes</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#64748b"
             },
             {
-              "id": "cg-s7-pillbg0",
+              "id": "cg-s7-st0bg",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 10,
+              "top": 118,
+              "width": 240,
+              "height": 430,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
               }
             },
             {
-              "id": "cg-s7-pill0",
+              "id": "cg-s7-st0num",
               "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 10,
+              "top": 128,
+              "width": 240,
+              "height": 50,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>$50B/day<br/><span style=\"font-size:10px;color:#64748b;\">CEX volume</span></p>",
+              "content": "<p style='font-size:28px;font-weight:900;color:#22d3ee;text-align:center;'>1</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#22d3ee"
             },
             {
-              "id": "cg-s7-pillbg1",
-              "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
-              "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                120,
-                74
-              ],
-              "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s7-pill1",
+              "id": "cg-s7-st0txt",
               "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 18,
+              "top": 182,
+              "width": 224,
+              "height": 354,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>$5B/day<br/><span style=\"font-size:10px;color:#64748b;\">DEX volume</span></p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Custody</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Who holds your keys? Exchange = their keys. Self-custody = your keys. Not your keys, not your coins.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#94a3b8"
             },
             {
-              "id": "cg-s7-card0bg",
+              "id": "cg-s7-st1bg",
               "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
+              "left": 256,
+              "top": 118,
+              "width": 240,
+              "height": 430,
               "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                308,
-                446
+                1,
+                1
               ],
-              "fill": "#1a1040",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
               }
             },
             {
-              "id": "cg-s7-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s7-card0txt",
+              "id": "cg-s7-st1num",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 256,
+              "top": 128,
+              "width": 240,
+              "height": 50,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Order Book Mechanics</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Limit order: execute only at specified price or better \u2014 adds liquidity, earns maker rebate</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Market order: execute immediately at best available price \u2014 takes liquidity, pays taker fee</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Order book depth: bid/ask stacked by price level \u2014 thin book = high slippage for large orders</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Market makers profit from bid-ask spread \u2014 typically 0.01-0.1% on liquid pairs</p>",
+              "content": "<p style='font-size:28px;font-weight:900;color:#22d3ee;text-align:center;'>2</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#22d3ee"
             },
             {
-              "id": "cg-s7-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s7-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s7-card1txt",
+              "id": "cg-s7-st1txt",
               "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 264,
+              "top": 182,
+              "width": 224,
+              "height": 354,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Price Discovery</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Arbitrage keeps prices aligned across exchanges \u2014 bots exploit any gap within milliseconds</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Funding rates (perpetuals): if longs > shorts, longs pay shorts funding (typically every 8h)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Premium/discount: spot vs futures price \u2014 contango = futures > spot (bullish bias), backwardation = bearish</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Liquidation cascade: forced selling triggers more selling \u2014 amplifies volatility in leveraged markets</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Exchange Safety</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Use regulated exchanges. Enable 2FA. Whitelist withdraw addresses. Don't keep trading stacks on exchange.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#94a3b8"
             },
             {
-              "id": "cg-s7-card2bg",
+              "id": "cg-s7-st2bg",
               "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
+              "left": 502,
+              "top": 118,
+              "width": 240,
+              "height": 430,
               "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                308,
-                446
+                1,
+                1
               ],
-              "fill": "#042f2e",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
               }
             },
             {
-              "id": "cg-s7-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "cg-s7-card2txt",
+              "id": "cg-s7-st2num",
               "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 502,
+              "top": 128,
+              "width": 240,
+              "height": 50,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>DEX vs CEX</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>CEX: fast matching, custody risk, KYC required, rebate programs for market makers</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>DEX (AMM): no custody, permissionless, 24/7, but higher gas costs and slippage on large orders</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>DEX aggregators (1inch, Paraswap): route across multiple AMMs for best execution price</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Cross-chain bridges: enable assets to move between chains \u2014 historically highest exploit risk in DeFi</p>",
+              "content": "<p style='font-size:28px;font-weight:900;color:#22d3ee;text-align:center;'>3</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#22d3ee"
+            },
+            {
+              "id": "cg-s7-st2txt",
+              "type": "text",
+              "left": 510,
+              "top": 182,
+              "width": 224,
+              "height": 354,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>DCA Strategy</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Dollar-cost averaging removes timing risk. Invest fixed $ weekly regardless of price.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "cg-s7-st3bg",
+              "type": "shape",
+              "left": 748,
+              "top": 118,
+              "width": 240,
+              "height": 430,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
+              }
+            },
+            {
+              "id": "cg-s7-st3num",
+              "type": "text",
+              "left": 748,
+              "top": 128,
+              "width": 240,
+              "height": 50,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:900;color:#22d3ee;text-align:center;'>4</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#22d3ee"
+            },
+            {
+              "id": "cg-s7-st3txt",
+              "type": "text",
+              "left": 756,
+              "top": 182,
+              "width": 224,
+              "height": 354,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Tax Reality</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Every swap, sale, or spend is a taxable event in most jurisdictions. Track cost basis from day one.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
             }
           ]
         }
       },
-      "order": 7
+      "order": 7,
+      "actions": [
+        {
+          "id": "action_cg-s7_0",
+          "type": "spotlight",
+          "elementId": "cg-s7-title"
+        },
+        {
+          "id": "action_cg-s7_1",
+          "type": "speech",
+          "text": "Owning crypto responsibly is a skill that most people underinvest in learning."
+        },
+        {
+          "id": "action_cg-s7_2",
+          "type": "spotlight",
+          "elementId": "cg-s7-sub"
+        },
+        {
+          "id": "action_cg-s7_3",
+          "type": "speech",
+          "text": "Custody, exchange safety, dollar-cost averaging, and taxes — the fundamentals that protect your gains."
+        },
+        {
+          "id": "action_cg-s7_4",
+          "type": "spotlight",
+          "elementId": "cg-s7-st0txt"
+        },
+        {
+          "id": "action_cg-s7_5",
+          "type": "speech",
+          "text": "Custody: who holds your keys? An exchange holds their own keys. You hold an IOU. Self-custody means the keys are yours — and so is the responsibility."
+        },
+        {
+          "id": "action_cg-s7_6",
+          "type": "spotlight",
+          "elementId": "cg-s7-st1txt"
+        },
+        {
+          "id": "action_cg-s7_7",
+          "type": "speech",
+          "text": "Exchange safety: use regulated exchanges, enable two-factor authentication, and whitelist withdrawal addresses. Don't store more than you can afford to lose on an exchange."
+        },
+        {
+          "id": "action_cg-s7_8",
+          "type": "spotlight",
+          "elementId": "cg-s7-st2txt"
+        },
+        {
+          "id": "action_cg-s7_9",
+          "type": "speech",
+          "text": "Dollar-cost averaging removes the impossible task of timing the market. Invest a fixed amount weekly regardless of price — your average cost smooths out volatility."
+        },
+        {
+          "id": "action_cg-s7_10",
+          "type": "spotlight",
+          "elementId": "cg-s7-st3txt"
+        },
+        {
+          "id": "action_cg-s7_11",
+          "type": "speech",
+          "text": "Tax reality: in most jurisdictions, every swap, every sale, every purchase using crypto is a taxable event. Track your cost basis from day one — it's much harder to reconstruct later."
+        }
+      ]
+    },
+    {
+      "id": "cr-interactive",
+      "type": "interactive",
+      "title": "Interactive Simulation",
+      "content": {
+        "type": "interactive",
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody{background:#0b1120;color:#e2e8f0;font-family:Inter,system-ui,sans-serif;padding:20px;margin:0;}\nh2{color:#f59e0b;font-size:18px;margin:0 0 4px;}\n.sub{color:#64748b;font-size:12px;margin-bottom:16px;}\n.row{display:flex;gap:12px;margin-bottom:12px;}\n.panel{background:#0f1f3d;border:1px solid #1e3a5f;border-radius:8px;padding:14px;flex:1;}\nlabel{color:#94a3b8;font-size:11px;text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;}\ninput,select{width:100%;padding:8px 10px;background:#020817;border:1px solid #334155;color:#f1f5f9;border-radius:6px;font-size:13px;box-sizing:border-box;}\n.result{background:#020817;border:1px solid #334155;border-radius:6px;padding:10px;font-size:13px;margin-top:8px;}\n.big{font-size:28px;font-weight:800;color:#f59e0b;}\n.stat{display:inline-block;background:#1e3a5f;border-radius:4px;padding:3px 10px;font-size:11px;font-weight:700;color:#60a5fa;margin:3px 2px;}\ntable{width:100%;border-collapse:collapse;font-size:12px;}\ntd,th{padding:6px 8px;border-bottom:1px solid #1e293b;text-align:left;}\nth{color:#64748b;font-weight:600;}\n</style>\n</head>\n<body>\n<h2>Bitcoin Halving Schedule & Supply Calculator</h2>\n<p class=\"sub\">See how Bitcoin's supply issuance changes at each halving and when the last coin will be mined.</p>\n<div class=\"row\">\n  <div class=\"panel\">\n    <label>Current BTC Price (USD)</label>\n    <input type=\"number\" id=\"price\" value=\"65000\" oninput=\"calc()\">\n    <label style=\"margin-top:10px\">Halvings completed</label>\n    <select id=\"halving\" onchange=\"calc()\">\n      <option value=\"0\">0 — Genesis (50 BTC/block)</option>\n      <option value=\"1\">1 — Nov 2012 (25 BTC/block)</option>\n      <option value=\"2\">2 — Jul 2016 (12.5 BTC/block)</option>\n      <option value=\"3\">3 — May 2020 (6.25 BTC/block)</option>\n      <option value=\"4\" selected>4 — Apr 2024 (3.125 BTC/block)</option>\n    </select>\n    <div class=\"result\" id=\"reward\"></div>\n  </div>\n  <div class=\"panel\">\n    <label>Halving History</label>\n    <table>\n      <tr><th>Halving</th><th>Date</th><th>Reward</th><th>Price ~1yr later</th></tr>\n      <tr><td>1st</td><td>Nov 2012</td><td>25 BTC</td><td style=\"color:#22c55e\">$1,100</td></tr>\n      <tr><td>2nd</td><td>Jul 2016</td><td>12.5 BTC</td><td style=\"color:#22c55e\">$20,000</td></tr>\n      <tr><td>3rd</td><td>May 2020</td><td>6.25 BTC</td><td style=\"color:#22c55e\">$64,000</td></tr>\n      <tr><td>4th</td><td>Apr 2024</td><td>3.125 BTC</td><td style=\"color:#f59e0b\">TBD</td></tr>\n      <tr><td>5th</td><td>~2028</td><td>1.5625 BTC</td><td>—</td></tr>\n    </table>\n  </div>\n</div>\n<div class=\"panel\">\n  <label>Supply Stats</label>\n  <div id=\"stats\"></div>\n</div>\n<script>\nfunction calc(){\n  const price=parseFloat(document.getElementById('price').value)||65000;\n  const h=parseInt(document.getElementById('halving').value);\n  const reward=50/Math.pow(2,h);\n  const dailyNew=reward*144;\n  const annualNew=dailyNew*365;\n  const mined=[0,10500000,15750000,16406250,19687500][h]||19687500;\n  const remaining=21000000-mined;\n  document.getElementById('reward').innerHTML=\n    '<span class=\"big\">'+reward+'</span><span style=\"color:#94a3b8;font-size:14px;\"> BTC per block</span><br/>'+\n    '<span class=\"stat\">$'+(reward*price).toLocaleString()+'/block</span>'+\n    '<span class=\"stat\">'+dailyNew.toFixed(1)+' BTC/day new supply</span>';\n  document.getElementById('stats').innerHTML=\n    '<span class=\"stat\">'+mined.toLocaleString()+' BTC mined so far</span>'+\n    '<span class=\"stat\">'+remaining.toLocaleString()+' BTC remaining</span>'+\n    '<span class=\"stat\">'+(mined/21000000*100).toFixed(1)+'% of max supply issued</span>'+\n    '<span class=\"stat\">Last coin: ~year 2140</span>';\n}\ncalc();\n</script>\n</body>\n</html>"
+      },
+      "actions": [
+        {
+          "id": "action_cr-interactive_i0",
+          "type": "speech",
+          "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered."
+        },
+        {
+          "id": "action_cr-interactive_i1",
+          "type": "speech",
+          "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading."
+        }
+      ]
     },
     {
       "id": "cg-s8",
       "type": "quiz",
-      "title": "Knowledge Check \u2014 Cryptocurrency",
+      "title": "Knowledge Check — Cryptocurrency",
       "content": {
-        "type": "quiz"
+        "type": "quiz",
+        "questions": [
+          {
+            "id": "q-cc-1",
+            "type": "single",
+            "question": "What does UTXO stand for in Bitcoin?",
+            "options": [
+              {
+                "label": "Universal Token Exchange Order",
+                "value": "A"
+              },
+              {
+                "label": "Unspent Transaction Output",
+                "value": "B"
+              },
+              {
+                "label": "User Transaction eXchange Object",
+                "value": "C"
+              },
+              {
+                "label": "Unified Transfer eXecution Operation",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "UTXO = Unspent Transaction Output. Bitcoin tracks coin ownership as a set of unspent outputs rather than account balances.",
+            "points": 1
+          },
+          {
+            "id": "q-cc-2",
+            "type": "single",
+            "question": "XRP settles transactions in approximately how long?",
+            "options": [
+              {
+                "label": "10 minutes",
+                "value": "A"
+              },
+              {
+                "label": "~15 seconds",
+                "value": "B"
+              },
+              {
+                "label": "3–5 seconds",
+                "value": "C"
+              },
+              {
+                "label": "2–4 seconds",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "C"
+            ],
+            "analysis": "XRPL typically settles in 3–5 seconds, compared to Bitcoin's ~10 minute blocks and Ethereum's ~12 second blocks.",
+            "points": 1
+          },
+          {
+            "id": "q-cc-3",
+            "type": "single",
+            "question": "What happens to XRP fees after each transaction?",
+            "options": [
+              {
+                "label": "Sent to validators as rewards",
+                "value": "A"
+              },
+              {
+                "label": "Stored in a reserve fund",
+                "value": "B"
+              },
+              {
+                "label": "Permanently burned (destroyed)",
+                "value": "C"
+              },
+              {
+                "label": "Returned to the sender",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "C"
+            ],
+            "analysis": "XRPL burns transaction fees permanently — removing them from circulation. This is deflationary and prevents spam.",
+            "points": 1
+          },
+          {
+            "id": "q-cc-4",
+            "type": "multiple",
+            "question": "Which TWO metrics are examples of on-chain analysis indicators?",
+            "options": [
+              {
+                "label": "MVRV (Market Value to Realized Value)",
+                "value": "A"
+              },
+              {
+                "label": "RSI (Relative Strength Index)",
+                "value": "B"
+              },
+              {
+                "label": "SOPR (Spent Output Profit Ratio)",
+                "value": "C"
+              },
+              {
+                "label": "MACD (Moving Average Convergence Divergence)",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "A",
+              "C"
+            ],
+            "analysis": "MVRV and SOPR are on-chain metrics derived from blockchain data. RSI and MACD are traditional technical indicators from price charts.",
+            "points": 2
+          },
+          {
+            "id": "q-cc-5",
+            "type": "short_answer",
+            "question": "A friend says 'Bitcoin and XRP are basically the same thing — they're both cryptocurrencies.' Give two specific technical differences that show they are fundamentally different.",
+            "commentPrompt": "Award marks for any two real differences: consensus mechanism (PoW vs RPCA), speed (10 min vs 3–5 sec), fees (variable mining fee vs 0.0002 XRP burned), supply model (halving vs fixed 100B with burn), or energy usage.",
+            "points": 3
+          }
+        ]
       },
-      "order": 8
+      "order": 8,
+      "actions": [
+        {
+          "id": "action_cg-s8_q0",
+          "type": "speech",
+          "text": "Time to test your knowledge! Answer each question carefully — you can review the material after the quiz."
+        },
+        {
+          "id": "action_cg-s8_q1",
+          "type": "speech",
+          "text": "Take your time with these questions. The goal is to solidify your understanding, not just pass the quiz."
+        }
+      ]
     }
   ]
 }

@@ -29,11 +29,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#22d3ee",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -46,19 +50,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#22d3ee",
+              "fixedRatio": false
             },
             {
               "id": "xd-s1-titlebg",
@@ -66,287 +64,384 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "xd-s1-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>RPCA Consensus</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
-            },
-            {
-              "id": "xd-s1-sub",
-              "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Ripple Protocol Consensus Algorithm \u2014 how XRP reaches finality</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>RPCA Consensus</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
             {
-              "id": "xd-s1-pillbg0",
-              "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "id": "xd-s1-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>How XRPL achieves 3–5 second finality with no miners</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "xd-s1-pill0bg",
+              "type": "shape",
+              "left": 830,
+              "top": 14,
+              "width": 116,
+              "height": 68,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
               "fill": "#1e293b",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
               }
             },
             {
               "id": "xd-s1-pill0",
               "type": "text",
-              "left": 724,
+              "left": 834,
               "top": 14,
-              "width": 112,
-              "height": 74,
+              "width": 108,
+              "height": 68,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>3-5 seconds<br/><span style=\"font-size:10px;color:#64748b;\">Finality</span></p>",
+              "content": "<p style='font-size:18px;font-weight:800;color:#22d3ee;text-align:center;line-height:1.2;'>80%<br/><span style=\"font-size:10px;color:#64748b;font-weight:500;\">Required threshold</span></p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#22d3ee"
             },
             {
-              "id": "xd-s1-pillbg1",
+              "id": "xd-s1-st0bg",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 10,
+              "top": 118,
+              "width": 191,
+              "height": 430,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
               }
             },
             {
-              "id": "xd-s1-pill1",
+              "id": "xd-s1-st0num",
               "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 10,
+              "top": 128,
+              "width": 191,
+              "height": 50,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>~150 UNL<br/><span style=\"font-size:10px;color:#64748b;\">Validators</span></p>",
+              "content": "<p style='font-size:28px;font-weight:900;color:#22d3ee;text-align:center;'>1</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#22d3ee"
             },
             {
-              "id": "xd-s1-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s1-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s1-card0txt",
+              "id": "xd-s1-st0txt",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 18,
+              "top": 182,
+              "width": 175,
+              "height": 354,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>How RPCA Works</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Each validator has a Unique Node List (UNL) \u2014 trusted validators it consults (not all validators globally)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Round 1: each validator proposes candidate transactions and broadcasts position</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Round 2: validators share positions, converge on 80%+ supermajority agreement (SuperMajority threshold)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Finality: once 80%+ UNL agree on a ledger, it closes \u2014 no forks, no rollbacks possible</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Propose</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Any validator proposes a candidate set of transactions</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#94a3b8"
             },
             {
-              "id": "xd-s1-card1bg",
+              "id": "xd-s1-st1bg",
               "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
+              "left": 207,
+              "top": 118,
+              "width": 191,
+              "height": 430,
               "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                308,
-                446
+                1,
+                1
               ],
-              "fill": "#0a1929",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
               }
             },
             {
-              "id": "xd-s1-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s1-card1txt",
+              "id": "xd-s1-st1num",
               "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 207,
+              "top": 128,
+              "width": 191,
+              "height": 50,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>vs Nakamoto Consensus</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>RPCA achieves finality in 3-5 seconds vs Bitcoin's probabilistic 60-minute finality</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>No mining: no energy expenditure \u2014 validators run on commodity hardware, ~99.99% less energy than PoW</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Censorship risk: if 80% of UNL is controlled by one party, they can block transactions</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>RPCA is BFT-lite: tolerates up to 20% Byzantine validators within UNL \u2014 assumes trusted validator set</p>",
+              "content": "<p style='font-size:28px;font-weight:900;color:#22d3ee;text-align:center;'>2</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#22d3ee"
             },
             {
-              "id": "xd-s1-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s1-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s1-card2txt",
+              "id": "xd-s1-st1txt",
               "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 215,
+              "top": 182,
+              "width": 175,
+              "height": 354,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Validator Network</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Ripple runs some validators but minority \u2014 XRPL Foundation, universities, financial institutions also run validators</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>UNL is configurable: each node operator chooses their own UNL \u2014 recommendation list from Ripple is default</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>~35 recommended validators form the default UNL \u2014 actual network has ~150+ validators total</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Network health: dUNL (decentralized UNL) project works to diversify validator set globally</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Threshold</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>80% of trusted validators must agree on the same set</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "xd-s1-st2bg",
+              "type": "shape",
+              "left": 404,
+              "top": 118,
+              "width": 191,
+              "height": 430,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
+              }
+            },
+            {
+              "id": "xd-s1-st2num",
+              "type": "text",
+              "left": 404,
+              "top": 128,
+              "width": 191,
+              "height": 50,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:900;color:#22d3ee;text-align:center;'>3</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#22d3ee"
+            },
+            {
+              "id": "xd-s1-st2txt",
+              "type": "text",
+              "left": 412,
+              "top": 182,
+              "width": 175,
+              "height": 354,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Apply</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Agreed transactions applied to ledger state simultaneously</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "xd-s1-st3bg",
+              "type": "shape",
+              "left": 601,
+              "top": 118,
+              "width": 191,
+              "height": 430,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
+              }
+            },
+            {
+              "id": "xd-s1-st3num",
+              "type": "text",
+              "left": 601,
+              "top": 128,
+              "width": 191,
+              "height": 50,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:900;color:#22d3ee;text-align:center;'>4</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#22d3ee"
+            },
+            {
+              "id": "xd-s1-st3txt",
+              "type": "text",
+              "left": 609,
+              "top": 182,
+              "width": 175,
+              "height": 354,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Close</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Ledger version closed with new state hash and sequence number</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "xd-s1-st4bg",
+              "type": "shape",
+              "left": 798,
+              "top": 118,
+              "width": 191,
+              "height": 430,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
+              }
+            },
+            {
+              "id": "xd-s1-st4num",
+              "type": "text",
+              "left": 798,
+              "top": 128,
+              "width": 191,
+              "height": 50,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:900;color:#22d3ee;text-align:center;'>5</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#22d3ee"
+            },
+            {
+              "id": "xd-s1-st4txt",
+              "type": "text",
+              "left": 806,
+              "top": 182,
+              "width": 175,
+              "height": 354,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Finality</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>3–5 seconds: irreversible. No forks. No reorganizations.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
             }
           ]
         }
       },
-      "order": 1
+      "order": 1,
+      "actions": [
+        {
+          "id": "action_xd-s1_0",
+          "type": "spotlight",
+          "elementId": "xd-s1-title"
+        },
+        {
+          "id": "action_xd-s1_1",
+          "type": "speech",
+          "text": "XRPL achieves 3 to 5 second final settlement — no miners, no Proof of Work — through the Ripple Protocol Consensus Algorithm, or RPCA."
+        },
+        {
+          "id": "action_xd-s1_2",
+          "type": "spotlight",
+          "elementId": "xd-s1-sub"
+        },
+        {
+          "id": "action_xd-s1_3",
+          "type": "speech",
+          "text": "80% of trusted validators must agree. If they don't, the ledger doesn't close. No forks. No reorgs."
+        },
+        {
+          "id": "action_xd-s1_4",
+          "type": "spotlight",
+          "elementId": "xd-s1-st0txt"
+        },
+        {
+          "id": "action_xd-s1_5",
+          "type": "speech",
+          "text": "Step one: any validator proposes a candidate set of transactions for the next ledger."
+        },
+        {
+          "id": "action_xd-s1_6",
+          "type": "spotlight",
+          "elementId": "xd-s1-st1txt"
+        },
+        {
+          "id": "action_xd-s1_7",
+          "type": "speech",
+          "text": "Step two: the threshold. 80% of the validators on your Unique Node List must agree on the same transaction set."
+        },
+        {
+          "id": "action_xd-s1_8",
+          "type": "spotlight",
+          "elementId": "xd-s1-st2txt"
+        },
+        {
+          "id": "action_xd-s1_9",
+          "type": "speech",
+          "text": "Step three: agreed transactions are applied to the ledger state simultaneously by all validators."
+        },
+        {
+          "id": "action_xd-s1_10",
+          "type": "spotlight",
+          "elementId": "xd-s1-st3txt"
+        },
+        {
+          "id": "action_xd-s1_11",
+          "type": "speech",
+          "text": "Step four: the ledger version closes with a new state hash and sequence number."
+        },
+        {
+          "id": "action_xd-s1_12",
+          "type": "spotlight",
+          "elementId": "xd-s1-st4txt"
+        },
+        {
+          "id": "action_xd-s1_13",
+          "type": "speech",
+          "text": "Finality in 3 to 5 seconds. Irreversible. No forks, no reorganizations, no probabilistic settlement. This is hard finality."
+        },
+        {
+          "id": "action_xd-s1_14",
+          "type": "spotlight",
+          "elementId": "xd-s1-pill0"
+        },
+        {
+          "id": "action_xd-s1_15",
+          "type": "speech",
+          "text": "80% — the threshold that makes XRPL's consensus work."
+        }
+      ]
     },
     {
       "id": "xd-s2",
@@ -360,11 +455,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#3b82f6",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -377,19 +476,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
               "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fixedRatio": false
             },
             {
               "id": "xd-s2-titlebg",
@@ -397,287 +490,184 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "xd-s2-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Trust Lines</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Trust Lines & Rippling</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "xd-s2-sub",
               "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>XRP Ledger's token system \u2014 IOUs and balances</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>XRPL's permission system for tokens and credit</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#64748b"
             },
             {
-              "id": "xd-s2-pillbg0",
+              "id": "xd-s2-lp-bg",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 8,
+              "top": 108,
+              "width": 488,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
               }
             },
             {
-              "id": "xd-s2-pill0",
-              "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>2 XRP/line<br/><span style=\"font-size:10px;color:#64748b;\">Reserve</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "xd-s2-pillbg1",
+              "id": "xd-s2-lp-bar",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
-              "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                120,
-                74
-              ],
-              "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s2-pill1",
-              "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>1,000+<br/><span style=\"font-size:10px;color:#64748b;\">Tokens</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "xd-s2-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s2-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
+              "left": 8,
+              "top": 108,
               "width": 4,
-              "height": 446,
+              "height": 450,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s2-card0txt",
-              "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>What Is a Trust Line</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>A trust line is a bidirectional credit relationship between two XRPL accounts</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Explicitly trust an issuer (e.g., Bitstamp for USD) at a maximum limit you're willing to hold</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Balance is stored in the trust line: positive = you hold issuer's IOU, negative = you owe issuer</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Trust lines cost 2 XRP reserve per line \u2014 important for wallet minimum balance calculation</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "xd-s2-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s2-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
               "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fixedRatio": false
             },
             {
-              "id": "xd-s2-card1txt",
+              "id": "xd-s2-lp-txt",
               "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 20,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Issued Currencies</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Any XRPL account can issue any currency code (3-letter or 20-byte hex)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Stablecoins: RLUSD (Ripple's USD stablecoin), USDT, USDC bridged to XRPL via AMM bridges</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Common tokens: SOLO, CORE, CSC \u2014 community tokens, liquidity varies greatly</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Pathfinding: XRPL automatically finds multi-hop paths through trust lines to make cross-currency payments</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#3b82f6;margin-bottom:10px;'>Trust Lines</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>You cannot receive an IOUtoken on XRPL unless you explicitly create a trust line to the issuer.<br/><br/>Trust line = bilateral agreement: max credit, freeze rights, rippling settings.<br/><br/>This prevents spam tokens appearing in wallets without consent — unlike ERC-20 tokens that can be airdropped to anyone.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             },
             {
-              "id": "xd-s2-card2bg",
+              "id": "xd-s2-rp-bg",
               "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
+              "left": 504,
+              "top": 108,
+              "width": 488,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                308,
-                446
+                1,
+                1
               ],
-              "fill": "#042f2e",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#a855f7"
               }
             },
             {
-              "id": "xd-s2-card2bar",
+              "id": "xd-s2-rp-bar",
               "type": "shape",
-              "left": 636,
-              "top": 116,
+              "left": 504,
+              "top": 108,
               "width": 4,
-              "height": 446,
+              "height": 450,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#a855f7",
+              "fixedRatio": false
             },
             {
-              "id": "xd-s2-card2txt",
+              "id": "xd-s2-rp-txt",
               "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 516,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Rippling & No-Ripple</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Rippling: default behavior \u2014 a payment can flow through your trust line balance to reach another account</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>No-ripple flag: set on a trust line to prevent your balance from being used in third-party payments</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Why no-ripple matters: without it, your USD IOU from Bitstamp could be exchanged for USD from a different issuer</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Market makers use rippling; individual holders set no-ripple to avoid unexpected balance changes</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#a855f7;margin-bottom:10px;'>Rippling</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>Rippling = allow your IOUs to be passed through to other accounts that trust the same issuer.<br/><br/>Example: Alice trusts USD/Bank. Bob trusts USD/Bank. Alice can send Bob USD without Bank moving any actual money — the ledger adjusts IOU balances.<br/><br/>Disable rippling on personal accounts — only issuers need it.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             }
           ]
         }
       },
-      "order": 2
+      "order": 2,
+      "actions": [
+        {
+          "id": "action_xd-s2_0",
+          "type": "spotlight",
+          "elementId": "xd-s2-title"
+        },
+        {
+          "id": "action_xd-s2_1",
+          "type": "speech",
+          "text": "Trust lines are XRPL's permission system for tokens — you must explicitly opt in to receive any IOU-based asset."
+        },
+        {
+          "id": "action_xd-s2_2",
+          "type": "spotlight",
+          "elementId": "xd-s2-sub"
+        },
+        {
+          "id": "action_xd-s2_3",
+          "type": "speech",
+          "text": "This prevents spam tokens and gives you complete control over what your account can hold."
+        },
+        {
+          "id": "action_xd-s2_4",
+          "type": "spotlight",
+          "elementId": "xd-s2-lp-txt"
+        },
+        {
+          "id": "action_xd-s2_5",
+          "type": "speech",
+          "text": "Trust lines: you cannot receive an IOU token on XRPL unless you create a trust line to that issuer. This is a deliberate design choice — no one can force tokens into your account. The trust line also sets your maximum credit limit for that issuer."
+        },
+        {
+          "id": "action_xd-s2_6",
+          "type": "spotlight",
+          "elementId": "xd-s2-rp-txt"
+        },
+        {
+          "id": "action_xd-s2_7",
+          "type": "speech",
+          "text": "Rippling: if rippling is enabled on your trust lines, your IOU can be passed through to other accounts that trust the same issuer — enabling payment routing across multiple credit relationships. This is how Ripple originally envisioned internet-of-value settlements."
+        }
+      ]
     },
     {
       "id": "xd-s3",
@@ -691,11 +681,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#22d3ee",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -708,19 +702,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#22d3ee",
+              "fixedRatio": false
             },
             {
               "id": "xd-s3-titlebg",
@@ -728,287 +716,184 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "xd-s3-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Native DEX & AMM</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>XRPL Native DEX + AMM</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "xd-s3-sub",
               "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Protocol-level trading — no smart contracts, no external risk</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "xd-s3-lp-bg",
+              "type": "shape",
+              "left": 8,
+              "top": 108,
+              "width": 488,
+              "height": 450,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
+              }
+            },
+            {
+              "id": "xd-s3-lp-bar",
+              "type": "shape",
+              "left": 8,
+              "top": 108,
+              "width": 4,
+              "height": 450,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#22d3ee",
+              "fixedRatio": false
+            },
+            {
+              "id": "xd-s3-lp-txt",
+              "type": "text",
               "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Order book + AMM hybrid \u2014 XRPL's built-in exchange</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#22d3ee;margin-bottom:10px;'>Native Order Book DEX</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>XRPL has a fully functional order book built into the ledger protocol — no smart contract needed.<br/><br/>Any two assets with a common bridge currency can be traded.<br/><br/>Offers (orders) live on-ledger. Auto-bridging via XRP automatically routes through XRP when it improves the rate.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             },
             {
-              "id": "xd-s3-pillbg0",
+              "id": "xd-s3-rp-bg",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 504,
+              "top": 108,
+              "width": 488,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
               }
             },
             {
-              "id": "xd-s3-pill0",
-              "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>atomic<br/><span style=\"font-size:10px;color:#64748b;\">Settlement</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "xd-s3-pillbg1",
+              "id": "xd-s3-rp-bar",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
-              "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                120,
-                74
-              ],
-              "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s3-pill1",
-              "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>0.6%<br/><span style=\"font-size:10px;color:#64748b;\">Fee</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "xd-s3-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s3-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
+              "left": 504,
+              "top": 108,
               "width": 4,
-              "height": 446,
+              "height": 450,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#f59e0b",
+              "fixedRatio": false
             },
             {
-              "id": "xd-s3-card0txt",
+              "id": "xd-s3-rp-txt",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 516,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Native Order Book</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>XRPL has a built-in decentralized exchange at the protocol level \u2014 no smart contracts needed</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>OfferCreate transaction: specify sell amount + buy amount = creates limit order on ledger</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Auto-matching: when you send a payment, XRPL automatically routes through best offers \u2014 DEX is invisible to user</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Pathfinding: find_path API returns optimal route through trust lines and DEX to convert currencies</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#f59e0b;margin-bottom:10px;'>AMM (Added 2024)</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>XRPL AMM Proposal (XLS-30) went live 2024.<br/><br/>Constant-function AMM alongside the order book. LPs deposit both sides, earn trading fees.<br/><br/>Continuous Auction Mechanism (CAM): fee rises during high volatility to compensate LPs for IL — first AMM to implement this automatically.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "xd-s3-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s3-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s3-card1txt",
-              "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>AMM (Automated Market Maker)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>XRPL AMM added in 2024 (XLS-30) \u2014 constant product formula x \u00d7 y = k like Uniswap V2</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Each AMM pool issues LP tokens representing share of pool \u2014 LPs earn 0.6% trading fee</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Auction slot: one special position that receives 25% rebate on fees \u2014 winner bid decays over 24h</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>AMM + order book: payments can route through both simultaneously for best execution price</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "xd-s3-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s3-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s3-card2txt",
-              "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Atomic Swaps</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Every XRPL transaction is atomic \u2014 multi-step payments either fully succeed or fully revert</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Escrow + Conditional payments: enable trustless cross-chain atomic swaps (no smart contracts)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Payment channels: off-ledger micropayments with final on-ledger settlement \u2014 millions of micro-txs, one settlement</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>DeFi on XRPL: no EVM but native DEX, AMM, escrow, payment channels cover most use cases</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             }
           ]
         }
       },
-      "order": 3
+      "order": 3,
+      "actions": [
+        {
+          "id": "action_xd-s3_0",
+          "type": "spotlight",
+          "elementId": "xd-s3-title"
+        },
+        {
+          "id": "action_xd-s3_1",
+          "type": "speech",
+          "text": "XRPL has a fully functional decentralized exchange built directly into the protocol — no smart contracts required, no external risk."
+        },
+        {
+          "id": "action_xd-s3_2",
+          "type": "spotlight",
+          "elementId": "xd-s3-sub"
+        },
+        {
+          "id": "action_xd-s3_3",
+          "type": "speech",
+          "text": "The order book and AMM are protocol-level primitives, not deployed contracts."
+        },
+        {
+          "id": "action_xd-s3_4",
+          "type": "spotlight",
+          "elementId": "xd-s3-lp-txt"
+        },
+        {
+          "id": "action_xd-s3_5",
+          "type": "speech",
+          "text": "Native order book DEX: XRPL's DEX is built into the ledger consensus layer. Every transaction that closes a ledger can include order book matches. You can place limit orders, and cross-currency payments automatically use the order book for best execution."
+        },
+        {
+          "id": "action_xd-s3_6",
+          "type": "spotlight",
+          "elementId": "xd-s3-rp-txt"
+        },
+        {
+          "id": "action_xd-s3_7",
+          "type": "speech",
+          "text": "AMM added in 2024: XRPL's AMM, introduced via XLS-30 amendment, runs alongside the order book. Constant-function AMM just like Uniswap, but at the protocol level. The AMM and order book interact — liquidity providers earn fees from both."
+        }
+      ]
     },
     {
       "id": "xd-s4",
@@ -1022,11 +907,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f59e0b",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1039,19 +928,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#f59e0b",
+              "fixedRatio": false
             },
             {
               "id": "xd-s4-titlebg",
@@ -1059,287 +942,196 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "xd-s4-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>On-Demand Liquidity (ODL)</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
-            },
-            {
-              "id": "xd-s4-sub",
-              "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>RippleNet's cross-border payment rails using XRP as bridge</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Pathfinding & ODL</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
             {
-              "id": "xd-s4-pillbg0",
-              "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "id": "xd-s4-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>How XRPL routes payments across currencies in seconds</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "xd-s4-pill0bg",
+              "type": "shape",
+              "left": 830,
+              "top": 14,
+              "width": 116,
+              "height": 68,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
               "fill": "#1e293b",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
               }
             },
             {
               "id": "xd-s4-pill0",
               "type": "text",
-              "left": 724,
+              "left": 834,
               "top": 14,
-              "width": 112,
-              "height": 74,
+              "width": 108,
+              "height": 68,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>30+<br/><span style=\"font-size:10px;color:#64748b;\">ODL corridors</span></p>",
+              "content": "<p style='font-size:18px;font-weight:800;color:#f59e0b;text-align:center;line-height:1.2;'>$15B+<br/><span style=\"font-size:10px;color:#64748b;font-weight:500;\">ODL volume 2023</span></p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#f59e0b"
             },
             {
-              "id": "xd-s4-pillbg1",
+              "id": "xd-s4-fs-bg",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 60,
+              "top": 118,
+              "width": 880,
+              "height": 176,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#020817",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 2,
+                "color": "#f59e0b"
               }
             },
             {
-              "id": "xd-s4-pill1",
+              "id": "xd-s4-fs-formula",
               "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 60,
+              "top": 130,
+              "width": 880,
+              "height": 156,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>seconds<br/><span style=\"font-size:10px;color:#64748b;\">Settlement</span></p>",
+              "content": "<p style='font-size:34px;font-weight:800;color:#f59e0b;text-align:center;font-family:monospace;line-height:1.4;'>Path: USD → XRP → EUR (auto-bridged)</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#f59e0b"
             },
             {
-              "id": "xd-s4-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s4-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s4-card0txt",
+              "id": "xd-s4-fs-exp",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 60,
+              "top": 312,
+              "width": 880,
+              "height": 180,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>How ODL Works</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Sender (e.g., US bank) buys XRP on US exchange \u2192 sends XRP to recipient country's exchange \u2192 recipient exchange sells XRP for local currency</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Entire flow: ~3-5 seconds \u2014 vs 2-3 days for SWIFT wire transfer</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>No pre-funded accounts needed: eliminates nostro/vostro accounts banks maintain in each country</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Current ODL corridors: US\u2192Mexico, US\u2192Philippines, US\u2192EU, Australia\u2192Philippines \u2014 30+ active corridors</p>",
+              "content": "<p style='font-size:15px;color:#e2e8f0;line-height:1.7;text-align:center;'>XRPL pathfinding finds the best route across multiple currencies and order books automatically.<br/><br/>ODL (On-Demand Liquidity) uses XRP as a bridge:<br/>Sender deposits USD → XRP purchased → XRP sent to Mexico → XRP sold → recipient receives MXN<br/>Total time: 3–5 seconds. No pre-funded accounts needed.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             },
             {
-              "id": "xd-s4-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s4-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s4-card1txt",
+              "id": "xd-s4-fs-note",
               "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 60,
+              "top": 494,
+              "width": 880,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Why XRP?</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>XRP bridge: neutral asset neither sender nor recipient need to trust long-term \u2014 just for the 3 seconds of transfer</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>High liquidity: XRP is one of top 5 assets by volume \u2014 easy to buy/sell large amounts with low slippage</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Low cost: XRP transaction fee = 0.00001 XRP (~$0.00001) \u2014 negligible vs SWIFT fees</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Speed: 3-5 second finality required for ODL economics \u2014 slow finality = exchange rate risk</p>",
+              "content": "<p style='font-size:12px;color:#64748b;text-align:center;'>RippleNet ODL processed $15B+ in cross-border payments in 2023. Traditional SWIFT settlement: 2–5 business days.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "xd-s4-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s4-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s4-card2txt",
-              "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Competitive Landscape</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>SWIFT GPI: improved SWIFT with tracking \u2014 still 1-2 days, high fees</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Stellar (XLM): competitor network with similar design \u2014 focused on financial inclusion, smaller volumes</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Circle/USDC on multiple chains: stablecoin cross-border \u2014 removes FX risk but less liquidity in emerging markets</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>CBDC networks: future competition \u2014 if central banks issue CBDCs, direct interbank CBDC transfer possible</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#64748b"
             }
           ]
         }
       },
-      "order": 4
+      "order": 4,
+      "actions": [
+        {
+          "id": "action_xd-s4_0",
+          "type": "spotlight",
+          "elementId": "xd-s4-title"
+        },
+        {
+          "id": "action_xd-s4_1",
+          "type": "speech",
+          "text": "Pathfinding is one of XRPL's most powerful but least-understood features. ODL — On Demand Liquidity — is what Ripple built on top of it."
+        },
+        {
+          "id": "action_xd-s4_2",
+          "type": "spotlight",
+          "elementId": "xd-s4-sub"
+        },
+        {
+          "id": "action_xd-s4_3",
+          "type": "speech",
+          "text": "Send dollars, recipient gets euros, XRP is the bridge currency — in seconds, with near-zero fees."
+        },
+        {
+          "id": "action_xd-s4_4",
+          "type": "spotlight",
+          "elementId": "xd-s4-fs-formula"
+        },
+        {
+          "id": "action_xd-s4_5",
+          "type": "speech",
+          "text": "A payment path: USD to XRP to EUR. The sender sends USD, the XRPL pathfinder routes through XRP as a bridge, the recipient receives EUR."
+        },
+        {
+          "id": "action_xd-s4_6",
+          "type": "spotlight",
+          "elementId": "xd-s4-fs-exp"
+        },
+        {
+          "id": "action_xd-s4_7",
+          "type": "speech",
+          "text": "XRPL pathfinding automatically finds the best route across multiple currencies and order books. ODL replaces pre-funded nostro accounts for cross-border payments — eliminating the capital trapped in correspondent banking."
+        },
+        {
+          "id": "action_xd-s4_8",
+          "type": "spotlight",
+          "elementId": "xd-s4-fs-note"
+        },
+        {
+          "id": "action_xd-s4_9",
+          "type": "speech",
+          "text": "Ripple's ODL processed over 15 billion dollars in cross-border payments in 2023. Traditional SWIFT settlement takes 2 to 5 business days. ODL settles in 3 to 5 seconds."
+        },
+        {
+          "id": "action_xd-s4_10",
+          "type": "spotlight",
+          "elementId": "xd-s4-pill0"
+        },
+        {
+          "id": "action_xd-s4_11",
+          "type": "speech",
+          "text": "Over 15 billion dollars in ODL volume in 2023 alone."
+        }
+      ]
     },
     {
       "id": "xd-s5",
@@ -1353,11 +1145,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#3b82f6",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1370,19 +1166,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
               "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fixedRatio": false
             },
             {
               "id": "xd-s5-titlebg",
@@ -1390,287 +1180,180 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "xd-s5-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>XRPL Pathfinding</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>XRPL vs Ethereum</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "xd-s5-sub",
               "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Different design choices, different trade-offs</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "xd-s5-vs-lbg",
+              "type": "shape",
+              "left": 8,
+              "top": 108,
+              "width": 480,
+              "height": 450,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0d0800",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
+              }
+            },
+            {
+              "id": "xd-s5-vs-ltxt",
+              "type": "text",
               "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "top": 118,
+              "width": 456,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>How the protocol routes multi-hop payments</p>",
+              "content": "<p style='font-size:16px;font-weight:800;color:#22d3ee;margin-bottom:12px;'>XRPL</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• 1 XRP account reserve (was 20, voted down)</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• 0.0002 XRP per transaction (burned)</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• 3–5 second finality, no forks</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• 1,500 tx/s native (50K+ with AMM)</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• No smart contracts = no contract bugs</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• Leaderless consensus — no mining pools</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#cbd5e1"
             },
             {
-              "id": "xd-s5-pillbg0",
+              "id": "xd-s5-vs-div",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 494,
+              "top": 108,
+              "width": 12,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
               "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fixedRatio": false
             },
             {
-              "id": "xd-s5-pill0",
+              "id": "xd-s5-vs-vs",
               "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 483,
+              "top": 316,
+              "width": 34,
+              "height": 36,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>up to 6<br/><span style=\"font-size:10px;color:#64748b;\">Hops</span></p>",
+              "content": "<p style='font-size:11px;font-weight:700;color:#475569;text-align:center;'>VS</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#475569"
             },
             {
-              "id": "xd-s5-pillbg1",
+              "id": "xd-s5-vs-rbg",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 512,
+              "top": 108,
+              "width": 480,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#00100d",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#a855f7"
               }
             },
             {
-              "id": "xd-s5-pill1",
+              "id": "xd-s5-vs-rtxt",
               "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 524,
+              "top": 118,
+              "width": 456,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>auto-found<br/><span style=\"font-size:10px;color:#64748b;\">Paths</span></p>",
+              "content": "<p style='font-size:16px;font-weight:800;color:#a855f7;margin-bottom:12px;'>Ethereum</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• No account reserve needed</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• $1–$20+ gas fees (variable)</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• ~12 second blocks, reorg risk exists</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• ~15 tx/s L1 (100K+ via L2s)</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• Smart contracts = programmable but risky</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• 33 validators control >50% of stake</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "xd-s5-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s5-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s5-card0txt",
-              "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Path Discovery</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>ripple_path_find API: finds available paths from source currency to destination currency</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Each path is a series of trust lines and order book offers that connect currencies</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Example: send EUR, recipient receives SGD \u2192 find EUR\u2192XRP\u2192SGD path via two DEX trades</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>No-code routing: wallets call pathfinding, user just sees final quote \u2014 complexity hidden</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "xd-s5-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s5-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s5-card1txt",
-              "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Path Execution</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Payment transaction includes found paths as fallback options \u2014 protocol uses best available</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Partial payment flag: allow transaction to deliver less than requested (useful for variable conversion rate)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Slippage: if price moves between pathfinding and submission, transaction may fail \u2014 client retries</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>DEX + AMM: path can combine both \u2014 part of trade via order book, part via AMM pool</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "xd-s5-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s5-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s5-card2txt",
-              "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Optimization</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Composite paths: XRPL can split payment across multiple paths simultaneously for best rate</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Maximum path length: 6 hops \u2014 longer paths consume more transaction compute</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Order book liquidity: deep ETH/XRP + XRP/USDC markets enable efficient multi-hop settlement</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Auto-bridging: XRP automatically used as bridge currency between any two currencies \u2014 no explicit path needed</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#cbd5e1"
             }
           ]
         }
       },
-      "order": 5
+      "order": 5,
+      "actions": [
+        {
+          "id": "action_xd-s5_0",
+          "type": "spotlight",
+          "elementId": "xd-s5-title"
+        },
+        {
+          "id": "action_xd-s5_1",
+          "type": "speech",
+          "text": "XRPL and Ethereum are both public blockchains — but they made fundamentally different architectural choices."
+        },
+        {
+          "id": "action_xd-s5_2",
+          "type": "spotlight",
+          "elementId": "xd-s5-sub"
+        },
+        {
+          "id": "action_xd-s5_3",
+          "type": "speech",
+          "text": "Neither is strictly better. They optimize for different things."
+        },
+        {
+          "id": "action_xd-s5_4",
+          "type": "spotlight",
+          "elementId": "xd-s5-vs-ltxt"
+        },
+        {
+          "id": "action_xd-s5_5",
+          "type": "speech",
+          "text": "XRPL: 1 XRP account reserve, 0.0002 XRP per transaction fee that gets burned, 3 to 5 second hard finality, 1500 transactions per second natively, federated consensus — no mining. Purpose-built for payments."
+        },
+        {
+          "id": "action_xd-s5_6",
+          "type": "spotlight",
+          "elementId": "xd-s5-vs-rtxt"
+        },
+        {
+          "id": "action_xd-s5_7",
+          "type": "speech",
+          "text": "Ethereum: no account reserve, variable gas fees from 1 to 20 dollars depending on network congestion, 12-second blocks with reorg risk, ~15 transactions per second natively — scales via L2. General-purpose smart contract platform."
+        }
+      ]
     },
     {
       "id": "xd-s6",
@@ -1684,11 +1367,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#22d3ee",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1701,19 +1388,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#22d3ee",
+              "fixedRatio": false
             },
             {
               "id": "xd-s6-titlebg",
@@ -1721,287 +1402,184 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "xd-s6-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Why OnlyCrypto Runs on XRPL</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>XRPL's Roadmap</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "xd-s6-sub",
               "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Hooks, sidechains, and what's coming next</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "xd-s6-lp-bg",
+              "type": "shape",
+              "left": 8,
+              "top": 108,
+              "width": 488,
+              "height": 450,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
+              }
+            },
+            {
+              "id": "xd-s6-lp-bar",
+              "type": "shape",
+              "left": 8,
+              "top": 108,
+              "width": 4,
+              "height": 450,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#22d3ee",
+              "fixedRatio": false
+            },
+            {
+              "id": "xd-s6-lp-txt",
+              "type": "text",
               "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Technical and business reasons for choosing XRPL</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#22d3ee;margin-bottom:10px;'>XRPL Hooks (Coming)</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>Hooks = lightweight logic attached to accounts — triggered on send/receive.<br/><br/>Unlike Ethereum's full EVM, Hooks are deliberately limited: no loops, no storage, deterministic execution.<br/><br/>Use cases: auto-convert received XRP to RLUSD, block incoming transactions from unknown senders, auto-route to savings.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             },
             {
-              "id": "xd-s6-pillbg0",
+              "id": "xd-s6-rp-bg",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 504,
+              "top": 108,
+              "width": 488,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
               }
             },
             {
-              "id": "xd-s6-pill0",
-              "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>$0.00001<br/><span style=\"font-size:10px;color:#64748b;\">Fee</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "xd-s6-pillbg1",
+              "id": "xd-s6-rp-bar",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
-              "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                120,
-                74
-              ],
-              "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s6-pill1",
-              "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>3-5 sec<br/><span style=\"font-size:10px;color:#64748b;\">Finality</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "xd-s6-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s6-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
+              "left": 504,
+              "top": 108,
               "width": 4,
-              "height": 446,
+              "height": 450,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#f59e0b",
+              "fixedRatio": false
             },
             {
-              "id": "xd-s6-card0txt",
+              "id": "xd-s6-rp-txt",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 516,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Technical Advantages</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Transaction cost: ~$0.00001 per transaction \u2014 vs $0.50-$5 on Ethereum even after L2s</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Finality: 3-5 second final settlement \u2014 no probabilistic confirmation, no reorgs possible</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Native token support: issue and transfer custom tokens without smart contracts \u2014 simpler, lower attack surface</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>No smart contract risk: XRPL transactions are predefined types \u2014 no arbitrary code execution bugs</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#f59e0b;margin-bottom:10px;'>Federated Sidechains</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>XRPL can bridge to EVM-compatible sidechains (XRPL EVM Sidechain).<br/><br/>Solidity contracts run on the sidechain, settle to XRPL mainnet.<br/><br/>Best of both worlds: Ethereum ecosystem tools (MetaMask, Hardhat) with XRPL's speed and cost for final settlement.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "xd-s6-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s6-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s6-card1txt",
-              "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Business Model Fit</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Micropayments: $0.00001 fee enables per-lesson payments, micro-subscriptions, reward distributions</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Membership payments: $99-$249 membership in XRP \u2014 instant settlement, no chargeback fraud</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Trader profit distribution: tiny fees enable daily/weekly profit sharing without gas cost eating profits</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Affiliate payouts: multi-level commission structure \u2014 XRPL batch payments send to 7 levels simultaneously</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "xd-s6-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s6-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s6-card2txt",
-              "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>XRPL Ecosystem</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>XRPL EVM sidechain: brings EVM smart contracts to XRPL ecosystem \u2014 bridge to Ethereum DeFi</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>XRPL Grants program: $250M fund for XRPL ecosystem development \u2014 grants available for builders</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Hooks (proposed): native smart contract-like functionality directly on XRPL \u2014 lightweight, auditable</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Growing adoption: MoneyGram, Bitpay, BNY Mellon \u2014 institutional validation of XRPL's capabilities</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             }
           ]
         }
       },
-      "order": 6
+      "order": 6,
+      "actions": [
+        {
+          "id": "action_xd-s6_0",
+          "type": "spotlight",
+          "elementId": "xd-s6-title"
+        },
+        {
+          "id": "action_xd-s6_1",
+          "type": "speech",
+          "text": "XRPL's roadmap is focused on expanding functionality while maintaining its core payment efficiency."
+        },
+        {
+          "id": "action_xd-s6_2",
+          "type": "spotlight",
+          "elementId": "xd-s6-sub"
+        },
+        {
+          "id": "action_xd-s6_3",
+          "type": "speech",
+          "text": "Hooks and federated sidechains are the two most significant upcoming capabilities."
+        },
+        {
+          "id": "action_xd-s6_4",
+          "type": "spotlight",
+          "elementId": "xd-s6-lp-txt"
+        },
+        {
+          "id": "action_xd-s6_5",
+          "type": "speech",
+          "text": "XRPL Hooks — currently in development: lightweight logic attached to accounts, triggered on send or receive. Unlike full smart contracts, Hooks are constrained — computationally bounded to prevent the gas wars and complex attack surfaces of EVM. Think of them as programmable account rules."
+        },
+        {
+          "id": "action_xd-s6_6",
+          "type": "spotlight",
+          "elementId": "xd-s6-rp-txt"
+        },
+        {
+          "id": "action_xd-s6_7",
+          "type": "speech",
+          "text": "Federated sidechains: XRPL can bridge to EVM-compatible sidechains, including an XRPL EVM Sidechain. Solidity contracts can run on the sidechain while settling on the XRPL mainnet. This brings Ethereum ecosystem tooling to the XRPL security model."
+        }
+      ]
     },
     {
       "id": "xd-s7",
@@ -2015,11 +1593,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#3b82f6",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -2032,19 +1614,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
               "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fixedRatio": false
             },
             {
               "id": "xd-s7-titlebg",
@@ -2052,296 +1628,548 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "xd-s7-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>XRPL Developer Guide</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
-            },
-            {
-              "id": "xd-s7-sub",
-              "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Accounts, transactions, and building on the ledger</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>OnlyCrypto on XRPL</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
             {
-              "id": "xd-s7-pillbg0",
-              "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "id": "xd-s7-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>How every member payment flows through the ledger</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "xd-s7-pill0bg",
+              "type": "shape",
+              "left": 830,
+              "top": 14,
+              "width": 116,
+              "height": 68,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
               "fill": "#1e293b",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
               }
             },
             {
               "id": "xd-s7-pill0",
               "type": "text",
-              "left": 724,
+              "left": 834,
               "top": 14,
-              "width": 112,
-              "height": 74,
+              "width": 108,
+              "height": 68,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>npm install<br/><span style=\"font-size:10px;color:#64748b;\">xrpl.js</span></p>",
+              "content": "<p style='font-size:18px;font-weight:800;color:#3b82f6;text-align:center;line-height:1.2;'>$0.0002<br/><span style=\"font-size:10px;color:#64748b;font-weight:500;\">Per payment</span></p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#3b82f6"
             },
             {
-              "id": "xd-s7-pillbg1",
+              "id": "xd-s7-st0bg",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 10,
+              "top": 118,
+              "width": 191,
+              "height": 430,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
               }
             },
             {
-              "id": "xd-s7-pill1",
+              "id": "xd-s7-st0num",
               "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 10,
+              "top": 128,
+              "width": 191,
+              "height": 50,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>JSON-RPC + WS<br/><span style=\"font-size:10px;color:#64748b;\">API</span></p>",
+              "content": "<p style='font-size:28px;font-weight:900;color:#3b82f6;text-align:center;'>1</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#3b82f6"
             },
             {
-              "id": "xd-s7-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s7-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s7-card0txt",
+              "id": "xd-s7-st0txt",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 18,
+              "top": 182,
+              "width": 175,
+              "height": 354,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Getting Started</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>xrpl.js (JavaScript), xrpl-py (Python), xrpl4j (Java) \u2014 official client libraries</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Testnet: connect to wss://s.altnet.rippletest.net:51233 \u2014 free test XRP from Testnet Faucet</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Create account: generate keypair \u2192 fund with minimum 10 XRP reserve \u2192 account activated</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Explorer: xrpl.org/explorer \u2014 view ledger, transactions, accounts, DEX activity in real-time</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Member Pays</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Member sends XRP to OnlyCrypto hot wallet with destination tag identifying their account</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#94a3b8"
             },
             {
-              "id": "xd-s7-card1bg",
+              "id": "xd-s7-st1bg",
               "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
+              "left": 207,
+              "top": 118,
+              "width": 191,
+              "height": 430,
               "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                308,
-                446
+                1,
+                1
               ],
-              "fill": "#0a1929",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
               }
             },
             {
-              "id": "xd-s7-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s7-card1txt",
+              "id": "xd-s7-st1num",
               "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 207,
+              "top": 128,
+              "width": 191,
+              "height": 50,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Key Transaction Types</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Payment: send XRP or IOU \u2014 core building block, most common transaction</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>TrustSet: establish or modify a trust line \u2014 required before holding any issued currency</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>OfferCreate/OfferCancel: place/cancel DEX orders \u2014 create liquidity on native exchange</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>EscrowCreate/EscrowFinish: time-lock or condition-lock XRP \u2014 trustless delayed payments</p>",
+              "content": "<p style='font-size:28px;font-weight:900;color:#3b82f6;text-align:center;'>2</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#3b82f6"
             },
             {
-              "id": "xd-s7-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s7-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "xd-s7-card2txt",
+              "id": "xd-s7-st1txt",
               "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 215,
+              "top": 182,
+              "width": 175,
+              "height": 354,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Building DeFi on XRPL</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>AMM pool creation: AMMCreate transaction \u2014 specify both assets and fee percentage</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>AMM deposit/withdraw: AMMDeposit/AMMWithdraw \u2014 receive/redeem LP tokens proportionally</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>NFT (XLS-20): NFTokenMint, NFTokenOffer, NFTokenAcceptOffer \u2014 native NFT standard, no smart contracts</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Payment channels: PaymentChannelCreate/Claim \u2014 off-ledger micropayments for streaming payments</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Watcher Detects</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>XRPL watcher confirms tx on-ledger: amount, tag, finality in <5 seconds</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "xd-s7-st2bg",
+              "type": "shape",
+              "left": 404,
+              "top": 118,
+              "width": 191,
+              "height": 430,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "xd-s7-st2num",
+              "type": "text",
+              "left": 404,
+              "top": 128,
+              "width": 191,
+              "height": 50,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:900;color:#3b82f6;text-align:center;'>3</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "xd-s7-st2txt",
+              "type": "text",
+              "left": 412,
+              "top": 182,
+              "width": 175,
+              "height": 354,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>DB Updated</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Supabase updated: subscription activated, payout queue populated</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "xd-s7-st3bg",
+              "type": "shape",
+              "left": 601,
+              "top": 118,
+              "width": 191,
+              "height": 430,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "xd-s7-st3num",
+              "type": "text",
+              "left": 601,
+              "top": 128,
+              "width": 191,
+              "height": 50,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:900;color:#3b82f6;text-align:center;'>4</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "xd-s7-st3txt",
+              "type": "text",
+              "left": 609,
+              "top": 182,
+              "width": 175,
+              "height": 354,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Payouts Sent</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>XRPL sends referral commissions, rank bonuses, trader payouts — all in XRP, all on-chain</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "xd-s7-st4bg",
+              "type": "shape",
+              "left": 798,
+              "top": 118,
+              "width": 191,
+              "height": 430,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "xd-s7-st4num",
+              "type": "text",
+              "left": 798,
+              "top": 128,
+              "width": 191,
+              "height": 50,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:900;color:#3b82f6;text-align:center;'>5</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "xd-s7-st4txt",
+              "type": "text",
+              "left": 806,
+              "top": 182,
+              "width": 175,
+              "height": 354,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Cost</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>$0.0002 total in fees. 0 chargebacks. 0 bank delays. Fully auditable on-chain.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
             }
           ]
         }
       },
-      "order": 7
+      "order": 7,
+      "actions": [
+        {
+          "id": "action_xd-s7_0",
+          "type": "spotlight",
+          "elementId": "xd-s7-title"
+        },
+        {
+          "id": "action_xd-s7_1",
+          "type": "speech",
+          "text": "Every OnlyCrypto membership payment, commission, and bonus flows through the XRPL. This is the full picture of how it works."
+        },
+        {
+          "id": "action_xd-s7_2",
+          "type": "spotlight",
+          "elementId": "xd-s7-sub"
+        },
+        {
+          "id": "action_xd-s7_3",
+          "type": "speech",
+          "text": "Real payments, real finality, real transparency — all on-chain."
+        },
+        {
+          "id": "action_xd-s7_4",
+          "type": "spotlight",
+          "elementId": "xd-s7-st0txt"
+        },
+        {
+          "id": "action_xd-s7_5",
+          "type": "speech",
+          "text": "A member pays: they send XRP to the OnlyCrypto hot wallet with a destination tag identifying their account."
+        },
+        {
+          "id": "action_xd-s7_6",
+          "type": "spotlight",
+          "elementId": "xd-s7-st1txt"
+        },
+        {
+          "id": "action_xd-s7_7",
+          "type": "speech",
+          "text": "The watcher detects it: the XRPL watcher confirms the transaction on-ledger — verifying amount, destination tag, and finality within 3 to 5 seconds."
+        },
+        {
+          "id": "action_xd-s7_8",
+          "type": "spotlight",
+          "elementId": "xd-s7-st2txt"
+        },
+        {
+          "id": "action_xd-s7_9",
+          "type": "speech",
+          "text": "Database updated: Supabase records the subscription as active and populates the payout queue with all commissions owed to the referral chain."
+        },
+        {
+          "id": "action_xd-s7_10",
+          "type": "spotlight",
+          "elementId": "xd-s7-st3txt"
+        },
+        {
+          "id": "action_xd-s7_11",
+          "type": "speech",
+          "text": "Payouts sent: XRPL sends referral commissions, rank bonuses, and trader payouts — all in XRP, all on-chain, all auditable."
+        },
+        {
+          "id": "action_xd-s7_12",
+          "type": "spotlight",
+          "elementId": "xd-s7-st4txt"
+        },
+        {
+          "id": "action_xd-s7_13",
+          "type": "speech",
+          "text": "Total cost: 0.0002 dollars in fees. Zero chargebacks. Zero bank delays. Every payment fully auditable on the public ledger."
+        },
+        {
+          "id": "action_xd-s7_14",
+          "type": "spotlight",
+          "elementId": "xd-s7-pill0"
+        },
+        {
+          "id": "action_xd-s7_15",
+          "type": "speech",
+          "text": "0.0002 dollars per payment — that's the entire fee for moving any amount of XRP on XRPL."
+        }
+      ]
+    },
+    {
+      "id": "xr-interactive",
+      "type": "interactive",
+      "title": "Interactive Simulation",
+      "content": {
+        "type": "interactive",
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody{background:#0b1120;color:#e2e8f0;font-family:Inter,system-ui,sans-serif;padding:20px;margin:0;}\nh2{color:#22d3ee;font-size:18px;margin:0 0 4px;}\n.sub{color:#64748b;font-size:12px;margin-bottom:16px;}\n.row{display:flex;gap:12px;margin-bottom:12px;}\n.panel{background:#0f1f3d;border:1px solid #1e3a5f;border-radius:8px;padding:14px;flex:1;}\nlabel{color:#94a3b8;font-size:11px;text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;}\ninput,select{width:100%;padding:8px 10px;background:#020817;border:1px solid #334155;color:#f1f5f9;border-radius:6px;font-size:13px;box-sizing:border-box;}\n.result{background:#020817;border:1px solid #334155;border-radius:6px;padding:10px;font-size:13px;margin-top:8px;}\n.big{font-size:22px;font-weight:800;color:#22d3ee;}\n.stat{display:inline-block;background:#1e3a5f;border-radius:4px;padding:3px 10px;font-size:11px;font-weight:700;color:#60a5fa;margin:3px 2px;}\n.good{color:#22c55e;} .bad{color:#ef4444;}\ntable{width:100%;border-collapse:collapse;font-size:11px;}\ntd,th{padding:5px 7px;border-bottom:1px solid #1e293b;text-align:left;}\nth{color:#64748b;font-weight:600;}\n</style>\n</head>\n<body>\n<h2>XRPL Fee & Reserve Calculator</h2>\n<p class=\"sub\">Calculate transaction costs and account reserves for OnlyCrypto member payments.</p>\n<div class=\"row\">\n  <div class=\"panel\">\n    <label>Payment amount (XRP)</label>\n    <input type=\"number\" id=\"amount\" value=\"99\" step=\"0.1\" oninput=\"calc()\">\n    <label style=\"margin-top:8px\">Number of transactions per month</label>\n    <input type=\"number\" id=\"txcount\" value=\"100\" oninput=\"calc()\">\n    <label style=\"margin-top:8px\">XRP price (USD)</label>\n    <input type=\"number\" id=\"xrpprice\" value=\"2.20\" step=\"0.01\" oninput=\"calc()\">\n    <div class=\"result\" id=\"fee_result\"></div>\n  </div>\n  <div class=\"panel\">\n    <label>Account Reserve Breakdown</label>\n    <select id=\"trustlines\" onchange=\"calcReserve()\">\n      <option value=\"0\">0 trust lines</option>\n      <option value=\"1\">1 trust line</option>\n      <option value=\"3\" selected>3 trust lines</option>\n      <option value=\"5\">5 trust lines</option>\n    </select>\n    <div class=\"result\" id=\"reserve_result\" style=\"margin-top:8px;\"></div>\n    <label style=\"margin-top:12px\">vs. Traditional Wire Transfer</label>\n    <table>\n      <tr><th>Method</th><th>Cost</th><th>Time</th></tr>\n      <tr><td>XRPL</td><td class=\"good\">$0.0002</td><td class=\"good\">3–5 sec</td></tr>\n      <tr><td>PayPal</td><td class=\"bad\">2.9% + $0.30</td><td>Instant (but holds)</td></tr>\n      <tr><td>SWIFT Wire</td><td class=\"bad\">$15–$45</td><td class=\"bad\">2–5 days</td></tr>\n      <tr><td>Stripe</td><td class=\"bad\">2.9% + $0.30</td><td>2 day settlement</td></tr>\n    </table>\n  </div>\n</div>\n<script>\nconst XRP_FEE=0.000012;\nfunction calc(){\n  const amt=parseFloat(document.getElementById('amount').value)||99;\n  const n=parseInt(document.getElementById('txcount').value)||100;\n  const price=parseFloat(document.getElementById('xrpprice').value)||2.20;\n  const totalFeeXRP=XRP_FEE*n;\n  const totalFeeUSD=totalFeeXRP*price;\n  const amtUSD=amt*price;\n  const altFee=amtUSD*0.029+0.30;\n  const savings=(altFee-XRP_FEE*price)*n;\n  document.getElementById('fee_result').innerHTML=\n    'Per tx fee: <span class=\"big\">$'+(XRP_FEE*price).toFixed(6)+'</span><br/>'+\n    '<span class=\"stat\">'+n+' tx/month: $'+totalFeeUSD.toFixed(4)+'</span>'+\n    '<span class=\"stat good\">vs PayPal: save $'+savings.toFixed(2)+'/mo</span><br/>'+\n    '<span class=\"stat\">Payment value: $'+amtUSD.toFixed(2)+'</span>'+\n    '<span class=\"stat\">Fee = '+(XRP_FEE/amt*100).toFixed(6)+'% of payment</span>';\n}\nfunction calcReserve(){\n  const tl=parseInt(document.getElementById('trustlines').value)||0;\n  const baseReserve=1;\n  const ownerReserve=0.2;\n  const total=baseReserve+tl*ownerReserve;\n  document.getElementById('reserve_result').innerHTML=\n    'Required reserve: <span class=\"big\">'+total.toFixed(1)+' XRP</span><br/>'+\n    '<span class=\"stat\">Base: 1 XRP</span>'+\n    '<span class=\"stat\">Trust lines: '+tl+' × 0.2 XRP</span><br/>'+\n    '<span style=\"font-size:11px;color:#64748b;\">Reserve is locked but not destroyed — returned if objects deleted.</span>';\n}\ncalc(); calcReserve();\n</script>\n</body>\n</html>"
+      },
+      "actions": [
+        {
+          "id": "action_xr-interactive_i0",
+          "type": "speech",
+          "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered."
+        },
+        {
+          "id": "action_xr-interactive_i1",
+          "type": "speech",
+          "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading."
+        }
+      ]
     },
     {
       "id": "xd-s8",
       "type": "quiz",
-      "title": "Knowledge Check \u2014 XRPL Deep Dive",
+      "title": "Knowledge Check — XRPL Deep Dive",
       "content": {
-        "type": "quiz"
+        "type": "quiz",
+        "questions": [
+          {
+            "id": "q-xd-1",
+            "type": "single",
+            "question": "XRPL's RPCA consensus requires what percentage of validators to agree for a transaction to be finalized?",
+            "options": [
+              {
+                "label": "51%",
+                "value": "A"
+              },
+              {
+                "label": "67%",
+                "value": "B"
+              },
+              {
+                "label": "80%",
+                "value": "C"
+              },
+              {
+                "label": "100%",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "C"
+            ],
+            "analysis": "RPCA requires 80% of trusted validators to agree. This gives strong Byzantine fault tolerance while maintaining high throughput.",
+            "points": 1
+          },
+          {
+            "id": "q-xd-2",
+            "type": "single",
+            "question": "What is an XRPL Trust Line?",
+            "options": [
+              {
+                "label": "A payment channel between two accounts",
+                "value": "A"
+              },
+              {
+                "label": "An explicit permission to hold a non-XRP token issued by a specific issuer",
+                "value": "B"
+              },
+              {
+                "label": "A smart contract for token swaps",
+                "value": "C"
+              },
+              {
+                "label": "The validator's reputation score",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Trust lines are XRPL's permission system — you must explicitly trust an issuer before receiving their token. This prevents spam tokens from appearing in wallets.",
+            "points": 1
+          },
+          {
+            "id": "q-xd-3",
+            "type": "single",
+            "question": "What is the minimum XRP reserve required to activate an XRPL account (as of 2024)?",
+            "options": [
+              {
+                "label": "20 XRP",
+                "value": "A"
+              },
+              {
+                "label": "10 XRP",
+                "value": "B"
+              },
+              {
+                "label": "1 XRP",
+                "value": "C"
+              },
+              {
+                "label": "0.5 XRP",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "C"
+            ],
+            "analysis": "The reserve was reduced from 20 XRP to 10 XRP, then to 1 XRP via validator governance votes. Always verify the current reserve with a live ServerInfo call.",
+            "points": 1
+          },
+          {
+            "id": "q-xd-4",
+            "type": "multiple",
+            "question": "Which TWO are unique features of XRPL's native DEX (not found in most EVM DEXes)?",
+            "options": [
+              {
+                "label": "Automatic market maker (AMM) pools",
+                "value": "A"
+              },
+              {
+                "label": "Built-in order book at the protocol layer (no smart contract needed)",
+                "value": "B"
+              },
+              {
+                "label": "Pathfinding that auto-routes through multiple currencies",
+                "value": "C"
+              },
+              {
+                "label": "Flash loans on any token pair",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B",
+              "C"
+            ],
+            "analysis": "XRPL has a native order book ledger object — no smart contract required. Its pathfinding engine auto-routes through intermediate currencies for best execution. AMMs exist on XRPL too but also exist on EVM chains.",
+            "points": 2
+          },
+          {
+            "id": "q-xd-5",
+            "type": "short_answer",
+            "question": "OnlyCrypto uses XRPL for member payments. Give three specific technical reasons why XRPL is better suited for this use case than Ethereum.",
+            "commentPrompt": "Full marks for any three: (1) 3–5 sec finality vs Ethereum minutes, (2) $0.0002 fee vs $5+ ETH gas, (3) no smart contract risk — payments are protocol-level, (4) destination tags for multi-user wallets, (5) 1 XRP reserve makes wallets lightweight, (6) no miner/validator bribery — fees are burned.",
+            "points": 3
+          }
+        ]
       },
-      "order": 8
+      "order": 8,
+      "actions": [
+        {
+          "id": "action_xd-s8_q0",
+          "type": "speech",
+          "text": "Time to test your knowledge! Answer each question carefully — you can review the material after the quiz."
+        },
+        {
+          "id": "action_xd-s8_q1",
+          "type": "speech",
+          "text": "Take your time with these questions. The goal is to solidify your understanding, not just pass the quiz."
+        }
+      ]
     }
   ]
 }

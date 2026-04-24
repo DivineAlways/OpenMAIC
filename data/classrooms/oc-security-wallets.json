@@ -29,11 +29,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#3b82f6",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -46,19 +50,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
               "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fixedRatio": false
             },
             {
               "id": "sw-s1-titlebg",
@@ -66,287 +64,341 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "sw-s1-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>BIP39 Seed Phrase Derivation</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>BIP39 — Seed Phrase Standard</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "sw-s1-sub",
               "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>From entropy to master private key</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>How 12 words become the key to your entire wallet</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#64748b"
             },
             {
-              "id": "sw-s1-pillbg0",
+              "id": "sw-s1-st0bg",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 10,
+              "top": 118,
+              "width": 191,
+              "height": 430,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
               }
             },
             {
-              "id": "sw-s1-pill0",
+              "id": "sw-s1-st0num",
               "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 10,
+              "top": 128,
+              "width": 191,
+              "height": 50,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>128-256 bits<br/><span style=\"font-size:10px;color:#64748b;\">Entropy</span></p>",
+              "content": "<p style='font-size:28px;font-weight:900;color:#3b82f6;text-align:center;'>1</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#3b82f6"
             },
             {
-              "id": "sw-s1-pillbg1",
-              "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
-              "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                120,
-                74
-              ],
-              "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s1-pill1",
+              "id": "sw-s1-st0txt",
               "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 18,
+              "top": 182,
+              "width": 175,
+              "height": 354,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>2048 words<br/><span style=\"font-size:10px;color:#64748b;\">Wordlist</span></p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Entropy Source</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>128–256 bits of randomness from a secure source</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#94a3b8"
             },
             {
-              "id": "sw-s1-card0bg",
+              "id": "sw-s1-st1bg",
               "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
+              "left": 207,
+              "top": 118,
+              "width": 191,
+              "height": 430,
               "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                308,
-                446
+                1,
+                1
               ],
-              "fill": "#1a1040",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
               }
             },
             {
-              "id": "sw-s1-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s1-card0txt",
+              "id": "sw-s1-st1num",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 207,
+              "top": 128,
+              "width": 191,
+              "height": 50,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Entropy to Mnemonic</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Generate 128-256 bits of cryptographically secure random entropy</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Add checksum: SHA-256(entropy), take first entropy_bits/32 bits</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Concatenate entropy + checksum, split into 11-bit groups \u2192 index into 2048-word BIP39 wordlist</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Result: 12 words (128-bit) or 24 words (256-bit) \u2014 each word carries 11 bits of information</p>",
+              "content": "<p style='font-size:28px;font-weight:900;color:#3b82f6;text-align:center;'>2</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#3b82f6"
             },
             {
-              "id": "sw-s1-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s1-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s1-card1txt",
+              "id": "sw-s1-st1txt",
               "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 215,
+              "top": 182,
+              "width": 175,
+              "height": 354,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Mnemonic to Seed</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>PBKDF2-HMAC-SHA512(mnemonic phrase, 'mnemonic' + passphrase, 2048 iterations)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Output: 512-bit seed \u2014 deterministically generates all child keys</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Optional passphrase (25th word): same mnemonic + different passphrase = entirely different wallet</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Passphrase enables plausible deniability \u2014 'duress wallet' with small amount vs real wallet</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Word Mapping</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>2,048-word BIP39 wordlist maps bits to words</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#94a3b8"
             },
             {
-              "id": "sw-s1-card2bg",
+              "id": "sw-s1-st2bg",
               "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
+              "left": 404,
+              "top": 118,
+              "width": 191,
+              "height": 430,
               "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                308,
-                446
+                1,
+                1
               ],
-              "fill": "#042f2e",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
               }
             },
             {
-              "id": "sw-s1-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s1-card2txt",
+              "id": "sw-s1-st2num",
               "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 404,
+              "top": 128,
+              "width": 191,
+              "height": 50,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>BIP32/44 HD Derivation</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Master key: HMAC-SHA512(b'Bitcoin seed', seed) \u2192 512 bits = left(256b private key) + right(256b chain code)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Child key derivation: HMAC-SHA512(parent_pubkey || index) \u2192 child private key + chain code</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>BIP44 path: m/44'/coin_type'/account'/change/address_index \u2014 standardized across all wallets</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Hardened derivation (index \u2265 2\u00b3\u00b9): uses private key, not public key \u2014 child keys can't be derived from xpub</p>",
+              "content": "<p style='font-size:28px;font-weight:900;color:#3b82f6;text-align:center;'>3</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "sw-s1-st2txt",
+              "type": "text",
+              "left": 412,
+              "top": 182,
+              "width": 175,
+              "height": 354,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>12–24 Words</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Your seed phrase — the master key to all accounts</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "sw-s1-st3bg",
+              "type": "shape",
+              "left": 601,
+              "top": 118,
+              "width": 191,
+              "height": 430,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "sw-s1-st3num",
+              "type": "text",
+              "left": 601,
+              "top": 128,
+              "width": 191,
+              "height": 50,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:900;color:#3b82f6;text-align:center;'>4</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "sw-s1-st3txt",
+              "type": "text",
+              "left": 609,
+              "top": 182,
+              "width": 175,
+              "height": 354,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>PBKDF2 Hash</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Seed phrase + optional passphrase → 512-bit master seed</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "sw-s1-st4bg",
+              "type": "shape",
+              "left": 798,
+              "top": 118,
+              "width": 191,
+              "height": 430,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "sw-s1-st4num",
+              "type": "text",
+              "left": 798,
+              "top": 128,
+              "width": 191,
+              "height": 50,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:900;color:#3b82f6;text-align:center;'>5</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "sw-s1-st4txt",
+              "type": "text",
+              "left": 806,
+              "top": 182,
+              "width": 175,
+              "height": 354,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>HD Tree</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>BIP32 derives unlimited child keys from master seed</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
             }
           ]
         }
       },
-      "order": 1
+      "order": 1,
+      "actions": [
+        {
+          "id": "action_sw-s1_0",
+          "type": "spotlight",
+          "elementId": "sw-s1-title"
+        },
+        {
+          "id": "action_sw-s1_1",
+          "type": "speech",
+          "text": "Your seed phrase is not just a password — it's the cryptographic master key to everything in your wallet, forever."
+        },
+        {
+          "id": "action_sw-s1_2",
+          "type": "spotlight",
+          "elementId": "sw-s1-sub"
+        },
+        {
+          "id": "action_sw-s1_3",
+          "type": "speech",
+          "text": "BIP39 is the standard that turns 12 to 24 English words into a deterministic wallet."
+        },
+        {
+          "id": "action_sw-s1_4",
+          "type": "spotlight",
+          "elementId": "sw-s1-st0txt"
+        },
+        {
+          "id": "action_sw-s1_5",
+          "type": "speech",
+          "text": "Step one: 128 to 256 bits of true randomness from a cryptographically secure source. Your hardware wallet generates this internally."
+        },
+        {
+          "id": "action_sw-s1_6",
+          "type": "spotlight",
+          "elementId": "sw-s1-st1txt"
+        },
+        {
+          "id": "action_sw-s1_7",
+          "type": "speech",
+          "text": "Step two: the BIP39 wordlist maps those bits to human-readable words from a fixed 2048-word list. Easy to write down, harder to mistype than hex."
+        },
+        {
+          "id": "action_sw-s1_8",
+          "type": "spotlight",
+          "elementId": "sw-s1-st2txt"
+        },
+        {
+          "id": "action_sw-s1_9",
+          "type": "speech",
+          "text": "Your 12 to 24 words ARE the master key. Anyone who has them has everything. Write them down once, store them securely offline."
+        },
+        {
+          "id": "action_sw-s1_10",
+          "type": "spotlight",
+          "elementId": "sw-s1-st3txt"
+        },
+        {
+          "id": "action_sw-s1_11",
+          "type": "speech",
+          "text": "PBKDF2 hashing: your seed phrase combined with an optional passphrase gets hashed into a 512-bit master seed. The passphrase adds a 25th word layer of security."
+        },
+        {
+          "id": "action_sw-s1_12",
+          "type": "spotlight",
+          "elementId": "sw-s1-st4txt"
+        },
+        {
+          "id": "action_sw-s1_13",
+          "type": "speech",
+          "text": "BIP32 HD derivation: from that master seed, unlimited child keys are derived deterministically. One seed, unlimited accounts."
+        }
+      ]
     },
     {
       "id": "sw-s2",
@@ -360,11 +412,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#22d3ee",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -377,19 +433,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#22d3ee",
+              "fixedRatio": false
             },
             {
               "id": "sw-s2-titlebg",
@@ -397,287 +447,153 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "sw-s2-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Attack Vectors</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>BIP44 Derivation Paths</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "sw-s2-sub",
               "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Phishing, clipboard hijacking, and supply chain attacks</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The address structure that organizes your entire wallet</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#64748b"
             },
             {
-              "id": "sw-s2-pillbg0",
+              "id": "sw-s2-fs-bg",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 60,
+              "top": 118,
+              "width": 880,
+              "height": 176,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#020817",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 2,
+                "color": "#22d3ee"
               }
             },
             {
-              "id": "sw-s2-pill0",
+              "id": "sw-s2-fs-formula",
               "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 60,
+              "top": 130,
+              "width": 880,
+              "height": 156,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>#1 threat<br/><span style=\"font-size:10px;color:#64748b;\">Phishing</span></p>",
+              "content": "<p style='font-size:34px;font-weight:800;color:#22d3ee;text-align:center;font-family:monospace;line-height:1.4;'>m / 44' / 144' / 0' / 0 / 0</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#22d3ee"
             },
             {
-              "id": "sw-s2-pillbg1",
-              "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
-              "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                120,
-                74
-              ],
-              "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s2-pill1",
+              "id": "sw-s2-fs-exp",
               "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 60,
+              "top": 312,
+              "width": 880,
+              "height": 180,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>$millions lost<br/><span style=\"font-size:10px;color:#64748b;\">Clipboard</span></p>",
+              "content": "<p style='font-size:15px;color:#e2e8f0;line-height:1.7;text-align:center;'>m = master seed · 44' = BIP44 purpose · 144' = XRPL coin type<br/>0' = account 0 · 0 = external chain · 0 = address index<br/><br/>Bitcoin uses coin type 0 · Ethereum uses 60 · XRPL uses 144</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             },
             {
-              "id": "sw-s2-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s2-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s2-card0txt",
+              "id": "sw-s2-fs-note",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 60,
+              "top": 494,
+              "width": 880,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Phishing</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Fake website: pixel-perfect clone of MetaMask, Ledger, or Uniswap \u2014 check URL character by character</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Email phishing: 'Your account is compromised, enter seed phrase immediately' \u2014 never legitimate</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Social engineering: Discord DMs offering 'NFT mint access' or 'beta testing' \u2014 leads to drain site</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Spear phishing: targeted attack using personal info \u2014 researches victim before striking</p>",
+              "content": "<p style='font-size:12px;color:#64748b;text-align:center;'>Hardened derivation (marked with ') means child keys cannot be derived from the parent public key — extra security layer.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "sw-s2-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s2-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s2-card1txt",
-              "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Clipboard Hijacking</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Malware monitors clipboard for cryptocurrency address pattern</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>When you copy an address, malware silently replaces it with attacker's address</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Clipboard trojans have stolen millions \u2014 affected Windows, macOS, and mobile devices</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Defense: always verify first and last 6 characters of destination address after pasting</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "sw-s2-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s2-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s2-card2txt",
-              "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Supply Chain Attacks</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Fake npm package: 'ethereumjs-wallet' typosquatted as 'ethereumjs-wallets' \u2014 steals private keys</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Browser extension: malicious extension added to Chrome Web Store reads every page you visit</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Hardware wallet fake: counterfeit Ledger with backdoored firmware \u2014 buy only from manufacturer</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Dependency confusion: inject malicious package with same name as internal private npm package</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#64748b"
             }
           ]
         }
       },
-      "order": 2
+      "order": 2,
+      "actions": [
+        {
+          "id": "action_sw-s2_0",
+          "type": "spotlight",
+          "elementId": "sw-s2-title"
+        },
+        {
+          "id": "action_sw-s2_1",
+          "type": "speech",
+          "text": "BIP44 standardizes how wallets derive addresses — so the same seed phrase works across different wallets and blockchains."
+        },
+        {
+          "id": "action_sw-s2_2",
+          "type": "spotlight",
+          "elementId": "sw-s2-sub"
+        },
+        {
+          "id": "action_sw-s2_3",
+          "type": "speech",
+          "text": "The derivation path tells your wallet exactly which account and address to generate."
+        },
+        {
+          "id": "action_sw-s2_4",
+          "type": "spotlight",
+          "elementId": "sw-s2-fs-formula"
+        },
+        {
+          "id": "action_sw-s2_5",
+          "type": "speech",
+          "text": "For XRPL: m slash 44 prime slash 144 prime slash 0 prime slash 0 slash 0. Each segment specifies purpose, coin type, account, chain, and address index."
+        },
+        {
+          "id": "action_sw-s2_6",
+          "type": "spotlight",
+          "elementId": "sw-s2-fs-exp"
+        },
+        {
+          "id": "action_sw-s2_7",
+          "type": "speech",
+          "text": "The prime marks indicate hardened derivation — child keys cannot be derived from the parent public key alone, adding security. 144 is XRPL's registered coin type. This is why your Ledger knows where your XRPL address is without you telling it."
+        },
+        {
+          "id": "action_sw-s2_8",
+          "type": "spotlight",
+          "elementId": "sw-s2-fs-note"
+        },
+        {
+          "id": "action_sw-s2_9",
+          "type": "speech",
+          "text": "Hardened derivation is a critical security feature. Without it, if an attacker learns one derived private key, they could derive all sibling keys."
+        }
+      ]
     },
     {
       "id": "sw-s3",
@@ -691,11 +607,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#22d3ee",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -708,19 +628,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#22d3ee",
+              "fixedRatio": false
             },
             {
               "id": "sw-s3-titlebg",
@@ -728,287 +642,180 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "sw-s3-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Multisig Setups</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Hot vs Cold Storage</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "sw-s3-sub",
               "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Not your keys, not your coins — and how to hold your keys</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "sw-s3-vs-lbg",
+              "type": "shape",
+              "left": 8,
+              "top": 108,
+              "width": 480,
+              "height": 450,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0d0800",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
+              }
+            },
+            {
+              "id": "sw-s3-vs-ltxt",
+              "type": "text",
               "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "top": 118,
+              "width": 456,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>M-of-N security for individuals and organizations</p>",
+              "content": "<p style='font-size:16px;font-weight:800;color:#ef4444;margin-bottom:12px;'>🔥 Hot Wallets</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• Connected to internet</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• Private key in software/browser</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• Convenient for daily use</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• MetaMask, XUMM, Coinbase Wallet</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• Vulnerable to malware, phishing</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• Only keep small amounts</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#cbd5e1"
             },
             {
-              "id": "sw-s3-pillbg0",
+              "id": "sw-s3-vs-div",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 494,
+              "top": 108,
+              "width": 12,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
               "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fixedRatio": false
             },
             {
-              "id": "sw-s3-pill0",
+              "id": "sw-s3-vs-vs",
               "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 483,
+              "top": 316,
+              "width": 34,
+              "height": 36,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>2-of-3<br/><span style=\"font-size:10px;color:#64748b;\">Standard</span></p>",
+              "content": "<p style='font-size:11px;font-weight:700;color:#475569;text-align:center;'>VS</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#475569"
             },
             {
-              "id": "sw-s3-pillbg1",
+              "id": "sw-s3-vs-rbg",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 512,
+              "top": 108,
+              "width": 480,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#00100d",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
               }
             },
             {
-              "id": "sw-s3-pill1",
+              "id": "sw-s3-vs-rtxt",
               "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 524,
+              "top": 118,
+              "width": 456,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>P2SH, P2WSH<br/><span style=\"font-size:10px;color:#64748b;\">Protocol</span></p>",
+              "content": "<p style='font-size:16px;font-weight:800;color:#22d3ee;margin-bottom:12px;'>🔒 Cold Wallets</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• Never connected to internet</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• Private key on dedicated hardware</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• Sign transactions offline</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• Ledger, Trezor, Coldcard</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• Physical theft = only vector</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• Store majority of holdings</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "sw-s3-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s3-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s3-card0txt",
-              "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>How Multisig Works</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>M-of-N: M signatures required from N possible keys to authorize a transaction</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Bitcoin P2SH multisig: redeem script contains N public keys, M required to unlock</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Ethereum Gnosis Safe: smart contract wallet \u2014 most popular institutional multisig, $100B+ secured</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Key diversity: store keys on different devices, locations, even different hardware wallet brands</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "sw-s3-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s3-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s3-card1txt",
-              "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Common Configurations</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>2-of-3: one key on laptop, one on hardware wallet, one in secure cold storage \u2014 lose one, still recover</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>3-of-5: for organizations \u2014 requires quorum, any 2 keys compromised but not 3 is safe</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Time-locked: funds locked for N blocks \u2014 limits impact of compromised key</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Social recovery (ERC-4337): designate guardians who can collectively reset your key \u2014 no seed phrase</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "sw-s3-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s3-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s3-card2txt",
-              "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Operational Security</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Geographic distribution: keys in different cities/countries \u2014 natural disaster resilience</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Vendor diversity: use keys from different hardware wallet manufacturers \u2014 firmware vulnerability can't drain all keys</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Test recovery: annually verify you can reconstruct quorum without any assumed key</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Key rotation: proactively replace keys on schedule \u2014 don't wait for compromise</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#cbd5e1"
             }
           ]
         }
       },
-      "order": 3
+      "order": 3,
+      "actions": [
+        {
+          "id": "action_sw-s3_0",
+          "type": "spotlight",
+          "elementId": "sw-s3-title"
+        },
+        {
+          "id": "action_sw-s3_1",
+          "type": "speech",
+          "text": "Not your keys, not your coins. Let's talk about what that actually means in practice."
+        },
+        {
+          "id": "action_sw-s3_2",
+          "type": "spotlight",
+          "elementId": "sw-s3-sub"
+        },
+        {
+          "id": "action_sw-s3_3",
+          "type": "speech",
+          "text": "Hot wallets are convenient but exposed. Cold wallets are secure but less convenient. Know when to use each."
+        },
+        {
+          "id": "action_sw-s3_4",
+          "type": "spotlight",
+          "elementId": "sw-s3-vs-ltxt"
+        },
+        {
+          "id": "action_sw-s3_5",
+          "type": "speech",
+          "text": "Hot wallets: connected to the internet, private key in software or browser extension. Convenient for daily use. MetaMask, Xumm — these are hot wallets. The risk: internet exposure, phishing, malware."
+        },
+        {
+          "id": "action_sw-s3_6",
+          "type": "spotlight",
+          "elementId": "sw-s3-vs-rtxt"
+        },
+        {
+          "id": "action_sw-s3_7",
+          "type": "speech",
+          "text": "Cold wallets: never connected to the internet. Private key stored on a dedicated hardware device. You sign transactions offline and broadcast only the signed transaction. Ledger and Trezor. For serious holdings, cold storage is non-negotiable."
+        }
+      ]
     },
     {
       "id": "sw-s4",
@@ -1022,11 +829,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#ef4444",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1039,19 +850,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#ef4444",
+              "fixedRatio": false
             },
             {
               "id": "sw-s4-titlebg",
@@ -1059,287 +864,184 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "sw-s4-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>XRPL Account Security</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Attack Vectors & Defenses</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "sw-s4-sub",
               "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The threats are real — here is how to counter them</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "sw-s4-lp-bg",
+              "type": "shape",
+              "left": 8,
+              "top": 108,
+              "width": 488,
+              "height": 450,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
+              }
+            },
+            {
+              "id": "sw-s4-lp-bar",
+              "type": "shape",
+              "left": 8,
+              "top": 108,
+              "width": 4,
+              "height": 450,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef4444",
+              "fixedRatio": false
+            },
+            {
+              "id": "sw-s4-lp-txt",
+              "type": "text",
               "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Trust lines, account deletion, and key management on XRPL</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#ef4444;margin-bottom:10px;'>The $5 Wrench Attack</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>No amount of cryptography protects you from physical coercion.<br/><br/>Solutions:<br/>• Passphrase (25th word): Create a hidden wallet. Give up the decoy wallet with small funds.<br/>• Multisig: No single person can authorize. Co-signers in different locations.<br/>• Never disclose holdings publicly.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             },
             {
-              "id": "sw-s4-pillbg0",
+              "id": "sw-s4-rp-bg",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 504,
+              "top": 108,
+              "width": 488,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
               }
             },
             {
-              "id": "sw-s4-pill0",
-              "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>10 XRP<br/><span style=\"font-size:10px;color:#64748b;\">Reserve</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "sw-s4-pillbg1",
+              "id": "sw-s4-rp-bar",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
-              "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                120,
-                74
-              ],
-              "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s4-pill1",
-              "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>3 types<br/><span style=\"font-size:10px;color:#64748b;\">Key types</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "sw-s4-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s4-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
+              "left": 504,
+              "top": 108,
               "width": 4,
-              "height": 446,
+              "height": 450,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#f59e0b",
+              "fixedRatio": false
             },
             {
-              "id": "sw-s4-card0txt",
+              "id": "sw-s4-rp-txt",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 516,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>XRPL Account Structure</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Master key pair: generated from seed \u2014 ultimate control, used to set other keys</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Regular key pair: set via SetRegularKey \u2014 rotate without changing account address</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Signing key (multisig): SignerListSet transaction enables M-of-N multisig on XRPL</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Disable master key: after setting regular key or multisig, disable master key for security</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#f59e0b;margin-bottom:10px;'>Common Attack Vectors</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>• Phishing: Fake Ledger/MetaMask emails asking for seed phrase (NEVER share)<br/>• Clipboard hijacking: Malware swaps your copy-pasted address<br/>• SIM swap: Attacker controls your phone number, defeats SMS 2FA<br/>• Fake wallets: Downloaded from unofficial sources<br/><br/>Hardware key always beats SMS 2FA.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "sw-s4-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s4-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s4-card1txt",
-              "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Trust Lines & Reserves</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Base reserve: 10 XRP per account (locked, not spendable) \u2014 prevents spam account creation</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Owner reserve: 2 XRP per trust line, offer, or escrow object \u2014 scales with account complexity</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Trust line: explicit permission to hold a token (e.g., USD issued by Bitstamp)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Zero-out trust line: set balance to 0 and remove trust line \u2192 recover 2 XRP reserve</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "sw-s4-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s4-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s4-card2txt",
-              "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>XRPL-Specific Security</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Destination tags: required for exchanges \u2014 sending without tag = funds lost to exchange</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Check transactions: create a check payable to another account \u2014 recipient redeems when ready</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Escrow: time-lock or condition-lock XRP \u2014 released only after time passes or condition met</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Payment channels: off-ledger micropayments with on-ledger settlement \u2014 high frequency, low cost</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             }
           ]
         }
       },
-      "order": 4
+      "order": 4,
+      "actions": [
+        {
+          "id": "action_sw-s4_0",
+          "type": "spotlight",
+          "elementId": "sw-s4-title"
+        },
+        {
+          "id": "action_sw-s4_1",
+          "type": "speech",
+          "text": "Understanding attack vectors is how you build real security — not just theoretical security."
+        },
+        {
+          "id": "action_sw-s4_2",
+          "type": "spotlight",
+          "elementId": "sw-s4-sub"
+        },
+        {
+          "id": "action_sw-s4_3",
+          "type": "speech",
+          "text": "The threats range from sophisticated technical attacks to basic social engineering — and social engineering works on technically smart people too."
+        },
+        {
+          "id": "action_sw-s4_4",
+          "type": "spotlight",
+          "elementId": "sw-s4-lp-txt"
+        },
+        {
+          "id": "action_sw-s4_5",
+          "type": "speech",
+          "text": "The five dollar wrench attack: if someone knows you hold significant crypto and is willing to threaten physical harm, no cryptography protects you. Solutions: passphrase on your seed, decoy wallets with small amounts, operational security about your holdings."
+        },
+        {
+          "id": "action_sw-s4_6",
+          "type": "spotlight",
+          "elementId": "sw-s4-rp-txt"
+        },
+        {
+          "id": "action_sw-s4_7",
+          "type": "speech",
+          "text": "Common attack vectors: phishing — fake Ledger or MetaMask emails asking for your seed phrase. Clipboard hijacking — malware that replaces copied wallet addresses. Supply chain attacks — modified hardware wallets or compromised software packages."
+        }
+      ]
     },
     {
       "id": "sw-s5",
@@ -1353,11 +1055,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#a855f7",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1370,19 +1076,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#a855f7",
+              "fixedRatio": false
             },
             {
               "id": "sw-s5-titlebg",
@@ -1390,287 +1090,319 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "sw-s5-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Wallet Types Deep Dive</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
-            },
-            {
-              "id": "sw-s5-sub",
-              "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Hot, cold, hardware, and smart contract wallets</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Multisig Security</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
             {
-              "id": "sw-s5-pillbg0",
-              "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "id": "sw-s5-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>For serious holdings: no single point of failure</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "sw-s5-pill0bg",
+              "type": "shape",
+              "left": 830,
+              "top": 14,
+              "width": 116,
+              "height": 68,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
               "fill": "#1e293b",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#a855f7"
               }
             },
             {
               "id": "sw-s5-pill0",
               "type": "text",
-              "left": 724,
+              "left": 834,
               "top": 14,
-              "width": 112,
-              "height": 74,
+              "width": 108,
+              "height": 68,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>Safest<br/><span style=\"font-size:10px;color:#64748b;\">Hardware</span></p>",
+              "content": "<p style='font-size:18px;font-weight:800;color:#a855f7;text-align:center;line-height:1.2;'>2-of-3<br/><span style=\"font-size:10px;color:#64748b;font-weight:500;\">Most common</span></p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#a855f7"
             },
             {
-              "id": "sw-s5-pillbg1",
+              "id": "sw-s5-st0bg",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 10,
+              "top": 118,
+              "width": 240,
+              "height": 430,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#a855f7"
               }
             },
             {
-              "id": "sw-s5-pill1",
+              "id": "sw-s5-st0num",
               "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 10,
+              "top": 128,
+              "width": 240,
+              "height": 50,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>ERC-4337<br/><span style=\"font-size:10px;color:#64748b;\">Smart wallet</span></p>",
+              "content": "<p style='font-size:28px;font-weight:900;color:#a855f7;text-align:center;'>1</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#a855f7"
             },
             {
-              "id": "sw-s5-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s5-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s5-card0txt",
+              "id": "sw-s5-st0txt",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 18,
+              "top": 182,
+              "width": 224,
+              "height": 354,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Hot Wallets</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Browser extension (MetaMask): private key encrypted in browser storage \u2014 convenient but exposed to web attacks</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Mobile wallet (Trust, Rainbow): key in secure enclave on mobile OS \u2014 safer than browser, still connected</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Desktop wallet (Exodus, Electrum): key on local file system \u2014 safer than mobile if OS is clean</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Hot wallets: for daily use, small amounts \u2014 not for savings</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>M-of-N Setup</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Require M signatures from N total keys. 2-of-3 means any 2 of 3 signers can authorize.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#94a3b8"
             },
             {
-              "id": "sw-s5-card1bg",
+              "id": "sw-s5-st1bg",
               "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
+              "left": 256,
+              "top": 118,
+              "width": 240,
+              "height": 430,
               "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                308,
-                446
+                1,
+                1
               ],
-              "fill": "#0a1929",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#a855f7"
               }
             },
             {
-              "id": "sw-s5-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s5-card1txt",
+              "id": "sw-s5-st1num",
               "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 256,
+              "top": 128,
+              "width": 240,
+              "height": 50,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Cold Storage</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Hardware wallet (Ledger, Trezor): key never leaves device, TX signed on-device display</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Air-gapped signing: PSBT transferred via QR/USB \u2014 signing device never touches internet</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Steel backup (Cryptosteel): fire/flood resistant \u2014 seed phrase stamped in metal</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Paper wallet (deprecated): printed key \u2014 degrades, easily photographed, not recommended</p>",
+              "content": "<p style='font-size:28px;font-weight:900;color:#a855f7;text-align:center;'>2</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#a855f7"
             },
             {
-              "id": "sw-s5-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s5-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s5-card2txt",
+              "id": "sw-s5-st1txt",
               "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 264,
+              "top": 182,
+              "width": 224,
+              "height": 354,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Smart Contract Wallets</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>ERC-4337 (Account Abstraction): wallet = smart contract \u2014 enables social recovery, gas abstraction</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Bundlers: aggregate multiple ERC-4337 UserOperations into one Ethereum transaction</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Paymaster: third party pays gas fees \u2014 enables gasless onboarding for new users</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Session keys: grant limited signing authority (amount + token + time) to dApps \u2014 no need to approve every tx</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Geographic Split</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Store keys in different cities/countries. No single point of failure.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "sw-s5-st2bg",
+              "type": "shape",
+              "left": 502,
+              "top": 118,
+              "width": 240,
+              "height": 430,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#a855f7"
+              }
+            },
+            {
+              "id": "sw-s5-st2num",
+              "type": "text",
+              "left": 502,
+              "top": 128,
+              "width": 240,
+              "height": 50,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:900;color:#a855f7;text-align:center;'>3</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#a855f7"
+            },
+            {
+              "id": "sw-s5-st2txt",
+              "type": "text",
+              "left": 510,
+              "top": 182,
+              "width": 224,
+              "height": 354,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Hardware Keys</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Each signer uses a hardware wallet. No single device controls funds.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "sw-s5-st3bg",
+              "type": "shape",
+              "left": 748,
+              "top": 118,
+              "width": 240,
+              "height": 430,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#a855f7"
+              }
+            },
+            {
+              "id": "sw-s5-st3num",
+              "type": "text",
+              "left": 748,
+              "top": 128,
+              "width": 240,
+              "height": 50,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:900;color:#a855f7;text-align:center;'>4</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#a855f7"
+            },
+            {
+              "id": "sw-s5-st3txt",
+              "type": "text",
+              "left": 756,
+              "top": 182,
+              "width": 224,
+              "height": 354,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Timelock</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Optional: add a time delay to large transactions for review window.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
             }
           ]
         }
       },
-      "order": 5
+      "order": 5,
+      "actions": [
+        {
+          "id": "action_sw-s5_0",
+          "type": "spotlight",
+          "elementId": "sw-s5-title"
+        },
+        {
+          "id": "action_sw-s5_1",
+          "type": "speech",
+          "text": "Multisig is the gold standard for securing significant holdings. No single point of failure."
+        },
+        {
+          "id": "action_sw-s5_2",
+          "type": "spotlight",
+          "elementId": "sw-s5-sub"
+        },
+        {
+          "id": "action_sw-s5_3",
+          "type": "speech",
+          "text": "M-of-N means M signatures from N possible keys are required to authorize a transaction."
+        },
+        {
+          "id": "action_sw-s5_4",
+          "type": "spotlight",
+          "elementId": "sw-s5-st0txt"
+        },
+        {
+          "id": "action_sw-s5_5",
+          "type": "speech",
+          "text": "M-of-N setup: 2-of-3 is the most common. Any 2 of your 3 signing keys can authorize a transaction. One key can be lost without losing access."
+        },
+        {
+          "id": "action_sw-s5_6",
+          "type": "spotlight",
+          "elementId": "sw-s5-st1txt"
+        },
+        {
+          "id": "action_sw-s5_7",
+          "type": "speech",
+          "text": "Geographic split: store your signing keys in different physical locations — different cities, different countries. A flood or fire can't wipe out all three."
+        },
+        {
+          "id": "action_sw-s5_8",
+          "type": "spotlight",
+          "elementId": "sw-s5-st2txt"
+        },
+        {
+          "id": "action_sw-s5_9",
+          "type": "speech",
+          "text": "Hardware keys: each signer uses a dedicated hardware wallet. Even if an attacker compromises one device, they can't move funds without a second signature."
+        },
+        {
+          "id": "action_sw-s5_10",
+          "type": "spotlight",
+          "elementId": "sw-s5-st3txt"
+        },
+        {
+          "id": "action_sw-s5_11",
+          "type": "speech",
+          "text": "Timelock: optionally add a time delay to large transactions. This creates a review window — you have time to cancel a fraudulent transaction before it executes."
+        }
+      ]
     },
     {
       "id": "sw-s6",
@@ -1684,11 +1416,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#3b82f6",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1701,19 +1437,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
               "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fixedRatio": false
             },
             {
               "id": "sw-s6-titlebg",
@@ -1721,287 +1451,243 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "sw-s6-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>DeFi Security Practices</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>XRPL Account Security</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "sw-s6-sub",
               "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Approvals, revoking, and staying safe on-chain</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Platform-specific features every OnlyCrypto member should know</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#64748b"
             },
             {
-              "id": "sw-s6-pillbg0",
+              "id": "sw-s6-c0bg",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 8,
+              "top": 110,
+              "width": 320,
+              "height": 438,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0f1f3d",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
               }
             },
             {
-              "id": "sw-s6-pill0",
-              "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>Free tool<br/><span style=\"font-size:10px;color:#64748b;\">Revoke.cash</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "sw-s6-pillbg1",
+              "id": "sw-s6-c0bar",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
-              "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                120,
-                74
-              ],
-              "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s6-pill1",
-              "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>Unlimited risk<br/><span style=\"font-size:10px;color:#64748b;\">Token approvals</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "sw-s6-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s6-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
+              "left": 8,
+              "top": 110,
               "width": 4,
-              "height": 446,
+              "height": 438,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s6-card0txt",
-              "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Token Approvals</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>ERC-20 approve() grants spender address unlimited (or fixed) access to your tokens</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Most dApps request unlimited approval \u2014 one compromised contract can drain your entire balance</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Risky: if Uniswap router contract has a bug, your unlimited approval is exploitable</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Best practice: approve exact amount needed for each transaction, not unlimited</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "sw-s6-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s6-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
               "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fixedRatio": false
             },
             {
-              "id": "sw-s6-card1txt",
+              "id": "sw-s6-c0txt",
               "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 20,
+              "top": 120,
+              "width": 300,
+              "height": 418,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Revoking Approvals</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Revoke.cash, Etherscan token approvals tab: see all active approvals for your address</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Revoke regularly \u2014 especially after a protocol is hacked or no longer used</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Hardware wallets: confirm each revoke on device \u2014 protects against UI spoofing</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>ENS names: use for readability but verify underlying address hasn't changed before sending</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>XRPL Account Flags</p><p style='font-size:12px;color:#cbd5e1;line-height:1.5;'>RequireDestTag: prevents lost funds from missing tags. DisableMasterKey: force multisig, deactivate master key. Blackhole: set signer weight to 0 — irrecoverable.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#cbd5e1"
             },
             {
-              "id": "sw-s6-card2bg",
+              "id": "sw-s6-c1bg",
               "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
+              "left": 336,
+              "top": 110,
+              "width": 320,
+              "height": 438,
               "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                308,
-                446
+                1,
+                1
               ],
-              "fill": "#042f2e",
+              "fill": "#0f1f3d",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
               }
             },
             {
-              "id": "sw-s6-card2bar",
+              "id": "sw-s6-c1bar",
               "type": "shape",
-              "left": 636,
-              "top": 116,
+              "left": 336,
+              "top": 110,
               "width": 4,
-              "height": 446,
+              "height": 438,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
-              "fill": "#06b6d4",
+              "fill": "#22d3ee",
+              "fixedRatio": false
+            },
+            {
+              "id": "sw-s6-c1txt",
+              "type": "text",
+              "left": 348,
+              "top": 120,
+              "width": 300,
+              "height": 418,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#22d3ee;margin-bottom:6px;'>Destination Tags</p><p style='font-size:12px;color:#cbd5e1;line-height:1.5;'>Required for exchange deposits. Tag identifies which user on a shared wallet address. Missing tag = lost funds — many exchanges cannot recover.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "sw-s6-c2bg",
+              "type": "shape",
+              "left": 664,
+              "top": 110,
+              "width": 320,
+              "height": 438,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1f3d",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#a855f7"
               }
             },
             {
-              "id": "sw-s6-card2txt",
-              "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "id": "sw-s6-c2bar",
+              "type": "shape",
+              "left": 664,
+              "top": 110,
+              "width": 4,
+              "height": 438,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Transaction Simulation</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Tenderly, Blocknative: simulate transaction before signing \u2014 shows exact token flows</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>MetaMask snap (Fire): shows human-readable transaction summary with risk warnings</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Wallet Guard: browser extension that checks sites against phishing database before you interact</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Fake zero-value transfer: attacker sends 0 tokens to poison your history \u2014 don't copy addresses from tx history</p>",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#a855f7",
+              "fixedRatio": false
+            },
+            {
+              "id": "sw-s6-c2txt",
+              "type": "text",
+              "left": 676,
+              "top": 120,
+              "width": 300,
+              "height": 418,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#a855f7;margin-bottom:6px;'>Account Reserve</p><p style='font-size:12px;color:#cbd5e1;line-height:1.5;'>1 XRP minimum reserve to activate account. Each trust line and offer costs additional reserve. Reserve is returned if objects are deleted.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#cbd5e1"
             }
           ]
         }
       },
-      "order": 6
+      "order": 6,
+      "actions": [
+        {
+          "id": "action_sw-s6_0",
+          "type": "spotlight",
+          "elementId": "sw-s6-title"
+        },
+        {
+          "id": "action_sw-s6_1",
+          "type": "speech",
+          "text": "XRPL has built-in account security features that every OnlyCrypto member should know about."
+        },
+        {
+          "id": "action_sw-s6_2",
+          "type": "spotlight",
+          "elementId": "sw-s6-sub"
+        },
+        {
+          "id": "action_sw-s6_3",
+          "type": "speech",
+          "text": "These are protocol-level protections, not third-party tools — they're built directly into how the ledger works."
+        },
+        {
+          "id": "action_sw-s6_4",
+          "type": "spotlight",
+          "elementId": "sw-s6-c0txt"
+        },
+        {
+          "id": "action_sw-s6_5",
+          "type": "speech",
+          "text": "XRPL account flags: RequireDestTag prevents funds from being lost to missing destination tags. DisableMasterKey forces multisig, removing the single-key vulnerability. These are enforced by the ledger itself."
+        },
+        {
+          "id": "action_sw-s6_6",
+          "type": "spotlight",
+          "elementId": "sw-s6-c1txt"
+        },
+        {
+          "id": "action_sw-s6_7",
+          "type": "speech",
+          "text": "Destination tags: required for exchange deposits. The tag identifies which user is sending funds to a shared wallet address. Missing your destination tag on an exchange deposit can mean lost funds — always check."
+        },
+        {
+          "id": "action_sw-s6_8",
+          "type": "spotlight",
+          "elementId": "sw-s6-c2txt"
+        },
+        {
+          "id": "action_sw-s6_9",
+          "type": "speech",
+          "text": "Account reserve: 1 XRP minimum to activate an XRPL account. Each trust line and offer you create requires an additional reserve. This prevents spam accounts and ensures every address on the ledger has skin in the game."
+        }
+      ]
     },
     {
       "id": "sw-s7",
@@ -2015,11 +1701,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#22d3ee",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -2032,19 +1722,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#22d3ee",
+              "fixedRatio": false
             },
             {
               "id": "sw-s7-titlebg",
@@ -2052,296 +1736,450 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "sw-s7-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Operational Security</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Seed Phrase Best Practices</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "sw-s7-sub",
               "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Devices, networks, and practices for high-value wallets</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The checklist every crypto holder must follow</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#64748b"
             },
             {
-              "id": "sw-s7-pillbg0",
+              "id": "sw-s7-st0bg",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 10,
+              "top": 118,
+              "width": 240,
+              "height": 430,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
               }
             },
             {
-              "id": "sw-s7-pill0",
+              "id": "sw-s7-st0num",
               "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 10,
+              "top": 128,
+              "width": 240,
+              "height": 50,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>Strongest<br/><span style=\"font-size:10px;color:#64748b;\">Air-gap</span></p>",
+              "content": "<p style='font-size:28px;font-weight:900;color:#22d3ee;text-align:center;'>1</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#22d3ee"
             },
             {
-              "id": "sw-s7-pillbg1",
-              "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
-              "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                120,
-                74
-              ],
-              "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s7-pill1",
+              "id": "sw-s7-st0txt",
               "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 18,
+              "top": 182,
+              "width": 224,
+              "height": 354,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>Ongoing<br/><span style=\"font-size:10px;color:#64748b;\">OPSEC</span></p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Generate Offline</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Use a hardware wallet or air-gapped device to generate keys. Never on an internet-connected machine.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#94a3b8"
             },
             {
-              "id": "sw-s7-card0bg",
+              "id": "sw-s7-st1bg",
               "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
+              "left": 256,
+              "top": 118,
+              "width": 240,
+              "height": 430,
               "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                308,
-                446
+                1,
+                1
               ],
-              "fill": "#1a1040",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
               }
             },
             {
-              "id": "sw-s7-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s7-card0txt",
+              "id": "sw-s7-st1num",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 256,
+              "top": 128,
+              "width": 240,
+              "height": 50,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Device Security</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Dedicated signing device: old phone or laptop used ONLY for crypto, no apps or browsing</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Full disk encryption: FileVault (Mac), BitLocker (Windows), LUKS (Linux)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Firmware updates: keep OS and wallet software updated \u2014 most exploits target old versions</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>No cloud sync: iCloud/Google Drive sync of browser data can expose MetaMask encrypted key</p>",
+              "content": "<p style='font-size:28px;font-weight:900;color:#22d3ee;text-align:center;'>2</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#22d3ee"
             },
             {
-              "id": "sw-s7-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s7-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s7-card1txt",
+              "id": "sw-s7-st1txt",
               "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 264,
+              "top": 182,
+              "width": 224,
+              "height": 354,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Network Security</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>VPN: masks IP address from services but doesn't protect against blockchain analysis</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Tor: stronger anonymity but slows connections \u2014 Tails OS routes all traffic through Tor by default</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Public WiFi: never access wallets on public WiFi \u2014 man-in-the-middle attacks are trivial</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>DNS-over-HTTPS: prevents ISP from logging your crypto site visits \u2014 enable in browser settings</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Write on Metal</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Paper burns and floods. Cryptosteel or similar metal backups survive house fires.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#94a3b8"
             },
             {
-              "id": "sw-s7-card2bg",
+              "id": "sw-s7-st2bg",
               "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
+              "left": 502,
+              "top": 118,
+              "width": 240,
+              "height": 430,
               "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                308,
-                446
+                1,
+                1
               ],
-              "fill": "#042f2e",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
               }
             },
             {
-              "id": "sw-s7-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "sw-s7-card2txt",
+              "id": "sw-s7-st2num",
               "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 502,
+              "top": 128,
+              "width": 240,
+              "height": 50,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Privacy Practices</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Address reuse: using same address repeatedly links all your transactions \u2014 use new address per receive</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Coinjoin (Wasabi, JoinMarket): mixes UTXOs with others to break on-chain traceability</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Chain analysis: Chainalysis, Elliptic track blockchain forensics for exchanges and governments</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Privacy coins (Monero): ring signatures + stealth addresses + confidential transactions by default</p>",
+              "content": "<p style='font-size:28px;font-weight:900;color:#22d3ee;text-align:center;'>3</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#22d3ee"
+            },
+            {
+              "id": "sw-s7-st2txt",
+              "type": "text",
+              "left": 510,
+              "top": 182,
+              "width": 224,
+              "height": 354,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Test Restore</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Before storing any funds, test restoring from your seed phrase. Verify it works.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "sw-s7-st3bg",
+              "type": "shape",
+              "left": 748,
+              "top": 118,
+              "width": 240,
+              "height": 430,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
+              }
+            },
+            {
+              "id": "sw-s7-st3num",
+              "type": "text",
+              "left": 748,
+              "top": 128,
+              "width": 240,
+              "height": 50,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:900;color:#22d3ee;text-align:center;'>4</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#22d3ee"
+            },
+            {
+              "id": "sw-s7-st3txt",
+              "type": "text",
+              "left": 756,
+              "top": 182,
+              "width": 224,
+              "height": 354,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Secure Location</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Separate your seed from your hardware wallet. Bank vault, trusted family member, or geographic split.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
             }
           ]
         }
       },
-      "order": 7
+      "order": 7,
+      "actions": [
+        {
+          "id": "action_sw-s7_0",
+          "type": "spotlight",
+          "elementId": "sw-s7-title"
+        },
+        {
+          "id": "action_sw-s7_1",
+          "type": "speech",
+          "text": "Seed phrase best practices are non-negotiable. Most crypto losses come from human error, not sophisticated hacks."
+        },
+        {
+          "id": "action_sw-s7_2",
+          "type": "spotlight",
+          "elementId": "sw-s7-sub"
+        },
+        {
+          "id": "action_sw-s7_3",
+          "type": "speech",
+          "text": "Follow this checklist and you will avoid 99% of the ways people lose their holdings."
+        },
+        {
+          "id": "action_sw-s7_4",
+          "type": "spotlight",
+          "elementId": "sw-s7-st0txt"
+        },
+        {
+          "id": "action_sw-s7_5",
+          "type": "speech",
+          "text": "Generate offline: always generate seed phrases on a hardware wallet or air-gapped device. Never on a phone, browser, or website. If it touched the internet during generation, consider it compromised."
+        },
+        {
+          "id": "action_sw-s7_6",
+          "type": "spotlight",
+          "elementId": "sw-s7-st1txt"
+        },
+        {
+          "id": "action_sw-s7_7",
+          "type": "speech",
+          "text": "Write on metal, not paper. Paper burns. Paper floods. Metal backup solutions like Cryptosteel survive house fires and water damage. Your seed phrase should outlast you if needed."
+        },
+        {
+          "id": "action_sw-s7_8",
+          "type": "spotlight",
+          "elementId": "sw-s7-st2txt"
+        },
+        {
+          "id": "action_sw-s7_9",
+          "type": "speech",
+          "text": "Test restore before trusting. Before storing any funds, restore your wallet from the seed phrase on a second device. Verify the addresses match. Many people discover errors only when they actually need recovery — too late."
+        },
+        {
+          "id": "action_sw-s7_10",
+          "type": "spotlight",
+          "elementId": "sw-s7-st3txt"
+        },
+        {
+          "id": "action_sw-s7_11",
+          "type": "speech",
+          "text": "Secure location, separate from device. Your hardware wallet and your seed phrase backup should never be in the same place. Bank vault, trusted family member in another city, or a professional custody service."
+        }
+      ]
+    },
+    {
+      "id": "se-interactive",
+      "type": "interactive",
+      "title": "Interactive Simulation",
+      "content": {
+        "type": "interactive",
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody{background:#0b1120;color:#e2e8f0;font-family:Inter,system-ui,sans-serif;padding:20px;margin:0;}\nh2{color:#ef4444;font-size:18px;margin:0 0 4px;}\n.sub{color:#64748b;font-size:12px;margin-bottom:16px;}\n.row{display:flex;gap:12px;margin-bottom:12px;}\n.panel{background:#0f1f3d;border:1px solid #1e3a5f;border-radius:8px;padding:14px;flex:1;}\nlabel{color:#94a3b8;font-size:11px;text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;}\ninput,select{width:100%;padding:8px 10px;background:#020817;border:1px solid #334155;color:#f1f5f9;border-radius:6px;font-size:13px;box-sizing:border-box;}\n.result{background:#020817;border:1px solid #334155;border-radius:6px;padding:10px;font-size:13px;margin-top:8px;}\n.big{font-size:20px;font-weight:800;}\n.stat{display:inline-block;background:#1e3a5f;border-radius:4px;padding:3px 10px;font-size:11px;font-weight:700;color:#60a5fa;margin:3px 2px;}\n.good{color:#22c55e;} .bad{color:#ef4444;} .warn{color:#f59e0b;}\n.quiz-q{background:#0a1628;border-left:3px solid #ef4444;padding:10px;margin:8px 0;border-radius:4px;}\n.btn{background:#ef4444;color:#fff;border:none;padding:6px 16px;border-radius:6px;cursor:pointer;font-size:12px;font-weight:700;margin-top:8px;}\n</style>\n</head>\n<body>\n<h2>Wallet Security Strength Checker</h2>\n<p class=\"sub\">Score your wallet setup against best practices. Spot weaknesses before attackers do.</p>\n<div class=\"row\">\n  <div class=\"panel\" style=\"flex:1.2\">\n    <label>Your custody setup</label>\n    <select id=\"custody\" onchange=\"score()\">\n      <option value=\"0\">Exchange only (no self-custody)</option>\n      <option value=\"1\">Hot wallet (MetaMask / XUMM)</option>\n      <option value=\"2\" selected>Hardware wallet (Ledger / Trezor)</option>\n      <option value=\"3\">Hardware wallet + passphrase (25th word)</option>\n    </select>\n    <label style=\"margin-top:8px\">Seed phrase storage</label>\n    <select id=\"seed\" onchange=\"score()\">\n      <option value=\"0\">Screenshot / photo on phone</option>\n      <option value=\"0\">Digital file on computer</option>\n      <option value=\"1\">Paper in drawer</option>\n      <option value=\"2\" selected>Paper in safe</option>\n      <option value=\"3\">Metal backup (Cryptosteel)</option>\n    </select>\n    <label style=\"margin-top:8px\">Two-factor auth</label>\n    <select id=\"twofa\" onchange=\"score()\">\n      <option value=\"0\">SMS only</option>\n      <option value=\"1\" selected>Authenticator app (TOTP)</option>\n      <option value=\"2\">Hardware key (YubiKey)</option>\n    </select>\n    <label style=\"margin-top:8px\">Holdings publicly disclosed?</label>\n    <select id=\"opsec\" onchange=\"score()\">\n      <option value=\"0\">Yes — social media / flex</option>\n      <option value=\"1\" selected>Friends/family know roughly</option>\n      <option value=\"2\">Nobody knows</option>\n    </select>\n    <div class=\"result\" id=\"score_result\"></div>\n  </div>\n  <div class=\"panel\">\n    <label>Phishing Detector — Spot the scam</label>\n    <div class=\"quiz-q\" id=\"quiz_q\"></div>\n    <button class=\"btn\" onclick=\"nextQ()\">Next scenario</button>\n    <div class=\"result\" id=\"quiz_ans\" style=\"margin-top:8px;display:none;\"></div>\n  </div>\n</div>\n<script>\nconst scenarios=[\n  {q:\"You get an email: 'Your Ledger device has been compromised. Enter your 24-word seed at ledger-secure-verify.com'\",a:\"🚨 SCAM — Ledger will NEVER ask for your seed phrase. Real hardware wallets never need you to type your seed online. Delete immediately.\",bad:true},\n  {q:\"MetaMask popup: 'New site wants to connect to your wallet: opensea-nft-claim.io — Click Approve'\",a:\"⚠ SUSPICIOUS — Always verify the exact domain. Fake sites mimic real ones. If you didn't initiate this, close the popup. Check opensea.io directly.\",bad:true},\n  {q:\"A DM: 'Hi! I'm from Binance support. I see your account has suspicious activity. Can you verify your account number and 2FA code?'\",a:\"🚨 SCAM — Exchanges never DM first. They NEVER ask for 2FA codes. This is social engineering. Report and block.\",bad:true},\n  {q:\"You're sending XRP and the destination field shows a different address than you pasted\",a:\"🚨 CLIPBOARD HIJACKER — Malware replaced your copy-pasted address. Always verify the last 6 characters of addresses before confirming. Use whitelist features.\",bad:true},\n  {q:\"Airdrop claim: 'You have 5,000 FREE tokens! Connect wallet to claim — just approve the token access transaction'\",a:\"🚨 DRAIN SCAM — Approving token access gives the contract permission to transfer ALL your tokens. Never approve unlimited token allowances from unknown sites.\",bad:true},\n];\nlet qi=0;\nfunction nextQ(){\n  document.getElementById('quiz_ans').style.display='none';\n  const s=scenarios[qi%scenarios.length];\n  document.getElementById('quiz_q').innerHTML='<p style=\"font-size:12px;color:#f1f5f9;line-height:1.5;\">'+s.q+'</p>';\n  document.getElementById('quiz_ans').innerHTML='<p style=\"font-size:12px;line-height:1.5;color:'+(s.bad?'#ef4444':'#22c55e')+'\">'+s.a+'</p>';\n  setTimeout(()=>document.getElementById('quiz_ans').style.display='block',400);\n  qi++;\n}\nfunction score(){\n  const c=parseInt(document.getElementById('custody').value);\n  const s=parseInt(document.getElementById('seed').value);\n  const t=parseInt(document.getElementById('twofa').value);\n  const o=parseInt(document.getElementById('opsec').value);\n  const total=c+s+t+o;\n  const max=3+3+2+2;\n  const pct=Math.round(total/max*100);\n  const grade=pct>=80?['A','good','Strong setup — keep it up']:pct>=60?['B','warn','Good but room to improve']:pct>=40?['C','warn','Several risks — improve seed storage and 2FA']:['D','bad','High risk — move funds off exchange ASAP'];\n  document.getElementById('score_result').innerHTML=\n    'Security score: <span class=\"big '+grade[1]+'\">'+grade[0]+' ('+pct+'%)</span><br/>'+\n    '<span class=\"stat\">Custody: '+c+'/3</span><span class=\"stat\">Seed: '+s+'/3</span><span class=\"stat\">2FA: '+t+'/2</span><span class=\"stat\">OpSec: '+o+'/2</span><br/>'+\n    '<span style=\"font-size:11px;color:#94a3b8;margin-top:4px;display:block;\">'+grade[2]+'</span>';\n}\nscore(); nextQ();\n</script>\n</body>\n</html>"
+      },
+      "actions": [
+        {
+          "id": "action_se-interactive_i0",
+          "type": "speech",
+          "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered."
+        },
+        {
+          "id": "action_se-interactive_i1",
+          "type": "speech",
+          "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading."
+        }
+      ]
     },
     {
       "id": "sw-s8",
       "type": "quiz",
-      "title": "Knowledge Check \u2014 Security & Wallets",
+      "title": "Knowledge Check — Security & Wallets",
       "content": {
-        "type": "quiz"
+        "type": "quiz",
+        "questions": [
+          {
+            "id": "q-sw-1",
+            "type": "single",
+            "question": "What does BIP39 define?",
+            "options": [
+              {
+                "label": "The format of Bitcoin block headers",
+                "value": "A"
+              },
+              {
+                "label": "The mnemonic seed phrase standard for HD wallets",
+                "value": "B"
+              },
+              {
+                "label": "How multisig transactions are constructed",
+                "value": "C"
+              },
+              {
+                "label": "The XRPL account creation process",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "BIP39 defines 12–24 word mnemonic seed phrases. The words are hashed via PBKDF2 to generate a 512-bit master seed.",
+            "points": 1
+          },
+          {
+            "id": "q-sw-2",
+            "type": "single",
+            "question": "What is the BIP44 derivation path for the first XRPL account?",
+            "options": [
+              {
+                "label": "m/44'/0'/0'/0/0",
+                "value": "A"
+              },
+              {
+                "label": "m/44'/144'/0'/0/0",
+                "value": "B"
+              },
+              {
+                "label": "m/44'/60'/0'/0/0",
+                "value": "C"
+              },
+              {
+                "label": "m/84'/144'/0'/0/0",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "XRPL's coin type is 144 (registered in SLIP-0044). The full path is m/44'/144'/0'/0/0 for the first account.",
+            "points": 1
+          },
+          {
+            "id": "q-sw-3",
+            "type": "single",
+            "question": "A hardware wallet protects your funds even if the device is stolen because:",
+            "options": [
+              {
+                "label": "The seed phrase is encrypted with your PIN",
+                "value": "A"
+              },
+              {
+                "label": "Private keys never leave the device unencrypted",
+                "value": "B"
+              },
+              {
+                "label": "Transactions require biometric confirmation",
+                "value": "C"
+              },
+              {
+                "label": "The device remotely wipes after 3 failed PIN attempts",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Hardware wallets sign transactions internally — private keys are generated and stored on-chip and never transmitted. The attacker would need both the device AND your PIN.",
+            "points": 1
+          },
+          {
+            "id": "q-sw-4",
+            "type": "multiple",
+            "question": "Which TWO measures directly protect against the '$5 wrench attack' (physical coercion)?",
+            "options": [
+              {
+                "label": "Using a passphrase (25th word) on a separate decoy wallet",
+                "value": "A"
+              },
+              {
+                "label": "Storing your seed phrase in a fireproof safe",
+                "value": "B"
+              },
+              {
+                "label": "Using a multisig setup with geographically distributed signers",
+                "value": "C"
+              },
+              {
+                "label": "Using a hardware wallet instead of a hot wallet",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "A",
+              "C"
+            ],
+            "analysis": "A passphrase creates a hidden wallet — give up the decoy seed. Multisig with distant co-signers means no single person can authorize. Fireproof safes and hardware wallets protect against digital attacks, not physical coercion.",
+            "points": 2
+          },
+          {
+            "id": "q-sw-5",
+            "type": "short_answer",
+            "question": "You receive an email from 'Ledger Support' saying your device has been compromised and you must enter your 24-word seed phrase on their website. Identify 3 red flags and explain what you should do.",
+            "commentPrompt": "Full marks for: (1) Ledger/any company will NEVER ask for your seed phrase, (2) the seed phrase should never be typed into any website or device other than the hardware wallet itself, (3) this is a phishing attack — delete/report it. Bonus: check the actual domain, contact support through official channels.",
+            "points": 3
+          }
+        ]
       },
-      "order": 8
+      "order": 8,
+      "actions": [
+        {
+          "id": "action_sw-s8_q0",
+          "type": "speech",
+          "text": "Time to test your knowledge! Answer each question carefully — you can review the material after the quiz."
+        },
+        {
+          "id": "action_sw-s8_q1",
+          "type": "speech",
+          "text": "Take your time with these questions. The goal is to solidify your understanding, not just pass the quiz."
+        }
+      ]
     }
   ]
 }

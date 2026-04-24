@@ -29,11 +29,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#3b82f6",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -46,19 +50,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
               "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fixedRatio": false
             },
             {
               "id": "bb-s1-titlebg",
@@ -66,101 +64,92 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "bb-s1-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>What Is a Blockchain?</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
-            },
-            {
-              "id": "bb-s1-sub",
-              "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>A cryptographically linked, append-only distributed ledger</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>What Is a Blockchain?</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
             {
-              "id": "bb-s1-pillbg0",
-              "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "id": "bb-s1-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>A cryptographically linked, append-only distributed ledger</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "bb-s1-pill0bg",
+              "type": "shape",
+              "left": 724,
+              "top": 14,
+              "width": 116,
+              "height": 68,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
               "fill": "#1e293b",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#60a5fa"
               }
             },
             {
               "id": "bb-s1-pill0",
               "type": "text",
-              "left": 724,
+              "left": 728,
               "top": 14,
-              "width": 112,
-              "height": 74,
+              "width": 108,
+              "height": 68,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>~1M+<br/><span style=\"font-size:10px;color:#64748b;\">Blocks</span></p>",
+              "content": "<p style='font-size:18px;font-weight:800;color:#60a5fa;text-align:center;line-height:1.2;'>17K+<br/><span style=\"font-size:10px;color:#64748b;font-weight:500;\">Nodes</span></p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#60a5fa"
             },
             {
-              "id": "bb-s1-pillbg1",
+              "id": "bb-s1-pill1bg",
               "type": "shape",
               "left": 858,
               "top": 14,
-              "width": 120,
-              "height": 74,
+              "width": 116,
+              "height": 68,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
               "fill": "#1e293b",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#60a5fa"
               }
             },
             {
@@ -168,185 +157,177 @@
               "type": "text",
               "left": 862,
               "top": 14,
-              "width": 112,
-              "height": 74,
+              "width": 108,
+              "height": 68,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>15,000+<br/><span style=\"font-size:10px;color:#64748b;\">Nodes</span></p>",
+              "content": "<p style='font-size:18px;font-weight:800;color:#60a5fa;text-align:center;line-height:1.2;'>600 GB<br/><span style=\"font-size:10px;color:#64748b;font-weight:500;\">Chain size</span></p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#60a5fa"
             },
             {
-              "id": "bb-s1-card0bg",
+              "id": "bb-s1-lp-bg",
               "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
+              "left": 8,
+              "top": 108,
+              "width": 488,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                308,
-                446
+                1,
+                1
               ],
-              "fill": "#1a1040",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
               }
             },
             {
-              "id": "bb-s1-card0bar",
+              "id": "bb-s1-lp-bar",
               "type": "shape",
-              "left": 4,
-              "top": 116,
+              "left": 8,
+              "top": 108,
               "width": 4,
-              "height": 446,
+              "height": 450,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s1-card0txt",
-              "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Structure</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Each block contains: block header (version, prev_hash, merkle_root, timestamp, nBits, nonce), transaction list, and coinbase tx</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Blocks are linked via SHA-256 hash of previous header \u2014 altering any block breaks every subsequent hash</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Genesis block (block 0) is hardcoded \u2014 no previous hash</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "bb-s1-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s1-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
               "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fixedRatio": false
             },
             {
-              "id": "bb-s1-card1txt",
+              "id": "bb-s1-lp-txt",
               "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 20,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Immutability</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>To rewrite block N you must redo proof-of-work for N, N+1, N+2\u2026 and outpace the rest of the network</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Bitcoin produces ~1 block per 10 min; 6 confirmations = ~1 hour of work an attacker must redo</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Cost to 51%-attack Bitcoin: ~$20B+ in ASICs + $15M/hour in electricity</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#3b82f6;margin-bottom:10px;'>The Core Structure</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>Each block contains:<br/>• Previous block's hash (linking the chain)<br/>• Merkle root of all transactions<br/>• Timestamp + nonce<br/><br/>Changing block N invalidates every block after it — an attacker must redo all downstream proof-of-work.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             },
             {
-              "id": "bb-s1-card2bg",
+              "id": "bb-s1-rp-bg",
               "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
+              "left": 504,
+              "top": 108,
+              "width": 488,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                308,
-                446
+                1,
+                1
               ],
-              "fill": "#042f2e",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#8b5cf6"
               }
             },
             {
-              "id": "bb-s1-card2bar",
+              "id": "bb-s1-rp-bar",
               "type": "shape",
-              "left": 636,
-              "top": 116,
+              "left": 504,
+              "top": 108,
               "width": 4,
-              "height": 446,
+              "height": 450,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#8b5cf6",
+              "fixedRatio": false
             },
             {
-              "id": "bb-s1-card2txt",
+              "id": "bb-s1-rp-txt",
               "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 516,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Decentralization</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>~15,000 full nodes independently verify every block and transaction</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>No node is trusted \u2014 each verifies the full chain from genesis</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Consensus = longest valid chain with most accumulated proof-of-work</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#8b5cf6;margin-bottom:10px;'>Why It Matters</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>Bitcoin: ~17,000 nodes worldwide<br/>No CEO, no server to shut down<br/><br/>Throughput reality:<br/>• Bitcoin: 7 tx/s<br/>• Ethereum L1: ~15 tx/s<br/>• Visa: ~24,000 tx/s<br/><br/>This gap is why Layer 2 networks exist.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             }
           ]
         }
       },
-      "order": 1
+      "order": 1,
+      "actions": [
+        {
+          "id": "action_bb-s1_0",
+          "type": "spotlight",
+          "elementId": "bb-s1-title"
+        },
+        {
+          "id": "action_bb-s1_1",
+          "type": "speech",
+          "text": "Welcome to Blockchain Basics. In this first lesson we're asking: what exactly IS a blockchain?"
+        },
+        {
+          "id": "action_bb-s1_2",
+          "type": "spotlight",
+          "elementId": "bb-s1-sub"
+        },
+        {
+          "id": "action_bb-s1_3",
+          "type": "speech",
+          "text": "A blockchain is a cryptographically linked, append-only distributed ledger — let's break each of those words down."
+        },
+        {
+          "id": "action_bb-s1_4",
+          "type": "spotlight",
+          "elementId": "bb-s1-lp-txt"
+        },
+        {
+          "id": "action_bb-s1_5",
+          "type": "speech",
+          "text": "The core structure: every block contains the previous block's hash — that's the cryptographic link — plus a Merkle root representing all the transactions inside it."
+        },
+        {
+          "id": "action_bb-s1_6",
+          "type": "spotlight",
+          "elementId": "bb-s1-rp-txt"
+        },
+        {
+          "id": "action_bb-s1_7",
+          "type": "speech",
+          "text": "And why does this matter? Bitcoin alone has 17 thousand nodes worldwide. There is no CEO, no server you can shut down. The network is the bank."
+        },
+        {
+          "id": "action_bb-s1_8",
+          "type": "spotlight",
+          "elementId": "bb-s1-pill0"
+        },
+        {
+          "id": "action_bb-s1_9",
+          "type": "speech",
+          "text": "Over 17,000 nodes secure the Bitcoin network right now."
+        },
+        {
+          "id": "action_bb-s1_10",
+          "type": "spotlight",
+          "elementId": "bb-s1-pill1"
+        },
+        {
+          "id": "action_bb-s1_11",
+          "type": "speech",
+          "text": "The Bitcoin chain is over 600 gigabytes and still growing — that's the full history of every transaction since 2009."
+        }
+      ]
     },
     {
       "id": "bb-s2",
@@ -360,11 +341,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f59e0b",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -377,19 +362,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#f59e0b",
+              "fixedRatio": false
             },
             {
               "id": "bb-s2-titlebg",
@@ -397,292 +376,158 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "bb-s2-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Cryptographic Hash Functions</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Cryptographic Hash Functions</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "bb-s2-sub",
               "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>SHA-256: the foundation of Bitcoin's security</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The one-way mathematical trap that makes blockchain tamper-proof</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#64748b"
             },
             {
-              "id": "bb-s2-pillbg0",
+              "id": "bb-s2-fs-bg",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 60,
+              "top": 118,
+              "width": 880,
+              "height": 176,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#020817",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 2,
+                "color": "#f59e0b"
               }
             },
             {
-              "id": "bb-s2-pill0",
+              "id": "bb-s2-fs-formula",
               "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 60,
+              "top": 130,
+              "width": 880,
+              "height": 156,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>256-bit<br/><span style=\"font-size:10px;color:#64748b;\">Output</span></p>",
+              "content": "<p style='font-size:34px;font-weight:800;color:#f59e0b;text-align:center;font-family:monospace;line-height:1.4;'>SHA-256(input) → 256-bit digest</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#f59e0b"
             },
             {
-              "id": "bb-s2-pillbg1",
-              "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
-              "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                120,
-                74
-              ],
-              "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s2-pill1",
+              "id": "bb-s2-fs-exp",
               "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 60,
+              "top": 312,
+              "width": 880,
+              "height": 180,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>700 EH/s<br/><span style=\"font-size:10px;color:#64748b;\">Hash rate</span></p>",
+              "content": "<p style='font-size:15px;color:#e2e8f0;line-height:1.7;text-align:center;'>Pre-image resistant · Collision resistant · Avalanche effect<br/><br/>Change one character → ~50% of output bits flip<br/>This is why any tampering is immediately detectable</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             },
             {
-              "id": "bb-s2-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s2-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s2-card0txt",
+              "id": "bb-s2-fs-note",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 60,
+              "top": 494,
+              "width": 880,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>5 Formal Properties</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Pre-image resistance: given H(x), finding x requires 2\u00b2\u2075\u2076 operations</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Second pre-image: given x, finding x\u2032 \u2260 x with H(x\u2032)=H(x) is infeasible</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Collision resistance: finding any (x,x\u2032) pair with same hash is infeasible</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Avalanche effect: flipping 1 bit changes ~50% of output bits</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Deterministic: same input always produces identical output</p>",
+              "content": "<p style='font-size:12px;color:#64748b;text-align:center;'>Quantum note: Grover's algorithm halves the effective security — 256-bit SHA-256 gives 128-bit quantum security, still considered safe.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "bb-s2-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s2-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s2-card1txt",
-              "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>SHA-256 in Bitcoin</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Block header hashed TWICE \u2014 SHA-256(SHA-256(header)) prevents length-extension attacks</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Mining = find nonce such that hash < target (a 256-bit number)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Difficulty adjusts every 2016 blocks (~2 weeks) to maintain 10-min block time</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Current difficulty: ~88 trillion \u2014 one in 88T nonces is valid</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "bb-s2-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s2-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s2-card2txt",
-              "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Why It Secures Bitcoin</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Changing any tx changes Merkle root \u2192 changes block hash</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Changed block hash \u2192 breaks linkage to next block</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Attacker must redo all proof-of-work for the entire chain \u2014 computationally infeasible</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>SHA-256 has zero known cryptographic breaks after 20+ years of scrutiny</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#64748b"
             }
           ]
         }
       },
-      "order": 2
+      "order": 2,
+      "actions": [
+        {
+          "id": "action_bb-s2_0",
+          "type": "spotlight",
+          "elementId": "bb-s2-title"
+        },
+        {
+          "id": "action_bb-s2_1",
+          "type": "speech",
+          "text": "Cryptographic hash functions are the foundation of blockchain security."
+        },
+        {
+          "id": "action_bb-s2_2",
+          "type": "spotlight",
+          "elementId": "bb-s2-sub"
+        },
+        {
+          "id": "action_bb-s2_3",
+          "type": "speech",
+          "text": "SHA-256 is a one-way mathematical trap — easy to compute forward, essentially impossible to reverse."
+        },
+        {
+          "id": "action_bb-s2_4",
+          "type": "spotlight",
+          "elementId": "bb-s2-fs-formula"
+        },
+        {
+          "id": "action_bb-s2_5",
+          "type": "speech",
+          "text": "SHA-256 takes any input and produces a fixed 256-bit digest. Same input always gives the same output. Different input gives a completely different output."
+        },
+        {
+          "id": "action_bb-s2_6",
+          "type": "spotlight",
+          "elementId": "bb-s2-fs-exp"
+        },
+        {
+          "id": "action_bb-s2_7",
+          "type": "speech",
+          "text": "Three key properties: pre-image resistant — you can't reverse it. Collision resistant — two different inputs don't give the same hash. And the avalanche effect — change one character and about 50% of the output bits flip."
+        },
+        {
+          "id": "action_bb-s2_8",
+          "type": "spotlight",
+          "elementId": "bb-s2-fs-note"
+        },
+        {
+          "id": "action_bb-s2_9",
+          "type": "speech",
+          "text": "One important note for the future: quantum computers running Grover's algorithm would effectively halve the security of SHA-256. That's why 256-bit gives 128-bit quantum security — still considered safe."
+        }
+      ]
     },
     {
       "id": "bb-s3",
       "type": "slide",
-      "title": "Merkle Trees \u2014 Efficient Tx Verification",
+      "title": "Merkle Trees — Efficient Tx Verification",
       "content": {
         "type": "slide",
         "canvas": {
@@ -691,11 +536,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#22d3ee",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -708,19 +557,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#22d3ee",
+              "fixedRatio": false
             },
             {
               "id": "bb-s3-titlebg",
@@ -728,287 +571,319 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "bb-s3-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Merkle Trees \u2014 Efficient Tx Verification</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
-            },
-            {
-              "id": "bb-s3-sub",
-              "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Log\u2082(N) proof complexity instead of O(N)</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Merkle Trees — Efficient Verification</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
             {
-              "id": "bb-s3-pillbg0",
-              "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "id": "bb-s3-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Prove a transaction exists with just a few hashes</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "bb-s3-pill0bg",
+              "type": "shape",
+              "left": 830,
+              "top": 14,
+              "width": 116,
+              "height": 68,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
               "fill": "#1e293b",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
               }
             },
             {
               "id": "bb-s3-pill0",
               "type": "text",
-              "left": 724,
+              "left": 834,
               "top": 14,
-              "width": 112,
-              "height": 74,
+              "width": 108,
+              "height": 68,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>12 hashes<br/><span style=\"font-size:10px;color:#64748b;\">Proof</span></p>",
+              "content": "<p style='font-size:18px;font-weight:800;color:#22d3ee;text-align:center;line-height:1.2;'>log₂N<br/><span style=\"font-size:10px;color:#64748b;font-weight:500;\">Proof size</span></p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#22d3ee"
             },
             {
-              "id": "bb-s3-pillbg1",
+              "id": "bb-s3-st0bg",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 10,
+              "top": 118,
+              "width": 240,
+              "height": 430,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
               }
             },
             {
-              "id": "bb-s3-pill1",
+              "id": "bb-s3-st0num",
               "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 10,
+              "top": 128,
+              "width": 240,
+              "height": 50,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>99.7%<br/><span style=\"font-size:10px;color:#64748b;\">Saving</span></p>",
+              "content": "<p style='font-size:28px;font-weight:900;color:#22d3ee;text-align:center;'>1</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#22d3ee"
             },
             {
-              "id": "bb-s3-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s3-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s3-card0txt",
+              "id": "bb-s3-st0txt",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 18,
+              "top": 182,
+              "width": 224,
+              "height": 354,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Structure</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Binary hash tree: leaf nodes = H(Tx), internal nodes = H(left_child \u2225 right_child)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Root = Merkle Root \u2014 embedded in block header (32 bytes)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>4,000-tx block: tree depth = 12, proof = 12 \u00d7 32 = 384 bytes vs 4,000 \u00d7 250 bytes full block</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Changing any single tx changes every hash up to the root \u2014 instant fraud detection</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Transactions</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>1,000s of transactions in a block — too large to transmit fully</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#94a3b8"
             },
             {
-              "id": "bb-s3-card1bg",
+              "id": "bb-s3-st1bg",
               "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
+              "left": 256,
+              "top": 118,
+              "width": 240,
+              "height": 430,
               "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                308,
-                446
+                1,
+                1
               ],
-              "fill": "#0a1929",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
               }
             },
             {
-              "id": "bb-s3-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s3-card1txt",
+              "id": "bb-s3-st1num",
               "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 256,
+              "top": 128,
+              "width": 240,
+              "height": 50,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>SPV Clients</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Simple Payment Verification nodes download only 80-byte block headers (~70 MB total)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>To verify a payment, request the Merkle proof branch (12 hashes = 384 bytes)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Compare computed root against block header root \u2014 no need for full 350 MB block</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Used by mobile wallets \u2014 enables Bitcoin on low-resource devices</p>",
+              "content": "<p style='font-size:28px;font-weight:900;color:#22d3ee;text-align:center;'>2</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#22d3ee"
             },
             {
-              "id": "bb-s3-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s3-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s3-card2txt",
+              "id": "bb-s3-st1txt",
               "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 264,
+              "top": 182,
+              "width": 224,
+              "height": 354,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Patricia Merkle Tries</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Ethereum extends Merkle trees to Modified Patricia Tries (MPT)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Stores state (accounts), transactions, and receipts in separate tries</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Each try root is in the block header \u2014 enables O(log n) state proofs</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Critical for stateless clients and Ethereum's verkle tree migration</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Pair & Hash</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Hash pairs repeatedly up a binary tree until one root hash remains</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "bb-s3-st2bg",
+              "type": "shape",
+              "left": 502,
+              "top": 118,
+              "width": 240,
+              "height": 430,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
+              }
+            },
+            {
+              "id": "bb-s3-st2num",
+              "type": "text",
+              "left": 502,
+              "top": 128,
+              "width": 240,
+              "height": 50,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:900;color:#22d3ee;text-align:center;'>3</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#22d3ee"
+            },
+            {
+              "id": "bb-s3-st2txt",
+              "type": "text",
+              "left": 510,
+              "top": 182,
+              "width": 224,
+              "height": 354,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Merkle Root</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Only 32 bytes stored in the block header — represents all transactions</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "bb-s3-st3bg",
+              "type": "shape",
+              "left": 748,
+              "top": 118,
+              "width": 240,
+              "height": 430,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
+              }
+            },
+            {
+              "id": "bb-s3-st3num",
+              "type": "text",
+              "left": 748,
+              "top": 128,
+              "width": 240,
+              "height": 50,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:900;color:#22d3ee;text-align:center;'>4</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#22d3ee"
+            },
+            {
+              "id": "bb-s3-st3txt",
+              "type": "text",
+              "left": 756,
+              "top": 182,
+              "width": 224,
+              "height": 354,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Proof Path</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Prove any tx is included with just log₂(N) hashes — no full block needed</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
             }
           ]
         }
       },
-      "order": 3
+      "order": 3,
+      "actions": [
+        {
+          "id": "action_bb-s3_0",
+          "type": "spotlight",
+          "elementId": "bb-s3-title"
+        },
+        {
+          "id": "action_bb-s3_1",
+          "type": "speech",
+          "text": "Merkle trees solve a critical problem: how do you prove a transaction is in a block without downloading the entire block?"
+        },
+        {
+          "id": "action_bb-s3_2",
+          "type": "spotlight",
+          "elementId": "bb-s3-sub"
+        },
+        {
+          "id": "action_bb-s3_3",
+          "type": "speech",
+          "text": "With just a few hashes — specifically log base 2 of N hashes — you can prove any transaction's inclusion."
+        },
+        {
+          "id": "action_bb-s3_4",
+          "type": "spotlight",
+          "elementId": "bb-s3-st0txt"
+        },
+        {
+          "id": "action_bb-s3_5",
+          "type": "speech",
+          "text": "Step one: a block can contain thousands of transactions. Way too large to transmit entirely to every device."
+        },
+        {
+          "id": "action_bb-s3_6",
+          "type": "spotlight",
+          "elementId": "bb-s3-st1txt"
+        },
+        {
+          "id": "action_bb-s3_7",
+          "type": "speech",
+          "text": "Step two: hash pairs of transactions repeatedly until you're left with a single root hash — the Merkle root."
+        },
+        {
+          "id": "action_bb-s3_8",
+          "type": "spotlight",
+          "elementId": "bb-s3-st2txt"
+        },
+        {
+          "id": "action_bb-s3_9",
+          "type": "speech",
+          "text": "Step three: only 32 bytes — the Merkle root — gets stored in the block header. It represents ALL transactions."
+        },
+        {
+          "id": "action_bb-s3_10",
+          "type": "spotlight",
+          "elementId": "bb-s3-st3txt"
+        },
+        {
+          "id": "action_bb-s3_11",
+          "type": "speech",
+          "text": "Step four: to prove your transaction is included, you only need log N hashes along the path to the root. For a million transactions, that's just 20 hashes."
+        }
+      ]
     },
     {
       "id": "bb-s4",
@@ -1022,11 +897,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#3b82f6",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1039,19 +918,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
               "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fixedRatio": false
             },
             {
               "id": "bb-s4-titlebg",
@@ -1059,287 +932,180 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "bb-s4-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Consensus: Proof-of-Work vs Proof-of-Stake</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Consensus: Proof-of-Work vs Proof-of-Stake</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "bb-s4-sub",
               "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Two fundamentally different answers to the same question</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "bb-s4-vs-lbg",
+              "type": "shape",
+              "left": 8,
+              "top": 108,
+              "width": 480,
+              "height": 450,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0d0800",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "bb-s4-vs-ltxt",
+              "type": "text",
               "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "top": 118,
+              "width": 456,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Two approaches to Sybil-resistant distributed agreement</p>",
+              "content": "<p style='font-size:16px;font-weight:800;color:#f59e0b;margin-bottom:12px;'>⛏ Proof of Work</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• Energy = security cost (unforgeable)</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• Miners compete on hash rate</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• Difficulty adjusts every 2016 blocks</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• Attack cost = 51% of global hashrate</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• 700 exahashes/sec on Bitcoin</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• Proven 15-year security record</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#cbd5e1"
             },
             {
-              "id": "bb-s4-pillbg0",
+              "id": "bb-s4-vs-div",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 494,
+              "top": 108,
+              "width": 12,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
               "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fixedRatio": false
             },
             {
-              "id": "bb-s4-pill0",
+              "id": "bb-s4-vs-vs",
               "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 483,
+              "top": 316,
+              "width": 34,
+              "height": 36,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>~150 TWh/yr<br/><span style=\"font-size:10px;color:#64748b;\">PoW Energy</span></p>",
+              "content": "<p style='font-size:11px;font-weight:700;color:#475569;text-align:center;'>VS</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#475569"
             },
             {
-              "id": "bb-s4-pillbg1",
+              "id": "bb-s4-vs-rbg",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 512,
+              "top": 108,
+              "width": 480,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#00100d",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
               }
             },
             {
-              "id": "bb-s4-pill1",
+              "id": "bb-s4-vs-rtxt",
               "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 524,
+              "top": 118,
+              "width": 456,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>900K+<br/><span style=\"font-size:10px;color:#64748b;\">PoS Validators</span></p>",
+              "content": "<p style='font-size:16px;font-weight:800;color:#22d3ee;margin-bottom:12px;'>🪙 Proof of Stake</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• Collateral = security cost</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• Validators chosen by stake weight</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• Slashing destroys dishonest stake</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• Attack cost = 1/3 of all staked ETH</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• ~$24B at stake on Ethereum</p><p style='font-size:12px;color:#cbd5e1;line-height:1.7;margin:2px 0;'>• 90%+ energy reduction vs PoW</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "bb-s4-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s4-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s4-card0txt",
-              "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Proof-of-Work</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Miners compete to find nonce: SHA-256\u00b2(header) < target</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Difficulty adjusts every 2016 blocks to maintain 10-min average</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>51% attack cost: must control majority of global hash rate</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Energy use is a feature \u2014 makes past blocks expensive to rewrite</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Nakamoto consensus: follow the chain with most accumulated work</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "bb-s4-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s4-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s4-card1txt",
-              "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Proof-of-Stake</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Validators lock (stake) ETH as collateral \u2014 32 ETH minimum to solo validate</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Attestation committees randomly selected per epoch (6.4 min, 32 slots)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>RANDAO + VDF provides verifiable randomness for validator selection</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Slashing: equivocation or surround voting destroys up to 100% of stake</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Finality via Casper FFG \u2014 2 justified checkpoints = finalized, never reverted</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "bb-s4-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s4-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s4-card2txt",
-              "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Tradeoffs</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>PoW: battle-tested 15+ years, ASIC hardware creates real-world cost barrier</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>PoS: 99.95% less energy, faster finality, but 'nothing-at-stake' problem mitigated by slashing</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>PoW favors large mining operations; PoS favors large capital holders</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Ethereum's Merge (2022) switched from PoW\u2192PoS, reduced issuance by ~90%</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#cbd5e1"
             }
           ]
         }
       },
-      "order": 4
+      "order": 4,
+      "actions": [
+        {
+          "id": "action_bb-s4_0",
+          "type": "spotlight",
+          "elementId": "bb-s4-title"
+        },
+        {
+          "id": "action_bb-s4_1",
+          "type": "speech",
+          "text": "How does a blockchain network agree on what happened? That's the consensus problem."
+        },
+        {
+          "id": "action_bb-s4_2",
+          "type": "spotlight",
+          "elementId": "bb-s4-sub"
+        },
+        {
+          "id": "action_bb-s4_3",
+          "type": "speech",
+          "text": "Two dominant approaches: Proof of Work and Proof of Stake. Fundamentally different answers to the same trust question."
+        },
+        {
+          "id": "action_bb-s4_4",
+          "type": "spotlight",
+          "elementId": "bb-s4-vs-ltxt"
+        },
+        {
+          "id": "action_bb-s4_5",
+          "type": "speech",
+          "text": "Proof of Work: energy is the security cost. You can't fake burning electricity. Miners compete on hash rate, and difficulty adjusts every two weeks to maintain 10-minute blocks."
+        },
+        {
+          "id": "action_bb-s4_6",
+          "type": "spotlight",
+          "elementId": "bb-s4-vs-rtxt"
+        },
+        {
+          "id": "action_bb-s4_7",
+          "type": "speech",
+          "text": "Proof of Stake: collateral replaces energy. Validators stake ETH and can be 'slashed' — lose their stake — if they try to cheat. The economic incentive IS the security."
+        }
+      ]
     },
     {
       "id": "bb-s5",
@@ -1353,11 +1119,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#ef4444",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1370,19 +1140,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#ef4444",
+              "fixedRatio": false
             },
             {
               "id": "bb-s5-titlebg",
@@ -1390,287 +1154,186 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "bb-s5-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Byzantine Fault Tolerance</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
-            },
-            {
-              "id": "bb-s5-sub",
-              "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Reaching consensus when some participants are malicious</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Byzantine Fault Tolerance</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
             {
-              "id": "bb-s5-pillbg0",
-              "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "id": "bb-s5-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>How blockchains achieve agreement despite dishonest participants</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "bb-s5-pill0bg",
+              "type": "shape",
+              "left": 830,
+              "top": 14,
+              "width": 116,
+              "height": 68,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
               "fill": "#1e293b",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
               }
             },
             {
               "id": "bb-s5-pill0",
               "type": "text",
-              "left": 724,
+              "left": 834,
               "top": 14,
-              "width": 112,
-              "height": 74,
+              "width": 108,
+              "height": 68,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>f < n/3<br/><span style=\"font-size:10px;color:#64748b;\">Safety</span></p>",
+              "content": "<p style='font-size:18px;font-weight:800;color:#ef4444;text-align:center;line-height:1.2;'>80%<br/><span style=\"font-size:10px;color:#64748b;font-weight:500;\">XRPL threshold</span></p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#ef4444"
             },
             {
-              "id": "bb-s5-pillbg1",
+              "id": "bb-s5-fs-bg",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 60,
+              "top": 118,
+              "width": 880,
+              "height": 176,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#020817",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 2,
+                "color": "#ef4444"
               }
             },
             {
-              "id": "bb-s5-pill1",
+              "id": "bb-s5-fs-formula",
               "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 60,
+              "top": 130,
+              "width": 880,
+              "height": 156,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>f < n/3<br/><span style=\"font-size:10px;color:#64748b;\">Liveness</span></p>",
+              "content": "<p style='font-size:34px;font-weight:800;color:#ef4444;text-align:center;font-family:monospace;line-height:1.4;'>Need: 3f + 1 honest nodes to tolerate f traitors</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#ef4444"
             },
             {
-              "id": "bb-s5-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s5-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s5-card0txt",
+              "id": "bb-s5-fs-exp",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 60,
+              "top": 312,
+              "width": 880,
+              "height": 180,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>The Problem</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Byzantine Generals Problem (Lamport 1982): generals must coordinate attack but some may be traitors</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>A system is BFT if it reaches correct consensus despite f arbitrary (Byzantine) faults</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Classic result: requires 3f+1 nodes to tolerate f Byzantine faults</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Bitcoin's PoW achieves probabilistic BFT without knowing who is Byzantine</p>",
+              "content": "<p style='font-size:15px;color:#e2e8f0;line-height:1.7;text-align:center;'>With 1 traitor you need 4 total — with 100 traitors you need 301 total<br/><br/>Bitcoin solves this probabilistically with PoW<br/>XRPL solves it with 80% trusted-validator threshold</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             },
             {
-              "id": "bb-s5-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s5-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s5-card1txt",
+              "id": "bb-s5-fs-note",
               "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 60,
+              "top": 494,
+              "width": 880,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>PBFT Algorithm</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Practical Byzantine Fault Tolerance (Castro & Liskov 1999) \u2014 first efficient BFT protocol</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Three phases: pre-prepare \u2192 prepare \u2192 commit \u2014 requires 2 round-trips of O(n\u00b2) messages</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Handles f < n/3 Byzantine nodes with deterministic safety and liveness</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Used in Hyperledger Fabric, Tendermint, and many permissioned blockchains</p>",
+              "content": "<p style='font-size:12px;color:#64748b;text-align:center;'>Named after the 1982 Lamport, Shostak & Pease paper. Every blockchain consensus is solving a variant of this problem.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "bb-s5-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s5-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s5-card2txt",
-              "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Modern BFT Chains</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Tendermint: PBFT-inspired, used in Cosmos \u2014 instant finality, ~1s block times</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Ethereum's Casper: hybrid PoS+BFT \u2014 uses 2/3 supermajority attestations for finality</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Solana's Tower BFT: optimistic confirmation in ~400ms, hard finality in ~12s</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>HotStuff (used by Diem/Aptos): linear message complexity O(n) vs PBFT's O(n\u00b2)</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#64748b"
             }
           ]
         }
       },
-      "order": 5
+      "order": 5,
+      "actions": [
+        {
+          "id": "action_bb-s5_0",
+          "type": "spotlight",
+          "elementId": "bb-s5-title"
+        },
+        {
+          "id": "action_bb-s5_1",
+          "type": "speech",
+          "text": "Byzantine Fault Tolerance asks: how many dishonest participants can a network tolerate before it breaks?"
+        },
+        {
+          "id": "action_bb-s5_2",
+          "type": "spotlight",
+          "elementId": "bb-s5-sub"
+        },
+        {
+          "id": "action_bb-s5_3",
+          "type": "speech",
+          "text": "Named after a famous 1982 computer science paper — every blockchain consensus mechanism is solving a version of this problem."
+        },
+        {
+          "id": "action_bb-s5_4",
+          "type": "spotlight",
+          "elementId": "bb-s5-fs-formula"
+        },
+        {
+          "id": "action_bb-s5_5",
+          "type": "speech",
+          "text": "The math: to tolerate F traitors, you need 3F plus 1 honest nodes. One bad actor? You need 4 total. 100 bad actors? You need 301."
+        },
+        {
+          "id": "action_bb-s5_6",
+          "type": "spotlight",
+          "elementId": "bb-s5-fs-exp"
+        },
+        {
+          "id": "action_bb-s5_7",
+          "type": "speech",
+          "text": "Bitcoin solves this probabilistically through hash power — making it economically irrational to attack. XRPL uses a different approach with trusted validator lists."
+        },
+        {
+          "id": "action_bb-s5_8",
+          "type": "spotlight",
+          "elementId": "bb-s5-pill0"
+        },
+        {
+          "id": "action_bb-s5_9",
+          "type": "speech",
+          "text": "XRPL requires 80% of trusted validators to agree before a ledger closes. This is higher than Bitcoin's 51% threshold."
+        }
+      ]
     },
     {
       "id": "bb-s6",
@@ -1684,11 +1347,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#8b5cf6",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1701,19 +1368,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#8b5cf6",
+              "fixedRatio": false
             },
             {
               "id": "bb-s6-titlebg",
@@ -1721,287 +1382,243 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "bb-s6-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>The Blockchain Trilemma</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>The Blockchain Trilemma</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "bb-s6-sub",
               "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Decentralization, Security, and Scalability \u2014 pick two</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Every blockchain picks two — no one has solved all three yet</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#64748b"
             },
             {
-              "id": "bb-s6-pillbg0",
+              "id": "bb-s6-c0bg",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 8,
+              "top": 110,
+              "width": 320,
+              "height": 438,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0f1f3d",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
               }
             },
             {
-              "id": "bb-s6-pill0",
-              "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>~7<br/><span style=\"font-size:10px;color:#64748b;\">Bitcoin TPS</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "bb-s6-pillbg1",
+              "id": "bb-s6-c0bar",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
-              "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                120,
-                74
-              ],
-              "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s6-pill1",
-              "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>24,000<br/><span style=\"font-size:10px;color:#64748b;\">Visa TPS</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "bb-s6-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s6-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
+              "left": 8,
+              "top": 110,
               "width": 4,
-              "height": 446,
+              "height": 438,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s6-card0txt",
-              "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>The Trilemma</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Coined by Vitalik Buterin: blockchains can optimize for at most 2 of 3 properties</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Security: resistance to attacks (51%, Sybil, eclipse)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Decentralization: no single entity controls consensus or state</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Scalability: high throughput (TPS), low latency, low fees</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Bitcoin maximizes security + decentralization; sacrifices scalability (7 TPS)</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "bb-s6-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s6-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
               "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fixedRatio": false
             },
             {
-              "id": "bb-s6-card1txt",
+              "id": "bb-s6-c0txt",
               "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 20,
+              "top": 120,
+              "width": 300,
+              "height": 418,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Layer-2 Solutions</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Payment channels (Lightning): off-chain state, only settlement on-chain \u2014 Bitcoin achieves millions of TPS</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Optimistic rollups (Arbitrum, Optimism): batch 100s of txs into one L1 tx, 7-day fraud proof window</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>ZK-rollups (StarkNet, zkSync): validity proof posted to L1 \u2014 instant finality, no fraud window</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>State channels + rollups = security from L1 + scalability from L2</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>🔒 Security</p><p style='font-size:12px;color:#cbd5e1;line-height:1.5;'>Resistant to 51% attacks, double-spend, Sybil attacks. Bitcoin and Ethereum both prioritize this — compromise here risks everything.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#cbd5e1"
             },
             {
-              "id": "bb-s6-card2bg",
+              "id": "bb-s6-c1bg",
               "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
+              "left": 336,
+              "top": 110,
+              "width": 320,
+              "height": 438,
               "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                308,
-                446
+                1,
+                1
               ],
-              "fill": "#042f2e",
+              "fill": "#0f1f3d",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
               }
             },
             {
-              "id": "bb-s6-card2bar",
+              "id": "bb-s6-c1bar",
               "type": "shape",
-              "left": 636,
-              "top": 116,
+              "left": 336,
+              "top": 110,
               "width": 4,
-              "height": 446,
+              "height": 438,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
-              "fill": "#06b6d4",
+              "fill": "#22d3ee",
+              "fixedRatio": false
+            },
+            {
+              "id": "bb-s6-c1txt",
+              "type": "text",
+              "left": 348,
+              "top": 120,
+              "width": 300,
+              "height": 418,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#22d3ee;margin-bottom:6px;'>⚡ Scalability</p><p style='font-size:12px;color:#cbd5e1;line-height:1.5;'>High transactions per second with low fees. Achieved via sharding, rollups, or larger blocks. Ethereum targets 100K+ tx/s via L2 rollups.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "bb-s6-c2bg",
+              "type": "shape",
+              "left": 664,
+              "top": 110,
+              "width": 320,
+              "height": 438,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1f3d",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#a855f7"
               }
             },
             {
-              "id": "bb-s6-card2txt",
-              "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "id": "bb-s6-c2bar",
+              "type": "shape",
+              "left": 664,
+              "top": 110,
+              "width": 4,
+              "height": 438,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Alternative Approaches</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Sharding: split state into N shards, each processing its own txs in parallel (Ethereum's future)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>DAG-based (IOTA, Nano): no linear chain \u2014 parallel tx confirmation, no miners</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Avalanche consensus: probabilistic sampling \u2014 4,500 TPS with sub-second finality</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Tradeoff: all alternatives sacrifice some decentralization or security assumption</p>",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#a855f7",
+              "fixedRatio": false
+            },
+            {
+              "id": "bb-s6-c2txt",
+              "type": "text",
+              "left": 676,
+              "top": 120,
+              "width": 300,
+              "height": 418,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#a855f7;margin-bottom:6px;'>🌐 Decentralization</p><p style='font-size:12px;color:#cbd5e1;line-height:1.5;'>No single control point. More nodes = more resilient. Bitcoin's 17K+ nodes make it uncensorable — but slower.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#cbd5e1"
             }
           ]
         }
       },
-      "order": 6
+      "order": 6,
+      "actions": [
+        {
+          "id": "action_bb-s6_0",
+          "type": "spotlight",
+          "elementId": "bb-s6-title"
+        },
+        {
+          "id": "action_bb-s6_1",
+          "type": "speech",
+          "text": "The blockchain trilemma is one of the most important concepts in the space. Every blockchain picks two out of three — and no one has fully solved all three yet."
+        },
+        {
+          "id": "action_bb-s6_2",
+          "type": "spotlight",
+          "elementId": "bb-s6-sub"
+        },
+        {
+          "id": "action_bb-s6_3",
+          "type": "speech",
+          "text": "Security, scalability, and decentralization — the impossible triangle."
+        },
+        {
+          "id": "action_bb-s6_4",
+          "type": "spotlight",
+          "elementId": "bb-s6-c0txt"
+        },
+        {
+          "id": "action_bb-s6_5",
+          "type": "speech",
+          "text": "Security: resistant to 51% attacks, double-spends, and Sybil attacks. Bitcoin and Ethereum both prioritize this above the other two."
+        },
+        {
+          "id": "action_bb-s6_6",
+          "type": "spotlight",
+          "elementId": "bb-s6-c1txt"
+        },
+        {
+          "id": "action_bb-s6_7",
+          "type": "speech",
+          "text": "Scalability: high transactions per second with low fees. Achieved via sharding, rollups, or simply larger blocks — each comes with trade-offs."
+        },
+        {
+          "id": "action_bb-s6_8",
+          "type": "spotlight",
+          "elementId": "bb-s6-c2txt"
+        },
+        {
+          "id": "action_bb-s6_9",
+          "type": "speech",
+          "text": "Decentralization: no single control point. More nodes equals more resilience. Bitcoin's 17 thousand nodes make it essentially uncensorable — but slow."
+        }
+      ]
     },
     {
       "id": "bb-s7",
@@ -2015,11 +1632,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f59e0b",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -2032,19 +1653,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#f59e0b",
+              "fixedRatio": false
             },
             {
               "id": "bb-s7-titlebg",
@@ -2052,305 +1667,349 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "bb-s7-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Smart Contracts & the EVM</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Smart Contracts & the EVM</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "bb-s7-sub",
               "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Self-executing code that no one can stop — or fix</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "bb-s7-lp-bg",
+              "type": "shape",
+              "left": 8,
+              "top": 108,
+              "width": 488,
+              "height": 450,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "bb-s7-lp-bar",
+              "type": "shape",
+              "left": 8,
+              "top": 108,
+              "width": 4,
+              "height": 450,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "bb-s7-lp-txt",
+              "type": "text",
               "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Turing-complete programs that execute trustlessly on-chain</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#f59e0b;margin-bottom:10px;'>What Is a Smart Contract?</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>Code deployed to Ethereum that runs exactly as written — forever. No CEO can modify it. No server can shut it down.<br/><br/>Once deployed, the contract is immutable. This is both the power and the danger.<br/><br/>The DAO hack (2016): $60M stolen from immutable code.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             },
             {
-              "id": "bb-s7-pillbg0",
+              "id": "bb-s7-rp-bg",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 504,
+              "top": 108,
+              "width": 488,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
               }
             },
             {
-              "id": "bb-s7-pill0",
-              "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>500+<br/><span style=\"font-size:10px;color:#64748b;\">EVM Chains</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "bb-s7-pillbg1",
+              "id": "bb-s7-rp-bar",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
-              "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                120,
-                74
-              ],
-              "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s7-pill1",
-              "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>$100B+<br/><span style=\"font-size:10px;color:#64748b;\">Total Value</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "bb-s7-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s7-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
+              "left": 504,
+              "top": 108,
               "width": 4,
-              "height": 446,
+              "height": 450,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s7-card0txt",
-              "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Smart Contract Basics</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Code deployed to a blockchain address \u2014 immutable once deployed (unless upgradeable proxy)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Executed by every full node \u2014 output is deterministic (same input = same output on every node)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Gas system: every opcode costs gas, prevents infinite loops (halting problem workaround)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Solidity compiles to EVM bytecode \u2014 256-bit stack, 32-byte word size</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "bb-s7-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s7-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
               "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fixedRatio": false
             },
             {
-              "id": "bb-s7-card1txt",
+              "id": "bb-s7-rp-txt",
               "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 516,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>EVM Architecture</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Stack-based VM: max 1024 depth, each element 32 bytes</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Storage: persistent key-value store (expensive \u2014 20,000 gas per SSTORE)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Memory: temporary byte array (cheap, linear cost)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>CALL opcode enables contract-to-contract calls \u2014 foundation of DeFi composability</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Precompiles: SHA-256, ECRECOVER, BN128 pairing \u2014 native implementations at fixed gas costs</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#3b82f6;margin-bottom:10px;'>The Gas System</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>Every computation costs gas — prevents infinite loops and DoS.<br/><br/>EIP-1559 (Aug 2021):<br/>• Base fee burned permanently<br/>• 3.5M+ ETH destroyed since launch<br/>• ETH becomes deflationary under high demand<br/><br/>Gas price = Base Fee + Priority Tip</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "bb-s7-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s7-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "bb-s7-card2txt",
-              "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Beyond EVM</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>EVM equivalence: Polygon zkEVM, Scroll produce ZK proofs of EVM execution</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>SVM (Solana): parallel execution via Sealevel \u2014 tracks which accounts a tx reads/writes</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>MoveVM (Aptos/Sui): resource-oriented types \u2014 assets can't be copied or dropped, only moved</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>WebAssembly (WASM): Polkadot, NEAR, CosmWasm \u2014 language-agnostic, near-native speed</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             }
           ]
         }
       },
-      "order": 7
+      "order": 7,
+      "actions": [
+        {
+          "id": "action_bb-s7_0",
+          "type": "spotlight",
+          "elementId": "bb-s7-title"
+        },
+        {
+          "id": "action_bb-s7_1",
+          "type": "speech",
+          "text": "Smart contracts are self-executing code deployed to Ethereum that runs exactly as written — forever."
+        },
+        {
+          "id": "action_bb-s7_2",
+          "type": "spotlight",
+          "elementId": "bb-s7-sub"
+        },
+        {
+          "id": "action_bb-s7_3",
+          "type": "speech",
+          "text": "No CEO can change them, no government can stop them. That's both the power and the risk."
+        },
+        {
+          "id": "action_bb-s7_4",
+          "type": "spotlight",
+          "elementId": "bb-s7-lp-txt"
+        },
+        {
+          "id": "action_bb-s7_5",
+          "type": "speech",
+          "text": "What is a smart contract? It's code on the Ethereum blockchain. Once deployed, it runs autonomously. If the code has a bug — like the DAO hack in 2016 — there's no customer support line."
+        },
+        {
+          "id": "action_bb-s7_6",
+          "type": "spotlight",
+          "elementId": "bb-s7-rp-txt"
+        },
+        {
+          "id": "action_bb-s7_7",
+          "type": "speech",
+          "text": "The gas system is Ethereum's metering mechanism. Every computation costs gas — this prevents infinite loops and denial-of-service attacks. EIP-1559 introduced a base fee that gets burned, making ETH deflationary during high usage."
+        }
+      ]
     },
     {
       "id": "bb-s8",
       "type": "interactive",
       "title": "Interactive: Hash Function Explorer",
       "content": {
-        "type": "interactive"
+        "type": "interactive",
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody{background:#0b1120;color:#e2e8f0;font-family:Inter,system-ui,sans-serif;padding:20px;margin:0;}\nh2{color:#60a5fa;font-size:18px;margin:0 0 4px;}\n.sub{color:#64748b;font-size:12px;margin-bottom:16px;}\n.row{display:flex;gap:12px;margin-bottom:12px;align-items:stretch;}\n.panel{background:#0f1f3d;border:1px solid #1e3a5f;border-radius:8px;padding:14px;flex:1;}\nlabel{color:#94a3b8;font-size:11px;text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;}\ninput,textarea{width:100%;padding:8px 10px;background:#020817;border:1px solid #334155;color:#f1f5f9;border-radius:6px;font-size:13px;font-family:monospace;box-sizing:border-box;resize:none;}\n.hash-out{background:#020817;border:1px solid #334155;border-radius:6px;padding:10px;font-family:monospace;font-size:12px;word-break:break-all;min-height:36px;}\n.valid{color:#22c55e;font-weight:700;} .invalid{color:#ef4444;font-weight:700;}\n.stat{display:inline-block;background:#1e3a5f;border-radius:4px;padding:3px 10px;font-size:11px;font-weight:700;color:#60a5fa;margin:2px;}\n.diff-bar{height:8px;border-radius:4px;background:#1e293b;margin-top:6px;overflow:hidden;}\n.diff-fill{height:100%;background:#f59e0b;border-radius:4px;transition:width 0.3s;}\n.note{color:#475569;font-size:11px;margin-top:12px;}\n</style>\n</head>\n<body>\n<h2>SHA-256 Avalanche Effect Explorer</h2>\n<p class=\"sub\">Change one character — watch ~50% of hash bits flip instantly.</p>\n<div class=\"row\">\n  <div class=\"panel\">\n    <label>Input Message</label>\n    <textarea id=\"inp\" rows=\"2\" oninput=\"update()\">OnlyCrypto Academy</textarea>\n    <label style=\"margin-top:10px\">SHA-256 Hash</label>\n    <div class=\"hash-out\" id=\"h1\">—</div>\n  </div>\n  <div class=\"panel\">\n    <label>Input + One Character (\"X\" appended)</label>\n    <textarea id=\"inp2\" rows=\"2\" readonly style=\"color:#64748b\"></textarea>\n    <label style=\"margin-top:10px\">SHA-256 Hash</label>\n    <div class=\"hash-out\" id=\"h2\">—</div>\n  </div>\n</div>\n<div class=\"panel\">\n  <label>Avalanche Effect — Bits Changed</label>\n  <div id=\"stats\"></div>\n  <div class=\"diff-bar\"><div class=\"diff-fill\" id=\"bar\" style=\"width:0%\"></div></div>\n  <p class=\"note\">A cryptographic hash must change ~50% of output bits for any single-bit input change. This makes tampering immediately detectable.</p>\n</div>\n<script>\nfunction hashSim(s){let h=0x811c9dc5;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,0x01000193)>>>0;}\nlet seeds=[h];for(let i=0;i<7;i++)seeds.push((Math.imul(seeds[i],0x9e3779b9)+0x6b3a6b3a)>>>0);\nreturn seeds.map(n=>n.toString(16).padStart(8,'0')).join('');}\nfunction bits(n){let c=0;while(n){c+=n&1;n>>>=1;}return c;}\nfunction countDiff(a,b){let d=0;for(let i=0;i<Math.min(a.length,b.length);i+=2)d+=bits(parseInt(a.slice(i,i+2),16)^parseInt(b.slice(i,i+2),16));return d;}\nfunction update(){\n  const v=document.getElementById('inp').value;\n  const v2=v+'X';\n  document.getElementById('inp2').value=v2;\n  const h1=hashSim(v),h2=hashSim(v2);\n  document.getElementById('h1').textContent=h1;\n  document.getElementById('h2').textContent=h2;\n  const diff=countDiff(h1,h2);\n  const pct=Math.round(diff/256*100);\n  const ok=pct>=40&&pct<=60;\n  document.getElementById('bar').style.width=pct+'%';\n  document.getElementById('stats').innerHTML=\n    '<span class=\"stat\">'+diff+' / 256 bits changed</span>'+\n    '<span class=\"stat\">'+pct+'% flip rate</span>'+\n    '<span class=\"stat '+(ok?'valid':'invalid')+'\">'+(ok?'✓ Avalanche confirmed':'⚠ Simulation limit')+'</span>';\n}\nupdate();\n</script>\n</body>\n</html>"
       },
-      "order": 8
+      "order": 8,
+      "actions": [
+        {
+          "id": "action_bb-s8_i0",
+          "type": "speech",
+          "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered."
+        },
+        {
+          "id": "action_bb-s8_i1",
+          "type": "speech",
+          "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading."
+        }
+      ]
     },
     {
       "id": "bb-s9",
       "type": "quiz",
-      "title": "Knowledge Check \u2014 Blockchain Foundations",
+      "title": "Knowledge Check — Blockchain Foundations",
       "content": {
-        "type": "quiz"
+        "type": "quiz",
+        "questions": [
+          {
+            "id": "q-bb-1",
+            "type": "single",
+            "question": "What is the primary purpose of a Merkle root in a block header?",
+            "options": [
+              {
+                "label": "Store all transaction data",
+                "value": "A"
+              },
+              {
+                "label": "Efficiently verify any transaction with minimal data",
+                "value": "B"
+              },
+              {
+                "label": "Set the block difficulty",
+                "value": "C"
+              },
+              {
+                "label": "Record the miner's wallet address",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "A Merkle root lets you prove a transaction is included using only log₂(N) hashes — no need to download the full block.",
+            "points": 1
+          },
+          {
+            "id": "q-bb-2",
+            "type": "single",
+            "question": "Bitcoin processes approximately how many transactions per second on Layer 1?",
+            "options": [
+              {
+                "label": "7",
+                "value": "A"
+              },
+              {
+                "label": "24,000",
+                "value": "B"
+              },
+              {
+                "label": "100",
+                "value": "C"
+              },
+              {
+                "label": "1,000",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "A"
+            ],
+            "analysis": "Bitcoin L1 handles ~7 tx/s vs Visa's ~24,000 tx/s. This throughput gap is what drives Layer 2 research.",
+            "points": 1
+          },
+          {
+            "id": "q-bb-3",
+            "type": "single",
+            "question": "In the Byzantine Generals Problem, what is the minimum number of generals needed to tolerate 1 traitor?",
+            "options": [
+              {
+                "label": "2",
+                "value": "A"
+              },
+              {
+                "label": "3",
+                "value": "B"
+              },
+              {
+                "label": "4",
+                "value": "C"
+              },
+              {
+                "label": "6",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "C"
+            ],
+            "analysis": "You need 3f+1 total participants to handle f traitors. With f=1, that means at least 4 generals.",
+            "points": 1
+          },
+          {
+            "id": "q-bb-4",
+            "type": "multiple",
+            "question": "Which TWO properties does Proof-of-Stake use instead of energy expenditure?",
+            "options": [
+              {
+                "label": "Economic collateral (staked tokens)",
+                "value": "A"
+              },
+              {
+                "label": "Hash rate competition",
+                "value": "B"
+              },
+              {
+                "label": "Slashing penalties for dishonesty",
+                "value": "C"
+              },
+              {
+                "label": "ASIC mining hardware",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "A",
+              "C"
+            ],
+            "analysis": "PoS replaces energy with economic collateral and slashing — attacking costs you at least 1/3 of all staked ETH.",
+            "points": 2
+          },
+          {
+            "id": "q-bb-5",
+            "type": "short_answer",
+            "question": "Explain in 2–3 sentences why changing one transaction deep in a blockchain would require redoing enormous computational work.",
+            "commentPrompt": "Award full marks if the student explains: (1) changing a transaction changes the block's hash, (2) each block contains the previous block's hash so all subsequent blocks become invalid, (3) the attacker must redo proof-of-work for every block after the altered one to create a longer chain.",
+            "points": 3
+          }
+        ]
       },
-      "order": 9
+      "order": 9,
+      "actions": [
+        {
+          "id": "action_bb-s9_q0",
+          "type": "speech",
+          "text": "Time to test your knowledge! Answer each question carefully — you can review the material after the quiz."
+        },
+        {
+          "id": "action_bb-s9_q1",
+          "type": "speech",
+          "text": "Take your time with these questions. The goal is to solidify your understanding, not just pass the quiz."
+        }
+      ]
     }
   ]
 }

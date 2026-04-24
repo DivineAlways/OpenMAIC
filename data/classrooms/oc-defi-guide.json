@@ -4,7 +4,7 @@
   "stage": {
     "id": "oc-defi-guide",
     "name": "DeFi Explained",
-    "description": "AMM x\u00d7y=k, impermanent loss formula, Aave health factors, yield strategies, flash loans, and MEV.",
+    "description": "AMM x×y=k, impermanent loss formula, Aave health factors, yield strategies, flash loans, and MEV.",
     "createdAt": "2026-04-24T05:50:23.668157Z",
     "updatedAt": "2026-04-24T05:50:23.668177Z",
     "languageDirective": "en-US",
@@ -20,7 +20,7 @@
     {
       "id": "df-s1",
       "type": "slide",
-      "title": "AMM: x \u00d7 y = k",
+      "title": "AMM: x × y = k",
       "content": {
         "type": "slide",
         "canvas": {
@@ -29,11 +29,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#22d3ee",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -46,19 +50,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#22d3ee",
+              "fixedRatio": false
             },
             {
               "id": "df-s1-titlebg",
@@ -66,287 +64,196 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "df-s1-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>AMM: x \u00d7 y = k</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
-            },
-            {
-              "id": "df-s1-sub",
-              "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Constant product formula powering Uniswap and $100B+ in liquidity</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>How AMMs Work</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
             {
-              "id": "df-s1-pillbg0",
-              "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "id": "df-s1-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The math behind every decentralized swap</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "df-s1-pill0bg",
+              "type": "shape",
+              "left": 830,
+              "top": 14,
+              "width": 116,
+              "height": 68,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
               "fill": "#1e293b",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
               }
             },
             {
               "id": "df-s1-pill0",
               "type": "text",
-              "left": 724,
+              "left": 834,
               "top": 14,
-              "width": 112,
-              "height": 74,
+              "width": 108,
+              "height": 68,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>$3B TVL<br/><span style=\"font-size:10px;color:#64748b;\">Uniswap V2</span></p>",
+              "content": "<p style='font-size:18px;font-weight:800;color:#22d3ee;text-align:center;line-height:1.2;'>$1B+<br/><span style=\"font-size:10px;color:#64748b;font-weight:500;\">Daily DEX vol</span></p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#22d3ee"
             },
             {
-              "id": "df-s1-pillbg1",
+              "id": "df-s1-fs-bg",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 60,
+              "top": 118,
+              "width": 880,
+              "height": 176,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#020817",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 2,
+                "color": "#22d3ee"
               }
             },
             {
-              "id": "df-s1-pill1",
+              "id": "df-s1-fs-formula",
               "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 60,
+              "top": 130,
+              "width": 880,
+              "height": 156,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>x\u00b7y=k<br/><span style=\"font-size:10px;color:#64748b;\">Formula</span></p>",
+              "content": "<p style='font-size:34px;font-weight:800;color:#22d3ee;text-align:center;font-family:monospace;line-height:1.4;'>x × y = k</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#22d3ee"
             },
             {
-              "id": "df-s1-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s1-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s1-card0txt",
+              "id": "df-s1-fs-exp",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 60,
+              "top": 312,
+              "width": 880,
+              "height": 180,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Constant Product</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Pool holds token X and Y; invariant: x \u00d7 y = k is maintained after every trade</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>To buy \u0394y of Y: trader provides \u0394x of X such that (x+\u0394x)(y\u2212\u0394y) = k</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Price = y/x (ratio of reserves) \u2014 large trades move price more than small ones (slippage)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>0.3% fee: \u0394x is multiplied by 0.997 before applying formula \u2014 fees accrue to LPs as higher k</p>",
+              "content": "<p style='font-size:15px;color:#e2e8f0;line-height:1.7;text-align:center;'>x = Token A reserve · y = Token B reserve · k = constant<br/><br/>Buy Token B → x increases, y decreases → Token B price rises<br/>The curve never touches zero — infinite slippage before reserves empty</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             },
             {
-              "id": "df-s1-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s1-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s1-card1txt",
+              "id": "df-s1-fs-note",
               "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 60,
+              "top": 494,
+              "width": 880,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Concentrated Liquidity</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Uniswap V3: LPs choose a price range [Pa, Pb] to concentrate capital</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Capital efficiency: a $1M V3 position in tight range = $50M V2 position in equivalent depth</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Virtual reserves: position acts as if it holds more liquidity within its range only</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Out-of-range positions earn zero fees \u2014 LPs must actively manage or use auto-compounders</p>",
+              "content": "<p style='font-size:12px;color:#64748b;text-align:center;'>Uniswap V2 uses this formula. V3 concentrates liquidity in price ranges for 4,000× better capital efficiency.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "df-s1-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s1-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s1-card2txt",
-              "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Impermanent Loss</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>IL occurs when price ratio of pooled assets diverges from entry ratio</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>2\u00d7 price change = 5.7% IL; 4\u00d7 = 20% IL; 5\u00d7 = 25.5% IL \u2014 formula: IL = 2\u221ar/(1+r) \u2212 1</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>IL is 'impermanent' only if price returns to entry \u2014 realized loss if you withdraw during divergence</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Correlation matters: ETH/USDC pool has high IL risk; stablecoin pools (USDC/USDT) have near-zero IL</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#64748b"
             }
           ]
         }
       },
-      "order": 1
+      "order": 1,
+      "actions": [
+        {
+          "id": "action_df-s1_0",
+          "type": "spotlight",
+          "elementId": "df-s1-title"
+        },
+        {
+          "id": "action_df-s1_1",
+          "type": "speech",
+          "text": "Decentralized exchanges process over a billion dollars in volume daily. How? Automated Market Makers — AMMs."
+        },
+        {
+          "id": "action_df-s1_2",
+          "type": "spotlight",
+          "elementId": "df-s1-sub"
+        },
+        {
+          "id": "action_df-s1_3",
+          "type": "speech",
+          "text": "No order book, no market maker. Just a mathematical formula and liquidity providers."
+        },
+        {
+          "id": "action_df-s1_4",
+          "type": "spotlight",
+          "elementId": "df-s1-fs-formula"
+        },
+        {
+          "id": "action_df-s1_5",
+          "type": "speech",
+          "text": "The constant product formula: x times y equals k. X is the reserve of token A, Y is the reserve of token B, K is a constant."
+        },
+        {
+          "id": "action_df-s1_6",
+          "type": "spotlight",
+          "elementId": "df-s1-fs-exp"
+        },
+        {
+          "id": "action_df-s1_7",
+          "type": "speech",
+          "text": "When you buy token B, you add token A to the pool — X increases, Y decreases. The price adjusts automatically. The larger the trade relative to pool size, the more slippage you experience."
+        },
+        {
+          "id": "action_df-s1_8",
+          "type": "spotlight",
+          "elementId": "df-s1-fs-note"
+        },
+        {
+          "id": "action_df-s1_9",
+          "type": "speech",
+          "text": "Uniswap V2 uses this basic formula. V3 introduced concentrated liquidity — LPs choose price ranges, achieving 4000 times better capital efficiency within those ranges."
+        },
+        {
+          "id": "action_df-s1_10",
+          "type": "spotlight",
+          "elementId": "df-s1-pill0"
+        },
+        {
+          "id": "action_df-s1_11",
+          "type": "speech",
+          "text": "Over a billion dollars flows through decentralized exchanges daily."
+        }
+      ]
     },
     {
       "id": "df-s2",
@@ -360,11 +267,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#ef4444",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -377,19 +288,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#ef4444",
+              "fixedRatio": false
             },
             {
               "id": "df-s2-titlebg",
@@ -397,287 +302,153 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "df-s2-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Lending: Aave Health Factors</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Impermanent Loss</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "df-s2-sub",
               "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Over-collateralized lending with liquidation mechanics</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Why providing liquidity is not free money</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#64748b"
             },
             {
-              "id": "df-s2-pillbg0",
+              "id": "df-s2-fs-bg",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 60,
+              "top": 118,
+              "width": 880,
+              "height": 176,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#020817",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 2,
+                "color": "#ef4444"
               }
             },
             {
-              "id": "df-s2-pill0",
+              "id": "df-s2-fs-formula",
               "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 60,
+              "top": 130,
+              "width": 880,
+              "height": 156,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>$20B+<br/><span style=\"font-size:10px;color:#64748b;\">Aave TVL</span></p>",
+              "content": "<p style='font-size:34px;font-weight:800;color:#ef4444;text-align:center;font-family:monospace;line-height:1.4;'>IL = 2√P / (1+P) − 1</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#ef4444"
             },
             {
-              "id": "df-s2-pillbg1",
-              "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
-              "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                120,
-                74
-              ],
-              "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s2-pill1",
+              "id": "df-s2-fs-exp",
               "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 60,
+              "top": 312,
+              "width": 880,
+              "height": 180,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>>1<br/><span style=\"font-size:10px;color:#64748b;\">Health Factor</span></p>",
+              "content": "<p style='font-size:15px;color:#e2e8f0;line-height:1.7;text-align:center;'>P = price ratio change between the two tokens<br/><br/>2× price divergence = 5.7% IL · 5× divergence = 25.5% IL<br/>IL is only 'impermanent' if prices return to entry ratio — otherwise it becomes permanent loss</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             },
             {
-              "id": "df-s2-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s2-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s2-card0txt",
+              "id": "df-s2-fs-note",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 60,
+              "top": 494,
+              "width": 880,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>How Lending Works</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Deposit collateral (e.g., ETH) \u2192 receive aTokens that auto-accrue interest</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Borrow up to max LTV (Loan-to-Value) \u2014 e.g., ETH LTV = 80% means borrow up to $800 per $1000 ETH</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Interest model: utilization-based rate \u2014 rate rises steeply above optimal utilization (~80%)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Variable vs stable rates: variable follows market; stable locked at origination but can be rebalanced</p>",
+              "content": "<p style='font-size:12px;color:#64748b;text-align:center;'>IL only applies to AMM LPs. Order book LPs and single-sided vaults have different risk profiles.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "df-s2-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s2-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s2-card1txt",
-              "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Health Factor</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>HF = (collateral \u00d7 liquidation threshold) / total borrow value</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>HF < 1 \u2192 liquidatable; keep HF > 1.5 for safety margin</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Liquidation bonus: liquidator gets 5-15% discount on collateral to incentivize liquidation</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Liquidators repay up to 50% of debt and receive equivalent collateral + bonus</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "df-s2-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s2-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s2-card2txt",
-              "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Risk Parameters</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>LTV (Loan-to-Value): max borrow ratio, e.g., 80% for WBTC</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Liquidation threshold: slightly above LTV \u2014 e.g., 82.5% (allows borrowing then price drop buffer)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Liquidation bonus: reward for liquidators \u2014 higher for volatile assets (15% for volatile vs 5% for stables)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Supply/borrow caps: governance-set limits to prevent concentration risk in a single asset</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#64748b"
             }
           ]
         }
       },
-      "order": 2
+      "order": 2,
+      "actions": [
+        {
+          "id": "action_df-s2_0",
+          "type": "spotlight",
+          "elementId": "df-s2-title"
+        },
+        {
+          "id": "action_df-s2_1",
+          "type": "speech",
+          "text": "Impermanent loss is the hidden cost of providing liquidity to an AMM. It's not a loss until you withdraw — but it's real."
+        },
+        {
+          "id": "action_df-s2_2",
+          "type": "spotlight",
+          "elementId": "df-s2-sub"
+        },
+        {
+          "id": "action_df-s2_3",
+          "type": "speech",
+          "text": "When the price ratio between your two tokens diverges, you'd have been better off just holding."
+        },
+        {
+          "id": "action_df-s2_4",
+          "type": "spotlight",
+          "elementId": "df-s2-fs-formula"
+        },
+        {
+          "id": "action_df-s2_5",
+          "type": "speech",
+          "text": "The impermanent loss formula: 2 times the square root of P, divided by 1 plus P, minus 1. Where P is the price ratio change."
+        },
+        {
+          "id": "action_df-s2_6",
+          "type": "spotlight",
+          "elementId": "df-s2-fs-exp"
+        },
+        {
+          "id": "action_df-s2_7",
+          "type": "speech",
+          "text": "If one token doubles in price — a 2x divergence — you lose 5.7% compared to holding. If it goes 5x — 25.5% impermanent loss. This is why LP fees need to compensate for this risk."
+        },
+        {
+          "id": "action_df-s2_8",
+          "type": "spotlight",
+          "elementId": "df-s2-fs-note"
+        },
+        {
+          "id": "action_df-s2_9",
+          "type": "speech",
+          "text": "Important: impermanent loss only applies to AMM liquidity providers. Order book LPs and single-sided vaults have completely different risk profiles."
+        }
+      ]
     },
     {
       "id": "df-s3",
@@ -691,11 +462,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#a855f7",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -708,19 +483,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#a855f7",
+              "fixedRatio": false
             },
             {
               "id": "df-s3-titlebg",
@@ -728,287 +497,184 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "df-s3-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Yield Strategies</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Lending & Liquidations</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "df-s3-sub",
               "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>How collateralized borrowing works — and how it fails</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "df-s3-lp-bg",
+              "type": "shape",
+              "left": 8,
+              "top": 108,
+              "width": 488,
+              "height": 450,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#a855f7"
+              }
+            },
+            {
+              "id": "df-s3-lp-bar",
+              "type": "shape",
+              "left": 8,
+              "top": 108,
+              "width": 4,
+              "height": 450,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#a855f7",
+              "fixedRatio": false
+            },
+            {
+              "id": "df-s3-lp-txt",
+              "type": "text",
               "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Farming, auto-compounding, and risk-adjusted returns</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#a855f7;margin-bottom:10px;'>Aave: Lending Protocol</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>Supply collateral → borrow up to LTV limit<br/><br/>Health Factor = Collateral × Liq. Threshold ÷ Debt<br/><br/>Health Factor < 1.0 → liquidation<br/><br/>Liquidators repay your debt and receive your collateral at a 5–15% discount. They race to liquidate first.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             },
             {
-              "id": "df-s3-pillbg0",
+              "id": "df-s3-rp-bg",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 504,
+              "top": 108,
+              "width": 488,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
               }
             },
             {
-              "id": "df-s3-pill0",
-              "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>5-200%<br/><span style=\"font-size:10px;color:#64748b;\">Avg DeFi APY</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "df-s3-pillbg1",
+              "id": "df-s3-rp-bar",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
-              "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                120,
-                74
-              ],
-              "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s3-pill1",
-              "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>HIGH<br/><span style=\"font-size:10px;color:#64748b;\">Risk</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "df-s3-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s3-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
+              "left": 504,
+              "top": 108,
               "width": 4,
-              "height": 446,
+              "height": 450,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#ef4444",
+              "fixedRatio": false
             },
             {
-              "id": "df-s3-card0txt",
+              "id": "df-s3-rp-txt",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 516,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Basic Yield Sources</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Lending interest: deposit stable \u2192 earn 3-8% APY from borrowers (Aave, Compound)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>LP fees: provide liquidity \u2192 earn % of trading fees \u2014 ETH/USDC on Uniswap V3 ~5-20% APY</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Staking rewards: lock tokens for protocol security \u2014 ETH staking ~3.5% APY</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Liquidity mining: protocols emit governance tokens to attract liquidity \u2014 dilutive but high APY early</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#ef4444;margin-bottom:10px;'>Liquidation Cascade</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>ETH drops 30% in an hour:<br/>1. Thousands of health factors hit <1.0<br/>2. Liquidation bots sell collateral on DEXes<br/>3. Selling pushes ETH lower<br/>4. More positions become undercollateralized<br/>5. Cascade accelerates<br/><br/>May 2021: $600M liquidated in hours.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "df-s3-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s3-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s3-card1txt",
-              "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Auto-Compounding</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Yield aggregators (Yearn, Beefy) auto-harvest and reinvest rewards</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>APY vs APR: APY compounds, APR does not \u2014 $100 at 100% APR compounded daily = $271 (171% APY)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Strategy risk: additional smart contract risk on top of underlying protocol risk</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Convex Finance: boost CRV rewards without locking \u2014 takes protocol risk for higher yield</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "df-s3-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s3-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s3-card2txt",
-              "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Risk Ladder</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Lowest risk: ETH staking \u2192 Aave USDC lending \u2192 Curve stablecoin LP</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Medium risk: Uniswap ETH/USDC LP + farming rewards \u2014 IL + smart contract risk</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>High risk: leveraged yield farming \u2014 borrow to LP, amplifies both gains and IL</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Extreme risk: new protocol farming \u2014 audits may miss bugs, rug pull risk, exit liquidity risk</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             }
           ]
         }
       },
-      "order": 3
+      "order": 3,
+      "actions": [
+        {
+          "id": "action_df-s3_0",
+          "type": "spotlight",
+          "elementId": "df-s3-title"
+        },
+        {
+          "id": "action_df-s3_1",
+          "type": "speech",
+          "text": "Lending protocols like Aave let you borrow against your crypto — but liquidations are swift and merciless."
+        },
+        {
+          "id": "action_df-s3_2",
+          "type": "spotlight",
+          "elementId": "df-s3-sub"
+        },
+        {
+          "id": "action_df-s3_3",
+          "type": "speech",
+          "text": "A 30% ETH drop in an hour can cascade into millions of liquidations in minutes."
+        },
+        {
+          "id": "action_df-s3_4",
+          "type": "spotlight",
+          "elementId": "df-s3-lp-txt"
+        },
+        {
+          "id": "action_df-s3_5",
+          "type": "speech",
+          "text": "How Aave works: supply collateral, borrow up to your loan-to-value limit. Your health factor equals collateral value times liquidation threshold, divided by debt. Health factor below 1 — you get liquidated."
+        },
+        {
+          "id": "action_df-s3_6",
+          "type": "spotlight",
+          "elementId": "df-s3-rp-txt"
+        },
+        {
+          "id": "action_df-s3_7",
+          "type": "speech",
+          "text": "The liquidation cascade: ETH drops 30% in one hour. Thousands of health factors hit 1 simultaneously. Liquidation bots race each other to liquidate positions. The selling pressure pushes ETH down further — triggering more liquidations. This feedback loop is how crypto gets 60% drawdowns."
+        }
+      ]
     },
     {
       "id": "df-s4",
@@ -1022,11 +688,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f59e0b",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1039,19 +709,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#f59e0b",
+              "fixedRatio": false
             },
             {
               "id": "df-s4-titlebg",
@@ -1059,287 +723,374 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "df-s4-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Flash Loans</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
-            },
-            {
-              "id": "df-s4-sub",
-              "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Zero-collateral atomic loans \u2014 arbitrage, liquidation, and exploits</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Flash Loans & MEV</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
             {
-              "id": "df-s4-pillbg0",
-              "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "id": "df-s4-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Uncollateralized loans that exist for a single transaction</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "df-s4-pill0bg",
+              "type": "shape",
+              "left": 830,
+              "top": 14,
+              "width": 116,
+              "height": 68,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
               "fill": "#1e293b",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
               }
             },
             {
               "id": "df-s4-pill0",
               "type": "text",
-              "left": 724,
+              "left": 834,
               "top": 14,
-              "width": 112,
-              "height": 74,
+              "width": 108,
+              "height": 68,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>0.09%<br/><span style=\"font-size:10px;color:#64748b;\">Aave fee</span></p>",
+              "content": "<p style='font-size:18px;font-weight:800;color:#f59e0b;text-align:center;line-height:1.2;'>0 collateral<br/><span style=\"font-size:10px;color:#64748b;font-weight:500;\">required</span></p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#f59e0b"
             },
             {
-              "id": "df-s4-pillbg1",
+              "id": "df-s4-st0bg",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 10,
+              "top": 118,
+              "width": 191,
+              "height": 430,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
               }
             },
             {
-              "id": "df-s4-pill1",
+              "id": "df-s4-st0num",
               "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 10,
+              "top": 128,
+              "width": 191,
+              "height": 50,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>$200M<br/><span style=\"font-size:10px;color:#64748b;\">Record loan</span></p>",
+              "content": "<p style='font-size:28px;font-weight:900;color:#f59e0b;text-align:center;'>1</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#f59e0b"
             },
             {
-              "id": "df-s4-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s4-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s4-card0txt",
+              "id": "df-s4-st0txt",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 18,
+              "top": 182,
+              "width": 175,
+              "height": 354,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>How Flash Loans Work</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Borrow any amount in a single tx \u2014 must repay + fee before tx ends</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>If repayment fails, entire tx reverts \u2014 lender never loses principal</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>No credit check, no collateral \u2014 only constraint is returning funds in same atomic tx</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Available on Aave, dYdX, Uniswap V3 \u2014 fees range 0.05% to 0.09%</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Borrow</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Flash loan $1M USDC from Aave — no collateral required</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#94a3b8"
             },
             {
-              "id": "df-s4-card1bg",
+              "id": "df-s4-st1bg",
               "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
+              "left": 207,
+              "top": 118,
+              "width": 191,
+              "height": 430,
               "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                308,
-                446
+                1,
+                1
               ],
-              "fill": "#0a1929",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
               }
             },
             {
-              "id": "df-s4-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s4-card1txt",
+              "id": "df-s4-st1num",
               "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 207,
+              "top": 128,
+              "width": 191,
+              "height": 50,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Legitimate Uses</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Arbitrage: borrow ETH \u2192 buy on DEX A \u2192 sell on DEX B \u2192 repay \u2192 pocket spread</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Self-liquidation: flash loan to repay own loan, withdraw collateral, swap, repay flash loan</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Collateral swap: replace one collateral type with another in one atomic tx without closing position</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Protocol governance: borrow governance tokens, vote, repay \u2014 requires no-delay execution (mitigated by snapshot)</p>",
+              "content": "<p style='font-size:28px;font-weight:900;color:#f59e0b;text-align:center;'>2</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#f59e0b"
             },
             {
-              "id": "df-s4-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s4-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s4-card2txt",
+              "id": "df-s4-st1txt",
               "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 215,
+              "top": 182,
+              "width": 175,
+              "height": 354,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Exploit Pattern</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Price oracle manipulation: flash loan large amount \u2192 distort AMM price \u2192 exploit dependent protocol</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Example: Harvest Finance 2020 \u2014 $34M drained by manipulating USDC/USDT Curve pool price</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Defense: use TWAP (time-weighted average price) oracles, not spot price \u2014 manipulation expensive over time</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Reentrancy via flash loan: call external contract mid-execution to drain \u2014 prevented by checks-effects-interactions</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Arbitrage</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Buy underpriced token on DEX A, sell on DEX B where price is higher</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "df-s4-st2bg",
+              "type": "shape",
+              "left": 404,
+              "top": 118,
+              "width": 191,
+              "height": 430,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "df-s4-st2num",
+              "type": "text",
+              "left": 404,
+              "top": 128,
+              "width": 191,
+              "height": 50,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:900;color:#f59e0b;text-align:center;'>3</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "df-s4-st2txt",
+              "type": "text",
+              "left": 412,
+              "top": 182,
+              "width": 175,
+              "height": 354,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Repay</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Return $1M + 0.09% fee in same transaction</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "df-s4-st3bg",
+              "type": "shape",
+              "left": 601,
+              "top": 118,
+              "width": 191,
+              "height": 430,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "df-s4-st3num",
+              "type": "text",
+              "left": 601,
+              "top": 128,
+              "width": 191,
+              "height": 50,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:900;color:#f59e0b;text-align:center;'>4</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "df-s4-st3txt",
+              "type": "text",
+              "left": 609,
+              "top": 182,
+              "width": 175,
+              "height": 354,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Profit</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Keep the arbitrage spread minus gas fees — typical: $500–$50K</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "df-s4-st4bg",
+              "type": "shape",
+              "left": 798,
+              "top": 118,
+              "width": 191,
+              "height": 430,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "df-s4-st4num",
+              "type": "text",
+              "left": 798,
+              "top": 128,
+              "width": 191,
+              "height": 50,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:900;color:#f59e0b;text-align:center;'>5</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "df-s4-st4txt",
+              "type": "text",
+              "left": 806,
+              "top": 182,
+              "width": 175,
+              "height": 354,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Revert</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>If repayment fails for any reason, entire tx reverts — zero risk to protocol</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
             }
           ]
         }
       },
-      "order": 4
+      "order": 4,
+      "actions": [
+        {
+          "id": "action_df-s4_0",
+          "type": "spotlight",
+          "elementId": "df-s4-title"
+        },
+        {
+          "id": "action_df-s4_1",
+          "type": "speech",
+          "text": "Flash loans are one of the most mind-bending financial instruments ever created — uncollateralized loans that must be repaid in the same transaction."
+        },
+        {
+          "id": "action_df-s4_2",
+          "type": "spotlight",
+          "elementId": "df-s4-sub"
+        },
+        {
+          "id": "action_df-s4_3",
+          "type": "speech",
+          "text": "If the repayment fails for any reason, the entire transaction reverts. Zero risk to the protocol."
+        },
+        {
+          "id": "action_df-s4_4",
+          "type": "spotlight",
+          "elementId": "df-s4-st0txt"
+        },
+        {
+          "id": "action_df-s4_5",
+          "type": "speech",
+          "text": "Step one: borrow one million USDC from Aave. No collateral required — because the loan must be repaid before the transaction closes."
+        },
+        {
+          "id": "action_df-s4_6",
+          "type": "spotlight",
+          "elementId": "df-s4-st1txt"
+        },
+        {
+          "id": "action_df-s4_7",
+          "type": "speech",
+          "text": "Step two: use that capital — arbitrage between two DEXes, liquidate an underwater position, anything with positive expected return."
+        },
+        {
+          "id": "action_df-s4_8",
+          "type": "spotlight",
+          "elementId": "df-s4-st2txt"
+        },
+        {
+          "id": "action_df-s4_9",
+          "type": "speech",
+          "text": "Step three: repay the one million plus a 0.09% fee, all within the same Ethereum transaction block."
+        },
+        {
+          "id": "action_df-s4_10",
+          "type": "spotlight",
+          "elementId": "df-s4-st3txt"
+        },
+        {
+          "id": "action_df-s4_11",
+          "type": "speech",
+          "text": "Keep the profit — typically 500 to 50,000 dollars depending on the opportunity."
+        },
+        {
+          "id": "action_df-s4_12",
+          "type": "spotlight",
+          "elementId": "df-s4-st4txt"
+        },
+        {
+          "id": "action_df-s4_13",
+          "type": "speech",
+          "text": "If repayment fails for any reason, the entire transaction reverts as if it never happened. The protocol takes zero risk."
+        }
+      ]
     },
     {
       "id": "df-s5",
@@ -1353,11 +1104,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#22d3ee",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1370,19 +1125,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#22d3ee",
+              "fixedRatio": false
             },
             {
               "id": "df-s5-titlebg",
@@ -1390,287 +1139,184 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "df-s5-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>MEV: Maximal Extractable Value</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Yield & Risk</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "df-s5-sub",
               "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Every percentage point of yield has a corresponding risk</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "df-s5-lp-bg",
+              "type": "shape",
+              "left": 8,
+              "top": 108,
+              "width": 488,
+              "height": 450,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
+              }
+            },
+            {
+              "id": "df-s5-lp-bar",
+              "type": "shape",
+              "left": 8,
+              "top": 108,
+              "width": 4,
+              "height": 450,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#22d3ee",
+              "fixedRatio": false
+            },
+            {
+              "id": "df-s5-lp-txt",
+              "type": "text",
               "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>The invisible tax on every on-chain transaction</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#22d3ee;margin-bottom:10px;'>Yield Strategies</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>Simple: Supply to Aave → earn supply APY<br/>Medium: LP on Uniswap → earn trading fees + rewards<br/>Advanced: Leveraged yield farming → borrow to amplify yield<br/><br/>Risk ladder: as yield increases, so does smart contract risk, liquidation risk, and IL.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             },
             {
-              "id": "df-s5-pillbg0",
+              "id": "df-s5-rp-bg",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 504,
+              "top": 108,
+              "width": 488,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
               }
             },
             {
-              "id": "df-s5-pill0",
-              "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>$1B+/yr<br/><span style=\"font-size:10px;color:#64748b;\">MEV extracted</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "df-s5-pillbg1",
+              "id": "df-s5-rp-bar",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
-              "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                120,
-                74
-              ],
-              "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s5-pill1",
-              "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>60%+ blocks<br/><span style=\"font-size:10px;color:#64748b;\">Flashbots</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "df-s5-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s5-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
+              "left": 504,
+              "top": 108,
               "width": 4,
-              "height": 446,
+              "height": 450,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#ef4444",
+              "fixedRatio": false
             },
             {
-              "id": "df-s5-card0txt",
+              "id": "df-s5-rp-txt",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 516,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>What Is MEV</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>MEV = value miners/validators can extract by reordering, inserting, or censoring txs in a block</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Searchers: bots monitoring mempool for profitable opportunities \u2014 compete via gas price auctions</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Block builder: constructs optimal block by selecting and ordering txs to maximize fee + MEV revenue</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Proposer-builder separation (PBS): validators propose blocks built by specialized builders</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#ef4444;margin-bottom:10px;'>Smart Contract Risk</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>Every DeFi protocol is code — code has bugs:<br/>• Reentrancy: The DAO ($60M, 2016)<br/>• Oracle manipulation: Mango Markets ($114M, 2022)<br/>• Logic error: Beanstalk ($182M, 2022)<br/><br/>Audit ≠ safe. Multiple audits help. Bug bounties help more. Never risk more than you can lose.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "df-s5-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s5-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s5-card1txt",
-              "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>MEV Strategies</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Sandwich attack: front-run large DEX trade (buy before), back-run it (sell after) \u2014 victim gets worse price</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>DEX arbitrage: two-hop price discrepancy across AMMs \u2014 pure alpha, no victim harm</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Liquidation: monitor Aave/Compound for positions near HF=1, submit liquidation first</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>JIT liquidity: add concentrated LP exactly on the block your trade executes, collect all fees, remove immediately</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "df-s5-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s5-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s5-card2txt",
-              "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Mitigation</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Flashbots Protect RPC: route tx directly to miners/validators, bypassing public mempool</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Private mempools: transactions not visible until included in block \u2014 MEV resistance</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Commit-reveal schemes: hide tx intent until execution \u2014 prevents front-running</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Batch auctions (CoW Protocol): settle all orders at uniform clearing price \u2014 eliminates sandwich attacks</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             }
           ]
         }
       },
-      "order": 5
+      "order": 5,
+      "actions": [
+        {
+          "id": "action_df-s5_0",
+          "type": "spotlight",
+          "elementId": "df-s5-title"
+        },
+        {
+          "id": "action_df-s5_1",
+          "type": "speech",
+          "text": "Every percentage point of DeFi yield has a corresponding risk. Understanding that relationship is the difference between sustainable returns and losing everything."
+        },
+        {
+          "id": "action_df-s5_2",
+          "type": "spotlight",
+          "elementId": "df-s5-sub"
+        },
+        {
+          "id": "action_df-s5_3",
+          "type": "speech",
+          "text": "Simple yield, complex yield, and smart contract risk — let's map them all."
+        },
+        {
+          "id": "action_df-s5_4",
+          "type": "spotlight",
+          "elementId": "df-s5-lp-txt"
+        },
+        {
+          "id": "action_df-s5_5",
+          "type": "speech",
+          "text": "Yield strategies: simple is Aave supply APY — straightforward. Medium complexity is Uniswap LP — earn trading fees plus farming rewards, but manage impermanent loss. Complex strategies like yield aggregators can chain multiple protocols — each one adds risk."
+        },
+        {
+          "id": "action_df-s5_6",
+          "type": "spotlight",
+          "elementId": "df-s5-rp-txt"
+        },
+        {
+          "id": "action_df-s5_7",
+          "type": "speech",
+          "text": "Smart contract risk is real. The DAO hack in 2016 — 60 million dollars. Harvest Finance oracle manipulation in 2020 — 34 million. Every DeFi protocol is code, and code has bugs. There's no FDIC for smart contracts."
+        }
+      ]
     },
     {
       "id": "df-s6",
@@ -1684,11 +1330,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#3b82f6",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1701,19 +1351,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
               "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fixedRatio": false
             },
             {
               "id": "df-s6-titlebg",
@@ -1721,287 +1365,243 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "df-s6-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>DeFi Risk Framework</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>DeFi Ecosystem</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "df-s6-sub",
               "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Key primitives beyond basic swaps and lending</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "df-s6-c0bg",
+              "type": "shape",
+              "left": 8,
+              "top": 110,
+              "width": 320,
+              "height": 438,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1f3d",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
+              }
+            },
+            {
+              "id": "df-s6-c0bar",
+              "type": "shape",
+              "left": 8,
+              "top": 110,
+              "width": 4,
+              "height": 438,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#22d3ee",
+              "fixedRatio": false
+            },
+            {
+              "id": "df-s6-c0txt",
+              "type": "text",
               "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "top": 120,
+              "width": 300,
+              "height": 418,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Quantifying and managing smart contract and protocol risks</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#22d3ee;margin-bottom:6px;'>DEX Aggregators</p><p style='font-size:12px;color:#cbd5e1;line-height:1.5;'>1inch, Paraswap — split orders across multiple DEXes for best price. Saves 0.5–5% on large trades.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#cbd5e1"
             },
             {
-              "id": "df-s6-pillbg0",
+              "id": "df-s6-c1bg",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 336,
+              "top": 110,
+              "width": 320,
+              "height": 438,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0f1f3d",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#a855f7"
               }
             },
             {
-              "id": "df-s6-pill0",
-              "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>$2B lost<br/><span style=\"font-size:10px;color:#64748b;\">Hacks 2023</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "df-s6-pillbg1",
+              "id": "df-s6-c1bar",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
-              "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                120,
-                74
-              ],
-              "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s6-pill1",
-              "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>Necessary<br/><span style=\"font-size:10px;color:#64748b;\">Audits</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "df-s6-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s6-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
+              "left": 336,
+              "top": 110,
               "width": 4,
-              "height": 446,
+              "height": 438,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#a855f7",
+              "fixedRatio": false
             },
             {
-              "id": "df-s6-card0txt",
+              "id": "df-s6-c1txt",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 348,
+              "top": 120,
+              "width": 300,
+              "height": 418,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Smart Contract Risk</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Reentrancy: external call before state update allows recursive draining (The DAO hack \u2014 $60M)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Integer overflow/underflow: unchecked arithmetic wraps around \u2014 Solidity 0.8+ reverts by default</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Access control: missing onlyOwner allows anyone to call admin functions</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Logic errors: correct code, wrong business logic \u2014 most common audit finding</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#a855f7;margin-bottom:6px;'>Liquid Staking</p><p style='font-size:12px;color:#cbd5e1;line-height:1.5;'>Stake ETH → receive stETH (liquid). Earn 3–4% APY while keeping liquidity for DeFi. Lido: $20B+ TVL.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#cbd5e1"
             },
             {
-              "id": "df-s6-card1bg",
+              "id": "df-s6-c2bg",
               "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
+              "left": 664,
+              "top": 110,
+              "width": 320,
+              "height": 438,
               "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                308,
-                446
+                1,
+                1
               ],
-              "fill": "#0a1929",
+              "fill": "#0f1f3d",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
               }
             },
             {
-              "id": "df-s6-card1bar",
+              "id": "df-s6-c2bar",
               "type": "shape",
-              "left": 320,
-              "top": 116,
+              "left": 664,
+              "top": 110,
               "width": 4,
-              "height": 446,
+              "height": 438,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#f59e0b",
+              "fixedRatio": false
             },
             {
-              "id": "df-s6-card1txt",
+              "id": "df-s6-c2txt",
               "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 676,
+              "top": 120,
+              "width": 300,
+              "height": 418,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Oracle Risk</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>On-chain oracles (AMM spot price): manipulable in same tx via flash loans</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Chainlink: decentralized oracle network with 31+ nodes \u2014 aggregated median, deviation threshold updates</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>TWAP: time-weighted average price \u2014 resistant to manipulation but lags real price by minutes</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Multi-source: use multiple oracle sources and take median \u2014 single oracle failure doesn't bring down protocol</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#f59e0b;margin-bottom:6px;'>Real Yield</p><p style='font-size:12px;color:#cbd5e1;line-height:1.5;'>Protocols sharing actual revenue with token holders. GMX: trading fees → GLP stakers. Sustainable vs inflationary yield.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "df-s6-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s6-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s6-card2txt",
-              "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Systemic Risk</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Composability risk: DeFi Lego \u2014 one protocol exploit can cascade through dependent protocols</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Governance attack: accumulate governance tokens, pass malicious proposal, drain treasury</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Bridge risk: $2.5B+ stolen from bridges (Ronin $625M, Wormhole $320M, Nomad $190M)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Regulatory risk: OFAC sanctions on Tornado Cash \u2014 smart contracts can be 'sanctioned' at protocol level</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#cbd5e1"
             }
           ]
         }
       },
-      "order": 6
+      "order": 6,
+      "actions": [
+        {
+          "id": "action_df-s6_0",
+          "type": "spotlight",
+          "elementId": "df-s6-title"
+        },
+        {
+          "id": "action_df-s6_1",
+          "type": "speech",
+          "text": "DeFi goes well beyond swaps and lending. The ecosystem has built primitives that didn't exist in traditional finance."
+        },
+        {
+          "id": "action_df-s6_2",
+          "type": "spotlight",
+          "elementId": "df-s6-sub"
+        },
+        {
+          "id": "action_df-s6_3",
+          "type": "speech",
+          "text": "DEX aggregators, liquid staking, and real yield protocols — three categories that define modern DeFi."
+        },
+        {
+          "id": "action_df-s6_4",
+          "type": "spotlight",
+          "elementId": "df-s6-c0txt"
+        },
+        {
+          "id": "action_df-s6_5",
+          "type": "speech",
+          "text": "DEX aggregators like 1inch and Paraswap split your order across multiple DEXes simultaneously, finding the best composite price. On large trades, this can save 0.5 to 5 percent."
+        },
+        {
+          "id": "action_df-s6_6",
+          "type": "spotlight",
+          "elementId": "df-s6-c1txt"
+        },
+        {
+          "id": "action_df-s6_7",
+          "type": "speech",
+          "text": "Liquid staking: stake ETH and receive stETH — a liquid token you can still use in DeFi while earning staking rewards. Lido controls over 30 percent of all staked ETH, which itself creates centralization concerns."
+        },
+        {
+          "id": "action_df-s6_8",
+          "type": "spotlight",
+          "elementId": "df-s6-c2txt"
+        },
+        {
+          "id": "action_df-s6_9",
+          "type": "speech",
+          "text": "Real yield protocols actually share trading revenue with token holders. GMX distributes trading fees to GLP stakers. This is sustainable yield — backed by real protocol revenue, not token inflation."
+        }
+      ]
     },
     {
       "id": "df-s7",
@@ -2015,11 +1615,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#3b82f6",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -2032,19 +1636,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
               "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fixedRatio": false
             },
             {
               "id": "df-s7-titlebg",
@@ -2052,296 +1650,348 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "df-s7-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>The Future of DeFi</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>DeFi: Opportunity & Risk</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "df-s7-sub",
               "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Real-world assets, intent-based trading, and institutional DeFi</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The most powerful financial infrastructure — with no safety net</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#64748b"
             },
             {
-              "id": "df-s7-pillbg0",
+              "id": "df-s7-lp-bg",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 8,
+              "top": 108,
+              "width": 488,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
               }
             },
             {
-              "id": "df-s7-pill0",
-              "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>$2B+<br/><span style=\"font-size:10px;color:#64748b;\">RWA market</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "df-s7-pillbg1",
+              "id": "df-s7-lp-bar",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
-              "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                120,
-                74
-              ],
-              "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s7-pill1",
-              "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>Growing<br/><span style=\"font-size:10px;color:#64748b;\">Intent txs</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "df-s7-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s7-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
+              "left": 8,
+              "top": 108,
               "width": 4,
-              "height": 446,
+              "height": 450,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s7-card0txt",
-              "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Real World Assets</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Tokenized T-bills (Ondo, Maple): on-chain yield from off-chain government bonds \u2014 $500M+ TVL</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Tokenized private credit: commercial loans on-chain \u2014 higher yield, less liquidity, credit risk</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>RWA brings traditional finance yield on-chain \u2014 bridges 4-5% TradFi yield to DeFi composability</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Regulatory clarity needed: securities law applies to most tokenized assets in US</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "df-s7-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "df-s7-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
               "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fixedRatio": false
             },
             {
-              "id": "df-s7-card1txt",
+              "id": "df-s7-lp-txt",
               "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 20,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Intent-Based Trading</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Intent: 'I want 1000 USDC for my 0.5 ETH by end of block \u2014 fill or not at all'</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Solvers compete off-chain to find best execution path \u2014 aggregates CEX + DEX + OTC liquidity</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>CoW Protocol, UniswapX, 1inch Fusion \u2014 shift MEV from searchers to users via solver competition</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Benefits: MEV protection, better price, gas-free (solver pays gas, deducted from trade)</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#3b82f6;margin-bottom:10px;'>DeFi vs TradFi</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>DeFi advantages:<br/>• 24/7 operation, no closing times<br/>• Non-custodial — you keep your keys<br/>• Permissionless — no KYC required<br/>• Composable — protocols stack like Lego<br/>• Transparent — all code is public</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             },
             {
-              "id": "df-s7-card2bg",
+              "id": "df-s7-rp-bg",
               "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
+              "left": 504,
+              "top": 108,
+              "width": 488,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                308,
-                446
+                1,
+                1
               ],
-              "fill": "#042f2e",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
               }
             },
             {
-              "id": "df-s7-card2bar",
+              "id": "df-s7-rp-bar",
               "type": "shape",
-              "left": 636,
-              "top": 116,
+              "left": 504,
+              "top": 108,
               "width": 4,
-              "height": 446,
+              "height": 450,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#ef4444",
+              "fixedRatio": false
             },
             {
-              "id": "df-s7-card2txt",
+              "id": "df-s7-rp-txt",
               "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 516,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Institutional DeFi</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Permissioned pools (Aave Arc, Maple): KYC'd participants only \u2014 institutional compliance</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Real-time settlement: DeFi settles in seconds vs 2-day (T+2) TradFi settlement</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>24/7 liquidity: no market close, no settlement delays, global access</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Remaining hurdles: counterparty risk, key management, regulatory clarity, audit standards</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#ef4444;margin-bottom:10px;'>DeFi risks:</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>• Smart contract bugs (no insurance)<br/>• No chargebacks — mistakes are permanent<br/>• Regulatory uncertainty in most countries<br/>• Gas fees can eat small positions<br/>• UI/UX still early — easy to make costly errors<br/><br/>Never invest more than you understand.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             }
           ]
         }
       },
-      "order": 7
+      "order": 7,
+      "actions": [
+        {
+          "id": "action_df-s7_0",
+          "type": "spotlight",
+          "elementId": "df-s7-title"
+        },
+        {
+          "id": "action_df-s7_1",
+          "type": "speech",
+          "text": "DeFi is the most powerful financial infrastructure ever built for individual access. It's also completely unforgiving."
+        },
+        {
+          "id": "action_df-s7_2",
+          "type": "spotlight",
+          "elementId": "df-s7-sub"
+        },
+        {
+          "id": "action_df-s7_3",
+          "type": "speech",
+          "text": "No safety net, no customer support, no chargebacks. The code is the contract."
+        },
+        {
+          "id": "action_df-s7_4",
+          "type": "spotlight",
+          "elementId": "df-s7-lp-txt"
+        },
+        {
+          "id": "action_df-s7_5",
+          "type": "speech",
+          "text": "DeFi advantages over traditional finance: 24/7 operation — no bank hours. Non-custodial — you keep your keys. Composable — protocols stack on each other like building blocks. Transparent — everything is on-chain."
+        },
+        {
+          "id": "action_df-s7_6",
+          "type": "spotlight",
+          "elementId": "df-s7-rp-txt"
+        },
+        {
+          "id": "action_df-s7_7",
+          "type": "speech",
+          "text": "The risks are equally significant: smart contract bugs with no insurance. Mistakes are permanent — there's no reversing a wrong transaction. Regulatory uncertainty globally. And smart contract complexity that even auditors sometimes miss."
+        }
+      ]
+    },
+    {
+      "id": "de-interactive",
+      "type": "interactive",
+      "title": "Interactive Simulation",
+      "content": {
+        "type": "interactive",
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody{background:#0b1120;color:#e2e8f0;font-family:Inter,system-ui,sans-serif;padding:20px;margin:0;}\nh2{color:#22d3ee;font-size:18px;margin:0 0 4px;}\n.sub{color:#64748b;font-size:12px;margin-bottom:16px;}\n.row{display:flex;gap:12px;margin-bottom:12px;}\n.panel{background:#0f1f3d;border:1px solid #1e3a5f;border-radius:8px;padding:14px;flex:1;}\nlabel{color:#94a3b8;font-size:11px;text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;}\ninput{width:100%;padding:8px 10px;background:#020817;border:1px solid #334155;color:#f1f5f9;border-radius:6px;font-size:13px;box-sizing:border-box;}\n.result{background:#020817;border:1px solid #334155;border-radius:6px;padding:10px;font-size:13px;margin-top:8px;}\n.big{font-size:24px;font-weight:800;}\n.stat{display:inline-block;background:#1e3a5f;border-radius:4px;padding:3px 10px;font-size:11px;font-weight:700;color:#60a5fa;margin:3px 2px;}\n.warn{color:#f59e0b;} .good{color:#22c55e;} .bad{color:#ef4444;}\n</style>\n</head>\n<body>\n<h2>AMM Swap + Impermanent Loss Calculator</h2>\n<p class=\"sub\">Model a Uniswap V2 pool — see price impact, swap output, and impermanent loss.</p>\n<div class=\"row\">\n  <div class=\"panel\">\n    <label>Pool: Token A reserve</label>\n    <input type=\"number\" id=\"ra\" value=\"1000\" oninput=\"calc()\">\n    <label style=\"margin-top:8px\">Pool: Token B reserve</label>\n    <input type=\"number\" id=\"rb\" value=\"2000000\" oninput=\"calc()\">\n    <label style=\"margin-top:8px\">You swap: Token A amount</label>\n    <input type=\"number\" id=\"swap\" value=\"10\" oninput=\"calc()\">\n    <div class=\"result\" id=\"swap_result\"></div>\n  </div>\n  <div class=\"panel\">\n    <label>Impermanent Loss — Price Change %</label>\n    <input type=\"range\" id=\"pchange\" min=\"-90\" max=\"900\" value=\"100\" oninput=\"calcIL()\">\n    <p style=\"color:#94a3b8;font-size:12px;margin:4px 0;\">Price change: <span id=\"pval\" style=\"color:#f1f5f9;font-weight:700;\">+100%</span></p>\n    <div class=\"result\" id=\"il_result\"></div>\n  </div>\n</div>\n<script>\nfunction calc(){\n  const ra=parseFloat(document.getElementById('ra').value)||1000;\n  const rb=parseFloat(document.getElementById('rb').value)||2000000;\n  const dx=parseFloat(document.getElementById('swap').value)||10;\n  const k=ra*rb;\n  const ra2=ra+dx;\n  const rb2=k/ra2;\n  const out=rb-rb2;\n  const spotPrice=rb/ra;\n  const execPrice=out/dx;\n  const impact=Math.abs((execPrice-spotPrice)/spotPrice*100);\n  document.getElementById('swap_result').innerHTML=\n    'Swap <b style=\"color:#f1f5f9\">'+dx+'</b> Token A → <span class=\"big good\">'+out.toFixed(2)+'</span> Token B<br/>'+\n    '<span class=\"stat\">Spot price: '+spotPrice.toFixed(2)+'</span>'+\n    '<span class=\"stat\">Exec price: '+execPrice.toFixed(2)+'</span>'+\n    '<span class=\"stat '+(impact>1?'warn':'good')+'\">Price impact: '+impact.toFixed(2)+'%</span>';\n}\nfunction calcIL(){\n  const pct=parseInt(document.getElementById('pchange').value);\n  document.getElementById('pval').textContent=(pct>=0?'+':'')+pct+'%';\n  const P=(100+pct)/100;\n  const il=(2*Math.sqrt(P)/(1+P)-1)*100;\n  const holdVal=100*(1+pct/200);\n  document.getElementById('il_result').innerHTML=\n    'Impermanent Loss: <span class=\"big bad\">'+il.toFixed(2)+'%</span><br/>'+\n    '<span class=\"stat\">LP value: $'+(100*(2*Math.sqrt(P)/(1+P))).toFixed(2)+'</span>'+\n    '<span class=\"stat\">Just holding: $'+holdVal.toFixed(2)+'</span>'+\n    (il<-0.5?'<br/><span class=\"warn\" style=\"font-size:12px;margin-top:6px;display:block;\">⚠ IL is permanent if you withdraw at this price ratio</span>':'');\n}\ncalc(); calcIL();\n</script>\n</body>\n</html>"
+      },
+      "actions": [
+        {
+          "id": "action_de-interactive_i0",
+          "type": "speech",
+          "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered."
+        },
+        {
+          "id": "action_de-interactive_i1",
+          "type": "speech",
+          "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading."
+        }
+      ]
     },
     {
       "id": "df-s8",
       "type": "quiz",
-      "title": "Knowledge Check \u2014 DeFi Explained",
+      "title": "Knowledge Check — DeFi Explained",
       "content": {
-        "type": "quiz"
+        "type": "quiz",
+        "questions": [
+          {
+            "id": "q-df-1",
+            "type": "single",
+            "question": "In a constant-product AMM (x × y = k), what happens to the price of token Y when you buy a large amount of Y?",
+            "options": [
+              {
+                "label": "Price of Y decreases",
+                "value": "A"
+              },
+              {
+                "label": "Price of Y increases",
+                "value": "B"
+              },
+              {
+                "label": "Price stays constant",
+                "value": "C"
+              },
+              {
+                "label": "k increases",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Buying Y reduces Y's pool reserve, so the price rises. The constant k never changes — only the ratio between x and y moves.",
+            "points": 1
+          },
+          {
+            "id": "q-df-2",
+            "type": "single",
+            "question": "What is impermanent loss?",
+            "options": [
+              {
+                "label": "The gas fee paid when depositing into a liquidity pool",
+                "value": "A"
+              },
+              {
+                "label": "The difference between holding tokens vs providing liquidity when prices diverge",
+                "value": "B"
+              },
+              {
+                "label": "The interest paid to borrowers on Aave",
+                "value": "C"
+              },
+              {
+                "label": "A penalty for removing liquidity before 30 days",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Impermanent loss = the value you'd have by just holding vs the value you actually have in the pool after a price move. It becomes permanent if you withdraw.",
+            "points": 1
+          },
+          {
+            "id": "q-df-3",
+            "type": "single",
+            "question": "On Aave, if your health factor drops below 1.0, what happens?",
+            "options": [
+              {
+                "label": "Your interest rate doubles",
+                "value": "A"
+              },
+              {
+                "label": "Your position is liquidated",
+                "value": "B"
+              },
+              {
+                "label": "You receive a margin call email",
+                "value": "C"
+              },
+              {
+                "label": "Borrowing is paused for 24 hours",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Health factor < 1.0 means your collateral is worth less than your debt at the liquidation threshold. Liquidators can seize your collateral.",
+            "points": 1
+          },
+          {
+            "id": "q-df-4",
+            "type": "multiple",
+            "question": "Which TWO statements are true about flash loans?",
+            "options": [
+              {
+                "label": "They must be borrowed and repaid within a single transaction",
+                "value": "A"
+              },
+              {
+                "label": "They require collateral worth 150% of the loan",
+                "value": "B"
+              },
+              {
+                "label": "If not repaid, the entire transaction reverts",
+                "value": "C"
+              },
+              {
+                "label": "They are only available to KYC-verified users",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "A",
+              "C"
+            ],
+            "analysis": "Flash loans are uncollateralized and atomic — borrow and repay in one tx, or the whole tx fails. Anyone can use them.",
+            "points": 2
+          },
+          {
+            "id": "q-df-5",
+            "type": "short_answer",
+            "question": "Explain how a DeFi liquidation cascade can amplify a market crash. Use a concrete example.",
+            "commentPrompt": "Full marks if student explains: (1) falling prices push health factors below 1, (2) liquidations flood the market with sell orders, (3) more selling pushes prices lower, (4) triggering more liquidations — give credit for any real example like the May 2021 or March 2020 events.",
+            "points": 3
+          }
+        ]
       },
-      "order": 8
+      "order": 8,
+      "actions": [
+        {
+          "id": "action_df-s8_q0",
+          "type": "speech",
+          "text": "Time to test your knowledge! Answer each question carefully — you can review the material after the quiz."
+        },
+        {
+          "id": "action_df-s8_q1",
+          "type": "speech",
+          "text": "Take your time with these questions. The goal is to solidify your understanding, not just pass the quiz."
+        }
+      ]
     }
   ]
 }

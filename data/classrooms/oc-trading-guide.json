@@ -29,11 +29,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#3b82f6",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -46,19 +50,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
               "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fixedRatio": false
             },
             {
               "id": "tg-s1-titlebg",
@@ -66,287 +64,184 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "tg-s1-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Order Books & Market Microstructure</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Market Structure</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "tg-s1-sub",
               "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>How prices are discovered on centralized exchanges</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>How price is formed and how to read it</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#64748b"
             },
             {
-              "id": "tg-s1-pillbg0",
+              "id": "tg-s1-lp-bg",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 8,
+              "top": 108,
+              "width": 488,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
               }
             },
             {
-              "id": "tg-s1-pill0",
-              "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>0.01-0.1%<br/><span style=\"font-size:10px;color:#64748b;\">Bid-ask</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "tg-s1-pillbg1",
+              "id": "tg-s1-lp-bar",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
-              "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                120,
-                74
-              ],
-              "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s1-pill1",
-              "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>varies<br/><span style=\"font-size:10px;color:#64748b;\">Market depth</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "tg-s1-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s1-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
+              "left": 8,
+              "top": 108,
               "width": 4,
-              "height": 446,
+              "height": 450,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s1-card0txt",
-              "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Order Types</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Market order: fills immediately at best available price \u2014 guarantees execution, not price</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Limit order: specify max buy / min sell price \u2014 sits in book, may not fill if price moves away</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Stop-limit: triggers limit order when stop price hit \u2014 useful for exits, can slip through in fast markets</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Iceberg order: large order with visible small quantity, hidden remainder \u2014 institutional tool</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "tg-s1-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s1-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
               "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fixedRatio": false
             },
             {
-              "id": "tg-s1-card1txt",
+              "id": "tg-s1-lp-txt",
               "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 20,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Market Microstructure</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Bid-ask spread = maker profit; taker fee + spread = total cost of round trip</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Market makers profit by buying bid, selling ask \u2014 need high fill rate to profit on small spread</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Price discovery: continuous auction \u2014 best bid and ask meet to create last trade price</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Level 2 data: full order book depth shows where liquidity exists and where price may bounce or break</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#3b82f6;margin-bottom:10px;'>Order Book Mechanics</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>Bids: buyers waiting at price levels<br/>Asks: sellers waiting at price levels<br/>Spread: gap between best bid & ask<br/><br/>Market order: execute immediately at current price<br/>Limit order: wait until price reaches your level<br/><br/>Large walls in the order book = support/resistance.<br/>Watch for 'walls' being pulled right before a move.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             },
             {
-              "id": "tg-s1-card2bg",
+              "id": "tg-s1-rp-bg",
               "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
+              "left": 504,
+              "top": 108,
+              "width": 488,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                308,
-                446
+                1,
+                1
               ],
-              "fill": "#042f2e",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
               }
             },
             {
-              "id": "tg-s1-card2bar",
+              "id": "tg-s1-rp-bar",
               "type": "shape",
-              "left": 636,
-              "top": 116,
+              "left": 504,
+              "top": 108,
               "width": 4,
-              "height": 446,
+              "height": 450,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#22d3ee",
+              "fixedRatio": false
             },
             {
-              "id": "tg-s1-card2txt",
+              "id": "tg-s1-rp-txt",
               "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 516,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Exchange Mechanics</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Matching engine: FIFO at each price level \u2014 first order at price gets filled first</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Maker-taker fee model: makers (limit orders) get rebate, takers (market orders) pay fee</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Hidden liquidity: dark pools and internal crossing let institutions trade without moving markets</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Wash trading: illegal self-dealing to inflate volume \u2014 common on unregulated exchanges, watch for it</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#22d3ee;margin-bottom:10px;'>Reading Candlesticks</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>Each candle = Open · High · Low · Close<br/><br/>Patterns that matter:<br/>• Doji: indecision — buyers/sellers balanced<br/>• Hammer: reversal signal at support<br/>• Engulfing: strong momentum shift<br/>• Long wick: price rejection at that level<br/><br/>Patterns need volume confirmation to be reliable.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             }
           ]
         }
       },
-      "order": 1
+      "order": 1,
+      "actions": [
+        {
+          "id": "action_tg-s1_0",
+          "type": "spotlight",
+          "elementId": "tg-s1-title"
+        },
+        {
+          "id": "action_tg-s1_1",
+          "type": "speech",
+          "text": "Before you place a single trade, you need to understand how prices are actually formed."
+        },
+        {
+          "id": "action_tg-s1_2",
+          "type": "spotlight",
+          "elementId": "tg-s1-sub"
+        },
+        {
+          "id": "action_tg-s1_3",
+          "type": "speech",
+          "text": "Market structure — the order book, candlesticks, and what they reveal about supply and demand."
+        },
+        {
+          "id": "action_tg-s1_4",
+          "type": "spotlight",
+          "elementId": "tg-s1-lp-txt"
+        },
+        {
+          "id": "action_tg-s1_5",
+          "type": "speech",
+          "text": "Order book mechanics: bids are buyers waiting at specific price levels. Asks are sellers. The spread is the gap between best bid and best ask. Volume profile shows where the most trades happened historically — these become support and resistance levels."
+        },
+        {
+          "id": "action_tg-s1_6",
+          "type": "spotlight",
+          "elementId": "tg-s1-rp-txt"
+        },
+        {
+          "id": "action_tg-s1_7",
+          "type": "speech",
+          "text": "Reading candlesticks: each candle shows Open, High, Low, and Close for a time period. The doji pattern — open and close nearly equal — signals indecision. A pin bar with a long wick shows price rejection. Engulfing patterns signal potential reversals."
+        }
+      ]
     },
     {
       "id": "tg-s2",
@@ -360,11 +255,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#a855f7",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -377,19 +276,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#a855f7",
+              "fixedRatio": false
             },
             {
               "id": "tg-s2-titlebg",
@@ -397,287 +290,184 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "tg-s2-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Technical Indicators</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Technical Indicators</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "tg-s2-sub",
               "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>What RSI, MACD, and Bollinger Bands actually measure</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "tg-s2-lp-bg",
+              "type": "shape",
+              "left": 8,
+              "top": 108,
+              "width": 488,
+              "height": 450,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#a855f7"
+              }
+            },
+            {
+              "id": "tg-s2-lp-bar",
+              "type": "shape",
+              "left": 8,
+              "top": 108,
+              "width": 4,
+              "height": 450,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#a855f7",
+              "fixedRatio": false
+            },
+            {
+              "id": "tg-s2-lp-txt",
+              "type": "text",
               "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>RSI, MACD, Bollinger Bands \u2014 math and interpretation</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#a855f7;margin-bottom:10px;'>RSI & MACD</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>RSI = avg gain / avg loss over 14 periods<br/>• >70: overbought (potential reversal)<br/>• <30: oversold (potential bounce)<br/>• Divergence: price makes new high, RSI doesn't = bearish signal<br/><br/>MACD = 12-day EMA − 26-day EMA<br/>Signal line = 9-day EMA of MACD<br/>Crossover above signal line = bullish</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             },
             {
-              "id": "tg-s2-pillbg0",
+              "id": "tg-s2-rp-bg",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 504,
+              "top": 108,
+              "width": 488,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
               }
             },
             {
-              "id": "tg-s2-pill0",
-              "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>0-100<br/><span style=\"font-size:10px;color:#64748b;\">RSI range</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "tg-s2-pillbg1",
+              "id": "tg-s2-rp-bar",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
-              "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                120,
-                74
-              ],
-              "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s2-pill1",
-              "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>EMA diff<br/><span style=\"font-size:10px;color:#64748b;\">MACD</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "tg-s2-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s2-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
+              "left": 504,
+              "top": 108,
               "width": 4,
-              "height": 446,
+              "height": 450,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#f59e0b",
+              "fixedRatio": false
             },
             {
-              "id": "tg-s2-card0txt",
+              "id": "tg-s2-rp-txt",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 516,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>RSI</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>RSI = 100 \u2212 100/(1 + RS) where RS = avg gain / avg loss over 14 periods</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Overbought: RSI > 70 \u2014 price may mean-revert but can stay overbought in strong trend</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Oversold: RSI < 30 \u2014 potential buy zone but works better in ranging markets than trending</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Divergence: price makes new high but RSI makes lower high = bearish divergence (weakening momentum)</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#f59e0b;margin-bottom:10px;'>Bollinger Bands</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>Middle: 20-day moving average<br/>Upper/Lower: ±2 standard deviations<br/><br/>Squeeze = low volatility → breakout incoming<br/>Touch of upper band = overbought<br/>Touch of lower band = oversold<br/><br/>Bands expand during trends, contract during consolidation. Width = volatility indicator.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "tg-s2-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s2-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s2-card1txt",
-              "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>MACD</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>MACD line = EMA(12) \u2212 EMA(26); Signal line = EMA(9) of MACD line</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Histogram = MACD \u2212 Signal: above zero = bullish momentum, below = bearish</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Crossover signal: MACD crosses above signal = buy; below = sell \u2014 lagging, use with other signals</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Zero-line cross: MACD crosses above 0 = trend confirmation; below = trend reversal</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "tg-s2-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s2-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s2-card2txt",
-              "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Bollinger Bands</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Middle band = 20-period SMA; Upper/Lower = SMA \u00b1 2 standard deviations</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Price touching upper band \u2260 automatic sell \u2014 in strong uptrend, price 'walks the band'</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Bollinger Squeeze: bands narrow = volatility compression = breakout incoming (direction unknown)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>%B: measures price position within bands \u2014 1.0 = upper band, 0 = lower, 0.5 = middle</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             }
           ]
         }
       },
-      "order": 2
+      "order": 2,
+      "actions": [
+        {
+          "id": "action_tg-s2_0",
+          "type": "spotlight",
+          "elementId": "tg-s2-title"
+        },
+        {
+          "id": "action_tg-s2_1",
+          "type": "speech",
+          "text": "Technical indicators don't predict the future — they describe what has happened. Understanding what they measure helps you use them correctly."
+        },
+        {
+          "id": "action_tg-s2_2",
+          "type": "spotlight",
+          "elementId": "tg-s2-sub"
+        },
+        {
+          "id": "action_tg-s2_3",
+          "type": "speech",
+          "text": "RSI, MACD, and Bollinger Bands — the three most widely used indicators in crypto trading."
+        },
+        {
+          "id": "action_tg-s2_4",
+          "type": "spotlight",
+          "elementId": "tg-s2-lp-txt"
+        },
+        {
+          "id": "action_tg-s2_5",
+          "type": "speech",
+          "text": "RSI measures relative strength over 14 periods. Above 70 is overbought — potential reversal. Below 30 is oversold. MACD is two moving averages — the crossover of the MACD line over the signal line indicates momentum shifts. Divergence between price and MACD is a powerful leading signal."
+        },
+        {
+          "id": "action_tg-s2_6",
+          "type": "spotlight",
+          "elementId": "tg-s2-rp-txt"
+        },
+        {
+          "id": "action_tg-s2_7",
+          "type": "speech",
+          "text": "Bollinger Bands: a 20-day moving average in the middle, plus or minus two standard deviations. A Bollinger Squeeze — bands tightening — means volatility is compressing. What follows is usually a significant move. Bands don't tell you the direction, just that a move is coming."
+        }
+      ]
     },
     {
       "id": "tg-s3",
@@ -691,11 +481,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#22d3ee",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -708,19 +502,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#22d3ee",
+              "fixedRatio": false
             },
             {
               "id": "tg-s3-titlebg",
@@ -728,287 +516,153 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "tg-s3-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Risk & Position Sizing</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Position Sizing</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "tg-s3-sub",
               "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Kelly Criterion and drawdown-aware capital allocation</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The single most important skill in trading</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#64748b"
             },
             {
-              "id": "tg-s3-pillbg0",
+              "id": "tg-s3-fs-bg",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 60,
+              "top": 118,
+              "width": 880,
+              "height": 176,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#020817",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 2,
+                "color": "#22d3ee"
               }
             },
             {
-              "id": "tg-s3-pill0",
+              "id": "tg-s3-fs-formula",
               "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 60,
+              "top": 130,
+              "width": 880,
+              "height": 156,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>f* = p \u2212 q/b<br/><span style=\"font-size:10px;color:#64748b;\">Kelly formula</span></p>",
+              "content": "<p style='font-size:34px;font-weight:800;color:#22d3ee;text-align:center;font-family:monospace;line-height:1.4;'>Position Size = Risk $ ÷ Stop %</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#22d3ee"
             },
             {
-              "id": "tg-s3-pillbg1",
-              "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
-              "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                120,
-                74
-              ],
-              "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s3-pill1",
+              "id": "tg-s3-fs-exp",
               "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 60,
+              "top": 312,
+              "width": 880,
+              "height": 180,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'><25%<br/><span style=\"font-size:10px;color:#64748b;\">Max drawdown</span></p>",
+              "content": "<p style='font-size:15px;color:#e2e8f0;line-height:1.7;text-align:center;'>Risk $ = Account × Risk Per Trade (e.g. 2%)<br/>Stop % = Distance from entry to stop-loss<br/><br/>Example: $10K account, 2% risk, 5% stop<br/>→ Risk $ = $200 · Position = $200 ÷ 0.05 = $4,000</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             },
             {
-              "id": "tg-s3-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s3-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s3-card0txt",
+              "id": "tg-s3-fs-note",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 60,
+              "top": 494,
+              "width": 880,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Kelly Criterion</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>f* = (bp \u2212 q) / b where b = net odds, p = win probability, q = 1 \u2212 p</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Maximizes long-run geometric growth rate \u2014 but full Kelly leads to massive drawdowns (\u221250% swings)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Half-Kelly or Quarter-Kelly is standard practice \u2014 reduces growth slightly but cuts variance dramatically</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Example: 60% win rate, 1.5:1 reward/risk \u2192 full Kelly = 26.7% of capital per trade</p>",
+              "content": "<p style='font-size:12px;color:#64748b;text-align:center;'>Kelly Criterion: f = (bp − q) / b where b=odds, p=win rate, q=loss rate. Use half-Kelly in practice to account for estimation error.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "tg-s3-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s3-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s3-card1txt",
-              "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Position Sizing</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Fixed fractional: risk a fixed % of account per trade (e.g., 1-2%) \u2014 account size adjusts bet size automatically</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>ATR sizing: position size = (account \u00d7 risk%) / (ATR \u00d7 multiplier) \u2014 scales to current volatility</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Correlation adjustment: two correlated positions = 1 effective position for risk management purposes</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Maximum position: even with high conviction, cap individual positions at 10-20% of portfolio</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "tg-s3-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s3-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s3-card2txt",
-              "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Drawdown Management</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Maximum drawdown (MDD): largest peak-to-trough decline \u2014 critical for evaluating strategies</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>100% return needed to recover from 50% drawdown; 25% needed to recover from 20%</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Circuit breakers: stop trading after losing X% in a day/week \u2014 prevents revenge trading death spiral</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Sharpe ratio: (return \u2212 risk-free rate) / std deviation \u2014 >1 is acceptable, >2 is excellent</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#64748b"
             }
           ]
         }
       },
-      "order": 3
+      "order": 3,
+      "actions": [
+        {
+          "id": "action_tg-s3_0",
+          "type": "spotlight",
+          "elementId": "tg-s3-title"
+        },
+        {
+          "id": "action_tg-s3_1",
+          "type": "speech",
+          "text": "Position sizing is the most important skill in trading — not entry timing, not indicator selection. Size determines your survivability."
+        },
+        {
+          "id": "action_tg-s3_2",
+          "type": "spotlight",
+          "elementId": "tg-s3-sub"
+        },
+        {
+          "id": "action_tg-s3_3",
+          "type": "speech",
+          "text": "The formula is simple. The discipline to follow it is not."
+        },
+        {
+          "id": "action_tg-s3_4",
+          "type": "spotlight",
+          "elementId": "tg-s3-fs-formula"
+        },
+        {
+          "id": "action_tg-s3_5",
+          "type": "speech",
+          "text": "Position size equals your risk dollars divided by your stop percentage."
+        },
+        {
+          "id": "action_tg-s3_6",
+          "type": "spotlight",
+          "elementId": "tg-s3-fs-exp"
+        },
+        {
+          "id": "action_tg-s3_7",
+          "type": "speech",
+          "text": "Risk dollars equals your account value times your chosen risk per trade — typically 1 to 2 percent. If you have 10,000 dollars and risk 2 percent, that's 200 dollars. If your stop is 10% from entry, your position is 2,000 dollars."
+        },
+        {
+          "id": "action_tg-s3_8",
+          "type": "spotlight",
+          "elementId": "tg-s3-fs-note"
+        },
+        {
+          "id": "action_tg-s3_9",
+          "type": "speech",
+          "text": "The Kelly Criterion maximizes long-run growth mathematically. In practice, use half-Kelly — full Kelly is too aggressive for anything with variance. Most professional traders risk between 0.5 and 2% per trade."
+        }
+      ]
     },
     {
       "id": "tg-s4",
@@ -1022,11 +676,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#3b82f6",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1039,19 +697,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
               "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fixedRatio": false
             },
             {
               "id": "tg-s4-titlebg",
@@ -1059,287 +711,153 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "tg-s4-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Perpetual Futures</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Trading Expectancy</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "tg-s4-sub",
               "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Funding rates, basis, and leverage mechanics</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Profitable trading is about math, not prediction</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#64748b"
             },
             {
-              "id": "tg-s4-pillbg0",
+              "id": "tg-s4-fs-bg",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 60,
+              "top": 118,
+              "width": 880,
+              "height": 176,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#020817",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 2,
+                "color": "#3b82f6"
               }
             },
             {
-              "id": "tg-s4-pill0",
+              "id": "tg-s4-fs-formula",
               "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 60,
+              "top": 130,
+              "width": 880,
+              "height": 156,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>\u00b10.01%/8h<br/><span style=\"font-size:10px;color:#64748b;\">Funding</span></p>",
+              "content": "<p style='font-size:34px;font-weight:800;color:#3b82f6;text-align:center;font-family:monospace;line-height:1.4;'>Expectancy = (W% × Avg Win) − (L% × Avg Loss)</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#3b82f6"
             },
             {
-              "id": "tg-s4-pillbg1",
-              "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
-              "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                120,
-                74
-              ],
-              "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s4-pill1",
+              "id": "tg-s4-fs-exp",
               "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 60,
+              "top": 312,
+              "width": 880,
+              "height": 180,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>Margin call<br/><span style=\"font-size:10px;color:#64748b;\">Liquidation</span></p>",
+              "content": "<p style='font-size:15px;color:#e2e8f0;line-height:1.7;text-align:center;'>A 40% win rate CAN be profitable with high reward/risk<br/>Example: 40% × $300 − 60% × $100 = +$60 per trade<br/><br/>Most traders blow up not from bad win rates — from letting losers run and cutting winners short.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             },
             {
-              "id": "tg-s4-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s4-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s4-card0txt",
+              "id": "tg-s4-fs-note",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 60,
+              "top": 494,
+              "width": 880,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Perp Mechanics</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Perpetual = futures contract with no expiry \u2014 tracks spot via funding rate mechanism</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Funding rate paid every 8 hours: if funding > 0, longs pay shorts; if < 0, shorts pay longs</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Mark price = index price + EMA of basis \u2014 used for liquidations, not last traded price</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Open interest: total notional value of outstanding contracts \u2014 rising OI + rising price = bullish</p>",
+              "content": "<p style='font-size:12px;color:#64748b;text-align:center;'>Sharpe Ratio = (Return − Risk-Free Rate) / Standard Deviation. A Sharpe > 1.0 is considered good. Most retail traders have negative Sharpe.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "tg-s4-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s4-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s4-card1txt",
-              "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Leverage & Margin</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Initial margin: deposit required to open position (e.g., 10% for 10\u00d7 leverage)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Maintenance margin: minimum equity to keep position open (e.g., 5% for 10\u00d7 leverage)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Liquidation: position closed when equity falls to maintenance margin level</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Auto-deleveraging (ADL): if insurance fund insufficient, profitable traders' positions are reduced</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "tg-s4-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s4-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s4-card2txt",
-              "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Basis Trading</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Basis = futures price \u2212 spot price; positive basis = contango (bullish)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Cash-and-carry: buy spot + short perp \u2192 collect funding rate \u2014 delta-neutral yield strategy</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Funding arbitrage: when perp trades at premium, short perp + long spot = risk-free funding income</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Negative funding (backwardation): shorts pay longs \u2014 historically precedes price bottoms</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#64748b"
             }
           ]
         }
       },
-      "order": 4
+      "order": 4,
+      "actions": [
+        {
+          "id": "action_tg-s4_0",
+          "type": "spotlight",
+          "elementId": "tg-s4-title"
+        },
+        {
+          "id": "action_tg-s4_1",
+          "type": "speech",
+          "text": "Profitable trading is not about being right most of the time. It's about math — specifically expectancy."
+        },
+        {
+          "id": "action_tg-s4_2",
+          "type": "spotlight",
+          "elementId": "tg-s4-sub"
+        },
+        {
+          "id": "action_tg-s4_3",
+          "type": "speech",
+          "text": "A 40% win rate CAN be highly profitable. A 70% win rate CAN be a losing system. It depends on your reward-to-risk ratio."
+        },
+        {
+          "id": "action_tg-s4_4",
+          "type": "spotlight",
+          "elementId": "tg-s4-fs-formula"
+        },
+        {
+          "id": "action_tg-s4_5",
+          "type": "speech",
+          "text": "Expectancy equals win percentage times average win, minus loss percentage times average loss."
+        },
+        {
+          "id": "action_tg-s4_6",
+          "type": "spotlight",
+          "elementId": "tg-s4-fs-exp"
+        },
+        {
+          "id": "action_tg-s4_7",
+          "type": "speech",
+          "text": "Example: 40% wins at 300 dollars average, 60% losses at 100 dollars average. Expectancy equals 40% times 300 minus 60% times 100 — that's positive 60 dollars per trade. Over 100 trades, that compounds."
+        },
+        {
+          "id": "action_tg-s4_8",
+          "type": "spotlight",
+          "elementId": "tg-s4-fs-note"
+        },
+        {
+          "id": "action_tg-s4_9",
+          "type": "speech",
+          "text": "The Sharpe ratio measures return per unit of risk. A Sharpe above 1.0 is considered good. The best trading systems aim for 2 or above. If your system has a Sharpe below 0.5, you're taking on too much risk relative to your returns."
+        }
+      ]
     },
     {
       "id": "tg-s5",
@@ -1353,11 +871,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f59e0b",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1370,19 +892,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#f59e0b",
+              "fixedRatio": false
             },
             {
               "id": "tg-s5-titlebg",
@@ -1390,287 +906,184 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "tg-s5-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Sharpe Ratio & Strategy Evaluation</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Perpetual Futures & Leverage</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "tg-s5-sub",
               "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The most dangerous — and most used — crypto instrument</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "tg-s5-lp-bg",
+              "type": "shape",
+              "left": 8,
+              "top": 108,
+              "width": 488,
+              "height": 450,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "tg-s5-lp-bar",
+              "type": "shape",
+              "left": 8,
+              "top": 108,
+              "width": 4,
+              "height": 450,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "tg-s5-lp-txt",
+              "type": "text",
               "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Quantifying risk-adjusted performance</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#f59e0b;margin-bottom:10px;'>Perpetual Futures</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>Perpetuals have no expiry — unlike monthly futures.<br/><br/>Funding rate keeps price anchored to spot:<br/>• Positive funding (>0): Longs pay shorts — market is net long<br/>• Negative funding (<0): Shorts pay longs — market is net short<br/><br/>High positive funding = crowd is long = contrarian short signal.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             },
             {
-              "id": "tg-s5-pillbg0",
+              "id": "tg-s5-rp-bg",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 504,
+              "top": 108,
+              "width": 488,
+              "height": 450,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
               }
             },
             {
-              "id": "tg-s5-pill0",
-              "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>Excellent<br/><span style=\"font-size:10px;color:#64748b;\">Sharpe > 2</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "tg-s5-pillbg1",
+              "id": "tg-s5-rp-bar",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
-              "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                120,
-                74
-              ],
-              "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s5-pill1",
-              "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>Downside only<br/><span style=\"font-size:10px;color:#64748b;\">Sortino</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "tg-s5-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s5-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
+              "left": 504,
+              "top": 108,
               "width": 4,
-              "height": 446,
+              "height": 450,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#ef4444",
+              "fixedRatio": false
             },
             {
-              "id": "tg-s5-card0txt",
+              "id": "tg-s5-rp-txt",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 516,
+              "top": 118,
+              "width": 464,
+              "height": 430,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Sharpe Ratio</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Sharpe = (Rp \u2212 Rf) / \u03c3p where Rp = portfolio return, Rf = risk-free rate, \u03c3p = std dev</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Annualized: multiply daily Sharpe by \u221a252 (trading days)</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Interpretation: <1 poor, 1-2 acceptable, >2 excellent, >3 exceptional</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Limitation: treats upside and downside volatility equally \u2014 high Sharpe can hide fat-tail risk</p>",
+              "content": "<p style='font-size:15px;font-weight:700;color:#ef4444;margin-bottom:10px;'>Liquidation Mechanics</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>10× leverage on $1,000 = $10,000 position<br/>A 10% adverse move = 100% loss (liquidation)<br/><br/>Liquidation price = Entry × (1 − 1/Leverage)<br/><br/>Exchange liquidation cascade: bots liquidate the largest positions first, pushing price further, liquidating more.<br/>$1B+ liquidated in single-day events.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "tg-s5-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s5-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s5-card1txt",
-              "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Alternative Metrics</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Sortino ratio: uses only downside std deviation \u2014 better for strategies with positive skew</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Calmar ratio: annualized return / max drawdown \u2014 good for comparing trend-following strategies</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Maximum adverse excursion (MAE): worst loss during a winning trade \u2014 key for stop placement</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Win rate \u00d7 avg win / avg loss = expectancy \u2014 must be positive for profitable strategy</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "tg-s5-card2bg",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#042f2e",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s5-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s5-card2txt",
-              "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Backtesting Pitfalls</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Overfitting: too many parameters \u2192 fits historical noise, fails on new data \u2192 use out-of-sample test</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Lookahead bias: accidentally using future data to generate signals \u2192 inflated backtest results</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Survivorship bias: testing only assets that still exist \u2192 excludes coins that went to zero</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Transaction costs: include spread, slippage, and fees \u2014 can turn profitable backtest into loser</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#e2e8f0"
             }
           ]
         }
       },
-      "order": 5
+      "order": 5,
+      "actions": [
+        {
+          "id": "action_tg-s5_0",
+          "type": "spotlight",
+          "elementId": "tg-s5-title"
+        },
+        {
+          "id": "action_tg-s5_1",
+          "type": "speech",
+          "text": "Perpetual futures are the most traded crypto instrument — and the most dangerous for beginners."
+        },
+        {
+          "id": "action_tg-s5_2",
+          "type": "spotlight",
+          "elementId": "tg-s5-sub"
+        },
+        {
+          "id": "action_tg-s5_3",
+          "type": "speech",
+          "text": "Understanding funding rates and liquidation mechanics is not optional if you trade perps."
+        },
+        {
+          "id": "action_tg-s5_4",
+          "type": "spotlight",
+          "elementId": "tg-s5-lp-txt"
+        },
+        {
+          "id": "action_tg-s5_5",
+          "type": "speech",
+          "text": "Perpetual futures have no expiry date — unlike monthly futures. The funding rate is a periodic payment between longs and shorts that keeps the perp price anchored to the spot price. When funding is highly positive, longs are paying shorts — a contrarian signal."
+        },
+        {
+          "id": "action_tg-s5_6",
+          "type": "spotlight",
+          "elementId": "tg-s5-rp-txt"
+        },
+        {
+          "id": "action_tg-s5_7",
+          "type": "speech",
+          "text": "Liquidation mechanics: 10x leverage on 1,000 dollars controls a 10,000 dollar position. A 10% adverse move equals 100% loss — full liquidation. At 25x leverage, you're liquidated on a 4% move. The exchange takes your collateral. Overleveraging is how traders blow up accounts."
+        }
+      ]
     },
     {
       "id": "tg-s6",
@@ -1684,11 +1097,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#3b82f6",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1701,19 +1118,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
               "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fixedRatio": false
             },
             {
               "id": "tg-s6-titlebg",
@@ -1721,287 +1132,243 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "tg-s6-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Trading Psychology</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Copy Trading & Psychology</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "tg-s6-sub",
               "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Cognitive biases and emotional discipline</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Systematic edges and the hardest part — your own mind</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#64748b"
             },
             {
-              "id": "tg-s6-pillbg0",
+              "id": "tg-s6-c0bg",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 8,
+              "top": 110,
+              "width": 320,
+              "height": 438,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0f1f3d",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
               }
             },
             {
-              "id": "tg-s6-pill0",
-              "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>2\u00d7 pain<br/><span style=\"font-size:10px;color:#64748b;\">Loss aversion</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "tg-s6-pillbg1",
+              "id": "tg-s6-c0bar",
               "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
-              "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                120,
-                74
-              ],
-              "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s6-pill1",
-              "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>too short<br/><span style=\"font-size:10px;color:#64748b;\">Avg hold</span></p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "tg-s6-card0bg",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#1a1040",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s6-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
+              "left": 8,
+              "top": 110,
               "width": 4,
-              "height": 446,
+              "height": 438,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s6-card0txt",
-              "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Key Biases</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Loss aversion: losing $1000 hurts ~2\u00d7 more than gaining $1000 feels good \u2014 causes holding losers too long</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Confirmation bias: seek information confirming existing position \u2014 actively seek disconfirmation</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Recency bias: overweight recent events \u2014 bull market makes everyone think prices only go up</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Disposition effect: selling winners too early, holding losers too long \u2014 opposite of 'let winners run'</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "tg-s6-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s6-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
               "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fixedRatio": false
             },
             {
-              "id": "tg-s6-card1txt",
+              "id": "tg-s6-c0txt",
               "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 20,
+              "top": 120,
+              "width": 300,
+              "height": 418,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Emotional Discipline</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Trading journal: record every trade with reasoning, emotion state, and outcome \u2014 patterns emerge</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Rule-based trading: predefined entry/exit rules remove in-the-moment emotion from decisions</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Risk per trade: knowing max loss before entering removes panic during drawdown</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Detach from P&L during trade: watching tick-by-tick creates anxiety; check at planned review times</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Copy Trading</p><p style='font-size:12px;color:#cbd5e1;line-height:1.5;'>Follow proven traders automatically. Risk: traders change strategy, over-optimized past performance, slippage on large follower bases.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#cbd5e1"
             },
             {
-              "id": "tg-s6-card2bg",
+              "id": "tg-s6-c1bg",
               "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
+              "left": 336,
+              "top": 110,
+              "width": 320,
+              "height": 438,
               "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                308,
-                446
+                1,
+                1
               ],
-              "fill": "#042f2e",
+              "fill": "#0f1f3d",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
               }
             },
             {
-              "id": "tg-s6-card2bar",
+              "id": "tg-s6-c1bar",
               "type": "shape",
-              "left": 636,
-              "top": 116,
+              "left": 336,
+              "top": 110,
               "width": 4,
-              "height": 446,
+              "height": 438,
               "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                4,
-                446
+                1,
+                1
               ],
-              "fill": "#06b6d4",
+              "fill": "#ef4444",
+              "fixedRatio": false
+            },
+            {
+              "id": "tg-s6-c1txt",
+              "type": "text",
+              "left": 348,
+              "top": 120,
+              "width": 300,
+              "height": 418,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#ef4444;margin-bottom:6px;'>Trading Psychology</p><p style='font-size:12px;color:#cbd5e1;line-height:1.5;'>Fear → early exits. Greed → holding losers. Revenge trading → blowups. The edge is discipline, not prediction.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "tg-s6-c2bg",
+              "type": "shape",
+              "left": 664,
+              "top": 110,
+              "width": 320,
+              "height": 438,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1f3d",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#22d3ee"
               }
             },
             {
-              "id": "tg-s6-card2txt",
-              "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "id": "tg-s6-c2bar",
+              "type": "shape",
+              "left": 664,
+              "top": 110,
+              "width": 4,
+              "height": 438,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Process Over Outcome</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Good process + bad outcome (bad luck) \u2260 bad decision \u2014 evaluate process, not just result</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Expected value thinking: focus on probability-weighted outcome, not individual trade result</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Poker analogy: bad beats happen to good players \u2014 discipline is playing correctly when results are random</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Meditation and sleep: emotional regulation critically depends on physiological state \u2014 non-negotiable for traders</p>",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#22d3ee",
+              "fixedRatio": false
+            },
+            {
+              "id": "tg-s6-c2txt",
+              "type": "text",
+              "left": 676,
+              "top": 120,
+              "width": 300,
+              "height": 418,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#22d3ee;margin-bottom:6px;'>OnlyCrypto Traders</p><p style='font-size:12px;color:#cbd5e1;line-height:1.5;'>Verified traders on platform. Track record is public. Followers share in profit. Copy-stop on drawdown threshold.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#cbd5e1"
             }
           ]
         }
       },
-      "order": 6
+      "order": 6,
+      "actions": [
+        {
+          "id": "action_tg-s6_0",
+          "type": "spotlight",
+          "elementId": "tg-s6-title"
+        },
+        {
+          "id": "action_tg-s6_1",
+          "type": "speech",
+          "text": "Copy trading and psychology — two topics that determine real-world trading outcomes more than any indicator."
+        },
+        {
+          "id": "action_tg-s6_2",
+          "type": "spotlight",
+          "elementId": "tg-s6-sub"
+        },
+        {
+          "id": "action_tg-s6_3",
+          "type": "speech",
+          "text": "Following a proven trader is valid strategy. But the hardest part is always your own psychology."
+        },
+        {
+          "id": "action_tg-s6_4",
+          "type": "spotlight",
+          "elementId": "tg-s6-c0txt"
+        },
+        {
+          "id": "action_tg-s6_5",
+          "type": "speech",
+          "text": "Copy trading: follow proven traders automatically. The risk is that past performance isn't guaranteed. Traders change strategies. Over-optimized backtests don't hold up live. On OnlyCrypto, trader track records are public and verified — giving you genuine data to evaluate."
+        },
+        {
+          "id": "action_tg-s6_6",
+          "type": "spotlight",
+          "elementId": "tg-s6-c1txt"
+        },
+        {
+          "id": "action_tg-s6_7",
+          "type": "speech",
+          "text": "Trading psychology: fear causes early exits — cutting winners short. Greed causes holding losers too long — hoping they'll come back. Revenge trading after a loss is how small losses become catastrophic losses. The edge is in consistency, not cleverness."
+        },
+        {
+          "id": "action_tg-s6_8",
+          "type": "spotlight",
+          "elementId": "tg-s6-c2txt"
+        },
+        {
+          "id": "action_tg-s6_9",
+          "type": "speech",
+          "text": "OnlyCrypto traders: verified track records, public performance, and followers share in profits through the platform's commission structure. This aligns the trader's incentive with yours — they do better when you do better."
+        }
+      ]
     },
     {
       "id": "tg-s7",
@@ -2015,11 +1382,15 @@
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0f172a"
+            "color": "#0b1120"
           },
           "theme": {
-            "backgroundColor": "#0f172a",
-            "themeColor": "#3b82f6",
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#a855f7",
+              "#8b5cf6",
+              "#06b6d4"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -2032,19 +1403,13 @@
               "width": 1000,
               "height": 6,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 6 L0 6 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                6
+                1,
+                1
               ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#a855f7",
+              "fixedRatio": false
             },
             {
               "id": "tg-s7-titlebg",
@@ -2052,296 +1417,450 @@
               "left": 0,
               "top": 6,
               "width": 1000,
-              "height": 100,
+              "height": 96,
               "rotate": 0,
-              "path": "M0 0 L1000 0 L1000 100 L0 100 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                1000,
-                100
+                1,
+                1
               ],
-              "fill": "#13203a",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
+              "fill": "#0f1729",
+              "fixedRatio": false
             },
             {
               "id": "tg-s7-title",
               "type": "text",
-              "left": 20,
-              "top": 14,
-              "width": 680,
-              "height": 56,
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:30px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Algorithmic Trading</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Building a Trading System</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9",
-              "textType": "title"
+              "defaultColor": "#f1f5f9"
             },
             {
               "id": "tg-s7-sub",
               "type": "text",
-              "left": 20,
-              "top": 68,
-              "width": 680,
-              "height": 34,
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:14px;color:#94a3b8;font-weight:500;'>Systematic strategies and execution infrastructure</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Rules that remove emotion from the equation</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#64748b"
             },
             {
-              "id": "tg-s7-pillbg0",
+              "id": "tg-s7-st0bg",
               "type": "shape",
-              "left": 720,
-              "top": 14,
-              "width": 120,
-              "height": 74,
+              "left": 10,
+              "top": 118,
+              "width": 240,
+              "height": 430,
               "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                120,
-                74
+                1,
+                1
               ],
-              "fill": "#1e293b",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#a855f7"
               }
             },
             {
-              "id": "tg-s7-pill0",
+              "id": "tg-s7-st0num",
               "type": "text",
-              "left": 724,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 10,
+              "top": 128,
+              "width": 240,
+              "height": 50,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'>70%+ volume<br/><span style=\"font-size:10px;color:#64748b;\">Algo share</span></p>",
+              "content": "<p style='font-size:28px;font-weight:900;color:#a855f7;text-align:center;'>1</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#a855f7"
             },
             {
-              "id": "tg-s7-pillbg1",
-              "type": "shape",
-              "left": 858,
-              "top": 14,
-              "width": 120,
-              "height": 74,
-              "rotate": 0,
-              "path": "M10 0 L110 0 Q120 0 120 10 L120 64 Q120 74 110 74 L10 74 Q0 74 0 64 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                120,
-                74
-              ],
-              "fill": "#1e293b",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s7-pill1",
+              "id": "tg-s7-st0txt",
               "type": "text",
-              "left": 862,
-              "top": 14,
-              "width": 112,
-              "height": 74,
+              "left": 18,
+              "top": 182,
+              "width": 224,
+              "height": 354,
               "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;line-height:1.3;'><1ms edge<br/><span style=\"font-size:10px;color:#64748b;\">Latency</span></p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Journal Every Trade</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Entry reason, size, stop, target. Review weekly. Patterns reveal edge — and mistakes.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#94a3b8"
             },
             {
-              "id": "tg-s7-card0bg",
+              "id": "tg-s7-st1bg",
               "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 308,
-              "height": 446,
+              "left": 256,
+              "top": 118,
+              "width": 240,
+              "height": 430,
               "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                308,
-                446
+                1,
+                1
               ],
-              "fill": "#1a1040",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#a855f7"
               }
             },
             {
-              "id": "tg-s7-card0bar",
-              "type": "shape",
-              "left": 4,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s7-card0txt",
+              "id": "tg-s7-st1num",
               "type": "text",
-              "left": 16,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 256,
+              "top": 128,
+              "width": 240,
+              "height": 50,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#8b5cf6;margin-bottom:6px;'>Strategy Types</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Trend following: buy assets in uptrend, short downtrend \u2014 works across all asset classes historically</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Mean reversion: bet on price returning to mean \u2014 works in ranging markets, fails in trending ones</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Statistical arbitrage: exploit price discrepancies between correlated assets using pairs trading</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Market making: continuously quote bid/ask, profit from spread \u2014 requires sophisticated inventory management</p>",
+              "content": "<p style='font-size:28px;font-weight:900;color:#a855f7;text-align:center;'>2</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#a855f7"
             },
             {
-              "id": "tg-s7-card1bg",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 308,
-              "height": 446,
-              "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
-              "viewBox": [
-                308,
-                446
-              ],
-              "fill": "#0a1929",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s7-card1bar",
-              "type": "shape",
-              "left": 320,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s7-card1txt",
+              "id": "tg-s7-st1txt",
               "type": "text",
-              "left": 332,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 264,
+              "top": 182,
+              "width": 224,
+              "height": 354,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#3b82f6;margin-bottom:6px;'>Execution Infrastructure</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Co-location: server physically near exchange matching engine \u2014 reduces round-trip latency to <0.1ms</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Direct market access (DMA): bypass broker, send orders directly to exchange \u2014 essential for HFT</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Smart order routing (SOR): automatically route to best-priced venue across multiple exchanges</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>TWAP/VWAP execution: break large orders into smaller pieces over time to reduce market impact</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Max 2% Risk Per Trade</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Lose 10 trades in a row at 2% = still 82% of capital. At 10% risk = 35% left.</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#94a3b8"
             },
             {
-              "id": "tg-s7-card2bg",
+              "id": "tg-s7-st2bg",
               "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 308,
-              "height": 446,
+              "left": 502,
+              "top": 118,
+              "width": 240,
+              "height": 430,
               "rotate": 0,
-              "path": "M10 0 L298 0 Q308 0 308 10 L308 436 Q308 446 298 446 L10 446 Q0 446 0 436 L0 10 Q0 0 10 0 Z",
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
-                308,
-                446
+                1,
+                1
               ],
-              "fill": "#042f2e",
+              "fill": "#0a1628",
               "fixedRatio": false,
-              "opacity": 1.0,
               "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
+                "style": "solid",
+                "width": 1,
+                "color": "#a855f7"
               }
             },
             {
-              "id": "tg-s7-card2bar",
-              "type": "shape",
-              "left": 636,
-              "top": 116,
-              "width": 4,
-              "height": 446,
-              "rotate": 0,
-              "path": "M0 0 L4 0 L4 446 L0 446 Z",
-              "viewBox": [
-                4,
-                446
-              ],
-              "fill": "#06b6d4",
-              "fixedRatio": false,
-              "opacity": 1.0,
-              "outline": {
-                "color": "transparent",
-                "width": 0,
-                "style": "none"
-              }
-            },
-            {
-              "id": "tg-s7-card2txt",
+              "id": "tg-s7-st2num",
               "type": "text",
-              "left": 648,
-              "top": 126,
-              "width": 288,
-              "height": 426,
+              "left": 502,
+              "top": 128,
+              "width": 240,
+              "height": 50,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:700;color:#06b6d4;margin-bottom:6px;'>Backtesting & Live</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Walk-forward optimization: repeatedly re-optimize on expanding window, test on held-out data</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Paper trading: run strategy in real-time with simulated money before risking capital</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Slippage modeling: assume 50-100% of bid-ask spread as execution cost for realistic backtest</p><p style='font-size:13px;color:#cbd5e1;margin-top:6px;line-height:1.5;'>Kill switches: automatic position close if daily loss exceeds threshold \u2014 essential safety mechanism</p>",
+              "content": "<p style='font-size:28px;font-weight:900;color:#a855f7;text-align:center;'>3</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
+              "defaultColor": "#a855f7"
+            },
+            {
+              "id": "tg-s7-st2txt",
+              "type": "text",
+              "left": 510,
+              "top": 182,
+              "width": 224,
+              "height": 354,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Plan Before Entry</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Know your stop and target before you enter. No plan = emotion decides.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "tg-s7-st3bg",
+              "type": "shape",
+              "left": 748,
+              "top": 118,
+              "width": 240,
+              "height": 430,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#a855f7"
+              }
+            },
+            {
+              "id": "tg-s7-st3num",
+              "type": "text",
+              "left": 748,
+              "top": 128,
+              "width": 240,
+              "height": 50,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:900;color:#a855f7;text-align:center;'>4</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#a855f7"
+            },
+            {
+              "id": "tg-s7-st3txt",
+              "type": "text",
+              "left": 756,
+              "top": 182,
+              "width": 224,
+              "height": 354,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:8px;text-align:center;'>Review Weekly</p><p style='font-size:11px;color:#94a3b8;line-height:1.55;'>Calculate expectancy, win rate, avg R. If negative expectancy after 50+ trades — change strategy.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
             }
           ]
         }
       },
-      "order": 7
+      "order": 7,
+      "actions": [
+        {
+          "id": "action_tg-s7_0",
+          "type": "spotlight",
+          "elementId": "tg-s7-title"
+        },
+        {
+          "id": "action_tg-s7_1",
+          "type": "speech",
+          "text": "A trading system is a set of rules that removes emotion from the equation. Without rules, emotions decide — and emotions lose."
+        },
+        {
+          "id": "action_tg-s7_2",
+          "type": "spotlight",
+          "elementId": "tg-s7-sub"
+        },
+        {
+          "id": "action_tg-s7_3",
+          "type": "speech",
+          "text": "Four rules that every consistently profitable trader follows."
+        },
+        {
+          "id": "action_tg-s7_4",
+          "type": "spotlight",
+          "elementId": "tg-s7-st0txt"
+        },
+        {
+          "id": "action_tg-s7_5",
+          "type": "speech",
+          "text": "Journal every trade: entry reason, position size, stop level, and target. Review weekly. Patterns in your journal reveal both your edge and your recurring mistakes — the journal is where improvement happens."
+        },
+        {
+          "id": "action_tg-s7_6",
+          "type": "spotlight",
+          "elementId": "tg-s7-st1txt"
+        },
+        {
+          "id": "action_tg-s7_7",
+          "type": "speech",
+          "text": "Maximum 2% risk per trade. Lose 10 trades in a row at 2% and you still have 82% of your capital. At 10% risk per trade — which many beginners use — 10 consecutive losses leaves you with 35% remaining."
+        },
+        {
+          "id": "action_tg-s7_8",
+          "type": "spotlight",
+          "elementId": "tg-s7-st2txt"
+        },
+        {
+          "id": "action_tg-s7_9",
+          "type": "speech",
+          "text": "Plan before entry. Know your stop and your target before you place the trade. No plan means your emotions decide the exit. Always pre-define your risk."
+        },
+        {
+          "id": "action_tg-s7_10",
+          "type": "spotlight",
+          "elementId": "tg-s7-st3txt"
+        },
+        {
+          "id": "action_tg-s7_11",
+          "type": "speech",
+          "text": "Review weekly: calculate your expectancy, win rate, and average R multiple. If you have a negative expectancy after 50 or more trades, something in your system needs to change. Data, not feelings."
+        }
+      ]
+    },
+    {
+      "id": "tr-interactive",
+      "type": "interactive",
+      "title": "Interactive Simulation",
+      "content": {
+        "type": "interactive",
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody{background:#0b1120;color:#e2e8f0;font-family:Inter,system-ui,sans-serif;padding:20px;margin:0;}\nh2{color:#3b82f6;font-size:18px;margin:0 0 4px;}\n.sub{color:#64748b;font-size:12px;margin-bottom:16px;}\n.row{display:flex;gap:12px;margin-bottom:12px;}\n.panel{background:#0f1f3d;border:1px solid #1e3a5f;border-radius:8px;padding:14px;flex:1;}\nlabel{color:#94a3b8;font-size:11px;text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;}\ninput{width:100%;padding:8px 10px;background:#020817;border:1px solid #334155;color:#f1f5f9;border-radius:6px;font-size:13px;box-sizing:border-box;}\n.result{background:#020817;border:1px solid #334155;border-radius:6px;padding:10px;font-size:13px;margin-top:8px;}\n.big{font-size:26px;font-weight:800;}\n.stat{display:inline-block;background:#1e3a5f;border-radius:4px;padding:3px 10px;font-size:11px;font-weight:700;color:#60a5fa;margin:3px 2px;}\n.good{color:#22c55e;} .bad{color:#ef4444;} .warn{color:#f59e0b;}\n</style>\n</head>\n<body>\n<h2>Position Size + Expectancy Calculator</h2>\n<p class=\"sub\">Build a risk-managed trade plan. See position size, R/R ratio, and trade expectancy.</p>\n<div class=\"row\">\n  <div class=\"panel\">\n    <label>Account Size ($)</label>\n    <input type=\"number\" id=\"account\" value=\"10000\" oninput=\"calc()\">\n    <label style=\"margin-top:8px\">Risk per trade (%)</label>\n    <input type=\"number\" id=\"risk_pct\" value=\"2\" step=\"0.1\" oninput=\"calc()\">\n    <label style=\"margin-top:8px\">Entry price ($)</label>\n    <input type=\"number\" id=\"entry\" value=\"100\" oninput=\"calc()\">\n    <label style=\"margin-top:8px\">Stop-loss price ($)</label>\n    <input type=\"number\" id=\"stop\" value=\"95\" oninput=\"calc()\">\n    <label style=\"margin-top:8px\">Target price ($)</label>\n    <input type=\"number\" id=\"target\" value=\"115\" oninput=\"calc()\">\n    <div class=\"result\" id=\"pos_result\"></div>\n  </div>\n  <div class=\"panel\">\n    <label>Expectancy Calculator — Win Rate (%)</label>\n    <input type=\"range\" id=\"wr\" min=\"20\" max=\"80\" value=\"40\" oninput=\"calcExp()\">\n    <p style=\"color:#94a3b8;font-size:12px;margin:4px 0;\">Win rate: <span id=\"wrval\" style=\"color:#f1f5f9;font-weight:700;\">40%</span></p>\n    <label style=\"margin-top:8px\">Average win ($)</label>\n    <input type=\"number\" id=\"avg_win\" value=\"300\" oninput=\"calcExp()\">\n    <label style=\"margin-top:8px\">Average loss ($)</label>\n    <input type=\"number\" id=\"avg_loss\" value=\"100\" oninput=\"calcExp()\">\n    <div class=\"result\" id=\"exp_result\"></div>\n  </div>\n</div>\n<script>\nfunction calc(){\n  const acc=parseFloat(document.getElementById('account').value)||10000;\n  const rp=parseFloat(document.getElementById('risk_pct').value)||2;\n  const entry=parseFloat(document.getElementById('entry').value)||100;\n  const stop=parseFloat(document.getElementById('stop').value)||95;\n  const target=parseFloat(document.getElementById('target').value)||115;\n  const riskDollar=acc*rp/100;\n  const stopPct=Math.abs((entry-stop)/entry*100);\n  const posSize=stopPct>0?riskDollar/(stopPct/100):0;\n  const units=posSize/entry;\n  const rr=(target-entry)/Math.abs(entry-stop);\n  document.getElementById('pos_result').innerHTML=\n    'Risk $: <span class=\"big warn\">$'+riskDollar.toFixed(0)+'</span><br/>'+\n    '<span class=\"stat\">Position size: $'+posSize.toFixed(0)+'</span>'+\n    '<span class=\"stat\">Units: '+units.toFixed(2)+'</span>'+\n    '<span class=\"stat '+(rr>=2?'good':'warn')+'\">R/R ratio: '+rr.toFixed(2)+'R</span>'+\n    (rr<1?'<br/><span class=\"bad\" style=\"font-size:11px;\">⚠ R/R below 1 — skip this trade</span>':'');\n}\nfunction calcExp(){\n  const wr=parseInt(document.getElementById('wr').value);\n  document.getElementById('wrval').textContent=wr+'%';\n  const win=parseFloat(document.getElementById('avg_win').value)||300;\n  const loss=parseFloat(document.getElementById('avg_loss').value)||100;\n  const exp=(wr/100*win)-((100-wr)/100*loss);\n  document.getElementById('exp_result').innerHTML=\n    'Expectancy per trade: <span class=\"big '+(exp>=0?'good':'bad')+'\">$'+exp.toFixed(2)+'</span><br/>'+\n    '<span class=\"stat\">Win '+wr+'% × $'+win+' = $'+(wr/100*win).toFixed(0)+'</span>'+\n    '<span class=\"stat\">Loss '+(100-wr)+'% × $'+loss+' = $'+((100-wr)/100*loss).toFixed(0)+'</span>'+\n    (exp>0?'<br/><span class=\"good\" style=\"font-size:11px;\">✓ Positive expectancy — profitable system if consistent</span>':\n           '<br/><span class=\"bad\" style=\"font-size:11px;\">✗ Negative expectancy — fix win rate or R/R ratio</span>');\n}\ncalc(); calcExp();\n</script>\n</body>\n</html>"
+      },
+      "actions": [
+        {
+          "id": "action_tr-interactive_i0",
+          "type": "speech",
+          "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered."
+        },
+        {
+          "id": "action_tr-interactive_i1",
+          "type": "speech",
+          "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading."
+        }
+      ]
     },
     {
       "id": "tg-s8",
       "type": "quiz",
-      "title": "Knowledge Check \u2014 Trading Fundamentals",
+      "title": "Knowledge Check — Trading Fundamentals",
       "content": {
-        "type": "quiz"
+        "type": "quiz",
+        "questions": [
+          {
+            "id": "q-tg-1",
+            "type": "single",
+            "question": "RSI above 70 typically signals what?",
+            "options": [
+              {
+                "label": "Oversold conditions — likely to rise",
+                "value": "A"
+              },
+              {
+                "label": "Overbought conditions — potential reversal down",
+                "value": "B"
+              },
+              {
+                "label": "Strong trend continuation",
+                "value": "C"
+              },
+              {
+                "label": "Low volatility — consolidation phase",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "RSI > 70 = overbought. RSI < 30 = oversold. These are not guaranteed reversal signals but indicate extreme momentum conditions.",
+            "points": 1
+          },
+          {
+            "id": "q-tg-2",
+            "type": "single",
+            "question": "You have a $10,000 account and risk 2% per trade. Your stop-loss is 5% below your entry. What is your maximum position size?",
+            "options": [
+              {
+                "label": "$200",
+                "value": "A"
+              },
+              {
+                "label": "$4,000",
+                "value": "B"
+              },
+              {
+                "label": "$2,000",
+                "value": "C"
+              },
+              {
+                "label": "$500",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Risk $ = $10,000 × 2% = $200. Position size = Risk $ ÷ Stop % = $200 ÷ 0.05 = $4,000.",
+            "points": 1
+          },
+          {
+            "id": "q-tg-3",
+            "type": "single",
+            "question": "What does a funding rate of +0.1% on a perpetual futures contract mean?",
+            "options": [
+              {
+                "label": "Short traders pay long traders 0.1% every 8 hours",
+                "value": "A"
+              },
+              {
+                "label": "Long traders pay short traders 0.1% every 8 hours",
+                "value": "B"
+              },
+              {
+                "label": "The exchange charges 0.1% for holding overnight",
+                "value": "C"
+              },
+              {
+                "label": "The contract expires with 0.1% slippage",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Positive funding = longs pay shorts. It means the market is net long / bullish — longs pay to keep their positions open.",
+            "points": 1
+          },
+          {
+            "id": "q-tg-4",
+            "type": "multiple",
+            "question": "Which TWO are components of a trade's expected value (expectancy)?",
+            "options": [
+              {
+                "label": "Win rate",
+                "value": "A"
+              },
+              {
+                "label": "Average RSI reading",
+                "value": "B"
+              },
+              {
+                "label": "Average win/loss ratio",
+                "value": "C"
+              },
+              {
+                "label": "Number of indicators used",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "A",
+              "C"
+            ],
+            "analysis": "Expectancy = (Win Rate × Avg Win) − (Loss Rate × Avg Loss). Both win rate and win/loss ratio are essential.",
+            "points": 2
+          },
+          {
+            "id": "q-tg-5",
+            "type": "short_answer",
+            "question": "A trader says 'I have a 40% win rate so I must be losing money.' Is this necessarily true? Explain using the concept of expectancy.",
+            "commentPrompt": "Award full marks if student shows: a 40% win rate can be profitable with a high enough reward/risk ratio. Example: 40% × $300 win − 60% × $100 loss = $120 − $60 = +$60 positive expectancy per trade.",
+            "points": 3
+          }
+        ]
       },
-      "order": 8
+      "order": 8,
+      "actions": [
+        {
+          "id": "action_tg-s8_q0",
+          "type": "speech",
+          "text": "Time to test your knowledge! Answer each question carefully — you can review the material after the quiz."
+        },
+        {
+          "id": "action_tg-s8_q1",
+          "type": "speech",
+          "text": "Take your time with these questions. The goal is to solidify your understanding, not just pass the quiz."
+        }
+      ]
     }
   ]
 }
