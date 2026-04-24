@@ -316,7 +316,8 @@
           "type": "speech",
           "text": "\ud83d\udc40 Open Anyone can read it"
         }
-      ]
+      ],
+      "order": 1
     },
     {
       "id": "eb-s2",
@@ -663,7 +664,8 @@
           "type": "speech",
           "text": "THE BLOCKCHAIN = ALL THE BLOCKS LINKED TOGETHER IN ORDER"
         }
-      ]
+      ],
+      "order": 2
     },
     {
       "id": "eb-s3",
@@ -977,7 +979,8 @@
           "type": "speech",
           "text": "\ud83d\udd17 OnlyCrypto Runs on XRP Ledger \u2014 a blockchain that settles in 3-5 seconds with nearly zero fees. Payouts go directly to your wallet, automatically."
         }
-      ]
+      ],
+      "order": 3
     },
     {
       "id": "eb-s4",
@@ -1099,7 +1102,20 @@
             "points": 1
           }
         ]
-      }
+      },
+      "order": 4,
+      "actions": [
+        {
+          "id": "action_eb-s4_q0",
+          "type": "speech",
+          "text": "Time to test what you've learned! Answer each question and see how you do."
+        },
+        {
+          "id": "action_eb-s4_q1",
+          "type": "speech",
+          "text": "Take your time \u2014 the goal is understanding, not just getting the right answer."
+        }
+      ]
     }
   ]
 }

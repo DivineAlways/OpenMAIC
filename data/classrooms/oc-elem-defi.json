@@ -316,7 +316,8 @@
           "type": "speech",
           "text": "\ud83e\udd16 Automated Code handles everything automatically"
         }
-      ]
+      ],
+      "order": 1
     },
     {
       "id": "ed-s2",
@@ -617,7 +618,8 @@
           "type": "speech",
           "text": "\ud83c\udfe6 No Human Zero bank employees involved"
         }
-      ]
+      ],
+      "order": 2
     },
     {
       "id": "ed-s3",
@@ -739,7 +741,20 @@
             "points": 1
           }
         ]
-      }
+      },
+      "order": 3,
+      "actions": [
+        {
+          "id": "action_ed-s3_q0",
+          "type": "speech",
+          "text": "Time to test what you've learned! Answer each question and see how you do."
+        },
+        {
+          "id": "action_ed-s3_q1",
+          "type": "speech",
+          "text": "Take your time \u2014 the goal is understanding, not just getting the right answer."
+        }
+      ]
     }
   ]
 }

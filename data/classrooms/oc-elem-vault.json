@@ -316,7 +316,8 @@
           "type": "speech",
           "text": "\ud83d\udd04 Rewatch Same video makes more sense after you've learned more"
         }
-      ]
+      ],
+      "order": 1
     },
     {
       "id": "ev-s2",
@@ -617,7 +618,8 @@
           "type": "speech",
           "text": "\u26fd Gas Fee Small fee paid to process a transaction"
         }
-      ]
+      ],
+      "order": 2
     },
     {
       "id": "ev-s3",
@@ -739,7 +741,20 @@
             "points": 1
           }
         ]
-      }
+      },
+      "order": 3,
+      "actions": [
+        {
+          "id": "action_ev-s3_q0",
+          "type": "speech",
+          "text": "Time to test what you've learned! Answer each question and see how you do."
+        },
+        {
+          "id": "action_ev-s3_q1",
+          "type": "speech",
+          "text": "Take your time \u2014 the goal is understanding, not just getting the right answer."
+        }
+      ]
     }
   ]
 }

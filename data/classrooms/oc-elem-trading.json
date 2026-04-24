@@ -316,7 +316,8 @@
           "type": "speech",
           "text": "\ud83c\udf89 Keep Profit The difference is yours!"
         }
-      ]
+      ],
+      "order": 1
     },
     {
       "id": "et-s2",
@@ -617,7 +618,8 @@
           "type": "speech",
           "text": "\ud83d\ude34 While You Sleep No screen-watching needed"
         }
-      ]
+      ],
+      "order": 2
     },
     {
       "id": "et-s3",
@@ -739,7 +741,20 @@
             "points": 1
           }
         ]
-      }
+      },
+      "order": 3,
+      "actions": [
+        {
+          "id": "action_et-s3_q0",
+          "type": "speech",
+          "text": "Time to test what you've learned! Answer each question and see how you do."
+        },
+        {
+          "id": "action_et-s3_q1",
+          "type": "speech",
+          "text": "Take your time \u2014 the goal is understanding, not just getting the right answer."
+        }
+      ]
     }
   ]
 }
