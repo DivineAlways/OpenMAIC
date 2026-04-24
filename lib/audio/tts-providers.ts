@@ -142,6 +142,9 @@ export async function generateTTS(
     case 'azure-tts':
       return await generateAzureTTS(config, text);
 
+    case 'edge-tts':
+      return await generateEdgeTTS(config, text);
+
     case 'glm-tts':
       return await generateGLMTTS(config, text);
 
@@ -242,6 +245,41 @@ async function generateAzureTTS(
     audio: new Uint8Array(arrayBuffer),
     format: 'mp3',
   };
+}
+
+/**
+ * Edge TTS — uses Microsoft Edge's free neural TTS via the edge-tts Python package.
+ * No API key required. en-US-AvaNeural is the same voice used in OC remotion videos.
+ * Falls back gracefully if edge-tts is not installed on the host.
+ */
+async function generateEdgeTTS(config: TTSModelConfig, text: string): Promise<TTSGenerationResult> {
+  const { execFile } = await import('child_process');
+  const { promisify } = await import('util');
+  const { tmpdir } = await import('os');
+  const { join } = await import('path');
+  const { readFile, unlink } = await import('fs/promises');
+  const execFileAsync = promisify(execFile);
+
+  const voice = config.voice || 'en-US-AvaNeural';
+  const rate = config.speed && config.speed !== 1.0
+    ? `${config.speed > 1 ? '+' : ''}${Math.round((config.speed - 1) * 100)}%`
+    : '+0%';
+
+  const outFile = join(tmpdir(), `edge-tts-${Date.now()}-${Math.random().toString(36).slice(2)}.mp3`);
+
+  try {
+    await execFileAsync('edge-tts', [
+      '--voice', voice,
+      '--rate', rate,
+      '--text', text,
+      '--write-media', outFile,
+    ], { timeout: 25000 });
+
+    const audioBuffer = await readFile(outFile);
+    return { audio: new Uint8Array(audioBuffer), format: 'mp3' };
+  } finally {
+    unlink(outFile).catch(() => {});
+  }
 }
 
 /**

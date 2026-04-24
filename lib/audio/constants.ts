@@ -231,6 +231,26 @@ export const TTS_PROVIDERS: Record<BuiltInTTSProviderId, TTSProviderConfig> = {
     speedRange: { min: 0.5, max: 2.0, default: 1.0 },
   },
 
+  'edge-tts': {
+    id: 'edge-tts',
+    name: 'Edge TTS (Free)',
+    requiresApiKey: false,
+    defaultBaseUrl: 'wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud',
+    icon: '/logos/browser.svg',
+    models: [],
+    defaultModelId: '',
+    voices: [
+      { id: 'en-US-AvaNeural', name: 'Ava', language: 'en-US', gender: 'female', description: 'Expressive, caring, friendly — used in OC videos' },
+      { id: 'en-US-AvaMultilingualNeural', name: 'Ava Multilingual', language: 'en-US', gender: 'female', description: 'Same Ava voice, multilingual capable' },
+      { id: 'en-US-JennyNeural', name: 'Jenny', language: 'en-US', gender: 'female', description: 'Conversational and warm' },
+      { id: 'en-US-GuyNeural', name: 'Guy', language: 'en-US', gender: 'male', description: 'Friendly and clear' },
+      { id: 'en-US-AriaNeural', name: 'Aria', language: 'en-US', gender: 'female', description: 'Expressive narrator' },
+      { id: 'en-US-DavisNeural', name: 'Davis', language: 'en-US', gender: 'male', description: 'Confident and professional' },
+    ],
+    supportedFormats: ['mp3'],
+    speedRange: { min: 0.5, max: 2.0, default: 1.0 },
+  },
+
   'glm-tts': {
     id: 'glm-tts',
     name: 'GLM TTS',
@@ -1128,6 +1148,7 @@ export const ASR_PROVIDERS: Record<BuiltInASRProviderId, ASRProviderConfig> = {
 export const DEFAULT_TTS_VOICES: Record<BuiltInTTSProviderId, string> = {
   'openai-tts': 'alloy',
   'azure-tts': 'zh-CN-XiaoxiaoNeural',
+  'edge-tts': 'en-US-AvaNeural',
   'glm-tts': 'tongtong',
   'qwen-tts': 'Cherry',
   'doubao-tts': 'zh_female_vv_uranus_bigtts',
@@ -1139,6 +1160,7 @@ export const DEFAULT_TTS_VOICES: Record<BuiltInTTSProviderId, string> = {
 export const DEFAULT_TTS_MODELS: Record<BuiltInTTSProviderId, string> = {
   'openai-tts': 'gpt-4o-mini-tts',
   'azure-tts': '',
+  'edge-tts': '',
   'glm-tts': 'glm-tts',
   'qwen-tts': 'qwen3-tts-flash',
   'doubao-tts': '',
