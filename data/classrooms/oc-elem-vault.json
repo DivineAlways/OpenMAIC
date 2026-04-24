@@ -1,0 +1,601 @@
+{
+  "id": "oc-elem-vault",
+  "createdAt": "2026-04-24T12:00:00.000Z",
+  "stage": {
+    "id": "oc-elem-vault",
+    "name": "Beginner Video Vault (Elementary)",
+    "description": "How to learn from videos, a starter glossary, and what the OnlyCrypto series covers.",
+    "createdAt": "2026-04-24T12:00:00.000Z",
+    "updatedAt": "2026-04-24T12:00:00.000Z",
+    "languageDirective": "en-US",
+    "style": "academic",
+    "agentIds": [
+      "default-1",
+      "default-2",
+      "default-3"
+    ],
+    "generatedAgentConfigs": []
+  },
+  "scenes": [
+    {
+      "id": "ev-s1",
+      "type": "slide",
+      "title": "Learn by Watching",
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ev-s1-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#8b5cf6",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ev-s1-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf6",
+              "fixedRatio": false
+            },
+            {
+              "id": "ev-s1-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ev-s1-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83c\udfac Learn by Watching</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ev-s1-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Videos that explain crypto in plain language</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ev-s1-body",
+              "type": "text",
+              "left": 24,
+              "top": 110,
+              "width": 950,
+              "height": 130,
+              "rotate": 0,
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'>Sometimes the best way to learn is to <b style='color:#a78bfa;'>watch someone explain it</b>. The OnlyCrypto video series covers the biggest concepts \u2014 from how XRP works to how copy trading can grow your money while you sleep. Each video is picked because it explains things clearly, even if you're brand new.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ev-s1-box0",
+              "type": "shape",
+              "left": 24,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98118",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "ev-s1-bt0",
+              "type": "text",
+              "left": 32,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udcdd</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Take Notes</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Write words you don't know and look them up</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "ev-s1-box1",
+              "type": "shape",
+              "left": 264,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f618",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "ev-s1-bt1",
+              "type": "text",
+              "left": 272,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\u23f8\ufe0f</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Pause & Rewind</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Don't rush \u2014 understanding beats speed</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "ev-s1-box2",
+              "type": "shape",
+              "left": 504,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf618",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#8b5cf6"
+              }
+            },
+            {
+              "id": "ev-s1-bt2",
+              "type": "text",
+              "left": 512,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\u2753</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Ask Questions</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Use the AI Classroom to ask anything</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#8b5cf6"
+            },
+            {
+              "id": "ev-s1-box3",
+              "type": "shape",
+              "left": 744,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b18",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ev-s1-bt3",
+              "type": "text",
+              "left": 752,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udd04</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Rewatch</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Same video makes more sense after you've learned more</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ev-s2",
+      "type": "slide",
+      "title": "Crypto Glossary",
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ev-s2-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#8b5cf6",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ev-s2-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf6",
+              "fixedRatio": false
+            },
+            {
+              "id": "ev-s2-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ev-s2-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83d\udcd6 Crypto Glossary</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ev-s2-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Words you'll hear all the time</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ev-s2-body",
+              "type": "text",
+              "left": 24,
+              "top": 110,
+              "width": 950,
+              "height": 130,
+              "rotate": 0,
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.6;'><b style='color:#a78bfa;'>HODL</b> \u2014 Hold On for Dear Life (don't sell!) &nbsp;|&nbsp; <b style='color:#a78bfa;'>Bull Market</b> \u2014 prices going up &nbsp;|&nbsp; <b style='color:#a78bfa;'>Bear Market</b> \u2014 prices going down &nbsp;|&nbsp; <b style='color:#a78bfa;'>FOMO</b> \u2014 Fear Of Missing Out &nbsp;|&nbsp; <b style='color:#a78bfa;'>Dip</b> \u2014 temporary price drop &nbsp;|&nbsp; <b style='color:#a78bfa;'>Gas Fee</b> \u2014 cost to process a transaction &nbsp;|&nbsp; <b style='color:#a78bfa;'>ATH</b> \u2014 All Time High price ever</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ev-s2-box0",
+              "type": "shape",
+              "left": 24,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98118",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "ev-s2-bt0",
+              "type": "text",
+              "left": 32,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udcc8</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Bull Market</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Prices going up \u2014 everyone buying</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "ev-s2-box1",
+              "type": "shape",
+              "left": 264,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f618",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "ev-s2-bt1",
+              "type": "text",
+              "left": 272,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udcc9</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Bear Market</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Prices going down \u2014 people cautious</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "ev-s2-box2",
+              "type": "shape",
+              "left": 504,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf618",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#8b5cf6"
+              }
+            },
+            {
+              "id": "ev-s2-bt2",
+              "type": "text",
+              "left": 512,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udc8e</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>HODL</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Keep your coins, don't panic sell</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#8b5cf6"
+            },
+            {
+              "id": "ev-s2-box3",
+              "type": "shape",
+              "left": 744,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b18",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ev-s2-bt3",
+              "type": "text",
+              "left": 752,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\u26fd</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Gas Fee</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Small fee paid to process a transaction</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ev-s3",
+      "type": "quiz",
+      "title": "Knowledge Check \u2014 Crypto Glossary",
+      "content": {
+        "type": "quiz",
+        "questions": [
+          {
+            "id": "q-ev-1",
+            "type": "single",
+            "question": "What does 'HODL' mean in crypto?",
+            "options": [
+              {
+                "label": "A type of blockchain",
+                "value": "A"
+              },
+              {
+                "label": "Hold On for Dear Life \u2014 keeping your crypto instead of selling",
+                "value": "B"
+              },
+              {
+                "label": "A fee paid to miners",
+                "value": "C"
+              },
+              {
+                "label": "A way to borrow crypto",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "HODL started as a typo for 'hold' that went viral. It means holding onto your crypto through price swings instead of panic-selling \u2014 a strategy many long-term investors swear by.",
+            "points": 1
+          },
+          {
+            "id": "q-ev-2",
+            "type": "single",
+            "question": "What is a 'bull market'?",
+            "options": [
+              {
+                "label": "A market where prices are falling",
+                "value": "A"
+              },
+              {
+                "label": "A market where only bulls can trade",
+                "value": "B"
+              },
+              {
+                "label": "A market where prices are rising and people are buying",
+                "value": "C"
+              },
+              {
+                "label": "A market that is closed",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "C"
+            ],
+            "analysis": "A bull market is when prices are trending upward. The name comes from the image of a bull charging forward with horns up. Bear market is the opposite \u2014 prices trending down.",
+            "points": 1
+          },
+          {
+            "id": "q-ev-3",
+            "type": "single",
+            "question": "What is a 'gas fee'?",
+            "options": [
+              {
+                "label": "The cost of electricity to run a computer",
+                "value": "A"
+              },
+              {
+                "label": "A small fee paid to process a transaction on a blockchain",
+                "value": "B"
+              },
+              {
+                "label": "A tax charged by the government on crypto",
+                "value": "C"
+              },
+              {
+                "label": "The profit a trader makes on a trade",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Gas fees are small charges you pay to the blockchain network to process your transaction. On Ethereum they can be high. On XRP they're fractions of a cent.",
+            "points": 1
+          },
+          {
+            "id": "q-ev-4",
+            "type": "single",
+            "question": "What does ATH stand for?",
+            "options": [
+              {
+                "label": "Automated Trading Hub",
+                "value": "A"
+              },
+              {
+                "label": "All Time High \u2014 the highest price a coin has ever reached",
+                "value": "B"
+              },
+              {
+                "label": "Annual Transaction History",
+                "value": "C"
+              },
+              {
+                "label": "Average Token Holding",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "ATH = All Time High. When people say 'Bitcoin hit a new ATH,' it means Bitcoin just reached the highest price it has ever been in its history.",
+            "points": 1
+          }
+        ]
+      }
+    }
+  ]
+}

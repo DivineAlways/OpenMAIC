@@ -1,0 +1,601 @@
+{
+  "id": "oc-elem-wallets",
+  "createdAt": "2026-04-24T12:00:00.000Z",
+  "stage": {
+    "id": "oc-elem-wallets",
+    "name": "Wallets & Safety (Elementary)",
+    "description": "What crypto wallets are, how keys work, and how to stay safe.",
+    "createdAt": "2026-04-24T12:00:00.000Z",
+    "updatedAt": "2026-04-24T12:00:00.000Z",
+    "languageDirective": "en-US",
+    "style": "academic",
+    "agentIds": [
+      "default-1",
+      "default-2",
+      "default-3"
+    ],
+    "generatedAgentConfigs": []
+  },
+  "scenes": [
+    {
+      "id": "ew-s1",
+      "type": "slide",
+      "title": "What is a Crypto Wallet?",
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ew-s1-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#ef4444",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ew-s1-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef4444",
+              "fixedRatio": false
+            },
+            {
+              "id": "ew-s1-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ew-s1-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83d\udc5b What is a Crypto Wallet?</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ew-s1-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Your key to your crypto \u2014 not a physical wallet</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ew-s1-body",
+              "type": "text",
+              "left": 24,
+              "top": 110,
+              "width": 950,
+              "height": 130,
+              "rotate": 0,
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'>A crypto wallet doesn't actually <em>store</em> your coins \u2014 your coins live on the blockchain. What a wallet stores are your <b style='color:#f87171;'>secret keys</b> \u2014 the passwords that prove the coins belong to you. Think of it like a <b style='color:#f1f5f9;'>mailbox key</b>. Your crypto is in the mailbox (blockchain). The key proves it's yours. Lose the key \u2014 someone else opens your mailbox.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ew-s1-box0",
+              "type": "shape",
+              "left": 24,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98118",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "ew-s1-bt0",
+              "type": "text",
+              "left": 32,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udd11</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Public Key</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Like your address \u2014 safe to share</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "ew-s1-box1",
+              "type": "shape",
+              "left": 264,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f618",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "ew-s1-bt1",
+              "type": "text",
+              "left": 272,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\ud83e\udd2b</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Private Key</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Like your house key \u2014 NEVER share</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "ew-s1-box2",
+              "type": "shape",
+              "left": 504,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf618",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#8b5cf6"
+              }
+            },
+            {
+              "id": "ew-s1-bt2",
+              "type": "text",
+              "left": 512,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udd25</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Hot Wallet</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Connected to internet \u2014 easy to use</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#8b5cf6"
+            },
+            {
+              "id": "ew-s1-box3",
+              "type": "shape",
+              "left": 744,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b18",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ew-s1-bt3",
+              "type": "text",
+              "left": 752,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\ud83e\uddca</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Cold Wallet</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Offline \u2014 safest for large amounts</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ew-s2",
+      "type": "slide",
+      "title": "The Seed Phrase",
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ew-s2-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#ef4444",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ew-s2-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef4444",
+              "fixedRatio": false
+            },
+            {
+              "id": "ew-s2-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ew-s2-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83d\udcdd The Seed Phrase</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ew-s2-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The master key to your entire wallet</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ew-s2-body",
+              "type": "text",
+              "left": 24,
+              "top": 110,
+              "width": 950,
+              "height": 130,
+              "rotate": 0,
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'>When you set up a wallet, you get a <b style='color:#f87171;'>seed phrase</b> \u2014 usually 12 or 24 random words like: <em style='color:#60a5fa;'>apple river cloud sunset forest key...</em> These words can restore your entire wallet if your phone breaks. But they're also dangerous \u2014 <b style='color:#f1f5f9;'>anyone with your seed phrase owns your wallet.</b></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ew-s2-box0",
+              "type": "shape",
+              "left": 24,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98118",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "ew-s2-bt0",
+              "type": "text",
+              "left": 32,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\u2705</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Write on Paper</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Store it somewhere safe</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "ew-s2-box1",
+              "type": "shape",
+              "left": 264,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f618",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "ew-s2-bt1",
+              "type": "text",
+              "left": 272,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\u274c</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>No Screenshots</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Never photograph it</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "ew-s2-box2",
+              "type": "shape",
+              "left": 504,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf618",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#8b5cf6"
+              }
+            },
+            {
+              "id": "ew-s2-bt2",
+              "type": "text",
+              "left": 512,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\u274c</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Never Share</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Not with anyone \u2014 ever</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#8b5cf6"
+            },
+            {
+              "id": "ew-s2-box3",
+              "type": "shape",
+              "left": 744,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b18",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ew-s2-bt3",
+              "type": "text",
+              "left": 752,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\u2705</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Multiple Copies</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Store in separate safe places</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ew-s3",
+      "type": "quiz",
+      "title": "Knowledge Check \u2014 Wallets & Safety",
+      "content": {
+        "type": "quiz",
+        "questions": [
+          {
+            "id": "q-ew-1",
+            "type": "single",
+            "question": "What does a crypto wallet actually store?",
+            "options": [
+              {
+                "label": "Your cryptocurrency coins",
+                "value": "A"
+              },
+              {
+                "label": "Your secret keys that prove ownership of your coins",
+                "value": "B"
+              },
+              {
+                "label": "A copy of the entire blockchain",
+                "value": "C"
+              },
+              {
+                "label": "Your bank account details",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Your coins live on the blockchain \u2014 the wallet stores your private keys, which prove you own those coins. Whoever has the keys, owns the coins.",
+            "points": 1
+          },
+          {
+            "id": "q-ew-2",
+            "type": "single",
+            "question": "What is your public key like?",
+            "options": [
+              {
+                "label": "Your house key \u2014 never share it",
+                "value": "A"
+              },
+              {
+                "label": "Your home address \u2014 safe to share so people can send you crypto",
+                "value": "B"
+              },
+              {
+                "label": "Your seed phrase",
+                "value": "C"
+              },
+              {
+                "label": "Your bank PIN",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Your public key is like your address. Share it with anyone who wants to send you crypto. It's completely safe to share.",
+            "points": 1
+          },
+          {
+            "id": "q-ew-3",
+            "type": "single",
+            "question": "Which of these is the MOST dangerous thing to do with your seed phrase?",
+            "options": [
+              {
+                "label": "Write it on paper and lock it in a safe",
+                "value": "A"
+              },
+              {
+                "label": "Make two copies stored in separate locations",
+                "value": "B"
+              },
+              {
+                "label": "Type it into a website that claims to 'verify' your wallet",
+                "value": "C"
+              },
+              {
+                "label": "Memorize it",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "C"
+            ],
+            "analysis": "Typing your seed phrase into ANY website is one of the fastest ways to lose all your crypto. Scammers build fake sites specifically to steal seed phrases.",
+            "points": 1
+          },
+          {
+            "id": "q-ew-4",
+            "type": "single",
+            "question": "What is the difference between a hot wallet and a cold wallet?",
+            "options": [
+              {
+                "label": "Hot wallets are better for large savings, cold wallets for daily spending",
+                "value": "A"
+              },
+              {
+                "label": "Hot wallets are connected to the internet (easier but riskier), cold wallets are offline (safer for large amounts)",
+                "value": "B"
+              },
+              {
+                "label": "Cold wallets are illegal in most countries",
+                "value": "C"
+              },
+              {
+                "label": "There is no real difference",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Hot wallets stay connected to the internet \u2014 easy to use but more vulnerable. Cold wallets are offline devices like hardware wallets \u2014 harder to hack but less convenient for daily use.",
+            "points": 1
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,601 @@
+{
+  "id": "oc-elem-defi",
+  "createdAt": "2026-04-24T12:00:00.000Z",
+  "stage": {
+    "id": "oc-elem-defi",
+    "name": "What is DeFi? (Elementary)",
+    "description": "Banking without banks \u2014 explained for complete beginners.",
+    "createdAt": "2026-04-24T12:00:00.000Z",
+    "updatedAt": "2026-04-24T12:00:00.000Z",
+    "languageDirective": "en-US",
+    "style": "academic",
+    "agentIds": [
+      "default-1",
+      "default-2",
+      "default-3"
+    ],
+    "generatedAgentConfigs": []
+  },
+  "scenes": [
+    {
+      "id": "ed-s1",
+      "type": "slide",
+      "title": "What is DeFi?",
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ed-s1-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#10b981",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ed-s1-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b981",
+              "fixedRatio": false
+            },
+            {
+              "id": "ed-s1-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ed-s1-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83c\udfd7\ufe0f What is DeFi?</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ed-s1-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Banking without banks \u2014 powered by code</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ed-s1-body",
+              "type": "text",
+              "left": 24,
+              "top": 110,
+              "width": 950,
+              "height": 130,
+              "rotate": 0,
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'><b style='color:#34d399;'>DeFi</b> stands for <b style='color:#f1f5f9;'>Decentralized Finance</b>. It's a way to do banking stuff \u2014 saving, borrowing, earning interest \u2014 <b style='color:#34d399;'>without using a real bank</b>. Instead of people running it, <b style='color:#f1f5f9;'>computer programs</b> (called smart contracts) do everything automatically. No waiting, no paperwork, no business hours.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ed-s1-box0",
+              "type": "shape",
+              "left": 24,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98118",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "ed-s1-bt0",
+              "type": "text",
+              "left": 32,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udd50</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Open 24/7/365</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Never closed \u2014 no holidays</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "ed-s1-box1",
+              "type": "shape",
+              "left": 264,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f618",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "ed-s1-bt1",
+              "type": "text",
+              "left": 272,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\ud83c\udf0d</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>No Approval</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Anyone can use it \u2014 no application</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "ed-s1-box2",
+              "type": "shape",
+              "left": 504,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf618",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#8b5cf6"
+              }
+            },
+            {
+              "id": "ed-s1-bt2",
+              "type": "text",
+              "left": 512,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\u26a1</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Instant</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Transfers happen in seconds</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#8b5cf6"
+            },
+            {
+              "id": "ed-s1-box3",
+              "type": "shape",
+              "left": 744,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b18",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ed-s1-bt3",
+              "type": "text",
+              "left": 752,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\ud83e\udd16</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Automated</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Code handles everything automatically</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ed-s2",
+      "type": "slide",
+      "title": "What is a Smart Contract?",
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ed-s2-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#10b981",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ed-s2-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b981",
+              "fixedRatio": false
+            },
+            {
+              "id": "ed-s2-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ed-s2-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83e\udd16 What is a Smart Contract?</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ed-s2-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Like a vending machine \u2014 put money in, get exactly what was promised</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ed-s2-body",
+              "type": "text",
+              "left": 24,
+              "top": 110,
+              "width": 950,
+              "height": 130,
+              "rotate": 0,
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'>A <b style='color:#34d399;'>smart contract</b> is a program on the blockchain. When certain conditions are met, it <b style='color:#f1f5f9;'>automatically does something</b> \u2014 no human needed. Think of a vending machine: put in money, press a button, get your snack. No cashier. No waiting. The machine just does it.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ed-s2-box0",
+              "type": "shape",
+              "left": 24,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98118",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "ed-s2-bt0",
+              "type": "text",
+              "left": 32,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udcb0</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Deposit Crypto</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>You put in $100 of ETH as collateral</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "ed-s2-box1",
+              "type": "shape",
+              "left": 264,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f618",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "ed-s2-bt1",
+              "type": "text",
+              "left": 272,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\ud83e\udd16</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Auto Lend</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Contract lends you $70 instantly</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "ed-s2-box2",
+              "type": "shape",
+              "left": 504,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf618",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#8b5cf6"
+              }
+            },
+            {
+              "id": "ed-s2-bt2",
+              "type": "text",
+              "left": 512,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\u2705</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Pay Back</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Return it + fee, get ETH back auto</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#8b5cf6"
+            },
+            {
+              "id": "ed-s2-box3",
+              "type": "shape",
+              "left": 744,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b18",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ed-s2-bt3",
+              "type": "text",
+              "left": 752,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\ud83c\udfe6</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>No Human</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Zero bank employees involved</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ed-s3",
+      "type": "quiz",
+      "title": "Knowledge Check \u2014 DeFi Basics",
+      "content": {
+        "type": "quiz",
+        "questions": [
+          {
+            "id": "q-ed-1",
+            "type": "single",
+            "question": "What does DeFi stand for?",
+            "options": [
+              {
+                "label": "Digital Finance",
+                "value": "A"
+              },
+              {
+                "label": "Decentralized Finance",
+                "value": "B"
+              },
+              {
+                "label": "Distributed Funds",
+                "value": "C"
+              },
+              {
+                "label": "Deferred Finance",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "DeFi stands for Decentralized Finance \u2014 financial services that run on blockchains without banks or other middlemen.",
+            "points": 1
+          },
+          {
+            "id": "q-ed-2",
+            "type": "single",
+            "question": "What is a smart contract?",
+            "options": [
+              {
+                "label": "A legal document signed digitally",
+                "value": "A"
+              },
+              {
+                "label": "A program on the blockchain that automatically executes when conditions are met",
+                "value": "B"
+              },
+              {
+                "label": "A type of cryptocurrency",
+                "value": "C"
+              },
+              {
+                "label": "A bank account with smart features",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "A smart contract is code on the blockchain that runs automatically when certain conditions are met \u2014 like a vending machine that gives you a snack the moment you put in the right amount.",
+            "points": 1
+          },
+          {
+            "id": "q-ed-3",
+            "type": "single",
+            "question": "Which is an advantage of DeFi over a traditional bank?",
+            "options": [
+              {
+                "label": "It requires a credit check",
+                "value": "A"
+              },
+              {
+                "label": "It's only open on weekdays",
+                "value": "B"
+              },
+              {
+                "label": "Anyone can access it 24/7 with no approval needed",
+                "value": "C"
+              },
+              {
+                "label": "The government guarantees your money",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "C"
+            ],
+            "analysis": "DeFi is open to everyone, 24 hours a day, 7 days a week. You don't need a bank account, a credit score, or anyone's approval.",
+            "points": 1
+          },
+          {
+            "id": "q-ed-4",
+            "type": "single",
+            "question": "How does OnlyCrypto's payout system relate to DeFi concepts?",
+            "options": [
+              {
+                "label": "Payouts are approved manually by staff",
+                "value": "A"
+              },
+              {
+                "label": "Payouts happen automatically without anyone approving them \u2014 similar to smart contracts",
+                "value": "B"
+              },
+              {
+                "label": "Members must go to a bank to receive payouts",
+                "value": "C"
+              },
+              {
+                "label": "Payouts happen once a year",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "OnlyCrypto's payouts work like DeFi \u2014 they happen automatically using the XRP Ledger. When you earn a payout, the system sends XRP to your wallet without anyone manually approving it.",
+            "points": 1
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,601 @@
+{
+  "id": "oc-elem-crypto",
+  "createdAt": "2026-04-24T12:00:00.000Z",
+  "stage": {
+    "id": "oc-elem-crypto",
+    "name": "What is Cryptocurrency? (Elementary)",
+    "description": "Beginner-friendly intro to digital money, famous coins, and how to stay safe.",
+    "createdAt": "2026-04-24T12:00:00.000Z",
+    "updatedAt": "2026-04-24T12:00:00.000Z",
+    "languageDirective": "en-US",
+    "style": "academic",
+    "agentIds": [
+      "default-1",
+      "default-2",
+      "default-3"
+    ],
+    "generatedAgentConfigs": []
+  },
+  "scenes": [
+    {
+      "id": "ec-s1",
+      "type": "slide",
+      "title": "What is Cryptocurrency?",
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ec-s1-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f59e0b",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ec-s1-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "ec-s1-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ec-s1-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83e\ude99 What is Cryptocurrency?</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ec-s1-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Digital money you can use without a bank</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ec-s1-body",
+              "type": "text",
+              "left": 24,
+              "top": 110,
+              "width": 950,
+              "height": 130,
+              "rotate": 0,
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'>Cryptocurrency is <b style='color:#fbbf24;'>digital money</b> \u2014 like the coins and bills you use at a store, but it only exists on computers and phones. You can't hold it in your hand, but you can use it to buy things, send it to friends, or save it. The 'crypto' part means it uses secret codes called <b style='color:#f1f5f9;'>cryptography</b> to keep everything safe \u2014 so only the real owner can spend it.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ec-s1-box0",
+              "type": "shape",
+              "left": 24,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98118",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "ec-s1-bt0",
+              "type": "text",
+              "left": 32,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udcbb</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>100% Digital</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Lives on computers \u2014 no physical coins</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "ec-s1-box1",
+              "type": "shape",
+              "left": 264,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f618",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "ec-s1-bt1",
+              "type": "text",
+              "left": 272,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udd10</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Super Secure</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Protected by math no hacker can crack</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "ec-s1-box2",
+              "type": "shape",
+              "left": 504,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf618",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#8b5cf6"
+              }
+            },
+            {
+              "id": "ec-s1-bt2",
+              "type": "text",
+              "left": 512,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\ud83c\udf10</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Works Everywhere</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Send money to anyone in seconds</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#8b5cf6"
+            },
+            {
+              "id": "ec-s1-box3",
+              "type": "shape",
+              "left": 744,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b18",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ec-s1-bt3",
+              "type": "text",
+              "left": 752,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\ud83e\udd1d</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>No Middleman</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Send directly to a friend \u2014 no bank needed</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ec-s2",
+      "type": "slide",
+      "title": "Famous Cryptocurrencies",
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ec-s2-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f59e0b",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ec-s2-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "ec-s2-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ec-s2-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83c\udfc6 Famous Cryptocurrencies</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ec-s2-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The big names you'll hear everywhere</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ec-s2-body",
+              "type": "text",
+              "left": 24,
+              "top": 110,
+              "width": 950,
+              "height": 130,
+              "rotate": 0,
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'>There are thousands of cryptocurrencies. <b style='color:#fbbf24;'>Bitcoin</b> was the first (2009) \u2014 like digital gold. <b style='color:#8b5cf6;'>Ethereum</b> can run programs called smart contracts. <b style='color:#3b82f6;'>XRP</b> is built for super-fast payments \u2014 it settles in 3-5 seconds and is what <b style='color:#f1f5f9;'>OnlyCrypto</b> uses for payouts!</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ec-s2-box0",
+              "type": "shape",
+              "left": 24,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98118",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "ec-s2-bt0",
+              "type": "text",
+              "left": 32,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\u20bf</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Bitcoin (BTC)</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>The original \u2014 only 21M will ever exist</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "ec-s2-box1",
+              "type": "shape",
+              "left": 264,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f618",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "ec-s2-bt1",
+              "type": "text",
+              "left": 272,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\u039e</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Ethereum (ETH)</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Runs apps and smart contracts</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "ec-s2-box2",
+              "type": "shape",
+              "left": 504,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf618",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#8b5cf6"
+              }
+            },
+            {
+              "id": "ec-s2-bt2",
+              "type": "text",
+              "left": 512,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\u2715</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>XRP</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>3-5 sec payments \u2014 OnlyCrypto's coin</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#8b5cf6"
+            },
+            {
+              "id": "ec-s2-box3",
+              "type": "shape",
+              "left": 744,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b18",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ec-s2-bt3",
+              "type": "text",
+              "left": 752,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\ud83c\udf0a</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Thousands more</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>New coins launch every day</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ec-s3",
+      "type": "quiz",
+      "title": "Knowledge Check \u2014 Cryptocurrency Basics",
+      "content": {
+        "type": "quiz",
+        "questions": [
+          {
+            "id": "q-ec-1",
+            "type": "single",
+            "question": "What does 'crypto' in cryptocurrency mean?",
+            "options": [
+              {
+                "label": "It is stored in a physical safe",
+                "value": "A"
+              },
+              {
+                "label": "It uses secret codes (cryptography) to stay secure",
+                "value": "B"
+              },
+              {
+                "label": "It can only be used online for games",
+                "value": "C"
+              },
+              {
+                "label": "It was invented by a government",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "'Crypto' comes from cryptography \u2014 the science of using math-based secret codes. These codes make sure only the real owner of a coin can spend it.",
+            "points": 1
+          },
+          {
+            "id": "q-ec-2",
+            "type": "single",
+            "question": "Which cryptocurrency does OnlyCrypto use for payouts?",
+            "options": [
+              {
+                "label": "Bitcoin",
+                "value": "A"
+              },
+              {
+                "label": "Ethereum",
+                "value": "B"
+              },
+              {
+                "label": "XRP",
+                "value": "C"
+              },
+              {
+                "label": "Dogecoin",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "C"
+            ],
+            "analysis": "OnlyCrypto uses XRP (the XRP Ledger) because it settles in 3-5 seconds and has nearly zero fees \u2014 perfect for automatic payouts.",
+            "points": 1
+          },
+          {
+            "id": "q-ec-3",
+            "type": "single",
+            "question": "How many Bitcoin will ever exist in total?",
+            "options": [
+              {
+                "label": "Unlimited",
+                "value": "A"
+              },
+              {
+                "label": "1 billion",
+                "value": "B"
+              },
+              {
+                "label": "21 million",
+                "value": "C"
+              },
+              {
+                "label": "100 thousand",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "C"
+            ],
+            "analysis": "Bitcoin has a hard cap of 21 million coins \u2014 ever. This scarcity is one reason people treat it like digital gold.",
+            "points": 1
+          },
+          {
+            "id": "q-ec-4",
+            "type": "single",
+            "question": "Which of these is TRUE about cryptocurrency?",
+            "options": [
+              {
+                "label": "A bank must approve every transaction",
+                "value": "A"
+              },
+              {
+                "label": "You need a physical wallet to store it",
+                "value": "B"
+              },
+              {
+                "label": "You can send it to anyone in the world in seconds",
+                "value": "C"
+              },
+              {
+                "label": "Only governments can use it",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "C"
+            ],
+            "analysis": "Crypto lets you send money to anyone, anywhere, in seconds \u2014 with no bank approval needed. That's what makes it revolutionary.",
+            "points": 1
+          }
+        ]
+      }
+    }
+  ]
+}

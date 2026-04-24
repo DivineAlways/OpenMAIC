@@ -1,0 +1,601 @@
+{
+  "id": "oc-elem-ecosystem",
+  "createdAt": "2026-04-24T12:00:00.000Z",
+  "stage": {
+    "id": "oc-elem-ecosystem",
+    "name": "The Crypto World (Elementary)",
+    "description": "Beyond Bitcoin \u2014 NFTs, DAOs, Web3, and crypto in real life.",
+    "createdAt": "2026-04-24T12:00:00.000Z",
+    "updatedAt": "2026-04-24T12:00:00.000Z",
+    "languageDirective": "en-US",
+    "style": "academic",
+    "agentIds": [
+      "default-1",
+      "default-2",
+      "default-3"
+    ],
+    "generatedAgentConfigs": []
+  },
+  "scenes": [
+    {
+      "id": "ee-s1",
+      "type": "slide",
+      "title": "The Crypto World",
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ee-s1-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#06b6d4",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ee-s1-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#06b6d4",
+              "fixedRatio": false
+            },
+            {
+              "id": "ee-s1-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ee-s1-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83c\udf0d The Crypto World</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ee-s1-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Crypto isn't just money \u2014 it's a whole ecosystem</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ee-s1-body",
+              "type": "text",
+              "left": 24,
+              "top": 110,
+              "width": 950,
+              "height": 130,
+              "rotate": 0,
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'>When most people hear 'crypto' they think of Bitcoin. But the crypto world is actually massive \u2014 like how the internet isn't just email. There are <b style='color:#22d3ee;'>games, art, banking, social media, and entire economies</b> all built on blockchain. Here's a quick tour.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ee-s1-box0",
+              "type": "shape",
+              "left": 24,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98118",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "ee-s1-bt0",
+              "type": "text",
+              "left": 32,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\ud83c\udfae</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Gaming</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Play-to-earn \u2014 own your in-game items as NFTs</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "ee-s1-box1",
+              "type": "shape",
+              "left": 264,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f618",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "ee-s1-bt1",
+              "type": "text",
+              "left": 272,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\uddbc\ufe0f</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>NFTs</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Unique digital ownership certificates</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "ee-s1-box2",
+              "type": "shape",
+              "left": 504,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf618",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#8b5cf6"
+              }
+            },
+            {
+              "id": "ee-s1-bt2",
+              "type": "text",
+              "left": 512,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\uddf3\ufe0f</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>DAOs</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Groups that vote on decisions using blockchain</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#8b5cf6"
+            },
+            {
+              "id": "ee-s1-box3",
+              "type": "shape",
+              "left": 744,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b18",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ee-s1-bt3",
+              "type": "text",
+              "left": 752,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\ud83c\udf10</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Web3 Apps</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Apps where you own your own data</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ee-s2",
+      "type": "slide",
+      "title": "What is an NFT?",
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ee-s2-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#06b6d4",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ee-s2-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#06b6d4",
+              "fixedRatio": false
+            },
+            {
+              "id": "ee-s2-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ee-s2-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83d\uddbc\ufe0f What is an NFT?</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ee-s2-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Non-Fungible Token \u2014 a one-of-a-kind digital certificate</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ee-s2-body",
+              "type": "text",
+              "left": 24,
+              "top": 110,
+              "width": 950,
+              "height": 130,
+              "rotate": 0,
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'><b style='color:#22d3ee;'>NFT</b> = Non-Fungible Token. 'Non-fungible' means <b style='color:#f1f5f9;'>one of a kind</b>. An NFT is a digital certificate on the blockchain that proves you own something unique. A $1 bill is fungible (swap it for any other $1). The Mona Lisa is non-fungible \u2014 there's only one original. NFTs make digital things work like the Mona Lisa.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ee-s2-box0",
+              "type": "shape",
+              "left": 24,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98118",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "ee-s2-bt0",
+              "type": "text",
+              "left": 32,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\ud83c\udfb5</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Music</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Artists sell song originals directly to fans</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "ee-s2-box1",
+              "type": "shape",
+              "left": 264,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f618",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "ee-s2-bt1",
+              "type": "text",
+              "left": 272,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\u26bd</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Sports</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Highlight clips owned as NFTs (NBA Top Shot)</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "ee-s2-box2",
+              "type": "shape",
+              "left": 504,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf618",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#8b5cf6"
+              }
+            },
+            {
+              "id": "ee-s2-bt2",
+              "type": "text",
+              "left": 512,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\ud83c\udfae</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Gaming</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Own and resell your game characters</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#8b5cf6"
+            },
+            {
+              "id": "ee-s2-box3",
+              "type": "shape",
+              "left": 744,
+              "top": 270,
+              "width": 220,
+              "height": 120,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b18",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ee-s2-bt3",
+              "type": "text",
+              "left": 752,
+              "top": 280,
+              "width": 204,
+              "height": 100,
+              "rotate": 0,
+              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\uddbc\ufe0f</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Art</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Digital art sold for millions</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ee-s3",
+      "type": "quiz",
+      "title": "Knowledge Check \u2014 The Crypto World",
+      "content": {
+        "type": "quiz",
+        "questions": [
+          {
+            "id": "q-ee-1",
+            "type": "single",
+            "question": "What does NFT stand for?",
+            "options": [
+              {
+                "label": "New Financial Token",
+                "value": "A"
+              },
+              {
+                "label": "Non-Fungible Token",
+                "value": "B"
+              },
+              {
+                "label": "Network Finance Technology",
+                "value": "C"
+              },
+              {
+                "label": "Not For Trade",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "NFT stands for Non-Fungible Token. 'Non-fungible' means unique or one-of-a-kind \u2014 unlike Bitcoin where every coin is identical and interchangeable.",
+            "points": 1
+          },
+          {
+            "id": "q-ee-2",
+            "type": "single",
+            "question": "What is a DAO?",
+            "options": [
+              {
+                "label": "A type of wallet",
+                "value": "A"
+              },
+              {
+                "label": "A government-issued cryptocurrency",
+                "value": "B"
+              },
+              {
+                "label": "A group that makes decisions together using blockchain votes \u2014 no CEO needed",
+                "value": "C"
+              },
+              {
+                "label": "A trading bot",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "C"
+            ],
+            "analysis": "A DAO (Decentralized Autonomous Organization) is a group that votes on decisions using blockchain. Every vote is transparent and the code automatically carries out what the majority decides.",
+            "points": 1
+          },
+          {
+            "id": "q-ee-3",
+            "type": "single",
+            "question": "Which country made Bitcoin legal tender \u2014 meaning you can pay for groceries with it?",
+            "options": [
+              {
+                "label": "USA",
+                "value": "A"
+              },
+              {
+                "label": "Japan",
+                "value": "B"
+              },
+              {
+                "label": "El Salvador",
+                "value": "C"
+              },
+              {
+                "label": "Germany",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "C"
+            ],
+            "analysis": "El Salvador became the first country to make Bitcoin legal tender in 2021. Citizens can use Bitcoin to pay for anything \u2014 from groceries to utility bills.",
+            "points": 1
+          },
+          {
+            "id": "q-ee-4",
+            "type": "single",
+            "question": "What makes an NFT different from a regular digital file?",
+            "options": [
+              {
+                "label": "NFTs can only be used in video games",
+                "value": "A"
+              },
+              {
+                "label": "NFTs use blockchain to prove ownership \u2014 a regular file can be copied infinitely with no proof of original ownership",
+                "value": "B"
+              },
+              {
+                "label": "NFTs are stored on a USB drive",
+                "value": "C"
+              },
+              {
+                "label": "NFTs are controlled by the government",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Anyone can save a copy of a JPEG, but an NFT on the blockchain proves who owns the original. It's the difference between a photocopy of the Mona Lisa and owning the actual painting.",
+            "points": 1
+          }
+        ]
+      }
+    }
+  ]
+}
