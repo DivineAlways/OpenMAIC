@@ -248,9 +248,10 @@ async function generateAzureTTS(
 }
 
 /**
- * Edge TTS — uses Microsoft Edge's free neural TTS via the edge-tts Python package.
- * No API key required. en-US-AvaNeural is the same voice used in OC remotion videos.
- * Falls back gracefully if edge-tts is not installed on the host.
+ * Edge TTS — uses Microsoft Edge's free neural TTS via the edge-tts Python CLI.
+ * No API key required. en-US-AvaNeural matches OC remotion videos.
+ * On Vercel (where edge-tts is unavailable), this will throw and the client
+ * falls back to browser-native TTS automatically.
  */
 async function generateEdgeTTS(config: TTSModelConfig, text: string): Promise<TTSGenerationResult> {
   const { execFile } = await import('child_process');
