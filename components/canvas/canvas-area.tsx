@@ -13,6 +13,7 @@ import type { Scene, StageMode } from '@/lib/types/stage';
 import { useI18n } from '@/lib/hooks/use-i18n';
 
 interface CanvasAreaProps extends CanvasToolbarProps {
+  readonly onQuizComplete?: (score: number, total: number) => void;
   readonly currentScene: Scene | null;
   readonly mode: StageMode;
   readonly hideToolbar?: boolean;
@@ -45,6 +46,7 @@ export function CanvasArea({
   isPendingScene,
   isGenerationFailed,
   onRetryGeneration,
+  onQuizComplete,
 }: CanvasAreaProps) {
   const { t } = useI18n();
   const showControls = mode === 'playback' && !whiteboardOpen;
@@ -111,7 +113,7 @@ export function CanvasArea({
           {currentScene && !whiteboardOpen && (
             <div className="absolute inset-0">
               <SceneProvider>
-                <SceneRenderer scene={currentScene} mode={mode} />
+                <SceneRenderer scene={currentScene} mode={mode} onQuizComplete={onQuizComplete} />
               </SceneProvider>
             </div>
           )}

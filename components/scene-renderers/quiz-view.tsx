@@ -38,6 +38,7 @@ interface QuestionResult {
 interface QuizViewProps {
   readonly questions: QuizQuestion[];
   readonly sceneId: string;
+  readonly onComplete?: (score: number, total: number) => void;
 }
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
@@ -684,7 +685,7 @@ function ScoreBanner({
 
 // ─── Main Component ─────────────────────────────────────────────────────────
 
-export function QuizView({ questions, sceneId }: QuizViewProps) {
+export function QuizView({ questions, sceneId, onComplete }: QuizViewProps) {
   const { t, locale } = useI18n();
   const [phase, setPhase] = useState<Phase>('not_started');
   const [answers, setAnswers] = useState<Record<string, string | string[]>>({});
@@ -783,6 +784,19 @@ export function QuizView({ questions, sceneId }: QuizViewProps) {
   }, [clearAnswersCache]);
 
   const earnedScore = useMemo(() => results.reduce((sum, r) => sum + r.earned, 0), [results]);
+
+  // Fire onComplete when quiz is reviewed and score >= 80%
+  const onCompleteRef = useRef(onComplete);
+  onCompleteRef.current = onComplete;
+  useEffect(() => {
+    if (phase === 'reviewing' && totalPoints > 0 && onCompleteRef.current) {
+      const pct = Math.round((earnedScore / totalPoints) * 100);
+      if (pct >= 80) {
+        const t = setTimeout(() => onCompleteRef.current?.(earnedScore, totalPoints), 1200);
+        return () => clearTimeout(t);
+      }
+    }
+  }, [phase, earnedScore, totalPoints]);
 
   const resultMap = useMemo(() => {
     const map: Record<string, QuestionResult> = {};

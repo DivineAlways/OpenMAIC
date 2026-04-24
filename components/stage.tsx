@@ -9,6 +9,7 @@ import { useI18n } from '@/lib/hooks/use-i18n';
 import { SceneSidebar } from './stage/scene-sidebar';
 import { Header } from './header';
 import { CanvasArea } from '@/components/canvas/canvas-area';
+import { CertificateModal } from '@/components/certificate-modal';
 import { Roundtable } from '@/components/roundtable';
 import { PlaybackEngine, computePlaybackView } from '@/lib/playback';
 import type { EngineMode, TriggerEvent, Effect } from '@/lib/playback';
@@ -46,7 +47,7 @@ export function Stage({
   onRetryOutline?: (outlineId: string) => Promise<void>;
 }) {
   const { t } = useI18n();
-  const { mode, getCurrentScene, scenes, currentSceneId, setCurrentSceneId, generatingOutlines } =
+  const { mode, getCurrentScene, scenes, currentSceneId, setCurrentSceneId, generatingOutlines, stage } =
     useStageStore();
   const failedOutlines = useStageStore.use.failedOutlines();
 
@@ -65,6 +66,7 @@ export function Stage({
   // PlaybackEngine state
   const [engineMode, setEngineMode] = useState<EngineMode>('idle');
   const [playbackCompleted, setPlaybackCompleted] = useState(false); // Distinguishes "never played" idle from "finished" idle
+  const [certData, setCertData] = useState<{ score: number; total: number } | null>(null);
   const [lectureSpeech, setLectureSpeech] = useState<string | null>(null); // From PlaybackEngine (lecture)
   const [liveSpeech, setLiveSpeech] = useState<string | null>(null); // From buffer (discussion/QA)
   const [speechProgress, setSpeechProgress] = useState<number | null>(null); // StreamBuffer reveal progress (0–1)
@@ -727,6 +729,10 @@ export function Stage({
     }
   }, [playbackCompleted, currentScene]);
 
+  const handleQuizComplete = useCallback((score: number, total: number) => {
+    setCertData({ score, total });
+  }, []);
+
   // get scene information
   const isPendingScene = currentSceneId === PENDING_SCENE_ID;
   const hasNextPending = generatingOutlines.length > 0;
@@ -986,6 +992,7 @@ export function Stage({
                 ? () => onRetryOutline(generatingOutlines[0].id)
                 : undefined
             }
+            onQuizComplete={handleQuizComplete}
           />
         </div>
 
@@ -1231,6 +1238,15 @@ export function Stage({
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
+
+      {certData && (
+        <CertificateModal
+          courseName={stage?.name ?? 'OnlyCrypto Academy'}
+          score={certData.score}
+          totalPoints={certData.total}
+          onClose={() => setCertData(null)}
+        />
+      )}
     </div>
   );
 }

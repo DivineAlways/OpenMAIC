@@ -10,9 +10,10 @@ import { PBLRenderer } from '../scene-renderers/pbl-renderer';
 interface SceneRendererProps {
   readonly scene: Scene;
   readonly mode: StageMode;
+  readonly onQuizComplete?: (score: number, total: number) => void;
 }
 
-export function SceneRenderer({ scene, mode }: SceneRendererProps) {
+export function SceneRenderer({ scene, mode, onQuizComplete }: SceneRendererProps) {
   const renderer = useMemo(() => {
     switch (scene.type) {
       case 'slide':
@@ -20,7 +21,7 @@ export function SceneRenderer({ scene, mode }: SceneRendererProps) {
         return <SlideRenderer mode={mode} />;
       case 'quiz':
         if (scene.content.type !== 'quiz') return <div>Invalid quiz content</div>;
-        return <QuizView key={scene.id} questions={scene.content.questions} sceneId={scene.id} />;
+        return <QuizView key={scene.id} questions={scene.content.questions} sceneId={scene.id} onComplete={onQuizComplete} />;
       case 'interactive':
         if (scene.content.type !== 'interactive') return <div>Invalid interactive content</div>;
         return <InteractiveRenderer content={scene.content} mode={mode} sceneId={scene.id} />;
@@ -30,7 +31,7 @@ export function SceneRenderer({ scene, mode }: SceneRendererProps) {
       default:
         return <div>Unknown scene type</div>;
     }
-  }, [scene, mode]);
+  }, [scene, mode, onQuizComplete]);
 
   return <div className="w-full h-full">{renderer}</div>;
 }
