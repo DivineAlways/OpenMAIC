@@ -27,6 +27,16 @@ const COLLEGE_COURSES = [
   { id: 'oc-xrpl-deepdive', title: 'XRPL Deep Dive', description: 'RPCA consensus, trust lines, native DEX + AMM, pathfinding, ODL, and why OnlyCrypto runs on XRPL.', level: 'Advanced', scenes: 8, emoji: '🔵', gradient: 'from-sky-400 to-blue-600' },
 ];
 
+const HIGH_SCHOOL_COURSES = [
+  { id: 'oc-hs-blockchain', title: 'Blockchain Intermediate', description: 'Mining mechanics, PoW vs PoS vs RPCA consensus, hash functions, Merkle trees, and the blockchain trilemma.', scenes: 4, emoji: '⛓️', gradient: 'from-amber-500 to-orange-600' },
+  { id: 'oc-hs-crypto', title: 'Crypto Markets', description: 'Market cap tiers, tokenomics, Bitcoin halving cycles, reading price action, and evaluating altcoins.', scenes: 4, emoji: '🪙', gradient: 'from-yellow-500 to-amber-600' },
+  { id: 'oc-hs-defi', title: 'DeFi Mechanics', description: 'Liquidity pools, AMM x·y=k formula, impermanent loss, yield farming, smart contract risks, and XRPL.', scenes: 4, emoji: '🏦', gradient: 'from-orange-500 to-amber-600' },
+  { id: 'oc-hs-trading', title: 'Technical Trading', description: 'Candlestick patterns, support & resistance, RSI & MACD, order types, risk-reward ratio, and copy trading.', scenes: 4, emoji: '📊', gradient: 'from-amber-600 to-yellow-600' },
+  { id: 'oc-hs-wallets', title: 'Wallets & Keys', description: 'BIP39 seed phrase cryptography, private/public key derivation, hot vs cold storage, and attack vectors.', scenes: 4, emoji: '🔐', gradient: 'from-orange-600 to-red-600' },
+  { id: 'oc-hs-ecosystem', title: 'Crypto Ecosystem', description: 'L1 vs L2, rollup types, cross-chain bridges, DAOs, RWA tokenization, and institutional adoption.', scenes: 4, emoji: '🌍', gradient: 'from-amber-500 to-yellow-500' },
+  { id: 'oc-hs-security', title: 'Security', description: 'Phishing deep dive, rug pull red flags, smart contract exploits, OPSEC, SIM swaps, CEX vs DEX risks.', scenes: 4, emoji: '🛡️', gradient: 'from-red-500 to-orange-600' },
+];
+
 const COLLEGE_LEVEL_ORDER: Record<string, number> = { Beginner: 0, Intermediate: 1, Advanced: 2 };
 
 type Level = 'elementary' | 'highschool' | 'college';
@@ -207,16 +217,19 @@ export default function HomePage() {
         )}
 
         {activeLevel === 'highschool' && (
-          <div className="flex flex-col items-center justify-center py-24 gap-6 text-center">
-            <div className="text-7xl">🚧</div>
-            <div>
-              <h3 className="text-2xl font-black uppercase tracking-tight mb-3">High School Coming Soon</h3>
-              <p className="text-gray-400 max-w-sm leading-relaxed">
-                Intermediate classrooms covering technical analysis, on-chain data, tokenomics, and advanced DeFi strategies. Launching soon!
-              </p>
+          <>
+            <div className="flex items-center justify-between mb-6">
+              <div>
+                <h2 className="text-sm font-bold uppercase tracking-widest text-gray-500">📚 High School — {HIGH_SCHOOL_COURSES.length} Classrooms</h2>
+                <p className="text-xs text-gray-600 mt-1">Real terminology, practical concepts, and intermediate mechanics</p>
+              </div>
             </div>
-            <span className="text-xs font-bold px-4 py-1.5 rounded-full bg-amber-500/10 text-amber-400 uppercase tracking-widest">In Development</span>
-          </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              {HIGH_SCHOOL_COURSES.map((course) => (
+                <CourseCard key={course.id} {...course} onClick={() => router.push(`/classroom/${course.id}`)} />
+              ))}
+            </div>
+          </>
         )}
 
         {activeLevel === 'college' && (

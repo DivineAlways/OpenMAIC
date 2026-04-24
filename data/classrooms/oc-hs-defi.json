@@ -1,0 +1,194 @@
+{
+  "id": "oc-hs-defi",
+  "createdAt": "2026-04-24T12:00:00.000Z",
+  "stage": {
+    "id": "oc-hs-defi",
+    "name": "DeFi Mechanics (High School)",
+    "description": "Liquidity pools, the x·y=k formula, impermanent loss, yield farming, smart contract risks, and DeFi due diligence — intermediate level.",
+    "createdAt": "2026-04-24T12:00:00.000Z",
+    "updatedAt": "2026-04-24T12:00:00.000Z",
+    "languageDirective": "en-US",
+    "style": "academic",
+    "agentIds": ["default-1", "default-2", "default-3"],
+    "generatedAgentConfigs": []
+  },
+  "scenes": [
+    {
+      "id": "hs-defi-s1",
+      "type": "slide",
+      "title": "Liquidity Pools & The AMM Formula",
+      "order": 1,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "hs-defi-s1-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": { "type": "solid", "color": "#0b1120" },
+          "theme": { "backgroundColor": "#0b1120", "themeColors": ["#f59e0b", "#3b82f6", "#10b981"], "fontColor": "#f1f5f9", "fontName": "Inter" },
+          "elements": [
+            { "id": "hs-defi-s1-bar", "type": "shape", "left": 0, "top": 0, "width": 1000, "height": 6, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#f59e0b", "fixedRatio": false },
+            { "id": "hs-defi-s1-hbg", "type": "shape", "left": 0, "top": 6, "width": 1000, "height": 96, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#0f1729", "fixedRatio": false },
+            { "id": "hs-defi-s1-title", "type": "text", "left": 24, "top": 16, "width": 800, "height": 52, "rotate": 0, "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>💧 Liquidity Pools & The AMM Formula</p>", "defaultFontName": "Inter", "defaultColor": "#f1f5f9" },
+            { "id": "hs-defi-s1-sub", "type": "text", "left": 24, "top": 66, "width": 800, "height": 30, "rotate": 0, "content": "<p style='font-size:13px;color:#64748b;'>No order books. No market makers. Just math — High School Level</p>", "defaultFontName": "Inter", "defaultColor": "#64748b" },
+            { "id": "hs-defi-s1-intro", "type": "text", "left": 24, "top": 112, "width": 950, "height": 60, "rotate": 0, "content": "<p style='font-size:15px;color:#cbd5e1;line-height:1.7;'>Traditional exchanges match buyers with sellers via order books. DEXs use <b style='color:#f59e0b;'>liquidity pools</b> — smart contracts holding two tokens that anyone can trade against. The price is set automatically by a formula, not by humans.</p>", "defaultFontName": "Inter", "defaultColor": "#cbd5e1" },
+            { "id": "hs-defi-s1-formula-bg", "type": "shape", "left": 24, "top": 186, "width": 300, "height": 130, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#3b82f615", "fixedRatio": false, "outline": { "style": "solid", "width": 2, "color": "#3b82f6" } },
+            { "id": "hs-defi-s1-formula-t", "type": "text", "left": 34, "top": 196, "width": 280, "height": 110, "rotate": 0, "content": "<p style='font-size:32px;font-weight:900;color:#60a5fa;text-align:center;'>x × y = k</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:8px;'>x = token A reserve<br/>y = token B reserve<br/>k = constant product</p>", "defaultFontName": "Inter", "defaultColor": "#60a5fa" },
+            { "id": "hs-defi-s1-how", "type": "text", "left": 340, "top": 186, "width": 634, "height": 130, "rotate": 0, "content": "<p style='font-size:13px;color:#94a3b8;line-height:1.8;'>When you <b style='color:#10b981;'>buy</b> token A: its supply in the pool drops → k must stay constant → token A's price rises automatically.<br/>When you <b style='color:#f87171;'>sell</b> token A: its supply increases → price falls automatically.<br/>No human sets the price — it's pure math responding to supply changes.</p>", "defaultFontName": "Inter", "defaultColor": "#94a3b8" },
+            { "id": "hs-defi-s1-provide-h", "type": "text", "left": 24, "top": 332, "width": 460, "height": 26, "rotate": 0, "content": "<p style='font-size:14px;font-weight:800;color:#10b981;'>How you provide liquidity (become an LP)</p>", "defaultFontName": "Inter", "defaultColor": "#10b981" },
+            { "id": "hs-defi-s1-provide-b", "type": "text", "left": 24, "top": 360, "width": 460, "height": 130, "rotate": 0, "content": "<p style='font-size:12px;color:#94a3b8;line-height:2;'>1. Deposit equal value of both tokens (e.g. $500 ETH + $500 USDC)<br/>2. Receive LP tokens = your share of the pool<br/>3. Earn % of every swap fee (usually 0.3%) proportional to your share<br/>4. Withdraw anytime by burning your LP tokens<br/>→ <b style='color:#f59e0b;'>Risk: impermanent loss</b> (next slide)</p>", "defaultFontName": "Inter", "defaultColor": "#94a3b8" },
+            { "id": "hs-defi-s1-dex-bg", "type": "shape", "left": 514, "top": 332, "width": 460, "height": 158, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#f59e0b08", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#f59e0b30" } },
+            { "id": "hs-defi-s1-dex-t", "type": "text", "left": 524, "top": 342, "width": 440, "height": 138, "rotate": 0, "content": "<p style='font-size:13px;font-weight:800;color:#f59e0b;margin-bottom:8px;'>DeFi Building Blocks</p><p style='font-size:12px;color:#94a3b8;line-height:2;'>🔄 DEX — Trade tokens from your wallet, no sign-up<br/>🏦 Lending — Deposit collateral, borrow against it<br/>🌾 Yield Farming — Provide LP tokens, earn protocol rewards<br/>⚖️ Stablecoins — $1-pegged tokens to hold value in DeFi</p>", "defaultFontName": "Inter", "defaultColor": "#f59e0b" }
+          ]
+        }
+      },
+      "actions": [
+        { "id": "action_hs-defi-s1_0", "type": "spotlight", "elementId": "hs-defi-s1-title" },
+        { "id": "action_hs-defi-s1_1", "type": "speech", "text": "Liquidity Pools and the AMM Formula — High School Level. DeFi is banking without banks. Financial services built on smart contracts — no company runs them." },
+        { "id": "action_hs-defi-s1_2", "type": "spotlight", "elementId": "hs-defi-s1-intro" },
+        { "id": "action_hs-defi-s1_3", "type": "speech", "text": "Traditional exchanges match buyers with sellers via order books. DEXs use liquidity pools — smart contracts holding two tokens that anyone can trade against. The price is set automatically by a formula, not by humans." },
+        { "id": "action_hs-defi-s1_4", "type": "spotlight", "elementId": "hs-defi-s1-formula-t" },
+        { "id": "action_hs-defi-s1_5", "type": "speech", "text": "The formula is x times y equals k. X is the token A reserve. Y is the token B reserve. K is a constant that never changes. When you buy token A, its supply in the pool drops — so k must stay constant, meaning token A's price rises automatically. When you sell, price falls. No human sets the price." },
+        { "id": "action_hs-defi-s1_6", "type": "spotlight", "elementId": "hs-defi-s1-provide-b" },
+        { "id": "action_hs-defi-s1_7", "type": "speech", "text": "To provide liquidity: deposit equal value of both tokens, for example five hundred dollars in ETH and five hundred in USDC. You receive LP tokens representing your share. You earn a percentage of every swap fee — usually 0.3% — proportional to your share. Withdraw anytime by burning your LP tokens. The risk is impermanent loss, which we'll cover next." },
+        { "id": "action_hs-defi-s1_8", "type": "spotlight", "elementId": "hs-defi-s1-dex-t" },
+        { "id": "action_hs-defi-s1_9", "type": "speech", "text": "The four DeFi building blocks: DEXs let you trade tokens from your wallet with no sign-up. Lending protocols let you deposit collateral and borrow against it. Yield farming rewards you for providing LP tokens. And stablecoins are dollar-pegged tokens that let you hold value in DeFi without converting back to fiat." }
+      ]
+    },
+    {
+      "id": "hs-defi-s2",
+      "type": "slide",
+      "title": "Impermanent Loss & DeFi Risks",
+      "order": 2,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "hs-defi-s2-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": { "type": "solid", "color": "#0b1120" },
+          "theme": { "backgroundColor": "#0b1120", "themeColors": ["#f59e0b", "#ef4444", "#10b981"], "fontColor": "#f1f5f9", "fontName": "Inter" },
+          "elements": [
+            { "id": "hs-defi-s2-bar", "type": "shape", "left": 0, "top": 0, "width": 1000, "height": 6, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#f59e0b", "fixedRatio": false },
+            { "id": "hs-defi-s2-hbg", "type": "shape", "left": 0, "top": 6, "width": 1000, "height": 96, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#0f1729", "fixedRatio": false },
+            { "id": "hs-defi-s2-title", "type": "text", "left": 24, "top": 16, "width": 800, "height": 52, "rotate": 0, "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>⚠️ Impermanent Loss & DeFi Risks</p>", "defaultFontName": "Inter", "defaultColor": "#f1f5f9" },
+            { "id": "hs-defi-s2-sub", "type": "text", "left": 24, "top": 66, "width": 800, "height": 30, "rotate": 0, "content": "<p style='font-size:13px;color:#64748b;'>The hidden risk of LP positions and what can go wrong in DeFi</p>", "defaultFontName": "Inter", "defaultColor": "#64748b" },
+            { "id": "hs-defi-s2-il-h", "type": "text", "left": 24, "top": 112, "width": 460, "height": 28, "rotate": 0, "content": "<p style='font-size:14px;font-weight:800;color:#ef4444;'>📉 Impermanent Loss</p>", "defaultFontName": "Inter", "defaultColor": "#ef4444" },
+            { "id": "hs-defi-s2-il-b", "type": "text", "left": 24, "top": 142, "width": 460, "height": 100, "rotate": 0, "content": "<p style='font-size:12px;color:#94a3b8;line-height:1.8;'>When token prices move, the pool rebalances — your share shifts toward the underperforming token. If you had just held instead of providing liquidity, you'd have more of the outperformer. That difference is impermanent loss.</p>", "defaultFontName": "Inter", "defaultColor": "#94a3b8" },
+            { "id": "hs-defi-s2-il1", "type": "shape", "left": 24, "top": 252, "width": 140, "height": 80, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#f59e0b10", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#f59e0b50" } },
+            { "id": "hs-defi-s2-il1t", "type": "text", "left": 28, "top": 258, "width": 132, "height": 68, "rotate": 0, "content": "<p style='font-size:11px;font-weight:700;color:#f59e0b;text-align:center;'>Price 2×<br/>(+100%)<br/><span style='color:#94a3b8;'>~5.7% IL</span></p>", "defaultFontName": "Inter", "defaultColor": "#f59e0b" },
+            { "id": "hs-defi-s2-il2", "type": "shape", "left": 176, "top": 252, "width": 140, "height": 80, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#ef444410", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#ef444450" } },
+            { "id": "hs-defi-s2-il2t", "type": "text", "left": 180, "top": 258, "width": 132, "height": 68, "rotate": 0, "content": "<p style='font-size:11px;font-weight:700;color:#f87171;text-align:center;'>Price 4×<br/>(+300%)<br/><span style='color:#94a3b8;'>~20% IL</span></p>", "defaultFontName": "Inter", "defaultColor": "#f87171" },
+            { "id": "hs-defi-s2-il3", "type": "shape", "left": 328, "top": 252, "width": 140, "height": 80, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#ef444420", "fixedRatio": false, "outline": { "style": "solid", "width": 2, "color": "#ef4444" } },
+            { "id": "hs-defi-s2-il3t", "type": "text", "left": 332, "top": 258, "width": 132, "height": 68, "rotate": 0, "content": "<p style='font-size:11px;font-weight:700;color:#f87171;text-align:center;'>Price 10×<br/>(+900%)<br/><span style='color:#94a3b8;'>~42% IL</span></p>", "defaultFontName": "Inter", "defaultColor": "#f87171" },
+            { "id": "hs-defi-s2-il-note", "type": "text", "left": 24, "top": 342, "width": 460, "height": 60, "rotate": 0, "content": "<p style='font-size:12px;color:#94a3b8;line-height:1.7;'>IL is 'impermanent' because if prices return to entry levels, it disappears. It only becomes a realized loss when you withdraw while prices have moved. Swap fee income can offset it.</p>", "defaultFontName": "Inter", "defaultColor": "#94a3b8" },
+            { "id": "hs-defi-s2-risks-bg", "type": "shape", "left": 514, "top": 110, "width": 460, "height": 300, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#ef444408", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#ef444430" } },
+            { "id": "hs-defi-s2-risks-h", "type": "text", "left": 524, "top": 118, "width": 440, "height": 28, "rotate": 0, "content": "<p style='font-size:14px;font-weight:800;color:#f87171;'>🚨 DeFi Risk Checklist</p>", "defaultFontName": "Inter", "defaultColor": "#f87171" },
+            { "id": "hs-defi-s2-risks-b", "type": "text", "left": 524, "top": 148, "width": 440, "height": 250, "rotate": 0, "content": "<p style='font-size:12px;color:#94a3b8;line-height:2.1;'>⚠️ <b style='color:#f87171;'>Smart contract bugs</b> — $3B+ lost to DeFi hacks in 2022<br/>⚠️ <b style='color:#f87171;'>Rug pulls</b> — Devs drain liquidity pool and disappear<br/>⚠️ <b style='color:#f87171;'>Oracle manipulation</b> — Flash loans manipulate price feeds<br/>⚠️ <b style='color:#f87171;'>Composability risk</b> — One exploit cascades through stacked protocols<br/><br/>✅ <b style='color:#34d399;'>Due diligence:</b> Multiple audits from reputable firms, 6+ months live without incident, growing TVL, open-source code, public team, bug bounty program</p>", "defaultFontName": "Inter", "defaultColor": "#94a3b8" },
+            { "id": "hs-defi-s2-oc", "type": "shape", "left": 24, "top": 420, "width": 950, "height": 60, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#3b82f610", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#3b82f640" } },
+            { "id": "hs-defi-s2-oc-t", "type": "text", "left": 34, "top": 432, "width": 930, "height": 36, "rotate": 0, "content": "<p style='font-size:13px;color:#60a5fa;'>XRPL has a native DEX and AMM built into the protocol — no smart contracts needed. Trading has been live on-chain since 2012. OnlyCrypto payouts go directly to your wallet in seconds — no custody risk.</p>", "defaultFontName": "Inter", "defaultColor": "#60a5fa" }
+          ]
+        }
+      },
+      "actions": [
+        { "id": "action_hs-defi-s2_0", "type": "spotlight", "elementId": "hs-defi-s2-title" },
+        { "id": "action_hs-defi-s2_1", "type": "speech", "text": "Impermanent Loss and DeFi Risks" },
+        { "id": "action_hs-defi-s2_2", "type": "spotlight", "elementId": "hs-defi-s2-il-b" },
+        { "id": "action_hs-defi-s2_3", "type": "speech", "text": "Impermanent loss: When token prices move, the pool rebalances — your share shifts toward the underperforming token. If you had just held instead of providing liquidity, you'd have more of the outperformer. That difference is impermanent loss." },
+        { "id": "action_hs-defi-s2_4", "type": "spotlight", "elementId": "hs-defi-s2-il1t" },
+        { "id": "action_hs-defi-s2_5", "type": "speech", "text": "If the token price doubles — a one hundred percent increase — you experience about 5.7% impermanent loss compared to just holding. If it goes up four times, that's about 20% IL. And at ten times, you're looking at about 42% impermanent loss versus holding." },
+        { "id": "action_hs-defi-s2_6", "type": "spotlight", "elementId": "hs-defi-s2-il-note" },
+        { "id": "action_hs-defi-s2_7", "type": "speech", "text": "IL is impermanent because if prices return to entry levels, it disappears. It only becomes a realized loss when you withdraw while prices have moved. Swap fee income from the pool can offset it — the math only hurts you if the price move is large and you exit early." },
+        { "id": "action_hs-defi-s2_8", "type": "spotlight", "elementId": "hs-defi-s2-risks-b" },
+        { "id": "action_hs-defi-s2_9", "type": "speech", "text": "DeFi risk checklist: Smart contract bugs — over three billion dollars lost to DeFi hacks in 2022 alone. Rug pulls — developers drain the liquidity pool and disappear. Oracle manipulation — flash loans manipulate price feeds to exploit protocols. And composability risk — one exploit in a protocol you've never heard of can cascade through every stacked protocol you're in." },
+        { "id": "action_hs-defi-s2_10", "type": "spotlight", "elementId": "hs-defi-s2-oc-t" },
+        { "id": "action_hs-defi-s2_11", "type": "speech", "text": "XRPL has a native DEX and AMM built into the protocol — no external smart contracts needed. Trading has been live on-chain since 2012. OnlyCrypto payouts go directly to your wallet in seconds — no custody risk from a third-party smart contract." }
+      ]
+    },
+    {
+      "id": "hs-defi-s3",
+      "type": "quiz",
+      "title": "Knowledge Check — DeFi High School",
+      "order": 3,
+      "content": {
+        "type": "quiz",
+        "questions": [
+          {
+            "id": "q-hs-defi-1",
+            "type": "single",
+            "question": "In the AMM formula x × y = k, what happens to token A's price when you buy it from the pool?",
+            "options": [
+              { "label": "The price decreases because you're adding demand", "value": "A" },
+              { "label": "The price increases because token A's supply in the pool decreases, k must stay constant", "value": "B" },
+              { "label": "The price stays the same", "value": "C" },
+              { "label": "The price is set by the liquidity provider", "value": "D" }
+            ],
+            "answer": ["B"],
+            "analysis": "When you buy token A from the pool, its reserve (x) decreases. Since k must remain constant, y must increase — meaning you get fewer of token A per unit of B. This is how the AMM automatically raises the price as you buy: less supply in the pool = higher price.",
+            "points": 1
+          },
+          {
+            "id": "q-hs-defi-2",
+            "type": "single",
+            "question": "What is impermanent loss?",
+            "options": [
+              { "label": "A fee charged by the DEX for every trade", "value": "A" },
+              { "label": "The loss you make when the whole market crashes", "value": "B" },
+              { "label": "The difference between holding tokens vs providing them as liquidity when prices move", "value": "C" },
+              { "label": "Gas fees that can't be recovered", "value": "D" }
+            ],
+            "answer": ["C"],
+            "analysis": "Impermanent loss occurs because the AMM rebalances toward the underperforming token when prices move. If you had just held your tokens instead of depositing them in the pool, you'd have more of the one that appreciated. IL is 'impermanent' — if prices return to entry levels, it vanishes.",
+            "points": 1
+          },
+          {
+            "id": "q-hs-defi-3",
+            "type": "single",
+            "question": "What does a rug pull mean in DeFi?",
+            "options": [
+              { "label": "A smart contract upgrade that changes fees", "value": "A" },
+              { "label": "Developers abandoning a project and draining the liquidity pool, leaving investors with worthless tokens", "value": "B" },
+              { "label": "An impermanent loss event", "value": "C" },
+              { "label": "A failed governance vote", "value": "D" }
+            ],
+            "answer": ["B"],
+            "analysis": "A rug pull is when project developers — often anonymous — use hidden contract functions to drain the liquidity pool or mint unlimited tokens and sell them, then disappear. Investors are left with tokens worth essentially nothing. It's the most common crypto scam.",
+            "points": 1
+          },
+          {
+            "id": "q-hs-defi-4",
+            "type": "single",
+            "question": "Which of these is a key sign of a safer DeFi protocol?",
+            "options": [
+              { "label": "Very high APY with no explanation of the source", "value": "A" },
+              { "label": "Anonymous team with no audit", "value": "B" },
+              { "label": "Multiple audits from reputable firms, open-source code, and 6+ months live without incident", "value": "C" },
+              { "label": "Protocol launched less than a week ago", "value": "D" }
+            ],
+            "answer": ["C"],
+            "analysis": "Legitimate protocols have multiple audits from well-known firms (like Trail of Bits or OpenZeppelin), make their code open-source for anyone to verify, and have track records of running without incidents. Very high APY with no explanation usually means unsustainable token emission — a red flag.",
+            "points": 1
+          },
+          {
+            "id": "q-hs-defi-5",
+            "type": "single",
+            "question": "What is oracle manipulation in DeFi?",
+            "options": [
+              { "label": "Using a VPN to hide trading activity", "value": "A" },
+              { "label": "Using flash loans to temporarily manipulate on-chain price feeds to exploit lending protocols", "value": "B" },
+              { "label": "Predicting future market prices", "value": "C" },
+              { "label": "Setting prices on a centralized exchange", "value": "D" }
+            ],
+            "answer": ["B"],
+            "analysis": "Oracles are the price feeds DeFi protocols rely on. Attackers can take out enormous flash loans (borrowed and repaid in one transaction), use them to move prices on a DEX, trick an oracle-dependent lending protocol into thinking collateral is worth more or less than it is, and profit from the exploit — all in seconds.",
+            "points": 1
+          }
+        ]
+      },
+      "actions": [
+        { "id": "action_hs-defi-s3_q0", "type": "speech", "text": "Five questions on DeFi mechanics — liquidity pools, impermanent loss, rug pulls, and smart contract risks." },
+        { "id": "action_hs-defi-s3_q1", "type": "speech", "text": "Understanding these risks is just as important as understanding the opportunities. Take your time." }
+      ]
+    }
+  ]
+}

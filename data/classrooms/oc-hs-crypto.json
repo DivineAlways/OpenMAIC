@@ -1,0 +1,205 @@
+{
+  "id": "oc-hs-crypto",
+  "createdAt": "2026-04-24T12:00:00.000Z",
+  "stage": {
+    "id": "oc-hs-crypto",
+    "name": "Crypto Markets & Tokenomics (High School)",
+    "description": "Market cap, tokenomics, supply mechanics, Bitcoin halving cycles, reading price action, and evaluating altcoins — intermediate level.",
+    "createdAt": "2026-04-24T12:00:00.000Z",
+    "updatedAt": "2026-04-24T12:00:00.000Z",
+    "languageDirective": "en-US",
+    "style": "academic",
+    "agentIds": ["default-1", "default-2", "default-3"],
+    "generatedAgentConfigs": []
+  },
+  "scenes": [
+    {
+      "id": "hs-cr-s1",
+      "type": "slide",
+      "title": "Market Cap & Tokenomics",
+      "order": 1,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "hs-cr-s1-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": { "type": "solid", "color": "#0b1120" },
+          "theme": { "backgroundColor": "#0b1120", "themeColors": ["#f59e0b", "#3b82f6", "#10b981"], "fontColor": "#f1f5f9", "fontName": "Inter" },
+          "elements": [
+            { "id": "hs-cr-s1-bar", "type": "shape", "left": 0, "top": 0, "width": 1000, "height": 6, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#f59e0b", "fixedRatio": false },
+            { "id": "hs-cr-s1-hbg", "type": "shape", "left": 0, "top": 6, "width": 1000, "height": 96, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#0f1729", "fixedRatio": false },
+            { "id": "hs-cr-s1-title", "type": "text", "left": 24, "top": 16, "width": 800, "height": 52, "rotate": 0, "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>📊 Market Cap & Tokenomics</p>", "defaultFontName": "Inter", "defaultColor": "#f1f5f9" },
+            { "id": "hs-cr-s1-sub", "type": "text", "left": 24, "top": 66, "width": 800, "height": 30, "rotate": 0, "content": "<p style='font-size:13px;color:#64748b;'>Why price alone is a misleading number — High School Level</p>", "defaultFontName": "Inter", "defaultColor": "#64748b" },
+            { "id": "hs-cr-s1-formula", "type": "shape", "left": 24, "top": 110, "width": 950, "height": 60, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#f59e0b10", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#f59e0b50" } },
+            { "id": "hs-cr-s1-formula-t", "type": "text", "left": 34, "top": 122, "width": 930, "height": 36, "rotate": 0, "content": "<p style='font-size:18px;font-weight:800;color:#f59e0b;text-align:center;'>Market Cap = Price × Circulating Supply</p>", "defaultFontName": "Inter", "defaultColor": "#f59e0b" },
+            { "id": "hs-cr-s1-cap1-bg", "type": "shape", "left": 24, "top": 190, "width": 290, "height": 180, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#10b98110", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#10b98140" } },
+            { "id": "hs-cr-s1-cap1-t", "type": "text", "left": 34, "top": 200, "width": 270, "height": 160, "rotate": 0, "content": "<p style='font-size:13px;font-weight:800;color:#34d399;text-align:center;'>Large Cap<br/>&gt; $10B</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:8px;line-height:1.6;'>BTC, ETH, XRP. Most liquid. Institutional money flows here first. Less volatile than small caps.</p>", "defaultFontName": "Inter", "defaultColor": "#34d399" },
+            { "id": "hs-cr-s1-cap2-bg", "type": "shape", "left": 354, "top": 190, "width": 290, "height": 180, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#f59e0b10", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#f59e0b40" } },
+            { "id": "hs-cr-s1-cap2-t", "type": "text", "left": 364, "top": 200, "width": 270, "height": 160, "rotate": 0, "content": "<p style='font-size:13px;font-weight:800;color:#f59e0b;text-align:center;'>Mid Cap<br/>$1B – $10B</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:8px;line-height:1.6;'>Established projects with real usage. Higher upside but also sharper drawdowns.</p>", "defaultFontName": "Inter", "defaultColor": "#f59e0b" },
+            { "id": "hs-cr-s1-cap3-bg", "type": "shape", "left": 684, "top": 190, "width": 290, "height": 180, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#ef444410", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#ef444440" } },
+            { "id": "hs-cr-s1-cap3-t", "type": "text", "left": 694, "top": 200, "width": 270, "height": 160, "rotate": 0, "content": "<p style='font-size:13px;font-weight:800;color:#f87171;text-align:center;'>Small Cap<br/>&lt; $1B</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:8px;line-height:1.6;'>Newer projects. Can 10× quickly but can also lose 90% just as fast. Research carefully.</p>", "defaultFontName": "Inter", "defaultColor": "#f87171" },
+            { "id": "hs-cr-s1-tokenomics", "type": "text", "left": 24, "top": 390, "width": 950, "height": 100, "rotate": 0, "content": "<p style='font-size:14px;color:#cbd5e1;line-height:1.7;'><b style='color:#f59e0b;'>Tokenomics</b> = the economic design of a coin. Key factors: <b>hard cap supply</b> (Bitcoin: 21M max = deflationary), <b>inflationary emission</b> (new coins minted continuously for validators), <b>burn mechanisms</b> (permanently destroying coins to reduce supply — Ethereum burns fees, XRP burns ~0.0001 XRP per tx), and <b>VC allocation</b> (pre-mined tokens for team/investors — check vesting schedules for dump risk).</p>", "defaultFontName": "Inter", "defaultColor": "#cbd5e1" },
+            { "id": "hs-cr-s1-xrp", "type": "shape", "left": 24, "top": 500, "width": 950, "height": 60, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#3b82f610", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#3b82f640" } },
+            { "id": "hs-cr-s1-xrp-t", "type": "text", "left": 34, "top": 512, "width": 930, "height": 36, "rotate": 0, "content": "<p style='font-size:13px;color:#60a5fa;'>XRP has ~57 billion circulating supply — that's why its price looks 'cheap' vs BTC. You're getting a proportional share of a $30B+ market cap. Supply ≠ value.</p>", "defaultFontName": "Inter", "defaultColor": "#60a5fa" }
+          ]
+        }
+      },
+      "actions": [
+        { "id": "action_hs-cr-s1_0", "type": "spotlight", "elementId": "hs-cr-s1-title" },
+        { "id": "action_hs-cr-s1_1", "type": "speech", "text": "Market Cap and Tokenomics — High School Level" },
+        { "id": "action_hs-cr-s1_2", "type": "spotlight", "elementId": "hs-cr-s1-formula-t" },
+        { "id": "action_hs-cr-s1_3", "type": "speech", "text": "Market Cap equals Price times Circulating Supply. A coin priced at zero point zero zero one dollars with one trillion tokens has a market cap of one billion dollars — larger than a fifty dollar coin with only ten million supply. Price per coin tells you almost nothing on its own." },
+        { "id": "action_hs-cr-s1_4", "type": "spotlight", "elementId": "hs-cr-s1-cap1-t" },
+        { "id": "action_hs-cr-s1_5", "type": "speech", "text": "Large Cap — over ten billion. Bitcoin, Ethereum, XRP. Most liquid. Institutional money flows here first. Less volatile than small caps." },
+        { "id": "action_hs-cr-s1_6", "type": "spotlight", "elementId": "hs-cr-s1-cap2-t" },
+        { "id": "action_hs-cr-s1_7", "type": "speech", "text": "Mid Cap — one to ten billion. Established projects with real usage. Higher upside potential but also sharper drawdowns." },
+        { "id": "action_hs-cr-s1_8", "type": "spotlight", "elementId": "hs-cr-s1-cap3-t" },
+        { "id": "action_hs-cr-s1_9", "type": "speech", "text": "Small Cap — under one billion. Newer projects. Can ten-ex quickly but can also lose ninety percent just as fast. Research carefully before touching these." },
+        { "id": "action_hs-cr-s1_10", "type": "spotlight", "elementId": "hs-cr-s1-tokenomics" },
+        { "id": "action_hs-cr-s1_11", "type": "speech", "text": "Tokenomics is the economic design of a coin. Key factors: hard cap supply like Bitcoin's twenty-one million max creates deflationary pressure. Inflationary emission continuously mints new coins for validators. Burn mechanisms permanently destroy coins — Ethereum burns transaction fees, XRP burns a tiny fee per transaction. And VC allocation: pre-mined tokens for the team — always check vesting schedules for dump risk." },
+        { "id": "action_hs-cr-s1_12", "type": "spotlight", "elementId": "hs-cr-s1-xrp-t" },
+        { "id": "action_hs-cr-s1_13", "type": "speech", "text": "XRP has about fifty-seven billion circulating supply — that's why its price looks cheap compared to Bitcoin. You're getting a proportional share of a thirty billion plus market cap. Supply does not equal value." }
+      ]
+    },
+    {
+      "id": "hs-cr-s2",
+      "type": "slide",
+      "title": "Bitcoin Halving & Reading Price Action",
+      "order": 2,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "hs-cr-s2-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": { "type": "solid", "color": "#0b1120" },
+          "theme": { "backgroundColor": "#0b1120", "themeColors": ["#f59e0b", "#3b82f6", "#10b981"], "fontColor": "#f1f5f9", "fontName": "Inter" },
+          "elements": [
+            { "id": "hs-cr-s2-bar", "type": "shape", "left": 0, "top": 0, "width": 1000, "height": 6, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#f59e0b", "fixedRatio": false },
+            { "id": "hs-cr-s2-hbg", "type": "shape", "left": 0, "top": 6, "width": 1000, "height": 96, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#0f1729", "fixedRatio": false },
+            { "id": "hs-cr-s2-title", "type": "text", "left": 24, "top": 16, "width": 800, "height": 52, "rotate": 0, "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🔄 Bitcoin Halving & Reading Price Action</p>", "defaultFontName": "Inter", "defaultColor": "#f1f5f9" },
+            { "id": "hs-cr-s2-sub", "type": "text", "left": 24, "top": 66, "width": 800, "height": 30, "rotate": 0, "content": "<p style='font-size:13px;color:#64748b;'>The programmed supply shock and what charts are actually telling you</p>", "defaultFontName": "Inter", "defaultColor": "#64748b" },
+            { "id": "hs-cr-s2-halving-h", "type": "text", "left": 24, "top": 112, "width": 460, "height": 30, "rotate": 0, "content": "<p style='font-size:14px;font-weight:800;color:#f59e0b;'>⚡ Bitcoin Halving Cycles (~every 4 years)</p>", "defaultFontName": "Inter", "defaultColor": "#f59e0b" },
+            { "id": "hs-cr-s2-halving-desc", "type": "text", "left": 24, "top": 144, "width": 460, "height": 60, "rotate": 0, "content": "<p style='font-size:12px;color:#94a3b8;line-height:1.7;'>Every 210,000 blocks, miner reward is cut in half. Hardcoded in Bitcoin's protocol — no one can change it. Reduces new BTC entering circulation.</p>", "defaultFontName": "Inter", "defaultColor": "#94a3b8" },
+            { "id": "hs-cr-s2-h1", "type": "shape", "left": 24, "top": 218, "width": 100, "height": 80, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#f59e0b10", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#f59e0b50" } },
+            { "id": "hs-cr-s2-h1t", "type": "text", "left": 28, "top": 224, "width": 92, "height": 68, "rotate": 0, "content": "<p style='font-size:11px;font-weight:700;color:#f59e0b;text-align:center;'>2012<br/>50→25 BTC<br/><span style='color:#94a3b8;'>Peak ~$1K</span></p>", "defaultFontName": "Inter", "defaultColor": "#f59e0b" },
+            { "id": "hs-cr-s2-h2", "type": "shape", "left": 134, "top": 218, "width": 100, "height": 80, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#f59e0b10", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#f59e0b50" } },
+            { "id": "hs-cr-s2-h2t", "type": "text", "left": 138, "top": 224, "width": 92, "height": 68, "rotate": 0, "content": "<p style='font-size:11px;font-weight:700;color:#f59e0b;text-align:center;'>2016<br/>25→12.5 BTC<br/><span style='color:#94a3b8;'>Peak ~$20K</span></p>", "defaultFontName": "Inter", "defaultColor": "#f59e0b" },
+            { "id": "hs-cr-s2-h3", "type": "shape", "left": 244, "top": 218, "width": 110, "height": 80, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#f59e0b10", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#f59e0b50" } },
+            { "id": "hs-cr-s2-h3t", "type": "text", "left": 248, "top": 224, "width": 102, "height": 68, "rotate": 0, "content": "<p style='font-size:11px;font-weight:700;color:#f59e0b;text-align:center;'>2020<br/>12.5→6.25<br/><span style='color:#94a3b8;'>Peak ~$69K</span></p>", "defaultFontName": "Inter", "defaultColor": "#f59e0b" },
+            { "id": "hs-cr-s2-h4", "type": "shape", "left": 364, "top": 218, "width": 110, "height": 80, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#3b82f610", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#3b82f650" } },
+            { "id": "hs-cr-s2-h4t", "type": "text", "left": 368, "top": 224, "width": 102, "height": 68, "rotate": 0, "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;'>2024<br/>6.25→3.125<br/><span style='color:#94a3b8;'>Peak TBD</span></p>", "defaultFontName": "Inter", "defaultColor": "#60a5fa" },
+            { "id": "hs-cr-s2-pa-bg", "type": "shape", "left": 514, "top": 110, "width": 460, "height": 190, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#10b98108", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#10b98130" } },
+            { "id": "hs-cr-s2-pa-h", "type": "text", "left": 524, "top": 118, "width": 440, "height": 28, "rotate": 0, "content": "<p style='font-size:14px;font-weight:800;color:#34d399;'>📈 Reading Basic Price Action</p>", "defaultFontName": "Inter", "defaultColor": "#34d399" },
+            { "id": "hs-cr-s2-pa-b", "type": "text", "left": 524, "top": 148, "width": 440, "height": 145, "rotate": 0, "content": "<p style='font-size:12px;color:#94a3b8;line-height:1.8;'><b style='color:#34d399;'>Uptrend (Bullish):</b> Higher highs + higher lows. Each rally peak exceeds the last. Each pullback holds above the previous dip. Price stays above 50-day and 200-day moving averages.<br/><br/><b style='color:#f87171;'>Downtrend (Bearish):</b> Lower highs + lower lows. Each rally fails below the previous peak. Each drop breaks the prior support level. Price below moving averages.</p>", "defaultFontName": "Inter", "defaultColor": "#94a3b8" },
+            { "id": "hs-cr-s2-caveat", "type": "shape", "left": 24, "top": 320, "width": 950, "height": 60, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#ef444410", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#ef444440" } },
+            { "id": "hs-cr-s2-caveat-t", "type": "text", "left": 34, "top": 330, "width": 930, "height": 40, "rotate": 0, "content": "<p style='font-size:13px;color:#f87171;'>⚠️ <b>Halving caveat:</b> Past cycles don't guarantee future performance. With each cycle, more capital is needed to move the market and institutional participants increasingly shape price action. The pattern may weaken over time.</p>", "defaultFontName": "Inter", "defaultColor": "#f87171" },
+            { "id": "hs-cr-s2-altcoin", "type": "text", "left": 24, "top": 398, "width": 950, "height": 90, "rotate": 0, "content": "<p style='font-size:14px;color:#cbd5e1;line-height:1.7;'><b style='color:#f59e0b;'>Evaluating Altcoins:</b> What problem does it solve (in one sentence)? Who's building it — are they public? Does the token actually need to exist to use the network? Check on-chain metrics — active wallets, transaction volume, GitHub activity. Real usage = real demand. Dead chains fake these metrics.</p>", "defaultFontName": "Inter", "defaultColor": "#cbd5e1" }
+          ]
+        }
+      },
+      "actions": [
+        { "id": "action_hs-cr-s2_0", "type": "spotlight", "elementId": "hs-cr-s2-title" },
+        { "id": "action_hs-cr-s2_1", "type": "speech", "text": "Bitcoin Halving Cycles and Reading Price Action" },
+        { "id": "action_hs-cr-s2_2", "type": "spotlight", "elementId": "hs-cr-s2-halving-desc" },
+        { "id": "action_hs-cr-s2_3", "type": "speech", "text": "Every 210,000 blocks — roughly every four years — the miner reward is cut in half. This is hardcoded in Bitcoin's protocol and cannot be changed. It reduces the rate of new Bitcoin entering circulation." },
+        { "id": "action_hs-cr-s2_4", "type": "spotlight", "elementId": "hs-cr-s2-h1t" },
+        { "id": "action_hs-cr-s2_5", "type": "speech", "text": "2012: reward dropped from 50 to 25 BTC. Market eventually peaked around one thousand dollars." },
+        { "id": "action_hs-cr-s2_6", "type": "spotlight", "elementId": "hs-cr-s2-h3t" },
+        { "id": "action_hs-cr-s2_7", "type": "speech", "text": "2020: reward dropped from 12.5 to 6.25 BTC. Market peaked around sixty-nine thousand dollars in 2021. And in 2024 we saw the latest halving — down to 3.125 BTC per block." },
+        { "id": "action_hs-cr-s2_8", "type": "spotlight", "elementId": "hs-cr-s2-pa-b" },
+        { "id": "action_hs-cr-s2_9", "type": "speech", "text": "Reading basic price action: An uptrend shows higher highs and higher lows — each rally peak exceeds the last, each pullback holds above the previous dip. A downtrend shows lower highs and lower lows — each rally fails below the previous peak, each drop breaks the prior support." },
+        { "id": "action_hs-cr-s2_10", "type": "spotlight", "elementId": "hs-cr-s2-caveat-t" },
+        { "id": "action_hs-cr-s2_11", "type": "speech", "text": "Important caveat: past halving cycles do not guarantee future performance. With each cycle, more capital is needed to move the market and institutional participants increasingly shape price action. The pattern may weaken over time." },
+        { "id": "action_hs-cr-s2_12", "type": "spotlight", "elementId": "hs-cr-s2-altcoin" },
+        { "id": "action_hs-cr-s2_13", "type": "speech", "text": "Evaluating altcoins: What problem does it solve — in one sentence? Who's building it and are they public? Does the token actually need to exist to use the network? Check on-chain metrics — active wallets, transaction volume, GitHub developer activity. Real usage equals real demand. Dead chains fake these metrics." }
+      ]
+    },
+    {
+      "id": "hs-cr-s3",
+      "type": "quiz",
+      "title": "Knowledge Check — Crypto Markets High School",
+      "order": 3,
+      "content": {
+        "type": "quiz",
+        "questions": [
+          {
+            "id": "q-hs-cr-1",
+            "type": "single",
+            "question": "A coin is priced at $0.001 with 1 trillion tokens in supply. What is its market cap?",
+            "options": [
+              { "label": "$0.001 million", "value": "A" },
+              { "label": "$1 billion", "value": "B" },
+              { "label": "$1 million", "value": "C" },
+              { "label": "$1 trillion", "value": "D" }
+            ],
+            "answer": ["B"],
+            "analysis": "Market cap = price × supply = $0.001 × 1,000,000,000,000 = $1,000,000,000 = $1 billion. This is why a low price doesn't mean a coin is cheap — it's the market cap that shows the real valuation.",
+            "points": 1
+          },
+          {
+            "id": "q-hs-cr-2",
+            "type": "single",
+            "question": "What happens to Bitcoin's block reward during a halving?",
+            "options": [
+              { "label": "It doubles", "value": "A" },
+              { "label": "It is cut in half", "value": "B" },
+              { "label": "It resets to the original 50 BTC", "value": "C" },
+              { "label": "It becomes variable based on demand", "value": "D" }
+            ],
+            "answer": ["B"],
+            "analysis": "Every ~4 years (210,000 blocks), the Bitcoin block reward is cut in half. This is hardcoded into Bitcoin's protocol — no one can change it. It reduces the rate of new BTC entering circulation, historically creating deflationary pressure.",
+            "points": 1
+          },
+          {
+            "id": "q-hs-cr-3",
+            "type": "single",
+            "question": "What does 'higher highs and higher lows' on a price chart indicate?",
+            "options": [
+              { "label": "A downtrend", "value": "A" },
+              { "label": "A sideways market", "value": "B" },
+              { "label": "An uptrend — buyers are in control", "value": "C" },
+              { "label": "A price correction", "value": "D" }
+            ],
+            "answer": ["C"],
+            "analysis": "Higher highs (each rally peak exceeds the last) and higher lows (each pullback holds above the previous dip) are the definition of an uptrend. Buyers are consistently stepping in at higher prices — a bullish structure.",
+            "points": 1
+          },
+          {
+            "id": "q-hs-cr-4",
+            "type": "single",
+            "question": "Why does XRP have a lower price than Bitcoin despite being a top-10 cryptocurrency?",
+            "options": [
+              { "label": "XRP is less valuable as a technology", "value": "A" },
+              { "label": "XRP has a far larger circulating supply (~57 billion vs ~21 million for BTC)", "value": "B" },
+              { "label": "XRP is not as widely traded", "value": "C" },
+              { "label": "XRP has no real-world use cases", "value": "D" }
+            ],
+            "answer": ["B"],
+            "analysis": "XRP has approximately 57 billion tokens in circulation versus Bitcoin's ~21 million. A larger supply means the same market cap is spread across more tokens, making the per-token price lower. XRP's market cap places it in the top 5–10 globally — it's not 'cheap.'",
+            "points": 1
+          },
+          {
+            "id": "q-hs-cr-5",
+            "type": "single",
+            "question": "What is a 'burn mechanism' in tokenomics?",
+            "options": [
+              { "label": "Miners burning energy to create blocks", "value": "A" },
+              { "label": "Permanently destroying tokens to reduce circulating supply", "value": "B" },
+              { "label": "Locking tokens in a smart contract temporarily", "value": "C" },
+              { "label": "Converting tokens into stablecoins", "value": "D" }
+            ],
+            "answer": ["B"],
+            "analysis": "A burn mechanism permanently removes tokens from circulation — they're sent to an unspendable address and can never be accessed. Ethereum burns a portion of every transaction fee (EIP-1559). XRP burns a tiny fee per transaction. Over time, burns reduce supply, which can create upward price pressure if demand stays constant.",
+            "points": 1
+          }
+        ]
+      },
+      "actions": [
+        { "id": "action_hs-cr-s3_q0", "type": "speech", "text": "Time to test your understanding of crypto markets and tokenomics. Five questions covering market cap, halving cycles, price action, and token supply mechanics." },
+        { "id": "action_hs-cr-s3_q1", "type": "speech", "text": "Take your time. Understanding these concepts helps you evaluate any crypto project more clearly." }
+      ]
+    }
+  ]
+}
