@@ -2,8 +2,8 @@
 
 import { useRouter } from 'next/navigation';
 import { useTheme } from '@/lib/hooks/use-theme';
-import { Sun, Moon, Monitor, User } from 'lucide-react';
-import { useState } from 'react';
+import { Sun, Moon, Monitor, User, RotateCcw } from 'lucide-react';
+import { useState, useEffect } from 'react';
 import { useUserProfileStore } from '@/lib/store/user-profile';
 
 const ELEMENTARY_COURSES = [
@@ -80,6 +80,19 @@ function CourseCard({ id, emoji, gradient, title, description, badge, scenes, on
   );
 }
 
+const RESUME_KEY = 'oc_last_course';
+
+function getLastCourse(): { id: string; title: string; level: string } | null {
+  try {
+    const raw = localStorage.getItem(RESUME_KEY);
+    return raw ? JSON.parse(raw) : null;
+  } catch { return null; }
+}
+
+function saveLastCourse(id: string, title: string, level: string) {
+  try { localStorage.setItem(RESUME_KEY, JSON.stringify({ id, title, level })); } catch {}
+}
+
 export default function HomePage() {
   const router = useRouter();
   const { theme, setTheme } = useTheme();
@@ -87,6 +100,16 @@ export default function HomePage() {
   const { nickname, setNickname } = useUserProfileStore();
   const [nameInput, setNameInput] = useState(nickname);
   const [activeLevel, setActiveLevel] = useState<Level>('elementary');
+  const [lastCourse, setLastCourse] = useState<{ id: string; title: string; level: string } | null>(null);
+
+  useEffect(() => {
+    setLastCourse(getLastCourse());
+  }, []);
+
+  const goToCourse = (id: string, title: string, level: string) => {
+    saveLastCourse(id, title, level);
+    router.push(`/classroom/${id}`);
+  };
 
   return (
     <div className="min-h-screen bg-gray-950 text-white">
@@ -153,6 +176,35 @@ export default function HomePage() {
         </div>
       </div>
 
+      {/* Resume Banner */}
+      {lastCourse && (
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 mb-4">
+          <div className="flex items-center justify-between gap-4 bg-violet-500/10 border border-violet-500/30 rounded-2xl px-5 py-3.5">
+            <div className="flex items-center gap-3">
+              <RotateCcw className="w-4 h-4 text-violet-400 shrink-0" />
+              <div>
+                <p className="text-sm font-bold text-white">Resume where you left off</p>
+                <p className="text-xs text-gray-400 capitalize">{lastCourse.title} — {lastCourse.level}</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-2 shrink-0">
+              <button
+                onClick={() => goToCourse(lastCourse.id, lastCourse.title, lastCourse.level)}
+                className="px-4 py-1.5 bg-violet-500 hover:bg-violet-600 text-white text-xs font-bold rounded-lg transition-colors"
+              >
+                Continue
+              </button>
+              <button
+                onClick={() => setLastCourse(null)}
+                className="px-3 py-1.5 text-gray-500 hover:text-gray-300 text-xs transition-colors"
+              >
+                Dismiss
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Level Selector */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 mb-8">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -210,7 +262,7 @@ export default function HomePage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {ELEMENTARY_COURSES.map((course) => (
-                <CourseCard key={course.id} {...course} onClick={() => router.push(`/classroom/${course.id}`)} />
+                <CourseCard key={course.id} {...course} onClick={() => goToCourse(course.id, course.title, 'elementary')} />
               ))}
             </div>
           </>
@@ -226,7 +278,7 @@ export default function HomePage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {HIGH_SCHOOL_COURSES.map((course) => (
-                <CourseCard key={course.id} {...course} onClick={() => router.push(`/classroom/${course.id}`)} />
+                <CourseCard key={course.id} {...course} onClick={() => goToCourse(course.id, course.title, 'highschool')} />
               ))}
             </div>
           </>
@@ -251,7 +303,7 @@ export default function HomePage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {COLLEGE_COURSES.sort((a, b) => COLLEGE_LEVEL_ORDER[a.level] - COLLEGE_LEVEL_ORDER[b.level]).map((course) => (
-                <CourseCard key={course.id} {...course} badge={course.level} onClick={() => router.push(`/classroom/${course.id}`)} />
+                <CourseCard key={course.id} {...course} badge={course.level} onClick={() => goToCourse(course.id, course.title, 'college')} />
               ))}
             </div>
           </>

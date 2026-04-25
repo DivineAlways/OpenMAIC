@@ -24,6 +24,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/comp
 export interface CanvasToolbarProps {
   readonly currentSceneIndex: number;
   readonly scenesCount: number;
+  readonly speechProgress?: number | null; // 0–1 within current scene
   readonly engineState: 'idle' | 'playing' | 'paused';
   readonly isLiveSession?: boolean;
   readonly whiteboardOpen: boolean;
@@ -83,6 +84,7 @@ function VolumeIcon({
 export function CanvasToolbar({
   currentSceneIndex,
   scenesCount,
+  speechProgress,
   engineState,
   isLiveSession,
   whiteboardOpen,
@@ -139,8 +141,33 @@ export function CanvasToolbar({
   const effectiveVolume = ttsMuted ? 0 : ttsVolume;
   const presentationLabel = isPresenting ? t('stage.exitFullscreen') : t('stage.fullscreen');
 
+  // Overall lesson progress: completed scenes + current scene speech progress
+  const overallPercent =
+    scenesCount > 0
+      ? ((currentSceneIndex + (speechProgress ?? 0)) / scenesCount) * 100
+      : 0;
+
   return (
-    <div className={cn('flex items-center gap-2', className)}>
+    <div className={cn('flex flex-col', className)}>
+      {/* Dual-layer progress bar */}
+      <div className="w-full h-1 bg-gray-200/60 dark:bg-gray-700/50 relative overflow-hidden">
+        {/* Completed scenes (solid) */}
+        <div
+          className="absolute left-0 top-0 h-full bg-violet-500/60 dark:bg-violet-400/50 transition-[width] duration-300"
+          style={{ width: `${(currentSceneIndex / Math.max(scenesCount, 1)) * 100}%` }}
+        />
+        {/* Speech progress within current scene (brighter fill on top) */}
+        {speechProgress != null && speechProgress > 0 && (
+          <div
+            className="absolute top-0 h-full bg-violet-500 dark:bg-violet-400 transition-[width] duration-150"
+            style={{
+              left: `${(currentSceneIndex / Math.max(scenesCount, 1)) * 100}%`,
+              width: `${(speechProgress / Math.max(scenesCount, 1)) * 100}%`,
+            }}
+          />
+        )}
+      </div>
+    <div className="flex items-center gap-2">
       {/* ── Left: sidebar toggle + page indicator ── */}
       <div className="flex items-center gap-1 shrink-0 pl-1">
         {onToggleSidebar && (
@@ -435,6 +462,7 @@ export function CanvasToolbar({
           </button>
         )}
       </div>
+    </div>
     </div>
   );
 }
