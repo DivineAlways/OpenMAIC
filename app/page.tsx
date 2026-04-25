@@ -154,47 +154,47 @@ export default function HomePage() {
       </div>
 
       {/* Level Selector */}
-      <div className="max-w-6xl mx-auto px-6 mb-8">
-        <div className="grid grid-cols-3 gap-3">
-          {/* Elementary */}
-          <button onClick={() => setActiveLevel('elementary')}
-            className={`p-4 rounded-2xl border text-left transition-all ${activeLevel === 'elementary' ? 'border-emerald-500/60 bg-emerald-500/10 shadow-lg' : 'border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/10'}`}
-          >
-            <div className="flex items-center gap-3">
-              <span className="text-2xl">🌱</span>
-              <div className="flex-1 min-w-0">
-                <p className={`font-black text-sm ${activeLevel === 'elementary' ? 'text-emerald-400' : 'text-white'}`}>Elementary</p>
-                <p className="text-xs text-gray-500 truncate">Brand new to crypto</p>
-              </div>
-              {activeLevel === 'elementary' && <div className="h-2 w-2 rounded-full bg-emerald-400 shrink-0" />}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+{/* Elementary */}
+        <button onClick={() => setActiveLevel('elementary')}
+          className={`p-3 sm:p-4 rounded-2xl border text-left transition-all ${activeLevel === 'elementary' ? 'border-emerald-500/60 bg-emerald-500/10 shadow-lg' : 'border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/10'}`}
+        >
+          <div className="flex items-center gap-2 sm:gap-3">
+            <span className="text-xl sm:text-2xl shrink-0">🌱</span>
+            <div className="flex-1 min-w-0 overflow-hidden">
+              <p className={`font-black text-sm ${activeLevel === 'elementary' ? 'text-emerald-400' : 'text-white'}`}>Elementary</p>
+              <p className="text-xs text-gray-500 truncate">Brand new to crypto</p>
             </div>
-          </button>
-          {/* High School */}
-          <button onClick={() => setActiveLevel('highschool')}
-            className={`p-4 rounded-2xl border text-left transition-all ${activeLevel === 'highschool' ? 'border-amber-500/60 bg-amber-500/10 shadow-lg' : 'border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/10'}`}
-          >
-            <div className="flex items-center gap-3">
-              <span className="text-2xl">📚</span>
-              <div className="flex-1 min-w-0">
-                <p className={`font-black text-sm ${activeLevel === 'highschool' ? 'text-amber-400' : 'text-white'}`}>High School</p>
-                <p className="text-xs text-gray-500 truncate">Some basics down</p>
-              </div>
-              {activeLevel === 'highschool' && <div className="h-2 w-2 rounded-full bg-amber-400 shrink-0" />}
+            {activeLevel === 'elementary' && <div className="h-2 w-2 rounded-full bg-emerald-400 shrink-0 ml-auto" />}
+          </div>
+        </button>
+{/* High School */}
+        <button onClick={() => setActiveLevel('highschool')}
+          className={`p-3 sm:p-4 rounded-2xl border text-left transition-all ${activeLevel === 'highschool' ? 'border-amber-500/60 bg-amber-500/10 shadow-lg' : 'border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/10'}`}
+        >
+          <div className="flex items-center gap-2 sm:gap-3">
+            <span className="text-xl sm:text-2xl shrink-0">📚</span>
+            <div className="flex-1 min-w-0 overflow-hidden">
+              <p className={`font-black text-sm ${activeLevel === 'highschool' ? 'text-amber-400' : 'text-white'}`}>High School</p>
+              <p className="text-xs text-gray-500 truncate">Some basics down</p>
             </div>
-          </button>
-          {/* College */}
-          <button onClick={() => setActiveLevel('college')}
-            className={`p-4 rounded-2xl border text-left transition-all ${activeLevel === 'college' ? 'border-blue-500/60 bg-blue-500/10 shadow-lg' : 'border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/10'}`}
-          >
-            <div className="flex items-center gap-3">
-              <span className="text-2xl">🎓</span>
-              <div className="flex-1 min-w-0">
-                <p className={`font-black text-sm ${activeLevel === 'college' ? 'text-blue-400' : 'text-white'}`}>College</p>
-                <p className="text-xs text-gray-500 truncate">Ready to go deep</p>
-              </div>
-              {activeLevel === 'college' && <div className="h-2 w-2 rounded-full bg-blue-400 shrink-0" />}
+            {activeLevel === 'highschool' && <div className="h-2 w-2 rounded-full bg-amber-400 shrink-0 ml-auto" />}
+          </div>
+        </button>
+{/* College */}
+        <button onClick={() => setActiveLevel('college')}
+          className={`p-3 sm:p-4 rounded-2xl border text-left transition-all ${activeLevel === 'college' ? 'border-blue-500/60 bg-blue-500/10 shadow-lg' : 'border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/10'}`}
+        >
+          <div className="flex items-center gap-2 sm:gap-3">
+            <span className="text-xl sm:text-2xl shrink-0">🎓</span>
+            <div className="flex-1 min-w-0 overflow-hidden">
+              <p className={`font-black text-sm ${activeLevel === 'college' ? 'text-blue-400' : 'text-white'}`}>College</p>
+              <p className="text-xs text-gray-500 truncate">Ready to go deep</p>
             </div>
-          </button>
+            {activeLevel === 'college' && <div className="h-2 w-2 rounded-full bg-blue-400 shrink-0 ml-auto" />}
+          </div>
+        </button>
         </div>
       </div>
 

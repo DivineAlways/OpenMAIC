@@ -43,16 +43,39 @@ export function CertificateModal({ courseName, score, totalPoints, onClose }: Ce
     setDownloading(true);
     try {
       const html2canvas = (await import('html2canvas')).default;
+      
+      // Wait for images to load
+      const images = certRef.current.querySelectorAll('img');
+      await Promise.all(
+        Array.from(images).map(
+          (img) =>
+            new Promise((resolve) => {
+              if (img.complete) resolve(undefined);
+              else {
+                img.onload = () => resolve(undefined);
+                img.onerror = () => resolve(undefined);
+              }
+            })
+        )
+      );
+      
       const canvas = await html2canvas(certRef.current, {
         scale: 2,
         useCORS: true,
         backgroundColor: null,
         logging: false,
+        allowTaint: true,
       });
+      
       const link = document.createElement('a');
       link.download = `${courseName.replace(/[^a-z0-9]/gi, '-').toLowerCase()}-certificate.png`;
       link.href = canvas.toDataURL('image/png');
+      document.body.appendChild(link);
       link.click();
+      document.body.removeChild(link);
+    } catch (err) {
+      console.error('Certificate download failed:', err);
+      alert('Download failed. Please try again or take a screenshot.');
     } finally {
       setDownloading(false);
     }
