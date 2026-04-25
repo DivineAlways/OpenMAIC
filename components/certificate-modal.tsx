@@ -44,28 +44,32 @@ export function CertificateModal({ courseName, score, totalPoints, onClose }: Ce
     try {
       const html2canvas = (await import('html2canvas')).default;
       
-      // Wait for images to load
-      const images = certRef.current.querySelectorAll('img');
-      await Promise.all(
-        Array.from(images).map(
-          (img) =>
-            new Promise((resolve) => {
-              if (img.complete) resolve(undefined);
-              else {
-                img.onload = () => resolve(undefined);
-                img.onerror = () => resolve(undefined);
-              }
-            })
-        )
-      );
+      // Clone the certificate to remove problematic images for canvas capture
+      const certClone = certRef.current.cloneNode(true) as HTMLElement;
       
-      const canvas = await html2canvas(certRef.current, {
+      // Replace the logo img with a styled div
+      const logoImg = certClone.querySelector('img[src="/onlycrypto-logo.jpg"]');
+      if (logoImg) {
+        const logoDiv = document.createElement('div');
+        logoDiv.textContent = 'OC';
+        logoDiv.style.cssText = 'width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,#3b82f6,#8b5cf6);display:flex;align-items:center;justify-content:center;color:white;font-weight:bold;font-size:16px;font-family:Arial,sans-serif;';
+        logoImg.parentNode?.replaceChild(logoDiv, logoImg);
+      }
+      
+      // Temporarily append clone to body for rendering (hidden)
+      certClone.style.position = 'absolute';
+      certClone.style.left = '-9999px';
+      certClone.style.top = '-9999px';
+      document.body.appendChild(certClone);
+      
+      const canvas = await html2canvas(certClone, {
         scale: 2,
-        useCORS: true,
         backgroundColor: null,
         logging: false,
-        allowTaint: true,
       });
+      
+      // Clean up
+      document.body.removeChild(certClone);
       
       const link = document.createElement('a');
       link.download = `${courseName.replace(/[^a-z0-9]/gi, '-').toLowerCase()}-certificate.png`;
