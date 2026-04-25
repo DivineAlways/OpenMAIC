@@ -44,16 +44,31 @@ export function CertificateModal({ courseName, score, totalPoints, onClose }: Ce
     try {
       const html2canvas = (await import('html2canvas')).default;
       
-      // Clone the certificate to remove problematic images for canvas capture
+      // Load logo as base64 to avoid CORS issues
+      const logoUrl = '/onlycrypto-logo.jpg';
+      let logoBase64 = '';
+      try {
+        const response = await fetch(logoUrl);
+        const blob = await response.blob();
+        logoBase64 = await new Promise<string>((resolve) => {
+          const reader = new FileReader();
+          reader.onloadend = () => resolve(reader.result as string);
+          reader.readAsDataURL(blob);
+        });
+      } catch (e) {
+        console.warn('Could not load logo, using fallback');
+      }
+      
+      // Clone the certificate
       const certClone = certRef.current.cloneNode(true) as HTMLElement;
       
-      // Replace the logo img with a styled div
-      const logoImg = certClone.querySelector('img[src="/onlycrypto-logo.jpg"]');
-      if (logoImg) {
-        const logoDiv = document.createElement('div');
-        logoDiv.textContent = 'OC';
-        logoDiv.style.cssText = 'width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,#3b82f6,#8b5cf6);display:flex;align-items:center;justify-content:center;color:white;font-weight:bold;font-size:16px;font-family:Arial,sans-serif;';
-        logoImg.parentNode?.replaceChild(logoDiv, logoImg);
+      // Replace logo src with base64 if loaded
+      if (logoBase64) {
+        const logoImg = certClone.querySelector('img[src="/onlycrypto-logo.jpg"]') as HTMLImageElement;
+        if (logoImg) {
+          logoImg.src = logoBase64;
+          logoImg.removeAttribute('crossorigin');
+        }
       }
       
       // Temporarily append clone to body for rendering (hidden)
@@ -62,10 +77,15 @@ export function CertificateModal({ courseName, score, totalPoints, onClose }: Ce
       certClone.style.top = '-9999px';
       document.body.appendChild(certClone);
       
+      // Wait for logo to load in clone
+      await new Promise(resolve => setTimeout(resolve, 100));
+      
       const canvas = await html2canvas(certClone, {
         scale: 2,
         backgroundColor: null,
         logging: false,
+        useCORS: false,
+        allowTaint: true,
       });
       
       // Clean up
