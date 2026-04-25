@@ -44,30 +44,31 @@ export function CertificateModal({ courseName, score, totalPoints, onClose }: Ce
     try {
       const html2canvas = (await import('html2canvas')).default;
       
-      // Load logo as base64 to avoid CORS issues
-      const logoUrl = '/onlycrypto-logo.jpg';
-      let logoBase64 = '';
-      try {
-        const response = await fetch(logoUrl);
-        const blob = await response.blob();
-        logoBase64 = await new Promise<string>((resolve) => {
-          const reader = new FileReader();
-          reader.onloadend = () => resolve(reader.result as string);
-          reader.readAsDataURL(blob);
-        });
-      } catch (e) {
-        console.warn('Could not load logo, using fallback');
-      }
-      
       // Clone the certificate
       const certClone = certRef.current.cloneNode(true) as HTMLElement;
       
-      // Replace logo src with base64 if loaded
-      if (logoBase64) {
-        const logoImg = certClone.querySelector('img[src="/onlycrypto-logo.jpg"]') as HTMLImageElement;
-        if (logoImg) {
-          logoImg.src = logoBase64;
-          logoImg.removeAttribute('crossorigin');
+      // Replace the logo img with a styled OC badge div
+      const logoContainer = certClone.querySelector('div[style*="gap: 10"]') as HTMLElement;
+      if (logoContainer) {
+        const img = logoContainer.querySelector('img');
+        if (img) {
+          const badgeDiv = document.createElement('div');
+          badgeDiv.style.cssText = `
+            width: 44px;
+            height: 44px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+          `;
+          badgeDiv.textContent = 'OC';
+          logoContainer.replaceChild(badgeDiv, img);
         }
       }
       
@@ -77,15 +78,10 @@ export function CertificateModal({ courseName, score, totalPoints, onClose }: Ce
       certClone.style.top = '-9999px';
       document.body.appendChild(certClone);
       
-      // Wait for logo to load in clone
-      await new Promise(resolve => setTimeout(resolve, 100));
-      
       const canvas = await html2canvas(certClone, {
         scale: 2,
         backgroundColor: null,
         logging: false,
-        useCORS: false,
-        allowTaint: true,
       });
       
       // Clean up
