@@ -10,17 +10,19 @@ interface CertificateModalProps {
   readonly score: number;
   readonly totalPoints: number;
   readonly onClose: () => void;
+  readonly completedDate?: string;
 }
 
-export function CertificateModal({ courseName, score, totalPoints, onClose }: CertificateModalProps) {
+export function CertificateModal({ courseName, score, totalPoints, onClose, completedDate: completedDateProp }: CertificateModalProps) {
   const { nickname, setNickname } = useUserProfileStore();
   const certRef = useRef<HTMLDivElement>(null);
   const [downloading, setDownloading] = useState(false);
   const [editingName, setEditingName] = useState(!nickname);
   const [nameInput, setNameInput] = useState(nickname || '');
   const [displayName, setDisplayName] = useState(nickname || '');
+  const [logoDataUrl, setLogoDataUrl] = useState<string | null>(null);
   const pct = totalPoints > 0 ? Math.round((score / totalPoints) * 100) : 0;
-  const completedDate = new Date().toLocaleDateString('en-US', {
+  const completedDate = completedDateProp ?? new Date().toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -30,6 +32,18 @@ export function CertificateModal({ courseName, score, totalPoints, onClose }: Ce
   useEffect(() => {
     if (!nickname) setEditingName(true);
   }, [nickname]);
+
+  // Pre-load logo as data URL so html2canvas can render it without CORS taint
+  useEffect(() => {
+    fetch('/onlycrypto-logo.jpg')
+      .then((r) => r.blob())
+      .then((blob) => {
+        const reader = new FileReader();
+        reader.onload = () => setLogoDataUrl(reader.result as string);
+        reader.readAsDataURL(blob);
+      })
+      .catch(() => setLogoDataUrl(null));
+  }, []);
 
   const confirmName = useCallback(() => {
     const trimmed = nameInput.trim() || 'OnlyCrypto Member';
@@ -43,50 +57,13 @@ export function CertificateModal({ courseName, score, totalPoints, onClose }: Ce
     setDownloading(true);
     try {
       const html2canvas = (await import('html2canvas')).default;
-      
-      // Clone the certificate
-      const certClone = certRef.current.cloneNode(true) as HTMLElement;
-      
-      // Replace the logo img with a styled OC badge div
-      const logoContainer = certClone.querySelector('div[style*="gap: 10"]') as HTMLElement;
-      if (logoContainer) {
-        const img = logoContainer.querySelector('img');
-        if (img) {
-          const badgeDiv = document.createElement('div');
-          badgeDiv.style.cssText = `
-            width: 44px;
-            height: 44px;
-            border-radius: 8px;
-            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: 700;
-            font-size: 16px;
-            font-family: Arial, sans-serif;
-            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
-          `;
-          badgeDiv.textContent = 'OC';
-          logoContainer.replaceChild(badgeDiv, img);
-        }
-      }
-      
-      // Temporarily append clone to body for rendering (hidden)
-      certClone.style.position = 'absolute';
-      certClone.style.left = '-9999px';
-      certClone.style.top = '-9999px';
-      document.body.appendChild(certClone);
-      
-      const canvas = await html2canvas(certClone, {
+      const canvas = await html2canvas(certRef.current, {
         scale: 2,
         backgroundColor: null,
         logging: false,
+        useCORS: true,
+        allowTaint: false,
       });
-      
-      // Clean up
-      document.body.removeChild(certClone);
-      
       const link = document.createElement('a');
       link.download = `${courseName.replace(/[^a-z0-9]/gi, '-').toLowerCase()}-certificate.png`;
       link.href = canvas.toDataURL('image/png');
@@ -197,12 +174,11 @@ export function CertificateModal({ courseName, score, totalPoints, onClose }: Ce
               <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/onlycrypto-logo.jpg"
+                  src={logoDataUrl ?? '/onlycrypto-logo.jpg'}
                   alt="OnlyCrypto"
                   width={44}
                   height={44}
                   style={{ borderRadius: 8, objectFit: 'cover' }}
-                  crossOrigin="anonymous"
                 />
                 <span style={{ color: '#60a5fa', fontSize: 14, fontWeight: 700, letterSpacing: '0.08em', fontFamily: 'Arial, sans-serif' }}>
                   ONLYCRYPTO

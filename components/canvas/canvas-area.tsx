@@ -14,6 +14,9 @@ import { useI18n } from '@/lib/hooks/use-i18n';
 
 interface CanvasAreaProps extends CanvasToolbarProps {
   readonly onQuizComplete?: (score: number, total: number) => void;
+  readonly onNextLesson?: () => void;
+  readonly courseId?: string;
+  readonly courseTitle?: string;
   readonly currentScene: Scene | null;
   readonly mode: StageMode;
   readonly hideToolbar?: boolean;
@@ -47,6 +50,9 @@ export function CanvasArea({
   isGenerationFailed,
   onRetryGeneration,
   onQuizComplete,
+  onNextLesson,
+  courseId,
+  courseTitle,
 }: CanvasAreaProps) {
   const { t } = useI18n();
   const showControls = mode === 'playback' && !whiteboardOpen;
@@ -113,7 +119,7 @@ export function CanvasArea({
           {currentScene && !whiteboardOpen && (
             <div className="absolute inset-0">
               <SceneProvider>
-                <SceneRenderer scene={currentScene} mode={mode} onQuizComplete={onQuizComplete} />
+                <SceneRenderer scene={currentScene} mode={mode} onQuizComplete={onQuizComplete} onNextLesson={onNextLesson} courseId={courseId} courseTitle={courseTitle} />
               </SceneProvider>
             </div>
           )}

@@ -801,6 +801,10 @@ export function Stage({
     setCertData({ score, total });
   }, []);
 
+  const handleNextLessonFromQuiz = useCallback(() => {
+    setShowCompletionOverlay(true);
+  }, []);
+
   // get scene information
   const isPendingScene = currentSceneId === PENDING_SCENE_ID;
   const hasNextPending = generatingOutlines.length > 0;
@@ -1061,6 +1065,9 @@ export function Stage({
                 : undefined
             }
             onQuizComplete={handleQuizComplete}
+            onNextLesson={courseId ? handleNextLessonFromQuiz : undefined}
+            courseId={courseId}
+            courseTitle={stage?.name ?? undefined}
           />
         </div>
 

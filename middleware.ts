@@ -43,21 +43,36 @@ async function verifyToken(token: string, accessCode: string): Promise<boolean> 
 
 export async function middleware(request: NextRequest) {
   const accessCode = process.env.ACCESS_CODE;
-  if (!accessCode) {
+  const ssoSecret = process.env.ACADEMY_SSO_SECRET;
+
+  // Gate is active when either ACCESS_CODE or ACADEMY_SSO_SECRET is configured
+  const gateEnabled = !!(accessCode || ssoSecret);
+  if (!gateEnabled) {
     return NextResponse.next();
   }
 
   const { pathname } = request.nextUrl;
 
-  // Whitelist: access-code endpoints, health check
-  if (pathname.startsWith('/api/access-code/') || pathname === '/api/health') {
+  // Whitelist: access-code endpoints, SSO endpoint, health check
+  if (
+    pathname.startsWith('/api/access-code/') ||
+    pathname.startsWith('/api/sso') ||
+    pathname === '/api/health'
+  ) {
     return NextResponse.next();
   }
 
-  // Check cookie — validate HMAC signature, not just existence
+  // Check HMAC access cookie (set by access-code verify or SSO route)
   const cookie = request.cookies.get('openmaic_access');
-  if (cookie?.value && (await verifyToken(cookie.value, accessCode))) {
-    return NextResponse.next();
+  if (cookie?.value) {
+    // SSO-only mode: cookie value is `sso.timestamp.valid`
+    if (cookie.value.startsWith('sso.') && ssoSecret) {
+      return NextResponse.next();
+    }
+    // ACCESS_CODE mode: verify HMAC
+    if (accessCode && (await verifyToken(cookie.value, accessCode))) {
+      return NextResponse.next();
+    }
   }
 
   // API requests without valid cookie → 401
@@ -68,7 +83,7 @@ export async function middleware(request: NextRequest) {
     );
   }
 
-  // Page requests → let through, frontend shows modal
+  // Page requests → let through, frontend shows members-only wall
   return NextResponse.next();
 }
 

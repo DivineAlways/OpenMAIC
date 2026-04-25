@@ -11,9 +11,12 @@ interface SceneRendererProps {
   readonly scene: Scene;
   readonly mode: StageMode;
   readonly onQuizComplete?: (score: number, total: number) => void;
+  readonly onNextLesson?: () => void;
+  readonly courseId?: string;
+  readonly courseTitle?: string;
 }
 
-export function SceneRenderer({ scene, mode, onQuizComplete }: SceneRendererProps) {
+export function SceneRenderer({ scene, mode, onQuizComplete, onNextLesson, courseId, courseTitle }: SceneRendererProps) {
   const renderer = useMemo(() => {
     switch (scene.type) {
       case 'slide':
@@ -21,7 +24,7 @@ export function SceneRenderer({ scene, mode, onQuizComplete }: SceneRendererProp
         return <SlideRenderer mode={mode} />;
       case 'quiz':
         if (scene.content.type !== 'quiz') return <div>Invalid quiz content</div>;
-        return <QuizView key={scene.id} questions={scene.content.questions} sceneId={scene.id} onComplete={onQuizComplete} />;
+        return <QuizView key={scene.id} questions={scene.content.questions} sceneId={scene.id} courseId={courseId} courseTitle={courseTitle} onComplete={onQuizComplete} onNextLesson={onNextLesson} />;
       case 'interactive':
         if (scene.content.type !== 'interactive') return <div>Invalid interactive content</div>;
         return <InteractiveRenderer content={scene.content} mode={mode} sceneId={scene.id} />;
@@ -31,7 +34,7 @@ export function SceneRenderer({ scene, mode, onQuizComplete }: SceneRendererProp
       default:
         return <div>Unknown scene type</div>;
     }
-  }, [scene, mode, onQuizComplete]);
+  }, [scene, mode, onQuizComplete, onNextLesson, courseId, courseTitle]);
 
   return <div className="w-full h-full">{renderer}</div>;
 }

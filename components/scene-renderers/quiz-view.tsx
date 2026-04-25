@@ -22,6 +22,8 @@ const log = createLogger('QuizView');
 import type { QuizQuestion } from '@/lib/types/stage';
 import { useDraftCache } from '@/lib/hooks/use-draft-cache';
 import { SpeechButton } from '@/components/audio/speech-button';
+import { getQuizResult, saveQuizResult, type QuizResult } from '@/lib/utils/course-progress';
+import { CertificateModal } from '@/components/certificate-modal';
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 
@@ -38,7 +40,10 @@ interface QuestionResult {
 interface QuizViewProps {
   readonly questions: QuizQuestion[];
   readonly sceneId: string;
+  readonly courseId?: string;
+  readonly courseTitle?: string;
   readonly onComplete?: (score: number, total: number) => void;
+  readonly onNextLesson?: () => void;
 }
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
@@ -685,10 +690,12 @@ function ScoreBanner({
 
 // ─── Main Component ─────────────────────────────────────────────────────────
 
-export function QuizView({ questions, sceneId, onComplete }: QuizViewProps) {
+export function QuizView({ questions, sceneId, courseId, courseTitle, onComplete, onNextLesson }: QuizViewProps) {
   const { t, locale } = useI18n();
   const [phase, setPhase] = useState<Phase>('not_started');
   const [answers, setAnswers] = useState<Record<string, string | string[]>>({});
+  const [priorResult, setPriorResult] = useState<QuizResult | null>(null);
+  const [showPriorCert, setShowPriorCert] = useState(false);
   const [results, setResults] = useState<QuestionResult[]>([]);
 
   // Draft cache for quiz answers, keyed by sceneId to isolate across classrooms
@@ -785,6 +792,16 @@ export function QuizView({ questions, sceneId, onComplete }: QuizViewProps) {
 
   const earnedScore = useMemo(() => results.reduce((sum, r) => sum + r.earned, 0), [results]);
 
+  // Check for a prior passing result on mount
+  useEffect(() => {
+    if (courseId) {
+      const prior = getQuizResult(courseId, sceneId);
+      if (prior && prior.score / Math.max(prior.total, 1) >= 0.8) {
+        setPriorResult(prior);
+      }
+    }
+  }, [courseId, sceneId]);
+
   // Fire onComplete when quiz is reviewed and score >= 80%
   const onCompleteRef = useRef(onComplete);
   onCompleteRef.current = onComplete;
@@ -792,11 +809,12 @@ export function QuizView({ questions, sceneId, onComplete }: QuizViewProps) {
     if (phase === 'reviewing' && totalPoints > 0 && onCompleteRef.current) {
       const pct = Math.round((earnedScore / totalPoints) * 100);
       if (pct >= 80) {
+        if (courseId) saveQuizResult(courseId, sceneId, earnedScore, totalPoints);
         const t = setTimeout(() => onCompleteRef.current?.(earnedScore, totalPoints), 1200);
         return () => clearTimeout(t);
       }
     }
-  }, [phase, earnedScore, totalPoints]);
+  }, [phase, earnedScore, totalPoints, courseId, sceneId]);
 
   const resultMap = useMemo(() => {
     const map: Record<string, QuestionResult> = {};
@@ -805,6 +823,67 @@ export function QuizView({ questions, sceneId, onComplete }: QuizViewProps) {
     });
     return map;
   }, [results]);
+
+  // Show prior certification if quiz was already passed
+  if (priorResult && !showPriorCert) {
+    const pct = Math.round((priorResult.score / Math.max(priorResult.total, 1)) * 100);
+    return (
+      <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 to-gray-900 p-8 text-center gap-6">
+        <div className="flex items-center justify-center w-20 h-20 rounded-full bg-emerald-500/20 border-2 border-emerald-500/40">
+          <CheckCircle2 className="w-10 h-10 text-emerald-400" />
+        </div>
+        <div>
+          <p className="text-xs font-bold uppercase tracking-widest text-emerald-400 mb-2">Already Completed</p>
+          <p className="text-2xl font-black text-white mb-1">You passed this quiz</p>
+          <p className="text-gray-400 text-sm">Score: {priorResult.score}/{priorResult.total} ({pct}%) — {priorResult.completedDate}</p>
+        </div>
+        <div className="flex flex-col gap-3 w-full max-w-xs">
+          <button
+            onClick={() => setShowPriorCert(true)}
+            className="w-full flex items-center justify-center gap-2 py-3 px-6 bg-blue-500 hover:bg-blue-400 text-white font-bold rounded-2xl transition-colors"
+          >
+            View My Certificate
+          </button>
+          {onNextLesson && (
+            <button
+              onClick={onNextLesson}
+              className="w-full flex items-center justify-center gap-2 py-3 px-6 bg-violet-500 hover:bg-violet-600 text-white font-bold rounded-2xl transition-colors"
+            >
+              Continue to Next Lesson
+              <ChevronRight className="w-4 h-4" />
+            </button>
+          )}
+          <button
+            onClick={() => { setPriorResult(null); }}
+            className="text-xs text-gray-600 hover:text-gray-400 transition-colors"
+          >
+            Retake quiz
+          </button>
+        </div>
+        {showPriorCert && (
+          <CertificateModal
+            courseName={courseTitle ?? 'OnlyCrypto Academy'}
+            score={priorResult.score}
+            totalPoints={priorResult.total}
+            completedDate={priorResult.completedDate}
+            onClose={() => setShowPriorCert(false)}
+          />
+        )}
+      </div>
+    );
+  }
+
+  if (showPriorCert && priorResult) {
+    return (
+      <CertificateModal
+        courseName={courseTitle ?? 'OnlyCrypto Academy'}
+        score={priorResult.score}
+        totalPoints={priorResult.total}
+        completedDate={priorResult.completedDate}
+        onClose={() => setShowPriorCert(false)}
+      />
+    );
+  }
 
   return (
     <div className="w-full h-full bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-900 overflow-hidden flex flex-col">
@@ -1009,6 +1088,18 @@ export function QuizView({ questions, sceneId, onComplete }: QuizViewProps) {
                   />
                 );
               })}
+
+              {onNextLesson && earnedScore / Math.max(totalPoints, 1) >= 0.8 && (
+                <div className="pt-2 pb-4">
+                  <button
+                    onClick={onNextLesson}
+                    className="w-full flex items-center justify-center gap-2 py-3.5 px-6 bg-violet-500 hover:bg-violet-600 text-white font-bold rounded-2xl transition-colors"
+                  >
+                    Continue to Next Lesson
+                    <ChevronRight className="w-4 h-4" />
+                  </button>
+                </div>
+              )}
             </div>
           </motion.div>
         )}
