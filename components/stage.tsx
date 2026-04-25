@@ -31,8 +31,60 @@ import {
   AlertDialogAction,
   AlertDialogCancel,
 } from '@/components/ui/alert-dialog';
-import { AlertTriangle } from 'lucide-react';
+import { AlertTriangle, CheckCircle2, ChevronRight, ArrowLeft } from 'lucide-react';
 import { VisuallyHidden } from 'radix-ui';
+import { useRouter } from 'next/navigation';
+import { markCourseComplete } from '@/lib/utils/course-progress';
+
+// All courses in order per level — used to find next lesson
+const ALL_COURSES: Record<string, { id: string; title: string; level: string }[]> = {
+  elementary: [
+    { id: 'oc-elem-blockchain', title: 'What is Blockchain?', level: 'elementary' },
+    { id: 'oc-elem-crypto', title: 'What is Cryptocurrency?', level: 'elementary' },
+    { id: 'oc-elem-defi', title: 'What is DeFi?', level: 'elementary' },
+    { id: 'oc-elem-trading', title: 'Intro to Trading', level: 'elementary' },
+    { id: 'oc-elem-wallets', title: 'Wallets & Safety', level: 'elementary' },
+    { id: 'oc-elem-ecosystem', title: 'The Crypto World', level: 'elementary' },
+    { id: 'oc-elem-security', title: 'Staying Safe in Crypto', level: 'elementary' },
+    { id: 'oc-elem-vault', title: 'Beginner Video Vault', level: 'elementary' },
+  ],
+  highschool: [
+    { id: 'oc-hs-blockchain', title: 'Blockchain Intermediate', level: 'highschool' },
+    { id: 'oc-hs-crypto', title: 'Crypto Markets', level: 'highschool' },
+    { id: 'oc-hs-defi', title: 'DeFi Mechanics', level: 'highschool' },
+    { id: 'oc-hs-trading', title: 'Technical Trading', level: 'highschool' },
+    { id: 'oc-hs-wallets', title: 'Wallets & Keys', level: 'highschool' },
+    { id: 'oc-hs-ecosystem', title: 'Crypto Ecosystem', level: 'highschool' },
+    { id: 'oc-hs-security', title: 'Security', level: 'highschool' },
+  ],
+  college: [
+    { id: 'oc-blockchain-basics', title: 'Blockchain Foundations', level: 'college' },
+    { id: 'oc-cryptocurrency-guide', title: 'Cryptocurrency Guide', level: 'college' },
+    { id: 'oc-defi-guide', title: 'DeFi Explained', level: 'college' },
+    { id: 'oc-trading-guide', title: 'Trading Fundamentals', level: 'college' },
+    { id: 'oc-security-wallets', title: 'Security & Wallets', level: 'college' },
+    { id: 'oc-ecosystem', title: 'Crypto in the Real World', level: 'college' },
+    { id: 'oc-xrpl-deepdive', title: 'XRPL Deep Dive', level: 'college' },
+  ],
+};
+
+function findNextCourse(courseId: string): { id: string; title: string; level: string } | null {
+  for (const courses of Object.values(ALL_COURSES)) {
+    const idx = courses.findIndex((c) => c.id === courseId);
+    if (idx !== -1) {
+      return courses[idx + 1] ?? null;
+    }
+  }
+  return null;
+}
+
+function findCourseTitle(courseId: string): string {
+  for (const courses of Object.values(ALL_COURSES)) {
+    const found = courses.find((c) => c.id === courseId);
+    if (found) return found.title;
+  }
+  return 'Lesson';
+}
 
 /**
  * Stage Component
@@ -43,10 +95,13 @@ import { VisuallyHidden } from 'radix-ui';
  */
 export function Stage({
   onRetryOutline,
+  courseId,
 }: {
   onRetryOutline?: (outlineId: string) => Promise<void>;
+  courseId?: string;
 }) {
   const { t } = useI18n();
+  const router = useRouter();
   const { mode, getCurrentScene, scenes, currentSceneId, setCurrentSceneId, generatingOutlines, stage } =
     useStageStore();
   const failedOutlines = useStageStore.use.failedOutlines();
@@ -67,6 +122,7 @@ export function Stage({
   const [engineMode, setEngineMode] = useState<EngineMode>('idle');
   const [playbackCompleted, setPlaybackCompleted] = useState(false); // Distinguishes "never played" idle from "finished" idle
   const [certData, setCertData] = useState<{ score: number; total: number } | null>(null);
+  const [showCompletionOverlay, setShowCompletionOverlay] = useState(false);
   const [lectureSpeech, setLectureSpeech] = useState<string | null>(null); // From PlaybackEngine (lecture)
   const [liveSpeech, setLiveSpeech] = useState<string | null>(null); // From buffer (discussion/QA)
   const [speechProgress, setSpeechProgress] = useState<number | null>(null); // StreamBuffer reveal progress (0–1)
@@ -488,6 +544,18 @@ export function Stage({
         // until scene transition (auto-play) or user restarts. Scene change
         // effect handles the reset.
         setPlaybackCompleted(true);
+
+        // Show completion overlay when last scene finishes
+        const stageState = useStageStore.getState();
+        const allScenes = stageState.scenes;
+        const curId = stageState.currentSceneId;
+        const idx = allScenes.findIndex((s) => s.id === curId);
+        const isLastScene = idx === allScenes.length - 1 && stageState.generatingOutlines.length === 0;
+        if (isLastScene && courseId) {
+          markCourseComplete(courseId);
+          // Small delay so last speech settles before overlay appears
+          setTimeout(() => setShowCompletionOverlay(true), 1200);
+        }
 
         // End lecture session on playback complete
         if (lectureSessionIdRef.current) {
@@ -1192,6 +1260,53 @@ export function Stage({
         onSegmentSealed={discussionTTS.handleSegmentSealed}
         shouldHoldAfterReveal={discussionTTS.shouldHold}
       />
+
+      {/* Lesson completion overlay */}
+      {showCompletionOverlay && courseId && (
+        <div className="absolute inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm">
+          <div className="bg-gray-900 border border-white/10 rounded-3xl p-8 max-w-md w-full mx-4 text-center shadow-2xl">
+            {/* Success icon */}
+            <div className="flex items-center justify-center mb-6">
+              <div className="w-20 h-20 rounded-full bg-violet-500/20 border-2 border-violet-500/40 flex items-center justify-center">
+                <CheckCircle2 className="w-10 h-10 text-violet-400" />
+              </div>
+            </div>
+
+            <p className="text-xs font-bold uppercase tracking-widest text-violet-400 mb-2">Lesson Complete</p>
+            <h2 className="text-2xl font-black text-white mb-2">{findCourseTitle(courseId)}</h2>
+            <p className="text-gray-400 text-sm mb-8">You've finished this lesson. Keep going!</p>
+
+            <div className="flex flex-col gap-3">
+              {findNextCourse(courseId) && (
+                <button
+                  onClick={() => {
+                    const next = findNextCourse(courseId)!;
+                    try { localStorage.setItem('oc_last_course', JSON.stringify({ id: next.id, title: next.title, level: next.level })); } catch {}
+                    router.push(`/classroom/${next.id}`);
+                  }}
+                  className="w-full flex items-center justify-center gap-2 py-3.5 px-6 bg-violet-500 hover:bg-violet-600 text-white font-bold rounded-2xl transition-colors"
+                >
+                  Next Lesson: {findNextCourse(courseId)!.title}
+                  <ChevronRight className="w-4 h-4" />
+                </button>
+              )}
+              <button
+                onClick={() => router.push('/')}
+                className="w-full flex items-center justify-center gap-2 py-3 px-6 bg-white/5 hover:bg-white/10 text-gray-300 font-semibold rounded-2xl transition-colors"
+              >
+                <ArrowLeft className="w-4 h-4" />
+                Back to Academy
+              </button>
+              <button
+                onClick={() => setShowCompletionOverlay(false)}
+                className="text-xs text-gray-600 hover:text-gray-400 transition-colors pt-1"
+              >
+                Stay on this lesson
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Scene switch confirmation dialog */}
       <AlertDialog

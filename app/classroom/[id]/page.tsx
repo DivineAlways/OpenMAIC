@@ -213,7 +213,7 @@ export default function ClassroomDetailPage() {
               </div>
             </div>
           ) : (
-            <Stage onRetryOutline={retrySingleOutline} />
+            <Stage onRetryOutline={retrySingleOutline} courseId={classroomId} />
           )}
         </div>
       </MediaStageProvider>

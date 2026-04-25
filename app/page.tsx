@@ -2,9 +2,10 @@
 
 import { useRouter } from 'next/navigation';
 import { useTheme } from '@/lib/hooks/use-theme';
-import { Sun, Moon, Monitor, User, RotateCcw } from 'lucide-react';
+import { Sun, Moon, Monitor, User, RotateCcw, CheckCircle2 } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useUserProfileStore } from '@/lib/store/user-profile';
+import { getProgress } from '@/lib/utils/course-progress';
 
 const ELEMENTARY_COURSES = [
   { id: 'oc-elem-blockchain', title: 'What is Blockchain?', description: 'The shared digital notebook explained in plain language. No prior knowledge needed.', scenes: 4, emoji: '🔗', gradient: 'from-emerald-500 to-teal-600' },
@@ -41,15 +42,41 @@ const COLLEGE_LEVEL_ORDER: Record<string, number> = { Beginner: 0, Intermediate:
 
 type Level = 'elementary' | 'highschool' | 'college';
 
-function CourseCard({ id, emoji, gradient, title, description, badge, scenes, onClick }: {
+function LevelProgressBar({ completedIds, courseIds, label }: {
+  completedIds: string[]; courseIds: string[]; label: string;
+}) {
+  const done = courseIds.filter(id => completedIds.includes(id)).length;
+  const total = courseIds.length;
+  const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+  return (
+    <div className="mb-6">
+      <div className="flex items-center justify-between mb-1.5">
+        <span className="text-xs text-gray-500 font-medium">{label} Progress</span>
+        <span className="text-xs font-bold text-gray-400">{done}/{total} completed · {pct}%</span>
+      </div>
+      <div className="w-full h-1.5 bg-gray-800 rounded-full overflow-hidden">
+        <div
+          className="h-full bg-violet-500 rounded-full transition-[width] duration-700"
+          style={{ width: `${pct}%` }}
+        />
+      </div>
+    </div>
+  );
+}
+
+function CourseCard({ id, emoji, gradient, title, description, badge, scenes, completed, onClick }: {
   id: string; emoji: string; gradient: string; title: string; description: string;
-  badge?: string; scenes: number; onClick: () => void;
+  badge?: string; scenes: number; completed?: boolean; onClick: () => void;
 }) {
   return (
     <button
       key={id}
       onClick={onClick}
-      className="group relative text-left bg-gray-900 border border-white/5 rounded-2xl overflow-hidden hover:border-white/20 hover:shadow-2xl hover:shadow-black/40 transition-all duration-300 hover:-translate-y-1"
+      className={`group relative text-left rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/40 ${
+        completed
+          ? 'bg-violet-950/40 border border-violet-500/30 hover:border-violet-500/50'
+          : 'bg-gray-900 border border-white/5 hover:border-white/20'
+      }`}
     >
       <div className={`h-1.5 bg-gradient-to-r ${gradient}`} />
       <div className="p-5">
@@ -58,7 +85,12 @@ function CourseCard({ id, emoji, gradient, title, description, badge, scenes, on
             {emoji}
           </div>
           <div className="flex flex-col items-end gap-1.5">
-            {badge && (
+            {completed && (
+              <span className="flex items-center gap-1 text-xs font-bold px-2.5 py-0.5 rounded-full bg-violet-500/15 text-violet-400">
+                <CheckCircle2 className="w-3 h-3" /> Done
+              </span>
+            )}
+            {badge && !completed && (
               <span className={`text-xs font-bold px-2.5 py-0.5 rounded-full ${
                 badge === 'Beginner' ? 'bg-green-500/10 text-green-400' :
                 badge === 'Intermediate' ? 'bg-yellow-500/10 text-yellow-400' :
@@ -73,7 +105,7 @@ function CourseCard({ id, emoji, gradient, title, description, badge, scenes, on
       </div>
       <div className="px-5 pb-5">
         <div className={`w-full py-2.5 rounded-xl bg-gradient-to-r ${gradient} text-white text-sm font-bold text-center opacity-0 group-hover:opacity-100 transition-all duration-200 -translate-y-1 group-hover:translate-y-0`}>
-          Start Lesson →
+          {completed ? 'Review Lesson →' : 'Start Lesson →'}
         </div>
       </div>
     </button>
@@ -101,9 +133,11 @@ export default function HomePage() {
   const [nameInput, setNameInput] = useState(nickname);
   const [activeLevel, setActiveLevel] = useState<Level>('elementary');
   const [lastCourse, setLastCourse] = useState<{ id: string; title: string; level: string } | null>(null);
+  const [completedIds, setCompletedIds] = useState<string[]>([]);
 
   useEffect(() => {
     setLastCourse(getLastCourse());
+    setCompletedIds(getProgress().completedIds);
   }, []);
 
   const goToCourse = (id: string, title: string, level: string) => {
@@ -254,15 +288,20 @@ export default function HomePage() {
       <main className="max-w-6xl mx-auto px-6 pb-20">
         {activeLevel === 'elementary' && (
           <>
-            <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center justify-between mb-4">
               <div>
                 <h2 className="text-sm font-bold uppercase tracking-widest text-gray-500">🌱 Elementary — {ELEMENTARY_COURSES.length} Classrooms</h2>
                 <p className="text-xs text-gray-600 mt-1">Plain language, real examples, no prior knowledge needed</p>
               </div>
             </div>
+            <LevelProgressBar
+              completedIds={completedIds}
+              courseIds={ELEMENTARY_COURSES.map(c => c.id)}
+              label="Elementary"
+            />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {ELEMENTARY_COURSES.map((course) => (
-                <CourseCard key={course.id} {...course} onClick={() => goToCourse(course.id, course.title, 'elementary')} />
+                <CourseCard key={course.id} {...course} completed={completedIds.includes(course.id)} onClick={() => goToCourse(course.id, course.title, 'elementary')} />
               ))}
             </div>
           </>
@@ -270,15 +309,20 @@ export default function HomePage() {
 
         {activeLevel === 'highschool' && (
           <>
-            <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center justify-between mb-4">
               <div>
                 <h2 className="text-sm font-bold uppercase tracking-widest text-gray-500">📚 High School — {HIGH_SCHOOL_COURSES.length} Classrooms</h2>
                 <p className="text-xs text-gray-600 mt-1">Real terminology, practical concepts, and intermediate mechanics</p>
               </div>
             </div>
+            <LevelProgressBar
+              completedIds={completedIds}
+              courseIds={HIGH_SCHOOL_COURSES.map(c => c.id)}
+              label="High School"
+            />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {HIGH_SCHOOL_COURSES.map((course) => (
-                <CourseCard key={course.id} {...course} onClick={() => goToCourse(course.id, course.title, 'highschool')} />
+                <CourseCard key={course.id} {...course} completed={completedIds.includes(course.id)} onClick={() => goToCourse(course.id, course.title, 'highschool')} />
               ))}
             </div>
           </>
@@ -286,7 +330,7 @@ export default function HomePage() {
 
         {activeLevel === 'college' && (
           <>
-            <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center justify-between mb-4">
               <div>
                 <h2 className="text-sm font-bold uppercase tracking-widest text-gray-500">🎓 College — {COLLEGE_COURSES.length} Classrooms</h2>
                 <p className="text-xs text-gray-600 mt-1">Deep technical content — formulas, real statistics, live simulations</p>
@@ -301,9 +345,14 @@ export default function HomePage() {
                 ))}
               </div>
             </div>
+            <LevelProgressBar
+              completedIds={completedIds}
+              courseIds={COLLEGE_COURSES.map(c => c.id)}
+              label="College"
+            />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {COLLEGE_COURSES.sort((a, b) => COLLEGE_LEVEL_ORDER[a.level] - COLLEGE_LEVEL_ORDER[b.level]).map((course) => (
-                <CourseCard key={course.id} {...course} badge={course.level} onClick={() => goToCourse(course.id, course.title, 'college')} />
+                <CourseCard key={course.id} {...course} badge={course.level} completed={completedIds.includes(course.id)} onClick={() => goToCourse(course.id, course.title, 'college')} />
               ))}
             </div>
           </>
