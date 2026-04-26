@@ -34,13 +34,17 @@ export default function ClassroomDetailPage() {
 
   const loadClassroom = useCallback(async () => {
     try {
-      // Clear stale IndexedDB cache so server data is always loaded fresh.
-      // This ensures audioUrls and fixed stage objects are always used.
+      // Wipe any corrupt cached stage (missing id) before fetching from server.
       try {
-        const { deleteStageData } = await import('@/lib/utils/stage-storage');
-        await deleteStageData(classroomId);
+        const { db } = await import('@/lib/utils/database');
+        const cached = await db.stages.get(classroomId);
+        if (cached && !cached.id) {
+          const { deleteStageData } = await import('@/lib/utils/stage-storage');
+          await deleteStageData(classroomId);
+          log.info('Wiped corrupt IndexedDB stage for:', classroomId);
+        }
       } catch (delErr) {
-        log.warn('Failed to clear IndexedDB cache:', delErr);
+        log.warn('IndexedDB check failed:', delErr);
       }
 
       // Load from server — source of truth for OC Academy courses.
@@ -62,12 +66,18 @@ export default function ClassroomDetailPage() {
             }
           }
         } else {
-          // Server fetch failed (e.g. auth) — fall back to IndexedDB
-          await loadFromStorage(classroomId);
+          // Server fetch failed (e.g. auth) — classroom data unavailable
+          log.warn('Server returned non-ok response for classroom:', classroomId);
         }
       } catch (fetchErr) {
-        log.warn('Server fetch failed, falling back to IndexedDB:', fetchErr);
-        try { await loadFromStorage(classroomId); } catch (_) { /* ignore */ }
+        log.warn('Server fetch failed:', fetchErr);
+      }
+
+      // If still no stage after server fetch, this classroom cannot be loaded
+      if (!useStageStore.getState().stage) {
+        setError('Could not load this lesson. Please go back and try again.');
+        setLoading(false);
+        return;
       }
 
       // Restore completed media generation tasks from IndexedDB
