@@ -307,8 +307,8 @@ const getDefaultProvidersConfig = (): ProvidersConfig => {
 
 // Initialize default audio config
 const getDefaultAudioConfig = () => ({
-  ttsProviderId: 'edge-tts' as TTSProviderId,
-  ttsVoice: 'en-US-AvaNeural',
+  ttsProviderId: 'browser-native-tts' as TTSProviderId,
+  ttsVoice: 'default',
   ttsSpeed: 1.0,
   asrProviderId: 'browser-native' as ASRProviderId,
   asrLanguage: 'en-US',

@@ -38,6 +38,7 @@ import { ActionEngine } from '@/lib/action/engine';
 import { useCanvasStore } from '@/lib/store/canvas';
 import { useSettingsStore } from '@/lib/store/settings';
 import { createLogger } from '@/lib/logger';
+import { sanitizeSpeechText } from '@/lib/audio/tts-utils';
 
 const log = createLogger('PlaybackEngine');
 
@@ -617,7 +618,7 @@ export class PlaybackEngine {
    * Uses cancel+re-speak for pause/resume (Firefox compatibility).
    */
   private playBrowserTTS(speechAction: SpeechAction): void {
-    this.browserTTSChunks = this.splitIntoChunks(speechAction.text);
+    this.browserTTSChunks = this.splitIntoChunks(sanitizeSpeechText(speechAction.text));
     this.browserTTSChunkIndex = 0;
     this.browserTTSPausedChunks = [];
     this.browserTTSActive = true;
@@ -658,13 +659,28 @@ export class PlaybackEngine {
       }
     }
     if (!voiceFound) {
-      // No usable voice configured — detect text language so the browser
-      // auto-selects an appropriate voice.
       const cjkRatio =
         chunkText.length > 0
           ? (chunkText.match(/[\u4e00-\u9fff\u3400-\u4dbf]/g) || []).length / chunkText.length
           : 0;
-      utterance.lang = cjkRatio > CJK_LANG_THRESHOLD ? 'zh-CN' : 'en-US';
+      if (cjkRatio > CJK_LANG_THRESHOLD) {
+        utterance.lang = 'zh-CN';
+      } else {
+        // Prefer a natural-sounding male English voice
+        const enVoices = voices.filter((v) => v.lang.startsWith('en'));
+        const PREFERRED_MALE = ['guy', 'david', 'daniel', 'james', 'ryan', 'eric', 'andrew', 'christopher', 'brian', 'reed'];
+        const naturalMale =
+          enVoices.find((v) => v.name.toLowerCase().includes('online') && PREFERRED_MALE.some((k) => v.name.toLowerCase().includes(k))) ??
+          enVoices.find((v) => PREFERRED_MALE.some((k) => v.name.toLowerCase().includes(k))) ??
+          enVoices.find((v) => v.lang === 'en-US') ??
+          enVoices[0];
+        if (naturalMale) {
+          utterance.voice = naturalMale;
+          utterance.lang = naturalMale.lang;
+        } else {
+          utterance.lang = 'en-US';
+        }
+      }
     }
 
     utterance.onend = () => {
