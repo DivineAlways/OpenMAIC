@@ -191,7 +191,7 @@
           ]
         }
       },
-      "order": 1,
+      "order": 0,
       "actions": [
         {
           "id": "action_df-s1_0",
@@ -402,7 +402,7 @@
           ]
         }
       },
-      "order": 2,
+      "order": 1,
       "actions": [
         {
           "id": "action_df-s2_0",
@@ -643,7 +643,7 @@
           ]
         }
       },
-      "order": 3,
+      "order": 2,
       "actions": [
         {
           "id": "action_df-s3_0",
@@ -1033,7 +1033,7 @@
           ]
         }
       },
-      "order": 4,
+      "order": 3,
       "actions": [
         {
           "id": "action_df-s4_0",
@@ -1296,7 +1296,7 @@
           ]
         }
       },
-      "order": 5,
+      "order": 4,
       "actions": [
         {
           "id": "action_df-s5_0",
@@ -1575,7 +1575,7 @@
           ]
         }
       },
-      "order": 6,
+      "order": 5,
       "actions": [
         {
           "id": "action_df-s6_0",
@@ -1816,7 +1816,7 @@
           ]
         }
       },
-      "order": 7,
+      "order": 6,
       "actions": [
         {
           "id": "action_df-s7_0",
@@ -1884,6 +1884,625 @@
           "type": "speech",
           "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading.",
           "audioUrl": "/audio/lessons/oc-defi-guide/7-1.mp3"
+        }
+      ],
+      "order": 7
+    },
+    {
+      "id": "cdg-s10",
+      "type": "slide",
+      "title": "🏦 Lending Protocol Architecture — Aave & Compound",
+      "order": 8,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "cdg-s10-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#10b981",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "cdg-s10-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b981",
+              "fixedRatio": false
+            },
+            {
+              "id": "cdg-s10-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "cdg-s10-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🏦 Lending Protocol Architecture — Aave & Compound</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "cdg-s10-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>How algorithmic interest rates work in practice</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "cdg-s10-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Aave and Compound use <b style='color:#10b981;'>utilization rate</b> to set interest rates algorithmically. Utilization = borrowed / total deposited. When utilization is low, rates are low (incentivize borrowing). As it approaches 100%, rates spike sharply to incentivize repayment and new deposits.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Borrowers must maintain a <b style='color:#f1f5f9;'>health factor</b> above 1.0. If collateral value drops below the liquidation threshold, anyone can liquidate the position — taking the collateral at a discount. This keeps the protocol solvent.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "cdg-s10-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "cdg-s10-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>📊 Utilization Rate<br/><span style=\"font-weight:400;color:#94a3b8;\">Borrowed ÷ Total Deposited</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "cdg-s10-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "cdg-s10-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>📈 Rate Curve<br/><span style=\"font-weight:400;color:#94a3b8;\">High utilization → high APR</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "cdg-s10-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "cdg-s10-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>⚖️ Health Factor<br/><span style=\"font-weight:400;color:#94a3b8;\">Must stay above 1.0 or liquidation</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "cdg-s10-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "cdg-s10-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>🤖 Liquidation<br/><span style=\"font-weight:400;color:#94a3b8;\">Bots monitor and liquidate instantly</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_cdg-s10_0",
+          "type": "spotlight",
+          "elementId": "cdg-s10-title"
+        },
+        {
+          "id": "action_cdg-s10_1",
+          "type": "speech",
+          "text": "🏦 Lending Protocol Architecture — Aave & Compound",
+          "audioUrl": "/audio/lessons/oc-defi-guide/8-1.mp3"
+        },
+        {
+          "id": "action_cdg-s10_2",
+          "type": "spotlight",
+          "elementId": "cdg-s10-sub"
+        },
+        {
+          "id": "action_cdg-s10_3",
+          "type": "speech",
+          "text": "How algorithmic interest rates work in practice",
+          "audioUrl": "/audio/lessons/oc-defi-guide/8-3.mp3"
+        },
+        {
+          "id": "action_cdg-s10_4",
+          "type": "spotlight",
+          "elementId": "cdg-s10-body"
+        },
+        {
+          "id": "action_cdg-s10_5",
+          "type": "speech",
+          "text": "Aave and Compound use utilization rate to set interest rates algorithmically. Utilization = borrowed / total deposited. When utilization is low, rates are low (incentivize borrowing). As it approaches 100%, rates spike sharply to incentivize repayment and new deposits. Borrowers must maintain a health factor above 1.0. If collateral value drops below the liquidation threshold, anyone can liquidate the position — taking the collateral at a discount. This keeps the protocol solvent.",
+          "audioUrl": "/audio/lessons/oc-defi-guide/8-5.mp3"
+        },
+        {
+          "id": "action_cdg-s10_6",
+          "type": "spotlight",
+          "elementId": "cdg-s10-ct1"
+        },
+        {
+          "id": "action_cdg-s10_7",
+          "type": "speech",
+          "text": "📊 Utilization Rate. Borrowed ÷ Total Deposited",
+          "audioUrl": "/audio/lessons/oc-defi-guide/8-7.mp3"
+        },
+        {
+          "id": "action_cdg-s10_8",
+          "type": "spotlight",
+          "elementId": "cdg-s10-ct2"
+        },
+        {
+          "id": "action_cdg-s10_9",
+          "type": "speech",
+          "text": "📈 Rate Curve. High utilization → high APR",
+          "audioUrl": "/audio/lessons/oc-defi-guide/8-9.mp3"
+        },
+        {
+          "id": "action_cdg-s10_10",
+          "type": "spotlight",
+          "elementId": "cdg-s10-ct3"
+        },
+        {
+          "id": "action_cdg-s10_11",
+          "type": "speech",
+          "text": "⚖️ Health Factor. Must stay above 1.0 or liquidation",
+          "audioUrl": "/audio/lessons/oc-defi-guide/8-11.mp3"
+        },
+        {
+          "id": "action_cdg-s10_12",
+          "type": "spotlight",
+          "elementId": "cdg-s10-ct4"
+        },
+        {
+          "id": "action_cdg-s10_13",
+          "type": "speech",
+          "text": "🤖 Liquidation. Bots monitor and liquidate instantly",
+          "audioUrl": "/audio/lessons/oc-defi-guide/8-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "cdg-s10b",
+      "type": "slide",
+      "title": "⚙️ Stablecoin Mechanisms",
+      "order": 9,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "cdg-s10b-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#10b981",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "cdg-s10b-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b981",
+              "fixedRatio": false
+            },
+            {
+              "id": "cdg-s10b-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "cdg-s10b-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>⚙️ Stablecoin Mechanisms</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "cdg-s10b-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The three models for maintaining a dollar peg</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "cdg-s10b-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#10b981;'>Fiat-backed (USDT, USDC)</b> — reserves of real dollars back each token 1:1. Centralized, trusted counterparty risk.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#10b981;'>Crypto-backed (DAI)</b> — over-collateralized with ETH/WBTC. Trustless but capital inefficient (need $150 locked to mint $100 of DAI).</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#10b981;'>Algorithmic (UST/LUNA)</b> — code controls supply via mint/burn with a paired token. Capital efficient but fragile — a death spiral wiped $40B in 72 hours in May 2022.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "cdg-s10b-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "cdg-s10b-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>💵 Fiat-Backed<br/><span style=\"font-weight:400;color:#94a3b8;\">1:1 USD reserve — centralized</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "cdg-s10b-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "cdg-s10b-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>🔒 Crypto-Backed<br/><span style=\"font-weight:400;color:#94a3b8;\">150%+ collateral — trustless</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "cdg-s10b-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "cdg-s10b-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>⚙️ Algorithmic<br/><span style=\"font-weight:400;color:#94a3b8;\">Code-managed supply — high risk</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "cdg-s10b-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "cdg-s10b-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>💀 Death Spiral<br/><span style=\"font-weight:400;color:#94a3b8;\">Algo failed: $40B lost in 3 days</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_cdg-s10b_0",
+          "type": "spotlight",
+          "elementId": "cdg-s10b-title"
+        },
+        {
+          "id": "action_cdg-s10b_1",
+          "type": "speech",
+          "text": "⚙️ Stablecoin Mechanisms",
+          "audioUrl": "/audio/lessons/oc-defi-guide/9-1.mp3"
+        },
+        {
+          "id": "action_cdg-s10b_2",
+          "type": "spotlight",
+          "elementId": "cdg-s10b-sub"
+        },
+        {
+          "id": "action_cdg-s10b_3",
+          "type": "speech",
+          "text": "The three models for maintaining a dollar peg",
+          "audioUrl": "/audio/lessons/oc-defi-guide/9-3.mp3"
+        },
+        {
+          "id": "action_cdg-s10b_4",
+          "type": "spotlight",
+          "elementId": "cdg-s10b-body"
+        },
+        {
+          "id": "action_cdg-s10b_5",
+          "type": "speech",
+          "text": "Fiat-backed (USDT, USDC) — reserves of real dollars back each token 1:1. Centralized, trusted counterparty risk. Crypto-backed (DAI) — over-collateralized with ETH/WBTC. Trustless but capital inefficient (need $150 locked to mint $100 of DAI). Algorithmic (UST/LUNA) — code controls supply via mint/burn with a paired token. Capital efficient but fragile — a death spiral wiped $40B in 72 hours in May 2022.",
+          "audioUrl": "/audio/lessons/oc-defi-guide/9-5.mp3"
+        },
+        {
+          "id": "action_cdg-s10b_6",
+          "type": "spotlight",
+          "elementId": "cdg-s10b-ct1"
+        },
+        {
+          "id": "action_cdg-s10b_7",
+          "type": "speech",
+          "text": "💵 Fiat-Backed. 1:1 USD reserve — centralized",
+          "audioUrl": "/audio/lessons/oc-defi-guide/9-7.mp3"
+        },
+        {
+          "id": "action_cdg-s10b_8",
+          "type": "spotlight",
+          "elementId": "cdg-s10b-ct2"
+        },
+        {
+          "id": "action_cdg-s10b_9",
+          "type": "speech",
+          "text": "🔒 Crypto-Backed. 150%+ collateral — trustless",
+          "audioUrl": "/audio/lessons/oc-defi-guide/9-9.mp3"
+        },
+        {
+          "id": "action_cdg-s10b_10",
+          "type": "spotlight",
+          "elementId": "cdg-s10b-ct3"
+        },
+        {
+          "id": "action_cdg-s10b_11",
+          "type": "speech",
+          "text": "⚙️ Algorithmic. Code-managed supply — high risk",
+          "audioUrl": "/audio/lessons/oc-defi-guide/9-11.mp3"
+        },
+        {
+          "id": "action_cdg-s10b_12",
+          "type": "spotlight",
+          "elementId": "cdg-s10b-ct4"
+        },
+        {
+          "id": "action_cdg-s10b_13",
+          "type": "speech",
+          "text": "💀 Death Spiral. Algo failed: $40B lost in 3 days",
+          "audioUrl": "/audio/lessons/oc-defi-guide/9-13.mp3"
         }
       ]
     },
@@ -2016,19 +2635,19 @@
           }
         ]
       },
-      "order": 8,
+      "order": 10,
       "actions": [
         {
           "id": "action_df-s8_q0",
           "type": "speech",
           "text": "Time to test your knowledge! Answer each question carefully — you can review the material after the quiz.",
-          "audioUrl": "/audio/lessons/oc-defi-guide/8-0.mp3"
+          "audioUrl": "/audio/lessons/oc-defi-guide/10-0.mp3"
         },
         {
           "id": "action_df-s8_q1",
           "type": "speech",
           "text": "Take your time with these questions. The goal is to solidify your understanding, not just pass the quiz.",
-          "audioUrl": "/audio/lessons/oc-defi-guide/8-1.mp3"
+          "audioUrl": "/audio/lessons/oc-defi-guide/10-1.mp3"
         }
       ]
     }

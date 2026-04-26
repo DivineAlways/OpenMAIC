@@ -21,7 +21,7 @@
       "id": "hs-bc-s1",
       "type": "slide",
       "title": "How Bitcoin Mining Works",
-      "order": 1,
+      "order": 0,
       "content": {
         "type": "slide",
         "canvas": {
@@ -422,7 +422,7 @@
       "id": "hs-bc-s2",
       "type": "slide",
       "title": "Hashes, Merkle Trees & The Trilemma",
-      "order": 2,
+      "order": 1,
       "content": {
         "type": "slide",
         "canvas": {
@@ -719,10 +719,937 @@
       ]
     },
     {
+      "id": "hb-s4",
+      "type": "slide",
+      "title": "🔀 Hard Forks vs Soft Forks",
+      "order": 2,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "hb-s4-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f59e0b",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "hb-s4-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "hb-s4-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "hb-s4-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🔀 Hard Forks vs Soft Forks</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "hb-s4-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>When a blockchain splits — and why it happens</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "hb-s4-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>A <b style='color:#f59e0b;'>fork</b> happens when the blockchain protocol is updated. There are two types.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f1f5f9;'>Soft fork</b> — a backwards-compatible update. Old nodes can still validate new blocks. Like a software update you don't have to install immediately.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f1f5f9;'>Hard fork</b> — a breaking change. Old and new rules are incompatible. The chain splits into two separate blockchains. Bitcoin Cash was created this way from Bitcoin in 2017.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "hb-s4-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "hb-s4-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>🔀 Soft Fork<br/><span style=\"font-weight:400;color:#94a3b8;\">Backwards compatible update</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "hb-s4-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "hb-s4-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>⛓️ Hard Fork<br/><span style=\"font-weight:400;color:#94a3b8;\">Chain splits into two</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "hb-s4-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "hb-s4-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>₿ Example<br/><span style=\"font-weight:400;color:#94a3b8;\">Bitcoin → Bitcoin Cash (2017)</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "hb-s4-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "hb-s4-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>🗳️ Governance<br/><span style=\"font-weight:400;color:#94a3b8;\">Community votes on changes</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_hb-s4_0",
+          "type": "spotlight",
+          "elementId": "hb-s4-title"
+        },
+        {
+          "id": "action_hb-s4_1",
+          "type": "speech",
+          "text": "🔀 Hard Forks vs Soft Forks",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/2-1.mp3"
+        },
+        {
+          "id": "action_hb-s4_2",
+          "type": "spotlight",
+          "elementId": "hb-s4-sub"
+        },
+        {
+          "id": "action_hb-s4_3",
+          "type": "speech",
+          "text": "When a blockchain splits — and why it happens",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/2-3.mp3"
+        },
+        {
+          "id": "action_hb-s4_4",
+          "type": "spotlight",
+          "elementId": "hb-s4-body"
+        },
+        {
+          "id": "action_hb-s4_5",
+          "type": "speech",
+          "text": "A fork happens when the blockchain protocol is updated. There are two types. Soft fork — a backwards-compatible update. Old nodes can still validate new blocks. Like a software update you don't have to install immediately. Hard fork — a breaking change. Old and new rules are incompatible. The chain splits into two separate blockchains. Bitcoin Cash was created this way from Bitcoin in 2017.",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/2-5.mp3"
+        },
+        {
+          "id": "action_hb-s4_6",
+          "type": "spotlight",
+          "elementId": "hb-s4-ct1"
+        },
+        {
+          "id": "action_hb-s4_7",
+          "type": "speech",
+          "text": "🔀 Soft Fork. Backwards compatible update",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/2-7.mp3"
+        },
+        {
+          "id": "action_hb-s4_8",
+          "type": "spotlight",
+          "elementId": "hb-s4-ct2"
+        },
+        {
+          "id": "action_hb-s4_9",
+          "type": "speech",
+          "text": "⛓️ Hard Fork. Chain splits into two",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/2-9.mp3"
+        },
+        {
+          "id": "action_hb-s4_10",
+          "type": "spotlight",
+          "elementId": "hb-s4-ct3"
+        },
+        {
+          "id": "action_hb-s4_11",
+          "type": "speech",
+          "text": "₿ Example. Bitcoin → Bitcoin Cash (2017)",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/2-11.mp3"
+        },
+        {
+          "id": "action_hb-s4_12",
+          "type": "spotlight",
+          "elementId": "hb-s4-ct4"
+        },
+        {
+          "id": "action_hb-s4_13",
+          "type": "speech",
+          "text": "🗳️ Governance. Community votes on changes",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/2-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "hb-s5",
+      "type": "slide",
+      "title": "🏗️ Layer 1 vs Layer 2",
+      "order": 3,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "hb-s5-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f59e0b",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "hb-s5-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "hb-s5-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "hb-s5-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🏗️ Layer 1 vs Layer 2</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "hb-s5-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>How blockchains scale to handle more users</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "hb-s5-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f59e0b;'>Layer 1 (L1)</b> is the base blockchain — Bitcoin, Ethereum, XRP Ledger. Secure and decentralized, but limited in how many transactions it can process per second.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f59e0b;'>Layer 2 (L2)</b> solutions are built on top of L1. They process transactions off the main chain (faster, cheaper), then batch and submit a summary back to L1 for security. Examples: Arbitrum, Optimism (Ethereum L2s), Lightning Network (Bitcoin L2).</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "hb-s5-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "hb-s5-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>⛓️ L1<br/><span style=\"font-weight:400;color:#94a3b8;\">Base chain — secure & slow</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "hb-s5-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "hb-s5-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>⚡ L2<br/><span style=\"font-weight:400;color:#94a3b8;\">Built on top — fast & cheap</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "hb-s5-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "hb-s5-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>🔁 Rollup<br/><span style=\"font-weight:400;color:#94a3b8;\">Batch txs, settle on L1</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "hb-s5-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "hb-s5-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>🌩️ Lightning<br/><span style=\"font-weight:400;color:#94a3b8;\">Bitcoin L2 for instant payments</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_hb-s5_0",
+          "type": "spotlight",
+          "elementId": "hb-s5-title"
+        },
+        {
+          "id": "action_hb-s5_1",
+          "type": "speech",
+          "text": "🏗️ Layer 1 vs Layer 2",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/3-1.mp3"
+        },
+        {
+          "id": "action_hb-s5_2",
+          "type": "spotlight",
+          "elementId": "hb-s5-sub"
+        },
+        {
+          "id": "action_hb-s5_3",
+          "type": "speech",
+          "text": "How blockchains scale to handle more users",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/3-3.mp3"
+        },
+        {
+          "id": "action_hb-s5_4",
+          "type": "spotlight",
+          "elementId": "hb-s5-body"
+        },
+        {
+          "id": "action_hb-s5_5",
+          "type": "speech",
+          "text": "Layer 1 (L1) is the base blockchain — Bitcoin, Ethereum, XRP Ledger. Secure and decentralized, but limited in how many transactions it can process per second. Layer 2 (L2) solutions are built on top of L1. They process transactions off the main chain (faster, cheaper), then batch and submit a summary back to L1 for security. Examples: Arbitrum, Optimism (Ethereum L2s), Lightning Network (Bitcoin L2).",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/3-5.mp3"
+        },
+        {
+          "id": "action_hb-s5_6",
+          "type": "spotlight",
+          "elementId": "hb-s5-ct1"
+        },
+        {
+          "id": "action_hb-s5_7",
+          "type": "speech",
+          "text": "⛓️ L1. Base chain — secure & slow",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/3-7.mp3"
+        },
+        {
+          "id": "action_hb-s5_8",
+          "type": "spotlight",
+          "elementId": "hb-s5-ct2"
+        },
+        {
+          "id": "action_hb-s5_9",
+          "type": "speech",
+          "text": "⚡ L2. Built on top — fast & cheap",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/3-9.mp3"
+        },
+        {
+          "id": "action_hb-s5_10",
+          "type": "spotlight",
+          "elementId": "hb-s5-ct3"
+        },
+        {
+          "id": "action_hb-s5_11",
+          "type": "speech",
+          "text": "🔁 Rollup. Batch txs, settle on L1",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/3-11.mp3"
+        },
+        {
+          "id": "action_hb-s5_12",
+          "type": "spotlight",
+          "elementId": "hb-s5-ct4"
+        },
+        {
+          "id": "action_hb-s5_13",
+          "type": "speech",
+          "text": "🌩️ Lightning. Bitcoin L2 for instant payments",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/3-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "hb-s6",
+      "type": "slide",
+      "title": "📐 The Blockchain Trilemma",
+      "order": 4,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "hb-s6-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f59e0b",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "hb-s6-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "hb-s6-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "hb-s6-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>📐 The Blockchain Trilemma</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "hb-s6-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Why you can't have security, speed, and decentralization all at once</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "hb-s6-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Every blockchain must make trade-offs across three properties. You can optimize for two — but not all three simultaneously.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f59e0b;'>Security</b> — resistant to attacks. <b style='color:#f59e0b;'>Decentralization</b> — no central authority. <b style='color:#f59e0b;'>Scalability</b> — handles lots of transactions fast.</p><br/><p style='font-size:16px;color:#cbd5e1;'>Bitcoin chose security + decentralization (slow). Solana chose speed + security (fewer validators). XRPL balances all three with its unique consensus — one reason OnlyCrypto runs on it.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "hb-s6-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "hb-s6-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>🛡️ Security<br/><span style=\"font-weight:400;color:#94a3b8;\">Resistant to 51% attack</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "hb-s6-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "hb-s6-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>🌐 Decentralization<br/><span style=\"font-weight:400;color:#94a3b8;\">No single point of control</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "hb-s6-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "hb-s6-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>⚡ Scalability<br/><span style=\"font-weight:400;color:#94a3b8;\">High TPS, low fees</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "hb-s6-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "hb-s6-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>⚖️ Trade-off<br/><span style=\"font-weight:400;color:#94a3b8;\">Pick two — L2s help with the third</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_hb-s6_0",
+          "type": "spotlight",
+          "elementId": "hb-s6-title"
+        },
+        {
+          "id": "action_hb-s6_1",
+          "type": "speech",
+          "text": "📐 The Blockchain Trilemma",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/4-1.mp3"
+        },
+        {
+          "id": "action_hb-s6_2",
+          "type": "spotlight",
+          "elementId": "hb-s6-sub"
+        },
+        {
+          "id": "action_hb-s6_3",
+          "type": "speech",
+          "text": "Why you can't have security, speed, and decentralization all at once",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/4-3.mp3"
+        },
+        {
+          "id": "action_hb-s6_4",
+          "type": "spotlight",
+          "elementId": "hb-s6-body"
+        },
+        {
+          "id": "action_hb-s6_5",
+          "type": "speech",
+          "text": "Every blockchain must make trade-offs across three properties. You can optimize for two — but not all three simultaneously. Security — resistant to attacks. Decentralization — no central authority. Scalability — handles lots of transactions fast. Bitcoin chose security + decentralization (slow). Solana chose speed + security (fewer validators). XRPL balances all three with its unique consensus — one reason OnlyCrypto runs on it.",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/4-5.mp3"
+        },
+        {
+          "id": "action_hb-s6_6",
+          "type": "spotlight",
+          "elementId": "hb-s6-ct1"
+        },
+        {
+          "id": "action_hb-s6_7",
+          "type": "speech",
+          "text": "🛡️ Security. Resistant to 51% attack",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/4-7.mp3"
+        },
+        {
+          "id": "action_hb-s6_8",
+          "type": "spotlight",
+          "elementId": "hb-s6-ct2"
+        },
+        {
+          "id": "action_hb-s6_9",
+          "type": "speech",
+          "text": "🌐 Decentralization. No single point of control",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/4-9.mp3"
+        },
+        {
+          "id": "action_hb-s6_10",
+          "type": "spotlight",
+          "elementId": "hb-s6-ct3"
+        },
+        {
+          "id": "action_hb-s6_11",
+          "type": "speech",
+          "text": "⚡ Scalability. High TPS, low fees",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/4-11.mp3"
+        },
+        {
+          "id": "action_hb-s6_12",
+          "type": "spotlight",
+          "elementId": "hb-s6-ct4"
+        },
+        {
+          "id": "action_hb-s6_13",
+          "type": "speech",
+          "text": "⚖️ Trade-off. Pick two — L2s help with the third",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/4-13.mp3"
+        }
+      ]
+    },
+    {
       "id": "hs-bc-s3",
       "type": "quiz",
       "title": "Knowledge Check — Blockchain High School",
-      "order": 3,
+      "order": 5,
       "content": {
         "type": "quiz",
         "questions": [
@@ -873,13 +1800,13 @@
           "id": "action_hs-bc-s3_q0",
           "type": "speech",
           "text": "Time to test your understanding of blockchain mechanics. These questions cover mining, consensus, and the trilemma.",
-          "audioUrl": "/audio/lessons/oc-hs-blockchain/2-0.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/5-0.mp3"
         },
         {
           "id": "action_hs-bc-s3_q1",
           "type": "speech",
           "text": "Read each question carefully — some answers are close. Think about the underlying mechanism.",
-          "audioUrl": "/audio/lessons/oc-hs-blockchain/2-1.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/5-1.mp3"
         }
       ]
     }

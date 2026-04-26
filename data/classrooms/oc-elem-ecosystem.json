@@ -324,7 +324,7 @@
           "audioUrl": "/audio/lessons/oc-elem-ecosystem/0-13.mp3"
         }
       ],
-      "order": 1
+      "order": 0
     },
     {
       "id": "ee-s2",
@@ -633,7 +633,934 @@
           "audioUrl": "/audio/lessons/oc-elem-ecosystem/1-13.mp3"
         }
       ],
-      "order": 2
+      "order": 1
+    },
+    {
+      "id": "ee-s4",
+      "type": "slide",
+      "title": "🏛️ CEX vs DEX",
+      "order": 2,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ee-s4-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#06b6d4",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ee-s4-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#06b6d4",
+              "fixedRatio": false
+            },
+            {
+              "id": "ee-s4-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ee-s4-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🏛️ CEX vs DEX</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ee-s4-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Two types of exchanges — what is the difference?</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ee-s4-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#06b6d4;'>CEX (Centralized Exchange)</b> — a company runs it. Think Coinbase, Binance, Kraken. You create an account, verify your identity, and the company holds your funds while you trade. Easy to use but you depend on them.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#06b6d4;'>DEX (Decentralized Exchange)</b> — no company. Code runs it. You connect your own wallet and trade directly. Nobody holds your funds. Examples: Uniswap, dYdX, XRPL's built-in DEX.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ee-s4-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#06b6d420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#06b6d4"
+              }
+            },
+            {
+              "id": "ee-s4-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#06b6d4;text-align:center;'>🏦 CEX<br/><span style=\"font-weight:400;color:#94a3b8;\">Company-run, ID required</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#06b6d4"
+            },
+            {
+              "id": "ee-s4-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#06b6d420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#06b6d4"
+              }
+            },
+            {
+              "id": "ee-s4-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#06b6d4;text-align:center;'>🔄 DEX<br/><span style=\"font-weight:400;color:#94a3b8;\">Code-run, wallet-only</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#06b6d4"
+            },
+            {
+              "id": "ee-s4-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#06b6d420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#06b6d4"
+              }
+            },
+            {
+              "id": "ee-s4-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#06b6d4;text-align:center;'>✅ CEX Pros<br/><span style=\"font-weight:400;color:#94a3b8;\">Easy, beginner-friendly</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#06b6d4"
+            },
+            {
+              "id": "ee-s4-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#06b6d420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#06b6d4"
+              }
+            },
+            {
+              "id": "ee-s4-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#06b6d4;text-align:center;'>✅ DEX Pros<br/><span style=\"font-weight:400;color:#94a3b8;\">Self-custody, no accounts</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#06b6d4"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_ee-s4_0",
+          "type": "spotlight",
+          "elementId": "ee-s4-title"
+        },
+        {
+          "id": "action_ee-s4_1",
+          "type": "speech",
+          "text": "🏛️ CEX vs DEX",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/2-1.mp3"
+        },
+        {
+          "id": "action_ee-s4_2",
+          "type": "spotlight",
+          "elementId": "ee-s4-sub"
+        },
+        {
+          "id": "action_ee-s4_3",
+          "type": "speech",
+          "text": "Two types of exchanges — what is the difference?",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/2-3.mp3"
+        },
+        {
+          "id": "action_ee-s4_4",
+          "type": "spotlight",
+          "elementId": "ee-s4-body"
+        },
+        {
+          "id": "action_ee-s4_5",
+          "type": "speech",
+          "text": "CEX (Centralized Exchange) — a company runs it. Think Coinbase, Binance, Kraken. You create an account, verify your identity, and the company holds your funds while you trade. Easy to use but you depend on them. DEX (Decentralized Exchange) — no company. Code runs it. You connect your own wallet and trade directly. Nobody holds your funds. Examples: Uniswap, dYdX, XRPL's built-in DEX.",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/2-5.mp3"
+        },
+        {
+          "id": "action_ee-s4_6",
+          "type": "spotlight",
+          "elementId": "ee-s4-ct1"
+        },
+        {
+          "id": "action_ee-s4_7",
+          "type": "speech",
+          "text": "🏦 CEX. Company-run, ID required",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/2-7.mp3"
+        },
+        {
+          "id": "action_ee-s4_8",
+          "type": "spotlight",
+          "elementId": "ee-s4-ct2"
+        },
+        {
+          "id": "action_ee-s4_9",
+          "type": "speech",
+          "text": "🔄 DEX. Code-run, wallet-only",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/2-9.mp3"
+        },
+        {
+          "id": "action_ee-s4_10",
+          "type": "spotlight",
+          "elementId": "ee-s4-ct3"
+        },
+        {
+          "id": "action_ee-s4_11",
+          "type": "speech",
+          "text": "✅ CEX Pros. Easy, beginner-friendly",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/2-11.mp3"
+        },
+        {
+          "id": "action_ee-s4_12",
+          "type": "spotlight",
+          "elementId": "ee-s4-ct4"
+        },
+        {
+          "id": "action_ee-s4_13",
+          "type": "speech",
+          "text": "✅ DEX Pros. Self-custody, no accounts",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/2-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "ee-s5",
+      "type": "slide",
+      "title": "🖼️ DAOs — Ownership by the Community",
+      "order": 3,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ee-s5-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#06b6d4",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ee-s5-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#06b6d4",
+              "fixedRatio": false
+            },
+            {
+              "id": "ee-s5-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ee-s5-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🖼️ DAOs — Ownership by the Community</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ee-s5-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>How crypto enables groups to govern themselves</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ee-s5-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>A <b style='color:#06b6d4;'>DAO</b> (Decentralized Autonomous Organization) is like a company where the rules are written in code and the members vote on decisions using their tokens.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>No CEO. No board. Every token holder gets a vote proportional to how many tokens they hold. Decisions — like how to spend the treasury or change the protocol — are voted on-chain and executed automatically.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ee-s5-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#06b6d420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#06b6d4"
+              }
+            },
+            {
+              "id": "ee-s5-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#06b6d4;text-align:center;'>🗳️ Token Vote<br/><span style=\"font-weight:400;color:#94a3b8;\">Hold tokens = voting power</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#06b6d4"
+            },
+            {
+              "id": "ee-s5-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#06b6d420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#06b6d4"
+              }
+            },
+            {
+              "id": "ee-s5-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#06b6d4;text-align:center;'>📋 On-Chain Rules<br/><span style=\"font-weight:400;color:#94a3b8;\">Code enforces the result</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#06b6d4"
+            },
+            {
+              "id": "ee-s5-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#06b6d420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#06b6d4"
+              }
+            },
+            {
+              "id": "ee-s5-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#06b6d4;text-align:center;'>🌐 Examples<br/><span style=\"font-weight:400;color:#94a3b8;\">MakerDAO, Uniswap DAO</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#06b6d4"
+            },
+            {
+              "id": "ee-s5-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#06b6d420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#06b6d4"
+              }
+            },
+            {
+              "id": "ee-s5-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#06b6d4;text-align:center;'>💡 Key Idea<br/><span style=\"font-weight:400;color:#94a3b8;\">Community = the company</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#06b6d4"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_ee-s5_0",
+          "type": "spotlight",
+          "elementId": "ee-s5-title"
+        },
+        {
+          "id": "action_ee-s5_1",
+          "type": "speech",
+          "text": "🖼️ DAOs — Ownership by the Community",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/3-1.mp3"
+        },
+        {
+          "id": "action_ee-s5_2",
+          "type": "spotlight",
+          "elementId": "ee-s5-sub"
+        },
+        {
+          "id": "action_ee-s5_3",
+          "type": "speech",
+          "text": "How crypto enables groups to govern themselves",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/3-3.mp3"
+        },
+        {
+          "id": "action_ee-s5_4",
+          "type": "spotlight",
+          "elementId": "ee-s5-body"
+        },
+        {
+          "id": "action_ee-s5_5",
+          "type": "speech",
+          "text": "A DAO (Decentralized Autonomous Organization) is like a company where the rules are written in code and the members vote on decisions using their tokens. No CEO. No board. Every token holder gets a vote proportional to how many tokens they hold. Decisions — like how to spend the treasury or change the protocol — are voted on-chain and executed automatically.",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/3-5.mp3"
+        },
+        {
+          "id": "action_ee-s5_6",
+          "type": "spotlight",
+          "elementId": "ee-s5-ct1"
+        },
+        {
+          "id": "action_ee-s5_7",
+          "type": "speech",
+          "text": "🗳️ Token Vote. Hold tokens = voting power",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/3-7.mp3"
+        },
+        {
+          "id": "action_ee-s5_8",
+          "type": "spotlight",
+          "elementId": "ee-s5-ct2"
+        },
+        {
+          "id": "action_ee-s5_9",
+          "type": "speech",
+          "text": "📋 On-Chain Rules. Code enforces the result",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/3-9.mp3"
+        },
+        {
+          "id": "action_ee-s5_10",
+          "type": "spotlight",
+          "elementId": "ee-s5-ct3"
+        },
+        {
+          "id": "action_ee-s5_11",
+          "type": "speech",
+          "text": "🌐 Examples. MakerDAO, Uniswap DAO",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/3-11.mp3"
+        },
+        {
+          "id": "action_ee-s5_12",
+          "type": "spotlight",
+          "elementId": "ee-s5-ct4"
+        },
+        {
+          "id": "action_ee-s5_13",
+          "type": "speech",
+          "text": "💡 Key Idea. Community = the company",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/3-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "ee-s6",
+      "type": "slide",
+      "title": "🌐 Web3 — The Next Internet",
+      "order": 4,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ee-s6-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#06b6d4",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ee-s6-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#06b6d4",
+              "fixedRatio": false
+            },
+            {
+              "id": "ee-s6-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ee-s6-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🌐 Web3 — The Next Internet</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ee-s6-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>What Web3 means and why it matters</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ee-s6-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#06b6d4;'>Web1</b> — read-only. Static websites. You could read, not participate.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#06b6d4;'>Web2</b> — read-write. Social media. You can create — but companies (Meta, Google) own your data and earn from it.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#06b6d4;'>Web3</b> — read-write-own. You create content and <b style='color:#f1f5f9;'>own it via blockchain</b>. Your identity, data, and digital assets belong to you — not a platform.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ee-s6-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#06b6d420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#06b6d4"
+              }
+            },
+            {
+              "id": "ee-s6-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#06b6d4;text-align:center;'>📖 Web1<br/><span style=\"font-weight:400;color:#94a3b8;\">Read only — static sites</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#06b6d4"
+            },
+            {
+              "id": "ee-s6-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#06b6d420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#06b6d4"
+              }
+            },
+            {
+              "id": "ee-s6-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#06b6d4;text-align:center;'>✍️ Web2<br/><span style=\"font-weight:400;color:#94a3b8;\">Create but platform owns data</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#06b6d4"
+            },
+            {
+              "id": "ee-s6-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#06b6d420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#06b6d4"
+              }
+            },
+            {
+              "id": "ee-s6-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#06b6d4;text-align:center;'>🔑 Web3<br/><span style=\"font-weight:400;color:#94a3b8;\">Own your data and assets</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#06b6d4"
+            },
+            {
+              "id": "ee-s6-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#06b6d420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#06b6d4"
+              }
+            },
+            {
+              "id": "ee-s6-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#06b6d4;text-align:center;'>🚀 Now<br/><span style=\"font-weight:400;color:#94a3b8;\">Crypto is the foundation of Web3</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#06b6d4"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_ee-s6_0",
+          "type": "spotlight",
+          "elementId": "ee-s6-title"
+        },
+        {
+          "id": "action_ee-s6_1",
+          "type": "speech",
+          "text": "🌐 Web3 — The Next Internet",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/4-1.mp3"
+        },
+        {
+          "id": "action_ee-s6_2",
+          "type": "spotlight",
+          "elementId": "ee-s6-sub"
+        },
+        {
+          "id": "action_ee-s6_3",
+          "type": "speech",
+          "text": "What Web3 means and why it matters",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/4-3.mp3"
+        },
+        {
+          "id": "action_ee-s6_4",
+          "type": "spotlight",
+          "elementId": "ee-s6-body"
+        },
+        {
+          "id": "action_ee-s6_5",
+          "type": "speech",
+          "text": "Web1 — read-only. Static websites. You could read, not participate. Web2 — read-write. Social media. You can create — but companies (Meta, Google) own your data and earn from it. Web3 — read-write-own. You create content and own it via blockchain . Your identity, data, and digital assets belong to you — not a platform.",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/4-5.mp3"
+        },
+        {
+          "id": "action_ee-s6_6",
+          "type": "spotlight",
+          "elementId": "ee-s6-ct1"
+        },
+        {
+          "id": "action_ee-s6_7",
+          "type": "speech",
+          "text": "📖 Web1. Read only — static sites",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/4-7.mp3"
+        },
+        {
+          "id": "action_ee-s6_8",
+          "type": "spotlight",
+          "elementId": "ee-s6-ct2"
+        },
+        {
+          "id": "action_ee-s6_9",
+          "type": "speech",
+          "text": "✍️ Web2. Create but platform owns data",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/4-9.mp3"
+        },
+        {
+          "id": "action_ee-s6_10",
+          "type": "spotlight",
+          "elementId": "ee-s6-ct3"
+        },
+        {
+          "id": "action_ee-s6_11",
+          "type": "speech",
+          "text": "🔑 Web3. Own your data and assets",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/4-11.mp3"
+        },
+        {
+          "id": "action_ee-s6_12",
+          "type": "spotlight",
+          "elementId": "ee-s6-ct4"
+        },
+        {
+          "id": "action_ee-s6_13",
+          "type": "speech",
+          "text": "🚀 Now. Crypto is the foundation of Web3",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/4-13.mp3"
+        }
+      ]
     },
     {
       "id": "ee-s3",
@@ -756,19 +1683,19 @@
           }
         ]
       },
-      "order": 3,
+      "order": 5,
       "actions": [
         {
           "id": "action_ee-s3_q0",
           "type": "speech",
           "text": "Time to test what you've learned! Answer each question and see how you do.",
-          "audioUrl": "/audio/lessons/oc-elem-ecosystem/2-0.mp3"
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/5-0.mp3"
         },
         {
           "id": "action_ee-s3_q1",
           "type": "speech",
           "text": "Take your time — the goal is understanding, not just getting the right answer.",
-          "audioUrl": "/audio/lessons/oc-elem-ecosystem/2-1.mp3"
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/5-1.mp3"
         }
       ]
     }

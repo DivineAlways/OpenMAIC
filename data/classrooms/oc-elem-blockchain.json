@@ -324,7 +324,7 @@
           "audioUrl": "/audio/lessons/oc-elem-blockchain/0-13.mp3"
         }
       ],
-      "order": 1
+      "order": 0
     },
     {
       "id": "eb-s2",
@@ -680,7 +680,7 @@
           "audioUrl": "/audio/lessons/oc-elem-blockchain/1-15.mp3"
         }
       ],
-      "order": 2
+      "order": 1
     },
     {
       "id": "eb-s3",
@@ -1003,7 +1003,1243 @@
           "audioUrl": "/audio/lessons/oc-elem-blockchain/2-15.mp3"
         }
       ],
-      "order": 3
+      "order": 2
+    },
+    {
+      "id": "eb-s5",
+      "type": "slide",
+      "title": "📓 What is a Ledger?",
+      "order": 3,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "eb-s5-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#10b981",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "eb-s5-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b981",
+              "fixedRatio": false
+            },
+            {
+              "id": "eb-s5-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "eb-s5-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>📓 What is a Ledger?</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "eb-s5-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The original record-keeping system — and why crypto improved it</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "eb-s5-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>A <b style='color:#10b981;'>ledger</b> is just a record book. Banks have always used ledgers to track who has what money. The problem? <b style='color:#f1f5f9;'>You have to trust the bank</b> not to change the records.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Blockchain replaces the bank's private ledger with a <b style='color:#10b981;'>public ledger</b> that thousands of computers all hold at once. No single person controls it — so no one can cheat.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "eb-s5-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "eb-s5-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>📒 Traditional Ledger<br/><span style=\"font-weight:400;color:#94a3b8;\">One bank controls it</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "eb-s5-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "eb-s5-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>🌐 Blockchain Ledger<br/><span style=\"font-weight:400;color:#94a3b8;\">Everyone holds a copy</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "eb-s5-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "eb-s5-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>🔒 Immutable<br/><span style=\"font-weight:400;color:#94a3b8;\">Once written, it stays</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "eb-s5-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "eb-s5-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>✅ Trustless<br/><span style=\"font-weight:400;color:#94a3b8;\">No middleman needed</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_eb-s5_0",
+          "type": "spotlight",
+          "elementId": "eb-s5-title"
+        },
+        {
+          "id": "action_eb-s5_1",
+          "type": "speech",
+          "text": "📓 What is a Ledger?",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/3-1.mp3"
+        },
+        {
+          "id": "action_eb-s5_2",
+          "type": "spotlight",
+          "elementId": "eb-s5-sub"
+        },
+        {
+          "id": "action_eb-s5_3",
+          "type": "speech",
+          "text": "The original record-keeping system — and why crypto improved it",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/3-3.mp3"
+        },
+        {
+          "id": "action_eb-s5_4",
+          "type": "spotlight",
+          "elementId": "eb-s5-body"
+        },
+        {
+          "id": "action_eb-s5_5",
+          "type": "speech",
+          "text": "A ledger is just a record book. Banks have always used ledgers to track who has what money. The problem? You have to trust the bank not to change the records. Blockchain replaces the bank's private ledger with a public ledger that thousands of computers all hold at once. No single person controls it — so no one can cheat.",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/3-5.mp3"
+        },
+        {
+          "id": "action_eb-s5_6",
+          "type": "spotlight",
+          "elementId": "eb-s5-ct1"
+        },
+        {
+          "id": "action_eb-s5_7",
+          "type": "speech",
+          "text": "📒 Traditional Ledger. One bank controls it",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/3-7.mp3"
+        },
+        {
+          "id": "action_eb-s5_8",
+          "type": "spotlight",
+          "elementId": "eb-s5-ct2"
+        },
+        {
+          "id": "action_eb-s5_9",
+          "type": "speech",
+          "text": "🌐 Blockchain Ledger. Everyone holds a copy",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/3-9.mp3"
+        },
+        {
+          "id": "action_eb-s5_10",
+          "type": "spotlight",
+          "elementId": "eb-s5-ct3"
+        },
+        {
+          "id": "action_eb-s5_11",
+          "type": "speech",
+          "text": "🔒 Immutable. Once written, it stays",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/3-11.mp3"
+        },
+        {
+          "id": "action_eb-s5_12",
+          "type": "spotlight",
+          "elementId": "eb-s5-ct4"
+        },
+        {
+          "id": "action_eb-s5_13",
+          "type": "speech",
+          "text": "✅ Trustless. No middleman needed",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/3-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "eb-s6",
+      "type": "slide",
+      "title": "🖥️ Nodes & Validators",
+      "order": 4,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "eb-s6-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#10b981",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "eb-s6-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b981",
+              "fixedRatio": false
+            },
+            {
+              "id": "eb-s6-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "eb-s6-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🖥️ Nodes & Validators</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "eb-s6-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The volunteers who keep the network running</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "eb-s6-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>A <b style='color:#10b981;'>node</b> is any computer that participates in the blockchain network. Right now, there are thousands of nodes around the world running Bitcoin and Ethereum software 24 hours a day.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f1f5f9;'>Validators</b> are special nodes that check transactions and confirm they are valid before adding them to the chain. They are the referees of the network — and they earn crypto rewards for doing it right.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "eb-s6-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "eb-s6-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>🖥️ Full Node<br/><span style=\"font-weight:400;color:#94a3b8;\">Stores entire blockchain</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "eb-s6-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "eb-s6-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>⚡ Validator<br/><span style=\"font-weight:400;color:#94a3b8;\">Checks & confirms txs</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "eb-s6-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "eb-s6-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>💰 Reward<br/><span style=\"font-weight:400;color:#94a3b8;\">Earns crypto for work</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "eb-s6-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "eb-s6-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>🌍 Decentralized<br/><span style=\"font-weight:400;color:#94a3b8;\">No single point of failure</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_eb-s6_0",
+          "type": "spotlight",
+          "elementId": "eb-s6-title"
+        },
+        {
+          "id": "action_eb-s6_1",
+          "type": "speech",
+          "text": "🖥️ Nodes & Validators",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/4-1.mp3"
+        },
+        {
+          "id": "action_eb-s6_2",
+          "type": "spotlight",
+          "elementId": "eb-s6-sub"
+        },
+        {
+          "id": "action_eb-s6_3",
+          "type": "speech",
+          "text": "The volunteers who keep the network running",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/4-3.mp3"
+        },
+        {
+          "id": "action_eb-s6_4",
+          "type": "spotlight",
+          "elementId": "eb-s6-body"
+        },
+        {
+          "id": "action_eb-s6_5",
+          "type": "speech",
+          "text": "A node is any computer that participates in the blockchain network. Right now, there are thousands of nodes around the world running Bitcoin and Ethereum software 24 hours a day. Validators are special nodes that check transactions and confirm they are valid before adding them to the chain. They are the referees of the network — and they earn crypto rewards for doing it right.",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/4-5.mp3"
+        },
+        {
+          "id": "action_eb-s6_6",
+          "type": "spotlight",
+          "elementId": "eb-s6-ct1"
+        },
+        {
+          "id": "action_eb-s6_7",
+          "type": "speech",
+          "text": "🖥️ Full Node. Stores entire blockchain",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/4-7.mp3"
+        },
+        {
+          "id": "action_eb-s6_8",
+          "type": "spotlight",
+          "elementId": "eb-s6-ct2"
+        },
+        {
+          "id": "action_eb-s6_9",
+          "type": "speech",
+          "text": "⚡ Validator. Checks & confirms txs",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/4-9.mp3"
+        },
+        {
+          "id": "action_eb-s6_10",
+          "type": "spotlight",
+          "elementId": "eb-s6-ct3"
+        },
+        {
+          "id": "action_eb-s6_11",
+          "type": "speech",
+          "text": "💰 Reward. Earns crypto for work",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/4-11.mp3"
+        },
+        {
+          "id": "action_eb-s6_12",
+          "type": "spotlight",
+          "elementId": "eb-s6-ct4"
+        },
+        {
+          "id": "action_eb-s6_13",
+          "type": "speech",
+          "text": "🌍 Decentralized. No single point of failure",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/4-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "eb-s7",
+      "type": "slide",
+      "title": "🔗 Blocks & Chains Explained",
+      "order": 5,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "eb-s7-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#10b981",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "eb-s7-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b981",
+              "fixedRatio": false
+            },
+            {
+              "id": "eb-s7-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "eb-s7-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🔗 Blocks & Chains Explained</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "eb-s7-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>How individual records link together into an unbreakable chain</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "eb-s7-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Each <b style='color:#10b981;'>block</b> contains a batch of transactions, a timestamp, and — crucially — a <b style='color:#f1f5f9;'>fingerprint of the previous block</b>. This fingerprint is called a hash.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Because every block references the one before it, changing any old block would break <b style='color:#10b981;'>every block that came after it</b>. The entire network would immediately reject the fake version. That is what makes blockchain <b style='color:#f1f5f9;'>immutable</b> — it cannot be secretly changed.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "eb-s7-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "eb-s7-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>📦 Block<br/><span style=\"font-weight:400;color:#94a3b8;\">Batch of transactions</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "eb-s7-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "eb-s7-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>🔢 Hash<br/><span style=\"font-weight:400;color:#94a3b8;\">Unique fingerprint</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "eb-s7-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "eb-s7-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>🔗 Chain<br/><span style=\"font-weight:400;color:#94a3b8;\">Blocks linked in order</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "eb-s7-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "eb-s7-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>🚫 Immutable<br/><span style=\"font-weight:400;color:#94a3b8;\">Can't change the past</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_eb-s7_0",
+          "type": "spotlight",
+          "elementId": "eb-s7-title"
+        },
+        {
+          "id": "action_eb-s7_1",
+          "type": "speech",
+          "text": "🔗 Blocks & Chains Explained",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/5-1.mp3"
+        },
+        {
+          "id": "action_eb-s7_2",
+          "type": "spotlight",
+          "elementId": "eb-s7-sub"
+        },
+        {
+          "id": "action_eb-s7_3",
+          "type": "speech",
+          "text": "How individual records link together into an unbreakable chain",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/5-3.mp3"
+        },
+        {
+          "id": "action_eb-s7_4",
+          "type": "spotlight",
+          "elementId": "eb-s7-body"
+        },
+        {
+          "id": "action_eb-s7_5",
+          "type": "speech",
+          "text": "Each block contains a batch of transactions, a timestamp, and — crucially — a fingerprint of the previous block . This fingerprint is called a hash. Because every block references the one before it, changing any old block would break every block that came after it . The entire network would immediately reject the fake version. That is what makes blockchain immutable — it cannot be secretly changed.",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/5-5.mp3"
+        },
+        {
+          "id": "action_eb-s7_6",
+          "type": "spotlight",
+          "elementId": "eb-s7-ct1"
+        },
+        {
+          "id": "action_eb-s7_7",
+          "type": "speech",
+          "text": "📦 Block. Batch of transactions",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/5-7.mp3"
+        },
+        {
+          "id": "action_eb-s7_8",
+          "type": "spotlight",
+          "elementId": "eb-s7-ct2"
+        },
+        {
+          "id": "action_eb-s7_9",
+          "type": "speech",
+          "text": "🔢 Hash. Unique fingerprint",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/5-9.mp3"
+        },
+        {
+          "id": "action_eb-s7_10",
+          "type": "spotlight",
+          "elementId": "eb-s7-ct3"
+        },
+        {
+          "id": "action_eb-s7_11",
+          "type": "speech",
+          "text": "🔗 Chain. Blocks linked in order",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/5-11.mp3"
+        },
+        {
+          "id": "action_eb-s7_12",
+          "type": "spotlight",
+          "elementId": "eb-s7-ct4"
+        },
+        {
+          "id": "action_eb-s7_13",
+          "type": "speech",
+          "text": "🚫 Immutable. Can't change the past",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/5-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "eb-s8",
+      "type": "slide",
+      "title": "⚖️ Proof of Work vs Proof of Stake",
+      "order": 6,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "eb-s8-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#10b981",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "eb-s8-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b981",
+              "fixedRatio": false
+            },
+            {
+              "id": "eb-s8-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "eb-s8-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>⚖️ Proof of Work vs Proof of Stake</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "eb-s8-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Two ways blockchains decide who adds the next block</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "eb-s8-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#10b981;'>Proof of Work (PoW)</b> — used by Bitcoin. Computers compete to solve a hard math puzzle. The winner adds the next block and earns a reward. Uses lots of energy.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#10b981;'>Proof of Stake (PoS)</b> — used by Ethereum. Validators lock up (stake) their crypto as a promise to be honest. Cheating means losing their stake. Much more energy efficient.</p><br/><p style='font-size:16px;color:#64748b;'>Both systems ensure that it is extremely expensive to attack the network.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "eb-s8-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "eb-s8-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>⛏️ PoW<br/><span style=\"font-weight:400;color:#94a3b8;\">Bitcoin — energy-heavy</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "eb-s8-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "eb-s8-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>🪙 PoS<br/><span style=\"font-weight:400;color:#94a3b8;\">Ethereum — stake to validate</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "eb-s8-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "eb-s8-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>🌱 Energy<br/><span style=\"font-weight:400;color:#94a3b8;\">PoS uses 99% less energy</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "eb-s8-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "eb-s8-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>🛡️ Security<br/><span style=\"font-weight:400;color:#94a3b8;\">Both are very hard to attack</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_eb-s8_0",
+          "type": "spotlight",
+          "elementId": "eb-s8-title"
+        },
+        {
+          "id": "action_eb-s8_1",
+          "type": "speech",
+          "text": "⚖️ Proof of Work vs Proof of Stake",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/6-1.mp3"
+        },
+        {
+          "id": "action_eb-s8_2",
+          "type": "spotlight",
+          "elementId": "eb-s8-sub"
+        },
+        {
+          "id": "action_eb-s8_3",
+          "type": "speech",
+          "text": "Two ways blockchains decide who adds the next block",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/6-3.mp3"
+        },
+        {
+          "id": "action_eb-s8_4",
+          "type": "spotlight",
+          "elementId": "eb-s8-body"
+        },
+        {
+          "id": "action_eb-s8_5",
+          "type": "speech",
+          "text": "Proof of Work (PoW) — used by Bitcoin. Computers compete to solve a hard math puzzle. The winner adds the next block and earns a reward. Uses lots of energy. Proof of Stake (PoS) — used by Ethereum. Validators lock up (stake) their crypto as a promise to be honest. Cheating means losing their stake. Much more energy efficient. Both systems ensure that it is extremely expensive to attack the network.",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/6-5.mp3"
+        },
+        {
+          "id": "action_eb-s8_6",
+          "type": "spotlight",
+          "elementId": "eb-s8-ct1"
+        },
+        {
+          "id": "action_eb-s8_7",
+          "type": "speech",
+          "text": "⛏️ PoW. Bitcoin — energy-heavy",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/6-7.mp3"
+        },
+        {
+          "id": "action_eb-s8_8",
+          "type": "spotlight",
+          "elementId": "eb-s8-ct2"
+        },
+        {
+          "id": "action_eb-s8_9",
+          "type": "speech",
+          "text": "🪙 PoS. Ethereum — stake to validate",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/6-9.mp3"
+        },
+        {
+          "id": "action_eb-s8_10",
+          "type": "spotlight",
+          "elementId": "eb-s8-ct3"
+        },
+        {
+          "id": "action_eb-s8_11",
+          "type": "speech",
+          "text": "🌱 Energy. PoS uses 99% less energy",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/6-11.mp3"
+        },
+        {
+          "id": "action_eb-s8_12",
+          "type": "spotlight",
+          "elementId": "eb-s8-ct4"
+        },
+        {
+          "id": "action_eb-s8_13",
+          "type": "speech",
+          "text": "🛡️ Security. Both are very hard to attack",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/6-13.mp3"
+        }
+      ]
     },
     {
       "id": "eb-s4",
@@ -1126,19 +2362,19 @@
           }
         ]
       },
-      "order": 4,
+      "order": 7,
       "actions": [
         {
           "id": "action_eb-s4_q0",
           "type": "speech",
           "text": "Time to test what you've learned! Answer each question and see how you do.",
-          "audioUrl": "/audio/lessons/oc-elem-blockchain/3-0.mp3"
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/7-0.mp3"
         },
         {
           "id": "action_eb-s4_q1",
           "type": "speech",
           "text": "Take your time — the goal is understanding, not just getting the right answer.",
-          "audioUrl": "/audio/lessons/oc-elem-blockchain/3-1.mp3"
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/7-1.mp3"
         }
       ]
     }

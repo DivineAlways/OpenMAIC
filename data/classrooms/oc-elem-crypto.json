@@ -324,7 +324,7 @@
           "audioUrl": "/audio/lessons/oc-elem-crypto/0-13.mp3"
         }
       ],
-      "order": 1
+      "order": 0
     },
     {
       "id": "ec-s2",
@@ -633,7 +633,934 @@
           "audioUrl": "/audio/lessons/oc-elem-crypto/1-13.mp3"
         }
       ],
-      "order": 2
+      "order": 1
+    },
+    {
+      "id": "ec-s4",
+      "type": "slide",
+      "title": "₿ Why Was Bitcoin Created?",
+      "order": 2,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ec-s4-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f59e0b",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ec-s4-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "ec-s4-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ec-s4-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>₿ Why Was Bitcoin Created?</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ec-s4-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The problem Bitcoin was built to solve</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ec-s4-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>In 2008, a global financial crisis hit when banks failed and millions of people lost their savings. A mysterious person (or group) called <b style='color:#f59e0b;'>Satoshi Nakamoto</b> published a paper describing Bitcoin.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>The idea: create a form of money that <b style='color:#f1f5f9;'>no bank or government could control, freeze, or inflate away</b>. You hold your own money. No middleman. No permission required.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ec-s4-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ec-s4-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>📅 2008<br/><span style=\"font-weight:400;color:#94a3b8;\">Bitcoin whitepaper published</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "ec-s4-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ec-s4-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>🏦 Problem<br/><span style=\"font-weight:400;color:#94a3b8;\">Banks failed, people lost money</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "ec-s4-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ec-s4-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>🔑 Solution<br/><span style=\"font-weight:400;color:#94a3b8;\">Self-custody, no middleman</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "ec-s4-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ec-s4-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>🌐 Result<br/><span style=\"font-weight:400;color:#94a3b8;\">First decentralized currency</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_ec-s4_0",
+          "type": "spotlight",
+          "elementId": "ec-s4-title"
+        },
+        {
+          "id": "action_ec-s4_1",
+          "type": "speech",
+          "text": "₿ Why Was Bitcoin Created?",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/2-1.mp3"
+        },
+        {
+          "id": "action_ec-s4_2",
+          "type": "spotlight",
+          "elementId": "ec-s4-sub"
+        },
+        {
+          "id": "action_ec-s4_3",
+          "type": "speech",
+          "text": "The problem Bitcoin was built to solve",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/2-3.mp3"
+        },
+        {
+          "id": "action_ec-s4_4",
+          "type": "spotlight",
+          "elementId": "ec-s4-body"
+        },
+        {
+          "id": "action_ec-s4_5",
+          "type": "speech",
+          "text": "In 2008, a global financial crisis hit when banks failed and millions of people lost their savings. A mysterious person (or group) called Satoshi Nakamoto published a paper describing Bitcoin. The idea: create a form of money that no bank or government could control, freeze, or inflate away . You hold your own money. No middleman. No permission required.",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/2-5.mp3"
+        },
+        {
+          "id": "action_ec-s4_6",
+          "type": "spotlight",
+          "elementId": "ec-s4-ct1"
+        },
+        {
+          "id": "action_ec-s4_7",
+          "type": "speech",
+          "text": "📅 2008. Bitcoin whitepaper published",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/2-7.mp3"
+        },
+        {
+          "id": "action_ec-s4_8",
+          "type": "spotlight",
+          "elementId": "ec-s4-ct2"
+        },
+        {
+          "id": "action_ec-s4_9",
+          "type": "speech",
+          "text": "🏦 Problem. Banks failed, people lost money",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/2-9.mp3"
+        },
+        {
+          "id": "action_ec-s4_10",
+          "type": "spotlight",
+          "elementId": "ec-s4-ct3"
+        },
+        {
+          "id": "action_ec-s4_11",
+          "type": "speech",
+          "text": "🔑 Solution. Self-custody, no middleman",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/2-11.mp3"
+        },
+        {
+          "id": "action_ec-s4_12",
+          "type": "spotlight",
+          "elementId": "ec-s4-ct4"
+        },
+        {
+          "id": "action_ec-s4_13",
+          "type": "speech",
+          "text": "🌐 Result. First decentralized currency",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/2-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "ec-s5",
+      "type": "slide",
+      "title": "📊 Supply, Demand & Value",
+      "order": 3,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ec-s5-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f59e0b",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ec-s5-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "ec-s5-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ec-s5-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>📊 Supply, Demand & Value</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ec-s5-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Why crypto prices go up and down</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ec-s5-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Like any asset, crypto prices are driven by <b style='color:#f59e0b;'>supply and demand</b>. When more people want to buy than sell, the price goes up. When more people want to sell, the price drops.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Bitcoin has a <b style='color:#f1f5f9;'>hard cap of 21 million coins</b> — that is all that will ever exist. Scarcity is a key driver of its value, similar to gold. Ethereum has no hard cap but burns some with every transaction.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ec-s5-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ec-s5-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>📈 High Demand<br/><span style=\"font-weight:400;color:#94a3b8;\">Price goes up</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "ec-s5-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ec-s5-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>📉 High Supply<br/><span style=\"font-weight:400;color:#94a3b8;\">Price goes down</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "ec-s5-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ec-s5-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>🔢 21M Max<br/><span style=\"font-weight:400;color:#94a3b8;\">Bitcoin's hard cap</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "ec-s5-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ec-s5-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>🔥 Burn<br/><span style=\"font-weight:400;color:#94a3b8;\">Ethereum reduces supply</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_ec-s5_0",
+          "type": "spotlight",
+          "elementId": "ec-s5-title"
+        },
+        {
+          "id": "action_ec-s5_1",
+          "type": "speech",
+          "text": "📊 Supply, Demand & Value",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/3-1.mp3"
+        },
+        {
+          "id": "action_ec-s5_2",
+          "type": "spotlight",
+          "elementId": "ec-s5-sub"
+        },
+        {
+          "id": "action_ec-s5_3",
+          "type": "speech",
+          "text": "Why crypto prices go up and down",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/3-3.mp3"
+        },
+        {
+          "id": "action_ec-s5_4",
+          "type": "spotlight",
+          "elementId": "ec-s5-body"
+        },
+        {
+          "id": "action_ec-s5_5",
+          "type": "speech",
+          "text": "Like any asset, crypto prices are driven by supply and demand . When more people want to buy than sell, the price goes up. When more people want to sell, the price drops. Bitcoin has a hard cap of 21 million coins — that is all that will ever exist. Scarcity is a key driver of its value, similar to gold. Ethereum has no hard cap but burns some with every transaction.",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/3-5.mp3"
+        },
+        {
+          "id": "action_ec-s5_6",
+          "type": "spotlight",
+          "elementId": "ec-s5-ct1"
+        },
+        {
+          "id": "action_ec-s5_7",
+          "type": "speech",
+          "text": "📈 High Demand. Price goes up",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/3-7.mp3"
+        },
+        {
+          "id": "action_ec-s5_8",
+          "type": "spotlight",
+          "elementId": "ec-s5-ct2"
+        },
+        {
+          "id": "action_ec-s5_9",
+          "type": "speech",
+          "text": "📉 High Supply. Price goes down",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/3-9.mp3"
+        },
+        {
+          "id": "action_ec-s5_10",
+          "type": "spotlight",
+          "elementId": "ec-s5-ct3"
+        },
+        {
+          "id": "action_ec-s5_11",
+          "type": "speech",
+          "text": "🔢 21M Max. Bitcoin's hard cap",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/3-11.mp3"
+        },
+        {
+          "id": "action_ec-s5_12",
+          "type": "spotlight",
+          "elementId": "ec-s5-ct4"
+        },
+        {
+          "id": "action_ec-s5_13",
+          "type": "speech",
+          "text": "🔥 Burn. Ethereum reduces supply",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/3-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "ec-s6",
+      "type": "slide",
+      "title": "🪙 Coins vs Tokens vs Stablecoins",
+      "order": 4,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ec-s6-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f59e0b",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ec-s6-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "ec-s6-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ec-s6-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🪙 Coins vs Tokens vs Stablecoins</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ec-s6-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Not all crypto is the same — here is the difference</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ec-s6-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f59e0b;'>Coins</b> have their own blockchain — Bitcoin (BTC), Ethereum (ETH), XRP all run on their own networks.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f59e0b;'>Tokens</b> are built on top of existing blockchains. For example, thousands of tokens run on Ethereum.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f59e0b;'>Stablecoins</b> like USDT and USDC are pegged 1:1 to the US dollar. They give you the benefits of crypto (fast, borderless) without the price swings.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ec-s6-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ec-s6-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>🔵 Coin<br/><span style=\"font-weight:400;color:#94a3b8;\">Own blockchain (BTC, ETH, XRP)</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "ec-s6-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ec-s6-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>🟢 Token<br/><span style=\"font-weight:400;color:#94a3b8;\">Built on another chain</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "ec-s6-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ec-s6-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>💵 Stablecoin<br/><span style=\"font-weight:400;color:#94a3b8;\">Pegged to USD (USDT, USDC)</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "ec-s6-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ec-s6-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>⚖️ Key Diff<br/><span style=\"font-weight:400;color:#94a3b8;\">Coins = infrastructure; Tokens = apps</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_ec-s6_0",
+          "type": "spotlight",
+          "elementId": "ec-s6-title"
+        },
+        {
+          "id": "action_ec-s6_1",
+          "type": "speech",
+          "text": "🪙 Coins vs Tokens vs Stablecoins",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/4-1.mp3"
+        },
+        {
+          "id": "action_ec-s6_2",
+          "type": "spotlight",
+          "elementId": "ec-s6-sub"
+        },
+        {
+          "id": "action_ec-s6_3",
+          "type": "speech",
+          "text": "Not all crypto is the same — here is the difference",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/4-3.mp3"
+        },
+        {
+          "id": "action_ec-s6_4",
+          "type": "spotlight",
+          "elementId": "ec-s6-body"
+        },
+        {
+          "id": "action_ec-s6_5",
+          "type": "speech",
+          "text": "Coins have their own blockchain — Bitcoin (BTC), Ethereum (ETH), XRP all run on their own networks. Tokens are built on top of existing blockchains. For example, thousands of tokens run on Ethereum. Stablecoins like USDT and USDC are pegged 1:1 to the US dollar. They give you the benefits of crypto (fast, borderless) without the price swings.",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/4-5.mp3"
+        },
+        {
+          "id": "action_ec-s6_6",
+          "type": "spotlight",
+          "elementId": "ec-s6-ct1"
+        },
+        {
+          "id": "action_ec-s6_7",
+          "type": "speech",
+          "text": "🔵 Coin. Own blockchain (BTC, ETH, XRP)",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/4-7.mp3"
+        },
+        {
+          "id": "action_ec-s6_8",
+          "type": "spotlight",
+          "elementId": "ec-s6-ct2"
+        },
+        {
+          "id": "action_ec-s6_9",
+          "type": "speech",
+          "text": "🟢 Token. Built on another chain",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/4-9.mp3"
+        },
+        {
+          "id": "action_ec-s6_10",
+          "type": "spotlight",
+          "elementId": "ec-s6-ct3"
+        },
+        {
+          "id": "action_ec-s6_11",
+          "type": "speech",
+          "text": "💵 Stablecoin. Pegged to USD (USDT, USDC)",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/4-11.mp3"
+        },
+        {
+          "id": "action_ec-s6_12",
+          "type": "spotlight",
+          "elementId": "ec-s6-ct4"
+        },
+        {
+          "id": "action_ec-s6_13",
+          "type": "speech",
+          "text": "⚖️ Key Diff. Coins = infrastructure; Tokens = apps",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/4-13.mp3"
+        }
+      ]
     },
     {
       "id": "ec-s3",
@@ -756,19 +1683,19 @@
           }
         ]
       },
-      "order": 3,
+      "order": 5,
       "actions": [
         {
           "id": "action_ec-s3_q0",
           "type": "speech",
           "text": "Time to test what you've learned! Answer each question and see how you do.",
-          "audioUrl": "/audio/lessons/oc-elem-crypto/2-0.mp3"
+          "audioUrl": "/audio/lessons/oc-elem-crypto/5-0.mp3"
         },
         {
           "id": "action_ec-s3_q1",
           "type": "speech",
           "text": "Take your time — the goal is understanding, not just getting the right answer.",
-          "audioUrl": "/audio/lessons/oc-elem-crypto/2-1.mp3"
+          "audioUrl": "/audio/lessons/oc-elem-crypto/5-1.mp3"
         }
       ]
     }

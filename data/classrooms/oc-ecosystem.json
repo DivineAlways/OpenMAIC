@@ -199,7 +199,7 @@
           ]
         }
       },
-      "order": 1,
+      "order": 0,
       "actions": [
         {
           "id": "action_ce-s1_0",
@@ -421,7 +421,7 @@
           ]
         }
       },
-      "order": 2,
+      "order": 1,
       "actions": [
         {
           "id": "action_ce-s2_0",
@@ -658,7 +658,7 @@
           ]
         }
       },
-      "order": 3,
+      "order": 2,
       "actions": [
         {
           "id": "action_ce-s3_0",
@@ -888,7 +888,7 @@
           ]
         }
       },
-      "order": 4,
+      "order": 3,
       "actions": [
         {
           "id": "action_ce-s4_0",
@@ -1200,7 +1200,7 @@
           ]
         }
       },
-      "order": 5,
+      "order": 4,
       "actions": [
         {
           "id": "action_ce-s5_0",
@@ -1523,7 +1523,7 @@
           ]
         }
       },
-      "order": 6,
+      "order": 5,
       "actions": [
         {
           "id": "action_ce-s6_0",
@@ -1775,7 +1775,7 @@
           ]
         }
       },
-      "order": 7,
+      "order": 6,
       "actions": [
         {
           "id": "action_ce-s7_0",
@@ -1843,6 +1843,625 @@
           "type": "speech",
           "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading.",
           "audioUrl": "/audio/lessons/oc-ecosystem/7-1.mp3"
+        }
+      ],
+      "order": 7
+    },
+    {
+      "id": "ce-s10",
+      "type": "slide",
+      "title": "⚖️ Global Regulatory Landscape",
+      "order": 8,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ce-s10-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#06b6d4",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ce-s10-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#06b6d4",
+              "fixedRatio": false
+            },
+            {
+              "id": "ce-s10-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ce-s10-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>⚖️ Global Regulatory Landscape</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ce-s10-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>How different countries are approaching crypto law</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ce-s10-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#06b6d4;'>United States</b> — the SEC treats most tokens as securities (Howey Test). Ongoing legal battles with major exchanges. Spot Bitcoin and Ethereum ETFs approved in 2024.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#06b6d4;'>European Union</b> — MiCA (Markets in Crypto-Assets) regulation in effect from 2024. Clear framework for stablecoins and exchanges. Most comprehensive regulatory framework globally.</p><br/><p style='font-size:16px;color:#cbd5e1;'><b style='color:#06b6d4;'>Key insight:</b> Regulatory clarity is bullish long-term — it enables institutional adoption and reduces the \"uncertainty tax\" on crypto valuations.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ce-s10-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#06b6d420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#06b6d4"
+              }
+            },
+            {
+              "id": "ce-s10-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#06b6d4;text-align:center;'>🇺🇸 SEC (USA)<br/><span style=\"font-weight:400;color:#94a3b8;\">Securities law — Howey Test applies</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#06b6d4"
+            },
+            {
+              "id": "ce-s10-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#06b6d420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#06b6d4"
+              }
+            },
+            {
+              "id": "ce-s10-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#06b6d4;text-align:center;'>🇪🇺 MiCA (EU)<br/><span style=\"font-weight:400;color:#94a3b8;\">Comprehensive crypto framework 2024</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#06b6d4"
+            },
+            {
+              "id": "ce-s10-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#06b6d420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#06b6d4"
+              }
+            },
+            {
+              "id": "ce-s10-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#06b6d4;text-align:center;'>🇸🇬 Singapore<br/><span style=\"font-weight:400;color:#94a3b8;\">Pro-crypto, licensing-based approach</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#06b6d4"
+            },
+            {
+              "id": "ce-s10-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#06b6d420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#06b6d4"
+              }
+            },
+            {
+              "id": "ce-s10-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#06b6d4;text-align:center;'>📈 Clarity<br/><span style=\"font-weight:400;color:#94a3b8;\">Regulation enables institutional capital</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#06b6d4"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_ce-s10_0",
+          "type": "spotlight",
+          "elementId": "ce-s10-title"
+        },
+        {
+          "id": "action_ce-s10_1",
+          "type": "speech",
+          "text": "⚖️ Global Regulatory Landscape",
+          "audioUrl": "/audio/lessons/oc-ecosystem/8-1.mp3"
+        },
+        {
+          "id": "action_ce-s10_2",
+          "type": "spotlight",
+          "elementId": "ce-s10-sub"
+        },
+        {
+          "id": "action_ce-s10_3",
+          "type": "speech",
+          "text": "How different countries are approaching crypto law",
+          "audioUrl": "/audio/lessons/oc-ecosystem/8-3.mp3"
+        },
+        {
+          "id": "action_ce-s10_4",
+          "type": "spotlight",
+          "elementId": "ce-s10-body"
+        },
+        {
+          "id": "action_ce-s10_5",
+          "type": "speech",
+          "text": "United States — the SEC treats most tokens as securities (Howey Test). Ongoing legal battles with major exchanges. Spot Bitcoin and Ethereum ETFs approved in 2024. European Union — MiCA (Markets in Crypto-Assets) regulation in effect from 2024. Clear framework for stablecoins and exchanges. Most comprehensive regulatory framework globally. Key insight: Regulatory clarity is bullish long-term — it enables institutional adoption and reduces the \"uncertainty tax\" on crypto valuations.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/8-5.mp3"
+        },
+        {
+          "id": "action_ce-s10_6",
+          "type": "spotlight",
+          "elementId": "ce-s10-ct1"
+        },
+        {
+          "id": "action_ce-s10_7",
+          "type": "speech",
+          "text": "🇺🇸 SEC (USA). Securities law — Howey Test applies",
+          "audioUrl": "/audio/lessons/oc-ecosystem/8-7.mp3"
+        },
+        {
+          "id": "action_ce-s10_8",
+          "type": "spotlight",
+          "elementId": "ce-s10-ct2"
+        },
+        {
+          "id": "action_ce-s10_9",
+          "type": "speech",
+          "text": "🇪🇺 MiCA (EU). Comprehensive crypto framework 2024",
+          "audioUrl": "/audio/lessons/oc-ecosystem/8-9.mp3"
+        },
+        {
+          "id": "action_ce-s10_10",
+          "type": "spotlight",
+          "elementId": "ce-s10-ct3"
+        },
+        {
+          "id": "action_ce-s10_11",
+          "type": "speech",
+          "text": "🇸🇬 Singapore. Pro-crypto, licensing-based approach",
+          "audioUrl": "/audio/lessons/oc-ecosystem/8-11.mp3"
+        },
+        {
+          "id": "action_ce-s10_12",
+          "type": "spotlight",
+          "elementId": "ce-s10-ct4"
+        },
+        {
+          "id": "action_ce-s10_13",
+          "type": "speech",
+          "text": "📈 Clarity. Regulation enables institutional capital",
+          "audioUrl": "/audio/lessons/oc-ecosystem/8-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "ce-s10b",
+      "type": "slide",
+      "title": "🏦 Banking Integration & Payments",
+      "order": 9,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ce-s10b-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#06b6d4",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ce-s10b-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#06b6d4",
+              "fixedRatio": false
+            },
+            {
+              "id": "ce-s10b-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ce-s10b-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🏦 Banking Integration & Payments</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ce-s10b-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>How crypto and traditional finance are converging</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ce-s10b-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>The clearest near-term use case for crypto in traditional finance is <b style='color:#06b6d4;'>cross-border payments</b>. A wire transfer from the US to the Philippines costs 6–10% in fees and takes 3–5 days. The same transfer on XRP Ledger takes 3–5 seconds and costs fractions of a cent.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Ripple's On-Demand Liquidity (ODL) already moves billions in payments for financial institutions. Stablecoins are being integrated into PayPal, Visa, and Mastercard settlement rails. The convergence is accelerating.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ce-s10b-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#06b6d420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#06b6d4"
+              }
+            },
+            {
+              "id": "ce-s10b-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#06b6d4;text-align:center;'>⏱️ Wire Transfer<br/><span style=\"font-weight:400;color:#94a3b8;\">3-5 days, 6-10% fees</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#06b6d4"
+            },
+            {
+              "id": "ce-s10b-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#06b6d420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#06b6d4"
+              }
+            },
+            {
+              "id": "ce-s10b-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#06b6d4;text-align:center;'>⚡ XRPL<br/><span style=\"font-weight:400;color:#94a3b8;\">3-5 seconds, <$0.01 fees</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#06b6d4"
+            },
+            {
+              "id": "ce-s10b-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#06b6d420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#06b6d4"
+              }
+            },
+            {
+              "id": "ce-s10b-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#06b6d4;text-align:center;'>💳 Visa/MC<br/><span style=\"font-weight:400;color:#94a3b8;\">Stablecoin settlement integration</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#06b6d4"
+            },
+            {
+              "id": "ce-s10b-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#06b6d420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#06b6d4"
+              }
+            },
+            {
+              "id": "ce-s10b-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#06b6d4;text-align:center;'>🏦 ODL<br/><span style=\"font-weight:400;color:#94a3b8;\">Ripple's institutional payment rails</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#06b6d4"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_ce-s10b_0",
+          "type": "spotlight",
+          "elementId": "ce-s10b-title"
+        },
+        {
+          "id": "action_ce-s10b_1",
+          "type": "speech",
+          "text": "🏦 Banking Integration & Payments",
+          "audioUrl": "/audio/lessons/oc-ecosystem/9-1.mp3"
+        },
+        {
+          "id": "action_ce-s10b_2",
+          "type": "spotlight",
+          "elementId": "ce-s10b-sub"
+        },
+        {
+          "id": "action_ce-s10b_3",
+          "type": "speech",
+          "text": "How crypto and traditional finance are converging",
+          "audioUrl": "/audio/lessons/oc-ecosystem/9-3.mp3"
+        },
+        {
+          "id": "action_ce-s10b_4",
+          "type": "spotlight",
+          "elementId": "ce-s10b-body"
+        },
+        {
+          "id": "action_ce-s10b_5",
+          "type": "speech",
+          "text": "The clearest near-term use case for crypto in traditional finance is cross-border payments . A wire transfer from the US to the Philippines costs 6–10% in fees and takes 3–5 days. The same transfer on XRP Ledger takes 3–5 seconds and costs fractions of a cent. Ripple's On-Demand Liquidity (ODL) already moves billions in payments for financial institutions. Stablecoins are being integrated into PayPal, Visa, and Mastercard settlement rails. The convergence is accelerating.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/9-5.mp3"
+        },
+        {
+          "id": "action_ce-s10b_6",
+          "type": "spotlight",
+          "elementId": "ce-s10b-ct1"
+        },
+        {
+          "id": "action_ce-s10b_7",
+          "type": "speech",
+          "text": "⏱️ Wire Transfer. 3-5 days, 6-10% fees",
+          "audioUrl": "/audio/lessons/oc-ecosystem/9-7.mp3"
+        },
+        {
+          "id": "action_ce-s10b_8",
+          "type": "spotlight",
+          "elementId": "ce-s10b-ct2"
+        },
+        {
+          "id": "action_ce-s10b_9",
+          "type": "speech",
+          "text": "⚡ XRPL. 3-5 seconds, <$0.01 fees",
+          "audioUrl": "/audio/lessons/oc-ecosystem/9-9.mp3"
+        },
+        {
+          "id": "action_ce-s10b_10",
+          "type": "spotlight",
+          "elementId": "ce-s10b-ct3"
+        },
+        {
+          "id": "action_ce-s10b_11",
+          "type": "speech",
+          "text": "💳 Visa/MC. Stablecoin settlement integration",
+          "audioUrl": "/audio/lessons/oc-ecosystem/9-11.mp3"
+        },
+        {
+          "id": "action_ce-s10b_12",
+          "type": "spotlight",
+          "elementId": "ce-s10b-ct4"
+        },
+        {
+          "id": "action_ce-s10b_13",
+          "type": "speech",
+          "text": "🏦 ODL. Ripple's institutional payment rails",
+          "audioUrl": "/audio/lessons/oc-ecosystem/9-13.mp3"
         }
       ]
     },
@@ -1975,19 +2594,19 @@
           }
         ]
       },
-      "order": 8,
+      "order": 10,
       "actions": [
         {
           "id": "action_ce-s8_q0",
           "type": "speech",
           "text": "Time to test your knowledge! Answer each question carefully — you can review the material after the quiz.",
-          "audioUrl": "/audio/lessons/oc-ecosystem/8-0.mp3"
+          "audioUrl": "/audio/lessons/oc-ecosystem/10-0.mp3"
         },
         {
           "id": "action_ce-s8_q1",
           "type": "speech",
           "text": "Take your time with these questions. The goal is to solidify your understanding, not just pass the quiz.",
-          "audioUrl": "/audio/lessons/oc-ecosystem/8-1.mp3"
+          "audioUrl": "/audio/lessons/oc-ecosystem/10-1.mp3"
         }
       ]
     }

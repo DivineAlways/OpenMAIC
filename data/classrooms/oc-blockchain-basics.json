@@ -265,7 +265,7 @@
           ]
         }
       },
-      "order": 1,
+      "order": 0,
       "actions": [
         {
           "id": "action_bb-s1_0",
@@ -476,7 +476,7 @@
           ]
         }
       },
-      "order": 2,
+      "order": 1,
       "actions": [
         {
           "id": "action_bb-s2_0",
@@ -832,7 +832,7 @@
           ]
         }
       },
-      "order": 3,
+      "order": 2,
       "actions": [
         {
           "id": "action_bb-s3_0",
@@ -1080,7 +1080,7 @@
           ]
         }
       },
-      "order": 4,
+      "order": 3,
       "actions": [
         {
           "id": "action_bb-s4_0",
@@ -1302,7 +1302,7 @@
           ]
         }
       },
-      "order": 5,
+      "order": 4,
       "actions": [
         {
           "id": "action_bb-s5_0",
@@ -1592,7 +1592,7 @@
           ]
         }
       },
-      "order": 6,
+      "order": 5,
       "actions": [
         {
           "id": "action_bb-s6_0",
@@ -1833,7 +1833,7 @@
           ]
         }
       },
-      "order": 7,
+      "order": 6,
       "actions": [
         {
           "id": "action_bb-s7_0",
@@ -1889,7 +1889,7 @@
         "type": "interactive",
         "html": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody{background:#0b1120;color:#e2e8f0;font-family:Inter,system-ui,sans-serif;padding:20px;margin:0;}\nh2{color:#60a5fa;font-size:18px;margin:0 0 4px;}\n.sub{color:#64748b;font-size:12px;margin-bottom:16px;}\n.row{display:flex;gap:12px;margin-bottom:12px;align-items:stretch;}\n.panel{background:#0f1f3d;border:1px solid #1e3a5f;border-radius:8px;padding:14px;flex:1;}\nlabel{color:#94a3b8;font-size:11px;text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;}\ninput,textarea{width:100%;padding:8px 10px;background:#020817;border:1px solid #334155;color:#f1f5f9;border-radius:6px;font-size:13px;font-family:monospace;box-sizing:border-box;resize:none;}\n.hash-out{background:#020817;border:1px solid #334155;border-radius:6px;padding:10px;font-family:monospace;font-size:12px;word-break:break-all;min-height:36px;}\n.valid{color:#22c55e;font-weight:700;} .invalid{color:#ef4444;font-weight:700;}\n.stat{display:inline-block;background:#1e3a5f;border-radius:4px;padding:3px 10px;font-size:11px;font-weight:700;color:#60a5fa;margin:2px;}\n.diff-bar{height:8px;border-radius:4px;background:#1e293b;margin-top:6px;overflow:hidden;}\n.diff-fill{height:100%;background:#f59e0b;border-radius:4px;transition:width 0.3s;}\n.note{color:#475569;font-size:11px;margin-top:12px;}\n</style>\n</head>\n<body>\n<h2>SHA-256 Avalanche Effect Explorer</h2>\n<p class=\"sub\">Change one character — watch ~50% of hash bits flip instantly.</p>\n<div class=\"row\">\n  <div class=\"panel\">\n    <label>Input Message</label>\n    <textarea id=\"inp\" rows=\"2\" oninput=\"update()\">OnlyCrypto Academy</textarea>\n    <label style=\"margin-top:10px\">SHA-256 Hash</label>\n    <div class=\"hash-out\" id=\"h1\">—</div>\n  </div>\n  <div class=\"panel\">\n    <label>Input + One Character (\"X\" appended)</label>\n    <textarea id=\"inp2\" rows=\"2\" readonly style=\"color:#64748b\"></textarea>\n    <label style=\"margin-top:10px\">SHA-256 Hash</label>\n    <div class=\"hash-out\" id=\"h2\">—</div>\n  </div>\n</div>\n<div class=\"panel\">\n  <label>Avalanche Effect — Bits Changed</label>\n  <div id=\"stats\"></div>\n  <div class=\"diff-bar\"><div class=\"diff-fill\" id=\"bar\" style=\"width:0%\"></div></div>\n  <p class=\"note\">A cryptographic hash must change ~50% of output bits for any single-bit input change. This makes tampering immediately detectable.</p>\n</div>\n<script>\nfunction hashSim(s){let h=0x811c9dc5;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,0x01000193)>>>0;}\nlet seeds=[h];for(let i=0;i<7;i++)seeds.push((Math.imul(seeds[i],0x9e3779b9)+0x6b3a6b3a)>>>0);\nreturn seeds.map(n=>n.toString(16).padStart(8,'0')).join('');}\nfunction bits(n){let c=0;while(n){c+=n&1;n>>>=1;}return c;}\nfunction countDiff(a,b){let d=0;for(let i=0;i<Math.min(a.length,b.length);i+=2)d+=bits(parseInt(a.slice(i,i+2),16)^parseInt(b.slice(i,i+2),16));return d;}\nfunction update(){\n  const v=document.getElementById('inp').value;\n  const v2=v+'X';\n  document.getElementById('inp2').value=v2;\n  const h1=hashSim(v),h2=hashSim(v2);\n  document.getElementById('h1').textContent=h1;\n  document.getElementById('h2').textContent=h2;\n  const diff=countDiff(h1,h2);\n  const pct=Math.round(diff/256*100);\n  const ok=pct>=40&&pct<=60;\n  document.getElementById('bar').style.width=pct+'%';\n  document.getElementById('stats').innerHTML=\n    '<span class=\"stat\">'+diff+' / 256 bits changed</span>'+\n    '<span class=\"stat\">'+pct+'% flip rate</span>'+\n    '<span class=\"stat '+(ok?'valid':'invalid')+'\">'+(ok?'✓ Avalanche confirmed':'⚠ Simulation limit')+'</span>';\n}\nupdate();\n</script>\n</body>\n</html>"
       },
-      "order": 8,
+      "order": 7,
       "actions": [
         {
           "id": "action_bb-s8_i0",
@@ -1902,6 +1902,624 @@
           "type": "speech",
           "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading.",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/7-1.mp3"
+        }
+      ]
+    },
+    {
+      "id": "cbb-s10",
+      "type": "slide",
+      "title": "🏛️ Decentralization vs Scalability Trilemma — Advanced",
+      "order": 8,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "cbb-s10-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#8b5cf6",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "cbb-s10-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf6",
+              "fixedRatio": false
+            },
+            {
+              "id": "cbb-s10-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "cbb-s10-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🏛️ Decentralization vs Scalability Trilemma — Advanced</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "cbb-s10-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The engineering constraints every blockchain designer faces</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "cbb-s10-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>At the protocol design level, the trilemma is not just conceptual — it is a <b style='color:#8b5cf6;'>mathematical constraint</b>. Increasing validator count improves decentralization but increases consensus communication overhead (O(n²) for naive BFT). Sharding improves scalability but introduces cross-shard attack surfaces.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>XRPL's RPCA achieves high throughput with a small, trusted validator set — trading some decentralization for speed. Ethereum's sharding roadmap attempts to preserve decentralization while improving scalability via L2 rollups.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "cbb-s10-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#8b5cf6"
+              }
+            },
+            {
+              "id": "cbb-s10-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>📐 BFT Overhead<br/><span style=\"font-weight:400;color:#94a3b8;\">O(n²) comms as validators grow</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#8b5cf6"
+            },
+            {
+              "id": "cbb-s10-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#8b5cf6"
+              }
+            },
+            {
+              "id": "cbb-s10-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>🔀 Sharding<br/><span style=\"font-weight:400;color:#94a3b8;\">Splits chain into parallel shards</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#8b5cf6"
+            },
+            {
+              "id": "cbb-s10-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#8b5cf6"
+              }
+            },
+            {
+              "id": "cbb-s10-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>⚡ XRPL RPCA<br/><span style=\"font-weight:400;color:#94a3b8;\">Small trusted set = fast consensus</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#8b5cf6"
+            },
+            {
+              "id": "cbb-s10-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#8b5cf6"
+              }
+            },
+            {
+              "id": "cbb-s10-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>🔁 Rollup<br/><span style=\"font-weight:400;color:#94a3b8;\">L2 batch settlement preserves L1 security</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#8b5cf6"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_cbb-s10_0",
+          "type": "spotlight",
+          "elementId": "cbb-s10-title"
+        },
+        {
+          "id": "action_cbb-s10_1",
+          "type": "speech",
+          "text": "🏛️ Decentralization vs Scalability Trilemma — Advanced",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/8-1.mp3"
+        },
+        {
+          "id": "action_cbb-s10_2",
+          "type": "spotlight",
+          "elementId": "cbb-s10-sub"
+        },
+        {
+          "id": "action_cbb-s10_3",
+          "type": "speech",
+          "text": "The engineering constraints every blockchain designer faces",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/8-3.mp3"
+        },
+        {
+          "id": "action_cbb-s10_4",
+          "type": "spotlight",
+          "elementId": "cbb-s10-body"
+        },
+        {
+          "id": "action_cbb-s10_5",
+          "type": "speech",
+          "text": "At the protocol design level, the trilemma is not just conceptual — it is a mathematical constraint . Increasing validator count improves decentralization but increases consensus communication overhead (O(n²) for naive BFT). Sharding improves scalability but introduces cross-shard attack surfaces. XRPL's RPCA achieves high throughput with a small, trusted validator set — trading some decentralization for speed. Ethereum's sharding roadmap attempts to preserve decentralization while improving scalability via L2 rollups.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/8-5.mp3"
+        },
+        {
+          "id": "action_cbb-s10_6",
+          "type": "spotlight",
+          "elementId": "cbb-s10-ct1"
+        },
+        {
+          "id": "action_cbb-s10_7",
+          "type": "speech",
+          "text": "📐 BFT Overhead. O(n²) comms as validators grow",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/8-7.mp3"
+        },
+        {
+          "id": "action_cbb-s10_8",
+          "type": "spotlight",
+          "elementId": "cbb-s10-ct2"
+        },
+        {
+          "id": "action_cbb-s10_9",
+          "type": "speech",
+          "text": "🔀 Sharding. Splits chain into parallel shards",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/8-9.mp3"
+        },
+        {
+          "id": "action_cbb-s10_10",
+          "type": "spotlight",
+          "elementId": "cbb-s10-ct3"
+        },
+        {
+          "id": "action_cbb-s10_11",
+          "type": "speech",
+          "text": "⚡ XRPL RPCA. Small trusted set = fast consensus",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/8-11.mp3"
+        },
+        {
+          "id": "action_cbb-s10_12",
+          "type": "spotlight",
+          "elementId": "cbb-s10-ct4"
+        },
+        {
+          "id": "action_cbb-s10_13",
+          "type": "speech",
+          "text": "🔁 Rollup. L2 batch settlement preserves L1 security",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/8-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "cbb-s11",
+      "type": "slide",
+      "title": "🔐 Cryptographic Foundations",
+      "order": 9,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "cbb-s11-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#8b5cf6",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "cbb-s11-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf6",
+              "fixedRatio": false
+            },
+            {
+              "id": "cbb-s11-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "cbb-s11-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🔐 Cryptographic Foundations</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "cbb-s11-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The math that makes blockchain possible</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "cbb-s11-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#8b5cf6;'>Hash functions</b> (SHA-256, Keccak-256) convert any input to a fixed-length output. Deterministic, one-way, collision-resistant.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#8b5cf6;'>Digital signatures</b> (secp256k1 ECDSA) prove ownership without revealing the private key. When you sign a transaction, you prove you own the key without ever exposing it. The network can verify the signature using only your public key.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "cbb-s11-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#8b5cf6"
+              }
+            },
+            {
+              "id": "cbb-s11-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>🔢 SHA-256<br/><span style=\"font-weight:400;color:#94a3b8;\">Bitcoin's proof-of-work hash</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#8b5cf6"
+            },
+            {
+              "id": "cbb-s11-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#8b5cf6"
+              }
+            },
+            {
+              "id": "cbb-s11-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>📝 ECDSA<br/><span style=\"font-weight:400;color:#94a3b8;\">Elliptic curve digital signatures</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#8b5cf6"
+            },
+            {
+              "id": "cbb-s11-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#8b5cf6"
+              }
+            },
+            {
+              "id": "cbb-s11-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>🔑 Public Key<br/><span style=\"font-weight:400;color:#94a3b8;\">Anyone can verify your signature</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#8b5cf6"
+            },
+            {
+              "id": "cbb-s11-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#8b5cf6"
+              }
+            },
+            {
+              "id": "cbb-s11-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>🔐 Private Key<br/><span style=\"font-weight:400;color:#94a3b8;\">Never leaves your device</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#8b5cf6"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_cbb-s11_0",
+          "type": "spotlight",
+          "elementId": "cbb-s11-title"
+        },
+        {
+          "id": "action_cbb-s11_1",
+          "type": "speech",
+          "text": "🔐 Cryptographic Foundations",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/9-1.mp3"
+        },
+        {
+          "id": "action_cbb-s11_2",
+          "type": "spotlight",
+          "elementId": "cbb-s11-sub"
+        },
+        {
+          "id": "action_cbb-s11_3",
+          "type": "speech",
+          "text": "The math that makes blockchain possible",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/9-3.mp3"
+        },
+        {
+          "id": "action_cbb-s11_4",
+          "type": "spotlight",
+          "elementId": "cbb-s11-body"
+        },
+        {
+          "id": "action_cbb-s11_5",
+          "type": "speech",
+          "text": "Hash functions (SHA-256, Keccak-256) convert any input to a fixed-length output. Deterministic, one-way, collision-resistant. Digital signatures (secp256k1 ECDSA) prove ownership without revealing the private key. When you sign a transaction, you prove you own the key without ever exposing it. The network can verify the signature using only your public key.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/9-5.mp3"
+        },
+        {
+          "id": "action_cbb-s11_6",
+          "type": "spotlight",
+          "elementId": "cbb-s11-ct1"
+        },
+        {
+          "id": "action_cbb-s11_7",
+          "type": "speech",
+          "text": "🔢 SHA-256. Bitcoin's proof-of-work hash",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/9-7.mp3"
+        },
+        {
+          "id": "action_cbb-s11_8",
+          "type": "spotlight",
+          "elementId": "cbb-s11-ct2"
+        },
+        {
+          "id": "action_cbb-s11_9",
+          "type": "speech",
+          "text": "📝 ECDSA. Elliptic curve digital signatures",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/9-9.mp3"
+        },
+        {
+          "id": "action_cbb-s11_10",
+          "type": "spotlight",
+          "elementId": "cbb-s11-ct3"
+        },
+        {
+          "id": "action_cbb-s11_11",
+          "type": "speech",
+          "text": "🔑 Public Key. Anyone can verify your signature",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/9-11.mp3"
+        },
+        {
+          "id": "action_cbb-s11_12",
+          "type": "spotlight",
+          "elementId": "cbb-s11-ct4"
+        },
+        {
+          "id": "action_cbb-s11_13",
+          "type": "speech",
+          "text": "🔐 Private Key. Never leaves your device",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/9-13.mp3"
         }
       ]
     },
@@ -2034,19 +2652,19 @@
           }
         ]
       },
-      "order": 9,
+      "order": 10,
       "actions": [
         {
           "id": "action_bb-s9_q0",
           "type": "speech",
           "text": "Time to test your knowledge! Answer each question carefully — you can review the material after the quiz.",
-          "audioUrl": "/audio/lessons/oc-blockchain-basics/8-0.mp3"
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/10-0.mp3"
         },
         {
           "id": "action_bb-s9_q1",
           "type": "speech",
           "text": "Take your time with these questions. The goal is to solidify your understanding, not just pass the quiz.",
-          "audioUrl": "/audio/lessons/oc-blockchain-basics/8-1.mp3"
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/10-1.mp3"
         }
       ]
     }

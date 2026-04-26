@@ -21,7 +21,7 @@
       "id": "hs-wl-s1",
       "type": "slide",
       "title": "Seed Phrases, Keys & Wallet Types",
-      "order": 1,
+      "order": 0,
       "content": {
         "type": "slide",
         "canvas": {
@@ -467,7 +467,7 @@
       "id": "hs-wl-s2",
       "type": "slide",
       "title": "Wallet Attack Vectors & Security Checklist",
-      "order": 2,
+      "order": 1,
       "content": {
         "type": "slide",
         "canvas": {
@@ -795,10 +795,937 @@
       ]
     },
     {
+      "id": "hw-s4",
+      "type": "slide",
+      "title": "🧊 Cold vs Hot Wallets",
+      "order": 2,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "hw-s4-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#ef4444",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "hw-s4-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef4444",
+              "fixedRatio": false
+            },
+            {
+              "id": "hw-s4-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "hw-s4-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🧊 Cold vs Hot Wallets</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "hw-s4-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Choosing the right storage for your situation</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "hw-s4-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#ef4444;'>Hot wallet</b> — connected to the internet. MetaMask, Trust Wallet, exchange accounts. Convenient for daily use but exposed to online attacks.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#ef4444;'>Cold wallet</b> — offline device that stores your private keys. Ledger and Trezor are the most popular. To sign a transaction, you physically confirm it on the device. An attacker controlling your computer cannot approve transactions without physical access to the device.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "hw-s4-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
+              }
+            },
+            {
+              "id": "hw-s4-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#ef4444;text-align:center;'>🔥 Hot Wallet<br/><span style=\"font-weight:400;color:#94a3b8;\">Internet-connected, convenient</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#ef4444"
+            },
+            {
+              "id": "hw-s4-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
+              }
+            },
+            {
+              "id": "hw-s4-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#ef4444;text-align:center;'>🧊 Cold Wallet<br/><span style=\"font-weight:400;color:#94a3b8;\">Offline device, most secure</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#ef4444"
+            },
+            {
+              "id": "hw-s4-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
+              }
+            },
+            {
+              "id": "hw-s4-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#ef4444;text-align:center;'>💡 Best Practice<br/><span style=\"font-weight:400;color:#94a3b8;\">Hot for spending, cold for savings</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#ef4444"
+            },
+            {
+              "id": "hw-s4-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
+              }
+            },
+            {
+              "id": "hw-s4-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#ef4444;text-align:center;'>🔐 Hardware<br/><span style=\"font-weight:400;color:#94a3b8;\">Ledger, Trezor = industry standard</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#ef4444"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_hw-s4_0",
+          "type": "spotlight",
+          "elementId": "hw-s4-title"
+        },
+        {
+          "id": "action_hw-s4_1",
+          "type": "speech",
+          "text": "🧊 Cold vs Hot Wallets",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/2-1.mp3"
+        },
+        {
+          "id": "action_hw-s4_2",
+          "type": "spotlight",
+          "elementId": "hw-s4-sub"
+        },
+        {
+          "id": "action_hw-s4_3",
+          "type": "speech",
+          "text": "Choosing the right storage for your situation",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/2-3.mp3"
+        },
+        {
+          "id": "action_hw-s4_4",
+          "type": "spotlight",
+          "elementId": "hw-s4-body"
+        },
+        {
+          "id": "action_hw-s4_5",
+          "type": "speech",
+          "text": "Hot wallet — connected to the internet. MetaMask, Trust Wallet, exchange accounts. Convenient for daily use but exposed to online attacks. Cold wallet — offline device that stores your private keys. Ledger and Trezor are the most popular. To sign a transaction, you physically confirm it on the device. An attacker controlling your computer cannot approve transactions without physical access to the device.",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/2-5.mp3"
+        },
+        {
+          "id": "action_hw-s4_6",
+          "type": "spotlight",
+          "elementId": "hw-s4-ct1"
+        },
+        {
+          "id": "action_hw-s4_7",
+          "type": "speech",
+          "text": "🔥 Hot Wallet. Internet-connected, convenient",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/2-7.mp3"
+        },
+        {
+          "id": "action_hw-s4_8",
+          "type": "spotlight",
+          "elementId": "hw-s4-ct2"
+        },
+        {
+          "id": "action_hw-s4_9",
+          "type": "speech",
+          "text": "🧊 Cold Wallet. Offline device, most secure",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/2-9.mp3"
+        },
+        {
+          "id": "action_hw-s4_10",
+          "type": "spotlight",
+          "elementId": "hw-s4-ct3"
+        },
+        {
+          "id": "action_hw-s4_11",
+          "type": "speech",
+          "text": "💡 Best Practice. Hot for spending, cold for savings",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/2-11.mp3"
+        },
+        {
+          "id": "action_hw-s4_12",
+          "type": "spotlight",
+          "elementId": "hw-s4-ct4"
+        },
+        {
+          "id": "action_hw-s4_13",
+          "type": "speech",
+          "text": "🔐 Hardware. Ledger, Trezor = industry standard",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/2-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "hw-s5",
+      "type": "slide",
+      "title": "✍️ Multi-Signature Wallets",
+      "order": 3,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "hw-s5-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#ef4444",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "hw-s5-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef4444",
+              "fixedRatio": false
+            },
+            {
+              "id": "hw-s5-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "hw-s5-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>✍️ Multi-Signature Wallets</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "hw-s5-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Requiring multiple approvals to move funds</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "hw-s5-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>A <b style='color:#ef4444;'>multi-sig wallet</b> requires more than one private key to authorize a transaction. A common setup is 2-of-3: you need any 2 of 3 designated keys to sign.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>This means a single compromised device or lost key cannot drain the wallet. Used by exchanges, DAOs, and anyone managing large amounts. The XRPL natively supports multi-signing on every account.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "hw-s5-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
+              }
+            },
+            {
+              "id": "hw-s5-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#ef4444;text-align:center;'>2-of-3<br/><span style=\"font-weight:400;color:#94a3b8;\">Need 2 keys from 3 total</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#ef4444"
+            },
+            {
+              "id": "hw-s5-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
+              }
+            },
+            {
+              "id": "hw-s5-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#ef4444;text-align:center;'>🛡️ Protection<br/><span style=\"font-weight:400;color:#94a3b8;\">One key stolen = still safe</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#ef4444"
+            },
+            {
+              "id": "hw-s5-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
+              }
+            },
+            {
+              "id": "hw-s5-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#ef4444;text-align:center;'>🏢 Use Case<br/><span style=\"font-weight:400;color:#94a3b8;\">DAOs, treasuries, exchanges</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#ef4444"
+            },
+            {
+              "id": "hw-s5-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
+              }
+            },
+            {
+              "id": "hw-s5-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#ef4444;text-align:center;'>⛓️ XRPL<br/><span style=\"font-weight:400;color:#94a3b8;\">Native multi-sign support</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#ef4444"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_hw-s5_0",
+          "type": "spotlight",
+          "elementId": "hw-s5-title"
+        },
+        {
+          "id": "action_hw-s5_1",
+          "type": "speech",
+          "text": "✍️ Multi-Signature Wallets",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/3-1.mp3"
+        },
+        {
+          "id": "action_hw-s5_2",
+          "type": "spotlight",
+          "elementId": "hw-s5-sub"
+        },
+        {
+          "id": "action_hw-s5_3",
+          "type": "speech",
+          "text": "Requiring multiple approvals to move funds",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/3-3.mp3"
+        },
+        {
+          "id": "action_hw-s5_4",
+          "type": "spotlight",
+          "elementId": "hw-s5-body"
+        },
+        {
+          "id": "action_hw-s5_5",
+          "type": "speech",
+          "text": "A multi-sig wallet requires more than one private key to authorize a transaction. A common setup is 2-of-3: you need any 2 of 3 designated keys to sign. This means a single compromised device or lost key cannot drain the wallet. Used by exchanges, DAOs, and anyone managing large amounts. The XRPL natively supports multi-signing on every account.",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/3-5.mp3"
+        },
+        {
+          "id": "action_hw-s5_6",
+          "type": "spotlight",
+          "elementId": "hw-s5-ct1"
+        },
+        {
+          "id": "action_hw-s5_7",
+          "type": "speech",
+          "text": "2-of-3. Need 2 keys from 3 total",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/3-7.mp3"
+        },
+        {
+          "id": "action_hw-s5_8",
+          "type": "spotlight",
+          "elementId": "hw-s5-ct2"
+        },
+        {
+          "id": "action_hw-s5_9",
+          "type": "speech",
+          "text": "🛡️ Protection. One key stolen = still safe",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/3-9.mp3"
+        },
+        {
+          "id": "action_hw-s5_10",
+          "type": "spotlight",
+          "elementId": "hw-s5-ct3"
+        },
+        {
+          "id": "action_hw-s5_11",
+          "type": "speech",
+          "text": "🏢 Use Case. DAOs, treasuries, exchanges",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/3-11.mp3"
+        },
+        {
+          "id": "action_hw-s5_12",
+          "type": "spotlight",
+          "elementId": "hw-s5-ct4"
+        },
+        {
+          "id": "action_hw-s5_13",
+          "type": "speech",
+          "text": "⛓️ XRPL. Native multi-sign support",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/3-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "hw-s6",
+      "type": "slide",
+      "title": "🛡️ Security Layering",
+      "order": 4,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "hw-s6-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#ef4444",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "hw-s6-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef4444",
+              "fixedRatio": false
+            },
+            {
+              "id": "hw-s6-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "hw-s6-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🛡️ Security Layering</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "hw-s6-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Defense in depth — building multiple lines of protection</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "hw-s6-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Professional crypto security uses <b style='color:#ef4444;'>layered defense</b>. No single measure is enough — combine them.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "hw-s6-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
+              }
+            },
+            {
+              "id": "hw-s6-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#ef4444;text-align:center;'>🧊 Hardware Wallet<br/><span style=\"font-weight:400;color:#94a3b8;\">Physical signing for large holdings</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#ef4444"
+            },
+            {
+              "id": "hw-s6-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
+              }
+            },
+            {
+              "id": "hw-s6-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#ef4444;text-align:center;'>📵 Dedicated Device<br/><span style=\"font-weight:400;color:#94a3b8;\">Separate phone/laptop for crypto only</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#ef4444"
+            },
+            {
+              "id": "hw-s6-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
+              }
+            },
+            {
+              "id": "hw-s6-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#ef4444;text-align:center;'>📧 Private Email<br/><span style=\"font-weight:400;color:#94a3b8;\">Never use your main email for exchanges</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#ef4444"
+            },
+            {
+              "id": "hw-s6-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
+              }
+            },
+            {
+              "id": "hw-s6-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#ef4444;text-align:center;'>🔐 Authenticator App<br/><span style=\"font-weight:400;color:#94a3b8;\">2FA via app — never SMS (SIM-swappable)</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#ef4444"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_hw-s6_0",
+          "type": "spotlight",
+          "elementId": "hw-s6-title"
+        },
+        {
+          "id": "action_hw-s6_1",
+          "type": "speech",
+          "text": "🛡️ Security Layering",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/4-1.mp3"
+        },
+        {
+          "id": "action_hw-s6_2",
+          "type": "spotlight",
+          "elementId": "hw-s6-sub"
+        },
+        {
+          "id": "action_hw-s6_3",
+          "type": "speech",
+          "text": "Defense in depth — building multiple lines of protection",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/4-3.mp3"
+        },
+        {
+          "id": "action_hw-s6_4",
+          "type": "spotlight",
+          "elementId": "hw-s6-body"
+        },
+        {
+          "id": "action_hw-s6_5",
+          "type": "speech",
+          "text": "Professional crypto security uses layered defense . No single measure is enough — combine them.",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/4-5.mp3"
+        },
+        {
+          "id": "action_hw-s6_6",
+          "type": "spotlight",
+          "elementId": "hw-s6-ct1"
+        },
+        {
+          "id": "action_hw-s6_7",
+          "type": "speech",
+          "text": "🧊 Hardware Wallet. Physical signing for large holdings",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/4-7.mp3"
+        },
+        {
+          "id": "action_hw-s6_8",
+          "type": "spotlight",
+          "elementId": "hw-s6-ct2"
+        },
+        {
+          "id": "action_hw-s6_9",
+          "type": "speech",
+          "text": "📵 Dedicated Device. Separate phone/laptop for crypto only",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/4-9.mp3"
+        },
+        {
+          "id": "action_hw-s6_10",
+          "type": "spotlight",
+          "elementId": "hw-s6-ct3"
+        },
+        {
+          "id": "action_hw-s6_11",
+          "type": "speech",
+          "text": "📧 Private Email. Never use your main email for exchanges",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/4-11.mp3"
+        },
+        {
+          "id": "action_hw-s6_12",
+          "type": "spotlight",
+          "elementId": "hw-s6-ct4"
+        },
+        {
+          "id": "action_hw-s6_13",
+          "type": "speech",
+          "text": "🔐 Authenticator App. 2FA via app — never SMS (SIM-swappable)",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/4-13.mp3"
+        }
+      ]
+    },
+    {
       "id": "hs-wl-s3",
       "type": "quiz",
       "title": "Knowledge Check — Wallets High School",
-      "order": 3,
+      "order": 5,
       "content": {
         "type": "quiz",
         "questions": [
@@ -949,13 +1876,13 @@
           "id": "action_hs-wl-s3_q0",
           "type": "speech",
           "text": "Five questions on wallet security — seed phrases, custodial vs non-custodial, and the attack vectors that compromise wallets.",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/2-0.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/5-0.mp3"
         },
         {
           "id": "action_hs-wl-s3_q1",
           "type": "speech",
           "text": "Wallet security knowledge directly protects your OnlyCrypto payouts and any crypto you hold. Take your time.",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/2-1.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/5-1.mp3"
         }
       ]
     }

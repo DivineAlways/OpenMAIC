@@ -21,7 +21,7 @@
       "id": "hs-defi-s1",
       "type": "slide",
       "title": "Liquidity Pools & The AMM Formula",
-      "order": 1,
+      "order": 0,
       "content": {
         "type": "slide",
         "canvas": {
@@ -278,7 +278,7 @@
       "id": "hs-defi-s2",
       "type": "slide",
       "title": "Impermanent Loss & DeFi Risks",
-      "order": 2,
+      "order": 1,
       "content": {
         "type": "slide",
         "canvas": {
@@ -642,10 +642,937 @@
       ]
     },
     {
+      "id": "hd-s4",
+      "type": "slide",
+      "title": "🌾 Yield Farming",
+      "order": 2,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "hd-s4-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f97316",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "hd-s4-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f97316",
+              "fixedRatio": false
+            },
+            {
+              "id": "hd-s4-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "hd-s4-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🌾 Yield Farming</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "hd-s4-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>How to maximize returns across DeFi protocols</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "hd-s4-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f97316;'>Yield farming</b> is the practice of moving your crypto across different DeFi protocols to chase the highest return. A farmer might deposit liquidity in Uniswap, earn LP tokens, stake those LP tokens elsewhere for bonus yield, then reinvest the rewards.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Risks: smart contract vulnerabilities, protocol collapse, and the infamous <b style='color:#f1f5f9;'>impermanent loss</b> from liquidity provision. High APY usually means high risk.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "hd-s4-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f9731620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f97316"
+              }
+            },
+            {
+              "id": "hd-s4-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>🌾 Farm<br/><span style=\"font-weight:400;color:#94a3b8;\">Move capital to best yield</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f97316"
+            },
+            {
+              "id": "hd-s4-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f9731620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f97316"
+              }
+            },
+            {
+              "id": "hd-s4-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>🔁 Compound<br/><span style=\"font-weight:400;color:#94a3b8;\">Reinvest rewards automatically</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f97316"
+            },
+            {
+              "id": "hd-s4-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f9731620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f97316"
+              }
+            },
+            {
+              "id": "hd-s4-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>⚠️ Smart Contract Risk<br/><span style=\"font-weight:400;color:#94a3b8;\">Bugs = lost funds</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f97316"
+            },
+            {
+              "id": "hd-s4-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f9731620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f97316"
+              }
+            },
+            {
+              "id": "hd-s4-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>💡 Rule<br/><span style=\"font-weight:400;color:#94a3b8;\">High APY = high risk, always</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f97316"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_hd-s4_0",
+          "type": "spotlight",
+          "elementId": "hd-s4-title"
+        },
+        {
+          "id": "action_hd-s4_1",
+          "type": "speech",
+          "text": "🌾 Yield Farming",
+          "audioUrl": "/audio/lessons/oc-hs-defi/2-1.mp3"
+        },
+        {
+          "id": "action_hd-s4_2",
+          "type": "spotlight",
+          "elementId": "hd-s4-sub"
+        },
+        {
+          "id": "action_hd-s4_3",
+          "type": "speech",
+          "text": "How to maximize returns across DeFi protocols",
+          "audioUrl": "/audio/lessons/oc-hs-defi/2-3.mp3"
+        },
+        {
+          "id": "action_hd-s4_4",
+          "type": "spotlight",
+          "elementId": "hd-s4-body"
+        },
+        {
+          "id": "action_hd-s4_5",
+          "type": "speech",
+          "text": "Yield farming is the practice of moving your crypto across different DeFi protocols to chase the highest return. A farmer might deposit liquidity in Uniswap, earn LP tokens, stake those LP tokens elsewhere for bonus yield, then reinvest the rewards. Risks: smart contract vulnerabilities, protocol collapse, and the infamous impermanent loss from liquidity provision. High APY usually means high risk.",
+          "audioUrl": "/audio/lessons/oc-hs-defi/2-5.mp3"
+        },
+        {
+          "id": "action_hd-s4_6",
+          "type": "spotlight",
+          "elementId": "hd-s4-ct1"
+        },
+        {
+          "id": "action_hd-s4_7",
+          "type": "speech",
+          "text": "🌾 Farm. Move capital to best yield",
+          "audioUrl": "/audio/lessons/oc-hs-defi/2-7.mp3"
+        },
+        {
+          "id": "action_hd-s4_8",
+          "type": "spotlight",
+          "elementId": "hd-s4-ct2"
+        },
+        {
+          "id": "action_hd-s4_9",
+          "type": "speech",
+          "text": "🔁 Compound. Reinvest rewards automatically",
+          "audioUrl": "/audio/lessons/oc-hs-defi/2-9.mp3"
+        },
+        {
+          "id": "action_hd-s4_10",
+          "type": "spotlight",
+          "elementId": "hd-s4-ct3"
+        },
+        {
+          "id": "action_hd-s4_11",
+          "type": "speech",
+          "text": "⚠️ Smart Contract Risk. Bugs = lost funds",
+          "audioUrl": "/audio/lessons/oc-hs-defi/2-11.mp3"
+        },
+        {
+          "id": "action_hd-s4_12",
+          "type": "spotlight",
+          "elementId": "hd-s4-ct4"
+        },
+        {
+          "id": "action_hd-s4_13",
+          "type": "speech",
+          "text": "💡 Rule. High APY = high risk, always",
+          "audioUrl": "/audio/lessons/oc-hs-defi/2-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "hd-s5",
+      "type": "slide",
+      "title": "⚖️ Impermanent Loss — Deep Dive",
+      "order": 3,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "hd-s5-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f97316",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "hd-s5-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f97316",
+              "fixedRatio": false
+            },
+            {
+              "id": "hd-s5-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "hd-s5-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>⚖️ Impermanent Loss — Deep Dive</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "hd-s5-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The hidden cost of providing liquidity</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "hd-s5-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f97316;'>Impermanent loss</b> occurs when the price ratio of tokens in a liquidity pool changes from when you deposited. The AMM rebalances your position automatically, meaning you end up with more of the token that fell and less of the one that rose.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Example: you deposit ETH + USDC 50/50. ETH price doubles. You now have less ETH than if you had just held. The loss is \"impermanent\" because it recovers if prices return to entry ratio — but if you withdraw during divergence, the loss becomes permanent.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "hd-s5-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f9731620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f97316"
+              }
+            },
+            {
+              "id": "hd-s5-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>📊 Price Divergence<br/><span style=\"font-weight:400;color:#94a3b8;\">Bigger gap = bigger IL</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f97316"
+            },
+            {
+              "id": "hd-s5-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f9731620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f97316"
+              }
+            },
+            {
+              "id": "hd-s5-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>💸 IL Formula<br/><span style=\"font-weight:400;color:#94a3b8;\">Increases non-linearly with price</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f97316"
+            },
+            {
+              "id": "hd-s5-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f9731620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f97316"
+              }
+            },
+            {
+              "id": "hd-s5-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>✅ Mitigation<br/><span style=\"font-weight:400;color:#94a3b8;\">Use stablecoin pairs (less IL)</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f97316"
+            },
+            {
+              "id": "hd-s5-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f9731620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f97316"
+              }
+            },
+            {
+              "id": "hd-s5-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>⏳ Impermanent<br/><span style=\"font-weight:400;color:#94a3b8;\">Recovers if prices return</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f97316"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_hd-s5_0",
+          "type": "spotlight",
+          "elementId": "hd-s5-title"
+        },
+        {
+          "id": "action_hd-s5_1",
+          "type": "speech",
+          "text": "⚖️ Impermanent Loss — Deep Dive",
+          "audioUrl": "/audio/lessons/oc-hs-defi/3-1.mp3"
+        },
+        {
+          "id": "action_hd-s5_2",
+          "type": "spotlight",
+          "elementId": "hd-s5-sub"
+        },
+        {
+          "id": "action_hd-s5_3",
+          "type": "speech",
+          "text": "The hidden cost of providing liquidity",
+          "audioUrl": "/audio/lessons/oc-hs-defi/3-3.mp3"
+        },
+        {
+          "id": "action_hd-s5_4",
+          "type": "spotlight",
+          "elementId": "hd-s5-body"
+        },
+        {
+          "id": "action_hd-s5_5",
+          "type": "speech",
+          "text": "Impermanent loss occurs when the price ratio of tokens in a liquidity pool changes from when you deposited. The AMM rebalances your position automatically, meaning you end up with more of the token that fell and less of the one that rose. Example: you deposit ETH + USDC 50/50. ETH price doubles. You now have less ETH than if you had just held. The loss is \"impermanent\" because it recovers if prices return to entry ratio — but if you withdraw during divergence, the loss becomes permanent.",
+          "audioUrl": "/audio/lessons/oc-hs-defi/3-5.mp3"
+        },
+        {
+          "id": "action_hd-s5_6",
+          "type": "spotlight",
+          "elementId": "hd-s5-ct1"
+        },
+        {
+          "id": "action_hd-s5_7",
+          "type": "speech",
+          "text": "📊 Price Divergence. Bigger gap = bigger IL",
+          "audioUrl": "/audio/lessons/oc-hs-defi/3-7.mp3"
+        },
+        {
+          "id": "action_hd-s5_8",
+          "type": "spotlight",
+          "elementId": "hd-s5-ct2"
+        },
+        {
+          "id": "action_hd-s5_9",
+          "type": "speech",
+          "text": "💸 IL Formula. Increases non-linearly with price",
+          "audioUrl": "/audio/lessons/oc-hs-defi/3-9.mp3"
+        },
+        {
+          "id": "action_hd-s5_10",
+          "type": "spotlight",
+          "elementId": "hd-s5-ct3"
+        },
+        {
+          "id": "action_hd-s5_11",
+          "type": "speech",
+          "text": "✅ Mitigation. Use stablecoin pairs (less IL)",
+          "audioUrl": "/audio/lessons/oc-hs-defi/3-11.mp3"
+        },
+        {
+          "id": "action_hd-s5_12",
+          "type": "spotlight",
+          "elementId": "hd-s5-ct4"
+        },
+        {
+          "id": "action_hd-s5_13",
+          "type": "speech",
+          "text": "⏳ Impermanent. Recovers if prices return",
+          "audioUrl": "/audio/lessons/oc-hs-defi/3-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "hd-s6",
+      "type": "slide",
+      "title": "🔒 Protocol Risk",
+      "order": 4,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "hd-s6-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f97316",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "hd-s6-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f97316",
+              "fixedRatio": false
+            },
+            {
+              "id": "hd-s6-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "hd-s6-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🔒 Protocol Risk</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "hd-s6-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>What can actually go wrong in DeFi — and what to watch for</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "hd-s6-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>DeFi protocols carry risks that traditional finance does not. Before depositing into any protocol, evaluate these key risk vectors:</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f97316;'>Smart contract bugs</b> — even audited code can have exploits. Over $3B was lost to DeFi hacks in 2022. <b style='color:#f97316;'>Oracle manipulation</b> — price feeds can be manipulated to drain lending protocols. <b style='color:#f97316;'>Admin key risk</b> — if a team holds upgrade keys they can change or drain contracts.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "hd-s6-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f9731620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f97316"
+              }
+            },
+            {
+              "id": "hd-s6-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>🐛 Contract Bug<br/><span style=\"font-weight:400;color:#94a3b8;\">Code exploit drains funds</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f97316"
+            },
+            {
+              "id": "hd-s6-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f9731620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f97316"
+              }
+            },
+            {
+              "id": "hd-s6-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>🔮 Oracle Hack<br/><span style=\"font-weight:400;color:#94a3b8;\">Price feed manipulation</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f97316"
+            },
+            {
+              "id": "hd-s6-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f9731620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f97316"
+              }
+            },
+            {
+              "id": "hd-s6-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>🔑 Admin Risk<br/><span style=\"font-weight:400;color:#94a3b8;\">Team can rug via upgrade keys</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f97316"
+            },
+            {
+              "id": "hd-s6-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f9731620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f97316"
+              }
+            },
+            {
+              "id": "hd-s6-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>✅ Check<br/><span style=\"font-weight:400;color:#94a3b8;\">Audit reports + time-locked admin keys</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f97316"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_hd-s6_0",
+          "type": "spotlight",
+          "elementId": "hd-s6-title"
+        },
+        {
+          "id": "action_hd-s6_1",
+          "type": "speech",
+          "text": "🔒 Protocol Risk",
+          "audioUrl": "/audio/lessons/oc-hs-defi/4-1.mp3"
+        },
+        {
+          "id": "action_hd-s6_2",
+          "type": "spotlight",
+          "elementId": "hd-s6-sub"
+        },
+        {
+          "id": "action_hd-s6_3",
+          "type": "speech",
+          "text": "What can actually go wrong in DeFi — and what to watch for",
+          "audioUrl": "/audio/lessons/oc-hs-defi/4-3.mp3"
+        },
+        {
+          "id": "action_hd-s6_4",
+          "type": "spotlight",
+          "elementId": "hd-s6-body"
+        },
+        {
+          "id": "action_hd-s6_5",
+          "type": "speech",
+          "text": "DeFi protocols carry risks that traditional finance does not. Before depositing into any protocol, evaluate these key risk vectors: Smart contract bugs — even audited code can have exploits. Over $3B was lost to DeFi hacks in 2022. Oracle manipulation — price feeds can be manipulated to drain lending protocols. Admin key risk — if a team holds upgrade keys they can change or drain contracts.",
+          "audioUrl": "/audio/lessons/oc-hs-defi/4-5.mp3"
+        },
+        {
+          "id": "action_hd-s6_6",
+          "type": "spotlight",
+          "elementId": "hd-s6-ct1"
+        },
+        {
+          "id": "action_hd-s6_7",
+          "type": "speech",
+          "text": "🐛 Contract Bug. Code exploit drains funds",
+          "audioUrl": "/audio/lessons/oc-hs-defi/4-7.mp3"
+        },
+        {
+          "id": "action_hd-s6_8",
+          "type": "spotlight",
+          "elementId": "hd-s6-ct2"
+        },
+        {
+          "id": "action_hd-s6_9",
+          "type": "speech",
+          "text": "🔮 Oracle Hack. Price feed manipulation",
+          "audioUrl": "/audio/lessons/oc-hs-defi/4-9.mp3"
+        },
+        {
+          "id": "action_hd-s6_10",
+          "type": "spotlight",
+          "elementId": "hd-s6-ct3"
+        },
+        {
+          "id": "action_hd-s6_11",
+          "type": "speech",
+          "text": "🔑 Admin Risk. Team can rug via upgrade keys",
+          "audioUrl": "/audio/lessons/oc-hs-defi/4-11.mp3"
+        },
+        {
+          "id": "action_hd-s6_12",
+          "type": "spotlight",
+          "elementId": "hd-s6-ct4"
+        },
+        {
+          "id": "action_hd-s6_13",
+          "type": "speech",
+          "text": "✅ Check. Audit reports + time-locked admin keys",
+          "audioUrl": "/audio/lessons/oc-hs-defi/4-13.mp3"
+        }
+      ]
+    },
+    {
       "id": "hs-defi-s3",
       "type": "quiz",
       "title": "Knowledge Check — DeFi High School",
-      "order": 3,
+      "order": 5,
       "content": {
         "type": "quiz",
         "questions": [
@@ -796,13 +1723,13 @@
           "id": "action_hs-defi-s3_q0",
           "type": "speech",
           "text": "Five questions on DeFi mechanics — liquidity pools, impermanent loss, rug pulls, and smart contract risks.",
-          "audioUrl": "/audio/lessons/oc-hs-defi/2-0.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-defi/5-0.mp3"
         },
         {
           "id": "action_hs-defi-s3_q1",
           "type": "speech",
           "text": "Understanding these risks is just as important as understanding the opportunities. Take your time.",
-          "audioUrl": "/audio/lessons/oc-hs-defi/2-1.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-defi/5-1.mp3"
         }
       ]
     }

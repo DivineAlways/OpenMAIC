@@ -8,33 +8,33 @@ import { useUserProfileStore } from '@/lib/store/user-profile';
 import { getProgress } from '@/lib/utils/course-progress';
 
 const ELEMENTARY_COURSES = [
-  { id: 'oc-elem-blockchain', title: 'What is Blockchain?', description: 'The shared digital notebook explained in plain language. No prior knowledge needed.', scenes: 4, emoji: '🔗', gradient: 'from-emerald-500 to-teal-600' },
-  { id: 'oc-elem-crypto', title: 'What is Cryptocurrency?', description: 'Digital money, famous coins like BTC, ETH & XRP, and how to stay safe.', scenes: 3, emoji: '🪙', gradient: 'from-amber-500 to-orange-600' },
-  { id: 'oc-elem-defi', title: 'What is DeFi?', description: 'Banking without banks — smart contracts explained with a vending machine analogy.', scenes: 3, emoji: '🏗️', gradient: 'from-green-500 to-emerald-600' },
-  { id: 'oc-elem-trading', title: 'Intro to Trading', description: 'Buy low, sell high, and how copy trading lets you follow experts automatically.', scenes: 3, emoji: '📈', gradient: 'from-blue-500 to-indigo-600' },
-  { id: 'oc-elem-wallets', title: 'Wallets & Safety', description: 'Public vs private keys, hot vs cold wallets, and seed phrase rules every beginner must know.', scenes: 3, emoji: '👛', gradient: 'from-red-500 to-rose-600' },
-  { id: 'oc-elem-ecosystem', title: 'The Crypto World', description: 'NFTs, DAOs, Web3, and how crypto is being used in the real world today.', scenes: 3, emoji: '🌍', gradient: 'from-cyan-500 to-sky-600' },
-  { id: 'oc-elem-security', title: 'Staying Safe in Crypto', description: 'Common scams explained simply, 2FA setup, and a safety checklist for beginners.', scenes: 3, emoji: '🛡️', gradient: 'from-rose-500 to-red-600' },
+  { id: 'oc-elem-blockchain', title: 'What is Blockchain?', description: 'Ledgers, nodes, validators, immutability, PoW vs PoS — explained in plain language.', scenes: 8, emoji: '🔗', gradient: 'from-emerald-500 to-teal-600' },
+  { id: 'oc-elem-crypto', title: 'What is Cryptocurrency?', description: 'Why Bitcoin was created, supply vs demand, coins vs tokens, and stablecoins explained.', scenes: 6, emoji: '🪙', gradient: 'from-amber-500 to-orange-600' },
+  { id: 'oc-elem-defi', title: 'What is DeFi?', description: 'Finance without banks — yield, liquidity pools, and rug pull risks explained simply.', scenes: 6, emoji: '🏗️', gradient: 'from-green-500 to-emerald-600' },
+  { id: 'oc-elem-trading', title: 'Intro to Trading', description: 'Buyers vs sellers, long vs short, volatility, and why risk management is rule #1.', scenes: 6, emoji: '📈', gradient: 'from-blue-500 to-indigo-600' },
+  { id: 'oc-elem-wallets', title: 'Wallets & Safety', description: 'Custodial vs non-custodial, seed phrases, and how not to lose your funds.', scenes: 6, emoji: '👛', gradient: 'from-red-500 to-rose-600' },
+  { id: 'oc-elem-ecosystem', title: 'The Crypto World', description: 'CEX vs DEX, NFTs, DAOs, and Web3 — the full landscape explained.', scenes: 6, emoji: '🌍', gradient: 'from-cyan-500 to-sky-600' },
+  { id: 'oc-elem-security', title: 'Staying Safe in Crypto', description: 'Phishing, fake giveaways, rug pulls, social engineering, and the red flags checklist.', scenes: 6, emoji: '🛡️', gradient: 'from-rose-500 to-red-600' },
   { id: 'oc-elem-vault', title: 'Beginner Video Vault', description: 'How to learn from crypto videos + a starter glossary of terms you\'ll hear everywhere.', scenes: 3, emoji: '🎬', gradient: 'from-violet-500 to-purple-600' },
 ];
 
 const COLLEGE_COURSES = [
-  { id: 'oc-blockchain-basics', title: 'Blockchain Foundations', description: 'SHA-256, Merkle trees, Proof-of-Work vs Proof-of-Stake, Byzantine fault tolerance, and the blockchain trilemma.', level: 'Beginner', scenes: 9, emoji: '⛓️', gradient: 'from-violet-600 to-purple-700' },
-  { id: 'oc-cryptocurrency-guide', title: 'Cryptocurrency Guide', description: 'UTXO model, secp256k1 elliptic-curve cryptography, mining economics, altcoins, and on-chain analysis.', level: 'Beginner', scenes: 8, emoji: '₿', gradient: 'from-amber-500 to-orange-600' },
-  { id: 'oc-defi-guide', title: 'DeFi Explained', description: 'AMM x×y=k, impermanent loss formula, Aave health factors, yield strategies, flash loans, and MEV.', level: 'Intermediate', scenes: 8, emoji: '🏦', gradient: 'from-emerald-500 to-teal-600' },
-  { id: 'oc-trading-guide', title: 'Trading Fundamentals', description: 'Order books, RSI/MACD/Bollinger, Kelly Criterion, perpetuals, Sharpe ratio, and trading psychology.', level: 'Intermediate', scenes: 8, emoji: '📊', gradient: 'from-blue-500 to-indigo-600' },
-  { id: 'oc-security-wallets', title: 'Security & Wallets', description: 'BIP39/44 seed derivation, wallet types, attack vectors, multisig setups, and XRPL account security.', level: 'Intermediate', scenes: 7, emoji: '🔐', gradient: 'from-red-500 to-rose-600' },
-  { id: 'oc-ecosystem', title: 'Crypto in the Real World', description: 'Tokenomics, Layer-2 rollups, governance systems, RWA tokenization, and institutional crypto adoption.', level: 'Advanced', scenes: 7, emoji: '🌍', gradient: 'from-cyan-500 to-sky-600' },
-  { id: 'oc-xrpl-deepdive', title: 'XRPL Deep Dive', description: 'RPCA consensus, trust lines, native DEX + AMM, pathfinding, ODL, and why OnlyCrypto runs on XRPL.', level: 'Advanced', scenes: 8, emoji: '🔵', gradient: 'from-sky-400 to-blue-600' },
+  { id: 'oc-blockchain-basics', title: 'Blockchain Foundations', description: 'SHA-256, Merkle trees, PoW vs PoS, Byzantine fault tolerance, consensus trade-offs, and cryptographic signatures.', level: 'Beginner', scenes: 11, emoji: '⛓️', gradient: 'from-violet-600 to-purple-700' },
+  { id: 'oc-cryptocurrency-guide', title: 'Cryptocurrency Guide', description: 'UTXO model, secp256k1 cryptography, token design, monetary policy, governance tokens, and on-chain analysis.', level: 'Beginner', scenes: 11, emoji: '₿', gradient: 'from-amber-500 to-orange-600' },
+  { id: 'oc-defi-guide', title: 'DeFi Explained', description: 'AMM x×y=k, Aave health factors, yield strategies, flash loans, MEV, stablecoin mechanisms, and protocol architecture.', level: 'Intermediate', scenes: 11, emoji: '🏦', gradient: 'from-emerald-500 to-teal-600' },
+  { id: 'oc-trading-guide', title: 'Trading Fundamentals', description: 'Order books, RSI/MACD, Kelly Criterion, perpetuals, Sharpe ratio, position sizing, and algorithmic trading.', level: 'Intermediate', scenes: 11, emoji: '📊', gradient: 'from-blue-500 to-indigo-600' },
+  { id: 'oc-security-wallets', title: 'Security & Wallets', description: 'BIP39/44 seed derivation, wallet types, attack vectors, multisig setups, and XRPL account security.', level: 'Intermediate', scenes: 9, emoji: '🔐', gradient: 'from-red-500 to-rose-600' },
+  { id: 'oc-ecosystem', title: 'Crypto in the Real World', description: 'Tokenomics, Layer-2 rollups, governance, RWA tokenization, SEC/MiCA regulation, and banking integration.', level: 'Advanced', scenes: 11, emoji: '🌍', gradient: 'from-cyan-500 to-sky-600' },
+  { id: 'oc-xrpl-deepdive', title: 'XRPL Deep Dive', description: 'RPCA consensus, trust lines, native DEX + AMM, ODL, XRP as bridge currency, tokenization, and micropayments.', level: 'Advanced', scenes: 11, emoji: '🔵', gradient: 'from-sky-400 to-blue-600' },
 ];
 
 const HIGH_SCHOOL_COURSES = [
-  { id: 'oc-hs-blockchain', title: 'Blockchain Intermediate', description: 'Mining mechanics, PoW vs PoS vs RPCA consensus, hash functions, Merkle trees, and the blockchain trilemma.', scenes: 4, emoji: '⛓️', gradient: 'from-amber-500 to-orange-600' },
-  { id: 'oc-hs-crypto', title: 'Crypto Markets', description: 'Market cap tiers, tokenomics, Bitcoin halving cycles, reading price action, and evaluating altcoins.', scenes: 4, emoji: '🪙', gradient: 'from-yellow-500 to-amber-600' },
-  { id: 'oc-hs-defi', title: 'DeFi Mechanics', description: 'Liquidity pools, AMM x·y=k formula, impermanent loss, yield farming, smart contract risks, and XRPL.', scenes: 4, emoji: '🏦', gradient: 'from-orange-500 to-amber-600' },
-  { id: 'oc-hs-trading', title: 'Technical Trading', description: 'Candlestick patterns, support & resistance, RSI & MACD, order types, risk-reward ratio, and copy trading.', scenes: 4, emoji: '📊', gradient: 'from-amber-600 to-yellow-600' },
-  { id: 'oc-hs-wallets', title: 'Wallets & Keys', description: 'BIP39 seed phrase cryptography, private/public key derivation, hot vs cold storage, and attack vectors.', scenes: 4, emoji: '🔐', gradient: 'from-orange-600 to-red-600' },
-  { id: 'oc-hs-ecosystem', title: 'Crypto Ecosystem', description: 'L1 vs L2, rollup types, cross-chain bridges, DAOs, RWA tokenization, and institutional adoption.', scenes: 4, emoji: '🌍', gradient: 'from-amber-500 to-yellow-500' },
+  { id: 'oc-hs-blockchain', title: 'Blockchain Intermediate', description: 'Mining, PoW vs PoS vs RPCA, hash functions, Merkle trees, L1 vs L2, hard forks, and the blockchain trilemma.', scenes: 6, emoji: '⛓️', gradient: 'from-amber-500 to-orange-600' },
+  { id: 'oc-hs-crypto', title: 'Crypto Markets', description: 'Market cap, tokenomics, Bitcoin halving, order books, whale manipulation, liquidity, and slippage.', scenes: 6, emoji: '🪙', gradient: 'from-yellow-500 to-amber-600' },
+  { id: 'oc-hs-defi', title: 'DeFi Mechanics', description: 'Liquidity pools, AMM formula, impermanent loss deep dive, yield farming, and protocol risk.', scenes: 6, emoji: '🏦', gradient: 'from-orange-500 to-amber-600' },
+  { id: 'oc-hs-trading', title: 'Technical Trading', description: 'Candlesticks, support & resistance, RSI, MACD, volume, trends, and risk-reward ratio.', scenes: 6, emoji: '📊', gradient: 'from-amber-600 to-yellow-600' },
+  { id: 'oc-hs-wallets', title: 'Wallets & Keys', description: 'BIP39 cryptography, hot vs cold storage, multi-sig, hardware wallets, and layered security.', scenes: 6, emoji: '🔐', gradient: 'from-orange-600 to-red-600' },
+  { id: 'oc-hs-ecosystem', title: 'Crypto Ecosystem', description: 'L1 vs L2, cross-chain bridges, DAOs, NFT utility vs hype, and RWA tokenization.', scenes: 6, emoji: '🌍', gradient: 'from-amber-500 to-yellow-500' },
   { id: 'oc-hs-security', title: 'Security', description: 'Phishing deep dive, rug pull red flags, smart contract exploits, OPSEC, SIM swaps, CEX vs DEX risks.', scenes: 4, emoji: '🛡️', gradient: 'from-red-500 to-orange-600' },
 ];
 
@@ -395,7 +395,7 @@ export default function HomePage() {
         <GraduationModal
           title="Elementary Graduated!"
           subtitle="Level Complete"
-          body="You completed all 8 Elementary courses. You now understand blockchain, crypto, DeFi, trading, wallets, and Web3 — from scratch. That's real knowledge."
+          body="You completed all 8 Elementary courses. You now understand blockchain, crypto, DeFi, trading, wallets, Web3, and how to stay safe — from scratch. That's real knowledge."
           unlockText="High School level is now unlocked"
           ctaLabel="Start High School Level"
           onCta={() => { setShowGraduation(false); setActiveLevel('highschool'); }}

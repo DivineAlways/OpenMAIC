@@ -324,7 +324,7 @@
           "audioUrl": "/audio/lessons/oc-elem-security/0-13.mp3"
         }
       ],
-      "order": 1
+      "order": 0
     },
     {
       "id": "es-s2",
@@ -633,7 +633,934 @@
           "audioUrl": "/audio/lessons/oc-elem-security/1-13.mp3"
         }
       ],
-      "order": 2
+      "order": 1
+    },
+    {
+      "id": "es2-s4",
+      "type": "slide",
+      "title": "🎣 Phishing — The Most Common Attack",
+      "order": 2,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "es2-s4-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f43f5e",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "es2-s4-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f43f5e",
+              "fixedRatio": false
+            },
+            {
+              "id": "es2-s4-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "es2-s4-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🎣 Phishing — The Most Common Attack</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "es2-s4-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>How scammers steal wallets by impersonation</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "es2-s4-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f43f5e;'>Phishing</b> is when a scammer pretends to be a trusted service — MetaMask, Coinbase, a DeFi protocol — to trick you into entering your seed phrase or private key on a fake website.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Common forms: fake emails, fake Discord support DMs, Google ads pointing to copycat sites. <b style='color:#f1f5f9;'>A real wallet or exchange will NEVER ask for your seed phrase.</b> Ever. If someone asks — it is a scam 100% of the time.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "es2-s4-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f43f5e20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f43f5e"
+              }
+            },
+            {
+              "id": "es2-s4-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f43f5e;text-align:center;'>📧 Fake Emails<br/><span style=\"font-weight:400;color:#94a3b8;\">Links to copycat sites</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f43f5e"
+            },
+            {
+              "id": "es2-s4-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f43f5e20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f43f5e"
+              }
+            },
+            {
+              "id": "es2-s4-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f43f5e;text-align:center;'>💬 Fake Support<br/><span style=\"font-weight:400;color:#94a3b8;\">DMs asking for seed phrase</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f43f5e"
+            },
+            {
+              "id": "es2-s4-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f43f5e20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f43f5e"
+              }
+            },
+            {
+              "id": "es2-s4-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f43f5e;text-align:center;'>🔗 Fake URLs<br/><span style=\"font-weight:400;color:#94a3b8;\">Check spelling carefully</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f43f5e"
+            },
+            {
+              "id": "es2-s4-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f43f5e20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f43f5e"
+              }
+            },
+            {
+              "id": "es2-s4-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f43f5e;text-align:center;'>✅ Rule<br/><span style=\"font-weight:400;color:#94a3b8;\">Legit services NEVER ask for seed phrase</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f43f5e"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_es2-s4_0",
+          "type": "spotlight",
+          "elementId": "es2-s4-title"
+        },
+        {
+          "id": "action_es2-s4_1",
+          "type": "speech",
+          "text": "🎣 Phishing — The Most Common Attack",
+          "audioUrl": "/audio/lessons/oc-elem-security/2-1.mp3"
+        },
+        {
+          "id": "action_es2-s4_2",
+          "type": "spotlight",
+          "elementId": "es2-s4-sub"
+        },
+        {
+          "id": "action_es2-s4_3",
+          "type": "speech",
+          "text": "How scammers steal wallets by impersonation",
+          "audioUrl": "/audio/lessons/oc-elem-security/2-3.mp3"
+        },
+        {
+          "id": "action_es2-s4_4",
+          "type": "spotlight",
+          "elementId": "es2-s4-body"
+        },
+        {
+          "id": "action_es2-s4_5",
+          "type": "speech",
+          "text": "Phishing is when a scammer pretends to be a trusted service — MetaMask, Coinbase, a DeFi protocol — to trick you into entering your seed phrase or private key on a fake website. Common forms: fake emails, fake Discord support DMs, Google ads pointing to copycat sites. A real wallet or exchange will NEVER ask for your seed phrase. Ever. If someone asks — it is a scam 100% of the time.",
+          "audioUrl": "/audio/lessons/oc-elem-security/2-5.mp3"
+        },
+        {
+          "id": "action_es2-s4_6",
+          "type": "spotlight",
+          "elementId": "es2-s4-ct1"
+        },
+        {
+          "id": "action_es2-s4_7",
+          "type": "speech",
+          "text": "📧 Fake Emails. Links to copycat sites",
+          "audioUrl": "/audio/lessons/oc-elem-security/2-7.mp3"
+        },
+        {
+          "id": "action_es2-s4_8",
+          "type": "spotlight",
+          "elementId": "es2-s4-ct2"
+        },
+        {
+          "id": "action_es2-s4_9",
+          "type": "speech",
+          "text": "💬 Fake Support. DMs asking for seed phrase",
+          "audioUrl": "/audio/lessons/oc-elem-security/2-9.mp3"
+        },
+        {
+          "id": "action_es2-s4_10",
+          "type": "spotlight",
+          "elementId": "es2-s4-ct3"
+        },
+        {
+          "id": "action_es2-s4_11",
+          "type": "speech",
+          "text": "🔗 Fake URLs. Check spelling carefully",
+          "audioUrl": "/audio/lessons/oc-elem-security/2-11.mp3"
+        },
+        {
+          "id": "action_es2-s4_12",
+          "type": "spotlight",
+          "elementId": "es2-s4-ct4"
+        },
+        {
+          "id": "action_es2-s4_13",
+          "type": "speech",
+          "text": "✅ Rule. Legit services NEVER ask for seed phrase",
+          "audioUrl": "/audio/lessons/oc-elem-security/2-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "es2-s5",
+      "type": "slide",
+      "title": "💎 Fake Giveaways & Rug Pulls",
+      "order": 3,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "es2-s5-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f43f5e",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "es2-s5-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f43f5e",
+              "fixedRatio": false
+            },
+            {
+              "id": "es2-s5-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "es2-s5-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>💎 Fake Giveaways & Rug Pulls</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "es2-s5-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Two of the most destructive scams in crypto</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "es2-s5-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f43f5e;'>Fake Giveaways</b> — \"Send 1 ETH, receive 2 ETH back.\" It is always a scam. Elon Musk, Vitalik, and Coinbase have all been impersonated this way. Nobody is giving away free crypto.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f43f5e;'>Rug Pulls</b> — a team creates a new token, hypes it up, raises money — then disappears with all the funds. The token becomes worthless overnight. Over $2 billion was lost to rug pulls in 2021 alone.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "es2-s5-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f43f5e20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f43f5e"
+              }
+            },
+            {
+              "id": "es2-s5-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f43f5e;text-align:center;'>🎁 Giveaway Scam<br/><span style=\"font-weight:400;color:#94a3b8;\">\"Send X, get 2X back\" = always fake</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f43f5e"
+            },
+            {
+              "id": "es2-s5-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f43f5e20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f43f5e"
+              }
+            },
+            {
+              "id": "es2-s5-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f43f5e;text-align:center;'>🪤 Rug Pull<br/><span style=\"font-weight:400;color:#94a3b8;\">Team dumps tokens and disappears</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f43f5e"
+            },
+            {
+              "id": "es2-s5-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f43f5e20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f43f5e"
+              }
+            },
+            {
+              "id": "es2-s5-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f43f5e;text-align:center;'>📊 Red Flag<br/><span style=\"font-weight:400;color:#94a3b8;\">Anonymous team + unrealistic returns</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f43f5e"
+            },
+            {
+              "id": "es2-s5-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f43f5e20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f43f5e"
+              }
+            },
+            {
+              "id": "es2-s5-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f43f5e;text-align:center;'>🛡️ Defence<br/><span style=\"font-weight:400;color:#94a3b8;\">Stick to established, audited projects</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f43f5e"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_es2-s5_0",
+          "type": "spotlight",
+          "elementId": "es2-s5-title"
+        },
+        {
+          "id": "action_es2-s5_1",
+          "type": "speech",
+          "text": "💎 Fake Giveaways & Rug Pulls",
+          "audioUrl": "/audio/lessons/oc-elem-security/3-1.mp3"
+        },
+        {
+          "id": "action_es2-s5_2",
+          "type": "spotlight",
+          "elementId": "es2-s5-sub"
+        },
+        {
+          "id": "action_es2-s5_3",
+          "type": "speech",
+          "text": "Two of the most destructive scams in crypto",
+          "audioUrl": "/audio/lessons/oc-elem-security/3-3.mp3"
+        },
+        {
+          "id": "action_es2-s5_4",
+          "type": "spotlight",
+          "elementId": "es2-s5-body"
+        },
+        {
+          "id": "action_es2-s5_5",
+          "type": "speech",
+          "text": "Fake Giveaways — \"Send 1 ETH, receive 2 ETH back.\" It is always a scam. Elon Musk, Vitalik, and Coinbase have all been impersonated this way. Nobody is giving away free crypto. Rug Pulls — a team creates a new token, hypes it up, raises money — then disappears with all the funds. The token becomes worthless overnight. Over $2 billion was lost to rug pulls in 2021 alone.",
+          "audioUrl": "/audio/lessons/oc-elem-security/3-5.mp3"
+        },
+        {
+          "id": "action_es2-s5_6",
+          "type": "spotlight",
+          "elementId": "es2-s5-ct1"
+        },
+        {
+          "id": "action_es2-s5_7",
+          "type": "speech",
+          "text": "🎁 Giveaway Scam. \"Send X, get 2X back\" = always fake",
+          "audioUrl": "/audio/lessons/oc-elem-security/3-7.mp3"
+        },
+        {
+          "id": "action_es2-s5_8",
+          "type": "spotlight",
+          "elementId": "es2-s5-ct2"
+        },
+        {
+          "id": "action_es2-s5_9",
+          "type": "speech",
+          "text": "🪤 Rug Pull. Team dumps tokens and disappears",
+          "audioUrl": "/audio/lessons/oc-elem-security/3-9.mp3"
+        },
+        {
+          "id": "action_es2-s5_10",
+          "type": "spotlight",
+          "elementId": "es2-s5-ct3"
+        },
+        {
+          "id": "action_es2-s5_11",
+          "type": "speech",
+          "text": "📊 Red Flag. Anonymous team + unrealistic returns",
+          "audioUrl": "/audio/lessons/oc-elem-security/3-11.mp3"
+        },
+        {
+          "id": "action_es2-s5_12",
+          "type": "spotlight",
+          "elementId": "es2-s5-ct4"
+        },
+        {
+          "id": "action_es2-s5_13",
+          "type": "speech",
+          "text": "🛡️ Defence. Stick to established, audited projects",
+          "audioUrl": "/audio/lessons/oc-elem-security/3-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "es2-s6",
+      "type": "slide",
+      "title": "🧠 Social Engineering & Red Flags",
+      "order": 4,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "es2-s6-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f43f5e",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "es2-s6-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f43f5e",
+              "fixedRatio": false
+            },
+            {
+              "id": "es2-s6-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "es2-s6-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🧠 Social Engineering & Red Flags</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "es2-s6-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>How scammers manipulate people psychologically</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "es2-s6-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f43f5e;'>Social engineering</b> uses psychology rather than hacking. Scammers build trust over weeks, create urgency, or exploit emotions to get you to make a mistake.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Common tactics: romance scams (fake relationships that end with a request to invest), fake job offers, \"investment managers\" promising guaranteed returns.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "es2-s6-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f43f5e20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f43f5e"
+              }
+            },
+            {
+              "id": "es2-s6-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f43f5e;text-align:center;'>❤️ Romance Scam<br/><span style=\"font-weight:400;color:#94a3b8;\">Weeks of relationship → steal funds</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f43f5e"
+            },
+            {
+              "id": "es2-s6-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f43f5e20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f43f5e"
+              }
+            },
+            {
+              "id": "es2-s6-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f43f5e;text-align:center;'>💼 Fake Job<br/><span style=\"font-weight:400;color:#94a3b8;\">Pay \"training fee\" upfront</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f43f5e"
+            },
+            {
+              "id": "es2-s6-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f43f5e20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f43f5e"
+              }
+            },
+            {
+              "id": "es2-s6-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f43f5e;text-align:center;'>⏰ Urgency<br/><span style=\"font-weight:400;color:#94a3b8;\">\"Act now or miss out\"</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f43f5e"
+            },
+            {
+              "id": "es2-s6-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f43f5e20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f43f5e"
+              }
+            },
+            {
+              "id": "es2-s6-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f43f5e;text-align:center;'>💯 Guaranteed Returns<br/><span style=\"font-weight:400;color:#94a3b8;\">Impossible in real investing</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f43f5e"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_es2-s6_0",
+          "type": "spotlight",
+          "elementId": "es2-s6-title"
+        },
+        {
+          "id": "action_es2-s6_1",
+          "type": "speech",
+          "text": "🧠 Social Engineering & Red Flags",
+          "audioUrl": "/audio/lessons/oc-elem-security/4-1.mp3"
+        },
+        {
+          "id": "action_es2-s6_2",
+          "type": "spotlight",
+          "elementId": "es2-s6-sub"
+        },
+        {
+          "id": "action_es2-s6_3",
+          "type": "speech",
+          "text": "How scammers manipulate people psychologically",
+          "audioUrl": "/audio/lessons/oc-elem-security/4-3.mp3"
+        },
+        {
+          "id": "action_es2-s6_4",
+          "type": "spotlight",
+          "elementId": "es2-s6-body"
+        },
+        {
+          "id": "action_es2-s6_5",
+          "type": "speech",
+          "text": "Social engineering uses psychology rather than hacking. Scammers build trust over weeks, create urgency, or exploit emotions to get you to make a mistake. Common tactics: romance scams (fake relationships that end with a request to invest), fake job offers, \"investment managers\" promising guaranteed returns.",
+          "audioUrl": "/audio/lessons/oc-elem-security/4-5.mp3"
+        },
+        {
+          "id": "action_es2-s6_6",
+          "type": "spotlight",
+          "elementId": "es2-s6-ct1"
+        },
+        {
+          "id": "action_es2-s6_7",
+          "type": "speech",
+          "text": "❤️ Romance Scam. Weeks of relationship → steal funds",
+          "audioUrl": "/audio/lessons/oc-elem-security/4-7.mp3"
+        },
+        {
+          "id": "action_es2-s6_8",
+          "type": "spotlight",
+          "elementId": "es2-s6-ct2"
+        },
+        {
+          "id": "action_es2-s6_9",
+          "type": "speech",
+          "text": "💼 Fake Job. Pay \"training fee\" upfront",
+          "audioUrl": "/audio/lessons/oc-elem-security/4-9.mp3"
+        },
+        {
+          "id": "action_es2-s6_10",
+          "type": "spotlight",
+          "elementId": "es2-s6-ct3"
+        },
+        {
+          "id": "action_es2-s6_11",
+          "type": "speech",
+          "text": "⏰ Urgency. \"Act now or miss out\"",
+          "audioUrl": "/audio/lessons/oc-elem-security/4-11.mp3"
+        },
+        {
+          "id": "action_es2-s6_12",
+          "type": "spotlight",
+          "elementId": "es2-s6-ct4"
+        },
+        {
+          "id": "action_es2-s6_13",
+          "type": "speech",
+          "text": "💯 Guaranteed Returns. Impossible in real investing",
+          "audioUrl": "/audio/lessons/oc-elem-security/4-13.mp3"
+        }
+      ]
     },
     {
       "id": "es-s3",
@@ -756,19 +1683,19 @@
           }
         ]
       },
-      "order": 3,
+      "order": 5,
       "actions": [
         {
           "id": "action_es-s3_q0",
           "type": "speech",
           "text": "Time to test what you've learned! Answer each question and see how you do.",
-          "audioUrl": "/audio/lessons/oc-elem-security/2-0.mp3"
+          "audioUrl": "/audio/lessons/oc-elem-security/5-0.mp3"
         },
         {
           "id": "action_es-s3_q1",
           "type": "speech",
           "text": "Take your time — the goal is understanding, not just getting the right answer.",
-          "audioUrl": "/audio/lessons/oc-elem-security/2-1.mp3"
+          "audioUrl": "/audio/lessons/oc-elem-security/5-1.mp3"
         }
       ]
     }

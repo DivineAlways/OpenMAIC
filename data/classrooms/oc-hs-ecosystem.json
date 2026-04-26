@@ -17,7 +17,7 @@
       "id": "hs-ec-s1",
       "type": "slide",
       "title": "Layers, Bridges & DAOs",
-      "order": 1,
+      "order": 0,
       "content": {
         "type": "slide",
         "canvas": {
@@ -230,7 +230,7 @@
       "id": "hs-ec-s2",
       "type": "slide",
       "title": "Real World Assets, NFTs & Institutional Adoption",
-      "order": 2,
+      "order": 1,
       "content": {
         "type": "slide",
         "canvas": {
@@ -443,7 +443,7 @@
       "id": "hs-ec-s3",
       "type": "slide",
       "title": "Ecosystem Participants & Sector Map",
-      "order": 3,
+      "order": 2,
       "content": {
         "type": "slide",
         "canvas": {
@@ -653,10 +653,628 @@
       ]
     },
     {
+      "id": "he-s5",
+      "type": "slide",
+      "title": "🎮 NFT Utility vs Hype",
+      "order": 3,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "he-s5-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f59e0b",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "he-s5-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "he-s5-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "he-s5-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🎮 NFT Utility vs Hype</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "he-s5-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Separating real use cases from speculation</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "he-s5-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>The NFT market in 2021 was dominated by speculative hype — people buying jpegs hoping to flip them for profit. Most of that value collapsed. But <b style='color:#f59e0b;'>utility NFTs</b> represent something real.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Real utility: event tickets (verifiable, transferable), gaming assets (own your in-game items), membership passes (DAO access, gated communities), digital certificates, real estate deeds. The underlying technology is sound — the speculation was the problem.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "he-s5-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "he-s5-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>🖼️ Hype NFT<br/><span style=\"font-weight:400;color:#94a3b8;\">JPEG with no utility — speculation</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "he-s5-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "he-s5-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>🎟️ Ticket NFT<br/><span style=\"font-weight:400;color:#94a3b8;\">Verifiable, anti-counterfeit</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "he-s5-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "he-s5-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>🎮 Game Asset<br/><span style=\"font-weight:400;color:#94a3b8;\">Own your items, trade freely</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "he-s5-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "he-s5-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>🏅 Certificate<br/><span style=\"font-weight:400;color:#94a3b8;\">Proof of credential on-chain</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_he-s5_0",
+          "type": "spotlight",
+          "elementId": "he-s5-title"
+        },
+        {
+          "id": "action_he-s5_1",
+          "type": "speech",
+          "text": "🎮 NFT Utility vs Hype",
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/3-1.mp3"
+        },
+        {
+          "id": "action_he-s5_2",
+          "type": "spotlight",
+          "elementId": "he-s5-sub"
+        },
+        {
+          "id": "action_he-s5_3",
+          "type": "speech",
+          "text": "Separating real use cases from speculation",
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/3-3.mp3"
+        },
+        {
+          "id": "action_he-s5_4",
+          "type": "spotlight",
+          "elementId": "he-s5-body"
+        },
+        {
+          "id": "action_he-s5_5",
+          "type": "speech",
+          "text": "The NFT market in 2021 was dominated by speculative hype — people buying jpegs hoping to flip them for profit. Most of that value collapsed. But utility NFTs represent something real. Real utility: event tickets (verifiable, transferable), gaming assets (own your in-game items), membership passes (DAO access, gated communities), digital certificates, real estate deeds. The underlying technology is sound — the speculation was the problem.",
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/3-5.mp3"
+        },
+        {
+          "id": "action_he-s5_6",
+          "type": "spotlight",
+          "elementId": "he-s5-ct1"
+        },
+        {
+          "id": "action_he-s5_7",
+          "type": "speech",
+          "text": "🖼️ Hype NFT. JPEG with no utility — speculation",
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/3-7.mp3"
+        },
+        {
+          "id": "action_he-s5_8",
+          "type": "spotlight",
+          "elementId": "he-s5-ct2"
+        },
+        {
+          "id": "action_he-s5_9",
+          "type": "speech",
+          "text": "🎟️ Ticket NFT. Verifiable, anti-counterfeit",
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/3-9.mp3"
+        },
+        {
+          "id": "action_he-s5_10",
+          "type": "spotlight",
+          "elementId": "he-s5-ct3"
+        },
+        {
+          "id": "action_he-s5_11",
+          "type": "speech",
+          "text": "🎮 Game Asset. Own your items, trade freely",
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/3-11.mp3"
+        },
+        {
+          "id": "action_he-s5_12",
+          "type": "spotlight",
+          "elementId": "he-s5-ct4"
+        },
+        {
+          "id": "action_he-s5_13",
+          "type": "speech",
+          "text": "🏅 Certificate. Proof of credential on-chain",
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/3-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "he-s6",
+      "type": "slide",
+      "title": "🏭 Real-World Asset (RWA) Tokenization",
+      "order": 4,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "he-s6-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f59e0b",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "he-s6-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "he-s6-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "he-s6-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🏭 Real-World Asset (RWA) Tokenization</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "he-s6-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Bringing physical assets onto the blockchain</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "he-s6-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f59e0b;'>RWA tokenization</b> means representing ownership of real-world assets — real estate, gold, treasury bonds, art — as blockchain tokens. This makes them tradeable 24/7, divisible, and accessible to anyone globally.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>BlackRock, Franklin Templeton, and JPMorgan are all actively tokenizing assets. The XRPL is positioned as a settlement layer for tokenized RWAs due to its speed and built-in DEX. This is one of the largest opportunities in crypto.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "he-s6-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "he-s6-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>🏠 Real Estate<br/><span style=\"font-weight:400;color:#94a3b8;\">Fractional ownership on-chain</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "he-s6-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "he-s6-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>🪙 Gold<br/><span style=\"font-weight:400;color:#94a3b8;\">XAU tokens, redeemable for gold</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "he-s6-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "he-s6-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>📊 T-Bills<br/><span style=\"font-weight:400;color:#94a3b8;\">Tokenized US treasury bonds</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "he-s6-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "he-s6-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>⛓️ XRPL<br/><span style=\"font-weight:400;color:#94a3b8;\">Built for RWA settlement</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_he-s6_0",
+          "type": "spotlight",
+          "elementId": "he-s6-title"
+        },
+        {
+          "id": "action_he-s6_1",
+          "type": "speech",
+          "text": "🏭 Real-World Asset (RWA) Tokenization",
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/4-1.mp3"
+        },
+        {
+          "id": "action_he-s6_2",
+          "type": "spotlight",
+          "elementId": "he-s6-sub"
+        },
+        {
+          "id": "action_he-s6_3",
+          "type": "speech",
+          "text": "Bringing physical assets onto the blockchain",
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/4-3.mp3"
+        },
+        {
+          "id": "action_he-s6_4",
+          "type": "spotlight",
+          "elementId": "he-s6-body"
+        },
+        {
+          "id": "action_he-s6_5",
+          "type": "speech",
+          "text": "RWA tokenization means representing ownership of real-world assets — real estate, gold, treasury bonds, art — as blockchain tokens. This makes them tradeable 24/7, divisible, and accessible to anyone globally. BlackRock, Franklin Templeton, and JPMorgan are all actively tokenizing assets. The XRPL is positioned as a settlement layer for tokenized RWAs due to its speed and built-in DEX. This is one of the largest opportunities in crypto.",
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/4-5.mp3"
+        },
+        {
+          "id": "action_he-s6_6",
+          "type": "spotlight",
+          "elementId": "he-s6-ct1"
+        },
+        {
+          "id": "action_he-s6_7",
+          "type": "speech",
+          "text": "🏠 Real Estate. Fractional ownership on-chain",
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/4-7.mp3"
+        },
+        {
+          "id": "action_he-s6_8",
+          "type": "spotlight",
+          "elementId": "he-s6-ct2"
+        },
+        {
+          "id": "action_he-s6_9",
+          "type": "speech",
+          "text": "🪙 Gold. XAU tokens, redeemable for gold",
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/4-9.mp3"
+        },
+        {
+          "id": "action_he-s6_10",
+          "type": "spotlight",
+          "elementId": "he-s6-ct3"
+        },
+        {
+          "id": "action_he-s6_11",
+          "type": "speech",
+          "text": "📊 T-Bills. Tokenized US treasury bonds",
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/4-11.mp3"
+        },
+        {
+          "id": "action_he-s6_12",
+          "type": "spotlight",
+          "elementId": "he-s6-ct4"
+        },
+        {
+          "id": "action_he-s6_13",
+          "type": "speech",
+          "text": "⛓️ XRPL. Built for RWA settlement",
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/4-13.mp3"
+        }
+      ]
+    },
+    {
       "id": "hs-ec-s4",
       "type": "quiz",
       "title": "Knowledge Check — Ecosystem High School",
-      "order": 4,
+      "order": 5,
       "content": {
         "type": "quiz",
         "questions": [
@@ -737,13 +1355,13 @@
           "id": "action_hs-ec-s4_q0",
           "type": "speech",
           "text": "Time to test your ecosystem knowledge. These questions cover L1 versus L2, bridge risks, DAO governance, institutional adoption, and real world asset tokenization. Take your time — think about the mechanics behind each concept.",
-          "audioUrl": "/audio/lessons/oc-hs-ecosystem/3-0.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/5-0.mp3"
         },
         {
           "id": "action_hs-ec-s4_q1",
           "type": "speech",
           "text": "Great work on the Ecosystem module! You now understand how layers, bridges, and DAOs structure the crypto world, why institutional money changes the game, and how RWA tokenization is opening new markets. You're building the knowledge base that separates intermediate traders from beginners.",
-          "audioUrl": "/audio/lessons/oc-hs-ecosystem/3-1.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/5-1.mp3"
         }
       ]
     }

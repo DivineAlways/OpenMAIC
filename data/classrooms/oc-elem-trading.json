@@ -324,7 +324,7 @@
           "audioUrl": "/audio/lessons/oc-elem-trading/0-13.mp3"
         }
       ],
-      "order": 1
+      "order": 0
     },
     {
       "id": "et-s2",
@@ -633,7 +633,934 @@
           "audioUrl": "/audio/lessons/oc-elem-trading/1-13.mp3"
         }
       ],
-      "order": 2
+      "order": 1
+    },
+    {
+      "id": "et-s4",
+      "type": "slide",
+      "title": "📊 Buyers vs Sellers",
+      "order": 2,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "et-s4-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#3b82f6",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "et-s4-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f6",
+              "fixedRatio": false
+            },
+            {
+              "id": "et-s4-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "et-s4-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>📊 Buyers vs Sellers</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "et-s4-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The two forces that set every price</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "et-s4-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Every price you see in a market is the result of a <b style='color:#3b82f6;'>negotiation between buyers and sellers</b>. Buyers want the lowest price. Sellers want the highest. The current price is where they agree.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>When buyers outnumber sellers — <b style='color:#10b981;'>prices go up</b>. When sellers outnumber buyers — <b style='color:#ef4444;'>prices go down</b>. This is the foundation of every market in the world, from stocks to crypto to real estate.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "et-s4-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "et-s4-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#3b82f6;text-align:center;'>📈 More Buyers<br/><span style=\"font-weight:400;color:#94a3b8;\">Price rises</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "et-s4-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "et-s4-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#3b82f6;text-align:center;'>📉 More Sellers<br/><span style=\"font-weight:400;color:#94a3b8;\">Price falls</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "et-s4-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "et-s4-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#3b82f6;text-align:center;'>⚖️ Equal<br/><span style=\"font-weight:400;color:#94a3b8;\">Price stays flat</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "et-s4-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "et-s4-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#3b82f6;text-align:center;'>🎯 Your Job<br/><span style=\"font-weight:400;color:#94a3b8;\">Predict which way it moves</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_et-s4_0",
+          "type": "spotlight",
+          "elementId": "et-s4-title"
+        },
+        {
+          "id": "action_et-s4_1",
+          "type": "speech",
+          "text": "📊 Buyers vs Sellers",
+          "audioUrl": "/audio/lessons/oc-elem-trading/2-1.mp3"
+        },
+        {
+          "id": "action_et-s4_2",
+          "type": "spotlight",
+          "elementId": "et-s4-sub"
+        },
+        {
+          "id": "action_et-s4_3",
+          "type": "speech",
+          "text": "The two forces that set every price",
+          "audioUrl": "/audio/lessons/oc-elem-trading/2-3.mp3"
+        },
+        {
+          "id": "action_et-s4_4",
+          "type": "spotlight",
+          "elementId": "et-s4-body"
+        },
+        {
+          "id": "action_et-s4_5",
+          "type": "speech",
+          "text": "Every price you see in a market is the result of a negotiation between buyers and sellers . Buyers want the lowest price. Sellers want the highest. The current price is where they agree. When buyers outnumber sellers — prices go up . When sellers outnumber buyers — prices go down . This is the foundation of every market in the world, from stocks to crypto to real estate.",
+          "audioUrl": "/audio/lessons/oc-elem-trading/2-5.mp3"
+        },
+        {
+          "id": "action_et-s4_6",
+          "type": "spotlight",
+          "elementId": "et-s4-ct1"
+        },
+        {
+          "id": "action_et-s4_7",
+          "type": "speech",
+          "text": "📈 More Buyers. Price rises",
+          "audioUrl": "/audio/lessons/oc-elem-trading/2-7.mp3"
+        },
+        {
+          "id": "action_et-s4_8",
+          "type": "spotlight",
+          "elementId": "et-s4-ct2"
+        },
+        {
+          "id": "action_et-s4_9",
+          "type": "speech",
+          "text": "📉 More Sellers. Price falls",
+          "audioUrl": "/audio/lessons/oc-elem-trading/2-9.mp3"
+        },
+        {
+          "id": "action_et-s4_10",
+          "type": "spotlight",
+          "elementId": "et-s4-ct3"
+        },
+        {
+          "id": "action_et-s4_11",
+          "type": "speech",
+          "text": "⚖️ Equal. Price stays flat",
+          "audioUrl": "/audio/lessons/oc-elem-trading/2-11.mp3"
+        },
+        {
+          "id": "action_et-s4_12",
+          "type": "spotlight",
+          "elementId": "et-s4-ct4"
+        },
+        {
+          "id": "action_et-s4_13",
+          "type": "speech",
+          "text": "🎯 Your Job. Predict which way it moves",
+          "audioUrl": "/audio/lessons/oc-elem-trading/2-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "et-s5",
+      "type": "slide",
+      "title": "📈 Long vs Short — Simply Explained",
+      "order": 3,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "et-s5-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#3b82f6",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "et-s5-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f6",
+              "fixedRatio": false
+            },
+            {
+              "id": "et-s5-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "et-s5-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>📈 Long vs Short — Simply Explained</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "et-s5-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The two ways to make money in any market</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "et-s5-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#3b82f6;'>Going Long</b> means you buy something hoping the price will <b style='color:#10b981;'>go up</b>. You buy at $100, it goes to $150 — you made $50. This is the most natural way to trade.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#3b82f6;'>Going Short</b> means you bet the price will <b style='color:#ef4444;'>go down</b>. You borrow and sell at $100, price drops to $70, you buy it back — and pocket the difference.</p><br/><p style='font-size:15px;color:#f59e0b;'>⚠️ Shorting is advanced and risky. Losses can exceed your deposit. Start with long-only trading.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "et-s5-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "et-s5-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#3b82f6;text-align:center;'>⬆️ Long<br/><span style=\"font-weight:400;color:#94a3b8;\">Buy low, sell high</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "et-s5-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "et-s5-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#3b82f6;text-align:center;'>⬇️ Short<br/><span style=\"font-weight:400;color:#94a3b8;\">Sell high, buy back lower</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "et-s5-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "et-s5-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#3b82f6;text-align:center;'>⚠️ Risk<br/><span style=\"font-weight:400;color:#94a3b8;\">Shorting = unlimited loss potential</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "et-s5-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "et-s5-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#3b82f6;text-align:center;'>✅ Beginner Tip<br/><span style=\"font-weight:400;color:#94a3b8;\">Stick to long positions first</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_et-s5_0",
+          "type": "spotlight",
+          "elementId": "et-s5-title"
+        },
+        {
+          "id": "action_et-s5_1",
+          "type": "speech",
+          "text": "📈 Long vs Short — Simply Explained",
+          "audioUrl": "/audio/lessons/oc-elem-trading/3-1.mp3"
+        },
+        {
+          "id": "action_et-s5_2",
+          "type": "spotlight",
+          "elementId": "et-s5-sub"
+        },
+        {
+          "id": "action_et-s5_3",
+          "type": "speech",
+          "text": "The two ways to make money in any market",
+          "audioUrl": "/audio/lessons/oc-elem-trading/3-3.mp3"
+        },
+        {
+          "id": "action_et-s5_4",
+          "type": "spotlight",
+          "elementId": "et-s5-body"
+        },
+        {
+          "id": "action_et-s5_5",
+          "type": "speech",
+          "text": "Going Long means you buy something hoping the price will go up . You buy at $100, it goes to $150 — you made $50. This is the most natural way to trade. Going Short means you bet the price will go down . You borrow and sell at $100, price drops to $70, you buy it back — and pocket the difference. ⚠️ Shorting is advanced and risky. Losses can exceed your deposit. Start with long-only trading.",
+          "audioUrl": "/audio/lessons/oc-elem-trading/3-5.mp3"
+        },
+        {
+          "id": "action_et-s5_6",
+          "type": "spotlight",
+          "elementId": "et-s5-ct1"
+        },
+        {
+          "id": "action_et-s5_7",
+          "type": "speech",
+          "text": "⬆️ Long. Buy low, sell high",
+          "audioUrl": "/audio/lessons/oc-elem-trading/3-7.mp3"
+        },
+        {
+          "id": "action_et-s5_8",
+          "type": "spotlight",
+          "elementId": "et-s5-ct2"
+        },
+        {
+          "id": "action_et-s5_9",
+          "type": "speech",
+          "text": "⬇️ Short. Sell high, buy back lower",
+          "audioUrl": "/audio/lessons/oc-elem-trading/3-9.mp3"
+        },
+        {
+          "id": "action_et-s5_10",
+          "type": "spotlight",
+          "elementId": "et-s5-ct3"
+        },
+        {
+          "id": "action_et-s5_11",
+          "type": "speech",
+          "text": "⚠️ Risk. Shorting = unlimited loss potential",
+          "audioUrl": "/audio/lessons/oc-elem-trading/3-11.mp3"
+        },
+        {
+          "id": "action_et-s5_12",
+          "type": "spotlight",
+          "elementId": "et-s5-ct4"
+        },
+        {
+          "id": "action_et-s5_13",
+          "type": "speech",
+          "text": "✅ Beginner Tip. Stick to long positions first",
+          "audioUrl": "/audio/lessons/oc-elem-trading/3-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "et-s6",
+      "type": "slide",
+      "title": "🎢 What is Volatility?",
+      "order": 4,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "et-s6-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#3b82f6",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "et-s6-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f6",
+              "fixedRatio": false
+            },
+            {
+              "id": "et-s6-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "et-s6-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🎢 What is Volatility?</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "et-s6-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Why crypto prices move so dramatically</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "et-s6-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#3b82f6;'>Volatility</b> means how much and how fast a price moves. Bitcoin can move 10% in a single day. Apple stock might move 2% in a week.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>High volatility means <b style='color:#10b981;'>bigger profit potential</b> — but also <b style='color:#ef4444;'>bigger loss potential</b>. Crypto is one of the most volatile asset classes in history. This is why <b style='color:#f1f5f9;'>risk management</b> — never investing more than you can afford to lose — is the first rule of trading.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "et-s6-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "et-s6-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#3b82f6;text-align:center;'>📊 High Volatility<br/><span style=\"font-weight:400;color:#94a3b8;\">Big moves, fast</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "et-s6-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "et-s6-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#3b82f6;text-align:center;'>💰 Opportunity<br/><span style=\"font-weight:400;color:#94a3b8;\">Big gains possible</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "et-s6-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "et-s6-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#3b82f6;text-align:center;'>💸 Risk<br/><span style=\"font-weight:400;color:#94a3b8;\">Big losses possible</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "et-s6-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "et-s6-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#3b82f6;text-align:center;'>🛡️ Rule #1<br/><span style=\"font-weight:400;color:#94a3b8;\">Only risk what you can lose</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_et-s6_0",
+          "type": "spotlight",
+          "elementId": "et-s6-title"
+        },
+        {
+          "id": "action_et-s6_1",
+          "type": "speech",
+          "text": "🎢 What is Volatility?",
+          "audioUrl": "/audio/lessons/oc-elem-trading/4-1.mp3"
+        },
+        {
+          "id": "action_et-s6_2",
+          "type": "spotlight",
+          "elementId": "et-s6-sub"
+        },
+        {
+          "id": "action_et-s6_3",
+          "type": "speech",
+          "text": "Why crypto prices move so dramatically",
+          "audioUrl": "/audio/lessons/oc-elem-trading/4-3.mp3"
+        },
+        {
+          "id": "action_et-s6_4",
+          "type": "spotlight",
+          "elementId": "et-s6-body"
+        },
+        {
+          "id": "action_et-s6_5",
+          "type": "speech",
+          "text": "Volatility means how much and how fast a price moves. Bitcoin can move 10% in a single day. Apple stock might move 2% in a week. High volatility means bigger profit potential — but also bigger loss potential . Crypto is one of the most volatile asset classes in history. This is why risk management — never investing more than you can afford to lose — is the first rule of trading.",
+          "audioUrl": "/audio/lessons/oc-elem-trading/4-5.mp3"
+        },
+        {
+          "id": "action_et-s6_6",
+          "type": "spotlight",
+          "elementId": "et-s6-ct1"
+        },
+        {
+          "id": "action_et-s6_7",
+          "type": "speech",
+          "text": "📊 High Volatility. Big moves, fast",
+          "audioUrl": "/audio/lessons/oc-elem-trading/4-7.mp3"
+        },
+        {
+          "id": "action_et-s6_8",
+          "type": "spotlight",
+          "elementId": "et-s6-ct2"
+        },
+        {
+          "id": "action_et-s6_9",
+          "type": "speech",
+          "text": "💰 Opportunity. Big gains possible",
+          "audioUrl": "/audio/lessons/oc-elem-trading/4-9.mp3"
+        },
+        {
+          "id": "action_et-s6_10",
+          "type": "spotlight",
+          "elementId": "et-s6-ct3"
+        },
+        {
+          "id": "action_et-s6_11",
+          "type": "speech",
+          "text": "💸 Risk. Big losses possible",
+          "audioUrl": "/audio/lessons/oc-elem-trading/4-11.mp3"
+        },
+        {
+          "id": "action_et-s6_12",
+          "type": "spotlight",
+          "elementId": "et-s6-ct4"
+        },
+        {
+          "id": "action_et-s6_13",
+          "type": "speech",
+          "text": "🛡️ Rule #1. Only risk what you can lose",
+          "audioUrl": "/audio/lessons/oc-elem-trading/4-13.mp3"
+        }
+      ]
     },
     {
       "id": "et-s3",
@@ -756,19 +1683,19 @@
           }
         ]
       },
-      "order": 3,
+      "order": 5,
       "actions": [
         {
           "id": "action_et-s3_q0",
           "type": "speech",
           "text": "Time to test what you've learned! Answer each question and see how you do.",
-          "audioUrl": "/audio/lessons/oc-elem-trading/2-0.mp3"
+          "audioUrl": "/audio/lessons/oc-elem-trading/5-0.mp3"
         },
         {
           "id": "action_et-s3_q1",
           "type": "speech",
           "text": "Take your time — the goal is understanding, not just getting the right answer.",
-          "audioUrl": "/audio/lessons/oc-elem-trading/2-1.mp3"
+          "audioUrl": "/audio/lessons/oc-elem-trading/5-1.mp3"
         }
       ]
     }

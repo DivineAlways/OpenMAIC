@@ -199,7 +199,7 @@
           ]
         }
       },
-      "order": 1,
+      "order": 0,
       "actions": [
         {
           "id": "action_tg-s1_0",
@@ -429,7 +429,7 @@
           ]
         }
       },
-      "order": 2,
+      "order": 1,
       "actions": [
         {
           "id": "action_tg-s2_0",
@@ -618,7 +618,7 @@
           ]
         }
       },
-      "order": 3,
+      "order": 2,
       "actions": [
         {
           "id": "action_tg-s3_0",
@@ -818,7 +818,7 @@
           ]
         }
       },
-      "order": 4,
+      "order": 3,
       "actions": [
         {
           "id": "action_tg-s4_0",
@@ -1059,7 +1059,7 @@
           ]
         }
       },
-      "order": 5,
+      "order": 4,
       "actions": [
         {
           "id": "action_tg-s5_0",
@@ -1338,7 +1338,7 @@
           ]
         }
       },
-      "order": 6,
+      "order": 5,
       "actions": [
         {
           "id": "action_tg-s6_0",
@@ -1661,7 +1661,7 @@
           ]
         }
       },
-      "order": 7,
+      "order": 6,
       "actions": [
         {
           "id": "action_tg-s7_0",
@@ -1751,6 +1751,625 @@
           "type": "speech",
           "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading.",
           "audioUrl": "/audio/lessons/oc-trading-guide/7-1.mp3"
+        }
+      ],
+      "order": 7
+    },
+    {
+      "id": "ctg-s10",
+      "type": "slide",
+      "title": "📐 Position Sizing & Kelly Criterion",
+      "order": 8,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ctg-s10-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#3b82f6",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ctg-s10-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f6",
+              "fixedRatio": false
+            },
+            {
+              "id": "ctg-s10-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ctg-s10-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>📐 Position Sizing & Kelly Criterion</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ctg-s10-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The math behind how much to risk per trade</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ctg-s10-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>The <b style='color:#3b82f6;'>Kelly Criterion</b> gives the mathematically optimal bet size: f = (bp - q) / b, where b = odds ratio, p = win probability, q = loss probability.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>In practice, traders use <b style='color:#f1f5f9;'>fractional Kelly</b> (25–50% of full Kelly) to reduce variance. Most professional traders risk 1–2% of account per trade. At 2% risk per trade, you can lose 20 trades in a row and still have 67% of your capital remaining.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ctg-s10-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "ctg-s10-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#3b82f6;text-align:center;'>📐 Kelly Formula<br/><span style=\"font-weight:400;color:#94a3b8;\">f = (bp - q) / b</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "ctg-s10-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "ctg-s10-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#3b82f6;text-align:center;'>⅓ Fractional Kelly<br/><span style=\"font-weight:400;color:#94a3b8;\">25-50% of Kelly = lower variance</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "ctg-s10-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "ctg-s10-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#3b82f6;text-align:center;'>📊 2% Rule<br/><span style=\"font-weight:400;color:#94a3b8;\">Risk 2% per trade = 50 chances</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "ctg-s10-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "ctg-s10-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#3b82f6;text-align:center;'>🧮 Math<br/><span style=\"font-weight:400;color:#94a3b8;\">20 losses in a row = 67% remains</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_ctg-s10_0",
+          "type": "spotlight",
+          "elementId": "ctg-s10-title"
+        },
+        {
+          "id": "action_ctg-s10_1",
+          "type": "speech",
+          "text": "📐 Position Sizing & Kelly Criterion",
+          "audioUrl": "/audio/lessons/oc-trading-guide/8-1.mp3"
+        },
+        {
+          "id": "action_ctg-s10_2",
+          "type": "spotlight",
+          "elementId": "ctg-s10-sub"
+        },
+        {
+          "id": "action_ctg-s10_3",
+          "type": "speech",
+          "text": "The math behind how much to risk per trade",
+          "audioUrl": "/audio/lessons/oc-trading-guide/8-3.mp3"
+        },
+        {
+          "id": "action_ctg-s10_4",
+          "type": "spotlight",
+          "elementId": "ctg-s10-body"
+        },
+        {
+          "id": "action_ctg-s10_5",
+          "type": "speech",
+          "text": "The Kelly Criterion gives the mathematically optimal bet size: f = (bp - q) / b, where b = odds ratio, p = win probability, q = loss probability. In practice, traders use fractional Kelly (25–50% of full Kelly) to reduce variance. Most professional traders risk 1–2% of account per trade. At 2% risk per trade, you can lose 20 trades in a row and still have 67% of your capital remaining.",
+          "audioUrl": "/audio/lessons/oc-trading-guide/8-5.mp3"
+        },
+        {
+          "id": "action_ctg-s10_6",
+          "type": "spotlight",
+          "elementId": "ctg-s10-ct1"
+        },
+        {
+          "id": "action_ctg-s10_7",
+          "type": "speech",
+          "text": "📐 Kelly Formula. f = (bp - q) / b",
+          "audioUrl": "/audio/lessons/oc-trading-guide/8-7.mp3"
+        },
+        {
+          "id": "action_ctg-s10_8",
+          "type": "spotlight",
+          "elementId": "ctg-s10-ct2"
+        },
+        {
+          "id": "action_ctg-s10_9",
+          "type": "speech",
+          "text": "⅓ Fractional Kelly. 25-50% of Kelly = lower variance",
+          "audioUrl": "/audio/lessons/oc-trading-guide/8-9.mp3"
+        },
+        {
+          "id": "action_ctg-s10_10",
+          "type": "spotlight",
+          "elementId": "ctg-s10-ct3"
+        },
+        {
+          "id": "action_ctg-s10_11",
+          "type": "speech",
+          "text": "📊 2% Rule. Risk 2% per trade = 50 chances",
+          "audioUrl": "/audio/lessons/oc-trading-guide/8-11.mp3"
+        },
+        {
+          "id": "action_ctg-s10_12",
+          "type": "spotlight",
+          "elementId": "ctg-s10-ct4"
+        },
+        {
+          "id": "action_ctg-s10_13",
+          "type": "speech",
+          "text": "🧮 Math. 20 losses in a row = 67% remains",
+          "audioUrl": "/audio/lessons/oc-trading-guide/8-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "ctg-s10b",
+      "type": "slide",
+      "title": "🤖 Algorithmic Trading Concepts",
+      "order": 9,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ctg-s10b-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#3b82f6",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ctg-s10b-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f6",
+              "fixedRatio": false
+            },
+            {
+              "id": "ctg-s10b-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ctg-s10b-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🤖 Algorithmic Trading Concepts</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ctg-s10b-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>How systematic strategies remove emotion from trading</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ctg-s10b-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#3b82f6;'>Algorithmic trading</b> executes trades based on pre-defined rules — no emotion, no hesitation. Strategies include: trend following (buy when 50MA > 200MA), mean reversion (fade moves beyond 2 standard deviations), arbitrage (exploit price differences across exchanges).</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Key concepts: <b style='color:#f1f5f9;'>backtesting</b> (test strategy on historical data), <b style='color:#f1f5f9;'>overfitting</b> (strategy works on past data but fails live), <b style='color:#f1f5f9;'>slippage</b> (real execution vs backtest assumptions).</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ctg-s10b-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "ctg-s10b-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#3b82f6;text-align:center;'>📊 Trend Following<br/><span style=\"font-weight:400;color:#94a3b8;\">Buy when price is above MA</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "ctg-s10b-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "ctg-s10b-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#3b82f6;text-align:center;'>↩️ Mean Reversion<br/><span style=\"font-weight:400;color:#94a3b8;\">Fade extremes, expect return to avg</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "ctg-s10b-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "ctg-s10b-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#3b82f6;text-align:center;'>⚡ Arbitrage<br/><span style=\"font-weight:400;color:#94a3b8;\">Buy cheap, sell expensive simultaneously</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "ctg-s10b-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f620",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "ctg-s10b-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#3b82f6;text-align:center;'>⚠️ Overfitting<br/><span style=\"font-weight:400;color:#94a3b8;\">Works in backtest, fails in live</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_ctg-s10b_0",
+          "type": "spotlight",
+          "elementId": "ctg-s10b-title"
+        },
+        {
+          "id": "action_ctg-s10b_1",
+          "type": "speech",
+          "text": "🤖 Algorithmic Trading Concepts",
+          "audioUrl": "/audio/lessons/oc-trading-guide/9-1.mp3"
+        },
+        {
+          "id": "action_ctg-s10b_2",
+          "type": "spotlight",
+          "elementId": "ctg-s10b-sub"
+        },
+        {
+          "id": "action_ctg-s10b_3",
+          "type": "speech",
+          "text": "How systematic strategies remove emotion from trading",
+          "audioUrl": "/audio/lessons/oc-trading-guide/9-3.mp3"
+        },
+        {
+          "id": "action_ctg-s10b_4",
+          "type": "spotlight",
+          "elementId": "ctg-s10b-body"
+        },
+        {
+          "id": "action_ctg-s10b_5",
+          "type": "speech",
+          "text": "Algorithmic trading executes trades based on pre-defined rules — no emotion, no hesitation. Strategies include: trend following (buy when 50MA > 200MA), mean reversion (fade moves beyond 2 standard deviations), arbitrage (exploit price differences across exchanges). Key concepts: backtesting (test strategy on historical data), overfitting (strategy works on past data but fails live), slippage (real execution vs backtest assumptions).",
+          "audioUrl": "/audio/lessons/oc-trading-guide/9-5.mp3"
+        },
+        {
+          "id": "action_ctg-s10b_6",
+          "type": "spotlight",
+          "elementId": "ctg-s10b-ct1"
+        },
+        {
+          "id": "action_ctg-s10b_7",
+          "type": "speech",
+          "text": "📊 Trend Following. Buy when price is above MA",
+          "audioUrl": "/audio/lessons/oc-trading-guide/9-7.mp3"
+        },
+        {
+          "id": "action_ctg-s10b_8",
+          "type": "spotlight",
+          "elementId": "ctg-s10b-ct2"
+        },
+        {
+          "id": "action_ctg-s10b_9",
+          "type": "speech",
+          "text": "↩️ Mean Reversion. Fade extremes, expect return to avg",
+          "audioUrl": "/audio/lessons/oc-trading-guide/9-9.mp3"
+        },
+        {
+          "id": "action_ctg-s10b_10",
+          "type": "spotlight",
+          "elementId": "ctg-s10b-ct3"
+        },
+        {
+          "id": "action_ctg-s10b_11",
+          "type": "speech",
+          "text": "⚡ Arbitrage. Buy cheap, sell expensive simultaneously",
+          "audioUrl": "/audio/lessons/oc-trading-guide/9-11.mp3"
+        },
+        {
+          "id": "action_ctg-s10b_12",
+          "type": "spotlight",
+          "elementId": "ctg-s10b-ct4"
+        },
+        {
+          "id": "action_ctg-s10b_13",
+          "type": "speech",
+          "text": "⚠️ Overfitting. Works in backtest, fails in live",
+          "audioUrl": "/audio/lessons/oc-trading-guide/9-13.mp3"
         }
       ]
     },
@@ -1883,19 +2502,19 @@
           }
         ]
       },
-      "order": 8,
+      "order": 10,
       "actions": [
         {
           "id": "action_tg-s8_q0",
           "type": "speech",
           "text": "Time to test your knowledge! Answer each question carefully — you can review the material after the quiz.",
-          "audioUrl": "/audio/lessons/oc-trading-guide/8-0.mp3"
+          "audioUrl": "/audio/lessons/oc-trading-guide/10-0.mp3"
         },
         {
           "id": "action_tg-s8_q1",
           "type": "speech",
           "text": "Take your time with these questions. The goal is to solidify your understanding, not just pass the quiz.",
-          "audioUrl": "/audio/lessons/oc-trading-guide/8-1.mp3"
+          "audioUrl": "/audio/lessons/oc-trading-guide/10-1.mp3"
         }
       ]
     }

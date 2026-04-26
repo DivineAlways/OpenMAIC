@@ -324,7 +324,7 @@
           "audioUrl": "/audio/lessons/oc-elem-defi/0-13.mp3"
         }
       ],
-      "order": 1
+      "order": 0
     },
     {
       "id": "ed-s2",
@@ -633,7 +633,934 @@
           "audioUrl": "/audio/lessons/oc-elem-defi/1-13.mp3"
         }
       ],
-      "order": 2
+      "order": 1
+    },
+    {
+      "id": "ed-s4",
+      "type": "slide",
+      "title": "🏦 Finance Without Banks",
+      "order": 2,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ed-s4-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#10b981",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ed-s4-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b981",
+              "fixedRatio": false
+            },
+            {
+              "id": "ed-s4-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ed-s4-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🏦 Finance Without Banks</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ed-s4-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>What it actually means to remove the middleman</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ed-s4-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Every time you use a bank — to send money, take a loan, or earn interest — the bank is the <b style='color:#10b981;'>middleman</b>. It charges fees, sets the rules, and can freeze your account.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f1f5f9;'>DeFi replaces the bank with code.</b> Smart contracts handle lending, borrowing, and trading automatically. No human approvals. No business hours. No border restrictions. Anyone with a crypto wallet can participate.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ed-s4-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "ed-s4-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>🚫 No Bank<br/><span style=\"font-weight:400;color:#94a3b8;\">No middleman, no fees</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "ed-s4-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "ed-s4-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>⏰ 24/7<br/><span style=\"font-weight:400;color:#94a3b8;\">Open every day, always</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "ed-s4-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "ed-s4-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>🌍 Global<br/><span style=\"font-weight:400;color:#94a3b8;\">Anyone, anywhere</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "ed-s4-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "ed-s4-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>📋 Code Rules<br/><span style=\"font-weight:400;color:#94a3b8;\">Smart contracts are the law</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_ed-s4_0",
+          "type": "spotlight",
+          "elementId": "ed-s4-title"
+        },
+        {
+          "id": "action_ed-s4_1",
+          "type": "speech",
+          "text": "🏦 Finance Without Banks",
+          "audioUrl": "/audio/lessons/oc-elem-defi/2-1.mp3"
+        },
+        {
+          "id": "action_ed-s4_2",
+          "type": "spotlight",
+          "elementId": "ed-s4-sub"
+        },
+        {
+          "id": "action_ed-s4_3",
+          "type": "speech",
+          "text": "What it actually means to remove the middleman",
+          "audioUrl": "/audio/lessons/oc-elem-defi/2-3.mp3"
+        },
+        {
+          "id": "action_ed-s4_4",
+          "type": "spotlight",
+          "elementId": "ed-s4-body"
+        },
+        {
+          "id": "action_ed-s4_5",
+          "type": "speech",
+          "text": "Every time you use a bank — to send money, take a loan, or earn interest — the bank is the middleman . It charges fees, sets the rules, and can freeze your account. DeFi replaces the bank with code. Smart contracts handle lending, borrowing, and trading automatically. No human approvals. No business hours. No border restrictions. Anyone with a crypto wallet can participate.",
+          "audioUrl": "/audio/lessons/oc-elem-defi/2-5.mp3"
+        },
+        {
+          "id": "action_ed-s4_6",
+          "type": "spotlight",
+          "elementId": "ed-s4-ct1"
+        },
+        {
+          "id": "action_ed-s4_7",
+          "type": "speech",
+          "text": "🚫 No Bank. No middleman, no fees",
+          "audioUrl": "/audio/lessons/oc-elem-defi/2-7.mp3"
+        },
+        {
+          "id": "action_ed-s4_8",
+          "type": "spotlight",
+          "elementId": "ed-s4-ct2"
+        },
+        {
+          "id": "action_ed-s4_9",
+          "type": "speech",
+          "text": "⏰ 24/7. Open every day, always",
+          "audioUrl": "/audio/lessons/oc-elem-defi/2-9.mp3"
+        },
+        {
+          "id": "action_ed-s4_10",
+          "type": "spotlight",
+          "elementId": "ed-s4-ct3"
+        },
+        {
+          "id": "action_ed-s4_11",
+          "type": "speech",
+          "text": "🌍 Global. Anyone, anywhere",
+          "audioUrl": "/audio/lessons/oc-elem-defi/2-11.mp3"
+        },
+        {
+          "id": "action_ed-s4_12",
+          "type": "spotlight",
+          "elementId": "ed-s4-ct4"
+        },
+        {
+          "id": "action_ed-s4_13",
+          "type": "speech",
+          "text": "📋 Code Rules. Smart contracts are the law",
+          "audioUrl": "/audio/lessons/oc-elem-defi/2-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "ed-s5",
+      "type": "slide",
+      "title": "💰 What is Yield?",
+      "order": 3,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ed-s5-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#10b981",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ed-s5-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b981",
+              "fixedRatio": false
+            },
+            {
+              "id": "ed-s5-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ed-s5-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>💰 What is Yield?</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ed-s5-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Earning passive income with your crypto</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ed-s5-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#10b981;'>Yield</b> means earning a return on your crypto just for providing it to a DeFi protocol. Similar to earning interest in a savings account — but often much higher rates.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>For example: you deposit USDC into a lending protocol. Borrowers pay interest to borrow it. That interest flows back to you automatically via smart contract. Your crypto works for you while you sleep.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ed-s5-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "ed-s5-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>💵 Deposit Crypto<br/><span style=\"font-weight:400;color:#94a3b8;\">Lock it in a protocol</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "ed-s5-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "ed-s5-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>📤 Borrowers Use It<br/><span style=\"font-weight:400;color:#94a3b8;\">They pay interest</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "ed-s5-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "ed-s5-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>💸 You Earn<br/><span style=\"font-weight:400;color:#94a3b8;\">Interest flows back to you</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "ed-s5-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "ed-s5-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>⚠️ Risk<br/><span style=\"font-weight:400;color:#94a3b8;\">Smart contracts can have bugs</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_ed-s5_0",
+          "type": "spotlight",
+          "elementId": "ed-s5-title"
+        },
+        {
+          "id": "action_ed-s5_1",
+          "type": "speech",
+          "text": "💰 What is Yield?",
+          "audioUrl": "/audio/lessons/oc-elem-defi/3-1.mp3"
+        },
+        {
+          "id": "action_ed-s5_2",
+          "type": "spotlight",
+          "elementId": "ed-s5-sub"
+        },
+        {
+          "id": "action_ed-s5_3",
+          "type": "speech",
+          "text": "Earning passive income with your crypto",
+          "audioUrl": "/audio/lessons/oc-elem-defi/3-3.mp3"
+        },
+        {
+          "id": "action_ed-s5_4",
+          "type": "spotlight",
+          "elementId": "ed-s5-body"
+        },
+        {
+          "id": "action_ed-s5_5",
+          "type": "speech",
+          "text": "Yield means earning a return on your crypto just for providing it to a DeFi protocol. Similar to earning interest in a savings account — but often much higher rates. For example: you deposit USDC into a lending protocol. Borrowers pay interest to borrow it. That interest flows back to you automatically via smart contract. Your crypto works for you while you sleep.",
+          "audioUrl": "/audio/lessons/oc-elem-defi/3-5.mp3"
+        },
+        {
+          "id": "action_ed-s5_6",
+          "type": "spotlight",
+          "elementId": "ed-s5-ct1"
+        },
+        {
+          "id": "action_ed-s5_7",
+          "type": "speech",
+          "text": "💵 Deposit Crypto. Lock it in a protocol",
+          "audioUrl": "/audio/lessons/oc-elem-defi/3-7.mp3"
+        },
+        {
+          "id": "action_ed-s5_8",
+          "type": "spotlight",
+          "elementId": "ed-s5-ct2"
+        },
+        {
+          "id": "action_ed-s5_9",
+          "type": "speech",
+          "text": "📤 Borrowers Use It. They pay interest",
+          "audioUrl": "/audio/lessons/oc-elem-defi/3-9.mp3"
+        },
+        {
+          "id": "action_ed-s5_10",
+          "type": "spotlight",
+          "elementId": "ed-s5-ct3"
+        },
+        {
+          "id": "action_ed-s5_11",
+          "type": "speech",
+          "text": "💸 You Earn. Interest flows back to you",
+          "audioUrl": "/audio/lessons/oc-elem-defi/3-11.mp3"
+        },
+        {
+          "id": "action_ed-s5_12",
+          "type": "spotlight",
+          "elementId": "ed-s5-ct4"
+        },
+        {
+          "id": "action_ed-s5_13",
+          "type": "speech",
+          "text": "⚠️ Risk. Smart contracts can have bugs",
+          "audioUrl": "/audio/lessons/oc-elem-defi/3-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "ed-s6",
+      "type": "slide",
+      "title": "🌊 Liquidity Pools — The Concept",
+      "order": 4,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ed-s6-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#10b981",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ed-s6-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b981",
+              "fixedRatio": false
+            },
+            {
+              "id": "ed-s6-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ed-s6-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🌊 Liquidity Pools — The Concept</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ed-s6-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>How DeFi creates markets without order books</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ed-s6-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Traditional exchanges match buyers and sellers. DeFi uses a different system called a <b style='color:#10b981;'>liquidity pool</b>.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Imagine a giant jar filled with two types of tokens — say, ETH and USDC. When you want to swap ETH for USDC, you add your ETH to the jar and take out USDC. The price adjusts automatically based on the ratio in the jar. The people who filled the jar earn a small fee on every swap.</p><br/><p style='font-size:15px;color:#f59e0b;'><b>⚠️ Risk: Rug Pulls.</b> If the team behind a pool withdraws all the liquidity, the value collapses instantly. Only use established, audited protocols.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ed-s6-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "ed-s6-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>🫙 Pool<br/><span style=\"font-weight:400;color:#94a3b8;\">Jar of two token types</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "ed-s6-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "ed-s6-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>🔄 Swap<br/><span style=\"font-weight:400;color:#94a3b8;\">Trade against the pool</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "ed-s6-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "ed-s6-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>💰 LP Fee<br/><span style=\"font-weight:400;color:#94a3b8;\">Earn % of every swap</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "ed-s6-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98120",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "ed-s6-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>🚨 Rug Pull<br/><span style=\"font-weight:400;color:#94a3b8;\">Team drains the pool</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_ed-s6_0",
+          "type": "spotlight",
+          "elementId": "ed-s6-title"
+        },
+        {
+          "id": "action_ed-s6_1",
+          "type": "speech",
+          "text": "🌊 Liquidity Pools — The Concept",
+          "audioUrl": "/audio/lessons/oc-elem-defi/4-1.mp3"
+        },
+        {
+          "id": "action_ed-s6_2",
+          "type": "spotlight",
+          "elementId": "ed-s6-sub"
+        },
+        {
+          "id": "action_ed-s6_3",
+          "type": "speech",
+          "text": "How DeFi creates markets without order books",
+          "audioUrl": "/audio/lessons/oc-elem-defi/4-3.mp3"
+        },
+        {
+          "id": "action_ed-s6_4",
+          "type": "spotlight",
+          "elementId": "ed-s6-body"
+        },
+        {
+          "id": "action_ed-s6_5",
+          "type": "speech",
+          "text": "Traditional exchanges match buyers and sellers. DeFi uses a different system called a liquidity pool . Imagine a giant jar filled with two types of tokens — say, ETH and USDC. When you want to swap ETH for USDC, you add your ETH to the jar and take out USDC. The price adjusts automatically based on the ratio in the jar. The people who filled the jar earn a small fee on every swap. ⚠️ Risk: Rug Pulls. If the team behind a pool withdraws all the liquidity, the value collapses instantly. Only use established, audited protocols.",
+          "audioUrl": "/audio/lessons/oc-elem-defi/4-5.mp3"
+        },
+        {
+          "id": "action_ed-s6_6",
+          "type": "spotlight",
+          "elementId": "ed-s6-ct1"
+        },
+        {
+          "id": "action_ed-s6_7",
+          "type": "speech",
+          "text": "🫙 Pool. Jar of two token types",
+          "audioUrl": "/audio/lessons/oc-elem-defi/4-7.mp3"
+        },
+        {
+          "id": "action_ed-s6_8",
+          "type": "spotlight",
+          "elementId": "ed-s6-ct2"
+        },
+        {
+          "id": "action_ed-s6_9",
+          "type": "speech",
+          "text": "🔄 Swap. Trade against the pool",
+          "audioUrl": "/audio/lessons/oc-elem-defi/4-9.mp3"
+        },
+        {
+          "id": "action_ed-s6_10",
+          "type": "spotlight",
+          "elementId": "ed-s6-ct3"
+        },
+        {
+          "id": "action_ed-s6_11",
+          "type": "speech",
+          "text": "💰 LP Fee. Earn % of every swap",
+          "audioUrl": "/audio/lessons/oc-elem-defi/4-11.mp3"
+        },
+        {
+          "id": "action_ed-s6_12",
+          "type": "spotlight",
+          "elementId": "ed-s6-ct4"
+        },
+        {
+          "id": "action_ed-s6_13",
+          "type": "speech",
+          "text": "🚨 Rug Pull. Team drains the pool",
+          "audioUrl": "/audio/lessons/oc-elem-defi/4-13.mp3"
+        }
+      ]
     },
     {
       "id": "ed-s3",
@@ -756,19 +1683,19 @@
           }
         ]
       },
-      "order": 3,
+      "order": 5,
       "actions": [
         {
           "id": "action_ed-s3_q0",
           "type": "speech",
           "text": "Time to test what you've learned! Answer each question and see how you do.",
-          "audioUrl": "/audio/lessons/oc-elem-defi/2-0.mp3"
+          "audioUrl": "/audio/lessons/oc-elem-defi/5-0.mp3"
         },
         {
           "id": "action_ed-s3_q1",
           "type": "speech",
           "text": "Take your time — the goal is understanding, not just getting the right answer.",
-          "audioUrl": "/audio/lessons/oc-elem-defi/2-1.mp3"
+          "audioUrl": "/audio/lessons/oc-elem-defi/5-1.mp3"
         }
       ]
     }

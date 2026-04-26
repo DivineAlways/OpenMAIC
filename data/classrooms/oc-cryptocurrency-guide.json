@@ -232,7 +232,7 @@
           ]
         }
       },
-      "order": 1,
+      "order": 0,
       "actions": [
         {
           "id": "action_cg-s1_0",
@@ -432,7 +432,7 @@
           ]
         }
       },
-      "order": 2,
+      "order": 1,
       "actions": [
         {
           "id": "action_cg-s2_0",
@@ -833,7 +833,7 @@
           ]
         }
       },
-      "order": 3,
+      "order": 2,
       "actions": [
         {
           "id": "action_cg-s3_0",
@@ -1092,7 +1092,7 @@
           ]
         }
       },
-      "order": 4,
+      "order": 3,
       "actions": [
         {
           "id": "action_cg-s4_0",
@@ -1453,7 +1453,7 @@
           ]
         }
       },
-      "order": 5,
+      "order": 4,
       "actions": [
         {
           "id": "action_cg-s5_0",
@@ -1705,7 +1705,7 @@
           ]
         }
       },
-      "order": 6,
+      "order": 5,
       "actions": [
         {
           "id": "action_cg-s6_0",
@@ -2017,7 +2017,7 @@
           ]
         }
       },
-      "order": 7,
+      "order": 6,
       "actions": [
         {
           "id": "action_cg-s7_0",
@@ -2107,6 +2107,625 @@
           "type": "speech",
           "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading.",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/7-1.mp3"
+        }
+      ],
+      "order": 7
+    },
+    {
+      "id": "ccg-s10",
+      "type": "slide",
+      "title": "⚙️ Token Design & Monetary Policy",
+      "order": 8,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ccg-s10-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f59e0b",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ccg-s10-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "ccg-s10-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ccg-s10-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>⚙️ Token Design & Monetary Policy</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ccg-s10-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>How tokenomics is engineered to create specific behaviors</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ccg-s10-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f59e0b;'>Token design</b> determines how a token behaves economically. Key variables: total supply, emission schedule, burn mechanisms, vesting schedules for team/investors, and utility requirements.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f1f5f9;'>Deflationary</b> tokens (burn > mint) create scarcity over time. BNB burns a portion of exchange fees. Ethereum burns base fees (EIP-1559). <b style='color:#f1f5f9;'>Inflationary</b> tokens fund validators/stakers but dilute holders if emissions exceed demand.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ccg-s10-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ccg-s10-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>📉 Deflationary<br/><span style=\"font-weight:400;color:#94a3b8;\">Burns exceed mints — scarcity grows</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "ccg-s10-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ccg-s10-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>📈 Inflationary<br/><span style=\"font-weight:400;color:#94a3b8;\">Emissions fund security — dilutes holders</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "ccg-s10-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ccg-s10-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>🔒 Vesting<br/><span style=\"font-weight:400;color:#94a3b8;\">Team tokens locked — reduces dump risk</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "ccg-s10-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ccg-s10-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>⚙️ Utility<br/><span style=\"font-weight:400;color:#94a3b8;\">Burning for use = sustainable tokenomics</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_ccg-s10_0",
+          "type": "spotlight",
+          "elementId": "ccg-s10-title"
+        },
+        {
+          "id": "action_ccg-s10_1",
+          "type": "speech",
+          "text": "⚙️ Token Design & Monetary Policy",
+          "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/8-1.mp3"
+        },
+        {
+          "id": "action_ccg-s10_2",
+          "type": "spotlight",
+          "elementId": "ccg-s10-sub"
+        },
+        {
+          "id": "action_ccg-s10_3",
+          "type": "speech",
+          "text": "How tokenomics is engineered to create specific behaviors",
+          "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/8-3.mp3"
+        },
+        {
+          "id": "action_ccg-s10_4",
+          "type": "spotlight",
+          "elementId": "ccg-s10-body"
+        },
+        {
+          "id": "action_ccg-s10_5",
+          "type": "speech",
+          "text": "Token design determines how a token behaves economically. Key variables: total supply, emission schedule, burn mechanisms, vesting schedules for team/investors, and utility requirements. Deflationary tokens (burn > mint) create scarcity over time. BNB burns a portion of exchange fees. Ethereum burns base fees (EIP-1559). Inflationary tokens fund validators/stakers but dilute holders if emissions exceed demand.",
+          "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/8-5.mp3"
+        },
+        {
+          "id": "action_ccg-s10_6",
+          "type": "spotlight",
+          "elementId": "ccg-s10-ct1"
+        },
+        {
+          "id": "action_ccg-s10_7",
+          "type": "speech",
+          "text": "📉 Deflationary. Burns exceed mints — scarcity grows",
+          "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/8-7.mp3"
+        },
+        {
+          "id": "action_ccg-s10_8",
+          "type": "spotlight",
+          "elementId": "ccg-s10-ct2"
+        },
+        {
+          "id": "action_ccg-s10_9",
+          "type": "speech",
+          "text": "📈 Inflationary. Emissions fund security — dilutes holders",
+          "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/8-9.mp3"
+        },
+        {
+          "id": "action_ccg-s10_10",
+          "type": "spotlight",
+          "elementId": "ccg-s10-ct3"
+        },
+        {
+          "id": "action_ccg-s10_11",
+          "type": "speech",
+          "text": "🔒 Vesting. Team tokens locked — reduces dump risk",
+          "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/8-11.mp3"
+        },
+        {
+          "id": "action_ccg-s10_12",
+          "type": "spotlight",
+          "elementId": "ccg-s10-ct4"
+        },
+        {
+          "id": "action_ccg-s10_13",
+          "type": "speech",
+          "text": "⚙️ Utility. Burning for use = sustainable tokenomics",
+          "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/8-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "ccg-s10b",
+      "type": "slide",
+      "title": "🗳️ Governance Tokens",
+      "order": 9,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ccg-s10b-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f59e0b",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ccg-s10b-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "ccg-s10b-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ccg-s10b-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🗳️ Governance Tokens</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ccg-s10b-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Crypto that gives you voting power over a protocol</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ccg-s10b-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f59e0b;'>Governance tokens</b> give holders the ability to vote on protocol decisions — fee structures, treasury spending, new features, security parameters. Uniswap's UNI, Compound's COMP, Maker's MKR.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Risks of governance: voter apathy (most holders don't vote), whale domination (large holders control outcomes), and governance attacks (acquiring enough tokens to pass malicious proposals — this happened to Beanstalk Protocol for $182M).</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ccg-s10b-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ccg-s10b-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>🗳️ Vote<br/><span style=\"font-weight:400;color:#94a3b8;\">Token holders propose and vote</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "ccg-s10b-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ccg-s10b-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>🐳 Whale Risk<br/><span style=\"font-weight:400;color:#94a3b8;\">Large holders dominate outcomes</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "ccg-s10b-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ccg-s10b-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>😴 Voter Apathy<br/><span style=\"font-weight:400;color:#94a3b8;\">Low participation = bad decisions</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "ccg-s10b-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ccg-s10b-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>⚔️ Attack<br/><span style=\"font-weight:400;color:#94a3b8;\">Buy tokens → pass malicious proposal</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_ccg-s10b_0",
+          "type": "spotlight",
+          "elementId": "ccg-s10b-title"
+        },
+        {
+          "id": "action_ccg-s10b_1",
+          "type": "speech",
+          "text": "🗳️ Governance Tokens",
+          "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/9-1.mp3"
+        },
+        {
+          "id": "action_ccg-s10b_2",
+          "type": "spotlight",
+          "elementId": "ccg-s10b-sub"
+        },
+        {
+          "id": "action_ccg-s10b_3",
+          "type": "speech",
+          "text": "Crypto that gives you voting power over a protocol",
+          "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/9-3.mp3"
+        },
+        {
+          "id": "action_ccg-s10b_4",
+          "type": "spotlight",
+          "elementId": "ccg-s10b-body"
+        },
+        {
+          "id": "action_ccg-s10b_5",
+          "type": "speech",
+          "text": "Governance tokens give holders the ability to vote on protocol decisions — fee structures, treasury spending, new features, security parameters. Uniswap's UNI, Compound's COMP, Maker's MKR. Risks of governance: voter apathy (most holders don't vote), whale domination (large holders control outcomes), and governance attacks (acquiring enough tokens to pass malicious proposals — this happened to Beanstalk Protocol for $182M).",
+          "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/9-5.mp3"
+        },
+        {
+          "id": "action_ccg-s10b_6",
+          "type": "spotlight",
+          "elementId": "ccg-s10b-ct1"
+        },
+        {
+          "id": "action_ccg-s10b_7",
+          "type": "speech",
+          "text": "🗳️ Vote. Token holders propose and vote",
+          "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/9-7.mp3"
+        },
+        {
+          "id": "action_ccg-s10b_8",
+          "type": "spotlight",
+          "elementId": "ccg-s10b-ct2"
+        },
+        {
+          "id": "action_ccg-s10b_9",
+          "type": "speech",
+          "text": "🐳 Whale Risk. Large holders dominate outcomes",
+          "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/9-9.mp3"
+        },
+        {
+          "id": "action_ccg-s10b_10",
+          "type": "spotlight",
+          "elementId": "ccg-s10b-ct3"
+        },
+        {
+          "id": "action_ccg-s10b_11",
+          "type": "speech",
+          "text": "😴 Voter Apathy. Low participation = bad decisions",
+          "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/9-11.mp3"
+        },
+        {
+          "id": "action_ccg-s10b_12",
+          "type": "spotlight",
+          "elementId": "ccg-s10b-ct4"
+        },
+        {
+          "id": "action_ccg-s10b_13",
+          "type": "speech",
+          "text": "⚔️ Attack. Buy tokens → pass malicious proposal",
+          "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/9-13.mp3"
         }
       ]
     },
@@ -2239,19 +2858,19 @@
           }
         ]
       },
-      "order": 8,
+      "order": 10,
       "actions": [
         {
           "id": "action_cg-s8_q0",
           "type": "speech",
           "text": "Time to test your knowledge! Answer each question carefully — you can review the material after the quiz.",
-          "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/8-0.mp3"
+          "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/10-0.mp3"
         },
         {
           "id": "action_cg-s8_q1",
           "type": "speech",
           "text": "Take your time with these questions. The goal is to solidify your understanding, not just pass the quiz.",
-          "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/8-1.mp3"
+          "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/10-1.mp3"
         }
       ]
     }

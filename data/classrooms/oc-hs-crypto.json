@@ -21,7 +21,7 @@
       "id": "hs-cr-s1",
       "type": "slide",
       "title": "Market Cap & Tokenomics",
-      "order": 1,
+      "order": 0,
       "content": {
         "type": "slide",
         "canvas": {
@@ -363,7 +363,7 @@
       "id": "hs-cr-s2",
       "type": "slide",
       "title": "Bitcoin Halving & Reading Price Action",
-      "order": 2,
+      "order": 1,
       "content": {
         "type": "slide",
         "canvas": {
@@ -771,10 +771,937 @@
       ]
     },
     {
+      "id": "hc-s4",
+      "type": "slide",
+      "title": "🐳 Whales & Market Manipulation",
+      "order": 2,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "hc-s4-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#eab308",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "hc-s4-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#eab308",
+              "fixedRatio": false
+            },
+            {
+              "id": "hc-s4-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "hc-s4-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🐳 Whales & Market Manipulation</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "hc-s4-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>How large holders move markets — and what to watch for</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "hc-s4-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>A <b style='color:#eab308;'>whale</b> is any wallet holding a large enough position to move the market when they buy or sell. In Bitcoin, a wallet with 1,000+ BTC qualifies. In smaller altcoins, even $500k can move the price.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Common manipulation tactics: <b style='color:#f1f5f9;'>wash trading</b> (buying and selling to yourself to fake volume), <b style='color:#f1f5f9;'>pump and dump</b> (coordinated hype then mass sell), <b style='color:#f1f5f9;'>spoofing</b> (placing and canceling large orders to fake pressure).</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "hc-s4-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#eab30820",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#eab308"
+              }
+            },
+            {
+              "id": "hc-s4-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#eab308;text-align:center;'>🐳 Whale<br/><span style=\"font-weight:400;color:#94a3b8;\">Holds enough to move price</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#eab308"
+            },
+            {
+              "id": "hc-s4-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#eab30820",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#eab308"
+              }
+            },
+            {
+              "id": "hc-s4-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#eab308;text-align:center;'>🔄 Wash Trade<br/><span style=\"font-weight:400;color:#94a3b8;\">Fake volume — self-trading</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#eab308"
+            },
+            {
+              "id": "hc-s4-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#eab30820",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#eab308"
+              }
+            },
+            {
+              "id": "hc-s4-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#eab308;text-align:center;'>📣 Pump & Dump<br/><span style=\"font-weight:400;color:#94a3b8;\">Hype it up, then sell on retail</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#eab308"
+            },
+            {
+              "id": "hc-s4-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#eab30820",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#eab308"
+              }
+            },
+            {
+              "id": "hc-s4-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#eab308;text-align:center;'>📊 On-Chain Tools<br/><span style=\"font-weight:400;color:#94a3b8;\">Track whale wallets publicly</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#eab308"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_hc-s4_0",
+          "type": "spotlight",
+          "elementId": "hc-s4-title"
+        },
+        {
+          "id": "action_hc-s4_1",
+          "type": "speech",
+          "text": "🐳 Whales & Market Manipulation",
+          "audioUrl": "/audio/lessons/oc-hs-crypto/2-1.mp3"
+        },
+        {
+          "id": "action_hc-s4_2",
+          "type": "spotlight",
+          "elementId": "hc-s4-sub"
+        },
+        {
+          "id": "action_hc-s4_3",
+          "type": "speech",
+          "text": "How large holders move markets — and what to watch for",
+          "audioUrl": "/audio/lessons/oc-hs-crypto/2-3.mp3"
+        },
+        {
+          "id": "action_hc-s4_4",
+          "type": "spotlight",
+          "elementId": "hc-s4-body"
+        },
+        {
+          "id": "action_hc-s4_5",
+          "type": "speech",
+          "text": "A whale is any wallet holding a large enough position to move the market when they buy or sell. In Bitcoin, a wallet with 1,000+ BTC qualifies. In smaller altcoins, even $500k can move the price. Common manipulation tactics: wash trading (buying and selling to yourself to fake volume), pump and dump (coordinated hype then mass sell), spoofing (placing and canceling large orders to fake pressure).",
+          "audioUrl": "/audio/lessons/oc-hs-crypto/2-5.mp3"
+        },
+        {
+          "id": "action_hc-s4_6",
+          "type": "spotlight",
+          "elementId": "hc-s4-ct1"
+        },
+        {
+          "id": "action_hc-s4_7",
+          "type": "speech",
+          "text": "🐳 Whale. Holds enough to move price",
+          "audioUrl": "/audio/lessons/oc-hs-crypto/2-7.mp3"
+        },
+        {
+          "id": "action_hc-s4_8",
+          "type": "spotlight",
+          "elementId": "hc-s4-ct2"
+        },
+        {
+          "id": "action_hc-s4_9",
+          "type": "speech",
+          "text": "🔄 Wash Trade. Fake volume — self-trading",
+          "audioUrl": "/audio/lessons/oc-hs-crypto/2-9.mp3"
+        },
+        {
+          "id": "action_hc-s4_10",
+          "type": "spotlight",
+          "elementId": "hc-s4-ct3"
+        },
+        {
+          "id": "action_hc-s4_11",
+          "type": "speech",
+          "text": "📣 Pump & Dump. Hype it up, then sell on retail",
+          "audioUrl": "/audio/lessons/oc-hs-crypto/2-11.mp3"
+        },
+        {
+          "id": "action_hc-s4_12",
+          "type": "spotlight",
+          "elementId": "hc-s4-ct4"
+        },
+        {
+          "id": "action_hc-s4_13",
+          "type": "speech",
+          "text": "📊 On-Chain Tools. Track whale wallets publicly",
+          "audioUrl": "/audio/lessons/oc-hs-crypto/2-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "hc-s5",
+      "type": "slide",
+      "title": "📖 Reading an Order Book",
+      "order": 3,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "hc-s5-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#eab308",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "hc-s5-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#eab308",
+              "fixedRatio": false
+            },
+            {
+              "id": "hc-s5-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "hc-s5-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>📖 Reading an Order Book</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "hc-s5-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The real-time record of all buy and sell intentions</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "hc-s5-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>An <b style='color:#eab308;'>order book</b> shows all active buy orders (bids) and sell orders (asks) for an asset. The gap between the highest bid and lowest ask is the <b style='color:#f1f5f9;'>spread</b>.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Large clusters of buy orders at a price level = <b style='color:#10b981;'>support</b> (price tends to bounce there). Large clusters of sell orders = <b style='color:#ef4444;'>resistance</b> (price tends to stall there). Watching the order book gives you a live pulse of market intent.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "hc-s5-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#eab30820",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#eab308"
+              }
+            },
+            {
+              "id": "hc-s5-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#eab308;text-align:center;'>📗 Bids<br/><span style=\"font-weight:400;color:#94a3b8;\">Buy orders — below current price</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#eab308"
+            },
+            {
+              "id": "hc-s5-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#eab30820",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#eab308"
+              }
+            },
+            {
+              "id": "hc-s5-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#eab308;text-align:center;'>📕 Asks<br/><span style=\"font-weight:400;color:#94a3b8;\">Sell orders — above current price</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#eab308"
+            },
+            {
+              "id": "hc-s5-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#eab30820",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#eab308"
+              }
+            },
+            {
+              "id": "hc-s5-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#eab308;text-align:center;'>↔️ Spread<br/><span style=\"font-weight:400;color:#94a3b8;\">Gap between best bid and ask</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#eab308"
+            },
+            {
+              "id": "hc-s5-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#eab30820",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#eab308"
+              }
+            },
+            {
+              "id": "hc-s5-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#eab308;text-align:center;'>💡 Depth<br/><span style=\"font-weight:400;color:#94a3b8;\">Wall of orders = support or resistance</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#eab308"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_hc-s5_0",
+          "type": "spotlight",
+          "elementId": "hc-s5-title"
+        },
+        {
+          "id": "action_hc-s5_1",
+          "type": "speech",
+          "text": "📖 Reading an Order Book",
+          "audioUrl": "/audio/lessons/oc-hs-crypto/3-1.mp3"
+        },
+        {
+          "id": "action_hc-s5_2",
+          "type": "spotlight",
+          "elementId": "hc-s5-sub"
+        },
+        {
+          "id": "action_hc-s5_3",
+          "type": "speech",
+          "text": "The real-time record of all buy and sell intentions",
+          "audioUrl": "/audio/lessons/oc-hs-crypto/3-3.mp3"
+        },
+        {
+          "id": "action_hc-s5_4",
+          "type": "spotlight",
+          "elementId": "hc-s5-body"
+        },
+        {
+          "id": "action_hc-s5_5",
+          "type": "speech",
+          "text": "An order book shows all active buy orders (bids) and sell orders (asks) for an asset. The gap between the highest bid and lowest ask is the spread . Large clusters of buy orders at a price level = support (price tends to bounce there). Large clusters of sell orders = resistance (price tends to stall there). Watching the order book gives you a live pulse of market intent.",
+          "audioUrl": "/audio/lessons/oc-hs-crypto/3-5.mp3"
+        },
+        {
+          "id": "action_hc-s5_6",
+          "type": "spotlight",
+          "elementId": "hc-s5-ct1"
+        },
+        {
+          "id": "action_hc-s5_7",
+          "type": "speech",
+          "text": "📗 Bids. Buy orders — below current price",
+          "audioUrl": "/audio/lessons/oc-hs-crypto/3-7.mp3"
+        },
+        {
+          "id": "action_hc-s5_8",
+          "type": "spotlight",
+          "elementId": "hc-s5-ct2"
+        },
+        {
+          "id": "action_hc-s5_9",
+          "type": "speech",
+          "text": "📕 Asks. Sell orders — above current price",
+          "audioUrl": "/audio/lessons/oc-hs-crypto/3-9.mp3"
+        },
+        {
+          "id": "action_hc-s5_10",
+          "type": "spotlight",
+          "elementId": "hc-s5-ct3"
+        },
+        {
+          "id": "action_hc-s5_11",
+          "type": "speech",
+          "text": "↔️ Spread. Gap between best bid and ask",
+          "audioUrl": "/audio/lessons/oc-hs-crypto/3-11.mp3"
+        },
+        {
+          "id": "action_hc-s5_12",
+          "type": "spotlight",
+          "elementId": "hc-s5-ct4"
+        },
+        {
+          "id": "action_hc-s5_13",
+          "type": "speech",
+          "text": "💡 Depth. Wall of orders = support or resistance",
+          "audioUrl": "/audio/lessons/oc-hs-crypto/3-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "hc-s6",
+      "type": "slide",
+      "title": "💧 Liquidity & Slippage",
+      "order": 4,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "hc-s6-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#eab308",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "hc-s6-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#eab308",
+              "fixedRatio": false
+            },
+            {
+              "id": "hc-s6-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "hc-s6-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>💧 Liquidity & Slippage</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "hc-s6-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Why market depth matters when you trade</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "hc-s6-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#eab308;'>Liquidity</b> is how easily you can buy or sell without moving the price. Bitcoin is highly liquid — you can trade millions of dollars without much price impact. A small altcoin is illiquid — even a $10k buy can spike the price 5%.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#eab308;'>Slippage</b> is when your order executes at a worse price than expected because there weren't enough orders at your target price. Always use limit orders when trading illiquid assets.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "hc-s6-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#eab30820",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#eab308"
+              }
+            },
+            {
+              "id": "hc-s6-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#eab308;text-align:center;'>💧 High Liquidity<br/><span style=\"font-weight:400;color:#94a3b8;\">Large trades, small price impact</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#eab308"
+            },
+            {
+              "id": "hc-s6-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#eab30820",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#eab308"
+              }
+            },
+            {
+              "id": "hc-s6-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#eab308;text-align:center;'>🏜️ Low Liquidity<br/><span style=\"font-weight:400;color:#94a3b8;\">Small trades move price a lot</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#eab308"
+            },
+            {
+              "id": "hc-s6-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#eab30820",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#eab308"
+              }
+            },
+            {
+              "id": "hc-s6-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#eab308;text-align:center;'>📉 Slippage<br/><span style=\"font-weight:400;color:#94a3b8;\">Got a worse price than expected</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#eab308"
+            },
+            {
+              "id": "hc-s6-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#eab30820",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#eab308"
+              }
+            },
+            {
+              "id": "hc-s6-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#eab308;text-align:center;'>✅ Fix<br/><span style=\"font-weight:400;color:#94a3b8;\">Use limit orders, not market orders</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#eab308"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_hc-s6_0",
+          "type": "spotlight",
+          "elementId": "hc-s6-title"
+        },
+        {
+          "id": "action_hc-s6_1",
+          "type": "speech",
+          "text": "💧 Liquidity & Slippage",
+          "audioUrl": "/audio/lessons/oc-hs-crypto/4-1.mp3"
+        },
+        {
+          "id": "action_hc-s6_2",
+          "type": "spotlight",
+          "elementId": "hc-s6-sub"
+        },
+        {
+          "id": "action_hc-s6_3",
+          "type": "speech",
+          "text": "Why market depth matters when you trade",
+          "audioUrl": "/audio/lessons/oc-hs-crypto/4-3.mp3"
+        },
+        {
+          "id": "action_hc-s6_4",
+          "type": "spotlight",
+          "elementId": "hc-s6-body"
+        },
+        {
+          "id": "action_hc-s6_5",
+          "type": "speech",
+          "text": "Liquidity is how easily you can buy or sell without moving the price. Bitcoin is highly liquid — you can trade millions of dollars without much price impact. A small altcoin is illiquid — even a $10k buy can spike the price 5%. Slippage is when your order executes at a worse price than expected because there weren't enough orders at your target price. Always use limit orders when trading illiquid assets.",
+          "audioUrl": "/audio/lessons/oc-hs-crypto/4-5.mp3"
+        },
+        {
+          "id": "action_hc-s6_6",
+          "type": "spotlight",
+          "elementId": "hc-s6-ct1"
+        },
+        {
+          "id": "action_hc-s6_7",
+          "type": "speech",
+          "text": "💧 High Liquidity. Large trades, small price impact",
+          "audioUrl": "/audio/lessons/oc-hs-crypto/4-7.mp3"
+        },
+        {
+          "id": "action_hc-s6_8",
+          "type": "spotlight",
+          "elementId": "hc-s6-ct2"
+        },
+        {
+          "id": "action_hc-s6_9",
+          "type": "speech",
+          "text": "🏜️ Low Liquidity. Small trades move price a lot",
+          "audioUrl": "/audio/lessons/oc-hs-crypto/4-9.mp3"
+        },
+        {
+          "id": "action_hc-s6_10",
+          "type": "spotlight",
+          "elementId": "hc-s6-ct3"
+        },
+        {
+          "id": "action_hc-s6_11",
+          "type": "speech",
+          "text": "📉 Slippage. Got a worse price than expected",
+          "audioUrl": "/audio/lessons/oc-hs-crypto/4-11.mp3"
+        },
+        {
+          "id": "action_hc-s6_12",
+          "type": "spotlight",
+          "elementId": "hc-s6-ct4"
+        },
+        {
+          "id": "action_hc-s6_13",
+          "type": "speech",
+          "text": "✅ Fix. Use limit orders, not market orders",
+          "audioUrl": "/audio/lessons/oc-hs-crypto/4-13.mp3"
+        }
+      ]
+    },
+    {
       "id": "hs-cr-s3",
       "type": "quiz",
       "title": "Knowledge Check — Crypto Markets High School",
-      "order": 3,
+      "order": 5,
       "content": {
         "type": "quiz",
         "questions": [
@@ -925,13 +1852,13 @@
           "id": "action_hs-cr-s3_q0",
           "type": "speech",
           "text": "Time to test your understanding of crypto markets and tokenomics. Five questions covering market cap, halving cycles, price action, and token supply mechanics.",
-          "audioUrl": "/audio/lessons/oc-hs-crypto/2-0.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-crypto/5-0.mp3"
         },
         {
           "id": "action_hs-cr-s3_q1",
           "type": "speech",
           "text": "Take your time. Understanding these concepts helps you evaluate any crypto project more clearly.",
-          "audioUrl": "/audio/lessons/oc-hs-crypto/2-1.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-crypto/5-1.mp3"
         }
       ]
     }

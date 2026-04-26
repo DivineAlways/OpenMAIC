@@ -324,7 +324,7 @@
           "audioUrl": "/audio/lessons/oc-elem-wallets/0-13.mp3"
         }
       ],
-      "order": 1
+      "order": 0
     },
     {
       "id": "ew-s2",
@@ -633,7 +633,934 @@
           "audioUrl": "/audio/lessons/oc-elem-wallets/1-13.mp3"
         }
       ],
-      "order": 2
+      "order": 1
+    },
+    {
+      "id": "ew-s4",
+      "type": "slide",
+      "title": "🏦 Custodial vs Non-Custodial",
+      "order": 2,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ew-s4-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#ef4444",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ew-s4-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef4444",
+              "fixedRatio": false
+            },
+            {
+              "id": "ew-s4-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ew-s4-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🏦 Custodial vs Non-Custodial</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ew-s4-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Who actually controls your crypto?</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ew-s4-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#ef4444;'>Custodial wallet</b> — a company (like Coinbase or Binance) holds your private keys. You log in with a username and password. Easy and convenient, but <b style='color:#f1f5f9;'>they control your money</b>. If they get hacked or go bankrupt, your funds could be lost.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#ef4444;'>Non-custodial wallet</b> — you hold your own private keys. Nobody can freeze or take your funds. This is true crypto ownership. The phrase in crypto is: <b style='color:#f59e0b;'>\"Not your keys, not your coins.\"</b></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ew-s4-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
+              }
+            },
+            {
+              "id": "ew-s4-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#ef4444;text-align:center;'>🏦 Custodial<br/><span style=\"font-weight:400;color:#94a3b8;\">Exchange holds keys — convenient</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#ef4444"
+            },
+            {
+              "id": "ew-s4-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
+              }
+            },
+            {
+              "id": "ew-s4-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#ef4444;text-align:center;'>🔑 Non-Custodial<br/><span style=\"font-weight:400;color:#94a3b8;\">You hold keys — true ownership</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#ef4444"
+            },
+            {
+              "id": "ew-s4-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
+              }
+            },
+            {
+              "id": "ew-s4-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#ef4444;text-align:center;'>⚠️ CEX Risk<br/><span style=\"font-weight:400;color:#94a3b8;\">Exchange can fail or freeze</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#ef4444"
+            },
+            {
+              "id": "ew-s4-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
+              }
+            },
+            {
+              "id": "ew-s4-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#ef4444;text-align:center;'>✅ Best Practice<br/><span style=\"font-weight:400;color:#94a3b8;\">Move large amounts off exchanges</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#ef4444"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_ew-s4_0",
+          "type": "spotlight",
+          "elementId": "ew-s4-title"
+        },
+        {
+          "id": "action_ew-s4_1",
+          "type": "speech",
+          "text": "🏦 Custodial vs Non-Custodial",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/2-1.mp3"
+        },
+        {
+          "id": "action_ew-s4_2",
+          "type": "spotlight",
+          "elementId": "ew-s4-sub"
+        },
+        {
+          "id": "action_ew-s4_3",
+          "type": "speech",
+          "text": "Who actually controls your crypto?",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/2-3.mp3"
+        },
+        {
+          "id": "action_ew-s4_4",
+          "type": "spotlight",
+          "elementId": "ew-s4-body"
+        },
+        {
+          "id": "action_ew-s4_5",
+          "type": "speech",
+          "text": "Custodial wallet — a company (like Coinbase or Binance) holds your private keys. You log in with a username and password. Easy and convenient, but they control your money . If they get hacked or go bankrupt, your funds could be lost. Non-custodial wallet — you hold your own private keys. Nobody can freeze or take your funds. This is true crypto ownership. The phrase in crypto is: \"Not your keys, not your coins.\"",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/2-5.mp3"
+        },
+        {
+          "id": "action_ew-s4_6",
+          "type": "spotlight",
+          "elementId": "ew-s4-ct1"
+        },
+        {
+          "id": "action_ew-s4_7",
+          "type": "speech",
+          "text": "🏦 Custodial. Exchange holds keys — convenient",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/2-7.mp3"
+        },
+        {
+          "id": "action_ew-s4_8",
+          "type": "spotlight",
+          "elementId": "ew-s4-ct2"
+        },
+        {
+          "id": "action_ew-s4_9",
+          "type": "speech",
+          "text": "🔑 Non-Custodial. You hold keys — true ownership",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/2-9.mp3"
+        },
+        {
+          "id": "action_ew-s4_10",
+          "type": "spotlight",
+          "elementId": "ew-s4-ct3"
+        },
+        {
+          "id": "action_ew-s4_11",
+          "type": "speech",
+          "text": "⚠️ CEX Risk. Exchange can fail or freeze",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/2-11.mp3"
+        },
+        {
+          "id": "action_ew-s4_12",
+          "type": "spotlight",
+          "elementId": "ew-s4-ct4"
+        },
+        {
+          "id": "action_ew-s4_13",
+          "type": "speech",
+          "text": "✅ Best Practice. Move large amounts off exchanges",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/2-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "ew-s5",
+      "type": "slide",
+      "title": "🌱 Seed Phrases — The Master Key",
+      "order": 3,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ew-s5-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#ef4444",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ew-s5-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef4444",
+              "fixedRatio": false
+            },
+            {
+              "id": "ew-s5-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ew-s5-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🌱 Seed Phrases — The Master Key</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ew-s5-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The 12 or 24 words that control everything</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ew-s5-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>When you create a non-custodial wallet, you get a <b style='color:#ef4444;'>seed phrase</b> — 12 or 24 random words in a specific order. These words are your master key. They can regenerate your entire wallet on any device, anywhere in the world.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f1f5f9;'>The rules:</b> Write it on paper (not digital). Store it somewhere safe and private. Never share it with anyone. Never type it into a website. <b style='color:#ef4444;'>Anyone who has your seed phrase owns all your crypto.</b></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ew-s5-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
+              }
+            },
+            {
+              "id": "ew-s5-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#ef4444;text-align:center;'>📝 Write on Paper<br/><span style=\"font-weight:400;color:#94a3b8;\">Never store digitally</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#ef4444"
+            },
+            {
+              "id": "ew-s5-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
+              }
+            },
+            {
+              "id": "ew-s5-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#ef4444;text-align:center;'>🔒 Store Safely<br/><span style=\"font-weight:400;color:#94a3b8;\">Fireproof location is best</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#ef4444"
+            },
+            {
+              "id": "ew-s5-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
+              }
+            },
+            {
+              "id": "ew-s5-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#ef4444;text-align:center;'>🚫 Never Share<br/><span style=\"font-weight:400;color:#94a3b8;\">Not with support, not with anyone</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#ef4444"
+            },
+            {
+              "id": "ew-s5-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
+              }
+            },
+            {
+              "id": "ew-s5-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#ef4444;text-align:center;'>♻️ Recovery<br/><span style=\"font-weight:400;color:#94a3b8;\">Restores wallet on any device</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#ef4444"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_ew-s5_0",
+          "type": "spotlight",
+          "elementId": "ew-s5-title"
+        },
+        {
+          "id": "action_ew-s5_1",
+          "type": "speech",
+          "text": "🌱 Seed Phrases — The Master Key",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/3-1.mp3"
+        },
+        {
+          "id": "action_ew-s5_2",
+          "type": "spotlight",
+          "elementId": "ew-s5-sub"
+        },
+        {
+          "id": "action_ew-s5_3",
+          "type": "speech",
+          "text": "The 12 or 24 words that control everything",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/3-3.mp3"
+        },
+        {
+          "id": "action_ew-s5_4",
+          "type": "spotlight",
+          "elementId": "ew-s5-body"
+        },
+        {
+          "id": "action_ew-s5_5",
+          "type": "speech",
+          "text": "When you create a non-custodial wallet, you get a seed phrase — 12 or 24 random words in a specific order. These words are your master key. They can regenerate your entire wallet on any device, anywhere in the world. The rules: Write it on paper (not digital). Store it somewhere safe and private. Never share it with anyone. Never type it into a website. Anyone who has your seed phrase owns all your crypto.",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/3-5.mp3"
+        },
+        {
+          "id": "action_ew-s5_6",
+          "type": "spotlight",
+          "elementId": "ew-s5-ct1"
+        },
+        {
+          "id": "action_ew-s5_7",
+          "type": "speech",
+          "text": "📝 Write on Paper. Never store digitally",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/3-7.mp3"
+        },
+        {
+          "id": "action_ew-s5_8",
+          "type": "spotlight",
+          "elementId": "ew-s5-ct2"
+        },
+        {
+          "id": "action_ew-s5_9",
+          "type": "speech",
+          "text": "🔒 Store Safely. Fireproof location is best",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/3-9.mp3"
+        },
+        {
+          "id": "action_ew-s5_10",
+          "type": "spotlight",
+          "elementId": "ew-s5-ct3"
+        },
+        {
+          "id": "action_ew-s5_11",
+          "type": "speech",
+          "text": "🚫 Never Share. Not with support, not with anyone",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/3-11.mp3"
+        },
+        {
+          "id": "action_ew-s5_12",
+          "type": "spotlight",
+          "elementId": "ew-s5-ct4"
+        },
+        {
+          "id": "action_ew-s5_13",
+          "type": "speech",
+          "text": "♻️ Recovery. Restores wallet on any device",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/3-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "ew-s6",
+      "type": "slide",
+      "title": "🛡️ How Not to Lose Your Funds",
+      "order": 4,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ew-s6-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#ef4444",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ew-s6-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef4444",
+              "fixedRatio": false
+            },
+            {
+              "id": "ew-s6-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ew-s6-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🛡️ How Not to Lose Your Funds</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ew-s6-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The most important safety habits in crypto</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ew-s6-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Most crypto losses are not from hacks — they are from <b style='color:#ef4444;'>human mistakes</b>. Here are the top ways people lose funds and how to avoid them.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ew-s6-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
+              }
+            },
+            {
+              "id": "ew-s6-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#ef4444;text-align:center;'>📤 Wrong Address<br/><span style=\"font-weight:400;color:#94a3b8;\">Always double-check before sending</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#ef4444"
+            },
+            {
+              "id": "ew-s6-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
+              }
+            },
+            {
+              "id": "ew-s6-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#ef4444;text-align:center;'>🌱 Lost Seed Phrase<br/><span style=\"font-weight:400;color:#94a3b8;\">Back it up in multiple safe places</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#ef4444"
+            },
+            {
+              "id": "ew-s6-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
+              }
+            },
+            {
+              "id": "ew-s6-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#ef4444;text-align:center;'>🎣 Phishing<br/><span style=\"font-weight:400;color:#94a3b8;\">Never click wallet-connect links in DMs</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#ef4444"
+            },
+            {
+              "id": "ew-s6-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444420",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
+              }
+            },
+            {
+              "id": "ew-s6-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#ef4444;text-align:center;'>📱 Phone Lost<br/><span style=\"font-weight:400;color:#94a3b8;\">Use hardware wallet for large amounts</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#ef4444"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_ew-s6_0",
+          "type": "spotlight",
+          "elementId": "ew-s6-title"
+        },
+        {
+          "id": "action_ew-s6_1",
+          "type": "speech",
+          "text": "🛡️ How Not to Lose Your Funds",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/4-1.mp3"
+        },
+        {
+          "id": "action_ew-s6_2",
+          "type": "spotlight",
+          "elementId": "ew-s6-sub"
+        },
+        {
+          "id": "action_ew-s6_3",
+          "type": "speech",
+          "text": "The most important safety habits in crypto",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/4-3.mp3"
+        },
+        {
+          "id": "action_ew-s6_4",
+          "type": "spotlight",
+          "elementId": "ew-s6-body"
+        },
+        {
+          "id": "action_ew-s6_5",
+          "type": "speech",
+          "text": "Most crypto losses are not from hacks — they are from human mistakes . Here are the top ways people lose funds and how to avoid them.",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/4-5.mp3"
+        },
+        {
+          "id": "action_ew-s6_6",
+          "type": "spotlight",
+          "elementId": "ew-s6-ct1"
+        },
+        {
+          "id": "action_ew-s6_7",
+          "type": "speech",
+          "text": "📤 Wrong Address. Always double-check before sending",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/4-7.mp3"
+        },
+        {
+          "id": "action_ew-s6_8",
+          "type": "spotlight",
+          "elementId": "ew-s6-ct2"
+        },
+        {
+          "id": "action_ew-s6_9",
+          "type": "speech",
+          "text": "🌱 Lost Seed Phrase. Back it up in multiple safe places",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/4-9.mp3"
+        },
+        {
+          "id": "action_ew-s6_10",
+          "type": "spotlight",
+          "elementId": "ew-s6-ct3"
+        },
+        {
+          "id": "action_ew-s6_11",
+          "type": "speech",
+          "text": "🎣 Phishing. Never click wallet-connect links in DMs",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/4-11.mp3"
+        },
+        {
+          "id": "action_ew-s6_12",
+          "type": "spotlight",
+          "elementId": "ew-s6-ct4"
+        },
+        {
+          "id": "action_ew-s6_13",
+          "type": "speech",
+          "text": "📱 Phone Lost. Use hardware wallet for large amounts",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/4-13.mp3"
+        }
+      ]
     },
     {
       "id": "ew-s3",
@@ -756,19 +1683,19 @@
           }
         ]
       },
-      "order": 3,
+      "order": 5,
       "actions": [
         {
           "id": "action_ew-s3_q0",
           "type": "speech",
           "text": "Time to test what you've learned! Answer each question and see how you do.",
-          "audioUrl": "/audio/lessons/oc-elem-wallets/2-0.mp3"
+          "audioUrl": "/audio/lessons/oc-elem-wallets/5-0.mp3"
         },
         {
           "id": "action_ew-s3_q1",
           "type": "speech",
           "text": "Take your time — the goal is understanding, not just getting the right answer.",
-          "audioUrl": "/audio/lessons/oc-elem-wallets/2-1.mp3"
+          "audioUrl": "/audio/lessons/oc-elem-wallets/5-1.mp3"
         }
       ]
     }

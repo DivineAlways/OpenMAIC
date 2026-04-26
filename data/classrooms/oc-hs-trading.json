@@ -21,7 +21,7 @@
       "id": "hs-tr-s1",
       "type": "slide",
       "title": "Candlestick Charts & Support/Resistance",
-      "order": 1,
+      "order": 0,
       "content": {
         "type": "slide",
         "canvas": {
@@ -387,7 +387,7 @@
       "id": "hs-tr-s2",
       "type": "slide",
       "title": "RSI, MACD, Order Types & Psychology",
-      "order": 2,
+      "order": 1,
       "content": {
         "type": "slide",
         "canvas": {
@@ -686,10 +686,937 @@
       ]
     },
     {
+      "id": "ht-s4",
+      "type": "slide",
+      "title": "📊 Trends & Volume",
+      "order": 2,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ht-s4-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f59e0b",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ht-s4-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "ht-s4-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ht-s4-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>📊 Trends & Volume</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ht-s4-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The two most important things to confirm before any trade</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ht-s4-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Price moves in <b style='color:#f59e0b;'>trends</b> — uptrend (higher highs, higher lows), downtrend (lower highs, lower lows), or sideways. Trading with the trend is far safer than against it.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f59e0b;'>Volume</b> confirms trend strength. A price breakout on high volume is reliable. The same breakout on low volume is likely a fake-out. Always confirm moves with volume before entering a position.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ht-s4-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ht-s4-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>⬆️ Uptrend<br/><span style=\"font-weight:400;color:#94a3b8;\">Higher highs, higher lows</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "ht-s4-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ht-s4-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>⬇️ Downtrend<br/><span style=\"font-weight:400;color:#94a3b8;\">Lower highs, lower lows</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "ht-s4-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ht-s4-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>📊 Volume<br/><span style=\"font-weight:400;color:#94a3b8;\">Confirms or denies the move</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "ht-s4-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ht-s4-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>⚠️ Low Volume Breakout<br/><span style=\"font-weight:400;color:#94a3b8;\">Often reverses quickly</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_ht-s4_0",
+          "type": "spotlight",
+          "elementId": "ht-s4-title"
+        },
+        {
+          "id": "action_ht-s4_1",
+          "type": "speech",
+          "text": "📊 Trends & Volume",
+          "audioUrl": "/audio/lessons/oc-hs-trading/2-1.mp3"
+        },
+        {
+          "id": "action_ht-s4_2",
+          "type": "spotlight",
+          "elementId": "ht-s4-sub"
+        },
+        {
+          "id": "action_ht-s4_3",
+          "type": "speech",
+          "text": "The two most important things to confirm before any trade",
+          "audioUrl": "/audio/lessons/oc-hs-trading/2-3.mp3"
+        },
+        {
+          "id": "action_ht-s4_4",
+          "type": "spotlight",
+          "elementId": "ht-s4-body"
+        },
+        {
+          "id": "action_ht-s4_5",
+          "type": "speech",
+          "text": "Price moves in trends — uptrend (higher highs, higher lows), downtrend (lower highs, lower lows), or sideways. Trading with the trend is far safer than against it. Volume confirms trend strength. A price breakout on high volume is reliable. The same breakout on low volume is likely a fake-out. Always confirm moves with volume before entering a position.",
+          "audioUrl": "/audio/lessons/oc-hs-trading/2-5.mp3"
+        },
+        {
+          "id": "action_ht-s4_6",
+          "type": "spotlight",
+          "elementId": "ht-s4-ct1"
+        },
+        {
+          "id": "action_ht-s4_7",
+          "type": "speech",
+          "text": "⬆️ Uptrend. Higher highs, higher lows",
+          "audioUrl": "/audio/lessons/oc-hs-trading/2-7.mp3"
+        },
+        {
+          "id": "action_ht-s4_8",
+          "type": "spotlight",
+          "elementId": "ht-s4-ct2"
+        },
+        {
+          "id": "action_ht-s4_9",
+          "type": "speech",
+          "text": "⬇️ Downtrend. Lower highs, lower lows",
+          "audioUrl": "/audio/lessons/oc-hs-trading/2-9.mp3"
+        },
+        {
+          "id": "action_ht-s4_10",
+          "type": "spotlight",
+          "elementId": "ht-s4-ct3"
+        },
+        {
+          "id": "action_ht-s4_11",
+          "type": "speech",
+          "text": "📊 Volume. Confirms or denies the move",
+          "audioUrl": "/audio/lessons/oc-hs-trading/2-11.mp3"
+        },
+        {
+          "id": "action_ht-s4_12",
+          "type": "spotlight",
+          "elementId": "ht-s4-ct4"
+        },
+        {
+          "id": "action_ht-s4_13",
+          "type": "speech",
+          "text": "⚠️ Low Volume Breakout. Often reverses quickly",
+          "audioUrl": "/audio/lessons/oc-hs-trading/2-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "ht-s5",
+      "type": "slide",
+      "title": "📉 RSI, MACD & Moving Averages",
+      "order": 3,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ht-s5-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f59e0b",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ht-s5-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "ht-s5-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ht-s5-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>📉 RSI, MACD & Moving Averages</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ht-s5-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The three indicators every trader should understand</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ht-s5-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f59e0b;'>RSI (Relative Strength Index)</b> measures momentum 0–100. Above 70 = overbought (potential sell). Below 30 = oversold (potential buy). A useful early warning system, not a standalone signal.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f59e0b;'>MACD</b> shows momentum shifts. When the MACD line crosses above the signal line = bullish. Below = bearish.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f59e0b;'>Moving Averages (MA)</b> smooth out price noise. The 50-day and 200-day MAs are widely watched. When 50 crosses above 200 = Golden Cross (very bullish). Opposite = Death Cross.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ht-s5-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ht-s5-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>📊 RSI<br/><span style=\"font-weight:400;color:#94a3b8;\">Momentum — 30 buy / 70 sell</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "ht-s5-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ht-s5-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>⚡ MACD<br/><span style=\"font-weight:400;color:#94a3b8;\">Momentum crossover signal</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "ht-s5-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ht-s5-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>〰️ Moving Avg<br/><span style=\"font-weight:400;color:#94a3b8;\">Trend direction + key levels</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "ht-s5-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ht-s5-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>✨ Golden Cross<br/><span style=\"font-weight:400;color:#94a3b8;\">50MA crosses above 200MA</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_ht-s5_0",
+          "type": "spotlight",
+          "elementId": "ht-s5-title"
+        },
+        {
+          "id": "action_ht-s5_1",
+          "type": "speech",
+          "text": "📉 RSI, MACD & Moving Averages",
+          "audioUrl": "/audio/lessons/oc-hs-trading/3-1.mp3"
+        },
+        {
+          "id": "action_ht-s5_2",
+          "type": "spotlight",
+          "elementId": "ht-s5-sub"
+        },
+        {
+          "id": "action_ht-s5_3",
+          "type": "speech",
+          "text": "The three indicators every trader should understand",
+          "audioUrl": "/audio/lessons/oc-hs-trading/3-3.mp3"
+        },
+        {
+          "id": "action_ht-s5_4",
+          "type": "spotlight",
+          "elementId": "ht-s5-body"
+        },
+        {
+          "id": "action_ht-s5_5",
+          "type": "speech",
+          "text": "RSI (Relative Strength Index) measures momentum 0–100. Above 70 = overbought (potential sell). Below 30 = oversold (potential buy). A useful early warning system, not a standalone signal. MACD shows momentum shifts. When the MACD line crosses above the signal line = bullish. Below = bearish. Moving Averages (MA) smooth out price noise. The 50-day and 200-day MAs are widely watched. When 50 crosses above 200 = Golden Cross (very bullish). Opposite = Death Cross.",
+          "audioUrl": "/audio/lessons/oc-hs-trading/3-5.mp3"
+        },
+        {
+          "id": "action_ht-s5_6",
+          "type": "spotlight",
+          "elementId": "ht-s5-ct1"
+        },
+        {
+          "id": "action_ht-s5_7",
+          "type": "speech",
+          "text": "📊 RSI. Momentum — 30 buy / 70 sell",
+          "audioUrl": "/audio/lessons/oc-hs-trading/3-7.mp3"
+        },
+        {
+          "id": "action_ht-s5_8",
+          "type": "spotlight",
+          "elementId": "ht-s5-ct2"
+        },
+        {
+          "id": "action_ht-s5_9",
+          "type": "speech",
+          "text": "⚡ MACD. Momentum crossover signal",
+          "audioUrl": "/audio/lessons/oc-hs-trading/3-9.mp3"
+        },
+        {
+          "id": "action_ht-s5_10",
+          "type": "spotlight",
+          "elementId": "ht-s5-ct3"
+        },
+        {
+          "id": "action_ht-s5_11",
+          "type": "speech",
+          "text": "〰️ Moving Avg. Trend direction + key levels",
+          "audioUrl": "/audio/lessons/oc-hs-trading/3-11.mp3"
+        },
+        {
+          "id": "action_ht-s5_12",
+          "type": "spotlight",
+          "elementId": "ht-s5-ct4"
+        },
+        {
+          "id": "action_ht-s5_13",
+          "type": "speech",
+          "text": "✨ Golden Cross. 50MA crosses above 200MA",
+          "audioUrl": "/audio/lessons/oc-hs-trading/3-13.mp3"
+        }
+      ]
+    },
+    {
+      "id": "ht-s6",
+      "type": "slide",
+      "title": "⚖️ Risk-Reward Ratio",
+      "order": 4,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ht-s6-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f59e0b",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
+          "elements": [
+            {
+              "id": "ht-s6-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "ht-s6-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ht-s6-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>⚖️ Risk-Reward Ratio</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ht-s6-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The math that separates profitable traders from losers</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ht-s6-body",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 260,
+              "rotate": 0,
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Every trade has a <b style='color:#f59e0b;'>risk-reward ratio</b>. If you risk $100 to potentially make $300, your ratio is 1:3. Professional traders require at least 1:2 before entering any trade.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>With a 1:2 ratio, you can be right only 40% of the time and still be profitable. <b style='color:#f1f5f9;'>Math beats emotion.</b> Set your stop-loss and take-profit levels before entering — never move your stop-loss to avoid a loss. That is how small losses become account-destroying losses.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "ht-s6-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ht-s6-ct1",
+              "type": "text",
+              "left": 32,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>📐 1:2 R:R<br/><span style=\"font-weight:400;color:#94a3b8;\">Risk $1 to make $2</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "ht-s6-box2",
+              "type": "shape",
+              "left": 248,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ht-s6-ct2",
+              "type": "text",
+              "left": 256,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>🛑 Stop Loss<br/><span style=\"font-weight:400;color:#94a3b8;\">Set before entry — never move it</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "ht-s6-box3",
+              "type": "shape",
+              "left": 472,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ht-s6-ct3",
+              "type": "text",
+              "left": 480,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>🎯 Take Profit<br/><span style=\"font-weight:400;color:#94a3b8;\">Know your exit before you enter</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "ht-s6-box4",
+              "type": "shape",
+              "left": 696,
+              "top": 400,
+              "width": 210,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b20",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ht-s6-ct4",
+              "type": "text",
+              "left": 704,
+              "top": 415,
+              "width": 194,
+              "height": 70,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>🧮 Math<br/><span style=\"font-weight:400;color:#94a3b8;\">40% win rate + 1:2 = profitable</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_ht-s6_0",
+          "type": "spotlight",
+          "elementId": "ht-s6-title"
+        },
+        {
+          "id": "action_ht-s6_1",
+          "type": "speech",
+          "text": "⚖️ Risk-Reward Ratio",
+          "audioUrl": "/audio/lessons/oc-hs-trading/4-1.mp3"
+        },
+        {
+          "id": "action_ht-s6_2",
+          "type": "spotlight",
+          "elementId": "ht-s6-sub"
+        },
+        {
+          "id": "action_ht-s6_3",
+          "type": "speech",
+          "text": "The math that separates profitable traders from losers",
+          "audioUrl": "/audio/lessons/oc-hs-trading/4-3.mp3"
+        },
+        {
+          "id": "action_ht-s6_4",
+          "type": "spotlight",
+          "elementId": "ht-s6-body"
+        },
+        {
+          "id": "action_ht-s6_5",
+          "type": "speech",
+          "text": "Every trade has a risk-reward ratio . If you risk $100 to potentially make $300, your ratio is 1:3. Professional traders require at least 1:2 before entering any trade. With a 1:2 ratio, you can be right only 40% of the time and still be profitable. Math beats emotion. Set your stop-loss and take-profit levels before entering — never move your stop-loss to avoid a loss. That is how small losses become account-destroying losses.",
+          "audioUrl": "/audio/lessons/oc-hs-trading/4-5.mp3"
+        },
+        {
+          "id": "action_ht-s6_6",
+          "type": "spotlight",
+          "elementId": "ht-s6-ct1"
+        },
+        {
+          "id": "action_ht-s6_7",
+          "type": "speech",
+          "text": "📐 1:2 R:R. Risk $1 to make $2",
+          "audioUrl": "/audio/lessons/oc-hs-trading/4-7.mp3"
+        },
+        {
+          "id": "action_ht-s6_8",
+          "type": "spotlight",
+          "elementId": "ht-s6-ct2"
+        },
+        {
+          "id": "action_ht-s6_9",
+          "type": "speech",
+          "text": "🛑 Stop Loss. Set before entry — never move it",
+          "audioUrl": "/audio/lessons/oc-hs-trading/4-9.mp3"
+        },
+        {
+          "id": "action_ht-s6_10",
+          "type": "spotlight",
+          "elementId": "ht-s6-ct3"
+        },
+        {
+          "id": "action_ht-s6_11",
+          "type": "speech",
+          "text": "🎯 Take Profit. Know your exit before you enter",
+          "audioUrl": "/audio/lessons/oc-hs-trading/4-11.mp3"
+        },
+        {
+          "id": "action_ht-s6_12",
+          "type": "spotlight",
+          "elementId": "ht-s6-ct4"
+        },
+        {
+          "id": "action_ht-s6_13",
+          "type": "speech",
+          "text": "🧮 Math. 40% win rate + 1:2 = profitable",
+          "audioUrl": "/audio/lessons/oc-hs-trading/4-13.mp3"
+        }
+      ]
+    },
+    {
       "id": "hs-tr-s3",
       "type": "quiz",
       "title": "Knowledge Check — Trading High School",
-      "order": 3,
+      "order": 5,
       "content": {
         "type": "quiz",
         "questions": [
@@ -840,13 +1767,13 @@
           "id": "action_hs-tr-s3_q0",
           "type": "speech",
           "text": "Five questions on trading fundamentals — RSI, support and resistance, order types, and the psychology traps that trip up most retail traders.",
-          "audioUrl": "/audio/lessons/oc-hs-trading/2-0.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/5-0.mp3"
         },
         {
           "id": "action_hs-tr-s3_q1",
           "type": "speech",
           "text": "Understanding copy trading at OnlyCrypto means understanding what makes a trader worth following. These concepts help you evaluate traders more clearly.",
-          "audioUrl": "/audio/lessons/oc-hs-trading/2-1.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/5-1.mp3"
         }
       ]
     }
