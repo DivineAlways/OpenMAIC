@@ -2,7 +2,15 @@
   "id": "oc-hs-security",
   "createdAt": "2026-04-24T00:00:00.000Z",
   "stage": {
-    "agentIds": []
+    "id": "oc-hs-security",
+    "name": "Security",
+    "description": "Phishing deep dive, rug pull red flags, smart contract exploits, OPSEC, SIM swaps, CEX vs DEX risks.",
+    "createdAt": 1745452800000,
+    "updatedAt": 1745452800000,
+    "languageDirective": "en",
+    "style": "academic",
+    "agentIds": [],
+    "generatedAgentConfigs": []
   },
   "scenes": [
     {

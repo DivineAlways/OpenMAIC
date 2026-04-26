@@ -2,7 +2,15 @@
   "id": "oc-hs-ecosystem",
   "createdAt": "2026-04-24T00:00:00.000Z",
   "stage": {
-    "agentIds": []
+    "id": "oc-hs-ecosystem",
+    "name": "Crypto Ecosystem",
+    "description": "L1 vs L2, rollup types, cross-chain bridges, DAOs, RWA tokenization, and institutional adoption.",
+    "createdAt": 1745452800000,
+    "updatedAt": 1745452800000,
+    "languageDirective": "en",
+    "style": "academic",
+    "agentIds": [],
+    "generatedAgentConfigs": []
   },
   "scenes": [
     {
