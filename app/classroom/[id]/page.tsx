@@ -60,21 +60,37 @@ export default function ClassroomDetailPage() {
               log.info('Loaded from server-side storage:', classroomId);
             } else {
               // Merge audioUrls from server into cached scenes so Ava audio plays
-              const serverSceneMap = new Map(serverScenes.map((s: { id: string }) => [s.id, s]));
-              const merged = cachedState.scenes.map((cachedScene) => {
-                const serverScene = serverSceneMap.get(cachedScene.id) as typeof cachedScene | undefined;
-                if (!serverScene || !cachedScene.actions) return cachedScene;
-                const mergedActions = cachedScene.actions.map((action, idx) => {
-                  const serverAction = serverScene.actions?.[idx];
-                  if (action.type === 'speech' && serverAction?.type === 'speech' && serverAction.audioUrl) {
-                    return { ...action, audioUrl: serverAction.audioUrl };
-                  }
-                  return action;
+              try {
+                const serverSceneMap = new Map(
+                  serverScenes.map((s: { id: string }) => [s.id, s]),
+                );
+                const merged = cachedState.scenes.map((cachedScene) => {
+                  const serverScene = serverSceneMap.get(cachedScene.id) as
+                    | (typeof cachedScene)
+                    | undefined;
+                  if (!serverScene || !Array.isArray(cachedScene.actions)) return cachedScene;
+                  const serverActions: { type?: string; audioUrl?: string }[] =
+                    Array.isArray((serverScene as { actions?: unknown[] }).actions)
+                      ? ((serverScene as { actions: { type?: string; audioUrl?: string }[] }).actions)
+                      : [];
+                  const mergedActions = cachedScene.actions.map((action, idx) => {
+                    const serverAction = serverActions[idx];
+                    if (
+                      action?.type === 'speech' &&
+                      serverAction?.type === 'speech' &&
+                      serverAction?.audioUrl
+                    ) {
+                      return { ...action, audioUrl: serverAction.audioUrl };
+                    }
+                    return action;
+                  });
+                  return { ...cachedScene, actions: mergedActions };
                 });
-                return { ...cachedScene, actions: mergedActions };
-              });
-              useStageStore.setState({ scenes: merged });
-              log.info('Merged server audioUrls into cached scenes:', classroomId);
+                useStageStore.setState({ scenes: merged });
+                log.info('Merged server audioUrls into cached scenes:', classroomId);
+              } catch (mergeErr) {
+                log.warn('audioUrl merge failed, using cached scenes as-is:', mergeErr);
+              }
             }
 
             if (stage.generatedAgentConfigs?.length) {
