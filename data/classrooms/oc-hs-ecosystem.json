@@ -42,205 +42,150 @@
             {
               "id": "hs-ec-s1-accent",
               "type": "shape",
-              "shapeType": "rectangle",
-              "position": {
-                "x": 0,
-                "y": 0
-              },
-              "size": {
-                "width": 1000,
-                "height": 6
-              },
-              "style": {
-                "fillColor": "#f59e0b",
-                "opacity": 1
-              }
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
             },
             {
               "id": "hs-ec-s1-title",
               "type": "text",
-              "text": "Layers, Bridges & DAOs",
-              "position": {
-                "x": 50,
-                "y": 30
-              },
-              "size": {
-                "width": 900,
-                "height": 50
-              },
-              "style": {
-                "fontSize": 32,
-                "fontWeight": "bold",
-                "color": "#f59e0b"
-              }
+              "left": 50,
+              "top": 30,
+              "width": 900,
+              "height": 50,
+              "rotate": 0,
+              "content": "<p style='font-size:32px;font-weight:bold;color:#f59e0b;'>Layers, Bridges &amp; DAOs</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
             },
             {
               "id": "hs-ec-s1-l1box",
               "type": "shape",
-              "shapeType": "rectangle",
-              "position": {
-                "x": 50,
-                "y": 90
-              },
-              "size": {
-                "width": 430,
-                "height": 210
-              },
-              "style": {
-                "fillColor": "#1e3a5f",
-                "borderColor": "#f59e0b",
-                "borderWidth": 2,
-                "borderRadius": 8,
-                "opacity": 1
-              }
+              "left": 50,
+              "top": 90,
+              "width": 430,
+              "height": 210,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#1e3a5f",
+              "fixedRatio": false
             },
             {
               "id": "hs-ec-s1-l1title",
               "type": "text",
-              "text": "L1 vs L2 Blockchains",
-              "position": {
-                "x": 65,
-                "y": 100
-              },
-              "size": {
-                "width": 400,
-                "height": 30
-              },
-              "style": {
-                "fontSize": 16,
-                "fontWeight": "bold",
-                "color": "#f59e0b"
-              }
+              "left": 65,
+              "top": 100,
+              "width": 400,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:16px;font-weight:bold;color:#f59e0b;'>L1 vs L2 Blockchains</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
             },
             {
               "id": "hs-ec-s1-l1content",
               "type": "text",
-              "text": "L1 = Base chain (Ethereum, XRPL, Solana)\nHandles consensus, security, finality\n\nL2 = Built on top of L1\nInherits L1 security, boosts speed/cost\n\nRollup types:\n• Optimistic: assumes valid, disputes later\n• ZK: proves validity with zero-knowledge math\n\nXRPL: native L1 — no L2 needed (4s, <$0.001)",
-              "position": {
-                "x": 65,
-                "y": 135
-              },
-              "size": {
-                "width": 400,
-                "height": 155
-              },
-              "style": {
-                "fontSize": 12,
-                "color": "#cbd5e1",
-                "lineHeight": 1.6
-              }
+              "left": 65,
+              "top": 135,
+              "width": 400,
+              "height": 155,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#cbd5e1;line-height:1.6;'>L1 = Base chain (Ethereum, XRPL, Solana)<br/>Handles consensus, security, finality<br/><br/>L2 = Built on top of L1<br/>Inherits L1 security, boosts speed/cost<br/><br/>Rollup types:<br/>• Optimistic: assumes valid, disputes later<br/>• ZK: proves validity with zero-knowledge math<br/><br/>XRPL: native L1 — no L2 needed (4s, &lt;$0.001)</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
             },
             {
               "id": "hs-ec-s1-bridgebox",
               "type": "shape",
-              "shapeType": "rectangle",
-              "position": {
-                "x": 520,
-                "y": 90
-              },
-              "size": {
-                "width": 430,
-                "height": 210
-              },
-              "style": {
-                "fillColor": "#1e3a5f",
-                "borderColor": "#f59e0b",
-                "borderWidth": 2,
-                "borderRadius": 8,
-                "opacity": 1
-              }
+              "left": 520,
+              "top": 90,
+              "width": 430,
+              "height": 210,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#1e3a5f",
+              "fixedRatio": false
             },
             {
               "id": "hs-ec-s1-bridgetitle",
               "type": "text",
-              "text": "Cross-Chain Bridges",
-              "position": {
-                "x": 535,
-                "y": 100
-              },
-              "size": {
-                "width": 400,
-                "height": 30
-              },
-              "style": {
-                "fontSize": 16,
-                "fontWeight": "bold",
-                "color": "#f59e0b"
-              }
+              "left": 535,
+              "top": 100,
+              "width": 400,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:16px;font-weight:bold;color:#f59e0b;'>Cross-Chain Bridges</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
             },
             {
               "id": "hs-ec-s1-bridgecontent",
               "type": "text",
-              "text": "Move assets between different blockchains\n\nHow it works:\n1. Lock token on Chain A\n2. Mint wrapped version on Chain B\n3. Burn wrapped version to unlock original\n\nBridge risks:\n⚠ Smart contract bugs (biggest hack vector)\n⚠ Centralized custody risk\n⚠ Oracle manipulation\n\nAlways check bridge audits before using",
-              "position": {
-                "x": 535,
-                "y": 135
-              },
-              "size": {
-                "width": 400,
-                "height": 155
-              },
-              "style": {
-                "fontSize": 12,
-                "color": "#cbd5e1",
-                "lineHeight": 1.6
-              }
+              "left": 535,
+              "top": 135,
+              "width": 400,
+              "height": 155,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#cbd5e1;line-height:1.6;'>Move assets between different blockchains<br/><br/>How it works:<br/>1. Lock token on Chain A<br/>2. Mint wrapped version on Chain B<br/>3. Burn wrapped version to unlock original<br/><br/>Bridge risks:<br/>⚠ Smart contract bugs (biggest hack vector)<br/>⚠ Centralized custody risk<br/>⚠ Oracle manipulation<br/><br/>Always check bridge audits before using</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
             },
             {
               "id": "hs-ec-s1-daobox",
               "type": "shape",
-              "shapeType": "rectangle",
-              "position": {
-                "x": 50,
-                "y": 320
-              },
-              "size": {
-                "width": 900,
-                "height": 200
-              },
-              "style": {
-                "fillColor": "#1e3a5f",
-                "borderColor": "#f59e0b",
-                "borderWidth": 2,
-                "borderRadius": 8,
-                "opacity": 1
-              }
+              "left": 50,
+              "top": 320,
+              "width": 900,
+              "height": 200,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#1e3a5f",
+              "fixedRatio": false
             },
             {
               "id": "hs-ec-s1-daotitle",
               "type": "text",
-              "text": "DAOs — Decentralized Autonomous Organizations",
-              "position": {
-                "x": 65,
-                "y": 330
-              },
-              "size": {
-                "width": 870,
-                "height": 30
-              },
-              "style": {
-                "fontSize": 16,
-                "fontWeight": "bold",
-                "color": "#f59e0b"
-              }
+              "left": 65,
+              "top": 330,
+              "width": 870,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:16px;font-weight:bold;color:#f59e0b;'>DAOs — Decentralized Autonomous Organizations</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
             },
             {
               "id": "hs-ec-s1-daocontent",
               "type": "text",
-              "text": "A DAO is an organization governed by token holders through on-chain voting — no CEO, no board, just code.\n\nGovernance flow:\nIdea proposed → Token holders vote → If passes threshold → Code executes automatically\n\nToken voting power is proportional to tokens held. Large holders (whales) can dominate votes.\nSome DAOs use quadratic voting to limit whale dominance.\n\nExamples: Uniswap (UNI), Compound (COMP), MakerDAO (MKR). XRPL has an on-chain amendment voting system.",
-              "position": {
-                "x": 65,
-                "y": 365
-              },
-              "size": {
-                "width": 870,
-                "height": 145
-              },
-              "style": {
-                "fontSize": 12,
-                "color": "#cbd5e1",
-                "lineHeight": 1.6
-              }
+              "left": 65,
+              "top": 365,
+              "width": 870,
+              "height": 145,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#cbd5e1;line-height:1.6;'>A DAO is an organization governed by token holders through on-chain voting — no CEO, no board, just code.<br/><br/>Governance flow:<br/>Idea proposed → Token holders vote → If passes threshold → Code executes automatically<br/><br/>Token voting power is proportional to tokens held. Large holders (whales) can dominate votes.<br/>Some DAOs use quadratic voting to limit whale dominance.<br/><br/>Examples: Uniswap (UNI), Compound (COMP), MakerDAO (MKR). XRPL has an on-chain amendment voting system.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
             }
           ]
         }
@@ -310,205 +255,150 @@
             {
               "id": "hs-ec-s2-accent",
               "type": "shape",
-              "shapeType": "rectangle",
-              "position": {
-                "x": 0,
-                "y": 0
-              },
-              "size": {
-                "width": 1000,
-                "height": 6
-              },
-              "style": {
-                "fillColor": "#f59e0b",
-                "opacity": 1
-              }
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
             },
             {
               "id": "hs-ec-s2-title",
               "type": "text",
-              "text": "RWAs, NFTs & Institutional Crypto",
-              "position": {
-                "x": 50,
-                "y": 30
-              },
-              "size": {
-                "width": 900,
-                "height": 50
-              },
-              "style": {
-                "fontSize": 32,
-                "fontWeight": "bold",
-                "color": "#f59e0b"
-              }
+              "left": 50,
+              "top": 30,
+              "width": 900,
+              "height": 50,
+              "rotate": 0,
+              "content": "<p style='font-size:32px;font-weight:bold;color:#f59e0b;'>RWAs, NFTs &amp; Institutional Crypto</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
             },
             {
               "id": "hs-ec-s2-rwabox",
               "type": "shape",
-              "shapeType": "rectangle",
-              "position": {
-                "x": 50,
-                "y": 90
-              },
-              "size": {
-                "width": 430,
-                "height": 220
-              },
-              "style": {
-                "fillColor": "#1e3a5f",
-                "borderColor": "#f59e0b",
-                "borderWidth": 2,
-                "borderRadius": 8,
-                "opacity": 1
-              }
+              "left": 50,
+              "top": 90,
+              "width": 430,
+              "height": 220,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#1e3a5f",
+              "fixedRatio": false
             },
             {
               "id": "hs-ec-s2-rwatitle",
               "type": "text",
-              "text": "Real World Asset (RWA) Tokenization",
-              "position": {
-                "x": 65,
-                "y": 100
-              },
-              "size": {
-                "width": 400,
-                "height": 30
-              },
-              "style": {
-                "fontSize": 15,
-                "fontWeight": "bold",
-                "color": "#f59e0b"
-              }
+              "left": 65,
+              "top": 100,
+              "width": 400,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:15px;font-weight:bold;color:#f59e0b;'>Real World Asset (RWA) Tokenization</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
             },
             {
               "id": "hs-ec-s2-rwacontent",
               "type": "text",
-              "text": "Representing physical assets as on-chain tokens\n\nAsset types being tokenized:\n• Real estate — fractional ownership\n• Treasury bonds — on-chain yield (~$1B+)\n• Commodities — gold, oil\n• Private credit — corporate loans\n\nWhy it matters:\n24/7 trading, global access, instant settlement\nXRPL is a leading platform for tokenized assets\nBlackRock's BUIDL fund runs on-chain",
-              "position": {
-                "x": 65,
-                "y": 135
-              },
-              "size": {
-                "width": 400,
-                "height": 165
-              },
-              "style": {
-                "fontSize": 12,
-                "color": "#cbd5e1",
-                "lineHeight": 1.6
-              }
+              "left": 65,
+              "top": 135,
+              "width": 400,
+              "height": 165,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#cbd5e1;line-height:1.6;'>Representing physical assets as on-chain tokens<br/><br/>Asset types being tokenized:<br/>• Real estate — fractional ownership<br/>• Treasury bonds — on-chain yield (~$1B+)<br/>• Commodities — gold, oil<br/>• Private credit — corporate loans<br/><br/>Why it matters:<br/>24/7 trading, global access, instant settlement<br/>XRPL is a leading platform for tokenized assets<br/>BlackRock&#x27;s BUIDL fund runs on-chain</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
             },
             {
               "id": "hs-ec-s2-nftbox",
               "type": "shape",
-              "shapeType": "rectangle",
-              "position": {
-                "x": 520,
-                "y": 90
-              },
-              "size": {
-                "width": 430,
-                "height": 220
-              },
-              "style": {
-                "fillColor": "#1e3a5f",
-                "borderColor": "#f59e0b",
-                "borderWidth": 2,
-                "borderRadius": 8,
-                "opacity": 1
-              }
+              "left": 520,
+              "top": 90,
+              "width": 430,
+              "height": 220,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#1e3a5f",
+              "fixedRatio": false
             },
             {
               "id": "hs-ec-s2-nfttitle",
               "type": "text",
-              "text": "NFTs Beyond the Hype",
-              "position": {
-                "x": 535,
-                "y": 100
-              },
-              "size": {
-                "width": 400,
-                "height": 30
-              },
-              "style": {
-                "fontSize": 15,
-                "fontWeight": "bold",
-                "color": "#f59e0b"
-              }
+              "left": 535,
+              "top": 100,
+              "width": 400,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:15px;font-weight:bold;color:#f59e0b;'>NFTs Beyond the Hype</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
             },
             {
               "id": "hs-ec-s2-nftcontent",
               "type": "text",
-              "text": "NFT = Non-Fungible Token\nProves unique ownership on-chain\n\nFungible: 1 XRP = 1 XRP (interchangeable)\nNon-fungible: unique digital item (no copy)\n\nReal utility use cases:\n• Event tickets with on-chain verification\n• Digital credentials and certificates\n• Gaming items with real ownership\n• Music royalties split automatically\n\nNFTs are not images — the blockchain record\nproves ownership. The image lives off-chain.",
-              "position": {
-                "x": 535,
-                "y": 135
-              },
-              "size": {
-                "width": 400,
-                "height": 165
-              },
-              "style": {
-                "fontSize": 12,
-                "color": "#cbd5e1",
-                "lineHeight": 1.6
-              }
+              "left": 535,
+              "top": 135,
+              "width": 400,
+              "height": 165,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#cbd5e1;line-height:1.6;'>NFT = Non-Fungible Token<br/>Proves unique ownership on-chain<br/><br/>Fungible: 1 XRP = 1 XRP (interchangeable)<br/>Non-fungible: unique digital item (no copy)<br/><br/>Real utility use cases:<br/>• Event tickets with on-chain verification<br/>• Digital credentials and certificates<br/>• Gaming items with real ownership<br/>• Music royalties split automatically<br/><br/>NFTs are not images — the blockchain record<br/>proves ownership. The image lives off-chain.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
             },
             {
               "id": "hs-ec-s2-instbox",
               "type": "shape",
-              "shapeType": "rectangle",
-              "position": {
-                "x": 50,
-                "y": 330
-              },
-              "size": {
-                "width": 900,
-                "height": 185
-              },
-              "style": {
-                "fillColor": "#1e3a5f",
-                "borderColor": "#f59e0b",
-                "borderWidth": 2,
-                "borderRadius": 8,
-                "opacity": 1
-              }
+              "left": 50,
+              "top": 330,
+              "width": 900,
+              "height": 185,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#1e3a5f",
+              "fixedRatio": false
             },
             {
               "id": "hs-ec-s2-insttitle",
               "type": "text",
-              "text": "Institutional Adoption — Why It Matters",
-              "position": {
-                "x": 65,
-                "y": 340
-              },
-              "size": {
-                "width": 870,
-                "height": 30
-              },
-              "style": {
-                "fontSize": 16,
-                "fontWeight": "bold",
-                "color": "#f59e0b"
-              }
+              "left": 65,
+              "top": 340,
+              "width": 870,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:16px;font-weight:bold;color:#f59e0b;'>Institutional Adoption — Why It Matters</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
             },
             {
               "id": "hs-ec-s2-instcontent",
               "type": "text",
-              "text": "Spot Bitcoin ETFs launched Jan 2024 — BlackRock, Fidelity, and 9 others now offer Bitcoin to traditional investors\nFirst week: $4.6B in inflows (largest ETF launch in history)\n\nWhat institutional money brings:\n• Deeper liquidity — harder to manipulate price\n• Regulatory legitimacy — governments must respond\n• Custody infrastructure — enterprise-grade security\n• Mainstream awareness — your uncle now asks about Bitcoin\n\nXRP and Ripple: working with 350+ financial institutions on cross-border payments using XRPL",
-              "position": {
-                "x": 65,
-                "y": 375
-              },
-              "size": {
-                "width": 870,
-                "height": 130
-              },
-              "style": {
-                "fontSize": 12,
-                "color": "#cbd5e1",
-                "lineHeight": 1.6
-              }
+              "left": 65,
+              "top": 375,
+              "width": 870,
+              "height": 130,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#cbd5e1;line-height:1.6;'>Spot Bitcoin ETFs launched Jan 2024 — BlackRock, Fidelity, and 9 others now offer Bitcoin to traditional investors<br/>First week: $4.6B in inflows (largest ETF launch in history)<br/><br/>What institutional money brings:<br/>• Deeper liquidity — harder to manipulate price<br/>• Regulatory legitimacy — governments must respond<br/>• Custody infrastructure — enterprise-grade security<br/>• Mainstream awareness — your uncle now asks about Bitcoin<br/><br/>XRP and Ripple: working with 350+ financial institutions on cross-border payments using XRPL</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
             }
           ]
         }
@@ -578,205 +468,150 @@
             {
               "id": "hs-ec-s3-accent",
               "type": "shape",
-              "shapeType": "rectangle",
-              "position": {
-                "x": 0,
-                "y": 0
-              },
-              "size": {
-                "width": 1000,
-                "height": 6
-              },
-              "style": {
-                "fillColor": "#f59e0b",
-                "opacity": 1
-              }
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
             },
             {
               "id": "hs-ec-s3-title",
               "type": "text",
-              "text": "Who's in the Ecosystem?",
-              "position": {
-                "x": 50,
-                "y": 30
-              },
-              "size": {
-                "width": 900,
-                "height": 50
-              },
-              "style": {
-                "fontSize": 32,
-                "fontWeight": "bold",
-                "color": "#f59e0b"
-              }
+              "left": 50,
+              "top": 30,
+              "width": 900,
+              "height": 50,
+              "rotate": 0,
+              "content": "<p style='font-size:32px;font-weight:bold;color:#f59e0b;'>Who&#x27;s in the Ecosystem?</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
             },
             {
               "id": "hs-ec-s3-sectorsbox",
               "type": "shape",
-              "shapeType": "rectangle",
-              "position": {
-                "x": 50,
-                "y": 90
-              },
-              "size": {
-                "width": 430,
-                "height": 240
-              },
-              "style": {
-                "fillColor": "#1e3a5f",
-                "borderColor": "#f59e0b",
-                "borderWidth": 2,
-                "borderRadius": 8,
-                "opacity": 1
-              }
+              "left": 50,
+              "top": 90,
+              "width": 430,
+              "height": 240,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#1e3a5f",
+              "fixedRatio": false
             },
             {
               "id": "hs-ec-s3-sectorstitle",
               "type": "text",
-              "text": "Crypto Sector Map",
-              "position": {
-                "x": 65,
-                "y": 100
-              },
-              "size": {
-                "width": 400,
-                "height": 30
-              },
-              "style": {
-                "fontSize": 16,
-                "fontWeight": "bold",
-                "color": "#f59e0b"
-              }
+              "left": 65,
+              "top": 100,
+              "width": 400,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:16px;font-weight:bold;color:#f59e0b;'>Crypto Sector Map</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
             },
             {
               "id": "hs-ec-s3-sectorscontent",
               "type": "text",
-              "text": "Layer 1s — base blockchains (BTC, ETH, XRP, SOL)\n\nDeFi — DEXs, lending, stablecoins, yield\n\nCeFi — centralized exchanges (Coinbase, Kraken)\n\nNFT & Gaming — digital ownership, GameFi\n\nRWA — tokenized real-world assets\n\nInfrastructure — oracles (Chainlink), storage (IPFS)\n\nPayments — cross-border (XRP), stablecoin rails\n\nPrivacy — privacy coins, ZK technology",
-              "position": {
-                "x": 65,
-                "y": 135
-              },
-              "size": {
-                "width": 400,
-                "height": 185
-              },
-              "style": {
-                "fontSize": 12,
-                "color": "#cbd5e1",
-                "lineHeight": 1.7
-              }
+              "left": 65,
+              "top": 135,
+              "width": 400,
+              "height": 185,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#cbd5e1;line-height:1.7;'>Layer 1s — base blockchains (BTC, ETH, XRP, SOL)<br/><br/>DeFi — DEXs, lending, stablecoins, yield<br/><br/>CeFi — centralized exchanges (Coinbase, Kraken)<br/><br/>NFT &amp; Gaming — digital ownership, GameFi<br/><br/>RWA — tokenized real-world assets<br/><br/>Infrastructure — oracles (Chainlink), storage (IPFS)<br/><br/>Payments — cross-border (XRP), stablecoin rails<br/><br/>Privacy — privacy coins, ZK technology</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
             },
             {
               "id": "hs-ec-s3-rolesbox",
               "type": "shape",
-              "shapeType": "rectangle",
-              "position": {
-                "x": 520,
-                "y": 90
-              },
-              "size": {
-                "width": 430,
-                "height": 240
-              },
-              "style": {
-                "fillColor": "#1e3a5f",
-                "borderColor": "#f59e0b",
-                "borderWidth": 2,
-                "borderRadius": 8,
-                "opacity": 1
-              }
+              "left": 520,
+              "top": 90,
+              "width": 430,
+              "height": 240,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#1e3a5f",
+              "fixedRatio": false
             },
             {
               "id": "hs-ec-s3-rolestitle",
               "type": "text",
-              "text": "Ecosystem Participants",
-              "position": {
-                "x": 535,
-                "y": 100
-              },
-              "size": {
-                "width": 400,
-                "height": 30
-              },
-              "style": {
-                "fontSize": 16,
-                "fontWeight": "bold",
-                "color": "#f59e0b"
-              }
+              "left": 535,
+              "top": 100,
+              "width": 400,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:16px;font-weight:bold;color:#f59e0b;'>Ecosystem Participants</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
             },
             {
               "id": "hs-ec-s3-rolescontent",
               "type": "text",
-              "text": "Miners / Validators — secure the network\n\nDevelopers — build protocols and apps\n\nLiquidity Providers — fund DEX liquidity pools\n\nTraders — speculate on price movements\n\nHODLers — long-term holders, reduce supply\n\nOracles — feed real-world data on-chain\n\nAuditors — review smart contract security\n\nRegulators — set the rules of the game\nMarket Makers — keep spreads tight on exchanges",
-              "position": {
-                "x": 535,
-                "y": 135
-              },
-              "size": {
-                "width": 400,
-                "height": 185
-              },
-              "style": {
-                "fontSize": 12,
-                "color": "#cbd5e1",
-                "lineHeight": 1.7
-              }
+              "left": 535,
+              "top": 135,
+              "width": 400,
+              "height": 185,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#cbd5e1;line-height:1.7;'>Miners / Validators — secure the network<br/><br/>Developers — build protocols and apps<br/><br/>Liquidity Providers — fund DEX liquidity pools<br/><br/>Traders — speculate on price movements<br/><br/>HODLers — long-term holders, reduce supply<br/><br/>Oracles — feed real-world data on-chain<br/><br/>Auditors — review smart contract security<br/><br/>Regulators — set the rules of the game<br/>Market Makers — keep spreads tight on exchanges</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
             },
             {
               "id": "hs-ec-s3-ocbox",
               "type": "shape",
-              "shapeType": "rectangle",
-              "position": {
-                "x": 50,
-                "y": 350
-              },
-              "size": {
-                "width": 900,
-                "height": 160
-              },
-              "style": {
-                "fillColor": "#422006",
-                "borderColor": "#f59e0b",
-                "borderWidth": 2,
-                "borderRadius": 8,
-                "opacity": 1
-              }
+              "left": 50,
+              "top": 350,
+              "width": 900,
+              "height": 160,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#422006",
+              "fixedRatio": false
             },
             {
               "id": "hs-ec-s3-octitle",
               "type": "text",
-              "text": "Your Place in the Ecosystem",
-              "position": {
-                "x": 65,
-                "y": 360
-              },
-              "size": {
-                "width": 870,
-                "height": 30
-              },
-              "style": {
-                "fontSize": 16,
-                "fontWeight": "bold",
-                "color": "#f59e0b"
-              }
+              "left": 65,
+              "top": 360,
+              "width": 870,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:16px;font-weight:bold;color:#f59e0b;'>Your Place in the Ecosystem</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
             },
             {
               "id": "hs-ec-s3-occontent",
               "type": "text",
-              "text": "OnlyCrypto positions you to operate across multiple ecosystem roles simultaneously:\n\nAs a trader — you follow expert traders and participate in market movements\nAs an educator — you share knowledge and earn from the Academy educator pool\nAs a community member — you grow a network and earn referral income\n\nUnderstanding the full ecosystem map means you can identify opportunities others miss.\nThe ecosystem is still early — most participants don't yet understand L2s, DAOs, or RWAs.\nThat gap is your advantage.",
-              "position": {
-                "x": 65,
-                "y": 395
-              },
-              "size": {
-                "width": 870,
-                "height": 105
-              },
-              "style": {
-                "fontSize": 12,
-                "color": "#fde68a",
-                "lineHeight": 1.6
-              }
+              "left": 65,
+              "top": 395,
+              "width": 870,
+              "height": 105,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#fde68a;line-height:1.6;'>OnlyCrypto positions you to operate across multiple ecosystem roles simultaneously:<br/><br/>As a trader — you follow expert traders and participate in market movements<br/>As an educator — you share knowledge and earn from the Academy educator pool<br/>As a community member — you grow a network and earn referral income<br/><br/>Understanding the full ecosystem map means you can identify opportunities others miss.<br/>The ecosystem is still early — most participants don&#x27;t yet understand L2s, DAOs, or RWAs.<br/>That gap is your advantage.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#fde68a"
             }
           ]
         }
