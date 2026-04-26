@@ -254,7 +254,8 @@
         {
           "id": "action_ee-s1_1",
           "type": "speech",
-          "text": "🌍 The Crypto World"
+          "text": "🌍 The Crypto World",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/0-1.mp3"
         },
         {
           "id": "action_ee-s1_2",
@@ -264,7 +265,8 @@
         {
           "id": "action_ee-s1_3",
           "type": "speech",
-          "text": "Crypto isn't just money — it's a whole ecosystem"
+          "text": "Crypto isn't just money — it's a whole ecosystem",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/0-3.mp3"
         },
         {
           "id": "action_ee-s1_4",
@@ -274,7 +276,8 @@
         {
           "id": "action_ee-s1_5",
           "type": "speech",
-          "text": "When most people hear 'crypto' they think of Bitcoin. But the crypto world is actually massive — like how the internet isn't just email. There are games, art, banking, social media, and entire economies all built on blockchain. Here's a quick tour."
+          "text": "When most people hear 'crypto' they think of Bitcoin. But the crypto world is actually massive — like how the internet isn't just email. There are games, art, banking, social media, and entire economies all built on blockchain. Here's a quick tour.",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/0-5.mp3"
         },
         {
           "id": "action_ee-s1_6",
@@ -284,7 +287,8 @@
         {
           "id": "action_ee-s1_7",
           "type": "speech",
-          "text": "🎮 Gaming Play-to-earn — own your in-game items as NFTs"
+          "text": "🎮 Gaming Play-to-earn — own your in-game items as NFTs",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/0-7.mp3"
         },
         {
           "id": "action_ee-s1_8",
@@ -294,7 +298,8 @@
         {
           "id": "action_ee-s1_9",
           "type": "speech",
-          "text": "🖼️ NFTs Unique digital ownership certificates"
+          "text": "🖼️ NFTs Unique digital ownership certificates",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/0-9.mp3"
         },
         {
           "id": "action_ee-s1_10",
@@ -304,7 +309,8 @@
         {
           "id": "action_ee-s1_11",
           "type": "speech",
-          "text": "🗳️ DAOs Groups that vote on decisions using blockchain"
+          "text": "🗳️ DAOs Groups that vote on decisions using blockchain",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/0-11.mp3"
         },
         {
           "id": "action_ee-s1_12",
@@ -314,7 +320,8 @@
         {
           "id": "action_ee-s1_13",
           "type": "speech",
-          "text": "🌐 Web3 Apps Apps where you own your own data"
+          "text": "🌐 Web3 Apps Apps where you own your own data",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/0-13.mp3"
         }
       ],
       "order": 1
@@ -556,7 +563,8 @@
         {
           "id": "action_ee-s2_1",
           "type": "speech",
-          "text": "🖼️ What is an NFT?"
+          "text": "🖼️ What is an NFT?",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/1-1.mp3"
         },
         {
           "id": "action_ee-s2_2",
@@ -566,7 +574,8 @@
         {
           "id": "action_ee-s2_3",
           "type": "speech",
-          "text": "Non-Fungible Token — a one-of-a-kind digital certificate"
+          "text": "Non-Fungible Token — a one-of-a-kind digital certificate",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/1-3.mp3"
         },
         {
           "id": "action_ee-s2_4",
@@ -576,7 +585,8 @@
         {
           "id": "action_ee-s2_5",
           "type": "speech",
-          "text": "NFT = Non-Fungible Token. 'Non-fungible' means one of a kind . An NFT is a digital certificate on the blockchain that proves you own something unique. A $1 bill is fungible (swap it for any other $1). The Mona Lisa is non-fungible — there's only one original. NFTs make digital things work like the M..."
+          "text": "NFT = Non-Fungible Token. 'Non-fungible' means one of a kind . An NFT is a digital certificate on the blockchain that proves you own something unique. A $1 bill is fungible (swap it for any other $1). The Mona Lisa is non-fungible — there's only one original. NFTs make digital things work like the M...",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/1-5.mp3"
         },
         {
           "id": "action_ee-s2_6",
@@ -586,7 +596,8 @@
         {
           "id": "action_ee-s2_7",
           "type": "speech",
-          "text": "🎵 Music Artists sell song originals directly to fans"
+          "text": "🎵 Music Artists sell song originals directly to fans",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/1-7.mp3"
         },
         {
           "id": "action_ee-s2_8",
@@ -596,7 +607,8 @@
         {
           "id": "action_ee-s2_9",
           "type": "speech",
-          "text": "⚽ Sports Highlight clips owned as NFTs (NBA Top Shot)"
+          "text": "⚽ Sports Highlight clips owned as NFTs (NBA Top Shot)",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/1-9.mp3"
         },
         {
           "id": "action_ee-s2_10",
@@ -606,7 +618,8 @@
         {
           "id": "action_ee-s2_11",
           "type": "speech",
-          "text": "🎮 Gaming Own and resell your game characters"
+          "text": "🎮 Gaming Own and resell your game characters",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/1-11.mp3"
         },
         {
           "id": "action_ee-s2_12",
@@ -616,7 +629,8 @@
         {
           "id": "action_ee-s2_13",
           "type": "speech",
-          "text": "🖼️ Art Digital art sold for millions"
+          "text": "🖼️ Art Digital art sold for millions",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/1-13.mp3"
         }
       ],
       "order": 2
@@ -747,12 +761,14 @@
         {
           "id": "action_ee-s3_q0",
           "type": "speech",
-          "text": "Time to test what you've learned! Answer each question and see how you do."
+          "text": "Time to test what you've learned! Answer each question and see how you do.",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/2-0.mp3"
         },
         {
           "id": "action_ee-s3_q1",
           "type": "speech",
-          "text": "Take your time — the goal is understanding, not just getting the right answer."
+          "text": "Take your time — the goal is understanding, not just getting the right answer.",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/2-1.mp3"
         }
       ]
     }

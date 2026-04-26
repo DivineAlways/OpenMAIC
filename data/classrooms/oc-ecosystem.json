@@ -209,7 +209,8 @@
         {
           "id": "action_ce-s1_1",
           "type": "speech",
-          "text": "Tokenomics — the economics of tokens — is why most crypto projects fail and what makes the few successful ones work."
+          "text": "Tokenomics — the economics of tokens — is why most crypto projects fail and what makes the few successful ones work.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/0-1.mp3"
         },
         {
           "id": "action_ce-s1_2",
@@ -219,7 +220,8 @@
         {
           "id": "action_ce-s1_3",
           "type": "speech",
-          "text": "Supply, demand, velocity, and value capture — the four dimensions that determine whether a token is worth holding."
+          "text": "Supply, demand, velocity, and value capture — the four dimensions that determine whether a token is worth holding.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/0-3.mp3"
         },
         {
           "id": "action_ce-s1_4",
@@ -229,7 +231,8 @@
         {
           "id": "action_ce-s1_5",
           "type": "speech",
-          "text": "Tokenomics fundamentals: supply can be fixed like Bitcoin at 21 million, inflationary, or deflationary via burning. Distribution matters — concentrated early allocations to insiders often signal future sell pressure. Emission schedules reveal when that pressure hits."
+          "text": "Tokenomics fundamentals: supply can be fixed like Bitcoin at 21 million, inflationary, or deflationary via burning. Distribution matters — concentrated early allocations to insiders often signal future sell pressure. Emission schedules reveal when that pressure hits.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/0-5.mp3"
         },
         {
           "id": "action_ce-s1_6",
@@ -239,7 +242,8 @@
         {
           "id": "action_ce-s1_7",
           "type": "speech",
-          "text": "The velocity problem is subtle but critical: high usage does not automatically mean high token value. If a token is used purely as a medium of exchange and users convert immediately, velocity is high and holding demand is low. Good tokenomics creates reasons to hold."
+          "text": "The velocity problem is subtle but critical: high usage does not automatically mean high token value. If a token is used purely as a medium of exchange and users convert immediately, velocity is high and holding demand is low. Good tokenomics creates reasons to hold.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/0-7.mp3"
         }
       ]
     },
@@ -427,7 +431,8 @@
         {
           "id": "action_ce-s2_1",
           "type": "speech",
-          "text": "Layer 2 rollups are Ethereum's answer to scaling — and they're working."
+          "text": "Layer 2 rollups are Ethereum's answer to scaling — and they're working.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/1-1.mp3"
         },
         {
           "id": "action_ce-s2_2",
@@ -437,7 +442,8 @@
         {
           "id": "action_ce-s2_3",
           "type": "speech",
-          "text": "EIP-4844, also called Dencun, dropped L2 fees by up to 100 times in March 2024."
+          "text": "EIP-4844, also called Dencun, dropped L2 fees by up to 100 times in March 2024.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/1-3.mp3"
         },
         {
           "id": "action_ce-s2_4",
@@ -447,7 +453,8 @@
         {
           "id": "action_ce-s2_5",
           "type": "speech",
-          "text": "L2 transaction cost equals blob data size times blob base fee. Blobs are temporary, cheap data anchors on Ethereum for rollup proofs."
+          "text": "L2 transaction cost equals blob data size times blob base fee. Blobs are temporary, cheap data anchors on Ethereum for rollup proofs.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/1-5.mp3"
         },
         {
           "id": "action_ce-s2_6",
@@ -457,7 +464,8 @@
         {
           "id": "action_ce-s2_7",
           "type": "speech",
-          "text": "Before EIP-4844, L2s used calldata — expensive and permanent. After: fees dropped from dollars to cents. The target is 100,000 transactions per second via rollups — we're partway there."
+          "text": "Before EIP-4844, L2s used calldata — expensive and permanent. After: fees dropped from dollars to cents. The target is 100,000 transactions per second via rollups — we're partway there.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/1-7.mp3"
         },
         {
           "id": "action_ce-s2_8",
@@ -467,7 +475,8 @@
         {
           "id": "action_ce-s2_9",
           "type": "speech",
-          "text": "100 times fee reduction — that's the real-world impact of the Dencun upgrade on L2 costs."
+          "text": "100 times fee reduction — that's the real-world impact of the Dencun upgrade on L2 costs.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/1-9.mp3"
         }
       ]
     },
@@ -659,7 +668,8 @@
         {
           "id": "action_ce-s3_1",
           "type": "speech",
-          "text": "Not all rollups are built the same. The two dominant approaches — Optimistic and ZK — make fundamentally different security trade-offs."
+          "text": "Not all rollups are built the same. The two dominant approaches — Optimistic and ZK — make fundamentally different security trade-offs.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/2-1.mp3"
         },
         {
           "id": "action_ce-s3_2",
@@ -669,7 +679,8 @@
         {
           "id": "action_ce-s3_3",
           "type": "speech",
-          "text": "One uses game theory, the other uses math. Both inherit Ethereum's security. Neither is strictly better."
+          "text": "One uses game theory, the other uses math. Both inherit Ethereum's security. Neither is strictly better.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/2-3.mp3"
         },
         {
           "id": "action_ce-s3_4",
@@ -679,7 +690,8 @@
         {
           "id": "action_ce-s3_5",
           "type": "speech",
-          "text": "Optimistic rollups assume transactions are valid unless challenged. They have a 7-day fraud proof window before finality. Cheaper to build, battle-tested. Arbitrum and Optimism are the dominant examples."
+          "text": "Optimistic rollups assume transactions are valid unless challenged. They have a 7-day fraud proof window before finality. Cheaper to build, battle-tested. Arbitrum and Optimism are the dominant examples.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/2-5.mp3"
         },
         {
           "id": "action_ce-s3_6",
@@ -689,7 +701,8 @@
         {
           "id": "action_ce-s3_7",
           "type": "speech",
-          "text": "ZK rollups provide a mathematical proof — a validity proof — for every state transition. Instant finality, no challenge period. More computationally expensive to generate proofs. zkSync and Starknet are leading examples."
+          "text": "ZK rollups provide a mathematical proof — a validity proof — for every state transition. Instant finality, no challenge period. More computationally expensive to generate proofs. zkSync and Starknet are leading examples.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/2-7.mp3"
         }
       ]
     },
@@ -885,7 +898,8 @@
         {
           "id": "action_ce-s4_1",
           "type": "speech",
-          "text": "Governance and stablecoins are two of the most underestimated risk vectors in crypto ecosystems."
+          "text": "Governance and stablecoins are two of the most underestimated risk vectors in crypto ecosystems.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/3-1.mp3"
         },
         {
           "id": "action_ce-s4_2",
@@ -895,7 +909,8 @@
         {
           "id": "action_ce-s4_3",
           "type": "speech",
-          "text": "Smart contracts can give token holders power — but flash loans can borrow that power for a single transaction."
+          "text": "Smart contracts can give token holders power — but flash loans can borrow that power for a single transaction.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/3-3.mp3"
         },
         {
           "id": "action_ce-s4_4",
@@ -905,7 +920,8 @@
         {
           "id": "action_ce-s4_5",
           "type": "speech",
-          "text": "The Beanstalk exploit in 2022: an attacker flash-loaned majority governance tokens, passed a malicious proposal in a single transaction, and drained 182 million dollars. On-chain governance requires time delays and design safeguards to be secure."
+          "text": "The Beanstalk exploit in 2022: an attacker flash-loaned majority governance tokens, passed a malicious proposal in a single transaction, and drained 182 million dollars. On-chain governance requires time delays and design safeguards to be secure.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/3-5.mp3"
         },
         {
           "id": "action_ce-s4_6",
@@ -915,7 +931,8 @@
         {
           "id": "action_ce-s4_7",
           "type": "speech",
-          "text": "Stablecoin types: fiat-backed like USDC requires trust in the issuer but is the most reliable. Crypto-collateralized like DAI is decentralized but more complex. Algorithmic stablecoins like Luna have a history of catastrophic failure — the mechanism collapses in a death spiral under selling pressure."
+          "text": "Stablecoin types: fiat-backed like USDC requires trust in the issuer but is the most reliable. Crypto-collateralized like DAI is decentralized but more complex. Algorithmic stablecoins like Luna have a history of catastrophic failure — the mechanism collapses in a death spiral under selling pressure.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/3-7.mp3"
         }
       ]
     },
@@ -1193,7 +1210,8 @@
         {
           "id": "action_ce-s5_1",
           "type": "speech",
-          "text": "Blockchain is past the 'theoretical use case' phase. Real adoption at scale is happening now."
+          "text": "Blockchain is past the 'theoretical use case' phase. Real adoption at scale is happening now.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/4-1.mp3"
         },
         {
           "id": "action_ce-s5_2",
@@ -1203,7 +1221,8 @@
         {
           "id": "action_ce-s5_3",
           "type": "speech",
-          "text": "Real World Assets, institutional ETFs, and CBDCs — three adoption vectors you need to understand."
+          "text": "Real World Assets, institutional ETFs, and CBDCs — three adoption vectors you need to understand.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/4-3.mp3"
         },
         {
           "id": "action_ce-s5_4",
@@ -1213,7 +1232,8 @@
         {
           "id": "action_ce-s5_5",
           "type": "speech",
-          "text": "RWA tokenization: over 7 billion dollar market in 2024. BlackRock's BUIDL fund has tokenized over 500 million dollars in treasury bonds on-chain. Fractional ownership of real estate and private equity is following."
+          "text": "RWA tokenization: over 7 billion dollar market in 2024. BlackRock's BUIDL fund has tokenized over 500 million dollars in treasury bonds on-chain. Fractional ownership of real estate and private equity is following.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/4-5.mp3"
         },
         {
           "id": "action_ce-s5_6",
@@ -1223,7 +1243,8 @@
         {
           "id": "action_ce-s5_7",
           "type": "speech",
-          "text": "Institutional entry: BlackRock's Bitcoin ETF surpassed 10 billion dollars in assets under management in its first year. This is traditional finance bringing trillions in potential capital to crypto rails."
+          "text": "Institutional entry: BlackRock's Bitcoin ETF surpassed 10 billion dollars in assets under management in its first year. This is traditional finance bringing trillions in potential capital to crypto rails.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/4-7.mp3"
         },
         {
           "id": "action_ce-s5_8",
@@ -1233,7 +1254,8 @@
         {
           "id": "action_ce-s5_9",
           "type": "speech",
-          "text": "CBDCs: China's e-CNY has processed over 250 billion dollars. The EU digital euro targets 2026. The risk: programmable money can have spending restrictions built in — a significant civil liberties concern."
+          "text": "CBDCs: China's e-CNY has processed over 250 billion dollars. The EU digital euro targets 2026. The risk: programmable money can have spending restrictions built in — a significant civil liberties concern.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/4-9.mp3"
         }
       ]
     },
@@ -1511,7 +1533,8 @@
         {
           "id": "action_ce-s6_1",
           "type": "speech",
-          "text": "Beyond DeFi and payments, crypto has spawned entirely new digital asset categories."
+          "text": "Beyond DeFi and payments, crypto has spawned entirely new digital asset categories.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/5-1.mp3"
         },
         {
           "id": "action_ce-s6_2",
@@ -1521,7 +1544,8 @@
         {
           "id": "action_ce-s6_3",
           "type": "speech",
-          "text": "NFTs, Web3 identity, decentralized physical infrastructure, and AI convergence — the emerging frontier."
+          "text": "NFTs, Web3 identity, decentralized physical infrastructure, and AI convergence — the emerging frontier.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/5-3.mp3"
         },
         {
           "id": "action_ce-s6_4",
@@ -1531,7 +1555,8 @@
         {
           "id": "action_ce-s6_5",
           "type": "speech",
-          "text": "NFTs and digital ownership: ERC-721 tokens create unique, verifiable on-chain ownership. Gaming, digital art, and intellectual property rights are the current use cases. The speculation phase ended; the infrastructure remains."
+          "text": "NFTs and digital ownership: ERC-721 tokens create unique, verifiable on-chain ownership. Gaming, digital art, and intellectual property rights are the current use cases. The speculation phase ended; the infrastructure remains.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/5-5.mp3"
         },
         {
           "id": "action_ce-s6_6",
@@ -1541,7 +1566,8 @@
         {
           "id": "action_ce-s6_7",
           "type": "speech",
-          "text": "Web3 identity: Ethereum Name Service gives you a human-readable wallet address like yourname.eth. Soulbound tokens — non-transferable credentials — enable on-chain reputation and verified achievements."
+          "text": "Web3 identity: Ethereum Name Service gives you a human-readable wallet address like yourname.eth. Soulbound tokens — non-transferable credentials — enable on-chain reputation and verified achievements.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/5-7.mp3"
         },
         {
           "id": "action_ce-s6_8",
@@ -1551,7 +1577,8 @@
         {
           "id": "action_ce-s6_9",
           "type": "speech",
-          "text": "DePIN — Decentralized Physical Infrastructure Networks: Helium for wireless, Render for GPU compute, Hivemapper for mapping. Token incentives coordinate real-world hardware deployment."
+          "text": "DePIN — Decentralized Physical Infrastructure Networks: Helium for wireless, Render for GPU compute, Hivemapper for mapping. Token incentives coordinate real-world hardware deployment.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/5-9.mp3"
         },
         {
           "id": "action_ce-s6_10",
@@ -1561,7 +1588,8 @@
         {
           "id": "action_ce-s6_11",
           "type": "speech",
-          "text": "AI plus crypto: compute markets like Bittensor let users sell ML model outputs. Zero-knowledge proofs of model runs can verify AI outputs without revealing the model. Agent economies are emerging where autonomous AI agents transact on-chain."
+          "text": "AI plus crypto: compute markets like Bittensor let users sell ML model outputs. Zero-knowledge proofs of model runs can verify AI outputs without revealing the model. Agent economies are emerging where autonomous AI agents transact on-chain.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/5-11.mp3"
         }
       ]
     },
@@ -1757,7 +1785,8 @@
         {
           "id": "action_ce-s7_1",
           "type": "speech",
-          "text": "Regulatory clarity is coming — faster in some jurisdictions than others. Understanding where the industry is heading helps you position appropriately."
+          "text": "Regulatory clarity is coming — faster in some jurisdictions than others. Understanding where the industry is heading helps you position appropriately.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/6-1.mp3"
         },
         {
           "id": "action_ce-s7_2",
@@ -1767,7 +1796,8 @@
         {
           "id": "action_ce-s7_3",
           "type": "speech",
-          "text": "The US, EU, and Asia are taking different regulatory approaches. Knowing each matters for compliance and opportunity."
+          "text": "The US, EU, and Asia are taking different regulatory approaches. Knowing each matters for compliance and opportunity.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/6-3.mp3"
         },
         {
           "id": "action_ce-s7_4",
@@ -1777,7 +1807,8 @@
         {
           "id": "action_ce-s7_5",
           "type": "speech",
-          "text": "Regulatory landscape: in the US, the SEC and CFTC battle over jurisdiction. ETF approval was a milestone toward legitimacy. Most tokens may be classified as securities — which changes how they can be sold and held. MiCA in the EU provides clearer, more structured rules."
+          "text": "Regulatory landscape: in the US, the SEC and CFTC battle over jurisdiction. ETF approval was a milestone toward legitimacy. Most tokens may be classified as securities — which changes how they can be sold and held. MiCA in the EU provides clearer, more structured rules.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/6-5.mp3"
         },
         {
           "id": "action_ce-s7_6",
@@ -1787,7 +1818,8 @@
         {
           "id": "action_ce-s7_7",
           "type": "speech",
-          "text": "Where OnlyCrypto fits: every membership payment and commission runs on the XRPL — settled in 3 to 5 seconds for a fraction of a cent. This is financial infrastructure already built and running. This course is teaching you how to use it."
+          "text": "Where OnlyCrypto fits: every membership payment and commission runs on the XRPL — settled in 3 to 5 seconds for a fraction of a cent. This is financial infrastructure already built and running. This course is teaching you how to use it.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/6-7.mp3"
         }
       ]
     },
@@ -1803,12 +1835,14 @@
         {
           "id": "action_ec-interactive_i0",
           "type": "speech",
-          "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered."
+          "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/7-0.mp3"
         },
         {
           "id": "action_ec-interactive_i1",
           "type": "speech",
-          "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading."
+          "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/7-1.mp3"
         }
       ]
     },
@@ -1946,12 +1980,14 @@
         {
           "id": "action_ce-s8_q0",
           "type": "speech",
-          "text": "Time to test your knowledge! Answer each question carefully — you can review the material after the quiz."
+          "text": "Time to test your knowledge! Answer each question carefully — you can review the material after the quiz.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/8-0.mp3"
         },
         {
           "id": "action_ce-s8_q1",
           "type": "speech",
-          "text": "Take your time with these questions. The goal is to solidify your understanding, not just pass the quiz."
+          "text": "Take your time with these questions. The goal is to solidify your understanding, not just pass the quiz.",
+          "audioUrl": "/audio/lessons/oc-ecosystem/8-1.mp3"
         }
       ]
     }

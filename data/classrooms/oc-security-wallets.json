@@ -336,7 +336,8 @@
         {
           "id": "action_sw-s1_1",
           "type": "speech",
-          "text": "Your seed phrase is not just a password — it's the cryptographic master key to everything in your wallet, forever."
+          "text": "Your seed phrase is not just a password — it's the cryptographic master key to everything in your wallet, forever.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/0-1.mp3"
         },
         {
           "id": "action_sw-s1_2",
@@ -346,7 +347,8 @@
         {
           "id": "action_sw-s1_3",
           "type": "speech",
-          "text": "BIP39 is the standard that turns 12 to 24 English words into a deterministic wallet."
+          "text": "BIP39 is the standard that turns 12 to 24 English words into a deterministic wallet.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/0-3.mp3"
         },
         {
           "id": "action_sw-s1_4",
@@ -356,7 +358,8 @@
         {
           "id": "action_sw-s1_5",
           "type": "speech",
-          "text": "Step one: 128 to 256 bits of true randomness from a cryptographically secure source. Your hardware wallet generates this internally."
+          "text": "Step one: 128 to 256 bits of true randomness from a cryptographically secure source. Your hardware wallet generates this internally.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/0-5.mp3"
         },
         {
           "id": "action_sw-s1_6",
@@ -366,7 +369,8 @@
         {
           "id": "action_sw-s1_7",
           "type": "speech",
-          "text": "Step two: the BIP39 wordlist maps those bits to human-readable words from a fixed 2048-word list. Easy to write down, harder to mistype than hex."
+          "text": "Step two: the BIP39 wordlist maps those bits to human-readable words from a fixed 2048-word list. Easy to write down, harder to mistype than hex.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/0-7.mp3"
         },
         {
           "id": "action_sw-s1_8",
@@ -376,7 +380,8 @@
         {
           "id": "action_sw-s1_9",
           "type": "speech",
-          "text": "Your 12 to 24 words ARE the master key. Anyone who has them has everything. Write them down once, store them securely offline."
+          "text": "Your 12 to 24 words ARE the master key. Anyone who has them has everything. Write them down once, store them securely offline.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/0-9.mp3"
         },
         {
           "id": "action_sw-s1_10",
@@ -386,7 +391,8 @@
         {
           "id": "action_sw-s1_11",
           "type": "speech",
-          "text": "PBKDF2 hashing: your seed phrase combined with an optional passphrase gets hashed into a 512-bit master seed. The passphrase adds a 25th word layer of security."
+          "text": "PBKDF2 hashing: your seed phrase combined with an optional passphrase gets hashed into a 512-bit master seed. The passphrase adds a 25th word layer of security.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/0-11.mp3"
         },
         {
           "id": "action_sw-s1_12",
@@ -396,7 +402,8 @@
         {
           "id": "action_sw-s1_13",
           "type": "speech",
-          "text": "BIP32 HD derivation: from that master seed, unlimited child keys are derived deterministically. One seed, unlimited accounts."
+          "text": "BIP32 HD derivation: from that master seed, unlimited child keys are derived deterministically. One seed, unlimited accounts.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/0-13.mp3"
         }
       ]
     },
@@ -551,7 +558,8 @@
         {
           "id": "action_sw-s2_1",
           "type": "speech",
-          "text": "BIP44 standardizes how wallets derive addresses — so the same seed phrase works across different wallets and blockchains."
+          "text": "BIP44 standardizes how wallets derive addresses — so the same seed phrase works across different wallets and blockchains.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/1-1.mp3"
         },
         {
           "id": "action_sw-s2_2",
@@ -561,7 +569,8 @@
         {
           "id": "action_sw-s2_3",
           "type": "speech",
-          "text": "The derivation path tells your wallet exactly which account and address to generate."
+          "text": "The derivation path tells your wallet exactly which account and address to generate.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/1-3.mp3"
         },
         {
           "id": "action_sw-s2_4",
@@ -571,7 +580,8 @@
         {
           "id": "action_sw-s2_5",
           "type": "speech",
-          "text": "For XRPL: m slash 44 prime slash 144 prime slash 0 prime slash 0 slash 0. Each segment specifies purpose, coin type, account, chain, and address index."
+          "text": "For XRPL: m slash 44 prime slash 144 prime slash 0 prime slash 0 slash 0. Each segment specifies purpose, coin type, account, chain, and address index.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/1-5.mp3"
         },
         {
           "id": "action_sw-s2_6",
@@ -581,7 +591,8 @@
         {
           "id": "action_sw-s2_7",
           "type": "speech",
-          "text": "The prime marks indicate hardened derivation — child keys cannot be derived from the parent public key alone, adding security. 144 is XRPL's registered coin type. This is why your Ledger knows where your XRPL address is without you telling it."
+          "text": "The prime marks indicate hardened derivation — child keys cannot be derived from the parent public key alone, adding security. 144 is XRPL's registered coin type. This is why your Ledger knows where your XRPL address is without you telling it.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/1-7.mp3"
         },
         {
           "id": "action_sw-s2_8",
@@ -591,7 +602,8 @@
         {
           "id": "action_sw-s2_9",
           "type": "speech",
-          "text": "Hardened derivation is a critical security feature. Without it, if an attacker learns one derived private key, they could derive all sibling keys."
+          "text": "Hardened derivation is a critical security feature. Without it, if an attacker learns one derived private key, they could derive all sibling keys.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/1-9.mp3"
         }
       ]
     },
@@ -783,7 +795,8 @@
         {
           "id": "action_sw-s3_1",
           "type": "speech",
-          "text": "Not your keys, not your coins. Let's talk about what that actually means in practice."
+          "text": "Not your keys, not your coins. Let's talk about what that actually means in practice.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/2-1.mp3"
         },
         {
           "id": "action_sw-s3_2",
@@ -793,7 +806,8 @@
         {
           "id": "action_sw-s3_3",
           "type": "speech",
-          "text": "Hot wallets are convenient but exposed. Cold wallets are secure but less convenient. Know when to use each."
+          "text": "Hot wallets are convenient but exposed. Cold wallets are secure but less convenient. Know when to use each.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/2-3.mp3"
         },
         {
           "id": "action_sw-s3_4",
@@ -803,7 +817,8 @@
         {
           "id": "action_sw-s3_5",
           "type": "speech",
-          "text": "Hot wallets: connected to the internet, private key in software or browser extension. Convenient for daily use. MetaMask, Xumm — these are hot wallets. The risk: internet exposure, phishing, malware."
+          "text": "Hot wallets: connected to the internet, private key in software or browser extension. Convenient for daily use. MetaMask, Xumm — these are hot wallets. The risk: internet exposure, phishing, malware.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/2-5.mp3"
         },
         {
           "id": "action_sw-s3_6",
@@ -813,7 +828,8 @@
         {
           "id": "action_sw-s3_7",
           "type": "speech",
-          "text": "Cold wallets: never connected to the internet. Private key stored on a dedicated hardware device. You sign transactions offline and broadcast only the signed transaction. Ledger and Trezor. For serious holdings, cold storage is non-negotiable."
+          "text": "Cold wallets: never connected to the internet. Private key stored on a dedicated hardware device. You sign transactions offline and broadcast only the signed transaction. Ledger and Trezor. For serious holdings, cold storage is non-negotiable.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/2-7.mp3"
         }
       ]
     },
@@ -1009,7 +1025,8 @@
         {
           "id": "action_sw-s4_1",
           "type": "speech",
-          "text": "Understanding attack vectors is how you build real security — not just theoretical security."
+          "text": "Understanding attack vectors is how you build real security — not just theoretical security.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/3-1.mp3"
         },
         {
           "id": "action_sw-s4_2",
@@ -1019,7 +1036,8 @@
         {
           "id": "action_sw-s4_3",
           "type": "speech",
-          "text": "The threats range from sophisticated technical attacks to basic social engineering — and social engineering works on technically smart people too."
+          "text": "The threats range from sophisticated technical attacks to basic social engineering — and social engineering works on technically smart people too.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/3-3.mp3"
         },
         {
           "id": "action_sw-s4_4",
@@ -1029,7 +1047,8 @@
         {
           "id": "action_sw-s4_5",
           "type": "speech",
-          "text": "The five dollar wrench attack: if someone knows you hold significant crypto and is willing to threaten physical harm, no cryptography protects you. Solutions: passphrase on your seed, decoy wallets with small amounts, operational security about your holdings."
+          "text": "The five dollar wrench attack: if someone knows you hold significant crypto and is willing to threaten physical harm, no cryptography protects you. Solutions: passphrase on your seed, decoy wallets with small amounts, operational security about your holdings.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/3-5.mp3"
         },
         {
           "id": "action_sw-s4_6",
@@ -1039,7 +1058,8 @@
         {
           "id": "action_sw-s4_7",
           "type": "speech",
-          "text": "Common attack vectors: phishing — fake Ledger or MetaMask emails asking for your seed phrase. Clipboard hijacking — malware that replaces copied wallet addresses. Supply chain attacks — modified hardware wallets or compromised software packages."
+          "text": "Common attack vectors: phishing — fake Ledger or MetaMask emails asking for your seed phrase. Clipboard hijacking — malware that replaces copied wallet addresses. Supply chain attacks — modified hardware wallets or compromised software packages.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/3-7.mp3"
         }
       ]
     },
@@ -1350,7 +1370,8 @@
         {
           "id": "action_sw-s5_1",
           "type": "speech",
-          "text": "Multisig is the gold standard for securing significant holdings. No single point of failure."
+          "text": "Multisig is the gold standard for securing significant holdings. No single point of failure.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/4-1.mp3"
         },
         {
           "id": "action_sw-s5_2",
@@ -1360,7 +1381,8 @@
         {
           "id": "action_sw-s5_3",
           "type": "speech",
-          "text": "M-of-N means M signatures from N possible keys are required to authorize a transaction."
+          "text": "M-of-N means M signatures from N possible keys are required to authorize a transaction.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/4-3.mp3"
         },
         {
           "id": "action_sw-s5_4",
@@ -1370,7 +1392,8 @@
         {
           "id": "action_sw-s5_5",
           "type": "speech",
-          "text": "M-of-N setup: 2-of-3 is the most common. Any 2 of your 3 signing keys can authorize a transaction. One key can be lost without losing access."
+          "text": "M-of-N setup: 2-of-3 is the most common. Any 2 of your 3 signing keys can authorize a transaction. One key can be lost without losing access.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/4-5.mp3"
         },
         {
           "id": "action_sw-s5_6",
@@ -1380,7 +1403,8 @@
         {
           "id": "action_sw-s5_7",
           "type": "speech",
-          "text": "Geographic split: store your signing keys in different physical locations — different cities, different countries. A flood or fire can't wipe out all three."
+          "text": "Geographic split: store your signing keys in different physical locations — different cities, different countries. A flood or fire can't wipe out all three.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/4-7.mp3"
         },
         {
           "id": "action_sw-s5_8",
@@ -1390,7 +1414,8 @@
         {
           "id": "action_sw-s5_9",
           "type": "speech",
-          "text": "Hardware keys: each signer uses a dedicated hardware wallet. Even if an attacker compromises one device, they can't move funds without a second signature."
+          "text": "Hardware keys: each signer uses a dedicated hardware wallet. Even if an attacker compromises one device, they can't move funds without a second signature.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/4-9.mp3"
         },
         {
           "id": "action_sw-s5_10",
@@ -1400,7 +1425,8 @@
         {
           "id": "action_sw-s5_11",
           "type": "speech",
-          "text": "Timelock: optionally add a time delay to large transactions. This creates a review window — you have time to cancel a fraudulent transaction before it executes."
+          "text": "Timelock: optionally add a time delay to large transactions. This creates a review window — you have time to cancel a fraudulent transaction before it executes.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/4-11.mp3"
         }
       ]
     },
@@ -1645,7 +1671,8 @@
         {
           "id": "action_sw-s6_1",
           "type": "speech",
-          "text": "XRPL has built-in account security features that every OnlyCrypto member should know about."
+          "text": "XRPL has built-in account security features that every OnlyCrypto member should know about.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/5-1.mp3"
         },
         {
           "id": "action_sw-s6_2",
@@ -1655,7 +1682,8 @@
         {
           "id": "action_sw-s6_3",
           "type": "speech",
-          "text": "These are protocol-level protections, not third-party tools — they're built directly into how the ledger works."
+          "text": "These are protocol-level protections, not third-party tools — they're built directly into how the ledger works.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/5-3.mp3"
         },
         {
           "id": "action_sw-s6_4",
@@ -1665,7 +1693,8 @@
         {
           "id": "action_sw-s6_5",
           "type": "speech",
-          "text": "XRPL account flags: RequireDestTag prevents funds from being lost to missing destination tags. DisableMasterKey forces multisig, removing the single-key vulnerability. These are enforced by the ledger itself."
+          "text": "XRPL account flags: RequireDestTag prevents funds from being lost to missing destination tags. DisableMasterKey forces multisig, removing the single-key vulnerability. These are enforced by the ledger itself.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/5-5.mp3"
         },
         {
           "id": "action_sw-s6_6",
@@ -1675,7 +1704,8 @@
         {
           "id": "action_sw-s6_7",
           "type": "speech",
-          "text": "Destination tags: required for exchange deposits. The tag identifies which user is sending funds to a shared wallet address. Missing your destination tag on an exchange deposit can mean lost funds — always check."
+          "text": "Destination tags: required for exchange deposits. The tag identifies which user is sending funds to a shared wallet address. Missing your destination tag on an exchange deposit can mean lost funds — always check.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/5-7.mp3"
         },
         {
           "id": "action_sw-s6_8",
@@ -1685,7 +1715,8 @@
         {
           "id": "action_sw-s6_9",
           "type": "speech",
-          "text": "Account reserve: 1 XRP minimum to activate an XRPL account. Each trust line and offer you create requires an additional reserve. This prevents spam accounts and ensures every address on the ledger has skin in the game."
+          "text": "Account reserve: 1 XRP minimum to activate an XRPL account. Each trust line and offer you create requires an additional reserve. This prevents spam accounts and ensures every address on the ledger has skin in the game.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/5-9.mp3"
         }
       ]
     },
@@ -1963,7 +1994,8 @@
         {
           "id": "action_sw-s7_1",
           "type": "speech",
-          "text": "Seed phrase best practices are non-negotiable. Most crypto losses come from human error, not sophisticated hacks."
+          "text": "Seed phrase best practices are non-negotiable. Most crypto losses come from human error, not sophisticated hacks.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/6-1.mp3"
         },
         {
           "id": "action_sw-s7_2",
@@ -1973,7 +2005,8 @@
         {
           "id": "action_sw-s7_3",
           "type": "speech",
-          "text": "Follow this checklist and you will avoid 99% of the ways people lose their holdings."
+          "text": "Follow this checklist and you will avoid 99% of the ways people lose their holdings.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/6-3.mp3"
         },
         {
           "id": "action_sw-s7_4",
@@ -1983,7 +2016,8 @@
         {
           "id": "action_sw-s7_5",
           "type": "speech",
-          "text": "Generate offline: always generate seed phrases on a hardware wallet or air-gapped device. Never on a phone, browser, or website. If it touched the internet during generation, consider it compromised."
+          "text": "Generate offline: always generate seed phrases on a hardware wallet or air-gapped device. Never on a phone, browser, or website. If it touched the internet during generation, consider it compromised.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/6-5.mp3"
         },
         {
           "id": "action_sw-s7_6",
@@ -1993,7 +2027,8 @@
         {
           "id": "action_sw-s7_7",
           "type": "speech",
-          "text": "Write on metal, not paper. Paper burns. Paper floods. Metal backup solutions like Cryptosteel survive house fires and water damage. Your seed phrase should outlast you if needed."
+          "text": "Write on metal, not paper. Paper burns. Paper floods. Metal backup solutions like Cryptosteel survive house fires and water damage. Your seed phrase should outlast you if needed.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/6-7.mp3"
         },
         {
           "id": "action_sw-s7_8",
@@ -2003,7 +2038,8 @@
         {
           "id": "action_sw-s7_9",
           "type": "speech",
-          "text": "Test restore before trusting. Before storing any funds, restore your wallet from the seed phrase on a second device. Verify the addresses match. Many people discover errors only when they actually need recovery — too late."
+          "text": "Test restore before trusting. Before storing any funds, restore your wallet from the seed phrase on a second device. Verify the addresses match. Many people discover errors only when they actually need recovery — too late.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/6-9.mp3"
         },
         {
           "id": "action_sw-s7_10",
@@ -2013,7 +2049,8 @@
         {
           "id": "action_sw-s7_11",
           "type": "speech",
-          "text": "Secure location, separate from device. Your hardware wallet and your seed phrase backup should never be in the same place. Bank vault, trusted family member in another city, or a professional custody service."
+          "text": "Secure location, separate from device. Your hardware wallet and your seed phrase backup should never be in the same place. Bank vault, trusted family member in another city, or a professional custody service.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/6-11.mp3"
         }
       ]
     },
@@ -2029,12 +2066,14 @@
         {
           "id": "action_se-interactive_i0",
           "type": "speech",
-          "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered."
+          "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/7-0.mp3"
         },
         {
           "id": "action_se-interactive_i1",
           "type": "speech",
-          "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading."
+          "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/7-1.mp3"
         }
       ]
     },
@@ -2172,12 +2211,14 @@
         {
           "id": "action_sw-s8_q0",
           "type": "speech",
-          "text": "Time to test your knowledge! Answer each question carefully — you can review the material after the quiz."
+          "text": "Time to test your knowledge! Answer each question carefully — you can review the material after the quiz.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/8-0.mp3"
         },
         {
           "id": "action_sw-s8_q1",
           "type": "speech",
-          "text": "Take your time with these questions. The goal is to solidify your understanding, not just pass the quiz."
+          "text": "Take your time with these questions. The goal is to solidify your understanding, not just pass the quiz.",
+          "audioUrl": "/audio/lessons/oc-security-wallets/8-1.mp3"
         }
       ]
     }

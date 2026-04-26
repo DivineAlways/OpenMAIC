@@ -9,7 +9,11 @@
     "updatedAt": "2026-04-24T12:00:00.000Z",
     "languageDirective": "en-US",
     "style": "academic",
-    "agentIds": ["default-1", "default-2", "default-3"],
+    "agentIds": [
+      "default-1",
+      "default-2",
+      "default-3"
+    ],
     "generatedAgentConfigs": []
   },
   "scenes": [
@@ -24,53 +28,394 @@
           "id": "hs-bc-s1-canvas",
           "viewportSize": 1000,
           "viewportRatio": 0.5625,
-          "background": { "type": "solid", "color": "#0b1120" },
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": ["#f59e0b", "#3b82f6", "#8b5cf6"],
+            "themeColors": [
+              "#f59e0b",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
           "elements": [
-            { "id": "hs-bc-s1-bar", "type": "shape", "left": 0, "top": 0, "width": 1000, "height": 6, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#f59e0b", "fixedRatio": false },
-            { "id": "hs-bc-s1-hbg", "type": "shape", "left": 0, "top": 6, "width": 1000, "height": 96, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#0f1729", "fixedRatio": false },
-            { "id": "hs-bc-s1-title", "type": "text", "left": 24, "top": 16, "width": 800, "height": 52, "rotate": 0, "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>⛏️ How Bitcoin Mining Works</p>", "defaultFontName": "Inter", "defaultColor": "#f1f5f9" },
-            { "id": "hs-bc-s1-sub", "type": "text", "left": 24, "top": 66, "width": 800, "height": 30, "rotate": 0, "content": "<p style='font-size:13px;color:#64748b;'>The process that creates new coins and secures the network — High School Level</p>", "defaultFontName": "Inter", "defaultColor": "#64748b" },
-            { "id": "hs-bc-s1-body", "type": "text", "left": 24, "top": 115, "width": 950, "height": 80, "rotate": 0, "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.7;'>Miners compete to solve a math puzzle — finding a <b style='color:#f59e0b;'>nonce</b> that makes the block's hash start with a required number of zeros. First to solve it wins the block reward. This is called <b style='color:#f1f5f9;'>Proof of Work</b>.</p>", "defaultFontName": "Inter", "defaultColor": "#cbd5e1" },
-            { "id": "hs-bc-s1-box1", "type": "shape", "left": 24, "top": 220, "width": 210, "height": 110, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#f59e0b15", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#f59e0b" } },
-            { "id": "hs-bc-s1-t1", "type": "text", "left": 34, "top": 230, "width": 190, "height": 90, "rotate": 0, "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>1️⃣ Transactions Pool<br/><span style='color:#94a3b8;font-weight:400;'>Pending txs wait in the mempool</span></p>", "defaultFontName": "Inter", "defaultColor": "#f59e0b" },
-            { "id": "hs-bc-s1-arr1", "type": "text", "left": 242, "top": 262, "width": 40, "height": 30, "rotate": 0, "content": "<p style='font-size:22px;color:#3b82f6;text-align:center;'>→</p>", "defaultFontName": "Inter", "defaultColor": "#3b82f6" },
-            { "id": "hs-bc-s1-box2", "type": "shape", "left": 288, "top": 220, "width": 210, "height": 110, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#3b82f615", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#3b82f6" } },
-            { "id": "hs-bc-s1-t2", "type": "text", "left": 298, "top": 230, "width": 190, "height": 90, "rotate": 0, "content": "<p style='font-size:12px;font-weight:700;color:#3b82f6;text-align:center;'>2️⃣ Block Assembled<br/><span style='color:#94a3b8;font-weight:400;'>Miner groups txs into candidate block</span></p>", "defaultFontName": "Inter", "defaultColor": "#3b82f6" },
-            { "id": "hs-bc-s1-arr2", "type": "text", "left": 506, "top": 262, "width": 40, "height": 30, "rotate": 0, "content": "<p style='font-size:22px;color:#8b5cf6;text-align:center;'>→</p>", "defaultFontName": "Inter", "defaultColor": "#8b5cf6" },
-            { "id": "hs-bc-s1-box3", "type": "shape", "left": 552, "top": 220, "width": 210, "height": 110, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#8b5cf615", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#8b5cf6" } },
-            { "id": "hs-bc-s1-t3", "type": "text", "left": 562, "top": 230, "width": 190, "height": 90, "rotate": 0, "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>3️⃣ Puzzle Solved<br/><span style='color:#94a3b8;font-weight:400;'>Billions of nonces tried per second</span></p>", "defaultFontName": "Inter", "defaultColor": "#8b5cf6" },
-            { "id": "hs-bc-s1-arr3", "type": "text", "left": 770, "top": 262, "width": 40, "height": 30, "rotate": 0, "content": "<p style='font-size:22px;color:#10b981;text-align:center;'>→</p>", "defaultFontName": "Inter", "defaultColor": "#10b981" },
-            { "id": "hs-bc-s1-box4", "type": "shape", "left": 816, "top": 220, "width": 160, "height": 110, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#10b98115", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#10b981" } },
-            { "id": "hs-bc-s1-t4", "type": "text", "left": 826, "top": 230, "width": 140, "height": 90, "rotate": 0, "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>4️⃣ Confirmed<br/><span style='color:#94a3b8;font-weight:400;'>Block added, miner rewarded</span></p>", "defaultFontName": "Inter", "defaultColor": "#10b981" },
-            { "id": "hs-bc-s1-fact", "type": "shape", "left": 24, "top": 360, "width": 950, "height": 70, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#f59e0b10", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#f59e0b40" } },
-            { "id": "hs-bc-s1-ft", "type": "text", "left": 34, "top": 372, "width": 930, "height": 46, "rotate": 0, "content": "<p style='font-size:13px;color:#fbbf24;'>⚡ <b>Why it's called Proof of Work:</b> The hash puzzle proves the miner did real computational work. You can't fake it — the math either checks out or it doesn't. An attacker needs >50% of network hash power to rewrite history.</p>", "defaultFontName": "Inter", "defaultColor": "#fbbf24" },
-            { "id": "hs-bc-s1-comp", "type": "text", "left": 24, "top": 455, "width": 950, "height": 60, "rotate": 0, "content": "<p style='font-size:14px;color:#cbd5e1;line-height:1.6;'><b style='color:#f59e0b;'>PoW vs PoS vs RPCA:</b> Bitcoin uses energy-intensive PoW. Ethereum switched to Proof of Stake (validators lock coins as collateral — 99% less energy). XRP Ledger uses RPCA — trusted validators vote on transaction sets. No mining at all. Settlement in 3–5 seconds.</p>", "defaultFontName": "Inter", "defaultColor": "#cbd5e1" }
+            {
+              "id": "hs-bc-s1-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-bc-s1-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-bc-s1-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>⛏️ How Bitcoin Mining Works</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "hs-bc-s1-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;'>The process that creates new coins and secures the network — High School Level</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "hs-bc-s1-body",
+              "type": "text",
+              "left": 24,
+              "top": 115,
+              "width": 950,
+              "height": 80,
+              "rotate": 0,
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.7;'>Miners compete to solve a math puzzle — finding a <b style='color:#f59e0b;'>nonce</b> that makes the block's hash start with a required number of zeros. First to solve it wins the block reward. This is called <b style='color:#f1f5f9;'>Proof of Work</b>.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "hs-bc-s1-box1",
+              "type": "shape",
+              "left": 24,
+              "top": 220,
+              "width": 210,
+              "height": 110,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b15",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "hs-bc-s1-t1",
+              "type": "text",
+              "left": 34,
+              "top": 230,
+              "width": 190,
+              "height": 90,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#f59e0b;text-align:center;'>1️⃣ Transactions Pool<br/><span style='color:#94a3b8;font-weight:400;'>Pending txs wait in the mempool</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "hs-bc-s1-arr1",
+              "type": "text",
+              "left": 242,
+              "top": 262,
+              "width": 40,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:22px;color:#3b82f6;text-align:center;'>→</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "hs-bc-s1-box2",
+              "type": "shape",
+              "left": 288,
+              "top": 220,
+              "width": 210,
+              "height": 110,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f615",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "hs-bc-s1-t2",
+              "type": "text",
+              "left": 298,
+              "top": 230,
+              "width": 190,
+              "height": 90,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#3b82f6;text-align:center;'>2️⃣ Block Assembled<br/><span style='color:#94a3b8;font-weight:400;'>Miner groups txs into candidate block</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "hs-bc-s1-arr2",
+              "type": "text",
+              "left": 506,
+              "top": 262,
+              "width": 40,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:22px;color:#8b5cf6;text-align:center;'>→</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#8b5cf6"
+            },
+            {
+              "id": "hs-bc-s1-box3",
+              "type": "shape",
+              "left": 552,
+              "top": 220,
+              "width": 210,
+              "height": 110,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf615",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#8b5cf6"
+              }
+            },
+            {
+              "id": "hs-bc-s1-t3",
+              "type": "text",
+              "left": 562,
+              "top": 230,
+              "width": 190,
+              "height": 90,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>3️⃣ Puzzle Solved<br/><span style='color:#94a3b8;font-weight:400;'>Billions of nonces tried per second</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#8b5cf6"
+            },
+            {
+              "id": "hs-bc-s1-arr3",
+              "type": "text",
+              "left": 770,
+              "top": 262,
+              "width": 40,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:22px;color:#10b981;text-align:center;'>→</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "hs-bc-s1-box4",
+              "type": "shape",
+              "left": 816,
+              "top": 220,
+              "width": 160,
+              "height": 110,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98115",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b981"
+              }
+            },
+            {
+              "id": "hs-bc-s1-t4",
+              "type": "text",
+              "left": 826,
+              "top": 230,
+              "width": 140,
+              "height": 90,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:700;color:#10b981;text-align:center;'>4️⃣ Confirmed<br/><span style='color:#94a3b8;font-weight:400;'>Block added, miner rewarded</span></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "hs-bc-s1-fact",
+              "type": "shape",
+              "left": 24,
+              "top": 360,
+              "width": 950,
+              "height": 70,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b10",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b40"
+              }
+            },
+            {
+              "id": "hs-bc-s1-ft",
+              "type": "text",
+              "left": 34,
+              "top": 372,
+              "width": 930,
+              "height": 46,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#fbbf24;'>⚡ <b>Why it's called Proof of Work:</b> The hash puzzle proves the miner did real computational work. You can't fake it — the math either checks out or it doesn't. An attacker needs >50% of network hash power to rewrite history.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#fbbf24"
+            },
+            {
+              "id": "hs-bc-s1-comp",
+              "type": "text",
+              "left": 24,
+              "top": 455,
+              "width": 950,
+              "height": 60,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;color:#cbd5e1;line-height:1.6;'><b style='color:#f59e0b;'>PoW vs PoS vs RPCA:</b> Bitcoin uses energy-intensive PoW. Ethereum switched to Proof of Stake (validators lock coins as collateral — 99% less energy). XRP Ledger uses RPCA — trusted validators vote on transaction sets. No mining at all. Settlement in 3–5 seconds.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            }
           ]
         }
       },
       "actions": [
-        { "id": "action_hs-bc-s1_0", "type": "spotlight", "elementId": "hs-bc-s1-title" },
-        { "id": "action_hs-bc-s1_1", "type": "speech", "text": "How Bitcoin Mining Works — High School Level" },
-        { "id": "action_hs-bc-s1_2", "type": "spotlight", "elementId": "hs-bc-s1-body" },
-        { "id": "action_hs-bc-s1_3", "type": "speech", "text": "Miners compete to solve a math puzzle — finding a nonce that makes the block's hash start with a required number of zeros. First to solve it wins the block reward. This is called Proof of Work." },
-        { "id": "action_hs-bc-s1_4", "type": "spotlight", "elementId": "hs-bc-s1-t1" },
-        { "id": "action_hs-bc-s1_5", "type": "speech", "text": "Step one: Transactions pool. Pending transactions wait in the mempool." },
-        { "id": "action_hs-bc-s1_6", "type": "spotlight", "elementId": "hs-bc-s1-t2" },
-        { "id": "action_hs-bc-s1_7", "type": "speech", "text": "Step two: Block assembled. The miner groups transactions into a candidate block." },
-        { "id": "action_hs-bc-s1_8", "type": "spotlight", "elementId": "hs-bc-s1-t3" },
-        { "id": "action_hs-bc-s1_9", "type": "speech", "text": "Step three: Puzzle solved. Billions of nonces are tried per second until the target hash is hit." },
-        { "id": "action_hs-bc-s1_10", "type": "spotlight", "elementId": "hs-bc-s1-t4" },
-        { "id": "action_hs-bc-s1_11", "type": "speech", "text": "Step four: Confirmed. The block is added to the chain and the miner earns the reward." },
-        { "id": "action_hs-bc-s1_12", "type": "spotlight", "elementId": "hs-bc-s1-ft" },
-        { "id": "action_hs-bc-s1_13", "type": "speech", "text": "Why it's called Proof of Work: The hash puzzle proves the miner did real computational work. You can't fake it — the math either checks out or it doesn't." },
-        { "id": "action_hs-bc-s1_14", "type": "spotlight", "elementId": "hs-bc-s1-comp" },
-        { "id": "action_hs-bc-s1_15", "type": "speech", "text": "Comparing consensus: Bitcoin uses energy-intensive Proof of Work. Ethereum switched to Proof of Stake — 99% less energy. XRP Ledger uses RPCA with trusted validators — no mining at all, settling in 3 to 5 seconds." }
+        {
+          "id": "action_hs-bc-s1_0",
+          "type": "spotlight",
+          "elementId": "hs-bc-s1-title"
+        },
+        {
+          "id": "action_hs-bc-s1_1",
+          "type": "speech",
+          "text": "How Bitcoin Mining Works — High School Level",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/0-1.mp3"
+        },
+        {
+          "id": "action_hs-bc-s1_2",
+          "type": "spotlight",
+          "elementId": "hs-bc-s1-body"
+        },
+        {
+          "id": "action_hs-bc-s1_3",
+          "type": "speech",
+          "text": "Miners compete to solve a math puzzle — finding a nonce that makes the block's hash start with a required number of zeros. First to solve it wins the block reward. This is called Proof of Work.",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/0-3.mp3"
+        },
+        {
+          "id": "action_hs-bc-s1_4",
+          "type": "spotlight",
+          "elementId": "hs-bc-s1-t1"
+        },
+        {
+          "id": "action_hs-bc-s1_5",
+          "type": "speech",
+          "text": "Step one: Transactions pool. Pending transactions wait in the mempool.",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/0-5.mp3"
+        },
+        {
+          "id": "action_hs-bc-s1_6",
+          "type": "spotlight",
+          "elementId": "hs-bc-s1-t2"
+        },
+        {
+          "id": "action_hs-bc-s1_7",
+          "type": "speech",
+          "text": "Step two: Block assembled. The miner groups transactions into a candidate block.",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/0-7.mp3"
+        },
+        {
+          "id": "action_hs-bc-s1_8",
+          "type": "spotlight",
+          "elementId": "hs-bc-s1-t3"
+        },
+        {
+          "id": "action_hs-bc-s1_9",
+          "type": "speech",
+          "text": "Step three: Puzzle solved. Billions of nonces are tried per second until the target hash is hit.",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/0-9.mp3"
+        },
+        {
+          "id": "action_hs-bc-s1_10",
+          "type": "spotlight",
+          "elementId": "hs-bc-s1-t4"
+        },
+        {
+          "id": "action_hs-bc-s1_11",
+          "type": "speech",
+          "text": "Step four: Confirmed. The block is added to the chain and the miner earns the reward.",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/0-11.mp3"
+        },
+        {
+          "id": "action_hs-bc-s1_12",
+          "type": "spotlight",
+          "elementId": "hs-bc-s1-ft"
+        },
+        {
+          "id": "action_hs-bc-s1_13",
+          "type": "speech",
+          "text": "Why it's called Proof of Work: The hash puzzle proves the miner did real computational work. You can't fake it — the math either checks out or it doesn't.",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/0-13.mp3"
+        },
+        {
+          "id": "action_hs-bc-s1_14",
+          "type": "spotlight",
+          "elementId": "hs-bc-s1-comp"
+        },
+        {
+          "id": "action_hs-bc-s1_15",
+          "type": "speech",
+          "text": "Comparing consensus: Bitcoin uses energy-intensive Proof of Work. Ethereum switched to Proof of Stake — 99% less energy. XRP Ledger uses RPCA with trusted validators — no mining at all, settling in 3 to 5 seconds.",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/0-15.mp3"
+        }
       ]
     },
     {
@@ -84,45 +429,293 @@
           "id": "hs-bc-s2-canvas",
           "viewportSize": 1000,
           "viewportRatio": 0.5625,
-          "background": { "type": "solid", "color": "#0b1120" },
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": ["#f59e0b", "#3b82f6", "#8b5cf6"],
+            "themeColors": [
+              "#f59e0b",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
           "elements": [
-            { "id": "hs-bc-s2-bar", "type": "shape", "left": 0, "top": 0, "width": 1000, "height": 6, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#f59e0b", "fixedRatio": false },
-            { "id": "hs-bc-s2-hbg", "type": "shape", "left": 0, "top": 6, "width": 1000, "height": 96, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#0f1729", "fixedRatio": false },
-            { "id": "hs-bc-s2-title", "type": "text", "left": 24, "top": 16, "width": 800, "height": 52, "rotate": 0, "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🔗 Hashes, Merkle Trees & The Trilemma</p>", "defaultFontName": "Inter", "defaultColor": "#f1f5f9" },
-            { "id": "hs-bc-s2-sub", "type": "text", "left": 24, "top": 66, "width": 800, "height": 30, "rotate": 0, "content": "<p style='font-size:13px;color:#64748b;'>The math that makes tampering impossible — and the tradeoff every blockchain faces</p>", "defaultFontName": "Inter", "defaultColor": "#64748b" },
-            { "id": "hs-bc-s2-hash-bg", "type": "shape", "left": 24, "top": 110, "width": 460, "height": 290, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#10b98110", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#10b98140" } },
-            { "id": "hs-bc-s2-hash-h", "type": "text", "left": 34, "top": 118, "width": 440, "height": 30, "rotate": 0, "content": "<p style='font-size:14px;font-weight:800;color:#34d399;'>🔐 Cryptographic Hash (SHA-256)</p>", "defaultFontName": "Inter", "defaultColor": "#34d399" },
-            { "id": "hs-bc-s2-hash-b", "type": "text", "left": 34, "top": 150, "width": 440, "height": 240, "rotate": 0, "content": "<p style='font-size:13px;color:#94a3b8;line-height:1.8;'>A one-way fingerprint. Feed any data in — you get a fixed-length string out. Change even one character of input and the output changes completely — unpredictably.<br/><br/><b style='color:#f1f5f9;'>Each block stores the hash of the previous block.</b> Change any old block and its hash changes — which invalidates every block after it. The network rejects this instantly.<br/><br/>Merkle trees hash all transactions in pairs up to a single root. Prove one tx is valid without downloading the whole chain.</p>", "defaultFontName": "Inter", "defaultColor": "#94a3b8" },
-            { "id": "hs-bc-s2-tri-bg", "type": "shape", "left": 514, "top": 110, "width": 460, "height": 290, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#f59e0b10", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#f59e0b40" } },
-            { "id": "hs-bc-s2-tri-h", "type": "text", "left": 524, "top": 118, "width": 440, "height": 30, "rotate": 0, "content": "<p style='font-size:14px;font-weight:800;color:#f59e0b;'>⚠️ The Blockchain Trilemma</p>", "defaultFontName": "Inter", "defaultColor": "#f59e0b" },
-            { "id": "hs-bc-s2-tri-b", "type": "text", "left": 524, "top": 150, "width": 440, "height": 150, "rotate": 0, "content": "<p style='font-size:13px;color:#94a3b8;line-height:1.8;'>Blockchains can only optimize <b style='color:#f1f5f9;'>two of three</b> properties at once:<br/>🛡️ <b style='color:#ef4444;'>Security</b> — resists attacks<br/>⚡ <b style='color:#f59e0b;'>Scalability</b> — thousands of tx/sec<br/>🌐 <b style='color:#3b82f6;'>Decentralization</b> — no single point of control</p>", "defaultFontName": "Inter", "defaultColor": "#94a3b8" },
-            { "id": "hs-bc-s2-tri-table", "type": "text", "left": 524, "top": 310, "width": 440, "height": 80, "rotate": 0, "content": "<p style='font-size:12px;color:#94a3b8;line-height:2;'>Bitcoin: Security + Decentralization (7 tx/sec)<br/>Ethereum: Security + Decentralization (slow, costly)<br/>XRPL: Security + Scalability (1,500 tx/sec, trusted validators)</p>", "defaultFontName": "Inter", "defaultColor": "#94a3b8" },
-            { "id": "hs-bc-s2-insight", "type": "shape", "left": 24, "top": 420, "width": 950, "height": 60, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#3b82f610", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#3b82f640" } },
-            { "id": "hs-bc-s2-insight-t", "type": "text", "left": 34, "top": 430, "width": 930, "height": 40, "rotate": 0, "content": "<p style='font-size:13px;color:#60a5fa;'><b>OnlyCrypto uses XRPL</b> — which trades some decentralization for massive speed. Payouts confirm in 3–5 seconds. You can verify any transaction on xrpscan.com.</p>", "defaultFontName": "Inter", "defaultColor": "#60a5fa" }
+            {
+              "id": "hs-bc-s2-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-bc-s2-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-bc-s2-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🔗 Hashes, Merkle Trees & The Trilemma</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "hs-bc-s2-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;'>The math that makes tampering impossible — and the tradeoff every blockchain faces</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "hs-bc-s2-hash-bg",
+              "type": "shape",
+              "left": 24,
+              "top": 110,
+              "width": 460,
+              "height": 290,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98110",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b98140"
+              }
+            },
+            {
+              "id": "hs-bc-s2-hash-h",
+              "type": "text",
+              "left": 34,
+              "top": 118,
+              "width": 440,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:800;color:#34d399;'>🔐 Cryptographic Hash (SHA-256)</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#34d399"
+            },
+            {
+              "id": "hs-bc-s2-hash-b",
+              "type": "text",
+              "left": 34,
+              "top": 150,
+              "width": 440,
+              "height": 240,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#94a3b8;line-height:1.8;'>A one-way fingerprint. Feed any data in — you get a fixed-length string out. Change even one character of input and the output changes completely — unpredictably.<br/><br/><b style='color:#f1f5f9;'>Each block stores the hash of the previous block.</b> Change any old block and its hash changes — which invalidates every block after it. The network rejects this instantly.<br/><br/>Merkle trees hash all transactions in pairs up to a single root. Prove one tx is valid without downloading the whole chain.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "hs-bc-s2-tri-bg",
+              "type": "shape",
+              "left": 514,
+              "top": 110,
+              "width": 460,
+              "height": 290,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b10",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b40"
+              }
+            },
+            {
+              "id": "hs-bc-s2-tri-h",
+              "type": "text",
+              "left": 524,
+              "top": 118,
+              "width": 440,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:800;color:#f59e0b;'>⚠️ The Blockchain Trilemma</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "hs-bc-s2-tri-b",
+              "type": "text",
+              "left": 524,
+              "top": 150,
+              "width": 440,
+              "height": 150,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#94a3b8;line-height:1.8;'>Blockchains can only optimize <b style='color:#f1f5f9;'>two of three</b> properties at once:<br/>🛡️ <b style='color:#ef4444;'>Security</b> — resists attacks<br/>⚡ <b style='color:#f59e0b;'>Scalability</b> — thousands of tx/sec<br/>🌐 <b style='color:#3b82f6;'>Decentralization</b> — no single point of control</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "hs-bc-s2-tri-table",
+              "type": "text",
+              "left": 524,
+              "top": 310,
+              "width": 440,
+              "height": 80,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#94a3b8;line-height:2;'>Bitcoin: Security + Decentralization (7 tx/sec)<br/>Ethereum: Security + Decentralization (slow, costly)<br/>XRPL: Security + Scalability (1,500 tx/sec, trusted validators)</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "hs-bc-s2-insight",
+              "type": "shape",
+              "left": 24,
+              "top": 420,
+              "width": 950,
+              "height": 60,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f610",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f640"
+              }
+            },
+            {
+              "id": "hs-bc-s2-insight-t",
+              "type": "text",
+              "left": 34,
+              "top": 430,
+              "width": 930,
+              "height": 40,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#60a5fa;'><b>OnlyCrypto uses XRPL</b> — which trades some decentralization for massive speed. Payouts confirm in 3–5 seconds. You can verify any transaction on xrpscan.com.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#60a5fa"
+            }
           ]
         }
       },
       "actions": [
-        { "id": "action_hs-bc-s2_0", "type": "spotlight", "elementId": "hs-bc-s2-title" },
-        { "id": "action_hs-bc-s2_1", "type": "speech", "text": "Hashes, Merkle Trees, and The Blockchain Trilemma" },
-        { "id": "action_hs-bc-s2_2", "type": "spotlight", "elementId": "hs-bc-s2-hash-h" },
-        { "id": "action_hs-bc-s2_3", "type": "speech", "text": "Cryptographic Hash using SHA-256. A one-way fingerprint. Feed any data in and you get a fixed-length string out. Change even one character of input and the output changes completely — unpredictably." },
-        { "id": "action_hs-bc-s2_4", "type": "spotlight", "elementId": "hs-bc-s2-hash-b" },
-        { "id": "action_hs-bc-s2_5", "type": "speech", "text": "Each block stores the hash of the previous block. Change any old block and its hash changes — which invalidates every block after it. The network rejects this instantly. Merkle trees hash all transactions in pairs up to a single root, letting you prove one transaction is valid without downloading the whole chain." },
-        { "id": "action_hs-bc-s2_6", "type": "spotlight", "elementId": "hs-bc-s2-tri-h" },
-        { "id": "action_hs-bc-s2_7", "type": "speech", "text": "The Blockchain Trilemma: blockchains can only optimize two of three properties at once." },
-        { "id": "action_hs-bc-s2_8", "type": "spotlight", "elementId": "hs-bc-s2-tri-b" },
-        { "id": "action_hs-bc-s2_9", "type": "speech", "text": "The three properties are Security — resisting attacks. Scalability — handling thousands of transactions per second. And Decentralization — no single point of control. You can optimize two, but something always has to give." },
-        { "id": "action_hs-bc-s2_10", "type": "spotlight", "elementId": "hs-bc-s2-tri-table" },
-        { "id": "action_hs-bc-s2_11", "type": "speech", "text": "Bitcoin picks Security and Decentralization at 7 transactions per second. Ethereum picks Security and Decentralization but is slow and costly. XRPL picks Security and Scalability at 1500 transactions per second, using trusted validators." },
-        { "id": "action_hs-bc-s2_12", "type": "spotlight", "elementId": "hs-bc-s2-insight-t" },
-        { "id": "action_hs-bc-s2_13", "type": "speech", "text": "OnlyCrypto uses XRPL — which trades some decentralization for massive speed. Payouts confirm in 3 to 5 seconds. You can verify any transaction on xrpscan.com." }
+        {
+          "id": "action_hs-bc-s2_0",
+          "type": "spotlight",
+          "elementId": "hs-bc-s2-title"
+        },
+        {
+          "id": "action_hs-bc-s2_1",
+          "type": "speech",
+          "text": "Hashes, Merkle Trees, and The Blockchain Trilemma",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/1-1.mp3"
+        },
+        {
+          "id": "action_hs-bc-s2_2",
+          "type": "spotlight",
+          "elementId": "hs-bc-s2-hash-h"
+        },
+        {
+          "id": "action_hs-bc-s2_3",
+          "type": "speech",
+          "text": "Cryptographic Hash using SHA-256. A one-way fingerprint. Feed any data in and you get a fixed-length string out. Change even one character of input and the output changes completely — unpredictably.",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/1-3.mp3"
+        },
+        {
+          "id": "action_hs-bc-s2_4",
+          "type": "spotlight",
+          "elementId": "hs-bc-s2-hash-b"
+        },
+        {
+          "id": "action_hs-bc-s2_5",
+          "type": "speech",
+          "text": "Each block stores the hash of the previous block. Change any old block and its hash changes — which invalidates every block after it. The network rejects this instantly. Merkle trees hash all transactions in pairs up to a single root, letting you prove one transaction is valid without downloading the whole chain.",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/1-5.mp3"
+        },
+        {
+          "id": "action_hs-bc-s2_6",
+          "type": "spotlight",
+          "elementId": "hs-bc-s2-tri-h"
+        },
+        {
+          "id": "action_hs-bc-s2_7",
+          "type": "speech",
+          "text": "The Blockchain Trilemma: blockchains can only optimize two of three properties at once.",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/1-7.mp3"
+        },
+        {
+          "id": "action_hs-bc-s2_8",
+          "type": "spotlight",
+          "elementId": "hs-bc-s2-tri-b"
+        },
+        {
+          "id": "action_hs-bc-s2_9",
+          "type": "speech",
+          "text": "The three properties are Security — resisting attacks. Scalability — handling thousands of transactions per second. And Decentralization — no single point of control. You can optimize two, but something always has to give.",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/1-9.mp3"
+        },
+        {
+          "id": "action_hs-bc-s2_10",
+          "type": "spotlight",
+          "elementId": "hs-bc-s2-tri-table"
+        },
+        {
+          "id": "action_hs-bc-s2_11",
+          "type": "speech",
+          "text": "Bitcoin picks Security and Decentralization at 7 transactions per second. Ethereum picks Security and Decentralization but is slow and costly. XRPL picks Security and Scalability at 1500 transactions per second, using trusted validators.",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/1-11.mp3"
+        },
+        {
+          "id": "action_hs-bc-s2_12",
+          "type": "spotlight",
+          "elementId": "hs-bc-s2-insight-t"
+        },
+        {
+          "id": "action_hs-bc-s2_13",
+          "type": "speech",
+          "text": "OnlyCrypto uses XRPL — which trades some decentralization for massive speed. Payouts confirm in 3 to 5 seconds. You can verify any transaction on xrpscan.com.",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/1-13.mp3"
+        }
       ]
     },
     {
@@ -138,12 +731,26 @@
             "type": "single",
             "question": "What is a 'nonce' in Bitcoin mining?",
             "options": [
-              { "label": "A type of cryptocurrency wallet", "value": "A" },
-              { "label": "A number miners change repeatedly to try to find a valid block hash", "value": "B" },
-              { "label": "The fee paid to miners", "value": "C" },
-              { "label": "The digital signature on a transaction", "value": "D" }
+              {
+                "label": "A type of cryptocurrency wallet",
+                "value": "A"
+              },
+              {
+                "label": "A number miners change repeatedly to try to find a valid block hash",
+                "value": "B"
+              },
+              {
+                "label": "The fee paid to miners",
+                "value": "C"
+              },
+              {
+                "label": "The digital signature on a transaction",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "A nonce (number used once) is a value miners increment billions of times per second, looking for a combination that produces a hash meeting the network's difficulty target. It's the core of the Proof of Work puzzle.",
             "points": 1
           },
@@ -152,12 +759,26 @@
             "type": "single",
             "question": "What does the Blockchain Trilemma say?",
             "options": [
-              { "label": "Blockchains can only handle one type of token", "value": "A" },
-              { "label": "A blockchain can only optimize two of three: security, scalability, and decentralization", "value": "B" },
-              { "label": "Mining always requires three confirmations", "value": "C" },
-              { "label": "All blockchains must use Proof of Work", "value": "D" }
+              {
+                "label": "Blockchains can only handle one type of token",
+                "value": "A"
+              },
+              {
+                "label": "A blockchain can only optimize two of three: security, scalability, and decentralization",
+                "value": "B"
+              },
+              {
+                "label": "Mining always requires three confirmations",
+                "value": "C"
+              },
+              {
+                "label": "All blockchains must use Proof of Work",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "The blockchain trilemma, identified by Vitalik Buterin, states that a blockchain can only truly optimize two of three properties: security, scalability, and decentralization. Every blockchain design is a tradeoff between these three.",
             "points": 1
           },
@@ -166,12 +787,26 @@
             "type": "single",
             "question": "Why does XRP Ledger settle in 3–5 seconds while Bitcoin takes ~10 minutes?",
             "options": [
-              { "label": "XRP has fewer transactions", "value": "A" },
-              { "label": "XRPL uses RPCA with trusted validators instead of energy-intensive mining", "value": "B" },
-              { "label": "XRP transactions are smaller in file size", "value": "C" },
-              { "label": "Bitcoin requires more confirmations", "value": "D" }
+              {
+                "label": "XRP has fewer transactions",
+                "value": "A"
+              },
+              {
+                "label": "XRPL uses RPCA with trusted validators instead of energy-intensive mining",
+                "value": "B"
+              },
+              {
+                "label": "XRP transactions are smaller in file size",
+                "value": "C"
+              },
+              {
+                "label": "Bitcoin requires more confirmations",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "XRPL uses RPCA (Ripple Protocol Consensus Algorithm) where trusted validators vote on transaction sets. No mining puzzle, no energy competition — just fast consensus. Bitcoin requires miners to solve a hash puzzle, which is deliberately slow to make cheating expensive.",
             "points": 1
           },
@@ -180,12 +815,26 @@
             "type": "single",
             "question": "What is a Merkle tree used for in a blockchain?",
             "options": [
-              { "label": "Storing wallet private keys", "value": "A" },
-              { "label": "Setting mining difficulty", "value": "B" },
-              { "label": "Efficiently proving a specific transaction is included in a block without downloading the whole blockchain", "value": "C" },
-              { "label": "Calculating transaction fees", "value": "D" }
+              {
+                "label": "Storing wallet private keys",
+                "value": "A"
+              },
+              {
+                "label": "Setting mining difficulty",
+                "value": "B"
+              },
+              {
+                "label": "Efficiently proving a specific transaction is included in a block without downloading the whole blockchain",
+                "value": "C"
+              },
+              {
+                "label": "Calculating transaction fees",
+                "value": "D"
+              }
             ],
-            "answer": ["C"],
+            "answer": [
+              "C"
+            ],
             "analysis": "A Merkle tree hashes all transactions in a block in pairs, building up to a single Merkle root. This structure lets lightweight clients prove that a specific transaction is in a block by checking just a branch of the tree — not every transaction.",
             "points": 1
           },
@@ -194,20 +843,44 @@
             "type": "single",
             "question": "What is the key difference between Proof of Work and Proof of Stake?",
             "options": [
-              { "label": "PoS is only used by Bitcoin", "value": "A" },
-              { "label": "PoW uses energy-intensive computation; PoS uses locked collateral to select validators", "value": "B" },
-              { "label": "PoW is faster than PoS", "value": "C" },
-              { "label": "PoS requires mining hardware", "value": "D" }
+              {
+                "label": "PoS is only used by Bitcoin",
+                "value": "A"
+              },
+              {
+                "label": "PoW uses energy-intensive computation; PoS uses locked collateral to select validators",
+                "value": "B"
+              },
+              {
+                "label": "PoW is faster than PoS",
+                "value": "C"
+              },
+              {
+                "label": "PoS requires mining hardware",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Proof of Work has miners burn energy competing to solve puzzles. Proof of Stake has validators lock up (stake) coins as collateral — they're chosen proportionally to validate blocks. PoS uses about 99% less energy than PoW and is used by Ethereum, Solana, and many other major chains.",
             "points": 1
           }
         ]
       },
       "actions": [
-        { "id": "action_hs-bc-s3_q0", "type": "speech", "text": "Time to test your understanding of blockchain mechanics. These questions cover mining, consensus, and the trilemma." },
-        { "id": "action_hs-bc-s3_q1", "type": "speech", "text": "Read each question carefully — some answers are close. Think about the underlying mechanism." }
+        {
+          "id": "action_hs-bc-s3_q0",
+          "type": "speech",
+          "text": "Time to test your understanding of blockchain mechanics. These questions cover mining, consensus, and the trilemma.",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/2-0.mp3"
+        },
+        {
+          "id": "action_hs-bc-s3_q1",
+          "type": "speech",
+          "text": "Read each question carefully — some answers are close. Think about the underlying mechanism.",
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/2-1.mp3"
+        }
       ]
     }
   ]

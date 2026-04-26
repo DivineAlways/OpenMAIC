@@ -9,7 +9,11 @@
     "updatedAt": "2026-04-24T12:00:00.000Z",
     "languageDirective": "en-US",
     "style": "academic",
-    "agentIds": ["default-1", "default-2", "default-3"],
+    "agentIds": [
+      "default-1",
+      "default-2",
+      "default-3"
+    ],
     "generatedAgentConfigs": []
   },
   "scenes": [
@@ -24,44 +28,359 @@
           "id": "hs-tr-s1-canvas",
           "viewportSize": 1000,
           "viewportRatio": 0.5625,
-          "background": { "type": "solid", "color": "#0b1120" },
-          "theme": { "backgroundColor": "#0b1120", "themeColors": ["#f59e0b", "#10b981", "#ef4444"], "fontColor": "#f1f5f9", "fontName": "Inter" },
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f59e0b",
+              "#10b981",
+              "#ef4444"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
           "elements": [
-            { "id": "hs-tr-s1-bar", "type": "shape", "left": 0, "top": 0, "width": 1000, "height": 6, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#f59e0b", "fixedRatio": false },
-            { "id": "hs-tr-s1-hbg", "type": "shape", "left": 0, "top": 6, "width": 1000, "height": 96, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#0f1729", "fixedRatio": false },
-            { "id": "hs-tr-s1-title", "type": "text", "left": 24, "top": 16, "width": 800, "height": 52, "rotate": 0, "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>📊 Candlestick Charts & Support/Resistance</p>", "defaultFontName": "Inter", "defaultColor": "#f1f5f9" },
-            { "id": "hs-tr-s1-sub", "type": "text", "left": 24, "top": 66, "width": 800, "height": 30, "rotate": 0, "content": "<p style='font-size:13px;color:#64748b;'>The language every trader needs to read price action — High School Level</p>", "defaultFontName": "Inter", "defaultColor": "#64748b" },
-            { "id": "hs-tr-s1-candle-h", "type": "text", "left": 24, "top": 112, "width": 460, "height": 28, "rotate": 0, "content": "<p style='font-size:14px;font-weight:800;color:#f59e0b;'>🕯️ Reading Candlesticks (OHLC)</p>", "defaultFontName": "Inter", "defaultColor": "#f59e0b" },
-            { "id": "hs-tr-s1-candle-b", "type": "text", "left": 24, "top": 142, "width": 460, "height": 80, "rotate": 0, "content": "<p style='font-size:12px;color:#94a3b8;line-height:1.8;'>Each candle shows: <b style='color:#f1f5f9;'>Open, High, Low, Close</b>. The body = range between open and close. Wicks = highest and lowest price touched. <b style='color:#10b981;'>Green</b> = closed higher. <b style='color:#f87171;'>Red</b> = closed lower.</p>", "defaultFontName": "Inter", "defaultColor": "#94a3b8" },
-            { "id": "hs-tr-s1-c1-bg", "type": "shape", "left": 24, "top": 234, "width": 135, "height": 110, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#10b98110", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#10b98140" } },
-            { "id": "hs-tr-s1-c1-t", "type": "text", "left": 28, "top": 240, "width": 127, "height": 98, "rotate": 0, "content": "<p style='font-size:11px;font-weight:800;color:#34d399;text-align:center;'>Bullish Engulfing</p><p style='font-size:10px;color:#94a3b8;text-align:center;margin-top:4px;line-height:1.6;'>Large green candle engulfs prior red. Strong reversal at downtrend bottom.</p>", "defaultFontName": "Inter", "defaultColor": "#34d399" },
-            { "id": "hs-tr-s1-c2-bg", "type": "shape", "left": 169, "top": 234, "width": 135, "height": 110, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#f59e0b10", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#f59e0b40" } },
-            { "id": "hs-tr-s1-c2-t", "type": "text", "left": 173, "top": 240, "width": 127, "height": 98, "rotate": 0, "content": "<p style='font-size:11px;font-weight:800;color:#f59e0b;text-align:center;'>Doji</p><p style='font-size:10px;color:#94a3b8;text-align:center;margin-top:4px;line-height:1.6;'>Open ≈ Close. Buyers and sellers equally matched. Indecision — wait for confirmation.</p>", "defaultFontName": "Inter", "defaultColor": "#f59e0b" },
-            { "id": "hs-tr-s1-c3-bg", "type": "shape", "left": 314, "top": 234, "width": 135, "height": 110, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#ef444410", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#ef444440" } },
-            { "id": "hs-tr-s1-c3-t", "type": "text", "left": 318, "top": 240, "width": 127, "height": 98, "rotate": 0, "content": "<p style='font-size:11px;font-weight:800;color:#f87171;text-align:center;'>Shooting Star</p><p style='font-size:10px;color:#94a3b8;text-align:center;margin-top:4px;line-height:1.6;'>Long upper wick, small body. Rejected after rally. Bearish reversal signal.</p>", "defaultFontName": "Inter", "defaultColor": "#f87171" },
-            { "id": "hs-tr-s1-sr-bg", "type": "shape", "left": 514, "top": 110, "width": 460, "height": 240, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#3b82f608", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#3b82f630" } },
-            { "id": "hs-tr-s1-sr-h", "type": "text", "left": 524, "top": 118, "width": 440, "height": 28, "rotate": 0, "content": "<p style='font-size:14px;font-weight:800;color:#60a5fa;'>🎯 Support & Resistance</p>", "defaultFontName": "Inter", "defaultColor": "#60a5fa" },
-            { "id": "hs-tr-s1-sr-b", "type": "text", "left": 524, "top": 148, "width": 440, "height": 195, "rotate": 0, "content": "<p style='font-size:12px;color:#94a3b8;line-height:1.9;'><b style='color:#34d399;'>Support:</b> Price zone where buying has historically stopped declines. Tested and held multiple times = stronger support. Buy near support, stop-loss just below.<br/><br/><b style='color:#f87171;'>Resistance:</b> Price zone where selling has historically capped rallies. Breaking through is bullish. Look to reduce near resistance, watch for breakout.<br/><br/><b style='color:#f59e0b;'>Role Reversal:</b> Old resistance becomes new support after a breakout — one of the most reliable TA patterns.</p>", "defaultFontName": "Inter", "defaultColor": "#94a3b8" },
-            { "id": "hs-tr-s1-insight", "type": "shape", "left": 24, "top": 358, "width": 950, "height": 60, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#f59e0b10", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#f59e0b40" } },
-            { "id": "hs-tr-s1-insight-t", "type": "text", "left": 34, "top": 370, "width": 930, "height": 36, "rotate": 0, "content": "<p style='font-size:13px;color:#fbbf24;'>⚡ Key Rule: No single candle gives a complete picture. Context matters — where is this candle forming? At support? After a trend? Candlesticks are clues, not certainties. Always confirm with volume.</p>", "defaultFontName": "Inter", "defaultColor": "#fbbf24" }
+            {
+              "id": "hs-tr-s1-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-tr-s1-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-tr-s1-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>📊 Candlestick Charts & Support/Resistance</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "hs-tr-s1-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;'>The language every trader needs to read price action — High School Level</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "hs-tr-s1-candle-h",
+              "type": "text",
+              "left": 24,
+              "top": 112,
+              "width": 460,
+              "height": 28,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:800;color:#f59e0b;'>🕯️ Reading Candlesticks (OHLC)</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "hs-tr-s1-candle-b",
+              "type": "text",
+              "left": 24,
+              "top": 142,
+              "width": 460,
+              "height": 80,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#94a3b8;line-height:1.8;'>Each candle shows: <b style='color:#f1f5f9;'>Open, High, Low, Close</b>. The body = range between open and close. Wicks = highest and lowest price touched. <b style='color:#10b981;'>Green</b> = closed higher. <b style='color:#f87171;'>Red</b> = closed lower.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "hs-tr-s1-c1-bg",
+              "type": "shape",
+              "left": 24,
+              "top": 234,
+              "width": 135,
+              "height": 110,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98110",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b98140"
+              }
+            },
+            {
+              "id": "hs-tr-s1-c1-t",
+              "type": "text",
+              "left": 28,
+              "top": 240,
+              "width": 127,
+              "height": 98,
+              "rotate": 0,
+              "content": "<p style='font-size:11px;font-weight:800;color:#34d399;text-align:center;'>Bullish Engulfing</p><p style='font-size:10px;color:#94a3b8;text-align:center;margin-top:4px;line-height:1.6;'>Large green candle engulfs prior red. Strong reversal at downtrend bottom.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#34d399"
+            },
+            {
+              "id": "hs-tr-s1-c2-bg",
+              "type": "shape",
+              "left": 169,
+              "top": 234,
+              "width": 135,
+              "height": 110,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b10",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b40"
+              }
+            },
+            {
+              "id": "hs-tr-s1-c2-t",
+              "type": "text",
+              "left": 173,
+              "top": 240,
+              "width": 127,
+              "height": 98,
+              "rotate": 0,
+              "content": "<p style='font-size:11px;font-weight:800;color:#f59e0b;text-align:center;'>Doji</p><p style='font-size:10px;color:#94a3b8;text-align:center;margin-top:4px;line-height:1.6;'>Open ≈ Close. Buyers and sellers equally matched. Indecision — wait for confirmation.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "hs-tr-s1-c3-bg",
+              "type": "shape",
+              "left": 314,
+              "top": 234,
+              "width": 135,
+              "height": 110,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444410",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef444440"
+              }
+            },
+            {
+              "id": "hs-tr-s1-c3-t",
+              "type": "text",
+              "left": 318,
+              "top": 240,
+              "width": 127,
+              "height": 98,
+              "rotate": 0,
+              "content": "<p style='font-size:11px;font-weight:800;color:#f87171;text-align:center;'>Shooting Star</p><p style='font-size:10px;color:#94a3b8;text-align:center;margin-top:4px;line-height:1.6;'>Long upper wick, small body. Rejected after rally. Bearish reversal signal.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f87171"
+            },
+            {
+              "id": "hs-tr-s1-sr-bg",
+              "type": "shape",
+              "left": 514,
+              "top": 110,
+              "width": 460,
+              "height": 240,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f608",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f630"
+              }
+            },
+            {
+              "id": "hs-tr-s1-sr-h",
+              "type": "text",
+              "left": 524,
+              "top": 118,
+              "width": 440,
+              "height": 28,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:800;color:#60a5fa;'>🎯 Support & Resistance</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#60a5fa"
+            },
+            {
+              "id": "hs-tr-s1-sr-b",
+              "type": "text",
+              "left": 524,
+              "top": 148,
+              "width": 440,
+              "height": 195,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#94a3b8;line-height:1.9;'><b style='color:#34d399;'>Support:</b> Price zone where buying has historically stopped declines. Tested and held multiple times = stronger support. Buy near support, stop-loss just below.<br/><br/><b style='color:#f87171;'>Resistance:</b> Price zone where selling has historically capped rallies. Breaking through is bullish. Look to reduce near resistance, watch for breakout.<br/><br/><b style='color:#f59e0b;'>Role Reversal:</b> Old resistance becomes new support after a breakout — one of the most reliable TA patterns.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "hs-tr-s1-insight",
+              "type": "shape",
+              "left": 24,
+              "top": 358,
+              "width": 950,
+              "height": 60,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b10",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b40"
+              }
+            },
+            {
+              "id": "hs-tr-s1-insight-t",
+              "type": "text",
+              "left": 34,
+              "top": 370,
+              "width": 930,
+              "height": 36,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#fbbf24;'>⚡ Key Rule: No single candle gives a complete picture. Context matters — where is this candle forming? At support? After a trend? Candlesticks are clues, not certainties. Always confirm with volume.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#fbbf24"
+            }
           ]
         }
       },
       "actions": [
-        { "id": "action_hs-tr-s1_0", "type": "spotlight", "elementId": "hs-tr-s1-title" },
-        { "id": "action_hs-tr-s1_1", "type": "speech", "text": "Candlestick Charts and Support and Resistance — High School Level" },
-        { "id": "action_hs-tr-s1_2", "type": "spotlight", "elementId": "hs-tr-s1-candle-b" },
-        { "id": "action_hs-tr-s1_3", "type": "speech", "text": "Each candlestick shows four data points: Open, High, Low, and Close. The body is the range between open and close. Wicks show the highest and lowest prices touched during the period. Green candles closed higher — buyers won. Red candles closed lower — sellers won." },
-        { "id": "action_hs-tr-s1_4", "type": "spotlight", "elementId": "hs-tr-s1-c1-t" },
-        { "id": "action_hs-tr-s1_5", "type": "speech", "text": "Bullish Engulfing: a large green candle completely engulfs the previous red candle. Buyers overwhelmed sellers. A strong reversal signal at the bottom of a downtrend." },
-        { "id": "action_hs-tr-s1_6", "type": "spotlight", "elementId": "hs-tr-s1-c2-t" },
-        { "id": "action_hs-tr-s1_7", "type": "speech", "text": "Doji: open and close are almost identical — tiny body, long wicks. Buyers and sellers are equally matched. The market is undecided. Usually precedes a big move in either direction — wait for confirmation." },
-        { "id": "action_hs-tr-s1_8", "type": "spotlight", "elementId": "hs-tr-s1-c3-t" },
-        { "id": "action_hs-tr-s1_9", "type": "speech", "text": "Shooting Star: long upper wick, small body at the bottom. Price rallied hard but was rejected — sellers pushed it back down. A bearish reversal signal after an uptrend." },
-        { "id": "action_hs-tr-s1_10", "type": "spotlight", "elementId": "hs-tr-s1-sr-b" },
-        { "id": "action_hs-tr-s1_11", "type": "speech", "text": "Support is a price zone where buying has historically stopped declines. The more times it's tested and held, the stronger it is. Resistance is a zone where selling has historically capped rallies. Breaking through resistance convincingly is a bullish signal. And role reversal: old resistance becomes new support after a breakout — one of the most reliable patterns in technical analysis." },
-        { "id": "action_hs-tr-s1_12", "type": "spotlight", "elementId": "hs-tr-s1-insight-t" },
-        { "id": "action_hs-tr-s1_13", "type": "speech", "text": "Key rule: No single candle gives a complete picture. Context matters — where is this candle forming? At support? After a trend? Candlesticks are clues, not certainties. Always confirm with volume and other signals." }
+        {
+          "id": "action_hs-tr-s1_0",
+          "type": "spotlight",
+          "elementId": "hs-tr-s1-title"
+        },
+        {
+          "id": "action_hs-tr-s1_1",
+          "type": "speech",
+          "text": "Candlestick Charts and Support and Resistance — High School Level",
+          "audioUrl": "/audio/lessons/oc-hs-trading/0-1.mp3"
+        },
+        {
+          "id": "action_hs-tr-s1_2",
+          "type": "spotlight",
+          "elementId": "hs-tr-s1-candle-b"
+        },
+        {
+          "id": "action_hs-tr-s1_3",
+          "type": "speech",
+          "text": "Each candlestick shows four data points: Open, High, Low, and Close. The body is the range between open and close. Wicks show the highest and lowest prices touched during the period. Green candles closed higher — buyers won. Red candles closed lower — sellers won.",
+          "audioUrl": "/audio/lessons/oc-hs-trading/0-3.mp3"
+        },
+        {
+          "id": "action_hs-tr-s1_4",
+          "type": "spotlight",
+          "elementId": "hs-tr-s1-c1-t"
+        },
+        {
+          "id": "action_hs-tr-s1_5",
+          "type": "speech",
+          "text": "Bullish Engulfing: a large green candle completely engulfs the previous red candle. Buyers overwhelmed sellers. A strong reversal signal at the bottom of a downtrend.",
+          "audioUrl": "/audio/lessons/oc-hs-trading/0-5.mp3"
+        },
+        {
+          "id": "action_hs-tr-s1_6",
+          "type": "spotlight",
+          "elementId": "hs-tr-s1-c2-t"
+        },
+        {
+          "id": "action_hs-tr-s1_7",
+          "type": "speech",
+          "text": "Doji: open and close are almost identical — tiny body, long wicks. Buyers and sellers are equally matched. The market is undecided. Usually precedes a big move in either direction — wait for confirmation.",
+          "audioUrl": "/audio/lessons/oc-hs-trading/0-7.mp3"
+        },
+        {
+          "id": "action_hs-tr-s1_8",
+          "type": "spotlight",
+          "elementId": "hs-tr-s1-c3-t"
+        },
+        {
+          "id": "action_hs-tr-s1_9",
+          "type": "speech",
+          "text": "Shooting Star: long upper wick, small body at the bottom. Price rallied hard but was rejected — sellers pushed it back down. A bearish reversal signal after an uptrend.",
+          "audioUrl": "/audio/lessons/oc-hs-trading/0-9.mp3"
+        },
+        {
+          "id": "action_hs-tr-s1_10",
+          "type": "spotlight",
+          "elementId": "hs-tr-s1-sr-b"
+        },
+        {
+          "id": "action_hs-tr-s1_11",
+          "type": "speech",
+          "text": "Support is a price zone where buying has historically stopped declines. The more times it's tested and held, the stronger it is. Resistance is a zone where selling has historically capped rallies. Breaking through resistance convincingly is a bullish signal. And role reversal: old resistance becomes new support after a breakout — one of the most reliable patterns in technical analysis.",
+          "audioUrl": "/audio/lessons/oc-hs-trading/0-11.mp3"
+        },
+        {
+          "id": "action_hs-tr-s1_12",
+          "type": "spotlight",
+          "elementId": "hs-tr-s1-insight-t"
+        },
+        {
+          "id": "action_hs-tr-s1_13",
+          "type": "speech",
+          "text": "Key rule: No single candle gives a complete picture. Context matters — where is this candle forming? At support? After a trend? Candlesticks are clues, not certainties. Always confirm with volume and other signals.",
+          "audioUrl": "/audio/lessons/oc-hs-trading/0-13.mp3"
+        }
       ]
     },
     {
@@ -75,38 +394,295 @@
           "id": "hs-tr-s2-canvas",
           "viewportSize": 1000,
           "viewportRatio": 0.5625,
-          "background": { "type": "solid", "color": "#0b1120" },
-          "theme": { "backgroundColor": "#0b1120", "themeColors": ["#f59e0b", "#8b5cf6", "#10b981"], "fontColor": "#f1f5f9", "fontName": "Inter" },
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f59e0b",
+              "#8b5cf6",
+              "#10b981"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
           "elements": [
-            { "id": "hs-tr-s2-bar", "type": "shape", "left": 0, "top": 0, "width": 1000, "height": 6, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#f59e0b", "fixedRatio": false },
-            { "id": "hs-tr-s2-hbg", "type": "shape", "left": 0, "top": 6, "width": 1000, "height": 96, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#0f1729", "fixedRatio": false },
-            { "id": "hs-tr-s2-title", "type": "text", "left": 24, "top": 16, "width": 800, "height": 52, "rotate": 0, "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>📈 RSI, MACD, Order Types & Psychology</p>", "defaultFontName": "Inter", "defaultColor": "#f1f5f9" },
-            { "id": "hs-tr-s2-sub", "type": "text", "left": 24, "top": 66, "width": 800, "height": 30, "rotate": 0, "content": "<p style='font-size:13px;color:#64748b;'>What these tools measure and why the mental game is harder than the technical game</p>", "defaultFontName": "Inter", "defaultColor": "#64748b" },
-            { "id": "hs-tr-s2-rsi-bg", "type": "shape", "left": 24, "top": 110, "width": 450, "height": 180, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#8b5cf610", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#8b5cf640" } },
-            { "id": "hs-tr-s2-rsi-h", "type": "text", "left": 34, "top": 118, "width": 430, "height": 26, "rotate": 0, "content": "<p style='font-size:13px;font-weight:800;color:#a78bfa;'>RSI — Relative Strength Index (0–100)</p>", "defaultFontName": "Inter", "defaultColor": "#a78bfa" },
-            { "id": "hs-tr-s2-rsi-b", "type": "text", "left": 34, "top": 146, "width": 430, "height": 135, "rotate": 0, "content": "<p style='font-size:12px;color:#94a3b8;line-height:2;'>Measures overbought/oversold on 0–100 scale. Default 14-period lookback.<br/><b style='color:#f87171;'>RSI above 70</b> → Overbought, potential pullback<br/><b style='color:#34d399;'>RSI below 30</b> → Oversold, potential bounce<br/><b style='color:#f59e0b;'>RSI at 50</b> → Neutral, trend undecided<br/><i style='color:#64748b;'>Caveat: in strong trends, RSI stays extreme. Don't short just because RSI is 70.</i></p>", "defaultFontName": "Inter", "defaultColor": "#94a3b8" },
-            { "id": "hs-tr-s2-macd-bg", "type": "shape", "left": 490, "top": 110, "width": 484, "height": 180, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#3b82f610", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#3b82f640" } },
-            { "id": "hs-tr-s2-macd-h", "type": "text", "left": 500, "top": 118, "width": 464, "height": 26, "rotate": 0, "content": "<p style='font-size:13px;font-weight:800;color:#60a5fa;'>MACD — Moving Average Convergence Divergence</p>", "defaultFontName": "Inter", "defaultColor": "#60a5fa" },
-            { "id": "hs-tr-s2-macd-b", "type": "text", "left": 500, "top": 146, "width": 464, "height": 135, "rotate": 0, "content": "<p style='font-size:12px;color:#94a3b8;line-height:2;'>Tracks difference between 12-period and 26-period EMAs. Signal line = 9-period EMA of MACD.<br/><b style='color:#34d399;'>Bullish cross:</b> MACD crosses above signal → buy signal<br/><b style='color:#f87171;'>Bearish cross:</b> MACD crosses below signal → sell signal<br/><b style='color:#a78bfa;'>Divergence:</b> Price new high but MACD doesn't → weakening momentum</p>", "defaultFontName": "Inter", "defaultColor": "#94a3b8" },
-            { "id": "hs-tr-s2-orders-h", "type": "text", "left": 24, "top": 306, "width": 460, "height": 26, "rotate": 0, "content": "<p style='font-size:13px;font-weight:800;color:#f59e0b;'>⚡ Order Types</p>", "defaultFontName": "Inter", "defaultColor": "#f59e0b" },
-            { "id": "hs-tr-s2-orders-b", "type": "text", "left": 24, "top": 334, "width": 460, "height": 130, "rotate": 0, "content": "<p style='font-size:12px;color:#94a3b8;line-height:2.1;'><b style='color:#f59e0b;'>Market:</b> Execute now at best price. Guaranteed fill, accept spread.<br/><b style='color:#3b82f6;'>Limit:</b> Only fill at your price or better. Not guaranteed.<br/><b style='color:#ef4444;'>Stop-Loss:</b> Auto-exit if price falls to your set level. Defines max loss.<br/><b style='color:#10b981;'>Take-Profit:</b> Auto-exit at target. Lock in gains without watching.<br/><b style='color:#a78bfa;'>R:R Ratio:</b> Risk $100 to make $200 = 1:2. Target min 1:2.</p>", "defaultFontName": "Inter", "defaultColor": "#94a3b8" },
-            { "id": "hs-tr-s2-psych-bg", "type": "shape", "left": 490, "top": 306, "width": 484, "height": 155, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#ef444408", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#ef444430" } },
-            { "id": "hs-tr-s2-psych-h", "type": "text", "left": 500, "top": 314, "width": 464, "height": 26, "rotate": 0, "content": "<p style='font-size:13px;font-weight:800;color:#f87171;'>🧠 Why Most Traders Lose (Psychology)</p>", "defaultFontName": "Inter", "defaultColor": "#f87171" },
-            { "id": "hs-tr-s2-psych-b", "type": "text", "left": 500, "top": 342, "width": 464, "height": 112, "rotate": 0, "content": "<p style='font-size:12px;color:#94a3b8;line-height:2;'><b style='color:#f87171;'>FOMO</b> — Chasing coins after they're already up 50%<br/><b style='color:#f87171;'>Loss Aversion</b> — Holding losers hoping they come back<br/><b style='color:#f59e0b;'>Overtrading</b> — Forced entries with negative expected value<br/><b style='color:#f59e0b;'>Revenge Trading</b> — Doubling down after a loss to recover</p>", "defaultFontName": "Inter", "defaultColor": "#94a3b8" }
+            {
+              "id": "hs-tr-s2-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-tr-s2-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-tr-s2-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>📈 RSI, MACD, Order Types & Psychology</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "hs-tr-s2-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;'>What these tools measure and why the mental game is harder than the technical game</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "hs-tr-s2-rsi-bg",
+              "type": "shape",
+              "left": 24,
+              "top": 110,
+              "width": 450,
+              "height": 180,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf610",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#8b5cf640"
+              }
+            },
+            {
+              "id": "hs-tr-s2-rsi-h",
+              "type": "text",
+              "left": 34,
+              "top": 118,
+              "width": 430,
+              "height": 26,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:800;color:#a78bfa;'>RSI — Relative Strength Index (0–100)</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#a78bfa"
+            },
+            {
+              "id": "hs-tr-s2-rsi-b",
+              "type": "text",
+              "left": 34,
+              "top": 146,
+              "width": 430,
+              "height": 135,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#94a3b8;line-height:2;'>Measures overbought/oversold on 0–100 scale. Default 14-period lookback.<br/><b style='color:#f87171;'>RSI above 70</b> → Overbought, potential pullback<br/><b style='color:#34d399;'>RSI below 30</b> → Oversold, potential bounce<br/><b style='color:#f59e0b;'>RSI at 50</b> → Neutral, trend undecided<br/><i style='color:#64748b;'>Caveat: in strong trends, RSI stays extreme. Don't short just because RSI is 70.</i></p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "hs-tr-s2-macd-bg",
+              "type": "shape",
+              "left": 490,
+              "top": 110,
+              "width": 484,
+              "height": 180,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f610",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f640"
+              }
+            },
+            {
+              "id": "hs-tr-s2-macd-h",
+              "type": "text",
+              "left": 500,
+              "top": 118,
+              "width": 464,
+              "height": 26,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:800;color:#60a5fa;'>MACD — Moving Average Convergence Divergence</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#60a5fa"
+            },
+            {
+              "id": "hs-tr-s2-macd-b",
+              "type": "text",
+              "left": 500,
+              "top": 146,
+              "width": 464,
+              "height": 135,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#94a3b8;line-height:2;'>Tracks difference between 12-period and 26-period EMAs. Signal line = 9-period EMA of MACD.<br/><b style='color:#34d399;'>Bullish cross:</b> MACD crosses above signal → buy signal<br/><b style='color:#f87171;'>Bearish cross:</b> MACD crosses below signal → sell signal<br/><b style='color:#a78bfa;'>Divergence:</b> Price new high but MACD doesn't → weakening momentum</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "hs-tr-s2-orders-h",
+              "type": "text",
+              "left": 24,
+              "top": 306,
+              "width": 460,
+              "height": 26,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:800;color:#f59e0b;'>⚡ Order Types</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "hs-tr-s2-orders-b",
+              "type": "text",
+              "left": 24,
+              "top": 334,
+              "width": 460,
+              "height": 130,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#94a3b8;line-height:2.1;'><b style='color:#f59e0b;'>Market:</b> Execute now at best price. Guaranteed fill, accept spread.<br/><b style='color:#3b82f6;'>Limit:</b> Only fill at your price or better. Not guaranteed.<br/><b style='color:#ef4444;'>Stop-Loss:</b> Auto-exit if price falls to your set level. Defines max loss.<br/><b style='color:#10b981;'>Take-Profit:</b> Auto-exit at target. Lock in gains without watching.<br/><b style='color:#a78bfa;'>R:R Ratio:</b> Risk $100 to make $200 = 1:2. Target min 1:2.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "hs-tr-s2-psych-bg",
+              "type": "shape",
+              "left": 490,
+              "top": 306,
+              "width": 484,
+              "height": 155,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444408",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef444430"
+              }
+            },
+            {
+              "id": "hs-tr-s2-psych-h",
+              "type": "text",
+              "left": 500,
+              "top": 314,
+              "width": 464,
+              "height": 26,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:800;color:#f87171;'>🧠 Why Most Traders Lose (Psychology)</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f87171"
+            },
+            {
+              "id": "hs-tr-s2-psych-b",
+              "type": "text",
+              "left": 500,
+              "top": 342,
+              "width": 464,
+              "height": 112,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#94a3b8;line-height:2;'><b style='color:#f87171;'>FOMO</b> — Chasing coins after they're already up 50%<br/><b style='color:#f87171;'>Loss Aversion</b> — Holding losers hoping they come back<br/><b style='color:#f59e0b;'>Overtrading</b> — Forced entries with negative expected value<br/><b style='color:#f59e0b;'>Revenge Trading</b> — Doubling down after a loss to recover</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            }
           ]
         }
       },
       "actions": [
-        { "id": "action_hs-tr-s2_0", "type": "spotlight", "elementId": "hs-tr-s2-title" },
-        { "id": "action_hs-tr-s2_1", "type": "speech", "text": "RSI, MACD, Order Types, and Trading Psychology" },
-        { "id": "action_hs-tr-s2_2", "type": "spotlight", "elementId": "hs-tr-s2-rsi-b" },
-        { "id": "action_hs-tr-s2_3", "type": "speech", "text": "RSI measures overbought and oversold conditions on a zero to one hundred scale using a 14-period lookback. RSI above 70 signals overbought — potential pullback ahead. RSI below 30 signals oversold — potential bounce. RSI at 50 is neutral. Important caveat: in strong trends, RSI can stay extreme for extended periods. Don't short just because RSI hits 70." },
-        { "id": "action_hs-tr-s2_4", "type": "spotlight", "elementId": "hs-tr-s2-macd-b" },
-        { "id": "action_hs-tr-s2_5", "type": "speech", "text": "MACD tracks the difference between the 12-period and 26-period exponential moving averages. A signal line is the 9-period EMA of the MACD itself. Bullish cross: MACD crosses above the signal line — buy signal. Bearish cross: MACD crosses below — sell signal. Divergence: price makes a new high but MACD doesn't — momentum is weakening, watch out." },
-        { "id": "action_hs-tr-s2_6", "type": "spotlight", "elementId": "hs-tr-s2-orders-b" },
-        { "id": "action_hs-tr-s2_7", "type": "speech", "text": "Order types: Market orders execute immediately at the best available price — guaranteed fill. Limit orders only fill at your specified price or better — not guaranteed. Stop-loss orders auto-exit your position if price falls to your set level — this defines your maximum loss before you enter. Take-profit orders lock in gains automatically at your target. And always know your risk-reward ratio — risk one hundred dollars to make two hundred gives you a 1 to 2 ratio. Professionals target minimum 1 to 2." },
-        { "id": "action_hs-tr-s2_8", "type": "spotlight", "elementId": "hs-tr-s2-psych-b" },
-        { "id": "action_hs-tr-s2_9", "type": "speech", "text": "Studies show 70 to 80 percent of retail traders lose money — not from lack of indicators, but from psychology. FOMO: chasing coins after they're already up fifty percent. Loss aversion: holding losers hoping they come back, turning small losses into account-wrecking drawdowns. Overtrading: forced entries with no edge. Revenge trading: doubling down after a loss to recover — this is how accounts blow up. Copy trading bypasses all of this by following disciplined traders automatically." }
+        {
+          "id": "action_hs-tr-s2_0",
+          "type": "spotlight",
+          "elementId": "hs-tr-s2-title"
+        },
+        {
+          "id": "action_hs-tr-s2_1",
+          "type": "speech",
+          "text": "RSI, MACD, Order Types, and Trading Psychology",
+          "audioUrl": "/audio/lessons/oc-hs-trading/1-1.mp3"
+        },
+        {
+          "id": "action_hs-tr-s2_2",
+          "type": "spotlight",
+          "elementId": "hs-tr-s2-rsi-b"
+        },
+        {
+          "id": "action_hs-tr-s2_3",
+          "type": "speech",
+          "text": "RSI measures overbought and oversold conditions on a zero to one hundred scale using a 14-period lookback. RSI above 70 signals overbought — potential pullback ahead. RSI below 30 signals oversold — potential bounce. RSI at 50 is neutral. Important caveat: in strong trends, RSI can stay extreme for extended periods. Don't short just because RSI hits 70.",
+          "audioUrl": "/audio/lessons/oc-hs-trading/1-3.mp3"
+        },
+        {
+          "id": "action_hs-tr-s2_4",
+          "type": "spotlight",
+          "elementId": "hs-tr-s2-macd-b"
+        },
+        {
+          "id": "action_hs-tr-s2_5",
+          "type": "speech",
+          "text": "MACD tracks the difference between the 12-period and 26-period exponential moving averages. A signal line is the 9-period EMA of the MACD itself. Bullish cross: MACD crosses above the signal line — buy signal. Bearish cross: MACD crosses below — sell signal. Divergence: price makes a new high but MACD doesn't — momentum is weakening, watch out.",
+          "audioUrl": "/audio/lessons/oc-hs-trading/1-5.mp3"
+        },
+        {
+          "id": "action_hs-tr-s2_6",
+          "type": "spotlight",
+          "elementId": "hs-tr-s2-orders-b"
+        },
+        {
+          "id": "action_hs-tr-s2_7",
+          "type": "speech",
+          "text": "Order types: Market orders execute immediately at the best available price — guaranteed fill. Limit orders only fill at your specified price or better — not guaranteed. Stop-loss orders auto-exit your position if price falls to your set level — this defines your maximum loss before you enter. Take-profit orders lock in gains automatically at your target. And always know your risk-reward ratio — risk one hundred dollars to make two hundred gives you a 1 to 2 ratio. Professionals target minimum 1 to 2.",
+          "audioUrl": "/audio/lessons/oc-hs-trading/1-7.mp3"
+        },
+        {
+          "id": "action_hs-tr-s2_8",
+          "type": "spotlight",
+          "elementId": "hs-tr-s2-psych-b"
+        },
+        {
+          "id": "action_hs-tr-s2_9",
+          "type": "speech",
+          "text": "Studies show 70 to 80 percent of retail traders lose money — not from lack of indicators, but from psychology. FOMO: chasing coins after they're already up fifty percent. Loss aversion: holding losers hoping they come back, turning small losses into account-wrecking drawdowns. Overtrading: forced entries with no edge. Revenge trading: doubling down after a loss to recover — this is how accounts blow up. Copy trading bypasses all of this by following disciplined traders automatically.",
+          "audioUrl": "/audio/lessons/oc-hs-trading/1-9.mp3"
+        }
       ]
     },
     {
@@ -122,12 +698,26 @@
             "type": "single",
             "question": "What does an RSI reading above 70 indicate?",
             "options": [
-              { "label": "The asset is a strong buy", "value": "A" },
-              { "label": "The asset is overbought — a pullback may be coming", "value": "B" },
-              { "label": "The trading volume is very high", "value": "C" },
-              { "label": "A bullish MACD crossover has occurred", "value": "D" }
+              {
+                "label": "The asset is a strong buy",
+                "value": "A"
+              },
+              {
+                "label": "The asset is overbought — a pullback may be coming",
+                "value": "B"
+              },
+              {
+                "label": "The trading volume is very high",
+                "value": "C"
+              },
+              {
+                "label": "A bullish MACD crossover has occurred",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "RSI above 70 means the asset has gained significantly in a short period and may be due for a pullback — it's 'overbought' relative to recent price history. However, in strong uptrends, RSI can stay above 70 for extended periods. Always wait for RSI to turn before acting on it.",
             "points": 1
           },
@@ -136,12 +726,26 @@
             "type": "single",
             "question": "What is 'role reversal' in support and resistance?",
             "options": [
-              { "label": "When buyers and sellers switch roles", "value": "A" },
-              { "label": "When a resistance level, once broken, becomes the new support", "value": "B" },
-              { "label": "When a chart pattern reverses direction", "value": "C" },
-              { "label": "When RSI moves from overbought to oversold", "value": "D" }
+              {
+                "label": "When buyers and sellers switch roles",
+                "value": "A"
+              },
+              {
+                "label": "When a resistance level, once broken, becomes the new support",
+                "value": "B"
+              },
+              {
+                "label": "When a chart pattern reverses direction",
+                "value": "C"
+              },
+              {
+                "label": "When RSI moves from overbought to oversold",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Role reversal: when price breaks convincingly above a resistance level, that level often becomes the new support on a pullback. Old resistance becomes new support (and vice versa). Traders use retests of these flipped levels for high-probability entries.",
             "points": 1
           },
@@ -150,12 +754,26 @@
             "type": "single",
             "question": "What is the difference between a limit order and a market order?",
             "options": [
-              { "label": "Market orders are only available on CEXs; limit orders only on DEXs", "value": "A" },
-              { "label": "A market order executes immediately at current price; a limit order only fills at your specified price or better", "value": "B" },
-              { "label": "Limit orders always fill faster than market orders", "value": "C" },
-              { "label": "Market orders require more collateral", "value": "D" }
+              {
+                "label": "Market orders are only available on CEXs; limit orders only on DEXs",
+                "value": "A"
+              },
+              {
+                "label": "A market order executes immediately at current price; a limit order only fills at your specified price or better",
+                "value": "B"
+              },
+              {
+                "label": "Limit orders always fill faster than market orders",
+                "value": "C"
+              },
+              {
+                "label": "Market orders require more collateral",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "A market order executes immediately at whatever the best available price is — guaranteed to fill. A limit order specifies the maximum price you'll pay (or minimum you'll sell for) — it only fills if the market reaches that level, giving you price control but no fill guarantee.",
             "points": 1
           },
@@ -164,12 +782,26 @@
             "type": "single",
             "question": "What is 'FOMO' in trading?",
             "options": [
-              { "label": "A type of chart pattern", "value": "A" },
-              { "label": "Fear of Missing Out — buying into a move after it's already happened, often near the top", "value": "B" },
-              { "label": "A method for calculating position size", "value": "C" },
-              { "label": "A strategy for timing market entries", "value": "D" }
+              {
+                "label": "A type of chart pattern",
+                "value": "A"
+              },
+              {
+                "label": "Fear of Missing Out — buying into a move after it's already happened, often near the top",
+                "value": "B"
+              },
+              {
+                "label": "A method for calculating position size",
+                "value": "C"
+              },
+              {
+                "label": "A strategy for timing market entries",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "FOMO (Fear of Missing Out) is the emotional impulse to buy a coin after it's already rallied sharply. You buy because you're afraid of missing further gains — but you often end up buying the top while smart money is already taking profits. FOMO entries are one of the most common causes of retail losses.",
             "points": 1
           },
@@ -178,20 +810,44 @@
             "type": "single",
             "question": "If you risk $100 on a trade to potentially make $300, what is your risk/reward ratio?",
             "options": [
-              { "label": "1:1", "value": "A" },
-              { "label": "1:3", "value": "B" },
-              { "label": "3:1", "value": "C" },
-              { "label": "1:0.3", "value": "D" }
+              {
+                "label": "1:1",
+                "value": "A"
+              },
+              {
+                "label": "1:3",
+                "value": "B"
+              },
+              {
+                "label": "3:1",
+                "value": "C"
+              },
+              {
+                "label": "1:0.3",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Risk/reward ratio is risk:reward. If you risk $100 to potentially gain $300, that's a 1:3 ratio — for every dollar risked, you aim to gain three. Professionals generally target a minimum of 1:2. With a 1:3 ratio and even a 40% win rate, you're profitable long-term.",
             "points": 1
           }
         ]
       },
       "actions": [
-        { "id": "action_hs-tr-s3_q0", "type": "speech", "text": "Five questions on trading fundamentals — RSI, support and resistance, order types, and the psychology traps that trip up most retail traders." },
-        { "id": "action_hs-tr-s3_q1", "type": "speech", "text": "Understanding copy trading at OnlyCrypto means understanding what makes a trader worth following. These concepts help you evaluate traders more clearly." }
+        {
+          "id": "action_hs-tr-s3_q0",
+          "type": "speech",
+          "text": "Five questions on trading fundamentals — RSI, support and resistance, order types, and the psychology traps that trip up most retail traders.",
+          "audioUrl": "/audio/lessons/oc-hs-trading/2-0.mp3"
+        },
+        {
+          "id": "action_hs-tr-s3_q1",
+          "type": "speech",
+          "text": "Understanding copy trading at OnlyCrypto means understanding what makes a trader worth following. These concepts help you evaluate traders more clearly.",
+          "audioUrl": "/audio/lessons/oc-hs-trading/2-1.mp3"
+        }
       ]
     }
   ]

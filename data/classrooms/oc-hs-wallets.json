@@ -9,7 +9,11 @@
     "updatedAt": "2026-04-24T12:00:00.000Z",
     "languageDirective": "en-US",
     "style": "academic",
-    "agentIds": ["default-1", "default-2", "default-3"],
+    "agentIds": [
+      "default-1",
+      "default-2",
+      "default-3"
+    ],
     "generatedAgentConfigs": []
   },
   "scenes": [
@@ -24,51 +28,439 @@
           "id": "hs-wl-s1-canvas",
           "viewportSize": 1000,
           "viewportRatio": 0.5625,
-          "background": { "type": "solid", "color": "#0b1120" },
-          "theme": { "backgroundColor": "#0b1120", "themeColors": ["#f59e0b", "#3b82f6", "#ef4444"], "fontColor": "#f1f5f9", "fontName": "Inter" },
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f59e0b",
+              "#3b82f6",
+              "#ef4444"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
           "elements": [
-            { "id": "hs-wl-s1-bar", "type": "shape", "left": 0, "top": 0, "width": 1000, "height": 6, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#f59e0b", "fixedRatio": false },
-            { "id": "hs-wl-s1-hbg", "type": "shape", "left": 0, "top": 6, "width": 1000, "height": 96, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#0f1729", "fixedRatio": false },
-            { "id": "hs-wl-s1-title", "type": "text", "left": 24, "top": 16, "width": 800, "height": 52, "rotate": 0, "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🔑 Seed Phrases, Keys & Wallet Types</p>", "defaultFontName": "Inter", "defaultColor": "#f1f5f9" },
-            { "id": "hs-wl-s1-sub", "type": "text", "left": 24, "top": 66, "width": 800, "height": 30, "rotate": 0, "content": "<p style='font-size:13px;color:#64748b;'>The cryptography behind your 12 words — High School Level</p>", "defaultFontName": "Inter", "defaultColor": "#64748b" },
-            { "id": "hs-wl-s1-seed-h", "type": "text", "left": 24, "top": 112, "width": 950, "height": 26, "rotate": 0, "content": "<p style='font-size:14px;font-weight:800;color:#f59e0b;'>🌱 What a Seed Phrase Actually Does (BIP39)</p>", "defaultFontName": "Inter", "defaultColor": "#f59e0b" },
-            { "id": "hs-wl-s1-seed-flow", "type": "text", "left": 24, "top": 142, "width": 950, "height": 80, "rotate": 0, "content": "<p style='font-size:13px;color:#94a3b8;line-height:1.9;'>1️⃣ Device generates <b style='color:#f1f5f9;'>128–256 bits of true randomness</b> → 2️⃣ Converted to <b style='color:#f59e0b;'>12–24 words from a 2,048-word BIP39 list</b> → 3️⃣ Words → seed via PBKDF2 hashing → <b style='color:#f1f5f9;'>512-bit master private key</b> → 4️⃣ BIP44 derivation paths generate every address you'll ever use (m/44'/0'/0'/0/0...)</p>", "defaultFontName": "Inter", "defaultColor": "#94a3b8" },
-            { "id": "hs-wl-s1-entropy", "type": "shape", "left": 24, "top": 232, "width": 460, "height": 60, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#f59e0b10", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#f59e0b40" } },
-            { "id": "hs-wl-s1-entropy-t", "type": "text", "left": 34, "top": 242, "width": 440, "height": 40, "rotate": 0, "content": "<p style='font-size:12px;color:#fbbf24;'>⚡ A 12-word seed has 2¹³² ≈ 5 sextillion combinations. At 1 billion guesses/sec, brute-forcing takes longer than the age of the universe.</p>", "defaultFontName": "Inter", "defaultColor": "#fbbf24" },
-            { "id": "hs-wl-s1-keys-h", "type": "text", "left": 24, "top": 308, "width": 460, "height": 26, "rotate": 0, "content": "<p style='font-size:13px;font-weight:800;color:#3b82f6;'>🔐 Private Key → Public Key → Address</p>", "defaultFontName": "Inter", "defaultColor": "#3b82f6" },
-            { "id": "hs-wl-s1-k1", "type": "shape", "left": 24, "top": 336, "width": 130, "height": 100, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#ef444415", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#ef444450" } },
-            { "id": "hs-wl-s1-k1t", "type": "text", "left": 28, "top": 342, "width": 122, "height": 88, "rotate": 0, "content": "<p style='font-size:11px;font-weight:800;color:#f87171;text-align:center;'>Private Key<br/>🔑</p><p style='font-size:10px;color:#94a3b8;text-align:center;margin-top:4px;'>NEVER share. Anyone with this spends your funds.</p>", "defaultFontName": "Inter", "defaultColor": "#f87171" },
-            { "id": "hs-wl-s1-arr1", "type": "text", "left": 162, "top": 376, "width": 30, "height": 28, "rotate": 0, "content": "<p style='font-size:18px;color:#60a5fa;text-align:center;'>→</p>", "defaultFontName": "Inter", "defaultColor": "#60a5fa" },
-            { "id": "hs-wl-s1-k2", "type": "shape", "left": 198, "top": 336, "width": 130, "height": 100, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#3b82f615", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#3b82f650" } },
-            { "id": "hs-wl-s1-k2t", "type": "text", "left": 202, "top": 342, "width": 122, "height": 88, "rotate": 0, "content": "<p style='font-size:11px;font-weight:800;color:#60a5fa;text-align:center;'>Public Key<br/>📢</p><p style='font-size:10px;color:#94a3b8;text-align:center;margin-top:4px;'>Derived via elliptic curve math. Cannot reverse to private key.</p>", "defaultFontName": "Inter", "defaultColor": "#60a5fa" },
-            { "id": "hs-wl-s1-arr2", "type": "text", "left": 336, "top": 376, "width": 30, "height": 28, "rotate": 0, "content": "<p style='font-size:18px;color:#60a5fa;text-align:center;'>→</p>", "defaultFontName": "Inter", "defaultColor": "#60a5fa" },
-            { "id": "hs-wl-s1-k3", "type": "shape", "left": 372, "top": 336, "width": 100, "height": 100, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#10b98115", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#10b98150" } },
-            { "id": "hs-wl-s1-k3t", "type": "text", "left": 376, "top": 342, "width": 92, "height": 88, "rotate": 0, "content": "<p style='font-size:11px;font-weight:800;color:#34d399;text-align:center;'>Address<br/>📮</p><p style='font-size:10px;color:#94a3b8;text-align:center;margin-top:4px;'>Hashed public key. Safe to share publicly.</p>", "defaultFontName": "Inter", "defaultColor": "#34d399" },
-            { "id": "hs-wl-s1-wallet-bg", "type": "shape", "left": 514, "top": 295, "width": 460, "height": 145, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#8b5cf608", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#8b5cf630" } },
-            { "id": "hs-wl-s1-wallet-h", "type": "text", "left": 524, "top": 303, "width": 440, "height": 26, "rotate": 0, "content": "<p style='font-size:13px;font-weight:800;color:#a78bfa;'>Hot vs Cold vs Custodial</p>", "defaultFontName": "Inter", "defaultColor": "#a78bfa" },
-            { "id": "hs-wl-s1-wallet-b", "type": "text", "left": 524, "top": 331, "width": 440, "height": 102, "rotate": 0, "content": "<p style='font-size:12px;color:#94a3b8;line-height:2;'>🔥 <b style='color:#f59e0b;'>Hot</b> — Online, convenient, riskier. MetaMask, Xumm. Use for small amounts.<br/>🧊 <b style='color:#3b82f6;'>Cold</b> — Keys never touch internet. Ledger, Trezor. Use for large holdings.<br/>🏦 <b style='color:#ef4444;'>Custodial</b> — Exchange holds your keys. You own IOUs. FTX proved why this is risky.</p>", "defaultFontName": "Inter", "defaultColor": "#94a3b8" },
-            { "id": "hs-wl-s1-oc", "type": "shape", "left": 24, "top": 450, "width": 950, "height": 60, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#3b82f610", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#3b82f640" } },
-            { "id": "hs-wl-s1-oc-t", "type": "text", "left": 34, "top": 462, "width": 930, "height": 36, "rotate": 0, "content": "<p style='font-size:13px;color:#60a5fa;'>OnlyCrypto payouts go to your wallet address on XRPL. Use a non-custodial wallet you control. If using an exchange address, include the destination tag or funds may be lost.</p>", "defaultFontName": "Inter", "defaultColor": "#60a5fa" }
+            {
+              "id": "hs-wl-s1-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-wl-s1-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-wl-s1-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🔑 Seed Phrases, Keys & Wallet Types</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "hs-wl-s1-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;'>The cryptography behind your 12 words — High School Level</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "hs-wl-s1-seed-h",
+              "type": "text",
+              "left": 24,
+              "top": 112,
+              "width": 950,
+              "height": 26,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:800;color:#f59e0b;'>🌱 What a Seed Phrase Actually Does (BIP39)</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "hs-wl-s1-seed-flow",
+              "type": "text",
+              "left": 24,
+              "top": 142,
+              "width": 950,
+              "height": 80,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#94a3b8;line-height:1.9;'>1️⃣ Device generates <b style='color:#f1f5f9;'>128–256 bits of true randomness</b> → 2️⃣ Converted to <b style='color:#f59e0b;'>12–24 words from a 2,048-word BIP39 list</b> → 3️⃣ Words → seed via PBKDF2 hashing → <b style='color:#f1f5f9;'>512-bit master private key</b> → 4️⃣ BIP44 derivation paths generate every address you'll ever use (m/44'/0'/0'/0/0...)</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "hs-wl-s1-entropy",
+              "type": "shape",
+              "left": 24,
+              "top": 232,
+              "width": 460,
+              "height": 60,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b10",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b40"
+              }
+            },
+            {
+              "id": "hs-wl-s1-entropy-t",
+              "type": "text",
+              "left": 34,
+              "top": 242,
+              "width": 440,
+              "height": 40,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#fbbf24;'>⚡ A 12-word seed has 2¹³² ≈ 5 sextillion combinations. At 1 billion guesses/sec, brute-forcing takes longer than the age of the universe.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#fbbf24"
+            },
+            {
+              "id": "hs-wl-s1-keys-h",
+              "type": "text",
+              "left": 24,
+              "top": 308,
+              "width": 460,
+              "height": 26,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:800;color:#3b82f6;'>🔐 Private Key → Public Key → Address</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "hs-wl-s1-k1",
+              "type": "shape",
+              "left": 24,
+              "top": 336,
+              "width": 130,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444415",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef444450"
+              }
+            },
+            {
+              "id": "hs-wl-s1-k1t",
+              "type": "text",
+              "left": 28,
+              "top": 342,
+              "width": 122,
+              "height": 88,
+              "rotate": 0,
+              "content": "<p style='font-size:11px;font-weight:800;color:#f87171;text-align:center;'>Private Key<br/>🔑</p><p style='font-size:10px;color:#94a3b8;text-align:center;margin-top:4px;'>NEVER share. Anyone with this spends your funds.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f87171"
+            },
+            {
+              "id": "hs-wl-s1-arr1",
+              "type": "text",
+              "left": 162,
+              "top": 376,
+              "width": 30,
+              "height": 28,
+              "rotate": 0,
+              "content": "<p style='font-size:18px;color:#60a5fa;text-align:center;'>→</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#60a5fa"
+            },
+            {
+              "id": "hs-wl-s1-k2",
+              "type": "shape",
+              "left": 198,
+              "top": 336,
+              "width": 130,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f615",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f650"
+              }
+            },
+            {
+              "id": "hs-wl-s1-k2t",
+              "type": "text",
+              "left": 202,
+              "top": 342,
+              "width": 122,
+              "height": 88,
+              "rotate": 0,
+              "content": "<p style='font-size:11px;font-weight:800;color:#60a5fa;text-align:center;'>Public Key<br/>📢</p><p style='font-size:10px;color:#94a3b8;text-align:center;margin-top:4px;'>Derived via elliptic curve math. Cannot reverse to private key.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#60a5fa"
+            },
+            {
+              "id": "hs-wl-s1-arr2",
+              "type": "text",
+              "left": 336,
+              "top": 376,
+              "width": 30,
+              "height": 28,
+              "rotate": 0,
+              "content": "<p style='font-size:18px;color:#60a5fa;text-align:center;'>→</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#60a5fa"
+            },
+            {
+              "id": "hs-wl-s1-k3",
+              "type": "shape",
+              "left": 372,
+              "top": 336,
+              "width": 100,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98115",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b98150"
+              }
+            },
+            {
+              "id": "hs-wl-s1-k3t",
+              "type": "text",
+              "left": 376,
+              "top": 342,
+              "width": 92,
+              "height": 88,
+              "rotate": 0,
+              "content": "<p style='font-size:11px;font-weight:800;color:#34d399;text-align:center;'>Address<br/>📮</p><p style='font-size:10px;color:#94a3b8;text-align:center;margin-top:4px;'>Hashed public key. Safe to share publicly.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#34d399"
+            },
+            {
+              "id": "hs-wl-s1-wallet-bg",
+              "type": "shape",
+              "left": 514,
+              "top": 295,
+              "width": 460,
+              "height": 145,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf608",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#8b5cf630"
+              }
+            },
+            {
+              "id": "hs-wl-s1-wallet-h",
+              "type": "text",
+              "left": 524,
+              "top": 303,
+              "width": 440,
+              "height": 26,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:800;color:#a78bfa;'>Hot vs Cold vs Custodial</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#a78bfa"
+            },
+            {
+              "id": "hs-wl-s1-wallet-b",
+              "type": "text",
+              "left": 524,
+              "top": 331,
+              "width": 440,
+              "height": 102,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#94a3b8;line-height:2;'>🔥 <b style='color:#f59e0b;'>Hot</b> — Online, convenient, riskier. MetaMask, Xumm. Use for small amounts.<br/>🧊 <b style='color:#3b82f6;'>Cold</b> — Keys never touch internet. Ledger, Trezor. Use for large holdings.<br/>🏦 <b style='color:#ef4444;'>Custodial</b> — Exchange holds your keys. You own IOUs. FTX proved why this is risky.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "hs-wl-s1-oc",
+              "type": "shape",
+              "left": 24,
+              "top": 450,
+              "width": 950,
+              "height": 60,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f610",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f640"
+              }
+            },
+            {
+              "id": "hs-wl-s1-oc-t",
+              "type": "text",
+              "left": 34,
+              "top": 462,
+              "width": 930,
+              "height": 36,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#60a5fa;'>OnlyCrypto payouts go to your wallet address on XRPL. Use a non-custodial wallet you control. If using an exchange address, include the destination tag or funds may be lost.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#60a5fa"
+            }
           ]
         }
       },
       "actions": [
-        { "id": "action_hs-wl-s1_0", "type": "spotlight", "elementId": "hs-wl-s1-title" },
-        { "id": "action_hs-wl-s1_1", "type": "speech", "text": "Seed Phrases, Keys, and Wallet Types — High School Level" },
-        { "id": "action_hs-wl-s1_2", "type": "spotlight", "elementId": "hs-wl-s1-seed-flow" },
-        { "id": "action_hs-wl-s1_3", "type": "speech", "text": "Here's what your seed phrase actually does cryptographically. Your device generates 128 to 256 bits of true randomness. That gets converted to 12 to 24 words from a standard 2,048-word BIP39 list. Those words encode your master private key through a PBKDF2 hashing function producing a 512-bit output. From that one master key, BIP44 derivation paths generate every wallet address you will ever use — deterministically and mathematically." },
-        { "id": "action_hs-wl-s1_4", "type": "spotlight", "elementId": "hs-wl-s1-entropy-t" },
-        { "id": "action_hs-wl-s1_5", "type": "speech", "text": "A 12-word seed has 2 to the power of 132 possible combinations — roughly 5 sextillion possibilities. At a billion guesses per second, brute-forcing takes longer than the age of the universe. Your seed phrase is mathematically unguessable. The only risk is you sharing it or storing it insecurely." },
-        { "id": "action_hs-wl-s1_6", "type": "spotlight", "elementId": "hs-wl-s1-k1t" },
-        { "id": "action_hs-wl-s1_7", "type": "speech", "text": "The private key is a 256-bit random number. Anyone with it can spend your funds. Never share it. Never type it online. Never store it digitally." },
-        { "id": "action_hs-wl-s1_8", "type": "spotlight", "elementId": "hs-wl-s1-k2t" },
-        { "id": "action_hs-wl-s1_9", "type": "speech", "text": "The public key is mathematically derived from your private key using elliptic curve multiplication — secp256k1. It's safe to share. You cannot reverse-engineer the private key from it." },
-        { "id": "action_hs-wl-s1_10", "type": "spotlight", "elementId": "hs-wl-s1-k3t" },
-        { "id": "action_hs-wl-s1_11", "type": "speech", "text": "The wallet address is a hashed and encoded version of your public key — shorter and easier to work with. This is what you share to receive funds. Completely safe to post publicly." },
-        { "id": "action_hs-wl-s1_12", "type": "spotlight", "elementId": "hs-wl-s1-wallet-b" },
-        { "id": "action_hs-wl-s1_13", "type": "speech", "text": "Hot wallets are online — convenient for small amounts, but exposed to the internet. Cold wallets like Ledger keep your keys completely offline — the key never touches the internet even when signing transactions. Custodial wallets are when an exchange holds your keys — you own IOUs, not real crypto. FTX's collapse proved exactly how dangerous that is." },
-        { "id": "action_hs-wl-s1_14", "type": "spotlight", "elementId": "hs-wl-s1-oc-t" },
-        { "id": "action_hs-wl-s1_15", "type": "speech", "text": "OnlyCrypto payouts go directly to your wallet address on XRPL. Always use a non-custodial wallet you control. If using an exchange address, make sure to include the destination tag or your funds may be lost." }
+        {
+          "id": "action_hs-wl-s1_0",
+          "type": "spotlight",
+          "elementId": "hs-wl-s1-title"
+        },
+        {
+          "id": "action_hs-wl-s1_1",
+          "type": "speech",
+          "text": "Seed Phrases, Keys, and Wallet Types — High School Level",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/0-1.mp3"
+        },
+        {
+          "id": "action_hs-wl-s1_2",
+          "type": "spotlight",
+          "elementId": "hs-wl-s1-seed-flow"
+        },
+        {
+          "id": "action_hs-wl-s1_3",
+          "type": "speech",
+          "text": "Here's what your seed phrase actually does cryptographically. Your device generates 128 to 256 bits of true randomness. That gets converted to 12 to 24 words from a standard 2,048-word BIP39 list. Those words encode your master private key through a PBKDF2 hashing function producing a 512-bit output. From that one master key, BIP44 derivation paths generate every wallet address you will ever use — deterministically and mathematically.",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/0-3.mp3"
+        },
+        {
+          "id": "action_hs-wl-s1_4",
+          "type": "spotlight",
+          "elementId": "hs-wl-s1-entropy-t"
+        },
+        {
+          "id": "action_hs-wl-s1_5",
+          "type": "speech",
+          "text": "A 12-word seed has 2 to the power of 132 possible combinations — roughly 5 sextillion possibilities. At a billion guesses per second, brute-forcing takes longer than the age of the universe. Your seed phrase is mathematically unguessable. The only risk is you sharing it or storing it insecurely.",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/0-5.mp3"
+        },
+        {
+          "id": "action_hs-wl-s1_6",
+          "type": "spotlight",
+          "elementId": "hs-wl-s1-k1t"
+        },
+        {
+          "id": "action_hs-wl-s1_7",
+          "type": "speech",
+          "text": "The private key is a 256-bit random number. Anyone with it can spend your funds. Never share it. Never type it online. Never store it digitally.",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/0-7.mp3"
+        },
+        {
+          "id": "action_hs-wl-s1_8",
+          "type": "spotlight",
+          "elementId": "hs-wl-s1-k2t"
+        },
+        {
+          "id": "action_hs-wl-s1_9",
+          "type": "speech",
+          "text": "The public key is mathematically derived from your private key using elliptic curve multiplication — secp256k1. It's safe to share. You cannot reverse-engineer the private key from it.",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/0-9.mp3"
+        },
+        {
+          "id": "action_hs-wl-s1_10",
+          "type": "spotlight",
+          "elementId": "hs-wl-s1-k3t"
+        },
+        {
+          "id": "action_hs-wl-s1_11",
+          "type": "speech",
+          "text": "The wallet address is a hashed and encoded version of your public key — shorter and easier to work with. This is what you share to receive funds. Completely safe to post publicly.",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/0-11.mp3"
+        },
+        {
+          "id": "action_hs-wl-s1_12",
+          "type": "spotlight",
+          "elementId": "hs-wl-s1-wallet-b"
+        },
+        {
+          "id": "action_hs-wl-s1_13",
+          "type": "speech",
+          "text": "Hot wallets are online — convenient for small amounts, but exposed to the internet. Cold wallets like Ledger keep your keys completely offline — the key never touches the internet even when signing transactions. Custodial wallets are when an exchange holds your keys — you own IOUs, not real crypto. FTX's collapse proved exactly how dangerous that is.",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/0-13.mp3"
+        },
+        {
+          "id": "action_hs-wl-s1_14",
+          "type": "spotlight",
+          "elementId": "hs-wl-s1-oc-t"
+        },
+        {
+          "id": "action_hs-wl-s1_15",
+          "type": "speech",
+          "text": "OnlyCrypto payouts go directly to your wallet address on XRPL. Always use a non-custodial wallet you control. If using an exchange address, make sure to include the destination tag or your funds may be lost.",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/0-15.mp3"
+        }
       ]
     },
     {
@@ -82,40 +474,324 @@
           "id": "hs-wl-s2-canvas",
           "viewportSize": 1000,
           "viewportRatio": 0.5625,
-          "background": { "type": "solid", "color": "#0b1120" },
-          "theme": { "backgroundColor": "#0b1120", "themeColors": ["#f59e0b", "#ef4444", "#10b981"], "fontColor": "#f1f5f9", "fontName": "Inter" },
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
+          "theme": {
+            "backgroundColor": "#0b1120",
+            "themeColors": [
+              "#f59e0b",
+              "#ef4444",
+              "#10b981"
+            ],
+            "fontColor": "#f1f5f9",
+            "fontName": "Inter"
+          },
           "elements": [
-            { "id": "hs-wl-s2-bar", "type": "shape", "left": 0, "top": 0, "width": 1000, "height": 6, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#f59e0b", "fixedRatio": false },
-            { "id": "hs-wl-s2-hbg", "type": "shape", "left": 0, "top": 6, "width": 1000, "height": 96, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#0f1729", "fixedRatio": false },
-            { "id": "hs-wl-s2-title", "type": "text", "left": 24, "top": 16, "width": 800, "height": 52, "rotate": 0, "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>⚠️ Wallet Attack Vectors & Security Checklist</p>", "defaultFontName": "Inter", "defaultColor": "#f1f5f9" },
-            { "id": "hs-wl-s2-sub", "type": "text", "left": 24, "top": 66, "width": 800, "height": 30, "rotate": 0, "content": "<p style='font-size:13px;color:#64748b;'>How wallets get compromised — and how to make sure yours doesn't</p>", "defaultFontName": "Inter", "defaultColor": "#64748b" },
-            { "id": "hs-wl-s2-v1-bg", "type": "shape", "left": 24, "top": 112, "width": 450, "height": 100, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#ef444410", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#ef444440" } },
-            { "id": "hs-wl-s2-v1-t", "type": "text", "left": 34, "top": 120, "width": 430, "height": 84, "rotate": 0, "content": "<p style='font-size:12px;font-weight:800;color:#f87171;'>Seed Phrase Phishing</p><p style='font-size:11px;color:#94a3b8;margin-top:4px;line-height:1.7;'>Fake recovery sites or 'support agents' ask for your seed phrase. No legitimate app, support team, or website ever needs it. Anyone who asks = attacker.</p>", "defaultFontName": "Inter", "defaultColor": "#f87171" },
-            { "id": "hs-wl-s2-v2-bg", "type": "shape", "left": 490, "top": 112, "width": 484, "height": 100, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#ef444410", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#ef444440" } },
-            { "id": "hs-wl-s2-v2-t", "type": "text", "left": 500, "top": 120, "width": 464, "height": 84, "rotate": 0, "content": "<p style='font-size:12px;font-weight:800;color:#f87171;'>Clipboard Hijacking</p><p style='font-size:11px;color:#94a3b8;margin-top:4px;line-height:1.7;'>Malware swaps the wallet address you copied with the attacker's address. Always verify the first and last 4 characters of every pasted address before sending.</p>", "defaultFontName": "Inter", "defaultColor": "#f87171" },
-            { "id": "hs-wl-s2-v3-bg", "type": "shape", "left": 24, "top": 224, "width": 450, "height": 100, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#f59e0b10", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#f59e0b40" } },
-            { "id": "hs-wl-s2-v3-t", "type": "text", "left": 34, "top": 232, "width": 430, "height": 84, "rotate": 0, "content": "<p style='font-size:12px;font-weight:800;color:#f59e0b;'>Fake Wallet Apps</p><p style='font-size:11px;color:#94a3b8;margin-top:4px;line-height:1.7;'>Cloned apps steal your seed during setup. Only download from official project websites — never trust app store search results alone for wallet apps.</p>", "defaultFontName": "Inter", "defaultColor": "#f59e0b" },
-            { "id": "hs-wl-s2-v4-bg", "type": "shape", "left": 490, "top": 224, "width": 484, "height": 100, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#f59e0b10", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#f59e0b40" } },
-            { "id": "hs-wl-s2-v4-t", "type": "text", "left": 500, "top": 232, "width": 464, "height": 84, "rotate": 0, "content": "<p style='font-size:12px;font-weight:800;color:#f59e0b;'>Unlimited Token Approvals</p><p style='font-size:11px;color:#94a3b8;margin-top:4px;line-height:1.7;'>DeFi approval prompts can request unlimited token spending. Malicious contracts drain your wallet in one transaction. Never approve 'unlimited' — approve exact amounts only.</p>", "defaultFontName": "Inter", "defaultColor": "#f59e0b" },
-            { "id": "hs-wl-s2-checklist-bg", "type": "shape", "left": 24, "top": 338, "width": 950, "height": 150, "rotate": 0, "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z", "viewBox": [1,1], "fill": "#10b98108", "fixedRatio": false, "outline": { "style": "solid", "width": 1, "color": "#10b98130" } },
-            { "id": "hs-wl-s2-checklist-h", "type": "text", "left": 34, "top": 346, "width": 930, "height": 26, "rotate": 0, "content": "<p style='font-size:13px;font-weight:800;color:#34d399;'>✅ Security Checklist</p>", "defaultFontName": "Inter", "defaultColor": "#34d399" },
-            { "id": "hs-wl-s2-checklist-b", "type": "text", "left": 34, "top": 374, "width": 930, "height": 105, "rotate": 0, "content": "<p style='font-size:12px;color:#94a3b8;line-height:2.1;'>✓ Seed phrase written on paper, stored offline, never photographed or typed digitally &nbsp;&nbsp; ✓ Non-custodial wallet for OnlyCrypto payouts<br/>✓ Never shared seed phrase with anyone — ever &nbsp;&nbsp; ✓ Hardware wallet for amounts over $1,000<br/>✓ Verified pasted addresses character-by-character &nbsp;&nbsp; ✓ Revoked unused DeFi token approvals at revoke.cash<br/>✓ Downloaded wallets only from official websites</p>", "defaultFontName": "Inter", "defaultColor": "#94a3b8" }
+            {
+              "id": "hs-wl-s2-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-wl-s2-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-wl-s2-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 52,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>⚠️ Wallet Attack Vectors & Security Checklist</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "hs-wl-s2-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 30,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;'>How wallets get compromised — and how to make sure yours doesn't</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "hs-wl-s2-v1-bg",
+              "type": "shape",
+              "left": 24,
+              "top": 112,
+              "width": 450,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444410",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef444440"
+              }
+            },
+            {
+              "id": "hs-wl-s2-v1-t",
+              "type": "text",
+              "left": 34,
+              "top": 120,
+              "width": 430,
+              "height": 84,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:800;color:#f87171;'>Seed Phrase Phishing</p><p style='font-size:11px;color:#94a3b8;margin-top:4px;line-height:1.7;'>Fake recovery sites or 'support agents' ask for your seed phrase. No legitimate app, support team, or website ever needs it. Anyone who asks = attacker.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f87171"
+            },
+            {
+              "id": "hs-wl-s2-v2-bg",
+              "type": "shape",
+              "left": 490,
+              "top": 112,
+              "width": 484,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444410",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef444440"
+              }
+            },
+            {
+              "id": "hs-wl-s2-v2-t",
+              "type": "text",
+              "left": 500,
+              "top": 120,
+              "width": 464,
+              "height": 84,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:800;color:#f87171;'>Clipboard Hijacking</p><p style='font-size:11px;color:#94a3b8;margin-top:4px;line-height:1.7;'>Malware swaps the wallet address you copied with the attacker's address. Always verify the first and last 4 characters of every pasted address before sending.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f87171"
+            },
+            {
+              "id": "hs-wl-s2-v3-bg",
+              "type": "shape",
+              "left": 24,
+              "top": 224,
+              "width": 450,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b10",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b40"
+              }
+            },
+            {
+              "id": "hs-wl-s2-v3-t",
+              "type": "text",
+              "left": 34,
+              "top": 232,
+              "width": 430,
+              "height": 84,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:800;color:#f59e0b;'>Fake Wallet Apps</p><p style='font-size:11px;color:#94a3b8;margin-top:4px;line-height:1.7;'>Cloned apps steal your seed during setup. Only download from official project websites — never trust app store search results alone for wallet apps.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "hs-wl-s2-v4-bg",
+              "type": "shape",
+              "left": 490,
+              "top": 224,
+              "width": 484,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b10",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b40"
+              }
+            },
+            {
+              "id": "hs-wl-s2-v4-t",
+              "type": "text",
+              "left": 500,
+              "top": 232,
+              "width": 464,
+              "height": 84,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;font-weight:800;color:#f59e0b;'>Unlimited Token Approvals</p><p style='font-size:11px;color:#94a3b8;margin-top:4px;line-height:1.7;'>DeFi approval prompts can request unlimited token spending. Malicious contracts drain your wallet in one transaction. Never approve 'unlimited' — approve exact amounts only.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "hs-wl-s2-checklist-bg",
+              "type": "shape",
+              "left": 24,
+              "top": 338,
+              "width": 950,
+              "height": 150,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98108",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b98130"
+              }
+            },
+            {
+              "id": "hs-wl-s2-checklist-h",
+              "type": "text",
+              "left": 34,
+              "top": 346,
+              "width": 930,
+              "height": 26,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:800;color:#34d399;'>✅ Security Checklist</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#34d399"
+            },
+            {
+              "id": "hs-wl-s2-checklist-b",
+              "type": "text",
+              "left": 34,
+              "top": 374,
+              "width": 930,
+              "height": 105,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#94a3b8;line-height:2.1;'>✓ Seed phrase written on paper, stored offline, never photographed or typed digitally &nbsp;&nbsp; ✓ Non-custodial wallet for OnlyCrypto payouts<br/>✓ Never shared seed phrase with anyone — ever &nbsp;&nbsp; ✓ Hardware wallet for amounts over $1,000<br/>✓ Verified pasted addresses character-by-character &nbsp;&nbsp; ✓ Revoked unused DeFi token approvals at revoke.cash<br/>✓ Downloaded wallets only from official websites</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            }
           ]
         }
       },
       "actions": [
-        { "id": "action_hs-wl-s2_0", "type": "spotlight", "elementId": "hs-wl-s2-title" },
-        { "id": "action_hs-wl-s2_1", "type": "speech", "text": "Wallet Attack Vectors and Security Checklist" },
-        { "id": "action_hs-wl-s2_2", "type": "spotlight", "elementId": "hs-wl-s2-v1-t" },
-        { "id": "action_hs-wl-s2_3", "type": "speech", "text": "Seed phrase phishing: Fake recovery sites or support agents ask for your seed phrase. No legitimate app, support team, or website ever needs it. Anyone who asks is an attacker. Full stop." },
-        { "id": "action_hs-wl-s2_4", "type": "spotlight", "elementId": "hs-wl-s2-v2-t" },
-        { "id": "action_hs-wl-s2_5", "type": "speech", "text": "Clipboard hijacking: Malware silently swaps the wallet address you copied with the attacker's address. You paste, you don't notice, you confirm — and your funds go to the wrong place. Always verify the first and last four characters of every pasted address before sending." },
-        { "id": "action_hs-wl-s2_6", "type": "spotlight", "elementId": "hs-wl-s2-v3-t" },
-        { "id": "action_hs-wl-s2_7", "type": "speech", "text": "Fake wallet apps: Cloned apps in app stores steal your seed phrase during the setup process. Only download wallet apps from the official project website — never trust app store search results alone for wallets." },
-        { "id": "action_hs-wl-s2_8", "type": "spotlight", "elementId": "hs-wl-s2-v4-t" },
-        { "id": "action_hs-wl-s2_9", "type": "speech", "text": "Unlimited token approvals: When you connect to a DeFi app, it can request unlimited permission to spend your tokens. Malicious contracts use this to drain your wallet in a single transaction. Never approve unlimited amounts — approve only the exact amount you need." },
-        { "id": "action_hs-wl-s2_10", "type": "spotlight", "elementId": "hs-wl-s2-checklist-b" },
-        { "id": "action_hs-wl-s2_11", "type": "speech", "text": "Security checklist: Seed phrase written on paper, stored offline, never photographed or typed digitally. Never shared with anyone — ever. Non-custodial wallet for OnlyCrypto payouts. Verified pasted addresses character by character. Hardware wallet for amounts over one thousand dollars. Revoked unused DeFi approvals at revoke.cash. Downloaded wallets only from official websites." }
+        {
+          "id": "action_hs-wl-s2_0",
+          "type": "spotlight",
+          "elementId": "hs-wl-s2-title"
+        },
+        {
+          "id": "action_hs-wl-s2_1",
+          "type": "speech",
+          "text": "Wallet Attack Vectors and Security Checklist",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/1-1.mp3"
+        },
+        {
+          "id": "action_hs-wl-s2_2",
+          "type": "spotlight",
+          "elementId": "hs-wl-s2-v1-t"
+        },
+        {
+          "id": "action_hs-wl-s2_3",
+          "type": "speech",
+          "text": "Seed phrase phishing: Fake recovery sites or support agents ask for your seed phrase. No legitimate app, support team, or website ever needs it. Anyone who asks is an attacker. Full stop.",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/1-3.mp3"
+        },
+        {
+          "id": "action_hs-wl-s2_4",
+          "type": "spotlight",
+          "elementId": "hs-wl-s2-v2-t"
+        },
+        {
+          "id": "action_hs-wl-s2_5",
+          "type": "speech",
+          "text": "Clipboard hijacking: Malware silently swaps the wallet address you copied with the attacker's address. You paste, you don't notice, you confirm — and your funds go to the wrong place. Always verify the first and last four characters of every pasted address before sending.",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/1-5.mp3"
+        },
+        {
+          "id": "action_hs-wl-s2_6",
+          "type": "spotlight",
+          "elementId": "hs-wl-s2-v3-t"
+        },
+        {
+          "id": "action_hs-wl-s2_7",
+          "type": "speech",
+          "text": "Fake wallet apps: Cloned apps in app stores steal your seed phrase during the setup process. Only download wallet apps from the official project website — never trust app store search results alone for wallets.",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/1-7.mp3"
+        },
+        {
+          "id": "action_hs-wl-s2_8",
+          "type": "spotlight",
+          "elementId": "hs-wl-s2-v4-t"
+        },
+        {
+          "id": "action_hs-wl-s2_9",
+          "type": "speech",
+          "text": "Unlimited token approvals: When you connect to a DeFi app, it can request unlimited permission to spend your tokens. Malicious contracts use this to drain your wallet in a single transaction. Never approve unlimited amounts — approve only the exact amount you need.",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/1-9.mp3"
+        },
+        {
+          "id": "action_hs-wl-s2_10",
+          "type": "spotlight",
+          "elementId": "hs-wl-s2-checklist-b"
+        },
+        {
+          "id": "action_hs-wl-s2_11",
+          "type": "speech",
+          "text": "Security checklist: Seed phrase written on paper, stored offline, never photographed or typed digitally. Never shared with anyone — ever. Non-custodial wallet for OnlyCrypto payouts. Verified pasted addresses character by character. Hardware wallet for amounts over one thousand dollars. Revoked unused DeFi approvals at revoke.cash. Downloaded wallets only from official websites.",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/1-11.mp3"
+        }
       ]
     },
     {
@@ -131,12 +807,26 @@
             "type": "single",
             "question": "What is the BIP39 standard?",
             "options": [
-              { "label": "A security protocol for hardware wallets", "value": "A" },
-              { "label": "A standard that converts random entropy into a human-readable seed phrase using 2,048 words", "value": "B" },
-              { "label": "A blockchain scaling solution", "value": "C" },
-              { "label": "An encryption algorithm for transactions", "value": "D" }
+              {
+                "label": "A security protocol for hardware wallets",
+                "value": "A"
+              },
+              {
+                "label": "A standard that converts random entropy into a human-readable seed phrase using 2,048 words",
+                "value": "B"
+              },
+              {
+                "label": "A blockchain scaling solution",
+                "value": "C"
+              },
+              {
+                "label": "An encryption algorithm for transactions",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "BIP39 is the standard that converts 128–256 bits of random entropy into a 12–24 word mnemonic phrase using a fixed list of 2,048 English words. Each word maps to a number, and together they encode your master private key in a form humans can write down and remember.",
             "points": 1
           },
@@ -145,12 +835,26 @@
             "type": "single",
             "question": "What is the key difference between a custodial and a non-custodial wallet?",
             "options": [
-              { "label": "Non-custodial wallets are only for hardware devices", "value": "A" },
-              { "label": "In a custodial wallet, a third party holds your private keys; in non-custodial, only you do", "value": "B" },
-              { "label": "Custodial wallets are safer because a company protects your funds", "value": "C" },
-              { "label": "Non-custodial wallets require KYC verification", "value": "D" }
+              {
+                "label": "Non-custodial wallets are only for hardware devices",
+                "value": "A"
+              },
+              {
+                "label": "In a custodial wallet, a third party holds your private keys; in non-custodial, only you do",
+                "value": "B"
+              },
+              {
+                "label": "Custodial wallets are safer because a company protects your funds",
+                "value": "C"
+              },
+              {
+                "label": "Non-custodial wallets require KYC verification",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "In a custodial wallet (like an exchange account), the exchange holds your private keys — you own IOUs. If the exchange is hacked or goes bankrupt (like FTX), you may lose access. In a non-custodial wallet, you hold the private keys — the crypto is truly yours on the blockchain.",
             "points": 1
           },
@@ -159,12 +863,26 @@
             "type": "single",
             "question": "What is clipboard hijacking?",
             "options": [
-              { "label": "A method to copy transactions from a blockchain explorer", "value": "A" },
-              { "label": "Malware that swaps a copied wallet address with the attacker's address before you paste it", "value": "B" },
-              { "label": "A technique to steal passwords from browsers", "value": "C" },
-              { "label": "When an exchange copies your trading activity", "value": "D" }
+              {
+                "label": "A method to copy transactions from a blockchain explorer",
+                "value": "A"
+              },
+              {
+                "label": "Malware that swaps a copied wallet address with the attacker's address before you paste it",
+                "value": "B"
+              },
+              {
+                "label": "A technique to steal passwords from browsers",
+                "value": "C"
+              },
+              {
+                "label": "When an exchange copies your trading activity",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Clipboard hijacking malware monitors your clipboard. When you copy a wallet address, it silently replaces it with the attacker's address. You paste it, it looks correct because addresses are long, you confirm — and your funds go to the attacker. Always verify the first and last 4 characters after pasting.",
             "points": 1
           },
@@ -173,12 +891,26 @@
             "type": "single",
             "question": "Why should you use a hardware wallet for large crypto holdings?",
             "options": [
-              { "label": "Hardware wallets are faster at signing transactions", "value": "A" },
-              { "label": "Your private key never touches the internet — transactions are signed offline inside the device", "value": "B" },
-              { "label": "They store more tokens than software wallets", "value": "C" },
-              { "label": "Hardware wallets are custodial which makes them more secure", "value": "D" }
+              {
+                "label": "Hardware wallets are faster at signing transactions",
+                "value": "A"
+              },
+              {
+                "label": "Your private key never touches the internet — transactions are signed offline inside the device",
+                "value": "B"
+              },
+              {
+                "label": "They store more tokens than software wallets",
+                "value": "C"
+              },
+              {
+                "label": "Hardware wallets are custodial which makes them more secure",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Hardware wallets store your private key in a secure chip that never exposes it to the internet. Even if your computer is completely compromised by malware, the attacker cannot extract your private key — because it never leaves the device. Transactions are signed inside the hardware, not on your potentially infected computer.",
             "points": 1
           },
@@ -187,20 +919,44 @@
             "type": "single",
             "question": "What should you do if a DeFi app asks to approve 'unlimited' spending of your tokens?",
             "options": [
-              { "label": "Accept it — it's standard practice for all DeFi apps", "value": "A" },
-              { "label": "Reject it and only approve the exact amount you need for that transaction", "value": "B" },
-              { "label": "Accept it but immediately revoke after the transaction", "value": "C" },
-              { "label": "Transfer your tokens to a new wallet first", "value": "D" }
+              {
+                "label": "Accept it — it's standard practice for all DeFi apps",
+                "value": "A"
+              },
+              {
+                "label": "Reject it and only approve the exact amount you need for that transaction",
+                "value": "B"
+              },
+              {
+                "label": "Accept it but immediately revoke after the transaction",
+                "value": "C"
+              },
+              {
+                "label": "Transfer your tokens to a new wallet first",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Approving 'unlimited' token spending means the smart contract can take all your tokens at any time in the future. Malicious contracts exploit this. Always reject unlimited approvals and approve only the specific amount you need for that interaction. Legitimate protocols don't require unlimited approvals.",
             "points": 1
           }
         ]
       },
       "actions": [
-        { "id": "action_hs-wl-s3_q0", "type": "speech", "text": "Five questions on wallet security — seed phrases, custodial vs non-custodial, and the attack vectors that compromise wallets." },
-        { "id": "action_hs-wl-s3_q1", "type": "speech", "text": "Wallet security knowledge directly protects your OnlyCrypto payouts and any crypto you hold. Take your time." }
+        {
+          "id": "action_hs-wl-s3_q0",
+          "type": "speech",
+          "text": "Five questions on wallet security — seed phrases, custodial vs non-custodial, and the attack vectors that compromise wallets.",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/2-0.mp3"
+        },
+        {
+          "id": "action_hs-wl-s3_q1",
+          "type": "speech",
+          "text": "Wallet security knowledge directly protects your OnlyCrypto payouts and any crypto you hold. Take your time.",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/2-1.mp3"
+        }
       ]
     }
   ]

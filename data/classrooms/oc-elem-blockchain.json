@@ -4,7 +4,7 @@
   "stage": {
     "id": "oc-elem-blockchain",
     "name": "What is Blockchain? (Elementary)",
-    "description": "A beginner-friendly introduction to blockchain \u2014 what it is, how blocks connect, and why it matters.",
+    "description": "A beginner-friendly introduction to blockchain — what it is, how blocks connect, and why it matters.",
     "createdAt": "2026-04-24T12:00:00.000Z",
     "updatedAt": "2026-04-24T12:00:00.000Z",
     "languageDirective": "en-US",
@@ -82,7 +82,7 @@
               "width": 800,
               "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83d\udd17 What is a Blockchain?</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🔗 What is a Blockchain?</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -94,7 +94,7 @@
               "width": 800,
               "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>A shared notebook no one can erase \u2014 Elementary Level</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>A shared notebook no one can erase — Elementary Level</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#64748b"
             },
@@ -106,7 +106,7 @@
               "width": 950,
               "height": 300,
               "rotate": 0,
-              "content": "<p style='font-size:18px;color:#cbd5e1;line-height:1.8;'><b style='color:#10b981;'>Imagine</b> you and all your friends have the exact same notebook. Every time someone writes something new, <b style='color:#f1f5f9;'>everyone's notebook automatically gets the same update</b>. And nobody \u2014 not even a teacher \u2014 can erase what's already written!</p><br/><p style='font-size:18px;color:#cbd5e1;line-height:1.8;'>That is a blockchain. Thousands of computers around the world all share the same digital notebook at once.</p>",
+              "content": "<p style='font-size:18px;color:#cbd5e1;line-height:1.8;'><b style='color:#10b981;'>Imagine</b> you and all your friends have the exact same notebook. Every time someone writes something new, <b style='color:#f1f5f9;'>everyone's notebook automatically gets the same update</b>. And nobody — not even a teacher — can erase what's already written!</p><br/><p style='font-size:18px;color:#cbd5e1;line-height:1.8;'>That is a blockchain. Thousands of computers around the world all share the same digital notebook at once.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -139,7 +139,7 @@
               "width": 190,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:13px;font-weight:700;color:#10b981;text-align:center;'>\ud83d\udcd3 Shared<br/>Everyone has a copy</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#10b981;text-align:center;'>📓 Shared<br/>Everyone has a copy</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#10b981"
             },
@@ -172,7 +172,7 @@
               "width": 190,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:13px;font-weight:700;color:#3b82f6;text-align:center;'>\ud83d\udd12 Can't Be Erased<br/>Once written, it stays</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#3b82f6;text-align:center;'>🔒 Can't Be Erased<br/>Once written, it stays</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#3b82f6"
             },
@@ -205,7 +205,7 @@
               "width": 190,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:13px;font-weight:700;color:#8b5cf6;text-align:center;'>\ud83c\udf0d No Boss<br/>No one controls it</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#8b5cf6;text-align:center;'>🌍 No Boss<br/>No one controls it</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -238,7 +238,7 @@
               "width": 190,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:13px;font-weight:700;color:#f59e0b;text-align:center;'>\ud83d\udc40 Open<br/>Anyone can read it</p>",
+              "content": "<p style='font-size:13px;font-weight:700;color:#f59e0b;text-align:center;'>👀 Open<br/>Anyone can read it</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f59e0b"
             }
@@ -254,7 +254,8 @@
         {
           "id": "action_eb-s1_1",
           "type": "speech",
-          "text": "\ud83d\udd17 What is a Blockchain?"
+          "text": "🔗 What is a Blockchain?",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/0-1.mp3"
         },
         {
           "id": "action_eb-s1_2",
@@ -264,7 +265,8 @@
         {
           "id": "action_eb-s1_3",
           "type": "speech",
-          "text": "A shared notebook no one can erase \u2014 Elementary Level"
+          "text": "A shared notebook no one can erase — Elementary Level",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/0-3.mp3"
         },
         {
           "id": "action_eb-s1_4",
@@ -274,7 +276,8 @@
         {
           "id": "action_eb-s1_5",
           "type": "speech",
-          "text": "Imagine you and all your friends have the exact same notebook. Every time someone writes something new, everyone's notebook automatically gets the same update . And nobody \u2014 not even a teacher \u2014 can erase what's already written! That is a blockchain. Thousands of computers around the world all share..."
+          "text": "Imagine you and all your friends have the exact same notebook. Every time someone writes something new, everyone's notebook automatically gets the same update . And nobody — not even a teacher — can erase what's already written! That is a blockchain. Thousands of computers around the world all share...",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/0-5.mp3"
         },
         {
           "id": "action_eb-s1_6",
@@ -284,7 +287,8 @@
         {
           "id": "action_eb-s1_7",
           "type": "speech",
-          "text": "\ud83d\udcd3 Shared Everyone has a copy"
+          "text": "📓 Shared Everyone has a copy",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/0-7.mp3"
         },
         {
           "id": "action_eb-s1_8",
@@ -294,7 +298,8 @@
         {
           "id": "action_eb-s1_9",
           "type": "speech",
-          "text": "\ud83d\udd12 Can't Be Erased Once written, it stays"
+          "text": "🔒 Can't Be Erased Once written, it stays",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/0-9.mp3"
         },
         {
           "id": "action_eb-s1_10",
@@ -304,7 +309,8 @@
         {
           "id": "action_eb-s1_11",
           "type": "speech",
-          "text": "\ud83c\udf0d No Boss No one controls it"
+          "text": "🌍 No Boss No one controls it",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/0-11.mp3"
         },
         {
           "id": "action_eb-s1_12",
@@ -314,7 +320,8 @@
         {
           "id": "action_eb-s1_13",
           "type": "speech",
-          "text": "\ud83d\udc40 Open Anyone can read it"
+          "text": "👀 Open Anyone can read it",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/0-13.mp3"
         }
       ],
       "order": 1
@@ -384,7 +391,7 @@
               "width": 800,
               "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83e\uddf1 What is a Block?</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🧱 What is a Block?</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -408,7 +415,7 @@
               "width": 950,
               "height": 80,
               "rotate": 0,
-              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.7;'>Every time a bunch of transactions happen, they get bundled into one <b style='color:#10b981;'>block</b>. That block gets a special code called a <b style='color:#f1f5f9;'>hash</b> \u2014 like a fingerprint \u2014 then gets added to the end of the chain.</p>",
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.7;'>Every time a bunch of transactions happen, they get bundled into one <b style='color:#10b981;'>block</b>. That block gets a special code called a <b style='color:#f1f5f9;'>hash</b> — like a fingerprint — then gets added to the end of the chain.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -441,7 +448,7 @@
               "width": 180,
               "height": 110,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:800;color:#10b981;text-align:center;'>Block 1</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:6px;'>\ud83d\udce6 Transactions<br/>\ud83d\udd11 Code: #A1B2</p>",
+              "content": "<p style='font-size:14px;font-weight:800;color:#10b981;text-align:center;'>Block 1</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:6px;'>📦 Transactions<br/>🔑 Code: #A1B2</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -453,7 +460,7 @@
               "width": 80,
               "height": 40,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:900;color:#3b82f6;text-align:center;'>\u2192</p>",
+              "content": "<p style='font-size:28px;font-weight:900;color:#3b82f6;text-align:center;'>→</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#3b82f6"
             },
@@ -486,7 +493,7 @@
               "width": 180,
               "height": 110,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:800;color:#3b82f6;text-align:center;'>Block 2</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:6px;'>\ud83d\udce6 Transactions<br/>\ud83d\udd11 Code: #C3D4</p>",
+              "content": "<p style='font-size:14px;font-weight:800;color:#3b82f6;text-align:center;'>Block 2</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:6px;'>📦 Transactions<br/>🔑 Code: #C3D4</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -498,7 +505,7 @@
               "width": 80,
               "height": 40,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:900;color:#8b5cf6;text-align:center;'>\u2192</p>",
+              "content": "<p style='font-size:28px;font-weight:900;color:#8b5cf6;text-align:center;'>→</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -531,7 +538,7 @@
               "width": 180,
               "height": 110,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:800;color:#8b5cf6;text-align:center;'>Block 3</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:6px;'>\ud83d\udce6 Transactions<br/>\ud83d\udd11 Code: #E5F6</p>",
+              "content": "<p style='font-size:14px;font-weight:800;color:#8b5cf6;text-align:center;'>Block 3</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:6px;'>📦 Transactions<br/>🔑 Code: #E5F6</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -564,7 +571,7 @@
               "width": 930,
               "height": 46,
               "rotate": 0,
-              "content": "<p style='font-size:13px;color:#fbbf24;'>\u26a1 <b>Cool Fact:</b> If someone tried to change Block 1, its code would change \u2014 which would instantly break Block 2 and Block 3. The whole chain notices. That's why blockchains are so hard to cheat!</p>",
+              "content": "<p style='font-size:13px;color:#fbbf24;'>⚡ <b>Cool Fact:</b> If someone tried to change Block 1, its code would change — which would instantly break Block 2 and Block 3. The whole chain notices. That's why blockchains are so hard to cheat!</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#fbbf24"
             },
@@ -592,7 +599,8 @@
         {
           "id": "action_eb-s2_1",
           "type": "speech",
-          "text": "\ud83e\uddf1 What is a Block?"
+          "text": "🧱 What is a Block?",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/1-1.mp3"
         },
         {
           "id": "action_eb-s2_2",
@@ -602,7 +610,8 @@
         {
           "id": "action_eb-s2_3",
           "type": "speech",
-          "text": "Each block is like one page in the notebook"
+          "text": "Each block is like one page in the notebook",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/1-3.mp3"
         },
         {
           "id": "action_eb-s2_4",
@@ -612,7 +621,8 @@
         {
           "id": "action_eb-s2_5",
           "type": "speech",
-          "text": "Every time a bunch of transactions happen, they get bundled into one block . That block gets a special code called a hash \u2014 like a fingerprint \u2014 then gets added to the end of the chain."
+          "text": "Every time a bunch of transactions happen, they get bundled into one block . That block gets a special code called a hash — like a fingerprint — then gets added to the end of the chain.",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/1-5.mp3"
         },
         {
           "id": "action_eb-s2_6",
@@ -622,7 +632,8 @@
         {
           "id": "action_eb-s2_7",
           "type": "speech",
-          "text": "Block 1 \ud83d\udce6 Transactions \ud83d\udd11 Code: #A1B2"
+          "text": "Block 1 📦 Transactions 🔑 Code: #A1B2",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/1-7.mp3"
         },
         {
           "id": "action_eb-s2_8",
@@ -632,7 +643,8 @@
         {
           "id": "action_eb-s2_9",
           "type": "speech",
-          "text": "Block 2 \ud83d\udce6 Transactions \ud83d\udd11 Code: #C3D4"
+          "text": "Block 2 📦 Transactions 🔑 Code: #C3D4",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/1-9.mp3"
         },
         {
           "id": "action_eb-s2_10",
@@ -642,7 +654,8 @@
         {
           "id": "action_eb-s2_11",
           "type": "speech",
-          "text": "Block 3 \ud83d\udce6 Transactions \ud83d\udd11 Code: #E5F6"
+          "text": "Block 3 📦 Transactions 🔑 Code: #E5F6",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/1-11.mp3"
         },
         {
           "id": "action_eb-s2_12",
@@ -652,7 +665,8 @@
         {
           "id": "action_eb-s2_13",
           "type": "speech",
-          "text": "\u26a1 Cool Fact: If someone tried to change Block 1, its code would change \u2014 which would instantly break Block 2 and Block 3. The whole chain notices. That's why blockchains are so hard to cheat!"
+          "text": "⚡ Cool Fact: If someone tried to change Block 1, its code would change — which would instantly break Block 2 and Block 3. The whole chain notices. That's why blockchains are so hard to cheat!",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/1-13.mp3"
         },
         {
           "id": "action_eb-s2_14",
@@ -662,7 +676,8 @@
         {
           "id": "action_eb-s2_15",
           "type": "speech",
-          "text": "THE BLOCKCHAIN = ALL THE BLOCKS LINKED TOGETHER IN ORDER"
+          "text": "THE BLOCKCHAIN = ALL THE BLOCKS LINKED TOGETHER IN ORDER",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/1-15.mp3"
         }
       ],
       "order": 2
@@ -732,7 +747,7 @@
               "width": 800,
               "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83c\udf1f Why Does Blockchain Matter?</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🌟 Why Does Blockchain Matter?</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -756,7 +771,7 @@
               "width": 950,
               "height": 60,
               "rotate": 0,
-              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.7;'>Before blockchain, if you wanted to send money abroad, you had to trust a bank. The bank could make mistakes, charge big fees, or even freeze your money. Blockchain lets people send money directly \u2014 <b style='color:#10b981;'>no bank needed</b>.</p>",
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.7;'>Before blockchain, if you wanted to send money abroad, you had to trust a bank. The bank could make mistakes, charge big fees, or even freeze your money. Blockchain lets people send money directly — <b style='color:#10b981;'>no bank needed</b>.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -789,7 +804,7 @@
               "width": 270,
               "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:800;color:#f87171;'>\ud83c\udfe6 Old Way (Bank)</p>",
+              "content": "<p style='font-size:14px;font-weight:800;color:#f87171;'>🏦 Old Way (Bank)</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f87171"
             },
@@ -801,7 +816,7 @@
               "width": 270,
               "height": 250,
               "rotate": 0,
-              "content": "<p style='font-size:12px;color:#94a3b8;line-height:2;'>\u2717 Bank controls your money<br/>\u2717 Can reject you<br/>\u2717 Charges big fees<br/>\u2717 Can freeze your account<br/>\u2717 Takes days to send abroad</p>",
+              "content": "<p style='font-size:12px;color:#94a3b8;line-height:2;'>✗ Bank controls your money<br/>✗ Can reject you<br/>✗ Charges big fees<br/>✗ Can freeze your account<br/>✗ Takes days to send abroad</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#94a3b8"
             },
@@ -846,7 +861,7 @@
               "width": 270,
               "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:800;color:#34d399;'>\u26a1 New Way (Blockchain)</p>",
+              "content": "<p style='font-size:14px;font-weight:800;color:#34d399;'>⚡ New Way (Blockchain)</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#34d399"
             },
@@ -858,7 +873,7 @@
               "width": 270,
               "height": 250,
               "rotate": 0,
-              "content": "<p style='font-size:12px;color:#94a3b8;line-height:2;'>\u2713 You control your money<br/>\u2713 Anyone can use it<br/>\u2713 Tiny or zero fees<br/>\u2713 Nobody can freeze it<br/>\u2713 Transfers in seconds</p>",
+              "content": "<p style='font-size:12px;color:#94a3b8;line-height:2;'>✓ You control your money<br/>✓ Anyone can use it<br/>✓ Tiny or zero fees<br/>✓ Nobody can freeze it<br/>✓ Transfers in seconds</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#94a3b8"
             },
@@ -891,7 +906,7 @@
               "width": 195,
               "height": 290,
               "rotate": 0,
-              "content": "<p style='font-size:13px;font-weight:800;color:#60a5fa;'>\ud83d\udd17 OnlyCrypto</p><p style='font-size:11px;color:#94a3b8;line-height:1.8;margin-top:8px;'>Runs on XRP Ledger \u2014 a blockchain that settles in 3-5 seconds with nearly zero fees. Payouts go directly to your wallet, automatically.</p>",
+              "content": "<p style='font-size:13px;font-weight:800;color:#60a5fa;'>🔗 OnlyCrypto</p><p style='font-size:11px;color:#94a3b8;line-height:1.8;margin-top:8px;'>Runs on XRP Ledger — a blockchain that settles in 3-5 seconds with nearly zero fees. Payouts go directly to your wallet, automatically.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#60a5fa"
             }
@@ -907,7 +922,8 @@
         {
           "id": "action_eb-s3_1",
           "type": "speech",
-          "text": "\ud83c\udf1f Why Does Blockchain Matter?"
+          "text": "🌟 Why Does Blockchain Matter?",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/2-1.mp3"
         },
         {
           "id": "action_eb-s3_2",
@@ -917,7 +933,8 @@
         {
           "id": "action_eb-s3_3",
           "type": "speech",
-          "text": "Old way vs New way"
+          "text": "Old way vs New way",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/2-3.mp3"
         },
         {
           "id": "action_eb-s3_4",
@@ -927,7 +944,8 @@
         {
           "id": "action_eb-s3_5",
           "type": "speech",
-          "text": "Before blockchain, if you wanted to send money abroad, you had to trust a bank. The bank could make mistakes, charge big fees, or even freeze your money. Blockchain lets people send money directly \u2014 no bank needed ."
+          "text": "Before blockchain, if you wanted to send money abroad, you had to trust a bank. The bank could make mistakes, charge big fees, or even freeze your money. Blockchain lets people send money directly — no bank needed .",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/2-5.mp3"
         },
         {
           "id": "action_eb-s3_6",
@@ -937,7 +955,8 @@
         {
           "id": "action_eb-s3_7",
           "type": "speech",
-          "text": "\ud83c\udfe6 Old Way (Bank)"
+          "text": "🏦 Old Way (Bank)",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/2-7.mp3"
         },
         {
           "id": "action_eb-s3_8",
@@ -947,7 +966,8 @@
         {
           "id": "action_eb-s3_9",
           "type": "speech",
-          "text": "\u2717 Bank controls your money \u2717 Can reject you \u2717 Charges big fees \u2717 Can freeze your account \u2717 Takes days to send abroad"
+          "text": "✗ Bank controls your money ✗ Can reject you ✗ Charges big fees ✗ Can freeze your account ✗ Takes days to send abroad",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/2-9.mp3"
         },
         {
           "id": "action_eb-s3_10",
@@ -957,7 +977,8 @@
         {
           "id": "action_eb-s3_11",
           "type": "speech",
-          "text": "\u26a1 New Way (Blockchain)"
+          "text": "⚡ New Way (Blockchain)",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/2-11.mp3"
         },
         {
           "id": "action_eb-s3_12",
@@ -967,7 +988,8 @@
         {
           "id": "action_eb-s3_13",
           "type": "speech",
-          "text": "\u2713 You control your money \u2713 Anyone can use it \u2713 Tiny or zero fees \u2713 Nobody can freeze it \u2713 Transfers in seconds"
+          "text": "✓ You control your money ✓ Anyone can use it ✓ Tiny or zero fees ✓ Nobody can freeze it ✓ Transfers in seconds",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/2-13.mp3"
         },
         {
           "id": "action_eb-s3_14",
@@ -977,7 +999,8 @@
         {
           "id": "action_eb-s3_15",
           "type": "speech",
-          "text": "\ud83d\udd17 OnlyCrypto Runs on XRP Ledger \u2014 a blockchain that settles in 3-5 seconds with nearly zero fees. Payouts go directly to your wallet, automatically."
+          "text": "🔗 OnlyCrypto Runs on XRP Ledger — a blockchain that settles in 3-5 seconds with nearly zero fees. Payouts go directly to your wallet, automatically.",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/2-15.mp3"
         }
       ],
       "order": 3
@@ -985,7 +1008,7 @@
     {
       "id": "eb-s4",
       "type": "quiz",
-      "title": "Knowledge Check \u2014 Blockchain Basics",
+      "title": "Knowledge Check — Blockchain Basics",
       "content": {
         "type": "quiz",
         "questions": [
@@ -1014,7 +1037,7 @@
             "answer": [
               "B"
             ],
-            "analysis": "A blockchain is a shared digital ledger that thousands of computers all hold a copy of. No single person or company controls it \u2014 making it transparent and very hard to cheat.",
+            "analysis": "A blockchain is a shared digital ledger that thousands of computers all hold a copy of. No single person or company controls it — making it transparent and very hard to cheat.",
             "points": 1
           },
           {
@@ -1042,7 +1065,7 @@
             "answer": [
               "B"
             ],
-            "analysis": "A hash is a unique code \u2014 like a fingerprint \u2014 assigned to each block. If anything in the block changes, the hash changes completely, making tampering obvious to the whole network.",
+            "analysis": "A hash is a unique code — like a fingerprint — assigned to each block. If anything in the block changes, the hash changes completely, making tampering obvious to the whole network.",
             "points": 1
           },
           {
@@ -1059,7 +1082,7 @@
                 "value": "C"
               },
               {
-                "label": "Because changing one block breaks the codes of every block after it \u2014 the whole network notices",
+                "label": "Because changing one block breaks the codes of every block after it — the whole network notices",
                 "value": "B"
               },
               {
@@ -1098,7 +1121,7 @@
             "answer": [
               "C"
             ],
-            "analysis": "Blockchain lets anyone send money to anyone in the world in seconds with very small fees \u2014 no bank account, no approval, no waiting days. That's the power of decentralized money.",
+            "analysis": "Blockchain lets anyone send money to anyone in the world in seconds with very small fees — no bank account, no approval, no waiting days. That's the power of decentralized money.",
             "points": 1
           }
         ]
@@ -1108,12 +1131,14 @@
         {
           "id": "action_eb-s4_q0",
           "type": "speech",
-          "text": "Time to test what you've learned! Answer each question and see how you do."
+          "text": "Time to test what you've learned! Answer each question and see how you do.",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/3-0.mp3"
         },
         {
           "id": "action_eb-s4_q1",
           "type": "speech",
-          "text": "Take your time \u2014 the goal is understanding, not just getting the right answer."
+          "text": "Take your time — the goal is understanding, not just getting the right answer.",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/3-1.mp3"
         }
       ]
     }

@@ -82,7 +82,7 @@
               "width": 800,
               "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83e\ude99 What is Cryptocurrency?</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🪙 What is Cryptocurrency?</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -106,7 +106,7 @@
               "width": 950,
               "height": 130,
               "rotate": 0,
-              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'>Cryptocurrency is <b style='color:#fbbf24;'>digital money</b> \u2014 like the coins and bills you use at a store, but it only exists on computers and phones. You can't hold it in your hand, but you can use it to buy things, send it to friends, or save it. The 'crypto' part means it uses secret codes called <b style='color:#f1f5f9;'>cryptography</b> to keep everything safe \u2014 so only the real owner can spend it.</p>",
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'>Cryptocurrency is <b style='color:#fbbf24;'>digital money</b> — like the coins and bills you use at a store, but it only exists on computers and phones. You can't hold it in your hand, but you can use it to buy things, send it to friends, or save it. The 'crypto' part means it uses secret codes called <b style='color:#f1f5f9;'>cryptography</b> to keep everything safe — so only the real owner can spend it.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -139,7 +139,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udcbb</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>100% Digital</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Lives on computers \u2014 no physical coins</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>💻</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>100% Digital</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Lives on computers — no physical coins</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#10b981"
             },
@@ -172,7 +172,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udd10</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Super Secure</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Protected by math no hacker can crack</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🔐</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Super Secure</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Protected by math no hacker can crack</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#3b82f6"
             },
@@ -205,7 +205,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83c\udf10</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Works Everywhere</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Send money to anyone in seconds</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🌐</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Works Everywhere</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Send money to anyone in seconds</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -238,7 +238,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83e\udd1d</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>No Middleman</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Send directly to a friend \u2014 no bank needed</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🤝</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>No Middleman</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Send directly to a friend — no bank needed</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f59e0b"
             }
@@ -254,7 +254,8 @@
         {
           "id": "action_ec-s1_1",
           "type": "speech",
-          "text": "\ud83e\ude99 What is Cryptocurrency?"
+          "text": "🪙 What is Cryptocurrency?",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/0-1.mp3"
         },
         {
           "id": "action_ec-s1_2",
@@ -264,7 +265,8 @@
         {
           "id": "action_ec-s1_3",
           "type": "speech",
-          "text": "Digital money you can use without a bank"
+          "text": "Digital money you can use without a bank",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/0-3.mp3"
         },
         {
           "id": "action_ec-s1_4",
@@ -274,7 +276,8 @@
         {
           "id": "action_ec-s1_5",
           "type": "speech",
-          "text": "Cryptocurrency is digital money \u2014 like the coins and bills you use at a store, but it only exists on computers and phones. You can't hold it in your hand, but you can use it to buy things, send it to friends, or save it. The 'crypto' part means it uses secret codes called cryptography to keep everyt..."
+          "text": "Cryptocurrency is digital money — like the coins and bills you use at a store, but it only exists on computers and phones. You can't hold it in your hand, but you can use it to buy things, send it to friends, or save it. The 'crypto' part means it uses secret codes called cryptography to keep everyt...",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/0-5.mp3"
         },
         {
           "id": "action_ec-s1_6",
@@ -284,7 +287,8 @@
         {
           "id": "action_ec-s1_7",
           "type": "speech",
-          "text": "\ud83d\udcbb 100% Digital Lives on computers \u2014 no physical coins"
+          "text": "💻 100% Digital Lives on computers — no physical coins",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/0-7.mp3"
         },
         {
           "id": "action_ec-s1_8",
@@ -294,7 +298,8 @@
         {
           "id": "action_ec-s1_9",
           "type": "speech",
-          "text": "\ud83d\udd10 Super Secure Protected by math no hacker can crack"
+          "text": "🔐 Super Secure Protected by math no hacker can crack",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/0-9.mp3"
         },
         {
           "id": "action_ec-s1_10",
@@ -304,7 +309,8 @@
         {
           "id": "action_ec-s1_11",
           "type": "speech",
-          "text": "\ud83c\udf10 Works Everywhere Send money to anyone in seconds"
+          "text": "🌐 Works Everywhere Send money to anyone in seconds",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/0-11.mp3"
         },
         {
           "id": "action_ec-s1_12",
@@ -314,7 +320,8 @@
         {
           "id": "action_ec-s1_13",
           "type": "speech",
-          "text": "\ud83e\udd1d No Middleman Send directly to a friend \u2014 no bank needed"
+          "text": "🤝 No Middleman Send directly to a friend — no bank needed",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/0-13.mp3"
         }
       ],
       "order": 1
@@ -384,7 +391,7 @@
               "width": 800,
               "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83c\udfc6 Famous Cryptocurrencies</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🏆 Famous Cryptocurrencies</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -408,7 +415,7 @@
               "width": 950,
               "height": 130,
               "rotate": 0,
-              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'>There are thousands of cryptocurrencies. <b style='color:#fbbf24;'>Bitcoin</b> was the first (2009) \u2014 like digital gold. <b style='color:#8b5cf6;'>Ethereum</b> can run programs called smart contracts. <b style='color:#3b82f6;'>XRP</b> is built for super-fast payments \u2014 it settles in 3-5 seconds and is what <b style='color:#f1f5f9;'>OnlyCrypto</b> uses for payouts!</p>",
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'>There are thousands of cryptocurrencies. <b style='color:#fbbf24;'>Bitcoin</b> was the first (2009) — like digital gold. <b style='color:#8b5cf6;'>Ethereum</b> can run programs called smart contracts. <b style='color:#3b82f6;'>XRP</b> is built for super-fast payments — it settles in 3-5 seconds and is what <b style='color:#f1f5f9;'>OnlyCrypto</b> uses for payouts!</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -441,7 +448,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\u20bf</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Bitcoin (BTC)</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>The original \u2014 only 21M will ever exist</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>₿</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Bitcoin (BTC)</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>The original — only 21M will ever exist</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#10b981"
             },
@@ -474,7 +481,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\u039e</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Ethereum (ETH)</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Runs apps and smart contracts</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>Ξ</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Ethereum (ETH)</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Runs apps and smart contracts</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#3b82f6"
             },
@@ -507,7 +514,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\u2715</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>XRP</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>3-5 sec payments \u2014 OnlyCrypto's coin</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>✕</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>XRP</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>3-5 sec payments — OnlyCrypto's coin</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -540,7 +547,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83c\udf0a</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Thousands more</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>New coins launch every day</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🌊</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Thousands more</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>New coins launch every day</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f59e0b"
             }
@@ -556,7 +563,8 @@
         {
           "id": "action_ec-s2_1",
           "type": "speech",
-          "text": "\ud83c\udfc6 Famous Cryptocurrencies"
+          "text": "🏆 Famous Cryptocurrencies",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/1-1.mp3"
         },
         {
           "id": "action_ec-s2_2",
@@ -566,7 +574,8 @@
         {
           "id": "action_ec-s2_3",
           "type": "speech",
-          "text": "The big names you'll hear everywhere"
+          "text": "The big names you'll hear everywhere",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/1-3.mp3"
         },
         {
           "id": "action_ec-s2_4",
@@ -576,7 +585,8 @@
         {
           "id": "action_ec-s2_5",
           "type": "speech",
-          "text": "There are thousands of cryptocurrencies. Bitcoin was the first (2009) \u2014 like digital gold. Ethereum can run programs called smart contracts. XRP is built for super-fast payments \u2014 it settles in 3-5 seconds and is what OnlyCrypto uses for payouts!"
+          "text": "There are thousands of cryptocurrencies. Bitcoin was the first (2009) — like digital gold. Ethereum can run programs called smart contracts. XRP is built for super-fast payments — it settles in 3-5 seconds and is what OnlyCrypto uses for payouts!",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/1-5.mp3"
         },
         {
           "id": "action_ec-s2_6",
@@ -586,7 +596,8 @@
         {
           "id": "action_ec-s2_7",
           "type": "speech",
-          "text": "\u20bf Bitcoin (BTC) The original \u2014 only 21M will ever exist"
+          "text": "₿ Bitcoin (BTC) The original — only 21M will ever exist",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/1-7.mp3"
         },
         {
           "id": "action_ec-s2_8",
@@ -596,7 +607,8 @@
         {
           "id": "action_ec-s2_9",
           "type": "speech",
-          "text": "\u039e Ethereum (ETH) Runs apps and smart contracts"
+          "text": "Ξ Ethereum (ETH) Runs apps and smart contracts",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/1-9.mp3"
         },
         {
           "id": "action_ec-s2_10",
@@ -606,7 +618,8 @@
         {
           "id": "action_ec-s2_11",
           "type": "speech",
-          "text": "\u2715 XRP 3-5 sec payments \u2014 OnlyCrypto's coin"
+          "text": "✕ XRP 3-5 sec payments — OnlyCrypto's coin",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/1-11.mp3"
         },
         {
           "id": "action_ec-s2_12",
@@ -616,7 +629,8 @@
         {
           "id": "action_ec-s2_13",
           "type": "speech",
-          "text": "\ud83c\udf0a Thousands more New coins launch every day"
+          "text": "🌊 Thousands more New coins launch every day",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/1-13.mp3"
         }
       ],
       "order": 2
@@ -624,7 +638,7 @@
     {
       "id": "ec-s3",
       "type": "quiz",
-      "title": "Knowledge Check \u2014 Cryptocurrency Basics",
+      "title": "Knowledge Check — Cryptocurrency Basics",
       "content": {
         "type": "quiz",
         "questions": [
@@ -653,7 +667,7 @@
             "answer": [
               "B"
             ],
-            "analysis": "'Crypto' comes from cryptography \u2014 the science of using math-based secret codes. These codes make sure only the real owner of a coin can spend it.",
+            "analysis": "'Crypto' comes from cryptography — the science of using math-based secret codes. These codes make sure only the real owner of a coin can spend it.",
             "points": 1
           },
           {
@@ -681,7 +695,7 @@
             "answer": [
               "C"
             ],
-            "analysis": "OnlyCrypto uses XRP (the XRP Ledger) because it settles in 3-5 seconds and has nearly zero fees \u2014 perfect for automatic payouts.",
+            "analysis": "OnlyCrypto uses XRP (the XRP Ledger) because it settles in 3-5 seconds and has nearly zero fees — perfect for automatic payouts.",
             "points": 1
           },
           {
@@ -709,7 +723,7 @@
             "answer": [
               "C"
             ],
-            "analysis": "Bitcoin has a hard cap of 21 million coins \u2014 ever. This scarcity is one reason people treat it like digital gold.",
+            "analysis": "Bitcoin has a hard cap of 21 million coins — ever. This scarcity is one reason people treat it like digital gold.",
             "points": 1
           },
           {
@@ -737,7 +751,7 @@
             "answer": [
               "C"
             ],
-            "analysis": "Crypto lets you send money to anyone, anywhere, in seconds \u2014 with no bank approval needed. That's what makes it revolutionary.",
+            "analysis": "Crypto lets you send money to anyone, anywhere, in seconds — with no bank approval needed. That's what makes it revolutionary.",
             "points": 1
           }
         ]
@@ -747,12 +761,14 @@
         {
           "id": "action_ec-s3_q0",
           "type": "speech",
-          "text": "Time to test what you've learned! Answer each question and see how you do."
+          "text": "Time to test what you've learned! Answer each question and see how you do.",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/2-0.mp3"
         },
         {
           "id": "action_ec-s3_q1",
           "type": "speech",
-          "text": "Take your time \u2014 the goal is understanding, not just getting the right answer."
+          "text": "Take your time — the goal is understanding, not just getting the right answer.",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/2-1.mp3"
         }
       ]
     }

@@ -254,7 +254,8 @@
         {
           "id": "action_es-s1_1",
           "type": "speech",
-          "text": "🛡️ Staying Safe in Crypto"
+          "text": "🛡️ Staying Safe in Crypto",
+          "audioUrl": "/audio/lessons/oc-elem-security/0-1.mp3"
         },
         {
           "id": "action_es-s1_2",
@@ -264,7 +265,8 @@
         {
           "id": "action_es-s1_3",
           "type": "speech",
-          "text": "The most important skill you'll learn"
+          "text": "The most important skill you'll learn",
+          "audioUrl": "/audio/lessons/oc-elem-security/0-3.mp3"
         },
         {
           "id": "action_es-s1_4",
@@ -274,7 +276,8 @@
         {
           "id": "action_es-s1_5",
           "type": "speech",
-          "text": "In crypto, you are your own bank . That's amazing — but it also means if something goes wrong, there's no customer service to call. No refund button. No 'forgot password' email. That's why security is the #1 skill every crypto person must learn first."
+          "text": "In crypto, you are your own bank . That's amazing — but it also means if something goes wrong, there's no customer service to call. No refund button. No 'forgot password' email. That's why security is the #1 skill every crypto person must learn first.",
+          "audioUrl": "/audio/lessons/oc-elem-security/0-5.mp3"
         },
         {
           "id": "action_es-s1_6",
@@ -284,7 +287,8 @@
         {
           "id": "action_es-s1_7",
           "type": "speech",
-          "text": "🔑 Guard Your Keys Private key = your money. Lose it = lose everything."
+          "text": "🔑 Guard Your Keys Private key = your money. Lose it = lose everything.",
+          "audioUrl": "/audio/lessons/oc-elem-security/0-7.mp3"
         },
         {
           "id": "action_es-s1_8",
@@ -294,7 +298,8 @@
         {
           "id": "action_es-s1_9",
           "type": "speech",
-          "text": "🧠 Think First Scammers are smart. One wrong click can empty your wallet."
+          "text": "🧠 Think First Scammers are smart. One wrong click can empty your wallet.",
+          "audioUrl": "/audio/lessons/oc-elem-security/0-9.mp3"
         },
         {
           "id": "action_es-s1_10",
@@ -304,7 +309,8 @@
         {
           "id": "action_es-s1_11",
           "type": "speech",
-          "text": "✅ Verify Always double-check addresses, websites, and senders."
+          "text": "✅ Verify Always double-check addresses, websites, and senders.",
+          "audioUrl": "/audio/lessons/oc-elem-security/0-11.mp3"
         },
         {
           "id": "action_es-s1_12",
@@ -314,7 +320,8 @@
         {
           "id": "action_es-s1_13",
           "type": "speech",
-          "text": "📚 Keep Learning New scams appear daily. Staying informed is your best defense."
+          "text": "📚 Keep Learning New scams appear daily. Staying informed is your best defense.",
+          "audioUrl": "/audio/lessons/oc-elem-security/0-13.mp3"
         }
       ],
       "order": 1
@@ -556,7 +563,8 @@
         {
           "id": "action_es-s2_1",
           "type": "speech",
-          "text": "🚨 Common Scams"
+          "text": "🚨 Common Scams",
+          "audioUrl": "/audio/lessons/oc-elem-security/1-1.mp3"
         },
         {
           "id": "action_es-s2_2",
@@ -566,7 +574,8 @@
         {
           "id": "action_es-s2_3",
           "type": "speech",
-          "text": "Know these — they could save your savings"
+          "text": "Know these — they could save your savings",
+          "audioUrl": "/audio/lessons/oc-elem-security/1-3.mp3"
         },
         {
           "id": "action_es-s2_4",
@@ -576,7 +585,8 @@
         {
           "id": "action_es-s2_5",
           "type": "speech",
-          "text": "🎁 Giveaway Scam: Fake celebrity says 'Send 1 BTC, get 2 back!' — it's always a lie. &nbsp; 🎣 Phishing: Fake website that looks real — one typo in the URL and your login is stolen. &nbsp; 💌 Fake Support: 'Support' DMs asking for your seed phrase — real support NEVER does this. &nbsp; 📈 Pump & Dump: G..."
+          "text": "🎁 Giveaway Scam: Fake celebrity says 'Send 1 BTC, get 2 back!' — it's always a lie. &nbsp; 🎣 Phishing: Fake website that looks real — one typo in the URL and your login is stolen. &nbsp; 💌 Fake Support: 'Support' DMs asking for your seed phrase — real support NEVER does this. &nbsp; 📈 Pump & Dump: G...",
+          "audioUrl": "/audio/lessons/oc-elem-security/1-5.mp3"
         },
         {
           "id": "action_es-s2_6",
@@ -586,7 +596,8 @@
         {
           "id": "action_es-s2_7",
           "type": "speech",
-          "text": "🎁 Giveaway Scam Nobody ever doubles your crypto"
+          "text": "🎁 Giveaway Scam Nobody ever doubles your crypto",
+          "audioUrl": "/audio/lessons/oc-elem-security/1-7.mp3"
         },
         {
           "id": "action_es-s2_8",
@@ -596,7 +607,8 @@
         {
           "id": "action_es-s2_9",
           "type": "speech",
-          "text": "🎣 Phishing Sites Fake sites steal your login"
+          "text": "🎣 Phishing Sites Fake sites steal your login",
+          "audioUrl": "/audio/lessons/oc-elem-security/1-9.mp3"
         },
         {
           "id": "action_es-s2_10",
@@ -606,7 +618,8 @@
         {
           "id": "action_es-s2_11",
           "type": "speech",
-          "text": "💌 Fake DM Support Real support never asks for seed phrase"
+          "text": "💌 Fake DM Support Real support never asks for seed phrase",
+          "audioUrl": "/audio/lessons/oc-elem-security/1-11.mp3"
         },
         {
           "id": "action_es-s2_12",
@@ -616,7 +629,8 @@
         {
           "id": "action_es-s2_13",
           "type": "speech",
-          "text": "📈 Pump & Dump Hype coin, spike, crash — you hold the loss"
+          "text": "📈 Pump & Dump Hype coin, spike, crash — you hold the loss",
+          "audioUrl": "/audio/lessons/oc-elem-security/1-13.mp3"
         }
       ],
       "order": 2
@@ -747,12 +761,14 @@
         {
           "id": "action_es-s3_q0",
           "type": "speech",
-          "text": "Time to test what you've learned! Answer each question and see how you do."
+          "text": "Time to test what you've learned! Answer each question and see how you do.",
+          "audioUrl": "/audio/lessons/oc-elem-security/2-0.mp3"
         },
         {
           "id": "action_es-s3_q1",
           "type": "speech",
-          "text": "Take your time — the goal is understanding, not just getting the right answer."
+          "text": "Take your time — the goal is understanding, not just getting the right answer.",
+          "audioUrl": "/audio/lessons/oc-elem-security/2-1.mp3"
         }
       ]
     }

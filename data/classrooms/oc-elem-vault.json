@@ -82,7 +82,7 @@
               "width": 800,
               "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83c\udfac Learn by Watching</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🎬 Learn by Watching</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -106,7 +106,7 @@
               "width": 950,
               "height": 130,
               "rotate": 0,
-              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'>Sometimes the best way to learn is to <b style='color:#a78bfa;'>watch someone explain it</b>. The OnlyCrypto video series covers the biggest concepts \u2014 from how XRP works to how copy trading can grow your money while you sleep. Each video is picked because it explains things clearly, even if you're brand new.</p>",
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'>Sometimes the best way to learn is to <b style='color:#a78bfa;'>watch someone explain it</b>. The OnlyCrypto video series covers the biggest concepts — from how XRP works to how copy trading can grow your money while you sleep. Each video is picked because it explains things clearly, even if you're brand new.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -139,7 +139,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udcdd</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Take Notes</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Write words you don't know and look them up</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>📝</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Take Notes</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Write words you don't know and look them up</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#10b981"
             },
@@ -172,7 +172,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\u23f8\ufe0f</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Pause & Rewind</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Don't rush \u2014 understanding beats speed</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>⏸️</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Pause & Rewind</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Don't rush — understanding beats speed</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#3b82f6"
             },
@@ -205,7 +205,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\u2753</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Ask Questions</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Use the AI Classroom to ask anything</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>❓</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Ask Questions</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Use the AI Classroom to ask anything</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -238,7 +238,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udd04</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Rewatch</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Same video makes more sense after you've learned more</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🔄</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Rewatch</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Same video makes more sense after you've learned more</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f59e0b"
             }
@@ -254,7 +254,8 @@
         {
           "id": "action_ev-s1_1",
           "type": "speech",
-          "text": "\ud83c\udfac Learn by Watching"
+          "text": "🎬 Learn by Watching",
+          "audioUrl": "/audio/lessons/oc-elem-vault/0-1.mp3"
         },
         {
           "id": "action_ev-s1_2",
@@ -264,7 +265,8 @@
         {
           "id": "action_ev-s1_3",
           "type": "speech",
-          "text": "Videos that explain crypto in plain language"
+          "text": "Videos that explain crypto in plain language",
+          "audioUrl": "/audio/lessons/oc-elem-vault/0-3.mp3"
         },
         {
           "id": "action_ev-s1_4",
@@ -274,7 +276,8 @@
         {
           "id": "action_ev-s1_5",
           "type": "speech",
-          "text": "Sometimes the best way to learn is to watch someone explain it . The OnlyCrypto video series covers the biggest concepts \u2014 from how XRP works to how copy trading can grow your money while you sleep. Each video is picked because it explains things clearly, even if you're brand new."
+          "text": "Sometimes the best way to learn is to watch someone explain it . The OnlyCrypto video series covers the biggest concepts — from how XRP works to how copy trading can grow your money while you sleep. Each video is picked because it explains things clearly, even if you're brand new.",
+          "audioUrl": "/audio/lessons/oc-elem-vault/0-5.mp3"
         },
         {
           "id": "action_ev-s1_6",
@@ -284,7 +287,8 @@
         {
           "id": "action_ev-s1_7",
           "type": "speech",
-          "text": "\ud83d\udcdd Take Notes Write words you don't know and look them up"
+          "text": "📝 Take Notes Write words you don't know and look them up",
+          "audioUrl": "/audio/lessons/oc-elem-vault/0-7.mp3"
         },
         {
           "id": "action_ev-s1_8",
@@ -294,7 +298,8 @@
         {
           "id": "action_ev-s1_9",
           "type": "speech",
-          "text": "\u23f8\ufe0f Pause & Rewind Don't rush \u2014 understanding beats speed"
+          "text": "⏸️ Pause & Rewind Don't rush — understanding beats speed",
+          "audioUrl": "/audio/lessons/oc-elem-vault/0-9.mp3"
         },
         {
           "id": "action_ev-s1_10",
@@ -304,7 +309,8 @@
         {
           "id": "action_ev-s1_11",
           "type": "speech",
-          "text": "\u2753 Ask Questions Use the AI Classroom to ask anything"
+          "text": "❓ Ask Questions Use the AI Classroom to ask anything",
+          "audioUrl": "/audio/lessons/oc-elem-vault/0-11.mp3"
         },
         {
           "id": "action_ev-s1_12",
@@ -314,7 +320,8 @@
         {
           "id": "action_ev-s1_13",
           "type": "speech",
-          "text": "\ud83d\udd04 Rewatch Same video makes more sense after you've learned more"
+          "text": "🔄 Rewatch Same video makes more sense after you've learned more",
+          "audioUrl": "/audio/lessons/oc-elem-vault/0-13.mp3"
         }
       ],
       "order": 1
@@ -384,7 +391,7 @@
               "width": 800,
               "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83d\udcd6 Crypto Glossary</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>📖 Crypto Glossary</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -408,7 +415,7 @@
               "width": 950,
               "height": 130,
               "rotate": 0,
-              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.6;'><b style='color:#a78bfa;'>HODL</b> \u2014 Hold On for Dear Life (don't sell!) &nbsp;|&nbsp; <b style='color:#a78bfa;'>Bull Market</b> \u2014 prices going up &nbsp;|&nbsp; <b style='color:#a78bfa;'>Bear Market</b> \u2014 prices going down &nbsp;|&nbsp; <b style='color:#a78bfa;'>FOMO</b> \u2014 Fear Of Missing Out &nbsp;|&nbsp; <b style='color:#a78bfa;'>Dip</b> \u2014 temporary price drop &nbsp;|&nbsp; <b style='color:#a78bfa;'>Gas Fee</b> \u2014 cost to process a transaction &nbsp;|&nbsp; <b style='color:#a78bfa;'>ATH</b> \u2014 All Time High price ever</p>",
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.6;'><b style='color:#a78bfa;'>HODL</b> — Hold On for Dear Life (don't sell!) &nbsp;|&nbsp; <b style='color:#a78bfa;'>Bull Market</b> — prices going up &nbsp;|&nbsp; <b style='color:#a78bfa;'>Bear Market</b> — prices going down &nbsp;|&nbsp; <b style='color:#a78bfa;'>FOMO</b> — Fear Of Missing Out &nbsp;|&nbsp; <b style='color:#a78bfa;'>Dip</b> — temporary price drop &nbsp;|&nbsp; <b style='color:#a78bfa;'>Gas Fee</b> — cost to process a transaction &nbsp;|&nbsp; <b style='color:#a78bfa;'>ATH</b> — All Time High price ever</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -441,7 +448,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udcc8</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Bull Market</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Prices going up \u2014 everyone buying</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>📈</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Bull Market</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Prices going up — everyone buying</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#10b981"
             },
@@ -474,7 +481,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udcc9</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Bear Market</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Prices going down \u2014 people cautious</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>📉</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Bear Market</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Prices going down — people cautious</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#3b82f6"
             },
@@ -507,7 +514,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udc8e</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>HODL</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Keep your coins, don't panic sell</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>💎</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>HODL</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Keep your coins, don't panic sell</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -540,7 +547,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\u26fd</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Gas Fee</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Small fee paid to process a transaction</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>⛽</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Gas Fee</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Small fee paid to process a transaction</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f59e0b"
             }
@@ -556,7 +563,8 @@
         {
           "id": "action_ev-s2_1",
           "type": "speech",
-          "text": "\ud83d\udcd6 Crypto Glossary"
+          "text": "📖 Crypto Glossary",
+          "audioUrl": "/audio/lessons/oc-elem-vault/1-1.mp3"
         },
         {
           "id": "action_ev-s2_2",
@@ -566,7 +574,8 @@
         {
           "id": "action_ev-s2_3",
           "type": "speech",
-          "text": "Words you'll hear all the time"
+          "text": "Words you'll hear all the time",
+          "audioUrl": "/audio/lessons/oc-elem-vault/1-3.mp3"
         },
         {
           "id": "action_ev-s2_4",
@@ -576,7 +585,8 @@
         {
           "id": "action_ev-s2_5",
           "type": "speech",
-          "text": "HODL \u2014 Hold On for Dear Life (don't sell!) &nbsp;|&nbsp; Bull Market \u2014 prices going up &nbsp;|&nbsp; Bear Market \u2014 prices going down &nbsp;|&nbsp; FOMO \u2014 Fear Of Missing Out &nbsp;|&nbsp; Dip \u2014 temporary price drop &nbsp;|&nbsp; Gas Fee \u2014 cost to process a transaction &nbsp;|&nbsp; ATH \u2014 All Time Hi..."
+          "text": "HODL — Hold On for Dear Life (don't sell!) &nbsp;|&nbsp; Bull Market — prices going up &nbsp;|&nbsp; Bear Market — prices going down &nbsp;|&nbsp; FOMO — Fear Of Missing Out &nbsp;|&nbsp; Dip — temporary price drop &nbsp;|&nbsp; Gas Fee — cost to process a transaction &nbsp;|&nbsp; ATH — All Time Hi...",
+          "audioUrl": "/audio/lessons/oc-elem-vault/1-5.mp3"
         },
         {
           "id": "action_ev-s2_6",
@@ -586,7 +596,8 @@
         {
           "id": "action_ev-s2_7",
           "type": "speech",
-          "text": "\ud83d\udcc8 Bull Market Prices going up \u2014 everyone buying"
+          "text": "📈 Bull Market Prices going up — everyone buying",
+          "audioUrl": "/audio/lessons/oc-elem-vault/1-7.mp3"
         },
         {
           "id": "action_ev-s2_8",
@@ -596,7 +607,8 @@
         {
           "id": "action_ev-s2_9",
           "type": "speech",
-          "text": "\ud83d\udcc9 Bear Market Prices going down \u2014 people cautious"
+          "text": "📉 Bear Market Prices going down — people cautious",
+          "audioUrl": "/audio/lessons/oc-elem-vault/1-9.mp3"
         },
         {
           "id": "action_ev-s2_10",
@@ -606,7 +618,8 @@
         {
           "id": "action_ev-s2_11",
           "type": "speech",
-          "text": "\ud83d\udc8e HODL Keep your coins, don't panic sell"
+          "text": "💎 HODL Keep your coins, don't panic sell",
+          "audioUrl": "/audio/lessons/oc-elem-vault/1-11.mp3"
         },
         {
           "id": "action_ev-s2_12",
@@ -616,7 +629,8 @@
         {
           "id": "action_ev-s2_13",
           "type": "speech",
-          "text": "\u26fd Gas Fee Small fee paid to process a transaction"
+          "text": "⛽ Gas Fee Small fee paid to process a transaction",
+          "audioUrl": "/audio/lessons/oc-elem-vault/1-13.mp3"
         }
       ],
       "order": 2
@@ -624,7 +638,7 @@
     {
       "id": "ev-s3",
       "type": "quiz",
-      "title": "Knowledge Check \u2014 Crypto Glossary",
+      "title": "Knowledge Check — Crypto Glossary",
       "content": {
         "type": "quiz",
         "questions": [
@@ -638,7 +652,7 @@
                 "value": "A"
               },
               {
-                "label": "Hold On for Dear Life \u2014 keeping your crypto instead of selling",
+                "label": "Hold On for Dear Life — keeping your crypto instead of selling",
                 "value": "B"
               },
               {
@@ -653,7 +667,7 @@
             "answer": [
               "B"
             ],
-            "analysis": "HODL started as a typo for 'hold' that went viral. It means holding onto your crypto through price swings instead of panic-selling \u2014 a strategy many long-term investors swear by.",
+            "analysis": "HODL started as a typo for 'hold' that went viral. It means holding onto your crypto through price swings instead of panic-selling — a strategy many long-term investors swear by.",
             "points": 1
           },
           {
@@ -681,7 +695,7 @@
             "answer": [
               "C"
             ],
-            "analysis": "A bull market is when prices are trending upward. The name comes from the image of a bull charging forward with horns up. Bear market is the opposite \u2014 prices trending down.",
+            "analysis": "A bull market is when prices are trending upward. The name comes from the image of a bull charging forward with horns up. Bear market is the opposite — prices trending down.",
             "points": 1
           },
           {
@@ -722,7 +736,7 @@
                 "value": "A"
               },
               {
-                "label": "All Time High \u2014 the highest price a coin has ever reached",
+                "label": "All Time High — the highest price a coin has ever reached",
                 "value": "B"
               },
               {
@@ -747,12 +761,14 @@
         {
           "id": "action_ev-s3_q0",
           "type": "speech",
-          "text": "Time to test what you've learned! Answer each question and see how you do."
+          "text": "Time to test what you've learned! Answer each question and see how you do.",
+          "audioUrl": "/audio/lessons/oc-elem-vault/2-0.mp3"
         },
         {
           "id": "action_ev-s3_q1",
           "type": "speech",
-          "text": "Take your time \u2014 the goal is understanding, not just getting the right answer."
+          "text": "Take your time — the goal is understanding, not just getting the right answer.",
+          "audioUrl": "/audio/lessons/oc-elem-vault/2-1.mp3"
         }
       ]
     }

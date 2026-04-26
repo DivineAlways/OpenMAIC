@@ -82,7 +82,7 @@
               "width": 800,
               "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83d\udc5b What is a Crypto Wallet?</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>👛 What is a Crypto Wallet?</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -94,7 +94,7 @@
               "width": 800,
               "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Your key to your crypto \u2014 not a physical wallet</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Your key to your crypto — not a physical wallet</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#64748b"
             },
@@ -106,7 +106,7 @@
               "width": 950,
               "height": 130,
               "rotate": 0,
-              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'>A crypto wallet doesn't actually <em>store</em> your coins \u2014 your coins live on the blockchain. What a wallet stores are your <b style='color:#f87171;'>secret keys</b> \u2014 the passwords that prove the coins belong to you. Think of it like a <b style='color:#f1f5f9;'>mailbox key</b>. Your crypto is in the mailbox (blockchain). The key proves it's yours. Lose the key \u2014 someone else opens your mailbox.</p>",
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'>A crypto wallet doesn't actually <em>store</em> your coins — your coins live on the blockchain. What a wallet stores are your <b style='color:#f87171;'>secret keys</b> — the passwords that prove the coins belong to you. Think of it like a <b style='color:#f1f5f9;'>mailbox key</b>. Your crypto is in the mailbox (blockchain). The key proves it's yours. Lose the key — someone else opens your mailbox.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -139,7 +139,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udd11</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Public Key</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Like your address \u2014 safe to share</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🔑</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Public Key</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Like your address — safe to share</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#10b981"
             },
@@ -172,7 +172,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83e\udd2b</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Private Key</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Like your house key \u2014 NEVER share</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🤫</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Private Key</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Like your house key — NEVER share</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#3b82f6"
             },
@@ -205,7 +205,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udd25</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Hot Wallet</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Connected to internet \u2014 easy to use</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🔥</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Hot Wallet</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Connected to internet — easy to use</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -238,7 +238,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83e\uddca</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Cold Wallet</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Offline \u2014 safest for large amounts</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🧊</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Cold Wallet</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Offline — safest for large amounts</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f59e0b"
             }
@@ -254,7 +254,8 @@
         {
           "id": "action_ew-s1_1",
           "type": "speech",
-          "text": "\ud83d\udc5b What is a Crypto Wallet?"
+          "text": "👛 What is a Crypto Wallet?",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/0-1.mp3"
         },
         {
           "id": "action_ew-s1_2",
@@ -264,7 +265,8 @@
         {
           "id": "action_ew-s1_3",
           "type": "speech",
-          "text": "Your key to your crypto \u2014 not a physical wallet"
+          "text": "Your key to your crypto — not a physical wallet",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/0-3.mp3"
         },
         {
           "id": "action_ew-s1_4",
@@ -274,7 +276,8 @@
         {
           "id": "action_ew-s1_5",
           "type": "speech",
-          "text": "A crypto wallet doesn't actually store your coins \u2014 your coins live on the blockchain. What a wallet stores are your secret keys \u2014 the passwords that prove the coins belong to you. Think of it like a mailbox key . Your crypto is in the mailbox (blockchain). The key proves it's yours. Lose the key \u2014 ..."
+          "text": "A crypto wallet doesn't actually store your coins — your coins live on the blockchain. What a wallet stores are your secret keys — the passwords that prove the coins belong to you. Think of it like a mailbox key . Your crypto is in the mailbox (blockchain). The key proves it's yours. Lose the key — ...",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/0-5.mp3"
         },
         {
           "id": "action_ew-s1_6",
@@ -284,7 +287,8 @@
         {
           "id": "action_ew-s1_7",
           "type": "speech",
-          "text": "\ud83d\udd11 Public Key Like your address \u2014 safe to share"
+          "text": "🔑 Public Key Like your address — safe to share",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/0-7.mp3"
         },
         {
           "id": "action_ew-s1_8",
@@ -294,7 +298,8 @@
         {
           "id": "action_ew-s1_9",
           "type": "speech",
-          "text": "\ud83e\udd2b Private Key Like your house key \u2014 NEVER share"
+          "text": "🤫 Private Key Like your house key — NEVER share",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/0-9.mp3"
         },
         {
           "id": "action_ew-s1_10",
@@ -304,7 +309,8 @@
         {
           "id": "action_ew-s1_11",
           "type": "speech",
-          "text": "\ud83d\udd25 Hot Wallet Connected to internet \u2014 easy to use"
+          "text": "🔥 Hot Wallet Connected to internet — easy to use",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/0-11.mp3"
         },
         {
           "id": "action_ew-s1_12",
@@ -314,7 +320,8 @@
         {
           "id": "action_ew-s1_13",
           "type": "speech",
-          "text": "\ud83e\uddca Cold Wallet Offline \u2014 safest for large amounts"
+          "text": "🧊 Cold Wallet Offline — safest for large amounts",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/0-13.mp3"
         }
       ],
       "order": 1
@@ -384,7 +391,7 @@
               "width": 800,
               "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83d\udcdd The Seed Phrase</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>📝 The Seed Phrase</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -408,7 +415,7 @@
               "width": 950,
               "height": 130,
               "rotate": 0,
-              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'>When you set up a wallet, you get a <b style='color:#f87171;'>seed phrase</b> \u2014 usually 12 or 24 random words like: <em style='color:#60a5fa;'>apple river cloud sunset forest key...</em> These words can restore your entire wallet if your phone breaks. But they're also dangerous \u2014 <b style='color:#f1f5f9;'>anyone with your seed phrase owns your wallet.</b></p>",
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'>When you set up a wallet, you get a <b style='color:#f87171;'>seed phrase</b> — usually 12 or 24 random words like: <em style='color:#60a5fa;'>apple river cloud sunset forest key...</em> These words can restore your entire wallet if your phone breaks. But they're also dangerous — <b style='color:#f1f5f9;'>anyone with your seed phrase owns your wallet.</b></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -441,7 +448,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\u2705</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Write on Paper</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Store it somewhere safe</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>✅</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Write on Paper</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Store it somewhere safe</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#10b981"
             },
@@ -474,7 +481,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\u274c</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>No Screenshots</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Never photograph it</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>❌</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>No Screenshots</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Never photograph it</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#3b82f6"
             },
@@ -507,7 +514,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\u274c</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Never Share</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Not with anyone \u2014 ever</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>❌</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Never Share</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Not with anyone — ever</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -540,7 +547,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\u2705</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Multiple Copies</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Store in separate safe places</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>✅</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Multiple Copies</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Store in separate safe places</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f59e0b"
             }
@@ -556,7 +563,8 @@
         {
           "id": "action_ew-s2_1",
           "type": "speech",
-          "text": "\ud83d\udcdd The Seed Phrase"
+          "text": "📝 The Seed Phrase",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/1-1.mp3"
         },
         {
           "id": "action_ew-s2_2",
@@ -566,7 +574,8 @@
         {
           "id": "action_ew-s2_3",
           "type": "speech",
-          "text": "The master key to your entire wallet"
+          "text": "The master key to your entire wallet",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/1-3.mp3"
         },
         {
           "id": "action_ew-s2_4",
@@ -576,7 +585,8 @@
         {
           "id": "action_ew-s2_5",
           "type": "speech",
-          "text": "When you set up a wallet, you get a seed phrase \u2014 usually 12 or 24 random words like: apple river cloud sunset forest key... These words can restore your entire wallet if your phone breaks. But they're also dangerous \u2014 anyone with your seed phrase owns your wallet."
+          "text": "When you set up a wallet, you get a seed phrase — usually 12 or 24 random words like: apple river cloud sunset forest key... These words can restore your entire wallet if your phone breaks. But they're also dangerous — anyone with your seed phrase owns your wallet.",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/1-5.mp3"
         },
         {
           "id": "action_ew-s2_6",
@@ -586,7 +596,8 @@
         {
           "id": "action_ew-s2_7",
           "type": "speech",
-          "text": "\u2705 Write on Paper Store it somewhere safe"
+          "text": "✅ Write on Paper Store it somewhere safe",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/1-7.mp3"
         },
         {
           "id": "action_ew-s2_8",
@@ -596,7 +607,8 @@
         {
           "id": "action_ew-s2_9",
           "type": "speech",
-          "text": "\u274c No Screenshots Never photograph it"
+          "text": "❌ No Screenshots Never photograph it",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/1-9.mp3"
         },
         {
           "id": "action_ew-s2_10",
@@ -606,7 +618,8 @@
         {
           "id": "action_ew-s2_11",
           "type": "speech",
-          "text": "\u274c Never Share Not with anyone \u2014 ever"
+          "text": "❌ Never Share Not with anyone — ever",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/1-11.mp3"
         },
         {
           "id": "action_ew-s2_12",
@@ -616,7 +629,8 @@
         {
           "id": "action_ew-s2_13",
           "type": "speech",
-          "text": "\u2705 Multiple Copies Store in separate safe places"
+          "text": "✅ Multiple Copies Store in separate safe places",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/1-13.mp3"
         }
       ],
       "order": 2
@@ -624,7 +638,7 @@
     {
       "id": "ew-s3",
       "type": "quiz",
-      "title": "Knowledge Check \u2014 Wallets & Safety",
+      "title": "Knowledge Check — Wallets & Safety",
       "content": {
         "type": "quiz",
         "questions": [
@@ -653,7 +667,7 @@
             "answer": [
               "B"
             ],
-            "analysis": "Your coins live on the blockchain \u2014 the wallet stores your private keys, which prove you own those coins. Whoever has the keys, owns the coins.",
+            "analysis": "Your coins live on the blockchain — the wallet stores your private keys, which prove you own those coins. Whoever has the keys, owns the coins.",
             "points": 1
           },
           {
@@ -662,11 +676,11 @@
             "question": "What is your public key like?",
             "options": [
               {
-                "label": "Your house key \u2014 never share it",
+                "label": "Your house key — never share it",
                 "value": "A"
               },
               {
-                "label": "Your home address \u2014 safe to share so people can send you crypto",
+                "label": "Your home address — safe to share so people can send you crypto",
                 "value": "B"
               },
               {
@@ -737,7 +751,7 @@
             "answer": [
               "B"
             ],
-            "analysis": "Hot wallets stay connected to the internet \u2014 easy to use but more vulnerable. Cold wallets are offline devices like hardware wallets \u2014 harder to hack but less convenient for daily use.",
+            "analysis": "Hot wallets stay connected to the internet — easy to use but more vulnerable. Cold wallets are offline devices like hardware wallets — harder to hack but less convenient for daily use.",
             "points": 1
           }
         ]
@@ -747,12 +761,14 @@
         {
           "id": "action_ew-s3_q0",
           "type": "speech",
-          "text": "Time to test what you've learned! Answer each question and see how you do."
+          "text": "Time to test what you've learned! Answer each question and see how you do.",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/2-0.mp3"
         },
         {
           "id": "action_ew-s3_q1",
           "type": "speech",
-          "text": "Take your time \u2014 the goal is understanding, not just getting the right answer."
+          "text": "Take your time — the goal is understanding, not just getting the right answer.",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/2-1.mp3"
         }
       ]
     }

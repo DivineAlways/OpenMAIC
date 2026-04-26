@@ -275,7 +275,8 @@
         {
           "id": "action_bb-s1_1",
           "type": "speech",
-          "text": "Welcome to Blockchain Basics. In this first lesson we're asking: what exactly IS a blockchain?"
+          "text": "Welcome to Blockchain Basics. In this first lesson we're asking: what exactly IS a blockchain?",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/0-1.mp3"
         },
         {
           "id": "action_bb-s1_2",
@@ -285,7 +286,8 @@
         {
           "id": "action_bb-s1_3",
           "type": "speech",
-          "text": "A blockchain is a cryptographically linked, append-only distributed ledger — let's break each of those words down."
+          "text": "A blockchain is a cryptographically linked, append-only distributed ledger — let's break each of those words down.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/0-3.mp3"
         },
         {
           "id": "action_bb-s1_4",
@@ -295,7 +297,8 @@
         {
           "id": "action_bb-s1_5",
           "type": "speech",
-          "text": "The core structure: every block contains the previous block's hash — that's the cryptographic link — plus a Merkle root representing all the transactions inside it."
+          "text": "The core structure: every block contains the previous block's hash — that's the cryptographic link — plus a Merkle root representing all the transactions inside it.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/0-5.mp3"
         },
         {
           "id": "action_bb-s1_6",
@@ -305,7 +308,8 @@
         {
           "id": "action_bb-s1_7",
           "type": "speech",
-          "text": "And why does this matter? Bitcoin alone has 17 thousand nodes worldwide. There is no CEO, no server you can shut down. The network is the bank."
+          "text": "And why does this matter? Bitcoin alone has 17 thousand nodes worldwide. There is no CEO, no server you can shut down. The network is the bank.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/0-7.mp3"
         },
         {
           "id": "action_bb-s1_8",
@@ -315,7 +319,8 @@
         {
           "id": "action_bb-s1_9",
           "type": "speech",
-          "text": "Over 17,000 nodes secure the Bitcoin network right now."
+          "text": "Over 17,000 nodes secure the Bitcoin network right now.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/0-9.mp3"
         },
         {
           "id": "action_bb-s1_10",
@@ -325,7 +330,8 @@
         {
           "id": "action_bb-s1_11",
           "type": "speech",
-          "text": "The Bitcoin chain is over 600 gigabytes and still growing — that's the full history of every transaction since 2009."
+          "text": "The Bitcoin chain is over 600 gigabytes and still growing — that's the full history of every transaction since 2009.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/0-11.mp3"
         }
       ]
     },
@@ -480,7 +486,8 @@
         {
           "id": "action_bb-s2_1",
           "type": "speech",
-          "text": "Cryptographic hash functions are the foundation of blockchain security."
+          "text": "Cryptographic hash functions are the foundation of blockchain security.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/1-1.mp3"
         },
         {
           "id": "action_bb-s2_2",
@@ -490,7 +497,8 @@
         {
           "id": "action_bb-s2_3",
           "type": "speech",
-          "text": "SHA-256 is a one-way mathematical trap — easy to compute forward, essentially impossible to reverse."
+          "text": "SHA-256 is a one-way mathematical trap — easy to compute forward, essentially impossible to reverse.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/1-3.mp3"
         },
         {
           "id": "action_bb-s2_4",
@@ -500,7 +508,8 @@
         {
           "id": "action_bb-s2_5",
           "type": "speech",
-          "text": "SHA-256 takes any input and produces a fixed 256-bit digest. Same input always gives the same output. Different input gives a completely different output."
+          "text": "SHA-256 takes any input and produces a fixed 256-bit digest. Same input always gives the same output. Different input gives a completely different output.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/1-5.mp3"
         },
         {
           "id": "action_bb-s2_6",
@@ -510,7 +519,8 @@
         {
           "id": "action_bb-s2_7",
           "type": "speech",
-          "text": "Three key properties: pre-image resistant — you can't reverse it. Collision resistant — two different inputs don't give the same hash. And the avalanche effect — change one character and about 50% of the output bits flip."
+          "text": "Three key properties: pre-image resistant — you can't reverse it. Collision resistant — two different inputs don't give the same hash. And the avalanche effect — change one character and about 50% of the output bits flip.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/1-7.mp3"
         },
         {
           "id": "action_bb-s2_8",
@@ -520,7 +530,8 @@
         {
           "id": "action_bb-s2_9",
           "type": "speech",
-          "text": "One important note for the future: quantum computers running Grover's algorithm would effectively halve the security of SHA-256. That's why 256-bit gives 128-bit quantum security — still considered safe."
+          "text": "One important note for the future: quantum computers running Grover's algorithm would effectively halve the security of SHA-256. That's why 256-bit gives 128-bit quantum security — still considered safe.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/1-9.mp3"
         }
       ]
     },
@@ -831,7 +842,8 @@
         {
           "id": "action_bb-s3_1",
           "type": "speech",
-          "text": "Merkle trees solve a critical problem: how do you prove a transaction is in a block without downloading the entire block?"
+          "text": "Merkle trees solve a critical problem: how do you prove a transaction is in a block without downloading the entire block?",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/2-1.mp3"
         },
         {
           "id": "action_bb-s3_2",
@@ -841,7 +853,8 @@
         {
           "id": "action_bb-s3_3",
           "type": "speech",
-          "text": "With just a few hashes — specifically log base 2 of N hashes — you can prove any transaction's inclusion."
+          "text": "With just a few hashes — specifically log base 2 of N hashes — you can prove any transaction's inclusion.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/2-3.mp3"
         },
         {
           "id": "action_bb-s3_4",
@@ -851,7 +864,8 @@
         {
           "id": "action_bb-s3_5",
           "type": "speech",
-          "text": "Step one: a block can contain thousands of transactions. Way too large to transmit entirely to every device."
+          "text": "Step one: a block can contain thousands of transactions. Way too large to transmit entirely to every device.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/2-5.mp3"
         },
         {
           "id": "action_bb-s3_6",
@@ -861,7 +875,8 @@
         {
           "id": "action_bb-s3_7",
           "type": "speech",
-          "text": "Step two: hash pairs of transactions repeatedly until you're left with a single root hash — the Merkle root."
+          "text": "Step two: hash pairs of transactions repeatedly until you're left with a single root hash — the Merkle root.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/2-7.mp3"
         },
         {
           "id": "action_bb-s3_8",
@@ -871,7 +886,8 @@
         {
           "id": "action_bb-s3_9",
           "type": "speech",
-          "text": "Step three: only 32 bytes — the Merkle root — gets stored in the block header. It represents ALL transactions."
+          "text": "Step three: only 32 bytes — the Merkle root — gets stored in the block header. It represents ALL transactions.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/2-9.mp3"
         },
         {
           "id": "action_bb-s3_10",
@@ -881,7 +897,8 @@
         {
           "id": "action_bb-s3_11",
           "type": "speech",
-          "text": "Step four: to prove your transaction is included, you only need log N hashes along the path to the root. For a million transactions, that's just 20 hashes."
+          "text": "Step four: to prove your transaction is included, you only need log N hashes along the path to the root. For a million transactions, that's just 20 hashes.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/2-11.mp3"
         }
       ]
     },
@@ -1073,7 +1090,8 @@
         {
           "id": "action_bb-s4_1",
           "type": "speech",
-          "text": "How does a blockchain network agree on what happened? That's the consensus problem."
+          "text": "How does a blockchain network agree on what happened? That's the consensus problem.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/3-1.mp3"
         },
         {
           "id": "action_bb-s4_2",
@@ -1083,7 +1101,8 @@
         {
           "id": "action_bb-s4_3",
           "type": "speech",
-          "text": "Two dominant approaches: Proof of Work and Proof of Stake. Fundamentally different answers to the same trust question."
+          "text": "Two dominant approaches: Proof of Work and Proof of Stake. Fundamentally different answers to the same trust question.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/3-3.mp3"
         },
         {
           "id": "action_bb-s4_4",
@@ -1093,7 +1112,8 @@
         {
           "id": "action_bb-s4_5",
           "type": "speech",
-          "text": "Proof of Work: energy is the security cost. You can't fake burning electricity. Miners compete on hash rate, and difficulty adjusts every two weeks to maintain 10-minute blocks."
+          "text": "Proof of Work: energy is the security cost. You can't fake burning electricity. Miners compete on hash rate, and difficulty adjusts every two weeks to maintain 10-minute blocks.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/3-5.mp3"
         },
         {
           "id": "action_bb-s4_6",
@@ -1103,7 +1123,8 @@
         {
           "id": "action_bb-s4_7",
           "type": "speech",
-          "text": "Proof of Stake: collateral replaces energy. Validators stake ETH and can be 'slashed' — lose their stake — if they try to cheat. The economic incentive IS the security."
+          "text": "Proof of Stake: collateral replaces energy. Validators stake ETH and can be 'slashed' — lose their stake — if they try to cheat. The economic incentive IS the security.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/3-7.mp3"
         }
       ]
     },
@@ -1291,7 +1312,8 @@
         {
           "id": "action_bb-s5_1",
           "type": "speech",
-          "text": "Byzantine Fault Tolerance asks: how many dishonest participants can a network tolerate before it breaks?"
+          "text": "Byzantine Fault Tolerance asks: how many dishonest participants can a network tolerate before it breaks?",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/4-1.mp3"
         },
         {
           "id": "action_bb-s5_2",
@@ -1301,7 +1323,8 @@
         {
           "id": "action_bb-s5_3",
           "type": "speech",
-          "text": "Named after a famous 1982 computer science paper — every blockchain consensus mechanism is solving a version of this problem."
+          "text": "Named after a famous 1982 computer science paper — every blockchain consensus mechanism is solving a version of this problem.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/4-3.mp3"
         },
         {
           "id": "action_bb-s5_4",
@@ -1311,7 +1334,8 @@
         {
           "id": "action_bb-s5_5",
           "type": "speech",
-          "text": "The math: to tolerate F traitors, you need 3F plus 1 honest nodes. One bad actor? You need 4 total. 100 bad actors? You need 301."
+          "text": "The math: to tolerate F traitors, you need 3F plus 1 honest nodes. One bad actor? You need 4 total. 100 bad actors? You need 301.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/4-5.mp3"
         },
         {
           "id": "action_bb-s5_6",
@@ -1321,7 +1345,8 @@
         {
           "id": "action_bb-s5_7",
           "type": "speech",
-          "text": "Bitcoin solves this probabilistically through hash power — making it economically irrational to attack. XRPL uses a different approach with trusted validator lists."
+          "text": "Bitcoin solves this probabilistically through hash power — making it economically irrational to attack. XRPL uses a different approach with trusted validator lists.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/4-7.mp3"
         },
         {
           "id": "action_bb-s5_8",
@@ -1331,7 +1356,8 @@
         {
           "id": "action_bb-s5_9",
           "type": "speech",
-          "text": "XRPL requires 80% of trusted validators to agree before a ledger closes. This is higher than Bitcoin's 51% threshold."
+          "text": "XRPL requires 80% of trusted validators to agree before a ledger closes. This is higher than Bitcoin's 51% threshold.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/4-9.mp3"
         }
       ]
     },
@@ -1576,7 +1602,8 @@
         {
           "id": "action_bb-s6_1",
           "type": "speech",
-          "text": "The blockchain trilemma is one of the most important concepts in the space. Every blockchain picks two out of three — and no one has fully solved all three yet."
+          "text": "The blockchain trilemma is one of the most important concepts in the space. Every blockchain picks two out of three — and no one has fully solved all three yet.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/5-1.mp3"
         },
         {
           "id": "action_bb-s6_2",
@@ -1586,7 +1613,8 @@
         {
           "id": "action_bb-s6_3",
           "type": "speech",
-          "text": "Security, scalability, and decentralization — the impossible triangle."
+          "text": "Security, scalability, and decentralization — the impossible triangle.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/5-3.mp3"
         },
         {
           "id": "action_bb-s6_4",
@@ -1596,7 +1624,8 @@
         {
           "id": "action_bb-s6_5",
           "type": "speech",
-          "text": "Security: resistant to 51% attacks, double-spends, and Sybil attacks. Bitcoin and Ethereum both prioritize this above the other two."
+          "text": "Security: resistant to 51% attacks, double-spends, and Sybil attacks. Bitcoin and Ethereum both prioritize this above the other two.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/5-5.mp3"
         },
         {
           "id": "action_bb-s6_6",
@@ -1606,7 +1635,8 @@
         {
           "id": "action_bb-s6_7",
           "type": "speech",
-          "text": "Scalability: high transactions per second with low fees. Achieved via sharding, rollups, or simply larger blocks — each comes with trade-offs."
+          "text": "Scalability: high transactions per second with low fees. Achieved via sharding, rollups, or simply larger blocks — each comes with trade-offs.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/5-7.mp3"
         },
         {
           "id": "action_bb-s6_8",
@@ -1616,7 +1646,8 @@
         {
           "id": "action_bb-s6_9",
           "type": "speech",
-          "text": "Decentralization: no single control point. More nodes equals more resilience. Bitcoin's 17 thousand nodes make it essentially uncensorable — but slow."
+          "text": "Decentralization: no single control point. More nodes equals more resilience. Bitcoin's 17 thousand nodes make it essentially uncensorable — but slow.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/5-9.mp3"
         }
       ]
     },
@@ -1812,7 +1843,8 @@
         {
           "id": "action_bb-s7_1",
           "type": "speech",
-          "text": "Smart contracts are self-executing code deployed to Ethereum that runs exactly as written — forever."
+          "text": "Smart contracts are self-executing code deployed to Ethereum that runs exactly as written — forever.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/6-1.mp3"
         },
         {
           "id": "action_bb-s7_2",
@@ -1822,7 +1854,8 @@
         {
           "id": "action_bb-s7_3",
           "type": "speech",
-          "text": "No CEO can change them, no government can stop them. That's both the power and the risk."
+          "text": "No CEO can change them, no government can stop them. That's both the power and the risk.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/6-3.mp3"
         },
         {
           "id": "action_bb-s7_4",
@@ -1832,7 +1865,8 @@
         {
           "id": "action_bb-s7_5",
           "type": "speech",
-          "text": "What is a smart contract? It's code on the Ethereum blockchain. Once deployed, it runs autonomously. If the code has a bug — like the DAO hack in 2016 — there's no customer support line."
+          "text": "What is a smart contract? It's code on the Ethereum blockchain. Once deployed, it runs autonomously. If the code has a bug — like the DAO hack in 2016 — there's no customer support line.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/6-5.mp3"
         },
         {
           "id": "action_bb-s7_6",
@@ -1842,7 +1876,8 @@
         {
           "id": "action_bb-s7_7",
           "type": "speech",
-          "text": "The gas system is Ethereum's metering mechanism. Every computation costs gas — this prevents infinite loops and denial-of-service attacks. EIP-1559 introduced a base fee that gets burned, making ETH deflationary during high usage."
+          "text": "The gas system is Ethereum's metering mechanism. Every computation costs gas — this prevents infinite loops and denial-of-service attacks. EIP-1559 introduced a base fee that gets burned, making ETH deflationary during high usage.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/6-7.mp3"
         }
       ]
     },
@@ -1859,12 +1894,14 @@
         {
           "id": "action_bb-s8_i0",
           "type": "speech",
-          "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered."
+          "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/7-0.mp3"
         },
         {
           "id": "action_bb-s8_i1",
           "type": "speech",
-          "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading."
+          "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/7-1.mp3"
         }
       ]
     },
@@ -2002,12 +2039,14 @@
         {
           "id": "action_bb-s9_q0",
           "type": "speech",
-          "text": "Time to test your knowledge! Answer each question carefully — you can review the material after the quiz."
+          "text": "Time to test your knowledge! Answer each question carefully — you can review the material after the quiz.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/8-0.mp3"
         },
         {
           "id": "action_bb-s9_q1",
           "type": "speech",
-          "text": "Take your time with these questions. The goal is to solidify your understanding, not just pass the quiz."
+          "text": "Take your time with these questions. The goal is to solidify your understanding, not just pass the quiz.",
+          "audioUrl": "/audio/lessons/oc-blockchain-basics/8-1.mp3"
         }
       ]
     }
