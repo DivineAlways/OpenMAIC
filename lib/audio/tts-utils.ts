@@ -30,9 +30,12 @@ const TTS_PRONUNCIATIONS: [RegExp, string][] = [
  */
 export function sanitizeSpeechText(text: string): string {
   let t = text;
-  // Remove emoji (Unicode ranges: emoticons, symbols, flags, supplemental)
-  // eslint-disable-next-line no-misleading-character-class
-  t = t.replace(/[\u{1F000}-\u{1FFFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\u{FE00}-\u{FEFF}\u{1F300}-\u{1F9FF}\u{1FA00}-\u{1FA9F}]/gu, '');
+  // Replace ellipsis (typed or unicode) with a comma pause before stripping anything else
+  t = t.replace(/\.{3,}|…/g, ', ');
+  // Remove all emoji using the Unicode Emoji property — catches every emoji universally
+  t = t.replace(/\p{Emoji}/gu, '');
+  // Strip variation selectors left behind after emoji removal
+  t = t.replace(/[︀-️\u{E0100}-\u{E01EF}]/gu, '');
   // Strip HTML tags
   t = t.replace(/<[^>]*>/g, ' ');
   // Remove orphan periods preceded by whitespace (artifact of emoji/tag removal)

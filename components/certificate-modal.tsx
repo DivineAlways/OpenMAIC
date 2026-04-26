@@ -53,30 +53,195 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
   }, [nameInput, setNickname]);
 
   const handleDownload = useCallback(async () => {
-    if (!certRef.current || downloading) return;
+    if (downloading) return;
     setDownloading(true);
     try {
-      const html2canvas = (await import('html2canvas')).default;
-      const canvas = await html2canvas(certRef.current, {
-        scale: 2,
-        backgroundColor: null,
-        logging: false,
-        useCORS: true,
-        allowTaint: false,
-      });
-      const link = document.createElement('a');
-      link.download = `${courseName.replace(/[^a-z0-9]/gi, '-').toLowerCase()}-certificate.png`;
-      link.href = canvas.toDataURL('image/png');
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+      const W = 900, H = 560;
+      const canvas = document.createElement('canvas');
+      canvas.width = W * 2;
+      canvas.height = H * 2;
+      const ctx = canvas.getContext('2d')!;
+      ctx.scale(2, 2);
+
+      // Background gradient
+      const bg = ctx.createLinearGradient(0, 0, W, H);
+      bg.addColorStop(0, '#0f1729');
+      bg.addColorStop(0.5, '#1a2744');
+      bg.addColorStop(1, '#0f1729');
+      ctx.fillStyle = bg;
+      ctx.roundRect(0, 0, W, H, 16);
+      ctx.fill();
+
+      // Border
+      ctx.strokeStyle = '#3b82f6';
+      ctx.lineWidth = 2;
+      ctx.roundRect(1, 1, W - 2, H - 2, 15);
+      ctx.stroke();
+
+      // Corner glows
+      const tl = ctx.createRadialGradient(0, 0, 0, 0, 0, 120);
+      tl.addColorStop(0, 'rgba(59,130,246,0.15)');
+      tl.addColorStop(1, 'transparent');
+      ctx.fillStyle = tl;
+      ctx.fillRect(0, 0, 120, 120);
+
+      const br = ctx.createRadialGradient(W, H, 0, W, H, 120);
+      br.addColorStop(0, 'rgba(59,130,246,0.12)');
+      br.addColorStop(1, 'transparent');
+      ctx.fillStyle = br;
+      ctx.fillRect(W - 120, H - 120, 120, 120);
+
+      const pad = 56;
+
+      // Logo image (preloaded as data URL — no CORS)
+      if (logoDataUrl) {
+        const img = new Image();
+        img.src = logoDataUrl;
+        await new Promise<void>((res) => { img.onload = () => res(); img.onerror = () => res(); });
+        ctx.save();
+        ctx.beginPath();
+        ctx.roundRect(pad, 36, 44, 44, 8);
+        ctx.clip();
+        ctx.drawImage(img, pad, 36, 44, 44);
+        ctx.restore();
+      }
+
+      // ONLYCRYPTO label
+      ctx.fillStyle = '#60a5fa';
+      ctx.font = 'bold 13px Arial, sans-serif';
+      ctx.letterSpacing = '1px';
+      ctx.fillText('ONLYCRYPTO', pad + 52, 63);
+      ctx.letterSpacing = '0px';
+
+      // Score badge
+      const badgeText = `${pct}% · PASS`;
+      ctx.font = '11px Arial, sans-serif';
+      const bw = ctx.measureText(badgeText).width + 28;
+      const bx = W - pad - bw, by = 36;
+      ctx.fillStyle = 'rgba(59,130,246,0.15)';
+      ctx.strokeStyle = 'rgba(59,130,246,0.3)';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.roundRect(bx, by, bw, 24, 12);
+      ctx.fill();
+      ctx.stroke();
+      ctx.fillStyle = '#60a5fa';
+      ctx.textAlign = 'center';
+      ctx.fillText(badgeText, bx + bw / 2, by + 16);
+      ctx.textAlign = 'left';
+
+      // Award circle
+      const cx = W / 2, cy = 145;
+      const grad = ctx.createLinearGradient(cx - 32, cy - 32, cx + 32, cy + 32);
+      grad.addColorStop(0, '#3b82f6');
+      grad.addColorStop(1, '#8b5cf6');
+      ctx.fillStyle = grad;
+      ctx.beginPath();
+      ctx.arc(cx, cy, 32, 0, Math.PI * 2);
+      ctx.fill();
+      // Award icon (simplified ribbon)
+      ctx.strokeStyle = 'white';
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.arc(cx, cy - 6, 10, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.moveTo(cx - 7, cy + 4);
+      ctx.lineTo(cx - 11, cy + 18);
+      ctx.lineTo(cx, cy + 13);
+      ctx.lineTo(cx + 11, cy + 18);
+      ctx.lineTo(cx + 7, cy + 4);
+      ctx.stroke();
+
+      // "Certificate of Completion"
+      ctx.fillStyle = '#94a3b8';
+      ctx.font = '10px Arial, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.letterSpacing = '3px';
+      ctx.fillText('CERTIFICATE OF COMPLETION', W / 2, 200);
+      ctx.letterSpacing = '0px';
+
+      ctx.font = '13px Arial, sans-serif';
+      ctx.fillText('This certifies that', W / 2, 222);
+
+      // Student name
+      ctx.fillStyle = '#f1f5f9';
+      ctx.font = 'italic bold 32px Georgia, serif';
+      ctx.fillText(displayName || 'OnlyCrypto Member', W / 2, 268);
+
+      // "has successfully completed"
+      ctx.fillStyle = '#94a3b8';
+      ctx.font = '13px Arial, sans-serif';
+      ctx.fillText('has successfully completed', W / 2, 295);
+
+      // Course name
+      ctx.fillStyle = '#60a5fa';
+      ctx.font = 'bold 22px Arial, sans-serif';
+      ctx.fillText(courseName, W / 2, 330);
+
+      // Divider
+      const divGrad = ctx.createLinearGradient(pad, 0, W - pad, 0);
+      divGrad.addColorStop(0, 'transparent');
+      divGrad.addColorStop(0.5, 'rgba(59,130,246,0.4)');
+      divGrad.addColorStop(1, 'transparent');
+      ctx.fillStyle = divGrad;
+      ctx.fillRect(pad, 350, W - pad * 2, 1);
+
+      // Footer — Date
+      ctx.textAlign = 'left';
+      ctx.fillStyle = '#64748b';
+      ctx.font = '9px Arial, sans-serif';
+      ctx.letterSpacing = '1.5px';
+      ctx.fillText('DATE ISSUED', pad, 385);
+      ctx.letterSpacing = '0px';
+      ctx.fillStyle = '#94a3b8';
+      ctx.font = '13px Arial, sans-serif';
+      ctx.fillText(completedDate, pad, 403);
+
+      // Footer — Score (center)
+      ctx.textAlign = 'center';
+      ctx.fillStyle = '#64748b';
+      ctx.font = '9px Arial, sans-serif';
+      ctx.letterSpacing = '1.5px';
+      ctx.fillText('FINAL SCORE', W / 2, 385);
+      ctx.letterSpacing = '0px';
+      ctx.fillStyle = '#f1f5f9';
+      ctx.font = 'bold 18px Arial, sans-serif';
+      ctx.fillText(`${score}/${totalPoints}`, W / 2, 405);
+
+      // Footer — Authorized By (right)
+      ctx.textAlign = 'right';
+      ctx.fillStyle = '#64748b';
+      ctx.font = '9px Arial, sans-serif';
+      ctx.letterSpacing = '1.5px';
+      ctx.fillText('AUTHORIZED BY', W - pad, 385);
+      ctx.letterSpacing = '0px';
+      ctx.fillStyle = '#60a5fa';
+      ctx.font = 'italic 16px Georgia, serif';
+      ctx.fillText('OnlyCrypto Academy', W - pad, 403);
+      ctx.fillStyle = '#3b82f6';
+      ctx.font = '10px Arial, sans-serif';
+      ctx.fillText('learn.onlycrypto.io', W - pad, 418);
+
+      ctx.textAlign = 'left';
+
+      const slug = courseName.replace(/[^a-z0-9]/gi, '-').toLowerCase();
+      canvas.toBlob((blob) => {
+        if (!blob) { alert('Download failed. Please try again.'); return; }
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${slug}-certificate.png`;
+        a.click();
+        URL.revokeObjectURL(url);
+      }, 'image/png');
     } catch (err) {
       console.error('Certificate download failed:', err);
       alert('Download failed. Please try again or take a screenshot.');
     } finally {
       setDownloading(false);
     }
-  }, [courseName, downloading]);
+  }, [courseName, downloading, displayName, pct, score, totalPoints, completedDate, logoDataUrl]);
 
   return (
     <AnimatePresence>

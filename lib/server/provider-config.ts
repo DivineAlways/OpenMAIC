@@ -60,7 +60,11 @@ const TTS_ENV_MAP: Record<string, string> = {
   TTS_DOUBAO: 'doubao-tts',
   TTS_ELEVENLABS: 'elevenlabs-tts',
   TTS_MINIMAX: 'minimax-tts',
+  TTS_EDGE: 'edge-tts',
 };
+
+// edge-tts runs on the server without any API key
+const TTS_KEYLESS_PROVIDERS = new Set(['edge-tts']);
 
 const ASR_ENV_MAP: Record<string, string> = {
   ASR_OPENAI: 'openai-whisper',
@@ -173,11 +177,13 @@ function loadEnvSection(
       continue;
     }
 
-    // Activate on API key, or base URL alone for keyless providers (e.g. Ollama)
+    // Keyless providers (e.g. edge-tts CLI, Ollama) activate via base URL, API key, or _ENABLED=true
+    const envEnabled = process.env[`${prefix}_ENABLED`] === 'true';
+    // Activate on API key, base URL, or _ENABLED flag for keyless providers
     if (
       requiresBaseUrl
         ? !envBaseUrl
-        : !(envApiKey || (envBaseUrl && keylessProviders.has(providerId)))
+        : !(envApiKey || (keylessProviders.has(providerId) && (envBaseUrl || envEnabled)))
     )
       continue;
     result[providerId] = {
@@ -204,7 +210,7 @@ function buildConfig(yamlData: YamlData): ServerConfig {
     providers: loadEnvSection(LLM_ENV_MAP, yamlData.providers, {
       keylessProviders: new Set(['ollama']),
     }),
-    tts: loadEnvSection(TTS_ENV_MAP, yamlData.tts),
+    tts: loadEnvSection(TTS_ENV_MAP, yamlData.tts, { keylessProviders: TTS_KEYLESS_PROVIDERS }),
     asr: loadEnvSection(ASR_ENV_MAP, yamlData.asr),
     pdf: loadEnvSection(PDF_ENV_MAP, yamlData.pdf, { requiresBaseUrl: true }),
     image: loadEnvSection(IMAGE_ENV_MAP, yamlData.image),
