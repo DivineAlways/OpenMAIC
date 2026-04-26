@@ -36,72 +36,28 @@ export default function ClassroomDetailPage() {
     try {
       await loadFromStorage(classroomId);
 
-      // Always fetch server-side storage to get latest audioUrls (pre-generated Ava audio).
-      // If IndexedDB has cached scenes, merge audioUrls on top without replacing user state.
-      // If no cached data, use server data as the source of truth.
-      const cachedState = useStageStore.getState();
-      const cachedScenesLackActions = cachedState.scenes.some(
-        (s) => s.type === 'slide' && (!s.actions || s.actions.length === 0),
-      );
+      // Always load from server to get latest audioUrls (pre-generated Ava audio).
+      // Server JSON is the source of truth for OC Academy courses.
       try {
         const res = await fetch(`/api/classroom?id=${encodeURIComponent(classroomId)}`);
         if (res.ok) {
           const json = await res.json();
           if (json.success && json.classroom) {
-            const { stage, scenes: serverScenes } = json.classroom;
-
-            if (!cachedState.stage || cachedScenesLackActions) {
-              // No cached data — use server scenes directly
-              useStageStore.getState().setStage(stage);
-              useStageStore.setState({
-                scenes: serverScenes,
-                currentSceneId: serverScenes[0]?.id ?? null,
-              });
-              log.info('Loaded from server-side storage:', classroomId);
-            } else {
-              // Merge audioUrls from server into cached scenes so Ava audio plays
-              try {
-                const serverSceneMap = new Map(
-                  serverScenes.map((s: { id: string }) => [s.id, s]),
-                );
-                const merged = cachedState.scenes.map((cachedScene) => {
-                  const serverScene = serverSceneMap.get(cachedScene.id) as
-                    | (typeof cachedScene)
-                    | undefined;
-                  if (!serverScene || !Array.isArray(cachedScene.actions)) return cachedScene;
-                  const serverActions: { type?: string; audioUrl?: string }[] =
-                    Array.isArray((serverScene as { actions?: unknown[] }).actions)
-                      ? ((serverScene as { actions: { type?: string; audioUrl?: string }[] }).actions)
-                      : [];
-                  const mergedActions = cachedScene.actions.map((action, idx) => {
-                    const serverAction = serverActions[idx];
-                    if (
-                      action?.type === 'speech' &&
-                      serverAction?.type === 'speech' &&
-                      serverAction?.audioUrl
-                    ) {
-                      return { ...action, audioUrl: serverAction.audioUrl };
-                    }
-                    return action;
-                  });
-                  return { ...cachedScene, actions: mergedActions };
-                });
-                useStageStore.setState({ scenes: merged });
-                log.info('Merged server audioUrls into cached scenes:', classroomId);
-              } catch (mergeErr) {
-                log.warn('audioUrl merge failed, using cached scenes as-is:', mergeErr);
-              }
-            }
-
+            const { stage, scenes } = json.classroom;
+            useStageStore.getState().setStage(stage);
+            useStageStore.setState({
+              scenes,
+              currentSceneId: scenes[0]?.id ?? null,
+            });
+            log.info('Loaded from server-side storage:', classroomId);
             if (stage.generatedAgentConfigs?.length) {
               const { saveGeneratedAgents } = await import('@/lib/orchestration/registry/store');
               await saveGeneratedAgents(stage.id, stage.generatedAgentConfigs);
-              log.info('Hydrated server-generated agents for stage:', stage.id);
             }
           }
         }
       } catch (fetchErr) {
-        log.warn('Server-side storage fetch failed:', fetchErr);
+        log.warn('Server-side storage fetch failed, using IndexedDB cache:', fetchErr);
       }
 
       // Restore completed media generation tasks from IndexedDB
