@@ -8,6 +8,44 @@ import { createLogger } from '@/lib/logger';
 
 const log = createLogger('TTS');
 
+// Pronunciation map: words TTS mispronounces → phonetic spelling
+const TTS_PRONUNCIATIONS: [RegExp, string][] = [
+  [/\bDeFi\b/g, 'Dee-Fi'],
+  [/\bNFT(s)?\b/g, 'N-F-T$1'],
+  [/\bXRP\b/g, 'X-R-P'],
+  [/\bDAO(s)?\b/g, 'D-A-O$1'],
+  [/\bDEX\b/g, 'decks'],
+  [/\bAPY\b/g, 'A-P-Y'],
+  [/\bAPR\b/g, 'A-P-R'],
+  [/\bBitunix\b/g, 'Bit-you-nix'],
+  [/\bHODL\b/g, 'hoddle'],
+];
+
+/**
+ * Sanitize text before passing to TTS:
+ * - Strip emoji characters (browser TTS reads them as descriptions)
+ * - Strip HTML tags
+ * - Fix orphan periods and double spaces left by HTML stripping
+ * - Apply pronunciation corrections for crypto acronyms
+ */
+export function sanitizeSpeechText(text: string): string {
+  let t = text;
+  // Remove emoji (Unicode ranges: emoticons, symbols, flags, supplemental)
+  // eslint-disable-next-line no-misleading-character-class
+  t = t.replace(/[\u{1F000}-\u{1FFFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\u{FE00}-\u{FEFF}\u{1F300}-\u{1F9FF}\u{1FA00}-\u{1FA9F}]/gu, '');
+  // Strip HTML tags
+  t = t.replace(/<[^>]*>/g, ' ');
+  // Remove orphan periods preceded by whitespace (artifact of emoji/tag removal)
+  t = t.replace(/\s+\./g, '.');
+  // Collapse multiple spaces/newlines
+  t = t.replace(/\s{2,}/g, ' ').trim();
+  // Apply pronunciation corrections
+  for (const [pattern, replacement] of TTS_PRONUNCIATIONS) {
+    t = t.replace(pattern, replacement);
+  }
+  return t;
+}
+
 /** Provider-specific max text length limits. */
 export const TTS_MAX_TEXT_LENGTH: Partial<Record<TTSProviderId, number>> = {
   'glm-tts': 1024,

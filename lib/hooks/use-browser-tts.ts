@@ -5,6 +5,7 @@
  */
 
 import { useState, useCallback, useRef, useEffect } from 'react';
+import { sanitizeSpeechText } from '@/lib/audio/tts-utils';
 
 // Note: Window.SpeechSynthesis declaration is already in the global scope
 
@@ -69,7 +70,7 @@ export function useBrowserTTS(options: UseBrowserTTSOptions = {}) {
       // Cancel any ongoing speech
       window.speechSynthesis.cancel();
 
-      const utterance = new SpeechSynthesisUtterance(text);
+      const utterance = new SpeechSynthesisUtterance(sanitizeSpeechText(text));
       utterance.rate = rate;
       utterance.pitch = pitch;
       utterance.volume = volume;

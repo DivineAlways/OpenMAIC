@@ -128,6 +128,9 @@ export async function generateTTS(
   config: TTSModelConfig,
   text: string,
 ): Promise<TTSGenerationResult> {
+  const { sanitizeSpeechText } = await import('./tts-utils');
+  text = sanitizeSpeechText(text);
+
   const provider = TTS_PROVIDERS[config.providerId as keyof typeof TTS_PROVIDERS];
 
   // Validate API key if required (only for built-in providers with known config)

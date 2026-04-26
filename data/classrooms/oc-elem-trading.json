@@ -4,7 +4,7 @@
   "stage": {
     "id": "oc-elem-trading",
     "name": "Intro to Trading (Elementary)",
-    "description": "Buy low, sell high \u2014 and why copy trading changes the game for beginners.",
+    "description": "Buy low, sell high — and why copy trading changes the game for beginners.",
     "createdAt": "2026-04-24T12:00:00.000Z",
     "updatedAt": "2026-04-24T12:00:00.000Z",
     "languageDirective": "en-US",
@@ -82,7 +82,7 @@
               "width": 800,
               "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83d\udcc8 What is Trading?</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>📈 What is Trading?</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -106,7 +106,7 @@
               "width": 950,
               "height": 130,
               "rotate": 0,
-              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'>Trading means <b style='color:#60a5fa;'>buying something when the price is low</b> and <b style='color:#f1f5f9;'>selling it when the price is higher</b> \u2014 keeping the difference as profit. Example: You buy 1 XRP for <b style='color:#34d399;'>$2</b>. Later, XRP goes up to <b style='color:#34d399;'>$3</b>. You sell it. You made <b style='color:#fbbf24;'>$1 profit</b> \u2014 that's trading!</p>",
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'>Trading means <b style='color:#60a5fa;'>buying something when the price is low</b> and <b style='color:#f1f5f9;'>selling it when the price is higher</b> — keeping the difference as profit. Example: You buy 1 XRP for <b style='color:#34d399;'>$2</b>. Later, XRP goes up to <b style='color:#34d399;'>$3</b>. You sell it. You made <b style='color:#fbbf24;'>$1 profit</b> — that's trading!</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -139,7 +139,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\uded2</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Buy Low</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Buy when you think price will go up</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🛒</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Buy Low</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Buy when you think price will go up</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#10b981"
             },
@@ -172,7 +172,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\u23f3</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Wait</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Watch the market for the right moment</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>⏳</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Wait</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Watch the market for the right moment</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#3b82f6"
             },
@@ -205,7 +205,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udcb0</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Sell High</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Sell when the price goes up</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>💰</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Sell High</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Sell when the price goes up</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -238,7 +238,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83c\udf89</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Keep Profit</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>The difference is yours!</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🎉</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Keep Profit</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>The difference is yours!</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f59e0b"
             }
@@ -254,7 +254,7 @@
         {
           "id": "action_et-s1_1",
           "type": "speech",
-          "text": "\ud83d\udcc8 What is Trading?"
+          "text": "📈 What is Trading?"
         },
         {
           "id": "action_et-s1_2",
@@ -274,7 +274,7 @@
         {
           "id": "action_et-s1_5",
           "type": "speech",
-          "text": "Trading means buying something when the price is low and selling it when the price is higher \u2014 keeping the difference as profit. Example: You buy 1 XRP for $2 . Later, XRP goes up to $3 . You sell it. You made $1 profit \u2014 that's trading!"
+          "text": "Trading means buying something when the price is low and selling it when the price is higher — keeping the difference as profit. Example: You buy 1 XRP for $2 . Later, XRP goes up to $3 . You sell it. You made $1 profit — that's trading!"
         },
         {
           "id": "action_et-s1_6",
@@ -284,7 +284,7 @@
         {
           "id": "action_et-s1_7",
           "type": "speech",
-          "text": "\ud83d\uded2 Buy Low Buy when you think price will go up"
+          "text": "🛒 Buy Low Buy when you think price will go up"
         },
         {
           "id": "action_et-s1_8",
@@ -294,7 +294,7 @@
         {
           "id": "action_et-s1_9",
           "type": "speech",
-          "text": "\u23f3 Wait Watch the market for the right moment"
+          "text": "⏳ Wait Watch the market for the right moment"
         },
         {
           "id": "action_et-s1_10",
@@ -304,7 +304,7 @@
         {
           "id": "action_et-s1_11",
           "type": "speech",
-          "text": "\ud83d\udcb0 Sell High Sell when the price goes up"
+          "text": "💰 Sell High Sell when the price goes up"
         },
         {
           "id": "action_et-s1_12",
@@ -314,7 +314,7 @@
         {
           "id": "action_et-s1_13",
           "type": "speech",
-          "text": "\ud83c\udf89 Keep Profit The difference is yours!"
+          "text": "🎉 Keep Profit The difference is yours!"
         }
       ],
       "order": 1
@@ -384,7 +384,7 @@
               "width": 800,
               "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83e\ude9e Copy Trading</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🪞 Copy Trading</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -396,7 +396,7 @@
               "width": 800,
               "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Follow experts \u2014 profit automatically</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Follow experts — profit automatically</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#64748b"
             },
@@ -408,7 +408,7 @@
               "width": 950,
               "height": 130,
               "rotate": 0,
-              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'>Copy trading lets you <b style='color:#60a5fa;'>automatically copy every trade</b> an expert makes. When they buy, you buy. When they sell, you sell \u2014 at the same time, without lifting a finger. <b style='color:#f1f5f9;'>OnlyCrypto</b> is a copy trading platform on the XRP Ledger \u2014 follow expert traders and mirror their moves automatically.</p>",
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'>Copy trading lets you <b style='color:#60a5fa;'>automatically copy every trade</b> an expert makes. When they buy, you buy. When they sell, you sell — at the same time, without lifting a finger. <b style='color:#f1f5f9;'>OnlyCrypto</b> is a copy trading platform powered by <b style='color:#60a5fa;'>Bitunix</b> — follow expert traders and mirror their moves automatically. Payouts flow through the XRP Ledger.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -441,7 +441,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83e\uddd1\u200d\ud83d\udcbb</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Expert Trades</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Pro buys XRP from research</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🧑‍💻</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Expert Trades</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Pro buys XRP from research</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#10b981"
             },
@@ -474,7 +474,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\u26a1</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Auto Copy</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Your account copies instantly</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>⚡</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Auto Copy</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Your account copies instantly</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#3b82f6"
             },
@@ -507,7 +507,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udcb0</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Both Profit</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>You earn when they earn</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>💰</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Both Profit</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>You earn when they earn</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -540,7 +540,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\ude34</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>While You Sleep</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>No screen-watching needed</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>😴</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>While You Sleep</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>No screen-watching needed</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f59e0b"
             }
@@ -556,7 +556,7 @@
         {
           "id": "action_et-s2_1",
           "type": "speech",
-          "text": "\ud83e\ude9e Copy Trading"
+          "text": "🪞 Copy Trading"
         },
         {
           "id": "action_et-s2_2",
@@ -566,7 +566,7 @@
         {
           "id": "action_et-s2_3",
           "type": "speech",
-          "text": "Follow experts \u2014 profit automatically"
+          "text": "Follow experts — profit automatically"
         },
         {
           "id": "action_et-s2_4",
@@ -576,7 +576,7 @@
         {
           "id": "action_et-s2_5",
           "type": "speech",
-          "text": "Copy trading lets you automatically copy every trade an expert makes. When they buy, you buy. When they sell, you sell \u2014 at the same time, without lifting a finger. OnlyCrypto is a copy trading platform on the XRP Ledger \u2014 follow expert traders and mirror their moves automatically."
+          "text": "Copy trading lets you automatically copy every trade an expert makes. When they buy, you buy. When they sell, you sell — at the same time, without lifting a finger. OnlyCrypto is a copy trading platform powered by Bitunix — follow expert traders and mirror their moves automatically. Payouts flow through the XRP Ledger."
         },
         {
           "id": "action_et-s2_6",
@@ -586,7 +586,7 @@
         {
           "id": "action_et-s2_7",
           "type": "speech",
-          "text": "\ud83e\uddd1\u200d\ud83d\udcbb Expert Trades Pro buys XRP from research"
+          "text": "🧑‍💻 Expert Trades Pro buys XRP from research"
         },
         {
           "id": "action_et-s2_8",
@@ -596,7 +596,7 @@
         {
           "id": "action_et-s2_9",
           "type": "speech",
-          "text": "\u26a1 Auto Copy Your account copies instantly"
+          "text": "⚡ Auto Copy Your account copies instantly"
         },
         {
           "id": "action_et-s2_10",
@@ -606,7 +606,7 @@
         {
           "id": "action_et-s2_11",
           "type": "speech",
-          "text": "\ud83d\udcb0 Both Profit You earn when they earn"
+          "text": "💰 Both Profit You earn when they earn"
         },
         {
           "id": "action_et-s2_12",
@@ -616,7 +616,7 @@
         {
           "id": "action_et-s2_13",
           "type": "speech",
-          "text": "\ud83d\ude34 While You Sleep No screen-watching needed"
+          "text": "😴 While You Sleep No screen-watching needed"
         }
       ],
       "order": 2
@@ -624,7 +624,7 @@
     {
       "id": "et-s3",
       "type": "quiz",
-      "title": "Knowledge Check \u2014 Trading Basics",
+      "title": "Knowledge Check — Trading Basics",
       "content": {
         "type": "quiz",
         "questions": [
@@ -681,7 +681,7 @@
             "answer": [
               "B"
             ],
-            "analysis": "Copy trading automatically replicates an expert's trades in your account \u2014 when they buy, you buy; when they sell, you sell. No manual effort required.",
+            "analysis": "Copy trading automatically replicates an expert's trades in your account — when they buy, you buy; when they sell, you sell. No manual effort required.",
             "points": 1
           },
           {
@@ -726,7 +726,7 @@
                 "value": "B"
               },
               {
-                "label": "The XRP Ledger blockchain",
+                "label": "Bitunix — a professional copy trading exchange",
                 "value": "C"
               },
               {
@@ -737,7 +737,7 @@
             "answer": [
               "C"
             ],
-            "analysis": "OnlyCrypto is built on the XRP Ledger \u2014 a fast, low-cost blockchain. Trades settle in 3-5 seconds and payouts go directly to your XRP wallet.",
+            "analysis": "OnlyCrypto uses Bitunix as its copy trading platform. Bitunix is a professional exchange that enables expert traders to have their trades mirrored automatically to followers. Payouts are made via the XRP Ledger.",
             "points": 1
           }
         ]
@@ -752,7 +752,7 @@
         {
           "id": "action_et-s3_q1",
           "type": "speech",
-          "text": "Take your time \u2014 the goal is understanding, not just getting the right answer."
+          "text": "Take your time — the goal is understanding, not just getting the right answer."
         }
       ]
     }
