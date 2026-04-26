@@ -23,6 +23,8 @@ ELLIPSIS_RE = re.compile(r'\.{3,}|…')
 
 
 TTS_PRONUNCIATIONS = [
+    (re.compile(r'24/7/365'), '24 7 365'),
+    (re.compile(r'24/7'), '24 7'),
     (re.compile(r'\bDeFi\b', re.IGNORECASE), 'Dee Fie'),
     (re.compile(r'\bNFTs?\b'), 'N-F-Ts'),
     (re.compile(r'\bXRP\b'), 'X-R-P'),

@@ -10,6 +10,8 @@ const log = createLogger('TTS');
 
 // Pronunciation map: words TTS mispronounces → phonetic spelling
 const TTS_PRONUNCIATIONS: [RegExp, string][] = [
+  [/24\/7\/365/g, '24 7 365'],
+  [/24\/7/g, '24 7'],
   [/\bDeFi\b/gi, 'Dee Fie'],
   [/\bNFT(s)?\b/g, 'N-F-T$1'],
   [/\bXRP\b/g, 'X-R-P'],
