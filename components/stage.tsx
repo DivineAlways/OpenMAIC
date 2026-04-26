@@ -562,6 +562,23 @@ export function Stage({
           chatAreaRef.current?.endSession(lectureSessionIdRef.current);
           lectureSessionIdRef.current = null;
         }
+
+        // "Want me to explain more?" prompt after each section completes
+        const stageStateForPrompt = useStageStore.getState();
+        const allScenesForPrompt = stageStateForPrompt.scenes;
+        const curIdForPrompt = stageStateForPrompt.currentSceneId;
+        const idxForPrompt = allScenesForPrompt.findIndex((s) => s.id === curIdForPrompt);
+        // Only prompt on slide/content scenes, not quizzes or the very last scene (which shows the overlay)
+        const currentSceneForPrompt = allScenesForPrompt[idxForPrompt];
+        const isLastForPrompt = idxForPrompt === allScenesForPrompt.length - 1 && stageStateForPrompt.generatingOutlines.length === 0;
+        if (!isLastForPrompt && currentSceneForPrompt && currentSceneForPrompt.type !== 'quiz' && currentSceneForPrompt.type !== 'interactive') {
+          setTimeout(() => {
+            // Trigger a brief AI response inviting the student to ask follow-up questions
+            chatAreaRef.current?.sendMessage(
+              `[Section complete] Briefly ask the student in 1-2 friendly sentences if they'd like you to explain anything from this section further, or if they're ready to move on.`,
+            );
+          }, 800);
+        }
         // Auto-play: advance to next scene after a short pause
         const { autoPlayLecture } = useSettingsStore.getState();
         if (autoPlayLecture) {
@@ -802,8 +819,10 @@ export function Stage({
   }, []);
 
   const handleNextLessonFromQuiz = useCallback(() => {
+    // Mark course complete then show overlay (in case quiz fires before last-scene completion)
+    if (courseId) markCourseComplete(courseId);
     setShowCompletionOverlay(true);
-  }, []);
+  }, [courseId]);
 
   // get scene information
   const isPendingScene = currentSceneId === PENDING_SCENE_ID;
@@ -1366,7 +1385,14 @@ export function Stage({
           courseName={stage?.name ?? 'OnlyCrypto Academy'}
           score={certData.score}
           totalPoints={certData.total}
-          onClose={() => setCertData(null)}
+          onClose={() => {
+            setCertData(null);
+            // After closing the cert, show the next-lesson overlay if not already visible
+            if (courseId && !showCompletionOverlay) {
+              if (courseId) markCourseComplete(courseId);
+              setTimeout(() => setShowCompletionOverlay(true), 400);
+            }
+          }}
         />
       )}
     </div>

@@ -4,7 +4,7 @@
   "stage": {
     "id": "oc-elem-defi",
     "name": "What is DeFi? (Elementary)",
-    "description": "Banking without banks \u2014 explained for complete beginners.",
+    "description": "Banking without banks — explained for complete beginners.",
     "createdAt": "2026-04-24T12:00:00.000Z",
     "updatedAt": "2026-04-24T12:00:00.000Z",
     "languageDirective": "en-US",
@@ -82,7 +82,7 @@
               "width": 800,
               "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83c\udfd7\ufe0f What is DeFi?</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🏗️ What is DeFi?</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -94,7 +94,7 @@
               "width": 800,
               "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Banking without banks \u2014 powered by code</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Banking without banks — powered by code</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#64748b"
             },
@@ -106,7 +106,7 @@
               "width": 950,
               "height": 130,
               "rotate": 0,
-              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'><b style='color:#34d399;'>DeFi</b> stands for <b style='color:#f1f5f9;'>Decentralized Finance</b>. It's a way to do banking stuff \u2014 saving, borrowing, earning interest \u2014 <b style='color:#34d399;'>without using a real bank</b>. Instead of people running it, <b style='color:#f1f5f9;'>computer programs</b> (called smart contracts) do everything automatically. No waiting, no paperwork, no business hours.</p>",
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'><b style='color:#34d399;'>DeFi</b> stands for <b style='color:#f1f5f9;'>Decentralized Finance</b>. It's a way to do banking stuff — saving, borrowing, earning interest — <b style='color:#34d399;'>without using a real bank</b>. Instead of people running it, <b style='color:#f1f5f9;'>computer programs</b> (called smart contracts) do everything automatically. No waiting, no paperwork, no business hours.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -139,7 +139,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udd50</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Open 24/7/365</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Never closed \u2014 no holidays</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🕐</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Open 24/7/365</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Never closed — no holidays</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#10b981"
             },
@@ -172,7 +172,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83c\udf0d</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>No Approval</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Anyone can use it \u2014 no application</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🌍</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>No Approval</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Anyone can use it — no application</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#3b82f6"
             },
@@ -205,7 +205,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\u26a1</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Instant</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Transfers happen in seconds</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>⚡</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Instant</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Transfers happen in seconds</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -238,7 +238,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83e\udd16</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Automated</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Code handles everything automatically</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🤖</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Automated</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Code handles everything automatically</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f59e0b"
             }
@@ -254,7 +254,7 @@
         {
           "id": "action_ed-s1_1",
           "type": "speech",
-          "text": "\ud83c\udfd7\ufe0f What is DeFi?"
+          "text": "🏗️ What is DeFi?"
         },
         {
           "id": "action_ed-s1_2",
@@ -264,7 +264,7 @@
         {
           "id": "action_ed-s1_3",
           "type": "speech",
-          "text": "Banking without banks \u2014 powered by code"
+          "text": "Banking without banks — powered by code"
         },
         {
           "id": "action_ed-s1_4",
@@ -274,7 +274,7 @@
         {
           "id": "action_ed-s1_5",
           "type": "speech",
-          "text": "DeFi stands for Decentralized Finance . It's a way to do banking stuff \u2014 saving, borrowing, earning interest \u2014 without using a real bank . Instead of people running it, computer programs (called smart contracts) do everything automatically. No waiting, no paperwork, no business hours."
+          "text": "DeFi stands for Decentralized Finance . It's a way to do banking stuff — saving, borrowing, earning interest — without using a real bank . Instead of people running it, computer programs (called smart contracts) do everything automatically. No waiting, no paperwork, no business hours."
         },
         {
           "id": "action_ed-s1_6",
@@ -284,7 +284,7 @@
         {
           "id": "action_ed-s1_7",
           "type": "speech",
-          "text": "\ud83d\udd50 Open 24/7/365 Never closed \u2014 no holidays"
+          "text": "🕐 Open 24/7/365 Never closed — no holidays"
         },
         {
           "id": "action_ed-s1_8",
@@ -294,7 +294,7 @@
         {
           "id": "action_ed-s1_9",
           "type": "speech",
-          "text": "\ud83c\udf0d No Approval Anyone can use it \u2014 no application"
+          "text": "🌍 No Approval Anyone can use it — no application"
         },
         {
           "id": "action_ed-s1_10",
@@ -304,7 +304,7 @@
         {
           "id": "action_ed-s1_11",
           "type": "speech",
-          "text": "\u26a1 Instant Transfers happen in seconds"
+          "text": "⚡ Instant Transfers happen in seconds"
         },
         {
           "id": "action_ed-s1_12",
@@ -314,7 +314,7 @@
         {
           "id": "action_ed-s1_13",
           "type": "speech",
-          "text": "\ud83e\udd16 Automated Code handles everything automatically"
+          "text": "🤖 Automated Code handles everything automatically"
         }
       ],
       "order": 1
@@ -384,7 +384,7 @@
               "width": 800,
               "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83e\udd16 What is a Smart Contract?</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🤖 What is a Smart Contract?</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -396,7 +396,7 @@
               "width": 800,
               "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Like a vending machine \u2014 put money in, get exactly what was promised</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Like a vending machine — put money in, get exactly what was promised</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#64748b"
             },
@@ -408,7 +408,7 @@
               "width": 950,
               "height": 130,
               "rotate": 0,
-              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'>A <b style='color:#34d399;'>smart contract</b> is a program on the blockchain. When certain conditions are met, it <b style='color:#f1f5f9;'>automatically does something</b> \u2014 no human needed. Think of a vending machine: put in money, press a button, get your snack. No cashier. No waiting. The machine just does it.</p>",
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'>A <b style='color:#34d399;'>smart contract</b> is a program on the blockchain. When certain conditions are met, it <b style='color:#f1f5f9;'>automatically does something</b> — no human needed. Think of a vending machine: put in money, press a button, get your snack. No cashier. No waiting. The machine just does it.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -441,7 +441,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udcb0</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Deposit Crypto</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>You put in $100 of ETH as collateral</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>💰</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Deposit Crypto</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>You put in $100 of ETH as collateral</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#10b981"
             },
@@ -474,7 +474,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83e\udd16</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Auto Lend</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Contract lends you $70 instantly</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🤖</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Auto Lend</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Contract lends you $70 instantly</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#3b82f6"
             },
@@ -507,7 +507,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\u2705</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Pay Back</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Return it + fee, get ETH back auto</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>✅</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Pay Back</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Return it + fee, get ETH back auto</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -540,7 +540,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83c\udfe6</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>No Human</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Zero bank employees involved</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🏦</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>No Human</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Zero bank employees involved</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f59e0b"
             }
@@ -556,7 +556,7 @@
         {
           "id": "action_ed-s2_1",
           "type": "speech",
-          "text": "\ud83e\udd16 What is a Smart Contract?"
+          "text": "🤖 What is a Smart Contract?"
         },
         {
           "id": "action_ed-s2_2",
@@ -566,7 +566,7 @@
         {
           "id": "action_ed-s2_3",
           "type": "speech",
-          "text": "Like a vending machine \u2014 put money in, get exactly what was promised"
+          "text": "Like a vending machine — put money in, get exactly what was promised"
         },
         {
           "id": "action_ed-s2_4",
@@ -576,7 +576,7 @@
         {
           "id": "action_ed-s2_5",
           "type": "speech",
-          "text": "A smart contract is a program on the blockchain. When certain conditions are met, it automatically does something \u2014 no human needed. Think of a vending machine: put in money, press a button, get your snack. No cashier. No waiting. The machine just does it."
+          "text": "A smart contract is a program on the blockchain. When certain conditions are met, it automatically does something — no human needed. Think of a vending machine: put in money, press a button, get your snack. No cashier. No waiting. The machine just does it."
         },
         {
           "id": "action_ed-s2_6",
@@ -586,7 +586,7 @@
         {
           "id": "action_ed-s2_7",
           "type": "speech",
-          "text": "\ud83d\udcb0 Deposit Crypto You put in $100 of ETH as collateral"
+          "text": "💰 Deposit Crypto You put in $100 of ETH as collateral"
         },
         {
           "id": "action_ed-s2_8",
@@ -596,7 +596,7 @@
         {
           "id": "action_ed-s2_9",
           "type": "speech",
-          "text": "\ud83e\udd16 Auto Lend Contract lends you $70 instantly"
+          "text": "🤖 Auto Lend Contract lends you $70 instantly"
         },
         {
           "id": "action_ed-s2_10",
@@ -606,7 +606,7 @@
         {
           "id": "action_ed-s2_11",
           "type": "speech",
-          "text": "\u2705 Pay Back Return it + fee, get ETH back auto"
+          "text": "✅ Pay Back Return it + fee, get ETH back auto"
         },
         {
           "id": "action_ed-s2_12",
@@ -616,7 +616,7 @@
         {
           "id": "action_ed-s2_13",
           "type": "speech",
-          "text": "\ud83c\udfe6 No Human Zero bank employees involved"
+          "text": "🏦 No Human Zero bank employees involved"
         }
       ],
       "order": 2
@@ -624,7 +624,7 @@
     {
       "id": "ed-s3",
       "type": "quiz",
-      "title": "Knowledge Check \u2014 DeFi Basics",
+      "title": "Knowledge Check — DeFi Basics",
       "content": {
         "type": "quiz",
         "questions": [
@@ -653,7 +653,7 @@
             "answer": [
               "B"
             ],
-            "analysis": "DeFi stands for Decentralized Finance \u2014 financial services that run on blockchains without banks or other middlemen.",
+            "analysis": "DeFi stands for Decentralized Finance — financial services that run on blockchains without banks or other middlemen.",
             "points": 1
           },
           {
@@ -681,7 +681,7 @@
             "answer": [
               "B"
             ],
-            "analysis": "A smart contract is code on the blockchain that runs automatically when certain conditions are met \u2014 like a vending machine that gives you a snack the moment you put in the right amount.",
+            "analysis": "A smart contract is code on the blockchain that runs automatically when certain conditions are met — like a vending machine that gives you a snack the moment you put in the right amount.",
             "points": 1
           },
           {
@@ -722,7 +722,7 @@
                 "value": "A"
               },
               {
-                "label": "Payouts happen automatically without anyone approving them \u2014 similar to smart contracts",
+                "label": "Payouts happen automatically without anyone approving them — similar to smart contracts",
                 "value": "B"
               },
               {
@@ -737,7 +737,7 @@
             "answer": [
               "B"
             ],
-            "analysis": "OnlyCrypto's payouts work like DeFi \u2014 they happen automatically using the XRP Ledger. When you earn a payout, the system sends XRP to your wallet without anyone manually approving it.",
+            "analysis": "OnlyCrypto's payouts work like DeFi — they happen automatically using the XRP Ledger. When you earn a payout, the system sends XRP to your wallet without anyone manually approving it.",
             "points": 1
           }
         ]
@@ -752,7 +752,7 @@
         {
           "id": "action_ed-s3_q1",
           "type": "speech",
-          "text": "Take your time \u2014 the goal is understanding, not just getting the right answer."
+          "text": "Take your time — the goal is understanding, not just getting the right answer."
         }
       ]
     }

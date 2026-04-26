@@ -260,13 +260,26 @@ export function useChatSessions(options: UseChatSessionsOptions = {}) {
 
           onAgentEnd() {
             // Remove empty assistant messages (agent started but produced no content)
+            // If content was removed, insert a fallback so the user isn't left in silence
             setSessions((prev) =>
               prev.map((s) => {
                 if (s.id !== sessionId) return s;
                 const msgs = s.messages.filter(
                   (m) => !(m.role === 'assistant' && m.parts.length === 0),
                 );
-                return msgs.length !== s.messages.length ? { ...s, messages: msgs } : s;
+                if (msgs.length === s.messages.length) return s;
+                // Agent produced no content — show a gentle fallback so the user knows we heard them
+                const fallback: UIMessage<ChatMessageMetadata> = {
+                  id: `fallback-${Date.now()}`,
+                  role: 'assistant',
+                  parts: [{ type: 'text', text: "I'm not sure I caught that — could you rephrase your question? I'm here to help!" }],
+                  metadata: {
+                    senderName: 'AI Teacher',
+                    originalRole: 'agent' as const,
+                    createdAt: Date.now(),
+                  },
+                };
+                return { ...s, messages: [...msgs, fallback], updatedAt: Date.now() };
               }),
             );
           },

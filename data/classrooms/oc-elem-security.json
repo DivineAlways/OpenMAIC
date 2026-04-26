@@ -82,7 +82,7 @@
               "width": 800,
               "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83d\udee1\ufe0f Staying Safe in Crypto</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🛡️ Staying Safe in Crypto</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -106,7 +106,7 @@
               "width": 950,
               "height": 130,
               "rotate": 0,
-              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'>In crypto, <b style='color:#f87171;'>you are your own bank</b>. That's amazing \u2014 but it also means if something goes wrong, there's no customer service to call. No refund button. No 'forgot password' email. That's why <b style='color:#f1f5f9;'>security is the #1 skill</b> every crypto person must learn first.</p>",
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'>In crypto, <b style='color:#f87171;'>you are your own bank</b>. That's amazing — but it also means if something goes wrong, there's no customer service to call. No refund button. No 'forgot password' email. That's why <b style='color:#f1f5f9;'>security is the #1 skill</b> every crypto person must learn first.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -139,7 +139,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udd11</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Guard Your Keys</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Private key = your money. Lose it = lose everything.</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🔑</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Guard Your Keys</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Private key = your money. Lose it = lose everything.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#10b981"
             },
@@ -172,7 +172,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83e\udde0</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Think First</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Scammers are smart. One wrong click can empty your wallet.</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🧠</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Think First</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Scammers are smart. One wrong click can empty your wallet.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#3b82f6"
             },
@@ -205,7 +205,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\u2705</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Verify</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Always double-check addresses, websites, and senders.</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>✅</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Verify</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Always double-check addresses, websites, and senders.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -238,7 +238,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udcda</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Keep Learning</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>New scams appear daily. Staying informed is your best defense.</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>📚</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Keep Learning</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>New scams appear daily. Staying informed is your best defense.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f59e0b"
             }
@@ -254,7 +254,7 @@
         {
           "id": "action_es-s1_1",
           "type": "speech",
-          "text": "\ud83d\udee1\ufe0f Staying Safe in Crypto"
+          "text": "🛡️ Staying Safe in Crypto"
         },
         {
           "id": "action_es-s1_2",
@@ -274,7 +274,7 @@
         {
           "id": "action_es-s1_5",
           "type": "speech",
-          "text": "In crypto, you are your own bank . That's amazing \u2014 but it also means if something goes wrong, there's no customer service to call. No refund button. No 'forgot password' email. That's why security is the #1 skill every crypto person must learn first."
+          "text": "In crypto, you are your own bank . That's amazing — but it also means if something goes wrong, there's no customer service to call. No refund button. No 'forgot password' email. That's why security is the #1 skill every crypto person must learn first."
         },
         {
           "id": "action_es-s1_6",
@@ -284,7 +284,7 @@
         {
           "id": "action_es-s1_7",
           "type": "speech",
-          "text": "\ud83d\udd11 Guard Your Keys Private key = your money. Lose it = lose everything."
+          "text": "🔑 Guard Your Keys Private key = your money. Lose it = lose everything."
         },
         {
           "id": "action_es-s1_8",
@@ -294,7 +294,7 @@
         {
           "id": "action_es-s1_9",
           "type": "speech",
-          "text": "\ud83e\udde0 Think First Scammers are smart. One wrong click can empty your wallet."
+          "text": "🧠 Think First Scammers are smart. One wrong click can empty your wallet."
         },
         {
           "id": "action_es-s1_10",
@@ -304,7 +304,7 @@
         {
           "id": "action_es-s1_11",
           "type": "speech",
-          "text": "\u2705 Verify Always double-check addresses, websites, and senders."
+          "text": "✅ Verify Always double-check addresses, websites, and senders."
         },
         {
           "id": "action_es-s1_12",
@@ -314,7 +314,7 @@
         {
           "id": "action_es-s1_13",
           "type": "speech",
-          "text": "\ud83d\udcda Keep Learning New scams appear daily. Staying informed is your best defense."
+          "text": "📚 Keep Learning New scams appear daily. Staying informed is your best defense."
         }
       ],
       "order": 1
@@ -384,7 +384,7 @@
               "width": 800,
               "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83d\udea8 Common Scams</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🚨 Common Scams</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -396,7 +396,7 @@
               "width": 800,
               "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Know these \u2014 they could save your savings</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Know these — they could save your savings</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#64748b"
             },
@@ -408,7 +408,7 @@
               "width": 950,
               "height": 130,
               "rotate": 0,
-              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'><b style='color:#f87171;'>\ud83c\udf81 Giveaway Scam:</b> Fake celebrity says 'Send 1 BTC, get 2 back!' \u2014 it's always a lie. &nbsp; <b style='color:#f87171;'>\ud83c\udfa3 Phishing:</b> Fake website that looks real \u2014 one typo in the URL and your login is stolen. &nbsp; <b style='color:#f87171;'>\ud83d\udc8c Fake Support:</b> 'Support' DMs asking for your seed phrase \u2014 real support NEVER does this. &nbsp; <b style='color:#f87171;'>\ud83d\udcc8 Pump & Dump:</b> Group hypes a coin, price spikes, they sell, you lose.</p>",
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'><b style='color:#f87171;'>🎁 Giveaway Scam:</b> Fake celebrity says 'Send 1 BTC, get 2 back!' — it's always a lie. &nbsp; <b style='color:#f87171;'>🎣 Phishing:</b> Fake website that looks real — one typo in the URL and your login is stolen. &nbsp; <b style='color:#f87171;'>💌 Fake Support:</b> 'Support' DMs asking for your seed phrase — real support NEVER does this. &nbsp; <b style='color:#f87171;'>📈 Pump & Dump:</b> Group hypes a coin, price spikes, they sell, you lose.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -441,7 +441,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83c\udf81</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Giveaway Scam</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Nobody ever doubles your crypto</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🎁</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Giveaway Scam</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Nobody ever doubles your crypto</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#10b981"
             },
@@ -474,7 +474,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83c\udfa3</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Phishing Sites</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Fake sites steal your login</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🎣</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Phishing Sites</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Fake sites steal your login</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#3b82f6"
             },
@@ -507,7 +507,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udc8c</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Fake DM Support</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Real support never asks for seed phrase</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>💌</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Fake DM Support</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Real support never asks for seed phrase</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -540,7 +540,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\udcc8</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Pump & Dump</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Hype coin, spike, crash \u2014 you hold the loss</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>📈</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Pump & Dump</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Hype coin, spike, crash — you hold the loss</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f59e0b"
             }
@@ -556,7 +556,7 @@
         {
           "id": "action_es-s2_1",
           "type": "speech",
-          "text": "\ud83d\udea8 Common Scams"
+          "text": "🚨 Common Scams"
         },
         {
           "id": "action_es-s2_2",
@@ -566,7 +566,7 @@
         {
           "id": "action_es-s2_3",
           "type": "speech",
-          "text": "Know these \u2014 they could save your savings"
+          "text": "Know these — they could save your savings"
         },
         {
           "id": "action_es-s2_4",
@@ -576,7 +576,7 @@
         {
           "id": "action_es-s2_5",
           "type": "speech",
-          "text": "\ud83c\udf81 Giveaway Scam: Fake celebrity says 'Send 1 BTC, get 2 back!' \u2014 it's always a lie. &nbsp; \ud83c\udfa3 Phishing: Fake website that looks real \u2014 one typo in the URL and your login is stolen. &nbsp; \ud83d\udc8c Fake Support: 'Support' DMs asking for your seed phrase \u2014 real support NEVER does this. &nbsp; \ud83d\udcc8 Pump & Dump: G..."
+          "text": "🎁 Giveaway Scam: Fake celebrity says 'Send 1 BTC, get 2 back!' — it's always a lie. &nbsp; 🎣 Phishing: Fake website that looks real — one typo in the URL and your login is stolen. &nbsp; 💌 Fake Support: 'Support' DMs asking for your seed phrase — real support NEVER does this. &nbsp; 📈 Pump & Dump: G..."
         },
         {
           "id": "action_es-s2_6",
@@ -586,7 +586,7 @@
         {
           "id": "action_es-s2_7",
           "type": "speech",
-          "text": "\ud83c\udf81 Giveaway Scam Nobody ever doubles your crypto"
+          "text": "🎁 Giveaway Scam Nobody ever doubles your crypto"
         },
         {
           "id": "action_es-s2_8",
@@ -596,7 +596,7 @@
         {
           "id": "action_es-s2_9",
           "type": "speech",
-          "text": "\ud83c\udfa3 Phishing Sites Fake sites steal your login"
+          "text": "🎣 Phishing Sites Fake sites steal your login"
         },
         {
           "id": "action_es-s2_10",
@@ -606,7 +606,7 @@
         {
           "id": "action_es-s2_11",
           "type": "speech",
-          "text": "\ud83d\udc8c Fake DM Support Real support never asks for seed phrase"
+          "text": "💌 Fake DM Support Real support never asks for seed phrase"
         },
         {
           "id": "action_es-s2_12",
@@ -616,7 +616,7 @@
         {
           "id": "action_es-s2_13",
           "type": "speech",
-          "text": "\ud83d\udcc8 Pump & Dump Hype coin, spike, crash \u2014 you hold the loss"
+          "text": "📈 Pump & Dump Hype coin, spike, crash — you hold the loss"
         }
       ],
       "order": 2
@@ -624,21 +624,21 @@
     {
       "id": "es-s3",
       "type": "quiz",
-      "title": "Knowledge Check \u2014 Crypto Security",
+      "title": "Knowledge Check — Crypto Security",
       "content": {
         "type": "quiz",
         "questions": [
           {
             "id": "q-es-1",
             "type": "single",
-            "question": "Someone sends you a DM saying 'I'm from OnlyCrypto support \u2014 send me your seed phrase to verify your account.' What should you do?",
+            "question": "Someone sends you a DM saying 'I'm from OnlyCrypto support — send me your seed phrase to verify your account.' What should you do?",
             "options": [
               {
-                "label": "Send them the seed phrase \u2014 it's the support team",
+                "label": "Send them the seed phrase — it's the support team",
                 "value": "A"
               },
               {
-                "label": "Block and report them immediately \u2014 real support never asks for your seed phrase",
+                "label": "Block and report them immediately — real support never asks for your seed phrase",
                 "value": "B"
               },
               {
@@ -653,7 +653,7 @@
             "answer": [
               "B"
             ],
-            "analysis": "Real support from any legitimate crypto platform will NEVER ask for your seed phrase or private key. Anyone asking for it is a scammer \u2014 block and report immediately.",
+            "analysis": "Real support from any legitimate crypto platform will NEVER ask for your seed phrase or private key. Anyone asking for it is a scammer — block and report immediately.",
             "points": 1
           },
           {
@@ -722,7 +722,7 @@
                 "value": "A"
               },
               {
-                "label": "The giveaway scam \u2014 a classic fraud where you lose everything you send",
+                "label": "The giveaway scam — a classic fraud where you lose everything you send",
                 "value": "B"
               },
               {
@@ -737,7 +737,7 @@
             "answer": [
               "B"
             ],
-            "analysis": "The 'double your money' giveaway scam is one of the oldest tricks in crypto. Nobody is going to double your money \u2014 ever. If you send crypto to a stranger, it is gone forever.",
+            "analysis": "The 'double your money' giveaway scam is one of the oldest tricks in crypto. Nobody is going to double your money — ever. If you send crypto to a stranger, it is gone forever.",
             "points": 1
           }
         ]
@@ -752,7 +752,7 @@
         {
           "id": "action_es-s3_q1",
           "type": "speech",
-          "text": "Take your time \u2014 the goal is understanding, not just getting the right answer."
+          "text": "Take your time — the goal is understanding, not just getting the right answer."
         }
       ]
     }

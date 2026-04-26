@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import { useTheme } from '@/lib/hooks/use-theme';
-import { Sun, Moon, Monitor, User, RotateCcw, CheckCircle2 } from 'lucide-react';
+import { Sun, Moon, Monitor, User, RotateCcw, CheckCircle2, GraduationCap, Star, Trophy } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useUserProfileStore } from '@/lib/store/user-profile';
 import { getProgress } from '@/lib/utils/course-progress';
@@ -134,11 +134,27 @@ export default function HomePage() {
   const [activeLevel, setActiveLevel] = useState<Level>('elementary');
   const [lastCourse, setLastCourse] = useState<{ id: string; title: string; level: string } | null>(null);
   const [completedIds, setCompletedIds] = useState<string[]>([]);
+  const [showGraduation, setShowGraduation] = useState(false);
+
+  const ELEMENTARY_IDS = ELEMENTARY_COURSES.map(c => c.id);
 
   useEffect(() => {
+    const prev = getProgress().completedIds;
     setLastCourse(getLastCourse());
-    setCompletedIds(getProgress().completedIds);
+    setCompletedIds(prev);
   }, []);
+
+  // Show graduation modal the first time all Elementary courses are complete
+  useEffect(() => {
+    if (completedIds.length === 0) return;
+    const allElemDone = ELEMENTARY_IDS.every(id => completedIds.includes(id));
+    const celebratedKey = 'oc_grad_elementary';
+    if (allElemDone && !localStorage.getItem(celebratedKey)) {
+      localStorage.setItem(celebratedKey, '1');
+      setShowGraduation(true);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [completedIds]);
 
   const goToCourse = (id: string, title: string, level: string) => {
     saveLastCourse(id, title, level);
@@ -358,6 +374,65 @@ export default function HomePage() {
           </>
         )}
       </main>
+
+      {/* Graduation ceremony modal — fires once when all Elementary courses are done */}
+      {showGraduation && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm px-4">
+          <div className="relative bg-gray-900 border border-violet-500/40 rounded-3xl p-8 max-w-md w-full text-center shadow-2xl shadow-violet-500/20 overflow-hidden">
+            {/* Animated confetti dots */}
+            {[...Array(18)].map((_, i) => (
+              <span
+                key={i}
+                className="absolute rounded-full animate-ping"
+                style={{
+                  width: `${6 + (i % 4) * 3}px`,
+                  height: `${6 + (i % 4) * 3}px`,
+                  top: `${Math.sin(i * 1.4) * 40 + 50}%`,
+                  left: `${(i / 18) * 100}%`,
+                  background: ['#a78bfa','#34d399','#60a5fa','#fbbf24','#f472b6'][i % 5],
+                  animationDuration: `${1.2 + (i % 5) * 0.3}s`,
+                  animationDelay: `${(i % 6) * 0.1}s`,
+                  opacity: 0.7,
+                }}
+              />
+            ))}
+            <div className="relative z-10">
+              <div className="flex items-center justify-center mb-4">
+                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-violet-500 to-indigo-600 flex items-center justify-center shadow-2xl shadow-violet-500/40">
+                  <GraduationCap className="w-12 h-12 text-white" />
+                </div>
+              </div>
+              <div className="flex items-center justify-center gap-1 mb-2">
+                {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 text-amber-400 fill-amber-400" />)}
+              </div>
+              <p className="text-xs font-black uppercase tracking-widest text-violet-400 mb-1">Level Complete</p>
+              <h2 className="text-3xl font-black text-white mb-3">Elementary Graduated! 🎓</h2>
+              <p className="text-gray-400 text-sm mb-2 leading-relaxed">
+                You completed all 8 Elementary courses. You now understand blockchain, crypto, DeFi, trading, wallets, and Web3 — from scratch. That&apos;s real knowledge.
+              </p>
+              <div className="flex items-center justify-center gap-2 mb-6 text-emerald-400 text-sm font-bold">
+                <Trophy className="w-4 h-4" />
+                High School level is now unlocked
+              </div>
+              <div className="flex flex-col gap-3">
+                <button
+                  onClick={() => { setShowGraduation(false); setActiveLevel('highschool'); }}
+                  className="w-full py-3.5 px-6 bg-violet-500 hover:bg-violet-600 text-white font-bold rounded-2xl transition-colors flex items-center justify-center gap-2"
+                >
+                  Start High School Level
+                  <CheckCircle2 className="w-4 h-4" />
+                </button>
+                <button
+                  onClick={() => setShowGraduation(false)}
+                  className="text-xs text-gray-600 hover:text-gray-400 transition-colors"
+                >
+                  Celebrate later
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

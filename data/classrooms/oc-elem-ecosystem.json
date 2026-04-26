@@ -4,7 +4,7 @@
   "stage": {
     "id": "oc-elem-ecosystem",
     "name": "The Crypto World (Elementary)",
-    "description": "Beyond Bitcoin \u2014 NFTs, DAOs, Web3, and crypto in real life.",
+    "description": "Beyond Bitcoin — NFTs, DAOs, Web3, and crypto in real life.",
     "createdAt": "2026-04-24T12:00:00.000Z",
     "updatedAt": "2026-04-24T12:00:00.000Z",
     "languageDirective": "en-US",
@@ -82,7 +82,7 @@
               "width": 800,
               "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83c\udf0d The Crypto World</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🌍 The Crypto World</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -94,7 +94,7 @@
               "width": 800,
               "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Crypto isn't just money \u2014 it's a whole ecosystem</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Crypto isn't just money — it's a whole ecosystem</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#64748b"
             },
@@ -106,7 +106,7 @@
               "width": 950,
               "height": 130,
               "rotate": 0,
-              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'>When most people hear 'crypto' they think of Bitcoin. But the crypto world is actually massive \u2014 like how the internet isn't just email. There are <b style='color:#22d3ee;'>games, art, banking, social media, and entire economies</b> all built on blockchain. Here's a quick tour.</p>",
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'>When most people hear 'crypto' they think of Bitcoin. But the crypto world is actually massive — like how the internet isn't just email. There are <b style='color:#22d3ee;'>games, art, banking, social media, and entire economies</b> all built on blockchain. Here's a quick tour.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -139,7 +139,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83c\udfae</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Gaming</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Play-to-earn \u2014 own your in-game items as NFTs</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🎮</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Gaming</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Play-to-earn — own your in-game items as NFTs</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#10b981"
             },
@@ -172,7 +172,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\uddbc\ufe0f</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>NFTs</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Unique digital ownership certificates</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🖼️</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>NFTs</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Unique digital ownership certificates</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#3b82f6"
             },
@@ -205,7 +205,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\uddf3\ufe0f</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>DAOs</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Groups that vote on decisions using blockchain</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🗳️</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>DAOs</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Groups that vote on decisions using blockchain</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -238,7 +238,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83c\udf10</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Web3 Apps</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Apps where you own your own data</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🌐</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Web3 Apps</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Apps where you own your own data</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f59e0b"
             }
@@ -254,7 +254,7 @@
         {
           "id": "action_ee-s1_1",
           "type": "speech",
-          "text": "\ud83c\udf0d The Crypto World"
+          "text": "🌍 The Crypto World"
         },
         {
           "id": "action_ee-s1_2",
@@ -264,7 +264,7 @@
         {
           "id": "action_ee-s1_3",
           "type": "speech",
-          "text": "Crypto isn't just money \u2014 it's a whole ecosystem"
+          "text": "Crypto isn't just money — it's a whole ecosystem"
         },
         {
           "id": "action_ee-s1_4",
@@ -274,7 +274,7 @@
         {
           "id": "action_ee-s1_5",
           "type": "speech",
-          "text": "When most people hear 'crypto' they think of Bitcoin. But the crypto world is actually massive \u2014 like how the internet isn't just email. There are games, art, banking, social media, and entire economies all built on blockchain. Here's a quick tour."
+          "text": "When most people hear 'crypto' they think of Bitcoin. But the crypto world is actually massive — like how the internet isn't just email. There are games, art, banking, social media, and entire economies all built on blockchain. Here's a quick tour."
         },
         {
           "id": "action_ee-s1_6",
@@ -284,7 +284,7 @@
         {
           "id": "action_ee-s1_7",
           "type": "speech",
-          "text": "\ud83c\udfae Gaming Play-to-earn \u2014 own your in-game items as NFTs"
+          "text": "🎮 Gaming Play-to-earn — own your in-game items as NFTs"
         },
         {
           "id": "action_ee-s1_8",
@@ -294,7 +294,7 @@
         {
           "id": "action_ee-s1_9",
           "type": "speech",
-          "text": "\ud83d\uddbc\ufe0f NFTs Unique digital ownership certificates"
+          "text": "🖼️ NFTs Unique digital ownership certificates"
         },
         {
           "id": "action_ee-s1_10",
@@ -304,7 +304,7 @@
         {
           "id": "action_ee-s1_11",
           "type": "speech",
-          "text": "\ud83d\uddf3\ufe0f DAOs Groups that vote on decisions using blockchain"
+          "text": "🗳️ DAOs Groups that vote on decisions using blockchain"
         },
         {
           "id": "action_ee-s1_12",
@@ -314,7 +314,7 @@
         {
           "id": "action_ee-s1_13",
           "type": "speech",
-          "text": "\ud83c\udf10 Web3 Apps Apps where you own your own data"
+          "text": "🌐 Web3 Apps Apps where you own your own data"
         }
       ],
       "order": 1
@@ -384,7 +384,7 @@
               "width": 800,
               "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83d\uddbc\ufe0f What is an NFT?</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🖼️ What is an NFT?</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -396,7 +396,7 @@
               "width": 800,
               "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Non-Fungible Token \u2014 a one-of-a-kind digital certificate</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Non-Fungible Token — a one-of-a-kind digital certificate</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#64748b"
             },
@@ -408,7 +408,7 @@
               "width": 950,
               "height": 130,
               "rotate": 0,
-              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'><b style='color:#22d3ee;'>NFT</b> = Non-Fungible Token. 'Non-fungible' means <b style='color:#f1f5f9;'>one of a kind</b>. An NFT is a digital certificate on the blockchain that proves you own something unique. A $1 bill is fungible (swap it for any other $1). The Mona Lisa is non-fungible \u2014 there's only one original. NFTs make digital things work like the Mona Lisa.</p>",
+              "content": "<p style='font-size:16px;color:#cbd5e1;line-height:1.8;'><b style='color:#22d3ee;'>NFT</b> = Non-Fungible Token. 'Non-fungible' means <b style='color:#f1f5f9;'>one of a kind</b>. An NFT is a digital certificate on the blockchain that proves you own something unique. A $1 bill is fungible (swap it for any other $1). The Mona Lisa is non-fungible — there's only one original. NFTs make digital things work like the Mona Lisa.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -441,7 +441,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83c\udfb5</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Music</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Artists sell song originals directly to fans</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🎵</p><p style='font-size:12px;font-weight:800;color:#10b981;text-align:center;'>Music</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Artists sell song originals directly to fans</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#10b981"
             },
@@ -474,7 +474,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\u26bd</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Sports</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Highlight clips owned as NFTs (NBA Top Shot)</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>⚽</p><p style='font-size:12px;font-weight:800;color:#3b82f6;text-align:center;'>Sports</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Highlight clips owned as NFTs (NBA Top Shot)</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#3b82f6"
             },
@@ -507,7 +507,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83c\udfae</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Gaming</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Own and resell your game characters</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🎮</p><p style='font-size:12px;font-weight:800;color:#8b5cf6;text-align:center;'>Gaming</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Own and resell your game characters</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -540,7 +540,7 @@
               "width": 204,
               "height": 100,
               "rotate": 0,
-              "content": "<p style='font-size:20px;text-align:center;'>\ud83d\uddbc\ufe0f</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Art</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Digital art sold for millions</p>",
+              "content": "<p style='font-size:20px;text-align:center;'>🖼️</p><p style='font-size:12px;font-weight:800;color:#f59e0b;text-align:center;'>Art</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:4px;'>Digital art sold for millions</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f59e0b"
             }
@@ -556,7 +556,7 @@
         {
           "id": "action_ee-s2_1",
           "type": "speech",
-          "text": "\ud83d\uddbc\ufe0f What is an NFT?"
+          "text": "🖼️ What is an NFT?"
         },
         {
           "id": "action_ee-s2_2",
@@ -566,7 +566,7 @@
         {
           "id": "action_ee-s2_3",
           "type": "speech",
-          "text": "Non-Fungible Token \u2014 a one-of-a-kind digital certificate"
+          "text": "Non-Fungible Token — a one-of-a-kind digital certificate"
         },
         {
           "id": "action_ee-s2_4",
@@ -576,7 +576,7 @@
         {
           "id": "action_ee-s2_5",
           "type": "speech",
-          "text": "NFT = Non-Fungible Token. 'Non-fungible' means one of a kind . An NFT is a digital certificate on the blockchain that proves you own something unique. A $1 bill is fungible (swap it for any other $1). The Mona Lisa is non-fungible \u2014 there's only one original. NFTs make digital things work like the M..."
+          "text": "NFT = Non-Fungible Token. 'Non-fungible' means one of a kind . An NFT is a digital certificate on the blockchain that proves you own something unique. A $1 bill is fungible (swap it for any other $1). The Mona Lisa is non-fungible — there's only one original. NFTs make digital things work like the M..."
         },
         {
           "id": "action_ee-s2_6",
@@ -586,7 +586,7 @@
         {
           "id": "action_ee-s2_7",
           "type": "speech",
-          "text": "\ud83c\udfb5 Music Artists sell song originals directly to fans"
+          "text": "🎵 Music Artists sell song originals directly to fans"
         },
         {
           "id": "action_ee-s2_8",
@@ -596,7 +596,7 @@
         {
           "id": "action_ee-s2_9",
           "type": "speech",
-          "text": "\u26bd Sports Highlight clips owned as NFTs (NBA Top Shot)"
+          "text": "⚽ Sports Highlight clips owned as NFTs (NBA Top Shot)"
         },
         {
           "id": "action_ee-s2_10",
@@ -606,7 +606,7 @@
         {
           "id": "action_ee-s2_11",
           "type": "speech",
-          "text": "\ud83c\udfae Gaming Own and resell your game characters"
+          "text": "🎮 Gaming Own and resell your game characters"
         },
         {
           "id": "action_ee-s2_12",
@@ -616,7 +616,7 @@
         {
           "id": "action_ee-s2_13",
           "type": "speech",
-          "text": "\ud83d\uddbc\ufe0f Art Digital art sold for millions"
+          "text": "🖼️ Art Digital art sold for millions"
         }
       ],
       "order": 2
@@ -624,7 +624,7 @@
     {
       "id": "ee-s3",
       "type": "quiz",
-      "title": "Knowledge Check \u2014 The Crypto World",
+      "title": "Knowledge Check — The Crypto World",
       "content": {
         "type": "quiz",
         "questions": [
@@ -653,7 +653,7 @@
             "answer": [
               "B"
             ],
-            "analysis": "NFT stands for Non-Fungible Token. 'Non-fungible' means unique or one-of-a-kind \u2014 unlike Bitcoin where every coin is identical and interchangeable.",
+            "analysis": "NFT stands for Non-Fungible Token. 'Non-fungible' means unique or one-of-a-kind — unlike Bitcoin where every coin is identical and interchangeable.",
             "points": 1
           },
           {
@@ -670,7 +670,7 @@
                 "value": "B"
               },
               {
-                "label": "A group that makes decisions together using blockchain votes \u2014 no CEO needed",
+                "label": "A group that makes decisions together using blockchain votes — no CEO needed",
                 "value": "C"
               },
               {
@@ -687,7 +687,7 @@
           {
             "id": "q-ee-3",
             "type": "single",
-            "question": "Which country made Bitcoin legal tender \u2014 meaning you can pay for groceries with it?",
+            "question": "Which country made Bitcoin legal tender — meaning you can pay for groceries with it?",
             "options": [
               {
                 "label": "USA",
@@ -709,7 +709,7 @@
             "answer": [
               "C"
             ],
-            "analysis": "El Salvador became the first country to make Bitcoin legal tender in 2021. Citizens can use Bitcoin to pay for anything \u2014 from groceries to utility bills.",
+            "analysis": "El Salvador became the first country to make Bitcoin legal tender in 2021. Citizens can use Bitcoin to pay for anything — from groceries to utility bills.",
             "points": 1
           },
           {
@@ -722,7 +722,7 @@
                 "value": "A"
               },
               {
-                "label": "NFTs use blockchain to prove ownership \u2014 a regular file can be copied infinitely with no proof of original ownership",
+                "label": "NFTs use blockchain to prove ownership — a regular file can be copied infinitely with no proof of original ownership",
                 "value": "B"
               },
               {
@@ -752,7 +752,7 @@
         {
           "id": "action_ee-s3_q1",
           "type": "speech",
-          "text": "Take your time \u2014 the goal is understanding, not just getting the right answer."
+          "text": "Take your time — the goal is understanding, not just getting the right answer."
         }
       ]
     }
