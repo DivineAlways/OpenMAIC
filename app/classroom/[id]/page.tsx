@@ -34,10 +34,16 @@ export default function ClassroomDetailPage() {
 
   const loadClassroom = useCallback(async () => {
     try {
-      await loadFromStorage(classroomId);
+      // Clear stale IndexedDB cache so server data is always loaded fresh.
+      // This ensures audioUrls and fixed stage objects are always used.
+      try {
+        const { deleteStageData } = await import('@/lib/utils/stage-storage');
+        await deleteStageData(classroomId);
+      } catch (delErr) {
+        log.warn('Failed to clear IndexedDB cache:', delErr);
+      }
 
-      // Always load from server to get latest audioUrls (pre-generated Ava audio).
-      // Server JSON is the source of truth for OC Academy courses.
+      // Load from server — source of truth for OC Academy courses.
       try {
         const res = await fetch(`/api/classroom?id=${encodeURIComponent(classroomId)}`);
         if (res.ok) {
@@ -55,9 +61,13 @@ export default function ClassroomDetailPage() {
               await saveGeneratedAgents(stage.id, stage.generatedAgentConfigs);
             }
           }
+        } else {
+          // Server fetch failed (e.g. auth) — fall back to IndexedDB
+          await loadFromStorage(classroomId);
         }
       } catch (fetchErr) {
-        log.warn('Server-side storage fetch failed, using IndexedDB cache:', fetchErr);
+        log.warn('Server fetch failed, falling back to IndexedDB:', fetchErr);
+        try { await loadFromStorage(classroomId); } catch (_) { /* ignore */ }
       }
 
       // Restore completed media generation tasks from IndexedDB
