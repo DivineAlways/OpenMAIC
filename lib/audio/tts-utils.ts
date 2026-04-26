@@ -10,7 +10,7 @@ const log = createLogger('TTS');
 
 // Pronunciation map: words TTS mispronounces → phonetic spelling
 const TTS_PRONUNCIATIONS: [RegExp, string][] = [
-  [/\bDeFi\b/g, 'Dee-Fi'],
+  [/\bDeFi\b/gi, 'Dee Fie'],
   [/\bNFT(s)?\b/g, 'N-F-T$1'],
   [/\bXRP\b/g, 'X-R-P'],
   [/\bDAO(s)?\b/g, 'D-A-O$1'],

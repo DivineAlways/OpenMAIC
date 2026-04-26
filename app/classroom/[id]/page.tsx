@@ -36,40 +36,56 @@ export default function ClassroomDetailPage() {
     try {
       await loadFromStorage(classroomId);
 
-      // If IndexedDB had no data OR cached scenes are missing actions (stale cache),
-      // fetch fresh data from server-side storage
+      // Always fetch server-side storage to get latest audioUrls (pre-generated Ava audio).
+      // If IndexedDB has cached scenes, merge audioUrls on top without replacing user state.
+      // If no cached data, use server data as the source of truth.
       const cachedState = useStageStore.getState();
       const cachedScenesLackActions = cachedState.scenes.some(
         (s) => s.type === 'slide' && (!s.actions || s.actions.length === 0),
       );
-      if (!cachedState.stage || cachedScenesLackActions) {
-        log.info('No IndexedDB data, trying server-side storage for:', classroomId);
-        try {
-          const res = await fetch(`/api/classroom?id=${encodeURIComponent(classroomId)}`);
-          if (res.ok) {
-            const json = await res.json();
-            if (json.success && json.classroom) {
-              const { stage, scenes } = json.classroom;
+      try {
+        const res = await fetch(`/api/classroom?id=${encodeURIComponent(classroomId)}`);
+        if (res.ok) {
+          const json = await res.json();
+          if (json.success && json.classroom) {
+            const { stage, scenes: serverScenes } = json.classroom;
+
+            if (!cachedState.stage || cachedScenesLackActions) {
+              // No cached data — use server scenes directly
               useStageStore.getState().setStage(stage);
               useStageStore.setState({
-                scenes,
-                currentSceneId: scenes[0]?.id ?? null,
+                scenes: serverScenes,
+                currentSceneId: serverScenes[0]?.id ?? null,
               });
               log.info('Loaded from server-side storage:', classroomId);
+            } else {
+              // Merge audioUrls from server into cached scenes so Ava audio plays
+              const serverSceneMap = new Map(serverScenes.map((s: { id: string }) => [s.id, s]));
+              const merged = cachedState.scenes.map((cachedScene) => {
+                const serverScene = serverSceneMap.get(cachedScene.id) as typeof cachedScene | undefined;
+                if (!serverScene || !cachedScene.actions) return cachedScene;
+                const mergedActions = cachedScene.actions.map((action, idx) => {
+                  const serverAction = serverScene.actions?.[idx];
+                  if (action.type === 'speech' && serverAction?.type === 'speech' && serverAction.audioUrl) {
+                    return { ...action, audioUrl: serverAction.audioUrl };
+                  }
+                  return action;
+                });
+                return { ...cachedScene, actions: mergedActions };
+              });
+              useStageStore.setState({ scenes: merged });
+              log.info('Merged server audioUrls into cached scenes:', classroomId);
+            }
 
-              // Hydrate server-generated agents into IndexedDB + registry.
-              // Don't set selectedAgentIds here — the general agent
-              // restoration logic below (Path 2) handles it uniformly.
-              if (stage.generatedAgentConfigs?.length) {
-                const { saveGeneratedAgents } = await import('@/lib/orchestration/registry/store');
-                await saveGeneratedAgents(stage.id, stage.generatedAgentConfigs);
-                log.info('Hydrated server-generated agents for stage:', stage.id);
-              }
+            if (stage.generatedAgentConfigs?.length) {
+              const { saveGeneratedAgents } = await import('@/lib/orchestration/registry/store');
+              await saveGeneratedAgents(stage.id, stage.generatedAgentConfigs);
+              log.info('Hydrated server-generated agents for stage:', stage.id);
             }
           }
-        } catch (fetchErr) {
-          log.warn('Server-side storage fetch failed:', fetchErr);
         }
+      } catch (fetchErr) {
+        log.warn('Server-side storage fetch failed:', fetchErr);
       }
 
       // Restore completed media generation tasks from IndexedDB

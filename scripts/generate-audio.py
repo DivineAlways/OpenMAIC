@@ -22,6 +22,19 @@ OUTPUT_DIR = Path(__file__).parent.parent / "public" / "audio" / "lessons"
 ELLIPSIS_RE = re.compile(r'\.{3,}|…')
 
 
+TTS_PRONUNCIATIONS = [
+    (re.compile(r'\bDeFi\b', re.IGNORECASE), 'Dee Fie'),
+    (re.compile(r'\bNFTs?\b'), 'N-F-Ts'),
+    (re.compile(r'\bXRP\b'), 'X-R-P'),
+    (re.compile(r'\bDAOs?\b'), 'D-A-Os'),
+    (re.compile(r'\bDEX\b'), 'decks'),
+    (re.compile(r'\bAPY\b'), 'A-P-Y'),
+    (re.compile(r'\bAPR\b'), 'A-P-R'),
+    (re.compile(r'\bBitunix\b'), 'Bit-you-nix'),
+    (re.compile(r'\bHODL\b'), 'hoddle'),
+]
+
+
 def sanitize(text: str) -> str:
     # Strip emoji
     text = re.sub(
@@ -37,6 +50,9 @@ def sanitize(text: str) -> str:
     text = re.sub(r'<[^>]+>', ' ', text)
     # Collapse whitespace
     text = re.sub(r'\s{2,}', ' ', text).strip()
+    # Apply pronunciations
+    for pattern, replacement in TTS_PRONUNCIATIONS:
+        text = pattern.sub(replacement, text)
     return text
 
 
