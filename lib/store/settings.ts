@@ -1343,7 +1343,7 @@ export const useSettingsStore = create<SettingsState>()(
     },
     {
       name: 'settings-storage',
-      version: 3,
+      version: 4,
       // Migrate persisted state
       migrate: (persistedState: unknown, version: number) => {
         const state = persistedState as Partial<SettingsState>;
@@ -1359,6 +1359,15 @@ export const useSettingsStore = create<SettingsState>()(
         if (version <= 2) {
           if (state.modelId === 'moonshotai/kimi-k2.5') {
             state.modelId = 'deepseek-ai/deepseek-v3.2';
+          }
+        }
+
+        // v3 → v4: reset edge-tts back to browser-native-tts
+        // edge-tts CLI is not installed on Vercel serverless — chat TTS was silent on desktop
+        if (version <= 3) {
+          if ((state as Record<string, unknown>).ttsProviderId === 'edge-tts') {
+            (state as Record<string, unknown>).ttsProviderId = 'browser-native-tts';
+            (state as Record<string, unknown>).ttsVoice = 'default';
           }
         }
 
