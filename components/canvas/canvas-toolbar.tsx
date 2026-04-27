@@ -126,32 +126,60 @@ export function CanvasToolbar({
   // Progress bar seek state
   const [seekHover, setSeekHover] = useState(false);
   const [seekPreviewIndex, setSeekPreviewIndex] = useState<number | null>(null);
+  const [isTouchSeeking, setIsTouchSeeking] = useState(false);
   const progressBarRef = useRef<HTMLDivElement>(null);
+
+  const calculateSeekIndex = useCallback((clientX: number, rect: DOMRect) => {
+    const ratio = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+    return Math.min(Math.floor(ratio * scenesCount), scenesCount - 1);
+  }, [scenesCount]);
 
   const handleProgressClick = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
     if (!onSeek || scenesCount <= 0) return;
     const rect = e.currentTarget.getBoundingClientRect();
-    const ratio = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
-    const targetIndex = Math.floor(ratio * scenesCount);
-    onSeek(Math.min(targetIndex, scenesCount - 1));
-  }, [onSeek, scenesCount]);
+    const targetIndex = calculateSeekIndex(e.clientX, rect);
+    onSeek(targetIndex);
+  }, [onSeek, scenesCount, calculateSeekIndex]);
 
-  const handleProgressTouch = useCallback((e: React.TouchEvent<HTMLDivElement>) => {
+  // Touch handlers for mobile seeking
+  const handleTouchStart = useCallback((e: React.TouchEvent<HTMLDivElement>) => {
     if (!onSeek || scenesCount <= 0) return;
-    e.preventDefault();
+    setIsTouchSeeking(true);
+    const touch = e.touches[0];
+    const rect = e.currentTarget.getBoundingClientRect();
+    const targetIndex = calculateSeekIndex(touch.clientX, rect);
+    setSeekPreviewIndex(targetIndex);
+  }, [onSeek, scenesCount, calculateSeekIndex]);
+
+  const handleTouchMove = useCallback((e: React.TouchEvent<HTMLDivElement>) => {
+    if (!onSeek || scenesCount <= 0 || !isTouchSeeking) return;
+    const touch = e.touches[0];
+    const rect = e.currentTarget.getBoundingClientRect();
+    const targetIndex = calculateSeekIndex(touch.clientX, rect);
+    setSeekPreviewIndex(targetIndex);
+  }, [onSeek, scenesCount, isTouchSeeking, calculateSeekIndex]);
+
+  const handleTouchEnd = useCallback((e: React.TouchEvent<HTMLDivElement>) => {
+    if (!onSeek || scenesCount <= 0) return;
     const touch = e.changedTouches[0];
     const rect = e.currentTarget.getBoundingClientRect();
-    const ratio = Math.max(0, Math.min(1, (touch.clientX - rect.left) / rect.width));
-    const targetIndex = Math.floor(ratio * scenesCount);
-    onSeek(Math.min(targetIndex, scenesCount - 1));
-  }, [onSeek, scenesCount]);
+    const targetIndex = calculateSeekIndex(touch.clientX, rect);
+    onSeek(targetIndex);
+    setIsTouchSeeking(false);
+    setSeekPreviewIndex(null);
+  }, [onSeek, scenesCount, calculateSeekIndex]);
+
+  const handleTouchCancel = useCallback(() => {
+    setIsTouchSeeking(false);
+    setSeekPreviewIndex(null);
+  }, []);
 
   const handleProgressMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
     if (!onSeek || scenesCount <= 0) return;
     const rect = e.currentTarget.getBoundingClientRect();
-    const ratio = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
-    setSeekPreviewIndex(Math.min(Math.floor(ratio * scenesCount), scenesCount - 1));
-  }, [onSeek, scenesCount]);
+    const targetIndex = calculateSeekIndex(e.clientX, rect);
+    setSeekPreviewIndex(targetIndex);
+  }, [onSeek, scenesCount, calculateSeekIndex]);
 
   // Volume slider hover state
   const [volumeHover, setVolumeHover] = useState(false);
@@ -197,13 +225,16 @@ export function CanvasToolbar({
                 'w-full relative overflow-visible',
                 onSeek ? 'cursor-pointer group/progress' : '',
               )}
-              style={{ height: seekHover && onSeek ? 8 : 6, transition: 'height 0.15s ease', touchAction: 'none', paddingBlock: 8 }}
-              data-tour="progress-bar"
-              onClick={handleProgressClick}
-              onTouchEnd={handleProgressTouch}
-              onMouseMove={handleProgressMouseMove}
-              onMouseEnter={() => { if (onSeek) setSeekHover(true); }}
-              onMouseLeave={() => { setSeekHover(false); setSeekPreviewIndex(null); }}
+      style={{ height: (seekHover || isTouchSeeking) && onSeek ? 8 : 6, transition: 'height 0.15s ease', paddingBlock: 8 }}
+      data-tour="progress-bar"
+      onClick={handleProgressClick}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
+      onTouchCancel={handleTouchCancel}
+      onMouseMove={handleProgressMouseMove}
+      onMouseEnter={() => { if (onSeek) setSeekHover(true); }}
+      onMouseLeave={() => { setSeekHover(false); setSeekPreviewIndex(null); }}
             >
               {/* Track */}
               <div className="absolute inset-0 bg-gray-200/60 dark:bg-gray-700/50 rounded-full" />
@@ -222,13 +253,13 @@ export function CanvasToolbar({
                   }}
                 />
               )}
-              {/* Seek preview ghost line */}
-              {seekHover && onSeek && seekPreviewIndex != null && (
-                <div
-                  className="absolute top-0 h-full bg-violet-300/40 dark:bg-violet-300/30 rounded-full pointer-events-none"
-                  style={{ width: `${((seekPreviewIndex + 1) / Math.max(scenesCount, 1)) * 100}%` }}
-                />
-              )}
+          {/* Seek preview ghost line - shows on hover or during touch seeking */}
+          {(seekHover || isTouchSeeking) && onSeek && seekPreviewIndex != null && (
+            <div
+              className="absolute top-0 h-full bg-violet-300/40 dark:bg-violet-300/30 rounded-full pointer-events-none"
+              style={{ width: `${((seekPreviewIndex + 1) / Math.max(scenesCount, 1)) * 100}%` }}
+            />
+          )}
               {/* Scrubber thumb — always visible so users know it's interactive */}
               {onSeek && (
                 <div
