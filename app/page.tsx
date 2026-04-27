@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import { useTheme } from '@/lib/hooks/use-theme';
-import { Sun, Moon, Monitor, User, RotateCcw, CheckCircle2, GraduationCap, Star, Trophy, BookOpen, Shield, Zap, Cpu } from 'lucide-react';
+import { Sun, Moon, Monitor, User, RotateCcw, CheckCircle2, GraduationCap, Star, Trophy, BookOpen, Shield, Zap, Cpu, Globe } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useUserProfileStore } from '@/lib/store/user-profile';
 import { getProgress } from '@/lib/utils/course-progress';
@@ -291,13 +291,22 @@ export default function HomePage() {
               description="Understands systems deeply"
             />
           </div>
-          <button
-            onClick={() => router.push('/glossary')}
-            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-violet-500/10 border border-violet-500/30 text-violet-400 text-xs font-bold hover:bg-violet-500/20 transition-all shrink-0"
-          >
-            <BookOpen className="w-4 h-4" />
-            A–Z Glossary
-          </button>
+          <div className="flex items-center gap-2 shrink-0">
+            <button
+              onClick={() => router.push('/glossary')}
+              className="flex items-center gap-2 px-4 py-2 rounded-xl bg-violet-500/10 border border-violet-500/30 text-violet-400 text-xs font-bold hover:bg-violet-500/20 transition-all"
+            >
+              <BookOpen className="w-4 h-4" />
+              A–Z Glossary
+            </button>
+            <button
+              onClick={() => router.push('/resources')}
+              className="flex items-center gap-2 px-4 py-2 rounded-xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-bold hover:bg-cyan-500/20 transition-all"
+            >
+              <Globe className="w-4 h-4" />
+              Toolkit
+            </button>
+          </div>
         </div>
       </div>
 
