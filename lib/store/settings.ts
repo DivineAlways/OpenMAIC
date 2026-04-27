@@ -919,10 +919,15 @@ export const useSettingsStore = create<SettingsState>()(
                 const key = pid as ProviderId;
                 if (newProvidersConfig[key]) {
                   const currentModels = newProvidersConfig[key].models;
-                  // When server specifies allowed models, filter the models list
-                  const filteredModels = info.models?.length
+                  // When server specifies allowed models, filter the models list.
+                  // If none of the server models match built-in IDs (e.g. NVIDIA NIM custom models),
+                  // synthesize minimal entries from the server list so they're selectable.
+                  let filteredModels = info.models?.length
                     ? currentModels.filter((m) => info.models!.includes(m.id))
                     : currentModels;
+                  if (info.models?.length && filteredModels.length === 0) {
+                    filteredModels = info.models.map((id) => ({ id, name: id }));
+                  }
                   newProvidersConfig[key] = {
                     ...newProvidersConfig[key],
                     isServerConfigured: true,
@@ -1240,17 +1245,21 @@ export const useSettingsStore = create<SettingsState>()(
                 }
               }
 
-              // LLM auto-select: only on true first load (no provider selected yet)
+              // LLM auto-select: on first load or when no model is selected yet
               let autoProviderId: ProviderId | undefined;
               let autoModelId: string | undefined;
-              if (!state.providerId && !state.modelId) {
-                for (const [pid, cfg] of Object.entries(newProvidersConfig)) {
-                  if (cfg.isServerConfigured) {
-                    // Prefer server-restricted models, fall back to built-in list
+              if (!state.modelId) {
+                // Prefer current provider if it is server-configured; otherwise pick first available
+                const preferredOrder = state.providerId
+                  ? [state.providerId, ...Object.keys(newProvidersConfig).filter((p) => p !== state.providerId)]
+                  : Object.keys(newProvidersConfig);
+                for (const pid of preferredOrder) {
+                  const cfg = newProvidersConfig[pid as ProviderId];
+                  if (cfg?.isServerConfigured) {
                     const serverModels = cfg.serverModels;
                     const modelId = serverModels?.length
                       ? serverModels[0]
-                      : PROVIDERS[pid as ProviderId]?.models[0]?.id;
+                      : cfg.models[0]?.id;
                     if (modelId) {
                       autoProviderId = pid as ProviderId;
                       autoModelId = modelId;

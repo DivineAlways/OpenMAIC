@@ -84,7 +84,7 @@ export function useAudioRecorder(options: UseAudioRecorderOptions = {}) {
         onTranscription?.(result.text);
       } catch (error) {
         log.error('Transcription error:', error);
-        onError?.(error instanceof Error ? error.message : '语音识别失败，请重试');
+        onError?.(error instanceof Error ? error.message : 'Transcription failed — please try again');
       } finally {
         setIsProcessing(false);
         setRecordingTime(0);
@@ -239,7 +239,7 @@ export function useAudioRecorder(options: UseAudioRecorderOptions = {}) {
     } catch (error) {
       busyRef.current = false;
       log.error('Failed to start recording:', error);
-      onError?.('无法访问麦克风，请检查权限设置');
+      onError?.('Microphone access failed — please check your browser permissions');
     }
   }, [onTranscription, onError, transcribeAudio]);
 
