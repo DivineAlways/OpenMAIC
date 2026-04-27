@@ -124,7 +124,7 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="fixed inset-0 z-[200] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+        className="fixed inset-0 z-[200] flex flex-col items-center justify-center bg-black/80 backdrop-blur-sm p-4 gap-3"
         onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
       >
         <motion.div
@@ -132,11 +132,11 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.92, y: 20 }}
           transition={{ type: 'spring', stiffness: 300, damping: 28 }}
-          className="w-full flex flex-col"
-          style={{ maxHeight: '100vh', maxWidth: 'min(90vw, calc((100vh - 80px) * 1008 / 734))' }}
+          className="w-full flex flex-col gap-3"
+          style={{ maxWidth: 'min(92vw, calc((100vh - 80px) * 1008 / 734))' }}
         >
           {/* Controls */}
-          <div className="flex items-center justify-between mb-3 px-1">
+          <div className="flex items-center justify-between shrink-0 px-1">
             <div className="flex items-center gap-2">
               {editingName ? (
                 <div className="flex items-center gap-2">
