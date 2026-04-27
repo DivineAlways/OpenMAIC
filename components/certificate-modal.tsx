@@ -124,7 +124,7 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="fixed inset-0 z-[200] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 overflow-y-auto"
+        className="fixed inset-0 z-[200] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
         onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
       >
         <motion.div
@@ -132,7 +132,8 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.92, y: 20 }}
           transition={{ type: 'spring', stiffness: 300, damping: 28 }}
-          className="w-full max-w-5xl my-auto"
+          className="w-full flex flex-col"
+          style={{ maxHeight: '100vh', maxWidth: 'min(90vw, calc((100vh - 80px) * 1008 / 734))' }}
         >
           {/* Controls */}
           <div className="flex items-center justify-between mb-3 px-1">
@@ -183,7 +184,7 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
           </div>
 
           {/* Certificate — bg image with text overlaid at exact positions */}
-          <div className="relative w-full" style={{ aspectRatio: '1008 / 734' }}>
+          <div className="relative w-full" style={{ aspectRatio: '1008 / 734', minHeight: 0 }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/certificate-bg.png"
