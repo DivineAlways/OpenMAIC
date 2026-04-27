@@ -209,7 +209,7 @@ export function CanvasToolbar({
       : 0;
 
   return (
-    <div className={cn('flex flex-col', className)}>
+    <div className={cn('flex flex-col relative z-20', className)}>
       {/* Seekable progress bar */}
       <TooltipProvider delayDuration={0}>
         <Tooltip open={seekHover && onSeek != null && seekPreviewIndex != null}>
