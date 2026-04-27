@@ -9,7 +9,7 @@ export function GridLines() {
   const viewportSize = useCanvasStore.use.viewportSize();
 
   const background = useSceneSelector<SlideContent, SlideBackground | undefined>(
-    (content) => content.canvas.background,
+    (content) => content?.canvas?.background,
   );
 
   // Calculate grid line color to avoid blending with background
