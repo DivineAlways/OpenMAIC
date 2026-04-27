@@ -236,23 +236,23 @@ export function CanvasToolbar({
       onMouseEnter={() => { if (onSeek) setSeekHover(true); }}
       onMouseLeave={() => { setSeekHover(false); setSeekPreviewIndex(null); }}
             >
-              {/* Track */}
-              <div className="absolute inset-0 bg-gray-200/60 dark:bg-gray-700/50 rounded-full" />
-              {/* Completed scenes */}
-              <div
-                className="absolute left-0 top-0 h-full bg-violet-500/60 dark:bg-violet-400/50 rounded-full transition-[width] duration-300"
-                style={{ width: `${(currentSceneIndex / Math.max(scenesCount, 1)) * 100}%` }}
-              />
-              {/* Speech progress within current scene */}
-              {speechProgress != null && speechProgress > 0 && (
-                <div
-                  className="absolute top-0 h-full bg-violet-500 dark:bg-violet-400 rounded-full transition-[width] duration-150"
-                  style={{
-                    left: `${(currentSceneIndex / Math.max(scenesCount, 1)) * 100}%`,
-                    width: `${(speechProgress / Math.max(scenesCount, 1)) * 100}%`,
-                  }}
-                />
-              )}
+      {/* Track */}
+      <div className="absolute inset-0 bg-gray-200/60 dark:bg-gray-700/50 rounded-full pointer-events-none" />
+      {/* Completed scenes */}
+      <div
+        className="absolute left-0 top-0 h-full bg-violet-500/60 dark:bg-violet-400/50 rounded-full transition-[width] duration-300 pointer-events-none"
+        style={{ width: `${(currentSceneIndex / Math.max(scenesCount, 1)) * 100}%` }}
+      />
+      {/* Speech progress within current scene */}
+      {speechProgress != null && speechProgress > 0 && (
+        <div
+          className="absolute top-0 h-full bg-violet-500 dark:bg-violet-400 rounded-full transition-[width] duration-150 pointer-events-none"
+          style={{
+            left: `${(currentSceneIndex / Math.max(scenesCount, 1)) * 100}%`,
+            width: `${(speechProgress / Math.max(scenesCount, 1)) * 100}%`,
+          }}
+        />
+      )}
           {/* Seek preview ghost line - shows on hover or during touch seeking */}
           {(seekHover || isTouchSeeking) && onSeek && seekPreviewIndex != null && (
             <div
