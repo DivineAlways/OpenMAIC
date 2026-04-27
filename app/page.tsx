@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import { useTheme } from '@/lib/hooks/use-theme';
-import { Sun, Moon, Monitor, User, RotateCcw, CheckCircle2, GraduationCap, Star, Trophy } from 'lucide-react';
+import { Sun, Moon, Monitor, User, RotateCcw, CheckCircle2, GraduationCap, Star, Trophy, BookOpen, Shield, Zap, Cpu } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useUserProfileStore } from '@/lib/store/user-profile';
 import { getProgress } from '@/lib/utils/course-progress';
@@ -16,6 +16,7 @@ const ELEMENTARY_COURSES = [
   { id: 'oc-elem-ecosystem', title: 'The Crypto World', description: 'CEX vs DEX, NFTs, DAOs, and Web3 — the full landscape explained.', scenes: 6, emoji: '🌍', gradient: 'from-cyan-500 to-sky-600' },
   { id: 'oc-elem-security', title: 'Staying Safe in Crypto', description: 'Phishing, fake giveaways, rug pulls, social engineering, and the red flags checklist.', scenes: 6, emoji: '🛡️', gradient: 'from-rose-500 to-red-600' },
   { id: 'oc-elem-vault', title: 'Beginner Video Vault', description: 'How to learn from crypto videos + a starter glossary of terms you\'ll hear everywhere.', scenes: 3, emoji: '🎬', gradient: 'from-violet-500 to-purple-600' },
+  { id: 'oc-elem-swapbridge', title: 'Swapping & Bridging', description: 'What swapping is, CEX vs DEX swaps, how bridges move crypto between chains, and beginner risks.', scenes: 5, emoji: '🌉', gradient: 'from-purple-500 to-violet-600' },
 ];
 
 const COLLEGE_COURSES = [
@@ -26,6 +27,7 @@ const COLLEGE_COURSES = [
   { id: 'oc-security-wallets', title: 'Security & Wallets', description: 'BIP39/44 seed derivation, wallet types, attack vectors, multisig setups, and XRPL account security.', level: 'Intermediate', scenes: 9, emoji: '🔐', gradient: 'from-red-500 to-rose-600' },
   { id: 'oc-ecosystem', title: 'Crypto in the Real World', description: 'Tokenomics, Layer-2 rollups, governance, RWA tokenization, SEC/MiCA regulation, and banking integration.', level: 'Advanced', scenes: 11, emoji: '🌍', gradient: 'from-cyan-500 to-sky-600' },
   { id: 'oc-xrpl-deepdive', title: 'XRPL Deep Dive', description: 'RPCA consensus, trust lines, native DEX + AMM, ODL, XRP as bridge currency, tokenization, and micropayments.', level: 'Advanced', scenes: 11, emoji: '🔵', gradient: 'from-sky-400 to-blue-600' },
+  { id: 'oc-col-swapbridge', title: 'Swapping & Bridging', description: 'Concentrated liquidity, MEV sandwich attacks, bridge security models, ZK bridges, XRPL native DEX, and advanced swap settings.', level: 'Advanced', scenes: 7, emoji: '🌉', gradient: 'from-cyan-500 to-blue-600' },
 ];
 
 const HIGH_SCHOOL_COURSES = [
@@ -36,6 +38,7 @@ const HIGH_SCHOOL_COURSES = [
   { id: 'oc-hs-wallets', title: 'Wallets & Keys', description: 'BIP39 cryptography, hot vs cold storage, multi-sig, hardware wallets, and layered security.', scenes: 6, emoji: '🔐', gradient: 'from-orange-600 to-red-600' },
   { id: 'oc-hs-ecosystem', title: 'Crypto Ecosystem', description: 'L1 vs L2, cross-chain bridges, DAOs, NFT utility vs hype, and RWA tokenization.', scenes: 6, emoji: '🌍', gradient: 'from-amber-500 to-yellow-500' },
   { id: 'oc-hs-security', title: 'Security', description: 'Phishing deep dive, rug pull red flags, smart contract exploits, OPSEC, SIM swaps, CEX vs DEX risks.', scenes: 4, emoji: '🛡️', gradient: 'from-red-500 to-orange-600' },
+  { id: 'oc-hs-swapbridge', title: 'Swapping & Bridging', description: 'DEX mechanics, AMM pricing, liquidity routing, bridge architecture, wrapped tokens, and cross-chain fees.', scenes: 6, emoji: '🌉', gradient: 'from-orange-500 to-amber-600' },
 ];
 
 const COLLEGE_LEVEL_ORDER: Record<string, number> = { Beginner: 0, Intermediate: 1, Advanced: 2 };
@@ -109,6 +112,26 @@ function CourseCard({ id, emoji, gradient, title, description, badge, scenes, co
         </div>
       </div>
     </button>
+  );
+}
+
+// Skill identity badge component
+function SkillBadge({ earned, label, icon, color, description }: {
+  earned: boolean; label: string; icon: React.ReactNode; color: string; description: string;
+}) {
+  return (
+    <div className={`flex items-center gap-2 px-3 py-2 rounded-xl border transition-all ${
+      earned
+        ? `${color} shadow-lg`
+        : 'border-white/5 bg-white/3 opacity-40'
+    }`}>
+      <div className="shrink-0">{icon}</div>
+      <div>
+        <p className="text-xs font-black text-white leading-none">{label}</p>
+        <p className="text-[10px] text-gray-400 mt-0.5 leading-none">{description}</p>
+      </div>
+      {earned && <CheckCircle2 className="w-3.5 h-3.5 ml-auto shrink-0 text-emerald-400" />}
+    </div>
   );
 }
 
@@ -238,6 +261,43 @@ export default function HomePage() {
               Welcome, <span className="text-white font-semibold">{nickname}</span> 👋
             </div>
           )}
+        </div>
+      </div>
+
+      {/* Skill Identity Badges + Glossary */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 mb-6">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
+          <div className="flex items-center gap-2 flex-wrap flex-1">
+            <span className="text-[10px] font-black uppercase tracking-widest text-gray-600 mr-1">Your Rank:</span>
+            <SkillBadge
+              earned={completedIds.length > 0 && ELEMENTARY_IDS.every(id => completedIds.includes(id))}
+              label="Survivor"
+              icon={<Shield className="w-4 h-4 text-emerald-400" />}
+              color="border-emerald-500/40 bg-emerald-500/10"
+              description="Can avoid scams & stay safe"
+            />
+            <SkillBadge
+              earned={HS_IDS.every(id => completedIds.includes(id))}
+              label="Participant"
+              icon={<Zap className="w-4 h-4 text-amber-400" />}
+              color="border-amber-500/40 bg-amber-500/10"
+              description="Can trade, use DeFi & bridges"
+            />
+            <SkillBadge
+              earned={COLLEGE_IDS.every(id => completedIds.includes(id))}
+              label="Operator"
+              icon={<Cpu className="w-4 h-4 text-blue-400" />}
+              color="border-blue-500/40 bg-blue-500/10"
+              description="Understands systems deeply"
+            />
+          </div>
+          <button
+            onClick={() => router.push('/glossary')}
+            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-violet-500/10 border border-violet-500/30 text-violet-400 text-xs font-bold hover:bg-violet-500/20 transition-all shrink-0"
+          >
+            <BookOpen className="w-4 h-4" />
+            A–Z Glossary
+          </button>
         </div>
       </div>
 
@@ -390,29 +450,29 @@ export default function HomePage() {
         )}
       </main>
 
-      {/* Graduation ceremony — Elementary */}
+      {/* Graduation ceremony — Elementary → Survivor */}
       {showGraduation && (
         <GraduationModal
-          title="Elementary Graduated!"
-          subtitle="Level Complete"
-          body="You completed all 8 Elementary courses. You now understand blockchain, crypto, DeFi, trading, wallets, Web3, and how to stay safe — from scratch. That's real knowledge."
+          title="You're a Survivor!"
+          subtitle="🛡️ Elementary Complete"
+          body="You completed all 9 Elementary courses. You understand blockchain, crypto, DeFi, trading, wallets, Web3, swapping, bridging, and how to stay safe. You can now navigate the crypto world without getting burned. That's the Survivor rank — earned."
           unlockText="High School level is now unlocked"
           ctaLabel="Start High School Level"
           onCta={() => { setShowGraduation(false); setActiveLevel('highschool'); }}
           onClose={() => setShowGraduation(false)}
-          accentClass="from-violet-500 to-indigo-600"
-          shadowClass="shadow-violet-500/20"
-          borderClass="border-violet-500/40"
-          textClass="text-violet-400"
+          accentClass="from-emerald-500 to-teal-600"
+          shadowClass="shadow-emerald-500/20"
+          borderClass="border-emerald-500/40"
+          textClass="text-emerald-400"
         />
       )}
 
-      {/* Graduation ceremony — High School */}
+      {/* Graduation ceremony — High School → Participant */}
       {showHSGraduation && (
         <GraduationModal
-          title="High School Graduated!"
-          subtitle="Level Complete"
-          body="You completed all 7 High School courses. You can read charts, understand tokenomics, evaluate DeFi protocols, and know how to stay safe on-chain. Serious knowledge."
+          title="You're a Participant!"
+          subtitle="⚡ High School Complete"
+          body="You completed all 8 High School courses. You can read charts, evaluate DeFi protocols, navigate swaps and bridges, manage wallet security, and understand market structure. You're not just watching crypto — you're operating in it. Participant rank unlocked."
           unlockText="College level is now unlocked"
           ctaLabel="Start College Level"
           onCta={() => { setShowHSGraduation(false); setActiveLevel('college'); }}
@@ -424,14 +484,14 @@ export default function HomePage() {
         />
       )}
 
-      {/* Graduation ceremony — College */}
+      {/* Graduation ceremony — College → Operator */}
       {showCollegeGraduation && (
         <GraduationModal
-          title="College Graduated!"
-          subtitle="Full Curriculum Complete"
-          body="You completed the entire OC Academy — all 22 courses across Elementary, High School, and College. You now have institutional-grade crypto knowledge. That's elite."
+          title="You're an Operator!"
+          subtitle="🖥️ Full Curriculum Complete"
+          body="You completed the entire OC Academy — all 25 courses. You understand consensus design, tokenomics engineering, DeFi protocol architecture, MEV, ZK proofs, regulatory frameworks, and XRPL infrastructure. You don't just participate in crypto — you understand the systems that run it. That's Operator level. Elite."
           unlockText="You've mastered the full OnlyCrypto curriculum"
-          ctaLabel="Back to Dashboard"
+          ctaLabel="View Your Badges"
           onCta={() => setShowCollegeGraduation(false)}
           onClose={() => setShowCollegeGraduation(false)}
           accentClass="from-blue-500 to-cyan-500"
