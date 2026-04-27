@@ -20,7 +20,7 @@
     {
       "id": "esb-s1",
       "type": "slide",
-      "title": "🔄 What is Swapping?",
+      "title": "\ud83d\udd04 What is Swapping?",
       "order": 0,
       "content": {
         "type": "slide",
@@ -83,7 +83,7 @@
               "width": 800,
               "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🔄 What is Swapping?</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83d\udd04 What is Swapping?</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -95,7 +95,7 @@
               "width": 800,
               "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Trading one crypto for another — no bank required</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Trading one crypto for another \u2014 no bank required</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#64748b"
             },
@@ -140,7 +140,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>💱 Swap<br/><span style=\"font-weight:400;color:#94a3b8;\">Exchange one crypto for another</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>\ud83d\udcb1 Swap<br/><span style=\"font-weight:400;color:#94a3b8;\">Exchange one crypto for another</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -173,7 +173,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>🏦 CEX Swap<br/><span style=\"font-weight:400;color:#94a3b8;\">Company matches the trade</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>\ud83c\udfe6 CEX Swap<br/><span style=\"font-weight:400;color:#94a3b8;\">Company matches the trade</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -206,7 +206,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>🤖 DEX Swap<br/><span style=\"font-weight:400;color:#94a3b8;\">Code executes automatically</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>\ud83e\udd16 DEX Swap<br/><span style=\"font-weight:400;color:#94a3b8;\">Code executes automatically</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -239,7 +239,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>⚡ Speed<br/><span style=\"font-weight:400;color:#94a3b8;\">Usually seconds to complete</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>\u26a1 Speed<br/><span style=\"font-weight:400;color:#94a3b8;\">Usually seconds to complete</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             }
@@ -255,7 +255,7 @@
         {
           "id": "action_esb-s1_1",
           "type": "speech",
-          "text": "🔄 What is Swapping?",
+          "text": "\ud83d\udd04 What is Swapping?",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/0-1.mp3"
         },
         {
@@ -266,7 +266,7 @@
         {
           "id": "action_esb-s1_3",
           "type": "speech",
-          "text": "Trading one crypto for another — no bank required",
+          "text": "Trading one crypto for another \u2014 no bank required",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/0-3.mp3"
         },
         {
@@ -288,7 +288,7 @@
         {
           "id": "action_esb-s1_7",
           "type": "speech",
-          "text": "💱 Swap. Exchange one crypto for another",
+          "text": "\ud83d\udcb1 Swap. Exchange one crypto for another",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/0-7.mp3"
         },
         {
@@ -299,7 +299,7 @@
         {
           "id": "action_esb-s1_9",
           "type": "speech",
-          "text": "🏦 CEX Swap. Company matches the trade",
+          "text": "\ud83c\udfe6 CEX Swap. Company matches the trade",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/0-9.mp3"
         },
         {
@@ -310,7 +310,7 @@
         {
           "id": "action_esb-s1_11",
           "type": "speech",
-          "text": "🤖 DEX Swap. Code executes automatically",
+          "text": "\ud83e\udd16 DEX Swap. Code executes automatically",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/0-11.mp3"
         },
         {
@@ -321,7 +321,7 @@
         {
           "id": "action_esb-s1_13",
           "type": "speech",
-          "text": "⚡ Speed. Usually seconds to complete",
+          "text": "\u26a1 Speed. Usually seconds to complete",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/0-13.mp3"
         }
       ]
@@ -329,7 +329,7 @@
     {
       "id": "esb-s2",
       "type": "slide",
-      "title": "🏦 CEX vs DEX Swaps",
+      "title": "\ud83c\udfe6 CEX vs DEX Swaps",
       "order": 1,
       "content": {
         "type": "slide",
@@ -392,7 +392,7 @@
               "width": 800,
               "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🏦 CEX vs DEX Swaps</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83c\udfe6 CEX vs DEX Swaps</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -404,7 +404,7 @@
               "width": 800,
               "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Two ways to swap — what is the real difference?</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Two ways to swap \u2014 what is the real difference?</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#64748b"
             },
@@ -416,7 +416,7 @@
               "width": 950,
               "height": 260,
               "rotate": 0,
-              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#8b5cf6;'>CEX swap</b> — you log into Coinbase, Binance, or Kraken and click swap. Easy. But the exchange holds your funds during the trade. You need an account and ID verification. Fees are usually clear upfront.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#8b5cf6;'>DEX swap</b> — you connect your own wallet (like MetaMask) to a protocol like Uniswap. No account needed. You stay in control of your funds the entire time. The trade executes via smart contract. The XRPL has a built-in DEX — one of the oldest in crypto.</p>",
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#8b5cf6;'>CEX swap</b> \u2014 you log into Coinbase, Binance, or Kraken and click swap. Easy. But the exchange holds your funds during the trade. You need an account and ID verification. Fees are usually clear upfront.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#8b5cf6;'>DEX swap</b> \u2014 you connect your own wallet (like MetaMask) to a protocol like Uniswap. No account needed. You stay in control of your funds the entire time. The trade executes via smart contract. The XRPL has a built-in DEX \u2014 one of the oldest in crypto.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -449,7 +449,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>🏦 CEX<br/><span style=\"font-weight:400;color:#94a3b8;\">Exchange holds your funds</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>\ud83c\udfe6 CEX<br/><span style=\"font-weight:400;color:#94a3b8;\">Exchange holds your funds</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -482,7 +482,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>🔓 DEX<br/><span style=\"font-weight:400;color:#94a3b8;\">Your wallet, your control</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>\ud83d\udd13 DEX<br/><span style=\"font-weight:400;color:#94a3b8;\">Your wallet, your control</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -515,7 +515,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>📋 CEX<br/><span style=\"font-weight:400;color:#94a3b8;\">ID required, easy UI</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>\ud83d\udccb CEX<br/><span style=\"font-weight:400;color:#94a3b8;\">ID required, easy UI</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -548,7 +548,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>🔗 DEX<br/><span style=\"font-weight:400;color:#94a3b8;\">Wallet only, no account needed</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>\ud83d\udd17 DEX<br/><span style=\"font-weight:400;color:#94a3b8;\">Wallet only, no account needed</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             }
@@ -564,7 +564,7 @@
         {
           "id": "action_esb-s2_1",
           "type": "speech",
-          "text": "🏦 CEX vs DEX Swaps",
+          "text": "\ud83c\udfe6 CEX vs DEX Swaps",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/1-1.mp3"
         },
         {
@@ -575,7 +575,7 @@
         {
           "id": "action_esb-s2_3",
           "type": "speech",
-          "text": "Two ways to swap — what is the real difference?",
+          "text": "Two ways to swap \u2014 what is the real difference?",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/1-3.mp3"
         },
         {
@@ -586,7 +586,7 @@
         {
           "id": "action_esb-s2_5",
           "type": "speech",
-          "text": "CEX swap — you log into Coinbase, Binance, or Kraken and click swap. Easy. But the exchange holds your funds during the trade. You need an account and ID verification. Fees are usually clear upfront. DEX swap — you connect your own wallet (like MetaMask) to a protocol like Uniswap. No account needed. You stay in control of your funds the entire time. The trade executes via smart contract. The XRPL has a built-in DEX — one of the oldest in crypto.",
+          "text": "CEX swap \u2014 you log into Coinbase, Binance, or Kraken and click swap. Easy. But the exchange holds your funds during the trade. You need an account and ID verification. Fees are usually clear upfront. DEX swap \u2014 you connect your own wallet (like MetaMask) to a protocol like Uniswap. No account needed. You stay in control of your funds the entire time. The trade executes via smart contract. The XRPL has a built-in DEX \u2014 one of the oldest in crypto.",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/1-5.mp3"
         },
         {
@@ -597,7 +597,7 @@
         {
           "id": "action_esb-s2_7",
           "type": "speech",
-          "text": "🏦 CEX. Exchange holds your funds",
+          "text": "\ud83c\udfe6 CEX. Exchange holds your funds",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/1-7.mp3"
         },
         {
@@ -608,7 +608,7 @@
         {
           "id": "action_esb-s2_9",
           "type": "speech",
-          "text": "🔓 DEX. Your wallet, your control",
+          "text": "\ud83d\udd13 DEX. Your wallet, your control",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/1-9.mp3"
         },
         {
@@ -619,7 +619,7 @@
         {
           "id": "action_esb-s2_11",
           "type": "speech",
-          "text": "📋 CEX. ID required, easy UI",
+          "text": "\ud83d\udccb CEX. ID required, easy UI",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/1-11.mp3"
         },
         {
@@ -630,7 +630,7 @@
         {
           "id": "action_esb-s2_13",
           "type": "speech",
-          "text": "🔗 DEX. Wallet only, no account needed",
+          "text": "\ud83d\udd17 DEX. Wallet only, no account needed",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/1-13.mp3"
         }
       ]
@@ -638,7 +638,7 @@
     {
       "id": "esb-s3",
       "type": "slide",
-      "title": "🌉 What is a Bridge?",
+      "title": "\ud83c\udf09 What is a Bridge?",
       "order": 2,
       "content": {
         "type": "slide",
@@ -701,7 +701,7 @@
               "width": 800,
               "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🌉 What is a Bridge?</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83c\udf09 What is a Bridge?</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -725,7 +725,7 @@
               "width": 950,
               "height": 260,
               "rotate": 0,
-              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Different blockchains are like different countries — they each have their own currency and rules and they do not automatically talk to each other. Bitcoin cannot natively move to Ethereum. ETH cannot natively move to Solana.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>A <b style='color:#8b5cf6;'>bridge</b> is a protocol that connects two blockchains. You lock your tokens on Chain A, and the bridge mints an equivalent on Chain B. When you are done, you burn the tokens on Chain B and unlock your originals on Chain A.</p>",
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Different blockchains are like different countries \u2014 they each have their own currency and rules and they do not automatically talk to each other. Bitcoin cannot natively move to Ethereum. ETH cannot natively move to Solana.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>A <b style='color:#8b5cf6;'>bridge</b> is a protocol that connects two blockchains. You lock your tokens on Chain A, and the bridge mints an equivalent on Chain B. When you are done, you burn the tokens on Chain B and unlock your originals on Chain A.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -758,7 +758,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>🔒 Lock<br/><span style=\"font-weight:400;color:#94a3b8;\">Tokens locked on Chain A</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>\ud83d\udd12 Lock<br/><span style=\"font-weight:400;color:#94a3b8;\">Tokens locked on Chain A</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -791,7 +791,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>🪙 Mint<br/><span style=\"font-weight:400;color:#94a3b8;\">Wrapped token created on Chain B</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>\ud83e\ude99 Mint<br/><span style=\"font-weight:400;color:#94a3b8;\">Wrapped token created on Chain B</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -824,7 +824,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>🔥 Burn<br/><span style=\"font-weight:400;color:#94a3b8;\">Return wrapped token to bridge</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>\ud83d\udd25 Burn<br/><span style=\"font-weight:400;color:#94a3b8;\">Return wrapped token to bridge</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -857,7 +857,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>🔓 Unlock<br/><span style=\"font-weight:400;color:#94a3b8;\">Original tokens released on Chain A</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>\ud83d\udd13 Unlock<br/><span style=\"font-weight:400;color:#94a3b8;\">Original tokens released on Chain A</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             }
@@ -873,7 +873,7 @@
         {
           "id": "action_esb-s3_1",
           "type": "speech",
-          "text": "🌉 What is a Bridge?",
+          "text": "\ud83c\udf09 What is a Bridge?",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/2-1.mp3"
         },
         {
@@ -895,7 +895,7 @@
         {
           "id": "action_esb-s3_5",
           "type": "speech",
-          "text": "Different blockchains are like different countries — they each have their own currency and rules and they do not automatically talk to each other. Bitcoin cannot natively move to Ethereum. ETH cannot natively move to Solana. A bridge is a protocol that connects two blockchains. You lock your tokens on Chain A, and the bridge mints an equivalent on Chain B. When you are done, you burn the tokens on Chain B and unlock your originals on Chain A.",
+          "text": "Different blockchains are like different countries \u2014 they each have their own currency and rules and they do not automatically talk to each other. Bitcoin cannot natively move to Ethereum. ETH cannot natively move to Solana. A bridge is a protocol that connects two blockchains. You lock your tokens on Chain A, and the bridge mints an equivalent on Chain B. When you are done, you burn the tokens on Chain B and unlock your originals on Chain A.",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/2-5.mp3"
         },
         {
@@ -906,7 +906,7 @@
         {
           "id": "action_esb-s3_7",
           "type": "speech",
-          "text": "🔒 Lock. Tokens locked on Chain A",
+          "text": "\ud83d\udd12 Lock. Tokens locked on Chain A",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/2-7.mp3"
         },
         {
@@ -917,7 +917,7 @@
         {
           "id": "action_esb-s3_9",
           "type": "speech",
-          "text": "🪙 Mint. Wrapped token created on Chain B",
+          "text": "\ud83e\ude99 Mint. Wrapped token created on Chain B",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/2-9.mp3"
         },
         {
@@ -928,7 +928,7 @@
         {
           "id": "action_esb-s3_11",
           "type": "speech",
-          "text": "🔥 Burn. Return wrapped token to bridge",
+          "text": "\ud83d\udd25 Burn. Return wrapped token to bridge",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/2-11.mp3"
         },
         {
@@ -939,7 +939,7 @@
         {
           "id": "action_esb-s3_13",
           "type": "speech",
-          "text": "🔓 Unlock. Original tokens released on Chain A",
+          "text": "\ud83d\udd13 Unlock. Original tokens released on Chain A",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/2-13.mp3"
         }
       ]
@@ -947,7 +947,7 @@
     {
       "id": "esb-s4",
       "type": "slide",
-      "title": "⚠️ Swap & Bridge Risks for Beginners",
+      "title": "\u26a0\ufe0f Swap & Bridge Risks for Beginners",
       "order": 3,
       "content": {
         "type": "slide",
@@ -1010,7 +1010,7 @@
               "width": 800,
               "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>⚠️ Swap & Bridge Risks for Beginners</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\u26a0\ufe0f Swap & Bridge Risks for Beginners</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -1022,7 +1022,7 @@
               "width": 800,
               "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The mistakes that cost people money — and how to avoid them</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The mistakes that cost people money \u2014 and how to avoid them</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#64748b"
             },
@@ -1034,7 +1034,7 @@
               "width": 950,
               "height": 260,
               "rotate": 0,
-              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#8b5cf6;'>Wrong network</b> — the most common beginner mistake. Sending ETH on the Ethereum network to an address expecting ETH on Arbitrum. The funds appear to vanish. Always confirm the network before sending.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#8b5cf6;'>Slippage</b> — your swap executes at a slightly worse price than shown because the market moved. Set slippage tolerance carefully.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#8b5cf6;'>Bridge hacks</b> — bridges hold large amounts of locked tokens, making them high-value targets. Over $2B was stolen from bridges in 2022 alone. Use only well-established, audited bridges.</p>",
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#8b5cf6;'>Wrong network</b> \u2014 the most common beginner mistake. Sending ETH on the Ethereum network to an address expecting ETH on Arbitrum. The funds appear to vanish. Always confirm the network before sending.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#8b5cf6;'>Slippage</b> \u2014 your swap executes at a slightly worse price than shown because the market moved. Set slippage tolerance carefully.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#8b5cf6;'>Bridge hacks</b> \u2014 bridges hold large amounts of locked tokens, making them high-value targets. Over $2B was stolen from bridges in 2022 alone. Use only well-established, audited bridges.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -1067,7 +1067,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>🌐 Wrong Network<br/><span style=\"font-weight:400;color:#94a3b8;\">Always confirm chain before sending</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>\ud83c\udf10 Wrong Network<br/><span style=\"font-weight:400;color:#94a3b8;\">Always confirm chain before sending</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -1100,7 +1100,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>📉 Slippage<br/><span style=\"font-weight:400;color:#94a3b8;\">Price moves between click and confirm</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>\ud83d\udcc9 Slippage<br/><span style=\"font-weight:400;color:#94a3b8;\">Price moves between click and confirm</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -1133,7 +1133,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>🔓 Bridge Hack<br/><span style=\"font-weight:400;color:#94a3b8;\">Bridges are high-value targets</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>\ud83d\udd13 Bridge Hack<br/><span style=\"font-weight:400;color:#94a3b8;\">Bridges are high-value targets</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             },
@@ -1166,7 +1166,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>✅ Safety<br/><span style=\"font-weight:400;color:#94a3b8;\">Use only established, audited bridges</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#8b5cf6;text-align:center;'>\u2705 Safety<br/><span style=\"font-weight:400;color:#94a3b8;\">Use only established, audited bridges</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#8b5cf6"
             }
@@ -1182,7 +1182,7 @@
         {
           "id": "action_esb-s4_1",
           "type": "speech",
-          "text": "⚠️ Swap & Bridge Risks for Beginners",
+          "text": "\u26a0\ufe0f Swap & Bridge Risks for Beginners",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/3-1.mp3"
         },
         {
@@ -1193,7 +1193,7 @@
         {
           "id": "action_esb-s4_3",
           "type": "speech",
-          "text": "The mistakes that cost people money — and how to avoid them",
+          "text": "The mistakes that cost people money \u2014 and how to avoid them",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/3-3.mp3"
         },
         {
@@ -1204,7 +1204,7 @@
         {
           "id": "action_esb-s4_5",
           "type": "speech",
-          "text": "Wrong network — the most common beginner mistake. Sending ETH on the Ethereum network to an address expecting ETH on Arbitrum. The funds appear to vanish. Always confirm the network before sending. Slippage — your swap executes at a slightly worse price than shown because the market moved. Set slippage tolerance carefully. Bridge hacks — bridges hold large amounts of locked tokens, making them high-value targets. Over $2B was stolen from bridges in 2022 alone. Use only well-established, audited bridges.",
+          "text": "Wrong network \u2014 the most common beginner mistake. Sending ETH on the Ethereum network to an address expecting ETH on Arbitrum. The funds appear to vanish. Always confirm the network before sending. Slippage \u2014 your swap executes at a slightly worse price than shown because the market moved. Set slippage tolerance carefully. Bridge hacks \u2014 bridges hold large amounts of locked tokens, making them high-value targets. Over $2B was stolen from bridges in 2022 alone. Use only well-established, audited bridges.",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/3-5.mp3"
         },
         {
@@ -1215,7 +1215,7 @@
         {
           "id": "action_esb-s4_7",
           "type": "speech",
-          "text": "🌐 Wrong Network. Always confirm chain before sending",
+          "text": "\ud83c\udf10 Wrong Network. Always confirm chain before sending",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/3-7.mp3"
         },
         {
@@ -1226,7 +1226,7 @@
         {
           "id": "action_esb-s4_9",
           "type": "speech",
-          "text": "📉 Slippage. Price moves between click and confirm",
+          "text": "\ud83d\udcc9 Slippage. Price moves between click and confirm",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/3-9.mp3"
         },
         {
@@ -1237,7 +1237,7 @@
         {
           "id": "action_esb-s4_11",
           "type": "speech",
-          "text": "🔓 Bridge Hack. Bridges are high-value targets",
+          "text": "\ud83d\udd13 Bridge Hack. Bridges are high-value targets",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/3-11.mp3"
         },
         {
@@ -1248,15 +1248,15 @@
         {
           "id": "action_esb-s4_13",
           "type": "speech",
-          "text": "✅ Safety. Use only established, audited bridges",
+          "text": "\u2705 Safety. Use only established, audited bridges",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/3-13.mp3"
         }
       ]
     },
     {
       "id": "kc-oc-elem-swapbridge",
-      "type": "slide",
-      "title": "Knowledge Check — Swapping & Bridging",
+      "type": "quiz",
+      "title": "Knowledge Check \u2014 Swapping & Bridging",
       "order": 4,
       "content": {
         "type": "quiz",
@@ -1286,7 +1286,7 @@
             "answer": [
               "B"
             ],
-            "analysis": "Swapping means trading one crypto directly for another — for example, exchanging ETH for USDC. It can be done on a CEX (like Coinbase) or a DEX (like Uniswap) where a smart contract executes the trade automatically.",
+            "analysis": "Swapping means trading one crypto directly for another \u2014 for example, exchanging ETH for USDC. It can be done on a CEX (like Coinbase) or a DEX (like Uniswap) where a smart contract executes the trade automatically.",
             "points": 1
           },
           {
@@ -1331,7 +1331,7 @@
                 "value": "B"
               },
               {
-                "label": "No one — the smart contract executes it and you keep custody",
+                "label": "No one \u2014 the smart contract executes it and you keep custody",
                 "value": "C"
               },
               {
@@ -1342,7 +1342,7 @@
             "answer": [
               "C"
             ],
-            "analysis": "DEX swaps are trustless. You connect your own wallet, the smart contract executes the trade, and you receive the new token directly. No company ever holds your funds — unlike a CEX where the platform has custody.",
+            "analysis": "DEX swaps are trustless. You connect your own wallet, the smart contract executes the trade, and you receive the new token directly. No company ever holds your funds \u2014 unlike a CEX where the platform has custody.",
             "points": 1
           },
           {
@@ -1398,7 +1398,7 @@
             "answer": [
               "C"
             ],
-            "analysis": "Bridges aggregate enormous amounts of locked tokens — making them attractive targets. The Ronin bridge held $625M when hacked. The Wormhole bridge had $320M stolen. Only use bridges that are audited, battle-tested, and widely used by the community.",
+            "analysis": "Bridges aggregate enormous amounts of locked tokens \u2014 making them attractive targets. The Ronin bridge held $625M when hacked. The Wormhole bridge had $320M stolen. Only use bridges that are audited, battle-tested, and widely used by the community.",
             "points": 1
           }
         ]

@@ -20,7 +20,7 @@
     {
       "id": "hsb-s1",
       "type": "slide",
-      "title": "⚙️ How DEX Swaps Actually Work",
+      "title": "\u2699\ufe0f How DEX Swaps Actually Work",
       "order": 0,
       "content": {
         "type": "slide",
@@ -83,7 +83,7 @@
               "width": 800,
               "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>⚙️ How DEX Swaps Actually Work</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\u2699\ufe0f How DEX Swaps Actually Work</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -107,7 +107,7 @@
               "width": 950,
               "height": 260,
               "rotate": 0,
-              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>When you swap on a DEX like Uniswap, you are trading against a <b style='color:#f97316;'>liquidity pool</b> — not another person. The pool holds two tokens (e.g. ETH + USDC). The price is set by the ratio: <b style='color:#f1f5f9;'>x × y = k</b>. You add one token, the other comes out, and the ratio adjusts.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>A <b style='color:#f97316;'>DEX aggregator</b> (like 1inch) routes your swap across multiple pools simultaneously to find the best price. Instead of one pool, it might split your trade across five to minimize slippage.</p>",
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>When you swap on a DEX like Uniswap, you are trading against a <b style='color:#f97316;'>liquidity pool</b> \u2014 not another person. The pool holds two tokens (e.g. ETH + USDC). The price is set by the ratio: <b style='color:#f1f5f9;'>x \u00d7 y = k</b>. You add one token, the other comes out, and the ratio adjusts.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>A <b style='color:#f97316;'>DEX aggregator</b> (like 1inch) routes your swap across multiple pools simultaneously to find the best price. Instead of one pool, it might split your trade across five to minimize slippage.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -140,7 +140,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>🫙 Liquidity Pool<br/><span style=\"font-weight:400;color:#94a3b8;\">The reserve you trade against</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>\ud83e\uded9 Liquidity Pool<br/><span style=\"font-weight:400;color:#94a3b8;\">The reserve you trade against</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f97316"
             },
@@ -173,7 +173,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>📐 x×y=k<br/><span style=\"font-weight:400;color:#94a3b8;\">Constant product formula</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>\ud83d\udcd0 x\u00d7y=k<br/><span style=\"font-weight:400;color:#94a3b8;\">Constant product formula</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f97316"
             },
@@ -206,7 +206,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>🔀 Aggregator<br/><span style=\"font-weight:400;color:#94a3b8;\">Routes across multiple pools</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>\ud83d\udd00 Aggregator<br/><span style=\"font-weight:400;color:#94a3b8;\">Routes across multiple pools</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f97316"
             },
@@ -239,7 +239,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>💰 LP Fee<br/><span style=\"font-weight:400;color:#94a3b8;\">0.05–1% per swap to LPs</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>\ud83d\udcb0 LP Fee<br/><span style=\"font-weight:400;color:#94a3b8;\">0.05\u20131% per swap to LPs</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f97316"
             }
@@ -255,7 +255,7 @@
         {
           "id": "action_hsb-s1_1",
           "type": "speech",
-          "text": "⚙️ How DEX Swaps Actually Work",
+          "text": "\u2699\ufe0f How DEX Swaps Actually Work",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/0-1.mp3"
         },
         {
@@ -277,7 +277,7 @@
         {
           "id": "action_hsb-s1_5",
           "type": "speech",
-          "text": "When you swap on a DEX like Uniswap, you are trading against a liquidity pool — not another person. The pool holds two tokens (e.g. ETH + USDC). The price is set by the ratio: x × y = k . You add one token, the other comes out, and the ratio adjusts. A DEX aggregator (like 1inch) routes your swap across multiple pools simultaneously to find the best price. Instead of one pool, it might split your trade across five to minimize slippage.",
+          "text": "When you swap on a DEX like Uniswap, you are trading against a liquidity pool \u2014 not another person. The pool holds two tokens (e.g. ETH + USDC). The price is set by the ratio: x \u00d7 y = k . You add one token, the other comes out, and the ratio adjusts. A DEX aggregator (like 1inch) routes your swap across multiple pools simultaneously to find the best price. Instead of one pool, it might split your trade across five to minimize slippage.",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/0-5.mp3"
         },
         {
@@ -288,7 +288,7 @@
         {
           "id": "action_hsb-s1_7",
           "type": "speech",
-          "text": "🫙 Liquidity Pool. The reserve you trade against",
+          "text": "\ud83e\uded9 Liquidity Pool. The reserve you trade against",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/0-7.mp3"
         },
         {
@@ -299,7 +299,7 @@
         {
           "id": "action_hsb-s1_9",
           "type": "speech",
-          "text": "📐 x×y=k. Constant product formula",
+          "text": "\ud83d\udcd0 x\u00d7y=k. Constant product formula",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/0-9.mp3"
         },
         {
@@ -310,7 +310,7 @@
         {
           "id": "action_hsb-s1_11",
           "type": "speech",
-          "text": "🔀 Aggregator. Routes across multiple pools",
+          "text": "\ud83d\udd00 Aggregator. Routes across multiple pools",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/0-11.mp3"
         },
         {
@@ -321,7 +321,7 @@
         {
           "id": "action_hsb-s1_13",
           "type": "speech",
-          "text": "💰 LP Fee. 0.05–1% per swap to LPs",
+          "text": "\ud83d\udcb0 LP Fee. 0.05\u20131% per swap to LPs",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/0-13.mp3"
         }
       ]
@@ -329,7 +329,7 @@
     {
       "id": "hsb-s2",
       "type": "slide",
-      "title": "🔀 Liquidity Routing & Price Impact",
+      "title": "\ud83d\udd00 Liquidity Routing & Price Impact",
       "order": 1,
       "content": {
         "type": "slide",
@@ -392,7 +392,7 @@
               "width": 800,
               "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🔀 Liquidity Routing & Price Impact</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83d\udd00 Liquidity Routing & Price Impact</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -404,7 +404,7 @@
               "width": 800,
               "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Why large swaps get worse prices — and how routing fixes it</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Why large swaps get worse prices \u2014 and how routing fixes it</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#64748b"
             },
@@ -416,7 +416,7 @@
               "width": 950,
               "height": 260,
               "rotate": 0,
-              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f97316;'>Price impact</b> is the effect your trade has on the pool price. A small swap barely moves the ratio. A large swap significantly shifts it — you end up paying more per token as the pool rebalances against you.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Formula: the deeper the pool (more liquidity), the lower your price impact. A $1M pool can absorb a $10k swap with minimal impact. A $50k pool would move dramatically on that same trade.</p><br/><p style='font-size:16px;color:#f59e0b;'>Pro tip: always check the price impact % before confirming a swap. Above 1% is high. Above 3% is a red flag for smaller tokens.</p>",
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f97316;'>Price impact</b> is the effect your trade has on the pool price. A small swap barely moves the ratio. A large swap significantly shifts it \u2014 you end up paying more per token as the pool rebalances against you.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Formula: the deeper the pool (more liquidity), the lower your price impact. A $1M pool can absorb a $10k swap with minimal impact. A $50k pool would move dramatically on that same trade.</p><br/><p style='font-size:16px;color:#f59e0b;'>Pro tip: always check the price impact % before confirming a swap. Above 1% is high. Above 3% is a red flag for smaller tokens.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -449,7 +449,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>📉 Price Impact<br/><span style=\"font-weight:400;color:#94a3b8;\">Your trade moves the pool ratio</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>\ud83d\udcc9 Price Impact<br/><span style=\"font-weight:400;color:#94a3b8;\">Your trade moves the pool ratio</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f97316"
             },
@@ -482,7 +482,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>💧 Deep Pool<br/><span style=\"font-weight:400;color:#94a3b8;\">Large pool = low impact</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>\ud83d\udca7 Deep Pool<br/><span style=\"font-weight:400;color:#94a3b8;\">Large pool = low impact</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f97316"
             },
@@ -515,7 +515,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>🏜️ Shallow Pool<br/><span style=\"font-weight:400;color:#94a3b8;\">Small pool = high impact</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>\ud83c\udfdc\ufe0f Shallow Pool<br/><span style=\"font-weight:400;color:#94a3b8;\">Small pool = high impact</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f97316"
             },
@@ -548,7 +548,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>⚠️ 3%+ Impact<br/><span style=\"font-weight:400;color:#94a3b8;\">Red flag — find more liquidity</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>\u26a0\ufe0f 3%+ Impact<br/><span style=\"font-weight:400;color:#94a3b8;\">Red flag \u2014 find more liquidity</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f97316"
             }
@@ -564,7 +564,7 @@
         {
           "id": "action_hsb-s2_1",
           "type": "speech",
-          "text": "🔀 Liquidity Routing & Price Impact",
+          "text": "\ud83d\udd00 Liquidity Routing & Price Impact",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/1-1.mp3"
         },
         {
@@ -575,7 +575,7 @@
         {
           "id": "action_hsb-s2_3",
           "type": "speech",
-          "text": "Why large swaps get worse prices — and how routing fixes it",
+          "text": "Why large swaps get worse prices \u2014 and how routing fixes it",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/1-3.mp3"
         },
         {
@@ -586,7 +586,7 @@
         {
           "id": "action_hsb-s2_5",
           "type": "speech",
-          "text": "Price impact is the effect your trade has on the pool price. A small swap barely moves the ratio. A large swap significantly shifts it — you end up paying more per token as the pool rebalances against you. Formula: the deeper the pool (more liquidity), the lower your price impact. A $1M pool can absorb a $10k swap with minimal impact. A $50k pool would move dramatically on that same trade. Pro tip: always check the price impact % before confirming a swap. Above 1% is high. Above 3% is a red flag for smaller tokens.",
+          "text": "Price impact is the effect your trade has on the pool price. A small swap barely moves the ratio. A large swap significantly shifts it \u2014 you end up paying more per token as the pool rebalances against you. Formula: the deeper the pool (more liquidity), the lower your price impact. A $1M pool can absorb a $10k swap with minimal impact. A $50k pool would move dramatically on that same trade. Pro tip: always check the price impact % before confirming a swap. Above 1% is high. Above 3% is a red flag for smaller tokens.",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/1-5.mp3"
         },
         {
@@ -597,7 +597,7 @@
         {
           "id": "action_hsb-s2_7",
           "type": "speech",
-          "text": "📉 Price Impact. Your trade moves the pool ratio",
+          "text": "\ud83d\udcc9 Price Impact. Your trade moves the pool ratio",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/1-7.mp3"
         },
         {
@@ -608,7 +608,7 @@
         {
           "id": "action_hsb-s2_9",
           "type": "speech",
-          "text": "💧 Deep Pool. Large pool = low impact",
+          "text": "\ud83d\udca7 Deep Pool. Large pool = low impact",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/1-9.mp3"
         },
         {
@@ -619,7 +619,7 @@
         {
           "id": "action_hsb-s2_11",
           "type": "speech",
-          "text": "🏜️ Shallow Pool. Small pool = high impact",
+          "text": "\ud83c\udfdc\ufe0f Shallow Pool. Small pool = high impact",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/1-11.mp3"
         },
         {
@@ -630,7 +630,7 @@
         {
           "id": "action_hsb-s2_13",
           "type": "speech",
-          "text": "⚠️ 3%+ Impact. Red flag — find more liquidity",
+          "text": "\u26a0\ufe0f 3%+ Impact. Red flag \u2014 find more liquidity",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/1-13.mp3"
         }
       ]
@@ -638,7 +638,7 @@
     {
       "id": "hsb-s3",
       "type": "slide",
-      "title": "🌉 Bridge Architecture",
+      "title": "\ud83c\udf09 Bridge Architecture",
       "order": 2,
       "content": {
         "type": "slide",
@@ -701,7 +701,7 @@
               "width": 800,
               "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🌉 Bridge Architecture</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83c\udf09 Bridge Architecture</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -725,7 +725,7 @@
               "width": 950,
               "height": 260,
               "rotate": 0,
-              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>There are two main bridge designs:</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f97316;'>Lock & Mint</b> — tokens are locked in a smart contract on the source chain. Equivalent wrapped tokens are minted on the destination chain. To return: burn the wrapped tokens, unlock the originals. This is how WBTC (Wrapped Bitcoin) works on Ethereum.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f97316;'>Liquidity Pool Bridge</b> — instead of locking/minting, the bridge uses pre-funded liquidity pools on both chains. You deposit on Chain A, someone withdraws from a pool on Chain B. Faster but requires deep liquidity on both sides.</p>",
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>There are two main bridge designs:</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f97316;'>Lock & Mint</b> \u2014 tokens are locked in a smart contract on the source chain. Equivalent wrapped tokens are minted on the destination chain. To return: burn the wrapped tokens, unlock the originals. This is how WBTC (Wrapped Bitcoin) works on Ethereum.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f97316;'>Liquidity Pool Bridge</b> \u2014 instead of locking/minting, the bridge uses pre-funded liquidity pools on both chains. You deposit on Chain A, someone withdraws from a pool on Chain B. Faster but requires deep liquidity on both sides.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -758,7 +758,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>🔒 Lock & Mint<br/><span style=\"font-weight:400;color:#94a3b8;\">WBTC model — most common</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>\ud83d\udd12 Lock & Mint<br/><span style=\"font-weight:400;color:#94a3b8;\">WBTC model \u2014 most common</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f97316"
             },
@@ -791,7 +791,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>🌊 LP Bridge<br/><span style=\"font-weight:400;color:#94a3b8;\">Pre-funded pools, faster</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>\ud83c\udf0a LP Bridge<br/><span style=\"font-weight:400;color:#94a3b8;\">Pre-funded pools, faster</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f97316"
             },
@@ -824,7 +824,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>⛓️ Canonical Bridge<br/><span style=\"font-weight:400;color:#94a3b8;\">Official chain bridge, slowest but safest</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>\u26d3\ufe0f Canonical Bridge<br/><span style=\"font-weight:400;color:#94a3b8;\">Official chain bridge, slowest but safest</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f97316"
             },
@@ -857,7 +857,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>⚡ Third-Party<br/><span style=\"font-weight:400;color:#94a3b8;\">Faster but adds smart contract risk</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>\u26a1 Third-Party<br/><span style=\"font-weight:400;color:#94a3b8;\">Faster but adds smart contract risk</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f97316"
             }
@@ -873,7 +873,7 @@
         {
           "id": "action_hsb-s3_1",
           "type": "speech",
-          "text": "🌉 Bridge Architecture",
+          "text": "\ud83c\udf09 Bridge Architecture",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/2-1.mp3"
         },
         {
@@ -895,7 +895,7 @@
         {
           "id": "action_hsb-s3_5",
           "type": "speech",
-          "text": "There are two main bridge designs: Lock & Mint — tokens are locked in a smart contract on the source chain. Equivalent wrapped tokens are minted on the destination chain. To return: burn the wrapped tokens, unlock the originals. This is how WBTC (Wrapped Bitcoin) works on Ethereum. Liquidity Pool Bridge — instead of locking/minting, the bridge uses pre-funded liquidity pools on both chains. You deposit on Chain A, someone withdraws from a pool on Chain B. Faster but requires deep liquidity on both sides.",
+          "text": "There are two main bridge designs: Lock & Mint \u2014 tokens are locked in a smart contract on the source chain. Equivalent wrapped tokens are minted on the destination chain. To return: burn the wrapped tokens, unlock the originals. This is how WBTC (Wrapped Bitcoin) works on Ethereum. Liquidity Pool Bridge \u2014 instead of locking/minting, the bridge uses pre-funded liquidity pools on both chains. You deposit on Chain A, someone withdraws from a pool on Chain B. Faster but requires deep liquidity on both sides.",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/2-5.mp3"
         },
         {
@@ -906,7 +906,7 @@
         {
           "id": "action_hsb-s3_7",
           "type": "speech",
-          "text": "🔒 Lock & Mint. WBTC model — most common",
+          "text": "\ud83d\udd12 Lock & Mint. WBTC model \u2014 most common",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/2-7.mp3"
         },
         {
@@ -917,7 +917,7 @@
         {
           "id": "action_hsb-s3_9",
           "type": "speech",
-          "text": "🌊 LP Bridge. Pre-funded pools, faster",
+          "text": "\ud83c\udf0a LP Bridge. Pre-funded pools, faster",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/2-9.mp3"
         },
         {
@@ -928,7 +928,7 @@
         {
           "id": "action_hsb-s3_11",
           "type": "speech",
-          "text": "⛓️ Canonical Bridge. Official chain bridge, slowest but safest",
+          "text": "\u26d3\ufe0f Canonical Bridge. Official chain bridge, slowest but safest",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/2-11.mp3"
         },
         {
@@ -939,7 +939,7 @@
         {
           "id": "action_hsb-s3_13",
           "type": "speech",
-          "text": "⚡ Third-Party. Faster but adds smart contract risk",
+          "text": "\u26a1 Third-Party. Faster but adds smart contract risk",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/2-13.mp3"
         }
       ]
@@ -947,7 +947,7 @@
     {
       "id": "hsb-s4",
       "type": "slide",
-      "title": "🪙 Wrapped Tokens Explained",
+      "title": "\ud83e\ude99 Wrapped Tokens Explained",
       "order": 3,
       "content": {
         "type": "slide",
@@ -1010,7 +1010,7 @@
               "width": 800,
               "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🪙 Wrapped Tokens Explained</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83e\ude99 Wrapped Tokens Explained</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -1067,7 +1067,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>🎁 Wrapped<br/><span style=\"font-weight:400;color:#94a3b8;\">Represents original token on new chain</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>\ud83c\udf81 Wrapped<br/><span style=\"font-weight:400;color:#94a3b8;\">Represents original token on new chain</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f97316"
             },
@@ -1133,7 +1133,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>🔗 Bridge Risk<br/><span style=\"font-weight:400;color:#94a3b8;\">Hack = wrapped token worthless</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>\ud83d\udd17 Bridge Risk<br/><span style=\"font-weight:400;color:#94a3b8;\">Hack = wrapped token worthless</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f97316"
             },
@@ -1166,7 +1166,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>📊 Examples<br/><span style=\"font-weight:400;color:#94a3b8;\">WBTC, WETH, WXRP</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>\ud83d\udcca Examples<br/><span style=\"font-weight:400;color:#94a3b8;\">WBTC, WETH, WXRP</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f97316"
             }
@@ -1182,7 +1182,7 @@
         {
           "id": "action_hsb-s4_1",
           "type": "speech",
-          "text": "🪙 Wrapped Tokens Explained",
+          "text": "\ud83e\ude99 Wrapped Tokens Explained",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/3-1.mp3"
         },
         {
@@ -1215,7 +1215,7 @@
         {
           "id": "action_hsb-s4_7",
           "type": "speech",
-          "text": "🎁 Wrapped. Represents original token on new chain",
+          "text": "\ud83c\udf81 Wrapped. Represents original token on new chain",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/3-7.mp3"
         },
         {
@@ -1237,7 +1237,7 @@
         {
           "id": "action_hsb-s4_11",
           "type": "speech",
-          "text": "🔗 Bridge Risk. Hack = wrapped token worthless",
+          "text": "\ud83d\udd17 Bridge Risk. Hack = wrapped token worthless",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/3-11.mp3"
         },
         {
@@ -1248,7 +1248,7 @@
         {
           "id": "action_hsb-s4_13",
           "type": "speech",
-          "text": "📊 Examples. WBTC, WETH, WXRP",
+          "text": "\ud83d\udcca Examples. WBTC, WETH, WXRP",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/3-13.mp3"
         }
       ]
@@ -1256,7 +1256,7 @@
     {
       "id": "hsb-s5",
       "type": "slide",
-      "title": "💸 Cross-Chain Fees & Impermanent Loss in Swaps",
+      "title": "\ud83d\udcb8 Cross-Chain Fees & Impermanent Loss in Swaps",
       "order": 4,
       "content": {
         "type": "slide",
@@ -1319,7 +1319,7 @@
               "width": 800,
               "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>💸 Cross-Chain Fees & Impermanent Loss in Swaps</p>",
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>\ud83d\udcb8 Cross-Chain Fees & Impermanent Loss in Swaps</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -1343,7 +1343,7 @@
               "width": 950,
               "height": 260,
               "rotate": 0,
-              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Every bridge or swap has multiple cost layers that beginners miss:</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f97316;'>Source chain gas</b> — fee to initiate the bridge transaction. <b style='color:#f97316;'>Bridge fee</b> — the protocol's cut (usually 0.05–0.3%). <b style='color:#f97316;'>Destination chain gas</b> — fee to receive on the other side. For Ethereum mainnet bridges, total costs can easily exceed $30–50. For XRPL, total fees are under $0.01.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Impermanent loss also applies if you are providing liquidity to a bridge's LP pool — the same divergence risk as any AMM pool.</p>",
+              "content": "<p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Every bridge or swap has multiple cost layers that beginners miss:</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'><b style='color:#f97316;'>Source chain gas</b> \u2014 fee to initiate the bridge transaction. <b style='color:#f97316;'>Bridge fee</b> \u2014 the protocol's cut (usually 0.05\u20130.3%). <b style='color:#f97316;'>Destination chain gas</b> \u2014 fee to receive on the other side. For Ethereum mainnet bridges, total costs can easily exceed $30\u201350. For XRPL, total fees are under $0.01.</p><br/><p style='font-size:17px;color:#cbd5e1;line-height:1.8;'>Impermanent loss also applies if you are providing liquidity to a bridge's LP pool \u2014 the same divergence risk as any AMM pool.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -1376,7 +1376,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>⛽ Source Gas<br/><span style=\"font-weight:400;color:#94a3b8;\">Fee on originating chain</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>\u26fd Source Gas<br/><span style=\"font-weight:400;color:#94a3b8;\">Fee on originating chain</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f97316"
             },
@@ -1409,7 +1409,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>🌉 Bridge Fee<br/><span style=\"font-weight:400;color:#94a3b8;\">Protocol cut 0.05–0.3%</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>\ud83c\udf09 Bridge Fee<br/><span style=\"font-weight:400;color:#94a3b8;\">Protocol cut 0.05\u20130.3%</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f97316"
             },
@@ -1442,7 +1442,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>⛽ Dest Gas<br/><span style=\"font-weight:400;color:#94a3b8;\">Fee on receiving chain</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>\u26fd Dest Gas<br/><span style=\"font-weight:400;color:#94a3b8;\">Fee on receiving chain</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f97316"
             },
@@ -1475,7 +1475,7 @@
               "width": 184,
               "height": 70,
               "rotate": 0,
-              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>💸 XRPL<br/><span style=\"font-weight:400;color:#94a3b8;\">Total fees under $0.01</span></p>",
+              "content": "<p style='font-size:12px;font-weight:700;color:#f97316;text-align:center;'>\ud83d\udcb8 XRPL<br/><span style=\"font-weight:400;color:#94a3b8;\">Total fees under $0.01</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f97316"
             }
@@ -1491,7 +1491,7 @@
         {
           "id": "action_hsb-s5_1",
           "type": "speech",
-          "text": "💸 Cross-Chain Fees & Impermanent Loss in Swaps",
+          "text": "\ud83d\udcb8 Cross-Chain Fees & Impermanent Loss in Swaps",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/4-1.mp3"
         },
         {
@@ -1513,7 +1513,7 @@
         {
           "id": "action_hsb-s5_5",
           "type": "speech",
-          "text": "Every bridge or swap has multiple cost layers that beginners miss: Source chain gas — fee to initiate the bridge transaction. Bridge fee — the protocol's cut (usually 0.05–0.3%). Destination chain gas — fee to receive on the other side. For Ethereum mainnet bridges, total costs can easily exceed $30–50. For XRPL, total fees are under $0.01. Impermanent loss also applies if you are providing liquidity to a bridge's LP pool — the same divergence risk as any AMM pool.",
+          "text": "Every bridge or swap has multiple cost layers that beginners miss: Source chain gas \u2014 fee to initiate the bridge transaction. Bridge fee \u2014 the protocol's cut (usually 0.05\u20130.3%). Destination chain gas \u2014 fee to receive on the other side. For Ethereum mainnet bridges, total costs can easily exceed $30\u201350. For XRPL, total fees are under $0.01. Impermanent loss also applies if you are providing liquidity to a bridge's LP pool \u2014 the same divergence risk as any AMM pool.",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/4-5.mp3"
         },
         {
@@ -1524,7 +1524,7 @@
         {
           "id": "action_hsb-s5_7",
           "type": "speech",
-          "text": "⛽ Source Gas. Fee on originating chain",
+          "text": "\u26fd Source Gas. Fee on originating chain",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/4-7.mp3"
         },
         {
@@ -1535,7 +1535,7 @@
         {
           "id": "action_hsb-s5_9",
           "type": "speech",
-          "text": "🌉 Bridge Fee. Protocol cut 0.05–0.3%",
+          "text": "\ud83c\udf09 Bridge Fee. Protocol cut 0.05\u20130.3%",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/4-9.mp3"
         },
         {
@@ -1546,7 +1546,7 @@
         {
           "id": "action_hsb-s5_11",
           "type": "speech",
-          "text": "⛽ Dest Gas. Fee on receiving chain",
+          "text": "\u26fd Dest Gas. Fee on receiving chain",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/4-11.mp3"
         },
         {
@@ -1557,15 +1557,15 @@
         {
           "id": "action_hsb-s5_13",
           "type": "speech",
-          "text": "💸 XRPL. Total fees under $0.01",
+          "text": "\ud83d\udcb8 XRPL. Total fees under $0.01",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/4-13.mp3"
         }
       ]
     },
     {
       "id": "kc-oc-hs-swapbridge",
-      "type": "slide",
-      "title": "Knowledge Check — Swapping & Bridging (High School)",
+      "type": "quiz",
+      "title": "Knowledge Check \u2014 Swapping & Bridging (High School)",
       "order": 5,
       "content": {
         "type": "quiz",
@@ -1580,7 +1580,7 @@
                 "value": "A"
               },
               {
-                "label": "x × y = k",
+                "label": "x \u00d7 y = k",
                 "value": "B"
               },
               {
@@ -1595,7 +1595,7 @@
             "answer": [
               "B"
             ],
-            "analysis": "The constant product formula x × y = k ensures that as you buy one token (reducing its reserve), the other token's quantity must increase proportionally to keep the product constant. This automatically adjusts the price — no order book needed.",
+            "analysis": "The constant product formula x \u00d7 y = k ensures that as you buy one token (reducing its reserve), the other token's quantity must increase proportionally to keep the product constant. This automatically adjusts the price \u2014 no order book needed.",
             "points": 1
           },
           {
@@ -1651,7 +1651,7 @@
             "answer": [
               "B"
             ],
-            "analysis": "Ronin used a 5-of-9 multisig where Axie Infinity controlled 4 validators. The attacker compromised all 4 plus one external validator — reaching the 5-of-9 threshold. This centralization made the entire $625M vulnerable to a single coordinated attack.",
+            "analysis": "Ronin used a 5-of-9 multisig where Axie Infinity controlled 4 validators. The attacker compromised all 4 plus one external validator \u2014 reaching the 5-of-9 threshold. This centralization made the entire $625M vulnerable to a single coordinated attack.",
             "points": 1
           },
           {
@@ -1679,7 +1679,7 @@
             "answer": [
               "B"
             ],
-            "analysis": "Price impact is the percentage by which your trade shifts the token ratio in the pool. Large trades against small pools have high impact. Always check the price impact before confirming — above 1% is significant, above 3% is a red flag for smaller tokens.",
+            "analysis": "Price impact is the percentage by which your trade shifts the token ratio in the pool. Large trades against small pools have high impact. Always check the price impact before confirming \u2014 above 1% is significant, above 3% is a red flag for smaller tokens.",
             "points": 1
           },
           {
@@ -1735,7 +1735,7 @@
             "answer": [
               "B"
             ],
-            "analysis": "When you provide liquidity and token prices move relative to each other, the AMM rebalances your position — leaving you with more of the fallen token and less of the risen one. Compared to just holding, you end up worse off. Stablecoin pairs minimize IL since both prices stay close to $1.",
+            "analysis": "When you provide liquidity and token prices move relative to each other, the AMM rebalances your position \u2014 leaving you with more of the fallen token and less of the risen one. Compared to just holding, you end up worse off. Stablecoin pairs minimize IL since both prices stay close to $1.",
             "points": 1
           },
           {
@@ -1748,7 +1748,7 @@
                 "value": "A"
               },
               {
-                "label": "Ethereum charges per-computation gas fees that can spike with congestion — XRPL charges a flat fee under $0.01",
+                "label": "Ethereum charges per-computation gas fees that can spike with congestion \u2014 XRPL charges a flat fee under $0.01",
                 "value": "B"
               },
               {
@@ -1763,7 +1763,7 @@
             "answer": [
               "B"
             ],
-            "analysis": "Ethereum's gas model charges for every computational operation, and fees spike during congestion — a bridge transaction can cost $30–$100. XRPL charges a fixed 'drops' fee (fractions of XRP) regardless of network load, making it ideal for high-frequency or small-value cross-chain operations.",
+            "analysis": "Ethereum's gas model charges for every computational operation, and fees spike during congestion \u2014 a bridge transaction can cost $30\u2013$100. XRPL charges a fixed 'drops' fee (fractions of XRP) regardless of network load, making it ideal for high-frequency or small-value cross-chain operations.",
             "points": 1
           }
         ]
