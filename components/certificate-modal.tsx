@@ -31,7 +31,7 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
     if (!nickname) setEditingName(true);
   }, [nickname]);
 
-  // Pre-load the certificate background as a data URL so Canvas can draw it
+  // Pre-load the clean certificate background as a data URL for Canvas download
   useEffect(() => {
     fetch('/certificate-bg.png')
       .then((r) => r.blob())
@@ -54,48 +54,49 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
     if (downloading || !bgDataUrl) return;
     setDownloading(true);
     try {
-      // Load background image
       const bg = new Image();
       bg.src = bgDataUrl;
       await new Promise<void>((res) => { bg.onload = () => res(); bg.onerror = () => res(); });
 
-      const W = bg.naturalWidth || 1006;
-      const H = bg.naturalHeight || 712;
-      const S = 2; // 2× for sharp download
+      const W = bg.naturalWidth;   // 1008
+      const H = bg.naturalHeight;  // 734
+      const S = 2;
       const canvas = document.createElement('canvas');
       canvas.width = W * S;
       canvas.height = H * S;
       const ctx = canvas.getContext('2d')!;
       ctx.scale(S, S);
 
-      // Draw the exact certificate background image
+      // Draw the clean background (baked-in text already erased)
       ctx.drawImage(bg, 0, 0, W, H);
 
-      // ── Overlay: member name (italic script, centered ~56% from top) ──
+      // ── Member name — italic script, centered at ~51% from top ──
       ctx.textAlign = 'center';
       ctx.fillStyle = '#dce8f8';
-      ctx.font = `italic ${Math.round(H * 0.072)}px Georgia, serif`;
-      ctx.fillText(displayName || 'OnlyCrypto Member', W / 2, H * 0.535);
+      ctx.font = `italic ${Math.round(H * 0.068)}px Georgia, serif`;
+      ctx.fillText(displayName || 'OnlyCrypto Member', W / 2, H * 0.515);
 
-      // ── Overlay: course completion sentence (two lines, ~63–68% from top) ──
-      ctx.fillStyle = '#c8d8ee';
-      ctx.font = `${Math.round(H * 0.024)}px Arial, sans-serif`;
-      const line1 = `has successfully completed the course "${courseName}"`;
-      const line2 = 'demonstrating proficiency in fundamental blockchain technology concepts.';
-      ctx.fillText(line1, W / 2, H * 0.635);
-      ctx.fillText(line2, W / 2, H * 0.665);
+      // ── Course line 1 — ~62% from top ──
+      ctx.fillStyle = '#b8cce0';
+      ctx.font = `${Math.round(H * 0.022)}px Arial, sans-serif`;
+      ctx.fillText(
+        `has successfully completed the course "${courseName}"`,
+        W / 2,
+        H * 0.622,
+      );
 
-      // ── Overlay: DATE ISSUED value (bottom-left, ~85% from top) ──
+      // ── Course line 2 — ~66% from top ──
+      ctx.fillText(
+        'demonstrating proficiency in fundamental blockchain technology concepts.',
+        W / 2,
+        H * 0.662,
+      );
+
+      // ── Date value — left-aligned at ~86% from top ──
       ctx.textAlign = 'left';
       ctx.fillStyle = '#5b9bd5';
       ctx.font = `italic ${Math.round(H * 0.022)}px Georgia, serif`;
       ctx.fillText(completedDate, W * 0.195, H * 0.862);
-
-      // ── Overlay: PASS badge percentage (center badge, ~82% from top) ──
-      ctx.textAlign = 'center';
-      ctx.fillStyle = '#ffffff';
-      ctx.font = `bold ${Math.round(H * 0.028)}px Arial, sans-serif`;
-      ctx.fillText(`${pct}%`, W / 2, H * 0.82);
 
       const slug = courseName.replace(/[^a-z0-9]/gi, '-').toLowerCase();
       canvas.toBlob((blob) => {
@@ -113,7 +114,7 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
     } finally {
       setDownloading(false);
     }
-  }, [courseName, downloading, displayName, pct, completedDate, bgDataUrl]);
+  }, [courseName, downloading, displayName, completedDate, bgDataUrl]);
 
   return (
     <AnimatePresence>
@@ -131,7 +132,7 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
           transition={{ type: 'spring', stiffness: 300, damping: 28 }}
           className="w-full max-w-3xl my-auto"
         >
-          {/* Controls above certificate */}
+          {/* Controls */}
           <div className="flex items-center justify-between mb-3 px-1">
             <div className="flex items-center gap-2">
               {editingName ? (
@@ -179,86 +180,70 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
             </div>
           </div>
 
-          {/* Certificate preview — bg image + text overlaid */}
-          <div className="relative w-full" style={{ aspectRatio: '1006 / 712' }}>
-            {/* The exact certificate image */}
+          {/* Certificate — bg image with text overlaid at exact positions */}
+          <div className="relative w-full" style={{ aspectRatio: '1008 / 734' }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/certificate-bg.png"
               alt="Certificate"
-              className="w-full h-full object-cover rounded-sm"
+              className="w-full h-full object-cover rounded-sm select-none"
+              draggable={false}
             />
 
-            {/* Dynamic text overlaid on top */}
-            <div className="absolute inset-0 flex flex-col items-center" style={{ fontFamily: 'Georgia, serif' }}>
+            {/* Member name — centered, ~51% from top */}
+            <div
+              className="absolute left-1/2 -translate-x-1/2 text-center whitespace-nowrap pointer-events-none"
+              style={{
+                top: '49.5%',
+                color: '#dce8f8',
+                fontSize: 'clamp(16px, 3.8vw, 36px)',
+                fontFamily: 'Georgia, serif',
+                fontStyle: 'italic',
+                textShadow: '0 1px 6px rgba(0,0,0,0.5)',
+              }}
+            >
+              {displayName || 'OnlyCrypto Member'}
+            </div>
 
-              {/* Member name — sits at ~53.5% from top */}
-              <div
-                style={{
-                  position: 'absolute',
-                  top: '51%',
-                  left: '50%',
-                  transform: 'translateX(-50%)',
-                  color: '#dce8f8',
-                  fontSize: 'clamp(18px, 4.2vw, 38px)',
-                  fontStyle: 'italic',
-                  whiteSpace: 'nowrap',
-                  textShadow: '0 1px 4px rgba(0,0,0,0.4)',
-                }}
-              >
-                {displayName || 'OnlyCrypto Member'}
-              </div>
+            {/* Course line 1 — ~62% from top */}
+            <div
+              className="absolute left-1/2 -translate-x-1/2 text-center whitespace-nowrap pointer-events-none"
+              style={{
+                top: '61%',
+                color: '#b8cce0',
+                fontSize: 'clamp(6px, 1.25vw, 12px)',
+                fontFamily: 'Arial, sans-serif',
+              }}
+            >
+              has successfully completed the course &ldquo;{courseName}&rdquo;
+            </div>
 
-              {/* Course completion lines — ~63–68% from top */}
-              <div
-                style={{
-                  position: 'absolute',
-                  top: '62%',
-                  left: '50%',
-                  transform: 'translateX(-50%)',
-                  color: '#c8d8ee',
-                  fontSize: 'clamp(8px, 1.4vw, 13px)',
-                  fontFamily: 'Arial, sans-serif',
-                  textAlign: 'center',
-                  whiteSpace: 'nowrap',
-                  lineHeight: 1.7,
-                }}
-              >
-                has successfully completed the course &ldquo;{courseName}&rdquo;<br />
-                demonstrating proficiency in fundamental blockchain technology concepts.
-              </div>
+            {/* Course line 2 — ~66% from top */}
+            <div
+              className="absolute left-1/2 -translate-x-1/2 text-center whitespace-nowrap pointer-events-none"
+              style={{
+                top: '65.5%',
+                color: '#b8cce0',
+                fontSize: 'clamp(6px, 1.25vw, 12px)',
+                fontFamily: 'Arial, sans-serif',
+              }}
+            >
+              demonstrating proficiency in fundamental blockchain technology concepts.
+            </div>
 
-              {/* DATE ISSUED value — bottom-left ~86% from top */}
-              <div
-                style={{
-                  position: 'absolute',
-                  top: '84%',
-                  left: '19.5%',
-                  color: '#5b9bd5',
-                  fontSize: 'clamp(7px, 1.2vw, 12px)',
-                  fontStyle: 'italic',
-                  fontFamily: 'Georgia, serif',
-                }}
-              >
-                {completedDate}
-              </div>
-
-              {/* PASS badge % override — center ~82% from top */}
-              <div
-                style={{
-                  position: 'absolute',
-                  top: '79%',
-                  left: '50%',
-                  transform: 'translateX(-50%)',
-                  color: '#ffffff',
-                  fontSize: 'clamp(7px, 1.1vw, 11px)',
-                  fontWeight: 700,
-                  fontFamily: 'Arial, sans-serif',
-                  textAlign: 'center',
-                }}
-              >
-                {pct}%
-              </div>
+            {/* Date value — left side, ~85% from top */}
+            <div
+              className="absolute pointer-events-none"
+              style={{
+                top: '83.5%',
+                left: '19.5%',
+                color: '#5b9bd5',
+                fontSize: 'clamp(6px, 1.1vw, 11px)',
+                fontFamily: 'Georgia, serif',
+                fontStyle: 'italic',
+              }}
+            >
+              {completedDate}
             </div>
           </div>
         </motion.div>
