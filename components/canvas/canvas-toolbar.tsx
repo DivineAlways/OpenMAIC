@@ -136,6 +136,16 @@ export function CanvasToolbar({
     onSeek(Math.min(targetIndex, scenesCount - 1));
   }, [onSeek, scenesCount]);
 
+  const handleProgressTouch = useCallback((e: React.TouchEvent<HTMLDivElement>) => {
+    if (!onSeek || scenesCount <= 0) return;
+    e.preventDefault();
+    const touch = e.changedTouches[0];
+    const rect = e.currentTarget.getBoundingClientRect();
+    const ratio = Math.max(0, Math.min(1, (touch.clientX - rect.left) / rect.width));
+    const targetIndex = Math.floor(ratio * scenesCount);
+    onSeek(Math.min(targetIndex, scenesCount - 1));
+  }, [onSeek, scenesCount]);
+
   const handleProgressMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
     if (!onSeek || scenesCount <= 0) return;
     const rect = e.currentTarget.getBoundingClientRect();
@@ -187,9 +197,10 @@ export function CanvasToolbar({
                 'w-full relative overflow-visible',
                 onSeek ? 'cursor-pointer group/progress' : '',
               )}
-              style={{ height: seekHover && onSeek ? 6 : 4, transition: 'height 0.15s ease' }}
+              style={{ height: seekHover && onSeek ? 8 : 6, transition: 'height 0.15s ease', touchAction: 'none', paddingBlock: 8 }}
               data-tour="progress-bar"
               onClick={handleProgressClick}
+              onTouchEnd={handleProgressTouch}
               onMouseMove={handleProgressMouseMove}
               onMouseEnter={() => { if (onSeek) setSeekHover(true); }}
               onMouseLeave={() => { setSeekHover(false); setSeekPreviewIndex(null); }}
@@ -218,13 +229,10 @@ export function CanvasToolbar({
                   style={{ width: `${((seekPreviewIndex + 1) / Math.max(scenesCount, 1)) * 100}%` }}
                 />
               )}
-              {/* Scrubber thumb */}
+              {/* Scrubber thumb — always visible so users know it's interactive */}
               {onSeek && (
                 <div
-                  className={cn(
-                    'absolute top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-violet-500 dark:bg-violet-400 shadow-sm pointer-events-none transition-opacity duration-150',
-                    seekHover ? 'opacity-100' : 'opacity-0',
-                  )}
+                  className="absolute top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-violet-500 dark:bg-violet-400 shadow-sm pointer-events-none"
                   style={{ left: `calc(${overallPercent}% - 6px)` }}
                 />
               )}

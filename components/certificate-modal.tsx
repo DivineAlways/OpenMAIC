@@ -96,14 +96,13 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
         className="fixed inset-0 z-[9999] bg-black/80 backdrop-blur-sm"
         onClick={e => { if (e.target === e.currentTarget) onClose(); }}
       >
-        {/* Centered box — never taller than viewport */}
+        {/* Centered column — controls top, certificate fills remaining space */}
         <motion.div
           initial={{ opacity: 0, scale: 0.93 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.93 }}
           transition={{ type: 'spring', stiffness: 300, damping: 28 }}
-          className="absolute inset-4 flex flex-col gap-2"
-          style={{ top: 16, left: 16, right: 16, bottom: 16 }}
+          className="absolute inset-0 flex flex-col gap-2 px-4 py-4"
         >
           {/* Controls */}
           <div className="flex items-center justify-between shrink-0">
@@ -143,8 +142,9 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
             </div>
           </div>
 
-          {/* Certificate image — takes all remaining space, contained */}
-          <div className="flex-1 min-h-0 relative">
+          {/* Certificate image — centered, fits within available space */}
+          <div className="flex-1 min-h-0 flex items-center justify-center overflow-hidden">
+            <div className="relative w-full" style={{ aspectRatio: '1008 / 734', maxHeight: '100%' }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/certificate-bg.png"
@@ -153,13 +153,12 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
               draggable={false}
             />
 
-            {/* Text overlays — positioned as % of the img's rendered area */}
-            {/* We use a matching aspect-ratio box centered over the image */}
+            {/* Text overlays — positioned as % of the rendered image area */}
             <div
-              className="absolute inset-0 flex items-center justify-center pointer-events-none"
+              className="absolute inset-0 pointer-events-none"
             >
               {/* Inner box matches the image's 1008:734 aspect ratio */}
-              <div className="relative h-full" style={{ aspectRatio: '1008 / 734', containerType: 'size' }}>
+              <div className="relative w-full h-full" style={{ containerType: 'size' }}>
 
                 {/* Member name */}
                 <div className="absolute w-full text-center" style={{ top: '49%' }}>
@@ -213,6 +212,7 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
                 </div>
 
               </div>
+            </div>
             </div>
           </div>
         </motion.div>
