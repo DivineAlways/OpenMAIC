@@ -70,10 +70,12 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
       // Draw the clean background (baked-in text already erased)
       ctx.drawImage(bg, 0, 0, W, H);
 
-      // ── Member name — italic script, centered at ~51% from top ──
+      // ── Member name — Dancing Script gold, centered at ~51% from top ──
+      // Ensure the font is loaded before drawing
+      await document.fonts.load(`bold ${Math.round(H * 0.068)}px "Dancing Script"`);
       ctx.textAlign = 'center';
-      ctx.fillStyle = '#dce8f8';
-      ctx.font = `italic ${Math.round(H * 0.068)}px Georgia, serif`;
+      ctx.fillStyle = '#d4a843';
+      ctx.font = `bold ${Math.round(H * 0.068)}px "Dancing Script", cursive`;
       ctx.fillText(displayName || 'OnlyCrypto Member', W / 2, H * 0.515);
 
       // ── Course line 1 — ~62% from top ──
@@ -190,16 +192,16 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
               draggable={false}
             />
 
-            {/* Member name — centered, ~51% from top */}
+            {/* Member name — centered, ~51% from top, gold cursive */}
             <div
               className="absolute left-1/2 -translate-x-1/2 text-center whitespace-nowrap pointer-events-none"
               style={{
                 top: '49.5%',
-                color: '#dce8f8',
+                color: '#d4a843',
                 fontSize: 'clamp(16px, 3.8vw, 36px)',
-                fontFamily: 'Georgia, serif',
-                fontStyle: 'italic',
-                textShadow: '0 1px 6px rgba(0,0,0,0.5)',
+                fontFamily: 'var(--font-dancing), "Dancing Script", cursive',
+                fontWeight: 700,
+                textShadow: '0 1px 8px rgba(0,0,0,0.6)',
               }}
             >
               {displayName || 'OnlyCrypto Member'}
