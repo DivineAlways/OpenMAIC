@@ -24,6 +24,7 @@ import { useDraftCache } from '@/lib/hooks/use-draft-cache';
 import { SpeechButton } from '@/components/audio/speech-button';
 import { getQuizResult, saveQuizResult, type QuizResult } from '@/lib/utils/course-progress';
 import { CertificateModal } from '@/components/certificate-modal';
+import { useSettingsStore } from '@/lib/store/settings';
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 
@@ -146,12 +147,44 @@ function QuizCover({
   questionCount,
   totalPoints,
   onStart,
+  onSkip,
+  autoSkipDelay = 4000,
 }: {
   questionCount: number;
   totalPoints: number;
   onStart: () => void;
+  onSkip?: () => void;
+  autoSkipDelay?: number;
 }) {
   const { t } = useI18n();
+  const autoPlayLecture = useSettingsStore((s) => s.autoPlayLecture);
+  const [skipCountdown, setSkipCountdown] = useState<number | null>(null);
+
+  // Auto-skip countdown when auto-play is enabled and onSkip is provided
+  useEffect(() => {
+    if (!onSkip || !autoPlayLecture) return;
+
+    setSkipCountdown(Math.ceil(autoSkipDelay / 1000));
+
+    const countdownInterval = setInterval(() => {
+      setSkipCountdown((prev) => {
+        if (prev === null || prev <= 1) {
+          clearInterval(countdownInterval);
+          return null;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+
+    const skipTimer = setTimeout(() => {
+      onSkip();
+    }, autoSkipDelay);
+
+    return () => {
+      clearTimeout(skipTimer);
+      clearInterval(countdownInterval);
+    };
+  }, [onSkip, autoPlayLecture, autoSkipDelay]);
 
   return (
     <div className="w-full h-full flex flex-col items-center justify-center gap-4 relative overflow-hidden">
@@ -205,6 +238,17 @@ function QuizCover({
           </span>
         </div>
       </motion.div>
+
+      {onSkip && autoPlayLecture && skipCountdown !== null && (
+        <motion.div
+          initial={{ y: 10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.35 }}
+          className="text-sm text-amber-500 dark:text-amber-400 font-medium z-10"
+        >
+          Auto-advancing to next lesson in {skipCountdown}s...
+        </motion.div>
+      )}
 
       <motion.button
         initial={{ y: 10, opacity: 0 }}
@@ -888,21 +932,22 @@ export function QuizView({ questions, sceneId, courseId, courseTitle, onComplete
   return (
     <div className="w-full h-full bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-900 overflow-hidden flex flex-col">
       <AnimatePresence mode="wait">
-        {phase === 'not_started' && (
-          <motion.div
-            key="cover"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0, x: -20 }}
-            className="flex-1"
-          >
-            <QuizCover
-              questionCount={questions.length}
-              totalPoints={totalPoints}
-              onStart={() => setPhase('answering')}
-            />
-          </motion.div>
-        )}
+      {phase === 'not_started' && (
+        <motion.div
+          key="cover"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0, x: -20 }}
+          className="flex-1"
+        >
+          <QuizCover
+            questionCount={questions.length}
+            totalPoints={totalPoints}
+            onStart={() => setPhase('answering')}
+            onSkip={onNextLesson}
+          />
+        </motion.div>
+      )}
 
         {phase === 'answering' && (
           <motion.div
