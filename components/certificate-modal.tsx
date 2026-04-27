@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useCallback, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Download, Edit2, Check } from 'lucide-react';
 import { useUserProfileStore } from '@/lib/store/user-profile';
@@ -86,13 +87,13 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
     }
   }, [courseName, downloading, displayName, completedDate, bgDataUrl]);
 
-  return (
+  const content = (
     <AnimatePresence>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="fixed inset-0 z-[200] bg-black/80 backdrop-blur-sm"
+        className="fixed inset-0 z-[9999] bg-black/80 backdrop-blur-sm"
         onClick={e => { if (e.target === e.currentTarget) onClose(); }}
       >
         {/* Centered box — never taller than viewport */}
@@ -158,7 +159,7 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
               className="absolute inset-0 flex items-center justify-center pointer-events-none"
             >
               {/* Inner box matches the image's 1008:734 aspect ratio */}
-              <div className="relative h-full" style={{ aspectRatio: '1008 / 734' }}>
+              <div className="relative h-full" style={{ aspectRatio: '1008 / 734', containerType: 'size' }}>
 
                 {/* Member name */}
                 <div className="absolute w-full text-center" style={{ top: '49%' }}>
@@ -218,4 +219,6 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
       </motion.div>
     </AnimatePresence>
   );
+
+  return createPortal(content, document.body);
 }
