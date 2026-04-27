@@ -80,7 +80,7 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
 
       // ── Course line 1 — ~62% from top ──
       ctx.fillStyle = '#b8cce0';
-      ctx.font = `${Math.round(H * 0.022)}px Arial, sans-serif`;
+      ctx.font = `${Math.round(H * 0.030)}px Arial, sans-serif`;
       ctx.fillText(
         `has successfully completed the course "${courseName}"`,
         W / 2,
@@ -97,7 +97,7 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
       // ── Date value — centered under DATE ISSUED label (~28% from left) ──
       ctx.textAlign = 'center';
       ctx.fillStyle = '#5b9bd5';
-      ctx.font = `italic ${Math.round(H * 0.022)}px Georgia, serif`;
+      ctx.font = `italic ${Math.round(H * 0.032)}px Georgia, serif`;
       ctx.fillText(completedDate, W * 0.28, H * 0.862);
 
       const slug = courseName.replace(/[^a-z0-9]/gi, '-').toLowerCase();
@@ -124,7 +124,7 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="fixed inset-0 z-[200] flex items-start justify-center bg-black/80 backdrop-blur-sm p-4 pt-12 pb-16 overflow-y-auto"
+        className="fixed inset-0 z-[200] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 overflow-y-auto"
         onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
       >
         <motion.div
@@ -132,7 +132,7 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.92, y: 20 }}
           transition={{ type: 'spring', stiffness: 300, damping: 28 }}
-          className="w-full max-w-3xl my-auto"
+          className="w-full max-w-5xl my-auto"
         >
           {/* Controls */}
           <div className="flex items-center justify-between mb-3 px-1">
@@ -213,7 +213,7 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
               style={{
                 top: '61%',
                 color: '#b8cce0',
-                fontSize: 'clamp(6px, 1.25vw, 12px)',
+                fontSize: 'clamp(9px, 1.6vw, 15px)',
                 fontFamily: 'Arial, sans-serif',
               }}
             >
@@ -226,7 +226,7 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
               style={{
                 top: '65.5%',
                 color: '#b8cce0',
-                fontSize: 'clamp(6px, 1.25vw, 12px)',
+                fontSize: 'clamp(9px, 1.6vw, 15px)',
                 fontFamily: 'Arial, sans-serif',
               }}
             >
@@ -241,7 +241,7 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
                 left: '14%',
                 width: '28%',
                 color: '#5b9bd5',
-                fontSize: 'clamp(6px, 1.1vw, 11px)',
+                fontSize: 'clamp(10px, 1.6vw, 16px)',
                 fontFamily: 'Georgia, serif',
                 fontStyle: 'italic',
               }}
