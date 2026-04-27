@@ -1343,7 +1343,7 @@ export const useSettingsStore = create<SettingsState>()(
     },
     {
       name: 'settings-storage',
-      version: 2,
+      version: 3,
       // Migrate persisted state
       migrate: (persistedState: unknown, version: number) => {
         const state = persistedState as Partial<SettingsState>;
@@ -1352,6 +1352,13 @@ export const useSettingsStore = create<SettingsState>()(
         if (version === 0) {
           if (state.providerId === 'openai' && state.modelId === 'gpt-4o-mini') {
             state.modelId = '';
+          }
+        }
+
+        // v2 → v3: switch kimi-k2.5 (reasoning model, slow) to deepseek-v3.2 (fast)
+        if (version <= 2) {
+          if (state.modelId === 'moonshotai/kimi-k2.5') {
+            state.modelId = 'deepseek-ai/deepseek-v3.2';
           }
         }
 
