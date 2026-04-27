@@ -1563,126 +1563,212 @@
       ]
     },
     {
-      "id": "hsb-s6",
+      "id": "kc-oc-hs-swapbridge",
       "type": "slide",
       "title": "Knowledge Check — Swapping & Bridging (High School)",
       "order": 5,
       "content": {
-        "type": "slide",
-        "canvas": {
-          "id": "hsb-s6-canvas",
-          "viewportSize": 1000,
-          "viewportRatio": 0.5625,
-          "background": {
-            "type": "solid",
-            "color": "#0b1120"
-          },
-          "theme": {
-            "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f97316",
-              "#3b82f6",
-              "#8b5cf6"
+        "type": "quiz",
+        "questions": [
+          {
+            "id": "kc-oc-hs-swapbridge-q1",
+            "type": "single",
+            "question": "What formula governs AMM swap pricing?",
+            "options": [
+              {
+                "label": "p = supply / demand",
+                "value": "A"
+              },
+              {
+                "label": "x × y = k",
+                "value": "B"
+              },
+              {
+                "label": "price = fees / volume",
+                "value": "C"
+              },
+              {
+                "label": "APY = rewards / TVL",
+                "value": "D"
+              }
             ],
-            "fontColor": "#f1f5f9",
-            "fontName": "Inter"
+            "answer": [
+              "B"
+            ],
+            "analysis": "The constant product formula x × y = k ensures that as you buy one token (reducing its reserve), the other token's quantity must increase proportionally to keep the product constant. This automatically adjusts the price — no order book needed.",
+            "points": 1
           },
-          "elements": [
-            {
-              "id": "hsb-s6-bar",
-              "type": "shape",
-              "left": 0,
-              "top": 0,
-              "width": 1000,
-              "height": 6,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#f97316",
-              "fixedRatio": false
-            },
-            {
-              "id": "hsb-s6-hbg",
-              "type": "shape",
-              "left": 0,
-              "top": 6,
-              "width": 1000,
-              "height": 96,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#0f1729",
-              "fixedRatio": false
-            },
-            {
-              "id": "hsb-s6-title",
-              "type": "text",
-              "left": 24,
-              "top": 16,
-              "width": 800,
-              "height": 52,
-              "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🎯 Knowledge Check — Swapping & Bridging (High School)</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "hsb-s6-sub",
-              "type": "text",
-              "left": 24,
-              "top": 66,
-              "width": 800,
-              "height": 30,
-              "rotate": 0,
-              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Test your knowledge</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#64748b"
-            },
-            {
-              "id": "hsb-s6-body",
-              "type": "text",
-              "left": 24,
-              "top": 112,
-              "width": 950,
-              "height": 440,
-              "rotate": 0,
-              "content": "<p style='font-size:15px;font-weight:700;color:#f1f5f9;margin-bottom:4px;'>1. What formula governs AMM swap pricing?</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ p = supply / demand</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>✅ x × y = k</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ price = fees / volume</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ APY = rewards / TVL</p><br/><p style='font-size:15px;font-weight:700;color:#f1f5f9;margin-bottom:4px;'>2. What is a wrapped token?</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ A token with extra security features</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>✅ A representation of one token on a different blockchain</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ A stablecoin pegged to another crypto</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ A governance token for bridges</p><br/><p style='font-size:15px;font-weight:700;color:#f1f5f9;margin-bottom:4px;'>3. What made the Ronin bridge hack possible?</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ Slippage was too high</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>✅ The bridge smart contract held large locked funds</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ The wrapped tokens were minted incorrectly</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ The DEX aggregator routed poorly</p><br/><p style='font-size:15px;font-weight:700;color:#f1f5f9;margin-bottom:4px;'>4. What is price impact in a DEX swap?</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ The fee charged by the protocol</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>✅ How much your trade moves the pool price</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ The difference between CEX and DEX prices</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ Gas cost on the destination chain</p><br/>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#cbd5e1"
-            }
-          ]
-        }
+          {
+            "id": "kc-oc-hs-swapbridge-q2",
+            "type": "single",
+            "question": "What is a wrapped token?",
+            "options": [
+              {
+                "label": "A token with extra security features",
+                "value": "A"
+              },
+              {
+                "label": "A representation of one token on a different blockchain",
+                "value": "B"
+              },
+              {
+                "label": "A stablecoin pegged to another crypto",
+                "value": "C"
+              },
+              {
+                "label": "A governance token for bridges",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Wrapped tokens (like WBTC or WETH) represent an asset on a chain where it doesn't natively exist. They maintain a 1:1 peg with the original, backed by locked assets held by the bridge. If the bridge is exploited, wrapped tokens can lose their backing.",
+            "points": 1
+          },
+          {
+            "id": "kc-oc-hs-swapbridge-q3",
+            "type": "single",
+            "question": "What made the Ronin bridge hack possible?",
+            "options": [
+              {
+                "label": "Slippage was set too high",
+                "value": "A"
+              },
+              {
+                "label": "Five of nine validator keys were compromised",
+                "value": "B"
+              },
+              {
+                "label": "The wrapped tokens were minted incorrectly",
+                "value": "C"
+              },
+              {
+                "label": "The DEX aggregator routed poorly",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Ronin used a 5-of-9 multisig where Axie Infinity controlled 4 validators. The attacker compromised all 4 plus one external validator — reaching the 5-of-9 threshold. This centralization made the entire $625M vulnerable to a single coordinated attack.",
+            "points": 1
+          },
+          {
+            "id": "kc-oc-hs-swapbridge-q4",
+            "type": "single",
+            "question": "What is price impact in a DEX swap?",
+            "options": [
+              {
+                "label": "The fee charged by the protocol",
+                "value": "A"
+              },
+              {
+                "label": "How much your trade moves the pool's price",
+                "value": "B"
+              },
+              {
+                "label": "The difference between CEX and DEX prices",
+                "value": "C"
+              },
+              {
+                "label": "Gas cost on the destination chain",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Price impact is the percentage by which your trade shifts the token ratio in the pool. Large trades against small pools have high impact. Always check the price impact before confirming — above 1% is significant, above 3% is a red flag for smaller tokens.",
+            "points": 1
+          },
+          {
+            "id": "kc-oc-hs-swapbridge-q5",
+            "type": "single",
+            "question": "What is a DEX aggregator?",
+            "options": [
+              {
+                "label": "A centralized exchange that lists DEX tokens",
+                "value": "A"
+              },
+              {
+                "label": "A tool that routes your swap across multiple pools for the best price",
+                "value": "B"
+              },
+              {
+                "label": "A bridge that connects two DEXs on different chains",
+                "value": "C"
+              },
+              {
+                "label": "A smart contract that stores liquidity pool rewards",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Aggregators like 1inch split your order across multiple pools simultaneously to minimize slippage and find the best execution price. On large trades, this can save significant amounts compared to trading against a single pool.",
+            "points": 1
+          },
+          {
+            "id": "kc-oc-hs-swapbridge-q6",
+            "type": "single",
+            "question": "What is impermanent loss in a swap liquidity pool?",
+            "options": [
+              {
+                "label": "Gas fees lost on a failed transaction",
+                "value": "A"
+              },
+              {
+                "label": "Loss from providing liquidity when token prices diverge from deposit ratio",
+                "value": "B"
+              },
+              {
+                "label": "The bridge fee on cross-chain transfers",
+                "value": "C"
+              },
+              {
+                "label": "Slippage from a large market order",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "When you provide liquidity and token prices move relative to each other, the AMM rebalances your position — leaving you with more of the fallen token and less of the risen one. Compared to just holding, you end up worse off. Stablecoin pairs minimize IL since both prices stay close to $1.",
+            "points": 1
+          },
+          {
+            "id": "kc-oc-hs-swapbridge-q7",
+            "type": "single",
+            "question": "Why does bridging on Ethereum mainnet cost more than bridging on XRPL?",
+            "options": [
+              {
+                "label": "XRPL has faster validators",
+                "value": "A"
+              },
+              {
+                "label": "Ethereum charges per-computation gas fees that can spike with congestion — XRPL charges a flat fee under $0.01",
+                "value": "B"
+              },
+              {
+                "label": "XRPL bridges are subsidized by Ripple",
+                "value": "C"
+              },
+              {
+                "label": "Ethereum bridges require more validator signatures",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Ethereum's gas model charges for every computational operation, and fees spike during congestion — a bridge transaction can cost $30–$100. XRPL charges a fixed 'drops' fee (fractions of XRP) regardless of network load, making it ideal for high-frequency or small-value cross-chain operations.",
+            "points": 1
+          }
+        ]
       },
-      "actions": [
-        {
-          "id": "action_hsb-s6_0",
-          "type": "spotlight",
-          "elementId": "hsb-s6-title"
-        },
-        {
-          "id": "action_hsb-s6_1",
-          "type": "speech",
-          "text": "Knowledge check. Knowledge Check — Swapping & Bridging (High School)",
-          "audioUrl": "/audio/lessons/oc-hs-swapbridge/5-1.mp3"
-        },
-        {
-          "id": "action_hsb-s6_2",
-          "type": "spotlight",
-          "elementId": "hsb-s6-body"
-        },
-        {
-          "id": "action_hsb-s6_3",
-          "type": "speech",
-          "text": "Review these questions to test what you have learned.",
-          "audioUrl": "/audio/lessons/oc-hs-swapbridge/5-3.mp3"
-        }
-      ]
+      "actions": []
     }
   ]
 }

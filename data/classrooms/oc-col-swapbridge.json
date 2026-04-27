@@ -1872,126 +1872,212 @@
       ]
     },
     {
-      "id": "csb-s7",
+      "id": "kc-oc-col-swapbridge",
       "type": "slide",
       "title": "Knowledge Check — Swapping & Bridging (College)",
       "order": 6,
       "content": {
-        "type": "slide",
-        "canvas": {
-          "id": "csb-s7-canvas",
-          "viewportSize": 1000,
-          "viewportRatio": 0.5625,
-          "background": {
-            "type": "solid",
-            "color": "#0b1120"
-          },
-          "theme": {
-            "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#38bdf8",
-              "#3b82f6",
-              "#8b5cf6"
+        "type": "quiz",
+        "questions": [
+          {
+            "id": "kc-oc-col-swapbridge-q1",
+            "type": "single",
+            "question": "What is a sandwich attack in MEV?",
+            "options": [
+              {
+                "label": "Two bridges wrapping the same token simultaneously",
+                "value": "A"
+              },
+              {
+                "label": "A bot front-runs then back-runs your swap to profit from your price impact",
+                "value": "B"
+              },
+              {
+                "label": "A failed bridge transaction between two chains",
+                "value": "C"
+              },
+              {
+                "label": "Splitting a swap across multiple pools to avoid detection",
+                "value": "D"
+              }
             ],
-            "fontColor": "#f1f5f9",
-            "fontName": "Inter"
+            "answer": [
+              "B"
+            ],
+            "analysis": "The attacker's bot sees your pending swap, buys the same token before you (raising the price), lets your swap execute at the worse price, then immediately sells (back-runs). Your swap paid the price increase — the bot pocketed the difference. Estimated $1B+ is extracted this way annually on Ethereum.",
+            "points": 1
           },
-          "elements": [
-            {
-              "id": "csb-s7-bar",
-              "type": "shape",
-              "left": 0,
-              "top": 0,
-              "width": 1000,
-              "height": 6,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#38bdf8",
-              "fixedRatio": false
-            },
-            {
-              "id": "csb-s7-hbg",
-              "type": "shape",
-              "left": 0,
-              "top": 6,
-              "width": 1000,
-              "height": 96,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#0f1729",
-              "fixedRatio": false
-            },
-            {
-              "id": "csb-s7-title",
-              "type": "text",
-              "left": 24,
-              "top": 16,
-              "width": 800,
-              "height": 52,
-              "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🎯 Knowledge Check — Swapping & Bridging (College)</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "csb-s7-sub",
-              "type": "text",
-              "left": 24,
-              "top": 66,
-              "width": 800,
-              "height": 30,
-              "rotate": 0,
-              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Test your knowledge</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#64748b"
-            },
-            {
-              "id": "csb-s7-body",
-              "type": "text",
-              "left": 24,
-              "top": 112,
-              "width": 950,
-              "height": 440,
-              "rotate": 0,
-              "content": "<p style='font-size:15px;font-weight:700;color:#f1f5f9;margin-bottom:4px;'>1. What is a sandwich attack in MEV?</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ Two bridges wrapping the same token</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>✅ Bot front-runs then back-runs your swap</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ A failed bridge transaction between two chains</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ Splitting a swap across multiple pools</p><br/><p style='font-size:15px;font-weight:700;color:#f1f5f9;margin-bottom:4px;'>2. What makes ZK bridges the most secure bridge type?</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ They use multisig validators</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ They have longer fraud proof windows</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>✅ They use cryptographic proofs to verify source chain state</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ They require no gas on the destination chain</p><br/><p style='font-size:15px;font-weight:700;color:#f1f5f9;margin-bottom:4px;'>3. What is Uniswap V3's concentrated liquidity?</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ Liquidity spread across the entire price curve</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>✅ Capital deployed only within a chosen price range</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ A bridge design using locked and minted tokens</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ A zero-knowledge proof for swap verification</p><br/><p style='font-size:15px;font-weight:700;color:#f1f5f9;margin-bottom:4px;'>4. What makes XRPL's DEX unique compared to Uniswap?</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ It uses concentrated liquidity</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>✅ It is built into the ledger protocol with no smart contract layer</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ It has higher fees but more security</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ It only supports XRP pairs</p><br/>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#cbd5e1"
-            }
-          ]
-        }
+          {
+            "id": "kc-oc-col-swapbridge-q2",
+            "type": "single",
+            "question": "What makes ZK bridges the most secure bridge design?",
+            "options": [
+              {
+                "label": "They use a large multisig validator set",
+                "value": "A"
+              },
+              {
+                "label": "They have longer fraud proof windows",
+                "value": "B"
+              },
+              {
+                "label": "They use cryptographic validity proofs to verify source chain state",
+                "value": "C"
+              },
+              {
+                "label": "They require no gas on the destination chain",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "C"
+            ],
+            "analysis": "ZK bridges submit a zero-knowledge validity proof with every batch proving the transactions were correctly executed on the source chain. The destination chain contract mathematically verifies the proof — no trust in validators, no waiting period. The most trustless design but computationally expensive.",
+            "points": 1
+          },
+          {
+            "id": "kc-oc-col-swapbridge-q3",
+            "type": "single",
+            "question": "What is Uniswap V3's concentrated liquidity?",
+            "options": [
+              {
+                "label": "Liquidity spread evenly across the entire price curve",
+                "value": "A"
+              },
+              {
+                "label": "Capital deployed only within a chosen price range for higher fee efficiency",
+                "value": "B"
+              },
+              {
+                "label": "A ZK proof method for verifying swap validity",
+                "value": "C"
+              },
+              {
+                "label": "A bridge design using locked and minted tokens",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "V3 LPs specify a price range (e.g., ETH $1,800-$2,200). All capital earns fees only when price is in range — up to 4,000× more efficient than V2 for the same capital. Trade-off: higher impermanent loss if price exits the range, and active management is required.",
+            "points": 1
+          },
+          {
+            "id": "kc-oc-col-swapbridge-q4",
+            "type": "single",
+            "question": "What makes XRPL's DEX immune to MEV sandwich attacks?",
+            "options": [
+              {
+                "label": "XRPL uses a private mempool that bots cannot access",
+                "value": "A"
+              },
+              {
+                "label": "Transactions are ordered deterministically in consensus — no bot can insert orders between them",
+                "value": "B"
+              },
+              {
+                "label": "XRPL charges fees that make front-running unprofitable",
+                "value": "C"
+              },
+              {
+                "label": "XRPL DEX uses ZK proofs that hide transaction details",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "XRPL has no traditional mempool. Transactions are submitted to validators and ordered deterministically during the consensus round. There's no window for bots to observe pending transactions and insert front-running orders — the protocol eliminates the MEV attack surface at the consensus layer.",
+            "points": 1
+          },
+          {
+            "id": "kc-oc-col-swapbridge-q5",
+            "type": "single",
+            "question": "What is the key trade-off of ZK vs optimistic bridges?",
+            "options": [
+              {
+                "label": "ZK bridges are cheaper but less secure",
+                "value": "A"
+              },
+              {
+                "label": "ZK bridges provide instant cryptographic finality but are more computationally expensive to generate proofs",
+                "value": "B"
+              },
+              {
+                "label": "Optimistic bridges are faster but need trusted validators",
+                "value": "C"
+              },
+              {
+                "label": "ZK bridges require a 7-day challenge window while optimistic bridges are instant",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Optimistic bridges assume validity and allow fraud challenges for 7 days — you must wait before funds are fully available. ZK bridges are mathematically verified immediately — no waiting period. But generating ZK proofs requires significant computation, increasing costs and slowing throughput.",
+            "points": 1
+          },
+          {
+            "id": "kc-oc-col-swapbridge-q6",
+            "type": "single",
+            "question": "What is slippage tolerance and why does setting it too high risk MEV?",
+            "options": [
+              {
+                "label": "The maximum time allowed for a swap to confirm",
+                "value": "A"
+              },
+              {
+                "label": "The maximum price movement accepted between signing and execution — too high leaves room for bots to extract",
+                "value": "B"
+              },
+              {
+                "label": "The minimum liquidity required in a pool before trading",
+                "value": "C"
+              },
+              {
+                "label": "The deadline setting for bridge transactions",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Slippage tolerance sets the worst price you'll accept. A 10% tolerance means your swap can execute up to 10% worse than shown. Bots will deliberately sandwich your transaction to extract exactly up to your tolerance. Setting tight slippage (0.1–0.5%) limits extraction but risks reverts on volatile pairs.",
+            "points": 1
+          },
+          {
+            "id": "kc-oc-col-swapbridge-q7",
+            "type": "single",
+            "question": "What is the 'lock and mint' bridge model?",
+            "options": [
+              {
+                "label": "Locking tokens in one DEX and minting them in another DEX on the same chain",
+                "value": "A"
+              },
+              {
+                "label": "Locking tokens in a source chain contract and minting wrapped equivalents on the destination chain",
+                "value": "B"
+              },
+              {
+                "label": "Locking tokens for staking and minting receipt tokens",
+                "value": "C"
+              },
+              {
+                "label": "Locking governance tokens to mint voting rights",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "In lock-and-mint, your tokens are held in a smart contract on Chain A. An equivalent wrapped token is minted on Chain B. When you return, you burn the wrapped tokens on Chain B and unlock the originals on Chain A. WBTC on Ethereum is the most used example — 1 BTC locked per 1 WBTC minted.",
+            "points": 1
+          }
+        ]
       },
-      "actions": [
-        {
-          "id": "action_csb-s7_0",
-          "type": "spotlight",
-          "elementId": "csb-s7-title"
-        },
-        {
-          "id": "action_csb-s7_1",
-          "type": "speech",
-          "text": "Knowledge check. Knowledge Check — Swapping & Bridging (College)",
-          "audioUrl": "/audio/lessons/oc-col-swapbridge/6-1.mp3"
-        },
-        {
-          "id": "action_csb-s7_2",
-          "type": "spotlight",
-          "elementId": "csb-s7-body"
-        },
-        {
-          "id": "action_csb-s7_3",
-          "type": "speech",
-          "text": "Review these questions to test what you have learned.",
-          "audioUrl": "/audio/lessons/oc-col-swapbridge/6-3.mp3"
-        }
-      ]
+      "actions": []
     }
   ]
 }

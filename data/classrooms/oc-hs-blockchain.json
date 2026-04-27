@@ -1792,6 +1792,62 @@
             ],
             "analysis": "Proof of Work has miners burn energy competing to solve puzzles. Proof of Stake has validators lock up (stake) coins as collateral — they're chosen proportionally to validate blocks. PoS uses about 99% less energy than PoW and is used by Ethereum, Solana, and many other major chains.",
             "points": 1
+          },
+          {
+            "id": "q-hs-bc-x1",
+            "type": "single",
+            "question": "What is a hard fork?",
+            "options": [
+              {
+                "label": "A backwards-compatible software upgrade",
+                "value": "A"
+              },
+              {
+                "label": "A breaking protocol change that can split the chain into two",
+                "value": "B"
+              },
+              {
+                "label": "A type of cryptographic signature",
+                "value": "C"
+              },
+              {
+                "label": "When miners combine their hashing power",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "A hard fork introduces incompatible rule changes. Old nodes reject new blocks, splitting the network. Bitcoin Cash was created via a hard fork of Bitcoin in 2017.",
+            "points": 1
+          },
+          {
+            "id": "q-hs-bc-x2",
+            "type": "single",
+            "question": "What problem do Layer 2 networks solve?",
+            "options": [
+              {
+                "label": "They replace Layer 1 entirely",
+                "value": "A"
+              },
+              {
+                "label": "They provide additional private keys",
+                "value": "B"
+              },
+              {
+                "label": "They improve speed and reduce cost while inheriting L1 security",
+                "value": "C"
+              },
+              {
+                "label": "They store wallet seed phrases off-chain",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "C"
+            ],
+            "analysis": "L2s like Arbitrum process transactions off-chain then batch-settle on Ethereum L1. Users get fast, cheap transactions while the L1 provides the security guarantee.",
+            "points": 1
           }
         ]
       },

@@ -1844,6 +1844,62 @@
             ],
             "analysis": "A burn mechanism permanently removes tokens from circulation — they're sent to an unspendable address and can never be accessed. Ethereum burns a portion of every transaction fee (EIP-1559). XRP burns a tiny fee per transaction. Over time, burns reduce supply, which can create upward price pressure if demand stays constant.",
             "points": 1
+          },
+          {
+            "id": "q-hs-cr-x1",
+            "type": "single",
+            "question": "What causes a 'Death Cross' in technical analysis?",
+            "options": [
+              {
+                "label": "RSI drops below 30",
+                "value": "A"
+              },
+              {
+                "label": "The 50-day MA crosses below the 200-day MA",
+                "value": "B"
+              },
+              {
+                "label": "Volume drops to zero for 24 hours",
+                "value": "C"
+              },
+              {
+                "label": "The MACD line goes negative",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "A Death Cross occurs when the shorter-term 50-day moving average crosses below the longer-term 200-day MA — historically a bearish signal. The opposite (50 crossing above 200) is the Golden Cross.",
+            "points": 1
+          },
+          {
+            "id": "q-hs-cr-x2",
+            "type": "single",
+            "question": "What is 'wash trading'?",
+            "options": [
+              {
+                "label": "Swapping tokens on a DEX to clean your wallet history",
+                "value": "A"
+              },
+              {
+                "label": "Buying and selling to yourself to create fake trading volume",
+                "value": "B"
+              },
+              {
+                "label": "Transferring tokens between exchanges to avoid detection",
+                "value": "C"
+              },
+              {
+                "label": "Staking tokens to increase liquidity",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Wash trading is market manipulation where a trader simultaneously buys and sells the same asset to inflate reported volume. It's used to create the illusion of market interest.",
+            "points": 1
           }
         ]
       },

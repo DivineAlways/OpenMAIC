@@ -1254,126 +1254,156 @@
       ]
     },
     {
-      "id": "esb-s5",
+      "id": "kc-oc-elem-swapbridge",
       "type": "slide",
       "title": "Knowledge Check — Swapping & Bridging",
       "order": 4,
       "content": {
-        "type": "slide",
-        "canvas": {
-          "id": "esb-s5-canvas",
-          "viewportSize": 1000,
-          "viewportRatio": 0.5625,
-          "background": {
-            "type": "solid",
-            "color": "#0b1120"
-          },
-          "theme": {
-            "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#8b5cf6",
-              "#3b82f6",
-              "#8b5cf6"
+        "type": "quiz",
+        "questions": [
+          {
+            "id": "kc-oc-elem-swapbridge-q1",
+            "type": "single",
+            "question": "What is swapping in crypto?",
+            "options": [
+              {
+                "label": "Staking your crypto for yield",
+                "value": "A"
+              },
+              {
+                "label": "Exchanging one cryptocurrency for another",
+                "value": "B"
+              },
+              {
+                "label": "Moving funds from a hot wallet to a cold wallet",
+                "value": "C"
+              },
+              {
+                "label": "Confirming a pending transaction",
+                "value": "D"
+              }
             ],
-            "fontColor": "#f1f5f9",
-            "fontName": "Inter"
+            "answer": [
+              "B"
+            ],
+            "analysis": "Swapping means trading one crypto directly for another — for example, exchanging ETH for USDC. It can be done on a CEX (like Coinbase) or a DEX (like Uniswap) where a smart contract executes the trade automatically.",
+            "points": 1
           },
-          "elements": [
-            {
-              "id": "esb-s5-bar",
-              "type": "shape",
-              "left": 0,
-              "top": 0,
-              "width": 1000,
-              "height": 6,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#8b5cf6",
-              "fixedRatio": false
-            },
-            {
-              "id": "esb-s5-hbg",
-              "type": "shape",
-              "left": 0,
-              "top": 6,
-              "width": 1000,
-              "height": 96,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#0f1729",
-              "fixedRatio": false
-            },
-            {
-              "id": "esb-s5-title",
-              "type": "text",
-              "left": 24,
-              "top": 16,
-              "width": 800,
-              "height": 52,
-              "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🎯 Knowledge Check — Swapping & Bridging</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f1f5f9"
-            },
-            {
-              "id": "esb-s5-sub",
-              "type": "text",
-              "left": 24,
-              "top": 66,
-              "width": 800,
-              "height": 30,
-              "rotate": 0,
-              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Test your knowledge</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#64748b"
-            },
-            {
-              "id": "esb-s5-body",
-              "type": "text",
-              "left": 24,
-              "top": 112,
-              "width": 950,
-              "height": 440,
-              "rotate": 0,
-              "content": "<p style='font-size:15px;font-weight:700;color:#f1f5f9;margin-bottom:4px;'>1. What is swapping?</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ Staking your crypto for rewards</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>✅ Exchanging one crypto for another</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ Sending crypto to a friend</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ Mining new coins</p><br/><p style='font-size:15px;font-weight:700;color:#f1f5f9;margin-bottom:4px;'>2. What does a bridge do?</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ Converts USD to crypto</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>✅ Connects two different blockchains</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ Speeds up transactions</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ Reduces gas fees</p><br/><p style='font-size:15px;font-weight:700;color:#f1f5f9;margin-bottom:4px;'>3. What is the most common beginner bridge mistake?</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ Paying too much in fees</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>✅ Sending on the wrong network</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ Using a DEX instead of CEX</p><p style='font-size:13px;color:#94a3b8;margin-left:16px;'>◻️ Swapping too fast</p><br/>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#cbd5e1"
-            }
-          ]
-        }
+          {
+            "id": "kc-oc-elem-swapbridge-q2",
+            "type": "single",
+            "question": "What does a bridge do?",
+            "options": [
+              {
+                "label": "Connects a crypto wallet to a bank account",
+                "value": "A"
+              },
+              {
+                "label": "Speeds up transactions on a single blockchain",
+                "value": "B"
+              },
+              {
+                "label": "Moves tokens between two different blockchains",
+                "value": "C"
+              },
+              {
+                "label": "Converts crypto to stablecoins",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "C"
+            ],
+            "analysis": "Blockchains are separate networks that don't communicate natively. A bridge locks your tokens on Chain A and mints equivalent tokens on Chain B, allowing you to use your assets on a different network.",
+            "points": 1
+          },
+          {
+            "id": "kc-oc-elem-swapbridge-q3",
+            "type": "single",
+            "question": "On a DEX swap, who holds your funds during the trade?",
+            "options": [
+              {
+                "label": "The exchange company",
+                "value": "A"
+              },
+              {
+                "label": "A bank escrow",
+                "value": "B"
+              },
+              {
+                "label": "No one — the smart contract executes it and you keep custody",
+                "value": "C"
+              },
+              {
+                "label": "The liquidity pool manager",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "C"
+            ],
+            "analysis": "DEX swaps are trustless. You connect your own wallet, the smart contract executes the trade, and you receive the new token directly. No company ever holds your funds — unlike a CEX where the platform has custody.",
+            "points": 1
+          },
+          {
+            "id": "kc-oc-elem-swapbridge-q4",
+            "type": "single",
+            "question": "What is the most common beginner mistake when bridging?",
+            "options": [
+              {
+                "label": "Choosing a DEX instead of a CEX",
+                "value": "A"
+              },
+              {
+                "label": "Sending on the wrong network",
+                "value": "B"
+              },
+              {
+                "label": "Using a hardware wallet",
+                "value": "C"
+              },
+              {
+                "label": "Setting slippage too low",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "The most common expensive mistake: sending ETH on Ethereum mainnet to an address that expects ETH on Arbitrum. The funds appear lost because the receiving wallet isn't watching the right network. Always verify the network on both the sending and receiving side before confirming.",
+            "points": 1
+          },
+          {
+            "id": "kc-oc-elem-swapbridge-q5",
+            "type": "single",
+            "question": "Why are bridges high-value hack targets?",
+            "options": [
+              {
+                "label": "They charge the highest swap fees",
+                "value": "A"
+              },
+              {
+                "label": "They are built on outdated technology",
+                "value": "B"
+              },
+              {
+                "label": "They lock large amounts of tokens in smart contracts",
+                "value": "C"
+              },
+              {
+                "label": "They are not audited",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "C"
+            ],
+            "analysis": "Bridges aggregate enormous amounts of locked tokens — making them attractive targets. The Ronin bridge held $625M when hacked. The Wormhole bridge had $320M stolen. Only use bridges that are audited, battle-tested, and widely used by the community.",
+            "points": 1
+          }
+        ]
       },
-      "actions": [
-        {
-          "id": "action_esb-s5_0",
-          "type": "spotlight",
-          "elementId": "esb-s5-title"
-        },
-        {
-          "id": "action_esb-s5_1",
-          "type": "speech",
-          "text": "Knowledge check. Knowledge Check — Swapping & Bridging",
-          "audioUrl": "/audio/lessons/oc-elem-swapbridge/4-1.mp3"
-        },
-        {
-          "id": "action_esb-s5_2",
-          "type": "spotlight",
-          "elementId": "esb-s5-body"
-        },
-        {
-          "id": "action_esb-s5_3",
-          "type": "speech",
-          "text": "Review these questions to test what you have learned.",
-          "audioUrl": "/audio/lessons/oc-elem-swapbridge/4-3.mp3"
-        }
-      ]
+      "actions": []
     }
   ]
 }

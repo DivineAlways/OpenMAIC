@@ -2203,6 +2203,90 @@
             "question": "You receive an email from 'Ledger Support' saying your device has been compromised and you must enter your 24-word seed phrase on their website. Identify 3 red flags and explain what you should do.",
             "commentPrompt": "Full marks for: (1) Ledger/any company will NEVER ask for your seed phrase, (2) the seed phrase should never be typed into any website or device other than the hardware wallet itself, (3) this is a phishing attack — delete/report it. Bonus: check the actual domain, contact support through official channels.",
             "points": 3
+          },
+          {
+            "id": "q-sw-x1",
+            "type": "single",
+            "question": "What is the BIP39 standard?",
+            "options": [
+              {
+                "label": "A Bitcoin improvement proposal defining the HD wallet derivation path",
+                "value": "A"
+              },
+              {
+                "label": "The standard for generating mnemonic seed phrases from entropy",
+                "value": "B"
+              },
+              {
+                "label": "A protocol for multi-signature wallet coordination",
+                "value": "C"
+              },
+              {
+                "label": "The encryption standard used for hardware wallet storage",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "BIP39 defines how a random sequence of bits (entropy) maps to a specific set of human-readable words from a 2,048-word list. These words, in order, can regenerate your entire HD wallet tree on any BIP39-compatible device.",
+            "points": 1
+          },
+          {
+            "id": "q-sw-x2",
+            "type": "single",
+            "question": "What is a reentrancy attack in smart contract security?",
+            "options": [
+              {
+                "label": "When a validator submits the same transaction twice",
+                "value": "A"
+              },
+              {
+                "label": "When an external contract repeatedly calls back into the vulnerable contract before the first call finishes",
+                "value": "B"
+              },
+              {
+                "label": "When a miner front-runs a smart contract deployment",
+                "value": "C"
+              },
+              {
+                "label": "When a governance proposal is submitted multiple times",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "The DAO hack (2016, $60M) exploited reentrancy. The victim contract sent ETH before updating its balance. The attacker's contract called back into the victim mid-execution, draining funds repeatedly before the balance was zeroed. The fix: always update state before external calls (checks-effects-interactions pattern).",
+            "points": 1
+          },
+          {
+            "id": "q-sw-x3",
+            "type": "single",
+            "question": "What makes XRPL's native multi-signing different from multisig on Ethereum?",
+            "options": [
+              {
+                "label": "XRPL multisig requires a hardware wallet for each signer",
+                "value": "A"
+              },
+              {
+                "label": "XRPL multi-signing is a first-class protocol feature, not a smart contract",
+                "value": "B"
+              },
+              {
+                "label": "XRPL multisig is limited to 2-of-3 configurations",
+                "value": "C"
+              },
+              {
+                "label": "XRPL multisig only works for XRP, not issued tokens",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "On Ethereum, multisig is implemented via smart contracts (Gnosis Safe). On XRPL, multi-signing is built directly into the ledger protocol — any account can require M-of-N signatures natively, without deploying additional contracts. This reduces attack surface and gas costs.",
+            "points": 1
           }
         ]
       },

@@ -1759,6 +1759,62 @@
             ],
             "analysis": "Risk/reward ratio is risk:reward. If you risk $100 to potentially gain $300, that's a 1:3 ratio — for every dollar risked, you aim to gain three. Professionals generally target a minimum of 1:2. With a 1:3 ratio and even a 40% win rate, you're profitable long-term.",
             "points": 1
+          },
+          {
+            "id": "q-hs-tr-x1",
+            "type": "single",
+            "question": "What does 'going long' mean?",
+            "options": [
+              {
+                "label": "Holding a position for more than one year",
+                "value": "A"
+              },
+              {
+                "label": "Betting the price will fall",
+                "value": "B"
+              },
+              {
+                "label": "Buying an asset expecting the price to rise",
+                "value": "C"
+              },
+              {
+                "label": "Trading on leverage only",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "C"
+            ],
+            "analysis": "Going long means you buy an asset hoping to sell it later at a higher price. It's the most natural form of trading — buy low, sell high. The opposite (short selling) profits when price falls.",
+            "points": 1
+          },
+          {
+            "id": "q-hs-tr-x2",
+            "type": "single",
+            "question": "If your risk-reward ratio is 1:3 and you risk $200, what is your target profit?",
+            "options": [
+              {
+                "label": "$200",
+                "value": "A"
+              },
+              {
+                "label": "$300",
+                "value": "B"
+              },
+              {
+                "label": "$600",
+                "value": "C"
+              },
+              {
+                "label": "$100",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "C"
+            ],
+            "analysis": "A 1:3 risk-reward ratio means for every $1 risked, you target $3 in profit. Risking $200 × 3 = $600 target profit. With a 1:3 ratio, you only need to win 25% of trades to break even.",
+            "points": 1
           }
         ]
       },

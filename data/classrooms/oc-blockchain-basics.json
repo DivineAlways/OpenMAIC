@@ -1971,7 +1971,7 @@
               "width": 800,
               "height": 52,
               "rotate": 0,
-              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🏛️ Decentralization vs Scalability Trilemma — Advanced</p>",
+              "content": "<p style='font-size:22px;font-weight:800;color:#f1f5f9;'>🏛️ Decentralization vs Scalability Trilemma</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f1f5f9"
             },
@@ -1983,7 +1983,7 @@
               "width": 800,
               "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The engineering constraints every blockchain designer faces</p>",
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Advanced consensus design — College Level</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#64748b"
             },
@@ -2149,7 +2149,8 @@
         {
           "id": "action_cbb-s10_2",
           "type": "spotlight",
-          "elementId": "cbb-s10-sub"
+          "elementId": "cbb-s10-sub",
+          "text": "Advanced consensus design — College Level"
         },
         {
           "id": "action_cbb-s10_3",
@@ -2649,6 +2650,90 @@
             "question": "Explain in 2–3 sentences why changing one transaction deep in a blockchain would require redoing enormous computational work.",
             "commentPrompt": "Award full marks if the student explains: (1) changing a transaction changes the block's hash, (2) each block contains the previous block's hash so all subsequent blocks become invalid, (3) the attacker must redo proof-of-work for every block after the altered one to create a longer chain.",
             "points": 3
+          },
+          {
+            "id": "q-bb-x1",
+            "type": "single",
+            "question": "What is the role of a hash function in blockchain security?",
+            "options": [
+              {
+                "label": "It encrypts private keys for storage",
+                "value": "A"
+              },
+              {
+                "label": "It converts input data into a fixed-length output — changing any input completely changes the output",
+                "value": "B"
+              },
+              {
+                "label": "It validates transactions by checking wallet balances",
+                "value": "C"
+              },
+              {
+                "label": "It connects blocks to the consensus layer",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Hash functions like SHA-256 are deterministic and collision-resistant. In blockchain, each block's hash depends on its data AND the previous block's hash — creating an unbreakable chain. Altering any historical block changes all subsequent hashes, immediately detectable by nodes.",
+            "points": 1
+          },
+          {
+            "id": "q-bb-x2",
+            "type": "single",
+            "question": "Why does the XRPL use a small trusted validator set rather than thousands of validators?",
+            "options": [
+              {
+                "label": "To reduce transaction fees to zero",
+                "value": "A"
+              },
+              {
+                "label": "To achieve fast consensus with lower communication overhead",
+                "value": "B"
+              },
+              {
+                "label": "To allow smart contracts to execute faster",
+                "value": "C"
+              },
+              {
+                "label": "To enable proof of work without mining hardware",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "RPCA consensus with ~150 validators achieves 3-5 second finality because communication overhead is manageable. PoS Ethereum with 900,000+ validators achieves higher decentralization but requires more complex aggregation to reach consensus efficiently.",
+            "points": 1
+          },
+          {
+            "id": "q-bb-x3",
+            "type": "single",
+            "question": "What makes a 'ZK rollup' more secure than an 'optimistic rollup'?",
+            "options": [
+              {
+                "label": "ZK rollups use more validators per transaction",
+                "value": "A"
+              },
+              {
+                "label": "ZK rollups provide cryptographic proofs of validity rather than relying on fraud proofs",
+                "value": "B"
+              },
+              {
+                "label": "ZK rollups cost less gas on the destination chain",
+                "value": "C"
+              },
+              {
+                "label": "ZK rollups do not require any interaction with Layer 1",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Optimistic rollups assume validity and allow a challenge window (7 days on Arbitrum). ZK rollups submit a cryptographic validity proof with every batch — the L1 contract mathematically verifies it. No waiting period, no trust assumption needed.",
+            "points": 1
           }
         ]
       },

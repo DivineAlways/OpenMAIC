@@ -1715,6 +1715,62 @@
             ],
             "analysis": "Oracles are the price feeds DeFi protocols rely on. Attackers can take out enormous flash loans (borrowed and repaid in one transaction), use them to move prices on a DEX, trick an oracle-dependent lending protocol into thinking collateral is worth more or less than it is, and profit from the exploit — all in seconds.",
             "points": 1
+          },
+          {
+            "id": "q-hs-defi-x1",
+            "type": "single",
+            "question": "In DeFi lending, what happens when your health factor drops below 1.0?",
+            "options": [
+              {
+                "label": "You earn bonus rewards",
+                "value": "A"
+              },
+              {
+                "label": "Your position is automatically liquidated",
+                "value": "B"
+              },
+              {
+                "label": "Your interest rate is reduced",
+                "value": "C"
+              },
+              {
+                "label": "The protocol pauses your account",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "A health factor below 1.0 means your collateral value no longer covers your debt at the required ratio. Liquidation bots monitor positions 24/7 and will close your position, taking a discount on the collateral.",
+            "points": 1
+          },
+          {
+            "id": "q-hs-defi-x2",
+            "type": "single",
+            "question": "What is an oracle in DeFi?",
+            "options": [
+              {
+                "label": "A smart contract that stores user passwords",
+                "value": "A"
+              },
+              {
+                "label": "A bridge between two blockchains",
+                "value": "B"
+              },
+              {
+                "label": "A service that feeds real-world price data to smart contracts",
+                "value": "C"
+              },
+              {
+                "label": "A governance token voting system",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "C"
+            ],
+            "analysis": "Smart contracts cannot access external data on their own. Oracles (like Chainlink) feed price data, weather events, or other real-world information into contracts. Manipulating an oracle can drain lending protocols.",
+            "points": 1
           }
         ]
       },

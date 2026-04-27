@@ -2591,6 +2591,90 @@
             "question": "A government is considering banning stablecoins. What are two legitimate risks they might be trying to address, and what are two counterarguments for allowing regulated stablecoins?",
             "commentPrompt": "Risks: dollar hegemony concerns, bank runs if poorly backed, money laundering, loss of monetary policy control. Counterarguments: financial inclusion in developing countries, programmable payments, competition drives innovation, regulated stablecoins can have reserve requirements. Award marks for reasoned arguments either way.",
             "points": 3
+          },
+          {
+            "id": "q-ec-x1",
+            "type": "single",
+            "question": "What is the EU's MiCA regulation?",
+            "options": [
+              {
+                "label": "A US SEC rule classifying all tokens as securities",
+                "value": "A"
+              },
+              {
+                "label": "The EU's comprehensive crypto regulatory framework effective from 2024",
+                "value": "B"
+              },
+              {
+                "label": "A G20 agreement to ban algorithmic stablecoins",
+                "value": "C"
+              },
+              {
+                "label": "A FATF standard for crypto KYC requirements",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "MiCA (Markets in Crypto-Assets) is the world's most comprehensive crypto regulatory framework. It covers issuance of crypto-assets, stablecoin rules (e-money tokens, asset-referenced tokens), and licensing for CASPs. It creates legal certainty for the EU crypto market.",
+            "points": 1
+          },
+          {
+            "id": "q-ec-x2",
+            "type": "single",
+            "question": "Why does Ripple's ODL eliminate the need for pre-funded nostro accounts?",
+            "options": [
+              {
+                "label": "It uses a stablecoin pegged to both currencies",
+                "value": "A"
+              },
+              {
+                "label": "XRP acts as a real-time bridge so funds convert and settle in seconds — no pre-funding needed",
+                "value": "B"
+              },
+              {
+                "label": "It routes payments through the SWIFT network using XRP as collateral",
+                "value": "C"
+              },
+              {
+                "label": "ODL uses Layer 2 channels that hold liquidity off-chain",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Traditional cross-border payments require banks to pre-fund accounts (nostro) in every currency corridor — locking up trillions. ODL converts USD to XRP, transmits instantly, converts to destination currency — the whole process takes seconds. No idle pre-funded capital required.",
+            "points": 1
+          },
+          {
+            "id": "q-ec-x3",
+            "type": "single",
+            "question": "What is the 'Howey Test' used for in US crypto regulation?",
+            "options": [
+              {
+                "label": "To determine if a crypto exchange needs a banking license",
+                "value": "A"
+              },
+              {
+                "label": "To classify whether a token is a security based on investment contract criteria",
+                "value": "B"
+              },
+              {
+                "label": "To measure the market cap threshold for institutional reporting",
+                "value": "C"
+              },
+              {
+                "label": "To calculate the tax rate on crypto capital gains",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "The Howey Test (from a 1946 Supreme Court case) determines if something is an 'investment contract' — a security. Criteria: investment of money, in a common enterprise, with expectation of profit, from efforts of others. The SEC applies this to tokens — if they pass all four criteria, they're securities subject to SEC regulation.",
+            "points": 1
           }
         ]
       },

@@ -2499,6 +2499,90 @@
             "question": "A trader says 'I have a 40% win rate so I must be losing money.' Is this necessarily true? Explain using the concept of expectancy.",
             "commentPrompt": "Award full marks if student shows: a 40% win rate can be profitable with a high enough reward/risk ratio. Example: 40% × $300 win − 60% × $100 loss = $120 − $60 = +$60 positive expectancy per trade.",
             "points": 3
+          },
+          {
+            "id": "q-tg-x1",
+            "type": "single",
+            "question": "What is the Kelly Criterion formula?",
+            "options": [
+              {
+                "label": "f = (win_rate × avg_win) - loss_rate",
+                "value": "A"
+              },
+              {
+                "label": "f = (bp - q) / b",
+                "value": "B"
+              },
+              {
+                "label": "f = sharpe_ratio / volatility",
+                "value": "C"
+              },
+              {
+                "label": "f = expected_value / risk_per_trade",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "The Kelly Criterion gives the optimal fraction of capital to bet: f = (bp - q) / b, where b = odds ratio (profit/loss), p = probability of winning, q = probability of losing (1-p). In practice, traders use 25-50% of Kelly to reduce variance.",
+            "points": 1
+          },
+          {
+            "id": "q-tg-x2",
+            "type": "single",
+            "question": "What is backtesting, and what is its main risk?",
+            "options": [
+              {
+                "label": "Testing a strategy on live markets with small position sizes — main risk is slippage",
+                "value": "A"
+              },
+              {
+                "label": "Testing a strategy on historical data — main risk is overfitting to past conditions",
+                "value": "B"
+              },
+              {
+                "label": "Comparing two strategies against each other — main risk is survivorship bias",
+                "value": "C"
+              },
+              {
+                "label": "Running a strategy on paper only — main risk is emotional deviation",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Backtesting simulates a strategy on historical price data. The main danger is overfitting — tuning parameters so precisely to past data that the strategy has no predictive power on new data. A strategy with perfect backtest results often fails in live trading.",
+            "points": 1
+          },
+          {
+            "id": "q-tg-x3",
+            "type": "single",
+            "question": "What does the Sharpe Ratio measure?",
+            "options": [
+              {
+                "label": "The total return of a portfolio over one year",
+                "value": "A"
+              },
+              {
+                "label": "Risk-adjusted return — return per unit of volatility taken",
+                "value": "B"
+              },
+              {
+                "label": "The maximum drawdown from peak to trough",
+                "value": "C"
+              },
+              {
+                "label": "The correlation between two trading strategies",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Sharpe Ratio = (Portfolio Return - Risk-Free Rate) / Standard Deviation of Returns. A Sharpe above 1.0 is considered good — you're earning more return per unit of risk taken. A strategy earning 50% but with extreme volatility may have a worse Sharpe than one earning 20% steadily.",
+            "points": 1
           }
         ]
       },

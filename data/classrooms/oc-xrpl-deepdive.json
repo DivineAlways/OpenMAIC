@@ -2813,6 +2813,90 @@
             "question": "OnlyCrypto uses XRPL for member payments. Give three specific technical reasons why XRPL is better suited for this use case than Ethereum.",
             "commentPrompt": "Full marks for any three: (1) 3–5 sec finality vs Ethereum minutes, (2) $0.0002 fee vs $5+ ETH gas, (3) no smart contract risk — payments are protocol-level, (4) destination tags for multi-user wallets, (5) 1 XRP reserve makes wallets lightweight, (6) no miner/validator bribery — fees are burned.",
             "points": 3
+          },
+          {
+            "id": "q-xd-x1",
+            "type": "single",
+            "question": "What is a 'trust line' on the XRP Ledger?",
+            "options": [
+              {
+                "label": "A validator reputation score used in RPCA consensus",
+                "value": "A"
+              },
+              {
+                "label": "An account setting that allows holding non-XRP tokens up to a set limit",
+                "value": "B"
+              },
+              {
+                "label": "A cross-chain bridge between XRPL and Ethereum",
+                "value": "C"
+              },
+              {
+                "label": "A smart contract for automated payments",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Trust lines are XRPL's mechanism for holding issued currencies. To hold USDC on XRPL, you create a trust line to the USDC issuer allowing up to your chosen limit. The issuer can't send you more than your limit. This prevents unwanted token receipt and makes XRPL's token system permission-based.",
+            "points": 1
+          },
+          {
+            "id": "q-xd-x2",
+            "type": "single",
+            "question": "How does XRPL's native DEX differ from Uniswap?",
+            "options": [
+              {
+                "label": "XRPL DEX uses a bonding curve while Uniswap uses an order book",
+                "value": "A"
+              },
+              {
+                "label": "XRPL DEX is built into the ledger protocol with a native order book — no smart contract layer",
+                "value": "B"
+              },
+              {
+                "label": "XRPL DEX only supports XRP pairs while Uniswap supports any ERC-20",
+                "value": "C"
+              },
+              {
+                "label": "XRPL DEX uses proof of work for trade settlement",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "XRPL's DEX is consensus-layer functionality — every node processes it natively. No smart contract deployment required. This eliminates MEV sandwich attacks (order execution is deterministic in consensus), reduces attack surface, and allows the AMM and order book to combine liquidity in a single trade path.",
+            "points": 1
+          },
+          {
+            "id": "q-xd-x3",
+            "type": "single",
+            "question": "What is XRPL's pathfinding and why is it powerful?",
+            "options": [
+              {
+                "label": "A routing algorithm that finds the cheapest gas path for transactions",
+                "value": "A"
+              },
+              {
+                "label": "A protocol that atomically converts through intermediate currencies to settle in the recipient's currency",
+                "value": "B"
+              },
+              {
+                "label": "A bridge protocol connecting XRPL to Ethereum",
+                "value": "C"
+              },
+              {
+                "label": "An algorithm that selects which validators process each transaction",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "XRPL pathfinding enables one transaction to route through multiple currency conversions atomically. Sending USD to someone who wants EUR might route USD → XRP → EUR in a single transaction. All steps succeed or all fail — no partial execution risk. This is the infrastructure for ODL and global real-time settlement.",
+            "points": 1
           }
         ]
       },

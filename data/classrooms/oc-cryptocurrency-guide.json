@@ -2855,6 +2855,90 @@
             "question": "A friend says 'Bitcoin and XRP are basically the same thing — they're both cryptocurrencies.' Give two specific technical differences that show they are fundamentally different.",
             "commentPrompt": "Award marks for any two real differences: consensus mechanism (PoW vs RPCA), speed (10 min vs 3–5 sec), fees (variable mining fee vs 0.0002 XRP burned), supply model (halving vs fixed 100B with burn), or energy usage.",
             "points": 3
+          },
+          {
+            "id": "q-cc-x1",
+            "type": "single",
+            "question": "What is the UTXO model?",
+            "options": [
+              {
+                "label": "A staking mechanism used by Ethereum validators",
+                "value": "A"
+              },
+              {
+                "label": "Unspent Transaction Outputs — Bitcoin tracks individual coin units not account balances",
+                "value": "B"
+              },
+              {
+                "label": "A token standard for governance on Ethereum",
+                "value": "C"
+              },
+              {
+                "label": "The fee calculation model for XRPL transactions",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Bitcoin doesn't store balances in accounts. It tracks unspent outputs from previous transactions. To spend, you consume UTXOs as inputs and create new outputs. Your 'balance' is the sum of all UTXOs you can unlock with your private key.",
+            "points": 1
+          },
+          {
+            "id": "q-cc-x2",
+            "type": "single",
+            "question": "What is a 'governance attack' and which protocol suffered one for $182M?",
+            "options": [
+              {
+                "label": "A 51% mining attack — Bitcoin in 2014",
+                "value": "A"
+              },
+              {
+                "label": "An oracle manipulation — Mango Markets in 2022",
+                "value": "B"
+              },
+              {
+                "label": "Buying enough tokens to pass malicious governance proposals — Beanstalk in 2022",
+                "value": "C"
+              },
+              {
+                "label": "A reentrancy exploit — The DAO in 2016",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "C"
+            ],
+            "analysis": "Beanstalk's attacker used a flash loan to acquire a supermajority of governance tokens, passed a malicious proposal to drain the treasury, and repaid the flash loan — all in one transaction. $182M was stolen. This exposed the risk of low-quorum, immediate-execution governance.",
+            "points": 1
+          },
+          {
+            "id": "q-cc-x3",
+            "type": "single",
+            "question": "What does 'deflationary tokenomics' mean?",
+            "options": [
+              {
+                "label": "The token price always decreases over time",
+                "value": "A"
+              },
+              {
+                "label": "The circulating supply decreases over time through burning mechanisms",
+                "value": "B"
+              },
+              {
+                "label": "The token is pegged to a deflationary fiat currency",
+                "value": "C"
+              },
+              {
+                "label": "Staking rewards decrease each year",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Deflationary tokens reduce circulating supply over time. Ethereum burns base fees (EIP-1559) — periods of high demand can make ETH deflationary. BNB burns quarterly based on revenue. Scarcity from burning can support price if demand is stable or growing.",
+            "points": 1
           }
         ]
       },

@@ -1347,6 +1347,62 @@
             "answer": "Representing physical assets like real estate or bonds as on-chain tokens for 24/7 global trading",
             "analysis": "RWA tokenization puts ownership of physical assets on-chain — real estate, treasury bonds, commodities, and private credit. Benefits include 24/7 trading, fractional ownership, global access, and instant settlement. XRPL is a leading platform for tokenized assets.",
             "points": 20
+          },
+          {
+            "id": "hs-ec-x1",
+            "type": "single",
+            "question": "What is Real-World Asset (RWA) tokenization?",
+            "options": [
+              {
+                "label": "Creating NFTs of physical artwork only",
+                "value": "A"
+              },
+              {
+                "label": "Representing ownership of physical assets as blockchain tokens",
+                "value": "B"
+              },
+              {
+                "label": "Converting stablecoins to fiat currency",
+                "value": "C"
+              },
+              {
+                "label": "Bridging tokens from one chain to another",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "RWA tokenization puts real-world assets — real estate, gold, treasury bonds — on-chain as tokens. This makes them tradeable 24/7, divisible into fractional shares, and accessible globally. BlackRock and Franklin Templeton are both active in this space.",
+            "points": 1
+          },
+          {
+            "id": "hs-ec-x2",
+            "type": "single",
+            "question": "What is the main risk of a governance attack on a DAO?",
+            "options": [
+              {
+                "label": "The DEX liquidity pool is drained automatically",
+                "value": "A"
+              },
+              {
+                "label": "An attacker acquires enough tokens to pass malicious proposals",
+                "value": "B"
+              },
+              {
+                "label": "Validators reject all governance transactions",
+                "value": "C"
+              },
+              {
+                "label": "The blockchain forks every time a vote is held",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "If governance token distribution is concentrated, an attacker can buy a controlling stake and pass proposals to drain the treasury or modify contracts in their favor. The Beanstalk protocol lost $182M this way in 2022.",
+            "points": 1
           }
         ]
       },

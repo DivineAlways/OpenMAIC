@@ -2632,6 +2632,90 @@
             "question": "Explain how a DeFi liquidation cascade can amplify a market crash. Use a concrete example.",
             "commentPrompt": "Full marks if student explains: (1) falling prices push health factors below 1, (2) liquidations flood the market with sell orders, (3) more selling pushes prices lower, (4) triggering more liquidations — give credit for any real example like the May 2021 or March 2020 events.",
             "points": 3
+          },
+          {
+            "id": "q-df-x1",
+            "type": "single",
+            "question": "What is the x × y = k formula and what does it guarantee?",
+            "options": [
+              {
+                "label": "It sets the interest rate based on utilization",
+                "value": "A"
+              },
+              {
+                "label": "It ensures the product of two token reserves stays constant, automatically adjusting price",
+                "value": "B"
+              },
+              {
+                "label": "It calculates impermanent loss for LP positions",
+                "value": "C"
+              },
+              {
+                "label": "It determines the liquidation price for a collateralized position",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "In a Uniswap-style AMM with reserves x and y, x × y must equal k (a constant). When you buy token y (reducing y), x must increase to keep k constant. This automatically raises the price of y. No order book needed — the math prices the market.",
+            "points": 1
+          },
+          {
+            "id": "q-df-x2",
+            "type": "single",
+            "question": "What caused the UST/LUNA collapse in May 2022?",
+            "options": [
+              {
+                "label": "A smart contract bug in the Terra protocol",
+                "value": "A"
+              },
+              {
+                "label": "A death spiral where UST de-peg triggered LUNA hyperinflation which further broke the peg",
+                "value": "B"
+              },
+              {
+                "label": "An oracle manipulation attack on the price feed",
+                "value": "C"
+              },
+              {
+                "label": "A governance vote to pause all withdrawals",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "UST maintained its peg by allowing 1 UST to be burned to mint $1 of LUNA. When a large seller broke the peg, people rushed to burn UST for LUNA and sell — hyperinflating LUNA supply, destroying its value, making the UST backing worthless. $40B evaporated in 72 hours.",
+            "points": 1
+          },
+          {
+            "id": "q-df-x3",
+            "type": "single",
+            "question": "What is MEV (Maximal Extractable Value)?",
+            "options": [
+              {
+                "label": "The maximum APY achievable through yield farming",
+                "value": "A"
+              },
+              {
+                "label": "The maximum amount a validator can earn from block rewards",
+                "value": "B"
+              },
+              {
+                "label": "Profit extracted by reordering or inserting transactions within a block",
+                "value": "C"
+              },
+              {
+                "label": "The fee limit set by the protocol for flash loans",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "C"
+            ],
+            "analysis": "MEV is extracted by validators or bots who can see pending transactions and manipulate ordering. Sandwich attacks front-run large swaps. Arbitrage bots exploit price differences across pools. Liquidation bots race to liquidate underwater positions. Estimated $1B+ extracted annually on Ethereum.",
+            "points": 1
           }
         ]
       },

@@ -831,6 +831,62 @@
             "answer": "A bot that front-runs your buy order and back-runs it to profit from your price impact",
             "analysis": "MEV (Maximal Extractable Value) sandwich attacks work in three steps: the bot sees your pending buy transaction, inserts its own buy before yours (front-run), lets your transaction execute (which moves the price), then immediately sells after yours (back-run). You buy at a higher price, the bot profits from the difference. Setting lower slippage tolerance limits how much they can extract.",
             "points": 20
+          },
+          {
+            "id": "hs-sc-x1",
+            "type": "single",
+            "question": "What is a SIM swap attack?",
+            "options": [
+              {
+                "label": "Exchanging one crypto for another via a DEX",
+                "value": "A"
+              },
+              {
+                "label": "Convincing a carrier to transfer your phone number to an attacker's SIM",
+                "value": "B"
+              },
+              {
+                "label": "Installing malware via a USB device",
+                "value": "C"
+              },
+              {
+                "label": "Exploiting a smart contract bug",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "SIM swapping lets attackers receive your SMS messages, including 2FA codes. They call your carrier posing as you, request a SIM transfer, then use your number to bypass SMS-based authentication on exchanges.",
+            "points": 1
+          },
+          {
+            "id": "hs-sc-x2",
+            "type": "single",
+            "question": "Why is a hardware wallet considered the safest option for large holdings?",
+            "options": [
+              {
+                "label": "It stores funds offline in a bank vault",
+                "value": "A"
+              },
+              {
+                "label": "Private keys never leave the device — transactions are signed internally",
+                "value": "B"
+              },
+              {
+                "label": "It encrypts your seed phrase with a password",
+                "value": "C"
+              },
+              {
+                "label": "It connects to a secure government server for verification",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Hardware wallets sign transactions internally on the device. Even if your computer is fully compromised by malware, the attacker cannot approve transactions without physical access to the hardware wallet and its PIN.",
+            "points": 1
           }
         ]
       },

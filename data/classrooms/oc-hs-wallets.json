@@ -1868,6 +1868,62 @@
             ],
             "analysis": "Approving 'unlimited' token spending means the smart contract can take all your tokens at any time in the future. Malicious contracts exploit this. Always reject unlimited approvals and approve only the specific amount you need for that interaction. Legitimate protocols don't require unlimited approvals.",
             "points": 1
+          },
+          {
+            "id": "q-hs-wl-x1",
+            "type": "single",
+            "question": "What is a multi-signature wallet?",
+            "options": [
+              {
+                "label": "A wallet that supports multiple cryptocurrencies",
+                "value": "A"
+              },
+              {
+                "label": "A wallet requiring M of N keys to sign any transaction",
+                "value": "B"
+              },
+              {
+                "label": "A wallet with two separate seed phrases",
+                "value": "C"
+              },
+              {
+                "label": "A hardware wallet with biometric login",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "B"
+            ],
+            "analysis": "Multi-sig requires multiple private keys to authorize a transaction. A 2-of-3 setup means any 2 of 3 designated keys must sign. One compromised key cannot drain the wallet — making it ideal for large holdings and DAO treasuries.",
+            "points": 1
+          },
+          {
+            "id": "q-hs-wl-x2",
+            "type": "single",
+            "question": "Why is SMS-based 2FA weaker than an authenticator app?",
+            "options": [
+              {
+                "label": "SMS codes expire faster",
+                "value": "A"
+              },
+              {
+                "label": "Authenticator apps require an internet connection",
+                "value": "B"
+              },
+              {
+                "label": "SIM swap attacks can intercept SMS codes",
+                "value": "C"
+              },
+              {
+                "label": "SMS cannot be used on exchanges",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "C"
+            ],
+            "analysis": "SIM swapping is when an attacker convinces your carrier to transfer your phone number to their SIM. Once they have your number, they receive all SMS codes. Authenticator apps (Google Authenticator, Authy) generate codes locally — immune to SIM swaps.",
+            "points": 1
           }
         ]
       },
