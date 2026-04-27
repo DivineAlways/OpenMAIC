@@ -88,8 +88,9 @@ interface RoundtableProps {
   readonly controlsVisible?: boolean;
   readonly onTogglePresentation?: () => void;
   readonly onPresentationInteractionChange?: (active: boolean) => void;
+  readonly onSeek?: (sceneIndex: number) => void;
   /** Ref to the fullscreen container — passed to ProactiveCard so its portal
-   *  renders inside the top-layer during presentation mode. */
+   * renders inside the top-layer during presentation mode. */
   readonly fullscreenContainerRef?: React.RefObject<HTMLDivElement | null>;
 }
 
@@ -173,6 +174,7 @@ export function Roundtable({
   controlsVisible,
   onTogglePresentation,
   onPresentationInteractionChange,
+  onSeek,
   fullscreenContainerRef,
 }: RoundtableProps) {
   const { t } = useI18n();
@@ -649,6 +651,7 @@ export function Roundtable({
       onToggleAutoPlay={() => setAutoPlayLecture(!autoPlayLecture)}
       playbackSpeed={playbackSpeed}
       onCycleSpeed={handleCycleSpeed}
+      onSeek={onSeek}
     />
   );
 

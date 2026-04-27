@@ -1231,13 +1231,14 @@ export function Stage({
               onToggleChat={() => setChatAreaCollapsed(!chatAreaCollapsed)}
               onPrevSlide={handlePreviousScene}
               onNextSlide={handleNextScene}
-              onWhiteboardClose={handleWhiteboardToggle}
-              isPresenting={isPresenting}
-              controlsVisible={controlsVisible}
-              onTogglePresentation={togglePresentation}
-              onPresentationInteractionChange={setIsPresentationInteractionActive}
-              fullscreenContainerRef={stageRef}
-            />
+      onWhiteboardClose={handleWhiteboardToggle}
+      isPresenting={isPresenting}
+      controlsVisible={controlsVisible}
+      onTogglePresentation={togglePresentation}
+      onPresentationInteractionChange={setIsPresentationInteractionActive}
+      onSeek={handleSeek}
+      fullscreenContainerRef={stageRef}
+    />
           </div>
         )}
       </div>
