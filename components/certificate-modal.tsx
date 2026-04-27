@@ -94,11 +94,11 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
         H * 0.662,
       );
 
-      // ── Date value — left-aligned at ~86% from top ──
-      ctx.textAlign = 'left';
+      // ── Date value — centered under DATE ISSUED label (~28% from left) ──
+      ctx.textAlign = 'center';
       ctx.fillStyle = '#5b9bd5';
       ctx.font = `italic ${Math.round(H * 0.022)}px Georgia, serif`;
-      ctx.fillText(completedDate, W * 0.195, H * 0.862);
+      ctx.fillText(completedDate, W * 0.28, H * 0.862);
 
       const slug = courseName.replace(/[^a-z0-9]/gi, '-').toLowerCase();
       canvas.toBlob((blob) => {
@@ -233,12 +233,13 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
               demonstrating proficiency in fundamental blockchain technology concepts.
             </div>
 
-            {/* Date value — left side, ~85% from top */}
+            {/* Date value — centered under "DATE ISSUED" label, ~84% from top */}
             <div
-              className="absolute pointer-events-none"
+              className="absolute pointer-events-none text-center"
               style={{
                 top: '83.5%',
-                left: '19.5%',
+                left: '14%',
+                width: '28%',
                 color: '#5b9bd5',
                 fontSize: 'clamp(6px, 1.1vw, 11px)',
                 fontFamily: 'Georgia, serif',
