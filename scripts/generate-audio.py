@@ -34,6 +34,8 @@ TTS_PRONUNCIATIONS = [
     (re.compile(r'\bAPR\b'), 'A-P-R'),
     (re.compile(r'\bBitunix\b'), 'Bit-you-nix'),
     (re.compile(r'\bHODL\b'), 'hoddle'),
+    # Fix "live" (active/current) pronounced as "lived" — force long 'i' sound
+    (re.compile(r'\blive\b', re.IGNORECASE), 'lyve'),
 ]
 
 

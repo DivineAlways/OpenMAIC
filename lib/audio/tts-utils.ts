@@ -21,6 +21,8 @@ const TTS_PRONUNCIATIONS: [RegExp, string][] = [
   [/\bAPR\b/g, 'A-P-R'],
   [/\bBitunix\b/g, 'Bit-you-nix'],
   [/\bHODL\b/g, 'hoddle'],
+  // Fix "live" (active/current) pronounced as "lived" — force long 'i' sound
+  [/\blive\b/gi, 'lyve'],
 ];
 
 /**
