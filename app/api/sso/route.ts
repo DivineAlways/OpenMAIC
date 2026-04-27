@@ -37,7 +37,7 @@ export async function GET(request: NextRequest) {
   }
 
   // Issue the standard openmaic_access cookie
-  const accessToken = accessCode ? createAccessToken(accessCode) : `sso.${Date.now()}.valid`;
+  const accessToken = accessCode ? `sso.${createAccessToken(accessCode)}` : `sso.${Date.now()}.valid`;
   const cookieStore = await cookies();
   cookieStore.set('openmaic_access', accessToken, {
     httpOnly: true,
