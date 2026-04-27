@@ -103,6 +103,7 @@ export function SceneSidebar({
 
   return (
     <div
+      data-tour="sidebar"
       style={{
         width: displayWidth,
         transition: isDraggingRef.current ? 'none' : 'width 0.3s ease',

@@ -796,6 +796,7 @@ export function Roundtable({
                   {/* Mic button */}
                   <button
                     type="button"
+                    data-tour="mic"
                     aria-label={
                       isRecording ? t('roundtable.stopRecording') : t('roundtable.startRecording')
                     }

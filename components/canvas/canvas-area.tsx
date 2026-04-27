@@ -29,6 +29,7 @@ export function CanvasArea({
   currentScene,
   currentSceneIndex,
   scenesCount,
+  speechProgress,
   mode,
   engineState,
   isLiveSession,
@@ -53,6 +54,7 @@ export function CanvasArea({
   onNextLesson,
   courseId,
   courseTitle,
+  onSeek,
 }: CanvasAreaProps) {
   const { t } = useI18n();
   const showControls = mode === 'playback' && !whiteboardOpen;
@@ -245,6 +247,7 @@ export function CanvasArea({
           )}
           currentSceneIndex={currentSceneIndex}
           scenesCount={scenesCount}
+          speechProgress={speechProgress}
           engineState={engineState}
           isLiveSession={isLiveSession}
           whiteboardOpen={whiteboardOpen}
@@ -260,6 +263,7 @@ export function CanvasArea({
           onTogglePresentation={onTogglePresentation}
           showStopDiscussion={showStopDiscussion}
           onStopDiscussion={onStopDiscussion}
+          onSeek={onSeek}
         />
       )}
     </div>

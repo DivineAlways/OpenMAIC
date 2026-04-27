@@ -860,6 +860,15 @@ export function Stage({
     : scenes.findIndex((s) => s.id === currentSceneId);
   const totalScenesCount = scenes.length + (hasNextPending ? 1 : 0);
 
+  // Seekable progress bar — jump to any scene by index
+  const handleSeek = useCallback((targetIndex: number) => {
+    const target = scenes[targetIndex];
+    if (!target) return;
+    // Stop current audio immediately
+    audioPlayerRef.current.stop?.();
+    gatedSceneSwitch(target.id);
+  }, [scenes, gatedSceneSwitch]);
+
   // get action information
   const totalActions = currentScene?.actions?.length || 0;
 
@@ -1083,6 +1092,7 @@ export function Stage({
                 ? () => onRetryOutline(generatingOutlines[0].id)
                 : undefined
             }
+            onSeek={handleSeek}
             onQuizComplete={handleQuizComplete}
             onNextLesson={courseId ? handleNextLessonFromQuiz : undefined}
             courseId={courseId}

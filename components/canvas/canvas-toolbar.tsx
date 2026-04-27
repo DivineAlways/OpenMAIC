@@ -51,6 +51,8 @@ export interface CanvasToolbarProps {
   readonly onToggleAutoPlay?: () => void;
   readonly playbackSpeed?: number;
   readonly onCycleSpeed?: () => void;
+  // Seekable progress bar
+  readonly onSeek?: (sceneIndex: number) => void;
 }
 
 /* Compact control button */
@@ -110,6 +112,7 @@ export function CanvasToolbar({
   onToggleAutoPlay,
   playbackSpeed = 1,
   onCycleSpeed,
+  onSeek,
 }: CanvasToolbarProps) {
   const { t } = useI18n();
   const canGoPrev = currentSceneIndex > 0;
@@ -119,6 +122,26 @@ export function CanvasToolbar({
   const whiteboardElementCount = useStageStore(
     (s) => s.stage?.whiteboard?.[0]?.elements?.length || 0,
   );
+
+  // Progress bar seek state
+  const [seekHover, setSeekHover] = useState(false);
+  const [seekPreviewIndex, setSeekPreviewIndex] = useState<number | null>(null);
+  const progressBarRef = useRef<HTMLDivElement>(null);
+
+  const handleProgressClick = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    if (!onSeek || scenesCount <= 0) return;
+    const rect = e.currentTarget.getBoundingClientRect();
+    const ratio = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+    const targetIndex = Math.floor(ratio * scenesCount);
+    onSeek(Math.min(targetIndex, scenesCount - 1));
+  }, [onSeek, scenesCount]);
+
+  const handleProgressMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    if (!onSeek || scenesCount <= 0) return;
+    const rect = e.currentTarget.getBoundingClientRect();
+    const ratio = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+    setSeekPreviewIndex(Math.min(Math.floor(ratio * scenesCount), scenesCount - 1));
+  }, [onSeek, scenesCount]);
 
   // Volume slider hover state
   const [volumeHover, setVolumeHover] = useState(false);
@@ -149,24 +172,69 @@ export function CanvasToolbar({
 
   return (
     <div className={cn('flex flex-col', className)}>
-      {/* Dual-layer progress bar */}
-      <div className="w-full h-1 bg-gray-200/60 dark:bg-gray-700/50 relative overflow-hidden">
-        {/* Completed scenes (solid) */}
-        <div
-          className="absolute left-0 top-0 h-full bg-violet-500/60 dark:bg-violet-400/50 transition-[width] duration-300"
-          style={{ width: `${(currentSceneIndex / Math.max(scenesCount, 1)) * 100}%` }}
-        />
-        {/* Speech progress within current scene (brighter fill on top) */}
-        {speechProgress != null && speechProgress > 0 && (
-          <div
-            className="absolute top-0 h-full bg-violet-500 dark:bg-violet-400 transition-[width] duration-150"
-            style={{
-              left: `${(currentSceneIndex / Math.max(scenesCount, 1)) * 100}%`,
-              width: `${(speechProgress / Math.max(scenesCount, 1)) * 100}%`,
-            }}
-          />
-        )}
-      </div>
+      {/* Seekable progress bar */}
+      <TooltipProvider delayDuration={0}>
+        <Tooltip open={seekHover && onSeek != null && seekPreviewIndex != null}>
+          <TooltipTrigger asChild>
+            <div
+              ref={progressBarRef}
+              role="slider"
+              aria-label="Lesson progress"
+              aria-valuemin={0}
+              aria-valuemax={scenesCount - 1}
+              aria-valuenow={currentSceneIndex}
+              className={cn(
+                'w-full relative overflow-visible',
+                onSeek ? 'cursor-pointer group/progress' : '',
+              )}
+              style={{ height: seekHover && onSeek ? 6 : 4, transition: 'height 0.15s ease' }}
+              data-tour="progress-bar"
+              onClick={handleProgressClick}
+              onMouseMove={handleProgressMouseMove}
+              onMouseEnter={() => { if (onSeek) setSeekHover(true); }}
+              onMouseLeave={() => { setSeekHover(false); setSeekPreviewIndex(null); }}
+            >
+              {/* Track */}
+              <div className="absolute inset-0 bg-gray-200/60 dark:bg-gray-700/50 rounded-full" />
+              {/* Completed scenes */}
+              <div
+                className="absolute left-0 top-0 h-full bg-violet-500/60 dark:bg-violet-400/50 rounded-full transition-[width] duration-300"
+                style={{ width: `${(currentSceneIndex / Math.max(scenesCount, 1)) * 100}%` }}
+              />
+              {/* Speech progress within current scene */}
+              {speechProgress != null && speechProgress > 0 && (
+                <div
+                  className="absolute top-0 h-full bg-violet-500 dark:bg-violet-400 rounded-full transition-[width] duration-150"
+                  style={{
+                    left: `${(currentSceneIndex / Math.max(scenesCount, 1)) * 100}%`,
+                    width: `${(speechProgress / Math.max(scenesCount, 1)) * 100}%`,
+                  }}
+                />
+              )}
+              {/* Seek preview ghost line */}
+              {seekHover && onSeek && seekPreviewIndex != null && (
+                <div
+                  className="absolute top-0 h-full bg-violet-300/40 dark:bg-violet-300/30 rounded-full pointer-events-none"
+                  style={{ width: `${((seekPreviewIndex + 1) / Math.max(scenesCount, 1)) * 100}%` }}
+                />
+              )}
+              {/* Scrubber thumb */}
+              {onSeek && (
+                <div
+                  className={cn(
+                    'absolute top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-violet-500 dark:bg-violet-400 shadow-sm pointer-events-none transition-opacity duration-150',
+                    seekHover ? 'opacity-100' : 'opacity-0',
+                  )}
+                  style={{ left: `calc(${overallPercent}% - 6px)` }}
+                />
+              )}
+            </div>
+          </TooltipTrigger>
+          <TooltipContent side="top" className="text-xs pointer-events-none">
+            {seekPreviewIndex != null ? `Scene ${seekPreviewIndex + 1} / ${scenesCount}` : ''}
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
     <div className="flex items-center gap-2">
       {/* ── Left: sidebar toggle + page indicator ── */}
       <div className="flex items-center gap-1 shrink-0 pl-1">
@@ -277,6 +345,7 @@ export function CanvasToolbar({
               <Tooltip>
                 <TooltipTrigger asChild>
                   <button
+                    data-tour="speed"
                     onClick={onCycleSpeed}
                     className={cn(
                       'w-8 h-5 rounded flex items-center justify-center',
@@ -304,6 +373,7 @@ export function CanvasToolbar({
           {/* Prev scene */}
           {scenesCount > 1 && (
             <button
+              data-tour="prev-next"
               onClick={onPrevSlide}
               disabled={!canGoPrev}
               className={cn(
@@ -339,6 +409,7 @@ export function CanvasToolbar({
             </button>
           ) : showPlayPause ? (
             <button
+              data-tour="play-pause"
               onClick={onPlayPause}
               className={cn(
                 ctrlBtn,
@@ -380,6 +451,7 @@ export function CanvasToolbar({
               <Tooltip>
                 <TooltipTrigger asChild>
                   <button
+                    data-tour="autoplay"
                     onClick={onToggleAutoPlay}
                     className={cn(
                       ctrlBtn,
@@ -402,6 +474,7 @@ export function CanvasToolbar({
 
           {/* Whiteboard */}
           <button
+            data-tour="whiteboard"
             onClick={(e) => {
               e.stopPropagation();
               onWhiteboardClose();
@@ -428,6 +501,7 @@ export function CanvasToolbar({
         <CtrlDivider />
         {onTogglePresentation && (
           <button
+            data-tour="fullscreen"
             onClick={onTogglePresentation}
             className={cn(
               ctrlBtn,
@@ -448,6 +522,7 @@ export function CanvasToolbar({
         )}
         {onToggleChat && (
           <button
+            data-tour="chat-toggle"
             onClick={onToggleChat}
             className={cn(
               ctrlBtn,

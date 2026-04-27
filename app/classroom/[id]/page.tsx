@@ -1,6 +1,7 @@
 'use client';
 
 import { Stage } from '@/components/stage';
+import { OnboardingTour } from '@/components/onboarding-tour';
 import { ThemeProvider } from '@/lib/hooks/use-theme';
 import { useStageStore } from '@/lib/store';
 import { loadImageMapping } from '@/lib/utils/image-storage';
@@ -221,7 +222,10 @@ export default function ClassroomDetailPage() {
               </div>
             </div>
           ) : (
-            <Stage onRetryOutline={retrySingleOutline} courseId={classroomId} />
+            <>
+              <Stage onRetryOutline={retrySingleOutline} courseId={classroomId} />
+              <OnboardingTour />
+            </>
           )}
         </div>
       </MediaStageProvider>
