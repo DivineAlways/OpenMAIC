@@ -80,7 +80,7 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
       }, 'image/png');
     } catch (err) {
       console.error(err);
-      alert('Download failed. Please try again or take a screenshot.');
+      alert('Download failed.');
     } finally {
       setDownloading(false);
     }
@@ -92,19 +92,20 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="fixed inset-0 z-[200] bg-black/80 backdrop-blur-sm flex items-center justify-center p-6"
+        className="fixed inset-0 z-[200] bg-black/80 backdrop-blur-sm"
         onClick={e => { if (e.target === e.currentTarget) onClose(); }}
       >
+        {/* Centered box — never taller than viewport */}
         <motion.div
           initial={{ opacity: 0, scale: 0.93 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.93 }}
           transition={{ type: 'spring', stiffness: 300, damping: 28 }}
-          className="flex flex-col gap-2 w-full h-full"
-          style={{ maxWidth: '100%', maxHeight: '100%' }}
+          className="absolute inset-4 flex flex-col gap-2"
+          style={{ top: 16, left: 16, right: 16, bottom: 16 }}
         >
-          {/* Controls bar */}
-          <div className="flex items-center justify-between shrink-0 px-1">
+          {/* Controls */}
+          <div className="flex items-center justify-between shrink-0">
             <div className="flex items-center gap-2">
               {editingName ? (
                 <div className="flex items-center gap-2">
@@ -141,75 +142,75 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
             </div>
           </div>
 
-          {/* Certificate — fills remaining space, maintains aspect ratio */}
-          <div className="flex-1 min-h-0 flex items-center justify-center">
+          {/* Certificate image — takes all remaining space, contained */}
+          <div className="flex-1 min-h-0 relative">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/certificate-bg.png"
+              alt="Certificate"
+              className="w-full h-full object-contain select-none"
+              draggable={false}
+            />
+
+            {/* Text overlays — positioned as % of the img's rendered area */}
+            {/* We use a matching aspect-ratio box centered over the image */}
             <div
-              className="relative"
-              style={{
-                /* Scale to fit: whichever dimension is the constraint */
-                width: 'min(100%, calc((100vh - 80px) * 1008 / 734))',
-                aspectRatio: '1008 / 734',
-              }}
+              className="absolute inset-0 flex items-center justify-center pointer-events-none"
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/certificate-bg.png"
-                alt="Certificate"
-                className="absolute inset-0 w-full h-full object-fill rounded-sm select-none"
-                draggable={false}
-              />
+              {/* Inner box matches the image's 1008:734 aspect ratio */}
+              <div className="relative h-full" style={{ aspectRatio: '1008 / 734' }}>
 
-              {/* All overlays use % of the container so they scale perfectly */}
+                {/* Member name */}
+                <div className="absolute w-full text-center" style={{ top: '49%' }}>
+                  <span style={{
+                    color: '#d4a843',
+                    fontSize: '4.6cqh',
+                    fontFamily: 'var(--font-dancing), "Dancing Script", cursive',
+                    fontWeight: 700,
+                    whiteSpace: 'nowrap',
+                    textShadow: '0 1px 6px rgba(0,0,0,0.5)',
+                  }}>
+                    {displayName || 'OnlyCrypto Member'}
+                  </span>
+                </div>
 
-              {/* Member name */}
-              <div className="absolute inset-0 flex items-start justify-center pointer-events-none" style={{ paddingTop: '46%' }}>
-                <span style={{
-                  color: '#d4a843',
-                  fontSize: '4.5%',
-                  fontFamily: 'var(--font-dancing), "Dancing Script", cursive',
-                  fontWeight: 700,
-                  whiteSpace: 'nowrap',
-                  textShadow: '0 1px 6px rgba(0,0,0,0.5)',
-                }}>
-                  {displayName || 'OnlyCrypto Member'}
-                </span>
-              </div>
+                {/* Course line 1 */}
+                <div className="absolute w-full text-center" style={{ top: '60.5%' }}>
+                  <span style={{
+                    color: '#b8cce0',
+                    fontSize: '1.9cqh',
+                    fontFamily: 'Arial, sans-serif',
+                    whiteSpace: 'nowrap',
+                  }}>
+                    has successfully completed the course &ldquo;{courseName}&rdquo;
+                  </span>
+                </div>
 
-              {/* Course line 1 */}
-              <div className="absolute inset-0 flex items-start justify-center pointer-events-none" style={{ paddingTop: '60%' }}>
-                <span style={{
-                  color: '#b8cce0',
-                  fontSize: '1.9%',
-                  fontFamily: 'Arial, sans-serif',
-                  whiteSpace: 'nowrap',
-                }}>
-                  has successfully completed the course &ldquo;{courseName}&rdquo;
-                </span>
-              </div>
+                {/* Course line 2 */}
+                <div className="absolute w-full text-center" style={{ top: '66%' }}>
+                  <span style={{
+                    color: '#b8cce0',
+                    fontSize: '1.9cqh',
+                    fontFamily: 'Arial, sans-serif',
+                    whiteSpace: 'nowrap',
+                  }}>
+                    demonstrating proficiency in fundamental blockchain technology concepts.
+                  </span>
+                </div>
 
-              {/* Course line 2 */}
-              <div className="absolute inset-0 flex items-start justify-center pointer-events-none" style={{ paddingTop: '66%' }}>
-                <span style={{
-                  color: '#b8cce0',
-                  fontSize: '1.9%',
-                  fontFamily: 'Arial, sans-serif',
-                  whiteSpace: 'nowrap',
-                }}>
-                  demonstrating proficiency in fundamental blockchain technology concepts.
-                </span>
-              </div>
+                {/* Date */}
+                <div className="absolute text-center" style={{ top: '83%', left: '14%', width: '28%' }}>
+                  <span style={{
+                    color: '#5b9bd5',
+                    fontSize: '1.9cqh',
+                    fontFamily: 'Georgia, serif',
+                    fontStyle: 'italic',
+                    whiteSpace: 'nowrap',
+                  }}>
+                    {completedDate}
+                  </span>
+                </div>
 
-              {/* Date — centered under DATE ISSUED */}
-              <div className="absolute pointer-events-none" style={{ top: '83%', left: '14%', width: '28%', textAlign: 'center' }}>
-                <span style={{
-                  color: '#5b9bd5',
-                  fontSize: '1.9%',
-                  fontFamily: 'Georgia, serif',
-                  fontStyle: 'italic',
-                  whiteSpace: 'nowrap',
-                }}>
-                  {completedDate}
-                </span>
               </div>
             </div>
           </div>
