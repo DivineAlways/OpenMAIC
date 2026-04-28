@@ -307,8 +307,8 @@ const getDefaultProvidersConfig = (): ProvidersConfig => {
 
 // Initialize default audio config
 const getDefaultAudioConfig = () => ({
-  ttsProviderId: 'browser-native-tts' as TTSProviderId,
-  ttsVoice: 'default',
+  ttsProviderId: 'elevenlabs-tts' as TTSProviderId,
+  ttsVoice: 'Xb7hH8MSUJpSbSDYk0k2', // Alice — Clear, Engaging Educator
   ttsSpeed: 1.0,
   asrProviderId: 'browser-native' as ASRProviderId,
   asrLanguage: 'en-US',
@@ -1343,7 +1343,7 @@ export const useSettingsStore = create<SettingsState>()(
     },
     {
       name: 'settings-storage',
-      version: 6,
+      version: 7,
       // Migrate persisted state
       migrate: (persistedState: unknown, version: number) => {
         const state = persistedState as Partial<SettingsState>;
@@ -1368,6 +1368,20 @@ export const useSettingsStore = create<SettingsState>()(
           if ((state as Record<string, unknown>).ttsProviderId === 'edge-tts') {
             (state as Record<string, unknown>).ttsProviderId = 'browser-native-tts';
             (state as Record<string, unknown>).ttsVoice = 'default';
+          }
+        }
+
+        // v6 → v7: switch TTS from browser-native to ElevenLabs (Alice voice).
+        // Server-side ElevenLabs gives everyone the same high-quality educator voice
+        // instead of the browser's built-in robotic TTS which varies per device.
+        if (version <= 6) {
+          if (
+            !state.ttsProviderId ||
+            state.ttsProviderId === 'browser-native-tts' ||
+            state.ttsProviderId === 'edge-tts'
+          ) {
+            (state as Record<string, unknown>).ttsProviderId = 'elevenlabs-tts';
+            (state as Record<string, unknown>).ttsVoice = 'Xb7hH8MSUJpSbSDYk0k2'; // Alice
           }
         }
 
