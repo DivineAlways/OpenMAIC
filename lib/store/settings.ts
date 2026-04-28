@@ -1343,7 +1343,7 @@ export const useSettingsStore = create<SettingsState>()(
     },
     {
       name: 'settings-storage',
-      version: 5,
+      version: 6,
       // Migrate persisted state
       migrate: (persistedState: unknown, version: number) => {
         const state = persistedState as Partial<SettingsState>;
@@ -1368,6 +1368,15 @@ export const useSettingsStore = create<SettingsState>()(
           if ((state as Record<string, unknown>).ttsProviderId === 'edge-tts') {
             (state as Record<string, unknown>).ttsProviderId = 'browser-native-tts';
             (state as Record<string, unknown>).ttsVoice = 'default';
+          }
+        }
+
+        // v5 → v6: switch deepseek-v3.2 to llama-3.3-70b.
+        // deepseek-v3.2 on NVIDIA NIM consistently hits 15-20s TTFT.
+        // llama-3.3-70b on the same endpoint is 1-3s.
+        if (version <= 5) {
+          if (state.modelId === 'deepseek-ai/deepseek-v3.2') {
+            state.modelId = 'meta/llama-3.3-70b-instruct';
           }
         }
 

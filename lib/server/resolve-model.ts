@@ -30,7 +30,7 @@ export async function resolveModel(params: {
   baseUrl?: string;
   providerType?: string;
 }): Promise<ResolvedModel> {
-  const modelString = params.modelString || process.env.DEFAULT_MODEL || 'openai:deepseek-ai/deepseek-v3.2';
+  const modelString = params.modelString || process.env.DEFAULT_MODEL || 'openai:meta/llama-3.3-70b-instruct';
   const { providerId, modelId } = parseModelString(modelString);
 
   // SSRF validation applies only to client-supplied base URLs.
