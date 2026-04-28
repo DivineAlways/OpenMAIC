@@ -604,10 +604,10 @@ export const useSettingsStore = create<SettingsState>()(
         modelId: migratedData?.modelId || '',
         providersConfig: migratedData?.providersConfig || getDefaultProvidersConfig(),
         ttsModel: migratedData?.ttsModel || 'openai-tts',
-        selectedAgentIds: migratedData?.selectedAgentIds || ['default-1', 'default-2', 'default-3'],
+        selectedAgentIds: migratedData?.selectedAgentIds || ['default-1'],
         maxTurns: migratedData?.maxTurns?.toString() || '10',
         agentMode: 'auto' as const,
-        autoAgentCount: 3,
+        autoAgentCount: 1,
 
         // Playback controls
         ttsMuted: false,
@@ -1343,7 +1343,7 @@ export const useSettingsStore = create<SettingsState>()(
     },
     {
       name: 'settings-storage',
-      version: 4,
+      version: 5,
       // Migrate persisted state
       migrate: (persistedState: unknown, version: number) => {
         const state = persistedState as Partial<SettingsState>;
@@ -1369,6 +1369,17 @@ export const useSettingsStore = create<SettingsState>()(
             (state as Record<string, unknown>).ttsProviderId = 'browser-native-tts';
             (state as Record<string, unknown>).ttsVoice = 'default';
           }
+        }
+
+        // v4 → v5: reduce default agents from 3 to 1.
+        // Multi-agent mode adds an extra director LLM call before every reply (~3-5s delay).
+        // Single agent skips the director entirely and responds immediately.
+        if (version <= 4) {
+          const ids = state.selectedAgentIds as string[] | undefined;
+          if (!ids || ids.length > 1) {
+            state.selectedAgentIds = ['default-1'];
+          }
+          (state as Record<string, unknown>).autoAgentCount = 1;
         }
 
         // Ensure providersConfig has all built-in providers (also in merge below)
