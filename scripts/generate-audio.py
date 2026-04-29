@@ -34,6 +34,7 @@ TTS_PRONUNCIATIONS = [
     (re.compile(r'\bAPR\b'), 'A-P-R'),
     (re.compile(r'\bBitunix\b'), 'Bit-you-nix'),
     (re.compile(r'\bHODL\b'), 'hoddle'),
+    (re.compile(r'\bMACD\b'), 'mac D'),
 ]
 
 

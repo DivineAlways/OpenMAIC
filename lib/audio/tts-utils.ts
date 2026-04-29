@@ -21,6 +21,7 @@ const TTS_PRONUNCIATIONS: [RegExp, string][] = [
   [/\bAPR\b/g, 'A-P-R'],
   [/\bBitunix\b/g, 'Bit-you-nix'],
   [/\bHODL\b/g, 'hoddle'],
+  [/\bMACD\b/g, 'mac D'],
 ];
 
 /**
