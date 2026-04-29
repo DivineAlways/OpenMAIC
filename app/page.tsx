@@ -457,6 +457,50 @@ export default function HomePage() {
             </div>
           </>
         )}
+
+        {/* Final Exam — always visible at the bottom */}
+        <div className="mt-16 pt-10 border-t border-white/5">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="flex-1">
+              <h2 className="text-sm font-bold uppercase tracking-widest text-gray-500">🏆 Final Exam</h2>
+              <p className="text-xs text-gray-600 mt-1">100 questions · All levels · All subjects · Score 80%+ to prove mastery</p>
+            </div>
+            <span className="text-xs font-bold px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20">
+              All Levels
+            </span>
+          </div>
+          <button
+            onClick={() => goToCourse('oc-final-exam', 'OC Academy — Final Exam', 'final')}
+            className="group w-full relative text-left rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 to-gray-900 border border-amber-500/30 hover:border-amber-500/60 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-amber-500/10"
+          >
+            <div className="h-1.5 bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500" />
+            <div className="p-6 flex flex-col sm:flex-row items-start sm:items-center gap-5">
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center text-3xl shadow-lg shrink-0">
+                🏆
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-2 mb-1 flex-wrap">
+                  <h3 className="text-lg font-black text-white">OC Academy — Final Exam</h3>
+                  <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-400">100 Questions</span>
+                </div>
+                <p className="text-sm text-gray-400 leading-relaxed mb-3">
+                  The comprehensive test covering every subject: Cryptocurrency, Blockchain, DeFi, Trading, Wallets &amp; Security, Ecosystem, Swapping &amp; Bridging, and XRPL. Questions span all three levels — Elementary through College. Score 80% or higher to earn your certificate.
+                </p>
+                <div className="flex items-center gap-4 text-xs text-gray-500 flex-wrap">
+                  <span className="flex items-center gap-1"><span className="text-emerald-400 font-bold">30</span> Elementary</span>
+                  <span className="flex items-center gap-1"><span className="text-amber-400 font-bold">32</span> High School</span>
+                  <span className="flex items-center gap-1"><span className="text-blue-400 font-bold">38</span> College</span>
+                  <span className="flex items-center gap-1 ml-auto text-amber-400 font-bold">Pass: 80 / 100 →</span>
+                </div>
+              </div>
+            </div>
+            <div className="px-6 pb-6">
+              <div className="w-full py-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-600 text-white text-sm font-bold text-center opacity-0 group-hover:opacity-100 transition-all duration-200 -translate-y-1 group-hover:translate-y-0">
+                Take the Final Exam →
+              </div>
+            </div>
+          </button>
+        </div>
       </main>
 
       {/* Graduation ceremony — Elementary → Survivor */}
