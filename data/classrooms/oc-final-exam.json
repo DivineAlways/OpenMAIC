@@ -17,6 +17,19 @@
       "id": "fe-intro",
       "type": "slide",
       "title": "🎓 OC Academy — Final Exam",
+      "order": 0,
+      "actions": [
+        {
+          "id": "action_fe-intro_0",
+          "type": "spotlight",
+          "elementId": "fe-intro-title"
+        },
+        {
+          "id": "action_fe-intro_1",
+          "type": "speech",
+          "text": "Welcome to the OC Academy Final Exam. 100 questions covering every subject across all three levels. Score 80 or higher to prove mastery."
+        }
+      ],
       "content": {
         "type": "slide",
         "canvas": {
@@ -74,8 +87,16 @@
     },
     {
       "id": "fe-exam",
-      "type": "slide",
+      "type": "quiz",
       "title": "Final Exam — All 100 Questions",
+      "order": 1,
+      "actions": [
+        {
+          "id": "action_fe-exam_0",
+          "type": "speech",
+          "text": "Time to test everything you've learned. Take your time — read each question carefully. Good luck!"
+        }
+      ],
       "content": {
         "type": "quiz",
         "questions": [
