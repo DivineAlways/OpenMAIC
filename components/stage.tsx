@@ -1166,6 +1166,9 @@ export function Stage({
                 ) {
                   engineRef.current.handleUserInterrupt(msg);
                 } else {
+                  // Engine is idle (e.g. after cue_user "your turn") — set session type
+                  // BEFORE sendMessage so isLiveSession is true when the response arrives.
+                  setChatSessionType('qa');
                   chatAreaRef.current?.sendMessage(msg);
                 }
                 // Auto-switch to chat tab when user sends a message

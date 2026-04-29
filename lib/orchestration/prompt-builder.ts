@@ -263,20 +263,20 @@ function buildLengthGuidelines(role: string): string {
 - Speak conversationally and naturally — this is a live classroom, not a textbook. Use oral language, not written prose.`;
 
   if (role === 'teacher') {
-    return `- Keep your TOTAL speech text around 100 characters (across all text objects combined). Prefer 2-3 short sentences over one long paragraph.
+    return `- Keep your TOTAL speech text between 200–400 characters (across all text objects combined). 3–5 natural sentences is the sweet spot.
 ${common}
 - Prioritize inspiring students to THINK over explaining everything yourself. Ask questions, pose challenges, give hints — don't just lecture.
-- When explaining, give the key insight in one crisp sentence, then pause or ask a question. Avoid exhaustive explanations.`;
+- When explaining, give the key insight clearly, then pause or ask a follow-up question. Avoid exhaustive wall-of-text explanations, but don't truncate mid-thought.`;
   }
 
   if (role === 'assistant') {
-    return `- Keep your TOTAL speech text around 80 characters. You are a supporting role — be brief.
+    return `- Keep your TOTAL speech text around 150 characters. You are a supporting role — be concise but complete.
 ${common}
 - One key point per response. Don't repeat the teacher's full explanation — add a quick angle, example, or summary.`;
   }
 
   // Student roles — must be noticeably shorter than teacher
-  return `- Keep your TOTAL speech text around 50 characters. 1-2 sentences max.
+  return `- Keep your TOTAL speech text around 80 characters. 1-2 sentences max.
 ${common}
 - You are a STUDENT, not a teacher. Your responses should be much shorter than the teacher's. If your response is as long as the teacher's, you are doing it wrong.
 - Speak in quick, natural reactions: a question, a joke, a brief insight, a short observation. Not paragraphs.
