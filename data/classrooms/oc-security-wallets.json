@@ -2199,10 +2199,31 @@
           },
           {
             "id": "q-sw-5",
-            "type": "short_answer",
-            "question": "You receive an email from 'Ledger Support' saying your device has been compromised and you must enter your 24-word seed phrase on their website. Identify 3 red flags and explain what you should do.",
-            "commentPrompt": "Full marks for: (1) Ledger/any company will NEVER ask for your seed phrase, (2) the seed phrase should never be typed into any website or device other than the hardware wallet itself, (3) this is a phishing attack — delete/report it. Bonus: check the actual domain, contact support through official channels.",
-            "points": 3
+            "type": "single",
+            "question": "You receive an email from 'Ledger Support' saying your device has been compromised and you must enter your 24-word seed phrase on their website. Which response correctly identifies three red flags and the right action?",
+            "options": [
+              {
+                "label": "Red flags: Ledger never asks for your seed phrase, legitimate companies don't create urgency to extract secrets, and the website may be a phishing clone. Action: delete the email and never enter your seed phrase online",
+                "value": "A"
+              },
+              {
+                "label": "Red flags: the email came to your inbox, the website has 'Ledger' in the URL, and they asked for 24 words not 12. Action: enter only the first 12 words to verify your identity",
+                "value": "B"
+              },
+              {
+                "label": "Red flags: the email is long, it mentions your device, and it came from a support address. Action: call Ledger customer service using the number provided in the email",
+                "value": "C"
+              },
+              {
+                "label": "Red flags: it asks for your seed phrase, which you should only share with hardware wallet companies when required. Action: enter your phrase on a private browser tab to protect your privacy",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "A"
+            ],
+            "analysis": "Three red flags: (1) No legitimate company — including Ledger — will ever ask for your seed phrase. (2) Urgency and fear ('compromised device') are social engineering tactics designed to bypass rational thinking. (3) The website is likely a phishing clone with a similar-looking URL. Your seed phrase must NEVER be entered online, on any website, ever.",
+            "points": 1
           },
           {
             "id": "q-sw-x1",

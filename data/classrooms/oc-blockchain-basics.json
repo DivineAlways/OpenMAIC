@@ -2646,10 +2646,31 @@
           },
           {
             "id": "q-bb-5",
-            "type": "short_answer",
+            "type": "single",
             "question": "Explain in 2–3 sentences why changing one transaction deep in a blockchain would require redoing enormous computational work.",
-            "commentPrompt": "Award full marks if the student explains: (1) changing a transaction changes the block's hash, (2) each block contains the previous block's hash so all subsequent blocks become invalid, (3) the attacker must redo proof-of-work for every block after the altered one to create a longer chain.",
-            "points": 3
+            "options": [
+              {
+                "label": "Changing a transaction changes that block's hash, which invalidates every following block — the attacker must redo proof-of-work for all subsequent blocks to create a longer valid chain",
+                "value": "A"
+              },
+              {
+                "label": "Changing a transaction only affects that one block's data, so validators simply reject it without extra work",
+                "value": "B"
+              },
+              {
+                "label": "Each block is independently validated, so altering one block requires only re-signing that single block",
+                "value": "C"
+              },
+              {
+                "label": "The hash function is reversible, so the attacker can recalculate the original hash and maintain the chain",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "A"
+            ],
+            "analysis": "Changing a transaction changes the block's hash. Each block contains the previous block's hash, so all subsequent blocks become invalid. The attacker must redo proof-of-work for every block after the altered one to create a longer chain — computationally infeasible when the network has 700+ exahashes/sec.",
+            "points": 1
           },
           {
             "id": "q-bb-x1",

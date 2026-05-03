@@ -2587,10 +2587,31 @@
           },
           {
             "id": "q-ec-5",
-            "type": "short_answer",
-            "question": "A government is considering banning stablecoins. What are two legitimate risks they might be trying to address, and what are two counterarguments for allowing regulated stablecoins?",
-            "commentPrompt": "Risks: dollar hegemony concerns, bank runs if poorly backed, money laundering, loss of monetary policy control. Counterarguments: financial inclusion in developing countries, programmable payments, competition drives innovation, regulated stablecoins can have reserve requirements. Award marks for reasoned arguments either way.",
-            "points": 3
+            "type": "single",
+            "question": "A government is considering banning stablecoins. Which answer correctly identifies two legitimate risks they might be addressing AND two counterarguments for allowing regulated stablecoins?",
+            "options": [
+              {
+                "label": "Risks: bank runs on stablecoin reserves and undermining monetary policy. Counterarguments: stablecoins enable faster cross-border payments and financial inclusion for the unbanked",
+                "value": "A"
+              },
+              {
+                "label": "Risks: stablecoins are always algorithmic and always collapse. Counterarguments: governments can print unlimited stablecoins to fund deficits",
+                "value": "B"
+              },
+              {
+                "label": "Risks: stablecoins inflate the money supply and are anonymous. Counterarguments: they require no internet and work offline better than cash",
+                "value": "C"
+              },
+              {
+                "label": "Risks: stablecoins only benefit crypto traders. Counterarguments: they replace physical cash entirely and reduce ATM costs",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "A"
+            ],
+            "analysis": "Governments have legitimate concerns: a run on a major stablecoin like USDC could trigger liquidity crises in the underlying assets (bank run risk), and widespread dollar stablecoins could undermine monetary policy in smaller economies. Counterarguments: regulated stablecoins enable near-instant cross-border transfers at near-zero cost and extend financial services to the 1.4B+ unbanked globally.",
+            "points": 1
           },
           {
             "id": "q-ec-x1",

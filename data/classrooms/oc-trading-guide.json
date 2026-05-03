@@ -2495,10 +2495,31 @@
           },
           {
             "id": "q-tg-5",
-            "type": "short_answer",
-            "question": "A trader says 'I have a 40% win rate so I must be losing money.' Is this necessarily true? Explain using the concept of expectancy.",
-            "commentPrompt": "Award full marks if student shows: a 40% win rate can be profitable with a high enough reward/risk ratio. Example: 40% × $300 win − 60% × $100 loss = $120 − $60 = +$60 positive expectancy per trade.",
-            "points": 3
+            "type": "single",
+            "question": "A trader says 'I have a 40% win rate so I must be losing money.' Is this necessarily true? Which answer correctly uses the concept of expectancy?",
+            "options": [
+              {
+                "label": "Not necessarily — if the average win is $300 and average loss is $100, expectancy is +$60 per trade (40%×$300 − 60%×$100), making the strategy profitable despite the low win rate",
+                "value": "A"
+              },
+              {
+                "label": "Yes — any win rate below 50% means you lose more trades than you win, so you must be unprofitable over time",
+                "value": "B"
+              },
+              {
+                "label": "Not necessarily — a 40% win rate is profitable as long as you trade more than 100 times per month to average out the losses",
+                "value": "C"
+              },
+              {
+                "label": "Yes — expectancy only matters when win rate is above 50%; below that, position sizing cannot compensate",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "A"
+            ],
+            "analysis": "Expectancy = (Win% × Avg Win) − (Loss% × Avg Loss). With 40% wins at $300 avg and 60% losses at $100 avg: (0.4 × $300) − (0.6 × $100) = $120 − $60 = +$60 per trade. A 40% win rate is perfectly profitable with a high enough reward-to-risk ratio. Most retail traders blow up not from low win rates — but from letting losers run and cutting winners short.",
+            "points": 1
           },
           {
             "id": "q-tg-x1",

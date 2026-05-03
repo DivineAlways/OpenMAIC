@@ -2809,10 +2809,31 @@
           },
           {
             "id": "q-xd-5",
-            "type": "short_answer",
-            "question": "OnlyCrypto uses XRPL for member payments. Give three specific technical reasons why XRPL is better suited for this use case than Ethereum.",
-            "commentPrompt": "Full marks for any three: (1) 3–5 sec finality vs Ethereum minutes, (2) $0.0002 fee vs $5+ ETH gas, (3) no smart contract risk — payments are protocol-level, (4) destination tags for multi-user wallets, (5) 1 XRP reserve makes wallets lightweight, (6) no miner/validator bribery — fees are burned.",
-            "points": 3
+            "type": "single",
+            "question": "OnlyCrypto uses XRPL for member payments. Which answer gives three specific technical reasons why XRPL is better suited for this use case than Ethereum?",
+            "options": [
+              {
+                "label": "XRPL settles in 3–5 seconds with $0.0002 fees and 1,500 tx/s natively; Ethereum takes ~12 seconds with $1–$20 fees at ~15 tx/s L1 — making XRPL far cheaper and faster for high-volume micro-payouts",
+                "value": "A"
+              },
+              {
+                "label": "XRPL supports smart contracts, unlimited token issuance, and EVM compatibility — all advantages over Ethereum for payment use cases",
+                "value": "B"
+              },
+              {
+                "label": "Ethereum has no transaction fees and settles instantly, but XRPL is chosen because it is newer and more modern technology",
+                "value": "C"
+              },
+              {
+                "label": "XRPL requires 20 XRP reserve per account making it more secure, while Ethereum's gas fees make it cheaper for large transfers",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "A"
+            ],
+            "analysis": "Three technical reasons: (1) 3–5 second finality vs Ethereum's ~12 second blocks with reorg risk. (2) $0.0002 fixed fee vs $1–$20 variable gas — critical for paying many members small amounts. (3) 1,500 tx/s native vs ~15 tx/s Ethereum L1 — XRPL handles volume without congestion. The XRPL comparison slide in this lesson covers all three.",
+            "points": 1
           },
           {
             "id": "q-xd-x1",

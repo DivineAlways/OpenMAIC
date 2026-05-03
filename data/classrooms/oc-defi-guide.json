@@ -2628,10 +2628,31 @@
           },
           {
             "id": "q-df-5",
-            "type": "short_answer",
-            "question": "Explain how a DeFi liquidation cascade can amplify a market crash. Use a concrete example.",
-            "commentPrompt": "Full marks if student explains: (1) falling prices push health factors below 1, (2) liquidations flood the market with sell orders, (3) more selling pushes prices lower, (4) triggering more liquidations — give credit for any real example like the May 2021 or March 2020 events.",
-            "points": 3
+            "type": "single",
+            "question": "Explain how a DeFi liquidation cascade can amplify a market crash. Which sequence correctly describes how this happens?",
+            "options": [
+              {
+                "label": "ETH drops → health factors fall below 1.0 → bots liquidate collateral on DEXes → selling pressure pushes ETH lower → more positions become undercollateralized → further liquidations",
+                "value": "A"
+              },
+              {
+                "label": "ETH drops → Aave pauses lending → users manually sell collateral → price stabilizes → no further liquidations occur",
+                "value": "B"
+              },
+              {
+                "label": "ETH drops → liquidators buy ETH at a premium → price recovers → health factors return above 1.0 → cascade stops",
+                "value": "C"
+              },
+              {
+                "label": "ETH drops → smart contracts freeze withdrawals → users are protected from liquidation until the price recovers",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "A"
+            ],
+            "analysis": "When ETH drops sharply, thousands of health factors simultaneously hit the liquidation threshold. Liquidation bots sell the collateral on DEXes to repay debt, which adds selling pressure and pushes ETH lower still. This makes more positions undercollateralized, triggering further liquidations — a self-reinforcing cascade.",
+            "points": 1
           },
           {
             "id": "q-df-x1",

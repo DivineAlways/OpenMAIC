@@ -2850,11 +2850,32 @@
             "points": 2
           },
           {
-            "id": "q-cc-5",
-            "type": "short_answer",
-            "question": "A friend says 'Bitcoin and XRP are basically the same thing — they're both cryptocurrencies.' Give two specific technical differences that show they are fundamentally different.",
-            "commentPrompt": "Award marks for any two real differences: consensus mechanism (PoW vs RPCA), speed (10 min vs 3–5 sec), fees (variable mining fee vs 0.0002 XRP burned), supply model (halving vs fixed 100B with burn), or energy usage.",
-            "points": 3
+            "id": "q-cg-5",
+            "type": "single",
+            "question": "A friend says 'Bitcoin and XRP are basically the same thing — they're both cryptocurrencies.' Which answer best identifies two specific technical differences?",
+            "options": [
+              {
+                "label": "Bitcoin uses Proof-of-Work mining with ~7 tx/s and 10-minute finality; XRP uses RPCA consensus with 1,500 tx/s and 3–5 second finality",
+                "value": "A"
+              },
+              {
+                "label": "Bitcoin has a fixed supply and XRP does not; both use the same consensus mechanism",
+                "value": "B"
+              },
+              {
+                "label": "XRP is mined by validators while Bitcoin is mined by GPUs; both settle in under a minute",
+                "value": "C"
+              },
+              {
+                "label": "Both use the UTXO model, but XRP burns all fees while Bitcoin does not",
+                "value": "D"
+              }
+            ],
+            "answer": [
+              "A"
+            ],
+            "analysis": "Bitcoin uses Proof-of-Work (miners compete on hash rate), settles in ~10 minutes, and handles ~7 tx/s. XRP uses RPCA consensus (no mining), settles in 3–5 seconds, and handles 1,500 tx/s natively. Both burn fees permanently, but their architecture and consensus are fundamentally different.",
+            "points": 1
           },
           {
             "id": "q-cc-x1",
