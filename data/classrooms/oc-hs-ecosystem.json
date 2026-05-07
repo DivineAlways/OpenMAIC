@@ -1280,73 +1280,73 @@
         "questions": [
           {
             "id": "hs-ec-q1",
-            "type": "multiple_choice",
+            "type": "single",
             "question": "What is the key difference between an Optimistic Rollup and a ZK Rollup?",
             "options": [
-              "Optimistic rollups use proof-of-work; ZK rollups use proof-of-stake",
-              "Optimistic rollups assume transactions are valid and dispute later; ZK rollups prove validity upfront with cryptographic proofs",
-              "Optimistic rollups are faster than ZK rollups in all cases",
-              "ZK rollups require users to lock funds for 7 days before withdrawal"
+              { "label": "Optimistic rollups use proof-of-work; ZK rollups use proof-of-stake", "value": "A" },
+              { "label": "Optimistic rollups assume transactions are valid and dispute later; ZK rollups prove validity upfront with cryptographic proofs", "value": "B" },
+              { "label": "Optimistic rollups are faster than ZK rollups in all cases", "value": "C" },
+              { "label": "ZK rollups require users to lock funds for 7 days before withdrawal", "value": "D" }
             ],
-            "answer": "Optimistic rollups assume transactions are valid and dispute later; ZK rollups prove validity upfront with cryptographic proofs",
+            "answer": ["B"],
             "analysis": "Optimistic rollups assume all transactions are valid and only run fraud proofs if challenged. ZK rollups generate a zero-knowledge proof for every batch, proving validity without revealing transaction details. ZK is more secure but computationally heavier.",
-            "points": 20
+            "points": 1
           },
           {
             "id": "hs-ec-q2",
-            "type": "multiple_choice",
+            "type": "single",
             "question": "Why are cross-chain bridges considered high-risk?",
             "options": [
-              "They charge very high fees",
-              "They require KYC verification",
-              "They are the largest smart contract hack vector in crypto",
-              "They are slow and take days to complete"
+              { "label": "They charge very high fees", "value": "A" },
+              { "label": "They require KYC verification", "value": "B" },
+              { "label": "They are the largest smart contract hack vector in crypto", "value": "C" },
+              { "label": "They are slow and take days to complete", "value": "D" }
             ],
-            "answer": "They are the largest smart contract hack vector in crypto",
+            "answer": ["C"],
             "analysis": "Bridges hold large amounts of locked assets on one chain while minting equivalents on another. A bug in the bridge smart contract can drain everything locked on the source chain. Ronin Bridge, Wormhole, and Nomad Bridge hacks totaled over $1.5B in losses.",
-            "points": 20
+            "points": 1
           },
           {
             "id": "hs-ec-q3",
-            "type": "multiple_choice",
+            "type": "single",
             "question": "In a DAO governance system, what happens when a proposal passes the voting threshold?",
             "options": [
-              "The CEO approves and manually executes the change",
-              "A board of directors reviews the vote",
-              "The code executes automatically on-chain with no human intermediary",
-              "Token holders receive a payment for voting"
+              { "label": "The CEO approves and manually executes the change", "value": "A" },
+              { "label": "A board of directors reviews the vote", "value": "B" },
+              { "label": "The code executes automatically on-chain with no human intermediary", "value": "C" },
+              { "label": "Token holders receive a payment for voting", "value": "D" }
             ],
-            "answer": "The code executes automatically on-chain with no human intermediary",
+            "answer": ["C"],
             "analysis": "DAOs are autonomous — when a proposal passes the required vote threshold, smart contracts execute the change automatically. This removes the need for trusted intermediaries but also means bugs in proposals can cause irreversible damage.",
-            "points": 20
+            "points": 1
           },
           {
             "id": "hs-ec-q4",
-            "type": "multiple_choice",
+            "type": "single",
             "question": "What made BlackRock's Bitcoin ETF launch in January 2024 historically significant?",
             "options": [
-              "It was the first time Bitcoin was traded electronically",
-              "It was the largest ETF launch in history with $4.6B in first-week inflows",
-              "It pushed Bitcoin's price above $200,000",
-              "It replaced physical gold ETFs as the most-held ETF"
+              { "label": "It was the first time Bitcoin was traded electronically", "value": "A" },
+              { "label": "It was the largest ETF launch in history with $4.6B in first-week inflows", "value": "B" },
+              { "label": "It pushed Bitcoin's price above $200,000", "value": "C" },
+              { "label": "It replaced physical gold ETFs as the most-held ETF", "value": "D" }
             ],
-            "answer": "It was the largest ETF launch in history with $4.6B in first-week inflows",
+            "answer": ["B"],
             "analysis": "The spot Bitcoin ETF approvals in January 2024 brought unprecedented institutional capital into crypto. BlackRock's IBIT and other spot ETFs collectively saw $4.6B in inflows in the first week — the largest ETF debut in financial history.",
-            "points": 20
+            "points": 1
           },
           {
             "id": "hs-ec-q5",
-            "type": "multiple_choice",
+            "type": "single",
             "question": "What is Real World Asset (RWA) tokenization primarily used for?",
             "options": [
-              "Creating meme coins backed by physical objects",
-              "Representing physical assets like real estate or bonds as on-chain tokens for 24/7 global trading",
-              "Converting cryptocurrency back into dollars",
-              "Replacing NFTs with physical certificates"
+              { "label": "Creating meme coins backed by physical objects", "value": "A" },
+              { "label": "Representing physical assets like real estate or bonds as on-chain tokens for 24/7 global trading", "value": "B" },
+              { "label": "Converting cryptocurrency back into dollars", "value": "C" },
+              { "label": "Replacing NFTs with physical certificates", "value": "D" }
             ],
-            "answer": "Representing physical assets like real estate or bonds as on-chain tokens for 24/7 global trading",
+            "answer": ["B"],
             "analysis": "RWA tokenization puts ownership of physical assets on-chain — real estate, treasury bonds, commodities, and private credit. Benefits include 24/7 trading, fractional ownership, global access, and instant settlement. XRPL is a leading platform for tokenized assets.",
-            "points": 20
+            "points": 1
           },
           {
             "id": "hs-ec-x1",
