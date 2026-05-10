@@ -143,7 +143,7 @@
               "width": 400,
               "height": 165,
               "rotate": 0,
-              "content": "<p style='font-size:11.5px;color:#cbd5e1;line-height:1.55;'>A rug pull = devs drain liquidity and disappear<br/><br/>6 red flags before investing:<br/><br/>⚠ Anonymous team with no track record<br/>⚠ No audit from a reputable firm<br/>⚠ Top 10 wallets hold &gt;50% of supply<br/>⚠ Liquidity not locked (check DexTools)<br/>⚠ Unrealistic APY promises (1000%+)<br/>⚠ Contract has mint function — devs can<br/>   create infinite new tokens<br/><br/>Always check token contract on Etherscan</p>",
+              "content": "<p style='font-size:11.5px;color:#cbd5e1;line-height:1.55;'>A rug pull = devs drain liquidity and disappear<br/><br/>6 red flags before investing:<br/><br/>\u26a0 Anonymous team with no track record<br/>\u26a0 No audit from a reputable firm<br/>\u26a0 Top 10 wallets hold &gt;50% of supply<br/>\u26a0 Liquidity not locked (check DexTools)<br/>\u26a0 Unrealistic APY promises (1000%+)<br/>\u26a0 Contract has mint function \u2014 devs can<br/>create infinite new tokens<br/><br/>Always check token contract on Etherscan</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -183,7 +183,7 @@
               "width": 870,
               "height": 130,
               "rotate": 0,
-              "content": "<p style='font-size:12px;color:#cbd5e1;line-height:1.6;'>Reentrancy — attacker calls contract repeatedly before balance updates (The DAO hack, $60M lost)<br/>Integer overflow — arithmetic wraps around: 255 + 1 = 0 (Solidity before 0.8 was vulnerable)<br/>Access control — missing permission checks let anyone call admin functions<br/>Oracle manipulation — flash loans distort price feeds to trick lending protocols<br/><br/>How to stay safe: only use protocols audited by CertiK, Trail of Bits, or OpenZeppelin<br/>Time in market + track record are your best proxies for smart contract safety</p>",
+              "content": "<p style='font-size:12px;color:#cbd5e1;line-height:1.6;'>Reentrancy \u2014 attacker calls contract repeatedly before balance updates (The DAO hack, $60M lost)<br/>Integer overflow \u2014 arithmetic wraps around: 255 + 1 = 0 (Solidity before 0.8 was vulnerable)<br/>Access control \u2014 missing permission checks let anyone call admin functions<br/>Oracle manipulation \u2014 flash loans distort price feeds to trick lending protocols<br/><br/>How to stay safe: only use protocols audited by CertiK, Trail of Bits, or OpenZeppelin<br/>Time in market + track record are your best proxies for smart contract safety</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             }
@@ -199,7 +199,7 @@
         {
           "id": "action_hs-sc-s1_1",
           "type": "speech",
-          "text": "Security at the High School level means understanding the actual mechanics of how attacks work — not just 'be careful.' Phishing in crypto goes beyond fake emails: wallet drainer sites, malicious token approvals, fake support messages, and address poisoning are the four main vectors targeting intermediate users.",
+          "text": "Security at the High School level means understanding the actual mechanics of how attacks work \u2014 not just 'be careful.' Phishing in crypto goes beyond fake emails: wallet drainer sites, malicious token approvals, fake support messages, and address poisoning are the four main vectors targeting intermediate users.",
           "audioUrl": "/audio/lessons/oc-hs-security/0-1.mp3"
         },
         {
@@ -316,7 +316,7 @@
               "width": 400,
               "height": 165,
               "rotate": 0,
-              "content": "<p style='font-size:11.5px;color:#cbd5e1;line-height:1.55;'>Online behavior that protects your holdings:<br/><br/>• Never reveal how much crypto you hold publicly<br/>• Don&#x27;t flex wins on social media — SIM swap<br/>  attackers look for high-value targets<br/>• Use a dedicated email for crypto accounts<br/>• Use a password manager (Bitwarden, 1Password)<br/>• Enable hardware 2FA (YubiKey) on exchanges<br/>• Use a VPN when accessing wallets on public WiFi<br/>• Never discuss holdings on Discord or Telegram<br/>• Separate &#x27;hot&#x27; (trading) from &#x27;cold&#x27; (savings) funds</p>",
+              "content": "<p style='font-size:11.5px;color:#cbd5e1;line-height:1.55;'>Online behavior that protects your holdings:<br/><br/>\u2022 Never reveal how much crypto you hold publicly<br/>\u2022 Don&#x27;t flex wins on social media \u2014 SIM swap<br/>attackers look for high-value targets<br/>\u2022 Use a dedicated email for crypto accounts<br/>\u2022 Use a password manager (Bitwarden, 1Password)<br/>\u2022 Enable hardware 2FA (YubiKey) on exchanges<br/>\u2022 Use a VPN when accessing wallets on public WiFi<br/>\u2022 Never discuss holdings on Discord or Telegram<br/>\u2022 Separate &#x27;hot&#x27; (trading) from &#x27;cold&#x27; (savings) funds</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -356,7 +356,7 @@
               "width": 400,
               "height": 165,
               "rotate": 0,
-              "content": "<p style='font-size:11.5px;color:#cbd5e1;line-height:1.55;'>Before every transaction:<br/><br/>✓ Verify address manually — first 4 AND last 4 chars<br/>✓ Send a test transaction for large amounts<br/>✓ Check the network (mainnet vs testnet)<br/>✓ Verify you have enough native token for gas<br/>✓ For DeFi: read the approval — what contract,<br/>  what tokens, what spending limit?<br/>✓ Check gas fees aren&#x27;t abnormally high<br/>  (front-run indicator)<br/>✓ Use revoke.cash monthly to audit<br/>  token approvals and revoke unused ones</p>",
+              "content": "<p style='font-size:11.5px;color:#cbd5e1;line-height:1.55;'>Before every transaction:<br/><br/>\u2713 Verify address manually \u2014 first 4 AND last 4 chars<br/>\u2713 Send a test transaction for large amounts<br/>\u2713 Check the network (mainnet vs testnet)<br/>\u2713 Verify you have enough native token for gas<br/>\u2713 For DeFi: read the approval \u2014 what contract,<br/>what tokens, what spending limit?<br/>\u2713 Check gas fees aren&#x27;t abnormally high<br/>(front-run indicator)<br/>\u2713 Use revoke.cash monthly to audit<br/>token approvals and revoke unused ones</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -396,7 +396,7 @@
               "width": 400,
               "height": 130,
               "rotate": 0,
-              "content": "<p style='font-size:11.5px;color:#cbd5e1;line-height:1.55;'>Attacker calls your carrier, impersonates you, and ports your phone number to their SIM card.<br/>Now they receive all your SMS 2FA codes.<br/><br/>How it happens: social engineering + leaked<br/>personal data (name, last 4 SSN, account PIN)<br/><br/>Protection:<br/>• Never use SMS 2FA for crypto — use authenticator app<br/>• Enable carrier account PIN + port freeze<br/>• Use hardware key (YubiKey) as 2FA where possible</p>",
+              "content": "<p style='font-size:11.5px;color:#cbd5e1;line-height:1.55;'>Attacker calls your carrier, impersonates you, and ports your phone number to their SIM card.<br/>Now they receive all your SMS 2FA codes.<br/><br/>How it happens: social engineering + leaked<br/>personal data (name, last 4 SSN, account PIN)<br/><br/>Protection:<br/>\u2022 Never use SMS 2FA for crypto \u2014 use authenticator app<br/>\u2022 Enable carrier account PIN + port freeze<br/>\u2022 Use hardware key (YubiKey) as 2FA where possible</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -436,7 +436,7 @@
               "width": 400,
               "height": 130,
               "rotate": 0,
-              "content": "<p style='font-size:11.5px;color:#fde68a;line-height:1.6;'>✓ Hardware wallet for &gt;$1,000 in holdings<br/>✓ Seed phrase stored offline, never digital<br/>✓ Authenticator app 2FA (not SMS) everywhere<br/>✓ Dedicated crypto email with strong password<br/>✓ Monthly token approval audit (revoke.cash)<br/>✓ Never click links from Discord/Telegram DMs<br/>✓ Test transaction before sending large amounts<br/>✓ VPN on public networks when accessing wallets</p>",
+              "content": "<p style='font-size:11.5px;color:#fde68a;line-height:1.6;'>\u2713 Hardware wallet for &gt;$1,000 in holdings<br/>\u2713 Seed phrase stored offline, never digital<br/>\u2713 Authenticator app 2FA (not SMS) everywhere<br/>\u2713 Dedicated crypto email with strong password<br/>\u2713 Monthly token approval audit (revoke.cash)<br/>\u2713 Never click links from Discord/Telegram DMs<br/>\u2713 Test transaction before sending large amounts<br/>\u2713 VPN on public networks when accessing wallets</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#fde68a"
             }
@@ -452,7 +452,7 @@
         {
           "id": "action_hs-sc-s2_1",
           "type": "speech",
-          "text": "OPSEC — operational security — is about the habits that protect you before an attack happens. The biggest one: never publicly reveal how much crypto you hold. SIM swap attackers specifically target people who flex crypto wins on social media. Use a dedicated email for crypto, a password manager, and authenticator app 2FA — never SMS.",
+          "text": "OPSEC \u2014 operational security \u2014 is about the habits that protect you before an attack happens. The biggest one: never publicly reveal how much crypto you hold. SIM swap attackers specifically target people who flex crypto wins on social media. Use a dedicated email for crypto, a password manager, and authenticator app 2FA \u2014 never SMS.",
           "audioUrl": "/audio/lessons/oc-hs-security/1-1.mp3"
         },
         {
@@ -568,7 +568,7 @@
               "width": 400,
               "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:bold;color:#f59e0b;'>CEX Risk — Centralized Exchange Safety</p>",
+              "content": "<p style='font-size:14px;font-weight:bold;color:#f59e0b;'>CEX Risk \u2014 Centralized Exchange Safety</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f59e0b"
             },
@@ -580,7 +580,7 @@
               "width": 400,
               "height": 165,
               "rotate": 0,
-              "content": "<p style='font-size:11.5px;color:#cbd5e1;line-height:1.55;'>FTX collapsed Nov 2022 — $8B in customer funds lost<br/>Gox collapsed 2014 — 850,000 BTC lost<br/><br/>CEX safety checklist:<br/>✓ Use regulated, audited exchanges (Coinbase, Kraken)<br/>✓ Only keep trading amounts on exchange<br/>✓ Withdraw profits to self-custody regularly<br/>✓ Check Proof of Reserves (does exchange publish?)<br/>✓ Separate exchange account email from personal<br/>✓ Never share 2FA codes with &#x27;support&#x27;<br/>✓ Monitor for withdrawal whitelist options</p>",
+              "content": "<p style='font-size:11.5px;color:#cbd5e1;line-height:1.55;'>FTX collapsed Nov 2022 \u2014 $8B in customer funds lost<br/>Gox collapsed 2014 \u2014 850,000 BTC lost<br/><br/>CEX safety checklist:<br/>\u2713 Use regulated, audited exchanges (Coinbase, Kraken)<br/>\u2713 Only keep trading amounts on exchange<br/>\u2713 Withdraw profits to self-custody regularly<br/>\u2713 Check Proof of Reserves (does exchange publish?)<br/>\u2713 Separate exchange account email from personal<br/>\u2713 Never share 2FA codes with &#x27;support&#x27;<br/>\u2713 Monitor for withdrawal whitelist options</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -608,7 +608,7 @@
               "width": 400,
               "height": 30,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:bold;color:#f59e0b;'>DEX Risk — Decentralized Exchange Safety</p>",
+              "content": "<p style='font-size:14px;font-weight:bold;color:#f59e0b;'>DEX Risk \u2014 Decentralized Exchange Safety</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f59e0b"
             },
@@ -620,7 +620,7 @@
               "width": 400,
               "height": 165,
               "rotate": 0,
-              "content": "<p style='font-size:11.5px;color:#cbd5e1;line-height:1.55;'>DEX: non-custodial — you keep your keys<br/>No registration, trade any token<br/><br/>DEX risks:<br/>• Smart contract bugs (no insurance)<br/>• Front-running bots (MEV) — sandwich attacks<br/>  inflate your buy price and dump after your tx<br/>• Slippage — price moves between sign and confirm<br/>• Fake token contracts (same name, different address)<br/><br/>Safety: use official frontend URLs, set max<br/>slippage &lt;1% for stablecoins, &lt;2% for majors,<br/>verify contract address before any new token trade</p>",
+              "content": "<p style='font-size:11.5px;color:#cbd5e1;line-height:1.55;'>DEX: non-custodial \u2014 you keep your keys<br/>No registration, trade any token<br/><br/>DEX risks:<br/>\u2022 Smart contract bugs (no insurance)<br/>\u2022 Front-running bots (MEV) \u2014 sandwich attacks<br/>inflate your buy price and dump after your tx<br/>\u2022 Slippage \u2014 price moves between sign and confirm<br/>\u2022 Fake token contracts (same name, different address)<br/><br/>Safety: use official frontend URLs, set max<br/>slippage &lt;1% for stablecoins, &lt;2% for majors,<br/>verify contract address before any new token trade</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -660,7 +660,7 @@
               "width": 400,
               "height": 130,
               "rotate": 0,
-              "content": "<p style='font-size:11.5px;color:#cbd5e1;line-height:1.55;'>What if something goes wrong?<br/><br/>Create a crypto will:<br/>• Secure location of seed phrases and hardware wallets<br/>• List of exchanges, wallets, and approx holdings<br/>• Instructions for next-of-kin (lawyer or trusted person)<br/><br/>If you&#x27;re compromised:<br/>1. Move remaining funds to new wallet immediately<br/>2. Revoke all token approvals from compromised wallet<br/>3. Report to exchange if CEX was breached<br/>4. Document everything for tax/insurance</p>",
+              "content": "<p style='font-size:11.5px;color:#cbd5e1;line-height:1.55;'>What if something goes wrong?<br/><br/>Create a crypto will:<br/>\u2022 Secure location of seed phrases and hardware wallets<br/>\u2022 List of exchanges, wallets, and approx holdings<br/>\u2022 Instructions for next-of-kin (lawyer or trusted person)<br/><br/>If you&#x27;re compromised:<br/>1. Move remaining funds to new wallet immediately<br/>2. Revoke all token approvals from compromised wallet<br/>3. Report to exchange if CEX was breached<br/>4. Document everything for tax/insurance</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
@@ -700,7 +700,7 @@
               "width": 400,
               "height": 130,
               "rotate": 0,
-              "content": "<p style='font-size:11.5px;color:#fde68a;line-height:1.6;'>Most traders lose money to markets.<br/>The second-biggest loss category is security failures.<br/><br/>OnlyCrypto&#x27;s copy trading model reduces risk:<br/>• Trading through the platform — no private key exposure<br/>• Expert traders manage the position<br/>• You maintain control of entry and exit<br/><br/>Security knowledge is protective alpha.<br/>Every attack you understand is one you avoid.<br/>The goal is to keep what you earn.</p>",
+              "content": "<p style='font-size:11.5px;color:#fde68a;line-height:1.6;'>Most traders lose money to markets.<br/>The second-biggest loss category is security failures.<br/><br/>OnlyCrypto&#x27;s copy trading model reduces risk:<br/>\u2022 Trading through the platform \u2014 no private key exposure<br/>\u2022 Expert traders manage the position<br/>\u2022 You maintain control of entry and exit<br/><br/>Security knowledge is protective alpha.<br/>Every attack you understand is one you avoid.<br/>The goal is to keep what you earn.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#fde68a"
             }
@@ -716,7 +716,7 @@
         {
           "id": "action_hs-sc-s3_1",
           "type": "speech",
-          "text": "Centralized exchanges carry counterparty risk — FTX lost eight billion dollars of customer funds in 2022, and Mt. Gox lost 850,000 Bitcoin before that. The rule is simple: only keep on exchange what you're actively trading. Withdraw profits to self-custody regularly, and only use exchanges that publish proof of reserves.",
+          "text": "Centralized exchanges carry counterparty risk \u2014 FTX lost eight billion dollars of customer funds in 2022, and Mt. Gox lost 850,000 Bitcoin before that. The rule is simple: only keep on exchange what you're actively trading. Withdraw profits to self-custody regularly, and only use exchanges that publish proof of reserves.",
           "audioUrl": "/audio/lessons/oc-hs-security/2-1.mp3"
         },
         {
@@ -727,7 +727,7 @@
         {
           "id": "action_hs-sc-s3_3",
           "type": "speech",
-          "text": "DEXs give you full custody but introduce different risks. MEV bots run sandwich attacks — they see your pending transaction, buy before you, and sell right after, inflating your price. Slippage can also hurt you if price moves between signing and confirmation. Always verify the contract address before trading any new token — fake token contracts with identical names are a common trap.",
+          "text": "DEXs give you full custody but introduce different risks. MEV bots run sandwich attacks \u2014 they see your pending transaction, buy before you, and sell right after, inflating your price. Slippage can also hurt you if price moves between signing and confirmation. Always verify the contract address before trading any new token \u2014 fake token contracts with identical names are a common trap.",
           "audioUrl": "/audio/lessons/oc-hs-security/2-3.mp3"
         },
         {
@@ -738,7 +738,7 @@
         {
           "id": "action_hs-sc-s3_5",
           "type": "speech",
-          "text": "Recovery planning is something most crypto holders skip until it's too late. Create a crypto will — a secure document with seed phrase locations, exchange accounts, and approximate holdings. If you're ever compromised, act immediately: move remaining funds to a new wallet, revoke all token approvals, and document everything. Speed is everything when your wallet is at risk.",
+          "text": "Recovery planning is something most crypto holders skip until it's too late. Create a crypto will \u2014 a secure document with seed phrase locations, exchange accounts, and approximate holdings. If you're ever compromised, act immediately: move remaining funds to a new wallet, revoke all token approvals, and document everything. Speed is everything when your wallet is at risk.",
           "audioUrl": "/audio/lessons/oc-hs-security/2-5.mp3"
         },
         {
@@ -749,7 +749,7 @@
         {
           "id": "action_hs-sc-s3_7",
           "type": "speech",
-          "text": "Security knowledge is protective alpha — every attack you understand is one you avoid. Markets take money. Security failures also take money. OnlyCrypto's model reduces your attack surface because you trade through the platform without exposing private keys directly. The goal of everything in this module is simple: keep what you earn.",
+          "text": "Security knowledge is protective alpha \u2014 every attack you understand is one you avoid. Markets take money. Security failures also take money. OnlyCrypto's model reduces your attack surface because you trade through the platform without exposing private keys directly. The goal of everything in this module is simple: keep what you earn.",
           "audioUrl": "/audio/lessons/oc-hs-security/2-7.mp3"
         }
       ]
@@ -757,80 +757,155 @@
     {
       "id": "hs-sc-s4",
       "type": "quiz",
-      "title": "Knowledge Check — Security High School",
+      "title": "Knowledge Check \u2014 Security High School",
       "order": 4,
       "content": {
         "type": "quiz",
         "questions": [
           {
             "id": "hs-sc-q1",
-            "type": "multiple_choice",
+            "type": "single",
             "question": "What is an address poisoning attack?",
             "options": [
-              "Sending malware to your email address",
-              "A scammer hacking your exchange account via your email",
-              "A scammer sending dust to your wallet from an address with similar first and last characters so you copy the wrong address",
-              "Injecting malicious code into a smart contract's address field"
+              {
+                "id": "A",
+                "label": "Sending malware to your email address"
+              },
+              {
+                "id": "B",
+                "label": "A scammer hacking your exchange account via your email"
+              },
+              {
+                "id": "C",
+                "label": "A scammer sending dust to your wallet from an address with similar first and last characters so you copy the wrong address"
+              },
+              {
+                "id": "D",
+                "label": "Injecting malicious code into a smart contract's address field"
+              }
             ],
-            "answer": "A scammer sending dust to your wallet from an address with similar first and last characters so you copy the wrong address",
-            "analysis": "In address poisoning, scammers send tiny amounts of crypto from a wallet address that looks nearly identical to one you've interacted with before — matching the first 4 and last 4 characters. When you copy an address from your transaction history, you accidentally copy theirs. Always verify the full address, not just the ends.",
-            "points": 20
+            "answer": [
+              "C"
+            ],
+            "analysis": "In address poisoning, scammers send tiny amounts of crypto from a wallet address that looks nearly identical to one you've interacted with before \u2014 matching the first 4 and last 4 characters. When you copy an address from your transaction history, you accidentally copy theirs. Always verify the full address, not just the ends.",
+            "points": 20,
+            "hasAnswer": true
           },
           {
             "id": "hs-sc-q2",
-            "type": "multiple_choice",
+            "type": "single",
             "question": "Why is SMS two-factor authentication considered weak for crypto accounts?",
             "options": [
-              "SMS codes expire too quickly",
-              "Carriers don't support SMS 2FA for crypto platforms",
-              "SIM swap attacks allow attackers to port your phone number and receive your SMS codes",
-              "SMS 2FA only works on Android devices"
+              {
+                "id": "A",
+                "label": "SMS codes expire too quickly"
+              },
+              {
+                "id": "B",
+                "label": "Carriers don't support SMS 2FA for crypto platforms"
+              },
+              {
+                "id": "C",
+                "label": "SIM swap attacks allow attackers to port your phone number and receive your SMS codes"
+              },
+              {
+                "id": "D",
+                "label": "SMS 2FA only works on Android devices"
+              }
             ],
-            "answer": "SIM swap attacks allow attackers to port your phone number and receive your SMS codes",
-            "analysis": "SIM swap attacks involve an attacker social-engineering your phone carrier into transferring your number to their SIM card. Once they have your number, they receive all SMS codes sent to it — bypassing SMS 2FA entirely. Use authenticator apps (Google Authenticator, Authy) or hardware keys instead.",
-            "points": 20
+            "answer": [
+              "C"
+            ],
+            "analysis": "SIM swap attacks involve an attacker social-engineering your phone carrier into transferring your number to their SIM card. Once they have your number, they receive all SMS codes sent to it \u2014 bypassing SMS 2FA entirely. Use authenticator apps (Google Authenticator, Authy) or hardware keys instead.",
+            "points": 20,
+            "hasAnswer": true
           },
           {
             "id": "hs-sc-q3",
-            "type": "multiple_choice",
+            "type": "single",
             "question": "What is a reentrancy attack in smart contracts?",
             "options": [
-              "When the same user logs in from two locations simultaneously",
-              "An attacker repeatedly calling a contract to drain funds before the balance updates",
-              "When a contract runs out of gas mid-execution",
-              "A bot that enters and exits a liquidity pool in the same block"
+              {
+                "id": "A",
+                "label": "When the same user logs in from two locations simultaneously"
+              },
+              {
+                "id": "B",
+                "label": "An attacker repeatedly calling a contract to drain funds before the balance updates"
+              },
+              {
+                "id": "C",
+                "label": "When a contract runs out of gas mid-execution"
+              },
+              {
+                "id": "D",
+                "label": "A bot that enters and exits a liquidity pool in the same block"
+              }
             ],
-            "answer": "An attacker repeatedly calling a contract to drain funds before the balance updates",
-            "analysis": "Reentrancy exploits a contract that sends funds before updating its internal balance. The attacker's malicious contract receives funds, then immediately calls back into the victim contract before the balance is updated — draining it repeatedly. The DAO hack in 2016 used this exact exploit to steal $60M in ETH.",
-            "points": 20
+            "answer": [
+              "B"
+            ],
+            "analysis": "Reentrancy exploits a contract that sends funds before updating its internal balance. The attacker's malicious contract receives funds, then immediately calls back into the victim contract before the balance is updated \u2014 draining it repeatedly. The DAO hack in 2016 used this exact exploit to steal $60M in ETH.",
+            "points": 20,
+            "hasAnswer": true
           },
           {
             "id": "hs-sc-q4",
-            "type": "multiple_choice",
+            "type": "single",
             "question": "What does a 'mint function' in a token's smart contract indicate as a red flag?",
             "options": [
-              "The contract can generate NFTs on demand",
-              "The contract allows the developer to create unlimited new tokens at any time, potentially destroying your holdings' value",
-              "The token requires GPU mining to produce new coins",
-              "The contract automatically mints tokens for liquidity providers"
+              {
+                "id": "A",
+                "label": "The contract can generate NFTs on demand"
+              },
+              {
+                "id": "B",
+                "label": "The contract allows the developer to create unlimited new tokens at any time, potentially destroying your holdings' value"
+              },
+              {
+                "id": "C",
+                "label": "The token requires GPU mining to produce new coins"
+              },
+              {
+                "id": "D",
+                "label": "The contract automatically mints tokens for liquidity providers"
+              }
             ],
-            "answer": "The contract allows the developer to create unlimited new tokens at any time, potentially destroying your holdings' value",
+            "answer": [
+              "B"
+            ],
             "analysis": "An unrestricted mint function gives the contract owner the ability to create new tokens at will. In a rug pull scenario, devs can mint millions of tokens and dump them on the market, collapsing the price. Legitimate tokens either have no mint function, a fixed supply, or governance-controlled minting.",
-            "points": 20
+            "points": 20,
+            "hasAnswer": true
           },
           {
             "id": "hs-sc-q5",
-            "type": "multiple_choice",
+            "type": "single",
             "question": "What is a MEV sandwich attack on a DEX?",
             "options": [
-              "A bot that splits your order into smaller pieces to reduce slippage",
-              "A bot that front-runs your buy order and back-runs it to profit from your price impact",
-              "Two liquidity providers competing for the same pool",
-              "A validator that reorders transactions to earn more fees"
+              {
+                "id": "A",
+                "label": "A bot that splits your order into smaller pieces to reduce slippage"
+              },
+              {
+                "id": "B",
+                "label": "A bot that front-runs your buy order and back-runs it to profit from your price impact"
+              },
+              {
+                "id": "C",
+                "label": "Two liquidity providers competing for the same pool"
+              },
+              {
+                "id": "D",
+                "label": "A validator that reorders transactions to earn more fees"
+              }
             ],
-            "answer": "A bot that front-runs your buy order and back-runs it to profit from your price impact",
+            "answer": [
+              "B"
+            ],
             "analysis": "MEV (Maximal Extractable Value) sandwich attacks work in three steps: the bot sees your pending buy transaction, inserts its own buy before yours (front-run), lets your transaction execute (which moves the price), then immediately sells after yours (back-run). You buy at a higher price, the bot profits from the difference. Setting lower slippage tolerance limits how much they can extract.",
-            "points": 20
+            "points": 20,
+            "hasAnswer": true
           },
           {
             "id": "hs-sc-x1",
@@ -870,7 +945,7 @@
                 "value": "A"
               },
               {
-                "label": "Private keys never leave the device — transactions are signed internally",
+                "label": "Private keys never leave the device \u2014 transactions are signed internally",
                 "value": "B"
               },
               {
@@ -894,13 +969,13 @@
         {
           "id": "action_hs-sc-s4_q0",
           "type": "speech",
-          "text": "Security quiz time. These questions test the mechanics of real attacks — address poisoning, SIM swaps, reentrancy, mint functions, and MEV sandwich attacks. Understanding how each attack works is the only way to reliably protect against it.",
+          "text": "Security quiz time. These questions test the mechanics of real attacks \u2014 address poisoning, SIM swaps, reentrancy, mint functions, and MEV sandwich attacks. Understanding how each attack works is the only way to reliably protect against it.",
           "audioUrl": "/audio/lessons/oc-hs-security/3-0.mp3"
         },
         {
           "id": "action_hs-sc-s4_q1",
           "type": "speech",
-          "text": "You've completed the Security module at High School level. You now understand the attack vectors that take money from intermediate crypto users — and more importantly, the specific habits and tools that block them. Security knowledge is permanent — these defenses apply regardless of which protocols or exchanges you use.",
+          "text": "You've completed the Security module at High School level. You now understand the attack vectors that take money from intermediate crypto users \u2014 and more importantly, the specific habits and tools that block them. Security knowledge is permanent \u2014 these defenses apply regardless of which protocols or exchanges you use.",
           "audioUrl": "/audio/lessons/oc-hs-security/3-1.mp3"
         }
       ]

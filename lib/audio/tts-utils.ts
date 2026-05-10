@@ -18,6 +18,8 @@ const TTS_PRONUNCIATIONS: [RegExp, string][] = [
   [/\bXRP\b/g, 'X-R-P'],
   [/\bDAOs\b/g, 'dows'],
   [/\bDAO\b/g, 'dow'],
+  [/\bDEXes\b/g, 'dexes'],
+  [/\bdexes\b/g, 'dexes'],
   [/\bDEX\b/g, 'decks'],
   [/\bAPY\b/g, 'A-P-Y'],
   [/\bAPR\b/g, 'A-P-R'],

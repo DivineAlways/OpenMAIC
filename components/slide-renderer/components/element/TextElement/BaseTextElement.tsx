@@ -18,7 +18,7 @@ export function BaseTextElement({ elementInfo, target }: BaseTextElementProps) {
 
   return (
     <div
-      className="base-element-text absolute"
+      className="base-element-text absolute overflow-hidden"
       style={{
         top: `${elementInfo.top}px`,
         left: `${elementInfo.left}px`,

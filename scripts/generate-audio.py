@@ -31,6 +31,8 @@ TTS_PRONUNCIATIONS = [
     (re.compile(r'\bXRP\b'), 'X-R-P'),
     (re.compile(r'\bDAOs\b'), 'dows'),
     (re.compile(r'\bDAO\b'), 'dow'),
+    (re.compile(r'\bDEXes\b'), 'dexes'),
+    (re.compile(r'\bdexes\b'), 'dexes'),
     (re.compile(r'\bDEX\b'), 'decks'),
     (re.compile(r'\bAPY\b'), 'A-P-Y'),
     (re.compile(r'\bAPR\b'), 'A-P-R'),
