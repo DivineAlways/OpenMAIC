@@ -276,7 +276,7 @@
         {
           "id": "action_ec-s1_5",
           "type": "speech",
-          "text": "Cryptocurrency is digital money — like the coins and bills you use at a store, but it only exists on computers and phones. You can't hold it in your hand, but you can use it to buy things, send it to friends, or save it. The 'crypto' part means it uses secret codes called cryptography to keep everyt...",
+          "text": "Cryptocurrency is digital money — like the coins and bills you use at a store, but it only exists on computers and phones. You can't hold it in your hand, but you can use it to buy things, send it to friends, or save it. The 'crypto' part means it uses secret codes called cryptography to keep everything safe — so only the real owner can spend it",
           "audioUrl": "/audio/lessons/oc-elem-crypto/0-5.mp3"
         },
         {
@@ -287,7 +287,7 @@
         {
           "id": "action_ec-s1_7",
           "type": "speech",
-          "text": "💻 100% Digital Lives on computers — no physical coins",
+          "text": "💻100% DigitalLives on computers — no physical coins",
           "audioUrl": "/audio/lessons/oc-elem-crypto/0-7.mp3"
         },
         {
@@ -298,7 +298,7 @@
         {
           "id": "action_ec-s1_9",
           "type": "speech",
-          "text": "🔐 Super Secure Protected by math no hacker can crack",
+          "text": "🔐Super SecureProtected by math no hacker can crack",
           "audioUrl": "/audio/lessons/oc-elem-crypto/0-9.mp3"
         },
         {
@@ -309,7 +309,7 @@
         {
           "id": "action_ec-s1_11",
           "type": "speech",
-          "text": "🌐 Works Everywhere Send money to anyone in seconds",
+          "text": "🌐Works EverywhereSend money to anyone in seconds",
           "audioUrl": "/audio/lessons/oc-elem-crypto/0-11.mp3"
         },
         {
@@ -320,7 +320,7 @@
         {
           "id": "action_ec-s1_13",
           "type": "speech",
-          "text": "🤝 No Middleman Send directly to a friend — no bank needed",
+          "text": "🤝No MiddlemanSend directly to a friend — no bank needed",
           "audioUrl": "/audio/lessons/oc-elem-crypto/0-13.mp3"
         }
       ],
@@ -596,7 +596,7 @@
         {
           "id": "action_ec-s2_7",
           "type": "speech",
-          "text": "₿ Bitcoin (BTC) The original — only 21M will ever exist",
+          "text": "₿Bitcoin (BTC)The original — only 21M will ever exist",
           "audioUrl": "/audio/lessons/oc-elem-crypto/1-7.mp3"
         },
         {
@@ -607,7 +607,7 @@
         {
           "id": "action_ec-s2_9",
           "type": "speech",
-          "text": "Ξ Ethereum (ETH) Runs apps and smart contracts",
+          "text": "ΞEthereum (ETH)Runs apps and smart contracts",
           "audioUrl": "/audio/lessons/oc-elem-crypto/1-9.mp3"
         },
         {
@@ -618,7 +618,7 @@
         {
           "id": "action_ec-s2_11",
           "type": "speech",
-          "text": "✕ XRP 3-5 sec payments — OnlyCrypto's coin",
+          "text": "✕XRP3-5 sec payments — OnlyCrypto's coin",
           "audioUrl": "/audio/lessons/oc-elem-crypto/1-11.mp3"
         },
         {
@@ -629,7 +629,7 @@
         {
           "id": "action_ec-s2_13",
           "type": "speech",
-          "text": "🌊 Thousands more New coins launch every day",
+          "text": "🌊Thousands moreNew coins launch every day",
           "audioUrl": "/audio/lessons/oc-elem-crypto/1-13.mp3"
         }
       ],
@@ -895,7 +895,7 @@
         {
           "id": "action_ec-s4_5",
           "type": "speech",
-          "text": "In 2008, a global financial crisis hit when banks failed and millions of people lost their savings. A mysterious person (or group) called Satoshi Nakamoto published a paper describing Bitcoin. The idea: create a form of money that no bank or government could control, freeze, or inflate away . You hold your own money. No middleman. No permission required.",
+          "text": "In 2008, a global financial crisis hit when banks failed and millions of people lost their savings. A mysterious person (or group) called Satoshi Nakamoto published a paper describing Bitcoin. The idea: create a form of money that no bank or government could control, freeze, or inflate away. You hold your own money. No middleman. No permission required",
           "audioUrl": "/audio/lessons/oc-elem-crypto/2-5.mp3"
         },
         {
@@ -1204,7 +1204,7 @@
         {
           "id": "action_ec-s5_5",
           "type": "speech",
-          "text": "Like any asset, crypto prices are driven by supply and demand . When more people want to buy than sell, the price goes up. When more people want to sell, the price drops. Bitcoin has a hard cap of 21 million coins — that is all that will ever exist. Scarcity is a key driver of its value, similar to gold. Ethereum has no hard cap but burns some with every transaction.",
+          "text": "Like any asset, crypto prices are driven by supply and demand. When more people want to buy than sell, the price goes up. When more people want to sell, the price drops. Bitcoin has a hard cap of 21 million coins — that is all that will ever exist. Scarcity is a key driver of its value, similar to gold. Ethereum has no hard cap but burns some with every transaction",
           "audioUrl": "/audio/lessons/oc-elem-crypto/3-5.mp3"
         },
         {
@@ -1513,7 +1513,7 @@
         {
           "id": "action_ec-s6_5",
           "type": "speech",
-          "text": "Coins have their own blockchain — Bitcoin (BTC), Ethereum (ETH), XRP all run on their own networks. Tokens are built on top of existing blockchains. For example, thousands of tokens run on Ethereum. Stablecoins like USDT and USDC are pegged 1:1 to the US dollar. They give you the benefits of crypto (fast, borderless) without the price swings.",
+          "text": "Coins have their own blockchain — Bitcoin (BTC), Ethereum (ETH), XRP all run on their own networks. Tokens are built on top of existing blockchains. For example, thousands of tokens run on Ethereum. Stablecoins like USDT and USDC are pegged 1:1 to the US dollar. They give you the benefits of crypto (fast, borderless) without the price swings",
           "audioUrl": "/audio/lessons/oc-elem-crypto/4-5.mp3"
         },
         {

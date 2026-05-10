@@ -125,13 +125,13 @@
         {
           "id": "action_hs-sc-s1a_0",
           "type": "speech",
-          "text": "Security at the High School level means understanding the actual mechanics of how attacks work — not just 'be careful.' Phishing in crypto goes beyond fake emails: wallet drainer sites, malicious token approvals, fake support messages, and address poisoning are the four main vectors targeting intermediate users.",
+          "text": "Threats: Phishing & Rug Pulls. Phishing Attack Types",
           "audioUrl": "/audio/lessons/oc-hs-security/0-0.mp3"
         },
         {
           "id": "action_hs-sc-s1a_1",
           "type": "speech",
-          "text": "Rug pulls happen when developers drain liquidity and disappear. Six red flags tell you to stay away: anonymous team, no audit, concentrated supply, unlocked liquidity, unrealistic APYs, and a mint function in the contract. Always check the token contract on Etherscan before investing in any new project.",
+          "text": "Rug Pull Red Flags. Wallet drainer sites. Fake MetaMask / Trust Wallet pages request. your seed phrase. Never enter it on any site. . Malicious token approvals. Signing 'approve' grants a contract unlimited. access to your tokens. Always check what you sign. . Fake support DMs. 'Binance Support' DMing you first = scam. No legit team asks for your keys or seed. . Address poisoning. Scammer sends dust to wallet with similar. first/last chars. You copy wrong address. A rug pull = devs drain liquidity and disappear. . 6 red flags before investing:. . ⚠ Anonymous team with no track record. ⚠ No audit from a reputable firm. ⚠ Top 10 wallets hold >50% of supply. ⚠ Liquidity not locked (check DexTools). ⚠ Unrealistic APY promises (1000%+). ⚠ Contract has mint function — devs can. create infinite new tokens. . Always check token contract on Etherscan",
           "audioUrl": "/audio/lessons/oc-hs-security/0-1.mp3"
         }
       ]
@@ -212,7 +212,7 @@
         {
           "id": "action_hs-sc-s1b_0",
           "type": "speech",
-          "text": "Smart contract vulnerabilities are the technical attack surface of DeFi. Reentrancy, integer overflow, access control failures, and oracle manipulation are the four categories that have cost billions. The only reliable protection is using protocols audited by firms like CertiK, Trail of Bits, or OpenZeppelin — and giving new protocols time to prove themselves.",
+          "text": "Smart Contract Vulnerabilities. Reentrancy — attacker calls contract repeatedly before balance updates (The DAO hack, $60M lost). Integer overflow — arithmetic wraps around: 255 + 1 = 0 (Solidity before 0.8 was vulnerable). Access control — missing permission checks let anyone call admin functions. Oracle manipulation — flash loans distort price feeds to trick lending protocols. . How to stay safe: only use protocols audited by CertiK, Trail of Bits, or OpenZeppelin. Time in market + track record are your best proxies for smart contract safety",
           "audioUrl": "/audio/lessons/oc-hs-security/1-0.mp3"
         }
       ]
@@ -329,14 +329,14 @@
         {
           "id": "action_hs-sc-s2a_0",
           "type": "speech",
-          "text": "OPSEC — operational security — is about the habits that protect you before an attack happens. The biggest one: never publicly reveal how much crypto you hold. SIM swap attackers specifically target people who flex crypto wins on social media. Use a dedicated email for crypto, a password manager, and authenticator app 2FA — never SMS.",
-          "audioUrl": "/audio/lessons/oc-hs-security/1-1.mp3"
+          "text": "OPSEC & Transaction Hygiene. Operational Security (OPSEC)",
+          "audioUrl": "/audio/lessons/oc-hs-security/2-0.mp3"
         },
         {
           "id": "action_hs-sc-s2a_1",
           "type": "speech",
-          "text": "Before every transaction, verify the full address — not just the first and last four characters. Send a test transaction for large amounts. Check you are on the right network. For DeFi approvals, read what the contract is actually asking permission to do. Use revoke.cash monthly to audit and remove unused token approvals.",
-          "audioUrl": "/audio/lessons/oc-hs-security/2-0.mp3"
+          "text": "Transaction Verification Checklist. Online behavior that protects your holdings:. . • Never reveal how much crypto you hold publicly. • Don't flex wins on social media — SIM swap. attackers look for high-value targets. • Use a dedicated email for crypto accounts. • Use a password manager (Bitwarden, 1Password). • Enable hardware 2FA (YubiKey) on exchanges. • Use a VPN when accessing wallets on public WiFi. • Never discuss holdings on Discord or Telegram. • Separate 'hot' (trading) from 'cold' (savings) funds. Before every transaction:. . ✓ Verify address manually — first 4 AND last 4 chars. ✓ Send a test transaction for large amounts. ✓ Check the network (mainnet vs testnet). ✓ Verify you have enough native token for gas. ✓ For DeFi: read the approval — what contract,. what tokens, what spending limit?. ✓ Check gas fees aren't abnormally high. (front-run indicator). ✓ Use revoke.cash monthly to audit. token approvals and revoke unused ones",
+          "audioUrl": "/audio/lessons/oc-hs-security/2-1.mp3"
         }
       ]
     },
@@ -452,8 +452,8 @@
         {
           "id": "action_hs-sc-s2b_0",
           "type": "speech",
-          "text": "SIM swap is one of the most dangerous attacks because it bypasses SMS two-factor authentication entirely. The attacker impersonates you with your carrier and ports your number to their SIM. The fix: switch every crypto account to an authenticator app, enable a carrier account PIN, and use a hardware key like YubiKey where possible.",
-          "audioUrl": "/audio/lessons/oc-hs-security/2-1.mp3"
+          "text": "SIM Swap & Security Checklist. SIM Swap Attacks. Intermediate Security Checklist. Attacker calls your carrier, impersonates you, and ports your phone number to their SIM card. Now they receive all your SMS 2FA codes. . How it happens: social engineering + leaked. personal data (name, last 4 SSN, account PIN). . Protection:. • Never use SMS 2FA for crypto — use authenticator app. • Enable carrier account PIN + port freeze. • Use hardware key (YubiKey) as 2FA where possible. ✓ Hardware wallet for >$1,000 in holdings. ✓ Seed phrase stored offline, never digital. ✓ Authenticator app 2FA (not SMS) everywhere. ✓ Dedicated crypto email with strong password. ✓ Monthly token approval audit (revoke.cash). ✓ Never click links from Discord/Telegram DMs. ✓ Test transaction before sending large amounts. ✓ VPN on public networks when accessing wallets",
+          "audioUrl": "/audio/lessons/oc-hs-security/3-0.mp3"
         }
       ]
     },
@@ -569,13 +569,13 @@
         {
           "id": "action_hs-sc-s3a_0",
           "type": "speech",
-          "text": "Centralized exchanges carry counterparty risk — FTX lost eight billion dollars of customer funds in 2022, and Mt. Gox lost 400,000 Bitcoin before it. Only keep trading amounts on exchanges. Withdraw profits to self-custody regularly. Check whether the exchange publishes Proof of Reserves.",
+          "text": "Exchange Safety: CEX vs DEX Risk. CEX Risk — Centralized Exchange Safety",
           "audioUrl": "/audio/lessons/oc-hs-security/3-0.mp3"
         },
         {
           "id": "action_hs-sc-s3a_1",
           "type": "speech",
-          "text": "DEX platforms are non-custodial — you keep your keys — but they carry their own risks. Smart contract bugs, MEV sandwich attacks that inflate your buy price, slippage, and fake token contracts with the same name as legitimate ones. Always use the official frontend URL, verify the contract address, and set tight slippage limits.",
+          "text": "DEX Risk — Decentralized Exchange Safety. FTX collapsed Nov 2022 — $8B in customer funds lost. Gox collapsed 2014 — 850,000 BTC lost. . CEX safety checklist:. ✓ Use regulated, audited exchanges (Coinbase, Kraken). ✓ Only keep trading amounts on exchange. ✓ Withdraw profits to self-custody regularly. ✓ Check Proof of Reserves (does exchange publish?). ✓ Separate exchange account email from personal. ✓ Never share 2FA codes with 'support'. ✓ Monitor for withdrawal whitelist options. DEX: non-custodial — you keep your keys. No registration, trade any token. . DEX risks:. • Smart contract bugs (no insurance). • Front-running bots (MEV) — sandwich attacks. inflate your buy price and dump after your tx. • Slippage — price moves between sign and confirm. • Fake token contracts (same name, different address). . Safety: use official frontend URLs, set max. slippage <1% for stablecoins, <2% for majors,. verify contract address before any new token trade",
           "audioUrl": "/audio/lessons/oc-hs-security/3-1.mp3"
         }
       ]
@@ -692,13 +692,13 @@
         {
           "id": "action_hs-sc-s3b_0",
           "type": "speech",
-          "text": "Recovery planning means thinking ahead before you need it. Create a crypto will: document where your seed phrases and hardware wallets are stored, list your exchanges and approximate holdings, and leave instructions for a trusted person. If you are compromised, move remaining funds to a new wallet immediately, revoke all token approvals from the compromised wallet, and document everything.",
+          "text": "Recovery Planning & Your Security Edge. Recovery Planning",
           "audioUrl": "/audio/lessons/oc-hs-security/3-2.mp3"
         },
         {
           "id": "action_hs-sc-s3b_1",
           "type": "speech",
-          "text": "Most traders lose money to markets. The second-biggest loss category is security failures. OnlyCrypto's copy trading model reduces your direct exposure — no private key risk on positions, expert traders managing the trades, you control entry and exit. Security knowledge is permanent alpha. Every attack you understand is one you avoid.",
+          "text": "Security is Your Edge. What if something goes wrong?. . Create a crypto will:. • Secure location of seed phrases and hardware wallets. • List of exchanges, wallets, and approx holdings. • Instructions for next-of-kin (lawyer or trusted person). . If you're compromised:. 1. Move remaining funds to new wallet immediately. 2. Revoke all token approvals from compromised wallet. 3. Report to exchange if CEX was breached. 4. Document everything for tax/insurance. Most traders lose money to markets. The second-biggest loss category is security failures. . OnlyCrypto's copy trading model reduces risk:. • Trading through the platform — no private key exposure. • Expert traders manage the position. • You maintain control of entry and exit. . Security knowledge is protective alpha. Every attack you understand is one you avoid. The goal is to keep what you earn",
           "audioUrl": "/audio/lessons/oc-hs-security/3-3.mp3"
         }
       ]

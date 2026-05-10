@@ -209,7 +209,7 @@
         {
           "id": "action_tg-s1_1",
           "type": "speech",
-          "text": "Before you place a single trade, you need to understand how prices are actually formed.",
+          "text": "Market Structure",
           "audioUrl": "/audio/lessons/oc-trading-guide/0-1.mp3"
         },
         {
@@ -220,7 +220,7 @@
         {
           "id": "action_tg-s1_3",
           "type": "speech",
-          "text": "Market structure — the order book, candlesticks, and what they reveal about supply and demand.",
+          "text": "How price is formed and how to read it",
           "audioUrl": "/audio/lessons/oc-trading-guide/0-3.mp3"
         },
         {
@@ -231,7 +231,7 @@
         {
           "id": "action_tg-s1_5",
           "type": "speech",
-          "text": "Order book mechanics: bids are buyers waiting at specific price levels. Asks are sellers. The spread is the gap between best bid and best ask. Volume profile shows where the most trades happened historically — these become support and resistance levels.",
+          "text": "Order Book MechanicsBids: buyers waiting at price levels. Asks: sellers waiting at price levels. Spread: gap between best bid & ask. . Market order: execute immediately at current price. Limit order: wait until price reaches your level. . Large walls in the order book = support/resistance. Watch for 'walls' being pulled right before a move",
           "audioUrl": "/audio/lessons/oc-trading-guide/0-5.mp3"
         },
         {
@@ -242,7 +242,7 @@
         {
           "id": "action_tg-s1_7",
           "type": "speech",
-          "text": "Reading candlesticks: each candle shows Open, High, Low, and Close for a time period. The doji pattern — open and close nearly equal — signals indecision. A pin bar with a long wick shows price rejection. Engulfing patterns signal potential reversals.",
+          "text": "Reading CandlesticksEach candle = Open · High · Low · Close. . Patterns that matter:. • Doji: indecision — buyers/sellers balanced. • Hammer: reversal signal at support. • Engulfing: strong momentum shift. • Long wick: price rejection at that level. . Patterns need volume confirmation to be reliable",
           "audioUrl": "/audio/lessons/oc-trading-guide/0-7.mp3"
         }
       ]
@@ -439,7 +439,7 @@
         {
           "id": "action_tg-s2_1",
           "type": "speech",
-          "text": "Technical indicators don't predict the future — they describe what has happened. Understanding what they measure helps you use them correctly.",
+          "text": "Technical Indicators",
           "audioUrl": "/audio/lessons/oc-trading-guide/1-1.mp3"
         },
         {
@@ -450,7 +450,7 @@
         {
           "id": "action_tg-s2_3",
           "type": "speech",
-          "text": "RSI, MACD, and Bollinger Bands — the three most widely used indicators in crypto trading.",
+          "text": "What RSI, MACD, and Bollinger Bands actually measure",
           "audioUrl": "/audio/lessons/oc-trading-guide/1-3.mp3"
         },
         {
@@ -461,7 +461,7 @@
         {
           "id": "action_tg-s2_5",
           "type": "speech",
-          "text": "RSI measures relative strength over 14 periods. Above 70 is overbought — potential reversal. Below 30 is oversold. MACD is two moving averages — the crossover of the MACD line over the signal line indicates momentum shifts. Divergence between price and MACD is a powerful leading signal.",
+          "text": "RSI & MACDRSI = avg gain / avg loss over 14 periods. • >70: overbought (potential reversal). •",
           "audioUrl": "/audio/lessons/oc-trading-guide/1-5.mp3"
         },
         {
@@ -472,7 +472,7 @@
         {
           "id": "action_tg-s2_7",
           "type": "speech",
-          "text": "Bollinger Bands: a 20-day moving average in the middle, plus or minus two standard deviations. A Bollinger Squeeze — bands tightening — means volatility is compressing. What follows is usually a significant move. Bands don't tell you the direction, just that a move is coming.",
+          "text": "Bollinger BandsMiddle: 20-day moving average. Upper/Lower: ±2 standard deviations. . Squeeze = low volatility → breakout incoming. Touch of upper band = overbought. Touch of lower band = oversold. . Bands expand during trends, contract during consolidation. Width = volatility indicator",
           "audioUrl": "/audio/lessons/oc-trading-guide/1-7.mp3"
         }
       ]
@@ -628,7 +628,7 @@
         {
           "id": "action_tg-s3_1",
           "type": "speech",
-          "text": "Position sizing is the most important skill in trading — not entry timing, not indicator selection. Size determines your survivability.",
+          "text": "Position Sizing",
           "audioUrl": "/audio/lessons/oc-trading-guide/2-1.mp3"
         },
         {
@@ -639,7 +639,7 @@
         {
           "id": "action_tg-s3_3",
           "type": "speech",
-          "text": "The formula is simple. The discipline to follow it is not.",
+          "text": "The single most important skill in trading",
           "audioUrl": "/audio/lessons/oc-trading-guide/2-3.mp3"
         },
         {
@@ -650,7 +650,7 @@
         {
           "id": "action_tg-s3_5",
           "type": "speech",
-          "text": "Position size equals your risk dollars divided by your stop percentage.",
+          "text": "Position Size = Risk $ ÷ Stop %",
           "audioUrl": "/audio/lessons/oc-trading-guide/2-5.mp3"
         },
         {
@@ -661,7 +661,7 @@
         {
           "id": "action_tg-s3_7",
           "type": "speech",
-          "text": "Risk dollars equals your account value times your chosen risk per trade — typically 1 to 2 percent. If you have 10,000 dollars and risk 2 percent, that's 200 dollars. If your stop is 10% from entry, your position is 2,000 dollars.",
+          "text": "Risk $ = Account × Risk Per Trade (e.g. 2%). Stop % = Distance from entry to stop-loss. . Example: $10K account, 2% risk, 5% stop. → Risk $ = $200 · Position = $200 ÷ 0.05 = $4,000",
           "audioUrl": "/audio/lessons/oc-trading-guide/2-7.mp3"
         },
         {
@@ -672,7 +672,7 @@
         {
           "id": "action_tg-s3_9",
           "type": "speech",
-          "text": "The Kelly Criterion maximizes long-run growth mathematically. In practice, use half-Kelly — full Kelly is too aggressive for anything with variance. Most professional traders risk between 0.5 and 2% per trade.",
+          "text": "Kelly Criterion: f = (bp − q) / b where b=odds, p=win rate, q=loss rate. Use half-Kelly in practice to account for estimation error",
           "audioUrl": "/audio/lessons/oc-trading-guide/2-9.mp3"
         }
       ]
@@ -828,7 +828,7 @@
         {
           "id": "action_tg-s4_1",
           "type": "speech",
-          "text": "Profitable trading is not about being right most of the time. It's about math — specifically expectancy.",
+          "text": "Trading Expectancy",
           "audioUrl": "/audio/lessons/oc-trading-guide/3-1.mp3"
         },
         {
@@ -839,7 +839,7 @@
         {
           "id": "action_tg-s4_3",
           "type": "speech",
-          "text": "A 40% win rate CAN be highly profitable. A 70% win rate CAN be a losing system. It depends on your reward-to-risk ratio.",
+          "text": "Profitable trading is about math, not prediction",
           "audioUrl": "/audio/lessons/oc-trading-guide/3-3.mp3"
         },
         {
@@ -850,7 +850,7 @@
         {
           "id": "action_tg-s4_5",
           "type": "speech",
-          "text": "Expectancy equals win percentage times average win, minus loss percentage times average loss.",
+          "text": "Expectancy = (W% × Avg Win) − (L% × Avg Loss)",
           "audioUrl": "/audio/lessons/oc-trading-guide/3-5.mp3"
         },
         {
@@ -861,7 +861,7 @@
         {
           "id": "action_tg-s4_7",
           "type": "speech",
-          "text": "Example: 40% wins at 300 dollars average, 60% losses at 100 dollars average. Expectancy equals 40% times 300 minus 60% times 100 — that's positive 60 dollars per trade. Over 100 trades, that compounds.",
+          "text": "A 40% win rate CAN be profitable with high reward/risk. Example: 40% × $300 − 60% × $100 = +$60 per trade. . Most traders blow up not from bad win rates — from letting losers run and cutting winners short",
           "audioUrl": "/audio/lessons/oc-trading-guide/3-7.mp3"
         },
         {
@@ -872,7 +872,7 @@
         {
           "id": "action_tg-s4_9",
           "type": "speech",
-          "text": "The Sharpe ratio measures return per unit of risk. A Sharpe above 1.0 is considered good. The best trading systems aim for 2 or above. If your system has a Sharpe below 0.5, you're taking on too much risk relative to your returns.",
+          "text": "Sharpe Ratio = (Return − Risk-Free Rate) / Standard Deviation. A Sharpe > 1.0 is considered good. Most retail traders have negative Sharpe",
           "audioUrl": "/audio/lessons/oc-trading-guide/3-9.mp3"
         }
       ]
@@ -1069,7 +1069,7 @@
         {
           "id": "action_tg-s5_1",
           "type": "speech",
-          "text": "Perpetual futures are the most traded crypto instrument — and the most dangerous for beginners.",
+          "text": "Perpetual Futures & Leverage",
           "audioUrl": "/audio/lessons/oc-trading-guide/4-1.mp3"
         },
         {
@@ -1080,7 +1080,7 @@
         {
           "id": "action_tg-s5_3",
           "type": "speech",
-          "text": "Understanding funding rates and liquidation mechanics is not optional if you trade perps.",
+          "text": "The most dangerous — and most used — crypto instrument",
           "audioUrl": "/audio/lessons/oc-trading-guide/4-3.mp3"
         },
         {
@@ -1091,7 +1091,7 @@
         {
           "id": "action_tg-s5_5",
           "type": "speech",
-          "text": "Perpetual futures have no expiry date — unlike monthly futures. The funding rate is a periodic payment between longs and shorts that keeps the perp price anchored to the spot price. When funding is highly positive, longs are paying shorts — a contrarian signal.",
+          "text": "Perpetual FuturesPerpetuals have no expiry — unlike monthly futures. . Funding rate keeps price anchored to spot:. • Positive funding (>0): Longs pay shorts — market is net long. • Negative funding (",
           "audioUrl": "/audio/lessons/oc-trading-guide/4-5.mp3"
         },
         {
@@ -1102,7 +1102,7 @@
         {
           "id": "action_tg-s5_7",
           "type": "speech",
-          "text": "Liquidation mechanics: 10x leverage on 1,000 dollars controls a 10,000 dollar position. A 10% adverse move equals 100% loss — full liquidation. At 25x leverage, you're liquidated on a 4% move. The exchange takes your collateral. Overleveraging is how traders blow up accounts.",
+          "text": "Liquidation Mechanics10× leverage on $1,000 = $10,000 position. A 10% adverse move = 100% loss (liquidation). . Liquidation price = Entry × (1 − 1/Leverage). . Exchange liquidation cascade: bots liquidate the largest positions first, pushing price further, liquidating more. $1B+ liquidated in single-day events",
           "audioUrl": "/audio/lessons/oc-trading-guide/4-7.mp3"
         }
       ]
@@ -1348,7 +1348,7 @@
         {
           "id": "action_tg-s6_1",
           "type": "speech",
-          "text": "Copy trading and psychology — two topics that determine real-world trading outcomes more than any indicator.",
+          "text": "Copy Trading & Psychology",
           "audioUrl": "/audio/lessons/oc-trading-guide/5-1.mp3"
         },
         {
@@ -1359,7 +1359,7 @@
         {
           "id": "action_tg-s6_3",
           "type": "speech",
-          "text": "Following a proven trader is valid strategy. But the hardest part is always your own psychology.",
+          "text": "Systematic edges and the hardest part — your own mind",
           "audioUrl": "/audio/lessons/oc-trading-guide/5-3.mp3"
         },
         {
@@ -1370,7 +1370,7 @@
         {
           "id": "action_tg-s6_5",
           "type": "speech",
-          "text": "Copy trading: follow proven traders automatically. The risk is that past performance isn't guaranteed. Traders change strategies. Over-optimized backtests don't hold up live. On OnlyCrypto, trader track records are public and verified — giving you genuine data to evaluate.",
+          "text": "Copy TradingFollow proven traders automatically. Risk: traders change strategy, over-optimized past performance, slippage on large follower bases",
           "audioUrl": "/audio/lessons/oc-trading-guide/5-5.mp3"
         },
         {
@@ -1381,7 +1381,7 @@
         {
           "id": "action_tg-s6_7",
           "type": "speech",
-          "text": "Trading psychology: fear causes early exits — cutting winners short. Greed causes holding losers too long — hoping they'll come back. Revenge trading after a loss is how small losses become catastrophic losses. The edge is in consistency, not cleverness.",
+          "text": "Trading PsychologyFear → early exits. Greed → holding losers. Revenge trading → blowups. The edge is discipline, not prediction",
           "audioUrl": "/audio/lessons/oc-trading-guide/5-7.mp3"
         },
         {
@@ -1392,7 +1392,7 @@
         {
           "id": "action_tg-s6_9",
           "type": "speech",
-          "text": "OnlyCrypto traders: verified track records, public performance, and followers share in profits through the platform's commission structure. This aligns the trader's incentive with yours — they do better when you do better.",
+          "text": "OnlyCrypto TradersVerified traders on platform. Track record is public. Followers share in profit. Copy-stop on drawdown threshold",
           "audioUrl": "/audio/lessons/oc-trading-guide/5-9.mp3"
         }
       ]
@@ -1671,7 +1671,7 @@
         {
           "id": "action_tg-s7_1",
           "type": "speech",
-          "text": "A trading system is a set of rules that removes emotion from the equation. Without rules, emotions decide — and emotions lose.",
+          "text": "Building a Trading System",
           "audioUrl": "/audio/lessons/oc-trading-guide/6-1.mp3"
         },
         {
@@ -1682,7 +1682,7 @@
         {
           "id": "action_tg-s7_3",
           "type": "speech",
-          "text": "Four rules that every consistently profitable trader follows.",
+          "text": "Rules that remove emotion from the equation",
           "audioUrl": "/audio/lessons/oc-trading-guide/6-3.mp3"
         },
         {
@@ -1693,7 +1693,7 @@
         {
           "id": "action_tg-s7_5",
           "type": "speech",
-          "text": "Journal every trade: entry reason, position size, stop level, and target. Review weekly. Patterns in your journal reveal both your edge and your recurring mistakes — the journal is where improvement happens.",
+          "text": "Journal Every TradeEntry reason, size, stop, target. Review weekly. Patterns reveal edge — and mistakes",
           "audioUrl": "/audio/lessons/oc-trading-guide/6-5.mp3"
         },
         {
@@ -1704,7 +1704,7 @@
         {
           "id": "action_tg-s7_7",
           "type": "speech",
-          "text": "Maximum 2% risk per trade. Lose 10 trades in a row at 2% and you still have 82% of your capital. At 10% risk per trade — which many beginners use — 10 consecutive losses leaves you with 35% remaining.",
+          "text": "Max 2% Risk Per TradeLose 10 trades in a row at 2% = still 82% of capital. At 10% risk = 35% left",
           "audioUrl": "/audio/lessons/oc-trading-guide/6-7.mp3"
         },
         {
@@ -1715,7 +1715,7 @@
         {
           "id": "action_tg-s7_9",
           "type": "speech",
-          "text": "Plan before entry. Know your stop and your target before you place the trade. No plan means your emotions decide the exit. Always pre-define your risk.",
+          "text": "Plan Before EntryKnow your stop and target before you enter. No plan = emotion decides",
           "audioUrl": "/audio/lessons/oc-trading-guide/6-9.mp3"
         },
         {
@@ -1726,7 +1726,7 @@
         {
           "id": "action_tg-s7_11",
           "type": "speech",
-          "text": "Review weekly: calculate your expectancy, win rate, and average R multiple. If you have a negative expectancy after 50 or more trades, something in your system needs to change. Data, not feelings.",
+          "text": "Review WeeklyCalculate expectancy, win rate, avg R. If negative expectancy after 50+ trades — change strategy",
           "audioUrl": "/audio/lessons/oc-trading-guide/6-11.mp3"
         }
       ]
@@ -2015,7 +2015,7 @@
         {
           "id": "action_ctg-s10_5",
           "type": "speech",
-          "text": "The Kelly Criterion gives the mathematically optimal bet size: f = (bp - q) / b, where b = odds ratio, p = win probability, q = loss probability. In practice, traders use fractional Kelly (25–50% of full Kelly) to reduce variance. Most professional traders risk 1–2% of account per trade. At 2% risk per trade, you can lose 20 trades in a row and still have 67% of your capital remaining.",
+          "text": "The Kelly Criterion gives the mathematically optimal bet size: f = (bp - q) / b, where b = odds ratio, p = win probability, q = loss probability. In practice, traders use fractional Kelly (25–50% of full Kelly) to reduce variance. Most professional traders risk 1–2% of account per trade. At 2% risk per trade, you can lose 20 trades in a row and still have 67% of your capital remaining",
           "audioUrl": "/audio/lessons/oc-trading-guide/8-5.mp3"
         },
         {
@@ -2324,7 +2324,7 @@
         {
           "id": "action_ctg-s10b_5",
           "type": "speech",
-          "text": "Algorithmic trading executes trades based on pre-defined rules — no emotion, no hesitation. Strategies include: trend following (buy when 50MA > 200MA), mean reversion (fade moves beyond 2 standard deviations), arbitrage (exploit price differences across exchanges). Key concepts: backtesting (test strategy on historical data), overfitting (strategy works on past data but fails live), slippage (real execution vs backtest assumptions).",
+          "text": "Algorithmic trading executes trades based on pre-defined rules — no emotion, no hesitation. Strategies include: trend following (buy when 50MA > 200MA), mean reversion (fade moves beyond 2 standard deviations), arbitrage (exploit price differences across exchanges). Key concepts: backtesting (test strategy on historical data), overfitting (strategy works on past data but fails live), slippage (real execution vs backtest assumptions)",
           "audioUrl": "/audio/lessons/oc-trading-guide/9-5.mp3"
         },
         {

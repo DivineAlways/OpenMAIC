@@ -233,7 +233,7 @@
         {
           "id": "action_hs-cr-s1_1",
           "type": "speech",
-          "text": "Market Cap and Tokenomics — High School Level",
+          "text": "📊 Market Cap & Tokenomics",
           "audioUrl": "/audio/lessons/oc-hs-crypto/0-1.mp3"
         },
         {
@@ -244,7 +244,7 @@
         {
           "id": "action_hs-cr-s1_3",
           "type": "speech",
-          "text": "Market Cap equals Price times Circulating Supply. A coin priced at zero point zero zero one dollars with one trillion tokens has a market cap of one billion dollars — larger than a fifty dollar coin with only ten million supply. Price per coin tells you almost nothing on its own.",
+          "text": "Why price alone is a misleading number — High School Level",
           "audioUrl": "/audio/lessons/oc-hs-crypto/0-3.mp3"
         },
         {
@@ -255,7 +255,7 @@
         {
           "id": "action_hs-cr-s1_5",
           "type": "speech",
-          "text": "Large Cap — over ten billion. Bitcoin, Ethereum, XRP. Most liquid. Institutional money flows here first. Less volatile than small caps.",
+          "text": "Market Cap = Price × Circulating Supply",
           "audioUrl": "/audio/lessons/oc-hs-crypto/0-5.mp3"
         },
         {
@@ -266,7 +266,7 @@
         {
           "id": "action_hs-cr-s1_7",
           "type": "speech",
-          "text": "Mid Cap — one to ten billion. Established projects with real usage. Higher upside potential but also sharper drawdowns.",
+          "text": "Large Cap. > $10BBTC, ETH, XRP. Most liquid. Institutional money flows here first. Less volatile than small caps",
           "audioUrl": "/audio/lessons/oc-hs-crypto/0-7.mp3"
         },
         {
@@ -277,7 +277,7 @@
         {
           "id": "action_hs-cr-s1_9",
           "type": "speech",
-          "text": "Small Cap — under one billion. Newer projects. Can ten-ex quickly but can also lose ninety percent just as fast. Research carefully before touching these.",
+          "text": "Mid Cap. $1B – $10BEstablished projects with real usage. Higher upside but also sharper drawdowns. Small Cap. < $1BNewer projects. Can 10× quickly but can also lose 90% just as fast. Research carefully",
           "audioUrl": "/audio/lessons/oc-hs-crypto/0-9.mp3"
         }
       ]
@@ -411,7 +411,7 @@
         {
           "id": "action_hs-cr-s1_11",
           "type": "speech",
-          "text": "Tokenomics is the economic design of a coin. Key factors: hard cap supply like Bitcoin's twenty-one million max creates deflationary pressure. Inflationary emission continuously mints new coins for validators. Burn mechanisms permanently destroy coins — Ethereum burns transaction fees, XRP burns a tiny fee per transaction. And VC allocation: pre-mined tokens for the team — always check vesting schedules for dump risk.",
+          "text": "📊 Tokenomics & Supply Mechanics. How supply design shapes long-term value",
           "audioUrl": "/audio/lessons/oc-hs-crypto/1-1.mp3"
         },
         {
@@ -422,7 +422,7 @@
         {
           "id": "action_hs-cr-s1_13",
           "type": "speech",
-          "text": "XRP has about fifty-seven billion circulating supply — that's why its price looks cheap compared to Bitcoin. You're getting a proportional share of a thirty billion plus market cap. Supply does not equal value.",
+          "text": "Tokenomics = the economic design of a coin. Key factors: hard cap supply (Bitcoin: 21M max = deflationary), inflationary emission (new coins minted continuously for validators), burn mechanisms (permanently destroying coins to reduce supply — Ethereum burns fees, XRP burns ~0.0001 XRP per tx), and VC allocation (pre-mined tokens for team/investors — check vesting schedules for dump risk). XRP has ~57 billion circulating supply — that's why its price looks 'cheap' vs BTC. You're getting a proportional share of a $30B+ market cap. Supply ≠ value",
           "audioUrl": "/audio/lessons/oc-hs-crypto/1-3.mp3"
         }
       ]
@@ -667,7 +667,7 @@
         {
           "id": "action_hs-cr-s2_1",
           "type": "speech",
-          "text": "Bitcoin Halving Cycles and Reading Price Action",
+          "text": "🔄 Bitcoin Halving & Reading Price Action. The programmed supply shock and what charts are actually telling you",
           "audioUrl": "/audio/lessons/oc-hs-crypto/2-1.mp3"
         },
         {
@@ -678,7 +678,7 @@
         {
           "id": "action_hs-cr-s2_3",
           "type": "speech",
-          "text": "Every 210,000 blocks — roughly every four years — the miner reward is cut in half. This is hardcoded in Bitcoin's protocol and cannot be changed. It reduces the rate of new Bitcoin entering circulation.",
+          "text": "⚡ Bitcoin Halving Cycles (~every 4 years). Every 210,000 blocks, miner reward is cut in half. Hardcoded in Bitcoin's protocol — no one can change it. Reduces new BTC entering circulation",
           "audioUrl": "/audio/lessons/oc-hs-crypto/2-3.mp3"
         },
         {
@@ -689,7 +689,7 @@
         {
           "id": "action_hs-cr-s2_5",
           "type": "speech",
-          "text": "2012: reward dropped from 50 to 25 BTC. Market eventually peaked around one thousand dollars.",
+          "text": "2012. 50→25 BTC. Peak ~$1K. 2016. 25→12.5 BTC. Peak ~$20K",
           "audioUrl": "/audio/lessons/oc-hs-crypto/2-5.mp3"
         },
         {
@@ -700,7 +700,7 @@
         {
           "id": "action_hs-cr-s2_7",
           "type": "speech",
-          "text": "2020: reward dropped from 12.5 to 6.25 BTC. Market peaked around sixty-nine thousand dollars in 2021. And in 2024 we saw the latest halving — down to 3.125 BTC per block.",
+          "text": "2020. 12.5→6.25. Peak ~$69K. 2024. 6.25→3.125. Peak TBD",
           "audioUrl": "/audio/lessons/oc-hs-crypto/2-7.mp3"
         }
       ]
@@ -879,7 +879,7 @@
         {
           "id": "action_hs-cr-s2_9",
           "type": "speech",
-          "text": "Reading basic price action: An uptrend shows higher highs and higher lows — each rally peak exceeds the last, each pullback holds above the previous dip. A downtrend shows lower highs and lower lows — each rally fails below the previous peak, each drop breaks the prior support.",
+          "text": "📈 Reading Price Action & Evaluating Altcoins. What charts are telling you and how to assess new projects",
           "audioUrl": "/audio/lessons/oc-hs-crypto/3-1.mp3"
         },
         {
@@ -890,7 +890,7 @@
         {
           "id": "action_hs-cr-s2_11",
           "type": "speech",
-          "text": "Important caveat: past halving cycles do not guarantee future performance. With each cycle, more capital is needed to move the market and institutional participants increasingly shape price action. The pattern may weaken over time.",
+          "text": "📈 Reading Basic Price Action. Uptrend (Bullish): Higher highs + higher lows. Each rally peak exceeds the last. Each pullback holds above the previous dip. Price stays above 50-day and 200-day moving averages. . Downtrend (Bearish): Lower highs + lower lows. Each rally fails below the previous peak. Each drop breaks the prior support level. Price below moving averages",
           "audioUrl": "/audio/lessons/oc-hs-crypto/3-3.mp3"
         },
         {
@@ -901,7 +901,7 @@
         {
           "id": "action_hs-cr-s2_13",
           "type": "speech",
-          "text": "Evaluating altcoins: What problem does it solve — in one sentence? Who's building it and are they public? Does the token actually need to exist to use the network? Check on-chain metrics — active wallets, transaction volume, GitHub developer activity. Real usage equals real demand. Dead chains fake these metrics.",
+          "text": "⚠️ Halving caveat: Past cycles don't guarantee future performance. With each cycle, more capital is needed to move the market and institutional participants increasingly shape price action. The pattern may weaken over time. Evaluating Altcoins: What problem does it solve (in one sentence)? Who's building it — are they public? Does the token actually need to exist to use the network? Check on-chain metrics — active wallets, transaction volume, GitHub activity. Real usage = real demand. Dead chains fake these metrics",
           "audioUrl": "/audio/lessons/oc-hs-crypto/3-5.mp3"
         }
       ]
@@ -1166,7 +1166,7 @@
         {
           "id": "action_hc-s4_5",
           "type": "speech",
-          "text": "A whale is any wallet holding a large enough position to move the market when they buy or sell. In Bitcoin, a wallet with 1,000+ BTC qualifies. In smaller altcoins, even $500k can move the price. Common manipulation tactics: wash trading (buying and selling to yourself to fake volume), pump and dump (coordinated hype then mass sell), spoofing (placing and canceling large orders to fake pressure).",
+          "text": "A whale is any wallet holding a large enough position to move the market when they buy or sell. In Bitcoin, a wallet with 1,000+ BTC qualifies. In smaller altcoins, even $500k can move the price. Common manipulation tactics: wash trading (buying and selling to yourself to fake volume), pump and dump (coordinated hype then mass sell), spoofing (placing and canceling large orders to fake pressure)",
           "audioUrl": "/audio/lessons/oc-hs-crypto/4-5.mp3"
         },
         {
@@ -1475,7 +1475,7 @@
         {
           "id": "action_hc-s5_5",
           "type": "speech",
-          "text": "An order book shows all active buy orders (bids) and sell orders (asks) for an asset. The gap between the highest bid and lowest ask is the spread . Large clusters of buy orders at a price level = support (price tends to bounce there). Large clusters of sell orders = resistance (price tends to stall there). Watching the order book gives you a live pulse of market intent.",
+          "text": "An order book shows all active buy orders (bids) and sell orders (asks) for an asset. The gap between the highest bid and lowest ask is the spread. Large clusters of buy orders at a price level = support (price tends to bounce there). Large clusters of sell orders = resistance (price tends to stall there). Watching the order book gives you a live pulse of market intent",
           "audioUrl": "/audio/lessons/oc-hs-crypto/5-5.mp3"
         },
         {
@@ -1784,7 +1784,7 @@
         {
           "id": "action_hc-s6_5",
           "type": "speech",
-          "text": "Liquidity is how easily you can buy or sell without moving the price. Bitcoin is highly liquid — you can trade millions of dollars without much price impact. A small altcoin is illiquid — even a $10k buy can spike the price 5%. Slippage is when your order executes at a worse price than expected because there weren't enough orders at your target price. Always use limit orders when trading illiquid assets.",
+          "text": "Liquidity is how easily you can buy or sell without moving the price. Bitcoin is highly liquid — you can trade millions of dollars without much price impact. A small altcoin is illiquid — even a $10k buy can spike the price 5%. Slippage is when your order executes at a worse price than expected because there weren't enough orders at your target price. Always use limit orders when trading illiquid assets",
           "audioUrl": "/audio/lessons/oc-hs-crypto/6-5.mp3"
         },
         {

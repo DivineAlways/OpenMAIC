@@ -277,7 +277,7 @@
         {
           "id": "action_esb-s1_5",
           "type": "speech",
-          "text": "Swapping simply means exchanging one cryptocurrency for another. You have Bitcoin and want Ethereum? You swap. You have USDC and want XRP? You swap. There are two ways to swap: through a centralized exchange (CEX) like Coinbase where a company matches buyers and sellers, or through a decentralized exchange (DEX) where code does it automatically with no middleman.",
+          "text": "Swapping simply means exchanging one cryptocurrency for another. You have Bitcoin and want Ethereum? You swap. You have USDC and want XRP? You swap. There are two ways to swap: through a centralized exchange (CEX) like Coinbase where a company matches buyers and sellers, or through a decentralized exchange (DEX) where code does it automatically with no middleman",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/0-5.mp3"
         },
         {
@@ -586,7 +586,7 @@
         {
           "id": "action_esb-s2_5",
           "type": "speech",
-          "text": "CEX swap — you log into Coinbase, Binance, or Kraken and click swap. Easy. But the exchange holds your funds during the trade. You need an account and ID verification. Fees are usually clear upfront. DEX swap — you connect your own wallet (like MetaMask) to a protocol like Uniswap. No account needed. You stay in control of your funds the entire time. The trade executes via smart contract. The XRPL has a built-in DEX — one of the oldest in crypto.",
+          "text": "CEX swap — you log into Coinbase, Binance, or Kraken and click swap. Easy. But the exchange holds your funds during the trade. You need an account and ID verification. Fees are usually clear upfront. DEX swap — you connect your own wallet (like MetaMask) to a protocol like Uniswap. No account needed. You stay in control of your funds the entire time. The trade executes via smart contract. The XRPL has a built-in DEX — one of the oldest in crypto",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/1-5.mp3"
         },
         {
@@ -895,7 +895,7 @@
         {
           "id": "action_esb-s3_5",
           "type": "speech",
-          "text": "Different blockchains are like different countries — they each have their own currency and rules and they do not automatically talk to each other. Bitcoin cannot natively move to Ethereum. ETH cannot natively move to Solana. A bridge is a protocol that connects two blockchains. You lock your tokens on Chain A, and the bridge mints an equivalent on Chain B. When you are done, you burn the tokens on Chain B and unlock your originals on Chain A.",
+          "text": "Different blockchains are like different countries — they each have their own currency and rules and they do not automatically talk to each other. Bitcoin cannot natively move to Ethereum. ETH cannot natively move to Solana. A bridge is a protocol that connects two blockchains. You lock your tokens on Chain A, and the bridge mints an equivalent on Chain B. When you are done, you burn the tokens on Chain B and unlock your originals on Chain A",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/2-5.mp3"
         },
         {
@@ -1204,7 +1204,7 @@
         {
           "id": "action_esb-s4_5",
           "type": "speech",
-          "text": "Wrong network — the most common beginner mistake. Sending ETH on the Ethereum network to an address expecting ETH on Arbitrum. The funds appear to vanish. Always confirm the network before sending. Slippage — your swap executes at a slightly worse price than shown because the market moved. Set slippage tolerance carefully. Bridge hacks — bridges hold large amounts of locked tokens, making them high-value targets. Over $2B was stolen from bridges in 2022 alone. Use only well-established, audited bridges.",
+          "text": "Wrong network — the most common beginner mistake. Sending ETH on the Ethereum network to an address expecting ETH on Arbitrum. The funds appear to vanish. Always confirm the network before sending. Slippage — your swap executes at a slightly worse price than shown because the market moved. Set slippage tolerance carefully. Bridge hacks — bridges hold large amounts of locked tokens, making them high-value targets. Over $2B was stolen from bridges in 2022 alone. Use only well-established, audited bridges",
           "audioUrl": "/audio/lessons/oc-elem-swapbridge/3-5.mp3"
         },
         {

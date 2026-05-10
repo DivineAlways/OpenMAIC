@@ -158,7 +158,7 @@
         {
           "id": "action_hs-wl-s1_1",
           "type": "speech",
-          "text": "Seed Phrases, Keys, and Wallet Types — High School Level",
+          "text": "🔑 Seed Phrases, Keys & Wallet Types",
           "audioUrl": "/audio/lessons/oc-hs-wallets/0-1.mp3"
         },
         {
@@ -169,7 +169,7 @@
         {
           "id": "action_hs-wl-s1_3",
           "type": "speech",
-          "text": "Here's what your seed phrase actually does cryptographically. Your device generates 128 to 256 bits of true randomness. That gets converted to 12 to 24 words from a standard 2,048-word BIP39 list. Those words encode your master private key through a PBKDF2 hashing function producing a 512-bit output. From that one master key, BIP44 derivation paths generate every wallet address you will ever use — deterministically and mathematically.",
+          "text": "The cryptography behind your 12 words — High School Level",
           "audioUrl": "/audio/lessons/oc-hs-wallets/0-3.mp3"
         },
         {
@@ -180,7 +180,7 @@
         {
           "id": "action_hs-wl-s1_5",
           "type": "speech",
-          "text": "A 12-word seed has 2 to the power of 132 possible combinations — roughly 5 sextillion possibilities. At a billion guesses per second, brute-forcing takes longer than the age of the universe. Your seed phrase is mathematically unguessable. The only risk is you sharing it or storing it insecurely.",
+          "text": "🌱 What a Seed Phrase Actually Does (BIP39)",
           "audioUrl": "/audio/lessons/oc-hs-wallets/0-5.mp3"
         },
         {
@@ -191,7 +191,7 @@
         {
           "id": "action_hs-wl-s1_7",
           "type": "speech",
-          "text": "The private key is a 256-bit random number. Anyone with it can spend your funds. Never share it. Never type it online. Never store it digitally.",
+          "text": "1️⃣ Device generates 128–256 bits of true randomness → 2️⃣ Converted to 12–24 words from a 2,048-word BIP39 list → 3️⃣ Words → seed via PBKDF2 hashing → 512-bit master private key → 4️⃣ BIP44 derivation paths generate every address you'll ever use (m/44'/0'/0'/0/0.). ⚡ A 12-word seed has 2¹³² ≈ 5 sextillion combinations. At 1 billion guesses/sec, brute-forcing takes longer than the age of the universe",
           "audioUrl": "/audio/lessons/oc-hs-wallets/0-7.mp3"
         }
       ]
@@ -493,7 +493,7 @@
         {
           "id": "action_hs-wl-s1_9",
           "type": "speech",
-          "text": "The public key is mathematically derived from your private key using elliptic curve multiplication — secp256k1. It's safe to share. You cannot reverse-engineer the private key from it.",
+          "text": "🔑 Keys, Wallet Types & Security. How private keys work and choosing the right wallet",
           "audioUrl": "/audio/lessons/oc-hs-wallets/1-1.mp3"
         },
         {
@@ -504,7 +504,7 @@
         {
           "id": "action_hs-wl-s1_11",
           "type": "speech",
-          "text": "The wallet address is a hashed and encoded version of your public key — shorter and easier to work with. This is what you share to receive funds. Completely safe to post publicly.",
+          "text": "Hot vs Cold vs Custodial. 🔐 Private Key → Public Key → Address",
           "audioUrl": "/audio/lessons/oc-hs-wallets/1-3.mp3"
         },
         {
@@ -515,7 +515,7 @@
         {
           "id": "action_hs-wl-s1_13",
           "type": "speech",
-          "text": "Hot wallets are online — convenient for small amounts, but exposed to the internet. Cold wallets like Ledger keep your keys completely offline — the key never touches the internet even when signing transactions. Custodial wallets are when an exchange holds your keys — you own IOUs, not real crypto. FTX's collapse proved exactly how dangerous that is.",
+          "text": "🔥 Hot — Online, convenient, riskier. MetaMask, Xumm. Use for small amounts. 🧊 Cold — Keys never touch internet. Ledger, Trezor. Use for large holdings. 🏦 Custodial — Exchange holds your keys. You own IOUs. FTX proved why this is risky. Private Key. 🔑NEVER share. Anyone with this spends your funds",
           "audioUrl": "/audio/lessons/oc-hs-wallets/1-5.mp3"
         },
         {
@@ -526,7 +526,7 @@
         {
           "id": "action_hs-wl-s1_15",
           "type": "speech",
-          "text": "OnlyCrypto payouts go directly to your wallet address on XRPL. Always use a non-custodial wallet you control. If using an exchange address, make sure to include the destination tag or your funds may be lost.",
+          "text": "Public Key. 📢Derived via elliptic curve math. Cannot reverse to private key. Address. 📮Hashed public key. Safe to share publicly. OnlyCrypto payouts go to your wallet address on XRPL. Use a non-custodial wallet you control. If using an exchange address, include the destination tag or funds may be lost",
           "audioUrl": "/audio/lessons/oc-hs-wallets/1-7.mp3"
         }
       ]
@@ -747,7 +747,7 @@
         {
           "id": "action_hs-wl-s2_1",
           "type": "speech",
-          "text": "Wallet Attack Vectors and Security Checklist",
+          "text": "⚠️ Wallet Attack Vectors & Security Checklist. How wallets get compromised — and how to make sure yours doesn't",
           "audioUrl": "/audio/lessons/oc-hs-wallets/2-1.mp3"
         },
         {
@@ -758,7 +758,7 @@
         {
           "id": "action_hs-wl-s2_3",
           "type": "speech",
-          "text": "Seed phrase phishing: Fake recovery sites or support agents ask for your seed phrase. No legitimate app, support team, or website ever needs it. Anyone who asks is an attacker. Full stop.",
+          "text": "Seed Phrase PhishingFake recovery sites or 'support agents' ask for your seed phrase. No legitimate app, support team, or website ever needs it. Anyone who asks = attacker. Clipboard HijackingMalware swaps the wallet address you copied with the attacker's address. Always verify the first and last 4 characters of every pasted address before sending",
           "audioUrl": "/audio/lessons/oc-hs-wallets/2-3.mp3"
         },
         {
@@ -769,7 +769,7 @@
         {
           "id": "action_hs-wl-s2_5",
           "type": "speech",
-          "text": "Clipboard hijacking: Malware silently swaps the wallet address you copied with the attacker's address. You paste, you don't notice, you confirm — and your funds go to the wrong place. Always verify the first and last four characters of every pasted address before sending.",
+          "text": "Fake Wallet AppsCloned apps steal your seed during setup. Only download from official project websites — never trust app store search results alone for wallet apps. Unlimited Token ApprovalsDeFi approval prompts can request unlimited token spending. Malicious contracts drain your wallet in one transaction. Never approve 'unlimited' — approve exact amounts only",
           "audioUrl": "/audio/lessons/oc-hs-wallets/2-5.mp3"
         }
       ]
@@ -903,7 +903,7 @@
         {
           "id": "action_hs-wl-s2_7",
           "type": "speech",
-          "text": "Fake wallet apps: Cloned apps in app stores steal your seed phrase during the setup process. Only download wallet apps from the official project website — never trust app store search results alone for wallets.",
+          "text": "🛡️ Wallet Security Checklist",
           "audioUrl": "/audio/lessons/oc-hs-wallets/3-1.mp3"
         },
         {
@@ -914,7 +914,7 @@
         {
           "id": "action_hs-wl-s2_9",
           "type": "speech",
-          "text": "Unlimited token approvals: When you connect to a DeFi app, it can request unlimited permission to spend your tokens. Malicious contracts use this to drain your wallet in a single transaction. Never approve unlimited amounts — approve only the exact amount you need.",
+          "text": "Your step-by-step guide to keeping your funds safe",
           "audioUrl": "/audio/lessons/oc-hs-wallets/3-3.mp3"
         },
         {
@@ -925,7 +925,7 @@
         {
           "id": "action_hs-wl-s2_11",
           "type": "speech",
-          "text": "Security checklist: Seed phrase written on paper, stored offline, never photographed or typed digitally. Never shared with anyone — ever. Non-custodial wallet for OnlyCrypto payouts. Verified pasted addresses character by character. Hardware wallet for amounts over one thousand dollars. Revoked unused DeFi approvals at revoke.cash. Downloaded wallets only from official websites.",
+          "text": "✅ Security Checklist. ✓ Seed phrase written on paper, stored offline, never photographed or typed digitally &nbsp;&nbsp; ✓ Non-custodial wallet for OnlyCrypto payouts. ✓ Never shared seed phrase with anyone — ever &nbsp;&nbsp; ✓ Hardware wallet for amounts over $1,000. ✓ Verified pasted addresses character-by-character &nbsp;&nbsp; ✓ Revoked unused DeFi token approvals at revoke.cash. ✓ Downloaded wallets only from official websites",
           "audioUrl": "/audio/lessons/oc-hs-wallets/3-5.mp3"
         }
       ]
@@ -1190,7 +1190,7 @@
         {
           "id": "action_hw-s4_5",
           "type": "speech",
-          "text": "Hot wallet — connected to the internet. MetaMask, Trust Wallet, exchange accounts. Convenient for daily use but exposed to online attacks. Cold wallet — offline device that stores your private keys. Ledger and Trezor are the most popular. To sign a transaction, you physically confirm it on the device. An attacker controlling your computer cannot approve transactions without physical access to the device.",
+          "text": "Hot wallet — connected to the internet. MetaMask, Trust Wallet, exchange accounts. Convenient for daily use but exposed to online attacks. Cold wallet — offline device that stores your private keys. Ledger and Trezor are the most popular. To sign a transaction, you physically confirm it on the device. An attacker controlling your computer cannot approve transactions without physical access to the device",
           "audioUrl": "/audio/lessons/oc-hs-wallets/4-5.mp3"
         },
         {
@@ -1499,7 +1499,7 @@
         {
           "id": "action_hw-s5_5",
           "type": "speech",
-          "text": "A multi-sig wallet requires more than one private key to authorize a transaction. A common setup is 2-of-3: you need any 2 of 3 designated keys to sign. This means a single compromised device or lost key cannot drain the wallet. Used by exchanges, DAOs, and anyone managing large amounts. The XRPL natively supports multi-signing on every account.",
+          "text": "A multi-sig wallet requires more than one private key to authorize a transaction. A common setup is 2-of-3: you need any 2 of 3 designated keys to sign. This means a single compromised device or lost key cannot drain the wallet. Used by exchanges, DAOs, and anyone managing large amounts. The XRPL natively supports multi-signing on every account",
           "audioUrl": "/audio/lessons/oc-hs-wallets/5-5.mp3"
         },
         {
@@ -1808,7 +1808,7 @@
         {
           "id": "action_hw-s6_5",
           "type": "speech",
-          "text": "Professional crypto security uses layered defense . No single measure is enough — combine them.",
+          "text": "Professional crypto security uses layered defense. No single measure is enough — combine them",
           "audioUrl": "/audio/lessons/oc-hs-wallets/6-5.mp3"
         },
         {

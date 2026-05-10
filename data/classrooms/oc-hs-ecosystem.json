@@ -149,7 +149,7 @@
         {
           "id": "action_hs-ec-s1_1",
           "type": "speech",
-          "text": "The crypto ecosystem has layers. L1 blockchains like Ethereum and XRPL are the base — they handle consensus and finality. L2 solutions build on top to boost speed and lower costs while inheriting the base chain's security.",
+          "text": "Layers, Bridges & DAOs. L1 vs L2 Blockchains. Cross-Chain Bridges. L1 = Base chain (Ethereum, XRPL, Solana). Handles consensus, security, finality. . L2 = Built on top of L1. Inherits L1 security, boosts speed/cost. . Rollup types:. • Optimistic: assumes valid, disputes later. • ZK: proves validity with zero-knowledge math. . XRPL: native L1 — no L2 needed (4s, <$0.001). Move assets between different blockchains. . How it works:. 1. Lock token on Chain A. 2. Mint wrapped version on Chain B. 3. Burn wrapped version to unlock original. . Bridge risks:. ⚠ Smart contract bugs (biggest hack vector). ⚠ Centralized custody risk. ⚠ Oracle manipulation. . Always check bridge audits before using",
           "audioUrl": "/audio/lessons/oc-hs-ecosystem/0-1.mp3"
         },
         {
@@ -250,7 +250,7 @@
         {
           "id": "action_hs-ec-s1_3",
           "type": "speech",
-          "text": "Bridges let you move assets between different blockchains. You lock your token on Chain A, mint a wrapped version on Chain B, and burn it to unlock the original. But bridges are the biggest hack target in crypto — always check that a bridge has been audited before using it.",
+          "text": "DAOs — Decentralized Autonomous Organizations",
           "audioUrl": "/audio/lessons/oc-hs-ecosystem/1-0.mp3"
         },
         {
@@ -261,7 +261,7 @@
         {
           "id": "action_hs-ec-s1_5",
           "type": "speech",
-          "text": "DAOs are organizations run by token holders through on-chain voting. No CEO, no board — just code executing automatically when a vote passes. They're the backbone of DeFi governance, and XRPL has its own on-chain amendment voting system.",
+          "text": "DAOs — Decentralized Autonomous Organizations. A DAO is an organization governed by token holders through on-chain voting — no CEO, no board, just code. . Governance flow:. Idea proposed → Token holders vote → If passes threshold → Code executes automatically. . Token voting power is proportional to tokens held. Large holders (whales) can dominate votes. Some DAOs use quadratic voting to limit whale dominance. . Examples: Uniswap (UNI), Compound (COMP), MakerDAO (MKR). XRPL has an on-chain amendment voting system",
           "audioUrl": "/audio/lessons/oc-hs-ecosystem/1-2.mp3"
         }
       ]
@@ -402,7 +402,7 @@
         {
           "id": "action_hs-ec-s2_1",
           "type": "speech",
-          "text": "Real World Assets are physical things — real estate, bonds, gold — being tokenized and put on blockchains. This means 24/7 trading, global access, and instant settlement for assets that used to take days and paperwork. XRPL is already a leading platform for tokenized assets, and BlackRock's BUIDL fund runs on-chain.",
+          "text": "RWAs, NFTs & Institutional Crypto. Real World Asset (RWA) Tokenization. NFTs Beyond the Hype. Representing physical assets as on-chain tokens. . Asset types being tokenized:. • Real estate — fractional ownership. • Treasury bonds — on-chain yield (~$1B+). • Commodities — gold, oil. • Private credit — corporate loans. . Why it matters:. 24/7 trading, global access, instant settlement. XRPL is a leading platform for tokenized assets. BlackRock's BUIDL fund runs on-chain. NFT = Non-Fungible Token. Proves unique ownership on-chain. . Fungible: 1 XRP = 1 XRP (interchangeable). Non-fungible: unique digital item (no copy). . Real utility use cases:. • Event tickets with on-chain verification. • Digital credentials and certificates. • Gaming items with real ownership. • Music royalties split automatically. . NFTs are not images — the blockchain record. proves ownership. The image lives off-chain",
           "audioUrl": "/audio/lessons/oc-hs-ecosystem/2-1.mp3"
         },
         {
@@ -503,7 +503,7 @@
         {
           "id": "action_hs-ec-s2_3",
           "type": "speech",
-          "text": "NFTs prove unique ownership on-chain. They're not just images — the blockchain record proves you own something. The real utility is event tickets, credentials, gaming items, and music royalties that pay artists automatically.",
+          "text": "Institutional Crypto Adoption",
           "audioUrl": "/audio/lessons/oc-hs-ecosystem/3-0.mp3"
         },
         {
@@ -514,7 +514,7 @@
         {
           "id": "action_hs-ec-s2_5",
           "type": "speech",
-          "text": "When BlackRock and Fidelity launched Bitcoin ETFs in January 2024, they pulled in 4.6 billion dollars in the first week — the largest ETF launch in history. Institutional money brings deeper liquidity, regulatory attention, and enterprise-grade custody. That's why following institutional moves matters to every crypto trader.",
+          "text": "Institutional Adoption — Why It Matters. Spot Bitcoin ETFs launched Jan 2024 — BlackRock, Fidelity, and 9 others now offer Bitcoin to traditional investors. First week: $4.6B in inflows (largest ETF launch in history). . What institutional money brings:. • Deeper liquidity — harder to manipulate price. • Regulatory legitimacy — governments must respond. • Custody infrastructure — enterprise-grade security. • Mainstream awareness — your uncle now asks about Bitcoin. . XRP and Ripple: working with 350+ financial institutions on cross-border payments using XRPL",
           "audioUrl": "/audio/lessons/oc-hs-ecosystem/3-2.mp3"
         }
       ]
@@ -655,7 +655,7 @@
         {
           "id": "action_hs-ec-s3_1",
           "type": "speech",
-          "text": "The crypto ecosystem has distinct sectors — Layer 1 base chains, DeFi protocols, centralized exchanges, NFTs, real-world assets, infrastructure like oracles, payments, and privacy tech. Each sector has its own risk profile, growth stage, and opportunity set.",
+          "text": "Who's in the Ecosystem?. Crypto Sector Map. Ecosystem Participants. Layer 1s — base blockchains (BTC, ETH, XRP, SOL). . DeFi — DEXs, lending, stablecoins, yield. . CeFi — centralized exchanges (Coinbase, Kraken). . NFT & Gaming — digital ownership, GameFi. . RWA — tokenized real-world assets. . Infrastructure — oracles (Chainlink), storage (IPFS). . Payments — cross-border (XRP), stablecoin rails. . Privacy — privacy coins, ZK technology. Miners / Validators — secure the network. . Developers — build protocols and apps. . Liquidity Providers — fund DEX liquidity pools. . Traders — speculate on price movements. . HODLers — long-term holders, reduce supply. . Oracles — feed real-world data on-chain. . Auditors — review smart contract security. . Regulators — set the rules of the game. Market Makers — keep spreads tight on exchanges",
           "audioUrl": "/audio/lessons/oc-hs-ecosystem/4-1.mp3"
         },
         {
@@ -756,7 +756,7 @@
         {
           "id": "action_hs-ec-s3_3",
           "type": "speech",
-          "text": "Different participants play different roles — miners secure the network, developers build protocols, liquidity providers fund DEXs, traders speculate, and auditors protect users. Regulators are increasingly active, and market makers keep exchanges liquid. Understanding who does what tells you how incentives align.",
+          "text": "OnlyCrypto's Place in the Ecosystem",
           "audioUrl": "/audio/lessons/oc-hs-ecosystem/5-0.mp3"
         },
         {
@@ -767,7 +767,7 @@
         {
           "id": "action_hs-ec-s3_5",
           "type": "speech",
-          "text": "OnlyCrypto lets you operate across multiple ecosystem roles at once — trader, educator, and community builder. Most participants still don't understand L2s, DAOs, or real-world assets. That knowledge gap is your advantage, and this is exactly what High School level is designed to give you.",
+          "text": "Your Place in the Ecosystem. OnlyCrypto positions you to operate across multiple ecosystem roles simultaneously:. . As a trader — you follow expert traders and participate in market movements. As an educator — you share knowledge and earn from the Academy educator pool. As a community member — you grow a network and earn referral income. . Understanding the full ecosystem map means you can identify opportunities others miss. The ecosystem is still early — most participants don't yet understand L2s, DAOs, or RWAs. That gap is your advantage",
           "audioUrl": "/audio/lessons/oc-hs-ecosystem/5-2.mp3"
         }
       ]
@@ -1032,7 +1032,7 @@
         {
           "id": "action_he-s5_5",
           "type": "speech",
-          "text": "The NFT market in 2021 was dominated by speculative hype — people buying jpegs hoping to flip them for profit. Most of that value collapsed. But utility NFTs represent something real. Real utility: event tickets (verifiable, transferable), gaming assets (own your in-game items), membership passes (DAO access, gated communities), digital certificates, real estate deeds. The underlying technology is sound — the speculation was the problem.",
+          "text": "The NFT market in 2021 was dominated by speculative hype — people buying jpegs hoping to flip them for profit. Most of that value collapsed. But utility NFTs represent something real. Real utility: event tickets (verifiable, transferable), gaming assets (own your in-game items), membership passes (DAO access, gated communities), digital certificates, real estate deeds. The underlying technology is sound — the speculation was the problem",
           "audioUrl": "/audio/lessons/oc-hs-ecosystem/6-5.mp3"
         },
         {
@@ -1341,7 +1341,7 @@
         {
           "id": "action_he-s6_5",
           "type": "speech",
-          "text": "RWA tokenization means representing ownership of real-world assets — real estate, gold, treasury bonds, art — as blockchain tokens. This makes them tradeable 24/7, divisible, and accessible to anyone globally. BlackRock, Franklin Templeton, and JPMorgan are all actively tokenizing assets. The XRPL is positioned as a settlement layer for tokenized RWAs due to its speed and built-in DEX. This is one of the largest opportunities in crypto.",
+          "text": "RWA tokenization means representing ownership of real-world assets — real estate, gold, treasury bonds, art — as blockchain tokens. This makes them tradeable 24/7, divisible, and accessible to anyone globally. BlackRock, Franklin Templeton, and JPMorgan are all actively tokenizing assets. The XRPL is positioned as a settlement layer for tokenized RWAs due to its speed and built-in DEX. This is one of the largest opportunities in crypto",
           "audioUrl": "/audio/lessons/oc-hs-ecosystem/7-5.mp3"
         },
         {

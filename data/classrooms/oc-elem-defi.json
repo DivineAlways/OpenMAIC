@@ -276,7 +276,7 @@
         {
           "id": "action_ed-s1_5",
           "type": "speech",
-          "text": "DeFi stands for Decentralized Finance . It's a way to do banking stuff — saving, borrowing, earning interest — without using a real bank . Instead of people running it, computer programs (called smart contracts) do everything automatically. No waiting, no paperwork, no business hours.",
+          "text": "DeFi stands for Decentralized Finance. It's a way to do banking stuff — saving, borrowing, earning interest — without using a real bank. Instead of people running it, computer programs (called smart contracts) do everything automatically. No waiting, no paperwork, no business hours",
           "audioUrl": "/audio/lessons/oc-elem-defi/0-5.mp3"
         },
         {
@@ -287,7 +287,7 @@
         {
           "id": "action_ed-s1_7",
           "type": "speech",
-          "text": "🕐 Open 24/7/365 Never closed — no holidays",
+          "text": "🕐Open 24/7/365Never closed — no holidays",
           "audioUrl": "/audio/lessons/oc-elem-defi/0-7.mp3"
         },
         {
@@ -298,7 +298,7 @@
         {
           "id": "action_ed-s1_9",
           "type": "speech",
-          "text": "🌍 No Approval Anyone can use it — no application",
+          "text": "🌍No ApprovalAnyone can use it — no application",
           "audioUrl": "/audio/lessons/oc-elem-defi/0-9.mp3"
         },
         {
@@ -309,7 +309,7 @@
         {
           "id": "action_ed-s1_11",
           "type": "speech",
-          "text": "⚡ Instant Transfers happen in seconds",
+          "text": "⚡InstantTransfers happen in seconds",
           "audioUrl": "/audio/lessons/oc-elem-defi/0-11.mp3"
         },
         {
@@ -320,7 +320,7 @@
         {
           "id": "action_ed-s1_13",
           "type": "speech",
-          "text": "🤖 Automated Code handles everything automatically",
+          "text": "🤖AutomatedCode handles everything automatically",
           "audioUrl": "/audio/lessons/oc-elem-defi/0-13.mp3"
         }
       ],
@@ -585,7 +585,7 @@
         {
           "id": "action_ed-s2_5",
           "type": "speech",
-          "text": "A smart contract is a program on the blockchain. When certain conditions are met, it automatically does something — no human needed. Think of a vending machine: put in money, press a button, get your snack. No cashier. No waiting. The machine just does it.",
+          "text": "A smart contract is a program on the blockchain. When certain conditions are met, it automatically does something — no human needed. Think of a vending machine: put in money, press a button, get your snack. No cashier. No waiting. The machine just does it",
           "audioUrl": "/audio/lessons/oc-elem-defi/1-5.mp3"
         },
         {
@@ -596,7 +596,7 @@
         {
           "id": "action_ed-s2_7",
           "type": "speech",
-          "text": "💰 Deposit Crypto You put in $100 of ETH as collateral",
+          "text": "💰Deposit CryptoYou put in $100 of ETH as collateral",
           "audioUrl": "/audio/lessons/oc-elem-defi/1-7.mp3"
         },
         {
@@ -607,7 +607,7 @@
         {
           "id": "action_ed-s2_9",
           "type": "speech",
-          "text": "🤖 Auto Lend Contract lends you $70 instantly",
+          "text": "🤖Auto LendContract lends you $70 instantly",
           "audioUrl": "/audio/lessons/oc-elem-defi/1-9.mp3"
         },
         {
@@ -618,7 +618,7 @@
         {
           "id": "action_ed-s2_11",
           "type": "speech",
-          "text": "✅ Pay Back Return it + fee, get ETH back auto",
+          "text": "✅Pay BackReturn it + fee, get ETH back auto",
           "audioUrl": "/audio/lessons/oc-elem-defi/1-11.mp3"
         },
         {
@@ -629,7 +629,7 @@
         {
           "id": "action_ed-s2_13",
           "type": "speech",
-          "text": "🏦 No Human Zero bank employees involved",
+          "text": "🏦No HumanZero bank employees involved",
           "audioUrl": "/audio/lessons/oc-elem-defi/1-13.mp3"
         }
       ],
@@ -895,7 +895,7 @@
         {
           "id": "action_ed-s4_5",
           "type": "speech",
-          "text": "Every time you use a bank — to send money, take a loan, or earn interest — the bank is the middleman . It charges fees, sets the rules, and can freeze your account. DeFi replaces the bank with code. Smart contracts handle lending, borrowing, and trading automatically. No human approvals. No business hours. No border restrictions. Anyone with a crypto wallet can participate.",
+          "text": "Every time you use a bank — to send money, take a loan, or earn interest — the bank is the middleman. It charges fees, sets the rules, and can freeze your account. DeFi replaces the bank with code. Smart contracts handle lending, borrowing, and trading automatically. No human approvals. No business hours. No border restrictions. Anyone with a crypto wallet can participate",
           "audioUrl": "/audio/lessons/oc-elem-defi/2-5.mp3"
         },
         {
@@ -1204,7 +1204,7 @@
         {
           "id": "action_ed-s5_5",
           "type": "speech",
-          "text": "Yield means earning a return on your crypto just for providing it to a DeFi protocol. Similar to earning interest in a savings account — but often much higher rates. For example: you deposit USDC into a lending protocol. Borrowers pay interest to borrow it. That interest flows back to you automatically via smart contract. Your crypto works for you while you sleep.",
+          "text": "Yield means earning a return on your crypto just for providing it to a DeFi protocol. Similar to earning interest in a savings account — but often much higher rates. For example: you deposit USDC into a lending protocol. Borrowers pay interest to borrow it. That interest flows back to you automatically via smart contract. Your crypto works for you while you sleep",
           "audioUrl": "/audio/lessons/oc-elem-defi/3-5.mp3"
         },
         {
@@ -1513,7 +1513,7 @@
         {
           "id": "action_ed-s6_5",
           "type": "speech",
-          "text": "Traditional exchanges match buyers and sellers. DeFi uses a different system called a liquidity pool . Imagine a giant jar filled with two types of tokens — say, ETH and USDC. When you want to swap ETH for USDC, you add your ETH to the jar and take out USDC. The price adjusts automatically based on the ratio in the jar. The people who filled the jar earn a small fee on every swap. ⚠️ Risk: Rug Pulls. If the team behind a pool withdraws all the liquidity, the value collapses instantly. Only use established, audited protocols.",
+          "text": "Traditional exchanges match buyers and sellers. DeFi uses a different system called a liquidity pool. Imagine a giant jar filled with two types of tokens — say, ETH and USDC. When you want to swap ETH for USDC, you add your ETH to the jar and take out USDC. The price adjusts automatically based on the ratio in the jar. The people who filled the jar earn a small fee on every swap. ⚠️ Risk: Rug Pulls. If the team behind a pool withdraws all the liquidity, the value collapses instantly. Only use established, audited protocols",
           "audioUrl": "/audio/lessons/oc-elem-defi/4-5.mp3"
         },
         {

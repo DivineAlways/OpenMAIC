@@ -31,7 +31,8 @@
         {
           "id": "action_fe-intro_1",
           "type": "speech",
-          "text": "Welcome to the OC Academy Final Exam. 100 questions covering every subject across all three levels. Score 80 or higher to prove mastery."
+          "text": "🎓 OC Academy — Final Exam. 100 questions · All levels · All subjects. This final exam covers every subject taught in OC Academy:. . • Cryptocurrency — Bitcoin, altcoins, tokenomics, markets. • Blockchain — How it works, consensus, smart contracts. • DeFi — AMMs, lending, yield, flash loans, risks. • Trading — Charts, indicators, psychology, risk management. • Wallets & Security — Keys, seed phrases, attack vectors. • Ecosystem — NFTs, DAOs, RWAs, Web3, regulation. • Swapping & Bridging — DEX, AMM, bridges, MEV. • XRPL — Consensus, trust lines, native DEX, ODL. . Questions range from Elementary through College level. Score 80%+ to earn your certificate",
+          "audioUrl": "/audio/lessons/oc-final-exam/0-1.mp3"
         }
       ],
       "content": {
@@ -120,7 +121,8 @@
         {
           "id": "action_fe-exam_0",
           "type": "speech",
-          "text": "Time to test everything you've learned. Take your time — read each question carefully. Good luck!"
+          "text": "Time to test everything you've learned. Take your time — read each question carefully. Good luck!",
+          "audioUrl": "/audio/lessons/oc-final-exam/1-0.mp3"
         }
       ],
       "content": {

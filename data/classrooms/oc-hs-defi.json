@@ -158,7 +158,7 @@
         {
           "id": "action_hs-defi-s1_1",
           "type": "speech",
-          "text": "Liquidity Pools and the AMM Formula — High School Level. DeFi is banking without banks. Financial services built on smart contracts — no company runs them.",
+          "text": "💧 Liquidity Pools & The AMM Formula. No order books. No market makers. Just math — High School Level",
           "audioUrl": "/audio/lessons/oc-hs-defi/0-1.mp3"
         },
         {
@@ -169,7 +169,7 @@
         {
           "id": "action_hs-defi-s1_3",
           "type": "speech",
-          "text": "Traditional exchanges match buyers with sellers via order books. DEXs use liquidity pools — smart contracts holding two tokens that anyone can trade against. The price is set automatically by a formula, not by humans.",
+          "text": "Traditional exchanges match buyers with sellers via order books. DEXs use liquidity pools — smart contracts holding two tokens that anyone can trade against. The price is set automatically by a formula, not by humans. When you buy token A: its supply in the pool drops → k must stay constant → token A's price rises automatically. When you sell token A: its supply increases → price falls automatically. No human sets the price — it's pure math responding to supply changes. x × y = kx = token A reserve. y = token B reserve. k = constant product",
           "audioUrl": "/audio/lessons/oc-hs-defi/0-3.mp3"
         },
         {
@@ -315,7 +315,7 @@
         {
           "id": "action_hs-defi-s1_5",
           "type": "speech",
-          "text": "The formula is x times y equals k. X is the token A reserve. Y is the token B reserve. K is a constant that never changes. When you buy token A, its supply in the pool drops — so k must stay constant, meaning token A's price rises automatically. When you sell, price falls. No human sets the price.",
+          "text": "💧 Providing Liquidity & DeFi Building Blocks",
           "audioUrl": "/audio/lessons/oc-hs-defi/1-0.mp3"
         },
         {
@@ -326,7 +326,7 @@
         {
           "id": "action_hs-defi-s1_7",
           "type": "speech",
-          "text": "To provide liquidity: deposit equal value of both tokens, for example five hundred dollars in ETH and five hundred in USDC. You receive LP tokens representing your share. You earn a percentage of every swap fee — usually 0.3% — proportional to your share. Withdraw anytime by burning your LP tokens. The risk is impermanent loss, which we'll cover next.",
+          "text": "How to add liquidity and the key DeFi primitives",
           "audioUrl": "/audio/lessons/oc-hs-defi/1-2.mp3"
         },
         {
@@ -337,7 +337,7 @@
         {
           "id": "action_hs-defi-s1_9",
           "type": "speech",
-          "text": "The four DeFi building blocks: DEXs let you trade tokens from your wallet with no sign-up. Lending protocols let you deposit collateral and borrow against it. Yield farming rewards you for providing LP tokens. And stablecoins are dollar-pegged tokens that let you hold value in DeFi without converting back to fiat.",
+          "text": "How you provide liquidity (become an LP). DeFi Building Blocks🔄 DEX — Trade tokens from your wallet, no sign-up. 🏦 Lending — Deposit collateral, borrow against it. 🌾 Yield Farming — Provide LP tokens, earn protocol rewards. ⚖️ Stablecoins — $1-pegged tokens to hold value in DeFi. 1. Deposit equal value of both tokens (e.g. $500 ETH + $500 USDC). 2. Receive LP tokens = your share of the pool. 3. Earn % of every swap fee (usually 0.3%) proportional to your share. 4. Withdraw anytime by burning your LP tokens. → Risk: impermanent loss (next slide)",
           "audioUrl": "/audio/lessons/oc-hs-defi/1-4.mp3"
         }
       ]
@@ -561,7 +561,7 @@
         {
           "id": "action_hs-defi-s2_1",
           "type": "speech",
-          "text": "Impermanent Loss and DeFi Risks",
+          "text": "⚠️ Impermanent Loss & DeFi Risks. The hidden risk of LP positions and what can go wrong in DeFi",
           "audioUrl": "/audio/lessons/oc-hs-defi/2-1.mp3"
         },
         {
@@ -572,7 +572,7 @@
         {
           "id": "action_hs-defi-s2_3",
           "type": "speech",
-          "text": "Impermanent loss: When token prices move, the pool rebalances — your share shifts toward the underperforming token. If you had just held instead of providing liquidity, you'd have more of the outperformer. That difference is impermanent loss.",
+          "text": "📉 Impermanent Loss. When token prices move, the pool rebalances — your share shifts toward the underperforming token. If you had just held instead of providing liquidity, you'd have more of the outperformer. That difference is impermanent loss",
           "audioUrl": "/audio/lessons/oc-hs-defi/2-3.mp3"
         },
         {
@@ -583,7 +583,7 @@
         {
           "id": "action_hs-defi-s2_5",
           "type": "speech",
-          "text": "If the token price doubles — a one hundred percent increase — you experience about 5.7% impermanent loss compared to just holding. If it goes up four times, that's about 20% IL. And at ten times, you're looking at about 42% impermanent loss versus holding.",
+          "text": "Price 2×. (+100%). ~5.7% IL. Price 4×. (+300%). ~20% IL. Price 10×. (+900%). ~42% IL. IL is 'impermanent' because if prices return to entry levels, it disappears. It only becomes a realized loss when you withdraw while prices have moved. Swap fee income can offset it",
           "audioUrl": "/audio/lessons/oc-hs-defi/2-5.mp3"
         }
       ]
@@ -750,7 +750,7 @@
         {
           "id": "action_hs-defi-s2_7",
           "type": "speech",
-          "text": "IL is impermanent because if prices return to entry levels, it disappears. It only becomes a realized loss when you withdraw while prices have moved. Swap fee income from the pool can offset it — the math only hurts you if the price move is large and you exit early.",
+          "text": "⚠️ DeFi Risks & OnlyCrypto's Approach",
           "audioUrl": "/audio/lessons/oc-hs-defi/3-1.mp3"
         },
         {
@@ -761,7 +761,7 @@
         {
           "id": "action_hs-defi-s2_9",
           "type": "speech",
-          "text": "DeFi risk checklist: Smart contract bugs — over three billion dollars lost to DeFi hacks in 2022 alone. Rug pulls — developers drain the liquidity pool and disappear. Oracle manipulation — flash loans manipulate price feeds to exploit protocols. And composability risk — one exploit in a protocol you've never heard of can cascade through every stacked protocol you're in.",
+          "text": "Smart contract risk, hacks, and how to stay safe",
           "audioUrl": "/audio/lessons/oc-hs-defi/3-3.mp3"
         },
         {
@@ -772,7 +772,7 @@
         {
           "id": "action_hs-defi-s2_11",
           "type": "speech",
-          "text": "XRPL has a native DEX and AMM built into the protocol — no external smart contracts needed. Trading has been live on-chain since 2012. OnlyCrypto payouts go directly to your wallet in seconds — no custody risk from a third-party smart contract.",
+          "text": "🚨 DeFi Risk Checklist. ⚠️ Smart contract bugs — $3B+ lost to DeFi hacks in 2022. ⚠️ Rug pulls — Devs drain liquidity pool and disappear. ⚠️ Oracle manipulation — Flash loans manipulate price feeds. ⚠️ Composability risk — One exploit cascades through stacked protocols. . ✅ Due diligence: Multiple audits from reputable firms, 6+ months live without incident, growing TVL, open-source code, public team, bug bounty program. XRPL has a native DEX and AMM built into the protocol — no smart contracts needed. Trading has been live on-chain since 2012. OnlyCrypto payouts go directly to your wallet in seconds — no custody risk",
           "audioUrl": "/audio/lessons/oc-hs-defi/3-5.mp3"
         }
       ]
@@ -1037,7 +1037,7 @@
         {
           "id": "action_hd-s4_5",
           "type": "speech",
-          "text": "Yield farming is the practice of moving your crypto across different DeFi protocols to chase the highest return. A farmer might deposit liquidity in Uniswap, earn LP tokens, stake those LP tokens elsewhere for bonus yield, then reinvest the rewards. Risks: smart contract vulnerabilities, protocol collapse, and the infamous impermanent loss from liquidity provision. High APY usually means high risk.",
+          "text": "Yield farming is the practice of moving your crypto across different DeFi protocols to chase the highest return. A farmer might deposit liquidity in Uniswap, earn LP tokens, stake those LP tokens elsewhere for bonus yield, then reinvest the rewards. Risks: smart contract vulnerabilities, protocol collapse, and the infamous impermanent loss from liquidity provision. High APY usually means high risk",
           "audioUrl": "/audio/lessons/oc-hs-defi/4-5.mp3"
         },
         {
@@ -1346,7 +1346,7 @@
         {
           "id": "action_hd-s5_5",
           "type": "speech",
-          "text": "Impermanent loss occurs when the price ratio of tokens in a liquidity pool changes from when you deposited. The AMM rebalances your position automatically, meaning you end up with more of the token that fell and less of the one that rose. Example: you deposit ETH + USDC 50/50. ETH price doubles. You now have less ETH than if you had just held. The loss is \"impermanent\" because it recovers if prices return to entry ratio — but if you withdraw during divergence, the loss becomes permanent.",
+          "text": "Impermanent loss occurs when the price ratio of tokens in a liquidity pool changes from when you deposited. The AMM rebalances your position automatically, meaning you end up with more of the token that fell and less of the one that rose. Example: you deposit ETH + USDC 50/50. ETH price doubles. You now have less ETH than if you had just held. The loss is \"impermanent\" because it recovers if prices return to entry ratio — but if you withdraw during divergence, the loss becomes permanent",
           "audioUrl": "/audio/lessons/oc-hs-defi/5-5.mp3"
         },
         {
@@ -1655,7 +1655,7 @@
         {
           "id": "action_hd-s6_5",
           "type": "speech",
-          "text": "DeFi protocols carry risks that traditional finance does not. Before depositing into any protocol, evaluate these key risk vectors: Smart contract bugs — even audited code can have exploits. Over $3B was lost to DeFi hacks in 2022. Oracle manipulation — price feeds can be manipulated to drain lending protocols. Admin key risk — if a team holds upgrade keys they can change or drain contracts.",
+          "text": "DeFi protocols carry risks that traditional finance does not. Before depositing into any protocol, evaluate these key risk vectors:. Smart contract bugs — even audited code can have exploits. Over $3B was lost to DeFi hacks in 2022. Oracle manipulation — price feeds can be manipulated to drain lending protocols. Admin key risk — if a team holds upgrade keys they can change or drain contracts",
           "audioUrl": "/audio/lessons/oc-hs-defi/6-5.mp3"
         },
         {

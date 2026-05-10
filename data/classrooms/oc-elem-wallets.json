@@ -276,7 +276,7 @@
         {
           "id": "action_ew-s1_5",
           "type": "speech",
-          "text": "A crypto wallet doesn't actually store your coins — your coins live on the blockchain. What a wallet stores are your secret keys — the passwords that prove the coins belong to you. Think of it like a mailbox key . Your crypto is in the mailbox (blockchain). The key proves it's yours. Lose the key — ...",
+          "text": "A crypto wallet doesn't actually store your coins — your coins live on the blockchain. What a wallet stores are your secret keys — the passwords that prove the coins belong to you. Think of it like a mailbox key. Your crypto is in the mailbox (blockchain). The key proves it's yours. Lose the key — someone else opens your mailbox",
           "audioUrl": "/audio/lessons/oc-elem-wallets/0-5.mp3"
         },
         {
@@ -287,7 +287,7 @@
         {
           "id": "action_ew-s1_7",
           "type": "speech",
-          "text": "🔑 Public Key Like your address — safe to share",
+          "text": "🔑Public KeyLike your address — safe to share",
           "audioUrl": "/audio/lessons/oc-elem-wallets/0-7.mp3"
         },
         {
@@ -298,7 +298,7 @@
         {
           "id": "action_ew-s1_9",
           "type": "speech",
-          "text": "🤫 Private Key Like your house key — NEVER share",
+          "text": "🤫Private KeyLike your house key — NEVER share",
           "audioUrl": "/audio/lessons/oc-elem-wallets/0-9.mp3"
         },
         {
@@ -309,7 +309,7 @@
         {
           "id": "action_ew-s1_11",
           "type": "speech",
-          "text": "🔥 Hot Wallet Connected to internet — easy to use",
+          "text": "🔥Hot WalletConnected to internet — easy to use",
           "audioUrl": "/audio/lessons/oc-elem-wallets/0-11.mp3"
         },
         {
@@ -320,7 +320,7 @@
         {
           "id": "action_ew-s1_13",
           "type": "speech",
-          "text": "🧊 Cold Wallet Offline — safest for large amounts",
+          "text": "🧊Cold WalletOffline — safest for large amounts",
           "audioUrl": "/audio/lessons/oc-elem-wallets/0-13.mp3"
         }
       ],
@@ -585,7 +585,7 @@
         {
           "id": "action_ew-s2_5",
           "type": "speech",
-          "text": "When you set up a wallet, you get a seed phrase — usually 12 or 24 random words like: apple river cloud sunset forest key... These words can restore your entire wallet if your phone breaks. But they're also dangerous — anyone with your seed phrase owns your wallet.",
+          "text": "When you set up a wallet, you get a seed phrase — usually 12 or 24 random words like: apple river cloud sunset forest key. These words can restore your entire wallet if your phone breaks. But they're also dangerous — anyone with your seed phrase owns your wallet",
           "audioUrl": "/audio/lessons/oc-elem-wallets/1-5.mp3"
         },
         {
@@ -596,7 +596,7 @@
         {
           "id": "action_ew-s2_7",
           "type": "speech",
-          "text": "✅ Write on Paper Store it somewhere safe",
+          "text": "✅Write on PaperStore it somewhere safe",
           "audioUrl": "/audio/lessons/oc-elem-wallets/1-7.mp3"
         },
         {
@@ -607,7 +607,7 @@
         {
           "id": "action_ew-s2_9",
           "type": "speech",
-          "text": "❌ No Screenshots Never photograph it",
+          "text": "❌No ScreenshotsNever photograph it",
           "audioUrl": "/audio/lessons/oc-elem-wallets/1-9.mp3"
         },
         {
@@ -618,7 +618,7 @@
         {
           "id": "action_ew-s2_11",
           "type": "speech",
-          "text": "❌ Never Share Not with anyone — ever",
+          "text": "❌Never ShareNot with anyone — ever",
           "audioUrl": "/audio/lessons/oc-elem-wallets/1-11.mp3"
         },
         {
@@ -629,7 +629,7 @@
         {
           "id": "action_ew-s2_13",
           "type": "speech",
-          "text": "✅ Multiple Copies Store in separate safe places",
+          "text": "✅Multiple CopiesStore in separate safe places",
           "audioUrl": "/audio/lessons/oc-elem-wallets/1-13.mp3"
         }
       ],
@@ -895,7 +895,7 @@
         {
           "id": "action_ew-s4_5",
           "type": "speech",
-          "text": "Custodial wallet — a company (like Coinbase or Binance) holds your private keys. You log in with a username and password. Easy and convenient, but they control your money . If they get hacked or go bankrupt, your funds could be lost. Non-custodial wallet — you hold your own private keys. Nobody can freeze or take your funds. This is true crypto ownership. The phrase in crypto is: \"Not your keys, not your coins.\"",
+          "text": "Custodial wallet — a company (like Coinbase or Binance) holds your private keys. You log in with a username and password. Easy and convenient, but they control your money. If they get hacked or go bankrupt, your funds could be lost. Non-custodial wallet — you hold your own private keys. Nobody can freeze or take your funds. This is true crypto ownership. The phrase in crypto is: \"Not your keys, not your coins.\"",
           "audioUrl": "/audio/lessons/oc-elem-wallets/2-5.mp3"
         },
         {
@@ -1204,7 +1204,7 @@
         {
           "id": "action_ew-s5_5",
           "type": "speech",
-          "text": "When you create a non-custodial wallet, you get a seed phrase — 12 or 24 random words in a specific order. These words are your master key. They can regenerate your entire wallet on any device, anywhere in the world. The rules: Write it on paper (not digital). Store it somewhere safe and private. Never share it with anyone. Never type it into a website. Anyone who has your seed phrase owns all your crypto.",
+          "text": "When you create a non-custodial wallet, you get a seed phrase — 12 or 24 random words in a specific order. These words are your master key. They can regenerate your entire wallet on any device, anywhere in the world. The rules: Write it on paper (not digital). Store it somewhere safe and private. Never share it with anyone. Never type it into a website. Anyone who has your seed phrase owns all your crypto",
           "audioUrl": "/audio/lessons/oc-elem-wallets/3-5.mp3"
         },
         {
@@ -1513,7 +1513,7 @@
         {
           "id": "action_ew-s6_5",
           "type": "speech",
-          "text": "Most crypto losses are not from hacks — they are from human mistakes . Here are the top ways people lose funds and how to avoid them.",
+          "text": "Most crypto losses are not from hacks — they are from human mistakes. Here are the top ways people lose funds and how to avoid them",
           "audioUrl": "/audio/lessons/oc-elem-wallets/4-5.mp3"
         },
         {

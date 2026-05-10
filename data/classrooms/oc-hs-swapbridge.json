@@ -277,7 +277,7 @@
         {
           "id": "action_hsb-s1_5",
           "type": "speech",
-          "text": "When you swap on a DEX like Uniswap, you are trading against a liquidity pool — not another person. The pool holds two tokens (e.g. ETH + USDC). The price is set by the ratio: x × y = k . You add one token, the other comes out, and the ratio adjusts. A DEX aggregator (like 1inch) routes your swap across multiple pools simultaneously to find the best price. Instead of one pool, it might split your trade across five to minimize slippage.",
+          "text": "When you swap on a DEX like Uniswap, you are trading against a liquidity pool — not another person. The pool holds two tokens (e.g. ETH + USDC). The price is set by the ratio: x × y = k. You add one token, the other comes out, and the ratio adjusts. A DEX aggregator (like 1inch) routes your swap across multiple pools simultaneously to find the best price. Instead of one pool, it might split your trade across five to minimize slippage",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/0-5.mp3"
         },
         {
@@ -586,7 +586,7 @@
         {
           "id": "action_hsb-s2_5",
           "type": "speech",
-          "text": "Price impact is the effect your trade has on the pool price. A small swap barely moves the ratio. A large swap significantly shifts it — you end up paying more per token as the pool rebalances against you. Formula: the deeper the pool (more liquidity), the lower your price impact. A $1M pool can absorb a $10k swap with minimal impact. A $50k pool would move dramatically on that same trade. Pro tip: always check the price impact % before confirming a swap. Above 1% is high. Above 3% is a red flag for smaller tokens.",
+          "text": "Price impact is the effect your trade has on the pool price. A small swap barely moves the ratio. A large swap significantly shifts it — you end up paying more per token as the pool rebalances against you. Formula: the deeper the pool (more liquidity), the lower your price impact. A $1M pool can absorb a $10k swap with minimal impact. A $50k pool would move dramatically on that same trade. Pro tip: always check the price impact % before confirming a swap. Above 1% is high. Above 3% is a red flag for smaller tokens",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/1-5.mp3"
         },
         {
@@ -895,7 +895,7 @@
         {
           "id": "action_hsb-s3_5",
           "type": "speech",
-          "text": "There are two main bridge designs: Lock & Mint — tokens are locked in a smart contract on the source chain. Equivalent wrapped tokens are minted on the destination chain. To return: burn the wrapped tokens, unlock the originals. This is how WBTC (Wrapped Bitcoin) works on Ethereum. Liquidity Pool Bridge — instead of locking/minting, the bridge uses pre-funded liquidity pools on both chains. You deposit on Chain A, someone withdraws from a pool on Chain B. Faster but requires deep liquidity on both sides.",
+          "text": "There are two main bridge designs:. Lock & Mint — tokens are locked in a smart contract on the source chain. Equivalent wrapped tokens are minted on the destination chain. To return: burn the wrapped tokens, unlock the originals. This is how WBTC (Wrapped Bitcoin) works on Ethereum. Liquidity Pool Bridge — instead of locking/minting, the bridge uses pre-funded liquidity pools on both chains. You deposit on Chain A, someone withdraws from a pool on Chain B. Faster but requires deep liquidity on both sides",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/2-5.mp3"
         },
         {
@@ -1204,7 +1204,7 @@
         {
           "id": "action_hsb-s4_5",
           "type": "speech",
-          "text": "A wrapped token is a representation of one asset on a different blockchain. WBTC is Bitcoin on Ethereum. WETH is Ethereum on other chains. They maintain a 1:1 peg with the original. Why this matters: the wrapped token is only as safe as the bridge that issued it. If the bridge is hacked and the locked originals are stolen, the wrapped tokens become worthless instantly. This is what happened in the Ronin bridge hack ($625M stolen) and the Wormhole exploit ($320M).",
+          "text": "A wrapped token is a representation of one asset on a different blockchain. WBTC is Bitcoin on Ethereum. WETH is Ethereum on other chains. They maintain a 1:1 peg with the original. Why this matters: the wrapped token is only as safe as the bridge that issued it. If the bridge is hacked and the locked originals are stolen, the wrapped tokens become worthless instantly. This is what happened in the Ronin bridge hack ($625M stolen) and the Wormhole exploit ($320M)",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/3-5.mp3"
         },
         {
@@ -1513,7 +1513,7 @@
         {
           "id": "action_hsb-s5_5",
           "type": "speech",
-          "text": "Every bridge or swap has multiple cost layers that beginners miss: Source chain gas — fee to initiate the bridge transaction. Bridge fee — the protocol's cut (usually 0.05–0.3%). Destination chain gas — fee to receive on the other side. For Ethereum mainnet bridges, total costs can easily exceed $30–50. For XRPL, total fees are under $0.01. Impermanent loss also applies if you are providing liquidity to a bridge's LP pool — the same divergence risk as any AMM pool.",
+          "text": "Every bridge or swap has multiple cost layers that beginners miss:. Source chain gas — fee to initiate the bridge transaction. Bridge fee — the protocol's cut (usually 0.05–0.3%). Destination chain gas — fee to receive on the other side. For Ethereum mainnet bridges, total costs can easily exceed $30–50. For XRPL, total fees are under $0.01. Impermanent loss also applies if you are providing liquidity to a bridge's LP pool — the same divergence risk as any AMM pool",
           "audioUrl": "/audio/lessons/oc-hs-swapbridge/4-5.mp3"
         },
         {

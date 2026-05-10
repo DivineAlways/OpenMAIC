@@ -276,7 +276,7 @@
         {
           "id": "action_ee-s1_5",
           "type": "speech",
-          "text": "When most people hear 'crypto' they think of Bitcoin. But the crypto world is actually massive — like how the internet isn't just email. There are games, art, banking, social media, and entire economies all built on blockchain. Here's a quick tour.",
+          "text": "When most people hear 'crypto' they think of Bitcoin. But the crypto world is actually massive — like how the internet isn't just email. There are games, art, banking, social media, and entire economies all built on blockchain. Here's a quick tour",
           "audioUrl": "/audio/lessons/oc-elem-ecosystem/0-5.mp3"
         },
         {
@@ -287,7 +287,7 @@
         {
           "id": "action_ee-s1_7",
           "type": "speech",
-          "text": "🎮 Gaming Play-to-earn — own your in-game items as NFTs",
+          "text": "🎮GamingPlay-to-earn — own your in-game items as NFTs",
           "audioUrl": "/audio/lessons/oc-elem-ecosystem/0-7.mp3"
         },
         {
@@ -298,7 +298,7 @@
         {
           "id": "action_ee-s1_9",
           "type": "speech",
-          "text": "🖼️ NFTs Unique digital ownership certificates",
+          "text": "🖼️NFTsUnique digital ownership certificates",
           "audioUrl": "/audio/lessons/oc-elem-ecosystem/0-9.mp3"
         },
         {
@@ -309,7 +309,7 @@
         {
           "id": "action_ee-s1_11",
           "type": "speech",
-          "text": "🗳️ DAOs Groups that vote on decisions using blockchain",
+          "text": "🗳️DAOsGroups that vote on decisions using blockchain",
           "audioUrl": "/audio/lessons/oc-elem-ecosystem/0-11.mp3"
         },
         {
@@ -320,7 +320,7 @@
         {
           "id": "action_ee-s1_13",
           "type": "speech",
-          "text": "🌐 Web3 Apps Apps where you own your own data",
+          "text": "🌐Web3 AppsApps where you own your own data",
           "audioUrl": "/audio/lessons/oc-elem-ecosystem/0-13.mp3"
         }
       ],
@@ -585,7 +585,7 @@
         {
           "id": "action_ee-s2_5",
           "type": "speech",
-          "text": "NFT = Non-Fungible Token. 'Non-fungible' means one of a kind . An NFT is a digital certificate on the blockchain that proves you own something unique. A $1 bill is fungible (swap it for any other $1). The Mona Lisa is non-fungible — there's only one original. NFTs make digital things work like the M...",
+          "text": "NFT = Non-Fungible Token. 'Non-fungible' means one of a kind. An NFT is a digital certificate on the blockchain that proves you own something unique. A $1 bill is fungible (swap it for any other $1). The Mona Lisa is non-fungible — there's only one original. NFTs make digital things work like the Mona Lisa",
           "audioUrl": "/audio/lessons/oc-elem-ecosystem/1-5.mp3"
         },
         {
@@ -596,7 +596,7 @@
         {
           "id": "action_ee-s2_7",
           "type": "speech",
-          "text": "🎵 Music Artists sell song originals directly to fans",
+          "text": "🎵MusicArtists sell song originals directly to fans",
           "audioUrl": "/audio/lessons/oc-elem-ecosystem/1-7.mp3"
         },
         {
@@ -607,7 +607,7 @@
         {
           "id": "action_ee-s2_9",
           "type": "speech",
-          "text": "⚽ Sports Highlight clips owned as NFTs (NBA Top Shot)",
+          "text": "⚽SportsHighlight clips owned as NFTs (NBA Top Shot)",
           "audioUrl": "/audio/lessons/oc-elem-ecosystem/1-9.mp3"
         },
         {
@@ -618,7 +618,7 @@
         {
           "id": "action_ee-s2_11",
           "type": "speech",
-          "text": "🎮 Gaming Own and resell your game characters",
+          "text": "🎮GamingOwn and resell your game characters",
           "audioUrl": "/audio/lessons/oc-elem-ecosystem/1-11.mp3"
         },
         {
@@ -629,7 +629,7 @@
         {
           "id": "action_ee-s2_13",
           "type": "speech",
-          "text": "🖼️ Art Digital art sold for millions",
+          "text": "🖼️ArtDigital art sold for millions",
           "audioUrl": "/audio/lessons/oc-elem-ecosystem/1-13.mp3"
         }
       ],
@@ -895,7 +895,7 @@
         {
           "id": "action_ee-s4_5",
           "type": "speech",
-          "text": "CEX (Centralized Exchange) — a company runs it. Think Coinbase, Binance, Kraken. You create an account, verify your identity, and the company holds your funds while you trade. Easy to use but you depend on them. DEX (Decentralized Exchange) — no company. Code runs it. You connect your own wallet and trade directly. Nobody holds your funds. Examples: Uniswap, dYdX, XRPL's built-in DEX.",
+          "text": "CEX (Centralized Exchange) — a company runs it. Think Coinbase, Binance, Kraken. You create an account, verify your identity, and the company holds your funds while you trade. Easy to use but you depend on them. DEX (Decentralized Exchange) — no company. Code runs it. You connect your own wallet and trade directly. Nobody holds your funds. Examples: Uniswap, dYdX, XRPL's built-in DEX",
           "audioUrl": "/audio/lessons/oc-elem-ecosystem/2-5.mp3"
         },
         {
@@ -1204,7 +1204,7 @@
         {
           "id": "action_ee-s5_5",
           "type": "speech",
-          "text": "A DAO (Decentralized Autonomous Organization) is like a company where the rules are written in code and the members vote on decisions using their tokens. No CEO. No board. Every token holder gets a vote proportional to how many tokens they hold. Decisions — like how to spend the treasury or change the protocol — are voted on-chain and executed automatically.",
+          "text": "A DAO (Decentralized Autonomous Organization) is like a company where the rules are written in code and the members vote on decisions using their tokens. No CEO. No board. Every token holder gets a vote proportional to how many tokens they hold. Decisions — like how to spend the treasury or change the protocol — are voted on-chain and executed automatically",
           "audioUrl": "/audio/lessons/oc-elem-ecosystem/3-5.mp3"
         },
         {
@@ -1513,7 +1513,7 @@
         {
           "id": "action_ee-s6_5",
           "type": "speech",
-          "text": "Web1 — read-only. Static websites. You could read, not participate. Web2 — read-write. Social media. You can create — but companies (Meta, Google) own your data and earn from it. Web3 — read-write-own. You create content and own it via blockchain . Your identity, data, and digital assets belong to you — not a platform.",
+          "text": "Web1 — read-only. Static websites. You could read, not participate. Web2 — read-write. Social media. You can create — but companies (Meta, Google) own your data and earn from it. Web3 — read-write-own. You create content and own it via blockchain. Your identity, data, and digital assets belong to you — not a platform",
           "audioUrl": "/audio/lessons/oc-elem-ecosystem/4-5.mp3"
         },
         {

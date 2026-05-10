@@ -369,7 +369,7 @@
         {
           "id": "action_xd-s1_1",
           "type": "speech",
-          "text": "XRPL achieves 3 to 5 second final settlement — no miners, no Proof of Work — through the Ripple Protocol Consensus Algorithm, or RPCA.",
+          "text": "80%. Required threshold",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/0-1.mp3"
         },
         {
@@ -380,7 +380,7 @@
         {
           "id": "action_xd-s1_3",
           "type": "speech",
-          "text": "80% of trusted validators must agree. If they don't, the ledger doesn't close. No forks. No reorgs.",
+          "text": "RPCA Consensus",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/0-3.mp3"
         },
         {
@@ -391,7 +391,7 @@
         {
           "id": "action_xd-s1_5",
           "type": "speech",
-          "text": "Step one: any validator proposes a candidate set of transactions for the next ledger.",
+          "text": "How XRPL achieves 3–5 second finality with no miners",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/0-5.mp3"
         },
         {
@@ -402,7 +402,7 @@
         {
           "id": "action_xd-s1_7",
           "type": "speech",
-          "text": "Step two: the threshold. 80% of the validators on your Unique Node List must agree on the same transaction set.",
+          "text": "ProposeAny validator proposes a candidate set of transactions",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/0-7.mp3"
         },
         {
@@ -413,7 +413,7 @@
         {
           "id": "action_xd-s1_9",
           "type": "speech",
-          "text": "Step three: agreed transactions are applied to the ledger state simultaneously by all validators.",
+          "text": "Threshold80% of trusted validators must agree on the same set",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/0-9.mp3"
         },
         {
@@ -424,7 +424,7 @@
         {
           "id": "action_xd-s1_11",
           "type": "speech",
-          "text": "Step four: the ledger version closes with a new state hash and sequence number.",
+          "text": "ApplyAgreed transactions applied to ledger state simultaneously",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/0-11.mp3"
         },
         {
@@ -435,7 +435,7 @@
         {
           "id": "action_xd-s1_13",
           "type": "speech",
-          "text": "Finality in 3 to 5 seconds. Irreversible. No forks, no reorganizations, no probabilistic settlement. This is hard finality.",
+          "text": "CloseLedger version closed with new state hash and sequence number",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/0-13.mp3"
         },
         {
@@ -446,7 +446,7 @@
         {
           "id": "action_xd-s1_15",
           "type": "speech",
-          "text": "80% — the threshold that makes XRPL's consensus work.",
+          "text": "Finality3–5 seconds: irreversible. No forks. No reorganizations",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/0-15.mp3"
         }
       ]
@@ -584,7 +584,7 @@
         {
           "id": "action_xd-s2_1",
           "type": "speech",
-          "text": "Trust lines are XRPL's permission system for tokens — you must explicitly opt in to receive any IOU-based asset.",
+          "text": "Trust Lines & Rippling",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/1-1.mp3"
         },
         {
@@ -595,7 +595,7 @@
         {
           "id": "action_xd-s2_3",
           "type": "speech",
-          "text": "This prevents spam tokens and gives you complete control over what your account can hold.",
+          "text": "XRPL's permission system for tokens and credit. Trust LinesYou cannot receive an IOUtoken on XRPL unless you explicitly create a trust line to the issuer. . Trust line = bilateral agreement: max credit, freeze rights, rippling settings. . This prevents spam tokens appearing in wallets without consent — unlike ERC-20 tokens that can be airdropped to anyone",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/1-3.mp3"
         }
       ]
@@ -733,7 +733,7 @@
         {
           "id": "action_xd-s2_5",
           "type": "speech",
-          "text": "Trust lines: you cannot receive an IOU token on XRPL unless you create a trust line to that issuer. This is a deliberate design choice — no one can force tokens into your account. The trust line also sets your maximum credit limit for that issuer.",
+          "text": "Trust Lines & Rippling (Part B)",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/2-1.mp3"
         },
         {
@@ -744,7 +744,7 @@
         {
           "id": "action_xd-s2_7",
           "type": "speech",
-          "text": "Rippling: if rippling is enabled on your trust lines, your IOU can be passed through to other accounts that trust the same issuer — enabling payment routing across multiple credit relationships. This is how Ripple originally envisioned internet-of-value settlements.",
+          "text": "XRPL's permission system for tokens and credit. RipplingRippling = allow your IOUs to be passed through to other accounts that trust the same issuer. . Example: Alice trusts USD/Bank. Bob trusts USD/Bank. Alice can send Bob USD without Bank moving any actual money — the ledger adjusts IOU balances. . Disable rippling on personal accounts — only issuers need it",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/2-3.mp3"
         }
       ]
@@ -882,7 +882,7 @@
         {
           "id": "action_xd-s3_1",
           "type": "speech",
-          "text": "XRPL has a fully functional decentralized exchange built directly into the protocol — no smart contracts required, no external risk.",
+          "text": "XRPL Native DEX + AMM",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/3-1.mp3"
         },
         {
@@ -893,7 +893,7 @@
         {
           "id": "action_xd-s3_3",
           "type": "speech",
-          "text": "The order book and AMM are protocol-level primitives, not deployed contracts.",
+          "text": "Protocol-level trading — no smart contracts, no external risk. Native Order Book DEXXRPL has a fully functional order book built into the ledger protocol — no smart contract needed. . Any two assets with a common bridge currency can be traded. . Offers (orders) live on-ledger. Auto-bridging via XRP automatically routes through XRP when it improves the rate",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/3-3.mp3"
         }
       ]
@@ -1031,7 +1031,7 @@
         {
           "id": "action_xd-s3_5",
           "type": "speech",
-          "text": "Native order book DEX: XRPL's DEX is built into the ledger consensus layer. Every transaction that closes a ledger can include order book matches. You can place limit orders, and cross-currency payments automatically use the order book for best execution.",
+          "text": "XRPL Native DEX + AMM (Part B)",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/4-1.mp3"
         },
         {
@@ -1042,7 +1042,7 @@
         {
           "id": "action_xd-s3_7",
           "type": "speech",
-          "text": "AMM added in 2024: XRPL's AMM, introduced via XLS-30 amendment, runs alongside the order book. Constant-function AMM just like Uniswap, but at the protocol level. The AMM and order book interact — liquidity providers earn fees from both.",
+          "text": "Protocol-level trading — no smart contracts, no external risk. AMM (Added 2024)XRPL AMM Proposal (XLS-30) went live 2024. . Constant-function AMM alongside the order book. LPs deposit both sides, earn trading fees. . Continuous Auction Mechanism (CAM): fee rises during high volatility to compensate LPs for IL — first AMM to implement this automatically",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/4-3.mp3"
         }
       ]
@@ -1231,7 +1231,7 @@
         {
           "id": "action_xd-s4_1",
           "type": "speech",
-          "text": "Pathfinding is one of XRPL's most powerful but least-understood features. ODL — On Demand Liquidity — is what Ripple built on top of it.",
+          "text": "$15B+. ODL volume 2023",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/5-1.mp3"
         },
         {
@@ -1242,7 +1242,7 @@
         {
           "id": "action_xd-s4_3",
           "type": "speech",
-          "text": "Send dollars, recipient gets euros, XRP is the bridge currency — in seconds, with near-zero fees.",
+          "text": "Pathfinding & ODL",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/5-3.mp3"
         },
         {
@@ -1253,7 +1253,7 @@
         {
           "id": "action_xd-s4_5",
           "type": "speech",
-          "text": "A payment path: USD to XRP to EUR. The sender sends USD, the XRPL pathfinder routes through XRP as a bridge, the recipient receives EUR.",
+          "text": "How XRPL routes payments across currencies in seconds",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/5-5.mp3"
         },
         {
@@ -1264,7 +1264,7 @@
         {
           "id": "action_xd-s4_7",
           "type": "speech",
-          "text": "XRPL pathfinding automatically finds the best route across multiple currencies and order books. ODL replaces pre-funded nostro accounts for cross-border payments — eliminating the capital trapped in correspondent banking.",
+          "text": "Path: USD → XRP → EUR (auto-bridged)",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/5-7.mp3"
         },
         {
@@ -1275,7 +1275,7 @@
         {
           "id": "action_xd-s4_9",
           "type": "speech",
-          "text": "Ripple's ODL processed over 15 billion dollars in cross-border payments in 2023. Traditional SWIFT settlement takes 2 to 5 business days. ODL settles in 3 to 5 seconds.",
+          "text": "XRPL pathfinding finds the best route across multiple currencies and order books automatically. . ODL (On-Demand Liquidity) uses XRP as a bridge:. Sender deposits USD → XRP purchased → XRP sent to Mexico → XRP sold → recipient receives MXN. Total time: 3–5 seconds. No pre-funded accounts needed",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/5-9.mp3"
         },
         {
@@ -1286,7 +1286,7 @@
         {
           "id": "action_xd-s4_11",
           "type": "speech",
-          "text": "Over 15 billion dollars in ODL volume in 2023 alone.",
+          "text": "RippleNet ODL processed $15B+ in cross-border payments in 2023. Traditional SWIFT settlement: 2–5 business days",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/5-11.mp3"
         }
       ]
@@ -1479,7 +1479,7 @@
         {
           "id": "action_xd-s5_1",
           "type": "speech",
-          "text": "XRPL and Ethereum are both public blockchains — but they made fundamentally different architectural choices.",
+          "text": "XRPL vs Ethereum",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/6-1.mp3"
         },
         {
@@ -1490,7 +1490,7 @@
         {
           "id": "action_xd-s5_3",
           "type": "speech",
-          "text": "Neither is strictly better. They optimize for different things.",
+          "text": "Different design choices, different trade-offs",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/6-3.mp3"
         },
         {
@@ -1501,7 +1501,7 @@
         {
           "id": "action_xd-s5_5",
           "type": "speech",
-          "text": "XRPL: 1 XRP account reserve, 0.0002 XRP per transaction fee that gets burned, 3 to 5 second hard finality, 1500 transactions per second natively, federated consensus — no mining. Purpose-built for payments.",
+          "text": "XRPL• 1 XRP account reserve (was 20, voted down)• 0.0002 XRP per transaction (burned)• 3–5 second finality, no forks• 1,500 tx/s native (50K+ with AMM)• No smart contracts = no contract bugs• Leaderless consensus — no mining pools",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/6-5.mp3"
         },
         {
@@ -1512,7 +1512,7 @@
         {
           "id": "action_xd-s5_7",
           "type": "speech",
-          "text": "Ethereum: no account reserve, variable gas fees from 1 to 20 dollars depending on network congestion, 12-second blocks with reorg risk, ~15 transactions per second natively — scales via L2. General-purpose smart contract platform.",
+          "text": "Ethereum• No account reserve needed• $1–$20+ gas fees (variable)• ~12 second blocks, reorg risk exists• ~15 tx/s L1 (100K+ via L2s)• Smart contracts = programmable but risky• 33 validators control >50% of stake",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/6-7.mp3"
         }
       ]
@@ -1650,7 +1650,7 @@
         {
           "id": "action_xd-s6_1",
           "type": "speech",
-          "text": "XRPL's roadmap is focused on expanding functionality while maintaining its core payment efficiency.",
+          "text": "XRPL's Roadmap",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/7-1.mp3"
         },
         {
@@ -1661,7 +1661,7 @@
         {
           "id": "action_xd-s6_3",
           "type": "speech",
-          "text": "Hooks and federated sidechains are the two most significant upcoming capabilities.",
+          "text": "Hooks, sidechains, and what's coming next. XRPL Hooks (Coming)Hooks = lightweight logic attached to accounts — triggered on send/receive. . Unlike Ethereum's full EVM, Hooks are deliberately limited: no loops, no storage, deterministic execution. . Use cases: auto-convert received XRP to RLUSD, block incoming transactions from unknown senders, auto-route to savings",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/7-3.mp3"
         }
       ]
@@ -1799,7 +1799,7 @@
         {
           "id": "action_xd-s6_5",
           "type": "speech",
-          "text": "XRPL Hooks — currently in development: lightweight logic attached to accounts, triggered on send or receive. Unlike full smart contracts, Hooks are constrained — computationally bounded to prevent the gas wars and complex attack surfaces of EVM. Think of them as programmable account rules.",
+          "text": "XRPL's Roadmap (Part B)",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/8-1.mp3"
         },
         {
@@ -1810,7 +1810,7 @@
         {
           "id": "action_xd-s6_7",
           "type": "speech",
-          "text": "Federated sidechains: XRPL can bridge to EVM-compatible sidechains, including an XRPL EVM Sidechain. Solidity contracts can run on the sidechain while settling on the XRPL mainnet. This brings Ethereum ecosystem tooling to the XRPL security model.",
+          "text": "Hooks, sidechains, and what's coming next. Federated SidechainsXRPL can bridge to EVM-compatible sidechains (XRPL EVM Sidechain). . Solidity contracts run on the sidechain, settle to XRPL mainnet. . Best of both worlds: Ethereum ecosystem tools (MetaMask, Hardhat) with XRPL's speed and cost for final settlement",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/8-3.mp3"
         }
       ]
@@ -2167,7 +2167,7 @@
         {
           "id": "action_xd-s7_1",
           "type": "speech",
-          "text": "Every OnlyCrypto membership payment, commission, and bonus flows through the XRPL. This is the full picture of how it works.",
+          "text": "$0.0002. Per payment",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/9-1.mp3"
         },
         {
@@ -2178,7 +2178,7 @@
         {
           "id": "action_xd-s7_3",
           "type": "speech",
-          "text": "Real payments, real finality, real transparency — all on-chain.",
+          "text": "OnlyCrypto on XRPL",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/9-3.mp3"
         },
         {
@@ -2189,7 +2189,7 @@
         {
           "id": "action_xd-s7_5",
           "type": "speech",
-          "text": "A member pays: they send XRP to the OnlyCrypto hot wallet with a destination tag identifying their account.",
+          "text": "How every member payment flows through the ledger",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/9-5.mp3"
         },
         {
@@ -2200,7 +2200,7 @@
         {
           "id": "action_xd-s7_7",
           "type": "speech",
-          "text": "The watcher detects it: the XRPL watcher confirms the transaction on-ledger — verifying amount, destination tag, and finality within 3 to 5 seconds.",
+          "text": "Member PaysMember sends XRP to OnlyCrypto hot wallet with destination tag identifying their account",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/9-7.mp3"
         },
         {
@@ -2211,7 +2211,7 @@
         {
           "id": "action_xd-s7_9",
           "type": "speech",
-          "text": "Database updated: Supabase records the subscription as active and populates the payout queue with all commissions owed to the referral chain.",
+          "text": "Watcher DetectsXRPL watcher confirms tx on-ledger: amount, tag, finality in",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/9-9.mp3"
         },
         {
@@ -2222,7 +2222,7 @@
         {
           "id": "action_xd-s7_11",
           "type": "speech",
-          "text": "Payouts sent: XRPL sends referral commissions, rank bonuses, and trader payouts — all in XRP, all on-chain, all auditable.",
+          "text": "DB UpdatedSupabase updated: subscription activated, payout queue populated",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/9-11.mp3"
         },
         {
@@ -2233,7 +2233,7 @@
         {
           "id": "action_xd-s7_13",
           "type": "speech",
-          "text": "Total cost: 0.0002 dollars in fees. Zero chargebacks. Zero bank delays. Every payment fully auditable on the public ledger.",
+          "text": "Payouts SentXRPL sends referral commissions, rank bonuses, trader payouts — all in XRP, all on-chain",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/9-13.mp3"
         },
         {
@@ -2244,7 +2244,7 @@
         {
           "id": "action_xd-s7_15",
           "type": "speech",
-          "text": "0.0002 dollars per payment — that's the entire fee for moving any amount of XRP on XRPL.",
+          "text": "Cost$0.0002 total in fees. 0 chargebacks. 0 bank delays. Fully auditable on-chain",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/9-15.mp3"
         }
       ]
@@ -2533,7 +2533,7 @@
         {
           "id": "action_cx-s10_5",
           "type": "speech",
-          "text": "Traditional cross-border payments require banks to pre-fund accounts in every currency corridor — locking up trillions of dollars in idle capital. XRP solves this as a real-time bridge currency. Flow: USD → XRP → PHP, all in 3–5 seconds. No pre-funded nostro accounts needed. The liquidity is sourced from market makers who hold XRP. Ripple calls this On-Demand Liquidity (ODL) — used commercially by MoneyGram, SBI Remit, and 50+ partners.",
+          "text": "Traditional cross-border payments require banks to pre-fund accounts in every currency corridor — locking up trillions of dollars in idle capital. XRP solves this as a real-time bridge currency. Flow: USD → XRP → PHP, all in 3–5 seconds. No pre-funded nostro accounts needed. The liquidity is sourced from market makers who hold XRP. Ripple calls this On-Demand Liquidity (ODL) — used commercially by MoneyGram, SBI Remit, and 50+ partners",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/11-5.mp3"
         },
         {
@@ -2842,7 +2842,7 @@
         {
           "id": "action_cx-s10b_5",
           "type": "speech",
-          "text": "Asset Tokenization on XRPL — the ledger supports native token issuance via trust lines. CBDCs, stablecoins, tokenized securities, and RWAs can be issued and traded on XRPL's native DEX. Multiple central banks are piloting XRPL for CBDC issuance. Micropayments — XRPL's sub-cent fees make it viable for content monetization at micro-scale: pay $0.001 per article read, stream $0.0001 per second to a creator, tip a musician $0.05 in real-time. Use cases impossible with traditional payment rails.",
+          "text": "Asset Tokenization on XRPL — the ledger supports native token issuance via trust lines. CBDCs, stablecoins, tokenized securities, and RWAs can be issued and traded on XRPL's native DEX. Multiple central banks are piloting XRPL for CBDC issuance. Micropayments — XRPL's sub-cent fees make it viable for content monetization at micro-scale: pay $0.001 per article read, stream $0.0001 per second to a creator, tip a musician $0.05 in real-time. Use cases impossible with traditional payment rails",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/12-5.mp3"
         },
         {
@@ -2875,7 +2875,7 @@
         {
           "id": "action_cx-s10b_11",
           "type": "speech",
-          "text": "💸 Micropayments. <$0.01 fees enable new business models",
+          "text": "💸 Micropayments",
           "audioUrl": "/audio/lessons/oc-xrpl-deepdive/12-11.mp3"
         },
         {

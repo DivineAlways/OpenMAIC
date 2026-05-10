@@ -242,7 +242,7 @@
         {
           "id": "action_cg-s1_1",
           "type": "speech",
-          "text": "Let's dig into the fundamentals of Bitcoin and XRP — two very different designs for moving value.",
+          "text": "$0.0002. XRP fee",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/0-1.mp3"
         },
         {
@@ -253,7 +253,7 @@
         {
           "id": "action_cg-s1_3",
           "type": "speech",
-          "text": "Bitcoin uses the UTXO model. XRP uses an account model. Both valid — both different trade-offs.",
+          "text": "Bitcoin & XRP Fundamentals",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/0-3.mp3"
         },
         {
@@ -264,7 +264,7 @@
         {
           "id": "action_cg-s1_5",
           "type": "speech",
-          "text": "Bitcoin has no accounts. It tracks Unspent Transaction Outputs. To send 1 BTC, you consume UTXOs — like breaking a physical bill into change. All inputs minus outputs equals the miner fee.",
+          "text": "UTXO model, supply mechanics, and what makes XRP different",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/0-5.mp3"
         },
         {
@@ -275,7 +275,7 @@
         {
           "id": "action_cg-s1_7",
           "type": "speech",
-          "text": "Comparing XRP to ETH: XRP settles in 3 to 5 seconds with a 0.0002 dollar fee and handles 1500 transactions per second. Ethereum takes 12 seconds, fees can hit 20 dollars, and handles about 15 transactions per second natively.",
+          "text": "Bitcoin's UTXO ModelBitcoin has no 'accounts'. It tracks Unspent Transaction Outputs (UTXOs). . To send 1 BTC you consume existing UTXOs and create new ones — like breaking a $20 bill into change. . Privacy benefit: each tx uses fresh outputs. Privacy risk: UTXO graph analysis can trace flows",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/0-7.mp3"
         },
         {
@@ -286,7 +286,7 @@
         {
           "id": "action_cg-s1_9",
           "type": "speech",
-          "text": "A fraction of a cent to move any amount of XRP anywhere in the world — that's the XRPL fee.",
+          "text": "XRP vs ETH: Key NumbersXRP: 3–5 sec finality · $0.0002 fee · 1,500 tx/s. ETH: ~12 sec · $1–$20 fee · ~15 tx/s L1. . Both burn fees permanently (XRP burns all, ETH burns base fee). . XRP supply: 100B fixed, ~57B in circulation. ETH: no hard cap",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/0-9.mp3"
         }
       ]
@@ -442,7 +442,7 @@
         {
           "id": "action_cg-s2_1",
           "type": "speech",
-          "text": "Public-key cryptography is the math that makes your wallet provably yours without revealing your private key.",
+          "text": "Public-Key Cryptography",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/1-1.mp3"
         },
         {
@@ -453,7 +453,7 @@
         {
           "id": "action_cg-s2_3",
           "type": "speech",
-          "text": "It's based on elliptic curve mathematics — specifically secp256k1, the same curve used in Bitcoin and XRPL.",
+          "text": "The math that makes your wallet address provably yours",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/1-3.mp3"
         },
         {
@@ -464,7 +464,7 @@
         {
           "id": "action_cg-s2_5",
           "type": "speech",
-          "text": "The secp256k1 curve equation: y squared equals x cubed plus 7, modulo a large prime. Points on this curve form the basis of key generation.",
+          "text": "secp256k1: y² = x³ + 7 (mod p)",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/1-5.mp3"
         },
         {
@@ -475,7 +475,7 @@
         {
           "id": "action_cg-s2_7",
           "type": "speech",
-          "text": "Your private key is a random 256-bit number. Your public key is derived by multiplying that number by the generator point — a one-way operation. You can share the public key freely.",
+          "text": "Your private key is a random 256-bit number. Your public key is derived via elliptic curve multiplication. Reversing this (finding private from public) is the Elliptic Curve Discrete Log Problem — computationally infeasible",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/1-7.mp3"
         },
         {
@@ -486,7 +486,7 @@
         {
           "id": "action_cg-s2_9",
           "type": "speech",
-          "text": "256-bit private key means 2 to the power of 256 possible values. That's more than the number of atoms in the observable universe. Brute-force is computationally impossible with classical computers.",
+          "text": "256-bit private key = 2²⁵⁶ possible values. More than atoms in the observable universe. Brute-force is physically impossible",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/1-9.mp3"
         }
       ]
@@ -843,7 +843,7 @@
         {
           "id": "action_cg-s3_1",
           "type": "speech",
-          "text": "Bitcoin mining is a global computation race with real economic stakes.",
+          "text": "700 EH/s. Global hashrate",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/2-1.mp3"
         },
         {
@@ -854,7 +854,7 @@
         {
           "id": "action_cg-s3_3",
           "type": "speech",
-          "text": "The network is currently running at 700 exahashes per second — 700 million trillion hashes every second.",
+          "text": "Bitcoin Mining Economics",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/2-3.mp3"
         },
         {
@@ -865,7 +865,7 @@
         {
           "id": "action_cg-s3_5",
           "type": "speech",
-          "text": "The difficulty target: the network requires that valid block hashes start with a certain number of zeros. This is how computational work is proved.",
+          "text": "700 exahashes per second competing for 3.125 BTC",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/2-5.mp3"
         },
         {
@@ -876,7 +876,7 @@
         {
           "id": "action_cg-s3_7",
           "type": "speech",
-          "text": "Nonce search: miners increment a nonce — a number — billions of times per second trying to find a hash that meets the target.",
+          "text": "Difficulty TargetNetwork sets a target: hash must start with N zeros",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/2-7.mp3"
         },
         {
@@ -887,7 +887,7 @@
         {
           "id": "action_cg-s3_9",
           "type": "speech",
-          "text": "Block found: the first miner to hit the target broadcasts the block to the network. Other miners verify it instantly and start working on the next block.",
+          "text": "Nonce SearchMiners increment a nonce billions of times per second",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/2-9.mp3"
         },
         {
@@ -898,7 +898,7 @@
         {
           "id": "action_cg-s3_11",
           "type": "speech",
-          "text": "The reward: currently 3.125 BTC per block plus all transaction fees — valued in the hundreds of thousands of dollars.",
+          "text": "Block FoundFirst miner to hit the target broadcasts the block",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/2-11.mp3"
         },
         {
@@ -909,7 +909,7 @@
         {
           "id": "action_cg-s3_13",
           "type": "speech",
-          "text": "Difficulty adjustment: every 2016 blocks — about two weeks — the network adjusts difficulty up or down to maintain the 10-minute average block time.",
+          "text": "RewardBlock subsidy (currently 3.125 BTC) + all tx fees. AdjustmentEvery 2016 blocks, difficulty adjusts to maintain 10-min average",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/2-13.mp3"
         }
       ]
@@ -1102,7 +1102,7 @@
         {
           "id": "action_cg-s4_1",
           "type": "speech",
-          "text": "How do you actually read the market? Two main frameworks: on-chain analytics and technical analysis.",
+          "text": "Reading the Market",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/3-1.mp3"
         },
         {
@@ -1113,7 +1113,7 @@
         {
           "id": "action_cg-s4_3",
           "type": "speech",
-          "text": "On-chain tells you what long-term holders are doing. Technical analysis tells you what traders in the order book are doing.",
+          "text": "On-chain metrics vs technical analysis — what each reveals",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/3-3.mp3"
         },
         {
@@ -1124,7 +1124,7 @@
         {
           "id": "action_cg-s4_5",
           "type": "speech",
-          "text": "On-chain analysis: MVRV ratio above 3.5 has historically signaled overheating. SOPR above 1 means holders are selling at profit. These metrics track what the blockchain itself records — wallets, flows, realized prices.",
+          "text": "📈 On-Chain Analysis• MVRV: Market cap ÷ Realized cap — above 3.5 = historically overheated• SOPR: Profit ratio of moved coins — above 1 = profit-taking• Exchange inflow spikes = sell pressure• Long-term holder supply = conviction metric• NVT: Network Value to Transactions ratio",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/3-5.mp3"
         },
         {
@@ -1135,7 +1135,7 @@
         {
           "id": "action_cg-s4_7",
           "type": "speech",
-          "text": "Technical analysis: RSI above 70 suggests overbought conditions. MACD crossovers signal momentum shifts. Bollinger Bands show volatility — a squeeze often precedes a big move.",
+          "text": "📊 Technical Analysis• RSI > 70 = overbought, • MACD crossover signals momentum shift• Bollinger Band squeeze = volatility incoming• Support/resistance = prior price memory• Volume confirmation = move has conviction",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/3-7.mp3"
         }
       ]
@@ -1463,7 +1463,7 @@
         {
           "id": "action_cg-s5_1",
           "type": "speech",
-          "text": "The Bitcoin halving is one of the most predictable supply-shock events in financial history.",
+          "text": "3.125. BTC/block now",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/4-1.mp3"
         },
         {
@@ -1474,7 +1474,7 @@
         {
           "id": "action_cg-s5_3",
           "type": "speech",
-          "text": "Every approximately four years, the block subsidy cuts in half. New supply drops. If demand holds or increases — price tends to follow.",
+          "text": "Bitcoin Halving Schedule",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/4-3.mp3"
         },
         {
@@ -1485,7 +1485,7 @@
         {
           "id": "action_cg-s5_5",
           "type": "speech",
-          "text": "Genesis 2009: 50 BTC per block. Price was essentially zero. Miners were early believers.",
+          "text": "Every ~4 years, supply issuance cuts in half",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/4-5.mp3"
         },
         {
@@ -1496,7 +1496,7 @@
         {
           "id": "action_cg-s5_7",
           "type": "speech",
-          "text": "First halving 2012: 25 BTC per block. Price rose from 12 dollars to over 1,100 dollars in the following 12 months.",
+          "text": "2009 Genesis50 BTC/block · ~$0/BTC · miners = early adopters",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/4-7.mp3"
         },
         {
@@ -1507,7 +1507,7 @@
         {
           "id": "action_cg-s5_9",
           "type": "speech",
-          "text": "Second halving 2016: 12.5 BTC per block. Preceded the 2017 bull run to 20 thousand dollars.",
+          "text": "2012 — 1st Halving25 BTC/block · Price rose from $12 → $1,100 in 12 months",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/4-9.mp3"
         },
         {
@@ -1518,7 +1518,7 @@
         {
           "id": "action_cg-s5_11",
           "type": "speech",
-          "text": "Third halving 2020: 6.25 BTC. By 2021 peak, Bitcoin hit 69 thousand dollars. Current reward is 3.125 BTC per block.",
+          "text": "2016 — 2nd Halving12.5 BTC/block · Preceded 2017 bull run to $20K. 2020 — 3rd Halving6.25 BTC/block · 2021 peak: $69K",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/4-11.mp3"
         }
       ]
@@ -1715,7 +1715,7 @@
         {
           "id": "action_cg-s6_1",
           "type": "speech",
-          "text": "The crypto market doesn't move in a straight line — it rotates through Bitcoin dominance and altseason cycles.",
+          "text": "Altcoins & Market Cycles",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/5-1.mp3"
         },
         {
@@ -1726,7 +1726,7 @@
         {
           "id": "action_cg-s6_3",
           "type": "speech",
-          "text": "Understanding where you are in the cycle determines which assets tend to perform.",
+          "text": "Understanding the rotation and knowing where we are",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/5-3.mp3"
         },
         {
@@ -1737,7 +1737,7 @@
         {
           "id": "action_cg-s6_5",
           "type": "speech",
-          "text": "The altcoin landscape is broad: smart contract platforms like ETH, SOL, and AVAX. Layer 2s like Arbitrum and Base. Privacy coins. DeFi protocols. Understanding categories helps you understand risk levels.",
+          "text": "Altcoin LandscapeSmart contract platforms: ETH, SOL, AVAX. Layer 2s: Arbitrum, Optimism, Base. Privacy: Monero (ring sigs), Zcash (zk-SNARKs). Payments: XRP, Stellar, Litecoin. . Evaluation checklist:. • Who controls the validator set?. • Is the code audited?. • What is the tokenomics / unlock schedule?",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/5-5.mp3"
         },
         {
@@ -1748,7 +1748,7 @@
         {
           "id": "action_cg-s6_7",
           "type": "speech",
-          "text": "The cycle pattern: Bitcoin pumps first as risk-on sentiment builds. Then Ethereum follows. Then mid-caps. Finally small-cap altcoins — highest risk, highest potential reward, last to move.",
+          "text": "Market CyclesBitcoin dominance → altseason pattern:. 1. BTC pumps (risk-on, store of value). 2. ETH follows (smart contract demand). 3. Altcoins rotate up (speculation). 4. Meme coins peak (euphoria top). . MVRV > 3.5 has historically marked cycle tops. Patience is the edge",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/5-7.mp3"
         }
       ]
@@ -2027,7 +2027,7 @@
         {
           "id": "action_cg-s7_1",
           "type": "speech",
-          "text": "Owning crypto responsibly is a skill that most people underinvest in learning.",
+          "text": "Owning Crypto Responsibly",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/6-1.mp3"
         },
         {
@@ -2038,7 +2038,7 @@
         {
           "id": "action_cg-s7_3",
           "type": "speech",
-          "text": "Custody, exchange safety, dollar-cost averaging, and taxes — the fundamentals that protect your gains.",
+          "text": "Custody, security, strategy, and taxes",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/6-3.mp3"
         },
         {
@@ -2049,7 +2049,7 @@
         {
           "id": "action_cg-s7_5",
           "type": "speech",
-          "text": "Custody: who holds your keys? An exchange holds their own keys. You hold an IOU. Self-custody means the keys are yours — and so is the responsibility.",
+          "text": "CustodyWho holds your keys? Exchange = their keys. Self-custody = your keys. Not your keys, not your coins",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/6-5.mp3"
         },
         {
@@ -2060,7 +2060,7 @@
         {
           "id": "action_cg-s7_7",
           "type": "speech",
-          "text": "Exchange safety: use regulated exchanges, enable two-factor authentication, and whitelist withdrawal addresses. Don't store more than you can afford to lose on an exchange.",
+          "text": "Exchange SafetyUse regulated exchanges. Enable 2FA. Whitelist withdraw addresses. Don't keep trading stacks on exchange",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/6-7.mp3"
         },
         {
@@ -2071,7 +2071,7 @@
         {
           "id": "action_cg-s7_9",
           "type": "speech",
-          "text": "Dollar-cost averaging removes the impossible task of timing the market. Invest a fixed amount weekly regardless of price — your average cost smooths out volatility.",
+          "text": "DCA StrategyDollar-cost averaging removes timing risk. Invest fixed $ weekly regardless of price",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/6-9.mp3"
         },
         {
@@ -2082,7 +2082,7 @@
         {
           "id": "action_cg-s7_11",
           "type": "speech",
-          "text": "Tax reality: in most jurisdictions, every swap, every sale, every purchase using crypto is a taxable event. Track your cost basis from day one — it's much harder to reconstruct later.",
+          "text": "Tax RealityEvery swap, sale, or spend is a taxable event in most jurisdictions. Track cost basis from day one",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/6-11.mp3"
         }
       ]
@@ -2371,7 +2371,7 @@
         {
           "id": "action_ccg-s10_5",
           "type": "speech",
-          "text": "Token design determines how a token behaves economically. Key variables: total supply, emission schedule, burn mechanisms, vesting schedules for team/investors, and utility requirements. Deflationary tokens (burn > mint) create scarcity over time. BNB burns a portion of exchange fees. Ethereum burns base fees (EIP-1559). Inflationary tokens fund validators/stakers but dilute holders if emissions exceed demand.",
+          "text": "Token design determines how a token behaves economically. Key variables: total supply, emission schedule, burn mechanisms, vesting schedules for team/investors, and utility requirements. Deflationary tokens (burn > mint) create scarcity over time. BNB burns a portion of exchange fees. Ethereum burns base fees (EIP-1559). Inflationary tokens fund validators/stakers but dilute holders if emissions exceed demand",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/8-5.mp3"
         },
         {
@@ -2680,7 +2680,7 @@
         {
           "id": "action_ccg-s10b_5",
           "type": "speech",
-          "text": "Governance tokens give holders the ability to vote on protocol decisions — fee structures, treasury spending, new features, security parameters. Uniswap's UNI, Compound's COMP, Maker's MKR. Risks of governance: voter apathy (most holders don't vote), whale domination (large holders control outcomes), and governance attacks (acquiring enough tokens to pass malicious proposals — this happened to Beanstalk Protocol for $182M).",
+          "text": "Governance tokens give holders the ability to vote on protocol decisions — fee structures, treasury spending, new features, security parameters. Uniswap's UNI, Compound's COMP, Maker's MKR. Risks of governance: voter apathy (most holders don't vote), whale domination (large holders control outcomes), and governance attacks (acquiring enough tokens to pass malicious proposals — this happened to Beanstalk Protocol for $182M)",
           "audioUrl": "/audio/lessons/oc-cryptocurrency-guide/9-5.mp3"
         },
         {

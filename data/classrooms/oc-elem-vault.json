@@ -276,7 +276,7 @@
         {
           "id": "action_ev-s1_5",
           "type": "speech",
-          "text": "Sometimes the best way to learn is to watch someone explain it . The OnlyCrypto video series covers the biggest concepts — from how XRP works to how copy trading can grow your money while you sleep. Each video is picked because it explains things clearly, even if you're brand new.",
+          "text": "Sometimes the best way to learn is to watch someone explain it. The OnlyCrypto video series covers the biggest concepts — from how XRP works to how copy trading can grow your money while you sleep. Each video is picked because it explains things clearly, even if you're brand new",
           "audioUrl": "/audio/lessons/oc-elem-vault/0-5.mp3"
         },
         {
@@ -287,7 +287,7 @@
         {
           "id": "action_ev-s1_7",
           "type": "speech",
-          "text": "📝 Take Notes Write words you don't know and look them up",
+          "text": "📝Take NotesWrite words you don't know and look them up",
           "audioUrl": "/audio/lessons/oc-elem-vault/0-7.mp3"
         },
         {
@@ -298,7 +298,7 @@
         {
           "id": "action_ev-s1_9",
           "type": "speech",
-          "text": "⏸️ Pause & Rewind Don't rush — understanding beats speed",
+          "text": "⏸️Pause & RewindDon't rush — understanding beats speed",
           "audioUrl": "/audio/lessons/oc-elem-vault/0-9.mp3"
         },
         {
@@ -309,7 +309,7 @@
         {
           "id": "action_ev-s1_11",
           "type": "speech",
-          "text": "❓ Ask Questions Use the AI Classroom to ask anything",
+          "text": "❓Ask QuestionsUse the AI Classroom to ask anything",
           "audioUrl": "/audio/lessons/oc-elem-vault/0-11.mp3"
         },
         {
@@ -320,7 +320,7 @@
         {
           "id": "action_ev-s1_13",
           "type": "speech",
-          "text": "🔄 Rewatch Same video makes more sense after you've learned more",
+          "text": "🔄RewatchSame video makes more sense after you've learned more",
           "audioUrl": "/audio/lessons/oc-elem-vault/0-13.mp3"
         }
       ],
@@ -585,7 +585,7 @@
         {
           "id": "action_ev-s2_5",
           "type": "speech",
-          "text": "HODL — Hold On for Dear Life (don't sell!) &nbsp;|&nbsp; Bull Market — prices going up &nbsp;|&nbsp; Bear Market — prices going down &nbsp;|&nbsp; FOMO — Fear Of Missing Out &nbsp;|&nbsp; Dip — temporary price drop &nbsp;|&nbsp; Gas Fee — cost to process a transaction &nbsp;|&nbsp; ATH — All Time Hi...",
+          "text": "HODL — Hold On for Dear Life (don't sell!) &nbsp;|&nbsp; Bull Market — prices going up &nbsp;|&nbsp; Bear Market — prices going down &nbsp;|&nbsp; FOMO — Fear Of Missing Out &nbsp;|&nbsp; Dip — temporary price drop &nbsp;|&nbsp; Gas Fee — cost to process a transaction &nbsp;|&nbsp; ATH — All Time High price ever",
           "audioUrl": "/audio/lessons/oc-elem-vault/1-5.mp3"
         },
         {
@@ -596,7 +596,7 @@
         {
           "id": "action_ev-s2_7",
           "type": "speech",
-          "text": "📈 Bull Market Prices going up — everyone buying",
+          "text": "📈Bull MarketPrices going up — everyone buying",
           "audioUrl": "/audio/lessons/oc-elem-vault/1-7.mp3"
         },
         {
@@ -607,7 +607,7 @@
         {
           "id": "action_ev-s2_9",
           "type": "speech",
-          "text": "📉 Bear Market Prices going down — people cautious",
+          "text": "📉Bear MarketPrices going down — people cautious",
           "audioUrl": "/audio/lessons/oc-elem-vault/1-9.mp3"
         },
         {
@@ -618,7 +618,7 @@
         {
           "id": "action_ev-s2_11",
           "type": "speech",
-          "text": "💎 HODL Keep your coins, don't panic sell",
+          "text": "💎HODLKeep your coins, don't panic sell",
           "audioUrl": "/audio/lessons/oc-elem-vault/1-11.mp3"
         },
         {
@@ -629,7 +629,7 @@
         {
           "id": "action_ev-s2_13",
           "type": "speech",
-          "text": "⛽ Gas Fee Small fee paid to process a transaction",
+          "text": "⛽Gas FeeSmall fee paid to process a transaction",
           "audioUrl": "/audio/lessons/oc-elem-vault/1-13.mp3"
         }
       ],

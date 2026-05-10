@@ -277,7 +277,7 @@
         {
           "id": "action_csb-s1_5",
           "type": "speech",
-          "text": "Uniswap V2 spread liquidity across the entire price curve (0 to ∞), meaning most capital sat unused at extreme prices. Uniswap V3 introduced concentrated liquidity — LPs choose a specific price range to deploy capital. A position active from $1,800–$2,200 ETH provides the same depth as a V2 position 4,000× larger. Trade-off: concentrated positions earn more fees when price stays in range — but suffer higher impermanent loss when price exits the range. LPs must actively manage their ranges or use automated range managers.",
+          "text": "Uniswap V2 spread liquidity across the entire price curve (0 to ∞), meaning most capital sat unused at extreme prices. Uniswap V3 introduced concentrated liquidity — LPs choose a specific price range to deploy capital. A position active from $1,800–$2,200 ETH provides the same depth as a V2 position 4,000× larger. Trade-off: concentrated positions earn more fees when price stays in range — but suffer higher impermanent loss when price exits the range. LPs must actively manage their ranges or use automated range managers",
           "audioUrl": "/audio/lessons/oc-col-swapbridge/0-5.mp3"
         },
         {
@@ -586,7 +586,7 @@
         {
           "id": "action_csb-s2_5",
           "type": "speech",
-          "text": "MEV (Maximal Extractable Value) is value extracted by block producers (miners/validators) or bots by reordering, inserting, or censoring transactions within a block. Sandwich attack : a bot detects your large pending swap → front-runs it (buys before you, pushing price up) → your swap executes at a worse price → bot sells immediately after (back-run). You pay more, bot profits. Estimated $1B+ extracted from Ethereum users annually. Mitigation: use private mempools (Flashbots Protect), set low slippage tolerance, or use MEV-resistant DEXs.",
+          "text": "MEV (Maximal Extractable Value) is value extracted by block producers (miners/validators) or bots by reordering, inserting, or censoring transactions within a block. Sandwich attack: a bot detects your large pending swap → front-runs it (buys before you, pushing price up) → your swap executes at a worse price → bot sells immediately after (back-run). You pay more, bot profits. Estimated $1B+ extracted from Ethereum users annually. Mitigation: use private mempools (Flashbots Protect), set low slippage tolerance, or use MEV-resistant DEXs",
           "audioUrl": "/audio/lessons/oc-col-swapbridge/1-5.mp3"
         },
         {
@@ -895,7 +895,7 @@
         {
           "id": "action_csb-s3_5",
           "type": "speech",
-          "text": "Every bridge makes a trust trade-off. Understanding these models is critical before bridging large amounts. Externally Validated (most common) — a multisig of validators attests to events on both chains. Ronin used 9-of-15 validators, 5 were controlled by Axie — hack was inevitable. Optimistic bridges (Across, Hop) — assume validity, allow fraud proofs within a window. Slower but more decentralized. ZK bridges — use zero-knowledge proofs to cryptographically verify the source chain state. Most secure, computationally expensive, still maturing.",
+          "text": "Every bridge makes a trust trade-off. Understanding these models is critical before bridging large amounts. Externally Validated (most common) — a multisig of validators attests to events on both chains. Ronin used 9-of-15 validators, 5 were controlled by Axie — hack was inevitable. Optimistic bridges (Across, Hop) — assume validity, allow fraud proofs within a window. Slower but more decentralized. ZK bridges — use zero-knowledge proofs to cryptographically verify the source chain state. Most secure, computationally expensive, still maturing",
           "audioUrl": "/audio/lessons/oc-col-swapbridge/2-5.mp3"
         },
         {
@@ -1204,7 +1204,7 @@
         {
           "id": "action_csb-s4_5",
           "type": "speech",
-          "text": "Large cross-chain moves require careful execution. Strategies used by institutions and advanced traders: TWAP bridging — split large amounts across multiple transactions over time to reduce price impact on each leg. Canonical + DEX routing — use the official canonical bridge (slower, safer, cheaper for large amounts) then swap on destination chain DEX. Stablecoin bridging — convert to USDC/USDT first (no price risk during transit), bridge the stablecoin, swap on arrival. XRPL's Automated Market Maker and native DEX allow atomic cross-asset settlement in one transaction.",
+          "text": "Large cross-chain moves require careful execution. Strategies used by institutions and advanced traders:. TWAP bridging — split large amounts across multiple transactions over time to reduce price impact on each leg. Canonical + DEX routing — use the official canonical bridge (slower, safer, cheaper for large amounts) then swap on destination chain DEX. Stablecoin bridging — convert to USDC/USDT first (no price risk during transit), bridge the stablecoin, swap on arrival. XRPL's Automated Market Maker and native DEX allow atomic cross-asset settlement in one transaction",
           "audioUrl": "/audio/lessons/oc-col-swapbridge/3-5.mp3"
         },
         {
@@ -1513,7 +1513,7 @@
         {
           "id": "action_csb-s5_5",
           "type": "speech",
-          "text": "The XRPL has a native DEX built directly into the ledger protocol — not a smart contract on top. Every account can place limit orders and the ledger automatically matches them during consensus. No MEV, no front-running, no sandwich attacks. XRPL's pathfinding enables atomic multi-hop swaps: XRP → USD → EUR in a single transaction. Combined with the AMM (added in 2024), XRPL offers both order book and AMM liquidity simultaneously — a unique dual-liquidity model no other L1 has natively.",
+          "text": "The XRPL has a native DEX built directly into the ledger protocol — not a smart contract on top. Every account can place limit orders and the ledger automatically matches them during consensus. No MEV, no front-running, no sandwich attacks. XRPL's pathfinding enables atomic multi-hop swaps: XRP → USD → EUR in a single transaction. Combined with the AMM (added in 2024), XRPL offers both order book and AMM liquidity simultaneously — a unique dual-liquidity model no other L1 has natively",
           "audioUrl": "/audio/lessons/oc-col-swapbridge/4-5.mp3"
         },
         {
@@ -1822,7 +1822,7 @@
         {
           "id": "action_csb-s6_5",
           "type": "speech",
-          "text": "Slippage tolerance is the maximum price movement you accept between signing and execution. Too tight (0.1%) and your swap reverts. Too loose (10%) and MEV bots will exploit the gap. Deadline — transaction auto-reverts if not confirmed within N minutes. Prevents stale transactions from executing hours later at a completely different price. Gas price — higher gas = faster confirmation = less price drift. On high-fee chains, timing your swap during low-congestion periods can save 70–80% on gas.",
+          "text": "Slippage tolerance is the maximum price movement you accept between signing and execution. Too tight (0.1%) and your swap reverts. Too loose (10%) and MEV bots will exploit the gap. Deadline — transaction auto-reverts if not confirmed within N minutes. Prevents stale transactions from executing hours later at a completely different price. Gas price — higher gas = faster confirmation = less price drift. On high-fee chains, timing your swap during low-congestion periods can save 70–80% on gas",
           "audioUrl": "/audio/lessons/oc-col-swapbridge/5-5.mp3"
         },
         {

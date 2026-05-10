@@ -201,7 +201,7 @@
         {
           "id": "action_df-s1_1",
           "type": "speech",
-          "text": "Decentralized exchanges process over a billion dollars in volume daily. How? Automated Market Makers — AMMs.",
+          "text": "$1B+. Daily DEX vol",
           "audioUrl": "/audio/lessons/oc-defi-guide/0-1.mp3"
         },
         {
@@ -212,7 +212,7 @@
         {
           "id": "action_df-s1_3",
           "type": "speech",
-          "text": "No order book, no market maker. Just a mathematical formula and liquidity providers.",
+          "text": "How AMMs Work",
           "audioUrl": "/audio/lessons/oc-defi-guide/0-3.mp3"
         },
         {
@@ -223,7 +223,7 @@
         {
           "id": "action_df-s1_5",
           "type": "speech",
-          "text": "The constant product formula: x times y equals k. X is the reserve of token A, Y is the reserve of token B, K is a constant.",
+          "text": "The math behind every decentralized swap",
           "audioUrl": "/audio/lessons/oc-defi-guide/0-5.mp3"
         },
         {
@@ -234,7 +234,7 @@
         {
           "id": "action_df-s1_7",
           "type": "speech",
-          "text": "When you buy token B, you add token A to the pool — X increases, Y decreases. The price adjusts automatically. The larger the trade relative to pool size, the more slippage you experience.",
+          "text": "x × y = k",
           "audioUrl": "/audio/lessons/oc-defi-guide/0-7.mp3"
         },
         {
@@ -245,7 +245,7 @@
         {
           "id": "action_df-s1_9",
           "type": "speech",
-          "text": "Uniswap V2 uses this basic formula. V3 introduced concentrated liquidity — LPs choose price ranges, achieving 4000 times better capital efficiency within those ranges.",
+          "text": "x = Token A reserve · y = Token B reserve · k = constant. . Buy Token B → x increases, y decreases → Token B price rises. The curve never touches zero — infinite slippage before reserves empty",
           "audioUrl": "/audio/lessons/oc-defi-guide/0-9.mp3"
         },
         {
@@ -256,7 +256,7 @@
         {
           "id": "action_df-s1_11",
           "type": "speech",
-          "text": "Over a billion dollars flows through decentralized exchanges daily.",
+          "text": "Uniswap V2 uses this formula. V3 concentrates liquidity in price ranges for 4,000× better capital efficiency",
           "audioUrl": "/audio/lessons/oc-defi-guide/0-11.mp3"
         }
       ]
@@ -412,7 +412,7 @@
         {
           "id": "action_df-s2_1",
           "type": "speech",
-          "text": "Impermanent loss is the hidden cost of providing liquidity to an AMM. It's not a loss until you withdraw — but it's real.",
+          "text": "Impermanent Loss",
           "audioUrl": "/audio/lessons/oc-defi-guide/1-1.mp3"
         },
         {
@@ -423,7 +423,7 @@
         {
           "id": "action_df-s2_3",
           "type": "speech",
-          "text": "When the price ratio between your two tokens diverges, you'd have been better off just holding.",
+          "text": "Why providing liquidity is not free money",
           "audioUrl": "/audio/lessons/oc-defi-guide/1-3.mp3"
         },
         {
@@ -434,7 +434,7 @@
         {
           "id": "action_df-s2_5",
           "type": "speech",
-          "text": "The impermanent loss formula: 2 times the square root of P, divided by 1 plus P, minus 1. Where P is the price ratio change.",
+          "text": "IL = 2√P / (1+P) − 1",
           "audioUrl": "/audio/lessons/oc-defi-guide/1-5.mp3"
         },
         {
@@ -445,7 +445,7 @@
         {
           "id": "action_df-s2_7",
           "type": "speech",
-          "text": "If one token doubles in price — a 2x divergence — you lose 5.7% compared to holding. If it goes 5x — 25.5% impermanent loss. This is why LP fees need to compensate for this risk.",
+          "text": "P = price ratio change between the two tokens. . 2× price divergence = 5.7% IL · 5× divergence = 25.5% IL. IL is only 'impermanent' if prices return to entry ratio — otherwise it becomes permanent loss",
           "audioUrl": "/audio/lessons/oc-defi-guide/1-7.mp3"
         },
         {
@@ -456,7 +456,7 @@
         {
           "id": "action_df-s2_9",
           "type": "speech",
-          "text": "Important: impermanent loss only applies to AMM liquidity providers. Order book LPs and single-sided vaults have completely different risk profiles.",
+          "text": "IL only applies to AMM LPs. Order book LPs and single-sided vaults have different risk profiles",
           "audioUrl": "/audio/lessons/oc-defi-guide/1-9.mp3"
         }
       ]
@@ -653,7 +653,7 @@
         {
           "id": "action_df-s3_1",
           "type": "speech",
-          "text": "Lending protocols like Aave let you borrow against your crypto — but liquidations are swift and merciless.",
+          "text": "Lending & Liquidations",
           "audioUrl": "/audio/lessons/oc-defi-guide/2-1.mp3"
         },
         {
@@ -664,7 +664,7 @@
         {
           "id": "action_df-s3_3",
           "type": "speech",
-          "text": "A 30% ETH drop in an hour can cascade into millions of liquidations in minutes.",
+          "text": "How collateralized borrowing works — and how it fails",
           "audioUrl": "/audio/lessons/oc-defi-guide/2-3.mp3"
         },
         {
@@ -675,7 +675,7 @@
         {
           "id": "action_df-s3_5",
           "type": "speech",
-          "text": "How Aave works: supply collateral, borrow up to your loan-to-value limit. Your health factor equals collateral value times liquidation threshold, divided by debt. Health factor below 1 — you get liquidated.",
+          "text": "Aave: Lending ProtocolSupply collateral → borrow up to LTV limit. . Health Factor = Collateral × Liq. Threshold ÷ Debt. . Health Factor",
           "audioUrl": "/audio/lessons/oc-defi-guide/2-5.mp3"
         },
         {
@@ -686,7 +686,7 @@
         {
           "id": "action_df-s3_7",
           "type": "speech",
-          "text": "The liquidation cascade: ETH drops 30% in one hour. Thousands of health factors hit 1 simultaneously. Liquidation bots race each other to liquidate positions. The selling pressure pushes ETH down further — triggering more liquidations. This feedback loop is how crypto gets 60% drawdowns.",
+          "text": "Liquidation CascadeETH drops 30% in an hour:. 1. Thousands of health factors hit",
           "audioUrl": "/audio/lessons/oc-defi-guide/2-7.mp3"
         }
       ]
@@ -1043,7 +1043,7 @@
         {
           "id": "action_df-s4_1",
           "type": "speech",
-          "text": "Flash loans are one of the most mind-bending financial instruments ever created — uncollateralized loans that must be repaid in the same transaction.",
+          "text": "0 collateral. required",
           "audioUrl": "/audio/lessons/oc-defi-guide/3-1.mp3"
         },
         {
@@ -1054,7 +1054,7 @@
         {
           "id": "action_df-s4_3",
           "type": "speech",
-          "text": "If the repayment fails for any reason, the entire transaction reverts. Zero risk to the protocol.",
+          "text": "Flash Loans & MEV",
           "audioUrl": "/audio/lessons/oc-defi-guide/3-3.mp3"
         },
         {
@@ -1065,7 +1065,7 @@
         {
           "id": "action_df-s4_5",
           "type": "speech",
-          "text": "Step one: borrow one million USDC from Aave. No collateral required — because the loan must be repaid before the transaction closes.",
+          "text": "Uncollateralized loans that exist for a single transaction",
           "audioUrl": "/audio/lessons/oc-defi-guide/3-5.mp3"
         },
         {
@@ -1076,7 +1076,7 @@
         {
           "id": "action_df-s4_7",
           "type": "speech",
-          "text": "Step two: use that capital — arbitrage between two DEXes, liquidate an underwater position, anything with positive expected return.",
+          "text": "BorrowFlash loan $1M USDC from Aave — no collateral required",
           "audioUrl": "/audio/lessons/oc-defi-guide/3-7.mp3"
         },
         {
@@ -1087,7 +1087,7 @@
         {
           "id": "action_df-s4_9",
           "type": "speech",
-          "text": "Step three: repay the one million plus a 0.09% fee, all within the same Ethereum transaction block.",
+          "text": "ArbitrageBuy underpriced token on DEX A, sell on DEX B where price is higher",
           "audioUrl": "/audio/lessons/oc-defi-guide/3-9.mp3"
         },
         {
@@ -1098,7 +1098,7 @@
         {
           "id": "action_df-s4_11",
           "type": "speech",
-          "text": "Keep the profit — typically 500 to 50,000 dollars depending on the opportunity.",
+          "text": "RepayReturn $1M + 0.09% fee in same transaction",
           "audioUrl": "/audio/lessons/oc-defi-guide/3-11.mp3"
         },
         {
@@ -1109,7 +1109,7 @@
         {
           "id": "action_df-s4_13",
           "type": "speech",
-          "text": "If repayment fails for any reason, the entire transaction reverts as if it never happened. The protocol takes zero risk.",
+          "text": "ProfitKeep the arbitrage spread minus gas fees — typical: $500–$50K. RevertIf repayment fails for any reason, entire tx reverts — zero risk to protocol",
           "audioUrl": "/audio/lessons/oc-defi-guide/3-13.mp3"
         }
       ]
@@ -1306,7 +1306,7 @@
         {
           "id": "action_df-s5_1",
           "type": "speech",
-          "text": "Every percentage point of DeFi yield has a corresponding risk. Understanding that relationship is the difference between sustainable returns and losing everything.",
+          "text": "Yield & Risk",
           "audioUrl": "/audio/lessons/oc-defi-guide/4-1.mp3"
         },
         {
@@ -1317,7 +1317,7 @@
         {
           "id": "action_df-s5_3",
           "type": "speech",
-          "text": "Simple yield, complex yield, and smart contract risk — let's map them all.",
+          "text": "Every percentage point of yield has a corresponding risk",
           "audioUrl": "/audio/lessons/oc-defi-guide/4-3.mp3"
         },
         {
@@ -1328,7 +1328,7 @@
         {
           "id": "action_df-s5_5",
           "type": "speech",
-          "text": "Yield strategies: simple is Aave supply APY — straightforward. Medium complexity is Uniswap LP — earn trading fees plus farming rewards, but manage impermanent loss. Complex strategies like yield aggregators can chain multiple protocols — each one adds risk.",
+          "text": "Yield StrategiesSimple: Supply to Aave → earn supply APY. Medium: LP on Uniswap → earn trading fees + rewards. Advanced: Leveraged yield farming → borrow to amplify yield. . Risk ladder: as yield increases, so does smart contract risk, liquidation risk, and IL",
           "audioUrl": "/audio/lessons/oc-defi-guide/4-5.mp3"
         },
         {
@@ -1339,7 +1339,7 @@
         {
           "id": "action_df-s5_7",
           "type": "speech",
-          "text": "Smart contract risk is real. The DAO hack in 2016 — 60 million dollars. Harvest Finance oracle manipulation in 2020 — 34 million. Every DeFi protocol is code, and code has bugs. There's no FDIC for smart contracts.",
+          "text": "Smart Contract RiskEvery DeFi protocol is code — code has bugs:. • Reentrancy: The DAO ($60M, 2016). • Oracle manipulation: Mango Markets ($114M, 2022). • Logic error: Beanstalk ($182M, 2022). . Audit ≠ safe. Multiple audits help. Bug bounties help more. Never risk more than you can lose",
           "audioUrl": "/audio/lessons/oc-defi-guide/4-7.mp3"
         }
       ]
@@ -1585,7 +1585,7 @@
         {
           "id": "action_df-s6_1",
           "type": "speech",
-          "text": "DeFi goes well beyond swaps and lending. The ecosystem has built primitives that didn't exist in traditional finance.",
+          "text": "DeFi Ecosystem",
           "audioUrl": "/audio/lessons/oc-defi-guide/5-1.mp3"
         },
         {
@@ -1596,7 +1596,7 @@
         {
           "id": "action_df-s6_3",
           "type": "speech",
-          "text": "DEX aggregators, liquid staking, and real yield protocols — three categories that define modern DeFi.",
+          "text": "Key primitives beyond basic swaps and lending",
           "audioUrl": "/audio/lessons/oc-defi-guide/5-3.mp3"
         },
         {
@@ -1607,7 +1607,7 @@
         {
           "id": "action_df-s6_5",
           "type": "speech",
-          "text": "DEX aggregators like 1inch and Paraswap split your order across multiple DEXes simultaneously, finding the best composite price. On large trades, this can save 0.5 to 5 percent.",
+          "text": "DEX Aggregators1inch, Paraswap — split orders across multiple DEXes for best price. Saves 0.5–5% on large trades",
           "audioUrl": "/audio/lessons/oc-defi-guide/5-5.mp3"
         },
         {
@@ -1618,7 +1618,7 @@
         {
           "id": "action_df-s6_7",
           "type": "speech",
-          "text": "Liquid staking: stake ETH and receive stETH — a liquid token you can still use in DeFi while earning staking rewards. Lido controls over 30 percent of all staked ETH, which itself creates centralization concerns.",
+          "text": "Liquid StakingStake ETH → receive stETH (liquid). Earn 3–4% APY while keeping liquidity for DeFi. Lido: $20B+ TVL",
           "audioUrl": "/audio/lessons/oc-defi-guide/5-7.mp3"
         },
         {
@@ -1629,7 +1629,7 @@
         {
           "id": "action_df-s6_9",
           "type": "speech",
-          "text": "Real yield protocols actually share trading revenue with token holders. GMX distributes trading fees to GLP stakers. This is sustainable yield — backed by real protocol revenue, not token inflation.",
+          "text": "Real YieldProtocols sharing actual revenue with token holders. GMX: trading fees → GLP stakers. Sustainable vs inflationary yield",
           "audioUrl": "/audio/lessons/oc-defi-guide/5-9.mp3"
         }
       ]
@@ -1826,7 +1826,7 @@
         {
           "id": "action_df-s7_1",
           "type": "speech",
-          "text": "DeFi is the most powerful financial infrastructure ever built for individual access. It's also completely unforgiving.",
+          "text": "DeFi: Opportunity & Risk",
           "audioUrl": "/audio/lessons/oc-defi-guide/6-1.mp3"
         },
         {
@@ -1837,7 +1837,7 @@
         {
           "id": "action_df-s7_3",
           "type": "speech",
-          "text": "No safety net, no customer support, no chargebacks. The code is the contract.",
+          "text": "The most powerful financial infrastructure — with no safety net",
           "audioUrl": "/audio/lessons/oc-defi-guide/6-3.mp3"
         },
         {
@@ -1848,7 +1848,7 @@
         {
           "id": "action_df-s7_5",
           "type": "speech",
-          "text": "DeFi advantages over traditional finance: 24/7 operation — no bank hours. Non-custodial — you keep your keys. Composable — protocols stack on each other like building blocks. Transparent — everything is on-chain.",
+          "text": "DeFi vs TradFiDeFi advantages:. • 24/7 operation, no closing times. • Non-custodial — you keep your keys. • Permissionless — no KYC required. • Composable — protocols stack like Lego. • Transparent — all code is public",
           "audioUrl": "/audio/lessons/oc-defi-guide/6-5.mp3"
         },
         {
@@ -1859,7 +1859,7 @@
         {
           "id": "action_df-s7_7",
           "type": "speech",
-          "text": "The risks are equally significant: smart contract bugs with no insurance. Mistakes are permanent — there's no reversing a wrong transaction. Regulatory uncertainty globally. And smart contract complexity that even auditors sometimes miss.",
+          "text": "DeFi risks:• Smart contract bugs (no insurance). • No chargebacks — mistakes are permanent. • Regulatory uncertainty in most countries. • Gas fees can eat small positions. • UI/UX still early — easy to make costly errors. . Never invest more than you understand",
           "audioUrl": "/audio/lessons/oc-defi-guide/6-7.mp3"
         }
       ]
@@ -2148,7 +2148,7 @@
         {
           "id": "action_cdg-s10_5",
           "type": "speech",
-          "text": "Aave and Compound use utilization rate to set interest rates algorithmically. Utilization = borrowed / total deposited. When utilization is low, rates are low (incentivize borrowing). As it approaches 100%, rates spike sharply to incentivize repayment and new deposits. Borrowers must maintain a health factor above 1.0. If collateral value drops below the liquidation threshold, anyone can liquidate the position — taking the collateral at a discount. This keeps the protocol solvent.",
+          "text": "Aave and Compound use utilization rate to set interest rates algorithmically. Utilization = borrowed / total deposited. When utilization is low, rates are low (incentivize borrowing). As it approaches 100%, rates spike sharply to incentivize repayment and new deposits. Borrowers must maintain a health factor above 1.0. If collateral value drops below the liquidation threshold, anyone can liquidate the position — taking the collateral at a discount. This keeps the protocol solvent",
           "audioUrl": "/audio/lessons/oc-defi-guide/8-5.mp3"
         },
         {
@@ -2457,7 +2457,7 @@
         {
           "id": "action_cdg-s10b_5",
           "type": "speech",
-          "text": "Fiat-backed (USDT, USDC) — reserves of real dollars back each token 1:1. Centralized, trusted counterparty risk. Crypto-backed (DAI) — over-collateralized with ETH/WBTC. Trustless but capital inefficient (need $150 locked to mint $100 of DAI). Algorithmic (UST/LUNA) — code controls supply via mint/burn with a paired token. Capital efficient but fragile — a death spiral wiped $40B in 72 hours in May 2022.",
+          "text": "Fiat-backed (USDT, USDC) — reserves of real dollars back each token 1:1. Centralized, trusted counterparty risk. Crypto-backed (DAI) — over-collateralized with ETH/WBTC. Trustless but capital inefficient (need $150 locked to mint $100 of DAI). Algorithmic (UST/LUNA) — code controls supply via mint/burn with a paired token. Capital efficient but fragile — a death spiral wiped $40B in 72 hours in May 2022",
           "audioUrl": "/audio/lessons/oc-defi-guide/9-5.mp3"
         },
         {

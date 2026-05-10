@@ -150,7 +150,7 @@
         {
           "id": "action_ce-s1_1",
           "type": "speech",
-          "text": "Tokenomics — the economics of tokens — is why most crypto projects fail and what makes the few successful ones work.",
+          "text": "Tokenomics",
           "audioUrl": "/audio/lessons/oc-ecosystem/0-1.mp3"
         },
         {
@@ -161,7 +161,7 @@
         {
           "id": "action_ce-s1_3",
           "type": "speech",
-          "text": "Supply, demand, velocity, and value capture — the four dimensions that determine whether a token is worth holding.",
+          "text": "Why most tokens fail and what makes the good ones work. Tokenomics FundamentalsSupply: Fixed cap (BTC: 21M) vs inflationary (ETH pre-merge) vs deflationary (XRP burn). . Distribution: Pre-mine, fair launch, VC allocation, team vesting. . Stock-to-Flow (S2F): Scarcity model — higher ratio = more scarce. Bitcoin S2F after halving: ~100 (like gold). . Red flag: >50% token supply controlled by team/VCs with short unlock schedule",
           "audioUrl": "/audio/lessons/oc-ecosystem/0-3.mp3"
         }
       ]
@@ -299,7 +299,7 @@
         {
           "id": "action_ce-s1_5",
           "type": "speech",
-          "text": "Tokenomics fundamentals: supply can be fixed like Bitcoin at 21 million, inflationary, or deflationary via burning. Distribution matters — concentrated early allocations to insiders often signal future sell pressure. Emission schedules reveal when that pressure hits.",
+          "text": "Tokenomics (Part B)",
           "audioUrl": "/audio/lessons/oc-ecosystem/1-1.mp3"
         },
         {
@@ -310,7 +310,7 @@
         {
           "id": "action_ce-s1_7",
           "type": "speech",
-          "text": "The velocity problem is subtle but critical: high usage does not automatically mean high token value. If a token is used purely as a medium of exchange and users convert immediately, velocity is high and holding demand is low. Good tokenomics creates reasons to hold.",
+          "text": "Why most tokens fail and what makes the good ones work. The Velocity ProblemHigh usage ≠ high token value if velocity is high. . Example: A token used to pay for AI queries — users buy, use, immediately sell. Price stays low despite massive usage. . Solutions: Staking (lock supply), governance rights, fee burning, required holdings. . Best tokenomics: token holders benefit directly from protocol revenue",
           "audioUrl": "/audio/lessons/oc-ecosystem/1-3.mp3"
         }
       ]
@@ -499,7 +499,7 @@
         {
           "id": "action_ce-s2_1",
           "type": "speech",
-          "text": "Layer 2 rollups are Ethereum's answer to scaling — and they're working.",
+          "text": "100×. Fee reduction",
           "audioUrl": "/audio/lessons/oc-ecosystem/2-1.mp3"
         },
         {
@@ -510,7 +510,7 @@
         {
           "id": "action_ce-s2_3",
           "type": "speech",
-          "text": "EIP-4844, also called Dencun, dropped L2 fees by up to 100 times in March 2024.",
+          "text": "Layer 2 Rollups",
           "audioUrl": "/audio/lessons/oc-ecosystem/2-3.mp3"
         },
         {
@@ -521,7 +521,7 @@
         {
           "id": "action_ce-s2_5",
           "type": "speech",
-          "text": "L2 transaction cost equals blob data size times blob base fee. Blobs are temporary, cheap data anchors on Ethereum for rollup proofs.",
+          "text": "How Ethereum scales to mass adoption without sacrificing security",
           "audioUrl": "/audio/lessons/oc-ecosystem/2-5.mp3"
         },
         {
@@ -532,7 +532,7 @@
         {
           "id": "action_ce-s2_7",
           "type": "speech",
-          "text": "Before EIP-4844, L2s used calldata — expensive and permanent. After: fees dropped from dollars to cents. The target is 100,000 transactions per second via rollups — we're partway there.",
+          "text": "L2 cost = blob_data_size × blob_base_fee",
           "audioUrl": "/audio/lessons/oc-ecosystem/2-7.mp3"
         },
         {
@@ -543,7 +543,7 @@
         {
           "id": "action_ce-s2_9",
           "type": "speech",
-          "text": "100 times fee reduction — that's the real-world impact of the Dencun upgrade on L2 costs.",
+          "text": "EIP-4844 (Dencun, March 2024) introduced blob transactions — cheap, temporary calldata for L2s. . Before EIP-4844: L2 tx cost $0.30–$3.00. After EIP-4844: L2 tx cost $0.001–$0.01. . Blob data is pruned after ~18 days — only the commitment (hash) stays permanent. Target: Ethereum aims for 100,000+ tx/s via L2 rollups. Blobs are a major step toward that goal",
           "audioUrl": "/audio/lessons/oc-ecosystem/2-9.mp3"
         }
       ]
@@ -736,7 +736,7 @@
         {
           "id": "action_ce-s3_1",
           "type": "speech",
-          "text": "Not all rollups are built the same. The two dominant approaches — Optimistic and ZK — make fundamentally different security trade-offs.",
+          "text": "Rollup Types",
           "audioUrl": "/audio/lessons/oc-ecosystem/3-1.mp3"
         },
         {
@@ -747,7 +747,7 @@
         {
           "id": "action_ce-s3_3",
           "type": "speech",
-          "text": "One uses game theory, the other uses math. Both inherit Ethereum's security. Neither is strictly better.",
+          "text": "Optimistic vs ZK — the two dominant scaling approaches",
           "audioUrl": "/audio/lessons/oc-ecosystem/3-3.mp3"
         },
         {
@@ -758,7 +758,7 @@
         {
           "id": "action_ce-s3_5",
           "type": "speech",
-          "text": "Optimistic rollups assume transactions are valid unless challenged. They have a 7-day fraud proof window before finality. Cheaper to build, battle-tested. Arbitrum and Optimism are the dominant examples.",
+          "text": "Optimistic Rollups• Assume transactions are valid by default• 7-day challenge period for fraud proofs• Cheaper to run, simpler tech• Arbitrum, Optimism, Base• Withdrawal delay = 7 days to L1• Good for general smart contracts",
           "audioUrl": "/audio/lessons/oc-ecosystem/3-5.mp3"
         },
         {
@@ -769,7 +769,7 @@
         {
           "id": "action_ce-s3_7",
           "type": "speech",
-          "text": "ZK rollups provide a mathematical proof — a validity proof — for every state transition. Instant finality, no challenge period. More computationally expensive to generate proofs. zkSync and Starknet are leading examples.",
+          "text": "ZK Rollups• Mathematical proof of every state transition• Instant finality — no challenge period• More expensive to generate proofs• zkSync, StarkNet, Polygon zkEVM• Withdrawals are fast (minutes)• Better for privacy, payments",
           "audioUrl": "/audio/lessons/oc-ecosystem/3-7.mp3"
         }
       ]
@@ -907,7 +907,7 @@
         {
           "id": "action_ce-s4_1",
           "type": "speech",
-          "text": "Governance and stablecoins are two of the most underestimated risk vectors in crypto ecosystems.",
+          "text": "Governance & Stablecoins",
           "audioUrl": "/audio/lessons/oc-ecosystem/4-1.mp3"
         },
         {
@@ -918,7 +918,7 @@
         {
           "id": "action_ce-s4_3",
           "type": "speech",
-          "text": "Smart contracts can give token holders power — but flash loans can borrow that power for a single transaction.",
+          "text": "The two most underestimated risks in crypto ecosystems. On-Chain Governance RisksBeanstalk (2022): Attacker flash-loaned majority governance tokens, passed a malicious proposal, drained $182M — all in one transaction. . Fix: Time-locks on governance execution (give community time to veto). No governance execution in same block as proposal. . Voter apathy: Most token holders never vote → small groups control protocol decisions",
           "audioUrl": "/audio/lessons/oc-ecosystem/4-3.mp3"
         }
       ]
@@ -1056,7 +1056,7 @@
         {
           "id": "action_ce-s4_5",
           "type": "speech",
-          "text": "The Beanstalk exploit in 2022: an attacker flash-loaned majority governance tokens, passed a malicious proposal in a single transaction, and drained 182 million dollars. On-chain governance requires time delays and design safeguards to be secure.",
+          "text": "Governance & Stablecoins (Part B)",
           "audioUrl": "/audio/lessons/oc-ecosystem/5-1.mp3"
         },
         {
@@ -1067,7 +1067,7 @@
         {
           "id": "action_ce-s4_7",
           "type": "speech",
-          "text": "Stablecoin types: fiat-backed like USDC requires trust in the issuer but is the most reliable. Crypto-collateralized like DAI is decentralized but more complex. Algorithmic stablecoins like Luna have a history of catastrophic failure — the mechanism collapses in a death spiral under selling pressure.",
+          "text": "The two most underestimated risks in crypto ecosystems. Stablecoin Types & RisksFiat-backed (USDC, USDT): Centralized, requires trust in issuer. Regulated. Crypto-backed (DAI): Over-collateralized, can de-peg in cascades. Algorithmic (UST): Collapsed $40B in 2022 — no collateral, pure game theory. . Rule: Algo stablecoins are not stable. They are time-bombs waiting for a bank run",
           "audioUrl": "/audio/lessons/oc-ecosystem/5-3.mp3"
         }
       ]
@@ -1346,7 +1346,7 @@
         {
           "id": "action_ce-s5_1",
           "type": "speech",
-          "text": "Blockchain is past the 'theoretical use case' phase. Real adoption at scale is happening now.",
+          "text": "$7B+. RWA market",
           "audioUrl": "/audio/lessons/oc-ecosystem/6-1.mp3"
         },
         {
@@ -1357,7 +1357,7 @@
         {
           "id": "action_ce-s5_3",
           "type": "speech",
-          "text": "Real World Assets, institutional ETFs, and CBDCs — three adoption vectors you need to understand.",
+          "text": "Real-World Adoption",
           "audioUrl": "/audio/lessons/oc-ecosystem/6-3.mp3"
         },
         {
@@ -1368,7 +1368,7 @@
         {
           "id": "action_ce-s5_5",
           "type": "speech",
-          "text": "RWA tokenization: over 7 billion dollar market in 2024. BlackRock's BUIDL fund has tokenized over 500 million dollars in treasury bonds on-chain. Fractional ownership of real estate and private equity is following.",
+          "text": "Where blockchain is actually being used at scale today",
           "audioUrl": "/audio/lessons/oc-ecosystem/6-5.mp3"
         },
         {
@@ -1379,7 +1379,7 @@
         {
           "id": "action_ce-s5_7",
           "type": "speech",
-          "text": "Institutional entry: BlackRock's Bitcoin ETF surpassed 10 billion dollars in assets under management in its first year. This is traditional finance bringing trillions in potential capital to crypto rails.",
+          "text": "RWA Tokenization$7B+ market in 2024. BlackRock BUIDL fund: $500M+ tokenized treasuries. Fractional ownership of real estate, bonds, art. Settlement in seconds vs T+2",
           "audioUrl": "/audio/lessons/oc-ecosystem/6-7.mp3"
         },
         {
@@ -1390,7 +1390,7 @@
         {
           "id": "action_ce-s5_9",
           "type": "speech",
-          "text": "CBDCs: China's e-CNY has processed over 250 billion dollars. The EU digital euro targets 2026. The risk: programmable money can have spending restrictions built in — a significant civil liberties concern.",
+          "text": "Institutional EntryBlackRock Bitcoin ETF: $10B+ AUM in first year. Fidelity, VanEck, Franklin Templeton all launch products. CME futures volume > spot in 2024. CBDCsChina e-CNY: $250B+ transactions. EU digital euro: 2026 target. Privacy concern: programmable money can be censored, expired, geo-restricted",
           "audioUrl": "/audio/lessons/oc-ecosystem/6-9.mp3"
         }
       ]
@@ -1669,7 +1669,7 @@
         {
           "id": "action_ce-s6_1",
           "type": "speech",
-          "text": "Beyond DeFi and payments, crypto has spawned entirely new digital asset categories.",
+          "text": "Emerging Crypto Categories",
           "audioUrl": "/audio/lessons/oc-ecosystem/7-1.mp3"
         },
         {
@@ -1680,7 +1680,7 @@
         {
           "id": "action_ce-s6_3",
           "type": "speech",
-          "text": "NFTs, Web3 identity, decentralized physical infrastructure, and AI convergence — the emerging frontier.",
+          "text": "NFTs, Web3 identity, DePIN, and AI convergence",
           "audioUrl": "/audio/lessons/oc-ecosystem/7-3.mp3"
         },
         {
@@ -1691,7 +1691,7 @@
         {
           "id": "action_ce-s6_5",
           "type": "speech",
-          "text": "NFTs and digital ownership: ERC-721 tokens create unique, verifiable on-chain ownership. Gaming, digital art, and intellectual property rights are the current use cases. The speculation phase ended; the infrastructure remains.",
+          "text": "NFTs & Digital OwnershipERC-721 tokens: unique IDs on-chain. Ownership is public, transferable, programmable. Beyond JPEGs: event tickets, game items, music rights",
           "audioUrl": "/audio/lessons/oc-ecosystem/7-5.mp3"
         },
         {
@@ -1702,7 +1702,7 @@
         {
           "id": "action_ce-s6_7",
           "type": "speech",
-          "text": "Web3 identity: Ethereum Name Service gives you a human-readable wallet address like yourname.eth. Soulbound tokens — non-transferable credentials — enable on-chain reputation and verified achievements.",
+          "text": "Web3 IdentityENS (Ethereum Name Service): human-readable wallet addresses. Soulbound tokens: non-transferable credentials, degrees, reputation",
           "audioUrl": "/audio/lessons/oc-ecosystem/7-7.mp3"
         },
         {
@@ -1713,7 +1713,7 @@
         {
           "id": "action_ce-s6_9",
           "type": "speech",
-          "text": "DePIN — Decentralized Physical Infrastructure Networks: Helium for wireless, Render for GPU compute, Hivemapper for mapping. Token incentives coordinate real-world hardware deployment.",
+          "text": "DePINDecentralized Physical Infrastructure: Helium (wireless), Render (GPU compute), Hivemapper (maps). Token incentives build physical networks",
           "audioUrl": "/audio/lessons/oc-ecosystem/7-9.mp3"
         },
         {
@@ -1724,7 +1724,7 @@
         {
           "id": "action_ce-s6_11",
           "type": "speech",
-          "text": "AI plus crypto: compute markets like Bittensor let users sell ML model outputs. Zero-knowledge proofs of model runs can verify AI outputs without revealing the model. Agent economies are emerging where autonomous AI agents transact on-chain.",
+          "text": "AI + CryptoCompute markets (Bittensor), verifiable AI output (zk-proofs of model runs), agent economies paying each other in crypto",
           "audioUrl": "/audio/lessons/oc-ecosystem/7-11.mp3"
         }
       ]
@@ -1862,7 +1862,7 @@
         {
           "id": "action_ce-s7_1",
           "type": "speech",
-          "text": "Regulatory clarity is coming — faster in some jurisdictions than others. Understanding where the industry is heading helps you position appropriately.",
+          "text": "Regulation & The Big Picture",
           "audioUrl": "/audio/lessons/oc-ecosystem/8-1.mp3"
         },
         {
@@ -1873,7 +1873,7 @@
         {
           "id": "action_ce-s7_3",
           "type": "speech",
-          "text": "The US, EU, and Asia are taking different regulatory approaches. Knowing each matters for compliance and opportunity.",
+          "text": "Where crypto is heading and where OnlyCrypto fits in. Regulatory LandscapeUSA: SEC vs CFTC jurisdiction battle. ETF approval = milestone. Most tokens may be securities under Howey test. . EU: MiCA (Markets in Crypto-Assets) — comprehensive framework live 2024. Stablecoin issuers need banking license. . Pattern: Regulation follows adoption. Clear rules → institutional entry → mainstream adoption",
           "audioUrl": "/audio/lessons/oc-ecosystem/8-3.mp3"
         }
       ]
@@ -2011,7 +2011,7 @@
         {
           "id": "action_ce-s7_5",
           "type": "speech",
-          "text": "Regulatory landscape: in the US, the SEC and CFTC battle over jurisdiction. ETF approval was a milestone toward legitimacy. Most tokens may be classified as securities — which changes how they can be sold and held. MiCA in the EU provides clearer, more structured rules.",
+          "text": "Regulation & The Big Picture (Part B)",
           "audioUrl": "/audio/lessons/oc-ecosystem/9-1.mp3"
         },
         {
@@ -2022,7 +2022,7 @@
         {
           "id": "action_ce-s7_7",
           "type": "speech",
-          "text": "Where OnlyCrypto fits: every membership payment and commission runs on the XRPL — settled in 3 to 5 seconds for a fraction of a cent. This is financial infrastructure already built and running. This course is teaching you how to use it.",
+          "text": "Where crypto is heading and where OnlyCrypto fits in. Where OnlyCrypto FitsXRPL payments: settled in 3–5 seconds, $0.0002 fee — financial infrastructure at crypto speed. . Copy trading: access to professional strategies without managing keys or active trading. . Educator pool: sustainable model — members learn and earn simultaneously. . The platform runs on real infrastructure — not promises",
           "audioUrl": "/audio/lessons/oc-ecosystem/9-3.mp3"
         }
       ]
@@ -2311,7 +2311,7 @@
         {
           "id": "action_ce-s10_5",
           "type": "speech",
-          "text": "United States — the SEC treats most tokens as securities (Howey Test). Ongoing legal battles with major exchanges. Spot Bitcoin and Ethereum ETFs approved in 2024. European Union — MiCA (Markets in Crypto-Assets) regulation in effect from 2024. Clear framework for stablecoins and exchanges. Most comprehensive regulatory framework globally. Key insight: Regulatory clarity is bullish long-term — it enables institutional adoption and reduces the \"uncertainty tax\" on crypto valuations.",
+          "text": "United States — the SEC treats most tokens as securities (Howey Test). Ongoing legal battles with major exchanges. Spot Bitcoin and Ethereum ETFs approved in 2024. European Union — MiCA (Markets in Crypto-Assets) regulation in effect from 2024. Clear framework for stablecoins and exchanges. Most comprehensive regulatory framework globally. Key insight: Regulatory clarity is bullish long-term — it enables institutional adoption and reduces the \"uncertainty tax\" on crypto valuations",
           "audioUrl": "/audio/lessons/oc-ecosystem/11-5.mp3"
         },
         {
@@ -2620,7 +2620,7 @@
         {
           "id": "action_ce-s10b_5",
           "type": "speech",
-          "text": "The clearest near-term use case for crypto in traditional finance is cross-border payments . A wire transfer from the US to the Philippines costs 6–10% in fees and takes 3–5 days. The same transfer on XRP Ledger takes 3–5 seconds and costs fractions of a cent. Ripple's On-Demand Liquidity (ODL) already moves billions in payments for financial institutions. Stablecoins are being integrated into PayPal, Visa, and Mastercard settlement rails. The convergence is accelerating.",
+          "text": "The clearest near-term use case for crypto in traditional finance is cross-border payments. A wire transfer from the US to the Philippines costs 6–10% in fees and takes 3–5 days. The same transfer on XRP Ledger takes 3–5 seconds and costs fractions of a cent. Ripple's On-Demand Liquidity (ODL) already moves billions in payments for financial institutions. Stablecoins are being integrated into PayPal, Visa, and Mastercard settlement rails. The convergence is accelerating",
           "audioUrl": "/audio/lessons/oc-ecosystem/12-5.mp3"
         },
         {
@@ -2642,7 +2642,7 @@
         {
           "id": "action_ce-s10b_9",
           "type": "speech",
-          "text": "⚡ XRPL. 3-5 seconds, <$0.01 fees",
+          "text": "⚡ XRPL. 3-5 seconds,",
           "audioUrl": "/audio/lessons/oc-ecosystem/12-9.mp3"
         },
         {

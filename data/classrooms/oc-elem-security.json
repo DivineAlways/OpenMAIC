@@ -276,7 +276,7 @@
         {
           "id": "action_es-s1_5",
           "type": "speech",
-          "text": "In crypto, you are your own bank . That's amazing — but it also means if something goes wrong, there's no customer service to call. No refund button. No 'forgot password' email. That's why security is the #1 skill every crypto person must learn first.",
+          "text": "In crypto, you are your own bank. That's amazing — but it also means if something goes wrong, there's no customer service to call. No refund button. No 'forgot password' email. That's why security is the #1 skill every crypto person must learn first",
           "audioUrl": "/audio/lessons/oc-elem-security/0-5.mp3"
         },
         {
@@ -287,7 +287,7 @@
         {
           "id": "action_es-s1_7",
           "type": "speech",
-          "text": "🔑 Guard Your Keys Private key = your money. Lose it = lose everything.",
+          "text": "🔑Guard Your KeysPrivate key = your money. Lose it = lose everything",
           "audioUrl": "/audio/lessons/oc-elem-security/0-7.mp3"
         },
         {
@@ -298,7 +298,7 @@
         {
           "id": "action_es-s1_9",
           "type": "speech",
-          "text": "🧠 Think First Scammers are smart. One wrong click can empty your wallet.",
+          "text": "🧠Think FirstScammers are smart. One wrong click can empty your wallet",
           "audioUrl": "/audio/lessons/oc-elem-security/0-9.mp3"
         },
         {
@@ -309,7 +309,7 @@
         {
           "id": "action_es-s1_11",
           "type": "speech",
-          "text": "✅ Verify Always double-check addresses, websites, and senders.",
+          "text": "✅VerifyAlways double-check addresses, websites, and senders",
           "audioUrl": "/audio/lessons/oc-elem-security/0-11.mp3"
         },
         {
@@ -320,7 +320,7 @@
         {
           "id": "action_es-s1_13",
           "type": "speech",
-          "text": "📚 Keep Learning New scams appear daily. Staying informed is your best defense.",
+          "text": "📚Keep LearningNew scams appear daily. Staying informed is your best defense",
           "audioUrl": "/audio/lessons/oc-elem-security/0-13.mp3"
         }
       ],
@@ -585,7 +585,7 @@
         {
           "id": "action_es-s2_5",
           "type": "speech",
-          "text": "🎁 Giveaway Scam: Fake celebrity says 'Send 1 BTC, get 2 back!' — it's always a lie. &nbsp; 🎣 Phishing: Fake website that looks real — one typo in the URL and your login is stolen. &nbsp; 💌 Fake Support: 'Support' DMs asking for your seed phrase — real support NEVER does this. &nbsp; 📈 Pump & Dump: G...",
+          "text": "🎁 Giveaway Scam: Fake celebrity says 'Send 1 BTC, get 2 back!' — it's always a lie. &nbsp; 🎣 Phishing: Fake website that looks real — one typo in the URL and your login is stolen. &nbsp; 💌 Fake Support: 'Support' DMs asking for your seed phrase — real support NEVER does this. &nbsp; 📈 Pump & Dump: Group hypes a coin, price spikes, they sell, you lose",
           "audioUrl": "/audio/lessons/oc-elem-security/1-5.mp3"
         },
         {
@@ -596,7 +596,7 @@
         {
           "id": "action_es-s2_7",
           "type": "speech",
-          "text": "🎁 Giveaway Scam Nobody ever doubles your crypto",
+          "text": "🎁Giveaway ScamNobody ever doubles your crypto",
           "audioUrl": "/audio/lessons/oc-elem-security/1-7.mp3"
         },
         {
@@ -607,7 +607,7 @@
         {
           "id": "action_es-s2_9",
           "type": "speech",
-          "text": "🎣 Phishing Sites Fake sites steal your login",
+          "text": "🎣Phishing SitesFake sites steal your login",
           "audioUrl": "/audio/lessons/oc-elem-security/1-9.mp3"
         },
         {
@@ -618,7 +618,7 @@
         {
           "id": "action_es-s2_11",
           "type": "speech",
-          "text": "💌 Fake DM Support Real support never asks for seed phrase",
+          "text": "💌Fake DM SupportReal support never asks for seed phrase",
           "audioUrl": "/audio/lessons/oc-elem-security/1-11.mp3"
         },
         {
@@ -629,7 +629,7 @@
         {
           "id": "action_es-s2_13",
           "type": "speech",
-          "text": "📈 Pump & Dump Hype coin, spike, crash — you hold the loss",
+          "text": "📈Pump & DumpHype coin, spike, crash — you hold the loss",
           "audioUrl": "/audio/lessons/oc-elem-security/1-13.mp3"
         }
       ],
@@ -895,7 +895,7 @@
         {
           "id": "action_es2-s4_5",
           "type": "speech",
-          "text": "Phishing is when a scammer pretends to be a trusted service — MetaMask, Coinbase, a DeFi protocol — to trick you into entering your seed phrase or private key on a fake website. Common forms: fake emails, fake Discord support DMs, Google ads pointing to copycat sites. A real wallet or exchange will NEVER ask for your seed phrase. Ever. If someone asks — it is a scam 100% of the time.",
+          "text": "Phishing is when a scammer pretends to be a trusted service — MetaMask, Coinbase, a DeFi protocol — to trick you into entering your seed phrase or private key on a fake website. Common forms: fake emails, fake Discord support DMs, Google ads pointing to copycat sites. A real wallet or exchange will NEVER ask for your seed phrase. Ever. If someone asks — it is a scam 100% of the time",
           "audioUrl": "/audio/lessons/oc-elem-security/2-5.mp3"
         },
         {
@@ -1204,7 +1204,7 @@
         {
           "id": "action_es2-s5_5",
           "type": "speech",
-          "text": "Fake Giveaways — \"Send 1 ETH, receive 2 ETH back.\" It is always a scam. Elon Musk, Vitalik, and Coinbase have all been impersonated this way. Nobody is giving away free crypto. Rug Pulls — a team creates a new token, hypes it up, raises money — then disappears with all the funds. The token becomes worthless overnight. Over $2 billion was lost to rug pulls in 2021 alone.",
+          "text": "Fake Giveaways — \"Send 1 ETH, receive 2 ETH back.\" It is always a scam. Elon Musk, Vitalik, and Coinbase have all been impersonated this way. Nobody is giving away free crypto. Rug Pulls — a team creates a new token, hypes it up, raises money — then disappears with all the funds. The token becomes worthless overnight. Over $2 billion was lost to rug pulls in 2021 alone",
           "audioUrl": "/audio/lessons/oc-elem-security/3-5.mp3"
         },
         {
@@ -1513,7 +1513,7 @@
         {
           "id": "action_es2-s6_5",
           "type": "speech",
-          "text": "Social engineering uses psychology rather than hacking. Scammers build trust over weeks, create urgency, or exploit emotions to get you to make a mistake. Common tactics: romance scams (fake relationships that end with a request to invest), fake job offers, \"investment managers\" promising guaranteed returns.",
+          "text": "Social engineering uses psychology rather than hacking. Scammers build trust over weeks, create urgency, or exploit emotions to get you to make a mistake. Common tactics: romance scams (fake relationships that end with a request to invest), fake job offers, \"investment managers\" promising guaranteed returns",
           "audioUrl": "/audio/lessons/oc-elem-security/4-5.mp3"
         },
         {

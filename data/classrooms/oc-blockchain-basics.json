@@ -275,7 +275,7 @@
         {
           "id": "action_bb-s1_1",
           "type": "speech",
-          "text": "Welcome to Blockchain Basics. In this first lesson we're asking: what exactly IS a blockchain?",
+          "text": "17K+. Nodes",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/0-1.mp3"
         },
         {
@@ -286,7 +286,7 @@
         {
           "id": "action_bb-s1_3",
           "type": "speech",
-          "text": "A blockchain is a cryptographically linked, append-only distributed ledger — let's break each of those words down.",
+          "text": "600 GB. Chain size",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/0-3.mp3"
         },
         {
@@ -297,7 +297,7 @@
         {
           "id": "action_bb-s1_5",
           "type": "speech",
-          "text": "The core structure: every block contains the previous block's hash — that's the cryptographic link — plus a Merkle root representing all the transactions inside it.",
+          "text": "What Is a Blockchain?",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/0-5.mp3"
         },
         {
@@ -308,7 +308,7 @@
         {
           "id": "action_bb-s1_7",
           "type": "speech",
-          "text": "And why does this matter? Bitcoin alone has 17 thousand nodes worldwide. There is no CEO, no server you can shut down. The network is the bank.",
+          "text": "A cryptographically linked, append-only distributed ledger",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/0-7.mp3"
         },
         {
@@ -319,7 +319,7 @@
         {
           "id": "action_bb-s1_9",
           "type": "speech",
-          "text": "Over 17,000 nodes secure the Bitcoin network right now.",
+          "text": "The Core StructureEach block contains:. • Previous block's hash (linking the chain). • Merkle root of all transactions. • Timestamp + nonce. . Changing block N invalidates every block after it — an attacker must redo all downstream proof-of-work",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/0-9.mp3"
         },
         {
@@ -330,7 +330,7 @@
         {
           "id": "action_bb-s1_11",
           "type": "speech",
-          "text": "The Bitcoin chain is over 600 gigabytes and still growing — that's the full history of every transaction since 2009.",
+          "text": "Why It MattersBitcoin: ~17,000 nodes worldwide. No CEO, no server to shut down. . Throughput reality:. • Bitcoin: 7 tx/s. • Ethereum L1: ~15 tx/s. • Visa: ~24,000 tx/s. . This gap is why Layer 2 networks exist",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/0-11.mp3"
         }
       ]
@@ -486,7 +486,7 @@
         {
           "id": "action_bb-s2_1",
           "type": "speech",
-          "text": "Cryptographic hash functions are the foundation of blockchain security.",
+          "text": "Cryptographic Hash Functions",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/1-1.mp3"
         },
         {
@@ -497,7 +497,7 @@
         {
           "id": "action_bb-s2_3",
           "type": "speech",
-          "text": "SHA-256 is a one-way mathematical trap — easy to compute forward, essentially impossible to reverse.",
+          "text": "The one-way mathematical trap that makes blockchain tamper-proof",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/1-3.mp3"
         },
         {
@@ -508,7 +508,7 @@
         {
           "id": "action_bb-s2_5",
           "type": "speech",
-          "text": "SHA-256 takes any input and produces a fixed 256-bit digest. Same input always gives the same output. Different input gives a completely different output.",
+          "text": "SHA-256(input) → 256-bit digest",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/1-5.mp3"
         },
         {
@@ -519,7 +519,7 @@
         {
           "id": "action_bb-s2_7",
           "type": "speech",
-          "text": "Three key properties: pre-image resistant — you can't reverse it. Collision resistant — two different inputs don't give the same hash. And the avalanche effect — change one character and about 50% of the output bits flip.",
+          "text": "Pre-image resistant · Collision resistant · Avalanche effect. . Change one character → ~50% of output bits flip. This is why any tampering is immediately detectable",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/1-7.mp3"
         },
         {
@@ -530,7 +530,7 @@
         {
           "id": "action_bb-s2_9",
           "type": "speech",
-          "text": "One important note for the future: quantum computers running Grover's algorithm would effectively halve the security of SHA-256. That's why 256-bit gives 128-bit quantum security — still considered safe.",
+          "text": "Quantum note: Grover's algorithm halves the effective security — 256-bit SHA-256 gives 128-bit quantum security, still considered safe",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/1-9.mp3"
         }
       ]
@@ -842,7 +842,7 @@
         {
           "id": "action_bb-s3_1",
           "type": "speech",
-          "text": "Merkle trees solve a critical problem: how do you prove a transaction is in a block without downloading the entire block?",
+          "text": "log₂N. Proof size",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/2-1.mp3"
         },
         {
@@ -853,7 +853,7 @@
         {
           "id": "action_bb-s3_3",
           "type": "speech",
-          "text": "With just a few hashes — specifically log base 2 of N hashes — you can prove any transaction's inclusion.",
+          "text": "Merkle Trees — Efficient Verification",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/2-3.mp3"
         },
         {
@@ -864,7 +864,7 @@
         {
           "id": "action_bb-s3_5",
           "type": "speech",
-          "text": "Step one: a block can contain thousands of transactions. Way too large to transmit entirely to every device.",
+          "text": "Prove a transaction exists with just a few hashes",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/2-5.mp3"
         },
         {
@@ -875,7 +875,7 @@
         {
           "id": "action_bb-s3_7",
           "type": "speech",
-          "text": "Step two: hash pairs of transactions repeatedly until you're left with a single root hash — the Merkle root.",
+          "text": "Transactions1,000s of transactions in a block — too large to transmit fully",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/2-7.mp3"
         },
         {
@@ -886,7 +886,7 @@
         {
           "id": "action_bb-s3_9",
           "type": "speech",
-          "text": "Step three: only 32 bytes — the Merkle root — gets stored in the block header. It represents ALL transactions.",
+          "text": "Pair & HashHash pairs repeatedly up a binary tree until one root hash remains",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/2-9.mp3"
         },
         {
@@ -897,7 +897,7 @@
         {
           "id": "action_bb-s3_11",
           "type": "speech",
-          "text": "Step four: to prove your transaction is included, you only need log N hashes along the path to the root. For a million transactions, that's just 20 hashes.",
+          "text": "Merkle RootOnly 32 bytes stored in the block header — represents all transactions. Proof PathProve any tx is included with just log₂(N) hashes — no full block needed",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/2-11.mp3"
         }
       ]
@@ -1090,7 +1090,7 @@
         {
           "id": "action_bb-s4_1",
           "type": "speech",
-          "text": "How does a blockchain network agree on what happened? That's the consensus problem.",
+          "text": "Consensus: Proof-of-Work vs Proof-of-Stake",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/3-1.mp3"
         },
         {
@@ -1101,7 +1101,7 @@
         {
           "id": "action_bb-s4_3",
           "type": "speech",
-          "text": "Two dominant approaches: Proof of Work and Proof of Stake. Fundamentally different answers to the same trust question.",
+          "text": "Two fundamentally different answers to the same question",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/3-3.mp3"
         },
         {
@@ -1112,7 +1112,7 @@
         {
           "id": "action_bb-s4_5",
           "type": "speech",
-          "text": "Proof of Work: energy is the security cost. You can't fake burning electricity. Miners compete on hash rate, and difficulty adjusts every two weeks to maintain 10-minute blocks.",
+          "text": "⛏ Proof of Work• Energy = security cost (unforgeable)• Miners compete on hash rate• Difficulty adjusts every 2016 blocks• Attack cost = 51% of global hashrate• 700 exahashes/sec on Bitcoin• Proven 15-year security record",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/3-5.mp3"
         },
         {
@@ -1123,7 +1123,7 @@
         {
           "id": "action_bb-s4_7",
           "type": "speech",
-          "text": "Proof of Stake: collateral replaces energy. Validators stake ETH and can be 'slashed' — lose their stake — if they try to cheat. The economic incentive IS the security.",
+          "text": "🪙 Proof of Stake• Collateral = security cost• Validators chosen by stake weight• Slashing destroys dishonest stake• Attack cost = 1/3 of all staked ETH• ~$24B at stake on Ethereum• 90%+ energy reduction vs PoW",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/3-7.mp3"
         }
       ]
@@ -1312,7 +1312,7 @@
         {
           "id": "action_bb-s5_1",
           "type": "speech",
-          "text": "Byzantine Fault Tolerance asks: how many dishonest participants can a network tolerate before it breaks?",
+          "text": "80%. XRPL threshold",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/4-1.mp3"
         },
         {
@@ -1323,7 +1323,7 @@
         {
           "id": "action_bb-s5_3",
           "type": "speech",
-          "text": "Named after a famous 1982 computer science paper — every blockchain consensus mechanism is solving a version of this problem.",
+          "text": "Byzantine Fault Tolerance",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/4-3.mp3"
         },
         {
@@ -1334,7 +1334,7 @@
         {
           "id": "action_bb-s5_5",
           "type": "speech",
-          "text": "The math: to tolerate F traitors, you need 3F plus 1 honest nodes. One bad actor? You need 4 total. 100 bad actors? You need 301.",
+          "text": "How blockchains achieve agreement despite dishonest participants",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/4-5.mp3"
         },
         {
@@ -1345,7 +1345,7 @@
         {
           "id": "action_bb-s5_7",
           "type": "speech",
-          "text": "Bitcoin solves this probabilistically through hash power — making it economically irrational to attack. XRPL uses a different approach with trusted validator lists.",
+          "text": "Need: 3f + 1 honest nodes to tolerate f traitors",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/4-7.mp3"
         },
         {
@@ -1356,7 +1356,7 @@
         {
           "id": "action_bb-s5_9",
           "type": "speech",
-          "text": "XRPL requires 80% of trusted validators to agree before a ledger closes. This is higher than Bitcoin's 51% threshold.",
+          "text": "With 1 traitor you need 4 total — with 100 traitors you need 301 total. . Bitcoin solves this probabilistically with PoW. XRPL solves it with 80% trusted-validator threshold. Named after the 1982 Lamport, Shostak & Pease paper. Every blockchain consensus is solving a variant of this problem",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/4-9.mp3"
         }
       ]
@@ -1602,7 +1602,7 @@
         {
           "id": "action_bb-s6_1",
           "type": "speech",
-          "text": "The blockchain trilemma is one of the most important concepts in the space. Every blockchain picks two out of three — and no one has fully solved all three yet.",
+          "text": "The Blockchain Trilemma",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/5-1.mp3"
         },
         {
@@ -1613,7 +1613,7 @@
         {
           "id": "action_bb-s6_3",
           "type": "speech",
-          "text": "Security, scalability, and decentralization — the impossible triangle.",
+          "text": "Every blockchain picks two — no one has solved all three yet",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/5-3.mp3"
         },
         {
@@ -1624,7 +1624,7 @@
         {
           "id": "action_bb-s6_5",
           "type": "speech",
-          "text": "Security: resistant to 51% attacks, double-spends, and Sybil attacks. Bitcoin and Ethereum both prioritize this above the other two.",
+          "text": "🔒 SecurityResistant to 51% attacks, double-spend, Sybil attacks. Bitcoin and Ethereum both prioritize this — compromise here risks everything",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/5-5.mp3"
         },
         {
@@ -1635,7 +1635,7 @@
         {
           "id": "action_bb-s6_7",
           "type": "speech",
-          "text": "Scalability: high transactions per second with low fees. Achieved via sharding, rollups, or simply larger blocks — each comes with trade-offs.",
+          "text": "⚡ ScalabilityHigh transactions per second with low fees. Achieved via sharding, rollups, or larger blocks. Ethereum targets 100K+ tx/s via L2 rollups",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/5-7.mp3"
         },
         {
@@ -1646,7 +1646,7 @@
         {
           "id": "action_bb-s6_9",
           "type": "speech",
-          "text": "Decentralization: no single control point. More nodes equals more resilience. Bitcoin's 17 thousand nodes make it essentially uncensorable — but slow.",
+          "text": "🌐 DecentralizationNo single control point. More nodes = more resilient. Bitcoin's 17K+ nodes make it uncensorable — but slower",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/5-9.mp3"
         }
       ]
@@ -1843,7 +1843,7 @@
         {
           "id": "action_bb-s7_1",
           "type": "speech",
-          "text": "Smart contracts are self-executing code deployed to Ethereum that runs exactly as written — forever.",
+          "text": "Smart Contracts & the EVM",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/6-1.mp3"
         },
         {
@@ -1854,7 +1854,7 @@
         {
           "id": "action_bb-s7_3",
           "type": "speech",
-          "text": "No CEO can change them, no government can stop them. That's both the power and the risk.",
+          "text": "Self-executing code that no one can stop — or fix",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/6-3.mp3"
         },
         {
@@ -1865,7 +1865,7 @@
         {
           "id": "action_bb-s7_5",
           "type": "speech",
-          "text": "What is a smart contract? It's code on the Ethereum blockchain. Once deployed, it runs autonomously. If the code has a bug — like the DAO hack in 2016 — there's no customer support line.",
+          "text": "What Is a Smart Contract?Code deployed to Ethereum that runs exactly as written — forever. No CEO can modify it. No server can shut it down. . Once deployed, the contract is immutable. This is both the power and the danger. . The DAO hack (2016): $60M stolen from immutable code",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/6-5.mp3"
         },
         {
@@ -1876,7 +1876,7 @@
         {
           "id": "action_bb-s7_7",
           "type": "speech",
-          "text": "The gas system is Ethereum's metering mechanism. Every computation costs gas — this prevents infinite loops and denial-of-service attacks. EIP-1559 introduced a base fee that gets burned, making ETH deflationary during high usage.",
+          "text": "The Gas SystemEvery computation costs gas — prevents infinite loops and DoS. . EIP-1559 (Aug 2021):. • Base fee burned permanently. • 3.5M+ ETH destroyed since launch. • ETH becomes deflationary under high demand. . Gas price = Base Fee + Priority Tip",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/6-7.mp3"
         }
       ]
@@ -2143,7 +2143,7 @@
         {
           "id": "action_cbb-s10_1",
           "type": "speech",
-          "text": "🏛️ Decentralization vs Scalability Trilemma — Advanced",
+          "text": "🏛️ Decentralization vs Scalability Trilemma",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/8-1.mp3"
         },
         {
@@ -2155,7 +2155,7 @@
         {
           "id": "action_cbb-s10_3",
           "type": "speech",
-          "text": "The engineering constraints every blockchain designer faces",
+          "text": "Advanced consensus design — College Level",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/8-3.mp3"
         },
         {
@@ -2166,7 +2166,7 @@
         {
           "id": "action_cbb-s10_5",
           "type": "speech",
-          "text": "At the protocol design level, the trilemma is not just conceptual — it is a mathematical constraint . Increasing validator count improves decentralization but increases consensus communication overhead (O(n²) for naive BFT). Sharding improves scalability but introduces cross-shard attack surfaces. XRPL's RPCA achieves high throughput with a small, trusted validator set — trading some decentralization for speed. Ethereum's sharding roadmap attempts to preserve decentralization while improving scalability via L2 rollups.",
+          "text": "At the protocol design level, the trilemma is not just conceptual — it is a mathematical constraint. Increasing validator count improves decentralization but increases consensus communication overhead (O(n²) for naive BFT). Sharding improves scalability but introduces cross-shard attack surfaces. XRPL's RPCA achieves high throughput with a small, trusted validator set — trading some decentralization for speed. Ethereum's sharding roadmap attempts to preserve decentralization while improving scalability via L2 rollups",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/8-5.mp3"
         },
         {
@@ -2475,7 +2475,7 @@
         {
           "id": "action_cbb-s11_5",
           "type": "speech",
-          "text": "Hash functions (SHA-256, Keccak-256) convert any input to a fixed-length output. Deterministic, one-way, collision-resistant. Digital signatures (secp256k1 ECDSA) prove ownership without revealing the private key. When you sign a transaction, you prove you own the key without ever exposing it. The network can verify the signature using only your public key.",
+          "text": "Hash functions (SHA-256, Keccak-256) convert any input to a fixed-length output. Deterministic, one-way, collision-resistant. Digital signatures (secp256k1 ECDSA) prove ownership without revealing the private key. When you sign a transaction, you prove you own the key without ever exposing it. The network can verify the signature using only your public key",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/9-5.mp3"
         },
         {

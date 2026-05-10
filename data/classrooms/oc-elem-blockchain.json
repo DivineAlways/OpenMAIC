@@ -276,7 +276,7 @@
         {
           "id": "action_eb-s1_5",
           "type": "speech",
-          "text": "Imagine you and all your friends have the exact same notebook. Every time someone writes something new, everyone's notebook automatically gets the same update . And nobody — not even a teacher — can erase what's already written! That is a blockchain. Thousands of computers around the world all share...",
+          "text": "Imagine you and all your friends have the exact same notebook. Every time someone writes something new, everyone's notebook automatically gets the same update. And nobody — not even a teacher — can erase what's already written!. That is a blockchain. Thousands of computers around the world all share the same digital notebook at once",
           "audioUrl": "/audio/lessons/oc-elem-blockchain/0-5.mp3"
         },
         {
@@ -287,7 +287,7 @@
         {
           "id": "action_eb-s1_7",
           "type": "speech",
-          "text": "📓 Shared Everyone has a copy",
+          "text": "📓 Shared. Everyone has a copy",
           "audioUrl": "/audio/lessons/oc-elem-blockchain/0-7.mp3"
         },
         {
@@ -298,7 +298,7 @@
         {
           "id": "action_eb-s1_9",
           "type": "speech",
-          "text": "🔒 Can't Be Erased Once written, it stays",
+          "text": "🔒 Can't Be Erased. Once written, it stays",
           "audioUrl": "/audio/lessons/oc-elem-blockchain/0-9.mp3"
         },
         {
@@ -309,7 +309,7 @@
         {
           "id": "action_eb-s1_11",
           "type": "speech",
-          "text": "🌍 No Boss No one controls it",
+          "text": "🌍 No Boss. No one controls it",
           "audioUrl": "/audio/lessons/oc-elem-blockchain/0-11.mp3"
         },
         {
@@ -320,7 +320,7 @@
         {
           "id": "action_eb-s1_13",
           "type": "speech",
-          "text": "👀 Open Anyone can read it",
+          "text": "👀 Open. Anyone can read it",
           "audioUrl": "/audio/lessons/oc-elem-blockchain/0-13.mp3"
         }
       ],
@@ -621,7 +621,7 @@
         {
           "id": "action_eb-s2_5",
           "type": "speech",
-          "text": "Every time a bunch of transactions happen, they get bundled into one block . That block gets a special code called a hash — like a fingerprint — then gets added to the end of the chain.",
+          "text": "Every time a bunch of transactions happen, they get bundled into one block. That block gets a special code called a hash — like a fingerprint — then gets added to the end of the chain",
           "audioUrl": "/audio/lessons/oc-elem-blockchain/1-5.mp3"
         },
         {
@@ -632,7 +632,7 @@
         {
           "id": "action_eb-s2_7",
           "type": "speech",
-          "text": "Block 1 📦 Transactions 🔑 Code: #A1B2",
+          "text": "Block 1📦 Transactions. 🔑 Code: #A1B2",
           "audioUrl": "/audio/lessons/oc-elem-blockchain/1-7.mp3"
         },
         {
@@ -643,7 +643,7 @@
         {
           "id": "action_eb-s2_9",
           "type": "speech",
-          "text": "Block 2 📦 Transactions 🔑 Code: #C3D4",
+          "text": "Block 2📦 Transactions. 🔑 Code: #C3D4",
           "audioUrl": "/audio/lessons/oc-elem-blockchain/1-9.mp3"
         },
         {
@@ -654,7 +654,7 @@
         {
           "id": "action_eb-s2_11",
           "type": "speech",
-          "text": "Block 3 📦 Transactions 🔑 Code: #E5F6",
+          "text": "Block 3📦 Transactions. 🔑 Code: #E5F6",
           "audioUrl": "/audio/lessons/oc-elem-blockchain/1-11.mp3"
         },
         {
@@ -944,7 +944,7 @@
         {
           "id": "action_eb-s3_5",
           "type": "speech",
-          "text": "Before blockchain, if you wanted to send money abroad, you had to trust a bank. The bank could make mistakes, charge big fees, or even freeze your money. Blockchain lets people send money directly — no bank needed .",
+          "text": "Before blockchain, if you wanted to send money abroad, you had to trust a bank. The bank could make mistakes, charge big fees, or even freeze your money. Blockchain lets people send money directly — no bank needed",
           "audioUrl": "/audio/lessons/oc-elem-blockchain/2-5.mp3"
         },
         {
@@ -966,7 +966,7 @@
         {
           "id": "action_eb-s3_9",
           "type": "speech",
-          "text": "✗ Bank controls your money ✗ Can reject you ✗ Charges big fees ✗ Can freeze your account ✗ Takes days to send abroad",
+          "text": "⚡ New Way (Blockchain)",
           "audioUrl": "/audio/lessons/oc-elem-blockchain/2-9.mp3"
         },
         {
@@ -977,7 +977,7 @@
         {
           "id": "action_eb-s3_11",
           "type": "speech",
-          "text": "⚡ New Way (Blockchain)",
+          "text": "🔗 OnlyCryptoRuns on XRP Ledger — a blockchain that settles in 3-5 seconds with nearly zero fees. Payouts go directly to your wallet, automatically",
           "audioUrl": "/audio/lessons/oc-elem-blockchain/2-11.mp3"
         },
         {
@@ -988,7 +988,7 @@
         {
           "id": "action_eb-s3_13",
           "type": "speech",
-          "text": "✓ You control your money ✓ Anyone can use it ✓ Tiny or zero fees ✓ Nobody can freeze it ✓ Transfers in seconds",
+          "text": "✗ Bank controls your money. ✗ Can reject you. ✗ Charges big fees. ✗ Can freeze your account. ✗ Takes days to send abroad",
           "audioUrl": "/audio/lessons/oc-elem-blockchain/2-13.mp3"
         },
         {
@@ -999,7 +999,7 @@
         {
           "id": "action_eb-s3_15",
           "type": "speech",
-          "text": "🔗 OnlyCrypto Runs on XRP Ledger — a blockchain that settles in 3-5 seconds with nearly zero fees. Payouts go directly to your wallet, automatically.",
+          "text": "✓ You control your money. ✓ Anyone can use it. ✓ Tiny or zero fees. ✓ Nobody can freeze it. ✓ Transfers in seconds",
           "audioUrl": "/audio/lessons/oc-elem-blockchain/2-15.mp3"
         }
       ],
@@ -1265,7 +1265,7 @@
         {
           "id": "action_eb-s5_5",
           "type": "speech",
-          "text": "A ledger is just a record book. Banks have always used ledgers to track who has what money. The problem? You have to trust the bank not to change the records. Blockchain replaces the bank's private ledger with a public ledger that thousands of computers all hold at once. No single person controls it — so no one can cheat.",
+          "text": "A ledger is just a record book. Banks have always used ledgers to track who has what money. The problem? You have to trust the bank not to change the records. Blockchain replaces the bank's private ledger with a public ledger that thousands of computers all hold at once. No single person controls it — so no one can cheat",
           "audioUrl": "/audio/lessons/oc-elem-blockchain/3-5.mp3"
         },
         {
@@ -1574,7 +1574,7 @@
         {
           "id": "action_eb-s6_5",
           "type": "speech",
-          "text": "A node is any computer that participates in the blockchain network. Right now, there are thousands of nodes around the world running Bitcoin and Ethereum software 24 hours a day. Validators are special nodes that check transactions and confirm they are valid before adding them to the chain. They are the referees of the network — and they earn crypto rewards for doing it right.",
+          "text": "A node is any computer that participates in the blockchain network. Right now, there are thousands of nodes around the world running Bitcoin and Ethereum software 24 hours a day. Validators are special nodes that check transactions and confirm they are valid before adding them to the chain. They are the referees of the network — and they earn crypto rewards for doing it right",
           "audioUrl": "/audio/lessons/oc-elem-blockchain/4-5.mp3"
         },
         {
@@ -1883,7 +1883,7 @@
         {
           "id": "action_eb-s7_5",
           "type": "speech",
-          "text": "Each block contains a batch of transactions, a timestamp, and — crucially — a fingerprint of the previous block . This fingerprint is called a hash. Because every block references the one before it, changing any old block would break every block that came after it . The entire network would immediately reject the fake version. That is what makes blockchain immutable — it cannot be secretly changed.",
+          "text": "Each block contains a batch of transactions, a timestamp, and — crucially — a fingerprint of the previous block. This fingerprint is called a hash. Because every block references the one before it, changing any old block would break every block that came after it. The entire network would immediately reject the fake version. That is what makes blockchain immutable — it cannot be secretly changed",
           "audioUrl": "/audio/lessons/oc-elem-blockchain/5-5.mp3"
         },
         {
@@ -2192,7 +2192,7 @@
         {
           "id": "action_eb-s8_5",
           "type": "speech",
-          "text": "Proof of Work (PoW) — used by Bitcoin. Computers compete to solve a hard math puzzle. The winner adds the next block and earns a reward. Uses lots of energy. Proof of Stake (PoS) — used by Ethereum. Validators lock up (stake) their crypto as a promise to be honest. Cheating means losing their stake. Much more energy efficient. Both systems ensure that it is extremely expensive to attack the network.",
+          "text": "Proof of Work (PoW) — used by Bitcoin. Computers compete to solve a hard math puzzle. The winner adds the next block and earns a reward. Uses lots of energy. Proof of Stake (PoS) — used by Ethereum. Validators lock up (stake) their crypto as a promise to be honest. Cheating means losing their stake. Much more energy efficient. Both systems ensure that it is extremely expensive to attack the network",
           "audioUrl": "/audio/lessons/oc-elem-blockchain/6-5.mp3"
         },
         {
