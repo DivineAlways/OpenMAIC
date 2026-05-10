@@ -494,7 +494,7 @@
           "id": "action_hs-wl-s1_9",
           "type": "speech",
           "text": "The public key is mathematically derived from your private key using elliptic curve multiplication — secp256k1. It's safe to share. You cannot reverse-engineer the private key from it.",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/0-9.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/1-1.mp3"
         },
         {
           "id": "action_hs-wl-s1_10",
@@ -505,7 +505,7 @@
           "id": "action_hs-wl-s1_11",
           "type": "speech",
           "text": "The wallet address is a hashed and encoded version of your public key — shorter and easier to work with. This is what you share to receive funds. Completely safe to post publicly.",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/0-11.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/1-3.mp3"
         },
         {
           "id": "action_hs-wl-s1_12",
@@ -516,7 +516,7 @@
           "id": "action_hs-wl-s1_13",
           "type": "speech",
           "text": "Hot wallets are online — convenient for small amounts, but exposed to the internet. Cold wallets like Ledger keep your keys completely offline — the key never touches the internet even when signing transactions. Custodial wallets are when an exchange holds your keys — you own IOUs, not real crypto. FTX's collapse proved exactly how dangerous that is.",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/0-13.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/1-5.mp3"
         },
         {
           "id": "action_hs-wl-s1_14",
@@ -527,7 +527,7 @@
           "id": "action_hs-wl-s1_15",
           "type": "speech",
           "text": "OnlyCrypto payouts go directly to your wallet address on XRPL. Always use a non-custodial wallet you control. If using an exchange address, make sure to include the destination tag or your funds may be lost.",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/0-15.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/1-7.mp3"
         }
       ]
     },
@@ -748,7 +748,7 @@
           "id": "action_hs-wl-s2_1",
           "type": "speech",
           "text": "Wallet Attack Vectors and Security Checklist",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/1-1.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/2-1.mp3"
         },
         {
           "id": "action_hs-wl-s2_2",
@@ -759,7 +759,7 @@
           "id": "action_hs-wl-s2_3",
           "type": "speech",
           "text": "Seed phrase phishing: Fake recovery sites or support agents ask for your seed phrase. No legitimate app, support team, or website ever needs it. Anyone who asks is an attacker. Full stop.",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/1-3.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/2-3.mp3"
         },
         {
           "id": "action_hs-wl-s2_4",
@@ -770,7 +770,7 @@
           "id": "action_hs-wl-s2_5",
           "type": "speech",
           "text": "Clipboard hijacking: Malware silently swaps the wallet address you copied with the attacker's address. You paste, you don't notice, you confirm — and your funds go to the wrong place. Always verify the first and last four characters of every pasted address before sending.",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/1-5.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/2-5.mp3"
         }
       ]
     },
@@ -904,7 +904,7 @@
           "id": "action_hs-wl-s2_7",
           "type": "speech",
           "text": "Fake wallet apps: Cloned apps in app stores steal your seed phrase during the setup process. Only download wallet apps from the official project website — never trust app store search results alone for wallets.",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/1-7.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/3-1.mp3"
         },
         {
           "id": "action_hs-wl-s2_8",
@@ -915,7 +915,7 @@
           "id": "action_hs-wl-s2_9",
           "type": "speech",
           "text": "Unlimited token approvals: When you connect to a DeFi app, it can request unlimited permission to spend your tokens. Malicious contracts use this to drain your wallet in a single transaction. Never approve unlimited amounts — approve only the exact amount you need.",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/1-9.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/3-3.mp3"
         },
         {
           "id": "action_hs-wl-s2_10",
@@ -926,7 +926,7 @@
           "id": "action_hs-wl-s2_11",
           "type": "speech",
           "text": "Security checklist: Seed phrase written on paper, stored offline, never photographed or typed digitally. Never shared with anyone — ever. Non-custodial wallet for OnlyCrypto payouts. Verified pasted addresses character by character. Hardware wallet for amounts over one thousand dollars. Revoked unused DeFi approvals at revoke.cash. Downloaded wallets only from official websites.",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/1-11.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/3-5.mp3"
         }
       ]
     },
@@ -1169,7 +1169,7 @@
           "id": "action_hw-s4_1",
           "type": "speech",
           "text": "🧊 Cold vs Hot Wallets",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/2-1.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/4-1.mp3"
         },
         {
           "id": "action_hw-s4_2",
@@ -1180,7 +1180,7 @@
           "id": "action_hw-s4_3",
           "type": "speech",
           "text": "Choosing the right storage for your situation",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/2-3.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/4-3.mp3"
         },
         {
           "id": "action_hw-s4_4",
@@ -1191,7 +1191,7 @@
           "id": "action_hw-s4_5",
           "type": "speech",
           "text": "Hot wallet — connected to the internet. MetaMask, Trust Wallet, exchange accounts. Convenient for daily use but exposed to online attacks. Cold wallet — offline device that stores your private keys. Ledger and Trezor are the most popular. To sign a transaction, you physically confirm it on the device. An attacker controlling your computer cannot approve transactions without physical access to the device.",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/2-5.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/4-5.mp3"
         },
         {
           "id": "action_hw-s4_6",
@@ -1202,7 +1202,7 @@
           "id": "action_hw-s4_7",
           "type": "speech",
           "text": "🔥 Hot Wallet. Internet-connected, convenient",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/2-7.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/4-7.mp3"
         },
         {
           "id": "action_hw-s4_8",
@@ -1213,7 +1213,7 @@
           "id": "action_hw-s4_9",
           "type": "speech",
           "text": "🧊 Cold Wallet. Offline device, most secure",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/2-9.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/4-9.mp3"
         },
         {
           "id": "action_hw-s4_10",
@@ -1224,7 +1224,7 @@
           "id": "action_hw-s4_11",
           "type": "speech",
           "text": "💡 Best Practice. Hot for spending, cold for savings",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/2-11.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/4-11.mp3"
         },
         {
           "id": "action_hw-s4_12",
@@ -1235,7 +1235,7 @@
           "id": "action_hw-s4_13",
           "type": "speech",
           "text": "🔐 Hardware. Ledger, Trezor = industry standard",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/2-13.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/4-13.mp3"
         }
       ]
     },
@@ -1478,7 +1478,7 @@
           "id": "action_hw-s5_1",
           "type": "speech",
           "text": "✍️ Multi-Signature Wallets",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/3-1.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/5-1.mp3"
         },
         {
           "id": "action_hw-s5_2",
@@ -1489,7 +1489,7 @@
           "id": "action_hw-s5_3",
           "type": "speech",
           "text": "Requiring multiple approvals to move funds",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/3-3.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/5-3.mp3"
         },
         {
           "id": "action_hw-s5_4",
@@ -1500,7 +1500,7 @@
           "id": "action_hw-s5_5",
           "type": "speech",
           "text": "A multi-sig wallet requires more than one private key to authorize a transaction. A common setup is 2-of-3: you need any 2 of 3 designated keys to sign. This means a single compromised device or lost key cannot drain the wallet. Used by exchanges, DAOs, and anyone managing large amounts. The XRPL natively supports multi-signing on every account.",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/3-5.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/5-5.mp3"
         },
         {
           "id": "action_hw-s5_6",
@@ -1511,7 +1511,7 @@
           "id": "action_hw-s5_7",
           "type": "speech",
           "text": "2-of-3. Need 2 keys from 3 total",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/3-7.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/5-7.mp3"
         },
         {
           "id": "action_hw-s5_8",
@@ -1522,7 +1522,7 @@
           "id": "action_hw-s5_9",
           "type": "speech",
           "text": "🛡️ Protection. One key stolen = still safe",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/3-9.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/5-9.mp3"
         },
         {
           "id": "action_hw-s5_10",
@@ -1533,7 +1533,7 @@
           "id": "action_hw-s5_11",
           "type": "speech",
           "text": "🏢 Use Case. DAOs, treasuries, exchanges",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/3-11.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/5-11.mp3"
         },
         {
           "id": "action_hw-s5_12",
@@ -1544,7 +1544,7 @@
           "id": "action_hw-s5_13",
           "type": "speech",
           "text": "⛓️ XRPL. Native multi-sign support",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/3-13.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/5-13.mp3"
         }
       ]
     },
@@ -1787,7 +1787,7 @@
           "id": "action_hw-s6_1",
           "type": "speech",
           "text": "🛡️ Security Layering",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/4-1.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/6-1.mp3"
         },
         {
           "id": "action_hw-s6_2",
@@ -1798,7 +1798,7 @@
           "id": "action_hw-s6_3",
           "type": "speech",
           "text": "Defense in depth — building multiple lines of protection",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/4-3.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/6-3.mp3"
         },
         {
           "id": "action_hw-s6_4",
@@ -1809,7 +1809,7 @@
           "id": "action_hw-s6_5",
           "type": "speech",
           "text": "Professional crypto security uses layered defense . No single measure is enough — combine them.",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/4-5.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/6-5.mp3"
         },
         {
           "id": "action_hw-s6_6",
@@ -1820,7 +1820,7 @@
           "id": "action_hw-s6_7",
           "type": "speech",
           "text": "🧊 Hardware Wallet. Physical signing for large holdings",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/4-7.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/6-7.mp3"
         },
         {
           "id": "action_hw-s6_8",
@@ -1831,7 +1831,7 @@
           "id": "action_hw-s6_9",
           "type": "speech",
           "text": "📵 Dedicated Device. Separate phone/laptop for crypto only",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/4-9.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/6-9.mp3"
         },
         {
           "id": "action_hw-s6_10",
@@ -1842,7 +1842,7 @@
           "id": "action_hw-s6_11",
           "type": "speech",
           "text": "📧 Private Email. Never use your main email for exchanges",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/4-11.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/6-11.mp3"
         },
         {
           "id": "action_hw-s6_12",
@@ -1853,7 +1853,7 @@
           "id": "action_hw-s6_13",
           "type": "speech",
           "text": "🔐 Authenticator App. 2FA via app — never SMS (SIM-swappable)",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/4-13.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/6-13.mp3"
         }
       ]
     },
@@ -2068,13 +2068,13 @@
           "id": "action_hs-wl-s3_q0",
           "type": "speech",
           "text": "Five questions on wallet security — seed phrases, custodial vs non-custodial, and the attack vectors that compromise wallets.",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/5-0.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/7-0.mp3"
         },
         {
           "id": "action_hs-wl-s3_q1",
           "type": "speech",
           "text": "Wallet security knowledge directly protects your OnlyCrypto payouts and any crypto you hold. Take your time.",
-          "audioUrl": "/audio/lessons/oc-hs-wallets/5-1.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-wallets/7-1.mp3"
         }
       ]
     }

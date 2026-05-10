@@ -251,7 +251,7 @@
           "id": "action_hs-ec-s1_3",
           "type": "speech",
           "text": "Bridges let you move assets between different blockchains. You lock your token on Chain A, mint a wrapped version on Chain B, and burn it to unlock the original. But bridges are the biggest hack target in crypto — always check that a bridge has been audited before using it.",
-          "audioUrl": "/audio/lessons/oc-hs-ecosystem/0-3.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/1-0.mp3"
         },
         {
           "id": "action_hs-ec-s1_4",
@@ -262,7 +262,7 @@
           "id": "action_hs-ec-s1_5",
           "type": "speech",
           "text": "DAOs are organizations run by token holders through on-chain voting. No CEO, no board — just code executing automatically when a vote passes. They're the backbone of DeFi governance, and XRPL has its own on-chain amendment voting system.",
-          "audioUrl": "/audio/lessons/oc-hs-ecosystem/0-5.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/1-2.mp3"
         }
       ]
     },
@@ -403,7 +403,7 @@
           "id": "action_hs-ec-s2_1",
           "type": "speech",
           "text": "Real World Assets are physical things — real estate, bonds, gold — being tokenized and put on blockchains. This means 24/7 trading, global access, and instant settlement for assets that used to take days and paperwork. XRPL is already a leading platform for tokenized assets, and BlackRock's BUIDL fund runs on-chain.",
-          "audioUrl": "/audio/lessons/oc-hs-ecosystem/1-1.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/2-1.mp3"
         },
         {
           "id": "action_hs-ec-s2_2",
@@ -504,7 +504,7 @@
           "id": "action_hs-ec-s2_3",
           "type": "speech",
           "text": "NFTs prove unique ownership on-chain. They're not just images — the blockchain record proves you own something. The real utility is event tickets, credentials, gaming items, and music royalties that pay artists automatically.",
-          "audioUrl": "/audio/lessons/oc-hs-ecosystem/1-3.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/3-0.mp3"
         },
         {
           "id": "action_hs-ec-s2_4",
@@ -515,7 +515,7 @@
           "id": "action_hs-ec-s2_5",
           "type": "speech",
           "text": "When BlackRock and Fidelity launched Bitcoin ETFs in January 2024, they pulled in 4.6 billion dollars in the first week — the largest ETF launch in history. Institutional money brings deeper liquidity, regulatory attention, and enterprise-grade custody. That's why following institutional moves matters to every crypto trader.",
-          "audioUrl": "/audio/lessons/oc-hs-ecosystem/1-5.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/3-2.mp3"
         }
       ]
     },
@@ -656,7 +656,7 @@
           "id": "action_hs-ec-s3_1",
           "type": "speech",
           "text": "The crypto ecosystem has distinct sectors — Layer 1 base chains, DeFi protocols, centralized exchanges, NFTs, real-world assets, infrastructure like oracles, payments, and privacy tech. Each sector has its own risk profile, growth stage, and opportunity set.",
-          "audioUrl": "/audio/lessons/oc-hs-ecosystem/2-1.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/4-1.mp3"
         },
         {
           "id": "action_hs-ec-s3_2",
@@ -757,7 +757,7 @@
           "id": "action_hs-ec-s3_3",
           "type": "speech",
           "text": "Different participants play different roles — miners secure the network, developers build protocols, liquidity providers fund DEXs, traders speculate, and auditors protect users. Regulators are increasingly active, and market makers keep exchanges liquid. Understanding who does what tells you how incentives align.",
-          "audioUrl": "/audio/lessons/oc-hs-ecosystem/2-3.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/5-0.mp3"
         },
         {
           "id": "action_hs-ec-s3_4",
@@ -768,7 +768,7 @@
           "id": "action_hs-ec-s3_5",
           "type": "speech",
           "text": "OnlyCrypto lets you operate across multiple ecosystem roles at once — trader, educator, and community builder. Most participants still don't understand L2s, DAOs, or real-world assets. That knowledge gap is your advantage, and this is exactly what High School level is designed to give you.",
-          "audioUrl": "/audio/lessons/oc-hs-ecosystem/2-5.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/5-2.mp3"
         }
       ]
     },
@@ -1011,7 +1011,7 @@
           "id": "action_he-s5_1",
           "type": "speech",
           "text": "🎮 NFT Utility vs Hype",
-          "audioUrl": "/audio/lessons/oc-hs-ecosystem/3-1.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/6-1.mp3"
         },
         {
           "id": "action_he-s5_2",
@@ -1022,7 +1022,7 @@
           "id": "action_he-s5_3",
           "type": "speech",
           "text": "Separating real use cases from speculation",
-          "audioUrl": "/audio/lessons/oc-hs-ecosystem/3-3.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/6-3.mp3"
         },
         {
           "id": "action_he-s5_4",
@@ -1033,7 +1033,7 @@
           "id": "action_he-s5_5",
           "type": "speech",
           "text": "The NFT market in 2021 was dominated by speculative hype — people buying jpegs hoping to flip them for profit. Most of that value collapsed. But utility NFTs represent something real. Real utility: event tickets (verifiable, transferable), gaming assets (own your in-game items), membership passes (DAO access, gated communities), digital certificates, real estate deeds. The underlying technology is sound — the speculation was the problem.",
-          "audioUrl": "/audio/lessons/oc-hs-ecosystem/3-5.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/6-5.mp3"
         },
         {
           "id": "action_he-s5_6",
@@ -1044,7 +1044,7 @@
           "id": "action_he-s5_7",
           "type": "speech",
           "text": "🖼️ Hype NFT. JPEG with no utility — speculation",
-          "audioUrl": "/audio/lessons/oc-hs-ecosystem/3-7.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/6-7.mp3"
         },
         {
           "id": "action_he-s5_8",
@@ -1055,7 +1055,7 @@
           "id": "action_he-s5_9",
           "type": "speech",
           "text": "🎟️ Ticket NFT. Verifiable, anti-counterfeit",
-          "audioUrl": "/audio/lessons/oc-hs-ecosystem/3-9.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/6-9.mp3"
         },
         {
           "id": "action_he-s5_10",
@@ -1066,7 +1066,7 @@
           "id": "action_he-s5_11",
           "type": "speech",
           "text": "🎮 Game Asset. Own your items, trade freely",
-          "audioUrl": "/audio/lessons/oc-hs-ecosystem/3-11.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/6-11.mp3"
         },
         {
           "id": "action_he-s5_12",
@@ -1077,7 +1077,7 @@
           "id": "action_he-s5_13",
           "type": "speech",
           "text": "🏅 Certificate. Proof of credential on-chain",
-          "audioUrl": "/audio/lessons/oc-hs-ecosystem/3-13.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/6-13.mp3"
         }
       ]
     },
@@ -1320,7 +1320,7 @@
           "id": "action_he-s6_1",
           "type": "speech",
           "text": "🏭 Real-World Asset (RWA) Tokenization",
-          "audioUrl": "/audio/lessons/oc-hs-ecosystem/4-1.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/7-1.mp3"
         },
         {
           "id": "action_he-s6_2",
@@ -1331,7 +1331,7 @@
           "id": "action_he-s6_3",
           "type": "speech",
           "text": "Bringing physical assets onto the blockchain",
-          "audioUrl": "/audio/lessons/oc-hs-ecosystem/4-3.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/7-3.mp3"
         },
         {
           "id": "action_he-s6_4",
@@ -1342,7 +1342,7 @@
           "id": "action_he-s6_5",
           "type": "speech",
           "text": "RWA tokenization means representing ownership of real-world assets — real estate, gold, treasury bonds, art — as blockchain tokens. This makes them tradeable 24/7, divisible, and accessible to anyone globally. BlackRock, Franklin Templeton, and JPMorgan are all actively tokenizing assets. The XRPL is positioned as a settlement layer for tokenized RWAs due to its speed and built-in DEX. This is one of the largest opportunities in crypto.",
-          "audioUrl": "/audio/lessons/oc-hs-ecosystem/4-5.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/7-5.mp3"
         },
         {
           "id": "action_he-s6_6",
@@ -1353,7 +1353,7 @@
           "id": "action_he-s6_7",
           "type": "speech",
           "text": "🏠 Real Estate. Fractional ownership on-chain",
-          "audioUrl": "/audio/lessons/oc-hs-ecosystem/4-7.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/7-7.mp3"
         },
         {
           "id": "action_he-s6_8",
@@ -1364,7 +1364,7 @@
           "id": "action_he-s6_9",
           "type": "speech",
           "text": "🪙 Gold. XAU tokens, redeemable for gold",
-          "audioUrl": "/audio/lessons/oc-hs-ecosystem/4-9.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/7-9.mp3"
         },
         {
           "id": "action_he-s6_10",
@@ -1375,7 +1375,7 @@
           "id": "action_he-s6_11",
           "type": "speech",
           "text": "📊 T-Bills. Tokenized US treasury bonds",
-          "audioUrl": "/audio/lessons/oc-hs-ecosystem/4-11.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/7-11.mp3"
         },
         {
           "id": "action_he-s6_12",
@@ -1386,7 +1386,7 @@
           "id": "action_he-s6_13",
           "type": "speech",
           "text": "⛓️ XRPL. Built for RWA settlement",
-          "audioUrl": "/audio/lessons/oc-hs-ecosystem/4-13.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/7-13.mp3"
         }
       ]
     },
@@ -1601,13 +1601,13 @@
           "id": "action_hs-ec-s4_q0",
           "type": "speech",
           "text": "Time to test your ecosystem knowledge. These questions cover L1 versus L2, bridge risks, DAO governance, institutional adoption, and real world asset tokenization. Take your time — think about the mechanics behind each concept.",
-          "audioUrl": "/audio/lessons/oc-hs-ecosystem/5-0.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/8-0.mp3"
         },
         {
           "id": "action_hs-ec-s4_q1",
           "type": "speech",
           "text": "Great work on the Ecosystem module! You now understand how layers, bridges, and DAOs structure the crypto world, why institutional money changes the game, and how RWA tokenization is opening new markets. You're building the knowledge base that separates intermediate traders from beginners.",
-          "audioUrl": "/audio/lessons/oc-hs-ecosystem/5-1.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/8-1.mp3"
         }
       ]
     }

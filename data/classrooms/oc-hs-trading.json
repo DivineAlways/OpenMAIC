@@ -414,7 +414,7 @@
           "id": "action_hs-tr-s1_7",
           "type": "speech",
           "text": "Doji: open and close are almost identical — tiny body, long wicks. Buyers and sellers are equally matched. The market is undecided. Usually precedes a big move in either direction — wait for confirmation.",
-          "audioUrl": "/audio/lessons/oc-hs-trading/0-7.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/1-0.mp3"
         },
         {
           "id": "action_hs-tr-s1_8",
@@ -425,7 +425,7 @@
           "id": "action_hs-tr-s1_9",
           "type": "speech",
           "text": "Shooting Star: long upper wick, small body at the bottom. Price rallied hard but was rejected — sellers pushed it back down. A bearish reversal signal after an uptrend.",
-          "audioUrl": "/audio/lessons/oc-hs-trading/0-9.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/1-2.mp3"
         },
         {
           "id": "action_hs-tr-s1_10",
@@ -436,7 +436,7 @@
           "id": "action_hs-tr-s1_11",
           "type": "speech",
           "text": "Support is a price zone where buying has historically stopped declines. The more times it's tested and held, the stronger it is. Resistance is a zone where selling has historically capped rallies. Breaking through resistance convincingly is a bullish signal. And role reversal: old resistance becomes new support after a breakout — one of the most reliable patterns in technical analysis.",
-          "audioUrl": "/audio/lessons/oc-hs-trading/0-11.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/1-4.mp3"
         },
         {
           "id": "action_hs-tr-s1_12",
@@ -447,7 +447,7 @@
           "id": "action_hs-tr-s1_13",
           "type": "speech",
           "text": "Key rule: No single candle gives a complete picture. Context matters — where is this candle forming? At support? After a trend? Candlesticks are clues, not certainties. Always confirm with volume and other signals.",
-          "audioUrl": "/audio/lessons/oc-hs-trading/0-13.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/1-6.mp3"
         }
       ]
     },
@@ -626,7 +626,7 @@
           "id": "action_hs-tr-s2_1",
           "type": "speech",
           "text": "RSI, MACD, Order Types, and Trading Psychology",
-          "audioUrl": "/audio/lessons/oc-hs-trading/1-1.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/2-1.mp3"
         },
         {
           "id": "action_hs-tr-s2_2",
@@ -637,7 +637,7 @@
           "id": "action_hs-tr-s2_3",
           "type": "speech",
           "text": "RSI measures overbought and oversold conditions on a zero to one hundred scale using a 14-period lookback. RSI above 70 signals overbought — potential pullback ahead. RSI below 30 signals oversold — potential bounce. RSI at 50 is neutral. Important caveat: in strong trends, RSI can stay extreme for extended periods. Don't short just because RSI hits 70.",
-          "audioUrl": "/audio/lessons/oc-hs-trading/1-3.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/2-3.mp3"
         },
         {
           "id": "action_hs-tr-s2_4",
@@ -795,7 +795,7 @@
           "id": "action_hs-tr-s2_5",
           "type": "speech",
           "text": "MACD tracks the difference between the 12-period and 26-period exponential moving averages. A signal line is the 9-period EMA of the MACD itself. Bullish cross: MACD crosses above the signal line — buy signal. Bearish cross: MACD crosses below — sell signal. Divergence: price makes a new high but MACD doesn't — momentum is weakening, watch out.",
-          "audioUrl": "/audio/lessons/oc-hs-trading/1-5.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/3-0.mp3"
         },
         {
           "id": "action_hs-tr-s2_6",
@@ -806,7 +806,7 @@
           "id": "action_hs-tr-s2_7",
           "type": "speech",
           "text": "Order types: Market orders execute immediately at the best available price — guaranteed fill. Limit orders only fill at your specified price or better — not guaranteed. Stop-loss orders auto-exit your position if price falls to your set level — this defines your maximum loss before you enter. Take-profit orders lock in gains automatically at your target. And always know your risk-reward ratio — risk one hundred dollars to make two hundred gives you a 1 to 2 ratio. Professionals target minimum 1 to 2.",
-          "audioUrl": "/audio/lessons/oc-hs-trading/1-7.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/3-2.mp3"
         },
         {
           "id": "action_hs-tr-s2_8",
@@ -817,7 +817,7 @@
           "id": "action_hs-tr-s2_9",
           "type": "speech",
           "text": "Studies show 70 to 80 percent of retail traders lose money — not from lack of indicators, but from psychology. FOMO: chasing coins after they're already up fifty percent. Loss aversion: holding losers hoping they come back, turning small losses into account-wrecking drawdowns. Overtrading: forced entries with no edge. Revenge trading: doubling down after a loss to recover — this is how accounts blow up. Copy trading bypasses all of this by following disciplined traders automatically.",
-          "audioUrl": "/audio/lessons/oc-hs-trading/1-9.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/3-4.mp3"
         }
       ]
     },
@@ -1060,7 +1060,7 @@
           "id": "action_ht-s4_1",
           "type": "speech",
           "text": "📊 Trends & Volume",
-          "audioUrl": "/audio/lessons/oc-hs-trading/2-1.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/4-1.mp3"
         },
         {
           "id": "action_ht-s4_2",
@@ -1071,7 +1071,7 @@
           "id": "action_ht-s4_3",
           "type": "speech",
           "text": "The two most important things to confirm before any trade",
-          "audioUrl": "/audio/lessons/oc-hs-trading/2-3.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/4-3.mp3"
         },
         {
           "id": "action_ht-s4_4",
@@ -1082,7 +1082,7 @@
           "id": "action_ht-s4_5",
           "type": "speech",
           "text": "Price moves in trends — uptrend (higher highs, higher lows), downtrend (lower highs, lower lows), or sideways. Trading with the trend is far safer than against it. Volume confirms trend strength. A price breakout on high volume is reliable. The same breakout on low volume is likely a fake-out. Always confirm moves with volume before entering a position.",
-          "audioUrl": "/audio/lessons/oc-hs-trading/2-5.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/4-5.mp3"
         },
         {
           "id": "action_ht-s4_6",
@@ -1093,7 +1093,7 @@
           "id": "action_ht-s4_7",
           "type": "speech",
           "text": "⬆️ Uptrend. Higher highs, higher lows",
-          "audioUrl": "/audio/lessons/oc-hs-trading/2-7.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/4-7.mp3"
         },
         {
           "id": "action_ht-s4_8",
@@ -1104,7 +1104,7 @@
           "id": "action_ht-s4_9",
           "type": "speech",
           "text": "⬇️ Downtrend. Lower highs, lower lows",
-          "audioUrl": "/audio/lessons/oc-hs-trading/2-9.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/4-9.mp3"
         },
         {
           "id": "action_ht-s4_10",
@@ -1115,7 +1115,7 @@
           "id": "action_ht-s4_11",
           "type": "speech",
           "text": "📊 Volume. Confirms or denies the move",
-          "audioUrl": "/audio/lessons/oc-hs-trading/2-11.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/4-11.mp3"
         },
         {
           "id": "action_ht-s4_12",
@@ -1126,7 +1126,7 @@
           "id": "action_ht-s4_13",
           "type": "speech",
           "text": "⚠️ Low Volume Breakout. Often reverses quickly",
-          "audioUrl": "/audio/lessons/oc-hs-trading/2-13.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/4-13.mp3"
         }
       ]
     },
@@ -1369,7 +1369,7 @@
           "id": "action_ht-s5_1",
           "type": "speech",
           "text": "📉 RSI, MACD & Moving Averages",
-          "audioUrl": "/audio/lessons/oc-hs-trading/3-1.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/5-1.mp3"
         },
         {
           "id": "action_ht-s5_2",
@@ -1380,7 +1380,7 @@
           "id": "action_ht-s5_3",
           "type": "speech",
           "text": "The three indicators every trader should understand",
-          "audioUrl": "/audio/lessons/oc-hs-trading/3-3.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/5-3.mp3"
         },
         {
           "id": "action_ht-s5_4",
@@ -1391,7 +1391,7 @@
           "id": "action_ht-s5_5",
           "type": "speech",
           "text": "RSI (Relative Strength Index) measures momentum 0–100. Above 70 = overbought (potential sell). Below 30 = oversold (potential buy). A useful early warning system, not a standalone signal. MACD shows momentum shifts. When the MACD line crosses above the signal line = bullish. Below = bearish. Moving Averages (MA) smooth out price noise. The 50-day and 200-day MAs are widely watched. When 50 crosses above 200 = Golden Cross (very bullish). Opposite = Death Cross.",
-          "audioUrl": "/audio/lessons/oc-hs-trading/3-5.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/5-5.mp3"
         },
         {
           "id": "action_ht-s5_6",
@@ -1402,7 +1402,7 @@
           "id": "action_ht-s5_7",
           "type": "speech",
           "text": "📊 RSI. Momentum — 30 buy / 70 sell",
-          "audioUrl": "/audio/lessons/oc-hs-trading/3-7.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/5-7.mp3"
         },
         {
           "id": "action_ht-s5_8",
@@ -1413,7 +1413,7 @@
           "id": "action_ht-s5_9",
           "type": "speech",
           "text": "⚡ MACD. Momentum crossover signal",
-          "audioUrl": "/audio/lessons/oc-hs-trading/3-9.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/5-9.mp3"
         },
         {
           "id": "action_ht-s5_10",
@@ -1424,7 +1424,7 @@
           "id": "action_ht-s5_11",
           "type": "speech",
           "text": "〰️ Moving Avg. Trend direction + key levels",
-          "audioUrl": "/audio/lessons/oc-hs-trading/3-11.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/5-11.mp3"
         },
         {
           "id": "action_ht-s5_12",
@@ -1435,7 +1435,7 @@
           "id": "action_ht-s5_13",
           "type": "speech",
           "text": "✨ Golden Cross. 50MA crosses above 200MA",
-          "audioUrl": "/audio/lessons/oc-hs-trading/3-13.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/5-13.mp3"
         }
       ]
     },
@@ -1678,7 +1678,7 @@
           "id": "action_ht-s6_1",
           "type": "speech",
           "text": "⚖️ Risk-Reward Ratio",
-          "audioUrl": "/audio/lessons/oc-hs-trading/4-1.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/6-1.mp3"
         },
         {
           "id": "action_ht-s6_2",
@@ -1689,7 +1689,7 @@
           "id": "action_ht-s6_3",
           "type": "speech",
           "text": "The math that separates profitable traders from losers",
-          "audioUrl": "/audio/lessons/oc-hs-trading/4-3.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/6-3.mp3"
         },
         {
           "id": "action_ht-s6_4",
@@ -1700,7 +1700,7 @@
           "id": "action_ht-s6_5",
           "type": "speech",
           "text": "Every trade has a risk-reward ratio . If you risk $100 to potentially make $300, your ratio is 1:3. Professional traders require at least 1:2 before entering any trade. With a 1:2 ratio, you can be right only 40% of the time and still be profitable. Math beats emotion. Set your stop-loss and take-profit levels before entering — never move your stop-loss to avoid a loss. That is how small losses become account-destroying losses.",
-          "audioUrl": "/audio/lessons/oc-hs-trading/4-5.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/6-5.mp3"
         },
         {
           "id": "action_ht-s6_6",
@@ -1711,7 +1711,7 @@
           "id": "action_ht-s6_7",
           "type": "speech",
           "text": "📐 1:2 R:R. Risk $1 to make $2",
-          "audioUrl": "/audio/lessons/oc-hs-trading/4-7.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/6-7.mp3"
         },
         {
           "id": "action_ht-s6_8",
@@ -1722,7 +1722,7 @@
           "id": "action_ht-s6_9",
           "type": "speech",
           "text": "🛑 Stop Loss. Set before entry — never move it",
-          "audioUrl": "/audio/lessons/oc-hs-trading/4-9.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/6-9.mp3"
         },
         {
           "id": "action_ht-s6_10",
@@ -1733,7 +1733,7 @@
           "id": "action_ht-s6_11",
           "type": "speech",
           "text": "🎯 Take Profit. Know your exit before you enter",
-          "audioUrl": "/audio/lessons/oc-hs-trading/4-11.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/6-11.mp3"
         },
         {
           "id": "action_ht-s6_12",
@@ -1744,7 +1744,7 @@
           "id": "action_ht-s6_13",
           "type": "speech",
           "text": "🧮 Math. 40% win rate + 1:2 = profitable",
-          "audioUrl": "/audio/lessons/oc-hs-trading/4-13.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/6-13.mp3"
         }
       ]
     },
@@ -1959,13 +1959,13 @@
           "id": "action_hs-tr-s3_q0",
           "type": "speech",
           "text": "Five questions on trading fundamentals — RSI, support and resistance, order types, and the psychology traps that trip up most retail traders.",
-          "audioUrl": "/audio/lessons/oc-hs-trading/5-0.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/7-0.mp3"
         },
         {
           "id": "action_hs-tr-s3_q1",
           "type": "speech",
           "text": "Understanding copy trading at OnlyCrypto means understanding what makes a trader worth following. These concepts help you evaluate traders more clearly.",
-          "audioUrl": "/audio/lessons/oc-hs-trading/5-1.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-trading/7-1.mp3"
         }
       ]
     }
