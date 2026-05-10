@@ -101,7 +101,7 @@
               "left": 65,
               "top": 135,
               "width": 400,
-              "height": 227,
+              "height": 155,
               "rotate": 0,
               "content": "<p style='font-size:12px;color:#cbd5e1;line-height:1.6;'>L1 = Base chain (Ethereum, XRPL, Solana)<br/>Handles consensus, security, finality<br/><br/>L2 = Built on top of L1<br/>Inherits L1 security, boosts speed/cost<br/><br/>Rollup types:<br/>• Optimistic: assumes valid, disputes later<br/>• ZK: proves validity with zero-knowledge math<br/><br/>XRPL: native L1 — no L2 needed (4s, &lt;$0.001)</p>",
               "defaultFontName": "Inter",
@@ -141,7 +141,7 @@
               "left": 535,
               "top": 135,
               "width": 400,
-              "height": 265,
+              "height": 155,
               "rotate": 0,
               "content": "<p style='font-size:12px;color:#cbd5e1;line-height:1.6;'>Move assets between different blockchains<br/><br/>How it works:<br/>1. Lock token on Chain A<br/>2. Mint wrapped version on Chain B<br/>3. Burn wrapped version to unlock original<br/><br/>Bridge risks:<br/>⚠ Smart contract bugs (biggest hack vector)<br/>⚠ Centralized custody risk<br/>⚠ Oracle manipulation<br/><br/>Always check bridge audits before using</p>",
               "defaultFontName": "Inter",
@@ -181,7 +181,7 @@
               "left": 65,
               "top": 365,
               "width": 870,
-              "height": 188,
+              "height": 145,
               "rotate": 0,
               "content": "<p style='font-size:12px;color:#cbd5e1;line-height:1.6;'>A DAO is an organization governed by token holders through on-chain voting — no CEO, no board, just code.<br/><br/>Governance flow:<br/>Idea proposed → Token holders vote → If passes threshold → Code executes automatically<br/><br/>Token voting power is proportional to tokens held. Large holders (whales) can dominate votes.<br/>Some DAOs use quadratic voting to limit whale dominance.<br/><br/>Examples: Uniswap (UNI), Compound (COMP), MakerDAO (MKR). XRPL has an on-chain amendment voting system.</p>",
               "defaultFontName": "Inter",
@@ -314,7 +314,7 @@
               "left": 65,
               "top": 135,
               "width": 400,
-              "height": 246,
+              "height": 165,
               "rotate": 0,
               "content": "<p style='font-size:12px;color:#cbd5e1;line-height:1.6;'>Representing physical assets as on-chain tokens<br/><br/>Asset types being tokenized:<br/>• Real estate — fractional ownership<br/>• Treasury bonds — on-chain yield (~$1B+)<br/>• Commodities — gold, oil<br/>• Private credit — corporate loans<br/><br/>Why it matters:<br/>24/7 trading, global access, instant settlement<br/>XRPL is a leading platform for tokenized assets<br/>BlackRock&#x27;s BUIDL fund runs on-chain</p>",
               "defaultFontName": "Inter",
@@ -354,7 +354,7 @@
               "left": 535,
               "top": 135,
               "width": 400,
-              "height": 284,
+              "height": 165,
               "rotate": 0,
               "content": "<p style='font-size:12px;color:#cbd5e1;line-height:1.6;'>NFT = Non-Fungible Token<br/>Proves unique ownership on-chain<br/><br/>Fungible: 1 XRP = 1 XRP (interchangeable)<br/>Non-fungible: unique digital item (no copy)<br/><br/>Real utility use cases:<br/>• Event tickets with on-chain verification<br/>• Digital credentials and certificates<br/>• Gaming items with real ownership<br/>• Music royalties split automatically<br/><br/>NFTs are not images — the blockchain record<br/>proves ownership. The image lives off-chain.</p>",
               "defaultFontName": "Inter",
@@ -394,7 +394,7 @@
               "left": 65,
               "top": 375,
               "width": 870,
-              "height": 208,
+              "height": 130,
               "rotate": 0,
               "content": "<p style='font-size:12px;color:#cbd5e1;line-height:1.6;'>Spot Bitcoin ETFs launched Jan 2024 — BlackRock, Fidelity, and 9 others now offer Bitcoin to traditional investors<br/>First week: $4.6B in inflows (largest ETF launch in history)<br/><br/>What institutional money brings:<br/>• Deeper liquidity — harder to manipulate price<br/>• Regulatory legitimacy — governments must respond<br/>• Custody infrastructure — enterprise-grade security<br/>• Mainstream awareness — your uncle now asks about Bitcoin<br/><br/>XRP and Ripple: working with 350+ financial institutions on cross-border payments using XRPL</p>",
               "defaultFontName": "Inter",
@@ -527,7 +527,7 @@
               "left": 65,
               "top": 135,
               "width": 400,
-              "height": 322,
+              "height": 185,
               "rotate": 0,
               "content": "<p style='font-size:12px;color:#cbd5e1;line-height:1.7;'>Layer 1s — base blockchains (BTC, ETH, XRP, SOL)<br/><br/>DeFi — DEXs, lending, stablecoins, yield<br/><br/>CeFi — centralized exchanges (Coinbase, Kraken)<br/><br/>NFT &amp; Gaming — digital ownership, GameFi<br/><br/>RWA — tokenized real-world assets<br/><br/>Infrastructure — oracles (Chainlink), storage (IPFS)<br/><br/>Payments — cross-border (XRP), stablecoin rails<br/><br/>Privacy — privacy coins, ZK technology</p>",
               "defaultFontName": "Inter",
@@ -567,7 +567,7 @@
               "left": 535,
               "top": 135,
               "width": 400,
-              "height": 342,
+              "height": 185,
               "rotate": 0,
               "content": "<p style='font-size:12px;color:#cbd5e1;line-height:1.7;'>Miners / Validators — secure the network<br/><br/>Developers — build protocols and apps<br/><br/>Liquidity Providers — fund DEX liquidity pools<br/><br/>Traders — speculate on price movements<br/><br/>HODLers — long-term holders, reduce supply<br/><br/>Oracles — feed real-world data on-chain<br/><br/>Auditors — review smart contract security<br/><br/>Regulators — set the rules of the game<br/>Market Makers — keep spreads tight on exchanges</p>",
               "defaultFontName": "Inter",
@@ -607,7 +607,7 @@
               "left": 65,
               "top": 395,
               "width": 870,
-              "height": 188,
+              "height": 105,
               "rotate": 0,
               "content": "<p style='font-size:12px;color:#fde68a;line-height:1.6;'>OnlyCrypto positions you to operate across multiple ecosystem roles simultaneously:<br/><br/>As a trader — you follow expert traders and participate in market movements<br/>As an educator — you share knowledge and earn from the Academy educator pool<br/>As a community member — you grow a network and earn referral income<br/><br/>Understanding the full ecosystem map means you can identify opportunities others miss.<br/>The ecosystem is still early — most participants don&#x27;t yet understand L2s, DAOs, or RWAs.<br/>That gap is your advantage.</p>",
               "defaultFontName": "Inter",
@@ -1283,26 +1283,12 @@
             "type": "single",
             "question": "What is the key difference between an Optimistic Rollup and a ZK Rollup?",
             "options": [
-              {
-                "label": "Optimistic rollups use proof-of-work; ZK rollups use proof-of-stake",
-                "value": "A"
-              },
-              {
-                "label": "Optimistic rollups assume transactions are valid and dispute later; ZK rollups prove validity upfront with cryptographic proofs",
-                "value": "B"
-              },
-              {
-                "label": "Optimistic rollups are faster than ZK rollups in all cases",
-                "value": "C"
-              },
-              {
-                "label": "ZK rollups require users to lock funds for 7 days before withdrawal",
-                "value": "D"
-              }
+              { "label": "Optimistic rollups use proof-of-work; ZK rollups use proof-of-stake", "value": "A" },
+              { "label": "Optimistic rollups assume transactions are valid and dispute later; ZK rollups prove validity upfront with cryptographic proofs", "value": "B" },
+              { "label": "Optimistic rollups are faster than ZK rollups in all cases", "value": "C" },
+              { "label": "ZK rollups require users to lock funds for 7 days before withdrawal", "value": "D" }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "Optimistic rollups assume all transactions are valid and only run fraud proofs if challenged. ZK rollups generate a zero-knowledge proof for every batch, proving validity without revealing transaction details. ZK is more secure but computationally heavier.",
             "points": 1
           },
@@ -1311,26 +1297,12 @@
             "type": "single",
             "question": "Why are cross-chain bridges considered high-risk?",
             "options": [
-              {
-                "label": "They charge very high fees",
-                "value": "A"
-              },
-              {
-                "label": "They require KYC verification",
-                "value": "B"
-              },
-              {
-                "label": "They are the largest smart contract hack vector in crypto",
-                "value": "C"
-              },
-              {
-                "label": "They are slow and take days to complete",
-                "value": "D"
-              }
+              { "label": "They charge very high fees", "value": "A" },
+              { "label": "They require KYC verification", "value": "B" },
+              { "label": "They are the largest smart contract hack vector in crypto", "value": "C" },
+              { "label": "They are slow and take days to complete", "value": "D" }
             ],
-            "answer": [
-              "C"
-            ],
+            "answer": ["C"],
             "analysis": "Bridges hold large amounts of locked assets on one chain while minting equivalents on another. A bug in the bridge smart contract can drain everything locked on the source chain. Ronin Bridge, Wormhole, and Nomad Bridge hacks totaled over $1.5B in losses.",
             "points": 1
           },
@@ -1339,26 +1311,12 @@
             "type": "single",
             "question": "In a DAO governance system, what happens when a proposal passes the voting threshold?",
             "options": [
-              {
-                "label": "The CEO approves and manually executes the change",
-                "value": "A"
-              },
-              {
-                "label": "A board of directors reviews the vote",
-                "value": "B"
-              },
-              {
-                "label": "The code executes automatically on-chain with no human intermediary",
-                "value": "C"
-              },
-              {
-                "label": "Token holders receive a payment for voting",
-                "value": "D"
-              }
+              { "label": "The CEO approves and manually executes the change", "value": "A" },
+              { "label": "A board of directors reviews the vote", "value": "B" },
+              { "label": "The code executes automatically on-chain with no human intermediary", "value": "C" },
+              { "label": "Token holders receive a payment for voting", "value": "D" }
             ],
-            "answer": [
-              "C"
-            ],
+            "answer": ["C"],
             "analysis": "DAOs are autonomous — when a proposal passes the required vote threshold, smart contracts execute the change automatically. This removes the need for trusted intermediaries but also means bugs in proposals can cause irreversible damage.",
             "points": 1
           },
@@ -1367,26 +1325,12 @@
             "type": "single",
             "question": "What made BlackRock's Bitcoin ETF launch in January 2024 historically significant?",
             "options": [
-              {
-                "label": "It was the first time Bitcoin was traded electronically",
-                "value": "A"
-              },
-              {
-                "label": "It was the largest ETF launch in history with $4.6B in first-week inflows",
-                "value": "B"
-              },
-              {
-                "label": "It pushed Bitcoin's price above $200,000",
-                "value": "C"
-              },
-              {
-                "label": "It replaced physical gold ETFs as the most-held ETF",
-                "value": "D"
-              }
+              { "label": "It was the first time Bitcoin was traded electronically", "value": "A" },
+              { "label": "It was the largest ETF launch in history with $4.6B in first-week inflows", "value": "B" },
+              { "label": "It pushed Bitcoin's price above $200,000", "value": "C" },
+              { "label": "It replaced physical gold ETFs as the most-held ETF", "value": "D" }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "The spot Bitcoin ETF approvals in January 2024 brought unprecedented institutional capital into crypto. BlackRock's IBIT and other spot ETFs collectively saw $4.6B in inflows in the first week — the largest ETF debut in financial history.",
             "points": 1
           },
@@ -1395,26 +1339,12 @@
             "type": "single",
             "question": "What is Real World Asset (RWA) tokenization primarily used for?",
             "options": [
-              {
-                "label": "Creating meme coins backed by physical objects",
-                "value": "A"
-              },
-              {
-                "label": "Representing physical assets like real estate or bonds as on-chain tokens for 24/7 global trading",
-                "value": "B"
-              },
-              {
-                "label": "Converting cryptocurrency back into dollars",
-                "value": "C"
-              },
-              {
-                "label": "Replacing NFTs with physical certificates",
-                "value": "D"
-              }
+              { "label": "Creating meme coins backed by physical objects", "value": "A" },
+              { "label": "Representing physical assets like real estate or bonds as on-chain tokens for 24/7 global trading", "value": "B" },
+              { "label": "Converting cryptocurrency back into dollars", "value": "C" },
+              { "label": "Replacing NFTs with physical certificates", "value": "D" }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "RWA tokenization puts ownership of physical assets on-chain — real estate, treasury bonds, commodities, and private credit. Benefits include 24/7 trading, fractional ownership, global access, and instant settlement. XRPL is a leading platform for tokenized assets.",
             "points": 1
           },
