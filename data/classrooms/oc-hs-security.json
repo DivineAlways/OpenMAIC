@@ -14,38 +14,41 @@
   },
   "scenes": [
     {
-      "id": "hs-sc-s1",
+      "id": "hs-sc-s1a",
       "type": "slide",
-      "title": "Phishing, Rug Pulls & Smart Contract Exploits",
+      "title": "Phishing Attack Types & Rug Pull Red Flags",
       "order": 1,
       "content": {
         "type": "slide",
         "canvas": {
-          "id": "hs-sc-s1-canvas",
-          "viewportSize": 1000,
-          "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0b1120"
-          },
-          "theme": {
-            "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f59e0b",
-              "#1e3a5f",
-              "#0f172a"
-            ],
-            "fontColor": "#f1f5f9",
-            "fontName": "Inter"
+            "color": "#0f172a"
           },
           "elements": [
             {
-              "id": "hs-sc-s1-accent",
+              "id": "bg",
               "type": "shape",
               "left": 0,
               "top": 0,
               "width": 1000,
-              "height": 6,
+              "height": 562,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f172a",
+              "fixedRatio": false
+            },
+            {
+              "id": "div-85",
+              "type": "shape",
+              "left": 0,
+              "top": 85,
+              "width": 1000,
+              "height": 4,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
@@ -56,134 +59,62 @@
               "fixedRatio": false
             },
             {
-              "id": "hs-sc-s1-title",
+              "id": "s1a-title",
               "type": "text",
               "left": 50,
-              "top": 30,
+              "top": 20,
               "width": 900,
               "height": 59,
               "rotate": 0,
-              "content": "<p style='font-size:26px;font-weight:bold;color:#f59e0b;'>Threats: Phishing, Rug Pulls &amp; Smart Contract Exploits</p>",
+              "content": "<p style='font-size:26px;font-weight:bold;color:#f59e0b;'>Threats: Phishing &amp; Rug Pulls</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f59e0b"
+              "defaultColor": "#cbd5e1"
             },
             {
-              "id": "hs-sc-s1-phishbox",
-              "type": "shape",
-              "left": 50,
-              "top": 90,
-              "width": 430,
-              "height": 220,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#1e3a5f",
-              "fixedRatio": false
-            },
-            {
-              "id": "hs-sc-s1-phishtitle",
+              "id": "s1a-phishtitle",
               "type": "text",
               "left": 65,
               "top": 100,
-              "width": 400,
+              "width": 420,
               "height": 42,
               "rotate": 0,
               "content": "<p style='font-size:15px;font-weight:bold;color:#f59e0b;'>Phishing Attack Types</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f59e0b"
+              "defaultColor": "#cbd5e1"
             },
             {
-              "id": "hs-sc-s1-phishcontent",
+              "id": "s1a-phishcontent",
               "type": "text",
               "left": 65,
-              "top": 135,
-              "width": 400,
-              "height": 287,
+              "top": 138,
+              "width": 420,
+              "height": 390,
               "rotate": 0,
               "content": "<p style='font-size:11.5px;color:#cbd5e1;line-height:1.55;'>Wallet drainer sites<br/>Fake MetaMask / Trust Wallet pages request<br/>your seed phrase. Never enter it on any site.<br/><br/>Malicious token approvals<br/>Signing &#x27;approve&#x27; grants a contract unlimited<br/>access to your tokens. Always check what you sign.<br/><br/>Fake support DMs<br/>&#x27;Binance Support&#x27; DMing you first = scam.<br/>No legit team asks for your keys or seed.<br/><br/>Address poisoning<br/>Scammer sends dust to wallet with similar<br/>first/last chars. You copy wrong address.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
             {
-              "id": "hs-sc-s1-rugbox",
-              "type": "shape",
-              "left": 520,
-              "top": 90,
-              "width": 430,
-              "height": 220,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#1e3a5f",
-              "fixedRatio": false
-            },
-            {
-              "id": "hs-sc-s1-rugtitle",
+              "id": "s1a-rugtitle",
               "type": "text",
-              "left": 535,
+              "left": 515,
               "top": 100,
-              "width": 400,
+              "width": 420,
               "height": 42,
               "rotate": 0,
               "content": "<p style='font-size:15px;font-weight:bold;color:#f59e0b;'>Rug Pull Red Flags</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f59e0b"
-            },
-            {
-              "id": "hs-sc-s1-rugcontent",
-              "type": "text",
-              "left": 535,
-              "top": 135,
-              "width": 400,
-              "height": 251,
-              "rotate": 0,
-              "content": "<p style='font-size:11.5px;color:#cbd5e1;line-height:1.55;'>A rug pull = devs drain liquidity and disappear<br/><br/>6 red flags before investing:<br/><br/>⚠ Anonymous team with no track record<br/>⚠ No audit from a reputable firm<br/>⚠ Top 10 wallets hold &gt;50% of supply<br/>⚠ Liquidity not locked (check DexTools)<br/>⚠ Unrealistic APY promises (1000%+)<br/>⚠ Contract has mint function — devs can<br/>create infinite new tokens<br/><br/>Always check token contract on Etherscan</p>",
-              "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
             {
-              "id": "hs-sc-s1-smartbox",
-              "type": "shape",
-              "left": 50,
-              "top": 325,
-              "width": 900,
-              "height": 185,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#1e3a5f",
-              "fixedRatio": false
-            },
-            {
-              "id": "hs-sc-s1-smarttitle",
+              "id": "s1a-rugcontent",
               "type": "text",
-              "left": 65,
-              "top": 335,
-              "width": 870,
-              "height": 42,
+              "left": 515,
+              "top": 138,
+              "width": 420,
+              "height": 390,
               "rotate": 0,
-              "content": "<p style='font-size:15px;font-weight:bold;color:#f59e0b;'>Smart Contract Vulnerabilities</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f59e0b"
-            },
-            {
-              "id": "hs-sc-s1-smartcontent",
-              "type": "text",
-              "left": 65,
-              "top": 370,
-              "width": 870,
-              "height": 154,
-              "rotate": 0,
-              "content": "<p style='font-size:12px;color:#cbd5e1;line-height:1.6;'>Reentrancy — attacker calls contract repeatedly before balance updates (The DAO hack, $60M lost)<br/>Integer overflow — arithmetic wraps around: 255 + 1 = 0 (Solidity before 0.8 was vulnerable)<br/>Access control — missing permission checks let anyone call admin functions<br/>Oracle manipulation — flash loans distort price feeds to trick lending protocols<br/><br/>How to stay safe: only use protocols audited by CertiK, Trail of Bits, or OpenZeppelin<br/>Time in market + track record are your best proxies for smart contract safety</p>",
+              "content": "<p style='font-size:11.5px;color:#cbd5e1;line-height:1.55;'>A rug pull = devs drain liquidity and disappear<br/><br/>6 red flags before investing:<br/><br/>⚠ Anonymous team with no track record<br/>⚠ No audit from a reputable firm<br/>⚠ Top 10 wallets hold &gt;50% of supply<br/>⚠ Liquidity not locked (check DexTools)<br/>⚠ Unrealistic APY promises (1000%+)<br/>⚠ Contract has mint function — devs can<br/>create infinite new tokens<br/><br/>Always check token contract on Etherscan</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             }
@@ -192,73 +123,55 @@
       },
       "actions": [
         {
-          "id": "action_hs-sc-s1_0",
-          "type": "spotlight",
-          "elementId": "hs-sc-s1-title"
-        },
-        {
-          "id": "action_hs-sc-s1_1",
+          "id": "action_hs-sc-s1a_0",
           "type": "speech",
           "text": "Security at the High School level means understanding the actual mechanics of how attacks work — not just 'be careful.' Phishing in crypto goes beyond fake emails: wallet drainer sites, malicious token approvals, fake support messages, and address poisoning are the four main vectors targeting intermediate users.",
-          "audioUrl": "/audio/lessons/oc-hs-security/0-1.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-security/0-0.mp3"
         },
         {
-          "id": "action_hs-sc-s1_2",
-          "type": "spotlight",
-          "elementId": "hs-sc-s1-rugbox"
-        },
-        {
-          "id": "action_hs-sc-s1_3",
+          "id": "action_hs-sc-s1a_1",
           "type": "speech",
           "text": "Rug pulls happen when developers drain liquidity and disappear. Six red flags tell you to stay away: anonymous team, no audit, concentrated supply, unlocked liquidity, unrealistic APYs, and a mint function in the contract. Always check the token contract on Etherscan before investing in any new project.",
-          "audioUrl": "/audio/lessons/oc-hs-security/0-3.mp3"
-        },
-        {
-          "id": "action_hs-sc-s1_4",
-          "type": "spotlight",
-          "elementId": "hs-sc-s1-smartbox"
-        },
-        {
-          "id": "action_hs-sc-s1_5",
-          "type": "speech",
-          "text": "Smart contract vulnerabilities caused the biggest DeFi hacks in history. Reentrancy, integer overflow, access control gaps, and oracle manipulation are the four major categories. Your protection is simple: only use protocols audited by reputable firms, and give new protocols time to prove themselves before trusting large amounts.",
-          "audioUrl": "/audio/lessons/oc-hs-security/0-5.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-security/0-1.mp3"
         }
       ]
     },
     {
-      "id": "hs-sc-s2",
+      "id": "hs-sc-s1b",
       "type": "slide",
-      "title": "OPSEC, Transaction Safety & Account Security",
+      "title": "Smart Contract Vulnerabilities",
       "order": 2,
       "content": {
         "type": "slide",
         "canvas": {
-          "id": "hs-sc-s2-canvas",
-          "viewportSize": 1000,
-          "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0b1120"
-          },
-          "theme": {
-            "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f59e0b",
-              "#1e3a5f",
-              "#0f172a"
-            ],
-            "fontColor": "#f1f5f9",
-            "fontName": "Inter"
+            "color": "#0f172a"
           },
           "elements": [
             {
-              "id": "hs-sc-s2-accent",
+              "id": "bg",
               "type": "shape",
               "left": 0,
               "top": 0,
               "width": 1000,
-              "height": 6,
+              "height": 562,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f172a",
+              "fixedRatio": false
+            },
+            {
+              "id": "div-85",
+              "type": "shape",
+              "left": 0,
+              "top": 85,
+              "width": 1000,
+              "height": 4,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
@@ -269,260 +182,200 @@
               "fixedRatio": false
             },
             {
-              "id": "hs-sc-s2-title",
+              "id": "s1b-title",
               "type": "text",
               "left": 50,
-              "top": 30,
+              "top": 20,
               "width": 900,
-              "height": 60,
+              "height": 59,
               "rotate": 0,
-              "content": "<p style='font-size:27px;font-weight:bold;color:#f59e0b;'>OPSEC, Transaction Hygiene &amp; Account Security</p>",
+              "content": "<p style='font-size:26px;font-weight:bold;color:#f59e0b;'>Smart Contract Vulnerabilities</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f59e0b"
+              "defaultColor": "#cbd5e1"
             },
             {
-              "id": "hs-sc-s2-opsecbox",
+              "id": "s1b-content",
+              "type": "text",
+              "left": 65,
+              "top": 110,
+              "width": 870,
+              "height": 420,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#cbd5e1;line-height:1.7;'>Reentrancy — attacker calls contract repeatedly before balance updates (The DAO hack, $60M lost)<br/>Integer overflow — arithmetic wraps around: 255 + 1 = 0 (Solidity before 0.8 was vulnerable)<br/>Access control — missing permission checks let anyone call admin functions<br/>Oracle manipulation — flash loans distort price feeds to trick lending protocols<br/><br/>How to stay safe: only use protocols audited by CertiK, Trail of Bits, or OpenZeppelin<br/>Time in market + track record are your best proxies for smart contract safety</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_hs-sc-s1b_0",
+          "type": "speech",
+          "text": "Smart contract vulnerabilities are the technical attack surface of DeFi. Reentrancy, integer overflow, access control failures, and oracle manipulation are the four categories that have cost billions. The only reliable protection is using protocols audited by firms like CertiK, Trail of Bits, or OpenZeppelin — and giving new protocols time to prove themselves.",
+          "audioUrl": "/audio/lessons/oc-hs-security/1-0.mp3"
+        }
+      ]
+    },
+    {
+      "id": "hs-sc-s2a",
+      "type": "slide",
+      "title": "OPSEC & Transaction Verification",
+      "order": 3,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
+          },
+          "elements": [
+            {
+              "id": "bg",
               "type": "shape",
-              "left": 50,
-              "top": 90,
-              "width": 430,
-              "height": 220,
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 562,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
                 1,
                 1
               ],
-              "fill": "#1e3a5f",
+              "fill": "#0f172a",
               "fixedRatio": false
             },
             {
-              "id": "hs-sc-s2-opsectitle",
+              "id": "div-85",
+              "type": "shape",
+              "left": 0,
+              "top": 85,
+              "width": 1000,
+              "height": 4,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "s2a-title",
+              "type": "text",
+              "left": 50,
+              "top": 20,
+              "width": 900,
+              "height": 59,
+              "rotate": 0,
+              "content": "<p style='font-size:26px;font-weight:bold;color:#f59e0b;'>OPSEC &amp; Transaction Hygiene</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "s2a-opsectitle",
               "type": "text",
               "left": 65,
               "top": 100,
-              "width": 400,
+              "width": 420,
               "height": 42,
               "rotate": 0,
               "content": "<p style='font-size:15px;font-weight:bold;color:#f59e0b;'>Operational Security (OPSEC)</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f59e0b"
+              "defaultColor": "#cbd5e1"
             },
             {
-              "id": "hs-sc-s2-opseccontent",
+              "id": "s2a-opseccontent",
               "type": "text",
               "left": 65,
-              "top": 135,
-              "width": 400,
-              "height": 233,
+              "top": 138,
+              "width": 420,
+              "height": 390,
               "rotate": 0,
               "content": "<p style='font-size:11.5px;color:#cbd5e1;line-height:1.55;'>Online behavior that protects your holdings:<br/><br/>• Never reveal how much crypto you hold publicly<br/>• Don&#x27;t flex wins on social media — SIM swap<br/>attackers look for high-value targets<br/>• Use a dedicated email for crypto accounts<br/>• Use a password manager (Bitwarden, 1Password)<br/>• Enable hardware 2FA (YubiKey) on exchanges<br/>• Use a VPN when accessing wallets on public WiFi<br/>• Never discuss holdings on Discord or Telegram<br/>• Separate &#x27;hot&#x27; (trading) from &#x27;cold&#x27; (savings) funds</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
             {
-              "id": "hs-sc-s2-txbox",
-              "type": "shape",
-              "left": 520,
-              "top": 90,
-              "width": 430,
-              "height": 220,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#1e3a5f",
-              "fixedRatio": false
-            },
-            {
-              "id": "hs-sc-s2-txtitle",
+              "id": "s2a-txtitle",
               "type": "text",
-              "left": 535,
+              "left": 515,
               "top": 100,
-              "width": 400,
+              "width": 420,
               "height": 42,
               "rotate": 0,
               "content": "<p style='font-size:15px;font-weight:bold;color:#f59e0b;'>Transaction Verification Checklist</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f59e0b"
+              "defaultColor": "#cbd5e1"
             },
             {
-              "id": "hs-sc-s2-txcontent",
+              "id": "s2a-txcontent",
               "type": "text",
-              "left": 535,
-              "top": 135,
-              "width": 400,
-              "height": 233,
+              "left": 515,
+              "top": 138,
+              "width": 420,
+              "height": 390,
               "rotate": 0,
               "content": "<p style='font-size:11.5px;color:#cbd5e1;line-height:1.55;'>Before every transaction:<br/><br/>✓ Verify address manually — first 4 AND last 4 chars<br/>✓ Send a test transaction for large amounts<br/>✓ Check the network (mainnet vs testnet)<br/>✓ Verify you have enough native token for gas<br/>✓ For DeFi: read the approval — what contract,<br/>what tokens, what spending limit?<br/>✓ Check gas fees aren&#x27;t abnormally high<br/>(front-run indicator)<br/>✓ Use revoke.cash monthly to audit<br/>token approvals and revoke unused ones</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
-            },
-            {
-              "id": "hs-sc-s2-simbox",
-              "type": "shape",
-              "left": 50,
-              "top": 325,
-              "width": 430,
-              "height": 185,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#1e3a5f",
-              "fixedRatio": false
-            },
-            {
-              "id": "hs-sc-s2-simtitle",
-              "type": "text",
-              "left": 65,
-              "top": 335,
-              "width": 400,
-              "height": 42,
-              "rotate": 0,
-              "content": "<p style='font-size:15px;font-weight:bold;color:#f59e0b;'>SIM Swap Attacks</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f59e0b"
-            },
-            {
-              "id": "hs-sc-s2-simcontent",
-              "type": "text",
-              "left": 65,
-              "top": 370,
-              "width": 400,
-              "height": 181,
-              "rotate": 0,
-              "content": "<p style='font-size:9.5px;color:#cbd5e1;line-height:1.55;'>Attacker calls your carrier, impersonates you, and ports your phone number to their SIM card.<br/>Now they receive all your SMS 2FA codes.<br/><br/>How it happens: social engineering + leaked<br/>personal data (name, last 4 SSN, account PIN)<br/><br/>Protection:<br/>• Never use SMS 2FA for crypto — use authenticator app<br/>• Enable carrier account PIN + port freeze<br/>• Use hardware key (YubiKey) as 2FA where possible</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#cbd5e1"
-            },
-            {
-              "id": "hs-sc-s2-checklistbox",
-              "type": "shape",
-              "left": 520,
-              "top": 325,
-              "width": 430,
-              "height": 185,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#422006",
-              "fixedRatio": false
-            },
-            {
-              "id": "hs-sc-s2-checklisttitle",
-              "type": "text",
-              "left": 535,
-              "top": 335,
-              "width": 400,
-              "height": 42,
-              "rotate": 0,
-              "content": "<p style='font-size:15px;font-weight:bold;color:#f59e0b;'>Intermediate Security Checklist</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f59e0b"
-            },
-            {
-              "id": "hs-sc-s2-checklistcontent",
-              "type": "text",
-              "left": 535,
-              "top": 370,
-              "width": 400,
-              "height": 167,
-              "rotate": 0,
-              "content": "<p style='font-size:11.5px;color:#fde68a;line-height:1.6;'>✓ Hardware wallet for &gt;$1,000 in holdings<br/>✓ Seed phrase stored offline, never digital<br/>✓ Authenticator app 2FA (not SMS) everywhere<br/>✓ Dedicated crypto email with strong password<br/>✓ Monthly token approval audit (revoke.cash)<br/>✓ Never click links from Discord/Telegram DMs<br/>✓ Test transaction before sending large amounts<br/>✓ VPN on public networks when accessing wallets</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#fde68a"
             }
           ]
         }
       },
       "actions": [
         {
-          "id": "action_hs-sc-s2_0",
-          "type": "spotlight",
-          "elementId": "hs-sc-s2-title"
-        },
-        {
-          "id": "action_hs-sc-s2_1",
+          "id": "action_hs-sc-s2a_0",
           "type": "speech",
           "text": "OPSEC — operational security — is about the habits that protect you before an attack happens. The biggest one: never publicly reveal how much crypto you hold. SIM swap attackers specifically target people who flex crypto wins on social media. Use a dedicated email for crypto, a password manager, and authenticator app 2FA — never SMS.",
           "audioUrl": "/audio/lessons/oc-hs-security/1-1.mp3"
         },
         {
-          "id": "action_hs-sc-s2_2",
-          "type": "spotlight",
-          "elementId": "hs-sc-s2-txbox"
-        },
-        {
-          "id": "action_hs-sc-s2_3",
+          "id": "action_hs-sc-s2a_1",
           "type": "speech",
-          "text": "Transaction hygiene saves money. Before every send: verify the first four and last four characters of the address manually, send a small test amount first, and always read DeFi approvals carefully. Check what contract you're approving, what tokens it can access, and the spending limit. Use revoke.cash monthly to clean up old approvals.",
-          "audioUrl": "/audio/lessons/oc-hs-security/1-3.mp3"
-        },
-        {
-          "id": "action_hs-sc-s2_4",
-          "type": "spotlight",
-          "elementId": "hs-sc-s2-simbox"
-        },
-        {
-          "id": "action_hs-sc-s2_5",
-          "type": "speech",
-          "text": "SIM swap is one of the most dangerous attacks because it bypasses SMS two-factor authentication entirely. The attacker impersonates you with your carrier and ports your number to their SIM. The fix: switch every crypto account to an authenticator app, enable a carrier account PIN, and use a hardware key like YubiKey where possible.",
-          "audioUrl": "/audio/lessons/oc-hs-security/1-5.mp3"
-        },
-        {
-          "id": "action_hs-sc-s2_6",
-          "type": "spotlight",
-          "elementId": "hs-sc-s2-checklistbox"
-        },
-        {
-          "id": "action_hs-sc-s2_7",
-          "type": "speech",
-          "text": "Your intermediate security checklist covers eight habits: hardware wallet for significant holdings, offline seed phrase storage, authenticator-based 2FA, dedicated crypto email, monthly approval audits, never clicking unsolicited links, test transactions, and VPN on public networks. Implement all eight and you're in the top ten percent of crypto users for security practices.",
-          "audioUrl": "/audio/lessons/oc-hs-security/1-7.mp3"
+          "text": "Before every transaction, verify the full address — not just the first and last four characters. Send a test transaction for large amounts. Check you are on the right network. For DeFi approvals, read what the contract is actually asking permission to do. Use revoke.cash monthly to audit and remove unused token approvals.",
+          "audioUrl": "/audio/lessons/oc-hs-security/2-0.mp3"
         }
       ]
     },
     {
-      "id": "hs-sc-s3",
+      "id": "hs-sc-s2b",
       "type": "slide",
-      "title": "Exchange Safety, CEX vs DEX Risk & Recovery Planning",
-      "order": 3,
+      "title": "SIM Swap Attacks & Security Checklist",
+      "order": 4,
       "content": {
         "type": "slide",
         "canvas": {
-          "id": "hs-sc-s3-canvas",
-          "viewportSize": 1000,
-          "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0b1120"
-          },
-          "theme": {
-            "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f59e0b",
-              "#1e3a5f",
-              "#0f172a"
-            ],
-            "fontColor": "#f1f5f9",
-            "fontName": "Inter"
+            "color": "#0f172a"
           },
           "elements": [
             {
-              "id": "hs-sc-s3-accent",
+              "id": "bg",
               "type": "shape",
               "left": 0,
               "top": 0,
               "width": 1000,
-              "height": 6,
+              "height": 562,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f172a",
+              "fixedRatio": false
+            },
+            {
+              "id": "div-85",
+              "type": "shape",
+              "left": 0,
+              "top": 85,
+              "width": 1000,
+              "height": 4,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
               "viewBox": [
@@ -533,224 +386,320 @@
               "fixedRatio": false
             },
             {
-              "id": "hs-sc-s3-title",
+              "id": "s2b-title",
               "type": "text",
               "left": 50,
-              "top": 30,
+              "top": 20,
               "width": 900,
-              "height": 60,
+              "height": 59,
               "rotate": 0,
-              "content": "<p style='font-size:27px;font-weight:bold;color:#f59e0b;'>Exchange Safety, CEX vs DEX Risk &amp; Recovery</p>",
+              "content": "<p style='font-size:26px;font-weight:bold;color:#f59e0b;'>SIM Swap &amp; Security Checklist</p>",
               "defaultFontName": "Inter",
-              "defaultColor": "#f59e0b"
+              "defaultColor": "#cbd5e1"
             },
             {
-              "id": "hs-sc-s3-cexbox",
-              "type": "shape",
-              "left": 50,
-              "top": 90,
-              "width": 430,
-              "height": 220,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#1e3a5f",
-              "fixedRatio": false
-            },
-            {
-              "id": "hs-sc-s3-cextitle",
+              "id": "s2b-simtitle",
               "type": "text",
               "left": 65,
               "top": 100,
-              "width": 400,
-              "height": 41,
+              "width": 420,
+              "height": 42,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:bold;color:#f59e0b;'>CEX Risk — Centralized Exchange Safety</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f59e0b"
-            },
-            {
-              "id": "hs-sc-s3-cexcontent",
-              "type": "text",
-              "left": 65,
-              "top": 135,
-              "width": 400,
-              "height": 216,
-              "rotate": 0,
-              "content": "<p style='font-size:11.5px;color:#cbd5e1;line-height:1.55;'>FTX collapsed Nov 2022 — $8B in customer funds lost<br/>Gox collapsed 2014 — 850,000 BTC lost<br/><br/>CEX safety checklist:<br/>✓ Use regulated, audited exchanges (Coinbase, Kraken)<br/>✓ Only keep trading amounts on exchange<br/>✓ Withdraw profits to self-custody regularly<br/>✓ Check Proof of Reserves (does exchange publish?)<br/>✓ Separate exchange account email from personal<br/>✓ Never share 2FA codes with &#x27;support&#x27;<br/>✓ Monitor for withdrawal whitelist options</p>",
+              "content": "<p style='font-size:15px;font-weight:bold;color:#f59e0b;'>SIM Swap Attacks</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
             {
-              "id": "hs-sc-s3-dexbox",
-              "type": "shape",
-              "left": 520,
-              "top": 90,
-              "width": 430,
-              "height": 220,
+              "id": "s2b-simcontent",
+              "type": "text",
+              "left": 65,
+              "top": 138,
+              "width": 420,
+              "height": 390,
               "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#1e3a5f",
-              "fixedRatio": false
+              "content": "<p style='font-size:12px;color:#cbd5e1;line-height:1.55;'>Attacker calls your carrier, impersonates you, and ports your phone number to their SIM card.<br/>Now they receive all your SMS 2FA codes.<br/><br/>How it happens: social engineering + leaked<br/>personal data (name, last 4 SSN, account PIN)<br/><br/>Protection:<br/>• Never use SMS 2FA for crypto — use authenticator app<br/>• Enable carrier account PIN + port freeze<br/>• Use hardware key (YubiKey) as 2FA where possible</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
             },
             {
-              "id": "hs-sc-s3-dextitle",
+              "id": "s2b-checklisttitle",
               "type": "text",
-              "left": 535,
+              "left": 515,
               "top": 100,
-              "width": 400,
-              "height": 41,
+              "width": 420,
+              "height": 42,
               "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:bold;color:#f59e0b;'>DEX Risk — Decentralized Exchange Safety</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f59e0b"
-            },
-            {
-              "id": "hs-sc-s3-dexcontent",
-              "type": "text",
-              "left": 535,
-              "top": 135,
-              "width": 400,
-              "height": 251,
-              "rotate": 0,
-              "content": "<p style='font-size:11.5px;color:#cbd5e1;line-height:1.55;'>DEX: non-custodial — you keep your keys<br/>No registration, trade any token<br/><br/>DEX risks:<br/>• Smart contract bugs (no insurance)<br/>• Front-running bots (MEV) — sandwich attacks<br/>inflate your buy price and dump after your tx<br/>• Slippage — price moves between sign and confirm<br/>• Fake token contracts (same name, different address)<br/><br/>Safety: use official frontend URLs, set max<br/>slippage &lt;1% for stablecoins, &lt;2% for majors,<br/>verify contract address before any new token trade</p>",
+              "content": "<p style='font-size:15px;font-weight:bold;color:#f59e0b;'>Intermediate Security Checklist</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
             },
             {
-              "id": "hs-sc-s3-recoverybox",
-              "type": "shape",
-              "left": 50,
-              "top": 325,
-              "width": 430,
-              "height": 185,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#1e3a5f",
-              "fixedRatio": false
-            },
-            {
-              "id": "hs-sc-s3-recoverytitle",
+              "id": "s2b-checklistcontent",
               "type": "text",
-              "left": 65,
-              "top": 335,
-              "width": 400,
-              "height": 42,
+              "left": 515,
+              "top": 138,
+              "width": 420,
+              "height": 390,
               "rotate": 0,
-              "content": "<p style='font-size:15px;font-weight:bold;color:#f59e0b;'>Recovery Planning</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f59e0b"
-            },
-            {
-              "id": "hs-sc-s3-recoverycontent",
-              "type": "text",
-              "left": 65,
-              "top": 370,
-              "width": 400,
-              "height": 145,
-              "rotate": 0,
-              "content": "<p style='font-size:9.5px;color:#cbd5e1;line-height:1.55;'>If compromised: move funds immediately, revoke all approvals, report to exchange, document for tax/insurance.<br/><br/>Create a crypto will:<br/>• Seed phrase &amp; hardware wallet locations<br/>• List of exchanges &amp; approx holdings<br/>• Instructions for next-of-kin</p>",
+              "content": "<p style='font-size:12px;color:#fde68a;line-height:1.6;'>✓ Hardware wallet for &gt;$1,000 in holdings<br/>✓ Seed phrase stored offline, never digital<br/>✓ Authenticator app 2FA (not SMS) everywhere<br/>✓ Dedicated crypto email with strong password<br/>✓ Monthly token approval audit (revoke.cash)<br/>✓ Never click links from Discord/Telegram DMs<br/>✓ Test transaction before sending large amounts<br/>✓ VPN on public networks when accessing wallets</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#cbd5e1"
-            },
-            {
-              "id": "hs-sc-s3-ocbox",
-              "type": "shape",
-              "left": 520,
-              "top": 325,
-              "width": 430,
-              "height": 185,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#422006",
-              "fixedRatio": false
-            },
-            {
-              "id": "hs-sc-s3-octitle",
-              "type": "text",
-              "left": 535,
-              "top": 335,
-              "width": 400,
-              "height": 42,
-              "rotate": 0,
-              "content": "<p style='font-size:15px;font-weight:bold;color:#f59e0b;'>Security is Your Edge</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f59e0b"
-            },
-            {
-              "id": "hs-sc-s3-occontent",
-              "type": "text",
-              "left": 535,
-              "top": 370,
-              "width": 400,
-              "height": 178,
-              "rotate": 0,
-              "content": "<p style='font-size:9.0px;color:#fde68a;line-height:1.6;'>Most traders lose money to markets.<br/>The second-biggest loss category is security failures.<br/><br/>OnlyCrypto&#x27;s copy trading model reduces risk:<br/>• Trading through the platform — no private key exposure<br/>• Expert traders manage the position<br/>• You maintain control of entry and exit<br/><br/>Security knowledge is protective alpha.<br/>Every attack you understand is one you avoid.<br/>The goal is to keep what you earn.</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#fde68a"
             }
           ]
         }
       },
       "actions": [
         {
-          "id": "action_hs-sc-s3_0",
-          "type": "spotlight",
-          "elementId": "hs-sc-s3-title"
-        },
-        {
-          "id": "action_hs-sc-s3_1",
+          "id": "action_hs-sc-s2b_0",
           "type": "speech",
-          "text": "Centralized exchanges carry counterparty risk — FTX lost eight billion dollars of customer funds in 2022, and Mt. Gox lost 850,000 Bitcoin before that. The rule is simple: only keep on exchange what you're actively trading. Withdraw profits to self-custody regularly, and only use exchanges that publish proof of reserves.",
+          "text": "SIM swap is one of the most dangerous attacks because it bypasses SMS two-factor authentication entirely. The attacker impersonates you with your carrier and ports your number to their SIM. The fix: switch every crypto account to an authenticator app, enable a carrier account PIN, and use a hardware key like YubiKey where possible.",
           "audioUrl": "/audio/lessons/oc-hs-security/2-1.mp3"
-        },
+        }
+      ]
+    },
+    {
+      "id": "hs-sc-s3a",
+      "type": "slide",
+      "title": "Exchange Safety: CEX vs DEX Risk",
+      "order": 5,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
+          },
+          "elements": [
+            {
+              "id": "bg",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 562,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f172a",
+              "fixedRatio": false
+            },
+            {
+              "id": "div-85",
+              "type": "shape",
+              "left": 0,
+              "top": 85,
+              "width": 1000,
+              "height": 4,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "s3a-title",
+              "type": "text",
+              "left": 50,
+              "top": 20,
+              "width": 900,
+              "height": 59,
+              "rotate": 0,
+              "content": "<p style='font-size:26px;font-weight:bold;color:#f59e0b;'>Exchange Safety: CEX vs DEX Risk</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "s3a-cextitle",
+              "type": "text",
+              "left": 65,
+              "top": 100,
+              "width": 420,
+              "height": 41,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:bold;color:#f59e0b;'>CEX Risk — Centralized Exchange Safety</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "s3a-cexcontent",
+              "type": "text",
+              "left": 65,
+              "top": 138,
+              "width": 420,
+              "height": 390,
+              "rotate": 0,
+              "content": "<p style='font-size:11.5px;color:#cbd5e1;line-height:1.55;'>FTX collapsed Nov 2022 — $8B in customer funds lost<br/>Gox collapsed 2014 — 850,000 BTC lost<br/><br/>CEX safety checklist:<br/>✓ Use regulated, audited exchanges (Coinbase, Kraken)<br/>✓ Only keep trading amounts on exchange<br/>✓ Withdraw profits to self-custody regularly<br/>✓ Check Proof of Reserves (does exchange publish?)<br/>✓ Separate exchange account email from personal<br/>✓ Never share 2FA codes with &#x27;support&#x27;<br/>✓ Monitor for withdrawal whitelist options</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "s3a-dextitle",
+              "type": "text",
+              "left": 515,
+              "top": 100,
+              "width": 420,
+              "height": 41,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:bold;color:#f59e0b;'>DEX Risk — Decentralized Exchange Safety</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "s3a-dexcontent",
+              "type": "text",
+              "left": 515,
+              "top": 138,
+              "width": 420,
+              "height": 390,
+              "rotate": 0,
+              "content": "<p style='font-size:11.5px;color:#cbd5e1;line-height:1.55;'>DEX: non-custodial — you keep your keys<br/>No registration, trade any token<br/><br/>DEX risks:<br/>• Smart contract bugs (no insurance)<br/>• Front-running bots (MEV) — sandwich attacks<br/>inflate your buy price and dump after your tx<br/>• Slippage — price moves between sign and confirm<br/>• Fake token contracts (same name, different address)<br/><br/>Safety: use official frontend URLs, set max<br/>slippage &lt;1% for stablecoins, &lt;2% for majors,<br/>verify contract address before any new token trade</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            }
+          ]
+        }
+      },
+      "actions": [
         {
-          "id": "action_hs-sc-s3_2",
-          "type": "spotlight",
-          "elementId": "hs-sc-s3-dexbox"
-        },
-        {
-          "id": "action_hs-sc-s3_3",
+          "id": "action_hs-sc-s3a_0",
           "type": "speech",
-          "text": "DEXs give you full custody but introduce different risks. MEV bots run sandwich attacks — they see your pending transaction, buy before you, and sell right after, inflating your price. Slippage can also hurt you if price moves between signing and confirmation. Always verify the contract address before trading any new token — fake token contracts with identical names are a common trap.",
-          "audioUrl": "/audio/lessons/oc-hs-security/2-3.mp3"
+          "text": "Centralized exchanges carry counterparty risk — FTX lost eight billion dollars of customer funds in 2022, and Mt. Gox lost 400,000 Bitcoin before it. Only keep trading amounts on exchanges. Withdraw profits to self-custody regularly. Check whether the exchange publishes Proof of Reserves.",
+          "audioUrl": "/audio/lessons/oc-hs-security/3-0.mp3"
         },
         {
-          "id": "action_hs-sc-s3_4",
-          "type": "spotlight",
-          "elementId": "hs-sc-s3-recoverybox"
-        },
-        {
-          "id": "action_hs-sc-s3_5",
+          "id": "action_hs-sc-s3a_1",
           "type": "speech",
-          "text": "Recovery planning is something most crypto holders skip until it's too late. Create a crypto will — a secure document with seed phrase locations, exchange accounts, and approximate holdings. If you're ever compromised, act immediately: move remaining funds to a new wallet, revoke all token approvals, and document everything. Speed is everything when your wallet is at risk.",
-          "audioUrl": "/audio/lessons/oc-hs-security/2-5.mp3"
-        },
+          "text": "DEX platforms are non-custodial — you keep your keys — but they carry their own risks. Smart contract bugs, MEV sandwich attacks that inflate your buy price, slippage, and fake token contracts with the same name as legitimate ones. Always use the official frontend URL, verify the contract address, and set tight slippage limits.",
+          "audioUrl": "/audio/lessons/oc-hs-security/3-1.mp3"
+        }
+      ]
+    },
+    {
+      "id": "hs-sc-s3b",
+      "type": "slide",
+      "title": "Recovery Planning & Security Edge",
+      "order": 6,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
+          },
+          "elements": [
+            {
+              "id": "bg",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 562,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f172a",
+              "fixedRatio": false
+            },
+            {
+              "id": "div-85",
+              "type": "shape",
+              "left": 0,
+              "top": 85,
+              "width": 1000,
+              "height": 4,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "s3b-title",
+              "type": "text",
+              "left": 50,
+              "top": 20,
+              "width": 900,
+              "height": 59,
+              "rotate": 0,
+              "content": "<p style='font-size:26px;font-weight:bold;color:#f59e0b;'>Recovery Planning &amp; Your Security Edge</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "s3b-recoverytitle",
+              "type": "text",
+              "left": 65,
+              "top": 100,
+              "width": 420,
+              "height": 42,
+              "rotate": 0,
+              "content": "<p style='font-size:15px;font-weight:bold;color:#f59e0b;'>Recovery Planning</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "s3b-recoverycontent",
+              "type": "text",
+              "left": 65,
+              "top": 138,
+              "width": 420,
+              "height": 390,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#cbd5e1;line-height:1.55;'>What if something goes wrong?<br/><br/>Create a crypto will:<br/>• Secure location of seed phrases and hardware wallets<br/>• List of exchanges, wallets, and approx holdings<br/>• Instructions for next-of-kin (lawyer or trusted person)<br/><br/>If you&#x27;re compromised:<br/>1. Move remaining funds to new wallet immediately<br/>2. Revoke all token approvals from compromised wallet<br/>3. Report to exchange if CEX was breached<br/>4. Document everything for tax/insurance</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "s3b-octitle",
+              "type": "text",
+              "left": 515,
+              "top": 100,
+              "width": 420,
+              "height": 42,
+              "rotate": 0,
+              "content": "<p style='font-size:15px;font-weight:bold;color:#f59e0b;'>Security is Your Edge</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "s3b-occontent",
+              "type": "text",
+              "left": 515,
+              "top": 138,
+              "width": 420,
+              "height": 390,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#fde68a;line-height:1.6;'>Most traders lose money to markets.<br/>The second-biggest loss category is security failures.<br/><br/>OnlyCrypto&#x27;s copy trading model reduces risk:<br/>• Trading through the platform — no private key exposure<br/>• Expert traders manage the position<br/>• You maintain control of entry and exit<br/><br/>Security knowledge is protective alpha.<br/>Every attack you understand is one you avoid.<br/>The goal is to keep what you earn.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            }
+          ]
+        }
+      },
+      "actions": [
         {
-          "id": "action_hs-sc-s3_6",
-          "type": "spotlight",
-          "elementId": "hs-sc-s3-ocbox"
-        },
-        {
-          "id": "action_hs-sc-s3_7",
+          "id": "action_hs-sc-s3b_0",
           "type": "speech",
-          "text": "Security knowledge is protective alpha — every attack you understand is one you avoid. Markets take money. Security failures also take money. OnlyCrypto's model reduces your attack surface because you trade through the platform without exposing private keys directly. The goal of everything in this module is simple: keep what you earn.",
-          "audioUrl": "/audio/lessons/oc-hs-security/2-7.mp3"
+          "text": "Recovery planning means thinking ahead before you need it. Create a crypto will: document where your seed phrases and hardware wallets are stored, list your exchanges and approximate holdings, and leave instructions for a trusted person. If you are compromised, move remaining funds to a new wallet immediately, revoke all token approvals from the compromised wallet, and document everything.",
+          "audioUrl": "/audio/lessons/oc-hs-security/3-2.mp3"
+        },
+        {
+          "id": "action_hs-sc-s3b_1",
+          "type": "speech",
+          "text": "Most traders lose money to markets. The second-biggest loss category is security failures. OnlyCrypto's copy trading model reduces your direct exposure — no private key risk on positions, expert traders managing the trades, you control entry and exit. Security knowledge is permanent alpha. Every attack you understand is one you avoid.",
+          "audioUrl": "/audio/lessons/oc-hs-security/3-3.mp3"
         }
       ]
     },
@@ -758,7 +707,7 @@
       "id": "hs-sc-s4",
       "type": "quiz",
       "title": "Knowledge Check — Security High School",
-      "order": 4,
+      "order": 7,
       "content": {
         "type": "quiz",
         "questions": [
