@@ -9,7 +9,11 @@
     "updatedAt": "2026-04-29T12:00:00.000Z",
     "languageDirective": "en-US",
     "style": "academic",
-    "agentIds": ["default-1", "default-2", "default-3"],
+    "agentIds": [
+      "default-1",
+      "default-2",
+      "default-3"
+    ],
     "generatedAgentConfigs": []
   },
   "scenes": [
@@ -36,10 +40,17 @@
           "id": "fe-intro-canvas",
           "viewportSize": 1000,
           "viewportRatio": 0.5625,
-          "background": { "type": "solid", "color": "#0b1120" },
+          "background": {
+            "type": "solid",
+            "color": "#0b1120"
+          },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": ["#f59e0b", "#3b82f6", "#8b5cf6"],
+            "themeColors": [
+              "#f59e0b",
+              "#3b82f6",
+              "#8b5cf6"
+            ],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -47,17 +58,26 @@
             {
               "id": "fe-intro-bar",
               "type": "shape",
-              "left": 0, "top": 0, "width": 1000, "height": 6,
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [1, 1],
+              "viewBox": [
+                1,
+                1
+              ],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
             {
               "id": "fe-intro-title",
               "type": "text",
-              "left": 24, "top": 16, "width": 900, "height": 60,
+              "left": 24,
+              "top": 16,
+              "width": 900,
+              "height": 68,
               "rotate": 0,
               "content": "<p style='font-size:32px;font-weight:800;color:#f1f5f9;'>🎓 OC Academy — Final Exam</p>",
               "defaultFontName": "Inter",
@@ -66,7 +86,10 @@
             {
               "id": "fe-intro-sub",
               "type": "text",
-              "left": 24, "top": 80, "width": 900, "height": 30,
+              "left": 24,
+              "top": 80,
+              "width": 900,
+              "height": 41,
               "rotate": 0,
               "content": "<p style='font-size:14px;color:#64748b;font-weight:500;'>100 questions · All levels · All subjects</p>",
               "defaultFontName": "Inter",
@@ -75,7 +98,10 @@
             {
               "id": "fe-intro-body",
               "type": "text",
-              "left": 24, "top": 130, "width": 900, "height": 300,
+              "left": 24,
+              "top": 130,
+              "width": 900,
+              "height": 326,
               "rotate": 0,
               "content": "<p style='font-size:15px;color:#cbd5e1;line-height:1.7;'>This final exam covers every subject taught in OC Academy:<br/><br/>• <b style='color:#f59e0b;'>Cryptocurrency</b> — Bitcoin, altcoins, tokenomics, markets<br/>• <b style='color:#f59e0b;'>Blockchain</b> — How it works, consensus, smart contracts<br/>• <b style='color:#f59e0b;'>DeFi</b> — AMMs, lending, yield, flash loans, risks<br/>• <b style='color:#f59e0b;'>Trading</b> — Charts, indicators, psychology, risk management<br/>• <b style='color:#f59e0b;'>Wallets &amp; Security</b> — Keys, seed phrases, attack vectors<br/>• <b style='color:#f59e0b;'>Ecosystem</b> — NFTs, DAOs, RWAs, Web3, regulation<br/>• <b style='color:#f59e0b;'>Swapping &amp; Bridging</b> — DEX, AMM, bridges, MEV<br/>• <b style='color:#f59e0b;'>XRPL</b> — Consensus, trust lines, native DEX, ODL<br/><br/>Questions range from Elementary through College level. Score 80%+ to earn your certificate.</p>",
               "defaultFontName": "Inter",
@@ -100,1608 +126,2907 @@
       "content": {
         "type": "quiz",
         "questions": [
-
           {
             "id": "q-fe-1",
             "type": "single",
             "category": "Cryptocurrency — Elementary",
             "question": "What does 'crypto' in cryptocurrency refer to?",
             "options": [
-              { "label": "It is stored in a vault", "value": "A" },
-              { "label": "It uses cryptography (secret codes) to stay secure", "value": "B" },
-              { "label": "It was created by a government", "value": "C" },
-              { "label": "It only works on mobile phones", "value": "D" }
+              {
+                "label": "It is stored in a vault",
+                "value": "A"
+              },
+              {
+                "label": "It uses cryptography (secret codes) to stay secure",
+                "value": "B"
+              },
+              {
+                "label": "It was created by a government",
+                "value": "C"
+              },
+              {
+                "label": "It only works on mobile phones",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "'Crypto' comes from cryptography — the science of math-based secret codes that ensure only the rightful owner can spend their coins.",
             "points": 1
           },
-
           {
             "id": "q-fe-2",
             "type": "single",
             "category": "Cryptocurrency — Elementary",
             "question": "How many Bitcoin will EVER exist?",
             "options": [
-              { "label": "Unlimited", "value": "A" },
-              { "label": "1 billion", "value": "B" },
-              { "label": "21 million", "value": "C" },
-              { "label": "100 thousand", "value": "D" }
+              {
+                "label": "Unlimited",
+                "value": "A"
+              },
+              {
+                "label": "1 billion",
+                "value": "B"
+              },
+              {
+                "label": "21 million",
+                "value": "C"
+              },
+              {
+                "label": "100 thousand",
+                "value": "D"
+              }
             ],
-            "answer": ["C"],
+            "answer": [
+              "C"
+            ],
             "analysis": "Bitcoin has a hard cap of 21 million coins — ever. This fixed supply is one reason it is compared to digital gold.",
             "points": 1
           },
-
           {
             "id": "q-fe-3",
             "type": "single",
             "category": "Cryptocurrency — Elementary",
             "question": "What is a stablecoin?",
             "options": [
-              { "label": "A coin that never moves price", "value": "A" },
-              { "label": "A cryptocurrency pegged to a stable asset like the US dollar", "value": "B" },
-              { "label": "A coin only used by banks", "value": "C" },
-              { "label": "Bitcoin's older name", "value": "D" }
+              {
+                "label": "A coin that never moves price",
+                "value": "A"
+              },
+              {
+                "label": "A cryptocurrency pegged to a stable asset like the US dollar",
+                "value": "B"
+              },
+              {
+                "label": "A coin only used by banks",
+                "value": "C"
+              },
+              {
+                "label": "Bitcoin's older name",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Stablecoins like USDC and USDT are pegged to stable assets (usually USD) so their price doesn't swing wildly like Bitcoin or Ethereum.",
             "points": 1
           },
-
           {
             "id": "q-fe-4",
             "type": "single",
             "category": "Cryptocurrency — Elementary",
             "question": "Which cryptocurrency does OnlyCrypto use for payouts?",
             "options": [
-              { "label": "Bitcoin", "value": "A" },
-              { "label": "Ethereum", "value": "B" },
-              { "label": "XRP", "value": "C" },
-              { "label": "Dogecoin", "value": "D" }
+              {
+                "label": "Bitcoin",
+                "value": "A"
+              },
+              {
+                "label": "Ethereum",
+                "value": "B"
+              },
+              {
+                "label": "XRP",
+                "value": "C"
+              },
+              {
+                "label": "Dogecoin",
+                "value": "D"
+              }
             ],
-            "answer": ["C"],
+            "answer": [
+              "C"
+            ],
             "analysis": "OnlyCrypto uses XRP (the XRP Ledger) because it settles in 3–5 seconds with nearly zero fees — perfect for automatic payouts.",
             "points": 1
           },
-
           {
             "id": "q-fe-5",
             "type": "single",
             "category": "Cryptocurrency — High School",
             "question": "What happens to the Bitcoin block reward approximately every four years?",
             "options": [
-              { "label": "It doubles", "value": "A" },
-              { "label": "It is halved", "value": "B" },
-              { "label": "It stays the same", "value": "C" },
-              { "label": "It is eliminated permanently", "value": "D" }
+              {
+                "label": "It doubles",
+                "value": "A"
+              },
+              {
+                "label": "It is halved",
+                "value": "B"
+              },
+              {
+                "label": "It stays the same",
+                "value": "C"
+              },
+              {
+                "label": "It is eliminated permanently",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "The Bitcoin halving cuts the block reward in half roughly every 210,000 blocks (~4 years), reducing new supply and historically creating upward price pressure.",
             "points": 1
           },
-
           {
             "id": "q-fe-6",
             "type": "single",
             "category": "Cryptocurrency — High School",
             "question": "What is 'market cap' in cryptocurrency?",
             "options": [
-              { "label": "The maximum number of coins that can be mined per day", "value": "A" },
-              { "label": "The total value of all circulating coins (price × supply)", "value": "B" },
-              { "label": "The daily trading volume on exchanges", "value": "C" },
-              { "label": "The fee paid to miners per block", "value": "D" }
+              {
+                "label": "The maximum number of coins that can be mined per day",
+                "value": "A"
+              },
+              {
+                "label": "The total value of all circulating coins (price × supply)",
+                "value": "B"
+              },
+              {
+                "label": "The daily trading volume on exchanges",
+                "value": "C"
+              },
+              {
+                "label": "The fee paid to miners per block",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Market cap = current price × circulating supply. It's the most common metric for ranking cryptocurrencies by size.",
             "points": 1
           },
-
           {
             "id": "q-fe-7",
             "type": "single",
             "category": "Cryptocurrency — High School",
             "question": "What does 'liquidity' mean in a crypto market?",
             "options": [
-              { "label": "How much water is needed to mine crypto", "value": "A" },
-              { "label": "How easily an asset can be bought or sold without large price impact", "value": "B" },
-              { "label": "The number of wallets holding a coin", "value": "C" },
-              { "label": "The speed of transactions on the blockchain", "value": "D" }
+              {
+                "label": "How much water is needed to mine crypto",
+                "value": "A"
+              },
+              {
+                "label": "How easily an asset can be bought or sold without large price impact",
+                "value": "B"
+              },
+              {
+                "label": "The number of wallets holding a coin",
+                "value": "C"
+              },
+              {
+                "label": "The speed of transactions on the blockchain",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "High liquidity means you can buy or sell large amounts without drastically moving the price. Low liquidity means even small trades cause big price swings (slippage).",
             "points": 1
           },
-
           {
             "id": "q-fe-8",
             "type": "single",
             "category": "Cryptocurrency — College",
             "question": "What is the UTXO model used by Bitcoin?",
             "options": [
-              { "label": "A way to track unspent transaction outputs as the basis of balance", "value": "A" },
-              { "label": "An algorithm that calculates mining difficulty", "value": "B" },
-              { "label": "A consensus mechanism used to validate blocks", "value": "C" },
-              { "label": "A token standard on Ethereum", "value": "D" }
+              {
+                "label": "A way to track unspent transaction outputs as the basis of balance",
+                "value": "A"
+              },
+              {
+                "label": "An algorithm that calculates mining difficulty",
+                "value": "B"
+              },
+              {
+                "label": "A consensus mechanism used to validate blocks",
+                "value": "C"
+              },
+              {
+                "label": "A token standard on Ethereum",
+                "value": "D"
+              }
             ],
-            "answer": ["A"],
+            "answer": [
+              "A"
+            ],
             "analysis": "Bitcoin tracks balances as Unspent Transaction Outputs (UTXOs). Your 'balance' is the sum of UTXOs you control with your private key — there is no account-based balance like Ethereum uses.",
             "points": 1
           },
-
           {
             "id": "q-fe-9",
             "type": "single",
             "category": "Cryptocurrency — College",
             "question": "What does elliptic curve cryptography (ECC) enable in blockchain?",
             "options": [
-              { "label": "Faster mining of new blocks", "value": "A" },
-              { "label": "Secure public/private key pairs for ownership and signing transactions", "value": "B" },
-              { "label": "Anonymous smart contract execution", "value": "C" },
-              { "label": "Cross-chain bridging of assets", "value": "D" }
+              {
+                "label": "Faster mining of new blocks",
+                "value": "A"
+              },
+              {
+                "label": "Secure public/private key pairs for ownership and signing transactions",
+                "value": "B"
+              },
+              {
+                "label": "Anonymous smart contract execution",
+                "value": "C"
+              },
+              {
+                "label": "Cross-chain bridging of assets",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "ECC generates the public/private key pairs that underpin wallet ownership. Your private key signs transactions; anyone can verify the signature with your public key — without revealing the private key.",
             "points": 1
           },
-
           {
             "id": "q-fe-10",
             "type": "single",
             "category": "Cryptocurrency — College",
             "question": "A governance token primarily gives holders the right to:",
             "options": [
-              { "label": "Earn mining rewards", "value": "A" },
-              { "label": "Vote on changes to a protocol's rules and treasury", "value": "B" },
-              { "label": "Redeem 1:1 for USD at any time", "value": "C" },
-              { "label": "Bypass gas fees on Ethereum", "value": "D" }
+              {
+                "label": "Earn mining rewards",
+                "value": "A"
+              },
+              {
+                "label": "Vote on changes to a protocol's rules and treasury",
+                "value": "B"
+              },
+              {
+                "label": "Redeem 1:1 for USD at any time",
+                "value": "C"
+              },
+              {
+                "label": "Bypass gas fees on Ethereum",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Governance tokens (e.g., UNI, COMP) give holders voting rights on protocol upgrades, fee structures, and treasury spending — putting decision-making on-chain.",
             "points": 1
           },
-
           {
             "id": "q-fe-11",
             "type": "single",
             "category": "Blockchain — Elementary",
             "question": "What is a blockchain most like?",
             "options": [
-              { "label": "A bank vault", "value": "A" },
-              { "label": "A shared notebook that everyone can read but no one can erase", "value": "B" },
-              { "label": "A private diary", "value": "C" },
-              { "label": "A government database", "value": "D" }
+              {
+                "label": "A bank vault",
+                "value": "A"
+              },
+              {
+                "label": "A shared notebook that everyone can read but no one can erase",
+                "value": "B"
+              },
+              {
+                "label": "A private diary",
+                "value": "C"
+              },
+              {
+                "label": "A government database",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "A blockchain is a shared, public ledger. Many copies exist across the network (nodes), and once a transaction is recorded no one can erase or alter it.",
             "points": 1
           },
-
           {
             "id": "q-fe-12",
             "type": "single",
             "category": "Blockchain — Elementary",
             "question": "What connects each block to the one before it in a blockchain?",
             "options": [
-              { "label": "A username and password", "value": "A" },
-              { "label": "A cryptographic hash of the previous block", "value": "B" },
-              { "label": "A timestamp only", "value": "C" },
-              { "label": "A bank approval code", "value": "D" }
+              {
+                "label": "A username and password",
+                "value": "A"
+              },
+              {
+                "label": "A cryptographic hash of the previous block",
+                "value": "B"
+              },
+              {
+                "label": "A timestamp only",
+                "value": "C"
+              },
+              {
+                "label": "A bank approval code",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Each block stores the hash of the previous block — forming the 'chain.' Altering any block changes its hash, breaking the chain and alerting the network immediately.",
             "points": 1
           },
-
           {
             "id": "q-fe-13",
             "type": "single",
             "category": "Blockchain — Elementary",
             "question": "What is Proof of Work (PoW)?",
             "options": [
-              { "label": "Validators are chosen based on how many coins they own", "value": "A" },
-              { "label": "Miners compete to solve a hard math puzzle to add the next block", "value": "B" },
-              { "label": "Users vote on which block gets added", "value": "C" },
-              { "label": "Transactions are approved automatically after 10 minutes", "value": "D" }
+              {
+                "label": "Validators are chosen based on how many coins they own",
+                "value": "A"
+              },
+              {
+                "label": "Miners compete to solve a hard math puzzle to add the next block",
+                "value": "B"
+              },
+              {
+                "label": "Users vote on which block gets added",
+                "value": "C"
+              },
+              {
+                "label": "Transactions are approved automatically after 10 minutes",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "In PoW (used by Bitcoin) miners race to find a hash that meets the difficulty target. This competition requires real energy and computing power, making attacks expensive.",
             "points": 1
           },
-
           {
             "id": "q-fe-14",
             "type": "single",
             "category": "Blockchain — High School",
             "question": "What is a hard fork?",
             "options": [
-              { "label": "A backward-compatible upgrade to the blockchain protocol", "value": "A" },
-              { "label": "A non-backward-compatible protocol change that splits the chain if some nodes don't upgrade", "value": "B" },
-              { "label": "A type of phishing attack targeting validators", "value": "C" },
-              { "label": "The process of splitting a block into two smaller ones", "value": "D" }
+              {
+                "label": "A backward-compatible upgrade to the blockchain protocol",
+                "value": "A"
+              },
+              {
+                "label": "A non-backward-compatible protocol change that splits the chain if some nodes don't upgrade",
+                "value": "B"
+              },
+              {
+                "label": "A type of phishing attack targeting validators",
+                "value": "C"
+              },
+              {
+                "label": "The process of splitting a block into two smaller ones",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "A hard fork is a breaking change — nodes that don't upgrade follow a different chain. Bitcoin Cash was created by a hard fork of Bitcoin in 2017.",
             "points": 1
           },
-
           {
             "id": "q-fe-15",
             "type": "single",
             "category": "Blockchain — High School",
             "question": "What problem does a Layer 2 solution solve?",
             "options": [
-              { "label": "It replaces the base blockchain entirely", "value": "A" },
-              { "label": "It processes transactions off-chain to reduce congestion and fees on Layer 1", "value": "B" },
-              { "label": "It encrypts wallet seed phrases", "value": "C" },
-              { "label": "It eliminates the need for validators", "value": "D" }
+              {
+                "label": "It replaces the base blockchain entirely",
+                "value": "A"
+              },
+              {
+                "label": "It processes transactions off-chain to reduce congestion and fees on Layer 1",
+                "value": "B"
+              },
+              {
+                "label": "It encrypts wallet seed phrases",
+                "value": "C"
+              },
+              {
+                "label": "It eliminates the need for validators",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Layer 2s (like Lightning Network or Ethereum rollups) batch or move transactions off the main chain, then settle proofs back to Layer 1 — drastically cutting fees and speeding things up.",
             "points": 1
           },
-
           {
             "id": "q-fe-16",
             "type": "single",
             "category": "Blockchain — High School",
             "question": "The Blockchain Trilemma states that blockchains must trade off between:",
             "options": [
-              { "label": "Speed, cost, and privacy", "value": "A" },
-              { "label": "Security, decentralization, and scalability", "value": "B" },
-              { "label": "Proof of Work, Proof of Stake, and DPoS", "value": "C" },
-              { "label": "Mining, staking, and governance", "value": "D" }
+              {
+                "label": "Speed, cost, and privacy",
+                "value": "A"
+              },
+              {
+                "label": "Security, decentralization, and scalability",
+                "value": "B"
+              },
+              {
+                "label": "Proof of Work, Proof of Stake, and DPoS",
+                "value": "C"
+              },
+              {
+                "label": "Mining, staking, and governance",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "The trilemma (coined by Vitalik) holds that it's hard to achieve all three at once. Bitcoin maximizes security and decentralization but sacrifices scalability.",
             "points": 1
           },
-
           {
             "id": "q-fe-17",
             "type": "single",
             "category": "Blockchain — College",
             "question": "What is the purpose of a Merkle tree in a blockchain?",
             "options": [
-              { "label": "To store user passwords securely", "value": "A" },
-              { "label": "To efficiently verify that a transaction is included in a block without downloading the whole block", "value": "B" },
-              { "label": "To calculate the mining difficulty target", "value": "C" },
-              { "label": "To manage validator keys", "value": "D" }
+              {
+                "label": "To store user passwords securely",
+                "value": "A"
+              },
+              {
+                "label": "To efficiently verify that a transaction is included in a block without downloading the whole block",
+                "value": "B"
+              },
+              {
+                "label": "To calculate the mining difficulty target",
+                "value": "C"
+              },
+              {
+                "label": "To manage validator keys",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "A Merkle tree hashes pairs of transactions up to a single root hash. A lightweight client can use a Merkle proof to verify a tx is in a block with just a few hashes — not the whole block.",
             "points": 1
           },
-
           {
             "id": "q-fe-18",
             "type": "single",
             "category": "Blockchain — College",
             "question": "Byzantine Fault Tolerance (BFT) addresses which core problem in distributed systems?",
             "options": [
-              { "label": "Nodes sending double transactions", "value": "A" },
-              { "label": "Reaching consensus when some nodes may be malicious or faulty", "value": "B" },
-              { "label": "Encrypting data at rest", "value": "C" },
-              { "label": "Scaling block size to handle more transactions", "value": "D" }
+              {
+                "label": "Nodes sending double transactions",
+                "value": "A"
+              },
+              {
+                "label": "Reaching consensus when some nodes may be malicious or faulty",
+                "value": "B"
+              },
+              {
+                "label": "Encrypting data at rest",
+                "value": "C"
+              },
+              {
+                "label": "Scaling block size to handle more transactions",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "BFT systems can reach correct consensus even if up to 1/3 of nodes are dishonest or broken. XRPL's RPCA and Tendermint-based chains are BFT.",
             "points": 1
           },
-
           {
             "id": "q-fe-19",
             "type": "single",
             "category": "Blockchain — College",
             "question": "What does the Ethereum Virtual Machine (EVM) do?",
             "options": [
-              { "label": "Mines new ETH blocks using GPU hardware", "value": "A" },
-              { "label": "Executes smart contract bytecode in a sandboxed, deterministic environment across all nodes", "value": "B" },
-              { "label": "Routes transactions to the fastest validator", "value": "C" },
-              { "label": "Converts Solidity code to NFTs", "value": "D" }
+              {
+                "label": "Mines new ETH blocks using GPU hardware",
+                "value": "A"
+              },
+              {
+                "label": "Executes smart contract bytecode in a sandboxed, deterministic environment across all nodes",
+                "value": "B"
+              },
+              {
+                "label": "Routes transactions to the fastest validator",
+                "value": "C"
+              },
+              {
+                "label": "Converts Solidity code to NFTs",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "The EVM is a global, decentralized computer. Every Ethereum node runs the same EVM, executing smart contract code identically so all nodes agree on the result.",
             "points": 1
           },
-
           {
             "id": "q-fe-20",
             "type": "single",
             "category": "DeFi — Elementary",
             "question": "What does DeFi stand for?",
             "options": [
-              { "label": "Digital Finance Interface", "value": "A" },
-              { "label": "Decentralized Finance", "value": "B" },
-              { "label": "Distributed Federal Insurance", "value": "C" },
-              { "label": "Default Financial Integration", "value": "D" }
+              {
+                "label": "Digital Finance Interface",
+                "value": "A"
+              },
+              {
+                "label": "Decentralized Finance",
+                "value": "B"
+              },
+              {
+                "label": "Distributed Federal Insurance",
+                "value": "C"
+              },
+              {
+                "label": "Default Financial Integration",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "DeFi = Decentralized Finance. It recreates financial services (lending, trading, saving) using smart contracts on a blockchain — no banks or brokers needed.",
             "points": 1
           },
-
           {
             "id": "q-fe-21",
             "type": "single",
             "category": "DeFi — Elementary",
             "question": "What is a smart contract?",
             "options": [
-              { "label": "A legal agreement signed by lawyers", "value": "A" },
-              { "label": "A self-executing program on a blockchain that runs when conditions are met", "value": "B" },
-              { "label": "A premium subscription to a trading app", "value": "C" },
-              { "label": "An AI system that predicts prices", "value": "D" }
+              {
+                "label": "A legal agreement signed by lawyers",
+                "value": "A"
+              },
+              {
+                "label": "A self-executing program on a blockchain that runs when conditions are met",
+                "value": "B"
+              },
+              {
+                "label": "A premium subscription to a trading app",
+                "value": "C"
+              },
+              {
+                "label": "An AI system that predicts prices",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Smart contracts are code deployed on a blockchain. They run automatically when conditions are met (e.g., 'If Alice sends 1 ETH, send Bob the NFT') — no middleman required.",
             "points": 1
           },
-
           {
             "id": "q-fe-22",
             "type": "single",
             "category": "DeFi — Elementary",
             "question": "What is a liquidity pool?",
             "options": [
-              { "label": "A savings account at a crypto bank", "value": "A" },
-              { "label": "A pool of two tokens locked in a smart contract that enables trading on a DEX", "value": "B" },
-              { "label": "A group of miners sharing rewards", "value": "C" },
-              { "label": "A cold wallet for storing large amounts", "value": "D" }
+              {
+                "label": "A savings account at a crypto bank",
+                "value": "A"
+              },
+              {
+                "label": "A pool of two tokens locked in a smart contract that enables trading on a DEX",
+                "value": "B"
+              },
+              {
+                "label": "A group of miners sharing rewards",
+                "value": "C"
+              },
+              {
+                "label": "A cold wallet for storing large amounts",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Liquidity pools hold pairs of tokens (e.g., ETH/USDC). Traders swap against the pool; liquidity providers earn a share of trading fees in return for depositing tokens.",
             "points": 1
           },
-
           {
             "id": "q-fe-23",
             "type": "single",
             "category": "DeFi — High School",
             "question": "In a constant-product AMM (x × y = k), what happens to the price of Token X when you buy a large amount of it?",
             "options": [
-              { "label": "The price of X drops because supply increases", "value": "A" },
-              { "label": "The price of X rises because less X remains in the pool", "value": "B" },
-              { "label": "The price stays the same — the formula keeps it fixed", "value": "C" },
-              { "label": "The price is set by the protocol's governance vote", "value": "D" }
+              {
+                "label": "The price of X drops because supply increases",
+                "value": "A"
+              },
+              {
+                "label": "The price of X rises because less X remains in the pool",
+                "value": "B"
+              },
+              {
+                "label": "The price stays the same — the formula keeps it fixed",
+                "value": "C"
+              },
+              {
+                "label": "The price is set by the protocol's governance vote",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "In x × y = k, buying X removes it from the pool, reducing x. To keep k constant, the ratio shifts — less X for each Y means X is now more expensive. This is the price impact of large trades.",
             "points": 1
           },
-
           {
             "id": "q-fe-24",
             "type": "single",
             "category": "DeFi — High School",
             "question": "What is impermanent loss?",
             "options": [
-              { "label": "A gas fee charged when you remove liquidity", "value": "A" },
-              { "label": "The loss an LP experiences when token prices diverge from when they deposited, compared to just holding", "value": "B" },
-              { "label": "The loss from a smart contract hack", "value": "C" },
-              { "label": "A penalty for withdrawing before a lock period ends", "value": "D" }
+              {
+                "label": "A gas fee charged when you remove liquidity",
+                "value": "A"
+              },
+              {
+                "label": "The loss an LP experiences when token prices diverge from when they deposited, compared to just holding",
+                "value": "B"
+              },
+              {
+                "label": "The loss from a smart contract hack",
+                "value": "C"
+              },
+              {
+                "label": "A penalty for withdrawing before a lock period ends",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Impermanent loss (IL) occurs when the price ratio of your deposited tokens changes. The pool rebalances, leaving you with less value than if you'd held the tokens. IL is 'impermanent' because it reverses if prices return to entry levels.",
             "points": 1
           },
-
           {
             "id": "q-fe-25",
             "type": "single",
             "category": "DeFi — High School",
             "question": "On Aave, what happens if your health factor drops below 1?",
             "options": [
-              { "label": "You earn bonus yield on your deposit", "value": "A" },
-              { "label": "Your collateral is partially liquidated to repay your debt", "value": "B" },
-              { "label": "Your account is automatically closed and funds returned", "value": "C" },
-              { "label": "The protocol pauses until governance votes", "value": "D" }
+              {
+                "label": "You earn bonus yield on your deposit",
+                "value": "A"
+              },
+              {
+                "label": "Your collateral is partially liquidated to repay your debt",
+                "value": "B"
+              },
+              {
+                "label": "Your account is automatically closed and funds returned",
+                "value": "C"
+              },
+              {
+                "label": "The protocol pauses until governance votes",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "A health factor below 1 means your debt exceeds safe collateral levels. Liquidators step in, repay part of your loan, and claim discounted collateral — protecting the protocol's solvency.",
             "points": 1
           },
-
           {
             "id": "q-fe-26",
             "type": "single",
             "category": "DeFi — College",
             "question": "What is a flash loan?",
             "options": [
-              { "label": "A 24-hour unsecured personal loan from a crypto bank", "value": "A" },
-              { "label": "A loan borrowed and repaid within the same transaction block, requiring zero collateral", "value": "B" },
-              { "label": "A micro-loan for gas fees funded by validators", "value": "C" },
-              { "label": "A loan that auto-repays from yield farming rewards", "value": "D" }
+              {
+                "label": "A 24-hour unsecured personal loan from a crypto bank",
+                "value": "A"
+              },
+              {
+                "label": "A loan borrowed and repaid within the same transaction block, requiring zero collateral",
+                "value": "B"
+              },
+              {
+                "label": "A micro-loan for gas fees funded by validators",
+                "value": "C"
+              },
+              {
+                "label": "A loan that auto-repays from yield farming rewards",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Flash loans are only possible in DeFi. They let you borrow millions with no collateral — as long as you return the funds plus fee in the same transaction. If not, the whole tx reverts as if it never happened.",
             "points": 1
           },
-
           {
             "id": "q-fe-27",
             "type": "single",
             "category": "DeFi — College",
             "question": "What is MEV (Maximal Extractable Value)?",
             "options": [
-              { "label": "The maximum yield a protocol can offer liquidity providers", "value": "A" },
-              { "label": "Profit extracted by block producers through transaction ordering, insertion, or censorship", "value": "B" },
-              { "label": "A metric for measuring validator uptime", "value": "C" },
-              { "label": "The maximum ETH a wallet can hold before being taxed", "value": "D" }
+              {
+                "label": "The maximum yield a protocol can offer liquidity providers",
+                "value": "A"
+              },
+              {
+                "label": "Profit extracted by block producers through transaction ordering, insertion, or censorship",
+                "value": "B"
+              },
+              {
+                "label": "A metric for measuring validator uptime",
+                "value": "C"
+              },
+              {
+                "label": "The maximum ETH a wallet can hold before being taxed",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "MEV is value captured by miners/validators (or searchers) by reordering, inserting, or censoring transactions in a block. Front-running and sandwich attacks are common MEV strategies.",
             "points": 1
           },
-
           {
             "id": "q-fe-28",
             "type": "single",
             "category": "DeFi — College",
             "question": "Which mechanism do algorithmic stablecoins use to maintain their peg?",
             "options": [
-              { "label": "Fiat dollars locked in a bank account 1:1", "value": "A" },
-              { "label": "On-chain collateral and algorithmic mint/burn rules", "value": "B" },
-              { "label": "Manual rebalancing by a DAO treasury", "value": "C" },
-              { "label": "Gold reserves audited annually", "value": "D" }
+              {
+                "label": "Fiat dollars locked in a bank account 1:1",
+                "value": "A"
+              },
+              {
+                "label": "On-chain collateral and algorithmic mint/burn rules",
+                "value": "B"
+              },
+              {
+                "label": "Manual rebalancing by a DAO treasury",
+                "value": "C"
+              },
+              {
+                "label": "Gold reserves audited annually",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Algorithmic stablecoins (like the original UST) use smart contracts that mint/burn a companion token to absorb price deviations and maintain the peg. This approach is fragile under market stress, as TerraUSD's collapse in 2022 showed.",
             "points": 1
           },
-
           {
             "id": "q-fe-29",
             "type": "single",
             "category": "Trading — Elementary",
             "question": "What is copy trading?",
             "options": [
-              { "label": "Copying trades from textbooks", "value": "A" },
-              { "label": "Automatically mirroring the trades of an experienced trader in your own account", "value": "B" },
-              { "label": "Trading the same coin twice", "value": "C" },
-              { "label": "Using a bot to trade at night while you sleep", "value": "D" }
+              {
+                "label": "Copying trades from textbooks",
+                "value": "A"
+              },
+              {
+                "label": "Automatically mirroring the trades of an experienced trader in your own account",
+                "value": "B"
+              },
+              {
+                "label": "Trading the same coin twice",
+                "value": "C"
+              },
+              {
+                "label": "Using a bot to trade at night while you sleep",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Copy trading lets you automatically replicate the exact trades of a skilled trader. When they buy, you buy. When they sell, you sell — proportional to your investment.",
             "points": 1
           },
-
           {
             "id": "q-fe-30",
             "type": "single",
             "category": "Trading — Elementary",
             "question": "What does 'going long' on a cryptocurrency mean?",
             "options": [
-              { "label": "Holding a coin for more than one year", "value": "A" },
-              { "label": "Buying with the expectation that the price will rise", "value": "B" },
-              { "label": "Selling a coin you don't own to buy it back cheaper later", "value": "C" },
-              { "label": "Locking a coin in a smart contract for 12 months", "value": "D" }
+              {
+                "label": "Holding a coin for more than one year",
+                "value": "A"
+              },
+              {
+                "label": "Buying with the expectation that the price will rise",
+                "value": "B"
+              },
+              {
+                "label": "Selling a coin you don't own to buy it back cheaper later",
+                "value": "C"
+              },
+              {
+                "label": "Locking a coin in a smart contract for 12 months",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Going long = buying because you expect the price to go up. You profit if the price rises above your entry. The opposite is going short — profiting when prices fall.",
             "points": 1
           },
-
           {
             "id": "q-fe-31",
             "type": "single",
             "category": "Trading — Elementary",
             "question": "What is volatility in crypto trading?",
             "options": [
-              { "label": "The speed of a blockchain transaction", "value": "A" },
-              { "label": "How much and how quickly a price moves up and down", "value": "B" },
-              { "label": "The number of traders active on an exchange", "value": "C" },
-              { "label": "The fee charged per trade", "value": "D" }
+              {
+                "label": "The speed of a blockchain transaction",
+                "value": "A"
+              },
+              {
+                "label": "How much and how quickly a price moves up and down",
+                "value": "B"
+              },
+              {
+                "label": "The number of traders active on an exchange",
+                "value": "C"
+              },
+              {
+                "label": "The fee charged per trade",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Volatility measures how dramatically a price swings. Crypto markets are famously volatile — Bitcoin can move 10% in a day. High volatility means higher potential gains AND losses.",
             "points": 1
           },
-
           {
             "id": "q-fe-32",
             "type": "single",
             "category": "Trading — High School",
             "question": "What does a candlestick chart show that a simple line chart does not?",
             "options": [
-              { "label": "The overall market cap trend", "value": "A" },
-              { "label": "Open, high, low, and close prices for each time period", "value": "B" },
-              { "label": "The number of traders active per hour", "value": "C" },
-              { "label": "Future price predictions based on AI", "value": "D" }
+              {
+                "label": "The overall market cap trend",
+                "value": "A"
+              },
+              {
+                "label": "Open, high, low, and close prices for each time period",
+                "value": "B"
+              },
+              {
+                "label": "The number of traders active per hour",
+                "value": "C"
+              },
+              {
+                "label": "Future price predictions based on AI",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Candlesticks show four data points per period: Open, High, Low, Close (OHLC). The body shows open-to-close; the wicks show intraperiod extremes — far more information than a line chart's single closing price.",
             "points": 1
           },
-
           {
             "id": "q-fe-33",
             "type": "single",
             "category": "Trading — High School",
             "question": "The RSI (Relative Strength Index) is considered overbought when it is above:",
             "options": [
-              { "label": "50", "value": "A" },
-              { "label": "70", "value": "B" },
-              { "label": "80", "value": "C" },
-              { "label": "100", "value": "D" }
+              {
+                "label": "50",
+                "value": "A"
+              },
+              {
+                "label": "70",
+                "value": "B"
+              },
+              {
+                "label": "80",
+                "value": "C"
+              },
+              {
+                "label": "100",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "RSI above 70 signals the asset may be overbought (potential sell signal); below 30 signals oversold (potential buy signal). It's a momentum oscillator ranging 0–100.",
             "points": 1
           },
-
           {
             "id": "q-fe-34",
             "type": "single",
             "category": "Trading — High School",
             "question": "What is a risk-reward ratio of 1:3?",
             "options": [
-              { "label": "You risk $3 to potentially make $1", "value": "A" },
-              { "label": "You risk $1 to potentially make $3", "value": "B" },
-              { "label": "You win 3 out of every 4 trades", "value": "C" },
-              { "label": "You trade 3 hours for every 1 hour of rest", "value": "D" }
+              {
+                "label": "You risk $3 to potentially make $1",
+                "value": "A"
+              },
+              {
+                "label": "You risk $1 to potentially make $3",
+                "value": "B"
+              },
+              {
+                "label": "You win 3 out of every 4 trades",
+                "value": "C"
+              },
+              {
+                "label": "You trade 3 hours for every 1 hour of rest",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "A 1:3 risk-reward means for every $1 you risk (stop-loss distance), you target $3 in profit. Even with a 40% win rate, a 1:3 R:R is profitable over many trades.",
             "points": 1
           },
-
           {
             "id": "q-fe-35",
             "type": "single",
             "category": "Trading — College",
             "question": "What does the MACD (Moving Average Convergence Divergence) measure?",
             "options": [
-              { "label": "The average price over the last 200 days", "value": "A" },
-              { "label": "The relationship and momentum between two EMAs, signaling trend changes via crossovers", "value": "B" },
-              { "label": "Open interest in futures markets", "value": "C" },
-              { "label": "The volume-weighted average price for the session", "value": "D" }
+              {
+                "label": "The average price over the last 200 days",
+                "value": "A"
+              },
+              {
+                "label": "The relationship and momentum between two EMAs, signaling trend changes via crossovers",
+                "value": "B"
+              },
+              {
+                "label": "Open interest in futures markets",
+                "value": "C"
+              },
+              {
+                "label": "The volume-weighted average price for the session",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "MACD = Fast EMA − Slow EMA. When the MACD line crosses above the signal line, it's a bullish signal; below is bearish. The histogram shows the strength of that divergence.",
             "points": 1
           },
-
           {
             "id": "q-fe-36",
             "type": "single",
             "category": "Trading — College",
             "question": "A perpetual futures contract differs from a traditional futures contract in that it:",
             "options": [
-              { "label": "Settles in physical cryptocurrency, not USD", "value": "A" },
-              { "label": "Has no expiry date and uses a funding rate to keep price close to spot", "value": "B" },
-              { "label": "Can only be traded on centralized exchanges", "value": "C" },
-              { "label": "Requires a minimum of 10 BTC to open", "value": "D" }
+              {
+                "label": "Settles in physical cryptocurrency, not USD",
+                "value": "A"
+              },
+              {
+                "label": "Has no expiry date and uses a funding rate to keep price close to spot",
+                "value": "B"
+              },
+              {
+                "label": "Can only be traded on centralized exchanges",
+                "value": "C"
+              },
+              {
+                "label": "Requires a minimum of 10 BTC to open",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Perpetuals never expire. The funding rate mechanism (paid periodically between longs and shorts) keeps the perpetual price anchored near the spot price.",
             "points": 1
           },
-
           {
             "id": "q-fe-37",
             "type": "single",
             "category": "Trading — College",
             "question": "The Sharpe Ratio measures:",
             "options": [
-              { "label": "Total return over a specific period", "value": "A" },
-              { "label": "Risk-adjusted return — how much return per unit of volatility", "value": "B" },
-              { "label": "The percentage of winning trades", "value": "C" },
-              { "label": "Average position size relative to portfolio", "value": "D" }
+              {
+                "label": "Total return over a specific period",
+                "value": "A"
+              },
+              {
+                "label": "Risk-adjusted return — how much return per unit of volatility",
+                "value": "B"
+              },
+              {
+                "label": "The percentage of winning trades",
+                "value": "C"
+              },
+              {
+                "label": "Average position size relative to portfolio",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Sharpe Ratio = (Return − Risk-free Rate) / Standard Deviation. A ratio above 1.0 is considered good; above 2.0 is excellent. It penalizes strategies with high volatility even if returns are positive.",
             "points": 1
           },
-
           {
             "id": "q-fe-38",
             "type": "single",
             "category": "Wallets & Security — Elementary",
             "question": "What is a crypto wallet?",
             "options": [
-              { "label": "A leather pouch where you physically store digital coins", "value": "A" },
-              { "label": "Software or hardware that stores your private keys and lets you send/receive crypto", "value": "B" },
-              { "label": "An account at a crypto exchange", "value": "C" },
-              { "label": "A savings account that earns interest in crypto", "value": "D" }
+              {
+                "label": "A leather pouch where you physically store digital coins",
+                "value": "A"
+              },
+              {
+                "label": "Software or hardware that stores your private keys and lets you send/receive crypto",
+                "value": "B"
+              },
+              {
+                "label": "An account at a crypto exchange",
+                "value": "C"
+              },
+              {
+                "label": "A savings account that earns interest in crypto",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "A crypto wallet stores your private keys — the passwords that prove ownership. Crypto itself lives on the blockchain; your wallet is just the key to access it.",
             "points": 1
           },
-
           {
             "id": "q-fe-39",
             "type": "single",
             "category": "Wallets & Security — Elementary",
             "question": "What should you NEVER do with your seed phrase?",
             "options": [
-              { "label": "Write it on paper and store it safely offline", "value": "A" },
-              { "label": "Share it with anyone or enter it on a website", "value": "B" },
-              { "label": "Store multiple copies in different secure locations", "value": "C" },
-              { "label": "Memorize it as a backup", "value": "D" }
+              {
+                "label": "Write it on paper and store it safely offline",
+                "value": "A"
+              },
+              {
+                "label": "Share it with anyone or enter it on a website",
+                "value": "B"
+              },
+              {
+                "label": "Store multiple copies in different secure locations",
+                "value": "C"
+              },
+              {
+                "label": "Memorize it as a backup",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Your seed phrase is the master key to your entire wallet. Anyone who has it controls all your funds. Never type it online, screenshot it, or share it with anyone — ever.",
             "points": 1
           },
-
           {
             "id": "q-fe-40",
             "type": "single",
             "category": "Wallets & Security — Elementary",
             "question": "What is a phishing attack in crypto?",
             "options": [
-              { "label": "Using a bot to front-run trades", "value": "A" },
-              { "label": "A fake website or message that tricks you into giving away your seed phrase or keys", "value": "B" },
-              { "label": "A smart contract that locks your funds for 30 days", "value": "C" },
-              { "label": "An exploit that drains a liquidity pool", "value": "D" }
+              {
+                "label": "Using a bot to front-run trades",
+                "value": "A"
+              },
+              {
+                "label": "A fake website or message that tricks you into giving away your seed phrase or keys",
+                "value": "B"
+              },
+              {
+                "label": "A smart contract that locks your funds for 30 days",
+                "value": "C"
+              },
+              {
+                "label": "An exploit that drains a liquidity pool",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Phishing is the #1 attack vector in crypto. Scammers create fake sites or messages that look real (MetaMask, Ledger, your exchange) and steal your credentials or seed phrase.",
             "points": 1
           },
-
           {
             "id": "q-fe-41",
             "type": "single",
             "category": "Wallets & Security — High School",
             "question": "What is the difference between a hot wallet and a cold wallet?",
             "options": [
-              { "label": "Hot wallets hold more coins; cold wallets hold fewer", "value": "A" },
-              { "label": "Hot wallets are connected to the internet; cold wallets are offline and more secure", "value": "B" },
-              { "label": "Hot wallets are on mobile; cold wallets are on desktop", "value": "C" },
-              { "label": "Hot wallets are custodial; cold wallets are non-custodial", "value": "D" }
+              {
+                "label": "Hot wallets hold more coins; cold wallets hold fewer",
+                "value": "A"
+              },
+              {
+                "label": "Hot wallets are connected to the internet; cold wallets are offline and more secure",
+                "value": "B"
+              },
+              {
+                "label": "Hot wallets are on mobile; cold wallets are on desktop",
+                "value": "C"
+              },
+              {
+                "label": "Hot wallets are custodial; cold wallets are non-custodial",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Hot wallets (browser extensions, mobile apps) are internet-connected and convenient but more vulnerable to hacks. Cold wallets (hardware devices like Ledger) are offline, making them much harder to attack.",
             "points": 1
           },
-
           {
             "id": "q-fe-42",
             "type": "single",
             "category": "Wallets & Security — High School",
             "question": "What is a multi-signature (multisig) wallet?",
             "options": [
-              { "label": "A wallet that requires multiple seed phrases to set up", "value": "A" },
-              { "label": "A wallet where M out of N private keys must sign a transaction for it to execute", "value": "B" },
-              { "label": "A wallet that signs transactions automatically using AI", "value": "C" },
-              { "label": "A wallet shared by multiple exchanges simultaneously", "value": "D" }
+              {
+                "label": "A wallet that requires multiple seed phrases to set up",
+                "value": "A"
+              },
+              {
+                "label": "A wallet where M out of N private keys must sign a transaction for it to execute",
+                "value": "B"
+              },
+              {
+                "label": "A wallet that signs transactions automatically using AI",
+                "value": "C"
+              },
+              {
+                "label": "A wallet shared by multiple exchanges simultaneously",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Multisig (e.g., 2-of-3) requires a threshold of signers to approve any transaction. This removes single points of failure — a hacker needs multiple keys, not just one.",
             "points": 1
           },
-
           {
             "id": "q-fe-43",
             "type": "single",
             "category": "Wallets & Security — High School",
             "question": "What is a rug pull?",
             "options": [
-              { "label": "A bug that causes a smart contract to delete all liquidity", "value": "A" },
-              { "label": "When project developers abandon a project and run away with investor funds", "value": "B" },
-              { "label": "A government seizure of a crypto exchange", "value": "C" },
-              { "label": "A blockchain reorganization attack", "value": "D" }
+              {
+                "label": "A bug that causes a smart contract to delete all liquidity",
+                "value": "A"
+              },
+              {
+                "label": "When project developers abandon a project and run away with investor funds",
+                "value": "B"
+              },
+              {
+                "label": "A government seizure of a crypto exchange",
+                "value": "C"
+              },
+              {
+                "label": "A blockchain reorganization attack",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "A rug pull is an exit scam. Developers hype a token, raise funds through liquidity, then drain the pool and disappear. They're common in low-cap DeFi and NFT projects.",
             "points": 1
           },
-
           {
             "id": "q-fe-44",
             "type": "single",
             "category": "Wallets & Security — College",
             "question": "BIP39 defines:",
             "options": [
-              { "label": "The standard for wrapping tokens on EVM chains", "value": "A" },
-              { "label": "The mnemonic seed phrase standard — a 12 or 24-word list that encodes a wallet's master private key", "value": "B" },
-              { "label": "The XRPL trust line protocol", "value": "C" },
-              { "label": "Gas estimation rules on Ethereum", "value": "D" }
+              {
+                "label": "The standard for wrapping tokens on EVM chains",
+                "value": "A"
+              },
+              {
+                "label": "The mnemonic seed phrase standard — a 12 or 24-word list that encodes a wallet's master private key",
+                "value": "B"
+              },
+              {
+                "label": "The XRPL trust line protocol",
+                "value": "C"
+              },
+              {
+                "label": "Gas estimation rules on Ethereum",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "BIP39 is the Bitcoin Improvement Proposal that standardized HD wallet seed phrases. The 12/24 words encode entropy that deterministically derives all your wallet's keys via the BIP32/BIP44 derivation path.",
             "points": 1
           },
-
           {
             "id": "q-fe-45",
             "type": "single",
             "category": "Wallets & Security — College",
             "question": "A 51% attack on a Proof of Work blockchain would allow the attacker to:",
             "options": [
-              { "label": "Create new coins out of thin air unlimited", "value": "A" },
-              { "label": "Reverse their own recent transactions (double-spend) by reorganizing the chain", "value": "B" },
-              { "label": "Access everyone's private keys on the network", "value": "C" },
-              { "label": "Drain all funds from smart contracts", "value": "D" }
+              {
+                "label": "Create new coins out of thin air unlimited",
+                "value": "A"
+              },
+              {
+                "label": "Reverse their own recent transactions (double-spend) by reorganizing the chain",
+                "value": "B"
+              },
+              {
+                "label": "Access everyone's private keys on the network",
+                "value": "C"
+              },
+              {
+                "label": "Drain all funds from smart contracts",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "With 51%+ of hash power, an attacker can mine a longer private chain and broadcast it, reversing their own transactions — the double-spend. They still can't steal others' funds or mint infinite coins.",
             "points": 1
           },
-
           {
             "id": "q-fe-46",
             "type": "single",
             "category": "Wallets & Security — College",
             "question": "Which attack vector targets a smart contract by repeatedly calling it before the initial transaction finishes, draining funds?",
             "options": [
-              { "label": "Front-running", "value": "A" },
-              { "label": "Reentrancy attack", "value": "B" },
-              { "label": "Flash loan exploit", "value": "C" },
-              { "label": "Sandwich attack", "value": "D" }
+              {
+                "label": "Front-running",
+                "value": "A"
+              },
+              {
+                "label": "Reentrancy attack",
+                "value": "B"
+              },
+              {
+                "label": "Flash loan exploit",
+                "value": "C"
+              },
+              {
+                "label": "Sandwich attack",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "The reentrancy attack (used in The DAO hack, 2016) calls back into the vulnerable contract before it updates its state, allowing funds to be drained repeatedly. The fix: update state before external calls.",
             "points": 1
           },
-
           {
             "id": "q-fe-47",
             "type": "single",
             "category": "Ecosystem — Elementary",
             "question": "What is an NFT?",
             "options": [
-              { "label": "A coin that can be exchanged 1:1 with any other coin", "value": "A" },
-              { "label": "A unique digital asset on a blockchain that proves ownership of something specific", "value": "B" },
-              { "label": "A new type of cryptocurrency exchange", "value": "C" },
-              { "label": "A hardware wallet brand", "value": "D" }
+              {
+                "label": "A coin that can be exchanged 1:1 with any other coin",
+                "value": "A"
+              },
+              {
+                "label": "A unique digital asset on a blockchain that proves ownership of something specific",
+                "value": "B"
+              },
+              {
+                "label": "A new type of cryptocurrency exchange",
+                "value": "C"
+              },
+              {
+                "label": "A hardware wallet brand",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "NFT = Non-Fungible Token. Unlike Bitcoin (where each BTC is identical), each NFT is unique. They can represent art, music, game items, or any digital (or physical) asset's ownership record.",
             "points": 1
           },
-
           {
             "id": "q-fe-48",
             "type": "single",
             "category": "Ecosystem — Elementary",
             "question": "What is a DAO?",
             "options": [
-              { "label": "A type of digital asset backed by oil", "value": "A" },
-              { "label": "A Decentralized Autonomous Organization — a community governed by smart contracts and token holders", "value": "B" },
-              { "label": "A government agency that regulates crypto", "value": "C" },
-              { "label": "A database used to store blockchain data", "value": "D" }
+              {
+                "label": "A type of digital asset backed by oil",
+                "value": "A"
+              },
+              {
+                "label": "A Decentralized Autonomous Organization — a community governed by smart contracts and token holders",
+                "value": "B"
+              },
+              {
+                "label": "A government agency that regulates crypto",
+                "value": "C"
+              },
+              {
+                "label": "A database used to store blockchain data",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "A DAO has no CEO. Rules are encoded in smart contracts and decisions are made by token holder votes. Members anywhere in the world can propose and vote on changes.",
             "points": 1
           },
-
           {
             "id": "q-fe-49",
             "type": "single",
             "category": "Ecosystem — Elementary",
             "question": "What is Web3?",
             "options": [
-              { "label": "The third version of the HTTP protocol", "value": "A" },
-              { "label": "An internet where users own their data and assets, powered by blockchains", "value": "B" },
-              { "label": "A new social media platform built on blockchain", "value": "C" },
-              { "label": "A search engine for crypto prices", "value": "D" }
+              {
+                "label": "The third version of the HTTP protocol",
+                "value": "A"
+              },
+              {
+                "label": "An internet where users own their data and assets, powered by blockchains",
+                "value": "B"
+              },
+              {
+                "label": "A new social media platform built on blockchain",
+                "value": "C"
+              },
+              {
+                "label": "A search engine for crypto prices",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Web3 is the vision of an internet where users — not big tech companies — control their own data, identity, and digital assets via blockchains and decentralized protocols.",
             "points": 1
           },
-
           {
             "id": "q-fe-50",
             "type": "single",
             "category": "Ecosystem — High School",
             "question": "What is tokenization of Real World Assets (RWA)?",
             "options": [
-              { "label": "Replacing physical money with digital tokens", "value": "A" },
-              { "label": "Representing ownership of physical assets (real estate, bonds, commodities) as tokens on a blockchain", "value": "B" },
-              { "label": "Converting NFTs into fungible tokens", "value": "C" },
-              { "label": "The process of minting new stablecoins", "value": "D" }
+              {
+                "label": "Replacing physical money with digital tokens",
+                "value": "A"
+              },
+              {
+                "label": "Representing ownership of physical assets (real estate, bonds, commodities) as tokens on a blockchain",
+                "value": "B"
+              },
+              {
+                "label": "Converting NFTs into fungible tokens",
+                "value": "C"
+              },
+              {
+                "label": "The process of minting new stablecoins",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "RWA tokenization puts real-world assets — property, treasuries, gold, art — on-chain. This enables 24/7 trading, fractional ownership, and programmable compliance.",
             "points": 1
           },
-
           {
             "id": "q-fe-51",
             "type": "single",
             "category": "Ecosystem — High School",
             "question": "What differentiates a CEX from a DEX?",
             "options": [
-              { "label": "CEX is faster; DEX is slower", "value": "A" },
-              { "label": "On a CEX you hand custody to a company; on a DEX you trade directly from your own wallet via smart contracts", "value": "B" },
-              { "label": "CEX is decentralized; DEX is centralized", "value": "C" },
-              { "label": "CEX only trades Bitcoin; DEX trades all tokens", "value": "D" }
+              {
+                "label": "CEX is faster; DEX is slower",
+                "value": "A"
+              },
+              {
+                "label": "On a CEX you hand custody to a company; on a DEX you trade directly from your own wallet via smart contracts",
+                "value": "B"
+              },
+              {
+                "label": "CEX is decentralized; DEX is centralized",
+                "value": "C"
+              },
+              {
+                "label": "CEX only trades Bitcoin; DEX trades all tokens",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "CEX (Coinbase, Binance) holds your funds — 'not your keys, not your coins.' DEX (Uniswap, dYdX) trades happen on-chain via smart contracts; you keep custody throughout.",
             "points": 1
           },
-
           {
             "id": "q-fe-52",
             "type": "single",
             "category": "Ecosystem — College",
             "question": "What is a Layer 2 rollup's core security assumption?",
             "options": [
-              { "label": "It is secured by its own independent validator set", "value": "A" },
-              { "label": "Transaction data or proofs are posted to Layer 1, inheriting its security", "value": "B" },
-              { "label": "Security is provided by a trusted multisig bridge", "value": "C" },
-              { "label": "It uses zero-knowledge proofs that only the rollup operator can verify", "value": "D" }
+              {
+                "label": "It is secured by its own independent validator set",
+                "value": "A"
+              },
+              {
+                "label": "Transaction data or proofs are posted to Layer 1, inheriting its security",
+                "value": "B"
+              },
+              {
+                "label": "Security is provided by a trusted multisig bridge",
+                "value": "C"
+              },
+              {
+                "label": "It uses zero-knowledge proofs that only the rollup operator can verify",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Rollups post data (Optimistic) or validity proofs (ZK) back to Layer 1 (Ethereum). This means a rollup's security ultimately derives from Ethereum's consensus — not its own.",
             "points": 1
           },
-
           {
             "id": "q-fe-53",
             "type": "single",
             "category": "Ecosystem — College",
             "question": "What was the primary regulatory action the SEC took that shaped US crypto markets in 2023–2024?",
             "options": [
-              { "label": "Approved all Bitcoin ETFs immediately", "value": "A" },
-              { "label": "Sued major exchanges and issuers, alleging many tokens are unregistered securities", "value": "B" },
-              { "label": "Banned all DeFi activity in the US", "value": "C" },
-              { "label": "Issued CBDC regulation for state banks", "value": "D" }
+              {
+                "label": "Approved all Bitcoin ETFs immediately",
+                "value": "A"
+              },
+              {
+                "label": "Sued major exchanges and issuers, alleging many tokens are unregistered securities",
+                "value": "B"
+              },
+              {
+                "label": "Banned all DeFi activity in the US",
+                "value": "C"
+              },
+              {
+                "label": "Issued CBDC regulation for state banks",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "The SEC filed landmark suits against Coinbase, Binance, and Ripple, arguing tokens like SOL, ADA, and XRP are securities. This created major uncertainty for US exchanges and token projects.",
             "points": 1
           },
-
           {
             "id": "q-fe-54",
             "type": "single",
             "category": "Swapping & Bridging — Elementary",
             "question": "What does it mean to 'swap' tokens?",
             "options": [
-              { "label": "Transfer tokens to another person as a gift", "value": "A" },
-              { "label": "Exchange one cryptocurrency for another, usually via a DEX or exchange", "value": "B" },
-              { "label": "Stake tokens to earn yield", "value": "C" },
-              { "label": "Wrap a token on another blockchain", "value": "D" }
+              {
+                "label": "Transfer tokens to another person as a gift",
+                "value": "A"
+              },
+              {
+                "label": "Exchange one cryptocurrency for another, usually via a DEX or exchange",
+                "value": "B"
+              },
+              {
+                "label": "Stake tokens to earn yield",
+                "value": "C"
+              },
+              {
+                "label": "Wrap a token on another blockchain",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Swapping means trading one crypto for another — like exchanging ETH for USDC. On a DEX this happens instantly via a smart contract and a liquidity pool.",
             "points": 1
           },
-
           {
             "id": "q-fe-55",
             "type": "single",
             "category": "Swapping & Bridging — Elementary",
             "question": "What is a crypto bridge?",
             "options": [
-              { "label": "A tool for combining two seed phrases", "value": "A" },
-              { "label": "A protocol that moves assets between different blockchains", "value": "B" },
-              { "label": "A hardware device connecting your wallet to a CEX", "value": "C" },
-              { "label": "A smart contract that converts tokens to stablecoins", "value": "D" }
+              {
+                "label": "A tool for combining two seed phrases",
+                "value": "A"
+              },
+              {
+                "label": "A protocol that moves assets between different blockchains",
+                "value": "B"
+              },
+              {
+                "label": "A hardware device connecting your wallet to a CEX",
+                "value": "C"
+              },
+              {
+                "label": "A smart contract that converts tokens to stablecoins",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "description": "Bridges lock assets on the source chain and mint equivalent wrapped tokens on the destination chain — enabling cross-chain movement of value.",
             "analysis": "Bridges lock assets on Chain A and mint wrapped equivalents on Chain B. They're essential infrastructure for cross-chain DeFi but have also been hacked for billions (Ronin, Wormhole, Nomad).",
             "points": 1
           },
-
           {
             "id": "q-fe-56",
             "type": "single",
             "category": "Swapping & Bridging — High School",
             "question": "What is slippage in a token swap?",
             "options": [
-              { "label": "A fee charged by the DEX protocol", "value": "A" },
-              { "label": "The difference between the expected price and the actual execution price, caused by pool movement during the tx", "value": "B" },
-              { "label": "The time it takes for a swap to confirm on-chain", "value": "C" },
-              { "label": "A failed transaction refund", "value": "D" }
+              {
+                "label": "A fee charged by the DEX protocol",
+                "value": "A"
+              },
+              {
+                "label": "The difference between the expected price and the actual execution price, caused by pool movement during the tx",
+                "value": "B"
+              },
+              {
+                "label": "The time it takes for a swap to confirm on-chain",
+                "value": "C"
+              },
+              {
+                "label": "A failed transaction refund",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Slippage occurs when the price moves between when you submit a swap and when it executes. Large trades in small pools cause high slippage. Most DEX interfaces let you set a slippage tolerance (e.g., 0.5%).",
             "points": 1
           },
-
           {
             "id": "q-fe-57",
             "type": "single",
             "category": "Swapping & Bridging — High School",
             "question": "What is a wrapped token (e.g., WBTC)?",
             "options": [
-              { "label": "A token with extra encryption applied", "value": "A" },
-              { "label": "A token representing another asset 1:1, enabling it to be used on a different blockchain", "value": "B" },
-              { "label": "A derivative with 10x leverage", "value": "C" },
-              { "label": "A token locked in a multi-year staking contract", "value": "D" }
+              {
+                "label": "A token with extra encryption applied",
+                "value": "A"
+              },
+              {
+                "label": "A token representing another asset 1:1, enabling it to be used on a different blockchain",
+                "value": "B"
+              },
+              {
+                "label": "A derivative with 10x leverage",
+                "value": "C"
+              },
+              {
+                "label": "A token locked in a multi-year staking contract",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "WBTC is Bitcoin wrapped as an ERC-20 token so it can be used in Ethereum DeFi. The original BTC is held in custody; WBTC is minted 1:1 on Ethereum.",
             "points": 1
           },
-
           {
             "id": "q-fe-58",
             "type": "single",
             "category": "Swapping & Bridging — College",
             "question": "In concentrated liquidity (e.g., Uniswap v3), how does an LP differ from a standard v2 AMM?",
             "options": [
-              { "label": "They provide liquidity across all prices equally", "value": "A" },
-              { "label": "They choose a specific price range, earning more fees if price stays in range but earning nothing if it moves out", "value": "B" },
-              { "label": "They provide only one token instead of a pair", "value": "C" },
-              { "label": "They receive governance tokens instead of trading fees", "value": "D" }
+              {
+                "label": "They provide liquidity across all prices equally",
+                "value": "A"
+              },
+              {
+                "label": "They choose a specific price range, earning more fees if price stays in range but earning nothing if it moves out",
+                "value": "B"
+              },
+              {
+                "label": "They provide only one token instead of a pair",
+                "value": "C"
+              },
+              {
+                "label": "They receive governance tokens instead of trading fees",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Concentrated liquidity lets LPs focus capital in a tight price band, earning far more fees per dollar deposited — but they earn nothing when price leaves that range, and IL is amplified.",
             "points": 1
           },
-
           {
             "id": "q-fe-59",
             "type": "single",
             "category": "Swapping & Bridging — College",
             "question": "What is a sandwich attack in DeFi?",
             "options": [
-              { "label": "Two smart contracts competing to execute the same swap", "value": "A" },
-              { "label": "A bot front-runs your trade and back-runs it, profiting from the slippage your transaction creates", "value": "B" },
-              { "label": "A reentrancy exploit targeting AMM pools", "value": "C" },
-              { "label": "A governance attack using two separate proposals", "value": "D" }
+              {
+                "label": "Two smart contracts competing to execute the same swap",
+                "value": "A"
+              },
+              {
+                "label": "A bot front-runs your trade and back-runs it, profiting from the slippage your transaction creates",
+                "value": "B"
+              },
+              {
+                "label": "A reentrancy exploit targeting AMM pools",
+                "value": "C"
+              },
+              {
+                "label": "A governance attack using two separate proposals",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "A sandwich: bot sees your pending swap, buys first (front-run) to push up price, then sells after your trade executes at a worse price (back-run). You get less; the bot profits from your slippage.",
             "points": 1
           },
-
           {
             "id": "q-fe-60",
             "type": "single",
             "category": "Swapping & Bridging — College",
             "question": "What is the primary security risk with most cross-chain bridges?",
             "options": [
-              { "label": "They require KYC and can freeze your funds", "value": "A" },
-              { "label": "They concentrate large amounts of locked assets in a single smart contract or multisig, making them high-value hack targets", "value": "B" },
-              { "label": "They charge higher fees than CEX transfers", "value": "C" },
-              { "label": "They require both chains to use the same consensus algorithm", "value": "D" }
+              {
+                "label": "They require KYC and can freeze your funds",
+                "value": "A"
+              },
+              {
+                "label": "They concentrate large amounts of locked assets in a single smart contract or multisig, making them high-value hack targets",
+                "value": "B"
+              },
+              {
+                "label": "They charge higher fees than CEX transfers",
+                "value": "C"
+              },
+              {
+                "label": "They require both chains to use the same consensus algorithm",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Bridges lock or hold billions in assets. The Ronin bridge ($625M), Wormhole ($320M), and Nomad ($190M) hacks all targeted this single point of failure. Bridge design remains an unsolved security challenge.",
             "points": 1
           },
-
           {
             "id": "q-fe-61",
             "type": "single",
             "category": "XRPL — Elementary",
             "question": "How fast does XRP settle transactions?",
             "options": [
-              { "label": "10 minutes (like Bitcoin)", "value": "A" },
-              { "label": "3–5 seconds", "value": "B" },
-              { "label": "1–2 hours", "value": "C" },
-              { "label": "Instantly with no fees", "value": "D" }
+              {
+                "label": "10 minutes (like Bitcoin)",
+                "value": "A"
+              },
+              {
+                "label": "3–5 seconds",
+                "value": "B"
+              },
+              {
+                "label": "1–2 hours",
+                "value": "C"
+              },
+              {
+                "label": "Instantly with no fees",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "XRP settles in 3–5 seconds with fees under a cent. This makes it one of the fastest and cheapest major networks — ideal for payments and the reason OnlyCrypto uses it for payouts.",
             "points": 1
           },
-
           {
             "id": "q-fe-62",
             "type": "single",
             "category": "XRPL — Elementary",
             "question": "What is the base transaction fee on the XRPL measured in?",
             "options": [
-              { "label": "USD cents", "value": "A" },
-              { "label": "Drops (1 drop = 0.000001 XRP)", "value": "B" },
-              { "label": "Gas units", "value": "C" },
-              { "label": "Satoshis", "value": "D" }
+              {
+                "label": "USD cents",
+                "value": "A"
+              },
+              {
+                "label": "Drops (1 drop = 0.000001 XRP)",
+                "value": "B"
+              },
+              {
+                "label": "Gas units",
+                "value": "C"
+              },
+              {
+                "label": "Satoshis",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "XRPL fees are denominated in drops. The minimum transaction fee is 10 drops = 0.00001 XRP — fractions of a cent. Unlike Ethereum gas, these fees are burned, not paid to validators.",
             "points": 1
           },
-
           {
             "id": "q-fe-63",
             "type": "single",
             "category": "XRPL — High School",
             "question": "What is a trust line on the XRPL?",
             "options": [
-              { "label": "A verification process for new XRPL accounts", "value": "A" },
-              { "label": "A permission an account grants to hold a specific issued token (IOU) from another account", "value": "B" },
-              { "label": "A smart contract that manages token swaps", "value": "C" },
-              { "label": "A multisig arrangement between two validators", "value": "D" }
+              {
+                "label": "A verification process for new XRPL accounts",
+                "value": "A"
+              },
+              {
+                "label": "A permission an account grants to hold a specific issued token (IOU) from another account",
+                "value": "B"
+              },
+              {
+                "label": "A smart contract that manages token swaps",
+                "value": "C"
+              },
+              {
+                "label": "A multisig arrangement between two validators",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Trust lines prevent spam tokens. To hold any non-XRP token on the XRPL, you must explicitly create a trust line to the issuer — signaling you 'trust' that issuer's token up to a limit.",
             "points": 1
           },
-
           {
             "id": "q-fe-64",
             "type": "single",
             "category": "XRPL — High School",
             "question": "What consensus algorithm does the XRP Ledger use?",
             "options": [
-              { "label": "Proof of Work (PoW)", "value": "A" },
-              { "label": "Ripple Protocol Consensus Algorithm (RPCA) — a federated Byzantine agreement", "value": "B" },
-              { "label": "Delegated Proof of Stake (DPoS)", "value": "C" },
-              { "label": "Proof of History (PoH)", "value": "D" }
+              {
+                "label": "Proof of Work (PoW)",
+                "value": "A"
+              },
+              {
+                "label": "Ripple Protocol Consensus Algorithm (RPCA) — a federated Byzantine agreement",
+                "value": "B"
+              },
+              {
+                "label": "Delegated Proof of Stake (DPoS)",
+                "value": "C"
+              },
+              {
+                "label": "Proof of History (PoH)",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "XRPL uses RPCA — validators form Unique Node Lists (UNLs) and reach supermajority agreement (80%) each round. No mining, no staking — validators agree by communicating directly.",
             "points": 1
           },
-
           {
             "id": "q-fe-65",
             "type": "single",
             "category": "XRPL — High School",
             "question": "What is On-Demand Liquidity (ODL) on the XRPL?",
             "options": [
-              { "label": "A lending protocol for XRP holders", "value": "A" },
-              { "label": "Using XRP as a bridge currency to send value between two fiat currencies in real time, without pre-funded nostro accounts", "value": "B" },
-              { "label": "A flash loan service on the XRPL native DEX", "value": "C" },
-              { "label": "A stablecoin mechanism backed by XRP", "value": "D" }
+              {
+                "label": "A lending protocol for XRP holders",
+                "value": "A"
+              },
+              {
+                "label": "Using XRP as a bridge currency to send value between two fiat currencies in real time, without pre-funded nostro accounts",
+                "value": "B"
+              },
+              {
+                "label": "A flash loan service on the XRPL native DEX",
+                "value": "C"
+              },
+              {
+                "label": "A stablecoin mechanism backed by XRP",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "ODL (used by MoneyGram via RippleNet) converts fiat → XRP → target fiat in seconds, eliminating the need for banks to pre-position funds in destination currencies — saving billions in working capital.",
             "points": 1
           },
-
           {
             "id": "q-fe-66",
             "type": "single",
             "category": "XRPL — College",
             "question": "How does the XRPL native DEX differ from Ethereum-based AMMs like Uniswap?",
             "options": [
-              { "label": "The XRPL DEX uses a constant-product formula (x × y = k)", "value": "A" },
-              { "label": "The XRPL DEX is an order-book based DEX built into the protocol layer, not a smart contract", "value": "B" },
-              { "label": "The XRPL DEX requires gas to execute trades", "value": "C" },
-              { "label": "XRPL DEX only supports XRP/USD trading pairs", "value": "D" }
+              {
+                "label": "The XRPL DEX uses a constant-product formula (x × y = k)",
+                "value": "A"
+              },
+              {
+                "label": "The XRPL DEX is an order-book based DEX built into the protocol layer, not a smart contract",
+                "value": "B"
+              },
+              {
+                "label": "The XRPL DEX requires gas to execute trades",
+                "value": "C"
+              },
+              {
+                "label": "XRPL DEX only supports XRP/USD trading pairs",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "The XRPL has a native DEX baked into the protocol — no smart contracts needed. It uses an order book model. In 2023, XRPL added an AMM (XLS-30) alongside the order book.",
             "points": 1
           },
-
           {
             "id": "q-fe-67",
             "type": "single",
             "category": "XRPL — College",
             "question": "What is XRPL pathfinding?",
             "options": [
-              { "label": "An algorithm that finds the shortest route through validator nodes", "value": "A" },
-              { "label": "Automatic discovery of the best multi-hop exchange route across trust lines and order books to execute a payment", "value": "B" },
-              { "label": "A feature that routes XRPL transactions to avoid congestion", "value": "C" },
-              { "label": "The process of verifying Merkle proofs on the XRPL", "value": "D" }
+              {
+                "label": "An algorithm that finds the shortest route through validator nodes",
+                "value": "A"
+              },
+              {
+                "label": "Automatic discovery of the best multi-hop exchange route across trust lines and order books to execute a payment",
+                "value": "B"
+              },
+              {
+                "label": "A feature that routes XRPL transactions to avoid congestion",
+                "value": "C"
+              },
+              {
+                "label": "The process of verifying Merkle proofs on the XRPL",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "XRPL pathfinding lets the protocol find the optimal chain of trust lines and offers to convert value end-to-end. A payment in USD can automatically route through XRP to arrive as EUR — all in one transaction.",
             "points": 1
           },
-
           {
             "id": "q-fe-68",
             "type": "single",
             "category": "Blockchain — College",
             "question": "In a Zero-Knowledge Proof (ZKP), what can a prover demonstrate?",
             "options": [
-              { "label": "The exact computation that was run including all inputs", "value": "A" },
-              { "label": "That a statement is true without revealing the underlying data used to prove it", "value": "B" },
-              { "label": "That a transaction was mined by a specific validator", "value": "C" },
-              { "label": "That a wallet has over $1M in assets without revealing the address", "value": "D" }
+              {
+                "label": "The exact computation that was run including all inputs",
+                "value": "A"
+              },
+              {
+                "label": "That a statement is true without revealing the underlying data used to prove it",
+                "value": "B"
+              },
+              {
+                "label": "That a transaction was mined by a specific validator",
+                "value": "C"
+              },
+              {
+                "label": "That a wallet has over $1M in assets without revealing the address",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "ZKPs let you prove knowledge of a secret (e.g., a valid password, a valid transaction) without revealing the secret itself. ZK-SNARKs and ZK-STARKs power ZK rollups and privacy coins like Zcash.",
             "points": 1
           },
-
           {
             "id": "q-fe-69",
             "type": "single",
             "category": "DeFi — College",
             "question": "What is the 'oracle problem' in DeFi?",
             "options": [
-              { "label": "Smart contracts cannot read data from outside the blockchain, so they need trusted external price feeds", "value": "A" },
-              { "label": "DeFi protocols cannot be audited by external security firms", "value": "B" },
-              { "label": "Validators can see pending transactions before they confirm", "value": "C" },
-              { "label": "Algorithmic stablecoins cannot maintain their peg without human intervention", "value": "D" }
+              {
+                "label": "Smart contracts cannot read data from outside the blockchain, so they need trusted external price feeds",
+                "value": "A"
+              },
+              {
+                "label": "DeFi protocols cannot be audited by external security firms",
+                "value": "B"
+              },
+              {
+                "label": "Validators can see pending transactions before they confirm",
+                "value": "C"
+              },
+              {
+                "label": "Algorithmic stablecoins cannot maintain their peg without human intervention",
+                "value": "D"
+              }
             ],
-            "answer": ["A"],
+            "answer": [
+              "A"
+            ],
             "analysis": "Blockchains are deterministic sandboxes — they can't fetch live data (prices, weather, sports results) natively. Oracles like Chainlink bring off-chain data on-chain. A manipulated oracle is a major DeFi attack vector.",
             "points": 1
           },
-
           {
             "id": "q-fe-70",
             "type": "single",
             "category": "Trading — College",
             "question": "What does the Kelly Criterion determine in position sizing?",
             "options": [
-              { "label": "The minimum position size to avoid margin call", "value": "A" },
-              { "label": "The mathematically optimal fraction of bankroll to risk per trade to maximize long-term growth", "value": "B" },
-              { "label": "The number of trades to make per day", "value": "C" },
-              { "label": "The correlation between two assets in a portfolio", "value": "D" }
+              {
+                "label": "The minimum position size to avoid margin call",
+                "value": "A"
+              },
+              {
+                "label": "The mathematically optimal fraction of bankroll to risk per trade to maximize long-term growth",
+                "value": "B"
+              },
+              {
+                "label": "The number of trades to make per day",
+                "value": "C"
+              },
+              {
+                "label": "The correlation between two assets in a portfolio",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Kelly fraction = (win probability × win-to-loss ratio − loss probability) / win-to-loss ratio. Most professional traders use 'fractional Kelly' (0.25–0.5 Kelly) to account for estimation error.",
             "points": 1
           },
-
           {
             "id": "q-fe-71",
             "type": "single",
             "category": "Cryptocurrency — College",
             "question": "On-chain analysis uses which type of data to evaluate network health?",
             "options": [
-              { "label": "Exchange order book depth only", "value": "A" },
-              { "label": "Blockchain transaction data: active addresses, UTXO age, miner flows, NVT ratio, etc.", "value": "B" },
-              { "label": "Social media sentiment scores", "value": "C" },
-              { "label": "CEO announcements and press releases", "value": "D" }
+              {
+                "label": "Exchange order book depth only",
+                "value": "A"
+              },
+              {
+                "label": "Blockchain transaction data: active addresses, UTXO age, miner flows, NVT ratio, etc.",
+                "value": "B"
+              },
+              {
+                "label": "Social media sentiment scores",
+                "value": "C"
+              },
+              {
+                "label": "CEO announcements and press releases",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "On-chain analysis reads the public blockchain ledger directly. Metrics like MVRV (Market Value to Realized Value), SOPR (Spent Output Profit Ratio), and exchange inflows help assess whether the market is over/undervalued.",
             "points": 1
           },
-
           {
             "id": "q-fe-72",
             "type": "single",
             "category": "Wallets & Security — College",
             "question": "What does OPSEC mean in the context of crypto security?",
             "options": [
-              { "label": "Open Protocol Security — a standard for DeFi smart contract audits", "value": "A" },
-              { "label": "Operational Security — practices that protect sensitive information from adversaries (e.g., not revealing holdings publicly)", "value": "B" },
-              { "label": "Off-chain Payment Settlement Escrow Contract", "value": "C" },
-              { "label": "A multi-party computation scheme for multisig wallets", "value": "D" }
+              {
+                "label": "Open Protocol Security — a standard for DeFi smart contract audits",
+                "value": "A"
+              },
+              {
+                "label": "Operational Security — practices that protect sensitive information from adversaries (e.g., not revealing holdings publicly)",
+                "value": "B"
+              },
+              {
+                "label": "Off-chain Payment Settlement Escrow Contract",
+                "value": "C"
+              },
+              {
+                "label": "A multi-party computation scheme for multisig wallets",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "OPSEC in crypto means not doxxing your wallet balance, not using the same username across platforms, using hardware wallets for large amounts, and being careful about what you reveal about your holdings.",
             "points": 1
           },
-
           {
             "id": "q-fe-73",
             "type": "single",
             "category": "Blockchain — College",
             "question": "What is a 'finality' guarantee in blockchain consensus?",
             "options": [
-              { "label": "The block time is predictable and constant", "value": "A" },
-              { "label": "Once a transaction reaches finality, it cannot be reversed — even by a majority of validators", "value": "B" },
-              { "label": "All nodes see the same pending transaction pool", "value": "C" },
-              { "label": "The blockchain never produces empty blocks", "value": "D" }
+              {
+                "label": "The block time is predictable and constant",
+                "value": "A"
+              },
+              {
+                "label": "Once a transaction reaches finality, it cannot be reversed — even by a majority of validators",
+                "value": "B"
+              },
+              {
+                "label": "All nodes see the same pending transaction pool",
+                "value": "C"
+              },
+              {
+                "label": "The blockchain never produces empty blocks",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "PoW blockchains have probabilistic finality — the more confirmations, the lower the reversal risk. BFT chains like XRPL and many PoS chains have deterministic finality — once confirmed, it's final.",
             "points": 1
           },
-
           {
             "id": "q-fe-74",
             "type": "single",
             "category": "Ecosystem — College",
             "question": "What is the MiCA regulation?",
             "options": [
-              { "label": "A US law banning algorithmic stablecoins", "value": "A" },
-              { "label": "The EU's Markets in Crypto-Assets regulation — a comprehensive framework for crypto issuers and service providers in Europe", "value": "B" },
-              { "label": "A DeFi protocol for tokenizing US Treasuries", "value": "C" },
-              { "label": "A standard for cross-chain token bridging", "value": "D" }
+              {
+                "label": "A US law banning algorithmic stablecoins",
+                "value": "A"
+              },
+              {
+                "label": "The EU's Markets in Crypto-Assets regulation — a comprehensive framework for crypto issuers and service providers in Europe",
+                "value": "B"
+              },
+              {
+                "label": "A DeFi protocol for tokenizing US Treasuries",
+                "value": "C"
+              },
+              {
+                "label": "A standard for cross-chain token bridging",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "MiCA (effective 2024) is the EU's first unified crypto law. It covers stablecoin issuers, crypto asset service providers (CASPs), and market abuse — providing regulatory clarity that the US still lacks.",
             "points": 1
           },
-
           {
             "id": "q-fe-75",
             "type": "single",
             "category": "Trading — High School",
             "question": "What is a 'support level' in technical analysis?",
             "options": [
-              { "label": "The highest price an asset has ever reached", "value": "A" },
-              { "label": "A price zone where buying interest has historically prevented the price from falling further", "value": "B" },
-              { "label": "The price at which a protocol's stablecoin is pegged", "value": "C" },
-              { "label": "The minimum deposit required to open a leveraged position", "value": "D" }
+              {
+                "label": "The highest price an asset has ever reached",
+                "value": "A"
+              },
+              {
+                "label": "A price zone where buying interest has historically prevented the price from falling further",
+                "value": "B"
+              },
+              {
+                "label": "The price at which a protocol's stablecoin is pegged",
+                "value": "C"
+              },
+              {
+                "label": "The minimum deposit required to open a leveraged position",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Support is a price floor — a level where demand has repeatedly stopped further decline. When broken, a support level often becomes a new resistance level (role reversal).",
             "points": 1
           },
-
           {
             "id": "q-fe-76",
             "type": "single",
             "category": "Wallets & Security — Elementary",
             "question": "What makes a custodial wallet different from a non-custodial wallet?",
             "options": [
-              { "label": "Custodial wallets are free; non-custodial wallets cost money", "value": "A" },
-              { "label": "With a custodial wallet, a third party holds your private keys; with non-custodial, you hold them yourself", "value": "B" },
-              { "label": "Custodial wallets can hold more tokens", "value": "C" },
-              { "label": "Non-custodial wallets require ID verification", "value": "D" }
+              {
+                "label": "Custodial wallets are free; non-custodial wallets cost money",
+                "value": "A"
+              },
+              {
+                "label": "With a custodial wallet, a third party holds your private keys; with non-custodial, you hold them yourself",
+                "value": "B"
+              },
+              {
+                "label": "Custodial wallets can hold more tokens",
+                "value": "C"
+              },
+              {
+                "label": "Non-custodial wallets require ID verification",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Custodial = exchange holds your keys (like Coinbase). Non-custodial = you control your keys (like MetaMask or Ledger). 'Not your keys, not your coins' — custodial wallets expose you to exchange risk.",
             "points": 1
           },
-
           {
             "id": "q-fe-77",
             "type": "single",
             "category": "DeFi — High School",
             "question": "What is yield farming?",
             "options": [
-              { "label": "Mining cryptocurrency using solar energy on a farm", "value": "A" },
-              { "label": "Moving funds between DeFi protocols to chase the highest return, often earning governance tokens as extra rewards", "value": "B" },
-              { "label": "Staking ETH to become a validator", "value": "C" },
-              { "label": "Providing liquidity to a single-asset savings vault", "value": "D" }
+              {
+                "label": "Mining cryptocurrency using solar energy on a farm",
+                "value": "A"
+              },
+              {
+                "label": "Moving funds between DeFi protocols to chase the highest return, often earning governance tokens as extra rewards",
+                "value": "B"
+              },
+              {
+                "label": "Staking ETH to become a validator",
+                "value": "C"
+              },
+              {
+                "label": "Providing liquidity to a single-asset savings vault",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Yield farming involves strategically moving capital across DeFi protocols to maximize APY. Farmers earn base yields (interest, fees) plus bonus governance tokens — but also take on smart contract and liquidation risks.",
             "points": 1
           },
-
           {
             "id": "q-fe-78",
             "type": "single",
             "category": "XRPL — College",
             "question": "What is the XRP base reserve requirement, and what is it for?",
             "options": [
-              { "label": "20 XRP — a fee paid to Ripple each year", "value": "A" },
-              { "label": "A minimum XRP amount that must remain in every account to prevent spam and maintain ledger resource limits", "value": "B" },
-              { "label": "5 XRP locked as collateral for each trust line you open", "value": "C" },
-              { "label": "A deposit required to become an XRPL validator", "value": "D" }
+              {
+                "label": "20 XRP — a fee paid to Ripple each year",
+                "value": "A"
+              },
+              {
+                "label": "A minimum XRP amount that must remain in every account to prevent spam and maintain ledger resource limits",
+                "value": "B"
+              },
+              {
+                "label": "5 XRP locked as collateral for each trust line you open",
+                "value": "C"
+              },
+              {
+                "label": "A deposit required to become an XRPL validator",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "XRPL has a base reserve (currently 1 XRP, though it can be changed by validator consensus) and an owner reserve per object (trust line, offer, etc.) to prevent cheap spam that bloats the ledger.",
             "points": 1
           },
-
           {
             "id": "q-fe-79",
             "type": "single",
             "category": "Blockchain — High School",
             "question": "In Proof of Stake, validators are chosen to create blocks based on:",
             "options": [
-              { "label": "Their CPU hashing power", "value": "A" },
-              { "label": "The amount of cryptocurrency they have staked as collateral", "value": "B" },
-              { "label": "A first-come, first-served queue of transactions", "value": "C" },
-              { "label": "Their IP address location closest to the block proposer", "value": "D" }
+              {
+                "label": "Their CPU hashing power",
+                "value": "A"
+              },
+              {
+                "label": "The amount of cryptocurrency they have staked as collateral",
+                "value": "B"
+              },
+              {
+                "label": "A first-come, first-served queue of transactions",
+                "value": "C"
+              },
+              {
+                "label": "Their IP address location closest to the block proposer",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "In PoS, validators lock (stake) crypto as collateral. The more staked, the higher the chance of being chosen. Misbehaving validators lose their stake ('slashing') — aligned incentives without energy waste.",
             "points": 1
           },
-
           {
             "id": "q-fe-80",
             "type": "single",
             "category": "Ecosystem — High School",
             "question": "What is tokenomics?",
             "options": [
-              { "label": "The economics department at a blockchain company", "value": "A" },
-              { "label": "The design of a token's supply, distribution, inflation, and incentive mechanics", "value": "B" },
-              { "label": "A method of auditing smart contract code", "value": "C" },
-              { "label": "The fee structure on a crypto exchange", "value": "D" }
+              {
+                "label": "The economics department at a blockchain company",
+                "value": "A"
+              },
+              {
+                "label": "The design of a token's supply, distribution, inflation, and incentive mechanics",
+                "value": "B"
+              },
+              {
+                "label": "A method of auditing smart contract code",
+                "value": "C"
+              },
+              {
+                "label": "The fee structure on a crypto exchange",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Tokenomics covers: max supply, vesting schedules, inflation rate, burn mechanisms, staking rewards, and how tokens are distributed. Good tokenomics align incentives; bad tokenomics doom projects to sell pressure.",
             "points": 1
           },
-
           {
             "id": "q-fe-81",
             "type": "single",
             "category": "Cryptocurrency — High School",
             "question": "What does 'slippage' mean when trading on an exchange?",
             "options": [
-              { "label": "A failed transaction that must be retried", "value": "A" },
-              { "label": "The difference between the expected price and the actual executed price", "value": "B" },
-              { "label": "The percentage fee charged by the exchange", "value": "C" },
-              { "label": "The time between order placement and execution", "value": "D" }
+              {
+                "label": "A failed transaction that must be retried",
+                "value": "A"
+              },
+              {
+                "label": "The difference between the expected price and the actual executed price",
+                "value": "B"
+              },
+              {
+                "label": "The percentage fee charged by the exchange",
+                "value": "C"
+              },
+              {
+                "label": "The time between order placement and execution",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Slippage happens when markets move between order placement and execution. On thin order books or AMMs, large trades cause more slippage because there isn't enough liquidity at the target price.",
             "points": 1
           },
-
           {
             "id": "q-fe-82",
             "type": "single",
             "category": "Wallets & Security — High School",
             "question": "What is a social engineering attack in the context of crypto?",
             "options": [
-              { "label": "Using social media bots to manipulate token prices", "value": "A" },
-              { "label": "Manipulating a person psychologically into revealing sensitive information like seed phrases or passwords", "value": "B" },
-              { "label": "A network attack that floods nodes with fake transactions", "value": "C" },
-              { "label": "Exploiting a bug in a DEX's smart contract", "value": "D" }
+              {
+                "label": "Using social media bots to manipulate token prices",
+                "value": "A"
+              },
+              {
+                "label": "Manipulating a person psychologically into revealing sensitive information like seed phrases or passwords",
+                "value": "B"
+              },
+              {
+                "label": "A network attack that floods nodes with fake transactions",
+                "value": "C"
+              },
+              {
+                "label": "Exploiting a bug in a DEX's smart contract",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Social engineering exploits human trust, not code. Attackers impersonate support staff, friends, or influencers to trick victims into handing over credentials. No code is broken — the human is the vulnerability.",
             "points": 1
           },
-
           {
             "id": "q-fe-83",
             "type": "single",
             "category": "DeFi — Elementary",
             "question": "How does DeFi earn yield for users?",
             "options": [
-              { "label": "By investing in government bonds", "value": "A" },
-              { "label": "By putting funds to work in lending protocols, liquidity pools, or staking to earn fees and interest", "value": "B" },
-              { "label": "By charging users high withdrawal fees", "value": "C" },
-              { "label": "By printing new tokens to reward depositors", "value": "D" }
+              {
+                "label": "By investing in government bonds",
+                "value": "A"
+              },
+              {
+                "label": "By putting funds to work in lending protocols, liquidity pools, or staking to earn fees and interest",
+                "value": "B"
+              },
+              {
+                "label": "By charging users high withdrawal fees",
+                "value": "C"
+              },
+              {
+                "label": "By printing new tokens to reward depositors",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "DeFi yield comes from real activity: lending protocols pay interest from borrowers, AMMs pay fees from traders, and staking rewards come from inflation or protocol revenue — all distributed automatically by smart contracts.",
             "points": 1
           },
-
           {
             "id": "q-fe-84",
             "type": "single",
             "category": "Trading — Elementary",
             "question": "What is the primary purpose of a stop-loss order?",
             "options": [
-              { "label": "To lock in maximum profits on a trade", "value": "A" },
-              { "label": "To automatically sell a position if the price drops to a set level, limiting your loss", "value": "B" },
-              { "label": "To block other traders from buying the same coin", "value": "C" },
-              { "label": "To prevent your account from being hacked", "value": "D" }
+              {
+                "label": "To lock in maximum profits on a trade",
+                "value": "A"
+              },
+              {
+                "label": "To automatically sell a position if the price drops to a set level, limiting your loss",
+                "value": "B"
+              },
+              {
+                "label": "To block other traders from buying the same coin",
+                "value": "C"
+              },
+              {
+                "label": "To prevent your account from being hacked",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "A stop-loss is risk management 101. You set a price (e.g., 10% below your entry) and if the market hits it, your position automatically closes — capping your maximum loss before it gets worse.",
             "points": 1
           },
-
           {
             "id": "q-fe-85",
             "type": "single",
             "category": "Blockchain — Elementary",
             "question": "Who invented Bitcoin and published the Bitcoin whitepaper?",
             "options": [
-              { "label": "Vitalik Buterin", "value": "A" },
-              { "label": "Satoshi Nakamoto", "value": "B" },
-              { "label": "Charlie Lee", "value": "C" },
-              { "label": "Elon Musk", "value": "D" }
+              {
+                "label": "Vitalik Buterin",
+                "value": "A"
+              },
+              {
+                "label": "Satoshi Nakamoto",
+                "value": "B"
+              },
+              {
+                "label": "Charlie Lee",
+                "value": "C"
+              },
+              {
+                "label": "Elon Musk",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Satoshi Nakamoto published the Bitcoin whitepaper in October 2008 and launched the network in January 2009. Satoshi's true identity remains unknown and the name may represent a group.",
             "points": 1
           },
-
           {
             "id": "q-fe-86",
             "type": "single",
             "category": "Ecosystem — Elementary",
             "question": "What does CEX stand for?",
             "options": [
-              { "label": "Crypto Exchange Executor", "value": "A" },
-              { "label": "Centralized Exchange", "value": "B" },
-              { "label": "Certified Exchange", "value": "C" },
-              { "label": "Cross-chain Execution", "value": "D" }
+              {
+                "label": "Crypto Exchange Executor",
+                "value": "A"
+              },
+              {
+                "label": "Centralized Exchange",
+                "value": "B"
+              },
+              {
+                "label": "Certified Exchange",
+                "value": "C"
+              },
+              {
+                "label": "Cross-chain Execution",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "CEX = Centralized Exchange (e.g., Coinbase, Binance, Kraken). They are companies that hold user funds and match buyers/sellers. The trade-off: convenient but you don't control your private keys.",
             "points": 1
           },
-
           {
             "id": "q-fe-87",
             "type": "single",
             "category": "Cryptocurrency — Elementary",
             "question": "What is the difference between a coin and a token?",
             "options": [
-              { "label": "Coins are worth more; tokens are worth less", "value": "A" },
-              { "label": "Coins have their own blockchain; tokens are built on top of another blockchain", "value": "B" },
-              { "label": "Coins can only be used for payments; tokens are for games", "value": "C" },
-              { "label": "There is no difference — they are the same thing", "value": "D" }
+              {
+                "label": "Coins are worth more; tokens are worth less",
+                "value": "A"
+              },
+              {
+                "label": "Coins have their own blockchain; tokens are built on top of another blockchain",
+                "value": "B"
+              },
+              {
+                "label": "Coins can only be used for payments; tokens are for games",
+                "value": "C"
+              },
+              {
+                "label": "There is no difference — they are the same thing",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "BTC and ETH are coins — they run on their own blockchains. USDC and UNI are tokens — they're built on top of Ethereum using smart contracts (ERC-20 standard).",
             "points": 1
           },
-
           {
             "id": "q-fe-88",
             "type": "single",
             "category": "DeFi — High School",
             "question": "What is the main risk of yield farming with high APY rates?",
             "options": [
-              { "label": "The government will tax the gains at 90%", "value": "A" },
-              { "label": "High APY often means high token inflation, smart contract risk, or unsustainable incentives that collapse quickly", "value": "B" },
-              { "label": "Yield farming is banned in most countries", "value": "C" },
-              { "label": "You must hold the tokens for a minimum of 5 years", "value": "D" }
+              {
+                "label": "The government will tax the gains at 90%",
+                "value": "A"
+              },
+              {
+                "label": "High APY often means high token inflation, smart contract risk, or unsustainable incentives that collapse quickly",
+                "value": "B"
+              },
+              {
+                "label": "Yield farming is banned in most countries",
+                "value": "C"
+              },
+              {
+                "label": "You must hold the tokens for a minimum of 5 years",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "1000% APY sounds great until the reward token inflates to near zero, the protocol is hacked, or early farmers exit and price collapses. High yields are almost always high risk — evaluate protocol revenue, not just token rewards.",
             "points": 1
           },
-
           {
             "id": "q-fe-89",
             "type": "single",
             "category": "Swapping & Bridging — High School",
             "question": "What is 'liquidity routing' in a DEX aggregator like 1inch?",
             "options": [
-              { "label": "Sending transactions through the fastest validator path", "value": "A" },
-              { "label": "Splitting a trade across multiple liquidity pools and DEXs to get the best overall price", "value": "B" },
-              { "label": "Converting liquidity provider tokens to underlying assets", "value": "C" },
-              { "label": "Routing fiat deposits to the cheapest on-ramp", "value": "D" }
+              {
+                "label": "Sending transactions through the fastest validator path",
+                "value": "A"
+              },
+              {
+                "label": "Splitting a trade across multiple liquidity pools and DEXs to get the best overall price",
+                "value": "B"
+              },
+              {
+                "label": "Converting liquidity provider tokens to underlying assets",
+                "value": "C"
+              },
+              {
+                "label": "Routing fiat deposits to the cheapest on-ramp",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Aggregators like 1inch or Paraswap scan all available DEX pools and split your order across the cheapest paths — often executing across 3–5 protocols simultaneously — to minimize slippage.",
             "points": 1
           },
-
           {
             "id": "q-fe-90",
             "type": "single",
             "category": "Wallets & Security — College",
             "question": "What is an address poisoning attack?",
             "options": [
-              { "label": "Flooding an address with dust transactions to de-anonymize it", "value": "A" },
-              { "label": "Sending a small tx from an address that looks identical to a known address, hoping the victim copies it for their next transfer", "value": "B" },
-              { "label": "A smart contract exploit that corrupts token balances", "value": "C" },
-              { "label": "An MITM attack on hardware wallet firmware", "value": "D" }
+              {
+                "label": "Flooding an address with dust transactions to de-anonymize it",
+                "value": "A"
+              },
+              {
+                "label": "Sending a small tx from an address that looks identical to a known address, hoping the victim copies it for their next transfer",
+                "value": "B"
+              },
+              {
+                "label": "A smart contract exploit that corrupts token balances",
+                "value": "C"
+              },
+              {
+                "label": "An MITM attack on hardware wallet firmware",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Address poisoning tricks victims into sending funds to the attacker's address. The attacker sends dust from an address with the same first and last characters as a trusted address — betting the victim won't check the middle chars.",
             "points": 1
           },
-
           {
             "id": "q-fe-91",
             "type": "single",
             "category": "Blockchain — College",
             "question": "What is the difference between an Optimistic Rollup and a ZK Rollup?",
             "options": [
-              { "label": "Optimistic rollups are faster; ZK rollups are cheaper", "value": "A" },
-              { "label": "Optimistic rollups assume transactions are valid by default (fraud proofs); ZK rollups generate cryptographic validity proofs for every batch", "value": "B" },
-              { "label": "Optimistic rollups use PoW; ZK rollups use PoS", "value": "C" },
-              { "label": "There is no meaningful difference — both post identical data to Layer 1", "value": "D" }
+              {
+                "label": "Optimistic rollups are faster; ZK rollups are cheaper",
+                "value": "A"
+              },
+              {
+                "label": "Optimistic rollups assume transactions are valid by default (fraud proofs); ZK rollups generate cryptographic validity proofs for every batch",
+                "value": "B"
+              },
+              {
+                "label": "Optimistic rollups use PoW; ZK rollups use PoS",
+                "value": "C"
+              },
+              {
+                "label": "There is no meaningful difference — both post identical data to Layer 1",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Optimistic rollups (Arbitrum, Optimism) post transactions and challenge with fraud proofs during a ~7-day window. ZK rollups (zkSync, StarkNet) post cryptographic proofs that are immediately verifiable — faster finality but more computation.",
             "points": 1
           },
-
           {
             "id": "q-fe-92",
             "type": "single",
             "category": "Trading — High School",
             "question": "What does 'volume' tell a trader about a price move?",
             "options": [
-              { "label": "Volume is irrelevant — only price matters in technical analysis", "value": "A" },
-              { "label": "High volume confirms the strength of a move; low volume suggests the move may be weak and likely to reverse", "value": "B" },
-              { "label": "High volume means more people are losing money", "value": "C" },
-              { "label": "Volume measures the speed of transaction confirmation", "value": "D" }
+              {
+                "label": "Volume is irrelevant — only price matters in technical analysis",
+                "value": "A"
+              },
+              {
+                "label": "High volume confirms the strength of a move; low volume suggests the move may be weak and likely to reverse",
+                "value": "B"
+              },
+              {
+                "label": "High volume means more people are losing money",
+                "value": "C"
+              },
+              {
+                "label": "Volume measures the speed of transaction confirmation",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Volume is the fuel behind price moves. A breakout on high volume is far more reliable than the same breakout on low volume, which could be a false break (a 'fakeout') with few participants.",
             "points": 1
           },
-
           {
             "id": "q-fe-93",
             "type": "single",
             "category": "XRPL — College",
             "question": "What does 'XRP as a bridge currency' mean in global payments?",
             "options": [
-              { "label": "XRP is used to fund bridge smart contracts on Ethereum", "value": "A" },
-              { "label": "Financial institutions convert source fiat → XRP → destination fiat in real time, avoiding pre-funded correspondent accounts", "value": "B" },
-              { "label": "XRP acts as collateral for stablecoins issued on the XRPL", "value": "C" },
-              { "label": "XRP is the gas token for all XRPL smart contracts", "value": "D" }
+              {
+                "label": "XRP is used to fund bridge smart contracts on Ethereum",
+                "value": "A"
+              },
+              {
+                "label": "Financial institutions convert source fiat → XRP → destination fiat in real time, avoiding pre-funded correspondent accounts",
+                "value": "B"
+              },
+              {
+                "label": "XRP acts as collateral for stablecoins issued on the XRPL",
+                "value": "C"
+              },
+              {
+                "label": "XRP is the gas token for all XRPL smart contracts",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "XRP's 3–5 second settlement and deep liquidity make it an efficient bridge. Instead of banks holding millions pre-funded in foreign accounts (nostro/vostro), they convert through XRP on-demand — ODL.",
             "points": 1
           },
-
           {
             "id": "q-fe-94",
             "type": "single",
             "category": "Ecosystem — College",
             "question": "What is a Soulbound Token (SBT)?",
             "options": [
-              { "label": "An NFT that can only be sold once", "value": "A" },
-              { "label": "A non-transferable token permanently tied to a wallet, representing credentials, reputation, or identity", "value": "B" },
-              { "label": "A DeFi governance token with a time lock", "value": "C" },
-              { "label": "A token standard for in-game item trading", "value": "D" }
+              {
+                "label": "An NFT that can only be sold once",
+                "value": "A"
+              },
+              {
+                "label": "A non-transferable token permanently tied to a wallet, representing credentials, reputation, or identity",
+                "value": "B"
+              },
+              {
+                "label": "A DeFi governance token with a time lock",
+                "value": "C"
+              },
+              {
+                "label": "A token standard for in-game item trading",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "SBTs (proposed by Vitalik Buterin) are non-transferable NFTs that could represent diplomas, professional certifications, or proof of participation — building on-chain identity and reputation.",
             "points": 1
           },
-
           {
             "id": "q-fe-95",
             "type": "single",
             "category": "Wallets & Security — High School",
             "question": "What is 'two-factor authentication' (2FA) and why should you use it for crypto accounts?",
             "options": [
-              { "label": "A second password that replaces your first password", "value": "A" },
-              { "label": "A second verification step (code or biometric) beyond your password, so a stolen password alone can't access your account", "value": "B" },
-              { "label": "A feature that requires two wallets to confirm each transaction", "value": "C" },
-              { "label": "An email confirmation that verifies each withdrawal", "value": "D" }
+              {
+                "label": "A second password that replaces your first password",
+                "value": "A"
+              },
+              {
+                "label": "A second verification step (code or biometric) beyond your password, so a stolen password alone can't access your account",
+                "value": "B"
+              },
+              {
+                "label": "A feature that requires two wallets to confirm each transaction",
+                "value": "C"
+              },
+              {
+                "label": "An email confirmation that verifies each withdrawal",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "2FA means even if your password is leaked, an attacker still needs your TOTP code (Google Authenticator, Authy) or hardware key (YubiKey). Always use authenticator-based 2FA — not SMS, which is vulnerable to SIM swaps.",
             "points": 1
           },
-
           {
             "id": "q-fe-96",
             "type": "single",
             "category": "Blockchain — Elementary",
             "question": "What does 'decentralized' mean in the context of a blockchain?",
             "options": [
-              { "label": "The blockchain is hosted on one very powerful server", "value": "A" },
-              { "label": "No single person or company controls it — thousands of nodes worldwide maintain and verify it", "value": "B" },
-              { "label": "Only governments can access the blockchain data", "value": "C" },
-              { "label": "Transactions are free because no company is making money", "value": "D" }
+              {
+                "label": "The blockchain is hosted on one very powerful server",
+                "value": "A"
+              },
+              {
+                "label": "No single person or company controls it — thousands of nodes worldwide maintain and verify it",
+                "value": "B"
+              },
+              {
+                "label": "Only governments can access the blockchain data",
+                "value": "C"
+              },
+              {
+                "label": "Transactions are free because no company is making money",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Decentralization means control is spread across thousands of independent nodes globally. There's no CEO, no headquarters, no shutdown switch. Consensus rules are enforced by code, not by people.",
             "points": 1
           },
-
           {
             "id": "q-fe-97",
             "type": "single",
             "category": "DeFi — College",
             "question": "What is the primary risk of using a DeFi protocol with an unaudited smart contract?",
             "options": [
-              { "label": "The gas fees will be unexpectedly high", "value": "A" },
-              { "label": "A bug or backdoor in the code could allow attackers to drain all deposited funds with no recourse", "value": "B" },
-              { "label": "The protocol may not support your wallet type", "value": "C" },
-              { "label": "Yield rates will be lower than advertised", "value": "D" }
+              {
+                "label": "The gas fees will be unexpectedly high",
+                "value": "A"
+              },
+              {
+                "label": "A bug or backdoor in the code could allow attackers to drain all deposited funds with no recourse",
+                "value": "B"
+              },
+              {
+                "label": "The protocol may not support your wallet type",
+                "value": "C"
+              },
+              {
+                "label": "Yield rates will be lower than advertised",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Unaudited contracts are deployed code that no security expert has reviewed. A single bug (reentrancy, integer overflow, access control flaw) can result in complete fund loss. Unlike banks, there is no FDIC insurance in DeFi.",
             "points": 1
           },
-
           {
             "id": "q-fe-98",
             "type": "single",
             "category": "Cryptocurrency — College",
             "question": "What is the Lightning Network?",
             "options": [
-              { "label": "A GPU mining pool for Bitcoin", "value": "A" },
-              { "label": "A Layer 2 payment channel network on top of Bitcoin enabling instant, near-free micro-transactions", "value": "B" },
-              { "label": "An Ethereum L2 rollup using ZK proofs", "value": "C" },
-              { "label": "A centralized payment processor that settles in Bitcoin", "value": "D" }
+              {
+                "label": "A GPU mining pool for Bitcoin",
+                "value": "A"
+              },
+              {
+                "label": "A Layer 2 payment channel network on top of Bitcoin enabling instant, near-free micro-transactions",
+                "value": "B"
+              },
+              {
+                "label": "An Ethereum L2 rollup using ZK proofs",
+                "value": "C"
+              },
+              {
+                "label": "A centralized payment processor that settles in Bitcoin",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Lightning Network opens bidirectional payment channels between nodes. Payments route off-chain through a network of channels, settling only the final balance on-chain. This enables Bitcoin to process millions of micropayments per second.",
             "points": 1
           },
-
           {
             "id": "q-fe-99",
             "type": "single",
             "category": "Trading — College",
             "question": "In algorithmic trading, what is 'backtesting'?",
             "options": [
-              { "label": "Testing a trading strategy on a paper trading account with live market data", "value": "A" },
-              { "label": "Running a trading strategy against historical price data to evaluate how it would have performed in the past", "value": "B" },
-              { "label": "Stress-testing a blockchain network with simulated trades", "value": "C" },
-              { "label": "Reviewing trades made by copy-traders for quality", "value": "D" }
+              {
+                "label": "Testing a trading strategy on a paper trading account with live market data",
+                "value": "A"
+              },
+              {
+                "label": "Running a trading strategy against historical price data to evaluate how it would have performed in the past",
+                "value": "B"
+              },
+              {
+                "label": "Stress-testing a blockchain network with simulated trades",
+                "value": "C"
+              },
+              {
+                "label": "Reviewing trades made by copy-traders for quality",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "Backtesting runs your strategy's logic against historical OHLCV data to measure Sharpe ratio, max drawdown, win rate, and total return. Be careful of overfitting — a strategy tuned to past data often fails on new data.",
             "points": 1
           },
-
           {
             "id": "q-fe-100",
             "type": "single",
             "category": "XRPL — OnlyCrypto",
             "question": "Why did OnlyCrypto choose the XRP Ledger as its payment and payout backbone?",
             "options": [
-              { "label": "XRP is the highest market cap cryptocurrency", "value": "A" },
-              { "label": "XRPL settles in 3–5 seconds with negligible fees, making instant automated payouts practical at any scale", "value": "B" },
-              { "label": "XRP is the only blockchain that supports smart contracts", "value": "C" },
-              { "label": "Ripple provided a grant to OnlyCrypto", "value": "D" }
+              {
+                "label": "XRP is the highest market cap cryptocurrency",
+                "value": "A"
+              },
+              {
+                "label": "XRPL settles in 3–5 seconds with negligible fees, making instant automated payouts practical at any scale",
+                "value": "B"
+              },
+              {
+                "label": "XRP is the only blockchain that supports smart contracts",
+                "value": "C"
+              },
+              {
+                "label": "Ripple provided a grant to OnlyCrypto",
+                "value": "D"
+              }
             ],
-            "answer": ["B"],
+            "answer": [
+              "B"
+            ],
             "analysis": "OnlyCrypto's compensation plan requires fast, cheap payouts across multiple tiers instantly upon a member activation. XRPL's 3–5 second finality and sub-cent fees make this economically viable at scale — a core reason it was chosen over Ethereum or Solana.",
             "points": 1
           }
-
         ]
       }
     }
