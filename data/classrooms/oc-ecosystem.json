@@ -18,28 +18,19 @@
   },
   "scenes": [
     {
-      "id": "ce-s1",
+      "id": "ce-s1a",
       "type": "slide",
       "title": "Tokenomics",
+      "order": 0,
       "content": {
         "type": "slide",
         "canvas": {
-          "id": "ce-s1-canvas",
+          "id": "ce-s1a-canvas",
           "viewportSize": 1000,
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0b1120"
-          },
-          "theme": {
-            "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f59e0b",
-              "#8b5cf6",
-              "#06b6d4"
-            ],
-            "fontColor": "#f1f5f9",
-            "fontName": "Inter"
+            "color": "#0f172a"
           },
           "elements": [
             {
@@ -103,7 +94,7 @@
               "type": "shape",
               "left": 8,
               "top": 108,
-              "width": 488,
+              "width": 984,
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
@@ -124,7 +115,7 @@
               "type": "shape",
               "left": 8,
               "top": 108,
-              "width": 4,
+              "width": 984,
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
@@ -138,68 +129,18 @@
             {
               "id": "ce-s1-lp-txt",
               "type": "text",
-              "left": 20,
+              "left": 8,
               "top": 118,
-              "width": 464,
+              "width": 984,
               "height": 430,
               "rotate": 0,
               "content": "<p style='font-size:15px;font-weight:700;color:#f59e0b;margin-bottom:10px;'>Tokenomics Fundamentals</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>Supply: Fixed cap (BTC: 21M) vs inflationary (ETH pre-merge) vs deflationary (XRP burn)<br/><br/>Distribution: Pre-mine, fair launch, VC allocation, team vesting<br/><br/>Stock-to-Flow (S2F): Scarcity model — higher ratio = more scarce. Bitcoin S2F after halving: ~100 (like gold).<br/><br/>Red flag: >50% token supply controlled by team/VCs with short unlock schedule.</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#e2e8f0"
-            },
-            {
-              "id": "ce-s1-rp-bg",
-              "type": "shape",
-              "left": 504,
-              "top": 108,
-              "width": 488,
-              "height": 450,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#0a1628",
-              "fixedRatio": false,
-              "outline": {
-                "style": "solid",
-                "width": 1,
-                "color": "#ef4444"
-              }
-            },
-            {
-              "id": "ce-s1-rp-bar",
-              "type": "shape",
-              "left": 504,
-              "top": 108,
-              "width": 4,
-              "height": 450,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#ef4444",
-              "fixedRatio": false
-            },
-            {
-              "id": "ce-s1-rp-txt",
-              "type": "text",
-              "left": 516,
-              "top": 118,
-              "width": 464,
-              "height": 430,
-              "rotate": 0,
-              "content": "<p style='font-size:15px;font-weight:700;color:#ef4444;margin-bottom:10px;'>The Velocity Problem</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>High usage ≠ high token value if velocity is high.<br/><br/>Example: A token used to pay for AI queries — users buy, use, immediately sell. Price stays low despite massive usage.<br/><br/>Solutions: Staking (lock supply), governance rights, fee burning, required holdings.<br/><br/>Best tokenomics: token holders benefit directly from protocol revenue.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#e2e8f0"
             }
           ]
         }
       },
-      "order": 0,
       "actions": [
         {
           "id": "action_ce-s1_0",
@@ -222,7 +163,134 @@
           "type": "speech",
           "text": "Supply, demand, velocity, and value capture — the four dimensions that determine whether a token is worth holding.",
           "audioUrl": "/audio/lessons/oc-ecosystem/0-3.mp3"
-        },
+        }
+      ]
+    },
+    {
+      "id": "ce-s1b",
+      "type": "slide",
+      "title": "Tokenomics (Part B)",
+      "order": 1,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ce-s1b-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
+          },
+          "elements": [
+            {
+              "id": "ce-s1-accent",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "ce-s1-titlebg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ce-s1-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 62,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Tokenomics (Part B)</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ce-s1-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 39,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Why most tokens fail and what makes the good ones work</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ce-s1-rp-bg",
+              "type": "shape",
+              "left": 8,
+              "top": 108,
+              "width": 984,
+              "height": 450,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef4444"
+              }
+            },
+            {
+              "id": "ce-s1-rp-bar",
+              "type": "shape",
+              "left": 8,
+              "top": 108,
+              "width": 984,
+              "height": 450,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef4444",
+              "fixedRatio": false
+            },
+            {
+              "id": "ce-s1-rp-txt",
+              "type": "text",
+              "left": 8,
+              "top": 118,
+              "width": 984,
+              "height": 430,
+              "rotate": 0,
+              "content": "<p style='font-size:15px;font-weight:700;color:#ef4444;margin-bottom:10px;'>The Velocity Problem</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>High usage ≠ high token value if velocity is high.<br/><br/>Example: A token used to pay for AI queries — users buy, use, immediately sell. Price stays low despite massive usage.<br/><br/>Solutions: Staking (lock supply), governance rights, fee burning, required holdings.<br/><br/>Best tokenomics: token holders benefit directly from protocol revenue.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#e2e8f0"
+            }
+          ]
+        }
+      },
+      "actions": [
         {
           "id": "action_ce-s1_4",
           "type": "spotlight",
@@ -421,7 +489,7 @@
           ]
         }
       },
-      "order": 1,
+      "order": 2,
       "actions": [
         {
           "id": "action_ce-s2_0",
@@ -658,7 +726,7 @@
           ]
         }
       },
-      "order": 2,
+      "order": 3,
       "actions": [
         {
           "id": "action_ce-s3_0",
@@ -707,28 +775,19 @@
       ]
     },
     {
-      "id": "ce-s4",
+      "id": "ce-s4a",
       "type": "slide",
       "title": "Real-World Asset Tokenization",
+      "order": 4,
       "content": {
         "type": "slide",
         "canvas": {
-          "id": "ce-s4-canvas",
+          "id": "ce-s4a-canvas",
           "viewportSize": 1000,
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0b1120"
-          },
-          "theme": {
-            "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#ef4444",
-              "#8b5cf6",
-              "#06b6d4"
-            ],
-            "fontColor": "#f1f5f9",
-            "fontName": "Inter"
+            "color": "#0f172a"
           },
           "elements": [
             {
@@ -792,7 +851,7 @@
               "type": "shape",
               "left": 8,
               "top": 108,
-              "width": 488,
+              "width": 984,
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
@@ -813,7 +872,7 @@
               "type": "shape",
               "left": 8,
               "top": 108,
-              "width": 4,
+              "width": 984,
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
@@ -827,68 +886,18 @@
             {
               "id": "ce-s4-lp-txt",
               "type": "text",
-              "left": 20,
+              "left": 8,
               "top": 118,
-              "width": 464,
+              "width": 984,
               "height": 430,
               "rotate": 0,
               "content": "<p style='font-size:15px;font-weight:700;color:#ef4444;margin-bottom:10px;'>On-Chain Governance Risks</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>Beanstalk (2022): Attacker flash-loaned majority governance tokens, passed a malicious proposal, drained $182M — all in one transaction.<br/><br/>Fix: Time-locks on governance execution (give community time to veto). No governance execution in same block as proposal.<br/><br/>Voter apathy: Most token holders never vote → small groups control protocol decisions.</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#e2e8f0"
-            },
-            {
-              "id": "ce-s4-rp-bg",
-              "type": "shape",
-              "left": 504,
-              "top": 108,
-              "width": 488,
-              "height": 450,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#0a1628",
-              "fixedRatio": false,
-              "outline": {
-                "style": "solid",
-                "width": 1,
-                "color": "#f59e0b"
-              }
-            },
-            {
-              "id": "ce-s4-rp-bar",
-              "type": "shape",
-              "left": 504,
-              "top": 108,
-              "width": 4,
-              "height": 450,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#f59e0b",
-              "fixedRatio": false
-            },
-            {
-              "id": "ce-s4-rp-txt",
-              "type": "text",
-              "left": 516,
-              "top": 118,
-              "width": 464,
-              "height": 430,
-              "rotate": 0,
-              "content": "<p style='font-size:15px;font-weight:700;color:#f59e0b;margin-bottom:10px;'>Stablecoin Types & Risks</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>Fiat-backed (USDC, USDT): Centralized, requires trust in issuer. Regulated.<br/>Crypto-backed (DAI): Over-collateralized, can de-peg in cascades.<br/>Algorithmic (UST): Collapsed $40B in 2022 — no collateral, pure game theory.<br/><br/>Rule: Algo stablecoins are not stable. They are time-bombs waiting for a bank run.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#e2e8f0"
             }
           ]
         }
       },
-      "order": 3,
       "actions": [
         {
           "id": "action_ce-s4_0",
@@ -911,7 +920,134 @@
           "type": "speech",
           "text": "Smart contracts can give token holders power — but flash loans can borrow that power for a single transaction.",
           "audioUrl": "/audio/lessons/oc-ecosystem/3-3.mp3"
-        },
+        }
+      ]
+    },
+    {
+      "id": "ce-s4b",
+      "type": "slide",
+      "title": "Real-World Asset Tokenization (Part B)",
+      "order": 5,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ce-s4b-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
+          },
+          "elements": [
+            {
+              "id": "ce-s4-accent",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef4444",
+              "fixedRatio": false
+            },
+            {
+              "id": "ce-s4-titlebg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ce-s4-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 62,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Governance & Stablecoins (Part B)</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ce-s4-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 39,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>The two most underestimated risks in crypto ecosystems</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ce-s4-rp-bg",
+              "type": "shape",
+              "left": 8,
+              "top": 108,
+              "width": 984,
+              "height": 450,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b"
+              }
+            },
+            {
+              "id": "ce-s4-rp-bar",
+              "type": "shape",
+              "left": 8,
+              "top": 108,
+              "width": 984,
+              "height": 450,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "ce-s4-rp-txt",
+              "type": "text",
+              "left": 8,
+              "top": 118,
+              "width": 984,
+              "height": 430,
+              "rotate": 0,
+              "content": "<p style='font-size:15px;font-weight:700;color:#f59e0b;margin-bottom:10px;'>Stablecoin Types & Risks</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>Fiat-backed (USDC, USDT): Centralized, requires trust in issuer. Regulated.<br/>Crypto-backed (DAI): Over-collateralized, can de-peg in cascades.<br/>Algorithmic (UST): Collapsed $40B in 2022 — no collateral, pure game theory.<br/><br/>Rule: Algo stablecoins are not stable. They are time-bombs waiting for a bank run.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#e2e8f0"
+            }
+          ]
+        }
+      },
+      "actions": [
         {
           "id": "action_ce-s4_4",
           "type": "spotlight",
@@ -1200,7 +1336,7 @@
           ]
         }
       },
-      "order": 4,
+      "order": 6,
       "actions": [
         {
           "id": "action_ce-s5_0",
@@ -1523,7 +1659,7 @@
           ]
         }
       },
-      "order": 5,
+      "order": 7,
       "actions": [
         {
           "id": "action_ce-s6_0",
@@ -1594,28 +1730,19 @@
       ]
     },
     {
-      "id": "ce-s7",
+      "id": "ce-s7a",
       "type": "slide",
       "title": "The Future of Web3",
+      "order": 8,
       "content": {
         "type": "slide",
         "canvas": {
-          "id": "ce-s7-canvas",
+          "id": "ce-s7a-canvas",
           "viewportSize": 1000,
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0b1120"
-          },
-          "theme": {
-            "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#22d3ee",
-              "#8b5cf6",
-              "#06b6d4"
-            ],
-            "fontColor": "#f1f5f9",
-            "fontName": "Inter"
+            "color": "#0f172a"
           },
           "elements": [
             {
@@ -1679,7 +1806,7 @@
               "type": "shape",
               "left": 8,
               "top": 108,
-              "width": 488,
+              "width": 984,
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
@@ -1700,7 +1827,7 @@
               "type": "shape",
               "left": 8,
               "top": 108,
-              "width": 4,
+              "width": 984,
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
@@ -1714,68 +1841,18 @@
             {
               "id": "ce-s7-lp-txt",
               "type": "text",
-              "left": 20,
+              "left": 8,
               "top": 118,
-              "width": 464,
+              "width": 984,
               "height": 430,
               "rotate": 0,
               "content": "<p style='font-size:15px;font-weight:700;color:#22d3ee;margin-bottom:10px;'>Regulatory Landscape</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>USA: SEC vs CFTC jurisdiction battle. ETF approval = milestone. Most tokens may be securities under Howey test.<br/><br/>EU: MiCA (Markets in Crypto-Assets) — comprehensive framework live 2024. Stablecoin issuers need banking license.<br/><br/>Pattern: Regulation follows adoption. Clear rules → institutional entry → mainstream adoption.</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#e2e8f0"
-            },
-            {
-              "id": "ce-s7-rp-bg",
-              "type": "shape",
-              "left": 504,
-              "top": 108,
-              "width": 488,
-              "height": 450,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#0a1628",
-              "fixedRatio": false,
-              "outline": {
-                "style": "solid",
-                "width": 1,
-                "color": "#3b82f6"
-              }
-            },
-            {
-              "id": "ce-s7-rp-bar",
-              "type": "shape",
-              "left": 504,
-              "top": 108,
-              "width": 4,
-              "height": 450,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#3b82f6",
-              "fixedRatio": false
-            },
-            {
-              "id": "ce-s7-rp-txt",
-              "type": "text",
-              "left": 516,
-              "top": 118,
-              "width": 464,
-              "height": 430,
-              "rotate": 0,
-              "content": "<p style='font-size:15px;font-weight:700;color:#3b82f6;margin-bottom:10px;'>Where OnlyCrypto Fits</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>XRPL payments: settled in 3–5 seconds, $0.0002 fee — financial infrastructure at crypto speed.<br/><br/>Copy trading: access to professional strategies without managing keys or active trading.<br/><br/>Educator pool: sustainable model — members learn and earn simultaneously.<br/><br/>The platform runs on real infrastructure — not promises.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#e2e8f0"
             }
           ]
         }
       },
-      "order": 6,
       "actions": [
         {
           "id": "action_ce-s7_0",
@@ -1798,7 +1875,134 @@
           "type": "speech",
           "text": "The US, EU, and Asia are taking different regulatory approaches. Knowing each matters for compliance and opportunity.",
           "audioUrl": "/audio/lessons/oc-ecosystem/6-3.mp3"
-        },
+        }
+      ]
+    },
+    {
+      "id": "ce-s7b",
+      "type": "slide",
+      "title": "The Future of Web3 (Part B)",
+      "order": 9,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "ce-s7b-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
+          },
+          "elements": [
+            {
+              "id": "ce-s7-accent",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#22d3ee",
+              "fixedRatio": false
+            },
+            {
+              "id": "ce-s7-titlebg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "ce-s7-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 720,
+              "height": 62,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;letter-spacing:-0.5px;'>Regulation & The Big Picture (Part B)</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "ce-s7-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 720,
+              "height": 39,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;font-weight:500;'>Where crypto is heading and where OnlyCrypto fits in</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "ce-s7-rp-bg",
+              "type": "shape",
+              "left": 8,
+              "top": 108,
+              "width": 984,
+              "height": 450,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0a1628",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f6"
+              }
+            },
+            {
+              "id": "ce-s7-rp-bar",
+              "type": "shape",
+              "left": 8,
+              "top": 108,
+              "width": 984,
+              "height": 450,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f6",
+              "fixedRatio": false
+            },
+            {
+              "id": "ce-s7-rp-txt",
+              "type": "text",
+              "left": 8,
+              "top": 118,
+              "width": 984,
+              "height": 430,
+              "rotate": 0,
+              "content": "<p style='font-size:15px;font-weight:700;color:#3b82f6;margin-bottom:10px;'>Where OnlyCrypto Fits</p><p style='font-size:13px;color:#e2e8f0;line-height:1.6;'>XRPL payments: settled in 3–5 seconds, $0.0002 fee — financial infrastructure at crypto speed.<br/><br/>Copy trading: access to professional strategies without managing keys or active trading.<br/><br/>Educator pool: sustainable model — members learn and earn simultaneously.<br/><br/>The platform runs on real infrastructure — not promises.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#e2e8f0"
+            }
+          ]
+        }
+      },
+      "actions": [
         {
           "id": "action_ce-s7_4",
           "type": "spotlight",
@@ -1845,13 +2049,13 @@
           "audioUrl": "/audio/lessons/oc-ecosystem/7-1.mp3"
         }
       ],
-      "order": 7
+      "order": 10
     },
     {
       "id": "ce-s10",
       "type": "slide",
       "title": "⚖️ Global Regulatory Landscape",
-      "order": 8,
+      "order": 11,
       "content": {
         "type": "slide",
         "canvas": {
@@ -2160,7 +2364,7 @@
       "id": "ce-s10b",
       "type": "slide",
       "title": "🏦 Banking Integration & Payments",
-      "order": 9,
+      "order": 12,
       "content": {
         "type": "slide",
         "canvas": {
@@ -2699,7 +2903,7 @@
           }
         ]
       },
-      "order": 10,
+      "order": 13,
       "actions": [
         {
           "id": "action_ce-s8_q0",

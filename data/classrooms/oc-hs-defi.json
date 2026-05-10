@@ -18,29 +18,19 @@
   },
   "scenes": [
     {
-      "id": "hs-defi-s1",
+      "id": "hs-defi-s1a",
       "type": "slide",
       "title": "Liquidity Pools & The AMM Formula",
       "order": 0,
       "content": {
         "type": "slide",
         "canvas": {
-          "id": "hs-defi-s1-canvas",
+          "id": "hs-defi-s1a-canvas",
           "viewportSize": 1000,
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0b1120"
-          },
-          "theme": {
-            "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f59e0b",
-              "#3b82f6",
-              "#10b981"
-            ],
-            "fontColor": "#f1f5f9",
-            "fontName": "Inter"
+            "color": "#0f172a"
           },
           "elements": [
             {
@@ -155,63 +145,6 @@
               "content": "<p style='font-size:13px;color:#94a3b8;line-height:1.8;'>When you <b style='color:#10b981;'>buy</b> token A: its supply in the pool drops → k must stay constant → token A's price rises automatically.<br/>When you <b style='color:#f87171;'>sell</b> token A: its supply increases → price falls automatically.<br/>No human sets the price — it's pure math responding to supply changes.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#94a3b8"
-            },
-            {
-              "id": "hs-defi-s1-provide-h",
-              "type": "text",
-              "left": 24,
-              "top": 332,
-              "width": 460,
-              "height": 41,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:800;color:#10b981;'>How you provide liquidity (become an LP)</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#10b981"
-            },
-            {
-              "id": "hs-defi-s1-provide-b",
-              "type": "text",
-              "left": 24,
-              "top": 360,
-              "width": 460,
-              "height": 188,
-              "rotate": 0,
-              "content": "<p style='font-size:12px;color:#94a3b8;line-height:2;'>1. Deposit equal value of both tokens (e.g. $500 ETH + $500 USDC)<br/>2. Receive LP tokens = your share of the pool<br/>3. Earn % of every swap fee (usually 0.3%) proportional to your share<br/>4. Withdraw anytime by burning your LP tokens<br/>→ <b style='color:#f59e0b;'>Risk: impermanent loss</b> (next slide)</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#94a3b8"
-            },
-            {
-              "id": "hs-defi-s1-dex-bg",
-              "type": "shape",
-              "left": 514,
-              "top": 332,
-              "width": 460,
-              "height": 158,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#f59e0b08",
-              "fixedRatio": false,
-              "outline": {
-                "style": "solid",
-                "width": 1,
-                "color": "#f59e0b30"
-              }
-            },
-            {
-              "id": "hs-defi-s1-dex-t",
-              "type": "text",
-              "left": 524,
-              "top": 342,
-              "width": 440,
-              "height": 176,
-              "rotate": 0,
-              "content": "<p style='font-size:13px;font-weight:800;color:#f59e0b;margin-bottom:8px;'>DeFi Building Blocks</p><p style='font-size:12px;color:#94a3b8;line-height:2;'>🔄 DEX — Trade tokens from your wallet, no sign-up<br/>🏦 Lending — Deposit collateral, borrow against it<br/>🌾 Yield Farming — Provide LP tokens, earn protocol rewards<br/>⚖️ Stablecoins — $1-pegged tokens to hold value in DeFi</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f59e0b"
             }
           ]
         }
@@ -243,7 +176,142 @@
           "id": "action_hs-defi-s1_4",
           "type": "spotlight",
           "elementId": "hs-defi-s1-formula-t"
-        },
+        }
+      ]
+    },
+    {
+      "id": "hs-defi-s1b",
+      "type": "slide",
+      "title": "Liquidity Pools & The AMM Formula (Part B)",
+      "order": 1,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "hs-defi-s1b-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
+          },
+          "elements": [
+            {
+              "id": "hs-defi-s1-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-defi-s1-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-defi-s1-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 62,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>💧 Providing Liquidity & DeFi Building Blocks</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "hs-defi-s1-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 39,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;'>How to add liquidity and the key DeFi primitives</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "hs-defi-s1-provide-h",
+              "type": "text",
+              "left": 24,
+              "top": 112,
+              "width": 460,
+              "height": 41,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:800;color:#10b981;'>How you provide liquidity (become an LP)</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#10b981"
+            },
+            {
+              "id": "hs-defi-s1-provide-b",
+              "type": "text",
+              "left": 24,
+              "top": 140,
+              "width": 460,
+              "height": 188,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#94a3b8;line-height:2;'>1. Deposit equal value of both tokens (e.g. $500 ETH + $500 USDC)<br/>2. Receive LP tokens = your share of the pool<br/>3. Earn % of every swap fee (usually 0.3%) proportional to your share<br/>4. Withdraw anytime by burning your LP tokens<br/>→ <b style='color:#f59e0b;'>Risk: impermanent loss</b> (next slide)</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "hs-defi-s1-dex-bg",
+              "type": "shape",
+              "left": 514,
+              "top": 112,
+              "width": 460,
+              "height": 158,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b08",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b30"
+              }
+            },
+            {
+              "id": "hs-defi-s1-dex-t",
+              "type": "text",
+              "left": 524,
+              "top": 122,
+              "width": 440,
+              "height": 176,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:800;color:#f59e0b;margin-bottom:8px;'>DeFi Building Blocks</p><p style='font-size:12px;color:#94a3b8;line-height:2;'>🔄 DEX — Trade tokens from your wallet, no sign-up<br/>🏦 Lending — Deposit collateral, borrow against it<br/>🌾 Yield Farming — Provide LP tokens, earn protocol rewards<br/>⚖️ Stablecoins — $1-pegged tokens to hold value in DeFi</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            }
+          ]
+        }
+      },
+      "actions": [
         {
           "id": "action_hs-defi-s1_5",
           "type": "speech",
@@ -275,29 +343,19 @@
       ]
     },
     {
-      "id": "hs-defi-s2",
+      "id": "hs-defi-s2a",
       "type": "slide",
       "title": "Impermanent Loss & DeFi Risks",
-      "order": 1,
+      "order": 2,
       "content": {
         "type": "slide",
         "canvas": {
-          "id": "hs-defi-s2-canvas",
+          "id": "hs-defi-s2a-canvas",
           "viewportSize": 1000,
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0b1120"
-          },
-          "theme": {
-            "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f59e0b",
-              "#ef4444",
-              "#10b981"
-            ],
-            "fontColor": "#f1f5f9",
-            "fontName": "Inter"
+            "color": "#0f172a"
           },
           "elements": [
             {
@@ -490,11 +548,122 @@
               "content": "<p style='font-size:12px;color:#94a3b8;line-height:1.7;'>IL is 'impermanent' because if prices return to entry levels, it disappears. It only becomes a realized loss when you withdraw while prices have moved. Swap fee income can offset it.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#94a3b8"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "id": "action_hs-defi-s2_0",
+          "type": "spotlight",
+          "elementId": "hs-defi-s2-title"
+        },
+        {
+          "id": "action_hs-defi-s2_1",
+          "type": "speech",
+          "text": "Impermanent Loss and DeFi Risks",
+          "audioUrl": "/audio/lessons/oc-hs-defi/1-1.mp3"
+        },
+        {
+          "id": "action_hs-defi-s2_2",
+          "type": "spotlight",
+          "elementId": "hs-defi-s2-il-b"
+        },
+        {
+          "id": "action_hs-defi-s2_3",
+          "type": "speech",
+          "text": "Impermanent loss: When token prices move, the pool rebalances — your share shifts toward the underperforming token. If you had just held instead of providing liquidity, you'd have more of the outperformer. That difference is impermanent loss.",
+          "audioUrl": "/audio/lessons/oc-hs-defi/1-3.mp3"
+        },
+        {
+          "id": "action_hs-defi-s2_4",
+          "type": "spotlight",
+          "elementId": "hs-defi-s2-il1t"
+        },
+        {
+          "id": "action_hs-defi-s2_5",
+          "type": "speech",
+          "text": "If the token price doubles — a one hundred percent increase — you experience about 5.7% impermanent loss compared to just holding. If it goes up four times, that's about 20% IL. And at ten times, you're looking at about 42% impermanent loss versus holding.",
+          "audioUrl": "/audio/lessons/oc-hs-defi/1-5.mp3"
+        }
+      ]
+    },
+    {
+      "id": "hs-defi-s2b",
+      "type": "slide",
+      "title": "Impermanent Loss & DeFi Risks (Part B)",
+      "order": 3,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "hs-defi-s2b-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
+          },
+          "elements": [
+            {
+              "id": "hs-defi-s2-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-defi-s2-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-defi-s2-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 62,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>⚠️ DeFi Risks & OnlyCrypto's Approach</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "hs-defi-s2-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 39,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;'>Smart contract risk, hacks, and how to stay safe</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
             },
             {
               "id": "hs-defi-s2-risks-bg",
               "type": "shape",
-              "left": 514,
+              "left": 24,
               "top": 110,
               "width": 460,
               "height": 300,
@@ -515,7 +684,7 @@
             {
               "id": "hs-defi-s2-risks-h",
               "type": "text",
-              "left": 524,
+              "left": 34,
               "top": 118,
               "width": 440,
               "height": 41,
@@ -527,7 +696,7 @@
             {
               "id": "hs-defi-s2-risks-b",
               "type": "text",
-              "left": 524,
+              "left": 34,
               "top": 148,
               "width": 440,
               "height": 250,
@@ -574,39 +743,6 @@
       },
       "actions": [
         {
-          "id": "action_hs-defi-s2_0",
-          "type": "spotlight",
-          "elementId": "hs-defi-s2-title"
-        },
-        {
-          "id": "action_hs-defi-s2_1",
-          "type": "speech",
-          "text": "Impermanent Loss and DeFi Risks",
-          "audioUrl": "/audio/lessons/oc-hs-defi/1-1.mp3"
-        },
-        {
-          "id": "action_hs-defi-s2_2",
-          "type": "spotlight",
-          "elementId": "hs-defi-s2-il-b"
-        },
-        {
-          "id": "action_hs-defi-s2_3",
-          "type": "speech",
-          "text": "Impermanent loss: When token prices move, the pool rebalances — your share shifts toward the underperforming token. If you had just held instead of providing liquidity, you'd have more of the outperformer. That difference is impermanent loss.",
-          "audioUrl": "/audio/lessons/oc-hs-defi/1-3.mp3"
-        },
-        {
-          "id": "action_hs-defi-s2_4",
-          "type": "spotlight",
-          "elementId": "hs-defi-s2-il1t"
-        },
-        {
-          "id": "action_hs-defi-s2_5",
-          "type": "speech",
-          "text": "If the token price doubles — a one hundred percent increase — you experience about 5.7% impermanent loss compared to just holding. If it goes up four times, that's about 20% IL. And at ten times, you're looking at about 42% impermanent loss versus holding.",
-          "audioUrl": "/audio/lessons/oc-hs-defi/1-5.mp3"
-        },
-        {
           "id": "action_hs-defi-s2_6",
           "type": "spotlight",
           "elementId": "hs-defi-s2-il-note"
@@ -645,7 +781,7 @@
       "id": "hd-s4",
       "type": "slide",
       "title": "🌾 Yield Farming",
-      "order": 2,
+      "order": 4,
       "content": {
         "type": "slide",
         "canvas": {
@@ -954,7 +1090,7 @@
       "id": "hd-s5",
       "type": "slide",
       "title": "⚖️ Impermanent Loss — Deep Dive",
-      "order": 3,
+      "order": 5,
       "content": {
         "type": "slide",
         "canvas": {
@@ -1263,7 +1399,7 @@
       "id": "hd-s6",
       "type": "slide",
       "title": "🔒 Protocol Risk",
-      "order": 4,
+      "order": 6,
       "content": {
         "type": "slide",
         "canvas": {
@@ -1572,7 +1708,7 @@
       "id": "hs-defi-s3",
       "type": "quiz",
       "title": "Knowledge Check — DeFi High School",
-      "order": 5,
+      "order": 7,
       "content": {
         "type": "quiz",
         "questions": [

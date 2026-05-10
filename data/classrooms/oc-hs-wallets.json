@@ -18,29 +18,19 @@
   },
   "scenes": [
     {
-      "id": "hs-wl-s1",
+      "id": "hs-wl-s1a",
       "type": "slide",
       "title": "Seed Phrases, Keys & Wallet Types",
       "order": 0,
       "content": {
         "type": "slide",
         "canvas": {
-          "id": "hs-wl-s1-canvas",
+          "id": "hs-wl-s1a-canvas",
           "viewportSize": 1000,
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0b1120"
-          },
-          "theme": {
-            "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f59e0b",
-              "#3b82f6",
-              "#ef4444"
-            ],
-            "fontColor": "#f1f5f9",
-            "fontName": "Inter"
+            "color": "#0f172a"
           },
           "elements": [
             {
@@ -155,219 +145,6 @@
               "content": "<p style='font-size:12px;color:#fbbf24;'>⚡ A 12-word seed has 2¹³² ≈ 5 sextillion combinations. At 1 billion guesses/sec, brute-forcing takes longer than the age of the universe.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#fbbf24"
-            },
-            {
-              "id": "hs-wl-s1-keys-h",
-              "type": "text",
-              "left": 24,
-              "top": 308,
-              "width": 460,
-              "height": 39,
-              "rotate": 0,
-              "content": "<p style='font-size:13px;font-weight:800;color:#3b82f6;'>🔐 Private Key → Public Key → Address</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#3b82f6"
-            },
-            {
-              "id": "hs-wl-s1-k1",
-              "type": "shape",
-              "left": 24,
-              "top": 336,
-              "width": 130,
-              "height": 100,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#ef444415",
-              "fixedRatio": false,
-              "outline": {
-                "style": "solid",
-                "width": 1,
-                "color": "#ef444450"
-              }
-            },
-            {
-              "id": "hs-wl-s1-k1t",
-              "type": "text",
-              "left": 28,
-              "top": 342,
-              "width": 122,
-              "height": 102,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:800;color:#f87171;text-align:center;'>Private Key<br/>🔑</p><p style='font-size:10px;color:#94a3b8;text-align:center;margin-top:4px;'>NEVER share. Anyone with this spends your funds.</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f87171"
-            },
-            {
-              "id": "hs-wl-s1-arr1",
-              "type": "text",
-              "left": 162,
-              "top": 376,
-              "width": 30,
-              "height": 47,
-              "rotate": 0,
-              "content": "<p style='font-size:18px;color:#60a5fa;text-align:center;'>→</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#60a5fa"
-            },
-            {
-              "id": "hs-wl-s1-k2",
-              "type": "shape",
-              "left": 198,
-              "top": 336,
-              "width": 130,
-              "height": 100,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#3b82f615",
-              "fixedRatio": false,
-              "outline": {
-                "style": "solid",
-                "width": 1,
-                "color": "#3b82f650"
-              }
-            },
-            {
-              "id": "hs-wl-s1-k2t",
-              "type": "text",
-              "left": 202,
-              "top": 342,
-              "width": 122,
-              "height": 119,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:800;color:#60a5fa;text-align:center;'>Public Key<br/>📢</p><p style='font-size:10px;color:#94a3b8;text-align:center;margin-top:4px;'>Derived via elliptic curve math. Cannot reverse to private key.</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#60a5fa"
-            },
-            {
-              "id": "hs-wl-s1-arr2",
-              "type": "text",
-              "left": 336,
-              "top": 376,
-              "width": 30,
-              "height": 47,
-              "rotate": 0,
-              "content": "<p style='font-size:18px;color:#60a5fa;text-align:center;'>→</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#60a5fa"
-            },
-            {
-              "id": "hs-wl-s1-k3",
-              "type": "shape",
-              "left": 372,
-              "top": 336,
-              "width": 100,
-              "height": 100,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#10b98115",
-              "fixedRatio": false,
-              "outline": {
-                "style": "solid",
-                "width": 1,
-                "color": "#10b98150"
-              }
-            },
-            {
-              "id": "hs-wl-s1-k3t",
-              "type": "text",
-              "left": 376,
-              "top": 342,
-              "width": 92,
-              "height": 102,
-              "rotate": 0,
-              "content": "<p style='font-size:11px;font-weight:800;color:#34d399;text-align:center;'>Address<br/>📮</p><p style='font-size:10px;color:#94a3b8;text-align:center;margin-top:4px;'>Hashed public key. Safe to share publicly.</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#34d399"
-            },
-            {
-              "id": "hs-wl-s1-wallet-bg",
-              "type": "shape",
-              "left": 514,
-              "top": 295,
-              "width": 460,
-              "height": 145,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#8b5cf608",
-              "fixedRatio": false,
-              "outline": {
-                "style": "solid",
-                "width": 1,
-                "color": "#8b5cf630"
-              }
-            },
-            {
-              "id": "hs-wl-s1-wallet-h",
-              "type": "text",
-              "left": 524,
-              "top": 303,
-              "width": 440,
-              "height": 39,
-              "rotate": 0,
-              "content": "<p style='font-size:13px;font-weight:800;color:#a78bfa;'>Hot vs Cold vs Custodial</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#a78bfa"
-            },
-            {
-              "id": "hs-wl-s1-wallet-b",
-              "type": "text",
-              "left": 524,
-              "top": 331,
-              "width": 440,
-              "height": 164,
-              "rotate": 0,
-              "content": "<p style='font-size:12px;color:#94a3b8;line-height:2;'>🔥 <b style='color:#f59e0b;'>Hot</b> — Online, convenient, riskier. MetaMask, Xumm. Use for small amounts.<br/>🧊 <b style='color:#3b82f6;'>Cold</b> — Keys never touch internet. Ledger, Trezor. Use for large holdings.<br/>🏦 <b style='color:#ef4444;'>Custodial</b> — Exchange holds your keys. You own IOUs. FTX proved why this is risky.</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#94a3b8"
-            },
-            {
-              "id": "hs-wl-s1-oc",
-              "type": "shape",
-              "left": 24,
-              "top": 450,
-              "width": 950,
-              "height": 60,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#3b82f610",
-              "fixedRatio": false,
-              "outline": {
-                "style": "solid",
-                "width": 1,
-                "color": "#3b82f640"
-              }
-            },
-            {
-              "id": "hs-wl-s1-oc-t",
-              "type": "text",
-              "left": 34,
-              "top": 462,
-              "width": 930,
-              "height": 59,
-              "rotate": 0,
-              "content": "<p style='font-size:13px;color:#60a5fa;'>OnlyCrypto payouts go to your wallet address on XRPL. Use a non-custodial wallet you control. If using an exchange address, include the destination tag or funds may be lost.</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#60a5fa"
             }
           ]
         }
@@ -416,7 +193,298 @@
           "type": "speech",
           "text": "The private key is a 256-bit random number. Anyone with it can spend your funds. Never share it. Never type it online. Never store it digitally.",
           "audioUrl": "/audio/lessons/oc-hs-wallets/0-7.mp3"
-        },
+        }
+      ]
+    },
+    {
+      "id": "hs-wl-s1b",
+      "type": "slide",
+      "title": "Seed Phrases, Keys & Wallet Types (Part B)",
+      "order": 1,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "hs-wl-s1b-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
+          },
+          "elements": [
+            {
+              "id": "hs-wl-s1-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-wl-s1-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-wl-s1-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 62,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🔑 Keys, Wallet Types & Security</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "hs-wl-s1-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 39,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;'>How private keys work and choosing the right wallet</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "hs-wl-s1-keys-h",
+              "type": "text",
+              "left": 24,
+              "top": 125,
+              "width": 460,
+              "height": 39,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:800;color:#3b82f6;'>🔐 Private Key → Public Key → Address</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#3b82f6"
+            },
+            {
+              "id": "hs-wl-s1-k1",
+              "type": "shape",
+              "left": 24,
+              "top": 153,
+              "width": 130,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444415",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef444450"
+              }
+            },
+            {
+              "id": "hs-wl-s1-k1t",
+              "type": "text",
+              "left": 28,
+              "top": 159,
+              "width": 122,
+              "height": 102,
+              "rotate": 0,
+              "content": "<p style='font-size:11px;font-weight:800;color:#f87171;text-align:center;'>Private Key<br/>🔑</p><p style='font-size:10px;color:#94a3b8;text-align:center;margin-top:4px;'>NEVER share. Anyone with this spends your funds.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f87171"
+            },
+            {
+              "id": "hs-wl-s1-arr1",
+              "type": "text",
+              "left": 162,
+              "top": 193,
+              "width": 30,
+              "height": 47,
+              "rotate": 0,
+              "content": "<p style='font-size:18px;color:#60a5fa;text-align:center;'>→</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#60a5fa"
+            },
+            {
+              "id": "hs-wl-s1-k2",
+              "type": "shape",
+              "left": 198,
+              "top": 153,
+              "width": 130,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f615",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f650"
+              }
+            },
+            {
+              "id": "hs-wl-s1-k2t",
+              "type": "text",
+              "left": 202,
+              "top": 159,
+              "width": 122,
+              "height": 119,
+              "rotate": 0,
+              "content": "<p style='font-size:11px;font-weight:800;color:#60a5fa;text-align:center;'>Public Key<br/>📢</p><p style='font-size:10px;color:#94a3b8;text-align:center;margin-top:4px;'>Derived via elliptic curve math. Cannot reverse to private key.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#60a5fa"
+            },
+            {
+              "id": "hs-wl-s1-arr2",
+              "type": "text",
+              "left": 336,
+              "top": 193,
+              "width": 30,
+              "height": 47,
+              "rotate": 0,
+              "content": "<p style='font-size:18px;color:#60a5fa;text-align:center;'>→</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#60a5fa"
+            },
+            {
+              "id": "hs-wl-s1-k3",
+              "type": "shape",
+              "left": 372,
+              "top": 153,
+              "width": 100,
+              "height": 100,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98115",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b98150"
+              }
+            },
+            {
+              "id": "hs-wl-s1-k3t",
+              "type": "text",
+              "left": 376,
+              "top": 159,
+              "width": 92,
+              "height": 102,
+              "rotate": 0,
+              "content": "<p style='font-size:11px;font-weight:800;color:#34d399;text-align:center;'>Address<br/>📮</p><p style='font-size:10px;color:#94a3b8;text-align:center;margin-top:4px;'>Hashed public key. Safe to share publicly.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#34d399"
+            },
+            {
+              "id": "hs-wl-s1-wallet-bg",
+              "type": "shape",
+              "left": 514,
+              "top": 112,
+              "width": 460,
+              "height": 145,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#8b5cf608",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#8b5cf630"
+              }
+            },
+            {
+              "id": "hs-wl-s1-wallet-h",
+              "type": "text",
+              "left": 524,
+              "top": 120,
+              "width": 440,
+              "height": 39,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:800;color:#a78bfa;'>Hot vs Cold vs Custodial</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#a78bfa"
+            },
+            {
+              "id": "hs-wl-s1-wallet-b",
+              "type": "text",
+              "left": 524,
+              "top": 148,
+              "width": 440,
+              "height": 164,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#94a3b8;line-height:2;'>🔥 <b style='color:#f59e0b;'>Hot</b> — Online, convenient, riskier. MetaMask, Xumm. Use for small amounts.<br/>🧊 <b style='color:#3b82f6;'>Cold</b> — Keys never touch internet. Ledger, Trezor. Use for large holdings.<br/>🏦 <b style='color:#ef4444;'>Custodial</b> — Exchange holds your keys. You own IOUs. FTX proved why this is risky.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "hs-wl-s1-oc",
+              "type": "shape",
+              "left": 24,
+              "top": 267,
+              "width": 950,
+              "height": 60,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f610",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f640"
+              }
+            },
+            {
+              "id": "hs-wl-s1-oc-t",
+              "type": "text",
+              "left": 34,
+              "top": 279,
+              "width": 930,
+              "height": 59,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#60a5fa;'>OnlyCrypto payouts go to your wallet address on XRPL. Use a non-custodial wallet you control. If using an exchange address, include the destination tag or funds may be lost.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#60a5fa"
+            }
+          ]
+        }
+      },
+      "actions": [
         {
           "id": "action_hs-wl-s1_8",
           "type": "spotlight",
@@ -464,29 +532,19 @@
       ]
     },
     {
-      "id": "hs-wl-s2",
+      "id": "hs-wl-s2a",
       "type": "slide",
       "title": "Wallet Attack Vectors & Security Checklist",
-      "order": 1,
+      "order": 2,
       "content": {
         "type": "slide",
         "canvas": {
-          "id": "hs-wl-s2-canvas",
+          "id": "hs-wl-s2a-canvas",
           "viewportSize": 1000,
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0b1120"
-          },
-          "theme": {
-            "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f59e0b",
-              "#ef4444",
-              "#10b981"
-            ],
-            "fontColor": "#f1f5f9",
-            "fontName": "Inter"
+            "color": "#0f172a"
           },
           "elements": [
             {
@@ -676,51 +734,6 @@
               "content": "<p style='font-size:12px;font-weight:800;color:#f59e0b;'>Unlimited Token Approvals</p><p style='font-size:11px;color:#94a3b8;margin-top:4px;line-height:1.7;'>DeFi approval prompts can request unlimited token spending. Malicious contracts drain your wallet in one transaction. Never approve 'unlimited' — approve exact amounts only.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f59e0b"
-            },
-            {
-              "id": "hs-wl-s2-checklist-bg",
-              "type": "shape",
-              "left": 24,
-              "top": 338,
-              "width": 950,
-              "height": 150,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#10b98108",
-              "fixedRatio": false,
-              "outline": {
-                "style": "solid",
-                "width": 1,
-                "color": "#10b98130"
-              }
-            },
-            {
-              "id": "hs-wl-s2-checklist-h",
-              "type": "text",
-              "left": 34,
-              "top": 346,
-              "width": 930,
-              "height": 39,
-              "rotate": 0,
-              "content": "<p style='font-size:13px;font-weight:800;color:#34d399;'>✅ Security Checklist</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#34d399"
-            },
-            {
-              "id": "hs-wl-s2-checklist-b",
-              "type": "text",
-              "left": 34,
-              "top": 374,
-              "width": 930,
-              "height": 146,
-              "rotate": 0,
-              "content": "<p style='font-size:12px;color:#94a3b8;line-height:2.1;'>✓ Seed phrase written on paper, stored offline, never photographed or typed digitally &nbsp;&nbsp; ✓ Non-custodial wallet for OnlyCrypto payouts<br/>✓ Never shared seed phrase with anyone — ever &nbsp;&nbsp; ✓ Hardware wallet for amounts over $1,000<br/>✓ Verified pasted addresses character-by-character &nbsp;&nbsp; ✓ Revoked unused DeFi token approvals at revoke.cash<br/>✓ Downloaded wallets only from official websites</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#94a3b8"
             }
           ]
         }
@@ -758,7 +771,130 @@
           "type": "speech",
           "text": "Clipboard hijacking: Malware silently swaps the wallet address you copied with the attacker's address. You paste, you don't notice, you confirm — and your funds go to the wrong place. Always verify the first and last four characters of every pasted address before sending.",
           "audioUrl": "/audio/lessons/oc-hs-wallets/1-5.mp3"
-        },
+        }
+      ]
+    },
+    {
+      "id": "hs-wl-s2b",
+      "type": "slide",
+      "title": "Wallet Attack Vectors & Security Checklist (Part B)",
+      "order": 3,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "hs-wl-s2b-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
+          },
+          "elements": [
+            {
+              "id": "hs-wl-s2-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-wl-s2-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-wl-s2-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 62,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>🛡️ Wallet Security Checklist</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "hs-wl-s2-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 39,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;'>Your step-by-step guide to keeping your funds safe</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "hs-wl-s2-checklist-bg",
+              "type": "shape",
+              "left": 24,
+              "top": 112,
+              "width": 950,
+              "height": 150,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98108",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b98130"
+              }
+            },
+            {
+              "id": "hs-wl-s2-checklist-h",
+              "type": "text",
+              "left": 24,
+              "top": 120,
+              "width": 950,
+              "height": 39,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:800;color:#34d399;'>✅ Security Checklist</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#34d399"
+            },
+            {
+              "id": "hs-wl-s2-checklist-b",
+              "type": "text",
+              "left": 24,
+              "top": 148,
+              "width": 950,
+              "height": 146,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#94a3b8;line-height:2.1;'>✓ Seed phrase written on paper, stored offline, never photographed or typed digitally &nbsp;&nbsp; ✓ Non-custodial wallet for OnlyCrypto payouts<br/>✓ Never shared seed phrase with anyone — ever &nbsp;&nbsp; ✓ Hardware wallet for amounts over $1,000<br/>✓ Verified pasted addresses character-by-character &nbsp;&nbsp; ✓ Revoked unused DeFi token approvals at revoke.cash<br/>✓ Downloaded wallets only from official websites</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            }
+          ]
+        }
+      },
+      "actions": [
         {
           "id": "action_hs-wl-s2_6",
           "type": "spotlight",
@@ -798,7 +934,7 @@
       "id": "hw-s4",
       "type": "slide",
       "title": "🧊 Cold vs Hot Wallets",
-      "order": 2,
+      "order": 4,
       "content": {
         "type": "slide",
         "canvas": {
@@ -1107,7 +1243,7 @@
       "id": "hw-s5",
       "type": "slide",
       "title": "✍️ Multi-Signature Wallets",
-      "order": 3,
+      "order": 5,
       "content": {
         "type": "slide",
         "canvas": {
@@ -1416,7 +1552,7 @@
       "id": "hw-s6",
       "type": "slide",
       "title": "🛡️ Security Layering",
-      "order": 4,
+      "order": 6,
       "content": {
         "type": "slide",
         "canvas": {
@@ -1725,7 +1861,7 @@
       "id": "hs-wl-s3",
       "type": "quiz",
       "title": "Knowledge Check — Wallets High School",
-      "order": 5,
+      "order": 7,
       "content": {
         "type": "quiz",
         "questions": [

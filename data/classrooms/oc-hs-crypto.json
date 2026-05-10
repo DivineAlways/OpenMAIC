@@ -18,29 +18,19 @@
   },
   "scenes": [
     {
-      "id": "hs-cr-s1",
+      "id": "hs-cr-s1a",
       "type": "slide",
       "title": "Market Cap & Tokenomics",
       "order": 0,
       "content": {
         "type": "slide",
         "canvas": {
-          "id": "hs-cr-s1-canvas",
+          "id": "hs-cr-s1a-canvas",
           "viewportSize": 1000,
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0b1120"
-          },
-          "theme": {
-            "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f59e0b",
-              "#3b82f6",
-              "#10b981"
-            ],
-            "fontColor": "#f1f5f9",
-            "fontName": "Inter"
+            "color": "#0f172a"
           },
           "elements": [
             {
@@ -230,51 +220,6 @@
               "content": "<p style='font-size:13px;font-weight:800;color:#f87171;text-align:center;'>Small Cap<br/>&lt; $1B</p><p style='font-size:11px;color:#94a3b8;text-align:center;margin-top:8px;line-height:1.6;'>Newer projects. Can 10× quickly but can also lose 90% just as fast. Research carefully.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#f87171"
-            },
-            {
-              "id": "hs-cr-s1-tokenomics",
-              "type": "text",
-              "left": 24,
-              "top": 390,
-              "width": 950,
-              "height": 115,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;color:#cbd5e1;line-height:1.7;'><b style='color:#f59e0b;'>Tokenomics</b> = the economic design of a coin. Key factors: <b>hard cap supply</b> (Bitcoin: 21M max = deflationary), <b>inflationary emission</b> (new coins minted continuously for validators), <b>burn mechanisms</b> (permanently destroying coins to reduce supply — Ethereum burns fees, XRP burns ~0.0001 XRP per tx), and <b>VC allocation</b> (pre-mined tokens for team/investors — check vesting schedules for dump risk).</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#cbd5e1"
-            },
-            {
-              "id": "hs-cr-s1-xrp",
-              "type": "shape",
-              "left": 24,
-              "top": 500,
-              "width": 950,
-              "height": 60,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#3b82f610",
-              "fixedRatio": false,
-              "outline": {
-                "style": "solid",
-                "width": 1,
-                "color": "#3b82f640"
-              }
-            },
-            {
-              "id": "hs-cr-s1-xrp-t",
-              "type": "text",
-              "left": 34,
-              "top": 512,
-              "width": 930,
-              "height": 34,
-              "rotate": 0,
-              "content": "<p style='font-size:9.5px;color:#60a5fa;'>XRP has ~57 billion circulating supply — that's why its price looks 'cheap' vs BTC. You're getting a proportional share of a $30B+ market cap. Supply ≠ value.</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#60a5fa"
             }
           ]
         }
@@ -334,7 +279,130 @@
           "type": "speech",
           "text": "Small Cap — under one billion. Newer projects. Can ten-ex quickly but can also lose ninety percent just as fast. Research carefully before touching these.",
           "audioUrl": "/audio/lessons/oc-hs-crypto/0-9.mp3"
-        },
+        }
+      ]
+    },
+    {
+      "id": "hs-cr-s1b",
+      "type": "slide",
+      "title": "Market Cap & Tokenomics (Part B)",
+      "order": 1,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "hs-cr-s1b-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
+          },
+          "elements": [
+            {
+              "id": "hs-cr-s1-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-cr-s1-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-cr-s1-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 62,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>📊 Tokenomics & Supply Mechanics</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "hs-cr-s1-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 39,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;'>How supply design shapes long-term value</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "hs-cr-s1-tokenomics",
+              "type": "text",
+              "left": 24,
+              "top": 118,
+              "width": 950,
+              "height": 280,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;color:#cbd5e1;line-height:1.7;'><b style='color:#f59e0b;'>Tokenomics</b> = the economic design of a coin. Key factors: <b>hard cap supply</b> (Bitcoin: 21M max = deflationary), <b>inflationary emission</b> (new coins minted continuously for validators), <b>burn mechanisms</b> (permanently destroying coins to reduce supply — Ethereum burns fees, XRP burns ~0.0001 XRP per tx), and <b>VC allocation</b> (pre-mined tokens for team/investors — check vesting schedules for dump risk).</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            },
+            {
+              "id": "hs-cr-s1-xrp",
+              "type": "shape",
+              "left": 24,
+              "top": 420,
+              "width": 950,
+              "height": 80,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#3b82f610",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#3b82f640"
+              }
+            },
+            {
+              "id": "hs-cr-s1-xrp-t",
+              "type": "text",
+              "left": 34,
+              "top": 432,
+              "width": 930,
+              "height": 60,
+              "rotate": 0,
+              "content": "<p style='font-size:9.5px;color:#60a5fa;'>XRP has ~57 billion circulating supply — that's why its price looks 'cheap' vs BTC. You're getting a proportional share of a $30B+ market cap. Supply ≠ value.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#60a5fa"
+            }
+          ]
+        }
+      },
+      "actions": [
         {
           "id": "action_hs-cr-s1_10",
           "type": "spotlight",
@@ -360,29 +428,19 @@
       ]
     },
     {
-      "id": "hs-cr-s2",
+      "id": "hs-cr-s2a",
       "type": "slide",
       "title": "Bitcoin Halving & Reading Price Action",
-      "order": 1,
+      "order": 2,
       "content": {
         "type": "slide",
         "canvas": {
-          "id": "hs-cr-s2-canvas",
+          "id": "hs-cr-s2a-canvas",
           "viewportSize": 1000,
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0b1120"
-          },
-          "theme": {
-            "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f59e0b",
-              "#3b82f6",
-              "#10b981"
-            ],
-            "fontColor": "#f1f5f9",
-            "fontName": "Inter"
+            "color": "#0f172a"
           },
           "elements": [
             {
@@ -596,96 +654,6 @@
               "content": "<p style='font-size:11px;font-weight:700;color:#60a5fa;text-align:center;'>2024<br/>6.25→3.125<br/><span style='color:#94a3b8;'>Peak TBD</span></p>",
               "defaultFontName": "Inter",
               "defaultColor": "#60a5fa"
-            },
-            {
-              "id": "hs-cr-s2-pa-bg",
-              "type": "shape",
-              "left": 514,
-              "top": 110,
-              "width": 460,
-              "height": 190,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#10b98108",
-              "fixedRatio": false,
-              "outline": {
-                "style": "solid",
-                "width": 1,
-                "color": "#10b98130"
-              }
-            },
-            {
-              "id": "hs-cr-s2-pa-h",
-              "type": "text",
-              "left": 524,
-              "top": 118,
-              "width": 440,
-              "height": 41,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;font-weight:800;color:#34d399;'>📈 Reading Basic Price Action</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#34d399"
-            },
-            {
-              "id": "hs-cr-s2-pa-b",
-              "type": "text",
-              "left": 524,
-              "top": 148,
-              "width": 440,
-              "height": 171,
-              "rotate": 0,
-              "content": "<p style='font-size:12px;color:#94a3b8;line-height:1.8;'><b style='color:#34d399;'>Uptrend (Bullish):</b> Higher highs + higher lows. Each rally peak exceeds the last. Each pullback holds above the previous dip. Price stays above 50-day and 200-day moving averages.<br/><br/><b style='color:#f87171;'>Downtrend (Bearish):</b> Lower highs + lower lows. Each rally fails below the previous peak. Each drop breaks the prior support level. Price below moving averages.</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#94a3b8"
-            },
-            {
-              "id": "hs-cr-s2-caveat",
-              "type": "shape",
-              "left": 24,
-              "top": 320,
-              "width": 950,
-              "height": 60,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#ef444410",
-              "fixedRatio": false,
-              "outline": {
-                "style": "solid",
-                "width": 1,
-                "color": "#ef444440"
-              }
-            },
-            {
-              "id": "hs-cr-s2-caveat-t",
-              "type": "text",
-              "left": 34,
-              "top": 330,
-              "width": 930,
-              "height": 59,
-              "rotate": 0,
-              "content": "<p style='font-size:13px;color:#f87171;'>⚠️ <b>Halving caveat:</b> Past cycles don't guarantee future performance. With each cycle, more capital is needed to move the market and institutional participants increasingly shape price action. The pattern may weaken over time.</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f87171"
-            },
-            {
-              "id": "hs-cr-s2-altcoin",
-              "type": "text",
-              "left": 24,
-              "top": 398,
-              "width": 950,
-              "height": 91,
-              "rotate": 0,
-              "content": "<p style='font-size:14px;color:#cbd5e1;line-height:1.7;'><b style='color:#f59e0b;'>Evaluating Altcoins:</b> What problem does it solve (in one sentence)? Who's building it — are they public? Does the token actually need to exist to use the network? Check on-chain metrics — active wallets, transaction volume, GitHub activity. Real usage = real demand. Dead chains fake these metrics.</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#cbd5e1"
             }
           ]
         }
@@ -734,7 +702,175 @@
           "type": "speech",
           "text": "2020: reward dropped from 12.5 to 6.25 BTC. Market peaked around sixty-nine thousand dollars in 2021. And in 2024 we saw the latest halving — down to 3.125 BTC per block.",
           "audioUrl": "/audio/lessons/oc-hs-crypto/1-7.mp3"
-        },
+        }
+      ]
+    },
+    {
+      "id": "hs-cr-s2b",
+      "type": "slide",
+      "title": "Bitcoin Halving & Reading Price Action (Part B)",
+      "order": 3,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "hs-cr-s2b-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
+          },
+          "elements": [
+            {
+              "id": "hs-cr-s2-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-cr-s2-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-cr-s2-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 62,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>📈 Reading Price Action & Evaluating Altcoins</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "hs-cr-s2-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 39,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;'>What charts are telling you and how to assess new projects</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "hs-cr-s2-pa-bg",
+              "type": "shape",
+              "left": 24,
+              "top": 110,
+              "width": 950,
+              "height": 200,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#10b98108",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#10b98130"
+              }
+            },
+            {
+              "id": "hs-cr-s2-pa-h",
+              "type": "text",
+              "left": 34,
+              "top": 118,
+              "width": 930,
+              "height": 41,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;font-weight:800;color:#34d399;'>📈 Reading Basic Price Action</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#34d399"
+            },
+            {
+              "id": "hs-cr-s2-pa-b",
+              "type": "text",
+              "left": 34,
+              "top": 148,
+              "width": 930,
+              "height": 171,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#94a3b8;line-height:1.8;'><b style='color:#34d399;'>Uptrend (Bullish):</b> Higher highs + higher lows. Each rally peak exceeds the last. Each pullback holds above the previous dip. Price stays above 50-day and 200-day moving averages.<br/><br/><b style='color:#f87171;'>Downtrend (Bearish):</b> Lower highs + lower lows. Each rally fails below the previous peak. Each drop breaks the prior support level. Price below moving averages.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "hs-cr-s2-caveat",
+              "type": "shape",
+              "left": 24,
+              "top": 332,
+              "width": 950,
+              "height": 60,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444410",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef444440"
+              }
+            },
+            {
+              "id": "hs-cr-s2-caveat-t",
+              "type": "text",
+              "left": 34,
+              "top": 342,
+              "width": 930,
+              "height": 50,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#f87171;'>⚠️ <b>Halving caveat:</b> Past cycles don't guarantee future performance. With each cycle, more capital is needed to move the market and institutional participants increasingly shape price action. The pattern may weaken over time.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f87171"
+            },
+            {
+              "id": "hs-cr-s2-altcoin",
+              "type": "text",
+              "left": 24,
+              "top": 408,
+              "width": 950,
+              "height": 110,
+              "rotate": 0,
+              "content": "<p style='font-size:14px;color:#cbd5e1;line-height:1.7;'><b style='color:#f59e0b;'>Evaluating Altcoins:</b> What problem does it solve (in one sentence)? Who's building it — are they public? Does the token actually need to exist to use the network? Check on-chain metrics — active wallets, transaction volume, GitHub activity. Real usage = real demand. Dead chains fake these metrics.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#cbd5e1"
+            }
+          ]
+        }
+      },
+      "actions": [
         {
           "id": "action_hs-cr-s2_8",
           "type": "spotlight",
@@ -774,7 +910,7 @@
       "id": "hc-s4",
       "type": "slide",
       "title": "🐳 Whales & Market Manipulation",
-      "order": 2,
+      "order": 4,
       "content": {
         "type": "slide",
         "canvas": {
@@ -1083,7 +1219,7 @@
       "id": "hc-s5",
       "type": "slide",
       "title": "📖 Reading an Order Book",
-      "order": 3,
+      "order": 5,
       "content": {
         "type": "slide",
         "canvas": {
@@ -1392,7 +1528,7 @@
       "id": "hc-s6",
       "type": "slide",
       "title": "💧 Liquidity & Slippage",
-      "order": 4,
+      "order": 6,
       "content": {
         "type": "slide",
         "canvas": {
@@ -1701,7 +1837,7 @@
       "id": "hs-cr-s3",
       "type": "quiz",
       "title": "Knowledge Check — Crypto Markets High School",
-      "order": 5,
+      "order": 7,
       "content": {
         "type": "quiz",
         "questions": [

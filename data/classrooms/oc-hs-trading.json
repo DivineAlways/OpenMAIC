@@ -18,29 +18,19 @@
   },
   "scenes": [
     {
-      "id": "hs-tr-s1",
+      "id": "hs-tr-s1a",
       "type": "slide",
       "title": "Candlestick Charts & Support/Resistance",
       "order": 0,
       "content": {
         "type": "slide",
         "canvas": {
-          "id": "hs-tr-s1-canvas",
+          "id": "hs-tr-s1a-canvas",
           "viewportSize": 1000,
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0b1120"
-          },
-          "theme": {
-            "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f59e0b",
-              "#10b981",
-              "#ef4444"
-            ],
-            "fontColor": "#f1f5f9",
-            "fontName": "Inter"
+            "color": "#0f172a"
           },
           "elements": [
             {
@@ -266,39 +256,6 @@
               "content": "<p style='font-size:12px;color:#94a3b8;line-height:1.9;'><b style='color:#34d399;'>Support:</b> Price zone where buying has historically stopped declines. Tested and held multiple times = stronger support. Buy near support, stop-loss just below.<br/><br/><b style='color:#f87171;'>Resistance:</b> Price zone where selling has historically capped rallies. Breaking through is bullish. Look to reduce near resistance, watch for breakout.<br/><br/><b style='color:#f59e0b;'>Role Reversal:</b> Old resistance becomes new support after a breakout — one of the most reliable TA patterns.</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#94a3b8"
-            },
-            {
-              "id": "hs-tr-s1-insight",
-              "type": "shape",
-              "left": 24,
-              "top": 358,
-              "width": 950,
-              "height": 60,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#f59e0b10",
-              "fixedRatio": false,
-              "outline": {
-                "style": "solid",
-                "width": 1,
-                "color": "#f59e0b40"
-              }
-            },
-            {
-              "id": "hs-tr-s1-insight-t",
-              "type": "text",
-              "left": 34,
-              "top": 370,
-              "width": 930,
-              "height": 59,
-              "rotate": 0,
-              "content": "<p style='font-size:13px;color:#fbbf24;'>⚡ Key Rule: No single candle gives a complete picture. Context matters — where is this candle forming? At support? After a trend? Candlesticks are clues, not certainties. Always confirm with volume.</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#fbbf24"
             }
           ]
         }
@@ -341,7 +298,118 @@
           "id": "action_hs-tr-s1_6",
           "type": "spotlight",
           "elementId": "hs-tr-s1-c2-t"
-        },
+        }
+      ]
+    },
+    {
+      "id": "hs-tr-s1b",
+      "type": "slide",
+      "title": "Candlestick Charts & Support/Resistance (Part B)",
+      "order": 1,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "hs-tr-s1b-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
+          },
+          "elements": [
+            {
+              "id": "hs-tr-s1-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-tr-s1-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-tr-s1-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 62,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>📊 Candlestick Patterns & Key Insight</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "hs-tr-s1-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 39,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;'>Recognizing patterns and applying them in real markets</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "hs-tr-s1-insight",
+              "type": "shape",
+              "left": 24,
+              "top": 118,
+              "width": 950,
+              "height": 60,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b10",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#f59e0b40"
+              }
+            },
+            {
+              "id": "hs-tr-s1-insight-t",
+              "type": "text",
+              "left": 34,
+              "top": 130,
+              "width": 930,
+              "height": 59,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#fbbf24;'>⚡ Key Rule: No single candle gives a complete picture. Context matters — where is this candle forming? At support? After a trend? Candlesticks are clues, not certainties. Always confirm with volume.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#fbbf24"
+            }
+          ]
+        }
+      },
+      "actions": [
         {
           "id": "action_hs-tr-s1_7",
           "type": "speech",
@@ -384,29 +452,19 @@
       ]
     },
     {
-      "id": "hs-tr-s2",
+      "id": "hs-tr-s2a",
       "type": "slide",
       "title": "RSI, MACD, Order Types & Psychology",
-      "order": 1,
+      "order": 2,
       "content": {
         "type": "slide",
         "canvas": {
-          "id": "hs-tr-s2-canvas",
+          "id": "hs-tr-s2a-canvas",
           "viewportSize": 1000,
           "viewportRatio": 0.5625,
           "background": {
             "type": "solid",
-            "color": "#0b1120"
-          },
-          "theme": {
-            "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f59e0b",
-              "#8b5cf6",
-              "#10b981"
-            ],
-            "fontColor": "#f1f5f9",
-            "fontName": "Inter"
+            "color": "#0f172a"
           },
           "elements": [
             {
@@ -554,75 +612,6 @@
               "content": "<p style='font-size:12px;color:#94a3b8;line-height:2;'>Tracks difference between 12-period and 26-period EMAs. Signal line = 9-period EMA of MACD.<br/><b style='color:#34d399;'>Bullish cross:</b> MACD crosses above signal → buy signal<br/><b style='color:#f87171;'>Bearish cross:</b> MACD crosses below signal → sell signal<br/><b style='color:#a78bfa;'>Divergence:</b> Price new high but MACD doesn't → weakening momentum</p>",
               "defaultFontName": "Inter",
               "defaultColor": "#94a3b8"
-            },
-            {
-              "id": "hs-tr-s2-orders-h",
-              "type": "text",
-              "left": 24,
-              "top": 306,
-              "width": 460,
-              "height": 39,
-              "rotate": 0,
-              "content": "<p style='font-size:13px;font-weight:800;color:#f59e0b;'>⚡ Order Types</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f59e0b"
-            },
-            {
-              "id": "hs-tr-s2-orders-b",
-              "type": "text",
-              "left": 24,
-              "top": 334,
-              "width": 460,
-              "height": 189,
-              "rotate": 0,
-              "content": "<p style='font-size:11.5px;color:#94a3b8;line-height:2.1;'><b style='color:#f59e0b;'>Market:</b> Execute now at best price. Guaranteed fill, accept spread.<br/><b style='color:#3b82f6;'>Limit:</b> Only fill at your price or better. Not guaranteed.<br/><b style='color:#ef4444;'>Stop-Loss:</b> Auto-exit if price falls to your set level. Defines max loss.<br/><b style='color:#10b981;'>Take-Profit:</b> Auto-exit at target. Lock in gains without watching.<br/><b style='color:#a78bfa;'>R:R Ratio:</b> Risk $100 to make $200 = 1:2. Target min 1:2.</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#94a3b8"
-            },
-            {
-              "id": "hs-tr-s2-psych-bg",
-              "type": "shape",
-              "left": 490,
-              "top": 306,
-              "width": 484,
-              "height": 155,
-              "rotate": 0,
-              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
-              "fill": "#ef444408",
-              "fixedRatio": false,
-              "outline": {
-                "style": "solid",
-                "width": 1,
-                "color": "#ef444430"
-              }
-            },
-            {
-              "id": "hs-tr-s2-psych-h",
-              "type": "text",
-              "left": 500,
-              "top": 314,
-              "width": 464,
-              "height": 39,
-              "rotate": 0,
-              "content": "<p style='font-size:13px;font-weight:800;color:#f87171;'>🧠 Why Most Traders Lose (Psychology)</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#f87171"
-            },
-            {
-              "id": "hs-tr-s2-psych-b",
-              "type": "text",
-              "left": 500,
-              "top": 342,
-              "width": 464,
-              "height": 116,
-              "rotate": 0,
-              "content": "<p style='font-size:12px;color:#94a3b8;line-height:2;'><b style='color:#f87171;'>FOMO</b> — Chasing coins after they're already up 50%<br/><b style='color:#f87171;'>Loss Aversion</b> — Holding losers hoping they come back<br/><b style='color:#f59e0b;'>Overtrading</b> — Forced entries with negative expected value<br/><b style='color:#f59e0b;'>Revenge Trading</b> — Doubling down after a loss to recover</p>",
-              "defaultFontName": "Inter",
-              "defaultColor": "#94a3b8"
             }
           ]
         }
@@ -654,7 +643,154 @@
           "id": "action_hs-tr-s2_4",
           "type": "spotlight",
           "elementId": "hs-tr-s2-macd-b"
-        },
+        }
+      ]
+    },
+    {
+      "id": "hs-tr-s2b",
+      "type": "slide",
+      "title": "RSI, MACD, Order Types & Psychology (Part B)",
+      "order": 3,
+      "content": {
+        "type": "slide",
+        "canvas": {
+          "id": "hs-tr-s2b-canvas",
+          "viewportSize": 1000,
+          "viewportRatio": 0.5625,
+          "background": {
+            "type": "solid",
+            "color": "#0f172a"
+          },
+          "elements": [
+            {
+              "id": "hs-tr-s2-bar",
+              "type": "shape",
+              "left": 0,
+              "top": 0,
+              "width": 1000,
+              "height": 6,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#f59e0b",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-tr-s2-hbg",
+              "type": "shape",
+              "left": 0,
+              "top": 6,
+              "width": 1000,
+              "height": 96,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#0f1729",
+              "fixedRatio": false
+            },
+            {
+              "id": "hs-tr-s2-title",
+              "type": "text",
+              "left": 24,
+              "top": 16,
+              "width": 800,
+              "height": 62,
+              "rotate": 0,
+              "content": "<p style='font-size:28px;font-weight:800;color:#f1f5f9;'>📋 Order Types & Trading Psychology</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f1f5f9"
+            },
+            {
+              "id": "hs-tr-s2-sub",
+              "type": "text",
+              "left": 24,
+              "top": 66,
+              "width": 800,
+              "height": 39,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;color:#64748b;'>How to place orders and manage the emotional side of trading</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#64748b"
+            },
+            {
+              "id": "hs-tr-s2-orders-h",
+              "type": "text",
+              "left": 24,
+              "top": 112,
+              "width": 460,
+              "height": 39,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:800;color:#f59e0b;'>⚡ Order Types</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f59e0b"
+            },
+            {
+              "id": "hs-tr-s2-orders-b",
+              "type": "text",
+              "left": 24,
+              "top": 140,
+              "width": 460,
+              "height": 189,
+              "rotate": 0,
+              "content": "<p style='font-size:11.5px;color:#94a3b8;line-height:2.1;'><b style='color:#f59e0b;'>Market:</b> Execute now at best price. Guaranteed fill, accept spread.<br/><b style='color:#3b82f6;'>Limit:</b> Only fill at your price or better. Not guaranteed.<br/><b style='color:#ef4444;'>Stop-Loss:</b> Auto-exit if price falls to your set level. Defines max loss.<br/><b style='color:#10b981;'>Take-Profit:</b> Auto-exit at target. Lock in gains without watching.<br/><b style='color:#a78bfa;'>R:R Ratio:</b> Risk $100 to make $200 = 1:2. Target min 1:2.</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            },
+            {
+              "id": "hs-tr-s2-psych-bg",
+              "type": "shape",
+              "left": 490,
+              "top": 112,
+              "width": 484,
+              "height": 155,
+              "rotate": 0,
+              "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
+              "viewBox": [
+                1,
+                1
+              ],
+              "fill": "#ef444408",
+              "fixedRatio": false,
+              "outline": {
+                "style": "solid",
+                "width": 1,
+                "color": "#ef444430"
+              }
+            },
+            {
+              "id": "hs-tr-s2-psych-h",
+              "type": "text",
+              "left": 500,
+              "top": 120,
+              "width": 464,
+              "height": 39,
+              "rotate": 0,
+              "content": "<p style='font-size:13px;font-weight:800;color:#f87171;'>🧠 Why Most Traders Lose (Psychology)</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#f87171"
+            },
+            {
+              "id": "hs-tr-s2-psych-b",
+              "type": "text",
+              "left": 500,
+              "top": 148,
+              "width": 464,
+              "height": 116,
+              "rotate": 0,
+              "content": "<p style='font-size:12px;color:#94a3b8;line-height:2;'><b style='color:#f87171;'>FOMO</b> — Chasing coins after they're already up 50%<br/><b style='color:#f87171;'>Loss Aversion</b> — Holding losers hoping they come back<br/><b style='color:#f59e0b;'>Overtrading</b> — Forced entries with negative expected value<br/><b style='color:#f59e0b;'>Revenge Trading</b> — Doubling down after a loss to recover</p>",
+              "defaultFontName": "Inter",
+              "defaultColor": "#94a3b8"
+            }
+          ]
+        }
+      },
+      "actions": [
         {
           "id": "action_hs-tr-s2_5",
           "type": "speech",
@@ -689,7 +825,7 @@
       "id": "ht-s4",
       "type": "slide",
       "title": "📊 Trends & Volume",
-      "order": 2,
+      "order": 4,
       "content": {
         "type": "slide",
         "canvas": {
@@ -998,7 +1134,7 @@
       "id": "ht-s5",
       "type": "slide",
       "title": "📉 RSI, MACD & Moving Averages",
-      "order": 3,
+      "order": 5,
       "content": {
         "type": "slide",
         "canvas": {
@@ -1307,7 +1443,7 @@
       "id": "ht-s6",
       "type": "slide",
       "title": "⚖️ Risk-Reward Ratio",
-      "order": 4,
+      "order": 6,
       "content": {
         "type": "slide",
         "canvas": {
@@ -1616,7 +1752,7 @@
       "id": "hs-tr-s3",
       "type": "quiz",
       "title": "Knowledge Check — Trading High School",
-      "order": 5,
+      "order": 7,
       "content": {
         "type": "quiz",
         "questions": [
