@@ -2242,6 +2242,30 @@
       ]
     },
     {
+      "id": "oeb-interactive",
+      "type": "interactive",
+      "title": "Interactive: Block Builder",
+      "order": 7,
+      "content": {
+        "type": "interactive",
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody{background:#0b1120;color:#e2e8f0;font-family:Inter,system-ui,sans-serif;padding:20px;margin:0;}\nh2{font-size:18px;margin:0 0 4px;}\n.sub{color:#64748b;font-size:12px;margin-bottom:16px;}\n.row{display:flex;gap:12px;margin-bottom:12px;flex-wrap:wrap;}\n.panel{background:#0f1f3d;border:1px solid #1e3a5f;border-radius:8px;padding:14px;flex:1;min-width:220px;}\nlabel{color:#94a3b8;font-size:11px;text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;}\ninput,select{width:100%;padding:8px 10px;background:#020817;border:1px solid #334155;color:#f1f5f9;border-radius:6px;font-size:13px;box-sizing:border-box;}\ninput[type=range]{padding:0;}\n.result{background:#020817;border:1px solid #334155;border-radius:6px;padding:10px;font-size:13px;margin-top:8px;}\n.big{font-size:22px;font-weight:800;}\n.stat{display:inline-block;background:#1e3a5f;border-radius:4px;padding:3px 10px;font-size:11px;font-weight:700;color:#60a5fa;margin:3px 2px;}\n.good{color:#22c55e;}.bad{color:#ef4444;}.warn{color:#f59e0b;}\n.btn{background:#3b82f6;color:#fff;border:none;padding:7px 18px;border-radius:6px;cursor:pointer;font-size:12px;font-weight:700;margin-top:8px;}\n.btn:hover{opacity:0.85;}\n.grid{display:grid;gap:8px;}\n.item{background:#020817;border:1px solid #334155;border-radius:6px;padding:8px 12px;font-size:12px;}\nh2{color:#60a5fa;}\n</style>\n</head>\n<body>\n<h2>🧱 Block Builder</h2>\n<p class=\"sub\">Add transactions from the mempool into your block. Fill it up, then seal it to get a hash.</p>\n<div class=\"row\">\n  <div class=\"panel\">\n    <label>Mempool (click to add)</label>\n    <div id=\"pool\" class=\"grid\"></div>\n  </div>\n  <div class=\"panel\">\n    <label>Your Block (<span id=\"cnt\">0</span>/3 transactions)</label>\n    <div id=\"block\" class=\"grid\"></div>\n    <button class=\"btn\" id=\"sealBtn\" onclick=\"seal()\" disabled>🔒 Seal & Generate Hash</button>\n    <div class=\"result\" id=\"hashResult\" style=\"display:none;\"></div>\n  </div>\n</div>\n<button class=\"btn\" onclick=\"reset()\" style=\"background:#334155;\">↺ Reset</button>\n<script>\nconst TXS=[\"Alice→Bob: 5 XRP\",\"Carol→Dave: 12 XRP\",\"Eve→Frank: 3 XRP\",\"Grace→Hank: 20 XRP\",\"Ivan→Julia: 7 XRP\"];\nlet pool=[...TXS],block=[],sealed=false;\nfunction fakeHash(s){let h=0;for(let i=0;i<s.length;i++)h=(Math.imul(31,h)+s.charCodeAt(i))|0;return Math.abs(h).toString(16).padStart(8,'0').repeat(8);}\nfunction render(){\n  const p=document.getElementById('pool'),b=document.getElementById('block');\n  p.innerHTML=pool.map(t=>`<div class=\"item\" style=\"cursor:${block.length>=3||sealed?'default':'pointer'};opacity:${block.length>=3&&!sealed?0.4:1}\" onclick=\"${sealed?'':'addTx(\"'+t+'\")'}\">${t} <span style=\"float:right;color:#3b82f6\">+</span></div>`).join('');\n  b.innerHTML=block.map(t=>`<div class=\"item\">${t}${sealed?'':' <span style=\"float:right;color:#ef4444;cursor:pointer\" onclick=\"removeTx(''+t+'')\">×</span>'}</div>`).join('');\n  document.getElementById('cnt').textContent=block.length;\n  document.getElementById('sealBtn').disabled=block.length===0||sealed;\n}\nfunction addTx(t){if(block.length>=3||sealed)return;block.push(t);pool=pool.filter(x=>x!==t);render();}\nfunction removeTx(t){if(sealed)return;pool.push(t);block=block.filter(x=>x!==t);render();}\nfunction seal(){sealed=true;const h=fakeHash(block.join('|'));document.getElementById('hashResult').style.display='block';document.getElementById('hashResult').innerHTML='<span class=\"good\" style=\"font-size:10px;word-break:break-all;\">'+h+'</span><br/><span style=\"font-size:11px;color:#64748b;margin-top:4px;display:block;\">Change any transaction → completely different hash. That's how blockchains stay tamper-proof.</span>';render();}\nfunction reset(){pool=[...TXS];block=[];sealed=false;document.getElementById('hashResult').style.display='none';render();}\nrender();\n</script>\n</body>\n</html>"
+      },
+      "actions": [
+        {
+          "id": "action_oeb-interactive_i0",
+          "type": "speech",
+          "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered.",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/7-0.mp3"
+        },
+        {
+          "id": "action_oeb-interactive_i1",
+          "type": "speech",
+          "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading.",
+          "audioUrl": "/audio/lessons/oc-elem-blockchain/7-1.mp3"
+        }
+      ]
+    },
+    {
       "id": "eb-s4",
       "type": "quiz",
       "title": "Knowledge Check — Blockchain Basics",
@@ -2362,7 +2386,7 @@
           }
         ]
       },
-      "order": 7,
+      "order": 8,
       "actions": [
         {
           "id": "action_eb-s4_q0",

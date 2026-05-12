@@ -1563,6 +1563,30 @@
       ]
     },
     {
+      "id": "oee-interactive",
+      "type": "interactive",
+      "title": "Interactive: NFT Minter",
+      "order": 5,
+      "content": {
+        "type": "interactive",
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody{background:#0b1120;color:#e2e8f0;font-family:Inter,system-ui,sans-serif;padding:20px;margin:0;}\nh2{font-size:18px;margin:0 0 4px;}\n.sub{color:#64748b;font-size:12px;margin-bottom:16px;}\n.row{display:flex;gap:12px;margin-bottom:12px;flex-wrap:wrap;}\n.panel{background:#0f1f3d;border:1px solid #1e3a5f;border-radius:8px;padding:14px;flex:1;min-width:220px;}\nlabel{color:#94a3b8;font-size:11px;text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;}\ninput,select{width:100%;padding:8px 10px;background:#020817;border:1px solid #334155;color:#f1f5f9;border-radius:6px;font-size:13px;box-sizing:border-box;}\ninput[type=range]{padding:0;}\n.result{background:#020817;border:1px solid #334155;border-radius:6px;padding:10px;font-size:13px;margin-top:8px;}\n.big{font-size:22px;font-weight:800;}\n.stat{display:inline-block;background:#1e3a5f;border-radius:4px;padding:3px 10px;font-size:11px;font-weight:700;color:#60a5fa;margin:3px 2px;}\n.good{color:#22c55e;}.bad{color:#ef4444;}.warn{color:#f59e0b;}\n.btn{background:#3b82f6;color:#fff;border:none;padding:7px 18px;border-radius:6px;cursor:pointer;font-size:12px;font-weight:700;margin-top:8px;}\n.btn:hover{opacity:0.85;}\n.grid{display:grid;gap:8px;}\n.item{background:#020817;border:1px solid #334155;border-radius:6px;padding:8px 12px;font-size:12px;}\nh2{color:#c084fc;}\n</style>\n</head>\n<body>\n<h2>🎨 NFT Minter</h2>\n<p class=\"sub\">Pick traits for your NFT, then mint it. See how token IDs, metadata, and ownership work on-chain.</p>\n<div class=\"row\">\n  <div class=\"panel\">\n    <label>Choose Traits</label>\n    <div id=\"traits\"></div>\n    <button class=\"btn\" id=\"mintBtn\" onclick=\"mint()\">🚀 Mint NFT</button>\n  </div>\n  <div class=\"panel\">\n    <label>Preview</label>\n    <div id=\"preview\" style=\"min-height:80px;text-align:center;font-size:36px;padding:16px;\"></div>\n    <div id=\"metadata\" style=\"display:none;\"></div>\n  </div>\n</div>\n<script>\nconst TRAITS={background:[\"🌌 Deep Space\",\"🌊 Ocean Blue\",\"🌅 Sunset\",\"🌿 Forest\"],body:[\"🤖 Robot\",\"👽 Alien\",\"🐱 Cat\",\"🦊 Fox\"],eyes:[\"👁️ Laser\",\"😎 Cool Shades\",\"🌀 Hypno\",\"💎 Diamond\"],accessory:[\"🎩 Top Hat\",\"⛓️ Gold Chain\",\"🪄 Magic Staff\",\"🎸 Guitar\"]};\nlet sel={background:0,body:0,eyes:0,accessory:0},minted=false;\nconst tid=Math.floor(Math.random()*9999)+1;\nconst txHash='0x'+Array.from({length:40},()=>'0123456789abcdef'[Math.floor(Math.random()*16)]).join('');\nfunction renderTraits(){\n  document.getElementById('traits').innerHTML=Object.entries(TRAITS).map(([k,opts])=>`\n    <div style=\"margin-bottom:8px;\">\n      <p style=\"font-size:10px;text-transform:uppercase;color:#64748b;margin:0 0 3px;\">${k}</p>\n      <div style=\"display:flex;gap:4px;flex-wrap:wrap;\">\n        ${opts.map((o,i)=>`<button onclick=\"pick('${k}',${i})\" style=\"font-size:11px;padding:3px 8px;border-radius:6px;border:1px solid ${sel[k]===i?'#a78bfa':'#334155'};background:${sel[k]===i?'#4c1d95':'#020817'};color:#f1f5f9;cursor:pointer;\">${o.split(' ')[0]}</button>`).join('')}\n      </div>\n    </div>`).join('');\n  const emojis=Object.keys(TRAITS).map(k=>TRAITS[k][sel[k]].split(' ')[0]);\n  document.getElementById('preview').textContent=emojis.join(' ');\n}\nfunction pick(k,i){if(minted)return;sel[k]=i;renderTraits();}\nfunction mint(){\n  minted=true;\n  document.getElementById('mintBtn').disabled=true;\n  const meta=Object.entries(TRAITS).map(([k,opts])=>`<div class=\"item\" style=\"font-size:11px;margin-bottom:4px;\"><b style=\"color:#a78bfa\">${k}:</b> ${opts[sel[k]].split(' ').slice(1).join(' ')}</div>`).join('');\n  document.getElementById('metadata').style.display='block';\n  document.getElementById('metadata').innerHTML=`\n    <div class=\"result\" style=\"margin-top:8px;\">\n      <p style=\"color:#22c55e;font-size:11px;font-weight:700;\">✓ Minted — Token #${tid}</p>\n      <p style=\"font-size:10px;font-family:monospace;color:#64748b;word-break:break-all;\">${txHash.slice(0,42)}...</p>\n      ${meta}\n      <p style=\"font-size:11px;color:#64748b;margin-top:6px;\">These traits are stored as metadata on-chain forever. The token ID is unique — no one else has #${tid}. You own it.</p>\n    </div>`;\n}\nrenderTraits();\n</script>\n</body>\n</html>"
+      },
+      "actions": [
+        {
+          "id": "action_oee-interactive_i0",
+          "type": "speech",
+          "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered.",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/5-0.mp3"
+        },
+        {
+          "id": "action_oee-interactive_i1",
+          "type": "speech",
+          "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading.",
+          "audioUrl": "/audio/lessons/oc-elem-ecosystem/5-1.mp3"
+        }
+      ]
+    },
+    {
       "id": "ee-s3",
       "type": "quiz",
       "title": "Knowledge Check — The Crypto World",
@@ -1683,7 +1707,7 @@
           }
         ]
       },
-      "order": 5,
+      "order": 6,
       "actions": [
         {
           "id": "action_ee-s3_q0",

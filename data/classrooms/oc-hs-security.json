@@ -704,10 +704,34 @@
       ]
     },
     {
+      "id": "ohs-interactive",
+      "type": "interactive",
+      "title": "Interactive: Attack Vector Simulator",
+      "order": 7,
+      "content": {
+        "type": "interactive",
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody{background:#0b1120;color:#e2e8f0;font-family:Inter,system-ui,sans-serif;padding:20px;margin:0;}\nh2{font-size:18px;margin:0 0 4px;}\n.sub{color:#64748b;font-size:12px;margin-bottom:16px;}\n.row{display:flex;gap:12px;margin-bottom:12px;flex-wrap:wrap;}\n.panel{background:#0f1f3d;border:1px solid #1e3a5f;border-radius:8px;padding:14px;flex:1;min-width:220px;}\nlabel{color:#94a3b8;font-size:11px;text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;}\ninput,select{width:100%;padding:8px 10px;background:#020817;border:1px solid #334155;color:#f1f5f9;border-radius:6px;font-size:13px;box-sizing:border-box;}\ninput[type=range]{padding:0;}\n.result{background:#020817;border:1px solid #334155;border-radius:6px;padding:10px;font-size:13px;margin-top:8px;}\n.big{font-size:22px;font-weight:800;}\n.stat{display:inline-block;background:#1e3a5f;border-radius:4px;padding:3px 10px;font-size:11px;font-weight:700;color:#60a5fa;margin:3px 2px;}\n.good{color:#22c55e;}.bad{color:#ef4444;}.warn{color:#f59e0b;}\n.btn{background:#3b82f6;color:#fff;border:none;padding:7px 18px;border-radius:6px;cursor:pointer;font-size:12px;font-weight:700;margin-top:8px;}\n.btn:hover{opacity:0.85;}\n.grid{display:grid;gap:8px;}\n.item{background:#020817;border:1px solid #334155;border-radius:6px;padding:8px 12px;font-size:12px;}\nh2{color:#ef4444;}\n</style>\n</head>\n<body>\n<h2>⚔️ Attack Vector Simulator</h2>\n<p class=\"sub\">Walk through 5 real attack types. For each, identify the correct defense.</p>\n<div id=\"sim\"></div>\n<script>\nconst ATTACKS=[\n  {name:\"Phishing\",icon:\"🎣\",desc:\"You receive an email from 'MetaMask-Support.com' asking you to enter your seed phrase to 'verify' your wallet.\",defenses:[\"Enter seed phrase on the official site\",\"Never enter seed phrase online — hardware wallets only\",\"Reset your wallet password instead\",\"Contact MetaMask's Twitter for help\"],correct:1,explain:\"Seed phrases NEVER belong on websites. Official support never asks for them.\"},\n  {name:\"SIM Swap\",icon:\"📱\",desc:\"A hacker calls your carrier pretending to be you, transfers your number to their SIM, intercepts your SMS 2FA.\",defenses:[\"Use a stronger password\",\"Switch to an authenticator app or hardware key for 2FA\",\"Call the attacker back\",\"Enable more SMS alerts\"],correct:1,explain:\"SMS is the weakest 2FA. TOTP apps and hardware keys are immune to SIM swap.\"},\n  {name:\"Clipboard Hijacker\",icon:\"📋\",desc:\"Malware on your device monitors your clipboard and replaces any crypto addresses you copy with the attacker's address.\",defenses:[\"Copy faster\",\"Always verify the last 6–8 characters of an address after pasting\",  \"Only send from mobile\",\"Use shorter addresses\"],correct:1,explain:\"Always verify pasted addresses — clipboard hijackers count on you not checking.\"},\n  {name:\"Rug Pull\",icon:\"🪤\",desc:\"A new DeFi project promises 1000% APY. You invest early. Developers drain liquidity and disappear with funds.\",defenses:[\"Invest more to earn faster\",\"Check if liquidity is locked, team is doxxed, and contract is audited\",\"Wait for the APY to increase\",\"Follow social media hype\"],correct:1,explain:\"Check: Is liquidity locked? Is the team doxxed? Is the contract audited? If no — walk away.\"},\n  {name:\"Smart Contract Exploit\",icon:\"💻\",desc:\"A DeFi protocol has a bug in its code. A hacker drains $100M using a flash loan attack in one transaction.\",defenses:[\"Withdraw funds immediately when you hear about it (too late)\",\"Only use protocols with multiple third-party audits and a bug bounty\",\"Trust the APY instead of the audit\",\"Protocols never get hacked\"],correct:1,explain:\"Code is law in DeFi — bugs mean losses. Audits and bug bounties reduce but don't eliminate risk.\"},\n];\nlet idx=0,chosen=null,score=0;\nfunction render(){\n  if(idx>=ATTACKS.length){\n    document.getElementById('sim').innerHTML=`<div class=\"result\"><span class=\"big ${score>=4?'good':'warn'}\">${score}/${ATTACKS.length}</span><p style=\"font-size:13px;color:#94a3b8;\">${score===ATTACKS.length?'Perfect security awareness!':'Review the explanations and study again.'}</p><button class=\"btn\" onclick=\"reset()\">Try Again</button></div>`;\n    return;\n  }\n  const a=ATTACKS[idx];\n  document.getElementById('sim').innerHTML=`\n    <div class=\"panel\" style=\"margin-bottom:12px;\">\n      <p style=\"font-size:16px;font-weight:800;margin:0 0 4px;\">${a.icon} ${a.name}</p>\n      <p style=\"font-size:12px;color:#94a3b8;line-height:1.5;margin:0;\">${a.desc}</p>\n    </div>\n    <p style=\"font-size:11px;text-transform:uppercase;color:#64748b;margin:0 0 6px;\">What's the right defense?</p>\n    ${a.defenses.map((d,i)=>`<button onclick=\"ans(${i})\" style=\"display:block;width:100%;text-align:left;padding:8px;margin-bottom:6px;border:1px solid #334155;background:#020817;color:#f1f5f9;border-radius:6px;cursor:pointer;font-size:12px;line-height:1.4;\">${d}</button>`).join('')}\n    <div id=\"fb\"></div>`;\n}\nfunction ans(i){if(chosen!==null)return;chosen=i;const a=ATTACKS[idx];const ok=i===a.correct;if(ok)score++;\n  document.getElementById('fb').innerHTML=`<div class=\"result\" style=\"margin-top:8px;\"><span class=\"${ok?'good':'bad'}\" style=\"font-weight:700;\">${ok?'✓ Correct!':'✗ Wrong — '+a.defenses[a.correct]}</span><p style=\"font-size:11px;color:#94a3b8;margin:6px 0 0;\">${a.explain}</p><button class=\"btn\" onclick=\"next()\" style=\"margin-top:8px;\">${idx+1<ATTACKS.length?'Next Attack →':'See Results'}</button></div>`;}\nfunction next(){idx++;chosen=null;render();}\nfunction reset(){idx=0;chosen=null;score=0;render();}\nrender();\n</script>\n</body>\n</html>"
+      },
+      "actions": [
+        {
+          "id": "action_ohs-interactive_i0",
+          "type": "speech",
+          "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered.",
+          "audioUrl": "/audio/lessons/oc-hs-security/7-0.mp3"
+        },
+        {
+          "id": "action_ohs-interactive_i1",
+          "type": "speech",
+          "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading.",
+          "audioUrl": "/audio/lessons/oc-hs-security/7-1.mp3"
+        }
+      ]
+    },
+    {
       "id": "hs-sc-s4",
       "type": "quiz",
       "title": "Knowledge Check — Security High School",
-      "order": 7,
+      "order": 8,
       "content": {
         "type": "quiz",
         "questions": [

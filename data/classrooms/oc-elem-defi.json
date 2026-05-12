@@ -1563,6 +1563,30 @@
       ]
     },
     {
+      "id": "oed-interactive",
+      "type": "interactive",
+      "title": "Interactive: Bank vs DeFi Comparison",
+      "order": 5,
+      "content": {
+        "type": "interactive",
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody{background:#0b1120;color:#e2e8f0;font-family:Inter,system-ui,sans-serif;padding:20px;margin:0;}\nh2{font-size:18px;margin:0 0 4px;}\n.sub{color:#64748b;font-size:12px;margin-bottom:16px;}\n.row{display:flex;gap:12px;margin-bottom:12px;flex-wrap:wrap;}\n.panel{background:#0f1f3d;border:1px solid #1e3a5f;border-radius:8px;padding:14px;flex:1;min-width:220px;}\nlabel{color:#94a3b8;font-size:11px;text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;}\ninput,select{width:100%;padding:8px 10px;background:#020817;border:1px solid #334155;color:#f1f5f9;border-radius:6px;font-size:13px;box-sizing:border-box;}\ninput[type=range]{padding:0;}\n.result{background:#020817;border:1px solid #334155;border-radius:6px;padding:10px;font-size:13px;margin-top:8px;}\n.big{font-size:22px;font-weight:800;}\n.stat{display:inline-block;background:#1e3a5f;border-radius:4px;padding:3px 10px;font-size:11px;font-weight:700;color:#60a5fa;margin:3px 2px;}\n.good{color:#22c55e;}.bad{color:#ef4444;}.warn{color:#f59e0b;}\n.btn{background:#3b82f6;color:#fff;border:none;padding:7px 18px;border-radius:6px;cursor:pointer;font-size:12px;font-weight:700;margin-top:8px;}\n.btn:hover{opacity:0.85;}\n.grid{display:grid;gap:8px;}\n.item{background:#020817;border:1px solid #334155;border-radius:6px;padding:8px 12px;font-size:12px;}\nh2{color:#22d3ee;}\n</style>\n</head>\n<body>\n<h2>🏦 Bank vs DeFi — Flip & Compare</h2>\n<p class=\"sub\">Click each card to reveal how DeFi compares to traditional banking on that topic.</p>\n<div id=\"cards\" class=\"row\" style=\"flex-wrap:wrap;gap:8px;\"></div>\n<div class=\"result\" id=\"done\" style=\"display:none;margin-top:8px;\"></div>\n<script>\nconst CARDS=[\n  {topic:\"Hours\",bank:\"Mon–Fri 9am–5pm only\",defi:\"Open 24/7/365 — never closes\"},\n  {topic:\"Who can join?\",bank:\"Need ID, credit check, approval\",defi:\"Anyone with a crypto wallet, worldwide\"},\n  {topic:\"Savings rate\",bank:\"0.01–0.5% APY (US average)\",defi:\"4–20%+ APY (varies by protocol)\"},\n  {topic:\"Who holds funds?\",bank:\"The bank — you trust them\",defi:\"You — smart contracts, self-custody\"},\n  {topic:\"Transfer speed\",bank:\"1–5 business days\",defi:\"Seconds — no middlemen\"},\n  {topic:\"Failure risk\",bank:\"Can fail (FDIC covers $250k)\",defi:\"Smart contract bugs, no insurance\"},\n];\nlet seen=new Set();\nfunction render(){\n  document.getElementById('cards').innerHTML=CARDS.map((c,i)=>`\n    <div style=\"flex:1;min-width:140px;background:${seen.has(i)?'#0f1f3d':'#1e3a5f'};border:1px solid #334155;border-radius:8px;padding:12px;cursor:pointer;\" onclick=\"flip(${i})\">\n      <p style=\"font-size:11px;font-weight:700;text-transform:uppercase;color:#94a3b8;margin:0 0 6px;\">${c.topic}</p>\n      ${seen.has(i)?`<p style=\"font-size:11px;color:#ef4444;margin:0 0 4px;\">🏦 ${c.bank}</p><p style=\"font-size:11px;color:#22c55e;margin:0;\">⚡ ${c.defi}</p>`:'<p style=\"font-size:12px;color:#3b82f6;margin:0;\">Tap to compare →</p>'}\n    </div>`).join('');\n  if(seen.size===CARDS.length){\n    document.getElementById('done').style.display='block';\n    document.getElementById('done').innerHTML='<span class=\"good\" style=\"font-weight:700;\">All compared!</span> DeFi removes middlemen but adds smart contract risk. Neither is always better — know both sides.';\n  }\n}\nfunction flip(i){seen.add(i);render();}\nrender();\n</script>\n</body>\n</html>"
+      },
+      "actions": [
+        {
+          "id": "action_oed-interactive_i0",
+          "type": "speech",
+          "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered.",
+          "audioUrl": "/audio/lessons/oc-elem-defi/5-0.mp3"
+        },
+        {
+          "id": "action_oed-interactive_i1",
+          "type": "speech",
+          "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading.",
+          "audioUrl": "/audio/lessons/oc-elem-defi/5-1.mp3"
+        }
+      ]
+    },
+    {
       "id": "ed-s3",
       "type": "quiz",
       "title": "Knowledge Check — DeFi Basics",
@@ -1683,7 +1707,7 @@
           }
         ]
       },
-      "order": 5,
+      "order": 6,
       "actions": [
         {
           "id": "action_ed-s3_q0",

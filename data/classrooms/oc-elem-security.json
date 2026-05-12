@@ -1563,6 +1563,30 @@
       ]
     },
     {
+      "id": "oes-interactive",
+      "type": "interactive",
+      "title": "Interactive: Scam Spotter",
+      "order": 5,
+      "content": {
+        "type": "interactive",
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody{background:#0b1120;color:#e2e8f0;font-family:Inter,system-ui,sans-serif;padding:20px;margin:0;}\nh2{font-size:18px;margin:0 0 4px;}\n.sub{color:#64748b;font-size:12px;margin-bottom:16px;}\n.row{display:flex;gap:12px;margin-bottom:12px;flex-wrap:wrap;}\n.panel{background:#0f1f3d;border:1px solid #1e3a5f;border-radius:8px;padding:14px;flex:1;min-width:220px;}\nlabel{color:#94a3b8;font-size:11px;text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;}\ninput,select{width:100%;padding:8px 10px;background:#020817;border:1px solid #334155;color:#f1f5f9;border-radius:6px;font-size:13px;box-sizing:border-box;}\ninput[type=range]{padding:0;}\n.result{background:#020817;border:1px solid #334155;border-radius:6px;padding:10px;font-size:13px;margin-top:8px;}\n.big{font-size:22px;font-weight:800;}\n.stat{display:inline-block;background:#1e3a5f;border-radius:4px;padding:3px 10px;font-size:11px;font-weight:700;color:#60a5fa;margin:3px 2px;}\n.good{color:#22c55e;}.bad{color:#ef4444;}.warn{color:#f59e0b;}\n.btn{background:#3b82f6;color:#fff;border:none;padding:7px 18px;border-radius:6px;cursor:pointer;font-size:12px;font-weight:700;margin-top:8px;}\n.btn:hover{opacity:0.85;}\n.grid{display:grid;gap:8px;}\n.item{background:#020817;border:1px solid #334155;border-radius:6px;padding:8px 12px;font-size:12px;}\nh2{color:#ef4444;}\n</style>\n</head>\n<body>\n<h2>🚨 Scam Spotter</h2>\n<p class=\"sub\">Can you tell the difference between a real message and a scam? Tap your answer.</p>\n<div id=\"quiz\"></div>\n<script>\nconst Qs=[\n  {q:\"Email: 'Your Ledger wallet is compromised. Enter your 24-word seed at ledger-secure-verify.com'\",scam:true,explain:\"Ledger will NEVER ask for your seed phrase online. Real hardware wallets never need you to type your seed anywhere.\"},\n  {q:\"MetaMask popup: 'opensea.io wants to view your public wallet address'\",scam:false,explain:\"Reading your public address is safe — it's like your email. The site can't do anything without you approving a transaction.\"},\n  {q:\"DM: 'Hi, I'm from Binance support. Can you verify your 2FA code so we can restore your account?'\",scam:true,explain:\"Exchanges NEVER DM first, and NEVER ask for your 2FA code. This is social engineering.\"},\n  {q:\"'Congratulations! You've won 1 ETH. Connect wallet and pay 0.05 ETH gas fee to claim.'\",scam:true,explain:\"Legitimate airdrops don't require upfront payment. Paying to 'claim' is always a scam.\"},\n  {q:\"Uniswap asks you to approve spending your USDC (up to the exact amount you're trading)\",scam:false,explain:\"Approving the exact amount you're spending is normal and safe. Only worry if it says 'unlimited' approval.\"},\n];\nlet idx=0,score=0,answered=false;\nfunction render(){\n  if(idx>=Qs.length){\n    document.getElementById('quiz').innerHTML=`<div class=\"result\"><span class=\"big ${score>=4?'good':'warn'}\">${score}/5</span><p style=\"font-size:13px;color:#94a3b8;\">${score===5?'Perfect scam detector!':score>=3?'Good instincts — review the explanations.':'Stay sharp — scammers are sophisticated.'}</p><button class=\"btn\" onclick=\"resetQ()\">Try Again</button></div>`;\n    return;\n  }\n  const q=Qs[idx];\n  document.getElementById('quiz').innerHTML=`\n    <div class=\"panel\" style=\"margin-bottom:12px;\"><p style=\"font-size:13px;line-height:1.5;margin:0;\">${q.q}</p></div>\n    <div class=\"row\" style=\"gap:8px;\">\n      <button class=\"btn\" style=\"flex:1;background:#7f1d1d;\" onclick=\"ans(true)\">🚨 Scam</button>\n      <button class=\"btn\" style=\"flex:1;background:#166534;\" onclick=\"ans(false)\">✅ Legit</button>\n    </div>\n    <div id=\"fb\"></div>`;\n}\nfunction ans(isScam){\n  if(answered)return;answered=true;\n  const q=Qs[idx];const ok=isScam===q.scam;if(ok)score++;\n  document.getElementById('fb').innerHTML=`<div class=\"result\" style=\"margin-top:8px;\"><span class=\"${ok?'good':'bad'}\" style=\"font-weight:700;\">${ok?'✓ Correct!':'✗ Wrong'}</span><br/><p style=\"font-size:12px;color:#94a3b8;margin:6px 0 0;\">${q.explain}</p><button class=\"btn\" onclick=\"next()\" style=\"margin-top:8px;\">${idx+1<Qs.length?'Next →':'See Results'}</button></div>`;\n}\nfunction next(){idx++;answered=false;render();}\nfunction resetQ(){idx=0;score=0;answered=false;render();}\nrender();\n</script>\n</body>\n</html>"
+      },
+      "actions": [
+        {
+          "id": "action_oes-interactive_i0",
+          "type": "speech",
+          "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered.",
+          "audioUrl": "/audio/lessons/oc-elem-security/5-0.mp3"
+        },
+        {
+          "id": "action_oes-interactive_i1",
+          "type": "speech",
+          "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading.",
+          "audioUrl": "/audio/lessons/oc-elem-security/5-1.mp3"
+        }
+      ]
+    },
+    {
       "id": "es-s3",
       "type": "quiz",
       "title": "Knowledge Check — Crypto Security",
@@ -1683,7 +1707,7 @@
           }
         ]
       },
-      "order": 5,
+      "order": 6,
       "actions": [
         {
           "id": "action_es-s3_q0",

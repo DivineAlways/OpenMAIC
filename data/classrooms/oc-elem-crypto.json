@@ -1563,6 +1563,30 @@
       ]
     },
     {
+      "id": "oec-interactive",
+      "type": "interactive",
+      "title": "Interactive: Coin vs Token Sorter",
+      "order": 5,
+      "content": {
+        "type": "interactive",
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody{background:#0b1120;color:#e2e8f0;font-family:Inter,system-ui,sans-serif;padding:20px;margin:0;}\nh2{font-size:18px;margin:0 0 4px;}\n.sub{color:#64748b;font-size:12px;margin-bottom:16px;}\n.row{display:flex;gap:12px;margin-bottom:12px;flex-wrap:wrap;}\n.panel{background:#0f1f3d;border:1px solid #1e3a5f;border-radius:8px;padding:14px;flex:1;min-width:220px;}\nlabel{color:#94a3b8;font-size:11px;text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;}\ninput,select{width:100%;padding:8px 10px;background:#020817;border:1px solid #334155;color:#f1f5f9;border-radius:6px;font-size:13px;box-sizing:border-box;}\ninput[type=range]{padding:0;}\n.result{background:#020817;border:1px solid #334155;border-radius:6px;padding:10px;font-size:13px;margin-top:8px;}\n.big{font-size:22px;font-weight:800;}\n.stat{display:inline-block;background:#1e3a5f;border-radius:4px;padding:3px 10px;font-size:11px;font-weight:700;color:#60a5fa;margin:3px 2px;}\n.good{color:#22c55e;}.bad{color:#ef4444;}.warn{color:#f59e0b;}\n.btn{background:#3b82f6;color:#fff;border:none;padding:7px 18px;border-radius:6px;cursor:pointer;font-size:12px;font-weight:700;margin-top:8px;}\n.btn:hover{opacity:0.85;}\n.grid{display:grid;gap:8px;}\n.item{background:#020817;border:1px solid #334155;border-radius:6px;padding:8px 12px;font-size:12px;}\nh2{color:#f59e0b;}\n</style>\n</head>\n<body>\n<h2>🪙 Coin vs Token Sorter</h2>\n<p class=\"sub\">A <b>coin</b> has its own blockchain. A <b>token</b> lives on another chain. Tap each to classify it.</p>\n<div class=\"row\">\n  <div class=\"panel\" id=\"items\"></div>\n  <div class=\"panel\">\n    <div style=\"margin-bottom:12px;\">\n      <p style=\"color:#f59e0b;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;\">Coins</p>\n      <div id=\"coins\" class=\"grid\" style=\"min-height:40px;\"></div>\n    </div>\n    <div>\n      <p style=\"color:#60a5fa;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;\">Tokens</p>\n      <div id=\"tokens\" class=\"grid\" style=\"min-height:40px;\"></div>\n    </div>\n    <div class=\"result\" id=\"scoreBox\" style=\"display:none;\"></div>\n  </div>\n</div>\n<button class=\"btn\" onclick=\"checkAll()\" style=\"margin-right:8px;\">Check Answers</button>\n<button class=\"btn\" onclick=\"resetQ()\" style=\"background:#334155;\">Reset</button>\n<script>\nconst ITEMS=[\n  {name:\"Bitcoin (BTC)\",coin:true,hint:\"Own blockchain — the Bitcoin network\"},\n  {name:\"Ethereum (ETH)\",coin:true,hint:\"Powers its own blockchain\"},\n  {name:\"XRP\",coin:true,hint:\"Native to the XRP Ledger\"},\n  {name:\"USDC\",coin:false,hint:\"ERC-20 token on Ethereum\"},\n  {name:\"UNI (Uniswap)\",coin:false,hint:\"Governance token on Ethereum\"},\n  {name:\"Solana (SOL)\",coin:true,hint:\"Own high-speed blockchain\"},\n  {name:\"SHIB\",coin:false,hint:\"ERC-20 meme token on Ethereum\"},\n  {name:\"LINK (Chainlink)\",coin:false,hint:\"Utility token on Ethereum\"},\n];\nlet answers={};\nfunction render(){\n  document.getElementById('items').innerHTML='<label>Click to sort:</label>'+ITEMS.map(i=>`<div class=\"item\" style=\"cursor:pointer;margin-bottom:4px;\" onclick=\"cycle('${i.name}')\" id=\"i_${i.name.replace(/[^a-z]/gi,'_')}\">${i.name}</div>`).join('');\n  document.getElementById('coins').innerHTML='';\n  document.getElementById('tokens').innerHTML='';\n  document.getElementById('scoreBox').style.display='none';\n  answers={};\n}\nfunction cycle(name){\n  if(answers[name]===undefined)answers[name]=true;\n  else if(answers[name]===true)answers[name]=false;\n  else{delete answers[name];}\n  updateBuckets();\n}\nfunction updateBuckets(){\n  document.getElementById('coins').innerHTML=ITEMS.filter(i=>answers[i.name]===true).map(i=>`<div class=\"item\" style=\"color:#f59e0b\">${i.name}</div>`).join('');\n  document.getElementById('tokens').innerHTML=ITEMS.filter(i=>answers[i.name]===false).map(i=>`<div class=\"item\" style=\"color:#60a5fa\">${i.name}</div>`).join('');\n}\nfunction checkAll(){\n  let correct=0;\n  ITEMS.forEach(i=>{if(answers[i.name]===i.coin)correct++;});\n  const pct=Math.round(correct/ITEMS.length*100);\n  document.getElementById('scoreBox').style.display='block';\n  document.getElementById('scoreBox').innerHTML=`<span class=\"big ${pct>=75?'good':'warn'}\">${correct}/${ITEMS.length}</span><br/>`+ITEMS.map(i=>`<span class=\"stat ${answers[i.name]===i.coin?'good':'bad'}\">${i.name}: ${i.hint}</span>`).join(' ');\n}\nfunction resetQ(){render();}\nrender();\n</script>\n</body>\n</html>"
+      },
+      "actions": [
+        {
+          "id": "action_oec-interactive_i0",
+          "type": "speech",
+          "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered.",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/5-0.mp3"
+        },
+        {
+          "id": "action_oec-interactive_i1",
+          "type": "speech",
+          "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading.",
+          "audioUrl": "/audio/lessons/oc-elem-crypto/5-1.mp3"
+        }
+      ]
+    },
+    {
       "id": "ec-s3",
       "type": "quiz",
       "title": "Knowledge Check — Cryptocurrency Basics",
@@ -1683,7 +1707,7 @@
           }
         ]
       },
-      "order": 5,
+      "order": 6,
       "actions": [
         {
           "id": "action_ec-s3_q0",

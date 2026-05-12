@@ -1254,10 +1254,34 @@
       ]
     },
     {
+      "id": "oes-interactive",
+      "type": "interactive",
+      "title": "Interactive: Swap Simulator",
+      "order": 4,
+      "content": {
+        "type": "interactive",
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody{background:#0b1120;color:#e2e8f0;font-family:Inter,system-ui,sans-serif;padding:20px;margin:0;}\nh2{font-size:18px;margin:0 0 4px;}\n.sub{color:#64748b;font-size:12px;margin-bottom:16px;}\n.row{display:flex;gap:12px;margin-bottom:12px;flex-wrap:wrap;}\n.panel{background:#0f1f3d;border:1px solid #1e3a5f;border-radius:8px;padding:14px;flex:1;min-width:220px;}\nlabel{color:#94a3b8;font-size:11px;text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;}\ninput,select{width:100%;padding:8px 10px;background:#020817;border:1px solid #334155;color:#f1f5f9;border-radius:6px;font-size:13px;box-sizing:border-box;}\ninput[type=range]{padding:0;}\n.result{background:#020817;border:1px solid #334155;border-radius:6px;padding:10px;font-size:13px;margin-top:8px;}\n.big{font-size:22px;font-weight:800;}\n.stat{display:inline-block;background:#1e3a5f;border-radius:4px;padding:3px 10px;font-size:11px;font-weight:700;color:#60a5fa;margin:3px 2px;}\n.good{color:#22c55e;}.bad{color:#ef4444;}.warn{color:#f59e0b;}\n.btn{background:#3b82f6;color:#fff;border:none;padding:7px 18px;border-radius:6px;cursor:pointer;font-size:12px;font-weight:700;margin-top:8px;}\n.btn:hover{opacity:0.85;}\n.grid{display:grid;gap:8px;}\n.item{background:#020817;border:1px solid #334155;border-radius:6px;padding:8px 12px;font-size:12px;}\nh2{color:#34d399;}\n</style>\n</head>\n<body>\n<h2>🔄 Swap Simulator</h2>\n<p class=\"sub\">Simulate a DEX token swap. See price impact, slippage, and output before executing.</p>\n<div class=\"row\">\n  <div class=\"panel\">\n    <label>You Send</label>\n    <input type=\"number\" id=\"amtIn\" value=\"100\" min=\"1\" oninput=\"calc()\">\n    <label style=\"margin-top:8px;\">From Token</label>\n    <select id=\"from\" onchange=\"calc()\">\n      <option value=\"xrp\">XRP ($2.20)</option>\n      <option value=\"eth\">ETH ($2000)</option>\n      <option value=\"sol\">SOL ($150)</option>\n    </select>\n    <label style=\"margin-top:8px;\">To Token</label>\n    <select id=\"to\" onchange=\"calc()\">\n      <option value=\"usdc\">USDC ($1.00)</option>\n      <option value=\"btc\">BTC ($65000)</option>\n      <option value=\"xrp\">XRP ($2.20)</option>\n    </select>\n  </div>\n  <div class=\"panel\">\n    <label>Swap Details</label>\n    <div class=\"result\" id=\"result\" style=\"margin-top:0;\"></div>\n    <button class=\"btn\" style=\"margin-top:12px;width:100%;\" onclick=\"execute()\">Execute Swap</button>\n    <div id=\"exec\" style=\"display:none;margin-top:8px;\"></div>\n  </div>\n</div>\n<script>\nconst PRICES={xrp:2.20,eth:2000,sol:150,usdc:1,btc:65000};\nfunction calc(){\n  const f=document.getElementById('from').value;\n  const t=document.getElementById('to').value;\n  const amt=parseFloat(document.getElementById('amtIn').value)||0;\n  const usdIn=amt*PRICES[f];\n  const fee=usdIn*0.003;\n  const usdOut=usdIn-fee;\n  const out=usdOut/PRICES[t];\n  const impact=Math.min(amt/10000*100,2.5);\n  document.getElementById('result').innerHTML=\n    `You send: <b>${amt} ${f.toUpperCase()}</b> ($${usdIn.toFixed(2)})<br/>`+\n    `<span class=\"stat\">Fee 0.3%: $${fee.toFixed(2)}</span>`+\n    `<span class=\"stat warn\">Price impact: ${impact.toFixed(2)}%</span><br/>`+\n    `You receive: <span class=\"big good\">${out.toFixed(6)} ${t.toUpperCase()}</span><br/>`+\n    `<span style=\"font-size:11px;color:#64748b;\">Rate: 1 ${f.toUpperCase()} = ${(PRICES[f]/PRICES[t]).toFixed(6)} ${t.toUpperCase()}</span>`;\n  document.getElementById('exec').style.display='none';\n}\nfunction execute(){\n  const txId='0x'+Array.from({length:12},()=>'0123456789abcdef'[Math.floor(Math.random()*16)]).join('');\n  document.getElementById('exec').style.display='block';\n  document.getElementById('exec').innerHTML=`<div class=\"result\"><span class=\"good\" style=\"font-weight:700;\">✓ Swap Executed On-Chain</span><br/><span style=\"font-size:10px;font-family:monospace;color:#64748b;\">${txId}</span><br/><span style=\"font-size:11px;color:#64748b;\">Settled in 3–5 seconds. No bank. No intermediary.</span></div>`;\n}\ncalc();\n</script>\n</body>\n</html>"
+      },
+      "actions": [
+        {
+          "id": "action_oes-interactive_i0",
+          "type": "speech",
+          "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered.",
+          "audioUrl": "/audio/lessons/oc-elem-swapbridge/4-0.mp3"
+        },
+        {
+          "id": "action_oes-interactive_i1",
+          "type": "speech",
+          "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading.",
+          "audioUrl": "/audio/lessons/oc-elem-swapbridge/4-1.mp3"
+        }
+      ]
+    },
+    {
       "id": "kc-oc-elem-swapbridge",
       "type": "quiz",
       "title": "Knowledge Check — Swapping & Bridging",
-      "order": 4,
+      "order": 5,
       "content": {
         "type": "quiz",
         "questions": [

@@ -1858,10 +1858,34 @@
       ]
     },
     {
+      "id": "ohw-interactive",
+      "type": "interactive",
+      "title": "Interactive: Security Strength Checker",
+      "order": 7,
+      "content": {
+        "type": "interactive",
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody{background:#0b1120;color:#e2e8f0;font-family:Inter,system-ui,sans-serif;padding:20px;margin:0;}\nh2{font-size:18px;margin:0 0 4px;}\n.sub{color:#64748b;font-size:12px;margin-bottom:16px;}\n.row{display:flex;gap:12px;margin-bottom:12px;flex-wrap:wrap;}\n.panel{background:#0f1f3d;border:1px solid #1e3a5f;border-radius:8px;padding:14px;flex:1;min-width:220px;}\nlabel{color:#94a3b8;font-size:11px;text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;}\ninput,select{width:100%;padding:8px 10px;background:#020817;border:1px solid #334155;color:#f1f5f9;border-radius:6px;font-size:13px;box-sizing:border-box;}\ninput[type=range]{padding:0;}\n.result{background:#020817;border:1px solid #334155;border-radius:6px;padding:10px;font-size:13px;margin-top:8px;}\n.big{font-size:22px;font-weight:800;}\n.stat{display:inline-block;background:#1e3a5f;border-radius:4px;padding:3px 10px;font-size:11px;font-weight:700;color:#60a5fa;margin:3px 2px;}\n.good{color:#22c55e;}.bad{color:#ef4444;}.warn{color:#f59e0b;}\n.btn{background:#3b82f6;color:#fff;border:none;padding:7px 18px;border-radius:6px;cursor:pointer;font-size:12px;font-weight:700;margin-top:8px;}\n.btn:hover{opacity:0.85;}\n.grid{display:grid;gap:8px;}\n.item{background:#020817;border:1px solid #334155;border-radius:6px;padding:8px 12px;font-size:12px;}\nh2{color:#ef4444;}\n</style>\n</head>\n<body>\n<h2>🛡️ Wallet Security Checker</h2>\n<p class=\"sub\">Score your crypto security setup against best practices. Find your weaknesses before attackers do.</p>\n<div class=\"row\">\n  <div class=\"panel\">\n    <label>Custody Setup</label>\n    <select id=\"custody\" onchange=\"score()\">\n      <option value=\"0\">Exchange only — no self-custody</option>\n      <option value=\"1\">Hot wallet (MetaMask/XUMM)</option>\n      <option value=\"2\" selected>Hardware wallet (Ledger/Trezor)</option>\n      <option value=\"3\">Hardware wallet + passphrase (25th word)</option>\n    </select>\n    <label style=\"margin-top:8px;\">Seed Phrase Storage</label>\n    <select id=\"seed\" onchange=\"score()\">\n      <option value=\"0\">Screenshot / photo on phone</option>\n      <option value=\"0\">Digital file on computer</option>\n      <option value=\"1\">Paper in drawer</option>\n      <option value=\"2\" selected>Paper in fireproof safe</option>\n      <option value=\"3\">Metal backup (Cryptosteel/Bilodl)</option>\n    </select>\n    <label style=\"margin-top:8px;\">Two-Factor Auth</label>\n    <select id=\"twofa\" onchange=\"score()\">\n      <option value=\"0\">SMS only</option>\n      <option value=\"1\" selected>Authenticator app (TOTP)</option>\n      <option value=\"2\">Hardware key (YubiKey)</option>\n    </select>\n    <label style=\"margin-top:8px;\">OpSec — Who knows you hold crypto?</label>\n    <select id=\"opsec\" onchange=\"score()\">\n      <option value=\"0\">Publicly on social media</option>\n      <option value=\"1\" selected>Friends/family know roughly</option>\n      <option value=\"2\">Nobody knows your holdings</option>\n    </select>\n    <div class=\"result\" id=\"scoreResult\" style=\"margin-top:8px;\"></div>\n  </div>\n  <div class=\"panel\">\n    <label>Phishing Scenario — Is This a Scam?</label>\n    <div id=\"scenario\" style=\"background:#020817;border-left:3px solid #ef4444;padding:10px;border-radius:4px;font-size:12px;line-height:1.5;margin-bottom:8px;\"></div>\n    <button class=\"btn\" onclick=\"nextScenario()\">Next Scenario →</button>\n    <div id=\"scenAns\" style=\"display:none;margin-top:8px;\"></div>\n  </div>\n</div>\n<script>\nconst SCENS=[\n  {q:\"Email: 'Your Ledger has been compromised. Enter seed at ledger-verify.io'\",ans:\"🚨 SCAM — Ledger NEVER asks for your seed phrase. Delete immediately.\",bad:true},\n  {q:\"MetaMask: 'New site wants to connect: opensea.io — View your wallet address'\",ans:\"✅ LEGIT — Reading your public address is harmless. Only worry when approving transactions.\",bad:false},\n  {q:\"DM: 'Hi, I'm Binance support. Can you give me your 2FA code to secure your account?'\",ans:\"🚨 SCAM — Exchanges never DM first or ask for 2FA codes. Block and report.\",bad:true},\n  {q:\"Airdrop: 'Claim 5,000 free tokens! Connect wallet and approve token access'\",ans:\"🚨 DRAIN SCAM — Approving 'token access' lets the contract steal ALL your tokens.\",bad:true},\n  {q:\"You paste an XRP address but notice the last 4 characters changed before you submitted\",ans:\"🚨 CLIPBOARD HIJACKER — Malware replaced your copied address. Always verify last 6 chars.\",bad:true},\n];\nlet si=0;\nfunction nextScenario(){\n  document.getElementById('scenAns').style.display='none';\n  const s=SCENS[si%SCENS.length];\n  document.getElementById('scenario').textContent=s.q;\n  setTimeout(()=>{document.getElementById('scenAns').style.display='block';document.getElementById('scenAns').innerHTML=`<div class=\"result\"><span class=\"${s.bad?'bad':'good'}\" style=\"font-weight:700;\">${s.ans}</span></div>`;},300);\n  si++;\n}\nfunction score(){\n  const c=parseInt(document.getElementById('custody').value);\n  const s=parseInt(document.getElementById('seed').value);\n  const t=parseInt(document.getElementById('twofa').value);\n  const o=parseInt(document.getElementById('opsec').value);\n  const total=c+s+t+o,max=10;\n  const pct=Math.round(total/max*100);\n  const g=pct>=80?['A','good','Strong setup']:pct>=60?['B','warn','Good but improve seed storage']:pct>=40?['C','warn','Several risks — act now']:['D','bad','High risk — move funds off exchange'];\n  document.getElementById('scoreResult').innerHTML=`Security: <span class=\"big ${g[1]}\">${g[0]} (${pct}%)</span><br/><span style=\"font-size:11px;color:#94a3b8;\">${g[2]}</span>`;\n}\nscore();nextScenario();\n</script>\n</body>\n</html>"
+      },
+      "actions": [
+        {
+          "id": "action_ohw-interactive_i0",
+          "type": "speech",
+          "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered.",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/7-0.mp3"
+        },
+        {
+          "id": "action_ohw-interactive_i1",
+          "type": "speech",
+          "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading.",
+          "audioUrl": "/audio/lessons/oc-hs-wallets/7-1.mp3"
+        }
+      ]
+    },
+    {
       "id": "hs-wl-s3",
       "type": "quiz",
       "title": "Knowledge Check — Wallets High School",
-      "order": 7,
+      "order": 8,
       "content": {
         "type": "quiz",
         "questions": [

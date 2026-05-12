@@ -1391,10 +1391,34 @@
       ]
     },
     {
+      "id": "ohe-interactive",
+      "type": "interactive",
+      "title": "Interactive: Web3 vs Web2 Sorter",
+      "order": 8,
+      "content": {
+        "type": "interactive",
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody{background:#0b1120;color:#e2e8f0;font-family:Inter,system-ui,sans-serif;padding:20px;margin:0;}\nh2{font-size:18px;margin:0 0 4px;}\n.sub{color:#64748b;font-size:12px;margin-bottom:16px;}\n.row{display:flex;gap:12px;margin-bottom:12px;flex-wrap:wrap;}\n.panel{background:#0f1f3d;border:1px solid #1e3a5f;border-radius:8px;padding:14px;flex:1;min-width:220px;}\nlabel{color:#94a3b8;font-size:11px;text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;}\ninput,select{width:100%;padding:8px 10px;background:#020817;border:1px solid #334155;color:#f1f5f9;border-radius:6px;font-size:13px;box-sizing:border-box;}\ninput[type=range]{padding:0;}\n.result{background:#020817;border:1px solid #334155;border-radius:6px;padding:10px;font-size:13px;margin-top:8px;}\n.big{font-size:22px;font-weight:800;}\n.stat{display:inline-block;background:#1e3a5f;border-radius:4px;padding:3px 10px;font-size:11px;font-weight:700;color:#60a5fa;margin:3px 2px;}\n.good{color:#22c55e;}.bad{color:#ef4444;}.warn{color:#f59e0b;}\n.btn{background:#3b82f6;color:#fff;border:none;padding:7px 18px;border-radius:6px;cursor:pointer;font-size:12px;font-weight:700;margin-top:8px;}\n.btn:hover{opacity:0.85;}\n.grid{display:grid;gap:8px;}\n.item{background:#020817;border:1px solid #334155;border-radius:6px;padding:8px 12px;font-size:12px;}\nh2{color:#22d3ee;}\n</style>\n</head>\n<body>\n<h2>🌐 Web3 vs Web2 Sorter</h2>\n<p class=\"sub\">Drag each concept into the right category. Is it a Web2 or Web3 characteristic?</p>\n<div class=\"row\">\n  <div class=\"panel\">\n    <label>Click to categorize:</label>\n    <div id=\"items\" class=\"grid\" style=\"gap:6px;\"></div>\n  </div>\n  <div class=\"panel\">\n    <div style=\"margin-bottom:12px;\">\n      <p style=\"color:#3b82f6;font-size:11px;font-weight:700;text-transform:uppercase;\">Web2</p>\n      <div id=\"web2\" class=\"grid\" style=\"min-height:36px;gap:4px;\"></div>\n    </div>\n    <div>\n      <p style=\"color:#22d3ee;font-size:11px;font-weight:700;text-transform:uppercase;\">Web3</p>\n      <div id=\"web3\" class=\"grid\" style=\"min-height:36px;gap:4px;\"></div>\n    </div>\n    <div id=\"score\" style=\"display:none;margin-top:12px;\"></div>\n  </div>\n</div>\n<button class=\"btn\" onclick=\"check()\" style=\"margin-right:8px;\">Check Answers</button>\n<button class=\"btn\" onclick=\"resetQ()\" style=\"background:#334155;\">Reset</button>\n<script>\nconst ITEMS=[\n  {name:\"Platform owns your data\",w3:false},{name:\"Self-custody of assets\",w3:true},\n  {name:\"Username + password login\",w3:false},{name:\"Connect wallet to sign in\",w3:true},\n  {name:\"Terms of service can change anytime\",w3:false},{name:\"Rules encoded in smart contracts\",w3:true},\n  {name:\"Company can ban your account\",w3:false},{name:\"Censorship-resistant transactions\",w3:true},\n];\nlet answers={};\nfunction render(){\n  document.getElementById('items').innerHTML=ITEMS.filter(i=>!(i.name in answers)).map(i=>`<div class=\"item\" style=\"cursor:pointer;font-size:12px;\" onclick=\"cycle('${i.name.replace(/'/g,\"\\'\")}')\">☐ ${i.name}</div>`).join('');\n  document.getElementById('web2').innerHTML=ITEMS.filter(i=>answers[i.name]===false).map(i=>`<div class=\"item\" style=\"color:#60a5fa;font-size:11px;\">${i.name}</div>`).join('');\n  document.getElementById('web3').innerHTML=ITEMS.filter(i=>answers[i.name]===true).map(i=>`<div class=\"item\" style=\"color:#22d3ee;font-size:11px;\">${i.name}</div>`).join('');\n  document.getElementById('score').style.display='none';\n}\nfunction cycle(name){\n  if(answers[name]===undefined)answers[name]=false;\n  else if(answers[name]===false)answers[name]=true;\n  else delete answers[name];\n  render();\n}\nfunction check(){\n  let c=0;ITEMS.forEach(i=>{if(answers[i.name]===i.w3)c++;});\n  document.getElementById('score').style.display='block';\n  document.getElementById('score').innerHTML=`<span class=\"big ${c>=6?'good':'warn'}\">${c}/${ITEMS.length}</span><br/>`+ITEMS.map(i=>`<span class=\"stat ${answers[i.name]===i.w3?'good':'bad'}\">${i.name}: ${i.w3?'Web3':'Web2'}</span>`).join(' ');\n}\nfunction resetQ(){answers={};render();}\nrender();\n</script>\n</body>\n</html>"
+      },
+      "actions": [
+        {
+          "id": "action_ohe-interactive_i0",
+          "type": "speech",
+          "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered.",
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/8-0.mp3"
+        },
+        {
+          "id": "action_ohe-interactive_i1",
+          "type": "speech",
+          "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading.",
+          "audioUrl": "/audio/lessons/oc-hs-ecosystem/8-1.mp3"
+        }
+      ]
+    },
+    {
       "id": "hs-ec-s4",
       "type": "quiz",
       "title": "Knowledge Check — Ecosystem High School",
-      "order": 8,
+      "order": 9,
       "content": {
         "type": "quiz",
         "questions": [

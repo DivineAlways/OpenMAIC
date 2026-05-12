@@ -1834,10 +1834,34 @@
       ]
     },
     {
+      "id": "ohc-interactive",
+      "type": "interactive",
+      "title": "Interactive: Market Cap Calculator",
+      "order": 7,
+      "content": {
+        "type": "interactive",
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody{background:#0b1120;color:#e2e8f0;font-family:Inter,system-ui,sans-serif;padding:20px;margin:0;}\nh2{font-size:18px;margin:0 0 4px;}\n.sub{color:#64748b;font-size:12px;margin-bottom:16px;}\n.row{display:flex;gap:12px;margin-bottom:12px;flex-wrap:wrap;}\n.panel{background:#0f1f3d;border:1px solid #1e3a5f;border-radius:8px;padding:14px;flex:1;min-width:220px;}\nlabel{color:#94a3b8;font-size:11px;text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;}\ninput,select{width:100%;padding:8px 10px;background:#020817;border:1px solid #334155;color:#f1f5f9;border-radius:6px;font-size:13px;box-sizing:border-box;}\ninput[type=range]{padding:0;}\n.result{background:#020817;border:1px solid #334155;border-radius:6px;padding:10px;font-size:13px;margin-top:8px;}\n.big{font-size:22px;font-weight:800;}\n.stat{display:inline-block;background:#1e3a5f;border-radius:4px;padding:3px 10px;font-size:11px;font-weight:700;color:#60a5fa;margin:3px 2px;}\n.good{color:#22c55e;}.bad{color:#ef4444;}.warn{color:#f59e0b;}\n.btn{background:#3b82f6;color:#fff;border:none;padding:7px 18px;border-radius:6px;cursor:pointer;font-size:12px;font-weight:700;margin-top:8px;}\n.btn:hover{opacity:0.85;}\n.grid{display:grid;gap:8px;}\n.item{background:#020817;border:1px solid #334155;border-radius:6px;padding:8px 12px;font-size:12px;}\nh2{color:#f59e0b;}\n</style>\n</head>\n<body>\n<h2>📊 Market Cap Calculator</h2>\n<p class=\"sub\">Market Cap = Price × Circulating Supply. Design your own token and see how it compares to real coins.</p>\n<div class=\"row\">\n  <div class=\"panel\">\n    <label>Token Name</label>\n    <input type=\"text\" id=\"tname\" value=\"MyToken\" oninput=\"calc()\">\n    <label style=\"margin-top:8px;\">Price (USD)</label>\n    <input type=\"number\" id=\"price\" value=\"0.50\" min=\"0.000001\" step=\"0.01\" oninput=\"calc()\">\n    <label style=\"margin-top:8px;\">Circulating Supply</label>\n    <input type=\"number\" id=\"supply\" value=\"1000000000\" min=\"1\" oninput=\"calc()\">\n    <div class=\"result\" id=\"myResult\" style=\"margin-top:8px;\"></div>\n  </div>\n  <div class=\"panel\">\n    <label>vs Real Coins (approx.)</label>\n    <div id=\"compare\"></div>\n  </div>\n</div>\n<script>\nconst REAL=[\n  {name:'XRP',mcap:130e9},{name:'Ethereum',mcap:240e9},{name:'Bitcoin',mcap:1.3e12},\n  {name:'Solana',mcap:65e9},{name:'DOGE',mcap:22e9},\n];\nfunction fmt(n){if(n>=1e12)return'$'+(n/1e12).toFixed(2)+'T';if(n>=1e9)return'$'+(n/1e9).toFixed(2)+'B';if(n>=1e6)return'$'+(n/1e6).toFixed(2)+'M';return'$'+n.toFixed(0);}\nfunction calc(){\n  const p=parseFloat(document.getElementById('price').value)||0;\n  const s=parseFloat(document.getElementById('supply').value)||0;\n  const name=document.getElementById('tname').value||'MyToken';\n  const mc=p*s;\n  document.getElementById('myResult').innerHTML=`Market Cap: <span class=\"big good\">${fmt(mc)}</span>`;\n  const maxMc=Math.max(mc,...REAL.map(r=>r.mcap));\n  document.getElementById('compare').innerHTML=[{name,mcap:mc,mine:true},...REAL].sort((a,b)=>b.mcap-a.mcap).map(r=>`\n    <div style=\"margin-bottom:8px;\">\n      <div style=\"display:flex;justify-content:space-between;font-size:11px;margin-bottom:2px;\">\n        <span style=\"color:${r.mine?'#22d3ee':'#94a3b8'};font-weight:${r.mine?'700':'400'}\">${r.name}</span>\n        <span style=\"color:${r.mine?'#22d3ee':'#94a3b8'}\">${fmt(r.mcap)}</span>\n      </div>\n      <div style=\"background:#334155;border-radius:3px;height:6px;overflow:hidden;\">\n        <div style=\"background:${r.mine?'#22d3ee':'#3b82f6'};height:100%;width:${Math.min(r.mcap/maxMc*100,100)}%;\"></div>\n      </div>\n    </div>`).join('');\n}\ncalc();\n</script>\n</body>\n</html>"
+      },
+      "actions": [
+        {
+          "id": "action_ohc-interactive_i0",
+          "type": "speech",
+          "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered.",
+          "audioUrl": "/audio/lessons/oc-hs-crypto/7-0.mp3"
+        },
+        {
+          "id": "action_ohc-interactive_i1",
+          "type": "speech",
+          "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading.",
+          "audioUrl": "/audio/lessons/oc-hs-crypto/7-1.mp3"
+        }
+      ]
+    },
+    {
       "id": "hs-cr-s3",
       "type": "quiz",
       "title": "Knowledge Check — Crypto Markets High School",
-      "order": 7,
+      "order": 8,
       "content": {
         "type": "quiz",
         "questions": [

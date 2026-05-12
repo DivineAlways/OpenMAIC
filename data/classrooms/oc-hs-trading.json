@@ -1749,10 +1749,34 @@
       ]
     },
     {
+      "id": "oht-interactive",
+      "type": "interactive",
+      "title": "Interactive: Candlestick Pattern Reader",
+      "order": 7,
+      "content": {
+        "type": "interactive",
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody{background:#0b1120;color:#e2e8f0;font-family:Inter,system-ui,sans-serif;padding:20px;margin:0;}\nh2{font-size:18px;margin:0 0 4px;}\n.sub{color:#64748b;font-size:12px;margin-bottom:16px;}\n.row{display:flex;gap:12px;margin-bottom:12px;flex-wrap:wrap;}\n.panel{background:#0f1f3d;border:1px solid #1e3a5f;border-radius:8px;padding:14px;flex:1;min-width:220px;}\nlabel{color:#94a3b8;font-size:11px;text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;}\ninput,select{width:100%;padding:8px 10px;background:#020817;border:1px solid #334155;color:#f1f5f9;border-radius:6px;font-size:13px;box-sizing:border-box;}\ninput[type=range]{padding:0;}\n.result{background:#020817;border:1px solid #334155;border-radius:6px;padding:10px;font-size:13px;margin-top:8px;}\n.big{font-size:22px;font-weight:800;}\n.stat{display:inline-block;background:#1e3a5f;border-radius:4px;padding:3px 10px;font-size:11px;font-weight:700;color:#60a5fa;margin:3px 2px;}\n.good{color:#22c55e;}.bad{color:#ef4444;}.warn{color:#f59e0b;}\n.btn{background:#3b82f6;color:#fff;border:none;padding:7px 18px;border-radius:6px;cursor:pointer;font-size:12px;font-weight:700;margin-top:8px;}\n.btn:hover{opacity:0.85;}\n.grid{display:grid;gap:8px;}\n.item{background:#020817;border:1px solid #334155;border-radius:6px;padding:8px 12px;font-size:12px;}\nh2{color:#a78bfa;}\n</style>\n</head>\n<body>\n<h2>🕯️ Candlestick Pattern Reader</h2>\n<p class=\"sub\">Study 5 key candlestick patterns. For each, identify whether it's a bullish or bearish signal.</p>\n<div id=\"reader\"></div>\n<script>\nconst PATTERNS=[\n  {name:\"Hammer\",signal:\"Bullish\",desc:\"Small body near top, long lower wick. Buyers pushed price back up after sellers drove it down — reversal signal at support.\",svgBody:\"M50,20 L50,60 M40,20 L60,20 L60,30 L40,30 Z\",color:\"#22c55e\"},\n  {name:\"Bearish Engulfing\",signal:\"Bearish\",desc:\"Large red candle fully engulfs the previous green candle. Sellers overwhelmed buyers — strong reversal after uptrend.\",svgBody:\"M40,10 L60,10 L60,30 L40,30 Z M35,5 L65,5 L65,65 L35,65 Z M50,5 L50,2 M50,65 L50,68\",color:\"#ef4444\"},\n  {name:\"Doji\",signal:\"Neutral\",desc:\"Open and close are nearly equal — tiny or no body. Market indecision. Often precedes a reversal when occurring at trend extremes.\",svgBody:\"M50,15 L50,65 M35,40 L65,40\",color:\"#f59e0b\"},\n  {name:\"Three White Soldiers\",signal:\"Bullish\",desc:\"Three consecutive large green candles, each opening within and closing above the previous. Strong buying momentum — bullish continuation.\",svgBody:\"M30,50 L45,50 L45,20 L30,20 Z M42,60 L57,60 L57,30 L42,30 Z M54,55 L69,55 L69,15 L54,15 Z\",color:\"#22c55e\"},\n  {name:\"Shooting Star\",signal:\"Bearish\",desc:\"Small body near bottom, long upper wick. Buyers pushed price up but sellers drove it back down — bearish reversal signal at resistance.\",svgBody:\"M50,60 L50,20 M40,60 L60,60 L60,70 L40,70 Z\",color:\"#ef4444\"},\n];\nlet idx=0,answered=false,score=0;\nfunction render(){\n  if(idx>=PATTERNS.length){\n    document.getElementById('reader').innerHTML=`<div class=\"result\"><span class=\"big ${score>=4?'good':'warn'}\">${score}/${PATTERNS.length}</span><p style=\"font-size:13px;color:#94a3b8;\">${score===PATTERNS.length?'Perfect pattern recognition!':score>=3?'Good eye — review the ones you missed.':'Keep studying — patterns take practice.'}</p><button class=\"btn\" onclick=\"reset()\">Try Again</button></div>`;\n    return;\n  }\n  const p=PATTERNS[idx];\n  document.getElementById('reader').innerHTML=`\n    <div class=\"row\" style=\"align-items:center;\">\n      <div class=\"panel\" style=\"text-align:center;max-width:120px;\">\n        <svg width=\"80\" height=\"80\" viewBox=\"0 0 100 80\">\n          <path d=\"${p.svgBody}\" fill=\"${p.color}\" stroke=\"${p.color}\" stroke-width=\"2.5\" fill-opacity=\"0.7\"/>\n        </svg>\n        <p style=\"font-size:12px;font-weight:700;margin:4px 0 0;\">${p.name}</p>\n      </div>\n      <div class=\"panel\" style=\"flex:1;\">\n        <p style=\"font-size:12px;color:#94a3b8;margin:0 0 10px;\">Is this pattern bullish (price likely to rise), bearish (likely to fall), or neutral?</p>\n        <div style=\"display:flex;gap:6px;\">\n          <button class=\"btn\" style=\"flex:1;background:#166534;\" onclick=\"ans('Bullish')\">📈 Bullish</button>\n          <button class=\"btn\" style=\"flex:1;background:#7f1d1d;\" onclick=\"ans('Bearish')\">📉 Bearish</button>\n          <button class=\"btn\" style=\"flex:1;background:#1e3a5f;\" onclick=\"ans('Neutral')\">➡️ Neutral</button>\n        </div>\n        <div id=\"fb\"></div>\n      </div>\n    </div>`;\n}\nfunction ans(a){if(answered)return;answered=true;const p=PATTERNS[idx];const ok=a===p.signal;if(ok)score++;document.getElementById('fb').innerHTML=`<div class=\"result\" style=\"margin-top:8px;\"><span class=\"${ok?'good':'bad'}\" style=\"font-weight:700;\">${ok?'✓ Correct!':'✗ It's '+p.signal}</span><p style=\"font-size:11px;color:#94a3b8;margin:4px 0 0;\">${p.desc}</p><button class=\"btn\" onclick=\"next()\" style=\"margin-top:6px;\">${idx+1<PATTERNS.length?'Next Pattern →':'See Results'}</button></div>`;}\nfunction next(){idx++;answered=false;render();}\nfunction reset(){idx=0;answered=false;score=0;render();}\nrender();\n</script>\n</body>\n</html>"
+      },
+      "actions": [
+        {
+          "id": "action_oht-interactive_i0",
+          "type": "speech",
+          "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered.",
+          "audioUrl": "/audio/lessons/oc-hs-trading/7-0.mp3"
+        },
+        {
+          "id": "action_oht-interactive_i1",
+          "type": "speech",
+          "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading.",
+          "audioUrl": "/audio/lessons/oc-hs-trading/7-1.mp3"
+        }
+      ]
+    },
+    {
       "id": "hs-tr-s3",
       "type": "quiz",
       "title": "Knowledge Check — Trading High School",
-      "order": 7,
+      "order": 8,
       "content": {
         "type": "quiz",
         "questions": [

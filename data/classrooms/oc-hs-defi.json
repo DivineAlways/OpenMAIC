@@ -1705,10 +1705,34 @@
       ]
     },
     {
+      "id": "ohd-interactive",
+      "type": "interactive",
+      "title": "Interactive: Liquidity Pool Simulator",
+      "order": 7,
+      "content": {
+        "type": "interactive",
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody{background:#0b1120;color:#e2e8f0;font-family:Inter,system-ui,sans-serif;padding:20px;margin:0;}\nh2{font-size:18px;margin:0 0 4px;}\n.sub{color:#64748b;font-size:12px;margin-bottom:16px;}\n.row{display:flex;gap:12px;margin-bottom:12px;flex-wrap:wrap;}\n.panel{background:#0f1f3d;border:1px solid #1e3a5f;border-radius:8px;padding:14px;flex:1;min-width:220px;}\nlabel{color:#94a3b8;font-size:11px;text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;}\ninput,select{width:100%;padding:8px 10px;background:#020817;border:1px solid #334155;color:#f1f5f9;border-radius:6px;font-size:13px;box-sizing:border-box;}\ninput[type=range]{padding:0;}\n.result{background:#020817;border:1px solid #334155;border-radius:6px;padding:10px;font-size:13px;margin-top:8px;}\n.big{font-size:22px;font-weight:800;}\n.stat{display:inline-block;background:#1e3a5f;border-radius:4px;padding:3px 10px;font-size:11px;font-weight:700;color:#60a5fa;margin:3px 2px;}\n.good{color:#22c55e;}.bad{color:#ef4444;}.warn{color:#f59e0b;}\n.btn{background:#3b82f6;color:#fff;border:none;padding:7px 18px;border-radius:6px;cursor:pointer;font-size:12px;font-weight:700;margin-top:8px;}\n.btn:hover{opacity:0.85;}\n.grid{display:grid;gap:8px;}\n.item{background:#020817;border:1px solid #334155;border-radius:6px;padding:8px 12px;font-size:12px;}\nh2{color:#22d3ee;}\n</style>\n</head>\n<body>\n<h2>💧 Liquidity Pool Simulator</h2>\n<p class=\"sub\">Model a Uniswap V2 AMM pool. See price impact, swap output, and impermanent loss in real time.</p>\n<div class=\"row\">\n  <div class=\"panel\">\n    <label>Pool: XRP Reserve</label>\n    <input type=\"number\" id=\"rx\" value=\"10000\" oninput=\"calc()\">\n    <label style=\"margin-top:8px;\">Pool: USDC Reserve</label>\n    <input type=\"number\" id=\"ry\" value=\"22000\" oninput=\"calc()\">\n    <label style=\"margin-top:8px;\">Swap: XRP amount</label>\n    <input type=\"number\" id=\"swap\" value=\"100\" oninput=\"calc()\">\n    <div class=\"result\" id=\"swapResult\" style=\"margin-top:8px;\"></div>\n  </div>\n  <div class=\"panel\">\n    <label>Impermanent Loss — Price Change</label>\n    <input type=\"range\" id=\"pct\" min=\"-90\" max=\"500\" value=\"100\" oninput=\"calcIL()\">\n    <p style=\"font-size:12px;color:#94a3b8;margin:4px 0;\">Change: <span id=\"pval\" style=\"color:#f1f5f9;font-weight:700;\">+100%</span></p>\n    <div class=\"result\" id=\"ilResult\"></div>\n  </div>\n</div>\n<script>\nfunction calc(){\n  const rx=+document.getElementById('rx').value||10000;\n  const ry=+document.getElementById('ry').value||22000;\n  const dx=+document.getElementById('swap').value||100;\n  const k=rx*ry;\n  const rx2=rx+dx;const ry2=k/rx2;\n  const out=ry-ry2;\n  const spot=ry/rx;const exec=out/dx;\n  const impact=Math.abs((exec-spot)/spot*100);\n  document.getElementById('swapResult').innerHTML=\n    `Swap <b>${dx}</b> XRP → <span class=\"big good\">${out.toFixed(2)}</span> USDC<br/>`+\n    `<span class=\"stat\">Spot: $${spot.toFixed(4)}</span>`+\n    `<span class=\"stat\">Exec: $${exec.toFixed(4)}</span>`+\n    `<span class=\"stat ${impact>1?'warn':'good'}\">Impact: ${impact.toFixed(2)}%</span>`;\n}\nfunction calcIL(){\n  const pct=parseInt(document.getElementById('pct').value);\n  document.getElementById('pval').textContent=(pct>=0?'+':'')+pct+'%';\n  const P=(100+pct)/100;\n  const il=(2*Math.sqrt(P)/(1+P)-1)*100;\n  const lpVal=100*(2*Math.sqrt(P)/(1+P));\n  const holdVal=100*(1+pct/200);\n  document.getElementById('ilResult').innerHTML=\n    `IL: <span class=\"big bad\">${il.toFixed(2)}%</span><br/>`+\n    `<span class=\"stat\">LP value: $${lpVal.toFixed(2)}</span>`+\n    `<span class=\"stat\">Just holding: $${holdVal.toFixed(2)}</span>`;\n}\ncalc();calcIL();\n</script>\n</body>\n</html>"
+      },
+      "actions": [
+        {
+          "id": "action_ohd-interactive_i0",
+          "type": "speech",
+          "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered.",
+          "audioUrl": "/audio/lessons/oc-hs-defi/7-0.mp3"
+        },
+        {
+          "id": "action_ohd-interactive_i1",
+          "type": "speech",
+          "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading.",
+          "audioUrl": "/audio/lessons/oc-hs-defi/7-1.mp3"
+        }
+      ]
+    },
+    {
       "id": "hs-defi-s3",
       "type": "quiz",
       "title": "Knowledge Check — DeFi High School",
-      "order": 7,
+      "order": 8,
       "content": {
         "type": "quiz",
         "questions": [

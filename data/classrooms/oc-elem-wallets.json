@@ -1563,6 +1563,30 @@
       ]
     },
     {
+      "id": "oew-interactive",
+      "type": "interactive",
+      "title": "Interactive: Wallet Builder",
+      "order": 5,
+      "content": {
+        "type": "interactive",
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody{background:#0b1120;color:#e2e8f0;font-family:Inter,system-ui,sans-serif;padding:20px;margin:0;}\nh2{font-size:18px;margin:0 0 4px;}\n.sub{color:#64748b;font-size:12px;margin-bottom:16px;}\n.row{display:flex;gap:12px;margin-bottom:12px;flex-wrap:wrap;}\n.panel{background:#0f1f3d;border:1px solid #1e3a5f;border-radius:8px;padding:14px;flex:1;min-width:220px;}\nlabel{color:#94a3b8;font-size:11px;text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;}\ninput,select{width:100%;padding:8px 10px;background:#020817;border:1px solid #334155;color:#f1f5f9;border-radius:6px;font-size:13px;box-sizing:border-box;}\ninput[type=range]{padding:0;}\n.result{background:#020817;border:1px solid #334155;border-radius:6px;padding:10px;font-size:13px;margin-top:8px;}\n.big{font-size:22px;font-weight:800;}\n.stat{display:inline-block;background:#1e3a5f;border-radius:4px;padding:3px 10px;font-size:11px;font-weight:700;color:#60a5fa;margin:3px 2px;}\n.good{color:#22c55e;}.bad{color:#ef4444;}.warn{color:#f59e0b;}\n.btn{background:#3b82f6;color:#fff;border:none;padding:7px 18px;border-radius:6px;cursor:pointer;font-size:12px;font-weight:700;margin-top:8px;}\n.btn:hover{opacity:0.85;}\n.grid{display:grid;gap:8px;}\n.item{background:#020817;border:1px solid #334155;border-radius:6px;padding:8px 12px;font-size:12px;}\nh2{color:#22d3ee;}\n</style>\n</head>\n<body>\n<h2>🔐 Wallet Builder</h2>\n<p class=\"sub\">Walk through setting up a crypto wallet — generate an address, reveal a seed phrase, and test your security knowledge.</p>\n<div id=\"wizard\"></div>\n<script>\nconst WORDS=['apple','bright','carbon','dream','eagle','flame','grace','honor','ivory','jungle','karma','light'];\nconst ADDR='r'+Array.from({length:33},()=>'ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz0123456789'[Math.floor(Math.random()*58)]).join('');\nlet step=0,revealed=false,quizIdx=0,quizScore=0,chosen=null;\nconst QUIZ=[\n  {q:\"Where should you store your seed phrase?\",opts:[\"Screenshot on phone\",\"Paper written offline\",\"Cloud storage\",\"Text message\"],correct:1,explain:\"Paper offline only — never digital.\"},\n  {q:\"Your public address is safe to share — like your email address.\",opts:[\"True\",\"False\"],correct:0,explain:\"Anyone can see your public address. Your private key is the secret.\"},\n  {q:\"What happens if you lose your seed phrase AND your device breaks?\",opts:[\"Call support\",\"Reset with email\",\"Funds lost forever\",\"Blockchain restores it\"],correct:2,explain:\"There is no recovery. Your seed phrase IS your wallet.\"},\n];\nfunction render(){\n  const steps=['Generate','Backup','Quiz','Done'];\n  const bar=steps.map((s,i)=>`<div style=\"flex:1;height:3px;border-radius:2px;background:${i<=step?'#22d3ee':'#334155'};\"></div>`).join('');\n  let content='';\n  if(step===0){\n    content=`<div class=\"panel\"><label>Your Public Address (Safe to Share)</label><p style=\"font-family:monospace;font-size:10px;word-break:break-all;color:#22d3ee;\">${ADDR}</p><p style=\"font-size:11px;color:#64748b;\">Anyone can send XRP to this address.</p><button class=\"btn\" onclick=\"step=1;render()\">Next: Backup Seed Phrase →</button></div>`;\n  } else if(step===1){\n    content=`<div class=\"panel\"><label>Your Seed Phrase (NEVER Share This)</label>\n      <div style=\"position:relative;\">\n        <div style=\"display:grid;grid-template-columns:repeat(3,1fr);gap:6px;${!revealed?'filter:blur(6px);':''}\" id=\"words\">\n          ${WORDS.map((w,i)=>`<div class=\"item\" style=\"font-size:12px;\"><span style=\"color:#64748b;font-size:10px;\">${i+1}.</span> ${w}</div>`).join('')}\n        </div>\n        ${!revealed?`<div style=\"position:absolute;inset:0;display:flex;align-items:center;justify-content:center;\"><button class=\"btn\" onclick=\"revealed=true;render()\">👁️ Reveal</button></div>`:''}\n      </div>\n      ${revealed?`<div class=\"result\" style=\"margin-top:8px;border-color:#f59e0b;\"><span class=\"warn\" style=\"font-weight:700;\">⚠️ Write these 12 words on paper. NEVER type them online.</span></div>\n      <button class=\"btn\" onclick=\"step=2;render()\" style=\"margin-top:8px;\">I've Written It Down →</button>`:''}\n    </div>`;\n  } else if(step===2){\n    const q=QUIZ[quizIdx];\n    content=`<div class=\"panel\"><label>Security Quiz (${quizIdx+1}/${QUIZ.length})</label>\n      <p style=\"font-size:13px;font-weight:700;margin:0 0 10px;\">${q.q}</p>\n      ${q.opts.map((o,i)=>`<button onclick=\"ansQ(${i})\" style=\"display:block;width:100%;text-align:left;padding:8px;margin-bottom:6px;border:1px solid ${chosen===i?(i===q.correct?'#22c55e':'#ef4444'):(chosen!==null&&i===q.correct?'#22c55e':'#334155')};background:${chosen===i?(i===q.correct?'#166534':'#7f1d1d'):(chosen!==null&&i===q.correct?'#166534':'#020817')};color:#f1f5f9;border-radius:6px;cursor:pointer;font-size:12px;\">${o}</button>`).join('')}\n      ${chosen!==null?`<p style=\"font-size:11px;color:#94a3b8;margin:6px 0;\">${q.explain}</p><button class=\"btn\" onclick=\"nextQ()\">${quizIdx+1<QUIZ.length?'Next →':'Finish'}</button>`:''}\n    </div>`;\n  } else {\n    content=`<div class=\"result\"><span class=\"big ${quizScore===QUIZ.length?'good':'warn'}\">${quizScore}/${QUIZ.length}</span><p style=\"font-size:13px;color:#94a3b8;\">${quizScore===QUIZ.length?'Perfect! You're ready to manage your own wallet safely.':'Review the answers — wallet security has zero tolerance for mistakes.'}</p><p style=\"font-size:11px;color:#64748b;margin-top:8px;\">Public address = share freely. Seed phrase = never share. No seed = no recovery.</p></div>`;\n  }\n  document.getElementById('wizard').innerHTML=`<div style=\"display:flex;gap:4px;margin-bottom:16px;\">${bar}</div>${content}`;\n}\nfunction ansQ(i){if(chosen!==null)return;chosen=i;const q=QUIZ[quizIdx];if(i===q.correct)quizScore++;render();}\nfunction nextQ(){quizIdx++;chosen=null;if(quizIdx>=QUIZ.length)step=3;render();}\nrender();\n</script>\n</body>\n</html>"
+      },
+      "actions": [
+        {
+          "id": "action_oew-interactive_i0",
+          "type": "speech",
+          "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered.",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/5-0.mp3"
+        },
+        {
+          "id": "action_oew-interactive_i1",
+          "type": "speech",
+          "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading.",
+          "audioUrl": "/audio/lessons/oc-elem-wallets/5-1.mp3"
+        }
+      ]
+    },
+    {
       "id": "ew-s3",
       "type": "quiz",
       "title": "Knowledge Check — Wallets & Safety",
@@ -1683,7 +1707,7 @@
           }
         ]
       },
-      "order": 5,
+      "order": 6,
       "actions": [
         {
           "id": "action_ew-s3_q0",

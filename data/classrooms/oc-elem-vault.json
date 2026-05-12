@@ -636,6 +636,30 @@
       "order": 2
     },
     {
+      "id": "oev-interactive",
+      "type": "interactive",
+      "title": "Interactive: Portfolio Builder",
+      "order": 3,
+      "content": {
+        "type": "interactive",
+        "html": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody{background:#0b1120;color:#e2e8f0;font-family:Inter,system-ui,sans-serif;padding:20px;margin:0;}\nh2{font-size:18px;margin:0 0 4px;}\n.sub{color:#64748b;font-size:12px;margin-bottom:16px;}\n.row{display:flex;gap:12px;margin-bottom:12px;flex-wrap:wrap;}\n.panel{background:#0f1f3d;border:1px solid #1e3a5f;border-radius:8px;padding:14px;flex:1;min-width:220px;}\nlabel{color:#94a3b8;font-size:11px;text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px;}\ninput,select{width:100%;padding:8px 10px;background:#020817;border:1px solid #334155;color:#f1f5f9;border-radius:6px;font-size:13px;box-sizing:border-box;}\ninput[type=range]{padding:0;}\n.result{background:#020817;border:1px solid #334155;border-radius:6px;padding:10px;font-size:13px;margin-top:8px;}\n.big{font-size:22px;font-weight:800;}\n.stat{display:inline-block;background:#1e3a5f;border-radius:4px;padding:3px 10px;font-size:11px;font-weight:700;color:#60a5fa;margin:3px 2px;}\n.good{color:#22c55e;}.bad{color:#ef4444;}.warn{color:#f59e0b;}\n.btn{background:#3b82f6;color:#fff;border:none;padding:7px 18px;border-radius:6px;cursor:pointer;font-size:12px;font-weight:700;margin-top:8px;}\n.btn:hover{opacity:0.85;}\n.grid{display:grid;gap:8px;}\n.item{background:#020817;border:1px solid #334155;border-radius:6px;padding:8px 12px;font-size:12px;}\nh2{color:#f59e0b;}\n</style>\n</head>\n<body>\n<h2>💼 Portfolio Builder</h2>\n<p class=\"sub\">You have $1,000. Allocate it across assets in $100 increments. See your risk profile.</p>\n<div id=\"builder\"></div>\n<script>\nconst COINS=[\n  {id:'btc',name:'Bitcoin (BTC)',color:'#f59e0b',hint:'Store of value — lower relative risk'},\n  {id:'eth',name:'Ethereum (ETH)',color:'#60a5fa',hint:'Smart contract platform — medium risk'},\n  {id:'xrp',name:'XRP',color:'#22d3ee',hint:'Payments network — medium risk'},\n  {id:'sol',name:'Solana (SOL)',color:'#a78bfa',hint:'High-speed chain — higher risk'},\n  {id:'usdc',name:'Stablecoin (USDC)',color:'#22c55e',hint:'Stable $1 — no growth, no risk'},\n];\nlet alloc={btc:0,eth:0,xrp:0,sol:0,usdc:0},locked=false;\nconst TOTAL=1000;\nfunction used(){return Object.values(alloc).reduce((a,b)=>a+b,0);}\nfunction riskLabel(){\n  const stable=alloc.usdc;const btcEth=alloc.btc+alloc.eth;const sol=alloc.sol;\n  if(stable>=400)return{label:'Conservative',color:'#22c55e',tip:'Heavy stablecoin = safe but low growth.'};\n  if(btcEth>=600)return{label:'Balanced',color:'#60a5fa',tip:'BTC/ETH heavy = reasonable risk/reward.'};\n  if(sol>=400)return{label:'Aggressive',color:'#f59e0b',tip:'High SOL = big upside AND downside.'};\n  return{label:'Diversified',color:'#22d3ee',tip:'Spread reduces single-point risk.'};\n}\nfunction render(){\n  const u=used(),rem=TOTAL-u;\n  document.getElementById('builder').innerHTML=`\n    <div class=\"result\" style=\"margin-bottom:12px;\">\n      <div style=\"background:#334155;border-radius:4px;height:8px;overflow:hidden;\">\n        <div style=\"background:#3b82f6;height:100%;width:${u/TOTAL*100}%;transition:width 0.2s;\"></div>\n      </div>\n      <p style=\"font-size:12px;color:#94a3b8;margin:4px 0 0;\">$${u} allocated — $${rem} remaining</p>\n    </div>\n    ${COINS.map(c=>`\n      <div style=\"display:flex;align-items:center;gap:8px;margin-bottom:8px;padding:8px;background:#0f1f3d;border-radius:8px;border:1px solid #1e3a5f;\">\n        <div style=\"flex:1;\">\n          <p style=\"font-size:12px;font-weight:700;color:${c.color};margin:0;\">${c.name}</p>\n          <p style=\"font-size:10px;color:#64748b;margin:0;\">${c.hint}</p>\n        </div>\n        <div style=\"display:flex;align-items:center;gap:6px;\">\n          ${locked?'':'<button onclick=\"adj(''+c.id+'',false)\" style=\"padding:2px 10px;border:1px solid #334155;background:#020817;color:#f1f5f9;border-radius:4px;cursor:pointer;\">−</button>'}\n          <span style=\"font-size:14px;font-weight:800;min-width:52px;text-align:center;\">$${alloc[c.id]}</span>\n          ${locked?'':'<button onclick=\"adj(''+c.id+'',true)\" style=\"padding:2px 10px;border:1px solid #334155;background:#020817;color:#f1f5f9;border-radius:4px;cursor:pointer;\">+</button>'}\n        </div>\n      </div>`).join('')}\n    ${!locked?`<button class=\"btn\" onclick=\"analyze()\" ${u===0?'disabled':''} style=\"width:100%;\">Analyze Portfolio</button>`:\n    `<div class=\"result\"><p style=\"font-size:16px;font-weight:800;color:${riskLabel().color};\">Risk Profile: ${riskLabel().label}</p><p style=\"font-size:12px;color:#94a3b8;\">${riskLabel().tip}</p><p style=\"font-size:11px;color:#64748b;margin-top:6px;\">Rule: Never go 100% into one asset. Diversification is the only free lunch in investing.</p><button class=\"btn\" onclick=\"resetA()\" style=\"margin-top:8px;background:#334155;\">Reset</button></div>`}`;\n}\nfunction adj(id,up){if(locked)return;if(up&&used()<TOTAL)alloc[id]+=100;else if(!up&&alloc[id]>0)alloc[id]-=100;render();}\nfunction analyze(){locked=true;render();}\nfunction resetA(){locked=false;Object.keys(alloc).forEach(k=>alloc[k]=0);render();}\nrender();\n</script>\n</body>\n</html>"
+      },
+      "actions": [
+        {
+          "id": "action_oev-interactive_i0",
+          "type": "speech",
+          "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered.",
+          "audioUrl": "/audio/lessons/oc-elem-vault/3-0.mp3"
+        },
+        {
+          "id": "action_oev-interactive_i1",
+          "type": "speech",
+          "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading.",
+          "audioUrl": "/audio/lessons/oc-elem-vault/3-1.mp3"
+        }
+      ]
+    },
+    {
       "id": "ev-s3",
       "type": "quiz",
       "title": "Knowledge Check — Crypto Glossary",
@@ -756,7 +780,7 @@
           }
         ]
       },
-      "order": 3,
+      "order": 4,
       "actions": [
         {
           "id": "action_ev-s3_q0",
