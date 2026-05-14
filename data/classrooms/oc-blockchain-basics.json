@@ -853,7 +853,7 @@
         {
           "id": "action_bb-s3_3",
           "type": "speech",
-          "text": "Merkle Trees — Efficient Verification",
+          "text": "A Merkle Tree is a data structure that organizes all the transactions in a block into a binary tree of hashes, producing a single fingerprint at the top called the Merkle Root. That one 32-byte root represents every transaction in the block, and it lets you prove any single transaction is included with just a few hashes — no need to download the entire block.",
           "audioUrl": "/audio/lessons/oc-blockchain-basics/2-3.mp3"
         },
         {
