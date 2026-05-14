@@ -27,6 +27,7 @@ import {
   saveQuizResult,
   recordQuizFailure,
   getRetryUnlockMs,
+  getQuizFailCount,
   clearQuizCooldown,
   type QuizResult,
 } from '@/lib/utils/course-progress';
@@ -1172,6 +1173,15 @@ export function QuizView({ questions, sceneId, courseId, courseTitle, onComplete
                           Focus on the {incorrectQuestions.length} question{incorrectQuestions.length > 1 ? 's' : ''} marked incorrect below. Re-read the slides that cover those topics, then return to retake.
                         </p>
                       )}
+                      {courseId && (() => {
+                        const failCount = getQuizFailCount(courseId, sceneId);
+                        const nextCooldown = failCount >= 3 ? '12h' : failCount === 2 ? '12h' : failCount === 1 ? '6h' : '1h';
+                        return (
+                          <p className="text-xs text-red-500/70 dark:text-red-400/60 mt-1.5">
+                            Attempt {failCount} — next failure locks you out for {nextCooldown}.
+                          </p>
+                        );
+                      })()}
                     </div>
                   </div>
                   <div className="flex items-center gap-2 pt-1">

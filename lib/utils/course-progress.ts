@@ -2,8 +2,17 @@ const PROGRESS_KEY = 'oc_progress';
 const QUIZ_RESULTS_KEY = 'oc_quiz_results';
 const QUIZ_COOLDOWN_KEY = 'oc_quiz_cooldown';
 
-/** Cooldown period in milliseconds before a failed quiz can be retried (24 hours). */
-export const QUIZ_RETRY_COOLDOWN_MS = 24 * 60 * 60 * 1000;
+interface QuizCooldownEntry {
+  ts: number;       // timestamp of last failure
+  failCount: number; // total failures so far (1-indexed)
+}
+
+/** Escalating cooldown: fail 1 = 1hr, fail 2 = 6hr, fail 3+ = 12hr. */
+function getCooldownMs(failCount: number): number {
+  if (failCount <= 1) return 1 * 60 * 60 * 1000;
+  if (failCount === 2) return 6 * 60 * 60 * 1000;
+  return 12 * 60 * 60 * 1000;
+}
 
 export interface CourseProgress {
   completedIds: string[]; // course IDs fully completed
@@ -69,42 +78,68 @@ export function getQuizResult(courseId: string, sceneId: string): QuizResult | n
   }
 }
 
-function getCooldowns(): Record<string, number> {
+function getCooldowns(): Record<string, QuizCooldownEntry> {
   try {
     const raw = localStorage.getItem(QUIZ_COOLDOWN_KEY);
-    return raw ? JSON.parse(raw) : {};
+    if (!raw) return {};
+    const parsed = JSON.parse(raw);
+    // migrate legacy format (plain number timestamps → entry object)
+    const migrated: Record<string, QuizCooldownEntry> = {};
+    for (const [k, v] of Object.entries(parsed)) {
+      if (typeof v === 'number') {
+        migrated[k] = { ts: v, failCount: 1 };
+      } else {
+        migrated[k] = v as QuizCooldownEntry;
+      }
+    }
+    return migrated;
   } catch {
     return {};
   }
 }
 
-/** Record a failed attempt timestamp so retries are locked for QUIZ_RETRY_COOLDOWN_MS. */
+/** Record a failed attempt; increments fail count and starts escalating cooldown. */
 export function recordQuizFailure(courseId: string, sceneId: string): void {
   try {
     const key = `${courseId}::${sceneId}`;
     const cooldowns = getCooldowns();
-    cooldowns[key] = Date.now();
+    const prev = cooldowns[key];
+    cooldowns[key] = {
+      ts: Date.now(),
+      failCount: prev ? prev.failCount + 1 : 1,
+    };
     localStorage.setItem(QUIZ_COOLDOWN_KEY, JSON.stringify(cooldowns));
   } catch {}
 }
 
 /**
  * Returns milliseconds remaining before retry is allowed, or 0 if retry is allowed now.
- * A score >= 80% clears the cooldown (pass always allowed to proceed).
+ * Cooldown escalates: fail 1 = 1hr, fail 2 = 6hr, fail 3+ = 12hr.
  */
 export function getRetryUnlockMs(courseId: string, sceneId: string): number {
   try {
     const key = `${courseId}::${sceneId}`;
-    const ts = getCooldowns()[key];
-    if (!ts) return 0;
-    const remaining = ts + QUIZ_RETRY_COOLDOWN_MS - Date.now();
+    const entry = getCooldowns()[key];
+    if (!entry) return 0;
+    const cooldownMs = getCooldownMs(entry.failCount);
+    const remaining = entry.ts + cooldownMs - Date.now();
     return remaining > 0 ? remaining : 0;
   } catch {
     return 0;
   }
 }
 
-/** Clear the cooldown (called when a passing score is recorded). */
+/** Returns the current fail count for a quiz (0 if never failed). */
+export function getQuizFailCount(courseId: string, sceneId: string): number {
+  try {
+    const key = `${courseId}::${sceneId}`;
+    return getCooldowns()[key]?.failCount ?? 0;
+  } catch {
+    return 0;
+  }
+}
+
+/** Clear cooldown and fail count (called when a passing score is recorded). */
 export function clearQuizCooldown(courseId: string, sceneId: string): void {
   try {
     const key = `${courseId}::${sceneId}`;
