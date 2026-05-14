@@ -22,7 +22,14 @@ const log = createLogger('QuizView');
 import type { QuizQuestion } from '@/lib/types/stage';
 import { useDraftCache } from '@/lib/hooks/use-draft-cache';
 import { SpeechButton } from '@/components/audio/speech-button';
-import { getQuizResult, saveQuizResult, type QuizResult } from '@/lib/utils/course-progress';
+import {
+  getQuizResult,
+  saveQuizResult,
+  recordQuizFailure,
+  getRetryUnlockMs,
+  clearQuizCooldown,
+  type QuizResult,
+} from '@/lib/utils/course-progress';
 import { CertificateModal } from '@/components/certificate-modal';
 import { useSettingsStore } from '@/lib/store/settings';
 
@@ -273,6 +280,7 @@ function SingleChoiceQuestion({
   onChange,
   disabled,
   result,
+  hideCorrect,
 }: {
   question: QuizQuestion;
   index: number;
@@ -280,15 +288,16 @@ function SingleChoiceQuestion({
   onChange: (value: string) => void;
   disabled?: boolean;
   result?: QuestionResult;
+  hideCorrect?: boolean;
 }) {
   const isReview = !!result;
 
   return (
-    <QuestionCard question={question} index={index} result={result}>
+    <QuestionCard question={question} index={index} result={result} hideAnalysis={hideCorrect}>
       <div className="grid gap-2">
         {question.options?.map((opt) => {
           const selected = value === opt.value;
-          const isCorrectOpt = isReview && question.answer?.includes(opt.value);
+          const isCorrectOpt = isReview && !hideCorrect && question.answer?.includes(opt.value);
           const isWrong = isReview && selected && result?.status === 'incorrect';
 
           return (
@@ -366,6 +375,7 @@ function MultipleChoiceQuestion({
   onChange,
   disabled,
   result,
+  hideCorrect,
 }: {
   question: QuizQuestion;
   index: number;
@@ -373,6 +383,7 @@ function MultipleChoiceQuestion({
   onChange: (value: string[]) => void;
   disabled?: boolean;
   result?: QuestionResult;
+  hideCorrect?: boolean;
 }) {
   const isReview = !!result;
   const selected = value ?? [];
@@ -389,7 +400,7 @@ function MultipleChoiceQuestion({
   const { t } = useI18n();
 
   return (
-    <QuestionCard question={question} index={index} result={result}>
+    <QuestionCard question={question} index={index} result={result} hideAnalysis={hideCorrect}>
       {!isReview && (
         <p className="text-xs text-gray-400 dark:text-gray-500 mb-2">
           {t('quiz.multipleChoiceHint')}
@@ -398,7 +409,7 @@ function MultipleChoiceQuestion({
       <div className="grid gap-2">
         {question.options?.map((opt) => {
           const isSelected = selected.includes(opt.value);
-          const isCorrectOpt = isReview && question.answer?.includes(opt.value);
+          const isCorrectOpt = isReview && !hideCorrect && question.answer?.includes(opt.value);
           const isWrong = isReview && isSelected && !isCorrectOpt;
 
           return (
@@ -546,11 +557,13 @@ function QuestionCard({
   question,
   index,
   result,
+  hideAnalysis,
   children,
 }: {
   question: QuizQuestion;
   index: number;
   result?: QuestionResult;
+  hideAnalysis?: boolean;
   children: React.ReactNode;
 }) {
   const { t } = useI18n();
@@ -627,8 +640,8 @@ function QuestionCard({
       {/* Body */}
       {children}
 
-      {/* Analysis (review only) */}
-      {isReview && question.analysis && (
+      {/* Analysis (review only, hidden on failed attempts) */}
+      {isReview && !hideAnalysis && question.analysis && (
         <div className="mt-3 p-3 rounded-lg bg-blue-50/70 dark:bg-blue-900/30 border border-blue-100 dark:border-blue-800 text-xs text-blue-700 dark:text-blue-300 leading-relaxed">
           <span className="font-medium">{t('quiz.analysis')}</span>
           {question.analysis}
@@ -741,6 +754,9 @@ export function QuizView({ questions, sceneId, courseId, courseTitle, onComplete
   const [priorResult, setPriorResult] = useState<QuizResult | null>(null);
   const [showPriorCert, setShowPriorCert] = useState(false);
   const [results, setResults] = useState<QuestionResult[]>([]);
+  const [retryUnlockMs, setRetryUnlockMs] = useState(0);
+  const [retryCountdown, setRetryCountdown] = useState('');
+
 
   // Draft cache for quiz answers, keyed by sceneId to isolate across classrooms
   const {
@@ -828,11 +844,20 @@ export function QuizView({ questions, sceneId, courseId, courseTitle, onComplete
   }, [phase, questions, answers, locale]);
 
   const handleRetry = useCallback(() => {
+    if (!courseId) {
+      setPhase('not_started');
+      setAnswers({});
+      setResults([]);
+      clearAnswersCache();
+      return;
+    }
+    const ms = getRetryUnlockMs(courseId, sceneId);
+    if (ms > 0) return; // still locked — button should be disabled, but guard anyway
     setPhase('not_started');
     setAnswers({});
     setResults([]);
     clearAnswersCache();
-  }, [clearAnswersCache]);
+  }, [clearAnswersCache, courseId, sceneId]);
 
   const earnedScore = useMemo(() => results.reduce((sum, r) => sum + r.earned, 0), [results]);
 
@@ -846,19 +871,45 @@ export function QuizView({ questions, sceneId, courseId, courseTitle, onComplete
     }
   }, [courseId, sceneId]);
 
-  // Fire onComplete when quiz is reviewed and score >= 80%
+  // Fire onComplete on pass; record failure + cooldown on fail
   const onCompleteRef = useRef(onComplete);
   onCompleteRef.current = onComplete;
   useEffect(() => {
-    if (phase === 'reviewing' && totalPoints > 0 && onCompleteRef.current) {
-      const pct = Math.round((earnedScore / totalPoints) * 100);
-      if (pct >= 80) {
-        if (courseId) saveQuizResult(courseId, sceneId, earnedScore, totalPoints);
-        const t = setTimeout(() => onCompleteRef.current?.(earnedScore, totalPoints), 1200);
-        return () => clearTimeout(t);
+    if (phase !== 'reviewing' || totalPoints === 0) return;
+    const pct = Math.round((earnedScore / totalPoints) * 100);
+    if (pct >= 80) {
+      if (courseId) {
+        saveQuizResult(courseId, sceneId, earnedScore, totalPoints);
+        clearQuizCooldown(courseId, sceneId);
       }
+      const timer = setTimeout(() => onCompleteRef.current?.(earnedScore, totalPoints), 1200);
+      return () => clearTimeout(timer);
+    } else {
+      if (courseId) recordQuizFailure(courseId, sceneId);
     }
   }, [phase, earnedScore, totalPoints, courseId, sceneId]);
+
+  // Poll retry cooldown countdown while reviewing a failed attempt
+  useEffect(() => {
+    if (phase !== 'reviewing' || !courseId) return;
+    const pct = totalPoints > 0 ? Math.round((earnedScore / totalPoints) * 100) : 0;
+    if (pct >= 80) return;
+
+    const update = () => {
+      const ms = getRetryUnlockMs(courseId, sceneId);
+      setRetryUnlockMs(ms);
+      if (ms > 0) {
+        const h = Math.floor(ms / 3600000);
+        const m = Math.ceil((ms % 3600000) / 60000);
+        setRetryCountdown(h > 0 ? `${h}h ${m}m` : `${m}m`);
+      } else {
+        setRetryCountdown('');
+      }
+    };
+    update();
+    const id = setInterval(update, 60000);
+    return () => clearInterval(id);
+  }, [phase, courseId, sceneId, earnedScore, totalPoints]);
 
   const resultMap = useMemo(() => {
     const map: Record<string, QuestionResult> = {};
@@ -1065,7 +1116,12 @@ export function QuizView({ questions, sceneId, courseId, courseTitle, onComplete
           </motion.div>
         )}
 
-        {phase === 'reviewing' && (
+        {phase === 'reviewing' && (() => {
+          const pct = totalPoints > 0 ? Math.round((earnedScore / totalPoints) * 100) : 0;
+          const passed = pct >= 80;
+          const incorrectQuestions = results.filter((r) => r.status === 'incorrect');
+
+          return (
           <motion.div
             key="reviewing"
             initial={{ opacity: 0, x: 20 }}
@@ -1075,66 +1131,158 @@ export function QuizView({ questions, sceneId, courseId, courseTitle, onComplete
             {/* Header bar */}
             <div className="flex items-center justify-between px-6 py-3 border-b border-gray-100 dark:border-gray-700 bg-white/80 dark:bg-gray-900/80 backdrop-blur shrink-0">
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-emerald-500" />
+                {passed
+                  ? <CheckCircle2 className="w-4 h-4 text-emerald-500" />
+                  : <XCircle className="w-4 h-4 text-red-400" />
+                }
                 <span className="text-sm font-semibold text-gray-700 dark:text-gray-200">
                   {t('quiz.quizReport')}
                 </span>
               </div>
-              <button
-                onClick={handleRetry}
-                className="flex items-center gap-1.5 text-xs text-gray-500 dark:text-gray-400 hover:text-violet-600 dark:hover:text-violet-400 transition-colors"
-              >
-                <RotateCcw className="w-3.5 h-3.5" />
-                {t('quiz.retry')}
-              </button>
+              {passed && (
+                <button
+                  onClick={handleRetry}
+                  className="flex items-center gap-1.5 text-xs text-gray-500 dark:text-gray-400 hover:text-violet-600 dark:hover:text-violet-400 transition-colors"
+                >
+                  <RotateCcw className="w-3.5 h-3.5" />
+                  {t('quiz.retry')}
+                </button>
+              )}
             </div>
 
             {/* Results */}
             <div className="flex-1 overflow-y-auto px-6 py-4 space-y-4">
               <ScoreBanner score={earnedScore} total={totalPoints} results={results} />
 
-              {questions.map((q, i) => {
-                const r = resultMap[q.id];
-                if (q.type === 'single') {
-                  return (
-                    <SingleChoiceQuestion
-                      key={q.id}
-                      question={q}
-                      index={i}
-                      value={answers[q.id] as string | undefined}
-                      onChange={() => {}}
-                      disabled
-                      result={r}
-                    />
-                  );
-                }
-                if (q.type === 'multiple') {
-                  return (
-                    <MultipleChoiceQuestion
-                      key={q.id}
-                      question={q}
-                      index={i}
-                      value={answers[q.id] as string[] | undefined}
-                      onChange={() => {}}
-                      disabled
-                      result={r}
-                    />
-                  );
-                }
-                return (
-                  <ShortAnswerQuestion
-                    key={q.id}
-                    question={q}
-                    index={i}
-                    value={answers[q.id] as string | undefined}
-                    onChange={() => {}}
-                    disabled
-                    result={r}
-                  />
-                );
-              })}
+              {/* Fail: study direction + cooldown */}
+              {!passed && (
+                <motion.div
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="rounded-2xl border border-red-200 dark:border-red-800 bg-red-50 dark:bg-red-900/20 p-5 space-y-3"
+                >
+                  <div className="flex items-start gap-3">
+                    <BookOpenText className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
+                    <div>
+                      <p className="text-sm font-bold text-red-700 dark:text-red-400">
+                        You need 80% to pass. Go back and review the lesson before retrying.
+                      </p>
+                      {incorrectQuestions.length > 0 && (
+                        <p className="text-xs text-red-600/80 dark:text-red-400/70 mt-1">
+                          Focus on the {incorrectQuestions.length} question{incorrectQuestions.length > 1 ? 's' : ''} marked incorrect below. Re-read the slides that cover those topics, then return to retake.
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2 pt-1">
+                    <RotateCcw className="w-4 h-4 text-red-400 shrink-0" />
+                    {retryUnlockMs > 0 ? (
+                      <p className="text-xs text-red-600 dark:text-red-400 font-medium">
+                        Retry unlocks in <span className="font-bold">{retryCountdown}</span> — use that time to study.
+                      </p>
+                    ) : (
+                      <button
+                        onClick={handleRetry}
+                        className="text-xs font-bold text-red-600 dark:text-red-400 underline underline-offset-2 hover:text-red-800 dark:hover:text-red-300 transition-colors"
+                      >
+                        Retry now
+                      </button>
+                    )}
+                  </div>
+                </motion.div>
+              )}
 
-              {onNextLesson && earnedScore / Math.max(totalPoints, 1) >= 0.8 && (
+              {/* On fail: show only incorrect questions (no correct answers revealed) */}
+              {passed
+                ? questions.map((q, i) => {
+                    const r = resultMap[q.id];
+                    if (q.type === 'single') {
+                      return (
+                        <SingleChoiceQuestion
+                          key={q.id}
+                          question={q}
+                          index={i}
+                          value={answers[q.id] as string | undefined}
+                          onChange={() => {}}
+                          disabled
+                          result={r}
+                        />
+                      );
+                    }
+                    if (q.type === 'multiple') {
+                      return (
+                        <MultipleChoiceQuestion
+                          key={q.id}
+                          question={q}
+                          index={i}
+                          value={answers[q.id] as string[] | undefined}
+                          onChange={() => {}}
+                          disabled
+                          result={r}
+                        />
+                      );
+                    }
+                    return (
+                      <ShortAnswerQuestion
+                        key={q.id}
+                        question={q}
+                        index={i}
+                        value={answers[q.id] as string | undefined}
+                        onChange={() => {}}
+                        disabled
+                        result={r}
+                      />
+                    );
+                  })
+                : questions
+                    .filter((q) => resultMap[q.id]?.status === 'incorrect')
+                    .map((q, i) => {
+                      // Show the question and what the user answered, but NO correct answer highlights
+                      const r = resultMap[q.id];
+                      const failResult: QuestionResult = { ...r, status: 'incorrect' };
+                      if (q.type === 'single') {
+                        return (
+                          <SingleChoiceQuestion
+                            key={q.id}
+                            question={q}
+                            index={i}
+                            value={answers[q.id] as string | undefined}
+                            onChange={() => {}}
+                            disabled
+                            result={failResult}
+                            hideCorrect
+                          />
+                        );
+                      }
+                      if (q.type === 'multiple') {
+                        return (
+                          <MultipleChoiceQuestion
+                            key={q.id}
+                            question={q}
+                            index={i}
+                            value={answers[q.id] as string[] | undefined}
+                            onChange={() => {}}
+                            disabled
+                            result={failResult}
+                            hideCorrect
+                          />
+                        );
+                      }
+                      return (
+                        <ShortAnswerQuestion
+                          key={q.id}
+                          question={q}
+                          index={i}
+                          value={answers[q.id] as string | undefined}
+                          onChange={() => {}}
+                          disabled
+                          result={failResult}
+                        />
+                      );
+                    })
+              }
+
+              {onNextLesson && passed && (
                 <div className="pt-2 pb-4">
                   <button
                     onClick={onNextLesson}
@@ -1147,7 +1295,8 @@ export function QuizView({ questions, sceneId, courseId, courseTitle, onComplete
               )}
             </div>
           </motion.div>
-        )}
+          );
+        })()}
       </AnimatePresence>
     </div>
   );
