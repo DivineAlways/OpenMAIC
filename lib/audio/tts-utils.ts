@@ -12,6 +12,12 @@ const log = createLogger('TTS');
 const TTS_PRONUNCIATIONS: [RegExp, string][] = [
   [/24\/7\/365/g, '24 7 365'],
   [/24\/7/g, '24 7'],
+  // Numbers with B/b suffix → spoken form (e.g. "1.2B" → "1.2 billion")
+  [/(\d+(?:\.\d+)?)B\+/gi, '$1 billion plus'],
+  [/(\d+(?:\.\d+)?)B/gi, '$1 billion'],
+  // Numbers with M/m suffix → spoken form (e.g. "3.5M" → "3.5 million")
+  [/(\d+(?:\.\d+)?)M\+/gi, '$1 million plus'],
+  [/(\d+(?:\.\d+)?)M/gi, '$1 million'],
   // Numbers with k/K suffix → spoken form (e.g. "17k" → "17 thousand")
   [/(\d+(?:\.\d+)?)K\+/gi, '$1 thousand plus'],
   [/(\d+(?:\.\d+)?)K/gi, '$1 thousand'],

@@ -25,6 +25,12 @@ ELLIPSIS_RE = re.compile(r'\.{3,}|…')
 TTS_PRONUNCIATIONS = [
     (re.compile(r'24/7/365'), '24 7 365'),
     (re.compile(r'24/7'), '24 7'),
+    # Numbers with B/b suffix → spoken form (e.g. "1.2B" → "1.2 billion")
+    (re.compile(r'(\d+(?:\.\d+)?)B\+', re.IGNORECASE), r'\1 billion plus'),
+    (re.compile(r'(\d+(?:\.\d+)?)B', re.IGNORECASE), r'\1 billion'),
+    # Numbers with M/m suffix → spoken form (e.g. "3.5M" → "3.5 million")
+    (re.compile(r'(\d+(?:\.\d+)?)M\+', re.IGNORECASE), r'\1 million plus'),
+    (re.compile(r'(\d+(?:\.\d+)?)M', re.IGNORECASE), r'\1 million'),
     # Numbers with k/K suffix → spoken form (e.g. "17k" → "17 thousand")
     (re.compile(r'(\d+(?:\.\d+)?)K\+', re.IGNORECASE), r'\1 thousand plus'),
     (re.compile(r'(\d+(?:\.\d+)?)K', re.IGNORECASE), r'\1 thousand'),
