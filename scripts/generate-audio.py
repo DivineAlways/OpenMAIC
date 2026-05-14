@@ -25,6 +25,17 @@ ELLIPSIS_RE = re.compile(r'\.{3,}|…')
 TTS_PRONUNCIATIONS = [
     (re.compile(r'24/7/365'), '24 7 365'),
     (re.compile(r'24/7'), '24 7'),
+    # Numbers with k/K suffix → spoken form (e.g. "17k" → "17 thousand")
+    (re.compile(r'(\d+(?:\.\d+)?)K\+', re.IGNORECASE), r'\1 thousand plus'),
+    (re.compile(r'(\d+(?:\.\d+)?)K', re.IGNORECASE), r'\1 thousand'),
+    # Large numbers with commas → remove commas so TTS reads them correctly
+    (re.compile(r'(\d{1,3}),(\d{3}),(\d{3})'), r'\1\2\3'),
+    (re.compile(r'(\d{1,3}),(\d{3})'), r'\1\2'),
+    # tx/s and tx/sec → "transactions per second"
+    (re.compile(r'\btx/s\b', re.IGNORECASE), 'transactions per second'),
+    (re.compile(r'\btx/sec\b', re.IGNORECASE), 'transactions per second'),
+    # Hash/number symbol before digits → "number"
+    (re.compile(r'#(\d)'), r'number \1'),
     (re.compile(r'\bDeFi\b', re.IGNORECASE), 'Dee Fie'),
     (re.compile(r'\bNFTs\b'), 'en eff tees'),
     (re.compile(r'\bNFT\b'), 'en eff tee'),

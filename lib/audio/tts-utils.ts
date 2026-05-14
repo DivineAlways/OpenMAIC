@@ -12,6 +12,17 @@ const log = createLogger('TTS');
 const TTS_PRONUNCIATIONS: [RegExp, string][] = [
   [/24\/7\/365/g, '24 7 365'],
   [/24\/7/g, '24 7'],
+  // Numbers with k/K suffix → spoken form (e.g. "17k" → "17 thousand")
+  [/(\d+(?:\.\d+)?)K\+/gi, '$1 thousand plus'],
+  [/(\d+(?:\.\d+)?)K/gi, '$1 thousand'],
+  // Large numbers with commas → remove commas so TTS reads them correctly
+  [/(\d{1,3}),(\d{3}),(\d{3})/g, '$1$2$3'],
+  [/(\d{1,3}),(\d{3})/g, '$1$2'],
+  // tx/s and tx/sec → "transactions per second"
+  [/\btx\/s\b/gi, 'transactions per second'],
+  [/\btx\/sec\b/gi, 'transactions per second'],
+  // Hash/number symbol before digits → "number"
+  [/#(\d)/g, 'number $1'],
   [/\bDeFi\b/gi, 'Dee Fie'],
   [/\bNFTs\b/g, 'en eff tees'],
   [/\bNFT\b/g, 'en eff tee'],
@@ -40,7 +51,6 @@ const TTS_PRONUNCIATIONS: [RegExp, string][] = [
   [/\bBitunix\b/g, 'Bit-you-nix'],
   [/\bHODL\b/g, 'hoddle'],
   [/\bMACD\b/g, 'mac D'],
-  [/\bDeFi\b/g, 'Dee Fie'],
 ];
 
 /**

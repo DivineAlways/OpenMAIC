@@ -169,6 +169,10 @@ Both `generate-audio.py` (for Ava mp3s) and `lib/audio/tts-utils.ts` (for browse
 | `APR` | `A-P-R` |
 | `Bitunix` | `Bit-you-nix` |
 | `HODL` | `hoddle` |
+| `17k` / `24k` / `100K+` | `17 thousand` / `24 thousand` / `100 thousand plus` |
+| `17,000` / `24,000` | `17000` / `24000` (commas removed) |
+| `tx/s` / `tx/sec` | `transactions per second` |
+| `#3` / `#1` | `number 3` / `number 1` |
 
 Add new entries to **both** `scripts/generate-audio.py` (the `TTS_PRONUNCIATIONS` list) and `lib/audio/tts-utils.ts` (the `TTS_PRONUNCIATIONS` array) when you need a new correction.
 
