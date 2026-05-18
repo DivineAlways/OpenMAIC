@@ -28,8 +28,8 @@ export function LiveRoom({ roomUrl, token, sessionId, userId, isHost, onLeave }:
       frame = DailyIframe.createFrame(document.getElementById("daily-container")!, {
         iframeStyle: {
           position: "absolute",
-          top: 0,
-          left: 0,
+          top: "0",
+          left: "0",
           width: "100%",
           height: "100%",
           border: "none",
