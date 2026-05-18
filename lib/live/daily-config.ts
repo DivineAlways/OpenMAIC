@@ -60,9 +60,9 @@ export interface ChatMessage {
 
 // Stream type config
 export const STREAM_CONFIGS = {
-  "1on1":    { max_participants: 2,    label: "1-on-1 Tutoring",  icon: "👥" },
-  group:     { max_participants: 50,   label: "Group Class",      icon: "🎓" },
-  broadcast: { max_participants: 1000, label: "Live Broadcast",   icon: "📡" },
+  "1on1":    { max_participants: 2,   label: "1-on-1 Tutoring", icon: "👥" },
+  group:     { max_participants: 50,  label: "Group Class",      icon: "🎓" },
+  broadcast: { max_participants: 200, label: "Live Broadcast",   icon: "📡" },
 } as const
 
 async function dailyRequest(path: string, options: RequestInit = {}) {
@@ -82,16 +82,13 @@ async function dailyRequest(path: string, options: RequestInit = {}) {
 }
 
 export async function createDailyRoom(name: string, streamType: StreamType): Promise<DailyRoom> {
-  const config = STREAM_CONFIGS[streamType]
   return dailyRequest("/rooms", {
     method: "POST",
     body: JSON.stringify({
       name,
       properties: {
-        max_participants: config.max_participants,
-        enable_recording: "cloud",
         enable_chat: true,
-        exp: Math.floor(Date.now() / 1000) + 60 * 60 * 6, // 6 hour expiry
+        exp: Math.floor(Date.now() / 1000) + 60 * 60 * 6,
       },
     }),
   })
