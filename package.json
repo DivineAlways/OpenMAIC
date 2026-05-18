@@ -26,6 +26,8 @@
     "@base-ui/react": "^1.1.0",
     "@copilotkit/backend": "^0.37.0",
     "@copilotkit/runtime": "^1.51.2",
+    "@daily-co/daily-js": "^0.90.0",
+    "@daily-co/daily-react": "^0.25.2",
     "@fontsource-variable/inter": "^5.2.8",
     "@langchain/core": "^1.1.16",
     "@langchain/langgraph": "^1.1.1",

@@ -1,7 +1,6 @@
 "use client"
 
 import { useEffect, useCallback, useState } from "react"
-import DailyIframe from "@daily-co/daily-js"
 import { Mic, MicOff, Video, VideoOff, MonitorUp, Phone, MessageSquare, Users } from "lucide-react"
 
 interface LiveRoomProps {
@@ -24,44 +23,47 @@ export function LiveRoom({ roomUrl, token, sessionId, userId, isHost, onLeave }:
   const [ending, setEnding] = useState(false)
 
   useEffect(() => {
-    const frame = DailyIframe.createFrame(document.getElementById("daily-container")!, {
-      iframeStyle: {
-        position: "absolute",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "100%",
-        border: "none",
-        borderRadius: "12px",
-      },
-      showLeaveButton: false,
-      showFullscreenButton: true,
-    })
+    let frame: any
+    import("@daily-co/daily-js").then(({ default: DailyIframe }) => {
+      frame = DailyIframe.createFrame(document.getElementById("daily-container")!, {
+        iframeStyle: {
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          border: "none",
+          borderRadius: "12px",
+        },
+        showLeaveButton: false,
+        showFullscreenButton: true,
+      })
 
-    frame.join({ url: roomUrl, token })
+      frame.join({ url: roomUrl, token })
 
-    frame.on("participant-updated", () => {
-      setParticipantCount(Object.keys(frame.participants()).length)
-    })
-    frame.on("participant-joined", () => {
-      setParticipantCount(Object.keys(frame.participants()).length)
-    })
-    frame.on("participant-left", () => {
-      setParticipantCount(Object.keys(frame.participants()).length)
-    })
-    frame.on("app-message", ({ data }: any) => {
-      if (data?.type === "chat") {
-        setMessages((prev) => [...prev, { user: data.user, text: data.text, ts: Date.now() }])
-      }
-    })
-    frame.on("left-meeting", () => {
-      onLeave()
-    })
+      frame.on("participant-updated", () => {
+        setParticipantCount(Object.keys(frame.participants()).length)
+      })
+      frame.on("participant-joined", () => {
+        setParticipantCount(Object.keys(frame.participants()).length)
+      })
+      frame.on("participant-left", () => {
+        setParticipantCount(Object.keys(frame.participants()).length)
+      })
+      frame.on("app-message", ({ data }: any) => {
+        if (data?.type === "chat") {
+          setMessages((prev) => [...prev, { user: data.user, text: data.text, ts: Date.now() }])
+        }
+      })
+      frame.on("left-meeting", () => {
+        onLeave()
+      })
 
-    setCallFrame(frame)
+      setCallFrame(frame)
+    })
 
     return () => {
-      frame.destroy()
+      frame?.destroy()
     }
   }, [roomUrl, token, onLeave])
 
