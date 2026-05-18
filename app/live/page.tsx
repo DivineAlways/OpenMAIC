@@ -11,6 +11,7 @@ import type { LiveSession } from "@/lib/live/daily-config"
 interface UserInfo {
   id: string
   is_paid: boolean
+  is_admin: boolean
 }
 
 // Read user ID from SSO cookie payload (set by main platform SSO)
@@ -38,11 +39,15 @@ export default function LivePage() {
   } | null>(null)
 
   useEffect(() => {
-    // Get userId from query param (passed by main platform SSO) or sessionStorage
     const uid = getUserIdFromCookies()
     if (uid) {
       setUserId(uid)
       sessionStorage.setItem("oc_user_id", uid)
+      // Check if this user is an admin
+      fetch(`/api/live/user-info?uid=${encodeURIComponent(uid)}`)
+        .then(r => r.json())
+        .then(d => { if (d.user) setUserInfo(d.user) })
+        .catch(() => {})
     }
     fetchSessions()
   }, [])
@@ -122,7 +127,7 @@ export default function LivePage() {
             <p className="text-xs text-zinc-500">Join or host a live session</p>
           </div>
         </div>
-        {userId && (
+        {userInfo?.is_admin && (
           <button
             onClick={() => setShowGoLive(true)}
             className="flex items-center gap-2 px-4 py-2 rounded-xl bg-red-600 hover:bg-red-500 text-white text-xs font-black uppercase tracking-widest transition-colors"
