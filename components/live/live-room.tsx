@@ -21,6 +21,7 @@ export function LiveRoom({ roomUrl, token, sessionId, userId, isHost, onLeave }:
   const [messages, setMessages] = useState<{ user: string; text: string; ts: number }[]>([])
   const [chatInput, setChatInput] = useState("")
   const [ending, setEnding] = useState(false)
+  const [chatDropsAwarded, setChatDropsAwarded] = useState(false)
 
   useEffect(() => {
     let frame: any
@@ -103,7 +104,17 @@ export function LiveRoom({ roomUrl, token, sessionId, userId, isHost, onLeave }:
     callFrame.sendAppMessage({ type: "chat", user: "You", text: chatInput }, "*")
     setMessages((prev) => [...prev, { user: "You", text: chatInput, ts: Date.now() }])
     setChatInput("")
-  }, [callFrame, chatInput])
+
+    // Award 1,000 drops on first chat message in this session (fire-and-forget)
+    if (!chatDropsAwarded && userId) {
+      setChatDropsAwarded(true)
+      fetch("/api/live/chat-drops", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ user_id: userId, session_id: sessionId }),
+      }).catch(() => {})
+    }
+  }, [callFrame, chatInput, chatDropsAwarded, userId, sessionId])
 
   return (
     <div className="flex h-full min-h-[600px] bg-zinc-950 rounded-xl overflow-hidden border border-white/10">
