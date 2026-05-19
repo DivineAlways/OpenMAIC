@@ -12,6 +12,7 @@ interface UserInfo {
   id: string
   is_paid: boolean
   is_admin: boolean
+  can_go_live: boolean
 }
 
 // Read user ID from SSO cookie payload (set by main platform SSO)
@@ -127,7 +128,7 @@ export default function LivePage() {
             <p className="text-xs text-zinc-500">Join or host a live session</p>
           </div>
         </div>
-        {userInfo?.is_admin && (
+        {userInfo?.can_go_live && (
           <button
             onClick={() => setShowGoLive(true)}
             className="flex items-center gap-2 px-4 py-2 rounded-xl bg-red-600 hover:bg-red-500 text-white text-xs font-black uppercase tracking-widest transition-colors"

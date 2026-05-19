@@ -12,7 +12,7 @@ export async function GET(req: NextRequest) {
   const uid = req.nextUrl.searchParams.get("uid")
   if (!uid) return NextResponse.json({ user: null })
 
-  const rows = await supabaseGet("users", `id=eq.${uid}&select=id,is_paid,is_admin,membership_tier`)
+  const rows = await supabaseGet("users", `id=eq.${uid}&select=id,is_paid,is_admin,can_go_live`)
   if (!rows || rows.length === 0) return NextResponse.json({ user: null })
 
   const u = rows[0]
@@ -21,6 +21,7 @@ export async function GET(req: NextRequest) {
       id: u.id,
       is_paid: u.is_paid,
       is_admin: u.is_admin === true,
+      can_go_live: u.is_admin === true || u.can_go_live === true,
     },
   })
 }
