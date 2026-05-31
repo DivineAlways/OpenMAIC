@@ -18,7 +18,9 @@ export default function ClassroomError({
       <div className="text-center max-w-md px-6">
         <div className="text-4xl mb-4">⚠️</div>
         <h2 className="text-xl font-bold text-white mb-2">This lesson failed to load</h2>
-        <p className="text-gray-400 text-sm mb-2">{error?.message || 'An unexpected error occurred.'}</p>
+        <p className="text-gray-400 text-sm mb-2">
+          {error?.message || 'An unexpected error occurred.'}
+        </p>
         {error?.digest && (
           <p className="text-gray-600 text-xs mb-4 font-mono">Error ID: {error.digest}</p>
         )}
