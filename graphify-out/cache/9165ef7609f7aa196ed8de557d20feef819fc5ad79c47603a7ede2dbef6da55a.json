@@ -1,0 +1,180 @@
+{
+  "nodes": [
+    {
+      "id": "asr_settings",
+      "label": "asr-settings.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/asr-settings.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "asr_settings_handletoggleasrrecording",
+      "label": "handleToggleASRRecording()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/asr-settings.tsx",
+      "source_location": "L75"
+    },
+    {
+      "id": "asr_settings_handleadd",
+      "label": "handleAdd()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/asr-settings.tsx",
+      "source_location": "L520"
+    }
+  ],
+  "edges": [
+    {
+      "source": "asr_settings",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/asr-settings.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "asr_settings",
+      "target": "label",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/asr-settings.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "asr_settings",
+      "target": "input",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/asr-settings.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "asr_settings",
+      "target": "button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/asr-settings.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "asr_settings",
+      "target": "alert_dialog",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/asr-settings.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "asr_settings",
+      "target": "select",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/asr-settings.tsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "asr_settings",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/asr-settings.tsx",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "asr_settings",
+      "target": "settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/asr-settings.tsx",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "asr_settings",
+      "target": "constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/asr-settings.tsx",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "asr_settings",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/asr-settings.tsx",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "asr_settings",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/asr-settings.tsx",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "asr_settings",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/asr-settings.tsx",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "asr_settings",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/asr-settings.tsx",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "asr_settings",
+      "target": "sonner",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/asr-settings.tsx",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "asr_settings",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/asr-settings.tsx",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "asr_settings",
+      "target": "asr_settings_handletoggleasrrecording",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/asr-settings.tsx",
+      "source_location": "L75",
+      "weight": 1.0
+    },
+    {
+      "source": "asr_settings",
+      "target": "asr_settings_handleadd",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/asr-settings.tsx",
+      "source_location": "L520",
+      "weight": 1.0
+    }
+  ]
+}

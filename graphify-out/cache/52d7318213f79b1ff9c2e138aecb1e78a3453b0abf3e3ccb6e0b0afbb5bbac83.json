@@ -1,0 +1,122 @@
+{
+  "nodes": [
+    {
+      "id": "voice_resolver",
+      "label": "voice-resolver.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/voice-resolver.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "voice_resolver_resolveagentvoice",
+      "label": "resolveAgentVoice()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/voice-resolver.ts",
+      "source_location": "L17"
+    },
+    {
+      "id": "voice_resolver_getservervoicelist",
+      "label": "getServerVoiceList()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/voice-resolver.ts",
+      "source_location": "L64"
+    },
+    {
+      "id": "voice_resolver_getavailableproviderswithvoices",
+      "label": "getAvailableProvidersWithVoices()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/voice-resolver.ts",
+      "source_location": "L99"
+    },
+    {
+      "id": "voice_resolver_findvoicedisplayname",
+      "label": "findVoiceDisplayName()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/voice-resolver.ts",
+      "source_location": "L185"
+    }
+  ],
+  "edges": [
+    {
+      "source": "voice_resolver",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/voice-resolver.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "voice_resolver",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/voice-resolver.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "voice_resolver",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/voice-resolver.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "voice_resolver",
+      "target": "constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/voice-resolver.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "voice_resolver",
+      "target": "voice_resolver_resolveagentvoice",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/voice-resolver.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "voice_resolver",
+      "target": "voice_resolver_getservervoicelist",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/voice-resolver.ts",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "voice_resolver",
+      "target": "voice_resolver_getavailableproviderswithvoices",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/voice-resolver.ts",
+      "source_location": "L99",
+      "weight": 1.0
+    },
+    {
+      "source": "voice_resolver",
+      "target": "voice_resolver_findvoicedisplayname",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/voice-resolver.ts",
+      "source_location": "L185",
+      "weight": 1.0
+    },
+    {
+      "source": "voice_resolver_resolveagentvoice",
+      "target": "voice_resolver_getservervoicelist",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/voice-resolver.ts",
+      "source_location": "L32",
+      "weight": 1.0
+    }
+  ]
+}

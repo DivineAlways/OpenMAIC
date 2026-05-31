@@ -1,0 +1,122 @@
+{
+  "nodes": [
+    {
+      "id": "index",
+      "label": "index.js",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/index.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "index_mml2omml",
+      "label": "MML2OMML",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/index.js",
+      "source_location": "L4"
+    },
+    {
+      "id": "index_mml2omml_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/index.js",
+      "source_location": "L5"
+    },
+    {
+      "id": "index_mml2omml_run",
+      "label": ".run()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/index.js",
+      "source_location": "L12"
+    },
+    {
+      "id": "index_mml2omml_getresult",
+      "label": ".getResult()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/index.js",
+      "source_location": "L18"
+    }
+  ],
+  "edges": [
+    {
+      "source": "index",
+      "target": "parse_stringify",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/index.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "walker_js",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/index.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_mml2omml",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/index.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "index_mml2omml",
+      "target": "index_mml2omml_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/index.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "index_mml2omml",
+      "target": "index_mml2omml_run",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/index.js",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "index_mml2omml",
+      "target": "index_mml2omml_getresult",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/index.js",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_mml2omml",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/index.js",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "index_mml2omml",
+      "target": "index_mml2omml_run",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/index.js",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "index_mml2omml",
+      "target": "index_mml2omml_getresult",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/index.js",
+      "source_location": "L27",
+      "weight": 1.0
+    }
+  ]
+}

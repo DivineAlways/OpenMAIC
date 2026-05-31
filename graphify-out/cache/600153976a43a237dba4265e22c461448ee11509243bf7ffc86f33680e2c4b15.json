@@ -1,0 +1,31 @@
+{
+  "nodes": [
+    {
+      "id": "vitest_eval_config",
+      "label": "vitest.eval.config.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/vitest.eval.config.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "vitest_eval_config",
+      "target": "path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/vitest.eval.config.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "vitest_eval_config",
+      "target": "config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/vitest.eval.config.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "nodes": [
+    {
+      "id": "project_mcp",
+      "label": "project-mcp.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/project-mcp.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "project_mcp_projectmcp",
+      "label": "ProjectMCP",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/project-mcp.ts",
+      "source_location": "L10"
+    },
+    {
+      "id": "project_mcp_projectmcp_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/project-mcp.ts",
+      "source_location": "L13"
+    },
+    {
+      "id": "project_mcp_projectmcp_getprojectinfo",
+      "label": ".getProjectInfo()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/project-mcp.ts",
+      "source_location": "L17"
+    },
+    {
+      "id": "project_mcp_projectmcp_updatetitle",
+      "label": ".updateTitle()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/project-mcp.ts",
+      "source_location": "L25"
+    },
+    {
+      "id": "project_mcp_projectmcp_updatedescription",
+      "label": ".updateDescription()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/project-mcp.ts",
+      "source_location": "L33"
+    }
+  ],
+  "edges": [
+    {
+      "source": "project_mcp",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/project-mcp.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "project_mcp",
+      "target": "project_mcp_projectmcp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/project-mcp.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "project_mcp_projectmcp",
+      "target": "project_mcp_projectmcp_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/project-mcp.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "project_mcp_projectmcp",
+      "target": "project_mcp_projectmcp_getprojectinfo",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/project-mcp.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "project_mcp_projectmcp",
+      "target": "project_mcp_projectmcp_updatetitle",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/project-mcp.ts",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "project_mcp_projectmcp",
+      "target": "project_mcp_projectmcp_updatedescription",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/project-mcp.ts",
+      "source_location": "L33",
+      "weight": 1.0
+    }
+  ]
+}

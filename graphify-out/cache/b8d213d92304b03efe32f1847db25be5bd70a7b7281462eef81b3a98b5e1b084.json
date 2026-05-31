@@ -1,0 +1,72 @@
+{
+  "nodes": [
+    {
+      "id": "json_repair",
+      "label": "json-repair.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/json-repair.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "json_repair_parsejsonresponse",
+      "label": "parseJsonResponse()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/json-repair.ts",
+      "source_location": "L9"
+    },
+    {
+      "id": "json_repair_tryparsejson",
+      "label": "tryParseJson()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/json-repair.ts",
+      "source_location": "L100"
+    }
+  ],
+  "edges": [
+    {
+      "source": "json_repair",
+      "target": "jsonrepair",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/json-repair.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "json_repair",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/json-repair.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "json_repair",
+      "target": "json_repair_parsejsonresponse",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/json-repair.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "json_repair",
+      "target": "json_repair_tryparsejson",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/json-repair.ts",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "json_repair_parsejsonresponse",
+      "target": "json_repair_tryparsejson",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/json-repair.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    }
+  ]
+}

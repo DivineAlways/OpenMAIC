@@ -1,0 +1,56 @@
+{
+  "nodes": [
+    {
+      "id": "zoomwrapper",
+      "label": "ZoomWrapper.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/ZoomWrapper.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "zoomwrapper_zoomwrapper",
+      "label": "ZoomWrapper()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/ZoomWrapper.tsx",
+      "source_location": "L21"
+    }
+  ],
+  "edges": [
+    {
+      "source": "zoomwrapper",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/ZoomWrapper.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "zoomwrapper",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/ZoomWrapper.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "zoomwrapper",
+      "target": "action",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/ZoomWrapper.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "zoomwrapper",
+      "target": "zoomwrapper_zoomwrapper",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/ZoomWrapper.tsx",
+      "source_location": "L21",
+      "weight": 1.0
+    }
+  ]
+}

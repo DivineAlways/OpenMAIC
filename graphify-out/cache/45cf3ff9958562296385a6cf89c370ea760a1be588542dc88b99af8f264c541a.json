@@ -1,0 +1,99 @@
+{
+  "nodes": [
+    {
+      "id": "conversation",
+      "label": "conversation.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/conversation.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "conversation_conversation",
+      "label": "Conversation()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/conversation.tsx",
+      "source_location": "L12"
+    },
+    {
+      "id": "conversation_conversationcontent",
+      "label": "ConversationContent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/conversation.tsx",
+      "source_location": "L24"
+    }
+  ],
+  "edges": [
+    {
+      "source": "conversation",
+      "target": "button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/conversation.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "conversation",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/conversation.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "conversation",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/conversation.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "conversation",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/conversation.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "conversation",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/conversation.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "conversation",
+      "target": "use_stick_to_bottom",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/conversation.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "conversation",
+      "target": "conversation_conversation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/conversation.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "conversation",
+      "target": "conversation_conversationcontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/conversation.tsx",
+      "source_location": "L24",
+      "weight": 1.0
+    }
+  ]
+}

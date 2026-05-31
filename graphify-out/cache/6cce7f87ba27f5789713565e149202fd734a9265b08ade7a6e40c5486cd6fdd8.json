@@ -1,0 +1,47 @@
+{
+  "nodes": [
+    {
+      "id": "image_polygon_outline",
+      "label": "image-polygon-outline.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/ImageOutline/image-polygon-outline.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "image_polygon_outline_imagepolygonoutline",
+      "label": "ImagePolygonOutline()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/ImageOutline/image-polygon-outline.tsx",
+      "source_location": "L16"
+    }
+  ],
+  "edges": [
+    {
+      "source": "image_polygon_outline",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/ImageOutline/image-polygon-outline.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "image_polygon_outline",
+      "target": "useelementoutline",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/ImageOutline/image-polygon-outline.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "image_polygon_outline",
+      "target": "image_polygon_outline_imagepolygonoutline",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/ImageOutline/image-polygon-outline.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    }
+  ]
+}

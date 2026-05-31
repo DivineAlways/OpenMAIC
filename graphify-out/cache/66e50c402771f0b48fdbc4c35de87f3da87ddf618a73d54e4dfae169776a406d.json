@@ -1,0 +1,788 @@
+{
+  "nodes": [
+    {
+      "id": "prompt_input",
+      "label": "prompt-input.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "prompt_input_usepromptinputcontroller",
+      "label": "usePromptInputController()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L101"
+    },
+    {
+      "id": "prompt_input_useoptionalpromptinputcontroller",
+      "label": "useOptionalPromptInputController()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L112"
+    },
+    {
+      "id": "prompt_input_useproviderattachments",
+      "label": "useProviderAttachments()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L114"
+    },
+    {
+      "id": "prompt_input_useoptionalproviderattachments",
+      "label": "useOptionalProviderAttachments()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L124"
+    },
+    {
+      "id": "prompt_input_promptinputprovider",
+      "label": "PromptInputProvider()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L134"
+    },
+    {
+      "id": "prompt_input_usepromptinputattachments",
+      "label": "usePromptInputAttachments()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L256"
+    },
+    {
+      "id": "prompt_input_withinsize",
+      "label": "withinSize()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L495"
+    },
+    {
+      "id": "prompt_input_ondragover",
+      "label": "onDragOver()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L583"
+    },
+    {
+      "id": "prompt_input_ondrop",
+      "label": "onDrop()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L588"
+    },
+    {
+      "id": "prompt_input_handlekeydown",
+      "label": "handleKeyDown()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L782"
+    },
+    {
+      "id": "prompt_input_handlepaste",
+      "label": "handlePaste()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L812"
+    },
+    {
+      "id": "prompt_input_promptinputheader",
+      "label": "PromptInputHeader()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L865"
+    },
+    {
+      "id": "prompt_input_promptinputfooter",
+      "label": "PromptInputFooter()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L875"
+    },
+    {
+      "id": "prompt_input_promptinputtools",
+      "label": "PromptInputTools()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L885"
+    },
+    {
+      "id": "prompt_input_promptinputbutton",
+      "label": "PromptInputButton()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L891"
+    },
+    {
+      "id": "prompt_input_promptinputactionmenu",
+      "label": "PromptInputActionMenu()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L911"
+    },
+    {
+      "id": "prompt_input_promptinputactionmenutrigger",
+      "label": "PromptInputActionMenuTrigger()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L917"
+    },
+    {
+      "id": "prompt_input_promptinputactionmenucontent",
+      "label": "PromptInputActionMenuContent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L930"
+    },
+    {
+      "id": "prompt_input_promptinputactionmenuitem",
+      "label": "PromptInputActionMenuItem()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L938"
+    },
+    {
+      "id": "prompt_input_promptinputsubmit",
+      "label": "PromptInputSubmit()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L950"
+    },
+    {
+      "id": "prompt_input_promptinputspeechbutton",
+      "label": "PromptInputSpeechButton()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1035"
+    },
+    {
+      "id": "prompt_input_promptinputselect",
+      "label": "PromptInputSelect()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1133"
+    },
+    {
+      "id": "prompt_input_promptinputselecttrigger",
+      "label": "PromptInputSelectTrigger()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1137"
+    },
+    {
+      "id": "prompt_input_promptinputselectcontent",
+      "label": "PromptInputSelectContent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1153"
+    },
+    {
+      "id": "prompt_input_promptinputselectitem",
+      "label": "PromptInputSelectItem()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1160"
+    },
+    {
+      "id": "prompt_input_promptinputselectvalue",
+      "label": "PromptInputSelectValue()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1166"
+    },
+    {
+      "id": "prompt_input_promptinputhovercard",
+      "label": "PromptInputHoverCard()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1172"
+    },
+    {
+      "id": "prompt_input_promptinputhovercardtrigger",
+      "label": "PromptInputHoverCardTrigger()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1182"
+    },
+    {
+      "id": "prompt_input_promptinputhovercardcontent",
+      "label": "PromptInputHoverCardContent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1188"
+    },
+    {
+      "id": "prompt_input_promptinputtabslist",
+      "label": "PromptInputTabsList()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1195"
+    },
+    {
+      "id": "prompt_input_promptinputtab",
+      "label": "PromptInputTab()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1201"
+    },
+    {
+      "id": "prompt_input_promptinputtablabel",
+      "label": "PromptInputTabLabel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1207"
+    },
+    {
+      "id": "prompt_input_promptinputtabbody",
+      "label": "PromptInputTabBody()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1213"
+    },
+    {
+      "id": "prompt_input_promptinputtabitem",
+      "label": "PromptInputTabItem()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1219"
+    },
+    {
+      "id": "prompt_input_promptinputcommand",
+      "label": "PromptInputCommand()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1228"
+    },
+    {
+      "id": "prompt_input_promptinputcommandinput",
+      "label": "PromptInputCommandInput()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1234"
+    },
+    {
+      "id": "prompt_input_promptinputcommandlist",
+      "label": "PromptInputCommandList()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1240"
+    },
+    {
+      "id": "prompt_input_promptinputcommandempty",
+      "label": "PromptInputCommandEmpty()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1246"
+    },
+    {
+      "id": "prompt_input_promptinputcommandgroup",
+      "label": "PromptInputCommandGroup()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1252"
+    },
+    {
+      "id": "prompt_input_promptinputcommanditem",
+      "label": "PromptInputCommandItem()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1258"
+    }
+  ],
+  "edges": [
+    {
+      "source": "prompt_input",
+      "target": "button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "command",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "dropdown_menu",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "hover_card",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "input_group",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "select",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "ai",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "nanoid",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_usepromptinputcontroller",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L101",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_useoptionalpromptinputcontroller",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L112",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_useproviderattachments",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L114",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_useoptionalproviderattachments",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L124",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L134",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_usepromptinputattachments",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L256",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_withinsize",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L495",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_ondragover",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L583",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_ondrop",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L588",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_ondragover",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L607",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_ondrop",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L612",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_handlekeydown",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L782",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_handlepaste",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L812",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputheader",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L865",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputfooter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L875",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputtools",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L885",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputbutton",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L891",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputactionmenu",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L911",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputactionmenutrigger",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L917",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputactionmenucontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L930",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputactionmenuitem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L938",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputsubmit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L950",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputspeechbutton",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1035",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputselect",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1133",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputselecttrigger",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1137",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputselectcontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1153",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputselectitem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1160",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputselectvalue",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1166",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputhovercard",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1172",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputhovercardtrigger",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1182",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputhovercardcontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1188",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputtabslist",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1195",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputtab",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1201",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputtablabel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1207",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputtabbody",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1213",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputtabitem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1219",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputcommand",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1228",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputcommandinput",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1234",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputcommandlist",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1240",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputcommandempty",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1246",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputcommandgroup",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1252",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input",
+      "target": "prompt_input_promptinputcommanditem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L1258",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_input_usepromptinputattachments",
+      "target": "prompt_input_useoptionalproviderattachments",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/prompt-input.tsx",
+      "source_location": "L258",
+      "weight": 1.0
+    }
+  ]
+}

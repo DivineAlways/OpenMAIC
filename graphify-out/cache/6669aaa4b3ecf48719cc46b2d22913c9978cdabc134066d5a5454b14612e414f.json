@@ -1,0 +1,128 @@
+{
+  "nodes": [
+    {
+      "id": "canvas_area",
+      "label": "canvas-area.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/canvas/canvas-area.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "canvas_area_cn",
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/canvas/canvas-area.tsx",
+      "source_location": "L94"
+    }
+  ],
+  "edges": [
+    {
+      "source": "canvas_area",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/canvas/canvas-area.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "canvas_area",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/canvas/canvas-area.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "canvas_area",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/canvas/canvas-area.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "canvas_area",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/canvas/canvas-area.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "canvas_area",
+      "target": "scene_renderer",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/canvas/canvas-area.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "canvas_area",
+      "target": "scene_context",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/canvas/canvas-area.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "canvas_area",
+      "target": "whiteboard",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/canvas/canvas-area.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "canvas_area",
+      "target": "canvas_toolbar",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/canvas/canvas-area.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "canvas_area",
+      "target": "canvas_toolbar",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/canvas/canvas-area.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "canvas_area",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/canvas/canvas-area.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "canvas_area",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/canvas/canvas-area.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "canvas_area",
+      "target": "canvas_area_cn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/canvas/canvas-area.tsx",
+      "source_location": "L94",
+      "weight": 1.0
+    }
+  ]
+}

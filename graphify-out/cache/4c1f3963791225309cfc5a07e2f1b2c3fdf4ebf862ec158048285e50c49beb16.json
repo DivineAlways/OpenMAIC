@@ -1,0 +1,12 @@
+{
+  "nodes": [
+    {
+      "id": "image_clip",
+      "label": "image-clip.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/configs/image-clip.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": []
+}

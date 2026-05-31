@@ -1,0 +1,47 @@
+{
+  "nodes": [
+    {
+      "id": "index",
+      "label": "index.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/index.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "index_tableelement",
+      "label": "TableElement()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/index.tsx",
+      "source_location": "L18"
+    }
+  ],
+  "edges": [
+    {
+      "source": "index",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/index.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "statictable",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/index.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_tableelement",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/index.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    }
+  ]
+}

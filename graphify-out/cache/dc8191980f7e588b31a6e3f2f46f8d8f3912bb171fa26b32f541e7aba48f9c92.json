@@ -1,0 +1,12 @@
+{
+  "nodes": [
+    {
+      "id": "tags",
+      "label": "tags.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/html-parser/tags.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": []
+}

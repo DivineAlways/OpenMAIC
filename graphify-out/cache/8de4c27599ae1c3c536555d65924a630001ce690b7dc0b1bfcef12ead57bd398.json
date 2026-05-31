@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    {
+      "id": "mspace",
+      "label": "mspace.js",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/mspace.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "mspace_mspace",
+      "label": "mspace()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/mspace.js",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "mspace",
+      "target": "mspace_mspace",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/mspace.js",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ]
+}

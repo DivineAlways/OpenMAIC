@@ -1,0 +1,88 @@
+{
+  "nodes": [
+    {
+      "id": "geometry",
+      "label": "geometry.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/geometry.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "geometry_getelementpercentagegeometry",
+      "label": "getElementPercentageGeometry()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/geometry.ts",
+      "source_location": "L11"
+    },
+    {
+      "id": "geometry_findelementgeometry",
+      "label": "findElementGeometry()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/geometry.ts",
+      "source_location": "L55"
+    },
+    {
+      "id": "geometry_findnearestcorner",
+      "label": "findNearestCorner()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/geometry.ts",
+      "source_location": "L94"
+    }
+  ],
+  "edges": [
+    {
+      "source": "geometry",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/geometry.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "geometry",
+      "target": "action",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/geometry.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "geometry",
+      "target": "geometry_getelementpercentagegeometry",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/geometry.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "geometry",
+      "target": "geometry_findelementgeometry",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/geometry.ts",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "geometry",
+      "target": "geometry_findnearestcorner",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/geometry.ts",
+      "source_location": "L94",
+      "weight": 1.0
+    },
+    {
+      "source": "geometry_findelementgeometry",
+      "target": "geometry_getelementpercentagegeometry",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/geometry.ts",
+      "source_location": "L85",
+      "weight": 1.0
+    }
+  ]
+}

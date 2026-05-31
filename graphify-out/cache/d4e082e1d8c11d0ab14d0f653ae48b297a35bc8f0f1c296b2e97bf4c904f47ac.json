@@ -1,0 +1,131 @@
+{
+  "nodes": [
+    {
+      "id": "latex_to_omml",
+      "label": "latex-to-omml.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/latex-to-omml.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "latex_to_omml_stripunsupportedmathml",
+      "label": "stripUnsupportedMathML()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/latex-to-omml.ts",
+      "source_location": "L11"
+    },
+    {
+      "id": "latex_to_omml_buildmathrpr",
+      "label": "buildMathRPr()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/latex-to-omml.ts",
+      "source_location": "L25"
+    },
+    {
+      "id": "latex_to_omml_postprocessomml",
+      "label": "postProcessOmml()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/latex-to-omml.ts",
+      "source_location": "L41"
+    },
+    {
+      "id": "latex_to_omml_latextoomml",
+      "label": "latexToOmml()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/latex-to-omml.ts",
+      "source_location": "L70"
+    }
+  ],
+  "edges": [
+    {
+      "source": "latex_to_omml",
+      "target": "temml",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/latex-to-omml.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "latex_to_omml",
+      "target": "mathml2omml",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/latex-to-omml.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "latex_to_omml",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/latex-to-omml.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "latex_to_omml",
+      "target": "latex_to_omml_stripunsupportedmathml",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/latex-to-omml.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "latex_to_omml",
+      "target": "latex_to_omml_buildmathrpr",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/latex-to-omml.ts",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "latex_to_omml",
+      "target": "latex_to_omml_postprocessomml",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/latex-to-omml.ts",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "latex_to_omml",
+      "target": "latex_to_omml_latextoomml",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/latex-to-omml.ts",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
+      "source": "latex_to_omml_postprocessomml",
+      "target": "latex_to_omml_buildmathrpr",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/latex-to-omml.ts",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "latex_to_omml_latextoomml",
+      "target": "latex_to_omml_stripunsupportedmathml",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/latex-to-omml.ts",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "latex_to_omml_latextoomml",
+      "target": "latex_to_omml_postprocessomml",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/latex-to-omml.ts",
+      "source_location": "L76",
+      "weight": 1.0
+    }
+  ]
+}

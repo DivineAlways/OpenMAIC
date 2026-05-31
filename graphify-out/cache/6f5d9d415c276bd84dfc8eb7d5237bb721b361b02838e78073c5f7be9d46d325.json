@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "id": "tableelementoperate",
+      "label": "TableElementOperate.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/TableElementOperate.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "tableelementoperate_tableelementoperate",
+      "label": "TableElementOperate()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/TableElementOperate.tsx",
+      "source_location": "L21"
+    }
+  ],
+  "edges": [
+    {
+      "source": "tableelementoperate",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/TableElementOperate.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "tableelementoperate",
+      "target": "store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/TableElementOperate.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "tableelementoperate",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/TableElementOperate.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "tableelementoperate",
+      "target": "edit",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/TableElementOperate.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "tableelementoperate",
+      "target": "usecommonoperate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/TableElementOperate.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "tableelementoperate",
+      "target": "rotatehandler",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/TableElementOperate.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "tableelementoperate",
+      "target": "resizehandler",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/TableElementOperate.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "tableelementoperate",
+      "target": "borderline",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/TableElementOperate.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "tableelementoperate",
+      "target": "tableelementoperate_tableelementoperate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/TableElementOperate.tsx",
+      "source_location": "L21",
+      "weight": 1.0
+    }
+  ]
+}

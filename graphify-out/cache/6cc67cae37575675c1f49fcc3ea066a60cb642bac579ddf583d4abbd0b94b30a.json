@@ -1,0 +1,12 @@
+{
+  "nodes": [
+    {
+      "id": "svg_arc_to_cubic_bezier_d",
+      "label": "svg-arc-to-cubic-bezier.d.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/svg-arc-to-cubic-bezier.d.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": []
+}

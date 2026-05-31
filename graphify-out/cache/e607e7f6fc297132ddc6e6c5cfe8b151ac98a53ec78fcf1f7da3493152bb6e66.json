@@ -1,0 +1,22 @@
+{
+  "nodes": [
+    {
+      "id": "types",
+      "label": "types.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/playback/types.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "types",
+      "target": "playback_storage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/playback/types.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    }
+  ]
+}

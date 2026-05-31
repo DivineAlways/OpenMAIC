@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "create_selectors",
+      "label": "create-selectors.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/create-selectors.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "create_selectors_createselectors",
+      "label": "createSelectors()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/create-selectors.ts",
+      "source_location": "L7"
+    }
+  ],
+  "edges": [
+    {
+      "source": "create_selectors",
+      "target": "zustand",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/create-selectors.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "create_selectors",
+      "target": "create_selectors_createselectors",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/create-selectors.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    }
+  ]
+}

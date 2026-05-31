@@ -1,0 +1,47 @@
+{
+  "nodes": [
+    {
+      "id": "use_history_snapshot",
+      "label": "use-history-snapshot.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/hooks/use-history-snapshot.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "use_history_snapshot_usehistorysnapshot",
+      "label": "useHistorySnapshot()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/hooks/use-history-snapshot.ts",
+      "source_location": "L19"
+    }
+  ],
+  "edges": [
+    {
+      "source": "use_history_snapshot",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-history-snapshot.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "use_history_snapshot",
+      "target": "snapshot",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-history-snapshot.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "use_history_snapshot",
+      "target": "use_history_snapshot_usehistorysnapshot",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-history-snapshot.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    }
+  ]
+}

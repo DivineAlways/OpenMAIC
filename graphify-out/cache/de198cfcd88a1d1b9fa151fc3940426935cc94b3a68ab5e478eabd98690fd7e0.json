@@ -1,0 +1,169 @@
+{
+  "nodes": [
+    {
+      "id": "provider_config_panel",
+      "label": "provider-config-panel.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/provider-config-panel.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "provider_config_panel_handleapikeychange",
+      "label": "handleApiKeyChange()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/provider-config-panel.tsx",
+      "source_location": "L95"
+    },
+    {
+      "id": "provider_config_panel_handlebaseurlchange",
+      "label": "handleBaseUrlChange()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/provider-config-panel.tsx",
+      "source_location": "L100"
+    },
+    {
+      "id": "provider_config_panel_handlerequiresapikeychange",
+      "label": "handleRequiresApiKeyChange()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/provider-config-panel.tsx",
+      "source_location": "L105"
+    }
+  ],
+  "edges": [
+    {
+      "source": "provider_config_panel",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/provider-config-panel.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_panel",
+      "target": "button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/provider-config-panel.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_panel",
+      "target": "input",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/provider-config-panel.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_panel",
+      "target": "label",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/provider-config-panel.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_panel",
+      "target": "checkbox",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/provider-config-panel.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_panel",
+      "target": "alert_dialog",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/provider-config-panel.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_panel",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/provider-config-panel.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_panel",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/provider-config-panel.tsx",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_panel",
+      "target": "providers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/provider-config-panel.tsx",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_panel",
+      "target": "settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/provider-config-panel.tsx",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_panel",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/provider-config-panel.tsx",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_panel",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/provider-config-panel.tsx",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_panel",
+      "target": "provider_config_panel_handleapikeychange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/provider-config-panel.tsx",
+      "source_location": "L95",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_panel",
+      "target": "provider_config_panel_handlebaseurlchange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/provider-config-panel.tsx",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_panel",
+      "target": "provider_config_panel_handlerequiresapikeychange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/provider-config-panel.tsx",
+      "source_location": "L105",
+      "weight": 1.0
+    }
+  ]
+}

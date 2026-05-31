@@ -1,0 +1,369 @@
+{
+  "nodes": [
+    {
+      "id": "lexer",
+      "label": "lexer.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "lexer_jumpposition",
+      "label": "jumpPosition()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L10"
+    },
+    {
+      "id": "lexer_movepositopn",
+      "label": "movePositopn()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L15"
+    },
+    {
+      "id": "lexer_findtextend",
+      "label": "findTextEnd()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L19"
+    },
+    {
+      "id": "lexer_lextext",
+      "label": "lexText()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L35"
+    },
+    {
+      "id": "lexer_lexcomment",
+      "label": "lexComment()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L52"
+    },
+    {
+      "id": "lexer_lextagname",
+      "label": "lexTagName()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L71"
+    },
+    {
+      "id": "lexer_lextagattributes",
+      "label": "lexTagAttributes()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L100"
+    },
+    {
+      "id": "lexer_lexskiptag",
+      "label": "lexSkipTag()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L183"
+    },
+    {
+      "id": "lexer_lextag",
+      "label": "lexTag()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L223"
+    },
+    {
+      "id": "lexer_lex",
+      "label": "lex()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L246"
+    },
+    {
+      "id": "lexer_lexer",
+      "label": "lexer()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L266"
+    }
+  ],
+  "edges": [
+    {
+      "source": "lexer",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer",
+      "target": "tags",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer",
+      "target": "lexer_jumpposition",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer",
+      "target": "lexer_movepositopn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer",
+      "target": "lexer_findtextend",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer",
+      "target": "lexer_lextext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer",
+      "target": "lexer_lexcomment",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer",
+      "target": "lexer_lextagname",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer",
+      "target": "lexer_lextagattributes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer",
+      "target": "lexer_lexskiptag",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L183",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer",
+      "target": "lexer_lextag",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L223",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer",
+      "target": "lexer_lex",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L246",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer",
+      "target": "lexer_lexer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L266",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer_jumpposition",
+      "target": "lexer_movepositopn",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer_lextext",
+      "target": "lexer_findtextend",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer_lextext",
+      "target": "lexer_jumpposition",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer_lexcomment",
+      "target": "lexer_movepositopn",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer_lexcomment",
+      "target": "lexer_jumpposition",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer_lextagname",
+      "target": "lexer_jumpposition",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer_lextagattributes",
+      "target": "lexer_jumpposition",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L139",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer_lexskiptag",
+      "target": "lexer_lextext",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L192",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer_lexskiptag",
+      "target": "lexer_jumpposition",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L201",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer_lexskiptag",
+      "target": "lexer_lextag",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L202",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer_lextag",
+      "target": "lexer_movepositopn",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L227",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer_lextag",
+      "target": "lexer_lextagname",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L233",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer_lextag",
+      "target": "lexer_lextagattributes",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L234",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer_lex",
+      "target": "lexer_lextext",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L252",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer_lex",
+      "target": "lexer_lexcomment",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L256",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer_lex",
+      "target": "lexer_lextag",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L258",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer_lex",
+      "target": "lexer_lexskiptag",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L260",
+      "weight": 1.0
+    },
+    {
+      "source": "lexer_lexer",
+      "target": "lexer_lex",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/lexer.ts",
+      "source_location": "L272",
+      "weight": 1.0
+    }
+  ]
+}

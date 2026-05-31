@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "id": "chart",
+      "label": "Chart.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ChartElement/Chart.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "chart_chart",
+      "label": "Chart()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ChartElement/Chart.tsx",
+      "source_location": "L34"
+    }
+  ],
+  "edges": [
+    {
+      "source": "chart",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ChartElement/Chart.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "chart",
+      "target": "tinycolor2",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ChartElement/Chart.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "chart",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ChartElement/Chart.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "chart",
+      "target": "chartoption",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ChartElement/Chart.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "chart",
+      "target": "core",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ChartElement/Chart.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "chart",
+      "target": "charts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ChartElement/Chart.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "chart",
+      "target": "components",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ChartElement/Chart.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "chart",
+      "target": "renderers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ChartElement/Chart.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "chart",
+      "target": "chart_chart",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ChartElement/Chart.tsx",
+      "source_location": "L34",
+      "weight": 1.0
+    }
+  ]
+}

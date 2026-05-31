@@ -1,0 +1,76 @@
+{
+  "nodes": [
+    {
+      "id": "baseshapeelement",
+      "label": "BaseShapeElement.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ShapeElement/BaseShapeElement.tsx",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "baseshapeelement",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ShapeElement/BaseShapeElement.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "baseshapeelement",
+      "target": "useelementoutline",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ShapeElement/BaseShapeElement.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "baseshapeelement",
+      "target": "useelementshadow",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ShapeElement/BaseShapeElement.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "baseshapeelement",
+      "target": "useelementflip",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ShapeElement/BaseShapeElement.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "baseshapeelement",
+      "target": "useelementfill",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ShapeElement/BaseShapeElement.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "baseshapeelement",
+      "target": "gradientdefs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ShapeElement/BaseShapeElement.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "baseshapeelement",
+      "target": "patterndefs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ShapeElement/BaseShapeElement.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    }
+  ]
+}

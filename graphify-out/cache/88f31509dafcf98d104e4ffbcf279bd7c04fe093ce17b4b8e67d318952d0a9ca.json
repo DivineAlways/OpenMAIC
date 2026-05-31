@@ -1,0 +1,12 @@
+{
+  "nodes": [
+    {
+      "id": "hotkey",
+      "label": "hotkey.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/configs/hotkey.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": []
+}

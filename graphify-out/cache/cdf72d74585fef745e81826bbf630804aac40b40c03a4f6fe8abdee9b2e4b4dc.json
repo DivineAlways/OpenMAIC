@@ -1,0 +1,644 @@
+{
+  "nodes": [
+    {
+      "id": "gen_xml",
+      "label": "gen-xml.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "gen_xml_slideobjecttoxml",
+      "label": "slideObjectToXml()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L85"
+    },
+    {
+      "id": "gen_xml_slideobjectrelationstoxml",
+      "label": "slideObjectRelationsToXml()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L819"
+    },
+    {
+      "id": "gen_xml_genxmlparagraphproperties",
+      "label": "genXmlParagraphProperties()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L884"
+    },
+    {
+      "id": "gen_xml_genxmltextrunproperties",
+      "label": "genXmlTextRunProperties()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1011"
+    },
+    {
+      "id": "gen_xml_genxmltextrun",
+      "label": "genXmlTextRun()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1087"
+    },
+    {
+      "id": "gen_xml_genxmlbodyproperties",
+      "label": "genXmlBodyProperties()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1125"
+    },
+    {
+      "id": "gen_xml_genxmltextbody",
+      "label": "genXmlTextBody()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1206"
+    },
+    {
+      "id": "gen_xml_genxmlplaceholder",
+      "label": "genXmlPlaceholder()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1408"
+    },
+    {
+      "id": "gen_xml_makexmlconttypes",
+      "label": "makeXmlContTypes()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1431"
+    },
+    {
+      "id": "gen_xml_makexmlrootrels",
+      "label": "makeXmlRootRels()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1506"
+    },
+    {
+      "id": "gen_xml_makexmlapp",
+      "label": "makeXmlApp()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1520"
+    },
+    {
+      "id": "gen_xml_makexmlcore",
+      "label": "makeXmlCore()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1566"
+    },
+    {
+      "id": "gen_xml_makexmlpresentationrels",
+      "label": "makeXmlPresentationRels()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1584"
+    },
+    {
+      "id": "gen_xml_makexmlslide",
+      "label": "makeXmlSlide()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1611"
+    },
+    {
+      "id": "gen_xml_getnotesfromslide",
+      "label": "getNotesFromSlide()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1629"
+    },
+    {
+      "id": "gen_xml_makexmlnotesmaster",
+      "label": "makeXmlNotesMaster()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1643"
+    },
+    {
+      "id": "gen_xml_makexmlnotesslide",
+      "label": "makeXmlNotesSlide()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1652"
+    },
+    {
+      "id": "gen_xml_makexmllayout",
+      "label": "makeXmlLayout()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1663"
+    },
+    {
+      "id": "gen_xml_makexmlmaster",
+      "label": "makeXmlMaster()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1676"
+    },
+    {
+      "id": "gen_xml_makexmlslidelayoutrel",
+      "label": "makeXmlSlideLayoutRel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1728"
+    },
+    {
+      "id": "gen_xml_makexmlsliderel",
+      "label": "makeXmlSlideRel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1744"
+    },
+    {
+      "id": "gen_xml_makexmlnotessliderel",
+      "label": "makeXmlNotesSlideRel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1762"
+    },
+    {
+      "id": "gen_xml_makexmlmasterrel",
+      "label": "makeXmlMasterRel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1776"
+    },
+    {
+      "id": "gen_xml_makexmlnotesmasterrel",
+      "label": "makeXmlNotesMasterRel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1790"
+    },
+    {
+      "id": "gen_xml_getlayoutidxforslide",
+      "label": "getLayoutIdxForSlide()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1803"
+    },
+    {
+      "id": "gen_xml_makexmltheme",
+      "label": "makeXmlTheme()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1821"
+    },
+    {
+      "id": "gen_xml_makexmlpresentation",
+      "label": "makeXmlPresentation()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1834"
+    },
+    {
+      "id": "gen_xml_makexmlpresprops",
+      "label": "makeXmlPresProps()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1892"
+    },
+    {
+      "id": "gen_xml_makexmltablestyles",
+      "label": "makeXmlTableStyles()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1901"
+    },
+    {
+      "id": "gen_xml_makexmlviewprops",
+      "label": "makeXmlViewProps()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1909"
+    },
+    {
+      "id": "gen_xml_correctshadowoptions",
+      "label": "correctShadowOptions()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1917"
+    }
+  ],
+  "edges": [
+    {
+      "source": "gen_xml",
+      "target": "core_enums",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "core_interfaces",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_slideobjecttoxml",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_slideobjectrelationstoxml",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L819",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_genxmlparagraphproperties",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L884",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_genxmltextrunproperties",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1011",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_genxmltextrun",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1087",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_genxmlbodyproperties",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1125",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_genxmltextbody",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1206",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_genxmlplaceholder",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1408",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_makexmlconttypes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1431",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_makexmlrootrels",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1506",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_makexmlapp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1520",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_makexmlcore",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1566",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_makexmlpresentationrels",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1584",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_makexmlslide",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1611",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_getnotesfromslide",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1629",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_makexmlnotesmaster",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1643",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_makexmlnotesslide",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1652",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_makexmllayout",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1663",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_makexmlmaster",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1676",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_makexmlslidelayoutrel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1728",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_makexmlsliderel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1744",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_makexmlnotessliderel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1762",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_makexmlmasterrel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1776",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_makexmlnotesmasterrel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1790",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_getlayoutidxforslide",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1803",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_makexmltheme",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1821",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_makexmlpresentation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1834",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_makexmlpresprops",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1892",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_makexmltablestyles",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1901",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_makexmlviewprops",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1909",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml",
+      "target": "gen_xml_correctshadowoptions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1917",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml_genxmlparagraphproperties",
+      "target": "gen_xml_genxmltextrunproperties",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L998",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml_genxmltextrun",
+      "target": "gen_xml_genxmltextrunproperties",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1117",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml_genxmltextbody",
+      "target": "gen_xml_genxmlbodyproperties",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1220",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml_genxmltextbody",
+      "target": "gen_xml_genxmlparagraphproperties",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1226",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml_makexmlslide",
+      "target": "gen_xml_slideobjecttoxml",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1619",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml_makexmlnotesslide",
+      "target": "gen_xml_getnotesfromslide",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1654",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml_makexmllayout",
+      "target": "gen_xml_slideobjecttoxml",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1666",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml_makexmlmaster",
+      "target": "gen_xml_slideobjecttoxml",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1683",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml_makexmlslidelayoutrel",
+      "target": "gen_xml_slideobjectrelationstoxml",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1729",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml_makexmlsliderel",
+      "target": "gen_xml_slideobjectrelationstoxml",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1745",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml_makexmlsliderel",
+      "target": "gen_xml_getlayoutidxforslide",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1747",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_xml_makexmlmasterrel",
+      "target": "gen_xml_slideobjectrelationstoxml",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-xml.ts",
+      "source_location": "L1783",
+      "weight": 1.0
+    }
+  ]
+}

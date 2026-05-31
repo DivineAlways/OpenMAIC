@@ -1,0 +1,128 @@
+{
+  "nodes": [
+    {
+      "id": "basevideoelement",
+      "label": "BaseVideoElement.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/VideoElement/BaseVideoElement.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "basevideoelement_handleended",
+      "label": "handleEnded()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/VideoElement/BaseVideoElement.tsx",
+      "source_location": "L87"
+    }
+  ],
+  "edges": [
+    {
+      "source": "basevideoelement",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/VideoElement/BaseVideoElement.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "basevideoelement",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/VideoElement/BaseVideoElement.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "basevideoelement",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/VideoElement/BaseVideoElement.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "basevideoelement",
+      "target": "canvas",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/VideoElement/BaseVideoElement.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "basevideoelement",
+      "target": "media_generation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/VideoElement/BaseVideoElement.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "basevideoelement",
+      "target": "settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/VideoElement/BaseVideoElement.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "basevideoelement",
+      "target": "media_stage_context",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/VideoElement/BaseVideoElement.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "basevideoelement",
+      "target": "media_orchestrator",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/VideoElement/BaseVideoElement.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "basevideoelement",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/VideoElement/BaseVideoElement.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "basevideoelement",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/VideoElement/BaseVideoElement.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "basevideoelement",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/VideoElement/BaseVideoElement.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "basevideoelement",
+      "target": "basevideoelement_handleended",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/VideoElement/BaseVideoElement.tsx",
+      "source_location": "L87",
+      "weight": 1.0
+    }
+  ]
+}

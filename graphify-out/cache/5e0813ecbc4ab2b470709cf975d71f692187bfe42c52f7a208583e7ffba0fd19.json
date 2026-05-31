@@ -1,0 +1,342 @@
+{
+  "nodes": [
+    {
+      "id": "gen_charts",
+      "label": "gen-charts.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "gen_charts_createexcelworksheet",
+      "label": "createExcelWorksheet()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L32"
+    },
+    {
+      "id": "gen_charts_makexmlcharts",
+      "label": "makeXmlCharts()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L547"
+    },
+    {
+      "id": "gen_charts_makecharttype",
+      "label": "makeChartType()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L768"
+    },
+    {
+      "id": "gen_charts_makecataxis",
+      "label": "makeCatAxis()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L1636"
+    },
+    {
+      "id": "gen_charts_makevalaxis",
+      "label": "makeValAxis()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L1748"
+    },
+    {
+      "id": "gen_charts_makeseraxis",
+      "label": "makeSerAxis()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L1834"
+    },
+    {
+      "id": "gen_charts_genxmltitle",
+      "label": "genXmlTitle()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L1909"
+    },
+    {
+      "id": "gen_charts_getexcelcolname",
+      "label": "getExcelColName()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L1963"
+    },
+    {
+      "id": "gen_charts_createshadowelement",
+      "label": "createShadowElement()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L1986"
+    },
+    {
+      "id": "gen_charts_creategridlineelement",
+      "label": "createGridLineElement()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L2018"
+    },
+    {
+      "id": "gen_charts_createlinecap",
+      "label": "createLineCap()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L2031"
+    }
+  ],
+  "edges": [
+    {
+      "source": "gen_charts",
+      "target": "core_enums",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_charts",
+      "target": "core_interfaces",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_charts",
+      "target": "gen_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_charts",
+      "target": "jszip",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_charts",
+      "target": "gen_charts_createexcelworksheet",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_charts",
+      "target": "gen_charts_makexmlcharts",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L547",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_charts",
+      "target": "gen_charts_makecharttype",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L768",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_charts",
+      "target": "gen_charts_makecataxis",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L1636",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_charts",
+      "target": "gen_charts_makevalaxis",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L1748",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_charts",
+      "target": "gen_charts_makeseraxis",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L1834",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_charts",
+      "target": "gen_charts_genxmltitle",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L1909",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_charts",
+      "target": "gen_charts_getexcelcolname",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L1963",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_charts",
+      "target": "gen_charts_createshadowelement",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L1986",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_charts",
+      "target": "gen_charts_creategridlineelement",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L2018",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_charts",
+      "target": "gen_charts_createlinecap",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L2031",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_charts_makexmlcharts",
+      "target": "gen_charts_genxmltitle",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L562",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_charts_makexmlcharts",
+      "target": "gen_charts_makecharttype",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L619",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_charts_makexmlcharts",
+      "target": "gen_charts_makecataxis",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L633",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_charts_makexmlcharts",
+      "target": "gen_charts_makevalaxis",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L639",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_charts_makexmlcharts",
+      "target": "gen_charts_makeseraxis",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L648",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_charts_makecharttype",
+      "target": "gen_charts_createshadowelement",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L1516",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_charts_makecataxis",
+      "target": "gen_charts_creategridlineelement",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L1654",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_charts_makecataxis",
+      "target": "gen_charts_genxmltitle",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L1657",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_charts_makevalaxis",
+      "target": "gen_charts_creategridlineelement",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L1764",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_charts_makevalaxis",
+      "target": "gen_charts_genxmltitle",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L1767",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_charts_makeseraxis",
+      "target": "gen_charts_creategridlineelement",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L1843",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_charts_makeseraxis",
+      "target": "gen_charts_genxmltitle",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L1846",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_charts_creategridlineelement",
+      "target": "gen_charts_createlinecap",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-charts.ts",
+      "source_location": "L2021",
+      "weight": 1.0
+    }
+  ]
+}

@@ -668,9 +668,24 @@ export class PlaybackEngine {
       } else {
         // Prefer a natural-sounding male English voice
         const enVoices = voices.filter((v) => v.lang.startsWith('en'));
-        const PREFERRED_MALE = ['guy', 'david', 'daniel', 'james', 'ryan', 'eric', 'andrew', 'christopher', 'brian', 'reed'];
+        const PREFERRED_MALE = [
+          'guy',
+          'david',
+          'daniel',
+          'james',
+          'ryan',
+          'eric',
+          'andrew',
+          'christopher',
+          'brian',
+          'reed',
+        ];
         const naturalMale =
-          enVoices.find((v) => v.name.toLowerCase().includes('online') && PREFERRED_MALE.some((k) => v.name.toLowerCase().includes(k))) ??
+          enVoices.find(
+            (v) =>
+              v.name.toLowerCase().includes('online') &&
+              PREFERRED_MALE.some((k) => v.name.toLowerCase().includes(k)),
+          ) ??
           enVoices.find((v) => PREFERRED_MALE.some((k) => v.name.toLowerCase().includes(k))) ??
           enVoices.find((v) => v.lang === 'en-US') ??
           enVoices[0];

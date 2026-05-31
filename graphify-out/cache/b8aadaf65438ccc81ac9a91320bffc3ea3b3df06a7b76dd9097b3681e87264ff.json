@@ -1,0 +1,56 @@
+{
+  "nodes": [
+    {
+      "id": "process_sse_stream",
+      "label": "process-sse-stream.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/chat/process-sse-stream.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "process_sse_stream_processssestream",
+      "label": "processSSEStream()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/chat/process-sse-stream.ts",
+      "source_location": "L12"
+    }
+  ],
+  "edges": [
+    {
+      "source": "process_sse_stream",
+      "target": "chat",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/process-sse-stream.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "process_sse_stream",
+      "target": "stream_buffer",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/process-sse-stream.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "process_sse_stream",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/process-sse-stream.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "process_sse_stream",
+      "target": "process_sse_stream_processssestream",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/process-sse-stream.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    }
+  ]
+}

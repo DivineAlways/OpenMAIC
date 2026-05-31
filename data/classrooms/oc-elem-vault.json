@@ -9,11 +9,7 @@
     "updatedAt": "2026-04-24T12:00:00.000Z",
     "languageDirective": "en-US",
     "style": "academic",
-    "agentIds": [
-      "default-1",
-      "default-2",
-      "default-3"
-    ],
+    "agentIds": ["default-1", "default-2", "default-3"],
     "generatedAgentConfigs": []
   },
   "scenes": [
@@ -33,11 +29,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#8b5cf6",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#8b5cf6", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -51,10 +43,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf6",
               "fixedRatio": false
             },
@@ -67,10 +56,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -119,10 +105,7 @@
               "height": 120,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#10b98118",
               "fixedRatio": false,
               "outline": {
@@ -152,10 +135,7 @@
               "height": 120,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#3b82f618",
               "fixedRatio": false,
               "outline": {
@@ -185,10 +165,7 @@
               "height": 120,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf618",
               "fixedRatio": false,
               "outline": {
@@ -218,10 +195,7 @@
               "height": 120,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b18",
               "fixedRatio": false,
               "outline": {
@@ -342,11 +316,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#8b5cf6",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#8b5cf6", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -360,10 +330,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf6",
               "fixedRatio": false
             },
@@ -376,10 +343,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -428,10 +392,7 @@
               "height": 120,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#10b98118",
               "fixedRatio": false,
               "outline": {
@@ -461,10 +422,7 @@
               "height": 120,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#3b82f618",
               "fixedRatio": false,
               "outline": {
@@ -494,10 +452,7 @@
               "height": 120,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf618",
               "fixedRatio": false,
               "outline": {
@@ -527,10 +482,7 @@
               "height": 120,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b18",
               "fixedRatio": false,
               "outline": {
@@ -649,13 +601,13 @@
           "id": "action_oev-interactive_i0",
           "type": "speech",
           "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered.",
-          "audioUrl": "/audio/lessons/oc-elem-vault/3-0.mp3"
+          "audioUrl": "/audio/lessons/oc-elem-vault/2-0.mp3"
         },
         {
           "id": "action_oev-interactive_i1",
           "type": "speech",
           "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading.",
-          "audioUrl": "/audio/lessons/oc-elem-vault/3-1.mp3"
+          "audioUrl": "/audio/lessons/oc-elem-vault/2-1.mp3"
         }
       ]
     },
@@ -688,9 +640,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "HODL started as a typo for 'hold' that went viral. It means holding onto your crypto through price swings instead of panic-selling — a strategy many long-term investors swear by.",
             "points": 1
           },
@@ -716,9 +666,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "C"
-            ],
+            "answer": ["C"],
             "analysis": "A bull market is when prices are trending upward. The name comes from the image of a bull charging forward with horns up. Bear market is the opposite — prices trending down.",
             "points": 1
           },
@@ -744,9 +692,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "Gas fees are small charges you pay to the blockchain network to process your transaction. On Ethereum they can be high. On XRP they're fractions of a cent.",
             "points": 1
           },
@@ -772,9 +718,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "ATH = All Time High. When people say 'Bitcoin hit a new ATH,' it means Bitcoin just reached the highest price it has ever been in its history.",
             "points": 1
           }

@@ -1,0 +1,12 @@
+{
+  "nodes": [
+    {
+      "id": "pdf",
+      "label": "pdf.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/types/pdf.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": []
+}

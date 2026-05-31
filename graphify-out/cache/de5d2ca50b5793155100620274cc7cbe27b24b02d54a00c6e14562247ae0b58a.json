@@ -1,0 +1,12 @@
+{
+  "nodes": [
+    {
+      "id": "element",
+      "label": "element.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/configs/element.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": []
+}

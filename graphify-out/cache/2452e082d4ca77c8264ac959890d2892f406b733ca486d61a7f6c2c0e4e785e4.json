@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "svg2base64",
+      "label": "svg2base64.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/svg2base64.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "svg2base64_utf8encode",
+      "label": "utf8Encode()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/svg2base64.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "svg2base64_encode",
+      "label": "encode()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/svg2base64.ts",
+      "source_location": "L28"
+    },
+    {
+      "id": "svg2base64_svg2base64",
+      "label": "svg2Base64()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/svg2base64.ts",
+      "source_location": "L53"
+    }
+  ],
+  "edges": [
+    {
+      "source": "svg2base64",
+      "target": "svg2base64_utf8encode",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/svg2base64.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "svg2base64",
+      "target": "svg2base64_encode",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/svg2base64.ts",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "svg2base64",
+      "target": "svg2base64_svg2base64",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/svg2base64.ts",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "svg2base64_encode",
+      "target": "svg2base64_utf8encode",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/svg2base64.ts",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "svg2base64_svg2base64",
+      "target": "svg2base64_encode",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/svg2base64.ts",
+      "source_location": "L57",
+      "weight": 1.0
+    }
+  ]
+}

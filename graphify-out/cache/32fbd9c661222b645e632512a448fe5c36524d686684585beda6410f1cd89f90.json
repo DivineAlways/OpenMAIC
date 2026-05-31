@@ -1,0 +1,47 @@
+{
+  "nodes": [
+    {
+      "id": "usefilter",
+      "label": "useFilter.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/useFilter.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "usefilter_usefilter",
+      "label": "useFilter()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/useFilter.ts",
+      "source_location": "L8"
+    }
+  ],
+  "edges": [
+    {
+      "source": "usefilter",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/useFilter.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "usefilter",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/useFilter.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "usefilter",
+      "target": "usefilter_usefilter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/useFilter.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    }
+  ]
+}

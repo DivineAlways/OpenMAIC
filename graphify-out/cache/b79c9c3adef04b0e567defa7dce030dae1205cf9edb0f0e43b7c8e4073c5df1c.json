@@ -1,0 +1,95 @@
+{
+  "nodes": [
+    {
+      "id": "utils",
+      "label": "utils.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/utils.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "utils_formatcontextwindow",
+      "label": "formatContextWindow()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/utils.ts",
+      "source_location": "L12"
+    },
+    {
+      "id": "utils_getprovidertypelabel",
+      "label": "getProviderTypeLabel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/utils.ts",
+      "source_location": "L34"
+    },
+    {
+      "id": "utils_createcustomprovidersettings",
+      "label": "createCustomProviderSettings()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/utils.ts",
+      "source_location": "L41"
+    },
+    {
+      "id": "utils_createverifymodelrequest",
+      "label": "createVerifyModelRequest()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/utils.ts",
+      "source_location": "L66"
+    }
+  ],
+  "edges": [
+    {
+      "source": "utils",
+      "target": "provider",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/utils.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "utils",
+      "target": "settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/utils.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "utils",
+      "target": "utils_formatcontextwindow",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/utils.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "utils",
+      "target": "utils_getprovidertypelabel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/utils.ts",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "utils",
+      "target": "utils_createcustomprovidersettings",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/utils.ts",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "utils",
+      "target": "utils_createverifymodelrequest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/utils.ts",
+      "source_location": "L66",
+      "weight": 1.0
+    }
+  ]
+}

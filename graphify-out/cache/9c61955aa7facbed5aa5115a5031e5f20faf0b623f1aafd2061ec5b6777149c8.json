@@ -1,0 +1,435 @@
+{
+  "nodes": [
+    {
+      "id": "stream_buffer",
+      "label": "stream-buffer.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "stream_buffer_streambuffer",
+      "label": "StreamBuffer",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L163"
+    },
+    {
+      "id": "stream_buffer_streambuffer_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L194"
+    },
+    {
+      "id": "stream_buffer_streambuffer_pushagentstart",
+      "label": ".pushAgentStart()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L204"
+    },
+    {
+      "id": "stream_buffer_streambuffer_pushagentend",
+      "label": ".pushAgentEnd()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L210"
+    },
+    {
+      "id": "stream_buffer_streambuffer_pushtext",
+      "label": ".pushText()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L221"
+    },
+    {
+      "id": "stream_buffer_streambuffer_sealtext",
+      "label": ".sealText()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L239"
+    },
+    {
+      "id": "stream_buffer_streambuffer_pushaction",
+      "label": ".pushAction()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L250"
+    },
+    {
+      "id": "stream_buffer_streambuffer_pushthinking",
+      "label": ".pushThinking()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L256"
+    },
+    {
+      "id": "stream_buffer_streambuffer_pushcueuser",
+      "label": ".pushCueUser()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L261"
+    },
+    {
+      "id": "stream_buffer_streambuffer_pushdone",
+      "label": ".pushDone()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L266"
+    },
+    {
+      "id": "stream_buffer_streambuffer_pusherror",
+      "label": ".pushError()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L277"
+    },
+    {
+      "id": "stream_buffer_streambuffer_start",
+      "label": ".start()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L285"
+    },
+    {
+      "id": "stream_buffer_streambuffer_pause",
+      "label": ".pause()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L291"
+    },
+    {
+      "id": "stream_buffer_streambuffer_resume",
+      "label": ".resume()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L296"
+    },
+    {
+      "id": "stream_buffer_streambuffer_waituntildrained",
+      "label": ".waitUntilDrained()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L310"
+    },
+    {
+      "id": "stream_buffer_streambuffer_paused",
+      "label": ".paused()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L320"
+    },
+    {
+      "id": "stream_buffer_streambuffer_disposed",
+      "label": ".disposed()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L324"
+    },
+    {
+      "id": "stream_buffer_streambuffer_flush",
+      "label": ".flush()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L332"
+    },
+    {
+      "id": "stream_buffer_streambuffer_dispose",
+      "label": ".dispose()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L384"
+    },
+    {
+      "id": "stream_buffer_streambuffer_shutdown",
+      "label": ".shutdown()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L405"
+    },
+    {
+      "id": "stream_buffer_streambuffer_seallasttext",
+      "label": ".sealLastText()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L421"
+    },
+    {
+      "id": "stream_buffer_streambuffer_tick",
+      "label": ".tick()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L436"
+    },
+    {
+      "id": "stream_buffer_streambuffer_advancenontext",
+      "label": ".advanceNonText()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L620"
+    }
+  ],
+  "edges": [
+    {
+      "source": "stream_buffer",
+      "target": "chat",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer",
+      "target": "stream_buffer_streambuffer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L163",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer_streambuffer",
+      "target": "stream_buffer_streambuffer_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L194",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer_streambuffer",
+      "target": "stream_buffer_streambuffer_pushagentstart",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L204",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer_streambuffer",
+      "target": "stream_buffer_streambuffer_pushagentend",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L210",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer_streambuffer",
+      "target": "stream_buffer_streambuffer_pushtext",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L221",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer_streambuffer",
+      "target": "stream_buffer_streambuffer_sealtext",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L239",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer_streambuffer",
+      "target": "stream_buffer_streambuffer_pushaction",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L250",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer_streambuffer",
+      "target": "stream_buffer_streambuffer_pushthinking",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L256",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer_streambuffer",
+      "target": "stream_buffer_streambuffer_pushcueuser",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L261",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer_streambuffer",
+      "target": "stream_buffer_streambuffer_pushdone",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L266",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer_streambuffer",
+      "target": "stream_buffer_streambuffer_pusherror",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L277",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer_streambuffer",
+      "target": "stream_buffer_streambuffer_start",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L285",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer_streambuffer",
+      "target": "stream_buffer_streambuffer_pause",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L291",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer_streambuffer",
+      "target": "stream_buffer_streambuffer_resume",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L296",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer_streambuffer",
+      "target": "stream_buffer_streambuffer_waituntildrained",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L310",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer_streambuffer",
+      "target": "stream_buffer_streambuffer_paused",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L320",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer_streambuffer",
+      "target": "stream_buffer_streambuffer_disposed",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L324",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer_streambuffer",
+      "target": "stream_buffer_streambuffer_flush",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L332",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer_streambuffer",
+      "target": "stream_buffer_streambuffer_dispose",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L384",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer_streambuffer",
+      "target": "stream_buffer_streambuffer_shutdown",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L405",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer_streambuffer",
+      "target": "stream_buffer_streambuffer_seallasttext",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L421",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer_streambuffer",
+      "target": "stream_buffer_streambuffer_tick",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L436",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer_streambuffer",
+      "target": "stream_buffer_streambuffer_advancenontext",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L620",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer_streambuffer_pushagentstart",
+      "target": "stream_buffer_streambuffer_seallasttext",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L206",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer_streambuffer_pushagentend",
+      "target": "stream_buffer_streambuffer_seallasttext",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L212",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer_streambuffer_pushaction",
+      "target": "stream_buffer_streambuffer_seallasttext",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L252",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer_streambuffer_pushdone",
+      "target": "stream_buffer_streambuffer_seallasttext",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L273",
+      "weight": 1.0
+    },
+    {
+      "source": "stream_buffer_streambuffer_tick",
+      "target": "stream_buffer_streambuffer_advancenontext",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/buffer/stream-buffer.ts",
+      "source_location": "L458",
+      "weight": 1.0
+    }
+  ]
+}

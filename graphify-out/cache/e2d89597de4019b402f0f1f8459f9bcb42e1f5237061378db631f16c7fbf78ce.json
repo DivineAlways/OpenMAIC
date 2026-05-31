@@ -1,0 +1,222 @@
+{
+  "nodes": [
+    {
+      "id": "classroom_storage",
+      "label": "classroom-storage.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/classroom-storage.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "classroom_storage_ensuredir",
+      "label": "ensureDir()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/classroom-storage.ts",
+      "source_location": "L9"
+    },
+    {
+      "id": "classroom_storage_ensureclassroomsdir",
+      "label": "ensureClassroomsDir()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/classroom-storage.ts",
+      "source_location": "L13"
+    },
+    {
+      "id": "classroom_storage_ensureclassroomjobsdir",
+      "label": "ensureClassroomJobsDir()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/classroom-storage.ts",
+      "source_location": "L17"
+    },
+    {
+      "id": "classroom_storage_writejsonfileatomic",
+      "label": "writeJsonFileAtomic()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/classroom-storage.ts",
+      "source_location": "L21"
+    },
+    {
+      "id": "classroom_storage_buildrequestorigin",
+      "label": "buildRequestOrigin()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/classroom-storage.ts",
+      "source_location": "L31"
+    },
+    {
+      "id": "classroom_storage_isvalidclassroomid",
+      "label": "isValidClassroomId()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/classroom-storage.ts",
+      "source_location": "L44"
+    },
+    {
+      "id": "classroom_storage_readclassroom",
+      "label": "readClassroom()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/classroom-storage.ts",
+      "source_location": "L48"
+    },
+    {
+      "id": "classroom_storage_persistclassroom",
+      "label": "persistClassroom()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/classroom-storage.ts",
+      "source_location": "L61"
+    }
+  ],
+  "edges": [
+    {
+      "source": "classroom_storage",
+      "target": "fs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-storage.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_storage",
+      "target": "path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-storage.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_storage",
+      "target": "server",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-storage.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_storage",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-storage.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_storage",
+      "target": "classroom_storage_ensuredir",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-storage.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_storage",
+      "target": "classroom_storage_ensureclassroomsdir",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-storage.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_storage",
+      "target": "classroom_storage_ensureclassroomjobsdir",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-storage.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_storage",
+      "target": "classroom_storage_writejsonfileatomic",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-storage.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_storage",
+      "target": "classroom_storage_buildrequestorigin",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-storage.ts",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_storage",
+      "target": "classroom_storage_isvalidclassroomid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-storage.ts",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_storage",
+      "target": "classroom_storage_readclassroom",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-storage.ts",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_storage",
+      "target": "classroom_storage_persistclassroom",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-storage.ts",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_storage_ensureclassroomsdir",
+      "target": "classroom_storage_ensuredir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-storage.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_storage_ensureclassroomjobsdir",
+      "target": "classroom_storage_ensuredir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-storage.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_storage_writejsonfileatomic",
+      "target": "classroom_storage_ensuredir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-storage.ts",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_storage_persistclassroom",
+      "target": "classroom_storage_ensureclassroomsdir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-storage.ts",
+      "source_location": "L76",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_storage_persistclassroom",
+      "target": "classroom_storage_writejsonfileatomic",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-storage.ts",
+      "source_location": "L78",
+      "weight": 1.0
+    }
+  ]
+}

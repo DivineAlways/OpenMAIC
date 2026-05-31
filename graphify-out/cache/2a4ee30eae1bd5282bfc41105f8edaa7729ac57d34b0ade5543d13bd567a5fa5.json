@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    {
+      "id": "msqrt",
+      "label": "msqrt.js",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/msqrt.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "msqrt_msqrt",
+      "label": "msqrt()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/msqrt.js",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "msqrt",
+      "target": "msqrt_msqrt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/msqrt.js",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ]
+}

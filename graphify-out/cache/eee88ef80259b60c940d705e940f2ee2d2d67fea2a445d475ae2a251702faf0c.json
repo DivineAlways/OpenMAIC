@@ -1,0 +1,169 @@
+{
+  "nodes": [
+    {
+      "id": "scene_builder",
+      "label": "scene-builder.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-builder.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "scene_builder_uniquifymediaelementids",
+      "label": "uniquifyMediaElementIds()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-builder.ts",
+      "source_location": "L35"
+    },
+    {
+      "id": "scene_builder_buildscenefromoutline",
+      "label": "buildSceneFromOutline()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-builder.ts",
+      "source_location": "L68"
+    },
+    {
+      "id": "scene_builder_buildcompletescene",
+      "label": "buildCompleteScene()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-builder.ts",
+      "source_location": "L129"
+    }
+  ],
+  "edges": [
+    {
+      "source": "scene_builder",
+      "target": "nanoid",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-builder.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_builder",
+      "target": "generation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-builder.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_builder",
+      "target": "ai",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-builder.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_builder",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-builder.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_builder",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-builder.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_builder",
+      "target": "action",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-builder.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_builder",
+      "target": "outline_generator",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-builder.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_builder",
+      "target": "scene_generator",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-builder.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_builder",
+      "target": "pipeline_types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-builder.ts",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_builder",
+      "target": "prompt_formatters",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-builder.ts",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_builder",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-builder.ts",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_builder",
+      "target": "scene_builder_uniquifymediaelementids",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-builder.ts",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_builder",
+      "target": "scene_builder_buildscenefromoutline",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-builder.ts",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_builder",
+      "target": "scene_builder_buildcompletescene",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-builder.ts",
+      "source_location": "L129",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_builder_buildscenefromoutline",
+      "target": "scene_builder_buildcompletescene",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-builder.ts",
+      "source_location": "L123",
+      "weight": 1.0
+    }
+  ]
+}

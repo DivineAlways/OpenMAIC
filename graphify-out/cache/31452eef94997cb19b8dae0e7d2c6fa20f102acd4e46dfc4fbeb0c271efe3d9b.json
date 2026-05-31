@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    {
+      "id": "mglyph",
+      "label": "mglyph.js",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/mglyph.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "mglyph_mglyph",
+      "label": "mglyph()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/mglyph.js",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "mglyph",
+      "target": "mglyph_mglyph",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/mglyph.js",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ]
+}

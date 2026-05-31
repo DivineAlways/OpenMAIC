@@ -1,0 +1,126 @@
+{
+  "nodes": [
+    {
+      "id": "outline_generator",
+      "label": "outline-generator.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/outline-generator.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "outline_generator_generatesceneoutlinesfromrequirements",
+      "label": "generateSceneOutlinesFromRequirements()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/outline-generator.ts",
+      "source_location": "L26"
+    },
+    {
+      "id": "outline_generator_applyoutlinefallbacks",
+      "label": "applyOutlineFallbacks()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/outline-generator.ts",
+      "source_location": "L173"
+    }
+  ],
+  "edges": [
+    {
+      "source": "outline_generator",
+      "target": "nanoid",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/outline-generator.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "outline_generator",
+      "target": "generation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/outline-generator.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "outline_generator",
+      "target": "generation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/outline-generator.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "outline_generator",
+      "target": "prompts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/outline-generator.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "outline_generator",
+      "target": "prompt_formatters",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/outline-generator.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "outline_generator",
+      "target": "json_repair",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/outline-generator.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "outline_generator",
+      "target": "scene_builder",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/outline-generator.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "outline_generator",
+      "target": "pipeline_types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/outline-generator.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "outline_generator",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/outline-generator.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "outline_generator",
+      "target": "outline_generator_generatesceneoutlinesfromrequirements",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/outline-generator.ts",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "outline_generator",
+      "target": "outline_generator_applyoutlinefallbacks",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/outline-generator.ts",
+      "source_location": "L173",
+      "weight": 1.0
+    }
+  ]
+}

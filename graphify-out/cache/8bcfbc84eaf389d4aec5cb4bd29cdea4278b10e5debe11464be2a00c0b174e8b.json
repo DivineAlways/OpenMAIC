@@ -1,0 +1,47 @@
+{
+  "nodes": [
+    {
+      "id": "useelementfill",
+      "label": "useElementFill.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/hooks/useElementFill.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "useelementfill_useelementfill",
+      "label": "useElementFill()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/hooks/useElementFill.ts",
+      "source_location": "L10"
+    }
+  ],
+  "edges": [
+    {
+      "source": "useelementfill",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/hooks/useElementFill.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "useelementfill",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/hooks/useElementFill.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "useelementfill",
+      "target": "useelementfill_useelementfill",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/hooks/useElementFill.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "nodes": [
+    {
+      "id": "minimax_video_adapter",
+      "label": "minimax-video-adapter.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/minimax-video-adapter.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "minimax_video_adapter_submittask",
+      "label": "submitTask()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/minimax-video-adapter.ts",
+      "source_location": "L50"
+    },
+    {
+      "id": "minimax_video_adapter_polltaskstatus",
+      "label": "pollTaskStatus()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/minimax-video-adapter.ts",
+      "source_location": "L100"
+    },
+    {
+      "id": "minimax_video_adapter_retrievefiledownloadurl",
+      "label": "retrieveFileDownloadUrl()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/minimax-video-adapter.ts",
+      "source_location": "L122"
+    },
+    {
+      "id": "minimax_video_adapter_generatewithminimaxvideo",
+      "label": "generateWithMiniMaxVideo()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/minimax-video-adapter.ts",
+      "source_location": "L156"
+    },
+    {
+      "id": "minimax_video_adapter_testminimaxvideoconnectivity",
+      "label": "testMiniMaxVideoConnectivity()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/minimax-video-adapter.ts",
+      "source_location": "L202"
+    }
+  ],
+  "edges": [
+    {
+      "source": "minimax_video_adapter",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/minimax-video-adapter.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "minimax_video_adapter",
+      "target": "minimax_video_adapter_submittask",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/minimax-video-adapter.ts",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "minimax_video_adapter",
+      "target": "minimax_video_adapter_polltaskstatus",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/minimax-video-adapter.ts",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "minimax_video_adapter",
+      "target": "minimax_video_adapter_retrievefiledownloadurl",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/minimax-video-adapter.ts",
+      "source_location": "L122",
+      "weight": 1.0
+    },
+    {
+      "source": "minimax_video_adapter",
+      "target": "minimax_video_adapter_generatewithminimaxvideo",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/minimax-video-adapter.ts",
+      "source_location": "L156",
+      "weight": 1.0
+    },
+    {
+      "source": "minimax_video_adapter",
+      "target": "minimax_video_adapter_testminimaxvideoconnectivity",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/minimax-video-adapter.ts",
+      "source_location": "L202",
+      "weight": 1.0
+    },
+    {
+      "source": "minimax_video_adapter_generatewithminimaxvideo",
+      "target": "minimax_video_adapter_submittask",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/minimax-video-adapter.ts",
+      "source_location": "L161",
+      "weight": 1.0
+    },
+    {
+      "source": "minimax_video_adapter_generatewithminimaxvideo",
+      "target": "minimax_video_adapter_polltaskstatus",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/minimax-video-adapter.ts",
+      "source_location": "L170",
+      "weight": 1.0
+    },
+    {
+      "source": "minimax_video_adapter_generatewithminimaxvideo",
+      "target": "minimax_video_adapter_retrievefiledownloadurl",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/minimax-video-adapter.ts",
+      "source_location": "L178",
+      "weight": 1.0
+    }
+  ]
+}

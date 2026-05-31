@@ -1,0 +1,103 @@
+{
+  "nodes": [
+    {
+      "id": "general_settings",
+      "label": "general-settings.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/general-settings.tsx",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "general_settings",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/general-settings.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "general_settings",
+      "target": "label",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/general-settings.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "general_settings",
+      "target": "input",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/general-settings.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "general_settings",
+      "target": "button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/general-settings.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "general_settings",
+      "target": "alert_dialog",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/general-settings.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "general_settings",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/general-settings.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "general_settings",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/general-settings.tsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "general_settings",
+      "target": "database",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/general-settings.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "general_settings",
+      "target": "sonner",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/general-settings.tsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "general_settings",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/general-settings.tsx",
+      "source_location": "L20",
+      "weight": 1.0
+    }
+  ]
+}

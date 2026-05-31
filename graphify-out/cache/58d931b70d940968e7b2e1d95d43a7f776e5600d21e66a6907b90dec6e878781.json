@@ -1,0 +1,110 @@
+{
+  "nodes": [
+    {
+      "id": "index",
+      "label": "index.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TextElement/index.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "index_textelement",
+      "label": "TextElement()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TextElement/index.tsx",
+      "source_location": "L26"
+    }
+  ],
+  "edges": [
+    {
+      "source": "index",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TextElement/index.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "lodash",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TextElement/index.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TextElement/index.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "use_history_snapshot",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TextElement/index.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TextElement/index.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "useelementshadow",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TextElement/index.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "elementoutline",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TextElement/index.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "prosemirroreditor",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TextElement/index.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "use_canvas_operations",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TextElement/index.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_textelement",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TextElement/index.tsx",
+      "source_location": "L26",
+      "weight": 1.0
+    }
+  ]
+}

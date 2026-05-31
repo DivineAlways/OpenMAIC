@@ -1,0 +1,12 @@
+{
+  "nodes": [
+    {
+      "id": "constants",
+      "label": "constants.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/roundtable/constants.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": []
+}

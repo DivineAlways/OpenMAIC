@@ -265,19 +265,22 @@ async function generateEdgeTTS(config: TTSModelConfig, text: string): Promise<TT
   const execFileAsync = promisify(execFile);
 
   const voice = config.voice || 'en-US-AvaNeural';
-  const rate = config.speed && config.speed !== 1.0
-    ? `${config.speed > 1 ? '+' : ''}${Math.round((config.speed - 1) * 100)}%`
-    : '+0%';
+  const rate =
+    config.speed && config.speed !== 1.0
+      ? `${config.speed > 1 ? '+' : ''}${Math.round((config.speed - 1) * 100)}%`
+      : '+0%';
 
-  const outFile = join(tmpdir(), `edge-tts-${Date.now()}-${Math.random().toString(36).slice(2)}.mp3`);
+  const outFile = join(
+    tmpdir(),
+    `edge-tts-${Date.now()}-${Math.random().toString(36).slice(2)}.mp3`,
+  );
 
   try {
-    await execFileAsync('edge-tts', [
-      '--voice', voice,
-      '--rate', rate,
-      '--text', text,
-      '--write-media', outFile,
-    ], { timeout: 25000 });
+    await execFileAsync(
+      'edge-tts',
+      ['--voice', voice, '--rate', rate, '--text', text, '--write-media', outFile],
+      { timeout: 25000 },
+    );
 
     const audioBuffer = await readFile(outFile);
     return { audio: new Uint8Array(audioBuffer), format: 'mp3' };

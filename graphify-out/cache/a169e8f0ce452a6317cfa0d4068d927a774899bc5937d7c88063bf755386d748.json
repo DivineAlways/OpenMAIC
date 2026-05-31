@@ -1,0 +1,63 @@
+{
+  "nodes": [
+    {
+      "id": "tavily",
+      "label": "tavily.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/web-search/tavily.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "tavily_searchwithtavily",
+      "label": "searchWithTavily()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/web-search/tavily.ts",
+      "source_location": "L18"
+    },
+    {
+      "id": "tavily_formatsearchresultsascontext",
+      "label": "formatSearchResultsAsContext()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/web-search/tavily.ts",
+      "source_location": "L77"
+    }
+  ],
+  "edges": [
+    {
+      "source": "tavily",
+      "target": "proxy_fetch",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/web-search/tavily.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "tavily",
+      "target": "web_search",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/web-search/tavily.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "tavily",
+      "target": "tavily_searchwithtavily",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/web-search/tavily.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "tavily",
+      "target": "tavily_formatsearchresultsascontext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/web-search/tavily.ts",
+      "source_location": "L77",
+      "weight": 1.0
+    }
+  ]
+}

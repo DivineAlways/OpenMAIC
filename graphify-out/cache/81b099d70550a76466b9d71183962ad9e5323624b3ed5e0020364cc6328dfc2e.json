@@ -1,0 +1,45 @@
+{
+  "nodes": [
+    {
+      "id": "agent_templates",
+      "label": "agent-templates.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/agent-templates.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "agent_templates_getquestionagentprompt",
+      "label": "getQuestionAgentPrompt()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/agent-templates.ts",
+      "source_location": "L7"
+    },
+    {
+      "id": "agent_templates_getjudgeagentprompt",
+      "label": "getJudgeAgentPrompt()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/agent-templates.ts",
+      "source_location": "L30"
+    }
+  ],
+  "edges": [
+    {
+      "source": "agent_templates",
+      "target": "agent_templates_getquestionagentprompt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/agent-templates.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_templates",
+      "target": "agent_templates_getjudgeagentprompt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/agent-templates.ts",
+      "source_location": "L30",
+      "weight": 1.0
+    }
+  ]
+}

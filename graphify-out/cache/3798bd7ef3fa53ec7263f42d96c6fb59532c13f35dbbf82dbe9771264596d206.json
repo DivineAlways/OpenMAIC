@@ -1,0 +1,40 @@
+{
+  "nodes": [
+    {
+      "id": "controls",
+      "label": "controls.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/controls.tsx",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "controls",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/controls.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "controls",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/controls.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "controls",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/controls.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    }
+  ]
+}

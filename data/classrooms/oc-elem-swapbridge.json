@@ -9,11 +9,7 @@
     "updatedAt": "2026-04-26T12:00:00.000Z",
     "languageDirective": "en-US",
     "style": "academic",
-    "agentIds": [
-      "default-1",
-      "default-2",
-      "default-3"
-    ],
+    "agentIds": ["default-1", "default-2", "default-3"],
     "generatedAgentConfigs": []
   },
   "scenes": [
@@ -34,11 +30,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#8b5cf6",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#8b5cf6", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -52,10 +44,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf6",
               "fixedRatio": false
             },
@@ -68,10 +57,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -120,10 +106,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf620",
               "fixedRatio": false,
               "outline": {
@@ -153,10 +136,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf620",
               "fixedRatio": false,
               "outline": {
@@ -186,10 +166,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf620",
               "fixedRatio": false,
               "outline": {
@@ -219,10 +196,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf620",
               "fixedRatio": false,
               "outline": {
@@ -343,11 +317,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#8b5cf6",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#8b5cf6", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -361,10 +331,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf6",
               "fixedRatio": false
             },
@@ -377,10 +344,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -429,10 +393,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf620",
               "fixedRatio": false,
               "outline": {
@@ -462,10 +423,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf620",
               "fixedRatio": false,
               "outline": {
@@ -495,10 +453,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf620",
               "fixedRatio": false,
               "outline": {
@@ -528,10 +483,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf620",
               "fixedRatio": false,
               "outline": {
@@ -652,11 +604,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#8b5cf6",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#8b5cf6", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -670,10 +618,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf6",
               "fixedRatio": false
             },
@@ -686,10 +631,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -738,10 +680,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf620",
               "fixedRatio": false,
               "outline": {
@@ -771,10 +710,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf620",
               "fixedRatio": false,
               "outline": {
@@ -804,10 +740,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf620",
               "fixedRatio": false,
               "outline": {
@@ -837,10 +770,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf620",
               "fixedRatio": false,
               "outline": {
@@ -961,11 +891,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#8b5cf6",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#8b5cf6", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -979,10 +905,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf6",
               "fixedRatio": false
             },
@@ -995,10 +918,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -1047,10 +967,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf620",
               "fixedRatio": false,
               "outline": {
@@ -1080,10 +997,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf620",
               "fixedRatio": false,
               "outline": {
@@ -1113,10 +1027,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf620",
               "fixedRatio": false,
               "outline": {
@@ -1146,10 +1057,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf620",
               "fixedRatio": false,
               "outline": {
@@ -1307,9 +1215,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "Swapping means trading one crypto directly for another — for example, exchanging ETH for USDC. It can be done on a CEX (like Coinbase) or a DEX (like Uniswap) where a smart contract executes the trade automatically.",
             "points": 1
           },
@@ -1335,9 +1241,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "C"
-            ],
+            "answer": ["C"],
             "analysis": "Blockchains are separate networks that don't communicate natively. A bridge locks your tokens on Chain A and mints equivalent tokens on Chain B, allowing you to use your assets on a different network.",
             "points": 1
           },
@@ -1363,9 +1267,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "C"
-            ],
+            "answer": ["C"],
             "analysis": "DEX swaps are trustless. You connect your own wallet, the smart contract executes the trade, and you receive the new token directly. No company ever holds your funds — unlike a CEX where the platform has custody.",
             "points": 1
           },
@@ -1391,9 +1293,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "The most common expensive mistake: sending ETH on Ethereum mainnet to an address that expects ETH on Arbitrum. The funds appear lost because the receiving wallet isn't watching the right network. Always verify the network on both the sending and receiving side before confirming.",
             "points": 1
           },
@@ -1419,9 +1319,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "C"
-            ],
+            "answer": ["C"],
             "analysis": "Bridges aggregate enormous amounts of locked tokens — making them attractive targets. The Ronin bridge held $625M when hacked. The Wormhole bridge had $320M stolen. Only use bridges that are audited, battle-tested, and widely used by the community.",
             "points": 1
           }

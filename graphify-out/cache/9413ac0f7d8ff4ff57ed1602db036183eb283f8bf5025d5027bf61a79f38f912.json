@@ -1,0 +1,40 @@
+{
+  "nodes": [
+    {
+      "id": "stage",
+      "label": "stage.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/types/stage.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "stage",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/types/stage.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "action",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/types/stage.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/types/stage.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    }
+  ]
+}

@@ -1,0 +1,898 @@
+{
+  "nodes": [
+    {
+      "id": "patch_classrooms",
+      "label": "patch_classrooms.py",
+      "file_type": "code",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "patch_classrooms_shape",
+      "label": "shape()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L19"
+    },
+    {
+      "id": "patch_classrooms_txt",
+      "label": "txt()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L26"
+    },
+    {
+      "id": "patch_classrooms_title_text",
+      "label": "title_text()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L30"
+    },
+    {
+      "id": "patch_classrooms_subtitle_text",
+      "label": "subtitle_text()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L35"
+    },
+    {
+      "id": "patch_classrooms_stat_pill",
+      "label": "stat_pill()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L39"
+    },
+    {
+      "id": "patch_classrooms_card",
+      "label": "card()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L47"
+    },
+    {
+      "id": "patch_classrooms_two_panel",
+      "label": "two_panel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L56"
+    },
+    {
+      "id": "patch_classrooms_formula_spotlight",
+      "label": "formula_spotlight()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L70"
+    },
+    {
+      "id": "patch_classrooms_comparison_two",
+      "label": "comparison_two()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L83"
+    },
+    {
+      "id": "patch_classrooms_steps_flow",
+      "label": "steps_flow()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L98"
+    },
+    {
+      "id": "patch_classrooms_canvas_wrap",
+      "label": "canvas_wrap()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L114"
+    },
+    {
+      "id": "patch_classrooms_build_slide",
+      "label": "build_slide()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L132"
+    },
+    {
+      "id": "patch_classrooms_make_blockchain_slides",
+      "label": "make_blockchain_slides()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L897"
+    },
+    {
+      "id": "patch_classrooms_make_crypto_slides",
+      "label": "make_crypto_slides()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L980"
+    },
+    {
+      "id": "patch_classrooms_make_defi_slides",
+      "label": "make_defi_slides()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1059"
+    },
+    {
+      "id": "patch_classrooms_make_trading_slides",
+      "label": "make_trading_slides()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1133"
+    },
+    {
+      "id": "patch_classrooms_make_security_slides",
+      "label": "make_security_slides()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1202"
+    },
+    {
+      "id": "patch_classrooms_make_ecosystem_slides",
+      "label": "make_ecosystem_slides()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1275"
+    },
+    {
+      "id": "patch_classrooms_make_xrpl_slides",
+      "label": "make_xrpl_slides()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1351"
+    },
+    {
+      "id": "patch_classrooms_patch_classroom",
+      "label": "patch_classroom()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1441"
+    },
+    {
+      "id": "patch_classrooms_rationale_1",
+      "label": "Patches all 7 OC Academy classroom JSON files: 1. Adds quiz questions to every q",
+      "file_type": "rationale",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "patch_classrooms",
+      "target": "json",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms",
+      "target": "os",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms",
+      "target": "copy",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms",
+      "target": "patch_classrooms_shape",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms",
+      "target": "patch_classrooms_txt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms",
+      "target": "patch_classrooms_title_text",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms",
+      "target": "patch_classrooms_subtitle_text",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms",
+      "target": "patch_classrooms_stat_pill",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms",
+      "target": "patch_classrooms_card",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms",
+      "target": "patch_classrooms_two_panel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L56",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms",
+      "target": "patch_classrooms_formula_spotlight",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms",
+      "target": "patch_classrooms_comparison_two",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L83",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms",
+      "target": "patch_classrooms_steps_flow",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L98",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms",
+      "target": "patch_classrooms_canvas_wrap",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L114",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms",
+      "target": "patch_classrooms_build_slide",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L132",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms",
+      "target": "patch_classrooms_make_blockchain_slides",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L897",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms",
+      "target": "patch_classrooms_make_crypto_slides",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L980",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms",
+      "target": "patch_classrooms_make_defi_slides",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1059",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms",
+      "target": "patch_classrooms_make_trading_slides",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1133",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms",
+      "target": "patch_classrooms_make_security_slides",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1202",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms",
+      "target": "patch_classrooms_make_ecosystem_slides",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1275",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms",
+      "target": "patch_classrooms_make_xrpl_slides",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1351",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms",
+      "target": "patch_classrooms_patch_classroom",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1441",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_title_text",
+      "target": "patch_classrooms_txt",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_subtitle_text",
+      "target": "patch_classrooms_txt",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_stat_pill",
+      "target": "patch_classrooms_shape",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_stat_pill",
+      "target": "patch_classrooms_txt",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_card",
+      "target": "patch_classrooms_shape",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_card",
+      "target": "patch_classrooms_txt",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_two_panel",
+      "target": "patch_classrooms_shape",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_two_panel",
+      "target": "patch_classrooms_txt",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_formula_spotlight",
+      "target": "patch_classrooms_shape",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_formula_spotlight",
+      "target": "patch_classrooms_txt",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_comparison_two",
+      "target": "patch_classrooms_shape",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_comparison_two",
+      "target": "patch_classrooms_txt",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L88",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_steps_flow",
+      "target": "patch_classrooms_shape",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L105",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_steps_flow",
+      "target": "patch_classrooms_txt",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L106",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_build_slide",
+      "target": "patch_classrooms_shape",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L135",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_build_slide",
+      "target": "patch_classrooms_title_text",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L137",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_build_slide",
+      "target": "patch_classrooms_subtitle_text",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L138",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_build_slide",
+      "target": "patch_classrooms_stat_pill",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L142",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_build_slide",
+      "target": "patch_classrooms_canvas_wrap",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L144",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_blockchain_slides",
+      "target": "patch_classrooms_build_slide",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L902",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_blockchain_slides",
+      "target": "patch_classrooms_two_panel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L903",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_blockchain_slides",
+      "target": "patch_classrooms_formula_spotlight",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L916",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_blockchain_slides",
+      "target": "patch_classrooms_steps_flow",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L924",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_blockchain_slides",
+      "target": "patch_classrooms_comparison_two",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L936",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_blockchain_slides",
+      "target": "patch_classrooms_card",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L964",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_crypto_slides",
+      "target": "patch_classrooms_two_panel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L984",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_crypto_slides",
+      "target": "patch_classrooms_build_slide",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L991",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_crypto_slides",
+      "target": "patch_classrooms_formula_spotlight",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L996",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_crypto_slides",
+      "target": "patch_classrooms_steps_flow",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1003",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_crypto_slides",
+      "target": "patch_classrooms_comparison_two",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1015",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_crypto_slides",
+      "target": "patch_classrooms_card",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1033",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_defi_slides",
+      "target": "patch_classrooms_formula_spotlight",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1063",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_defi_slides",
+      "target": "patch_classrooms_build_slide",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1067",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_defi_slides",
+      "target": "patch_classrooms_two_panel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1079",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_defi_slides",
+      "target": "patch_classrooms_steps_flow",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1089",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_defi_slides",
+      "target": "patch_classrooms_card",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1118",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_trading_slides",
+      "target": "patch_classrooms_two_panel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1137",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_trading_slides",
+      "target": "patch_classrooms_build_slide",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1144",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_trading_slides",
+      "target": "patch_classrooms_formula_spotlight",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1157",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_trading_slides",
+      "target": "patch_classrooms_card",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1188",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_trading_slides",
+      "target": "patch_classrooms_steps_flow",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1192",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_security_slides",
+      "target": "patch_classrooms_steps_flow",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1206",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_security_slides",
+      "target": "patch_classrooms_build_slide",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1213",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_security_slides",
+      "target": "patch_classrooms_formula_spotlight",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1216",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_security_slides",
+      "target": "patch_classrooms_comparison_two",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1223",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_security_slides",
+      "target": "patch_classrooms_two_panel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1233",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_security_slides",
+      "target": "patch_classrooms_card",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1261",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_ecosystem_slides",
+      "target": "patch_classrooms_two_panel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1279",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_ecosystem_slides",
+      "target": "patch_classrooms_build_slide",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1286",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_ecosystem_slides",
+      "target": "patch_classrooms_formula_spotlight",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1289",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_ecosystem_slides",
+      "target": "patch_classrooms_comparison_two",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1298",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_ecosystem_slides",
+      "target": "patch_classrooms_card",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1325",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_ecosystem_slides",
+      "target": "patch_classrooms_steps_flow",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1331",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_xrpl_slides",
+      "target": "patch_classrooms_steps_flow",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1355",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_xrpl_slides",
+      "target": "patch_classrooms_build_slide",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1362",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_xrpl_slides",
+      "target": "patch_classrooms_two_panel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1367",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_xrpl_slides",
+      "target": "patch_classrooms_formula_spotlight",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1387",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_make_xrpl_slides",
+      "target": "patch_classrooms_comparison_two",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1396",
+      "weight": 1.0
+    },
+    {
+      "source": "patch_classrooms_rationale_1",
+      "target": "patch_classrooms",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/scripts/patch_classrooms.py",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ]
+}

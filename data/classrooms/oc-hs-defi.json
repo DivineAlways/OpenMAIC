@@ -9,11 +9,7 @@
     "updatedAt": "2026-04-24T12:00:00.000Z",
     "languageDirective": "en-US",
     "style": "academic",
-    "agentIds": [
-      "default-1",
-      "default-2",
-      "default-3"
-    ],
+    "agentIds": ["default-1", "default-2", "default-3"],
     "generatedAgentConfigs": []
   },
   "scenes": [
@@ -42,10 +38,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -58,10 +51,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -110,10 +100,7 @@
               "height": 130,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#3b82f615",
               "fixedRatio": false,
               "outline": {
@@ -204,10 +191,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -220,10 +204,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -284,10 +265,7 @@
               "height": 158,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b08",
               "fixedRatio": false,
               "outline": {
@@ -367,10 +345,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -383,10 +358,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -447,10 +419,7 @@
               "height": 80,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b10",
               "fixedRatio": false,
               "outline": {
@@ -480,10 +449,7 @@
               "height": 80,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#ef444410",
               "fixedRatio": false,
               "outline": {
@@ -513,10 +479,7 @@
               "height": 80,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#ef444420",
               "fixedRatio": false,
               "outline": {
@@ -613,10 +576,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -629,10 +589,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -669,10 +626,7 @@
               "height": 300,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#ef444408",
               "fixedRatio": false,
               "outline": {
@@ -714,10 +668,7 @@
               "height": 60,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#3b82f610",
               "fixedRatio": false,
               "outline": {
@@ -794,11 +745,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f97316",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#f97316", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -812,10 +759,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f97316",
               "fixedRatio": false
             },
@@ -828,10 +772,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -880,10 +821,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -913,10 +851,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -946,10 +881,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -979,10 +911,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -1103,11 +1032,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f97316",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#f97316", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1121,10 +1046,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f97316",
               "fixedRatio": false
             },
@@ -1137,10 +1059,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -1189,10 +1108,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -1222,10 +1138,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -1255,10 +1168,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -1288,10 +1198,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -1412,11 +1319,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f97316",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#f97316", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1430,10 +1333,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f97316",
               "fixedRatio": false
             },
@@ -1446,10 +1346,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -1498,10 +1395,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -1531,10 +1425,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -1564,10 +1455,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -1597,10 +1485,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -1758,9 +1643,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "When you buy token A from the pool, its reserve (x) decreases. Since k must remain constant, y must increase — meaning you get fewer of token A per unit of B. This is how the AMM automatically raises the price as you buy: less supply in the pool = higher price.",
             "points": 1
           },
@@ -1786,9 +1669,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "C"
-            ],
+            "answer": ["C"],
             "analysis": "Impermanent loss occurs because the AMM rebalances toward the underperforming token when prices move. If you had just held your tokens instead of depositing them in the pool, you'd have more of the one that appreciated. IL is 'impermanent' — if prices return to entry levels, it vanishes.",
             "points": 1
           },
@@ -1814,9 +1695,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "A rug pull is when project developers — often anonymous — use hidden contract functions to drain the liquidity pool or mint unlimited tokens and sell them, then disappear. Investors are left with tokens worth essentially nothing. It's the most common crypto scam.",
             "points": 1
           },
@@ -1842,9 +1721,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "C"
-            ],
+            "answer": ["C"],
             "analysis": "Legitimate protocols have multiple audits from well-known firms (like Trail of Bits or OpenZeppelin), make their code open-source for anyone to verify, and have track records of running without incidents. Very high APY with no explanation usually means unsustainable token emission — a red flag.",
             "points": 1
           },
@@ -1870,9 +1747,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "Oracles are the price feeds DeFi protocols rely on. Attackers can take out enormous flash loans (borrowed and repaid in one transaction), use them to move prices on a DEX, trick an oracle-dependent lending protocol into thinking collateral is worth more or less than it is, and profit from the exploit — all in seconds.",
             "points": 1
           },
@@ -1898,9 +1773,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "A health factor below 1.0 means your collateral value no longer covers your debt at the required ratio. Liquidation bots monitor positions 24/7 and will close your position, taking a discount on the collateral.",
             "points": 1
           },
@@ -1926,9 +1799,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "C"
-            ],
+            "answer": ["C"],
             "analysis": "Smart contracts cannot access external data on their own. Oracles (like Chainlink) feed price data, weather events, or other real-world information into contracts. Manipulating an oracle can drain lending protocols.",
             "points": 1
           }

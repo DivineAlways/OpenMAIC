@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    {
+      "id": "scriptlevel",
+      "label": "scriptlevel.js",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/ooml/scriptlevel.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "scriptlevel_addscriptlevel",
+      "label": "addScriptlevel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/ooml/scriptlevel.js",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "scriptlevel",
+      "target": "scriptlevel_addscriptlevel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/ooml/scriptlevel.js",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ]
+}

@@ -1,0 +1,402 @@
+{
+  "nodes": [
+    {
+      "id": "utils",
+      "label": "utils.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "utils_islist",
+      "label": "isList()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "utils_autoselectall",
+      "label": "autoSelectAll()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L10"
+    },
+    {
+      "id": "utils_addmark",
+      "label": "addMark()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L15"
+    },
+    {
+      "id": "utils_findnodeswithsamemark",
+      "label": "findNodesWithSameMark()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L28"
+    },
+    {
+      "id": "utils_equalnodetype",
+      "label": "equalNodeType()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L88"
+    },
+    {
+      "id": "utils_findparentnodeclosesttopos",
+      "label": "findParentNodeClosestToPos()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L92"
+    },
+    {
+      "id": "utils_findparentnode",
+      "label": "findParentNode()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L106"
+    },
+    {
+      "id": "utils_findparentnodeoftype",
+      "label": "findParentNodeOfType()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L110"
+    },
+    {
+      "id": "utils_isactiveofparentnodetype",
+      "label": "isActiveOfParentNodeType()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L118"
+    },
+    {
+      "id": "utils_getlasttextnode",
+      "label": "getLastTextNode()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L123"
+    },
+    {
+      "id": "utils_getmarkattrs",
+      "label": "getMarkAttrs()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L131"
+    },
+    {
+      "id": "utils_getattrvalue",
+      "label": "getAttrValue()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L141"
+    },
+    {
+      "id": "utils_isactivemark",
+      "label": "isActiveMark()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L152"
+    },
+    {
+      "id": "utils_markactive",
+      "label": "markActive()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L159"
+    },
+    {
+      "id": "utils_getattrvalueinselection",
+      "label": "getAttrValueInSelection()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L165"
+    },
+    {
+      "id": "utils_gettextattrs",
+      "label": "getTextAttrs()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L197"
+    },
+    {
+      "id": "utils_getfontsize",
+      "label": "getFontsize()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L241"
+    }
+  ],
+  "edges": [
+    {
+      "source": "utils",
+      "target": "prosemirror_model",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "utils",
+      "target": "prosemirror_state",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "utils",
+      "target": "prosemirror_view",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "utils",
+      "target": "prosemirror_commands",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "utils",
+      "target": "utils_islist",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "utils",
+      "target": "utils_autoselectall",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "utils",
+      "target": "utils_addmark",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "utils",
+      "target": "utils_findnodeswithsamemark",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "utils",
+      "target": "utils_equalnodetype",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L88",
+      "weight": 1.0
+    },
+    {
+      "source": "utils",
+      "target": "utils_findparentnodeclosesttopos",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L92",
+      "weight": 1.0
+    },
+    {
+      "source": "utils",
+      "target": "utils_findparentnode",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L106",
+      "weight": 1.0
+    },
+    {
+      "source": "utils",
+      "target": "utils_findparentnodeoftype",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L110",
+      "weight": 1.0
+    },
+    {
+      "source": "utils",
+      "target": "utils_isactiveofparentnodetype",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L118",
+      "weight": 1.0
+    },
+    {
+      "source": "utils",
+      "target": "utils_getlasttextnode",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L123",
+      "weight": 1.0
+    },
+    {
+      "source": "utils",
+      "target": "utils_getmarkattrs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L131",
+      "weight": 1.0
+    },
+    {
+      "source": "utils",
+      "target": "utils_getattrvalue",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L141",
+      "weight": 1.0
+    },
+    {
+      "source": "utils",
+      "target": "utils_isactivemark",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L152",
+      "weight": 1.0
+    },
+    {
+      "source": "utils",
+      "target": "utils_markactive",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L159",
+      "weight": 1.0
+    },
+    {
+      "source": "utils",
+      "target": "utils_getattrvalueinselection",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L165",
+      "weight": 1.0
+    },
+    {
+      "source": "utils",
+      "target": "utils_gettextattrs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L197",
+      "weight": 1.0
+    },
+    {
+      "source": "utils",
+      "target": "utils_getfontsize",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L241",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_isactiveofparentnodetype",
+      "target": "utils_findparentnodeoftype",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L120",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_getmarkattrs",
+      "target": "utils_getlasttextnode",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L136",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_gettextattrs",
+      "target": "utils_getmarkattrs",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L200",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_gettextattrs",
+      "target": "utils_isactivemark",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L202",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_gettextattrs",
+      "target": "utils_getattrvalue",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L209",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_gettextattrs",
+      "target": "utils_getattrvalueinselection",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L214",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_gettextattrs",
+      "target": "utils_isactiveofparentnodetype",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L215",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_getfontsize",
+      "target": "utils_getmarkattrs",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L242",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_getfontsize",
+      "target": "utils_getattrvalue",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/utils.ts",
+      "source_location": "L243",
+      "weight": 1.0
+    }
+  ]
+}

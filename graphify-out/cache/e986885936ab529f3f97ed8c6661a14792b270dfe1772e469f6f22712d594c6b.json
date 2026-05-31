@@ -1,0 +1,118 @@
+{
+  "nodes": [
+    {
+      "id": "browser_tts_preview",
+      "label": "browser-tts-preview.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/browser-tts-preview.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "browser_tts_preview_createaborterror",
+      "label": "createAbortError()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/browser-tts-preview.ts",
+      "source_location": "L14"
+    },
+    {
+      "id": "browser_tts_preview_inferpreviewlang",
+      "label": "inferPreviewLang()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/browser-tts-preview.ts",
+      "source_location": "L20"
+    },
+    {
+      "id": "browser_tts_preview_isbrowserttsaborterror",
+      "label": "isBrowserTTSAbortError()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/browser-tts-preview.ts",
+      "source_location": "L26"
+    },
+    {
+      "id": "browser_tts_preview_ensurevoicesloaded",
+      "label": "ensureVoicesLoaded()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/browser-tts-preview.ts",
+      "source_location": "L31"
+    },
+    {
+      "id": "browser_tts_preview_resolvebrowservoice",
+      "label": "resolveBrowserVoice()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/browser-tts-preview.ts",
+      "source_location": "L72"
+    },
+    {
+      "id": "browser_tts_preview_playbrowserttspreview",
+      "label": "playBrowserTTSPreview()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/browser-tts-preview.ts",
+      "source_location": "L99"
+    }
+  ],
+  "edges": [
+    {
+      "source": "browser_tts_preview",
+      "target": "browser_tts_preview_createaborterror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/browser-tts-preview.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "browser_tts_preview",
+      "target": "browser_tts_preview_inferpreviewlang",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/browser-tts-preview.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "browser_tts_preview",
+      "target": "browser_tts_preview_isbrowserttsaborterror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/browser-tts-preview.ts",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "browser_tts_preview",
+      "target": "browser_tts_preview_ensurevoicesloaded",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/browser-tts-preview.ts",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "browser_tts_preview",
+      "target": "browser_tts_preview_resolvebrowservoice",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/browser-tts-preview.ts",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
+      "source": "browser_tts_preview",
+      "target": "browser_tts_preview_playbrowserttspreview",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/browser-tts-preview.ts",
+      "source_location": "L99",
+      "weight": 1.0
+    },
+    {
+      "source": "browser_tts_preview_resolvebrowservoice",
+      "target": "browser_tts_preview_inferpreviewlang",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/browser-tts-preview.ts",
+      "source_location": "L87",
+      "weight": 1.0
+    }
+  ]
+}

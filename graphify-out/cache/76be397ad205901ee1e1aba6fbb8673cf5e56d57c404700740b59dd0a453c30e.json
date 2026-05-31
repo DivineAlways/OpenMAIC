@@ -1,0 +1,61 @@
+{
+  "nodes": [
+    {
+      "id": "table",
+      "label": "table.js",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/table.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "table_mtable",
+      "label": "mtable()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/table.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "table_mtd",
+      "label": "mtd()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/table.js",
+      "source_location": "L74"
+    },
+    {
+      "id": "table_mtr",
+      "label": "mtr()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/table.js",
+      "source_location": "L86"
+    }
+  ],
+  "edges": [
+    {
+      "source": "table",
+      "target": "table_mtable",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/table.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "table",
+      "target": "table_mtd",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/table.js",
+      "source_location": "L74",
+      "weight": 1.0
+    },
+    {
+      "source": "table",
+      "target": "table_mtr",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/table.js",
+      "source_location": "L86",
+      "weight": 1.0
+    }
+  ]
+}

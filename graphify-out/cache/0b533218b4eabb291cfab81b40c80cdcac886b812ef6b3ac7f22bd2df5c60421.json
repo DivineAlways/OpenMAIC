@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "id": "generation_preview_page",
+      "label": "generation-preview.page.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/e2e/pages/generation-preview.page.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "generation_preview_page_generationpreviewpage",
+      "label": "GenerationPreviewPage",
+      "file_type": "code",
+      "source_file": "OpenMAIC/e2e/pages/generation-preview.page.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "generation_preview_page_generationpreviewpage_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/e2e/pages/generation-preview.page.ts",
+      "source_location": "L8"
+    },
+    {
+      "id": "generation_preview_page_generationpreviewpage_goto",
+      "label": ".goto()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/e2e/pages/generation-preview.page.ts",
+      "source_location": "L14"
+    },
+    {
+      "id": "generation_preview_page_generationpreviewpage_waitforredirecttoclassroom",
+      "label": ".waitForRedirectToClassroom()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/e2e/pages/generation-preview.page.ts",
+      "source_location": "L18"
+    }
+  ],
+  "edges": [
+    {
+      "source": "generation_preview_page",
+      "target": "test",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/pages/generation-preview.page.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "generation_preview_page",
+      "target": "generation_preview_page_generationpreviewpage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/pages/generation-preview.page.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "generation_preview_page_generationpreviewpage",
+      "target": "generation_preview_page_generationpreviewpage_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/pages/generation-preview.page.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "generation_preview_page_generationpreviewpage",
+      "target": "generation_preview_page_generationpreviewpage_goto",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/pages/generation-preview.page.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "generation_preview_page_generationpreviewpage",
+      "target": "generation_preview_page_generationpreviewpage_waitforredirecttoclassroom",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/pages/generation-preview.page.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    }
+  ]
+}

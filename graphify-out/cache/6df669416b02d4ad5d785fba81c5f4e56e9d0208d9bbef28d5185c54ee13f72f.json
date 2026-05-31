@@ -1,0 +1,47 @@
+{
+  "nodes": [
+    {
+      "id": "image_ellipse_outline",
+      "label": "image-ellipse-outline.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/ImageOutline/image-ellipse-outline.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "image_ellipse_outline_imageellipseoutline",
+      "label": "ImageEllipseOutline()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/ImageOutline/image-ellipse-outline.tsx",
+      "source_location": "L15"
+    }
+  ],
+  "edges": [
+    {
+      "source": "image_ellipse_outline",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/ImageOutline/image-ellipse-outline.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "image_ellipse_outline",
+      "target": "useelementoutline",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/ImageOutline/image-ellipse-outline.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "image_ellipse_outline",
+      "target": "image_ellipse_outline_imageellipseoutline",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/ImageOutline/image-ellipse-outline.tsx",
+      "source_location": "L15",
+      "weight": 1.0
+    }
+  ]
+}

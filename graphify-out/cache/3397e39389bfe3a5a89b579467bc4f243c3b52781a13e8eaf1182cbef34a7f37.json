@@ -1,0 +1,40 @@
+{
+  "nodes": [
+    {
+      "id": "edit",
+      "label": "edit.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/types/edit.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "edit",
+      "target": "shapes",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/types/edit.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "edit",
+      "target": "lines",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/types/edit.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "edit",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/types/edit.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    }
+  ]
+}

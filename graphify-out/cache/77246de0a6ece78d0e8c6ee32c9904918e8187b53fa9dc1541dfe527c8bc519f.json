@@ -1,0 +1,225 @@
+{
+  "nodes": [
+    {
+      "id": "model_selector",
+      "label": "model-selector.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/model-selector.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "model_selector_modelselector",
+      "label": "ModelSelector()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/model-selector.tsx",
+      "source_location": "L18"
+    },
+    {
+      "id": "model_selector_modelselectortrigger",
+      "label": "ModelSelectorTrigger()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/model-selector.tsx",
+      "source_location": "L22"
+    },
+    {
+      "id": "model_selector_modelselectorcontent",
+      "label": "ModelSelectorContent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/model-selector.tsx",
+      "source_location": "L30"
+    },
+    {
+      "id": "model_selector_modelselectordialog",
+      "label": "ModelSelectorDialog()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/model-selector.tsx",
+      "source_location": "L44"
+    },
+    {
+      "id": "model_selector_modelselectorinput",
+      "label": "ModelSelectorInput()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/model-selector.tsx",
+      "source_location": "L50"
+    },
+    {
+      "id": "model_selector_modelselectorlist",
+      "label": "ModelSelectorList()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/model-selector.tsx",
+      "source_location": "L56"
+    },
+    {
+      "id": "model_selector_modelselectorempty",
+      "label": "ModelSelectorEmpty()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/model-selector.tsx",
+      "source_location": "L60"
+    },
+    {
+      "id": "model_selector_modelselectorgroup",
+      "label": "ModelSelectorGroup()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/model-selector.tsx",
+      "source_location": "L64"
+    },
+    {
+      "id": "model_selector_modelselectoritem",
+      "label": "ModelSelectorItem()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/model-selector.tsx",
+      "source_location": "L68"
+    },
+    {
+      "id": "model_selector_modelselectorshortcut",
+      "label": "ModelSelectorShortcut()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/model-selector.tsx",
+      "source_location": "L72"
+    },
+    {
+      "id": "model_selector_modelselectorseparator",
+      "label": "ModelSelectorSeparator()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/model-selector.tsx",
+      "source_location": "L78"
+    }
+  ],
+  "edges": [
+    {
+      "source": "model_selector",
+      "target": "command",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/model-selector.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "dialog",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/model-selector.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/model-selector.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/model-selector.tsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "model_selector_modelselector",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/model-selector.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "model_selector_modelselectortrigger",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/model-selector.tsx",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "model_selector_modelselectorcontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/model-selector.tsx",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "model_selector_modelselectordialog",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/model-selector.tsx",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "model_selector_modelselectorinput",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/model-selector.tsx",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "model_selector_modelselectorlist",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/model-selector.tsx",
+      "source_location": "L56",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "model_selector_modelselectorempty",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/model-selector.tsx",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "model_selector_modelselectorgroup",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/model-selector.tsx",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "model_selector_modelselectoritem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/model-selector.tsx",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "model_selector_modelselectorshortcut",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/model-selector.tsx",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "model_selector_modelselectorseparator",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/model-selector.tsx",
+      "source_location": "L78",
+      "weight": 1.0
+    }
+  ]
+}

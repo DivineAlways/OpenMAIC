@@ -1,0 +1,197 @@
+{
+  "nodes": [
+    {
+      "id": "grok_video_adapter",
+      "label": "grok-video-adapter.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-video-adapter.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "grok_video_adapter_delay",
+      "label": "delay()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-video-adapter.ts",
+      "source_location": "L29"
+    },
+    {
+      "id": "grok_video_adapter_getdimensions",
+      "label": "getDimensions()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-video-adapter.ts",
+      "source_location": "L34"
+    },
+    {
+      "id": "grok_video_adapter_apiheaders",
+      "label": "apiHeaders()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-video-adapter.ts",
+      "source_location": "L51"
+    },
+    {
+      "id": "grok_video_adapter_testgrokvideoconnectivity",
+      "label": "testGrokVideoConnectivity()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-video-adapter.ts",
+      "source_location": "L85"
+    },
+    {
+      "id": "grok_video_adapter_submitvideogeneration",
+      "label": "submitVideoGeneration()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-video-adapter.ts",
+      "source_location": "L115"
+    },
+    {
+      "id": "grok_video_adapter_pollvideostatus",
+      "label": "pollVideoStatus()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-video-adapter.ts",
+      "source_location": "L151"
+    },
+    {
+      "id": "grok_video_adapter_generatewithgrokvideo",
+      "label": "generateWithGrokVideo()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-video-adapter.ts",
+      "source_location": "L173"
+    }
+  ],
+  "edges": [
+    {
+      "source": "grok_video_adapter",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-video-adapter.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "grok_video_adapter",
+      "target": "grok_video_adapter_delay",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-video-adapter.ts",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "grok_video_adapter",
+      "target": "grok_video_adapter_getdimensions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-video-adapter.ts",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "grok_video_adapter",
+      "target": "grok_video_adapter_apiheaders",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-video-adapter.ts",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "grok_video_adapter",
+      "target": "grok_video_adapter_testgrokvideoconnectivity",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-video-adapter.ts",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "grok_video_adapter",
+      "target": "grok_video_adapter_submitvideogeneration",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-video-adapter.ts",
+      "source_location": "L115",
+      "weight": 1.0
+    },
+    {
+      "source": "grok_video_adapter",
+      "target": "grok_video_adapter_pollvideostatus",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-video-adapter.ts",
+      "source_location": "L151",
+      "weight": 1.0
+    },
+    {
+      "source": "grok_video_adapter",
+      "target": "grok_video_adapter_generatewithgrokvideo",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-video-adapter.ts",
+      "source_location": "L173",
+      "weight": 1.0
+    },
+    {
+      "source": "grok_video_adapter_testgrokvideoconnectivity",
+      "target": "grok_video_adapter_apiheaders",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-video-adapter.ts",
+      "source_location": "L92",
+      "weight": 1.0
+    },
+    {
+      "source": "grok_video_adapter_submitvideogeneration",
+      "target": "grok_video_adapter_apiheaders",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-video-adapter.ts",
+      "source_location": "L130",
+      "weight": 1.0
+    },
+    {
+      "source": "grok_video_adapter_pollvideostatus",
+      "target": "grok_video_adapter_apiheaders",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-video-adapter.ts",
+      "source_location": "L158",
+      "weight": 1.0
+    },
+    {
+      "source": "grok_video_adapter_generatewithgrokvideo",
+      "target": "grok_video_adapter_submitvideogeneration",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-video-adapter.ts",
+      "source_location": "L181",
+      "weight": 1.0
+    },
+    {
+      "source": "grok_video_adapter_generatewithgrokvideo",
+      "target": "grok_video_adapter_delay",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-video-adapter.ts",
+      "source_location": "L185",
+      "weight": 1.0
+    },
+    {
+      "source": "grok_video_adapter_generatewithgrokvideo",
+      "target": "grok_video_adapter_pollvideostatus",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-video-adapter.ts",
+      "source_location": "L186",
+      "weight": 1.0
+    },
+    {
+      "source": "grok_video_adapter_generatewithgrokvideo",
+      "target": "grok_video_adapter_getdimensions",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-video-adapter.ts",
+      "source_location": "L192",
+      "weight": 1.0
+    }
+  ]
+}

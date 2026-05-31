@@ -1,0 +1,31 @@
+{
+  "nodes": [
+    {
+      "id": "issueboard_panel",
+      "label": "issueboard-panel.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/issueboard-panel.tsx",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "issueboard_panel",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/issueboard-panel.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "issueboard_panel",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/issueboard-panel.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    }
+  ]
+}

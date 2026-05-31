@@ -1,0 +1,40 @@
+{
+  "nodes": [
+    {
+      "id": "panel",
+      "label": "panel.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/panel.tsx",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "panel",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/panel.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "panel",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/panel.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "panel",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/panel.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    }
+  ]
+}

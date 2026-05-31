@@ -1,0 +1,153 @@
+{
+  "nodes": [
+    {
+      "id": "generate_pbl",
+      "label": "generate-pbl.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/generate-pbl.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "generate_pbl_generatepblcontent",
+      "label": "generatePBLContent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/generate-pbl.ts",
+      "source_location": "L42"
+    },
+    {
+      "id": "generate_pbl_postprocesspbl",
+      "label": "postProcessPBL()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/generate-pbl.ts",
+      "source_location": "L330"
+    }
+  ],
+  "edges": [
+    {
+      "source": "generate_pbl",
+      "target": "ai",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/generate-pbl.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "generate_pbl",
+      "target": "llm",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/generate-pbl.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "generate_pbl",
+      "target": "zod",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/generate-pbl.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "generate_pbl",
+      "target": "ai",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/generate-pbl.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "generate_pbl",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/generate-pbl.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "generate_pbl",
+      "target": "mode_mcp",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/generate-pbl.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "generate_pbl",
+      "target": "project_mcp",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/generate-pbl.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "generate_pbl",
+      "target": "agent_mcp",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/generate-pbl.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "generate_pbl",
+      "target": "issueboard_mcp",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/generate-pbl.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "generate_pbl",
+      "target": "pbl_system_prompt",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/generate-pbl.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "generate_pbl",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/generate-pbl.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "generate_pbl",
+      "target": "generate_pbl_generatepblcontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/generate-pbl.ts",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "generate_pbl",
+      "target": "generate_pbl_postprocesspbl",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/generate-pbl.ts",
+      "source_location": "L330",
+      "weight": 1.0
+    },
+    {
+      "source": "generate_pbl_generatepblcontent",
+      "target": "generate_pbl_postprocesspbl",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/generate-pbl.ts",
+      "source_location": "L317",
+      "weight": 1.0
+    }
+  ]
+}

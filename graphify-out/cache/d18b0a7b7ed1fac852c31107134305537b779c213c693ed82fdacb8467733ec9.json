@@ -1,0 +1,146 @@
+{
+  "nodes": [
+    {
+      "id": "editableelement",
+      "label": "EditableElement.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/EditableElement.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "editableelement_editableelement",
+      "label": "EditableElement()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/EditableElement.tsx",
+      "source_location": "L47"
+    }
+  ],
+  "edges": [
+    {
+      "source": "editableelement",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/EditableElement.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "editableelement",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/EditableElement.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "editableelement",
+      "target": "imageelement",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/EditableElement.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "editableelement",
+      "target": "textelement",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/EditableElement.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "editableelement",
+      "target": "lineelement",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/EditableElement.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "editableelement",
+      "target": "shapeelement",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/EditableElement.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "editableelement",
+      "target": "chartelement",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/EditableElement.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "editableelement",
+      "target": "latexelement",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/EditableElement.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "editableelement",
+      "target": "tableelement",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/EditableElement.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "editableelement",
+      "target": "videoelement",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/EditableElement.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "editableelement",
+      "target": "context_menu",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/EditableElement.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "editableelement",
+      "target": "edit",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/EditableElement.tsx",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "editableelement",
+      "target": "use_canvas_operations",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/EditableElement.tsx",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "editableelement",
+      "target": "editableelement_editableelement",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/EditableElement.tsx",
+      "source_location": "L47",
+      "weight": 1.0
+    }
+  ]
+}

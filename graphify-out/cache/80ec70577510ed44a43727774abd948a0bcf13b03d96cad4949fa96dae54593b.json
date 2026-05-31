@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "id": "format",
+      "label": "format.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/html-parser/format.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "format_splithead",
+      "label": "splitHead()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/html-parser/format.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "format_unquote",
+      "label": "unquote()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/html-parser/format.ts",
+      "source_location": "L9"
+    },
+    {
+      "id": "format_formatattributes",
+      "label": "formatAttributes()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/html-parser/format.ts",
+      "source_location": "L19"
+    },
+    {
+      "id": "format_format",
+      "label": "format()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/html-parser/format.ts",
+      "source_location": "L28"
+    }
+  ],
+  "edges": [
+    {
+      "source": "format",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/format.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "format",
+      "target": "format_splithead",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/format.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "format",
+      "target": "format_unquote",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/format.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "format",
+      "target": "format_formatattributes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/format.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "format",
+      "target": "format_format",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/html-parser/format.ts",
+      "source_location": "L28",
+      "weight": 1.0
+    }
+  ]
+}

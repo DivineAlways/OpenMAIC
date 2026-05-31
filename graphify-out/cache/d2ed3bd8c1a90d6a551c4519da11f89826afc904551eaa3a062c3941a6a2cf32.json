@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "rollup_config",
+      "label": "rollup.config.js",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/rollup.config.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "rollup_config_onwarn",
+      "label": "onwarn()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/rollup.config.js",
+      "source_location": "L3"
+    }
+  ],
+  "edges": [
+    {
+      "source": "rollup_config",
+      "target": "plugin_node_resolve",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/rollup.config.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "rollup_config",
+      "target": "rollup_config_onwarn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/rollup.config.js",
+      "source_location": "L3",
+      "weight": 1.0
+    }
+  ]
+}

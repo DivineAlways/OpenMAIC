@@ -1,0 +1,200 @@
+{
+  "nodes": [
+    {
+      "id": "use_chat_sessions",
+      "label": "use-chat-sessions.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/chat/use-chat-sessions.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "use_chat_sessions_usechatsessions",
+      "label": "useChatSessions()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/chat/use-chat-sessions.ts",
+      "source_location": "L50"
+    }
+  ],
+  "edges": [
+    {
+      "source": "use_chat_sessions",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/use-chat-sessions.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "use_chat_sessions",
+      "target": "chat",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/use-chat-sessions.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "use_chat_sessions",
+      "target": "roundtable",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/use-chat-sessions.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "use_chat_sessions",
+      "target": "action",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/use-chat-sessions.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "use_chat_sessions",
+      "target": "ai",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/use-chat-sessions.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "use_chat_sessions",
+      "target": "store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/use-chat-sessions.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "use_chat_sessions",
+      "target": "canvas",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/use-chat-sessions.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "use_chat_sessions",
+      "target": "settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/use-chat-sessions.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "use_chat_sessions",
+      "target": "user_profile",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/use-chat-sessions.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "use_chat_sessions",
+      "target": "store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/use-chat-sessions.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "use_chat_sessions",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/use-chat-sessions.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "use_chat_sessions",
+      "target": "model_config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/use-chat-sessions.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "use_chat_sessions",
+      "target": "roundtable",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/use-chat-sessions.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "use_chat_sessions",
+      "target": "process_sse_stream",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/use-chat-sessions.ts",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "use_chat_sessions",
+      "target": "stream_buffer",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/use-chat-sessions.ts",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "use_chat_sessions",
+      "target": "stream_buffer",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/use-chat-sessions.ts",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "use_chat_sessions",
+      "target": "engine",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/use-chat-sessions.ts",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "use_chat_sessions",
+      "target": "sonner",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/use-chat-sessions.ts",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "use_chat_sessions",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/use-chat-sessions.ts",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "use_chat_sessions",
+      "target": "use_chat_sessions_usechatsessions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/use-chat-sessions.ts",
+      "source_location": "L50",
+      "weight": 1.0
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    {
+      "id": "parse_tag",
+      "label": "parse-tag.js",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/parse-stringify/parse-tag.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "parse_tag_stringify",
+      "label": "stringify()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/parse-stringify/parse-tag.js",
+      "source_location": "L3"
+    }
+  ],
+  "edges": [
+    {
+      "source": "parse_tag",
+      "target": "parse_tag_stringify",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/parse-stringify/parse-tag.js",
+      "source_location": "L3",
+      "weight": 1.0
+    }
+  ]
+}

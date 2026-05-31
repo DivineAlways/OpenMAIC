@@ -141,15 +141,14 @@ export function useDiscussionTTS({ enabled, agents, onAudioStateChange }: Discus
       currentProviderRef.current = item.providerId;
       onAudioStateChangeRef.current?.(item.agentId, 'playing');
       // Auto-select Ava voice when available (Windows/Edge: Microsoft Ava, macOS: Ava)
-      const resolvedVoice = item.voiceId !== 'default'
-        ? item.voiceId
-        : availableVoicesRef.current.find(
-            (v) =>
-              v.name.toLowerCase().includes('ava') &&
-              v.lang.startsWith('en'),
-          )?.voiceURI ??
-          availableVoicesRef.current.find((v) => v.lang.startsWith('en'))?.voiceURI ??
-          item.voiceId;
+      const resolvedVoice =
+        item.voiceId !== 'default'
+          ? item.voiceId
+          : (availableVoicesRef.current.find(
+              (v) => v.name.toLowerCase().includes('ava') && v.lang.startsWith('en'),
+            )?.voiceURI ??
+            availableVoicesRef.current.find((v) => v.lang.startsWith('en'))?.voiceURI ??
+            item.voiceId);
       browserSpeakRef.current(item.text, resolvedVoice);
       return;
     }

@@ -1,0 +1,121 @@
+{
+  "nodes": [
+    {
+      "id": "baseimageelement",
+      "label": "BaseImageElement.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/BaseImageElement.tsx",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "baseimageelement",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/BaseImageElement.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "baseimageelement",
+      "target": "useelementshadow",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/BaseImageElement.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "baseimageelement",
+      "target": "useelementflip",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/BaseImageElement.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "baseimageelement",
+      "target": "useclipimage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/BaseImageElement.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "baseimageelement",
+      "target": "usefilter",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/BaseImageElement.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "baseimageelement",
+      "target": "imageoutline",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/BaseImageElement.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "baseimageelement",
+      "target": "media_generation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/BaseImageElement.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "baseimageelement",
+      "target": "settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/BaseImageElement.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "baseimageelement",
+      "target": "media_stage_context",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/BaseImageElement.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "baseimageelement",
+      "target": "media_orchestrator",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/BaseImageElement.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "baseimageelement",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/BaseImageElement.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "baseimageelement",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/BaseImageElement.tsx",
+      "source_location": "L14",
+      "weight": 1.0
+    }
+  ]
+}

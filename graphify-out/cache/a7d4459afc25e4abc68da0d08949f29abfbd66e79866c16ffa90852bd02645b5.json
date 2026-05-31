@@ -1,0 +1,690 @@
+{
+  "nodes": [
+    {
+      "id": "provider_config",
+      "label": "provider-config.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "provider_config_loadyamlfile",
+      "label": "loadYamlFile()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L110"
+    },
+    {
+      "id": "provider_config_loadenvsection",
+      "label": "loadEnvSection()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L128"
+    },
+    {
+      "id": "provider_config_buildconfig",
+      "label": "buildConfig()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L202"
+    },
+    {
+      "id": "provider_config_logconfig",
+      "label": "logConfig()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L216"
+    },
+    {
+      "id": "provider_config_getconfig",
+      "label": "getConfig()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L233"
+    },
+    {
+      "id": "provider_config_getserverproviders",
+      "label": "getServerProviders()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L249"
+    },
+    {
+      "id": "provider_config_resolveapikey",
+      "label": "resolveApiKey()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L261"
+    },
+    {
+      "id": "provider_config_resolvebaseurl",
+      "label": "resolveBaseUrl()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L267"
+    },
+    {
+      "id": "provider_config_resolveproxy",
+      "label": "resolveProxy()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L273"
+    },
+    {
+      "id": "provider_config_getserverttsproviders",
+      "label": "getServerTTSProviders()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L281"
+    },
+    {
+      "id": "provider_config_resolvettsapikey",
+      "label": "resolveTTSApiKey()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L291"
+    },
+    {
+      "id": "provider_config_resolvettsbaseurl",
+      "label": "resolveTTSBaseUrl()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L296"
+    },
+    {
+      "id": "provider_config_getserverasrproviders",
+      "label": "getServerASRProviders()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L305"
+    },
+    {
+      "id": "provider_config_resolveasrapikey",
+      "label": "resolveASRApiKey()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L315"
+    },
+    {
+      "id": "provider_config_resolveasrbaseurl",
+      "label": "resolveASRBaseUrl()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L320"
+    },
+    {
+      "id": "provider_config_getserverpdfproviders",
+      "label": "getServerPDFProviders()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L329"
+    },
+    {
+      "id": "provider_config_resolvepdfapikey",
+      "label": "resolvePDFApiKey()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L339"
+    },
+    {
+      "id": "provider_config_resolvepdfbaseurl",
+      "label": "resolvePDFBaseUrl()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L344"
+    },
+    {
+      "id": "provider_config_getserverimageproviders",
+      "label": "getServerImageProviders()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L353"
+    },
+    {
+      "id": "provider_config_resolveimageapikey",
+      "label": "resolveImageApiKey()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L362"
+    },
+    {
+      "id": "provider_config_resolveimagebaseurl",
+      "label": "resolveImageBaseUrl()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L367"
+    },
+    {
+      "id": "provider_config_getservervideoproviders",
+      "label": "getServerVideoProviders()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L379"
+    },
+    {
+      "id": "provider_config_resolvevideoapikey",
+      "label": "resolveVideoApiKey()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L388"
+    },
+    {
+      "id": "provider_config_resolvevideobaseurl",
+      "label": "resolveVideoBaseUrl()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L393"
+    },
+    {
+      "id": "provider_config_getserverwebsearchproviders",
+      "label": "getServerWebSearchProviders()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L406"
+    },
+    {
+      "id": "provider_config_resolvewebsearchapikey",
+      "label": "resolveWebSearchApiKey()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L417"
+    }
+  ],
+  "edges": [
+    {
+      "source": "provider_config",
+      "target": "fs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "js_yaml",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "provider_config_loadyamlfile",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L110",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "provider_config_loadenvsection",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L128",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "provider_config_buildconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L202",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "provider_config_logconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L216",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "provider_config_getconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L233",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "provider_config_getserverproviders",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L249",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "provider_config_resolveapikey",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L261",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "provider_config_resolvebaseurl",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L267",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "provider_config_resolveproxy",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L273",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "provider_config_getserverttsproviders",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L281",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "provider_config_resolvettsapikey",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L291",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "provider_config_resolvettsbaseurl",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L296",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "provider_config_getserverasrproviders",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L305",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "provider_config_resolveasrapikey",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L315",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "provider_config_resolveasrbaseurl",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L320",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "provider_config_getserverpdfproviders",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L329",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "provider_config_resolvepdfapikey",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L339",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "provider_config_resolvepdfbaseurl",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L344",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "provider_config_getserverimageproviders",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L353",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "provider_config_resolveimageapikey",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L362",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "provider_config_resolveimagebaseurl",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L367",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "provider_config_getservervideoproviders",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L379",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "provider_config_resolvevideoapikey",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L388",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "provider_config_resolvevideobaseurl",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L393",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "provider_config_getserverwebsearchproviders",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L406",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config",
+      "target": "provider_config_resolvewebsearchapikey",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L417",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_buildconfig",
+      "target": "provider_config_loadenvsection",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L204",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_getconfig",
+      "target": "provider_config_loadyamlfile",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L237",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_getconfig",
+      "target": "provider_config_buildconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L238",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_getconfig",
+      "target": "provider_config_logconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L239",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_getserverproviders",
+      "target": "provider_config_getconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L250",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_resolveapikey",
+      "target": "provider_config_getconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L263",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_resolvebaseurl",
+      "target": "provider_config_getconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L269",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_resolveproxy",
+      "target": "provider_config_getconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L274",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_getserverttsproviders",
+      "target": "provider_config_getconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L282",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_resolvettsapikey",
+      "target": "provider_config_getconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L293",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_resolvettsbaseurl",
+      "target": "provider_config_getconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L298",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_getserverasrproviders",
+      "target": "provider_config_getconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L306",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_resolveasrapikey",
+      "target": "provider_config_getconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L317",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_resolveasrbaseurl",
+      "target": "provider_config_getconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L322",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_getserverpdfproviders",
+      "target": "provider_config_getconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L330",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_resolvepdfapikey",
+      "target": "provider_config_getconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L341",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_resolvepdfbaseurl",
+      "target": "provider_config_getconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L346",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_getserverimageproviders",
+      "target": "provider_config_getconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L354",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_resolveimageapikey",
+      "target": "provider_config_getconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L364",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_resolveimagebaseurl",
+      "target": "provider_config_getconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L372",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_getservervideoproviders",
+      "target": "provider_config_getconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L380",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_resolvevideoapikey",
+      "target": "provider_config_getconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L390",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_resolvevideobaseurl",
+      "target": "provider_config_getconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L398",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_getserverwebsearchproviders",
+      "target": "provider_config_getconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L407",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_resolvewebsearchapikey",
+      "target": "provider_config_getconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/provider-config.ts",
+      "source_location": "L419",
+      "weight": 1.0
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "nodes": [
+    {
+      "id": "whiteboard_history",
+      "label": "whiteboard-history.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-history.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "whiteboard_history_handler",
+      "label": "handler()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-history.tsx",
+      "source_location": "L33"
+    },
+    {
+      "id": "whiteboard_history_handlerestore",
+      "label": "handleRestore()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-history.tsx",
+      "source_location": "L46"
+    },
+    {
+      "id": "whiteboard_history_formattime",
+      "label": "formatTime()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-history.tsx",
+      "source_location": "L98"
+    }
+  ],
+  "edges": [
+    {
+      "source": "whiteboard_history",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-history.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "whiteboard_history",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-history.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "whiteboard_history",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-history.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "whiteboard_history",
+      "target": "whiteboard_history",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-history.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "whiteboard_history",
+      "target": "store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-history.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "whiteboard_history",
+      "target": "canvas",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-history.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "whiteboard_history",
+      "target": "stage_api",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-history.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "whiteboard_history",
+      "target": "element_fingerprint",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-history.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "whiteboard_history",
+      "target": "sonner",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-history.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "whiteboard_history",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-history.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "whiteboard_history",
+      "target": "whiteboard_history_handler",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-history.tsx",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "whiteboard_history",
+      "target": "whiteboard_history_handlerestore",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-history.tsx",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "whiteboard_history",
+      "target": "whiteboard_history_formattime",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-history.tsx",
+      "source_location": "L98",
+      "weight": 1.0
+    },
+    {
+      "source": "whiteboard_history",
+      "target": "whiteboard_history_formattime",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-history.tsx",
+      "source_location": "L144",
+      "weight": 1.0
+    }
+  ]
+}

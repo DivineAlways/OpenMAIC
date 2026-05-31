@@ -1,0 +1,54 @@
+{
+  "nodes": [
+    {
+      "id": "minimax_image_adapter",
+      "label": "minimax-image-adapter.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/minimax-image-adapter.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "minimax_image_adapter_generatewithminimaximage",
+      "label": "generateWithMiniMaxImage()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/minimax-image-adapter.ts",
+      "source_location": "L15"
+    },
+    {
+      "id": "minimax_image_adapter_testminimaximageconnectivity",
+      "label": "testMiniMaxImageConnectivity()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/minimax-image-adapter.ts",
+      "source_location": "L86"
+    }
+  ],
+  "edges": [
+    {
+      "source": "minimax_image_adapter",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/minimax-image-adapter.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "minimax_image_adapter",
+      "target": "minimax_image_adapter_generatewithminimaximage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/minimax-image-adapter.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "minimax_image_adapter",
+      "target": "minimax_image_adapter_testminimaximageconnectivity",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/minimax-image-adapter.ts",
+      "source_location": "L86",
+      "weight": 1.0
+    }
+  ]
+}

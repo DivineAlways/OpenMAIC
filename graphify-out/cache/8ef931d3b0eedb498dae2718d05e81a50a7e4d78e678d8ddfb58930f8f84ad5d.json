@@ -1,0 +1,12 @@
+{
+  "nodes": [
+    {
+      "id": "generation",
+      "label": "generation.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/constants/generation.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": []
+}

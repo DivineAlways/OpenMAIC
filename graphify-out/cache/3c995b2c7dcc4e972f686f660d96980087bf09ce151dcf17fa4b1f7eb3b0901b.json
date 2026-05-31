@@ -1,0 +1,97 @@
+{
+  "nodes": [
+    {
+      "id": "proxy_fetch",
+      "label": "proxy-fetch.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/proxy-fetch.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "proxy_fetch_getproxyurl",
+      "label": "getProxyUrl()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/proxy-fetch.ts",
+      "source_location": "L21"
+    },
+    {
+      "id": "proxy_fetch_getproxyagent",
+      "label": "getProxyAgent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/proxy-fetch.ts",
+      "source_location": "L34"
+    },
+    {
+      "id": "proxy_fetch_proxyfetch",
+      "label": "proxyFetch()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/proxy-fetch.ts",
+      "source_location": "L52"
+    }
+  ],
+  "edges": [
+    {
+      "source": "proxy_fetch",
+      "target": "undici",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/proxy-fetch.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "proxy_fetch",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/proxy-fetch.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "proxy_fetch",
+      "target": "proxy_fetch_getproxyurl",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/proxy-fetch.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "proxy_fetch",
+      "target": "proxy_fetch_getproxyagent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/proxy-fetch.ts",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "proxy_fetch",
+      "target": "proxy_fetch_proxyfetch",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/proxy-fetch.ts",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "proxy_fetch_getproxyagent",
+      "target": "proxy_fetch_getproxyurl",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/proxy-fetch.ts",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "proxy_fetch_proxyfetch",
+      "target": "proxy_fetch_getproxyagent",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/proxy-fetch.ts",
+      "source_location": "L53",
+      "weight": 1.0
+    }
+  ]
+}

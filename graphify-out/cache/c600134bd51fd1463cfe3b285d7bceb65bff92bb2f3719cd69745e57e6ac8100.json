@@ -1,0 +1,45 @@
+{
+  "nodes": [
+    {
+      "id": "math",
+      "label": "math.js",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/math.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "math_math",
+      "label": "math()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/math.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "math_semantics",
+      "label": "semantics()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/math.js",
+      "source_location": "L12"
+    }
+  ],
+  "edges": [
+    {
+      "source": "math",
+      "target": "math_math",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/math.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "math",
+      "target": "math_semantics",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/math.js",
+      "source_location": "L12",
+      "weight": 1.0
+    }
+  ]
+}

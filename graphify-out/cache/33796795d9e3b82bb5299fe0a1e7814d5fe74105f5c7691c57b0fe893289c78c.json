@@ -1,0 +1,90 @@
+{
+  "nodes": [
+    {
+      "id": "code_block",
+      "label": "code-block.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/code-block.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "code_block_highlightcode",
+      "label": "highlightCode()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/code-block.tsx",
+      "source_location": "L52"
+    },
+    {
+      "id": "code_block_codeblockcopybutton",
+      "label": "CodeBlockCopyButton()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/code-block.tsx",
+      "source_location": "L134"
+    }
+  ],
+  "edges": [
+    {
+      "source": "code_block",
+      "target": "button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/code-block.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "code_block",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/code-block.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "code_block",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/code-block.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "code_block",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/code-block.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "code_block",
+      "target": "shiki",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/code-block.tsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "code_block",
+      "target": "code_block_highlightcode",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/code-block.tsx",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "code_block",
+      "target": "code_block_codeblockcopybutton",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/code-block.tsx",
+      "source_location": "L134",
+      "weight": 1.0
+    }
+  ]
+}

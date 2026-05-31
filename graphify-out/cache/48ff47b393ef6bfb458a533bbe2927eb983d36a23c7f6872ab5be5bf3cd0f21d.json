@@ -1,0 +1,115 @@
+{
+  "nodes": [
+    {
+      "id": "canvas_toolbar",
+      "label": "canvas-toolbar.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/canvas/canvas-toolbar.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "canvas_toolbar_ctrldivider",
+      "label": "CtrlDivider()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/canvas/canvas-toolbar.tsx",
+      "source_location": "L64"
+    },
+    {
+      "id": "canvas_toolbar_volumeicon",
+      "label": "VolumeIcon()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/canvas/canvas-toolbar.tsx",
+      "source_location": "L69"
+    },
+    {
+      "id": "canvas_toolbar_cn",
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/canvas/canvas-toolbar.tsx",
+      "source_location": "L409"
+    }
+  ],
+  "edges": [
+    {
+      "source": "canvas_toolbar",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/canvas/canvas-toolbar.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "canvas_toolbar",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/canvas/canvas-toolbar.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "canvas_toolbar",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/canvas/canvas-toolbar.tsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "canvas_toolbar",
+      "target": "store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/canvas/canvas-toolbar.tsx",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "canvas_toolbar",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/canvas/canvas-toolbar.tsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "canvas_toolbar",
+      "target": "tooltip",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/canvas/canvas-toolbar.tsx",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "canvas_toolbar",
+      "target": "canvas_toolbar_ctrldivider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/canvas/canvas-toolbar.tsx",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "canvas_toolbar",
+      "target": "canvas_toolbar_volumeicon",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/canvas/canvas-toolbar.tsx",
+      "source_location": "L69",
+      "weight": 1.0
+    },
+    {
+      "source": "canvas_toolbar",
+      "target": "canvas_toolbar_cn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/canvas/canvas-toolbar.tsx",
+      "source_location": "L409",
+      "weight": 1.0
+    }
+  ]
+}

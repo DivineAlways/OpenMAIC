@@ -1,0 +1,147 @@
+{
+  "nodes": [
+    {
+      "id": "combobox",
+      "label": "combobox.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ui/combobox.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "combobox_comboboxvalue",
+      "label": "ComboboxValue()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ui/combobox.tsx",
+      "source_location": "L18"
+    },
+    {
+      "id": "combobox_comboboxcontent",
+      "label": "ComboboxContent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ui/combobox.tsx",
+      "source_location": "L82"
+    },
+    {
+      "id": "combobox_comboboxlabel",
+      "label": "ComboboxLabel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ui/combobox.tsx",
+      "source_location": "L160"
+    },
+    {
+      "id": "combobox_comboboxempty",
+      "label": "ComboboxEmpty()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ui/combobox.tsx",
+      "source_location": "L174"
+    },
+    {
+      "id": "combobox_comboboxchips",
+      "label": "ComboboxChips()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ui/combobox.tsx",
+      "source_location": "L197"
+    }
+  ],
+  "edges": [
+    {
+      "source": "combobox",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/combobox.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "combobox",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/combobox.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "combobox",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/combobox.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "combobox",
+      "target": "button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/combobox.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "combobox",
+      "target": "input_group",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/combobox.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "combobox",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/combobox.tsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "combobox",
+      "target": "combobox_comboboxvalue",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/combobox.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "combobox",
+      "target": "combobox_comboboxcontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/combobox.tsx",
+      "source_location": "L82",
+      "weight": 1.0
+    },
+    {
+      "source": "combobox",
+      "target": "combobox_comboboxlabel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/combobox.tsx",
+      "source_location": "L160",
+      "weight": 1.0
+    },
+    {
+      "source": "combobox",
+      "target": "combobox_comboboxempty",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/combobox.tsx",
+      "source_location": "L174",
+      "weight": 1.0
+    },
+    {
+      "source": "combobox",
+      "target": "combobox_comboboxchips",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/combobox.tsx",
+      "source_location": "L197",
+      "weight": 1.0
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "nodes": [
+    {
+      "id": "task",
+      "label": "task.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/task.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "task_taskitemfile",
+      "label": "TaskItemFile()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/task.tsx",
+      "source_location": "L10"
+    },
+    {
+      "id": "task_taskitem",
+      "label": "TaskItem()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/task.tsx",
+      "source_location": "L24"
+    },
+    {
+      "id": "task_task",
+      "label": "Task()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/task.tsx",
+      "source_location": "L32"
+    },
+    {
+      "id": "task_tasktrigger",
+      "label": "TaskTrigger()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/task.tsx",
+      "source_location": "L40"
+    },
+    {
+      "id": "task_taskcontent",
+      "label": "TaskContent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/task.tsx",
+      "source_location": "L54"
+    }
+  ],
+  "edges": [
+    {
+      "source": "task",
+      "target": "collapsible",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/task.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "task",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/task.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "task",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/task.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "task",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/task.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "task",
+      "target": "task_taskitemfile",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/task.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "task",
+      "target": "task_taskitem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/task.tsx",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "task",
+      "target": "task_task",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/task.tsx",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "task",
+      "target": "task_tasktrigger",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/task.tsx",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "task",
+      "target": "task_taskcontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/task.tsx",
+      "source_location": "L54",
+      "weight": 1.0
+    }
+  ]
+}

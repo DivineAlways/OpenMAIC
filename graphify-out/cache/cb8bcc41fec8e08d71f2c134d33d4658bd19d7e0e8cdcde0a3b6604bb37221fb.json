@@ -1,0 +1,56 @@
+{
+  "nodes": [
+    {
+      "id": "chat",
+      "label": "chat.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/types/chat.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "chat_tosessionlistitem",
+      "label": "toSessionListItem()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/types/chat.ts",
+      "source_location": "L184"
+    }
+  ],
+  "edges": [
+    {
+      "source": "chat",
+      "target": "ai",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/types/chat.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "chat",
+      "target": "chat_tosessionlistitem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/types/chat.ts",
+      "source_location": "L184",
+      "weight": 1.0
+    },
+    {
+      "source": "chat",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/types/chat.ts",
+      "source_location": "L219",
+      "weight": 1.0
+    },
+    {
+      "source": "chat",
+      "target": "director_prompt",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/types/chat.ts",
+      "source_location": "L220",
+      "weight": 1.0
+    }
+  ]
+}

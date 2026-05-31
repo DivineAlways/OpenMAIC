@@ -1,0 +1,22 @@
+{
+  "nodes": [
+    {
+      "id": "chart",
+      "label": "chart.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/configs/chart.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "chart",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/configs/chart.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ]
+}

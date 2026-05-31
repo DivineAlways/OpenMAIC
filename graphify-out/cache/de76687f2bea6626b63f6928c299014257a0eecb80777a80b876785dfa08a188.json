@@ -1,0 +1,83 @@
+{
+  "nodes": [
+    {
+      "id": "scene_renderer",
+      "label": "scene-renderer.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/stage/scene-renderer.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "scene_renderer_scenerenderer",
+      "label": "SceneRenderer()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/stage/scene-renderer.tsx",
+      "source_location": "L19"
+    }
+  ],
+  "edges": [
+    {
+      "source": "scene_renderer",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage/scene-renderer.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_renderer",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage/scene-renderer.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_renderer",
+      "target": "editor",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage/scene-renderer.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_renderer",
+      "target": "quiz_view",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage/scene-renderer.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_renderer",
+      "target": "interactive_renderer",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage/scene-renderer.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_renderer",
+      "target": "pbl_renderer",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage/scene-renderer.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_renderer",
+      "target": "scene_renderer_scenerenderer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage/scene-renderer.tsx",
+      "source_location": "L19",
+      "weight": 1.0
+    }
+  ]
+}

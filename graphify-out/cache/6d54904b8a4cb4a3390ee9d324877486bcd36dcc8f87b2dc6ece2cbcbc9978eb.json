@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "id": "gen_tables",
+      "label": "gen-tables.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-tables.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "gen_tables_parsetexttolines",
+      "label": "parseTextToLines()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-tables.ts",
+      "source_location": "L16"
+    },
+    {
+      "id": "gen_tables_getslidesfortablerows",
+      "label": "getSlidesForTableRows()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-tables.ts",
+      "source_location": "L181"
+    },
+    {
+      "id": "gen_tables_gentabletoslides",
+      "label": "genTableToSlides()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-tables.ts",
+      "source_location": "L523"
+    }
+  ],
+  "edges": [
+    {
+      "source": "gen_tables",
+      "target": "core_enums",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-tables.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_tables",
+      "target": "core_interfaces",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-tables.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_tables",
+      "target": "gen_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-tables.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_tables",
+      "target": "pptxgen",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-tables.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_tables",
+      "target": "gen_tables_parsetexttolines",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-tables.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_tables",
+      "target": "gen_tables_getslidesfortablerows",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-tables.ts",
+      "source_location": "L181",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_tables",
+      "target": "gen_tables_gentabletoslides",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-tables.ts",
+      "source_location": "L523",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_tables_gentabletoslides",
+      "target": "gen_tables_getslidesfortablerows",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-tables.ts",
+      "source_location": "L717",
+      "weight": 1.0
+    }
+  ]
+}

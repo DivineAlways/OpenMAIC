@@ -1,0 +1,56 @@
+{
+  "nodes": [
+    {
+      "id": "stage_api_navigation",
+      "label": "stage-api-navigation.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/api/stage-api-navigation.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "stage_api_navigation_createnavigationapi",
+      "label": "createNavigationAPI()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/api/stage-api-navigation.ts",
+      "source_location": "L18"
+    }
+  ],
+  "edges": [
+    {
+      "source": "stage_api_navigation",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-navigation.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_navigation",
+      "target": "stage_api_types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-navigation.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_navigation",
+      "target": "stage_api_defaults",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-navigation.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_navigation",
+      "target": "stage_api_navigation_createnavigationapi",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-navigation.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    }
+  ]
+}

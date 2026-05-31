@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "use_order_element",
+      "label": "use-order-element.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/hooks/use-order-element.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "use_order_element_useorderelement",
+      "label": "useOrderElement()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/hooks/use-order-element.ts",
+      "source_location": "L3"
+    }
+  ],
+  "edges": [
+    {
+      "source": "use_order_element",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-order-element.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "use_order_element",
+      "target": "use_order_element_useorderelement",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-order-element.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    }
+  ]
+}

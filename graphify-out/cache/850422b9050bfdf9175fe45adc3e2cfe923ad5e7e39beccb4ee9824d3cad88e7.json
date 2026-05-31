@@ -1,0 +1,40 @@
+{
+  "nodes": [
+    {
+      "id": "inline_action_tag",
+      "label": "inline-action-tag.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/chat/inline-action-tag.tsx",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "inline_action_tag",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/inline-action-tag.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "inline_action_tag",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/inline-action-tag.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "inline_action_tag",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/inline-action-tag.tsx",
+      "source_location": "L23",
+      "weight": 1.0
+    }
+  ]
+}

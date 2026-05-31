@@ -122,7 +122,14 @@ export function CanvasArea({
           {currentScene && !whiteboardOpen && (
             <div className="absolute inset-0">
               <SceneProvider>
-                <SceneRenderer scene={currentScene} mode={mode} onQuizComplete={onQuizComplete} onNextLesson={onNextLesson} courseId={courseId} courseTitle={courseTitle} />
+                <SceneRenderer
+                  scene={currentScene}
+                  mode={mode}
+                  onQuizComplete={onQuizComplete}
+                  onNextLesson={onNextLesson}
+                  courseId={courseId}
+                  courseTitle={courseTitle}
+                />
               </SceneProvider>
             </div>
           )}

@@ -1,0 +1,47 @@
+{
+  "nodes": [
+    {
+      "id": "resizehandler",
+      "label": "ResizeHandler.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/ResizeHandler.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "resizehandler_resizehandler",
+      "label": "ResizeHandler()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/ResizeHandler.tsx",
+      "source_location": "L12"
+    }
+  ],
+  "edges": [
+    {
+      "source": "resizehandler",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/ResizeHandler.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "resizehandler",
+      "target": "edit",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/ResizeHandler.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "resizehandler",
+      "target": "resizehandler_resizehandler",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/ResizeHandler.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    }
+  ]
+}

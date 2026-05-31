@@ -1,0 +1,45 @@
+{
+  "nodes": [
+    {
+      "id": "index_d",
+      "label": "index.d.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/types/index.d.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "index_d_pptxgenjs",
+      "label": "PptxGenJS",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/types/index.d.ts",
+      "source_location": "L14"
+    },
+    {
+      "id": "index_d_slide",
+      "label": "Slide",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/types/index.d.ts",
+      "source_location": "L2620"
+    }
+  ],
+  "edges": [
+    {
+      "source": "index_d",
+      "target": "index_d_pptxgenjs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/types/index.d.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "index_d",
+      "target": "index_d_slide",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/types/index.d.ts",
+      "source_location": "L2620",
+      "weight": 1.0
+    }
+  ]
+}

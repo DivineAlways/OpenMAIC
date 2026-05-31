@@ -1,0 +1,732 @@
+{
+  "nodes": [
+    {
+      "id": "engine",
+      "label": "engine.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "engine_delay",
+      "label": "delay()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L48"
+    },
+    {
+      "id": "engine_actionengine",
+      "label": "ActionEngine",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L57"
+    },
+    {
+      "id": "engine_actionengine_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L63"
+    },
+    {
+      "id": "engine_actionengine_dispose",
+      "label": ".dispose()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L70"
+    },
+    {
+      "id": "engine_actionengine_execute",
+      "label": ".execute()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L82"
+    },
+    {
+      "id": "engine_actionengine_cleareffects",
+      "label": ".clearEffects()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L130"
+    },
+    {
+      "id": "engine_actionengine_scheduleeffectclear",
+      "label": ".scheduleEffectClear()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L139"
+    },
+    {
+      "id": "engine_actionengine_executespotlight",
+      "label": ".executeSpotlight()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L151"
+    },
+    {
+      "id": "engine_actionengine_executelaser",
+      "label": ".executeLaser()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L158"
+    },
+    {
+      "id": "engine_actionengine_executespeech",
+      "label": ".executeSpeech()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L167"
+    },
+    {
+      "id": "engine_actionengine_executeplayvideo",
+      "label": ".executePlayVideo()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L182"
+    },
+    {
+      "id": "engine_actionengine_resolvemediaplaceholderid",
+      "label": ".resolveMediaPlaceholderId()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L248"
+    },
+    {
+      "id": "engine_actionengine_ensurewhiteboardopen",
+      "label": ".ensureWhiteboardOpen()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L278"
+    },
+    {
+      "id": "engine_actionengine_executewbopen",
+      "label": ".executeWbOpen()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L284"
+    },
+    {
+      "id": "engine_actionengine_executewbdrawtext",
+      "label": ".executeWbDrawText()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L292"
+    },
+    {
+      "id": "engine_actionengine_executewbdrawshape",
+      "label": ".executeWbDrawShape()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L324"
+    },
+    {
+      "id": "engine_actionengine_executewbdrawchart",
+      "label": ".executeWbDrawChart()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L350"
+    },
+    {
+      "id": "engine_actionengine_executewbdrawlatex",
+      "label": ".executeWbDrawLatex()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L374"
+    },
+    {
+      "id": "engine_actionengine_executewbdrawtable",
+      "label": ".executeWbDrawTable()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L410"
+    },
+    {
+      "id": "engine_actionengine_executewbdrawline",
+      "label": ".executeWbDrawLine()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L466"
+    },
+    {
+      "id": "engine_actionengine_executewbdelete",
+      "label": ".executeWbDelete()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L499"
+    },
+    {
+      "id": "engine_actionengine_executewbclear",
+      "label": ".executeWbClear()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L507"
+    },
+    {
+      "id": "engine_actionengine_executewbclose",
+      "label": ".executeWbClose()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L529"
+    }
+  ],
+  "edges": [
+    {
+      "source": "engine",
+      "target": "stage_api",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "engine",
+      "target": "stage_api",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "engine",
+      "target": "canvas",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "engine",
+      "target": "whiteboard_history",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "engine",
+      "target": "media_generation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "engine",
+      "target": "i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "engine",
+      "target": "audio_player",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "engine",
+      "target": "action",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "engine",
+      "target": "katex",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "engine",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "engine",
+      "target": "engine_delay",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "engine",
+      "target": "engine_actionengine",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine",
+      "target": "engine_actionengine_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine",
+      "target": "engine_actionengine_dispose",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine",
+      "target": "engine_actionengine_execute",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L82",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine",
+      "target": "engine_actionengine_cleareffects",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L130",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine",
+      "target": "engine_actionengine_scheduleeffectclear",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L139",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine",
+      "target": "engine_actionengine_executespotlight",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L151",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine",
+      "target": "engine_actionengine_executelaser",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L158",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine",
+      "target": "engine_actionengine_executespeech",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L167",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine",
+      "target": "engine_actionengine_executeplayvideo",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L182",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine",
+      "target": "engine_actionengine_resolvemediaplaceholderid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L248",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine",
+      "target": "engine_actionengine_ensurewhiteboardopen",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L278",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine",
+      "target": "engine_actionengine_executewbopen",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L284",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine",
+      "target": "engine_actionengine_executewbdrawtext",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L292",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine",
+      "target": "engine_actionengine_executewbdrawshape",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L324",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine",
+      "target": "engine_actionengine_executewbdrawchart",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L350",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine",
+      "target": "engine_actionengine_executewbdrawlatex",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L374",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine",
+      "target": "engine_actionengine_executewbdrawtable",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L410",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine",
+      "target": "engine_actionengine_executewbdrawline",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L466",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine",
+      "target": "engine_actionengine_executewbdelete",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L499",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine",
+      "target": "engine_actionengine_executewbclear",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L507",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine",
+      "target": "engine_actionengine_executewbclose",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L529",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_execute",
+      "target": "engine_actionengine_ensurewhiteboardopen",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_execute",
+      "target": "engine_actionengine_executespotlight",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_execute",
+      "target": "engine_actionengine_executelaser",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L94",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_execute",
+      "target": "engine_actionengine_executeplayvideo",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L98",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_execute",
+      "target": "engine_actionengine_executespeech",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L102",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_execute",
+      "target": "engine_actionengine_executewbopen",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L104",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_execute",
+      "target": "engine_actionengine_executewbdrawtext",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L106",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_execute",
+      "target": "engine_actionengine_executewbdrawshape",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L108",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_execute",
+      "target": "engine_actionengine_executewbdrawchart",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L110",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_execute",
+      "target": "engine_actionengine_executewbdrawlatex",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L112",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_execute",
+      "target": "engine_actionengine_executewbdrawtable",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L114",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_execute",
+      "target": "engine_actionengine_executewbdrawline",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L116",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_execute",
+      "target": "engine_actionengine_executewbclear",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L118",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_execute",
+      "target": "engine_actionengine_executewbdelete",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L120",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_execute",
+      "target": "engine_actionengine_executewbclose",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L122",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_executespotlight",
+      "target": "engine_actionengine_scheduleeffectclear",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L155",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_executelaser",
+      "target": "engine_actionengine_scheduleeffectclear",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L162",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_executeplayvideo",
+      "target": "engine_actionengine_resolvemediaplaceholderid",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L186",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_ensurewhiteboardopen",
+      "target": "engine_actionengine_executewbopen",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L280",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_executewbopen",
+      "target": "engine_delay",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L289",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_executewbdrawtext",
+      "target": "engine_delay",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L321",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_executewbdrawshape",
+      "target": "engine_delay",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L347",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_executewbdrawchart",
+      "target": "engine_delay",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L371",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_executewbdrawlatex",
+      "target": "engine_delay",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L407",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_executewbdrawtable",
+      "target": "engine_delay",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L463",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_executewbdrawline",
+      "target": "engine_delay",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L496",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_executewbdelete",
+      "target": "engine_delay",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L504",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_executewbclear",
+      "target": "engine_delay",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L522",
+      "weight": 1.0
+    },
+    {
+      "source": "engine_actionengine_executewbclose",
+      "target": "engine_delay",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/action/engine.ts",
+      "source_location": "L532",
+      "weight": 1.0
+    }
+  ]
+}

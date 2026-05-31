@@ -1,0 +1,242 @@
+{
+  "nodes": [
+    {
+      "id": "ssrf_guard",
+      "label": "ssrf-guard.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "ssrf_guard_normalizeaddress",
+      "label": "normalizeAddress()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L10"
+    },
+    {
+      "id": "ssrf_guard_parseipv4",
+      "label": "parseIPv4()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L18"
+    },
+    {
+      "id": "ssrf_guard_extractmappedipv4",
+      "label": "extractMappedIPv4()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L36"
+    },
+    {
+      "id": "ssrf_guard_getfirstipv6hextet",
+      "label": "getFirstIPv6Hextet()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L57"
+    },
+    {
+      "id": "ssrf_guard_expandipv6",
+      "label": "expandIPv6()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L76"
+    },
+    {
+      "id": "ssrf_guard_isprivateip",
+      "label": "isPrivateIP()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L104"
+    },
+    {
+      "id": "ssrf_guard_validateurlforssrf",
+      "label": "validateUrlForSSRF()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L169"
+    }
+  ],
+  "edges": [
+    {
+      "source": "ssrf_guard",
+      "target": "node_dns",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "ssrf_guard",
+      "target": "node_net",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "ssrf_guard",
+      "target": "ssrf_guard_normalizeaddress",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "ssrf_guard",
+      "target": "ssrf_guard_parseipv4",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "ssrf_guard",
+      "target": "ssrf_guard_extractmappedipv4",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "ssrf_guard",
+      "target": "ssrf_guard_getfirstipv6hextet",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "ssrf_guard",
+      "target": "ssrf_guard_expandipv6",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L76",
+      "weight": 1.0
+    },
+    {
+      "source": "ssrf_guard",
+      "target": "ssrf_guard_isprivateip",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L104",
+      "weight": 1.0
+    },
+    {
+      "source": "ssrf_guard",
+      "target": "ssrf_guard_validateurlforssrf",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L169",
+      "weight": 1.0
+    },
+    {
+      "source": "ssrf_guard_extractmappedipv4",
+      "target": "ssrf_guard_normalizeaddress",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "ssrf_guard_extractmappedipv4",
+      "target": "ssrf_guard_parseipv4",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "ssrf_guard_getfirstipv6hextet",
+      "target": "ssrf_guard_normalizeaddress",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "ssrf_guard_expandipv6",
+      "target": "ssrf_guard_normalizeaddress",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L77",
+      "weight": 1.0
+    },
+    {
+      "source": "ssrf_guard_isprivateip",
+      "target": "ssrf_guard_normalizeaddress",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L105",
+      "weight": 1.0
+    },
+    {
+      "source": "ssrf_guard_isprivateip",
+      "target": "ssrf_guard_extractmappedipv4",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L106",
+      "weight": 1.0
+    },
+    {
+      "source": "ssrf_guard_isprivateip",
+      "target": "ssrf_guard_parseipv4",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L111",
+      "weight": 1.0
+    },
+    {
+      "source": "ssrf_guard_isprivateip",
+      "target": "ssrf_guard_getfirstipv6hextet",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L125",
+      "weight": 1.0
+    },
+    {
+      "source": "ssrf_guard_isprivateip",
+      "target": "ssrf_guard_expandipv6",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L144",
+      "weight": 1.0
+    },
+    {
+      "source": "ssrf_guard_validateurlforssrf",
+      "target": "ssrf_guard_normalizeaddress",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L187",
+      "weight": 1.0
+    },
+    {
+      "source": "ssrf_guard_validateurlforssrf",
+      "target": "ssrf_guard_isprivateip",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/ssrf-guard.ts",
+      "source_location": "L193",
+      "weight": 1.0
+    }
+  ]
+}

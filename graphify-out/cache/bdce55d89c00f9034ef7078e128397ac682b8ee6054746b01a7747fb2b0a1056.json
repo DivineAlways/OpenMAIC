@@ -1,0 +1,47 @@
+{
+  "nodes": [
+    {
+      "id": "settings_validation_test",
+      "label": "settings-validation.test.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/tests/store/settings-validation.test.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "settings_validation_test_cfg",
+      "label": "cfg()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/tests/store/settings-validation.test.ts",
+      "source_location": "L62"
+    }
+  ],
+  "edges": [
+    {
+      "source": "settings_validation_test",
+      "target": "vitest",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/tests/store/settings-validation.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "settings_validation_test",
+      "target": "settings_validation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/tests/store/settings-validation.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "settings_validation_test",
+      "target": "settings_validation_test_cfg",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/tests/store/settings-validation.test.ts",
+      "source_location": "L62",
+      "weight": 1.0
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "nodes": [
+    {
+      "id": "types",
+      "label": "types.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/types.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "types_iscustomttsprovider",
+      "label": "isCustomTTSProvider()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/types.ts",
+      "source_location": "L185"
+    },
+    {
+      "id": "types_iscustomasrprovider",
+      "label": "isCustomASRProvider()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/types.ts",
+      "source_location": "L190"
+    }
+  ],
+  "edges": [
+    {
+      "source": "types",
+      "target": "types_iscustomttsprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/types.ts",
+      "source_location": "L185",
+      "weight": 1.0
+    },
+    {
+      "source": "types",
+      "target": "types_iscustomasrprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/types.ts",
+      "source_location": "L190",
+      "weight": 1.0
+    }
+  ]
+}

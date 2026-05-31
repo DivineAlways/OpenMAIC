@@ -1,0 +1,40 @@
+{
+  "nodes": [
+    {
+      "id": "whiteboard_history",
+      "label": "whiteboard-history.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/store/whiteboard-history.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "whiteboard_history",
+      "target": "zustand",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/whiteboard-history.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "whiteboard_history",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/whiteboard-history.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "whiteboard_history",
+      "target": "element_fingerprint",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/whiteboard-history.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    }
+  ]
+}

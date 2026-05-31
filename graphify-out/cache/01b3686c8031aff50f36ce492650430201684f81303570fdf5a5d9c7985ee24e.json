@@ -1,0 +1,315 @@
+{
+  "nodes": [
+    {
+      "id": "message",
+      "label": "message.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "message_message",
+      "label": "Message()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L17"
+    },
+    {
+      "id": "message_messagecontent",
+      "label": "MessageContent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L30"
+    },
+    {
+      "id": "message_messageactions",
+      "label": "MessageActions()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L46"
+    },
+    {
+      "id": "message_messageaction",
+      "label": "MessageAction()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L57"
+    },
+    {
+      "id": "message_usemessagebranch",
+      "label": "useMessageBranch()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L99"
+    },
+    {
+      "id": "message_messagebranch",
+      "label": "MessageBranch()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L114"
+    },
+    {
+      "id": "message_messagebranchcontent",
+      "label": "MessageBranchContent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L156"
+    },
+    {
+      "id": "message_messagebranchselector",
+      "label": "MessageBranchSelector()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L188"
+    },
+    {
+      "id": "message_messagebranchprevious",
+      "label": "MessageBranchPrevious()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L211"
+    },
+    {
+      "id": "message_messagebranchnext",
+      "label": "MessageBranchNext()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L231"
+    },
+    {
+      "id": "message_messagebranchpage",
+      "label": "MessageBranchPage()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L255"
+    }
+  ],
+  "edges": [
+    {
+      "source": "message",
+      "target": "button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "message",
+      "target": "button_group",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "message",
+      "target": "tooltip",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "message",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "message",
+      "target": "ai",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "message",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "message",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "message",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "message",
+      "target": "streamdown",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "message",
+      "target": "message_message",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "message",
+      "target": "message_messagecontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "message",
+      "target": "message_messageactions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "message",
+      "target": "message_messageaction",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "message",
+      "target": "message_usemessagebranch",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L99",
+      "weight": 1.0
+    },
+    {
+      "source": "message",
+      "target": "message_messagebranch",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L114",
+      "weight": 1.0
+    },
+    {
+      "source": "message",
+      "target": "message_messagebranchcontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L156",
+      "weight": 1.0
+    },
+    {
+      "source": "message",
+      "target": "message_messagebranchselector",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L188",
+      "weight": 1.0
+    },
+    {
+      "source": "message",
+      "target": "message_messagebranchprevious",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L211",
+      "weight": 1.0
+    },
+    {
+      "source": "message",
+      "target": "message_messagebranchnext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L231",
+      "weight": 1.0
+    },
+    {
+      "source": "message",
+      "target": "message_messagebranchpage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L255",
+      "weight": 1.0
+    },
+    {
+      "source": "message_messagebranchcontent",
+      "target": "message_usemessagebranch",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L157",
+      "weight": 1.0
+    },
+    {
+      "source": "message_messagebranchselector",
+      "target": "message_usemessagebranch",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L193",
+      "weight": 1.0
+    },
+    {
+      "source": "message_messagebranchprevious",
+      "target": "message_usemessagebranch",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L212",
+      "weight": 1.0
+    },
+    {
+      "source": "message_messagebranchnext",
+      "target": "message_usemessagebranch",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L236",
+      "weight": 1.0
+    },
+    {
+      "source": "message_messagebranchpage",
+      "target": "message_usemessagebranch",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/message.tsx",
+      "source_location": "L256",
+      "weight": 1.0
+    }
+  ]
+}

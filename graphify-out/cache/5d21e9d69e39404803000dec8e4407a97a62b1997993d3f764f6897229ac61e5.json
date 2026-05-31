@@ -1,0 +1,238 @@
+{
+  "nodes": [
+    {
+      "id": "providers",
+      "label": "providers.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "providers_getproviderconfig",
+      "label": "getProviderConfig()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L1029"
+    },
+    {
+      "id": "providers_getcompatthinkingbodyparams",
+      "label": "getCompatThinkingBodyParams()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L1074"
+    },
+    {
+      "id": "providers_normalizeminimaxanthropicbaseurl",
+      "label": "normalizeMiniMaxAnthropicBaseUrl()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L1109"
+    },
+    {
+      "id": "providers_isproviderkeyrequired",
+      "label": "isProviderKeyRequired()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L1128"
+    },
+    {
+      "id": "providers_getmodel",
+      "label": "getModel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L1136"
+    },
+    {
+      "id": "providers_parsemodelstring",
+      "label": "parseModelString()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L1249"
+    },
+    {
+      "id": "providers_getallmodels",
+      "label": "getAllModels()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L1273"
+    },
+    {
+      "id": "providers_getprovider",
+      "label": "getProvider()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L1286"
+    },
+    {
+      "id": "providers_getmodelinfo",
+      "label": "getModelInfo()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L1293"
+    }
+  ],
+  "edges": [
+    {
+      "source": "providers",
+      "target": "openai",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "providers",
+      "target": "anthropic",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "providers",
+      "target": "google",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "providers",
+      "target": "ai",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "providers",
+      "target": "provider",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "providers",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "providers",
+      "target": "providers_getproviderconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L1029",
+      "weight": 1.0
+    },
+    {
+      "source": "providers",
+      "target": "providers_getcompatthinkingbodyparams",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L1074",
+      "weight": 1.0
+    },
+    {
+      "source": "providers",
+      "target": "providers_normalizeminimaxanthropicbaseurl",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L1109",
+      "weight": 1.0
+    },
+    {
+      "source": "providers",
+      "target": "providers_isproviderkeyrequired",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L1128",
+      "weight": 1.0
+    },
+    {
+      "source": "providers",
+      "target": "providers_getmodel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L1136",
+      "weight": 1.0
+    },
+    {
+      "source": "providers",
+      "target": "providers_parsemodelstring",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L1249",
+      "weight": 1.0
+    },
+    {
+      "source": "providers",
+      "target": "providers_getallmodels",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L1273",
+      "weight": 1.0
+    },
+    {
+      "source": "providers",
+      "target": "providers_getprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L1286",
+      "weight": 1.0
+    },
+    {
+      "source": "providers",
+      "target": "providers_getmodelinfo",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L1293",
+      "weight": 1.0
+    },
+    {
+      "source": "providers_isproviderkeyrequired",
+      "target": "providers_getproviderconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L1129",
+      "weight": 1.0
+    },
+    {
+      "source": "providers_getmodel",
+      "target": "providers_getproviderconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L1139",
+      "weight": 1.0
+    },
+    {
+      "source": "providers_getmodel",
+      "target": "providers_normalizeminimaxanthropicbaseurl",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/ai/providers.ts",
+      "source_location": "L1159",
+      "weight": 1.0
+    }
+  ]
+}

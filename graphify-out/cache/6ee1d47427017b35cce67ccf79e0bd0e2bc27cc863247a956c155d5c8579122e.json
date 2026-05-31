@@ -1,0 +1,172 @@
+{
+  "nodes": [
+    {
+      "id": "inputrules",
+      "label": "inputrules.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/inputrules.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "inputrules_blockquoterule",
+      "label": "blockQuoteRule()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/inputrules.ts",
+      "source_location": "L11"
+    },
+    {
+      "id": "inputrules_orderedlistrule",
+      "label": "orderedListRule()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/inputrules.ts",
+      "source_location": "L13"
+    },
+    {
+      "id": "inputrules_bulletlistrule",
+      "label": "bulletListRule()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/inputrules.ts",
+      "source_location": "L21"
+    },
+    {
+      "id": "inputrules_coderule",
+      "label": "codeRule()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/inputrules.ts",
+      "source_location": "L23"
+    },
+    {
+      "id": "inputrules_linkrule",
+      "label": "linkRule()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/inputrules.ts",
+      "source_location": "L36"
+    },
+    {
+      "id": "inputrules_buildinputrules",
+      "label": "buildInputRules()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/inputrules.ts",
+      "source_location": "L49"
+    }
+  ],
+  "edges": [
+    {
+      "source": "inputrules",
+      "target": "prosemirror_model",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/inputrules.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "inputrules",
+      "target": "prosemirror_inputrules",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/inputrules.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "inputrules",
+      "target": "inputrules_blockquoterule",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/inputrules.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "inputrules",
+      "target": "inputrules_orderedlistrule",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/inputrules.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "inputrules",
+      "target": "inputrules_bulletlistrule",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/inputrules.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "inputrules",
+      "target": "inputrules_coderule",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/inputrules.ts",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "inputrules",
+      "target": "inputrules_linkrule",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/inputrules.ts",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "inputrules",
+      "target": "inputrules_buildinputrules",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/inputrules.ts",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "inputrules_buildinputrules",
+      "target": "inputrules_blockquoterule",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/inputrules.ts",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "inputrules_buildinputrules",
+      "target": "inputrules_orderedlistrule",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/inputrules.ts",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "inputrules_buildinputrules",
+      "target": "inputrules_bulletlistrule",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/inputrules.ts",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "inputrules_buildinputrules",
+      "target": "inputrules_coderule",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/inputrules.ts",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "inputrules_buildinputrules",
+      "target": "inputrules_linkrule",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/inputrules.ts",
+      "source_location": "L55",
+      "weight": 1.0
+    }
+  ]
+}

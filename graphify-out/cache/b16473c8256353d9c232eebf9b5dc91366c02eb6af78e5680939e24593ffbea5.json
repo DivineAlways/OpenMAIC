@@ -1,0 +1,22 @@
+{
+  "nodes": [
+    {
+      "id": "pipeline_types",
+      "label": "pipeline-types.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/pipeline-types.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "pipeline_types",
+      "target": "generation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/pipeline-types.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    }
+  ]
+}

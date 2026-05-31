@@ -1,0 +1,174 @@
+{
+  "nodes": [
+    {
+      "id": "pdf_providers",
+      "label": "pdf-providers.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pdf/pdf-providers.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "pdf_providers_parsepdf",
+      "label": "parsePDF()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pdf/pdf-providers.ts",
+      "source_location": "L152"
+    },
+    {
+      "id": "pdf_providers_parsewithunpdf",
+      "label": "parseWithUnpdf()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pdf/pdf-providers.ts",
+      "source_location": "L194"
+    },
+    {
+      "id": "pdf_providers_parsewithmineru",
+      "label": "parseWithMinerU()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pdf/pdf-providers.ts",
+      "source_location": "L276"
+    },
+    {
+      "id": "pdf_providers_extractmineruresult",
+      "label": "extractMinerUResult()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pdf/pdf-providers.ts",
+      "source_location": "L351"
+    },
+    {
+      "id": "pdf_providers_getcurrentpdfconfig",
+      "label": "getCurrentPDFConfig()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pdf/pdf-providers.ts",
+      "source_location": "L444"
+    }
+  ],
+  "edges": [
+    {
+      "source": "pdf_providers",
+      "target": "unpdf",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pdf/pdf-providers.ts",
+      "source_location": "L140",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_providers",
+      "target": "sharp",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pdf/pdf-providers.ts",
+      "source_location": "L141",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_providers",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pdf/pdf-providers.ts",
+      "source_location": "L142",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_providers",
+      "target": "pdf",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pdf/pdf-providers.ts",
+      "source_location": "L143",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_providers",
+      "target": "constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pdf/pdf-providers.ts",
+      "source_location": "L144",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_providers",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pdf/pdf-providers.ts",
+      "source_location": "L145",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_providers",
+      "target": "pdf_providers_parsepdf",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pdf/pdf-providers.ts",
+      "source_location": "L152",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_providers",
+      "target": "pdf_providers_parsewithunpdf",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pdf/pdf-providers.ts",
+      "source_location": "L194",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_providers",
+      "target": "pdf_providers_parsewithmineru",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pdf/pdf-providers.ts",
+      "source_location": "L276",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_providers",
+      "target": "pdf_providers_extractmineruresult",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pdf/pdf-providers.ts",
+      "source_location": "L351",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_providers",
+      "target": "pdf_providers_getcurrentpdfconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pdf/pdf-providers.ts",
+      "source_location": "L444",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_providers_parsepdf",
+      "target": "pdf_providers_parsewithunpdf",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pdf/pdf-providers.ts",
+      "source_location": "L172",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_providers_parsepdf",
+      "target": "pdf_providers_parsewithmineru",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pdf/pdf-providers.ts",
+      "source_location": "L176",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_providers_parsewithmineru",
+      "target": "pdf_providers_extractmineruresult",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pdf/pdf-providers.ts",
+      "source_location": "L344",
+      "weight": 1.0
+    }
+  ]
+}

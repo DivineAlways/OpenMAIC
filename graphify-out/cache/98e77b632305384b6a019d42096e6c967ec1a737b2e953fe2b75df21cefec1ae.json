@@ -1,0 +1,49 @@
+{
+  "nodes": [
+    {
+      "id": "index",
+      "label": "index.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/ThumbnailSlide/index.tsx",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "index",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/ThumbnailSlide/index.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/ThumbnailSlide/index.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "use_slide_background_style",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/ThumbnailSlide/index.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "thumbnailelement",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/ThumbnailSlide/index.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    }
+  ]
+}

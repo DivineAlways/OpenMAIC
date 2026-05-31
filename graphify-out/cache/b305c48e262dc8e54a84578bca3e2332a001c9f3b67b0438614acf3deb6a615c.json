@@ -1,0 +1,113 @@
+{
+  "nodes": [
+    {
+      "id": "middleware",
+      "label": "middleware.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/middleware.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "middleware_encode",
+      "label": "encode()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/middleware.ts",
+      "source_location": "L4"
+    },
+    {
+      "id": "middleware_buftohex",
+      "label": "bufToHex()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/middleware.ts",
+      "source_location": "L9"
+    },
+    {
+      "id": "middleware_verifytoken",
+      "label": "verifyToken()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/middleware.ts",
+      "source_location": "L16"
+    },
+    {
+      "id": "middleware_middleware",
+      "label": "middleware()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/middleware.ts",
+      "source_location": "L44"
+    }
+  ],
+  "edges": [
+    {
+      "source": "middleware",
+      "target": "server",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/middleware.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "middleware",
+      "target": "middleware_encode",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/middleware.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "middleware",
+      "target": "middleware_buftohex",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/middleware.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "middleware",
+      "target": "middleware_verifytoken",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/middleware.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "middleware",
+      "target": "middleware_middleware",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/middleware.ts",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "middleware_verifytoken",
+      "target": "middleware_encode",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/middleware.ts",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "middleware_verifytoken",
+      "target": "middleware_buftohex",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/middleware.ts",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "middleware_middleware",
+      "target": "middleware_verifytoken",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/middleware.ts",
+      "source_location": "L73",
+      "weight": 1.0
+    }
+  ]
+}

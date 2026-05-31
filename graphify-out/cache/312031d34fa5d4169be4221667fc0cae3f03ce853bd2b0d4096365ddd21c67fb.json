@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "id": "commonelementoperate",
+      "label": "CommonElementOperate.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/CommonElementOperate.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "commonelementoperate_commonelementoperate",
+      "label": "CommonElementOperate()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/CommonElementOperate.tsx",
+      "source_location": "L28"
+    }
+  ],
+  "edges": [
+    {
+      "source": "commonelementoperate",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/CommonElementOperate.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "commonelementoperate",
+      "target": "store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/CommonElementOperate.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "commonelementoperate",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/CommonElementOperate.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "commonelementoperate",
+      "target": "edit",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/CommonElementOperate.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "commonelementoperate",
+      "target": "usecommonoperate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/CommonElementOperate.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "commonelementoperate",
+      "target": "rotatehandler",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/CommonElementOperate.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "commonelementoperate",
+      "target": "resizehandler",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/CommonElementOperate.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "commonelementoperate",
+      "target": "borderline",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/CommonElementOperate.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "commonelementoperate",
+      "target": "commonelementoperate_commonelementoperate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/CommonElementOperate.tsx",
+      "source_location": "L28",
+      "weight": 1.0
+    }
+  ]
+}

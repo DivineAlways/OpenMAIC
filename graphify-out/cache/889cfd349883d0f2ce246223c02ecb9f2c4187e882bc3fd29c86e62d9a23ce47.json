@@ -1,0 +1,268 @@
+{
+  "nodes": [
+    {
+      "id": "gen_objects",
+      "label": "gen-objects.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "gen_objects_createslidemaster",
+      "label": "createSlideMaster()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L62"
+    },
+    {
+      "id": "gen_objects_addchartdefinition",
+      "label": "addChartDefinition()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L132"
+    },
+    {
+      "id": "gen_objects_addimagedefinition",
+      "label": "addImageDefinition()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L386"
+    },
+    {
+      "id": "gen_objects_addmediadefinition",
+      "label": "addMediaDefinition()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L533"
+    },
+    {
+      "id": "gen_objects_addnotesdefinition",
+      "label": "addNotesDefinition()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L657"
+    },
+    {
+      "id": "gen_objects_addformuladefinition",
+      "label": "addFormulaDefinition()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L669"
+    },
+    {
+      "id": "gen_objects_addshapedefinition",
+      "label": "addShapeDefinition()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L695"
+    },
+    {
+      "id": "gen_objects_addtabledefinition",
+      "label": "addTableDefinition()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L757"
+    },
+    {
+      "id": "gen_objects_addtextdefinition",
+      "label": "addTextDefinition()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L1026"
+    },
+    {
+      "id": "gen_objects_addplaceholderstoslidelayouts",
+      "label": "addPlaceholdersToSlideLayouts()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L1147"
+    },
+    {
+      "id": "gen_objects_addbackgrounddefinition",
+      "label": "addBackgroundDefinition()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L1168"
+    },
+    {
+      "id": "gen_objects_createhyperlinkrels",
+      "label": "createHyperlinkRels()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L1209"
+    }
+  ],
+  "edges": [
+    {
+      "source": "gen_objects",
+      "target": "core_enums",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_objects",
+      "target": "core_interfaces",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_objects",
+      "target": "gen_tables",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_objects",
+      "target": "gen_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_objects",
+      "target": "gen_objects_createslidemaster",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L62",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_objects",
+      "target": "gen_objects_addchartdefinition",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L132",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_objects",
+      "target": "gen_objects_addimagedefinition",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L386",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_objects",
+      "target": "gen_objects_addmediadefinition",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L533",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_objects",
+      "target": "gen_objects_addnotesdefinition",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L657",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_objects",
+      "target": "gen_objects_addformuladefinition",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L669",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_objects",
+      "target": "gen_objects_addshapedefinition",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L695",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_objects",
+      "target": "gen_objects_addtabledefinition",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L757",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_objects",
+      "target": "gen_objects_addtextdefinition",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L1026",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_objects",
+      "target": "gen_objects_addplaceholderstoslidelayouts",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L1147",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_objects",
+      "target": "gen_objects_addbackgrounddefinition",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L1168",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_objects",
+      "target": "gen_objects_createhyperlinkrels",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L1209",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_objects_addshapedefinition",
+      "target": "gen_objects_createhyperlinkrels",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L741",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_objects_addtabledefinition",
+      "target": "gen_objects_createhyperlinkrels",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L979",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_objects_addtextdefinition",
+      "target": "gen_objects_createhyperlinkrels",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-objects.ts",
+      "source_location": "L1137",
+      "weight": 1.0
+    }
+  ]
+}

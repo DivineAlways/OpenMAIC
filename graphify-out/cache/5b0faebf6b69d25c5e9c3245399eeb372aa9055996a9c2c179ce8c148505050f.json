@@ -1,0 +1,183 @@
+{
+  "nodes": [
+    {
+      "id": "model_selector",
+      "label": "model-selector.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/model-selector.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "model_selector_getproviderdisplayname",
+      "label": "getProviderDisplayName()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/model-selector.tsx",
+      "source_location": "L50"
+    },
+    {
+      "id": "model_selector_getmodelcounttext",
+      "label": "getModelCountText()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/model-selector.tsx",
+      "source_location": "L58"
+    },
+    {
+      "id": "model_selector_getfilteredmodelcounttext",
+      "label": "getFilteredModelCountText()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/model-selector.tsx",
+      "source_location": "L63"
+    },
+    {
+      "id": "model_selector_handleselect",
+      "label": "handleSelect()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/model-selector.tsx",
+      "source_location": "L89"
+    },
+    {
+      "id": "model_selector_getfilteredmodelsforprovider",
+      "label": "getFilteredModelsForProvider()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/model-selector.tsx",
+      "source_location": "L94"
+    }
+  ],
+  "edges": [
+    {
+      "source": "model_selector",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/model-selector.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/model-selector.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/model-selector.tsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "input",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/model-selector.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/model-selector.tsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/model-selector.tsx",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "providers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/model-selector.tsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "providers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/model-selector.tsx",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/model-selector.tsx",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/model-selector.tsx",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "model_selector_getproviderdisplayname",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/model-selector.tsx",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "model_selector_getmodelcounttext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/model-selector.tsx",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "model_selector_getfilteredmodelcounttext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/model-selector.tsx",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "model_selector_handleselect",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/model-selector.tsx",
+      "source_location": "L89",
+      "weight": 1.0
+    },
+    {
+      "source": "model_selector",
+      "target": "model_selector_getfilteredmodelsforprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/model-selector.tsx",
+      "source_location": "L94",
+      "weight": 1.0
+    }
+  ]
+}

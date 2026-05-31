@@ -1,0 +1,179 @@
+{
+  "nodes": [
+    {
+      "id": "seedance_adapter",
+      "label": "seedance-adapter.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/seedance-adapter.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "seedance_adapter_toseedanceratio",
+      "label": "toSeedanceRatio()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/seedance-adapter.ts",
+      "source_location": "L65"
+    },
+    {
+      "id": "seedance_adapter_toseedanceresolution",
+      "label": "toSeedanceResolution()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/seedance-adapter.ts",
+      "source_location": "L74"
+    },
+    {
+      "id": "seedance_adapter_estimatedimensions",
+      "label": "estimateDimensions()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/seedance-adapter.ts",
+      "source_location": "L82"
+    },
+    {
+      "id": "seedance_adapter_testseedanceconnectivity",
+      "label": "testSeedanceConnectivity()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/seedance-adapter.ts",
+      "source_location": "L108"
+    },
+    {
+      "id": "seedance_adapter_submitseedancetask",
+      "label": "submitSeedanceTask()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/seedance-adapter.ts",
+      "source_location": "L134"
+    },
+    {
+      "id": "seedance_adapter_pollseedancetask",
+      "label": "pollSeedanceTask()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/seedance-adapter.ts",
+      "source_location": "L186"
+    },
+    {
+      "id": "seedance_adapter_generatewithseedance",
+      "label": "generateWithSeedance()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/seedance-adapter.ts",
+      "source_location": "L230"
+    }
+  ],
+  "edges": [
+    {
+      "source": "seedance_adapter",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/seedance-adapter.ts",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "seedance_adapter",
+      "target": "seedance_adapter_toseedanceratio",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/seedance-adapter.ts",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "seedance_adapter",
+      "target": "seedance_adapter_toseedanceresolution",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/seedance-adapter.ts",
+      "source_location": "L74",
+      "weight": 1.0
+    },
+    {
+      "source": "seedance_adapter",
+      "target": "seedance_adapter_estimatedimensions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/seedance-adapter.ts",
+      "source_location": "L82",
+      "weight": 1.0
+    },
+    {
+      "source": "seedance_adapter",
+      "target": "seedance_adapter_testseedanceconnectivity",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/seedance-adapter.ts",
+      "source_location": "L108",
+      "weight": 1.0
+    },
+    {
+      "source": "seedance_adapter",
+      "target": "seedance_adapter_submitseedancetask",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/seedance-adapter.ts",
+      "source_location": "L134",
+      "weight": 1.0
+    },
+    {
+      "source": "seedance_adapter",
+      "target": "seedance_adapter_pollseedancetask",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/seedance-adapter.ts",
+      "source_location": "L186",
+      "weight": 1.0
+    },
+    {
+      "source": "seedance_adapter",
+      "target": "seedance_adapter_generatewithseedance",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/seedance-adapter.ts",
+      "source_location": "L230",
+      "weight": 1.0
+    },
+    {
+      "source": "seedance_adapter_submitseedancetask",
+      "target": "seedance_adapter_toseedanceratio",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/seedance-adapter.ts",
+      "source_location": "L151",
+      "weight": 1.0
+    },
+    {
+      "source": "seedance_adapter_submitseedancetask",
+      "target": "seedance_adapter_toseedanceresolution",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/seedance-adapter.ts",
+      "source_location": "L156",
+      "weight": 1.0
+    },
+    {
+      "source": "seedance_adapter_pollseedancetask",
+      "target": "seedance_adapter_estimatedimensions",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/seedance-adapter.ts",
+      "source_location": "L210",
+      "weight": 1.0
+    },
+    {
+      "source": "seedance_adapter_generatewithseedance",
+      "target": "seedance_adapter_submitseedancetask",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/seedance-adapter.ts",
+      "source_location": "L234",
+      "weight": 1.0
+    },
+    {
+      "source": "seedance_adapter_generatewithseedance",
+      "target": "seedance_adapter_pollseedancetask",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/seedance-adapter.ts",
+      "source_location": "L238",
+      "weight": 1.0
+    }
+  ]
+}

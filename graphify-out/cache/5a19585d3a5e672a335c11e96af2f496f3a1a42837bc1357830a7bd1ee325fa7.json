@@ -1,0 +1,22 @@
+{
+  "nodes": [
+    {
+      "id": "core_enums",
+      "label": "core-enums.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/core-enums.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "core_enums",
+      "target": "core_interfaces",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/core-enums.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    }
+  ]
+}

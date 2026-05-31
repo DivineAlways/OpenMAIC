@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    {
+      "id": "pbl_system_prompt",
+      "label": "pbl-system-prompt.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/pbl-system-prompt.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "pbl_system_prompt_buildpblsystemprompt",
+      "label": "buildPBLSystemPrompt()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/pbl-system-prompt.ts",
+      "source_location": "L16"
+    }
+  ],
+  "edges": [
+    {
+      "source": "pbl_system_prompt",
+      "target": "pbl_system_prompt_buildpblsystemprompt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/pbl-system-prompt.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    }
+  ]
+}

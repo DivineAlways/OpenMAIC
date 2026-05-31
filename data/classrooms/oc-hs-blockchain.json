@@ -9,11 +9,7 @@
     "updatedAt": "2026-04-24T12:00:00.000Z",
     "languageDirective": "en-US",
     "style": "academic",
-    "agentIds": [
-      "default-1",
-      "default-2",
-      "default-3"
-    ],
+    "agentIds": ["default-1", "default-2", "default-3"],
     "generatedAgentConfigs": []
   },
   "scenes": [
@@ -42,10 +38,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -58,10 +51,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -110,10 +100,7 @@
               "height": 110,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b15",
               "fixedRatio": false,
               "outline": {
@@ -155,10 +142,7 @@
               "height": 110,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#3b82f615",
               "fixedRatio": false,
               "outline": {
@@ -200,10 +184,7 @@
               "height": 110,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf615",
               "fixedRatio": false,
               "outline": {
@@ -245,10 +226,7 @@
               "height": 110,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#10b98115",
               "fixedRatio": false,
               "outline": {
@@ -366,10 +344,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -382,10 +357,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -422,10 +394,7 @@
               "height": 80,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b10",
               "fixedRatio": false,
               "outline": {
@@ -511,10 +480,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -527,10 +493,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -567,10 +530,7 @@
               "height": 420,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#10b98110",
               "fixedRatio": false,
               "outline": {
@@ -678,10 +638,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -694,10 +651,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -734,10 +688,7 @@
               "height": 300,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b10",
               "fixedRatio": false,
               "outline": {
@@ -791,10 +742,7 @@
               "height": 60,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#3b82f610",
               "fixedRatio": false,
               "outline": {
@@ -871,11 +819,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f59e0b",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#f59e0b", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -889,10 +833,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -905,10 +846,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -957,10 +895,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b20",
               "fixedRatio": false,
               "outline": {
@@ -990,10 +925,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b20",
               "fixedRatio": false,
               "outline": {
@@ -1023,10 +955,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b20",
               "fixedRatio": false,
               "outline": {
@@ -1056,10 +985,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b20",
               "fixedRatio": false,
               "outline": {
@@ -1180,11 +1106,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f59e0b",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#f59e0b", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1198,10 +1120,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -1214,10 +1133,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -1266,10 +1182,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b20",
               "fixedRatio": false,
               "outline": {
@@ -1299,10 +1212,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b20",
               "fixedRatio": false,
               "outline": {
@@ -1332,10 +1242,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b20",
               "fixedRatio": false,
               "outline": {
@@ -1365,10 +1272,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b20",
               "fixedRatio": false,
               "outline": {
@@ -1489,11 +1393,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f59e0b",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#f59e0b", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1507,10 +1407,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -1523,10 +1420,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -1575,10 +1469,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b20",
               "fixedRatio": false,
               "outline": {
@@ -1608,10 +1499,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b20",
               "fixedRatio": false,
               "outline": {
@@ -1641,10 +1529,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b20",
               "fixedRatio": false,
               "outline": {
@@ -1674,10 +1559,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b20",
               "fixedRatio": false,
               "outline": {
@@ -1835,9 +1717,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "A nonce (number used once) is a value miners increment billions of times per second, looking for a combination that produces a hash meeting the network's difficulty target. It's the core of the Proof of Work puzzle.",
             "points": 1
           },
@@ -1863,9 +1743,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "The blockchain trilemma, identified by Vitalik Buterin, states that a blockchain can only truly optimize two of three properties: security, scalability, and decentralization. Every blockchain design is a tradeoff between these three.",
             "points": 1
           },
@@ -1891,9 +1769,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "XRPL uses RPCA (Ripple Protocol Consensus Algorithm) where trusted validators vote on transaction sets. No mining puzzle, no energy competition — just fast consensus. Bitcoin requires miners to solve a hash puzzle, which is deliberately slow to make cheating expensive.",
             "points": 1
           },
@@ -1919,9 +1795,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "C"
-            ],
+            "answer": ["C"],
             "analysis": "A Merkle tree hashes all transactions in a block in pairs, building up to a single Merkle root. This structure lets lightweight clients prove that a specific transaction is in a block by checking just a branch of the tree — not every transaction.",
             "points": 1
           },
@@ -1947,9 +1821,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "Proof of Work has miners burn energy competing to solve puzzles. Proof of Stake has validators lock up (stake) coins as collateral — they're chosen proportionally to validate blocks. PoS uses about 99% less energy than PoW and is used by Ethereum, Solana, and many other major chains.",
             "points": 1
           },
@@ -1975,9 +1847,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "A hard fork introduces incompatible rule changes. Old nodes reject new blocks, splitting the network. Bitcoin Cash was created via a hard fork of Bitcoin in 2017.",
             "points": 1
           },
@@ -2003,9 +1873,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "C"
-            ],
+            "answer": ["C"],
             "analysis": "L2s like Arbitrum process transactions off-chain then batch-settle on Ethereum L1. Users get fast, cheap transactions while the L1 provides the security guarantee.",
             "points": 1
           }
@@ -2016,13 +1884,13 @@
           "id": "action_hs-bc-s3_q0",
           "type": "speech",
           "text": "Time to test your understanding of blockchain mechanics. These questions cover mining, consensus, and the trilemma.",
-          "audioUrl": "/audio/lessons/oc-hs-blockchain/7-0.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/8-0.mp3"
         },
         {
           "id": "action_hs-bc-s3_q1",
           "type": "speech",
           "text": "Read each question carefully — some answers are close. Think about the underlying mechanism.",
-          "audioUrl": "/audio/lessons/oc-hs-blockchain/7-1.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-blockchain/8-1.mp3"
         }
       ]
     }

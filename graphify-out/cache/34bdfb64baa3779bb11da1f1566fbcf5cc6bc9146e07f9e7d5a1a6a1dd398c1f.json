@@ -1,0 +1,140 @@
+{
+  "nodes": [
+    {
+      "id": "asr_providers",
+      "label": "asr-providers.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/asr-providers.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "asr_providers_transcribeaudio",
+      "label": "transcribeAudio()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/asr-providers.ts",
+      "source_location": "L164"
+    },
+    {
+      "id": "asr_providers_transcribeopenaiwhisper",
+      "label": "transcribeOpenAIWhisper()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/asr-providers.ts",
+      "source_location": "L196"
+    },
+    {
+      "id": "asr_providers_transcribeqwenasr",
+      "label": "transcribeQwenASR()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/asr-providers.ts",
+      "source_location": "L241"
+    },
+    {
+      "id": "asr_providers_getcurrentasrconfig",
+      "label": "getCurrentASRConfig()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/asr-providers.ts",
+      "source_location": "L334"
+    }
+  ],
+  "edges": [
+    {
+      "source": "asr_providers",
+      "target": "openai",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/asr-providers.ts",
+      "source_location": "L148",
+      "weight": 1.0
+    },
+    {
+      "source": "asr_providers",
+      "target": "ai",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/asr-providers.ts",
+      "source_location": "L149",
+      "weight": 1.0
+    },
+    {
+      "source": "asr_providers",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/asr-providers.ts",
+      "source_location": "L150",
+      "weight": 1.0
+    },
+    {
+      "source": "asr_providers",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/asr-providers.ts",
+      "source_location": "L151",
+      "weight": 1.0
+    },
+    {
+      "source": "asr_providers",
+      "target": "constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/asr-providers.ts",
+      "source_location": "L152",
+      "weight": 1.0
+    },
+    {
+      "source": "asr_providers",
+      "target": "asr_providers_transcribeaudio",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/asr-providers.ts",
+      "source_location": "L164",
+      "weight": 1.0
+    },
+    {
+      "source": "asr_providers",
+      "target": "asr_providers_transcribeopenaiwhisper",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/asr-providers.ts",
+      "source_location": "L196",
+      "weight": 1.0
+    },
+    {
+      "source": "asr_providers",
+      "target": "asr_providers_transcribeqwenasr",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/asr-providers.ts",
+      "source_location": "L241",
+      "weight": 1.0
+    },
+    {
+      "source": "asr_providers",
+      "target": "asr_providers_getcurrentasrconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/asr-providers.ts",
+      "source_location": "L334",
+      "weight": 1.0
+    },
+    {
+      "source": "asr_providers_transcribeaudio",
+      "target": "asr_providers_transcribeopenaiwhisper",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/asr-providers.ts",
+      "source_location": "L177",
+      "weight": 1.0
+    },
+    {
+      "source": "asr_providers_transcribeaudio",
+      "target": "asr_providers_transcribeqwenasr",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/asr-providers.ts",
+      "source_location": "L183",
+      "weight": 1.0
+    }
+  ]
+}

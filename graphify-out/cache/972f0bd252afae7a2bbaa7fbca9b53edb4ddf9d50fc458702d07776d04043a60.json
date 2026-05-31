@@ -1,0 +1,119 @@
+{
+  "nodes": [
+    {
+      "id": "presentation_speech_overlay",
+      "label": "presentation-speech-overlay.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/roundtable/presentation-speech-overlay.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "presentation_speech_overlay_buildpresentationbubblemodel",
+      "label": "buildPresentationBubbleModel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/roundtable/presentation-speech-overlay.tsx",
+      "source_location": "L41"
+    }
+  ],
+  "edges": [
+    {
+      "source": "presentation_speech_overlay",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/presentation-speech-overlay.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "presentation_speech_overlay",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/presentation-speech-overlay.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "presentation_speech_overlay",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/presentation-speech-overlay.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "presentation_speech_overlay",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/presentation-speech-overlay.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "presentation_speech_overlay",
+      "target": "avatar_display",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/presentation-speech-overlay.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "presentation_speech_overlay",
+      "target": "audio_indicator",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/presentation-speech-overlay.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "presentation_speech_overlay",
+      "target": "playback",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/presentation-speech-overlay.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "presentation_speech_overlay",
+      "target": "roundtable",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/presentation-speech-overlay.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "presentation_speech_overlay",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/presentation-speech-overlay.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "presentation_speech_overlay",
+      "target": "constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/presentation-speech-overlay.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "presentation_speech_overlay",
+      "target": "presentation_speech_overlay_buildpresentationbubblemodel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/presentation-speech-overlay.tsx",
+      "source_location": "L41",
+      "weight": 1.0
+    }
+  ]
+}

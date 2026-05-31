@@ -1,0 +1,151 @@
+{
+  "nodes": [
+    {
+      "id": "usescaleelement",
+      "label": "useScaleElement.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useScaleElement.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "usescaleelement_getrotateelementpoints",
+      "label": "getRotateElementPoints()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useScaleElement.ts",
+      "source_location": "L33"
+    },
+    {
+      "id": "usescaleelement_getoppositepoint",
+      "label": "getOppositePoint()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useScaleElement.ts",
+      "source_location": "L100"
+    },
+    {
+      "id": "usescaleelement_usescaleelement",
+      "label": "useScaleElement()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useScaleElement.ts",
+      "source_location": "L124"
+    }
+  ],
+  "edges": [
+    {
+      "source": "usescaleelement",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useScaleElement.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "usescaleelement",
+      "target": "store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useScaleElement.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "usescaleelement",
+      "target": "keyboard",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useScaleElement.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "usescaleelement",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useScaleElement.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "usescaleelement",
+      "target": "edit",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useScaleElement.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "usescaleelement",
+      "target": "element",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useScaleElement.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "usescaleelement",
+      "target": "shapes",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useScaleElement.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "usescaleelement",
+      "target": "element",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useScaleElement.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "usescaleelement",
+      "target": "use_history_snapshot",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useScaleElement.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "usescaleelement",
+      "target": "use_canvas_operations",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useScaleElement.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "usescaleelement",
+      "target": "usescaleelement_getrotateelementpoints",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useScaleElement.ts",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "usescaleelement",
+      "target": "usescaleelement_getoppositepoint",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useScaleElement.ts",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "usescaleelement",
+      "target": "usescaleelement_usescaleelement",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useScaleElement.ts",
+      "source_location": "L124",
+      "weight": 1.0
+    }
+  ]
+}

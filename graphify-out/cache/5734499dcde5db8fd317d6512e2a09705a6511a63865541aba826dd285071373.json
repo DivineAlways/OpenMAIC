@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "id": "userotateelement",
+      "label": "useRotateElement.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useRotateElement.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "userotateelement_getanglefromcoordinate",
+      "label": "getAngleFromCoordinate()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useRotateElement.ts",
+      "source_location": "L17"
+    },
+    {
+      "id": "userotateelement_userotateelement",
+      "label": "useRotateElement()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useRotateElement.ts",
+      "source_location": "L31"
+    }
+  ],
+  "edges": [
+    {
+      "source": "userotateelement",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useRotateElement.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "userotateelement",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useRotateElement.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "userotateelement",
+      "target": "use_history_snapshot",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useRotateElement.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "userotateelement",
+      "target": "use_canvas_operations",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useRotateElement.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "userotateelement",
+      "target": "userotateelement_getanglefromcoordinate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useRotateElement.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "userotateelement",
+      "target": "userotateelement_userotateelement",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useRotateElement.ts",
+      "source_location": "L31",
+      "weight": 1.0
+    }
+  ]
+}

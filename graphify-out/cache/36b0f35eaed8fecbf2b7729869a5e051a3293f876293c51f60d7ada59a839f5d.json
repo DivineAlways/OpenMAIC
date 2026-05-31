@@ -1,0 +1,54 @@
+{
+  "nodes": [
+    {
+      "id": "use_theme",
+      "label": "use-theme.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/hooks/use-theme.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "use_theme_themeprovider",
+      "label": "ThemeProvider()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/hooks/use-theme.tsx",
+      "source_location": "L15"
+    },
+    {
+      "id": "use_theme_usetheme",
+      "label": "useTheme()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/hooks/use-theme.tsx",
+      "source_location": "L65"
+    }
+  ],
+  "edges": [
+    {
+      "source": "use_theme",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-theme.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "use_theme",
+      "target": "use_theme_themeprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-theme.tsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "use_theme",
+      "target": "use_theme_usetheme",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-theme.tsx",
+      "source_location": "L65",
+      "weight": 1.0
+    }
+  ]
+}

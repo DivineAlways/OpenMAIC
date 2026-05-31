@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "borderline",
+      "label": "BorderLine.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/BorderLine.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "borderline_borderline",
+      "label": "BorderLine()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/BorderLine.tsx",
+      "source_location": "L10"
+    }
+  ],
+  "edges": [
+    {
+      "source": "borderline",
+      "target": "edit",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/BorderLine.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "borderline",
+      "target": "borderline_borderline",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/BorderLine.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    }
+  ]
+}

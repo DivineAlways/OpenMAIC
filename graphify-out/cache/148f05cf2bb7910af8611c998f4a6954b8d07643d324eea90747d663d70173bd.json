@@ -1,0 +1,115 @@
+{
+  "nodes": [
+    {
+      "id": "video_providers",
+      "label": "video-providers.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/video-providers.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "video_providers_testvideoconnectivity",
+      "label": "testVideoConnectivity()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/video-providers.ts",
+      "source_location": "L111"
+    },
+    {
+      "id": "video_providers_normalizevideooptions",
+      "label": "normalizeVideoOptions()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/video-providers.ts",
+      "source_location": "L138"
+    },
+    {
+      "id": "video_providers_generatevideo",
+      "label": "generateVideo()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/video-providers.ts",
+      "source_location": "L175"
+    }
+  ],
+  "edges": [
+    {
+      "source": "video_providers",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/video-providers.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "video_providers",
+      "target": "seedance_adapter",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/video-providers.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "video_providers",
+      "target": "kling_adapter",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/video-providers.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "video_providers",
+      "target": "veo_adapter",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/video-providers.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "video_providers",
+      "target": "minimax_video_adapter",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/video-providers.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "video_providers",
+      "target": "grok_video_adapter",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/video-providers.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "video_providers",
+      "target": "video_providers_testvideoconnectivity",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/video-providers.ts",
+      "source_location": "L111",
+      "weight": 1.0
+    },
+    {
+      "source": "video_providers",
+      "target": "video_providers_normalizevideooptions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/video-providers.ts",
+      "source_location": "L138",
+      "weight": 1.0
+    },
+    {
+      "source": "video_providers",
+      "target": "video_providers_generatevideo",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/video-providers.ts",
+      "source_location": "L175",
+      "weight": 1.0
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "useelementflip",
+      "label": "useElementFlip.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/hooks/useElementFlip.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "useelementflip_useelementflip",
+      "label": "useElementFlip()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/hooks/useElementFlip.ts",
+      "source_location": "L9"
+    }
+  ],
+  "edges": [
+    {
+      "source": "useelementflip",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/hooks/useElementFlip.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "useelementflip",
+      "target": "useelementflip_useelementflip",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/hooks/useElementFlip.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    }
+  ]
+}

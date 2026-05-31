@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    {
+      "id": "index_d",
+      "label": "index.d.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/index.d.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "index_d_mml2omml",
+      "label": "MML2OMML",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/index.d.ts",
+      "source_location": "L20"
+    }
+  ],
+  "edges": [
+    {
+      "source": "index_d",
+      "target": "index_d_mml2omml",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/index.d.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    }
+  ]
+}

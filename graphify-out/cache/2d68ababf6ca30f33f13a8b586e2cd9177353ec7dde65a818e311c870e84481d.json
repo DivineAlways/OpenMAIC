@@ -1,0 +1,40 @@
+{
+  "nodes": [
+    {
+      "id": "guide",
+      "label": "guide.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/guide.tsx",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "guide",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/guide.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "guide",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/guide.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "guide",
+      "target": "hover_card",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/guide.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    }
+  ]
+}

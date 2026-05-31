@@ -102,8 +102,15 @@ export function Stage({
 }) {
   const { t } = useI18n();
   const router = useRouter();
-  const { mode, getCurrentScene, scenes, currentSceneId, setCurrentSceneId, generatingOutlines, stage } =
-    useStageStore();
+  const {
+    mode,
+    getCurrentScene,
+    scenes,
+    currentSceneId,
+    setCurrentSceneId,
+    generatingOutlines,
+    stage,
+  } = useStageStore();
   const failedOutlines = useStageStore.use.failedOutlines();
 
   const currentScene = getCurrentScene();
@@ -550,7 +557,8 @@ export function Stage({
         const allScenes = stageState.scenes;
         const curId = stageState.currentSceneId;
         const idx = allScenes.findIndex((s) => s.id === curId);
-        const isLastScene = idx === allScenes.length - 1 && stageState.generatingOutlines.length === 0;
+        const isLastScene =
+          idx === allScenes.length - 1 && stageState.generatingOutlines.length === 0;
         if (isLastScene && courseId) {
           markCourseComplete(courseId);
           // Small delay so last speech settles before overlay appears
@@ -570,8 +578,15 @@ export function Stage({
         const idxForPrompt = allScenesForPrompt.findIndex((s) => s.id === curIdForPrompt);
         // Only prompt on slide/content scenes, not quizzes or the very last scene (which shows the overlay)
         const currentSceneForPrompt = allScenesForPrompt[idxForPrompt];
-        const isLastForPrompt = idxForPrompt === allScenesForPrompt.length - 1 && stageStateForPrompt.generatingOutlines.length === 0;
-        if (!isLastForPrompt && currentSceneForPrompt && currentSceneForPrompt.type !== 'quiz' && currentSceneForPrompt.type !== 'interactive') {
+        const isLastForPrompt =
+          idxForPrompt === allScenesForPrompt.length - 1 &&
+          stageStateForPrompt.generatingOutlines.length === 0;
+        if (
+          !isLastForPrompt &&
+          currentSceneForPrompt &&
+          currentSceneForPrompt.type !== 'quiz' &&
+          currentSceneForPrompt.type !== 'interactive'
+        ) {
           setTimeout(() => {
             // Trigger a brief AI response inviting the student to ask follow-up questions
             chatAreaRef.current?.sendMessage(
@@ -861,13 +876,16 @@ export function Stage({
   const totalScenesCount = scenes.length + (hasNextPending ? 1 : 0);
 
   // Seekable progress bar — jump to any scene by index
-  const handleSeek = useCallback((targetIndex: number) => {
-    const target = scenes[targetIndex];
-    if (!target) return;
-    // Stop current audio immediately
-    audioPlayerRef.current.stop?.();
-    gatedSceneSwitch(target.id);
-  }, [scenes, gatedSceneSwitch]);
+  const handleSeek = useCallback(
+    (targetIndex: number) => {
+      const target = scenes[targetIndex];
+      if (!target) return;
+      // Stop current audio immediately
+      audioPlayerRef.current.stop?.();
+      gatedSceneSwitch(target.id);
+    },
+    [scenes, gatedSceneSwitch],
+  );
 
   // get action information
   const totalActions = currentScene?.actions?.length || 0;
@@ -1234,14 +1252,14 @@ export function Stage({
               onToggleChat={() => setChatAreaCollapsed(!chatAreaCollapsed)}
               onPrevSlide={handlePreviousScene}
               onNextSlide={handleNextScene}
-      onWhiteboardClose={handleWhiteboardToggle}
-      isPresenting={isPresenting}
-      controlsVisible={controlsVisible}
-      onTogglePresentation={togglePresentation}
-      onPresentationInteractionChange={setIsPresentationInteractionActive}
-      onSeek={handleSeek}
-      fullscreenContainerRef={stageRef}
-    />
+              onWhiteboardClose={handleWhiteboardToggle}
+              isPresenting={isPresenting}
+              controlsVisible={controlsVisible}
+              onTogglePresentation={togglePresentation}
+              onPresentationInteractionChange={setIsPresentationInteractionActive}
+              onSeek={handleSeek}
+              fullscreenContainerRef={stageRef}
+            />
           </div>
         )}
       </div>
@@ -1312,7 +1330,9 @@ export function Stage({
               </div>
             </div>
 
-            <p className="text-xs font-bold uppercase tracking-widest text-violet-400 mb-2">Lesson Complete</p>
+            <p className="text-xs font-bold uppercase tracking-widest text-violet-400 mb-2">
+              Lesson Complete
+            </p>
             <h2 className="text-2xl font-black text-white mb-2">{findCourseTitle(courseId)}</h2>
             <p className="text-gray-400 text-sm mb-8">You've finished this lesson. Keep going!</p>
 
@@ -1321,7 +1341,12 @@ export function Stage({
                 <button
                   onClick={() => {
                     const next = findNextCourse(courseId)!;
-                    try { localStorage.setItem('oc_last_course', JSON.stringify({ id: next.id, title: next.title, level: next.level })); } catch {}
+                    try {
+                      localStorage.setItem(
+                        'oc_last_course',
+                        JSON.stringify({ id: next.id, title: next.title, level: next.level }),
+                      );
+                    } catch {}
                     router.push(`/classroom/${next.id}`);
                   }}
                   className="w-full flex items-center justify-center gap-2 py-3.5 px-6 bg-violet-500 hover:bg-violet-600 text-white font-bold rounded-2xl transition-colors"

@@ -1,0 +1,22 @@
+{
+  "nodes": [
+    {
+      "id": "audio_indicator",
+      "label": "audio-indicator.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/roundtable/audio-indicator.tsx",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "audio_indicator",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/audio-indicator.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    }
+  ]
+}

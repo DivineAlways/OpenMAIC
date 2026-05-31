@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "provider_config_test",
+      "label": "provider-config.test.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/tests/server/provider-config.test.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "provider_config_test_isyaml",
+      "label": "isYaml()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/tests/server/provider-config.test.ts",
+      "source_location": "L10"
+    }
+  ],
+  "edges": [
+    {
+      "source": "provider_config_test",
+      "target": "vitest",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/tests/server/provider-config.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "provider_config_test",
+      "target": "provider_config_test_isyaml",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/tests/server/provider-config.test.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    }
+  ]
+}

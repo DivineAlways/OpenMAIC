@@ -1,0 +1,128 @@
+{
+  "nodes": [
+    {
+      "id": "index",
+      "label": "index.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/index.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "index_imageelement",
+      "label": "ImageElement()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/index.tsx",
+      "source_location": "L23"
+    }
+  ],
+  "edges": [
+    {
+      "source": "index",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/index.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "edit",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/index.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/index.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "use_canvas_operations",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/index.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "use_history_snapshot",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/index.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "useelementshadow",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/index.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "useelementflip",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/index.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "useclipimage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/index.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "usefilter",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/index.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "imageoutline",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/index.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "imagecliphandler",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/index.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_imageelement",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/index.tsx",
+      "source_location": "L23",
+      "weight": 1.0
+    }
+  ]
+}

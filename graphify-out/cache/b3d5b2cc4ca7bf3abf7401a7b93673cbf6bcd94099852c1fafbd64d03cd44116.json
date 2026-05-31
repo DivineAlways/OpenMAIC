@@ -1,0 +1,188 @@
+{
+  "nodes": [
+    {
+      "id": "mock_api",
+      "label": "mock-api.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/e2e/fixtures/mock-api.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "mock_api_mockapi",
+      "label": "MockApi",
+      "file_type": "code",
+      "source_file": "OpenMAIC/e2e/fixtures/mock-api.ts",
+      "source_location": "L10"
+    },
+    {
+      "id": "mock_api_mockapi_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/e2e/fixtures/mock-api.ts",
+      "source_location": "L11"
+    },
+    {
+      "id": "mock_api_mockapi_mocksceneoutlinesstream",
+      "label": ".mockSceneOutlinesStream()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/e2e/fixtures/mock-api.ts",
+      "source_location": "L14"
+    },
+    {
+      "id": "mock_api_mockapi_mockscenecontent",
+      "label": ".mockSceneContent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/e2e/fixtures/mock-api.ts",
+      "source_location": "L37"
+    },
+    {
+      "id": "mock_api_mockapi_mocksceneactions",
+      "label": ".mockSceneActions()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/e2e/fixtures/mock-api.ts",
+      "source_location": "L50"
+    },
+    {
+      "id": "mock_api_mockapi_mockserverproviders",
+      "label": ".mockServerProviders()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/e2e/fixtures/mock-api.ts",
+      "source_location": "L70"
+    },
+    {
+      "id": "mock_api_mockapi_setupgenerationmocks",
+      "label": ".setupGenerationMocks()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/e2e/fixtures/mock-api.ts",
+      "source_location": "L81"
+    }
+  ],
+  "edges": [
+    {
+      "source": "mock_api",
+      "target": "test",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/fixtures/mock-api.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "mock_api",
+      "target": "scene_outlines",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/fixtures/mock-api.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "mock_api",
+      "target": "scene_content",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/fixtures/mock-api.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "mock_api",
+      "target": "scene_actions",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/fixtures/mock-api.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "mock_api",
+      "target": "mock_api_mockapi",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/fixtures/mock-api.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "mock_api_mockapi",
+      "target": "mock_api_mockapi_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/fixtures/mock-api.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "mock_api_mockapi",
+      "target": "mock_api_mockapi_mocksceneoutlinesstream",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/fixtures/mock-api.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "mock_api_mockapi",
+      "target": "mock_api_mockapi_mockscenecontent",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/fixtures/mock-api.ts",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "mock_api_mockapi",
+      "target": "mock_api_mockapi_mocksceneactions",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/fixtures/mock-api.ts",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "mock_api_mockapi",
+      "target": "mock_api_mockapi_mockserverproviders",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/fixtures/mock-api.ts",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
+      "source": "mock_api_mockapi",
+      "target": "mock_api_mockapi_setupgenerationmocks",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/fixtures/mock-api.ts",
+      "source_location": "L81",
+      "weight": 1.0
+    },
+    {
+      "source": "mock_api_mockapi_setupgenerationmocks",
+      "target": "mock_api_mockapi_mocksceneoutlinesstream",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/fixtures/mock-api.ts",
+      "source_location": "L82",
+      "weight": 1.0
+    },
+    {
+      "source": "mock_api_mockapi_setupgenerationmocks",
+      "target": "mock_api_mockapi_mockscenecontent",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/fixtures/mock-api.ts",
+      "source_location": "L83",
+      "weight": 1.0
+    },
+    {
+      "source": "mock_api_mockapi_setupgenerationmocks",
+      "target": "mock_api_mockapi_mocksceneactions",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/fixtures/mock-api.ts",
+      "source_location": "L84",
+      "weight": 1.0
+    }
+  ]
+}

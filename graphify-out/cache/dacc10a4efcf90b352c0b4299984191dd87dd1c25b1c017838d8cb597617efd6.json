@@ -1,0 +1,40 @@
+{
+  "nodes": [
+    {
+      "id": "generation_flow_spec",
+      "label": "generation-flow.spec.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/e2e/tests/generation-flow.spec.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "generation_flow_spec",
+      "target": "base",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/tests/generation-flow.spec.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "generation_flow_spec",
+      "target": "generation_preview_page",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/tests/generation-flow.spec.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "generation_flow_spec",
+      "target": "settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/tests/generation-flow.spec.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    }
+  ]
+}

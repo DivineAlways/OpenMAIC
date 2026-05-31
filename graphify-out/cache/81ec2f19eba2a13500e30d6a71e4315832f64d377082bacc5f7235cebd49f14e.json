@@ -1,0 +1,215 @@
+{
+  "nodes": [
+    {
+      "id": "ai_sdk_adapter",
+      "label": "ai-sdk-adapter.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/ai-sdk-adapter.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "ai_sdk_adapter_aisdklanggraphadapter",
+      "label": "AISdkLangGraphAdapter",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/ai-sdk-adapter.ts",
+      "source_location": "L43"
+    },
+    {
+      "id": "ai_sdk_adapter_aisdklanggraphadapter_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/ai-sdk-adapter.ts",
+      "source_location": "L47"
+    },
+    {
+      "id": "ai_sdk_adapter_aisdklanggraphadapter_llmtype",
+      "label": "._llmType()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/ai-sdk-adapter.ts",
+      "source_location": "L53"
+    },
+    {
+      "id": "ai_sdk_adapter_aisdklanggraphadapter_combinellmoutput",
+      "label": "._combineLLMOutput()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/ai-sdk-adapter.ts",
+      "source_location": "L57"
+    },
+    {
+      "id": "ai_sdk_adapter_aisdklanggraphadapter_convertmessages",
+      "label": ".convertMessages()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/ai-sdk-adapter.ts",
+      "source_location": "L64"
+    },
+    {
+      "id": "ai_sdk_adapter_aisdklanggraphadapter_generate",
+      "label": "._generate()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/ai-sdk-adapter.ts",
+      "source_location": "L80"
+    },
+    {
+      "id": "ai_sdk_adapter_aisdklanggraphadapter_streamgenerate",
+      "label": ".streamGenerate()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/ai-sdk-adapter.ts",
+      "source_location": "L128"
+    }
+  ],
+  "edges": [
+    {
+      "source": "ai_sdk_adapter",
+      "target": "chat_models",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/ai-sdk-adapter.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_sdk_adapter",
+      "target": "messages",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/ai-sdk-adapter.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_sdk_adapter",
+      "target": "manager",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/ai-sdk-adapter.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_sdk_adapter",
+      "target": "outputs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/ai-sdk-adapter.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_sdk_adapter",
+      "target": "ai",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/ai-sdk-adapter.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_sdk_adapter",
+      "target": "llm",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/ai-sdk-adapter.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_sdk_adapter",
+      "target": "provider",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/ai-sdk-adapter.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_sdk_adapter",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/ai-sdk-adapter.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_sdk_adapter",
+      "target": "ai_sdk_adapter_aisdklanggraphadapter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/ai-sdk-adapter.ts",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_sdk_adapter_aisdklanggraphadapter",
+      "target": "ai_sdk_adapter_aisdklanggraphadapter_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/ai-sdk-adapter.ts",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_sdk_adapter_aisdklanggraphadapter",
+      "target": "ai_sdk_adapter_aisdklanggraphadapter_llmtype",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/ai-sdk-adapter.ts",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_sdk_adapter_aisdklanggraphadapter",
+      "target": "ai_sdk_adapter_aisdklanggraphadapter_combinellmoutput",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/ai-sdk-adapter.ts",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_sdk_adapter_aisdklanggraphadapter",
+      "target": "ai_sdk_adapter_aisdklanggraphadapter_convertmessages",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/ai-sdk-adapter.ts",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_sdk_adapter_aisdklanggraphadapter",
+      "target": "ai_sdk_adapter_aisdklanggraphadapter_generate",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/ai-sdk-adapter.ts",
+      "source_location": "L80",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_sdk_adapter_aisdklanggraphadapter",
+      "target": "ai_sdk_adapter_aisdklanggraphadapter_streamgenerate",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/ai-sdk-adapter.ts",
+      "source_location": "L128",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_sdk_adapter_aisdklanggraphadapter_generate",
+      "target": "ai_sdk_adapter_aisdklanggraphadapter_convertmessages",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/ai-sdk-adapter.ts",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_sdk_adapter_aisdklanggraphadapter_streamgenerate",
+      "target": "ai_sdk_adapter_aisdklanggraphadapter_convertmessages",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/ai-sdk-adapter.ts",
+      "source_location": "L132",
+      "weight": 1.0
+    }
+  ]
+}

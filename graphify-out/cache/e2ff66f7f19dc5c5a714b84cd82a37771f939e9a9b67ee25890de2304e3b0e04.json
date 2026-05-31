@@ -1,0 +1,22 @@
+{
+  "nodes": [
+    {
+      "id": "scene_outlines",
+      "label": "scene-outlines.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/e2e/fixtures/test-data/scene-outlines.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "scene_outlines",
+      "target": "generation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/fixtures/test-data/scene-outlines.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ]
+}

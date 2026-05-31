@@ -1,0 +1,108 @@
+{
+  "nodes": [
+    {
+      "id": "command",
+      "label": "command.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ui/command.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "command_cn",
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ui/command.tsx",
+      "source_location": "L21"
+    },
+    {
+      "id": "command_commanditem",
+      "label": "CommandItem()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ui/command.tsx",
+      "source_location": "L137"
+    }
+  ],
+  "edges": [
+    {
+      "source": "command",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/command.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "command",
+      "target": "cmdk",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/command.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "command",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/command.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "command",
+      "target": "dialog",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/command.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "command",
+      "target": "input_group",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/command.tsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "command",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/command.tsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "command",
+      "target": "command_cn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/command.tsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "command",
+      "target": "command_commanditem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/command.tsx",
+      "source_location": "L137",
+      "weight": 1.0
+    },
+    {
+      "source": "command",
+      "target": "command_cn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/command.tsx",
+      "source_location": "L161",
+      "weight": 1.0
+    }
+  ]
+}

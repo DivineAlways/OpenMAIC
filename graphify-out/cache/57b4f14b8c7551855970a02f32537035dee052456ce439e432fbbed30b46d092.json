@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "id": "use_pbl_chat",
+      "label": "use-pbl-chat.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/use-pbl-chat.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "use_pbl_chat_usepblchat",
+      "label": "usePBLChat()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/use-pbl-chat.ts",
+      "source_location": "L21"
+    },
+    {
+      "id": "use_pbl_chat_resolvetargetagent",
+      "label": "resolveTargetAgent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/use-pbl-chat.ts",
+      "source_location": "L133"
+    },
+    {
+      "id": "use_pbl_chat_handleissuecomplete",
+      "label": "handleIssueComplete()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/use-pbl-chat.ts",
+      "source_location": "L163"
+    }
+  ],
+  "edges": [
+    {
+      "source": "use_pbl_chat",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/use-pbl-chat.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "use_pbl_chat",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/use-pbl-chat.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "use_pbl_chat",
+      "target": "model_config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/use-pbl-chat.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "use_pbl_chat",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/use-pbl-chat.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "use_pbl_chat",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/use-pbl-chat.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "use_pbl_chat",
+      "target": "use_pbl_chat_usepblchat",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/use-pbl-chat.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "use_pbl_chat",
+      "target": "use_pbl_chat_resolvetargetagent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/use-pbl-chat.ts",
+      "source_location": "L133",
+      "weight": 1.0
+    },
+    {
+      "source": "use_pbl_chat",
+      "target": "use_pbl_chat_handleissuecomplete",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/use-pbl-chat.ts",
+      "source_location": "L163",
+      "weight": 1.0
+    }
+  ]
+}

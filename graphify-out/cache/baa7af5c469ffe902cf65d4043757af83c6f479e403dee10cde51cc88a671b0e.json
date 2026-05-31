@@ -1,0 +1,74 @@
+{
+  "nodes": [
+    {
+      "id": "usemouseselection",
+      "label": "useMouseSelection.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useMouseSelection.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "usemouseselection_usemouseselection",
+      "label": "useMouseSelection()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useMouseSelection.ts",
+      "source_location": "L7"
+    }
+  ],
+  "edges": [
+    {
+      "source": "usemouseselection",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useMouseSelection.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "usemouseselection",
+      "target": "keyboard",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useMouseSelection.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "usemouseselection",
+      "target": "store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useMouseSelection.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "usemouseselection",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useMouseSelection.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "usemouseselection",
+      "target": "element",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useMouseSelection.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "usemouseselection",
+      "target": "usemouseselection_usemouseselection",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useMouseSelection.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    }
+  ]
+}

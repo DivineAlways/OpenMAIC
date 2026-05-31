@@ -1,0 +1,65 @@
+{
+  "nodes": [
+    {
+      "id": "stage_api_whiteboard",
+      "label": "stage-api-whiteboard.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/api/stage-api-whiteboard.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "stage_api_whiteboard_createwhiteboardapi",
+      "label": "createWhiteboardAPI()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/api/stage-api-whiteboard.ts",
+      "source_location": "L19"
+    }
+  ],
+  "edges": [
+    {
+      "source": "stage_api_whiteboard",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-whiteboard.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_whiteboard",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-whiteboard.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_whiteboard",
+      "target": "stage_api_types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-whiteboard.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_whiteboard",
+      "target": "stage_api_defaults",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-whiteboard.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_whiteboard",
+      "target": "stage_api_whiteboard_createwhiteboardapi",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-whiteboard.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    }
+  ]
+}

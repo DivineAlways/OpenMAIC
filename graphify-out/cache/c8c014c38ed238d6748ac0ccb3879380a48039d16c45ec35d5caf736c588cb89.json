@@ -1,0 +1,154 @@
+{
+  "nodes": [
+    {
+      "id": "open_in_chat",
+      "label": "open-in-chat.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/open-in-chat.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "open_in_chat_useopenincontext",
+      "label": "useOpenInContext()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/open-in-chat.tsx",
+      "source_location": "L166"
+    },
+    {
+      "id": "open_in_chat_openin",
+      "label": "OpenIn()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/open-in-chat.tsx",
+      "source_location": "L178"
+    },
+    {
+      "id": "open_in_chat_openincontent",
+      "label": "OpenInContent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/open-in-chat.tsx",
+      "source_location": "L186"
+    },
+    {
+      "id": "open_in_chat_openinitem",
+      "label": "OpenInItem()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/open-in-chat.tsx",
+      "source_location": "L192"
+    },
+    {
+      "id": "open_in_chat_openinlabel",
+      "label": "OpenInLabel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/open-in-chat.tsx",
+      "source_location": "L196"
+    },
+    {
+      "id": "open_in_chat_openinseparator",
+      "label": "OpenInSeparator()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/open-in-chat.tsx",
+      "source_location": "L200"
+    }
+  ],
+  "edges": [
+    {
+      "source": "open_in_chat",
+      "target": "button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/open-in-chat.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "open_in_chat",
+      "target": "dropdown_menu",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/open-in-chat.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "open_in_chat",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/open-in-chat.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "open_in_chat",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/open-in-chat.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "open_in_chat",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/open-in-chat.tsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "open_in_chat",
+      "target": "open_in_chat_useopenincontext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/open-in-chat.tsx",
+      "source_location": "L166",
+      "weight": 1.0
+    },
+    {
+      "source": "open_in_chat",
+      "target": "open_in_chat_openin",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/open-in-chat.tsx",
+      "source_location": "L178",
+      "weight": 1.0
+    },
+    {
+      "source": "open_in_chat",
+      "target": "open_in_chat_openincontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/open-in-chat.tsx",
+      "source_location": "L186",
+      "weight": 1.0
+    },
+    {
+      "source": "open_in_chat",
+      "target": "open_in_chat_openinitem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/open-in-chat.tsx",
+      "source_location": "L192",
+      "weight": 1.0
+    },
+    {
+      "source": "open_in_chat",
+      "target": "open_in_chat_openinlabel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/open-in-chat.tsx",
+      "source_location": "L196",
+      "weight": 1.0
+    },
+    {
+      "source": "open_in_chat",
+      "target": "open_in_chat_openinseparator",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/open-in-chat.tsx",
+      "source_location": "L200",
+      "weight": 1.0
+    }
+  ]
+}

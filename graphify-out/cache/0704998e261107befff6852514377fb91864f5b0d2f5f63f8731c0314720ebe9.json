@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    {
+      "id": "mouseselection",
+      "label": "MouseSelection.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/MouseSelection.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "mouseselection_mouseselection",
+      "label": "MouseSelection()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/MouseSelection.tsx",
+      "source_location": "L16"
+    }
+  ],
+  "edges": [
+    {
+      "source": "mouseselection",
+      "target": "mouseselection_mouseselection",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/MouseSelection.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    }
+  ]
+}

@@ -38,10 +38,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -66,10 +63,7 @@
               "height": 210,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#1e3a5f",
               "fixedRatio": false
             },
@@ -106,10 +100,7 @@
               "height": 210,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#1e3a5f",
               "fixedRatio": false
             },
@@ -184,10 +175,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -212,10 +200,7 @@
               "height": 200,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#1e3a5f",
               "fixedRatio": false
             },
@@ -291,10 +276,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -319,10 +301,7 @@
               "height": 220,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#1e3a5f",
               "fixedRatio": false
             },
@@ -359,10 +338,7 @@
               "height": 220,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#1e3a5f",
               "fixedRatio": false
             },
@@ -437,10 +413,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -465,10 +438,7 @@
               "height": 185,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#1e3a5f",
               "fixedRatio": false
             },
@@ -544,10 +514,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -572,10 +539,7 @@
               "height": 240,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#1e3a5f",
               "fixedRatio": false
             },
@@ -612,10 +576,7 @@
               "height": 240,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#1e3a5f",
               "fixedRatio": false
             },
@@ -690,10 +651,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -718,10 +676,7 @@
               "height": 160,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#422006",
               "fixedRatio": false
             },
@@ -789,11 +744,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f59e0b",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#f59e0b", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -807,10 +758,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -823,10 +771,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -875,10 +820,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b20",
               "fixedRatio": false,
               "outline": {
@@ -908,10 +850,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b20",
               "fixedRatio": false,
               "outline": {
@@ -941,10 +880,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b20",
               "fixedRatio": false,
               "outline": {
@@ -974,10 +910,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b20",
               "fixedRatio": false,
               "outline": {
@@ -1098,11 +1031,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f59e0b",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#f59e0b", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1116,10 +1045,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -1132,10 +1058,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -1184,10 +1107,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b20",
               "fixedRatio": false,
               "outline": {
@@ -1217,10 +1137,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b20",
               "fixedRatio": false,
               "outline": {
@@ -1250,10 +1167,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b20",
               "fixedRatio": false,
               "outline": {
@@ -1283,10 +1197,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b20",
               "fixedRatio": false,
               "outline": {
@@ -1444,9 +1355,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "Optimistic rollups assume all transactions are valid and only run fraud proofs if challenged. ZK rollups generate a zero-knowledge proof for every batch, proving validity without revealing transaction details. ZK is more secure but computationally heavier.",
             "points": 1
           },
@@ -1472,9 +1381,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "C"
-            ],
+            "answer": ["C"],
             "analysis": "Bridges hold large amounts of locked assets on one chain while minting equivalents on another. A bug in the bridge smart contract can drain everything locked on the source chain. Ronin Bridge, Wormhole, and Nomad Bridge hacks totaled over $1.5B in losses.",
             "points": 1
           },
@@ -1500,9 +1407,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "C"
-            ],
+            "answer": ["C"],
             "analysis": "DAOs are autonomous — when a proposal passes the required vote threshold, smart contracts execute the change automatically. This removes the need for trusted intermediaries but also means bugs in proposals can cause irreversible damage.",
             "points": 1
           },
@@ -1528,9 +1433,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "The spot Bitcoin ETF approvals in January 2024 brought unprecedented institutional capital into crypto. BlackRock's IBIT and other spot ETFs collectively saw $4.6B in inflows in the first week — the largest ETF debut in financial history.",
             "points": 1
           },
@@ -1556,9 +1459,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "RWA tokenization puts ownership of physical assets on-chain — real estate, treasury bonds, commodities, and private credit. Benefits include 24/7 trading, fractional ownership, global access, and instant settlement. XRPL is a leading platform for tokenized assets.",
             "points": 1
           },
@@ -1584,9 +1485,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "RWA tokenization puts real-world assets — real estate, gold, treasury bonds — on-chain as tokens. This makes them tradeable 24/7, divisible into fractional shares, and accessible globally. BlackRock and Franklin Templeton are both active in this space.",
             "points": 1
           },
@@ -1612,9 +1511,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "If governance token distribution is concentrated, an attacker can buy a controlling stake and pass proposals to drain the treasury or modify contracts in their favor. The Beanstalk protocol lost $182M this way in 2022.",
             "points": 1
           }

@@ -1,0 +1,179 @@
+{
+  "nodes": [
+    {
+      "id": "stage_storage",
+      "label": "stage-storage.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/stage-storage.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "stage_storage_savestagedata",
+      "label": "saveStageData()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/stage-storage.ts",
+      "source_location": "L36"
+    },
+    {
+      "id": "stage_storage_loadstagedata",
+      "label": "loadStageData()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/stage-storage.ts",
+      "source_location": "L84"
+    },
+    {
+      "id": "stage_storage_deletestagedata",
+      "label": "deleteStageData()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/stage-storage.ts",
+      "source_location": "L116"
+    },
+    {
+      "id": "stage_storage_liststages",
+      "label": "listStages()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/stage-storage.ts",
+      "source_location": "L138"
+    },
+    {
+      "id": "stage_storage_getfirstslidebystages",
+      "label": "getFirstSlideByStages()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/stage-storage.ts",
+      "source_location": "L169"
+    },
+    {
+      "id": "stage_storage_renamestage",
+      "label": "renameStage()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/stage-storage.ts",
+      "source_location": "L220"
+    },
+    {
+      "id": "stage_storage_stageexists",
+      "label": "stageExists()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/stage-storage.ts",
+      "source_location": "L233"
+    }
+  ],
+  "edges": [
+    {
+      "source": "stage_storage",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/stage-storage.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_storage",
+      "target": "chat",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/stage-storage.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_storage",
+      "target": "database",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/stage-storage.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_storage",
+      "target": "chat_storage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/stage-storage.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_storage",
+      "target": "playback_storage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/stage-storage.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_storage",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/stage-storage.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_storage",
+      "target": "stage_storage_savestagedata",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/stage-storage.ts",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_storage",
+      "target": "stage_storage_loadstagedata",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/stage-storage.ts",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_storage",
+      "target": "stage_storage_deletestagedata",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/stage-storage.ts",
+      "source_location": "L116",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_storage",
+      "target": "stage_storage_liststages",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/stage-storage.ts",
+      "source_location": "L138",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_storage",
+      "target": "stage_storage_getfirstslidebystages",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/stage-storage.ts",
+      "source_location": "L169",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_storage",
+      "target": "stage_storage_renamestage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/stage-storage.ts",
+      "source_location": "L220",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_storage",
+      "target": "stage_storage_stageexists",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/stage-storage.ts",
+      "source_location": "L233",
+      "weight": 1.0
+    }
+  ]
+}

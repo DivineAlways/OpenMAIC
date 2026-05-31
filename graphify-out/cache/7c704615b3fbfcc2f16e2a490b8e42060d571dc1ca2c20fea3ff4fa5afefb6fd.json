@@ -1,0 +1,92 @@
+{
+  "nodes": [
+    {
+      "id": "speech_button",
+      "label": "speech-button.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/audio/speech-button.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "speech_button_handleclick",
+      "label": "handleClick()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/audio/speech-button.tsx",
+      "source_location": "L47"
+    }
+  ],
+  "edges": [
+    {
+      "source": "speech_button",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/audio/speech-button.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "speech_button",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/audio/speech-button.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "speech_button",
+      "target": "use_audio_recorder",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/audio/speech-button.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "speech_button",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/audio/speech-button.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "speech_button",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/audio/speech-button.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "speech_button",
+      "target": "tooltip",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/audio/speech-button.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "speech_button",
+      "target": "sonner",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/audio/speech-button.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "speech_button",
+      "target": "speech_button_handleclick",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/audio/speech-button.tsx",
+      "source_location": "L47",
+      "weight": 1.0
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "nodes": [
+    {
+      "id": "use_export_classroom",
+      "label": "use-export-classroom.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/use-export-classroom.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "use_export_classroom_useexportclassroom",
+      "label": "useExportClassroom()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/use-export-classroom.ts",
+      "source_location": "L24"
+    }
+  ],
+  "edges": [
+    {
+      "source": "use_export_classroom",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-classroom.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_classroom",
+      "target": "file_saver",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-classroom.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_classroom",
+      "target": "sonner",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-classroom.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_classroom",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-classroom.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_classroom",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-classroom.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_classroom",
+      "target": "database",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-classroom.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_classroom",
+      "target": "classroom_zip_types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-classroom.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_classroom",
+      "target": "classroom_zip_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-classroom.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_classroom",
+      "target": "action",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-classroom.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_classroom",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-classroom.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_classroom",
+      "target": "use_export_classroom_useexportclassroom",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-classroom.ts",
+      "source_location": "L24",
+      "weight": 1.0
+    }
+  ]
+}

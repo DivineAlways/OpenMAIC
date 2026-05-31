@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "linepointmarker",
+      "label": "LinePointMarker.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/LineElement/LinePointMarker.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "linepointmarker_linepointmarker",
+      "label": "LinePointMarker()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/LineElement/LinePointMarker.tsx",
+      "source_location": "L23"
+    }
+  ],
+  "edges": [
+    {
+      "source": "linepointmarker",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/LineElement/LinePointMarker.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "linepointmarker",
+      "target": "linepointmarker_linepointmarker",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/LineElement/LinePointMarker.tsx",
+      "source_location": "L23",
+      "weight": 1.0
+    }
+  ]
+}

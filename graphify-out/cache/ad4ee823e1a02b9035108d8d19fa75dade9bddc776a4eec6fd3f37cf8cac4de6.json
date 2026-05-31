@@ -1,0 +1,160 @@
+{
+  "nodes": [
+    {
+      "id": "route",
+      "label": "route.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/app/api/generate/scene-outlines-stream/route.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "route_extractlanguagedirective",
+      "label": "extractLanguageDirective()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/app/api/generate/scene-outlines-stream/route.ts",
+      "source_location": "L46"
+    },
+    {
+      "id": "route_extractnewoutlines",
+      "label": "extractNewOutlines()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/app/api/generate/scene-outlines-stream/route.ts",
+      "source_location": "L63"
+    },
+    {
+      "id": "route_post",
+      "label": "POST()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/app/api/generate/scene-outlines-stream/route.ts",
+      "source_location": "L128"
+    }
+  ],
+  "edges": [
+    {
+      "source": "route",
+      "target": "server",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/generate/scene-outlines-stream/route.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "llm",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/generate/scene-outlines-stream/route.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "prompts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/generate/scene-outlines-stream/route.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "generation_pipeline",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/generate/scene-outlines-stream/route.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "generation_pipeline",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/generate/scene-outlines-stream/route.ts",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "generation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/generate/scene-outlines-stream/route.ts",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "nanoid",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/generate/scene-outlines-stream/route.ts",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "generation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/generate/scene-outlines-stream/route.ts",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "api_response",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/generate/scene-outlines-stream/route.ts",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/generate/scene-outlines-stream/route.ts",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "resolve_model",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/generate/scene-outlines-stream/route.ts",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "route_extractlanguagedirective",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/generate/scene-outlines-stream/route.ts",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "route_extractnewoutlines",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/generate/scene-outlines-stream/route.ts",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "route_post",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/generate/scene-outlines-stream/route.ts",
+      "source_location": "L128",
+      "weight": 1.0
+    }
+  ]
+}

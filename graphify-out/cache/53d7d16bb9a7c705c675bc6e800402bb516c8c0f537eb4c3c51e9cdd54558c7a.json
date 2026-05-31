@@ -1,0 +1,12 @@
+{
+  "nodes": [
+    {
+      "id": "web_search",
+      "label": "web-search.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/types/web-search.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": []
+}

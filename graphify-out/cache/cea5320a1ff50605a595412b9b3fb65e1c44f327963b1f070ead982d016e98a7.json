@@ -1,0 +1,208 @@
+{
+  "nodes": [
+    {
+      "id": "video_settings",
+      "label": "video-settings.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/video-settings.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "video_settings_handleapikeychange",
+      "label": "handleApiKeyChange()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/video-settings.tsx",
+      "source_location": "L63"
+    },
+    {
+      "id": "video_settings_handlebaseurlchange",
+      "label": "handleBaseUrlChange()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/video-settings.tsx",
+      "source_location": "L67"
+    },
+    {
+      "id": "video_settings_handletest",
+      "label": "handleTest()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/video-settings.tsx",
+      "source_location": "L71"
+    },
+    {
+      "id": "video_settings_handleopenaddmodel",
+      "label": "handleOpenAddModel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/video-settings.tsx",
+      "source_location": "L102"
+    },
+    {
+      "id": "video_settings_handleopeneditmodel",
+      "label": "handleOpenEditModel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/video-settings.tsx",
+      "source_location": "L108"
+    },
+    {
+      "id": "video_settings_handledeletemodel",
+      "label": "handleDeleteModel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/video-settings.tsx",
+      "source_location": "L134"
+    }
+  ],
+  "edges": [
+    {
+      "source": "video_settings",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/video-settings.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "video_settings",
+      "target": "label",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/video-settings.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "video_settings",
+      "target": "input",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/video-settings.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "video_settings",
+      "target": "button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/video-settings.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "video_settings",
+      "target": "dialog",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/video-settings.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "video_settings",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/video-settings.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "video_settings",
+      "target": "settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/video-settings.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "video_settings",
+      "target": "video_providers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/video-settings.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "video_settings",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/video-settings.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "video_settings",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/video-settings.tsx",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "video_settings",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/video-settings.tsx",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "video_settings",
+      "target": "video_settings_handleapikeychange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/video-settings.tsx",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "video_settings",
+      "target": "video_settings_handlebaseurlchange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/video-settings.tsx",
+      "source_location": "L67",
+      "weight": 1.0
+    },
+    {
+      "source": "video_settings",
+      "target": "video_settings_handletest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/video-settings.tsx",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "video_settings",
+      "target": "video_settings_handleopenaddmodel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/video-settings.tsx",
+      "source_location": "L102",
+      "weight": 1.0
+    },
+    {
+      "source": "video_settings",
+      "target": "video_settings_handleopeneditmodel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/video-settings.tsx",
+      "source_location": "L108",
+      "weight": 1.0
+    },
+    {
+      "source": "video_settings",
+      "target": "video_settings_handledeletemodel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/video-settings.tsx",
+      "source_location": "L134",
+      "weight": 1.0
+    }
+  ]
+}

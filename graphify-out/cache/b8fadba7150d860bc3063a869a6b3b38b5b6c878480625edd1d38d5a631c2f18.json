@@ -1,0 +1,65 @@
+{
+  "nodes": [
+    {
+      "id": "elementcreateselection",
+      "label": "ElementCreateSelection.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/ElementCreateSelection.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "elementcreateselection_elementcreateselection",
+      "label": "ElementCreateSelection()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/ElementCreateSelection.tsx",
+      "source_location": "L10"
+    }
+  ],
+  "edges": [
+    {
+      "source": "elementcreateselection",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/ElementCreateSelection.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "elementcreateselection",
+      "target": "store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/ElementCreateSelection.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "elementcreateselection",
+      "target": "keyboard",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/ElementCreateSelection.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "elementcreateselection",
+      "target": "edit",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/ElementCreateSelection.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "elementcreateselection",
+      "target": "elementcreateselection_elementcreateselection",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/ElementCreateSelection.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    }
+  ]
+}

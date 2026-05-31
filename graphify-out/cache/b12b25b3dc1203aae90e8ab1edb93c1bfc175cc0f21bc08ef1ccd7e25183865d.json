@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    {
+      "id": "patterndefs",
+      "label": "PatternDefs.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ShapeElement/PatternDefs.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "patterndefs_patterndefs",
+      "label": "PatternDefs()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ShapeElement/PatternDefs.tsx",
+      "source_location": "L6"
+    }
+  ],
+  "edges": [
+    {
+      "source": "patterndefs",
+      "target": "patterndefs_patterndefs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ShapeElement/PatternDefs.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    }
+  ]
+}

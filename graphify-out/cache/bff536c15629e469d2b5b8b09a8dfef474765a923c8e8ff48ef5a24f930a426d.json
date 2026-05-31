@@ -1,0 +1,47 @@
+{
+  "nodes": [
+    {
+      "id": "useelementoutline",
+      "label": "useElementOutline.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/hooks/useElementOutline.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "useelementoutline_useelementoutline",
+      "label": "useElementOutline()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/hooks/useElementOutline.ts",
+      "source_location": "L9"
+    }
+  ],
+  "edges": [
+    {
+      "source": "useelementoutline",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/hooks/useElementOutline.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "useelementoutline",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/hooks/useElementOutline.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "useelementoutline",
+      "target": "useelementoutline_useelementoutline",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/hooks/useElementOutline.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    }
+  ]
+}

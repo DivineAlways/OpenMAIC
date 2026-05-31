@@ -1,0 +1,137 @@
+{
+  "nodes": [
+    {
+      "id": "index",
+      "label": "index.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ShapeElement/index.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "index_shapeelement",
+      "label": "ShapeElement()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ShapeElement/index.tsx",
+      "source_location": "L31"
+    }
+  ],
+  "edges": [
+    {
+      "source": "index",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ShapeElement/index.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ShapeElement/index.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ShapeElement/index.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "use_canvas_operations",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ShapeElement/index.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "use_history_snapshot",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ShapeElement/index.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "useelementshadow",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ShapeElement/index.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "useelementflip",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ShapeElement/index.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "useelementfill",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ShapeElement/index.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "useelementoutline",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ShapeElement/index.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "gradientdefs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ShapeElement/index.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "patterndefs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ShapeElement/index.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "prosemirroreditor",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ShapeElement/index.tsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_shapeelement",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ShapeElement/index.tsx",
+      "source_location": "L31",
+      "weight": 1.0
+    }
+  ]
+}

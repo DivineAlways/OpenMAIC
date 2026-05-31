@@ -1,0 +1,54 @@
+{
+  "nodes": [
+    {
+      "id": "grok_image_adapter",
+      "label": "grok-image-adapter.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-image-adapter.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "grok_image_adapter_testgrokimageconnectivity",
+      "label": "testGrokImageConnectivity()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-image-adapter.ts",
+      "source_location": "L29"
+    },
+    {
+      "id": "grok_image_adapter_generatewithgrokimage",
+      "label": "generateWithGrokImage()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-image-adapter.ts",
+      "source_location": "L59"
+    }
+  ],
+  "edges": [
+    {
+      "source": "grok_image_adapter",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-image-adapter.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "grok_image_adapter",
+      "target": "grok_image_adapter_testgrokimageconnectivity",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-image-adapter.ts",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "grok_image_adapter",
+      "target": "grok_image_adapter_generatewithgrokimage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/grok-image-adapter.ts",
+      "source_location": "L59",
+      "weight": 1.0
+    }
+  ]
+}

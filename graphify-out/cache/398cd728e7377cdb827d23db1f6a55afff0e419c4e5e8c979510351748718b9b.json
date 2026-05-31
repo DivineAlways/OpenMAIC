@@ -1,0 +1,31 @@
+{
+  "nodes": [
+    {
+      "id": "scene_content",
+      "label": "scene-content.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/e2e/fixtures/test-data/scene-content.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "scene_content",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/fixtures/test-data/scene-content.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_content",
+      "target": "scene_outlines",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/fixtures/test-data/scene-content.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    }
+  ]
+}

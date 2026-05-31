@@ -1,0 +1,47 @@
+{
+  "nodes": [
+    {
+      "id": "useelementshadow",
+      "label": "useElementShadow.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/hooks/useElementShadow.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "useelementshadow_useelementshadow",
+      "label": "useElementShadow()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/hooks/useElementShadow.ts",
+      "source_location": "L9"
+    }
+  ],
+  "edges": [
+    {
+      "source": "useelementshadow",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/hooks/useElementShadow.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "useelementshadow",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/hooks/useElementShadow.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "useelementshadow",
+      "target": "useelementshadow_useelementshadow",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/hooks/useElementShadow.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    }
+  ]
+}

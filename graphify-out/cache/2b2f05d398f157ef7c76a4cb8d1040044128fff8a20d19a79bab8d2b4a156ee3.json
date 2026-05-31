@@ -1,0 +1,247 @@
+{
+  "nodes": [
+    {
+      "id": "plan",
+      "label": "plan.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "plan_useplan",
+      "label": "usePlan()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L26"
+    },
+    {
+      "id": "plan_plan",
+      "label": "Plan()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L38"
+    },
+    {
+      "id": "plan_planheader",
+      "label": "PlanHeader()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L48"
+    },
+    {
+      "id": "plan_plantitle",
+      "label": "PlanTitle()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L60"
+    },
+    {
+      "id": "plan_plandescription",
+      "label": "PlanDescription()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L74"
+    },
+    {
+      "id": "plan_planaction",
+      "label": "PlanAction()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L90"
+    },
+    {
+      "id": "plan_plancontent",
+      "label": "PlanContent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L96"
+    },
+    {
+      "id": "plan_planfooter",
+      "label": "PlanFooter()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L104"
+    },
+    {
+      "id": "plan_plantrigger",
+      "label": "PlanTrigger()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L110"
+    }
+  ],
+  "edges": [
+    {
+      "source": "plan",
+      "target": "button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "plan",
+      "target": "card",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "plan",
+      "target": "collapsible",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "plan",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "plan",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "plan",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "plan",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "plan",
+      "target": "shimmer",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "plan",
+      "target": "plan_useplan",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "plan",
+      "target": "plan_plan",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "plan",
+      "target": "plan_planheader",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "plan",
+      "target": "plan_plantitle",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
+      "source": "plan",
+      "target": "plan_plandescription",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L74",
+      "weight": 1.0
+    },
+    {
+      "source": "plan",
+      "target": "plan_planaction",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L90",
+      "weight": 1.0
+    },
+    {
+      "source": "plan",
+      "target": "plan_plancontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L96",
+      "weight": 1.0
+    },
+    {
+      "source": "plan",
+      "target": "plan_planfooter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L104",
+      "weight": 1.0
+    },
+    {
+      "source": "plan",
+      "target": "plan_plantrigger",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L110",
+      "weight": 1.0
+    },
+    {
+      "source": "plan_plantitle",
+      "target": "plan_useplan",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "plan_plandescription",
+      "target": "plan_useplan",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/plan.tsx",
+      "source_location": "L75",
+      "weight": 1.0
+    }
+  ]
+}

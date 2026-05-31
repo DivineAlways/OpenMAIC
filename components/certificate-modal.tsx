@@ -14,7 +14,13 @@ interface CertificateModalProps {
   readonly completedDate?: string;
 }
 
-export function CertificateModal({ courseName, score, totalPoints, onClose, completedDate: completedDateProp }: CertificateModalProps) {
+export function CertificateModal({
+  courseName,
+  score,
+  totalPoints,
+  onClose,
+  completedDate: completedDateProp,
+}: CertificateModalProps) {
   const { nickname, setNickname } = useUserProfileStore();
   const [downloading, setDownloading] = useState(false);
   const [editingName, setEditingName] = useState(!nickname);
@@ -22,16 +28,22 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
   const [displayName, setDisplayName] = useState(nickname || '');
   const [bgDataUrl, setBgDataUrl] = useState<string | null>(null);
   const pct = totalPoints > 0 ? Math.round((score / totalPoints) * 100) : 100;
-  const completedDate = completedDateProp ?? new Date().toLocaleDateString('en-US', {
-    year: 'numeric', month: 'long', day: 'numeric',
-  });
+  const completedDate =
+    completedDateProp ??
+    new Date().toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    });
 
-  useEffect(() => { if (!nickname) setEditingName(true); }, [nickname]);
+  useEffect(() => {
+    if (!nickname) setEditingName(true);
+  }, [nickname]);
 
   useEffect(() => {
     fetch('/certificate-bg.png')
-      .then(r => r.blob())
-      .then(blob => {
+      .then((r) => r.blob())
+      .then((blob) => {
         const reader = new FileReader();
         reader.onload = () => setBgDataUrl(reader.result as string);
         reader.readAsDataURL(blob);
@@ -52,10 +64,16 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
     try {
       const bg = new Image();
       bg.src = bgDataUrl;
-      await new Promise<void>(res => { bg.onload = () => res(); bg.onerror = () => res(); });
-      const W = bg.naturalWidth, H = bg.naturalHeight, S = 2;
+      await new Promise<void>((res) => {
+        bg.onload = () => res();
+        bg.onerror = () => res();
+      });
+      const W = bg.naturalWidth,
+        H = bg.naturalHeight,
+        S = 2;
       const canvas = document.createElement('canvas');
-      canvas.width = W * S; canvas.height = H * S;
+      canvas.width = W * S;
+      canvas.height = H * S;
       const ctx = canvas.getContext('2d')!;
       ctx.scale(S, S);
       ctx.drawImage(bg, 0, 0, W, H);
@@ -65,18 +83,27 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
       ctx.font = `bold ${Math.round(H * 0.068)}px "Dancing Script", cursive`;
       ctx.fillText(displayName || 'OnlyCrypto Member', W / 2, H * 0.515);
       ctx.fillStyle = '#b8cce0';
-      ctx.font = `${Math.round(H * 0.030)}px Arial, sans-serif`;
+      ctx.font = `${Math.round(H * 0.03)}px Arial, sans-serif`;
       ctx.fillText(`has successfully completed the course "${courseName}"`, W / 2, H * 0.622);
-      ctx.fillText('demonstrating proficiency in fundamental blockchain technology concepts.', W / 2, H * 0.662);
+      ctx.fillText(
+        'demonstrating proficiency in fundamental blockchain technology concepts.',
+        W / 2,
+        H * 0.662,
+      );
       ctx.fillStyle = '#5b9bd5';
       ctx.font = `italic ${Math.round(H * 0.032)}px Georgia, serif`;
       ctx.fillText(completedDate, W * 0.28, H * 0.862);
       const slug = courseName.replace(/[^a-z0-9]/gi, '-').toLowerCase();
-      canvas.toBlob(blob => {
-        if (!blob) { alert('Download failed.'); return; }
+      canvas.toBlob((blob) => {
+        if (!blob) {
+          alert('Download failed.');
+          return;
+        }
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
-        a.href = url; a.download = `${slug}-certificate.png`; a.click();
+        a.href = url;
+        a.download = `${slug}-certificate.png`;
+        a.click();
         URL.revokeObjectURL(url);
       }, 'image/png');
     } catch (err) {
@@ -94,7 +121,9 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         className="fixed inset-0 z-[9999] bg-black/80 backdrop-blur-sm"
-        onClick={e => { if (e.target === e.currentTarget) onClose(); }}
+        onClick={(e) => {
+          if (e.target === e.currentTarget) onClose();
+        }}
       >
         {/* Centered column — controls top, certificate fills remaining space */}
         <motion.div
@@ -112,17 +141,26 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
                   <input
                     autoFocus
                     value={nameInput}
-                    onChange={e => setNameInput(e.target.value)}
-                    onKeyDown={e => e.key === 'Enter' && confirmName()}
+                    onChange={(e) => setNameInput(e.target.value)}
+                    onKeyDown={(e) => e.key === 'Enter' && confirmName()}
                     placeholder="Your name on certificate"
                     className="text-sm px-3 py-1.5 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/40 focus:outline-none focus:border-white/40 w-56"
                   />
-                  <button onClick={confirmName} className="p-1.5 rounded-lg bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30 transition-colors">
+                  <button
+                    onClick={confirmName}
+                    className="p-1.5 rounded-lg bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30 transition-colors"
+                  >
                     <Check className="w-4 h-4" />
                   </button>
                 </div>
               ) : (
-                <button onClick={() => { setNameInput(displayName); setEditingName(true); }} className="flex items-center gap-1.5 text-sm text-white/60 hover:text-white/90 transition-colors">
+                <button
+                  onClick={() => {
+                    setNameInput(displayName);
+                    setEditingName(true);
+                  }}
+                  className="flex items-center gap-1.5 text-sm text-white/60 hover:text-white/90 transition-colors"
+                >
                   <Edit2 className="w-3.5 h-3.5" /> Edit name
                 </button>
               )}
@@ -136,7 +174,10 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
                 <Download className="w-3.5 h-3.5" />
                 {downloading ? 'Saving…' : 'Download PNG'}
               </button>
-              <button onClick={onClose} className="p-1.5 rounded-lg text-white/60 hover:text-white/90 hover:bg-white/10 transition-colors">
+              <button
+                onClick={onClose}
+                className="p-1.5 rounded-lg text-white/60 hover:text-white/90 hover:bg-white/10 transition-colors"
+              >
                 <X className="w-4 h-4" />
               </button>
             </div>
@@ -144,75 +185,85 @@ export function CertificateModal({ courseName, score, totalPoints, onClose, comp
 
           {/* Certificate image — centered, fits within available space */}
           <div className="flex-1 min-h-0 flex items-center justify-center overflow-hidden">
-            <div className="relative w-full" style={{ aspectRatio: '1008 / 734', maxHeight: '100%' }}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/certificate-bg.png"
-              alt="Certificate"
-              className="w-full h-full object-contain select-none"
-              draggable={false}
-            />
-
-            {/* Text overlays — positioned as % of the rendered image area */}
             <div
-              className="absolute inset-0 pointer-events-none"
+              className="relative w-full"
+              style={{ aspectRatio: '1008 / 734', maxHeight: '100%' }}
             >
-              {/* Inner box matches the image's 1008:734 aspect ratio */}
-              <div className="relative w-full h-full" style={{ containerType: 'size' }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/certificate-bg.png"
+                alt="Certificate"
+                className="w-full h-full object-contain select-none"
+                draggable={false}
+              />
 
-                {/* Member name */}
-                <div className="absolute w-full text-center" style={{ top: '49%' }}>
-                  <span style={{
-                    color: '#d4a843',
-                    fontSize: '4.6cqh',
-                    fontFamily: 'var(--font-dancing), "Dancing Script", cursive',
-                    fontWeight: 700,
-                    whiteSpace: 'nowrap',
-                    textShadow: '0 1px 6px rgba(0,0,0,0.5)',
-                  }}>
-                    {displayName || 'OnlyCrypto Member'}
-                  </span>
+              {/* Text overlays — positioned as % of the rendered image area */}
+              <div className="absolute inset-0 pointer-events-none">
+                {/* Inner box matches the image's 1008:734 aspect ratio */}
+                <div className="relative w-full h-full" style={{ containerType: 'size' }}>
+                  {/* Member name */}
+                  <div className="absolute w-full text-center" style={{ top: '49%' }}>
+                    <span
+                      style={{
+                        color: '#d4a843',
+                        fontSize: '4.6cqh',
+                        fontFamily: 'var(--font-dancing), "Dancing Script", cursive',
+                        fontWeight: 700,
+                        whiteSpace: 'nowrap',
+                        textShadow: '0 1px 6px rgba(0,0,0,0.5)',
+                      }}
+                    >
+                      {displayName || 'OnlyCrypto Member'}
+                    </span>
+                  </div>
+
+                  {/* Course line 1 */}
+                  <div className="absolute w-full text-center" style={{ top: '60.5%' }}>
+                    <span
+                      style={{
+                        color: '#b8cce0',
+                        fontSize: '1.9cqh',
+                        fontFamily: 'Arial, sans-serif',
+                        whiteSpace: 'nowrap',
+                      }}
+                    >
+                      has successfully completed the course &ldquo;{courseName}&rdquo;
+                    </span>
+                  </div>
+
+                  {/* Course line 2 */}
+                  <div className="absolute w-full text-center" style={{ top: '66%' }}>
+                    <span
+                      style={{
+                        color: '#b8cce0',
+                        fontSize: '1.9cqh',
+                        fontFamily: 'Arial, sans-serif',
+                        whiteSpace: 'nowrap',
+                      }}
+                    >
+                      demonstrating proficiency in fundamental blockchain technology concepts.
+                    </span>
+                  </div>
+
+                  {/* Date */}
+                  <div
+                    className="absolute text-center"
+                    style={{ top: '83%', left: '14%', width: '28%' }}
+                  >
+                    <span
+                      style={{
+                        color: '#5b9bd5',
+                        fontSize: '1.9cqh',
+                        fontFamily: 'Georgia, serif',
+                        fontStyle: 'italic',
+                        whiteSpace: 'nowrap',
+                      }}
+                    >
+                      {completedDate}
+                    </span>
+                  </div>
                 </div>
-
-                {/* Course line 1 */}
-                <div className="absolute w-full text-center" style={{ top: '60.5%' }}>
-                  <span style={{
-                    color: '#b8cce0',
-                    fontSize: '1.9cqh',
-                    fontFamily: 'Arial, sans-serif',
-                    whiteSpace: 'nowrap',
-                  }}>
-                    has successfully completed the course &ldquo;{courseName}&rdquo;
-                  </span>
-                </div>
-
-                {/* Course line 2 */}
-                <div className="absolute w-full text-center" style={{ top: '66%' }}>
-                  <span style={{
-                    color: '#b8cce0',
-                    fontSize: '1.9cqh',
-                    fontFamily: 'Arial, sans-serif',
-                    whiteSpace: 'nowrap',
-                  }}>
-                    demonstrating proficiency in fundamental blockchain technology concepts.
-                  </span>
-                </div>
-
-                {/* Date */}
-                <div className="absolute text-center" style={{ top: '83%', left: '14%', width: '28%' }}>
-                  <span style={{
-                    color: '#5b9bd5',
-                    fontSize: '1.9cqh',
-                    fontFamily: 'Georgia, serif',
-                    fontStyle: 'italic',
-                    whiteSpace: 'nowrap',
-                  }}>
-                    {completedDate}
-                  </span>
-                </div>
-
               </div>
-            </div>
             </div>
           </div>
         </motion.div>

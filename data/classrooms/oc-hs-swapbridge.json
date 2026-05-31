@@ -9,11 +9,7 @@
     "updatedAt": "2026-04-26T12:00:00.000Z",
     "languageDirective": "en-US",
     "style": "academic",
-    "agentIds": [
-      "default-1",
-      "default-2",
-      "default-3"
-    ],
+    "agentIds": ["default-1", "default-2", "default-3"],
     "generatedAgentConfigs": []
   },
   "scenes": [
@@ -34,11 +30,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f97316",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#f97316", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -52,10 +44,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f97316",
               "fixedRatio": false
             },
@@ -68,10 +57,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -120,10 +106,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -153,10 +136,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -186,10 +166,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -219,10 +196,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -343,11 +317,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f97316",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#f97316", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -361,10 +331,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f97316",
               "fixedRatio": false
             },
@@ -377,10 +344,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -429,10 +393,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -462,10 +423,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -495,10 +453,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -528,10 +483,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -652,11 +604,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f97316",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#f97316", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -670,10 +618,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f97316",
               "fixedRatio": false
             },
@@ -686,10 +631,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -738,10 +680,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -771,10 +710,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -804,10 +740,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -837,10 +770,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -961,11 +891,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f97316",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#f97316", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -979,10 +905,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f97316",
               "fixedRatio": false
             },
@@ -995,10 +918,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -1047,10 +967,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -1080,10 +997,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -1113,10 +1027,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -1146,10 +1057,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -1270,11 +1178,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f97316",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#f97316", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1288,10 +1192,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f97316",
               "fixedRatio": false
             },
@@ -1304,10 +1205,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -1356,10 +1254,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -1389,10 +1284,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -1422,10 +1314,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -1455,10 +1344,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f9731620",
               "fixedRatio": false,
               "outline": {
@@ -1616,9 +1502,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "The constant product formula x × y = k ensures that as you buy one token (reducing its reserve), the other token's quantity must increase proportionally to keep the product constant. This automatically adjusts the price — no order book needed.",
             "points": 1
           },
@@ -1644,9 +1528,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "Wrapped tokens (like WBTC or WETH) represent an asset on a chain where it doesn't natively exist. They maintain a 1:1 peg with the original, backed by locked assets held by the bridge. If the bridge is exploited, wrapped tokens can lose their backing.",
             "points": 1
           },
@@ -1672,9 +1554,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "Ronin used a 5-of-9 multisig where Axie Infinity controlled 4 validators. The attacker compromised all 4 plus one external validator — reaching the 5-of-9 threshold. This centralization made the entire $625M vulnerable to a single coordinated attack.",
             "points": 1
           },
@@ -1700,9 +1580,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "Price impact is the percentage by which your trade shifts the token ratio in the pool. Large trades against small pools have high impact. Always check the price impact before confirming — above 1% is significant, above 3% is a red flag for smaller tokens.",
             "points": 1
           },
@@ -1728,9 +1606,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "Aggregators like 1inch split your order across multiple pools simultaneously to minimize slippage and find the best execution price. On large trades, this can save significant amounts compared to trading against a single pool.",
             "points": 1
           },
@@ -1756,9 +1632,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "When you provide liquidity and token prices move relative to each other, the AMM rebalances your position — leaving you with more of the fallen token and less of the risen one. Compared to just holding, you end up worse off. Stablecoin pairs minimize IL since both prices stay close to $1.",
             "points": 1
           },
@@ -1784,9 +1658,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "Ethereum's gas model charges for every computational operation, and fees spike during congestion — a bridge transaction can cost $30–$100. XRPL charges a fixed 'drops' fee (fractions of XRP) regardless of network load, making it ideal for high-frequency or small-value cross-chain operations.",
             "points": 1
           }

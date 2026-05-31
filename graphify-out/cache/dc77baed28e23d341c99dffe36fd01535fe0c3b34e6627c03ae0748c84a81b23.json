@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "media_stage_context",
+      "label": "media-stage-context.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/contexts/media-stage-context.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "media_stage_context_usemediastageid",
+      "label": "useMediaStageId()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/contexts/media-stage-context.tsx",
+      "source_location": "L16"
+    }
+  ],
+  "edges": [
+    {
+      "source": "media_stage_context",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/contexts/media-stage-context.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "media_stage_context",
+      "target": "media_stage_context_usemediastageid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/contexts/media-stage-context.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    }
+  ]
+}

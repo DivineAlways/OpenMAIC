@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "use_browser_tts",
+      "label": "use-browser-tts.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/hooks/use-browser-tts.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "use_browser_tts_usebrowsertts",
+      "label": "useBrowserTTS()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/hooks/use-browser-tts.ts",
+      "source_location": "L21"
+    }
+  ],
+  "edges": [
+    {
+      "source": "use_browser_tts",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-browser-tts.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "use_browser_tts",
+      "target": "use_browser_tts_usebrowsertts",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-browser-tts.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    }
+  ]
+}

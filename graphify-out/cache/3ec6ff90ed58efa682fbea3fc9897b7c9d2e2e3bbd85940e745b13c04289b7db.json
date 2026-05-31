@@ -1,0 +1,12 @@
+{
+  "nodes": [
+    {
+      "id": "storage",
+      "label": "storage.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/configs/storage.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": []
+}

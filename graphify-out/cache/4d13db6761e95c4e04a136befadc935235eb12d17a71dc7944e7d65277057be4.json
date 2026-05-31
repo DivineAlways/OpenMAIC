@@ -1,0 +1,12 @@
+{
+  "nodes": [
+    {
+      "id": "font",
+      "label": "font.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/configs/font.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": []
+}

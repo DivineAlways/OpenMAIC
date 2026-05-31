@@ -1,0 +1,248 @@
+{
+  "nodes": [
+    {
+      "id": "issueboard_mcp",
+      "label": "issueboard-mcp.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "issueboard_mcp_issueboardmcp",
+      "label": "IssueboardMCP",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L14"
+    },
+    {
+      "id": "issueboard_mcp_issueboardmcp_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L20"
+    },
+    {
+      "id": "issueboard_mcp_issueboardmcp_createissueboard",
+      "label": ".createIssueboard()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L27"
+    },
+    {
+      "id": "issueboard_mcp_issueboardmcp_getissueboard",
+      "label": ".getIssueboard()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L37"
+    },
+    {
+      "id": "issueboard_mcp_issueboardmcp_updateissueboardagents",
+      "label": ".updateIssueboardAgents()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L45"
+    },
+    {
+      "id": "issueboard_mcp_issueboardmcp_createissue",
+      "label": ".createIssue()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L53"
+    },
+    {
+      "id": "issueboard_mcp_issueboardmcp_listissues",
+      "label": ".listIssues()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L133"
+    },
+    {
+      "id": "issueboard_mcp_issueboardmcp_getissue",
+      "label": ".getIssue()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L140"
+    },
+    {
+      "id": "issueboard_mcp_issueboardmcp_updateissue",
+      "label": ".updateIssue()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L148"
+    },
+    {
+      "id": "issueboard_mcp_issueboardmcp_deleteissue",
+      "label": ".deleteIssue()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L185"
+    },
+    {
+      "id": "issueboard_mcp_issueboardmcp_reorderissues",
+      "label": ".reorderIssues()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L198"
+    },
+    {
+      "id": "issueboard_mcp_issueboardmcp_activatenextissue",
+      "label": ".activateNextIssue()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L221"
+    },
+    {
+      "id": "issueboard_mcp_issueboardmcp_completecurrentissue",
+      "label": ".completeCurrentIssue()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L247"
+    }
+  ],
+  "edges": [
+    {
+      "source": "issueboard_mcp",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "issueboard_mcp",
+      "target": "agent_mcp",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "issueboard_mcp",
+      "target": "agent_templates",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "issueboard_mcp",
+      "target": "issueboard_mcp_issueboardmcp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "issueboard_mcp_issueboardmcp",
+      "target": "issueboard_mcp_issueboardmcp_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "issueboard_mcp_issueboardmcp",
+      "target": "issueboard_mcp_issueboardmcp_createissueboard",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "issueboard_mcp_issueboardmcp",
+      "target": "issueboard_mcp_issueboardmcp_getissueboard",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "issueboard_mcp_issueboardmcp",
+      "target": "issueboard_mcp_issueboardmcp_updateissueboardagents",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "issueboard_mcp_issueboardmcp",
+      "target": "issueboard_mcp_issueboardmcp_createissue",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "issueboard_mcp_issueboardmcp",
+      "target": "issueboard_mcp_issueboardmcp_listissues",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L133",
+      "weight": 1.0
+    },
+    {
+      "source": "issueboard_mcp_issueboardmcp",
+      "target": "issueboard_mcp_issueboardmcp_getissue",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L140",
+      "weight": 1.0
+    },
+    {
+      "source": "issueboard_mcp_issueboardmcp",
+      "target": "issueboard_mcp_issueboardmcp_updateissue",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L148",
+      "weight": 1.0
+    },
+    {
+      "source": "issueboard_mcp_issueboardmcp",
+      "target": "issueboard_mcp_issueboardmcp_deleteissue",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L185",
+      "weight": 1.0
+    },
+    {
+      "source": "issueboard_mcp_issueboardmcp",
+      "target": "issueboard_mcp_issueboardmcp_reorderissues",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L198",
+      "weight": 1.0
+    },
+    {
+      "source": "issueboard_mcp_issueboardmcp",
+      "target": "issueboard_mcp_issueboardmcp_activatenextissue",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L221",
+      "weight": 1.0
+    },
+    {
+      "source": "issueboard_mcp_issueboardmcp",
+      "target": "issueboard_mcp_issueboardmcp_completecurrentissue",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/issueboard-mcp.ts",
+      "source_location": "L247",
+      "weight": 1.0
+    }
+  ]
+}

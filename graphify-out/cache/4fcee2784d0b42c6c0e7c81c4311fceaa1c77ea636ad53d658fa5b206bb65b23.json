@@ -1,0 +1,54 @@
+{
+  "nodes": [
+    {
+      "id": "tool_schemas",
+      "label": "tool-schemas.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/tool-schemas.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "tool_schemas_geteffectiveactions",
+      "label": "getEffectiveActions()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/tool-schemas.ts",
+      "source_location": "L16"
+    },
+    {
+      "id": "tool_schemas_getactiondescriptions",
+      "label": "getActionDescriptions()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/tool-schemas.ts",
+      "source_location": "L29"
+    }
+  ],
+  "edges": [
+    {
+      "source": "tool_schemas",
+      "target": "action",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/tool-schemas.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "tool_schemas",
+      "target": "tool_schemas_geteffectiveactions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/tool-schemas.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "tool_schemas",
+      "target": "tool_schemas_getactiondescriptions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/tool-schemas.ts",
+      "source_location": "L29",
+      "weight": 1.0
+    }
+  ]
+}

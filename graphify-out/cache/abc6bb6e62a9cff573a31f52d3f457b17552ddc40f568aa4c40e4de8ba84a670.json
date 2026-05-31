@@ -1,0 +1,136 @@
+{
+  "nodes": [
+    {
+      "id": "constants",
+      "label": "constants.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/constants.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "constants_getallttsproviders",
+      "label": "getAllTTSProviders()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/constants.ts",
+      "source_location": "L1175"
+    },
+    {
+      "id": "constants_getttsprovider",
+      "label": "getTTSProvider()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/constants.ts",
+      "source_location": "L1186"
+    },
+    {
+      "id": "constants_getttsvoices",
+      "label": "getTTSVoices()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/constants.ts",
+      "source_location": "L1199"
+    },
+    {
+      "id": "constants_getallasrproviders",
+      "label": "getAllASRProviders()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/constants.ts",
+      "source_location": "L1209"
+    },
+    {
+      "id": "constants_getasrprovider",
+      "label": "getASRProvider()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/constants.ts",
+      "source_location": "L1220"
+    },
+    {
+      "id": "constants_getasrsupportedlanguages",
+      "label": "getASRSupportedLanguages()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/constants.ts",
+      "source_location": "L1233"
+    }
+  ],
+  "edges": [
+    {
+      "source": "constants",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/constants.ts",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "constants",
+      "target": "constants_getallttsproviders",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/constants.ts",
+      "source_location": "L1175",
+      "weight": 1.0
+    },
+    {
+      "source": "constants",
+      "target": "constants_getttsprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/constants.ts",
+      "source_location": "L1186",
+      "weight": 1.0
+    },
+    {
+      "source": "constants",
+      "target": "constants_getttsvoices",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/constants.ts",
+      "source_location": "L1199",
+      "weight": 1.0
+    },
+    {
+      "source": "constants",
+      "target": "constants_getallasrproviders",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/constants.ts",
+      "source_location": "L1209",
+      "weight": 1.0
+    },
+    {
+      "source": "constants",
+      "target": "constants_getasrprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/constants.ts",
+      "source_location": "L1220",
+      "weight": 1.0
+    },
+    {
+      "source": "constants",
+      "target": "constants_getasrsupportedlanguages",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/constants.ts",
+      "source_location": "L1233",
+      "weight": 1.0
+    },
+    {
+      "source": "constants_getttsvoices",
+      "target": "constants_getttsprovider",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/constants.ts",
+      "source_location": "L1203",
+      "weight": 1.0
+    },
+    {
+      "source": "constants_getasrsupportedlanguages",
+      "target": "constants_getasrprovider",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/constants.ts",
+      "source_location": "L1237",
+      "weight": 1.0
+    }
+  ]
+}

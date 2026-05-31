@@ -1,0 +1,110 @@
+{
+  "nodes": [
+    {
+      "id": "index",
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/index.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "index_buildplugins",
+      "label": "buildPlugins()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/index.ts",
+      "source_location": "L16"
+    }
+  ],
+  "edges": [
+    {
+      "source": "index",
+      "target": "prosemirror_keymap",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/index.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "prosemirror_model",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/index.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "prosemirror_history",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/index.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "prosemirror_commands",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/index.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "prosemirror_dropcursor",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/index.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "prosemirror_gapcursor",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/index.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "keymap",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/index.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "inputrules",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/index.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "placeholder",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/index.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_buildplugins",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/plugins/index.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    }
+  ]
+}

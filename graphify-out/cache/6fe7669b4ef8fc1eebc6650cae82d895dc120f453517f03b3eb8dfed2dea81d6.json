@@ -1,0 +1,464 @@
+{
+  "nodes": [
+    {
+      "id": "settings",
+      "label": "settings.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "settings_getdefaultprovidersconfig",
+      "label": "getDefaultProvidersConfig()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L289"
+    },
+    {
+      "id": "settings_getdefaultaudioconfig",
+      "label": "getDefaultAudioConfig()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L309"
+    },
+    {
+      "id": "settings_getdefaultpdfconfig",
+      "label": "getDefaultPDFConfig()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L337"
+    },
+    {
+      "id": "settings_getdefaultimageconfig",
+      "label": "getDefaultImageConfig()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L346"
+    },
+    {
+      "id": "settings_getdefaultvideoconfig",
+      "label": "getDefaultVideoConfig()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L359"
+    },
+    {
+      "id": "settings_getdefaultwebsearchconfig",
+      "label": "getDefaultWebSearchConfig()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L373"
+    },
+    {
+      "id": "settings_hasproviderid",
+      "label": "hasProviderId()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L383"
+    },
+    {
+      "id": "settings_ensurevalidproviderselections",
+      "label": "ensureValidProviderSelections()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L392"
+    },
+    {
+      "id": "settings_ensurebuiltinproviders",
+      "label": "ensureBuiltInProviders()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L445"
+    },
+    {
+      "id": "settings_promotelegacycustomproviderbaseurls",
+      "label": "promoteLegacyCustomProviderBaseUrls()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L482"
+    },
+    {
+      "id": "settings_ensurebuiltinimageproviders",
+      "label": "ensureBuiltInImageProviders()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L496"
+    },
+    {
+      "id": "settings_ensurebuiltinvideoproviders",
+      "label": "ensureBuiltInVideoProviders()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L511"
+    },
+    {
+      "id": "settings_migratefromoldstorage",
+      "label": "migrateFromOldStorage()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L523"
+    }
+  ],
+  "edges": [
+    {
+      "source": "settings",
+      "target": "zustand",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "middleware",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "providers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "providers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "image_providers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "video_providers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "settings_validation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "settings_getdefaultprovidersconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L289",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "settings_getdefaultaudioconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L309",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "settings_getdefaultpdfconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L337",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "settings_getdefaultimageconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L346",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "settings_getdefaultvideoconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L359",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "settings_getdefaultwebsearchconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L373",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "settings_hasproviderid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L383",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "settings_ensurevalidproviderselections",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L392",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "settings_ensurebuiltinproviders",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L445",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "settings_promotelegacycustomproviderbaseurls",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L482",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "settings_ensurebuiltinimageproviders",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L496",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "settings_ensurebuiltinvideoproviders",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L511",
+      "weight": 1.0
+    },
+    {
+      "source": "settings",
+      "target": "settings_migratefromoldstorage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L523",
+      "weight": 1.0
+    },
+    {
+      "source": "settings_ensurevalidproviderselections",
+      "target": "settings_getdefaultaudioconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L393",
+      "weight": 1.0
+    },
+    {
+      "source": "settings_ensurevalidproviderselections",
+      "target": "settings_getdefaultpdfconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L394",
+      "weight": 1.0
+    },
+    {
+      "source": "settings_ensurevalidproviderselections",
+      "target": "settings_getdefaultimageconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L395",
+      "weight": 1.0
+    },
+    {
+      "source": "settings_ensurevalidproviderselections",
+      "target": "settings_getdefaultvideoconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L396",
+      "weight": 1.0
+    },
+    {
+      "source": "settings_ensurevalidproviderselections",
+      "target": "settings_getdefaultwebsearchconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L397",
+      "weight": 1.0
+    },
+    {
+      "source": "settings_ensurevalidproviderselections",
+      "target": "settings_hasproviderid",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L399",
+      "weight": 1.0
+    },
+    {
+      "source": "settings_ensurebuiltinproviders",
+      "target": "settings_getdefaultprovidersconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L447",
+      "weight": 1.0
+    },
+    {
+      "source": "settings_ensurebuiltinimageproviders",
+      "target": "settings_getdefaultimageconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L498",
+      "weight": 1.0
+    },
+    {
+      "source": "settings_ensurebuiltinvideoproviders",
+      "target": "settings_getdefaultvideoconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L513",
+      "weight": 1.0
+    },
+    {
+      "source": "settings_migratefromoldstorage",
+      "target": "settings_getdefaultprovidersconfig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/settings.ts",
+      "source_location": "L551",
+      "weight": 1.0
+    }
+  ]
+}

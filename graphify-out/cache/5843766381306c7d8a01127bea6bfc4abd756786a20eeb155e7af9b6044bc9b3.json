@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "id": "add_audio_provider_dialog",
+      "label": "add-audio-provider-dialog.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/add-audio-provider-dialog.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "add_audio_provider_dialog_handleadd",
+      "label": "handleAdd()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/add-audio-provider-dialog.tsx",
+      "source_location": "L51"
+    }
+  ],
+  "edges": [
+    {
+      "source": "add_audio_provider_dialog",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/add-audio-provider-dialog.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "add_audio_provider_dialog",
+      "target": "dialog",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/add-audio-provider-dialog.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "add_audio_provider_dialog",
+      "target": "button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/add-audio-provider-dialog.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "add_audio_provider_dialog",
+      "target": "input",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/add-audio-provider-dialog.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "add_audio_provider_dialog",
+      "target": "label",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/add-audio-provider-dialog.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "add_audio_provider_dialog",
+      "target": "checkbox",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/add-audio-provider-dialog.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "add_audio_provider_dialog",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/add-audio-provider-dialog.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "add_audio_provider_dialog",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/add-audio-provider-dialog.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "add_audio_provider_dialog",
+      "target": "add_audio_provider_dialog_handleadd",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/add-audio-provider-dialog.tsx",
+      "source_location": "L51",
+      "weight": 1.0
+    }
+  ]
+}

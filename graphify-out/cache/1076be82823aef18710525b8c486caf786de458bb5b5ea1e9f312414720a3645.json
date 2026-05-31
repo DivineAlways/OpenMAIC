@@ -1,0 +1,142 @@
+{
+  "nodes": [
+    {
+      "id": "scene_sidebar",
+      "label": "scene-sidebar.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/stage/scene-sidebar.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "scene_sidebar_handleretryoutline",
+      "label": "handleRetryOutline()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/stage/scene-sidebar.tsx",
+      "source_location": "L50"
+    },
+    {
+      "id": "scene_sidebar_getscenetypeicon",
+      "label": "getSceneTypeIcon()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/stage/scene-sidebar.tsx",
+      "source_location": "L92"
+    },
+    {
+      "id": "scene_sidebar_cn",
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/stage/scene-sidebar.tsx",
+      "source_location": "L189"
+    }
+  ],
+  "edges": [
+    {
+      "source": "scene_sidebar",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage/scene-sidebar.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_sidebar",
+      "target": "navigation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage/scene-sidebar.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_sidebar",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage/scene-sidebar.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_sidebar",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage/scene-sidebar.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_sidebar",
+      "target": "thumbnailslide",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage/scene-sidebar.tsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_sidebar",
+      "target": "store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage/scene-sidebar.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_sidebar",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage/scene-sidebar.tsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_sidebar",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage/scene-sidebar.tsx",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_sidebar",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage/scene-sidebar.tsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_sidebar",
+      "target": "scene_sidebar_handleretryoutline",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage/scene-sidebar.tsx",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_sidebar",
+      "target": "scene_sidebar_getscenetypeicon",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage/scene-sidebar.tsx",
+      "source_location": "L92",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_sidebar",
+      "target": "scene_sidebar_cn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage/scene-sidebar.tsx",
+      "source_location": "L189",
+      "weight": 1.0
+    }
+  ]
+}

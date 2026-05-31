@@ -1,0 +1,47 @@
+{
+  "nodes": [
+    {
+      "id": "image_rect_outline",
+      "label": "image-rect-outline.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/ImageOutline/image-rect-outline.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "image_rect_outline_imagerectoutline",
+      "label": "ImageRectOutline()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/ImageOutline/image-rect-outline.tsx",
+      "source_location": "L16"
+    }
+  ],
+  "edges": [
+    {
+      "source": "image_rect_outline",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/ImageOutline/image-rect-outline.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "image_rect_outline",
+      "target": "useelementoutline",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/ImageOutline/image-rect-outline.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "image_rect_outline",
+      "target": "image_rect_outline_imagerectoutline",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/ImageElement/ImageOutline/image-rect-outline.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    }
+  ]
+}

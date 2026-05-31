@@ -1,0 +1,63 @@
+{
+  "nodes": [
+    {
+      "id": "gen_media",
+      "label": "gen-media.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-media.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "gen_media_encodeslidemediarels",
+      "label": "encodeSlideMediaRels()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-media.ts",
+      "source_location": "L13"
+    },
+    {
+      "id": "gen_media_createsvgpngpreview",
+      "label": "createSvgPngPreview()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-media.ts",
+      "source_location": "L162"
+    }
+  ],
+  "edges": [
+    {
+      "source": "gen_media",
+      "target": "core_enums",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-media.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_media",
+      "target": "core_interfaces",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-media.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_media",
+      "target": "gen_media_encodeslidemediarels",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-media.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_media",
+      "target": "gen_media_createsvgpngpreview",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-media.ts",
+      "source_location": "L162",
+      "weight": 1.0
+    }
+  ]
+}

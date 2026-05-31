@@ -1,0 +1,208 @@
+{
+  "nodes": [
+    {
+      "id": "image_settings",
+      "label": "image-settings.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/image-settings.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "image_settings_handleapikeychange",
+      "label": "handleApiKeyChange()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/image-settings.tsx",
+      "source_location": "L64"
+    },
+    {
+      "id": "image_settings_handlebaseurlchange",
+      "label": "handleBaseUrlChange()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/image-settings.tsx",
+      "source_location": "L68"
+    },
+    {
+      "id": "image_settings_handletest",
+      "label": "handleTest()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/image-settings.tsx",
+      "source_location": "L72"
+    },
+    {
+      "id": "image_settings_handleopenaddmodel",
+      "label": "handleOpenAddModel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/image-settings.tsx",
+      "source_location": "L103"
+    },
+    {
+      "id": "image_settings_handleopeneditmodel",
+      "label": "handleOpenEditModel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/image-settings.tsx",
+      "source_location": "L109"
+    },
+    {
+      "id": "image_settings_handledeletemodel",
+      "label": "handleDeleteModel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/image-settings.tsx",
+      "source_location": "L135"
+    }
+  ],
+  "edges": [
+    {
+      "source": "image_settings",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/image-settings.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "image_settings",
+      "target": "label",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/image-settings.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "image_settings",
+      "target": "input",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/image-settings.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "image_settings",
+      "target": "button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/image-settings.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "image_settings",
+      "target": "dialog",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/image-settings.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "image_settings",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/image-settings.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "image_settings",
+      "target": "settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/image-settings.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "image_settings",
+      "target": "image_providers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/image-settings.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "image_settings",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/image-settings.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "image_settings",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/image-settings.tsx",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "image_settings",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/image-settings.tsx",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "image_settings",
+      "target": "image_settings_handleapikeychange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/image-settings.tsx",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "image_settings",
+      "target": "image_settings_handlebaseurlchange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/image-settings.tsx",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "image_settings",
+      "target": "image_settings_handletest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/image-settings.tsx",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
+      "source": "image_settings",
+      "target": "image_settings_handleopenaddmodel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/image-settings.tsx",
+      "source_location": "L103",
+      "weight": 1.0
+    },
+    {
+      "source": "image_settings",
+      "target": "image_settings_handleopeneditmodel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/image-settings.tsx",
+      "source_location": "L109",
+      "weight": 1.0
+    },
+    {
+      "source": "image_settings",
+      "target": "image_settings_handledeletemodel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/image-settings.tsx",
+      "source_location": "L135",
+      "weight": 1.0
+    }
+  ]
+}

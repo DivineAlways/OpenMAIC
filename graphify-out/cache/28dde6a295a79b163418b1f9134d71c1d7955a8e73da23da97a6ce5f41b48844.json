@@ -1,0 +1,202 @@
+{
+  "nodes": [
+    {
+      "id": "image_storage",
+      "label": "image-storage.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/image-storage.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "image_storage_base64toblob",
+      "label": "base64ToBlob()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/image-storage.ts",
+      "source_location": "L17"
+    },
+    {
+      "id": "image_storage_blobtobase64",
+      "label": "blobToBase64()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/image-storage.ts",
+      "source_location": "L36"
+    },
+    {
+      "id": "image_storage_storeimages",
+      "label": "storeImages()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/image-storage.ts",
+      "source_location": "L49"
+    },
+    {
+      "id": "image_storage_loadimagemapping",
+      "label": "loadImageMapping()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/image-storage.ts",
+      "source_location": "L88"
+    },
+    {
+      "id": "image_storage_cleanupsessionimages",
+      "label": "cleanupSessionImages()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/image-storage.ts",
+      "source_location": "L111"
+    },
+    {
+      "id": "image_storage_cleanupoldimages",
+      "label": "cleanupOldImages()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/image-storage.ts",
+      "source_location": "L130"
+    },
+    {
+      "id": "image_storage_getimagestoragesize",
+      "label": "getImageStorageSize()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/image-storage.ts",
+      "source_location": "L143"
+    },
+    {
+      "id": "image_storage_storepdfblob",
+      "label": "storePdfBlob()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/image-storage.ts",
+      "source_location": "L152"
+    },
+    {
+      "id": "image_storage_loadpdfblob",
+      "label": "loadPdfBlob()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/image-storage.ts",
+      "source_location": "L174"
+    }
+  ],
+  "edges": [
+    {
+      "source": "image_storage",
+      "target": "database",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/image-storage.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "image_storage",
+      "target": "nanoid",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/image-storage.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "image_storage",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/image-storage.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "image_storage",
+      "target": "image_storage_base64toblob",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/image-storage.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "image_storage",
+      "target": "image_storage_blobtobase64",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/image-storage.ts",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "image_storage",
+      "target": "image_storage_storeimages",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/image-storage.ts",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "image_storage",
+      "target": "image_storage_loadimagemapping",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/image-storage.ts",
+      "source_location": "L88",
+      "weight": 1.0
+    },
+    {
+      "source": "image_storage",
+      "target": "image_storage_cleanupsessionimages",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/image-storage.ts",
+      "source_location": "L111",
+      "weight": 1.0
+    },
+    {
+      "source": "image_storage",
+      "target": "image_storage_cleanupoldimages",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/image-storage.ts",
+      "source_location": "L130",
+      "weight": 1.0
+    },
+    {
+      "source": "image_storage",
+      "target": "image_storage_getimagestoragesize",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/image-storage.ts",
+      "source_location": "L143",
+      "weight": 1.0
+    },
+    {
+      "source": "image_storage",
+      "target": "image_storage_storepdfblob",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/image-storage.ts",
+      "source_location": "L152",
+      "weight": 1.0
+    },
+    {
+      "source": "image_storage",
+      "target": "image_storage_loadpdfblob",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/image-storage.ts",
+      "source_location": "L174",
+      "weight": 1.0
+    },
+    {
+      "source": "image_storage_storeimages",
+      "target": "image_storage_base64toblob",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/image-storage.ts",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "image_storage_loadimagemapping",
+      "target": "image_storage_blobtobase64",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/image-storage.ts",
+      "source_location": "L95",
+      "weight": 1.0
+    }
+  ]
+}

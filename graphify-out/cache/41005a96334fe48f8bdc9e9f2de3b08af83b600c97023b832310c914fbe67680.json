@@ -1,0 +1,40 @@
+{
+  "nodes": [
+    {
+      "id": "role_selection",
+      "label": "role-selection.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/role-selection.tsx",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "role_selection",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/role-selection.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "role_selection",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/role-selection.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "role_selection",
+      "target": "guide",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/role-selection.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "tableutils",
+      "label": "tableUtils.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/tableUtils.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "tableutils_gettextstyle",
+      "label": "getTextStyle()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/tableUtils.ts",
+      "source_location": "L7"
+    },
+    {
+      "id": "tableutils_formattext",
+      "label": "formatText()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/tableUtils.ts",
+      "source_location": "L30"
+    },
+    {
+      "id": "tableutils_gethiddencells",
+      "label": "getHiddenCells()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/tableUtils.ts",
+      "source_location": "L38"
+    }
+  ],
+  "edges": [
+    {
+      "source": "tableutils",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/tableUtils.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "tableutils",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/tableUtils.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "tableutils",
+      "target": "tableutils_gettextstyle",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/tableUtils.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "tableutils",
+      "target": "tableutils_formattext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/tableUtils.ts",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "tableutils",
+      "target": "tableutils_gethiddencells",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/tableUtils.ts",
+      "source_location": "L38",
+      "weight": 1.0
+    }
+  ]
+}

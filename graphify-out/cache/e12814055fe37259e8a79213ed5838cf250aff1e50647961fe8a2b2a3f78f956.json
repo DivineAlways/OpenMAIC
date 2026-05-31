@@ -1,0 +1,74 @@
+{
+  "nodes": [
+    {
+      "id": "route",
+      "label": "route.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/app/api/generate-classroom/[jobId]/route.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "route_get",
+      "label": "GET()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/app/api/generate-classroom/[jobId]/route.ts",
+      "source_location": "L14"
+    }
+  ],
+  "edges": [
+    {
+      "source": "route",
+      "target": "server",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/generate-classroom/[jobId]/route.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "api_response",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/generate-classroom/[jobId]/route.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "classroom_job_store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/generate-classroom/[jobId]/route.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "classroom_storage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/generate-classroom/[jobId]/route.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/generate-classroom/[jobId]/route.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "route_get",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/generate-classroom/[jobId]/route.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    }
+  ]
+}

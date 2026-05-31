@@ -1,0 +1,260 @@
+{
+  "nodes": [
+    {
+      "id": "agent_bar",
+      "label": "agent-bar.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "agent_bar_loadvoices",
+      "label": "loadVoices()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L504"
+    },
+    {
+      "id": "agent_bar_handler",
+      "label": "handler()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L540"
+    },
+    {
+      "id": "agent_bar_handlemodechange",
+      "label": "handleModeChange()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L551"
+    },
+    {
+      "id": "agent_bar_toggleagent",
+      "label": "toggleAgent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L569"
+    },
+    {
+      "id": "agent_bar_getagentname",
+      "label": "getAgentName()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L579"
+    },
+    {
+      "id": "agent_bar_getagentrole",
+      "label": "getAgentRole()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L585"
+    },
+    {
+      "id": "agent_bar_cn",
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L660"
+    }
+  ],
+  "edges": [
+    {
+      "source": "agent_bar",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_bar",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_bar",
+      "target": "checkbox",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_bar",
+      "target": "popover",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_bar",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_bar",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_bar",
+      "target": "settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_bar",
+      "target": "store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_bar",
+      "target": "voice_resolver",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_bar",
+      "target": "browser_tts_preview",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_bar",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_bar",
+      "target": "tooltip",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_bar",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_bar",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_bar",
+      "target": "voice_resolver",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_bar",
+      "target": "agent_bar_loadvoices",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L504",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_bar",
+      "target": "agent_bar_handler",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L540",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_bar",
+      "target": "agent_bar_handlemodechange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L551",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_bar",
+      "target": "agent_bar_toggleagent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L569",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_bar",
+      "target": "agent_bar_getagentname",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L579",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_bar",
+      "target": "agent_bar_getagentrole",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L585",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_bar",
+      "target": "agent_bar_cn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-bar.tsx",
+      "source_location": "L660",
+      "weight": 1.0
+    }
+  ]
+}

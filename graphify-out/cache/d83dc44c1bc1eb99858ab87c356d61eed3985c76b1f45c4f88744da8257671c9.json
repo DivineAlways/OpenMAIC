@@ -1,0 +1,65 @@
+{
+  "nodes": [
+    {
+      "id": "access_code_modal",
+      "label": "access-code-modal.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/access-code-modal.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "access_code_modal_handlesubmit",
+      "label": "handleSubmit()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/access-code-modal.tsx",
+      "source_location": "L27"
+    }
+  ],
+  "edges": [
+    {
+      "source": "access_code_modal",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/access-code-modal.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "access_code_modal",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/access-code-modal.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "access_code_modal",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/access-code-modal.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "access_code_modal",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/access-code-modal.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "access_code_modal",
+      "target": "access_code_modal_handlesubmit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/access-code-modal.tsx",
+      "source_location": "L27",
+      "weight": 1.0
+    }
+  ]
+}

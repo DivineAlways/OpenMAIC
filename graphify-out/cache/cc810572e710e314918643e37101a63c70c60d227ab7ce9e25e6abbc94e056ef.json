@@ -1,0 +1,74 @@
+{
+  "nodes": [
+    {
+      "id": "usemoveshapekeypoint",
+      "label": "useMoveShapeKeypoint.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useMoveShapeKeypoint.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "usemoveshapekeypoint_usemoveshapekeypoint",
+      "label": "useMoveShapeKeypoint()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useMoveShapeKeypoint.ts",
+      "source_location": "L22"
+    }
+  ],
+  "edges": [
+    {
+      "source": "usemoveshapekeypoint",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useMoveShapeKeypoint.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "usemoveshapekeypoint",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useMoveShapeKeypoint.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "usemoveshapekeypoint",
+      "target": "use_history_snapshot",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useMoveShapeKeypoint.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "usemoveshapekeypoint",
+      "target": "shapes",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useMoveShapeKeypoint.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "usemoveshapekeypoint",
+      "target": "use_canvas_operations",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useMoveShapeKeypoint.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "usemoveshapekeypoint",
+      "target": "usemoveshapekeypoint_usemoveshapekeypoint",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useMoveShapeKeypoint.ts",
+      "source_location": "L22",
+      "weight": 1.0
+    }
+  ]
+}

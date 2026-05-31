@@ -1,0 +1,204 @@
+{
+  "nodes": [
+    {
+      "id": "stage_api_defaults",
+      "label": "stage-api-defaults.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/api/stage-api-defaults.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "stage_api_defaults_generateid",
+      "label": "generateId()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/api/stage-api-defaults.ts",
+      "source_location": "L24"
+    },
+    {
+      "id": "stage_api_defaults_validatesceneid",
+      "label": "validateSceneId()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/api/stage-api-defaults.ts",
+      "source_location": "L31"
+    },
+    {
+      "id": "stage_api_defaults_getscene",
+      "label": "getScene()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/api/stage-api-defaults.ts",
+      "source_location": "L38"
+    },
+    {
+      "id": "stage_api_defaults_createdefaultslidecontent",
+      "label": "createDefaultSlideContent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/api/stage-api-defaults.ts",
+      "source_location": "L45"
+    },
+    {
+      "id": "stage_api_defaults_createdefaultquizcontent",
+      "label": "createDefaultQuizContent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/api/stage-api-defaults.ts",
+      "source_location": "L77"
+    },
+    {
+      "id": "stage_api_defaults_createdefaultinteractivecontent",
+      "label": "createDefaultInteractiveContent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/api/stage-api-defaults.ts",
+      "source_location": "L87"
+    },
+    {
+      "id": "stage_api_defaults_createdefaultpblcontent",
+      "label": "createDefaultPBLContent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/api/stage-api-defaults.ts",
+      "source_location": "L97"
+    },
+    {
+      "id": "stage_api_defaults_createdefaultcontent",
+      "label": "createDefaultContent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/api/stage-api-defaults.ts",
+      "source_location": "L112"
+    }
+  ],
+  "edges": [
+    {
+      "source": "stage_api_defaults",
+      "target": "nanoid",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-defaults.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_defaults",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-defaults.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_defaults",
+      "target": "stage_api_defaults_generateid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-defaults.ts",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_defaults",
+      "target": "stage_api_defaults_validatesceneid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-defaults.ts",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_defaults",
+      "target": "stage_api_defaults_getscene",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-defaults.ts",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_defaults",
+      "target": "stage_api_defaults_createdefaultslidecontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-defaults.ts",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_defaults",
+      "target": "stage_api_defaults_createdefaultquizcontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-defaults.ts",
+      "source_location": "L77",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_defaults",
+      "target": "stage_api_defaults_createdefaultinteractivecontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-defaults.ts",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_defaults",
+      "target": "stage_api_defaults_createdefaultpblcontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-defaults.ts",
+      "source_location": "L97",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_defaults",
+      "target": "stage_api_defaults_createdefaultcontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-defaults.ts",
+      "source_location": "L112",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_defaults_createdefaultslidecontent",
+      "target": "stage_api_defaults_generateid",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-defaults.ts",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_defaults_createdefaultcontent",
+      "target": "stage_api_defaults_createdefaultslidecontent",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-defaults.ts",
+      "source_location": "L115",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_defaults_createdefaultcontent",
+      "target": "stage_api_defaults_createdefaultquizcontent",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-defaults.ts",
+      "source_location": "L117",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_defaults_createdefaultcontent",
+      "target": "stage_api_defaults_createdefaultinteractivecontent",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-defaults.ts",
+      "source_location": "L119",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_defaults_createdefaultcontent",
+      "target": "stage_api_defaults_createdefaultpblcontent",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-defaults.ts",
+      "source_location": "L121",
+      "weight": 1.0
+    }
+  ]
+}

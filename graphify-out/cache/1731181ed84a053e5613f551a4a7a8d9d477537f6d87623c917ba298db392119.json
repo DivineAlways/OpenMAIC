@@ -1,0 +1,12 @@
+{
+  "nodes": [
+    {
+      "id": "index",
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/index.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": []
+}

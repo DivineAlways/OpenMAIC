@@ -1,0 +1,58 @@
+{
+  "nodes": [
+    {
+      "id": "generation",
+      "label": "generation.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/types/generation.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "generation",
+      "target": "action",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/types/generation.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "generation",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/types/generation.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "generation",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/types/generation.ts",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "generation",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/types/generation.ts",
+      "source_location": "L101",
+      "weight": 1.0
+    },
+    {
+      "source": "generation",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/types/generation.ts",
+      "source_location": "L121",
+      "weight": 1.0
+    }
+  ]
+}

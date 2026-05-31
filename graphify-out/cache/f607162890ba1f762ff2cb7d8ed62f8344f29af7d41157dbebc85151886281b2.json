@@ -1,0 +1,40 @@
+{
+  "nodes": [
+    {
+      "id": "home_to_generation_spec",
+      "label": "home-to-generation.spec.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/e2e/tests/home-to-generation.spec.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "home_to_generation_spec",
+      "target": "base",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/tests/home-to-generation.spec.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "home_to_generation_spec",
+      "target": "home_page",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/tests/home-to-generation.spec.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "home_to_generation_spec",
+      "target": "settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/tests/home-to-generation.spec.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    }
+  ]
+}

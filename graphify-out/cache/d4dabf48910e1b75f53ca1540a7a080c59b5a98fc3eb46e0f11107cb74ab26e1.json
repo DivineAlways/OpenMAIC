@@ -1,0 +1,22 @@
+{
+  "nodes": [
+    {
+      "id": "lines",
+      "label": "lines.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/configs/lines.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "lines",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/configs/lines.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ]
+}

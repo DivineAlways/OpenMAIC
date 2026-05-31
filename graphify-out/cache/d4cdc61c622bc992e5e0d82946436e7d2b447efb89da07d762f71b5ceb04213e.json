@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "mfrac",
+      "label": "mfrac.js",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/mfrac.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "mfrac_mfrac",
+      "label": "mfrac()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/mfrac.js",
+      "source_location": "L3"
+    }
+  ],
+  "edges": [
+    {
+      "source": "mfrac",
+      "target": "walker_js",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/mfrac.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "mfrac",
+      "target": "mfrac_mfrac",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/mfrac.js",
+      "source_location": "L3",
+      "weight": 1.0
+    }
+  ]
+}

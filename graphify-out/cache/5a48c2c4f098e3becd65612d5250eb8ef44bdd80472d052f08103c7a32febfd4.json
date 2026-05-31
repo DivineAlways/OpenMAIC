@@ -1,0 +1,119 @@
+{
+  "nodes": [
+    {
+      "id": "thumbnailelement",
+      "label": "ThumbnailElement.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/ThumbnailSlide/ThumbnailElement.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "thumbnailelement_thumbnailelement",
+      "label": "ThumbnailElement()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/ThumbnailSlide/ThumbnailElement.tsx",
+      "source_location": "L23"
+    }
+  ],
+  "edges": [
+    {
+      "source": "thumbnailelement",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/ThumbnailSlide/ThumbnailElement.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "thumbnailelement",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/ThumbnailSlide/ThumbnailElement.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "thumbnailelement",
+      "target": "baseimageelement",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/ThumbnailSlide/ThumbnailElement.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "thumbnailelement",
+      "target": "basetextelement",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/ThumbnailSlide/ThumbnailElement.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "thumbnailelement",
+      "target": "baseshapeelement",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/ThumbnailSlide/ThumbnailElement.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "thumbnailelement",
+      "target": "baselineelement",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/ThumbnailSlide/ThumbnailElement.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "thumbnailelement",
+      "target": "basechartelement",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/ThumbnailSlide/ThumbnailElement.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "thumbnailelement",
+      "target": "baselatexelement",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/ThumbnailSlide/ThumbnailElement.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "thumbnailelement",
+      "target": "basetableelement",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/ThumbnailSlide/ThumbnailElement.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "thumbnailelement",
+      "target": "basevideoelement",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/ThumbnailSlide/ThumbnailElement.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "thumbnailelement",
+      "target": "thumbnailelement_thumbnailelement",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/ThumbnailSlide/ThumbnailElement.tsx",
+      "source_location": "L23",
+      "weight": 1.0
+    }
+  ]
+}

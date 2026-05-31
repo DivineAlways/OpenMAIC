@@ -1,0 +1,97 @@
+{
+  "nodes": [
+    {
+      "id": "route",
+      "label": "route.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/app/api/access-code/verify/route.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "route_createaccesstoken",
+      "label": "createAccessToken()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/app/api/access-code/verify/route.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "route_verifyaccesstoken",
+      "label": "verifyAccessToken()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/app/api/access-code/verify/route.ts",
+      "source_location": "L13"
+    },
+    {
+      "id": "route_post",
+      "label": "POST()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/app/api/access-code/verify/route.ts",
+      "source_location": "L29"
+    }
+  ],
+  "edges": [
+    {
+      "source": "route",
+      "target": "headers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/access-code/verify/route.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "crypto",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/access-code/verify/route.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "api_response",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/access-code/verify/route.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "route_createaccesstoken",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/access-code/verify/route.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "route_verifyaccesstoken",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/access-code/verify/route.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "route_post",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/access-code/verify/route.ts",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "route_post",
+      "target": "route_createaccesstoken",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/access-code/verify/route.ts",
+      "source_location": "L53",
+      "weight": 1.0
+    }
+  ]
+}

@@ -1,0 +1,370 @@
+{
+  "nodes": [
+    {
+      "id": "index",
+      "label": "index.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "index_handlesendmessage",
+      "label": "handleSendMessage()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L358"
+    },
+    {
+      "id": "index_handletoggleinput",
+      "label": "handleToggleInput()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L369"
+    },
+    {
+      "id": "index_handletogglevoice",
+      "label": "handleToggleVoice()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L382"
+    },
+    {
+      "id": "index_handlekeydown",
+      "label": "handleKeyDown()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L401"
+    },
+    {
+      "id": "index_getagentconfig",
+      "label": "getAgentConfig()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L572"
+    },
+    {
+      "id": "index_cn",
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L685"
+    }
+  ],
+  "edges": [
+    {
+      "source": "index",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "audio_indicator",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "canvas_toolbar",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "use_audio_recorder",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "sonner",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "proactive_card",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "presentation_speech_overlay",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "avatar_display",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "hover_card",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "action",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "playback",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "roundtable",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_handlesendmessage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L358",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_handletoggleinput",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L369",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_handletogglevoice",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L382",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_handlekeydown",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L401",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_getagentconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L572",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_cn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L685",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_cn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L1076",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_cn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L1394",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_cn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L1410",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_cn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L1426",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_cn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L1447",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_cn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L1511",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_cn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L1660",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_cn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L1770",
+      "weight": 1.0
+    },
+    {
+      "source": "index_handlekeydown",
+      "target": "index_handletoggleinput",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L437",
+      "weight": 1.0
+    },
+    {
+      "source": "index_handlekeydown",
+      "target": "index_handletogglevoice",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/roundtable/index.tsx",
+      "source_location": "L443",
+      "weight": 1.0
+    }
+  ]
+}

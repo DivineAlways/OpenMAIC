@@ -1,0 +1,49 @@
+{
+  "nodes": [
+    {
+      "id": "certificate_modal",
+      "label": "certificate-modal.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/certificate-modal.tsx",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "certificate_modal",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/certificate-modal.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "certificate_modal",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/certificate-modal.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "certificate_modal",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/certificate-modal.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "certificate_modal",
+      "target": "user_profile",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/certificate-modal.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    }
+  ]
+}

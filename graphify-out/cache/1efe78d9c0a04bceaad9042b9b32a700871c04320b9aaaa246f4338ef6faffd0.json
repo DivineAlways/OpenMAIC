@@ -1,0 +1,92 @@
+{
+  "nodes": [
+    {
+      "id": "whiteboard_canvas",
+      "label": "whiteboard-canvas.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-canvas.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "whiteboard_canvas_onwheel",
+      "label": "onWheel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-canvas.tsx",
+      "source_location": "L225"
+    }
+  ],
+  "edges": [
+    {
+      "source": "whiteboard_canvas",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-canvas.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "whiteboard_canvas",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-canvas.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "whiteboard_canvas",
+      "target": "store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-canvas.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "whiteboard_canvas",
+      "target": "canvas",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-canvas.tsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "whiteboard_canvas",
+      "target": "screenelement",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-canvas.tsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "whiteboard_canvas",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-canvas.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "whiteboard_canvas",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-canvas.tsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "whiteboard_canvas",
+      "target": "whiteboard_canvas_onwheel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/whiteboard/whiteboard-canvas.tsx",
+      "source_location": "L225",
+      "weight": 1.0
+    }
+  ]
+}

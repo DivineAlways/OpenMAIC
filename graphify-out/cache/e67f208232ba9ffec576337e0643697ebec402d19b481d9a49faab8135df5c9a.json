@@ -1,0 +1,12 @@
+{
+  "nodes": [
+    {
+      "id": "locales",
+      "label": "locales.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/i18n/locales.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": []
+}

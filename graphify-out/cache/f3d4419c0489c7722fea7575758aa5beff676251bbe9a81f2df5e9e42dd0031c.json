@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "id": "multiselectoperate",
+      "label": "MultiSelectOperate.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/MultiSelectOperate.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "multiselectoperate_multiselectoperate",
+      "label": "MultiSelectOperate()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/MultiSelectOperate.tsx",
+      "source_location": "L19"
+    }
+  ],
+  "edges": [
+    {
+      "source": "multiselectoperate",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/MultiSelectOperate.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "multiselectoperate",
+      "target": "store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/MultiSelectOperate.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "multiselectoperate",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/MultiSelectOperate.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "multiselectoperate",
+      "target": "element",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/MultiSelectOperate.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "multiselectoperate",
+      "target": "edit",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/MultiSelectOperate.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "multiselectoperate",
+      "target": "usecommonoperate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/MultiSelectOperate.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "multiselectoperate",
+      "target": "resizehandler",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/MultiSelectOperate.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "multiselectoperate",
+      "target": "borderline",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/MultiSelectOperate.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "multiselectoperate",
+      "target": "multiselectoperate_multiselectoperate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/MultiSelectOperate.tsx",
+      "source_location": "L19",
+      "weight": 1.0
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "nodes": [
+    {
+      "id": "tts_settings",
+      "label": "tts-settings.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/tts-settings.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "tts_settings_setdoubaocompoundkey",
+      "label": "setDoubaoCompoundKey()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/tts-settings.tsx",
+      "source_location": "L82"
+    },
+    {
+      "id": "tts_settings_handletesttts",
+      "label": "handleTestTTS()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/tts-settings.tsx",
+      "source_location": "L100"
+    },
+    {
+      "id": "tts_settings_handleadd",
+      "label": "handleAdd()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/tts-settings.tsx",
+      "source_location": "L504"
+    }
+  ],
+  "edges": [
+    {
+      "source": "tts_settings",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/tts-settings.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "tts_settings",
+      "target": "label",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/tts-settings.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "tts_settings",
+      "target": "input",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/tts-settings.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "tts_settings",
+      "target": "button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/tts-settings.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "tts_settings",
+      "target": "alert_dialog",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/tts-settings.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "tts_settings",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/tts-settings.tsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "tts_settings",
+      "target": "settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/tts-settings.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "tts_settings",
+      "target": "constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/tts-settings.tsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "tts_settings",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/tts-settings.tsx",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "tts_settings",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/tts-settings.tsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "tts_settings",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/tts-settings.tsx",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "tts_settings",
+      "target": "sonner",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/tts-settings.tsx",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "tts_settings",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/tts-settings.tsx",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "tts_settings",
+      "target": "use_tts_preview",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/tts-settings.tsx",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "tts_settings",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/tts-settings.tsx",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "tts_settings",
+      "target": "tts_settings_setdoubaocompoundkey",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/tts-settings.tsx",
+      "source_location": "L82",
+      "weight": 1.0
+    },
+    {
+      "source": "tts_settings",
+      "target": "tts_settings_handletesttts",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/tts-settings.tsx",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "tts_settings",
+      "target": "tts_settings_handleadd",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/tts-settings.tsx",
+      "source_location": "L504",
+      "weight": 1.0
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "nodes": [
+    {
+      "id": "agent_reveal_modal",
+      "label": "agent-reveal-modal.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/agent/agent-reveal-modal.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "agent_reveal_modal_isurl",
+      "label": "isUrl()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/agent/agent-reveal-modal.tsx",
+      "source_location": "L24"
+    },
+    {
+      "id": "agent_reveal_modal_lighten",
+      "label": "lighten()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/agent/agent-reveal-modal.tsx",
+      "source_location": "L29"
+    }
+  ],
+  "edges": [
+    {
+      "source": "agent_reveal_modal",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-reveal-modal.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_reveal_modal",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-reveal-modal.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_reveal_modal",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-reveal-modal.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_reveal_modal",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-reveal-modal.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_reveal_modal",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-reveal-modal.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_reveal_modal",
+      "target": "agent_reveal_modal_isurl",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-reveal-modal.tsx",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_reveal_modal",
+      "target": "agent_reveal_modal_lighten",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/agent/agent-reveal-modal.tsx",
+      "source_location": "L29",
+      "weight": 1.0
+    }
+  ]
+}

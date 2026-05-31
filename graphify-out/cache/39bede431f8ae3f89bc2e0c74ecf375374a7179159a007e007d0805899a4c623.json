@@ -1,0 +1,90 @@
+{
+  "nodes": [
+    {
+      "id": "avatar",
+      "label": "avatar.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ui/avatar.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "avatar_avatar",
+      "label": "Avatar()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ui/avatar.tsx",
+      "source_location": "L8"
+    },
+    {
+      "id": "avatar_cn",
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ui/avatar.tsx",
+      "source_location": "L58"
+    }
+  ],
+  "edges": [
+    {
+      "source": "avatar",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/avatar.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "avatar",
+      "target": "radix_ui",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/avatar.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "avatar",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/avatar.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "avatar",
+      "target": "avatar_avatar",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/avatar.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "avatar",
+      "target": "avatar_cn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/avatar.tsx",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "avatar",
+      "target": "avatar_cn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/avatar.tsx",
+      "source_location": "L74",
+      "weight": 1.0
+    },
+    {
+      "source": "avatar",
+      "target": "avatar_cn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/avatar.tsx",
+      "source_location": "L87",
+      "weight": 1.0
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "mmultiscripts",
+      "label": "mmultiscripts.js",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/mmultiscripts.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "mmultiscripts_mmultiscripts",
+      "label": "mmultiscripts()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/mmultiscripts.js",
+      "source_location": "L3"
+    }
+  ],
+  "edges": [
+    {
+      "source": "mmultiscripts",
+      "target": "walker_js",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/mmultiscripts.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "mmultiscripts",
+      "target": "mmultiscripts_mmultiscripts",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/mmultiscripts.js",
+      "source_location": "L3",
+      "weight": 1.0
+    }
+  ]
+}

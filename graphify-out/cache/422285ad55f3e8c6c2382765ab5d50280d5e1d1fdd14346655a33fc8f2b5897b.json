@@ -1,0 +1,124 @@
+{
+  "nodes": [
+    {
+      "id": "visualizers",
+      "label": "visualizers.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/app/generation-preview/components/visualizers.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "visualizers_stepvisualizer",
+      "label": "StepVisualizer()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/app/generation-preview/components/visualizers.tsx",
+      "source_location": "L21"
+    },
+    {
+      "id": "visualizers_gettheme",
+      "label": "getTheme()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/app/generation-preview/components/visualizers.tsx",
+      "source_location": "L347"
+    },
+    {
+      "id": "visualizers_cn",
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/app/generation-preview/components/visualizers.tsx",
+      "source_location": "L389"
+    }
+  ],
+  "edges": [
+    {
+      "source": "visualizers",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/generation-preview/components/visualizers.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "visualizers",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/generation-preview/components/visualizers.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "visualizers",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/generation-preview/components/visualizers.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "visualizers",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/generation-preview/components/visualizers.tsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "visualizers",
+      "target": "generation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/generation-preview/components/visualizers.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "visualizers",
+      "target": "visualizers_stepvisualizer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/generation-preview/components/visualizers.tsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "visualizers",
+      "target": "visualizers_gettheme",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/generation-preview/components/visualizers.tsx",
+      "source_location": "L347",
+      "weight": 1.0
+    },
+    {
+      "source": "visualizers",
+      "target": "visualizers_cn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/generation-preview/components/visualizers.tsx",
+      "source_location": "L389",
+      "weight": 1.0
+    },
+    {
+      "source": "visualizers",
+      "target": "visualizers_cn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/generation-preview/components/visualizers.tsx",
+      "source_location": "L449",
+      "weight": 1.0
+    },
+    {
+      "source": "visualizers",
+      "target": "visualizers_cn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/generation-preview/components/visualizers.tsx",
+      "source_location": "L742",
+      "weight": 1.0
+    }
+  ]
+}

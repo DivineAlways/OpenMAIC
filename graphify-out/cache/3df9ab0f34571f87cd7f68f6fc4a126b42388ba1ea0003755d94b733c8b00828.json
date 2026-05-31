@@ -1,0 +1,108 @@
+{
+  "nodes": [
+    {
+      "id": "context",
+      "label": "context.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/context.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "context_usecontextvalue",
+      "label": "useContextValue()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/context.tsx",
+      "source_location": "L28"
+    },
+    {
+      "id": "context_context",
+      "label": "Context()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/context.tsx",
+      "source_location": "L40"
+    }
+  ],
+  "edges": [
+    {
+      "source": "context",
+      "target": "button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/context.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "context",
+      "target": "hover_card",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/context.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "context",
+      "target": "progress",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/context.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "context",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/context.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "context",
+      "target": "ai",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/context.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "context",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/context.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "context",
+      "target": "tokenlens",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/context.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "context",
+      "target": "context_usecontextvalue",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/context.tsx",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "context",
+      "target": "context_context",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/context.tsx",
+      "source_location": "L40",
+      "weight": 1.0
+    }
+  ]
+}

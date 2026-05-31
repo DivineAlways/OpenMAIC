@@ -1,0 +1,63 @@
+{
+  "nodes": [
+    {
+      "id": "interactive_renderer",
+      "label": "interactive-renderer.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/scene-renderers/interactive-renderer.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "interactive_renderer_interactiverenderer",
+      "label": "InteractiveRenderer()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/scene-renderers/interactive-renderer.tsx",
+      "source_location": "L12"
+    },
+    {
+      "id": "interactive_renderer_patchhtmlforiframe",
+      "label": "patchHtmlForIframe()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/scene-renderers/interactive-renderer.tsx",
+      "source_location": "L39"
+    }
+  ],
+  "edges": [
+    {
+      "source": "interactive_renderer",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/interactive-renderer.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "interactive_renderer",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/interactive-renderer.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "interactive_renderer",
+      "target": "interactive_renderer_interactiverenderer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/interactive-renderer.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "interactive_renderer",
+      "target": "interactive_renderer_patchhtmlforiframe",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/interactive-renderer.tsx",
+      "source_location": "L39",
+      "weight": 1.0
+    }
+  ]
+}

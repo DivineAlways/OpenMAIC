@@ -1,0 +1,74 @@
+{
+  "nodes": [
+    {
+      "id": "useselectelement",
+      "label": "useSelectElement.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useSelectElement.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "useselectelement_useselectelement",
+      "label": "useSelectElement()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useSelectElement.ts",
+      "source_location": "L11"
+    }
+  ],
+  "edges": [
+    {
+      "source": "useselectelement",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useSelectElement.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "useselectelement",
+      "target": "lodash",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useSelectElement.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "useselectelement",
+      "target": "store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useSelectElement.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "useselectelement",
+      "target": "keyboard",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useSelectElement.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "useselectelement",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useSelectElement.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "useselectelement",
+      "target": "useselectelement_useselectelement",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useSelectElement.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    }
+  ]
+}

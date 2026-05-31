@@ -1,0 +1,54 @@
+{
+  "nodes": [
+    {
+      "id": "nary",
+      "label": "nary.js",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/ooml/nary.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "nary_getnary",
+      "label": "getNary()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/ooml/nary.js",
+      "source_location": "L6"
+    },
+    {
+      "id": "nary_getnarytarget",
+      "label": "getNaryTarget()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/ooml/nary.js",
+      "source_location": "L15"
+    }
+  ],
+  "edges": [
+    {
+      "source": "nary",
+      "target": "helpers_js",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/ooml/nary.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "nary",
+      "target": "nary_getnary",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/ooml/nary.js",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "nary",
+      "target": "nary_getnarytarget",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/ooml/nary.js",
+      "source_location": "L15",
+      "weight": 1.0
+    }
+  ]
+}

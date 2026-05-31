@@ -1,0 +1,54 @@
+{
+  "nodes": [
+    {
+      "id": "element_fingerprint",
+      "label": "element-fingerprint.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/element-fingerprint.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "element_fingerprint_semanticpart",
+      "label": "semanticPart()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/element-fingerprint.ts",
+      "source_location": "L8"
+    },
+    {
+      "id": "element_fingerprint_elementfingerprint",
+      "label": "elementFingerprint()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/element-fingerprint.ts",
+      "source_location": "L63"
+    }
+  ],
+  "edges": [
+    {
+      "source": "element_fingerprint",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/element-fingerprint.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "element_fingerprint",
+      "target": "element_fingerprint_semanticpart",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/element-fingerprint.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "element_fingerprint",
+      "target": "element_fingerprint_elementfingerprint",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/element-fingerprint.ts",
+      "source_location": "L63",
+      "weight": 1.0
+    }
+  ]
+}

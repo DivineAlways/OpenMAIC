@@ -1,0 +1,65 @@
+{
+  "nodes": [
+    {
+      "id": "stage_api_element",
+      "label": "stage-api-element.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/api/stage-api-element.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "stage_api_element_createelementapi",
+      "label": "createElementAPI()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/api/stage-api-element.ts",
+      "source_location": "L19"
+    }
+  ],
+  "edges": [
+    {
+      "source": "stage_api_element",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-element.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_element",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-element.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_element",
+      "target": "stage_api_types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-element.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_element",
+      "target": "stage_api_defaults",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-element.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_element",
+      "target": "stage_api_element_createelementapi",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-element.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    }
+  ]
+}

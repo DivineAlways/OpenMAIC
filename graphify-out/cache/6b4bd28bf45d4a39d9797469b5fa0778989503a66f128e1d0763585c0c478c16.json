@@ -1,0 +1,54 @@
+{
+  "nodes": [
+    {
+      "id": "nano_banana_adapter",
+      "label": "nano-banana-adapter.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/nano-banana-adapter.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "nano_banana_adapter_testnanobananaconnectivity",
+      "label": "testNanoBananaConnectivity()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/nano-banana-adapter.ts",
+      "source_location": "L51"
+    },
+    {
+      "id": "nano_banana_adapter_generatewithnanobanana",
+      "label": "generateWithNanoBanana()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/nano-banana-adapter.ts",
+      "source_location": "L97"
+    }
+  ],
+  "edges": [
+    {
+      "source": "nano_banana_adapter",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/nano-banana-adapter.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "nano_banana_adapter",
+      "target": "nano_banana_adapter_testnanobananaconnectivity",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/nano-banana-adapter.ts",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "nano_banana_adapter",
+      "target": "nano_banana_adapter_generatewithnanobanana",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/nano-banana-adapter.ts",
+      "source_location": "L97",
+      "weight": 1.0
+    }
+  ]
+}

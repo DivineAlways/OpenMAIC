@@ -1,0 +1,252 @@
+{
+  "nodes": [
+    {
+      "id": "database",
+      "label": "database.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "database_mediafilekey",
+      "label": "mediaFileKey()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L171"
+    },
+    {
+      "id": "database_maicdatabase",
+      "label": "MAICDatabase",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L183"
+    },
+    {
+      "id": "database_maicdatabase_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L196"
+    },
+    {
+      "id": "database_initdatabase",
+      "label": "initDatabase()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L358"
+    },
+    {
+      "id": "database_cleardatabase",
+      "label": "clearDatabase()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L375"
+    },
+    {
+      "id": "database_exportdatabase",
+      "label": "exportDatabase()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L383"
+    },
+    {
+      "id": "database_importdatabase",
+      "label": "importDatabase()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L400"
+    },
+    {
+      "id": "database_getscenesbystageid",
+      "label": "getScenesByStageId()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L424"
+    },
+    {
+      "id": "database_deletestagewithrelateddata",
+      "label": "deleteStageWithRelatedData()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L431"
+    },
+    {
+      "id": "database_getgeneratedagentsbystageid",
+      "label": "getGeneratedAgentsByStageId()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L458"
+    },
+    {
+      "id": "database_getdatabasestats",
+      "label": "getDatabaseStats()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L467"
+    }
+  ],
+  "edges": [
+    {
+      "source": "database",
+      "target": "dexie",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "database",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "database",
+      "target": "action",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "database",
+      "target": "chat",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "database",
+      "target": "generation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "database",
+      "target": "ai",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "database",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "database",
+      "target": "database_mediafilekey",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L171",
+      "weight": 1.0
+    },
+    {
+      "source": "database",
+      "target": "database_maicdatabase",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L183",
+      "weight": 1.0
+    },
+    {
+      "source": "database_maicdatabase",
+      "target": "database_maicdatabase_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L196",
+      "weight": 1.0
+    },
+    {
+      "source": "database",
+      "target": "database_initdatabase",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L358",
+      "weight": 1.0
+    },
+    {
+      "source": "database",
+      "target": "database_cleardatabase",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L375",
+      "weight": 1.0
+    },
+    {
+      "source": "database",
+      "target": "database_exportdatabase",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L383",
+      "weight": 1.0
+    },
+    {
+      "source": "database",
+      "target": "database_importdatabase",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L400",
+      "weight": 1.0
+    },
+    {
+      "source": "database",
+      "target": "database_getscenesbystageid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L424",
+      "weight": 1.0
+    },
+    {
+      "source": "database",
+      "target": "database_deletestagewithrelateddata",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L431",
+      "weight": 1.0
+    },
+    {
+      "source": "database",
+      "target": "database_getgeneratedagentsbystageid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L458",
+      "weight": 1.0
+    },
+    {
+      "source": "database",
+      "target": "database_getdatabasestats",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/database.ts",
+      "source_location": "L467",
+      "weight": 1.0
+    }
+  ]
+}

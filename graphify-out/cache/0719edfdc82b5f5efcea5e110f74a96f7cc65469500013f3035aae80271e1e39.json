@@ -1,0 +1,102 @@
+{
+  "nodes": [
+    {
+      "id": "mode_mcp",
+      "label": "mode-mcp.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/mode-mcp.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "mode_mcp_modemcp",
+      "label": "ModeMCP",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/mode-mcp.ts",
+      "source_location": "L9"
+    },
+    {
+      "id": "mode_mcp_modemcp_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/mode-mcp.ts",
+      "source_location": "L13"
+    },
+    {
+      "id": "mode_mcp_modemcp_setmode",
+      "label": ".setMode()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/mode-mcp.ts",
+      "source_location": "L18"
+    },
+    {
+      "id": "mode_mcp_modemcp_getcurrentmode",
+      "label": ".getCurrentMode()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/mode-mcp.ts",
+      "source_location": "L32"
+    },
+    {
+      "id": "mode_mcp_modemcp_getavailablemodes",
+      "label": ".getAvailableModes()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/mode-mcp.ts",
+      "source_location": "L36"
+    }
+  ],
+  "edges": [
+    {
+      "source": "mode_mcp",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/mode-mcp.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "mode_mcp",
+      "target": "mode_mcp_modemcp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/mode-mcp.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "mode_mcp_modemcp",
+      "target": "mode_mcp_modemcp_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/mode-mcp.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "mode_mcp_modemcp",
+      "target": "mode_mcp_modemcp_setmode",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/mode-mcp.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "mode_mcp_modemcp",
+      "target": "mode_mcp_modemcp_getcurrentmode",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/mode-mcp.ts",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "mode_mcp_modemcp",
+      "target": "mode_mcp_modemcp_getavailablemodes",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/mode-mcp.ts",
+      "source_location": "L36",
+      "weight": 1.0
+    }
+  ]
+}

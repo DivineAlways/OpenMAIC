@@ -1,0 +1,12 @@
+{
+  "nodes": [
+    {
+      "id": "agent_defaults",
+      "label": "agent-defaults.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/constants/agent-defaults.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": []
+}

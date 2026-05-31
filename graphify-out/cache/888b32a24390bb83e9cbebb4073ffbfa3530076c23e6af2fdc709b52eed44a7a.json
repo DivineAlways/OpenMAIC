@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "id": "statictable",
+      "label": "StaticTable.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/StaticTable.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "statictable_getcellbg",
+      "label": "getCellBg()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/StaticTable.tsx",
+      "source_location": "L37"
+    },
+    {
+      "id": "statictable_getheadertextcolor",
+      "label": "getHeaderTextColor()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/StaticTable.tsx",
+      "source_location": "L67"
+    }
+  ],
+  "edges": [
+    {
+      "source": "statictable",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/StaticTable.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "statictable",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/StaticTable.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "statictable",
+      "target": "element",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/StaticTable.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "statictable",
+      "target": "tableutils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/StaticTable.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "statictable",
+      "target": "statictable_getcellbg",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/StaticTable.tsx",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "statictable",
+      "target": "statictable_getheadertextcolor",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/StaticTable.tsx",
+      "source_location": "L67",
+      "weight": 1.0
+    }
+  ]
+}

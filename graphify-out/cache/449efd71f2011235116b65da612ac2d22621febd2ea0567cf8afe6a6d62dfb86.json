@@ -1,0 +1,99 @@
+{
+  "nodes": [
+    {
+      "id": "proactive_card",
+      "label": "proactive-card.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/chat/proactive-card.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "proactive_card_tick",
+      "label": "tick()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/chat/proactive-card.tsx",
+      "source_location": "L84"
+    },
+    {
+      "id": "proactive_card_ispaused",
+      "label": "isPaused()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/chat/proactive-card.tsx",
+      "source_location": "L233"
+    }
+  ],
+  "edges": [
+    {
+      "source": "proactive_card",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/proactive-card.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "proactive_card",
+      "target": "react_dom",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/proactive-card.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "proactive_card",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/proactive-card.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "proactive_card",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/proactive-card.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "proactive_card",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/proactive-card.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "proactive_card",
+      "target": "action",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/proactive-card.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "proactive_card",
+      "target": "proactive_card_tick",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/proactive-card.tsx",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "proactive_card",
+      "target": "proactive_card_ispaused",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/proactive-card.tsx",
+      "source_location": "L233",
+      "weight": 1.0
+    }
+  ]
+}

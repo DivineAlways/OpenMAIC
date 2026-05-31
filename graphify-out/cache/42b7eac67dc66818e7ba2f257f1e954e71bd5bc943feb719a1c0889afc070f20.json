@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "model_config",
+      "label": "model-config.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/model-config.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "model_config_getcurrentmodelconfig",
+      "label": "getCurrentModelConfig()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/model-config.ts",
+      "source_location": "L6"
+    }
+  ],
+  "edges": [
+    {
+      "source": "model_config",
+      "target": "settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/model-config.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "model_config",
+      "target": "model_config_getcurrentmodelconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/model-config.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    }
+  ]
+}

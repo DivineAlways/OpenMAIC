@@ -1,0 +1,291 @@
+{
+  "nodes": [
+    {
+      "id": "queue",
+      "label": "queue.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "queue_queueitem",
+      "label": "QueueItem()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L32"
+    },
+    {
+      "id": "queue_queueitemindicator",
+      "label": "QueueItemIndicator()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L46"
+    },
+    {
+      "id": "queue_queueitemcontent",
+      "label": "QueueItemContent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L67"
+    },
+    {
+      "id": "queue_queueitemdescription",
+      "label": "QueueItemDescription()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L86"
+    },
+    {
+      "id": "queue_queueitemactions",
+      "label": "QueueItemActions()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L103"
+    },
+    {
+      "id": "queue_queueitemaction",
+      "label": "QueueItemAction()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L109"
+    },
+    {
+      "id": "queue_queueitemattachment",
+      "label": "QueueItemAttachment()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L124"
+    },
+    {
+      "id": "queue_queueitemimage",
+      "label": "QueueItemImage()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L130"
+    },
+    {
+      "id": "queue_queueitemfile",
+      "label": "QueueItemFile()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L142"
+    },
+    {
+      "id": "queue_queuelist",
+      "label": "QueueList()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L154"
+    },
+    {
+      "id": "queue_queuesection",
+      "label": "QueueSection()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L165"
+    },
+    {
+      "id": "queue_queuesectiontrigger",
+      "label": "QueueSectionTrigger()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L172"
+    },
+    {
+      "id": "queue_queuesectionlabel",
+      "label": "QueueSectionLabel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L198"
+    },
+    {
+      "id": "queue_queuesectioncontent",
+      "label": "QueueSectionContent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L217"
+    }
+  ],
+  "edges": [
+    {
+      "source": "queue",
+      "target": "button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "queue",
+      "target": "collapsible",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "queue",
+      "target": "scroll_area",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "queue",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "queue",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "queue",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "queue",
+      "target": "queue_queueitem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "queue",
+      "target": "queue_queueitemindicator",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "queue",
+      "target": "queue_queueitemcontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L67",
+      "weight": 1.0
+    },
+    {
+      "source": "queue",
+      "target": "queue_queueitemdescription",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L86",
+      "weight": 1.0
+    },
+    {
+      "source": "queue",
+      "target": "queue_queueitemactions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L103",
+      "weight": 1.0
+    },
+    {
+      "source": "queue",
+      "target": "queue_queueitemaction",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L109",
+      "weight": 1.0
+    },
+    {
+      "source": "queue",
+      "target": "queue_queueitemattachment",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L124",
+      "weight": 1.0
+    },
+    {
+      "source": "queue",
+      "target": "queue_queueitemimage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L130",
+      "weight": 1.0
+    },
+    {
+      "source": "queue",
+      "target": "queue_queueitemfile",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L142",
+      "weight": 1.0
+    },
+    {
+      "source": "queue",
+      "target": "queue_queuelist",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L154",
+      "weight": 1.0
+    },
+    {
+      "source": "queue",
+      "target": "queue_queuesection",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L165",
+      "weight": 1.0
+    },
+    {
+      "source": "queue",
+      "target": "queue_queuesectiontrigger",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L172",
+      "weight": 1.0
+    },
+    {
+      "source": "queue",
+      "target": "queue_queuesectionlabel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L198",
+      "weight": 1.0
+    },
+    {
+      "source": "queue",
+      "target": "queue_queuesectioncontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/queue.tsx",
+      "source_location": "L217",
+      "weight": 1.0
+    }
+  ]
+}

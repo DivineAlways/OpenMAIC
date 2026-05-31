@@ -1,0 +1,58 @@
+{
+  "nodes": [
+    {
+      "id": "lineelementoperate",
+      "label": "LineElementOperate.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/LineElementOperate.tsx",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "lineelementoperate",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/LineElementOperate.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "lineelementoperate",
+      "target": "store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/LineElementOperate.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "lineelementoperate",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/LineElementOperate.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "lineelementoperate",
+      "target": "edit",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/LineElementOperate.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "lineelementoperate",
+      "target": "resizehandler",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/LineElementOperate.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    }
+  ]
+}

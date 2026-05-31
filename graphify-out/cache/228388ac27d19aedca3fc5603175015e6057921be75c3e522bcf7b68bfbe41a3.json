@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "derived_state",
+      "label": "derived-state.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/playback/derived-state.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "derived_state_computeplaybackview",
+      "label": "computePlaybackView()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/playback/derived-state.ts",
+      "source_location": "L77"
+    }
+  ],
+  "edges": [
+    {
+      "source": "derived_state",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/playback/derived-state.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "derived_state",
+      "target": "derived_state_computeplaybackview",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/playback/derived-state.ts",
+      "source_location": "L77",
+      "weight": 1.0
+    }
+  ]
+}

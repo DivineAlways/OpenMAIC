@@ -1,0 +1,40 @@
+{
+  "nodes": [
+    {
+      "id": "classroom_zip_types",
+      "label": "classroom-zip-types.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/classroom-zip-types.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "classroom_zip_types",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/classroom-zip-types.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_zip_types",
+      "target": "action",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/classroom-zip-types.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_zip_types",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/classroom-zip-types.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "nodes": [
+    {
+      "id": "core_interfaces",
+      "label": "core-interfaces.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/core-interfaces.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "core_interfaces",
+      "target": "core_enums",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/core-interfaces.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    }
+  ]
+}

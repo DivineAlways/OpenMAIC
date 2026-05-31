@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    {
+      "id": "menclose",
+      "label": "menclose.js",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/menclose.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "menclose_menclose",
+      "label": "menclose()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/menclose.js",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "menclose",
+      "target": "menclose_menclose",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/menclose.js",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ]
+}

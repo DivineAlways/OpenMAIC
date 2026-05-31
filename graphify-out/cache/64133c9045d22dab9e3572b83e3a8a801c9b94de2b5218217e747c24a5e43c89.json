@@ -1,0 +1,12 @@
+{
+  "nodes": [
+    {
+      "id": "action",
+      "label": "action.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/types/action.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": []
+}

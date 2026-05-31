@@ -1,0 +1,273 @@
+{
+  "nodes": [
+    {
+      "id": "media_popover",
+      "label": "media-popover.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "media_popover_getttsprovidername",
+      "label": "getTTSProviderName()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L86"
+    },
+    {
+      "id": "media_popover_getvoicedisplayname",
+      "label": "getVoiceDisplayName()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L102"
+    },
+    {
+      "id": "media_popover_cfgok",
+      "label": "cfgOk()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L166"
+    },
+    {
+      "id": "media_popover_load",
+      "label": "load()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L176"
+    },
+    {
+      "id": "media_popover_handleopenchange",
+      "label": "handleOpenChange()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L333"
+    }
+  ],
+  "edges": [
+    {
+      "source": "media_popover",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "media_popover",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "media_popover",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "media_popover",
+      "target": "sonner",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "media_popover",
+      "target": "popover",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "media_popover",
+      "target": "select",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "media_popover",
+      "target": "slider",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "media_popover",
+      "target": "switch",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "media_popover",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "media_popover",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "media_popover",
+      "target": "settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "media_popover",
+      "target": "use_tts_preview",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "media_popover",
+      "target": "image_providers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "media_popover",
+      "target": "video_providers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "media_popover",
+      "target": "constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "media_popover",
+      "target": "constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "media_popover",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "media_popover",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "media_popover",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "media_popover",
+      "target": "settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "media_popover",
+      "target": "media_popover_getttsprovidername",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L86",
+      "weight": 1.0
+    },
+    {
+      "source": "media_popover",
+      "target": "media_popover_getvoicedisplayname",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L102",
+      "weight": 1.0
+    },
+    {
+      "source": "media_popover",
+      "target": "media_popover_cfgok",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L166",
+      "weight": 1.0
+    },
+    {
+      "source": "media_popover",
+      "target": "media_popover_load",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L176",
+      "weight": 1.0
+    },
+    {
+      "source": "media_popover",
+      "target": "media_popover_handleopenchange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/media-popover.tsx",
+      "source_location": "L333",
+      "weight": 1.0
+    }
+  ]
+}

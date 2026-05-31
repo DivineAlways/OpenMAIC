@@ -1251,15 +1251,16 @@ export const useSettingsStore = create<SettingsState>()(
               if (!state.modelId) {
                 // Prefer current provider if it is server-configured; otherwise pick first available
                 const preferredOrder = state.providerId
-                  ? [state.providerId, ...Object.keys(newProvidersConfig).filter((p) => p !== state.providerId)]
+                  ? [
+                      state.providerId,
+                      ...Object.keys(newProvidersConfig).filter((p) => p !== state.providerId),
+                    ]
                   : Object.keys(newProvidersConfig);
                 for (const pid of preferredOrder) {
                   const cfg = newProvidersConfig[pid as ProviderId];
                   if (cfg?.isServerConfigured) {
                     const serverModels = cfg.serverModels;
-                    const modelId = serverModels?.length
-                      ? serverModels[0]
-                      : cfg.models[0]?.id;
+                    const modelId = serverModels?.length ? serverModels[0] : cfg.models[0]?.id;
                     if (modelId) {
                       autoProviderId = pid as ProviderId;
                       autoModelId = modelId;

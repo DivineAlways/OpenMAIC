@@ -1,0 +1,47 @@
+{
+  "nodes": [
+    {
+      "id": "server_providers_init",
+      "label": "server-providers-init.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/server-providers-init.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_providers_init_serverprovidersinit",
+      "label": "ServerProvidersInit()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/server-providers-init.tsx",
+      "source_location": "L10"
+    }
+  ],
+  "edges": [
+    {
+      "source": "server_providers_init",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/server-providers-init.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "server_providers_init",
+      "target": "settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/server-providers-init.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "server_providers_init",
+      "target": "server_providers_init_serverprovidersinit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/server-providers-init.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    }
+  ]
+}

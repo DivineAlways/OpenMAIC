@@ -1,0 +1,31 @@
+{
+  "nodes": [
+    {
+      "id": "custom_provider_baseurl_test",
+      "label": "custom-provider-baseurl.test.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/tests/settings/custom-provider-baseurl.test.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "custom_provider_baseurl_test",
+      "target": "vitest",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/tests/settings/custom-provider-baseurl.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "custom_provider_baseurl_test",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/tests/settings/custom-provider-baseurl.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    }
+  ]
+}

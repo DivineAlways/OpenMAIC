@@ -15,11 +15,14 @@ function MembersOnlyWall() {
         <div>
           <div className="flex items-center justify-center gap-2 mb-3">
             <GraduationCap className="w-5 h-5 text-blue-400" />
-            <span className="text-xs font-black uppercase tracking-widest text-blue-400">OC Academy</span>
+            <span className="text-xs font-black uppercase tracking-widest text-blue-400">
+              OC Academy
+            </span>
           </div>
           <h1 className="text-2xl font-black text-white mb-2">Members Only</h1>
           <p className="text-gray-400 text-sm leading-relaxed">
-            OC Academy is an exclusive benefit for active OnlyCrypto members. Activate your membership to unlock all courses and certifications.
+            OC Academy is an exclusive benefit for active OnlyCrypto members. Activate your
+            membership to unlock all courses and certifications.
           </p>
         </div>
         <a

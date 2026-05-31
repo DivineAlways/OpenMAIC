@@ -1,0 +1,47 @@
+{
+  "nodes": [
+    {
+      "id": "basetableelement",
+      "label": "BaseTableElement.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/BaseTableElement.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "basetableelement_basetableelement",
+      "label": "BaseTableElement()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/BaseTableElement.tsx",
+      "source_location": "L14"
+    }
+  ],
+  "edges": [
+    {
+      "source": "basetableelement",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/BaseTableElement.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "basetableelement",
+      "target": "statictable",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/BaseTableElement.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "basetableelement",
+      "target": "basetableelement_basetableelement",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/components/element/TableElement/BaseTableElement.tsx",
+      "source_location": "L14",
+      "weight": 1.0
+    }
+  ]
+}

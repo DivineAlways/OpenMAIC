@@ -1,0 +1,56 @@
+{
+  "nodes": [
+    {
+      "id": "useinsertfromcreateselection",
+      "label": "useInsertFromCreateSelection.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useInsertFromCreateSelection.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "useinsertfromcreateselection_useinsertfromcreateselection",
+      "label": "useInsertFromCreateSelection()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useInsertFromCreateSelection.ts",
+      "source_location": "L5"
+    }
+  ],
+  "edges": [
+    {
+      "source": "useinsertfromcreateselection",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useInsertFromCreateSelection.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "useinsertfromcreateselection",
+      "target": "store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useInsertFromCreateSelection.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "useinsertfromcreateselection",
+      "target": "edit",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useInsertFromCreateSelection.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "useinsertfromcreateselection",
+      "target": "useinsertfromcreateselection_useinsertfromcreateselection",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/hooks/useInsertFromCreateSelection.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    }
+  ]
+}

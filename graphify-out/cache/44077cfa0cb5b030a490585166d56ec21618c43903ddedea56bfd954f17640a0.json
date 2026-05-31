@@ -1,0 +1,74 @@
+{
+  "nodes": [
+    {
+      "id": "stage_api_canvas",
+      "label": "stage-api-canvas.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/api/stage-api-canvas.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "stage_api_canvas_createcanvasapi",
+      "label": "createCanvasAPI()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/api/stage-api-canvas.ts",
+      "source_location": "L21"
+    }
+  ],
+  "edges": [
+    {
+      "source": "stage_api_canvas",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-canvas.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_canvas",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-canvas.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_canvas",
+      "target": "canvas",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-canvas.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_canvas",
+      "target": "stage_api_types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-canvas.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_canvas",
+      "target": "stage_api_defaults",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-canvas.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "stage_api_canvas",
+      "target": "stage_api_canvas_createcanvasapi",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/api/stage-api-canvas.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    }
+  ]
+}

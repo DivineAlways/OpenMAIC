@@ -1,0 +1,231 @@
+{
+  "nodes": [
+    {
+      "id": "kling_adapter",
+      "label": "kling-adapter.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/kling-adapter.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "kling_adapter_base64url",
+      "label": "base64url()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/kling-adapter.ts",
+      "source_location": "L37"
+    },
+    {
+      "id": "kling_adapter_generatejwt",
+      "label": "generateJWT()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/kling-adapter.ts",
+      "source_location": "L42"
+    },
+    {
+      "id": "kling_adapter_parseapikey",
+      "label": "parseApiKey()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/kling-adapter.ts",
+      "source_location": "L62"
+    },
+    {
+      "id": "kling_adapter_getdimensions",
+      "label": "getDimensions()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/kling-adapter.ts",
+      "source_location": "L107"
+    },
+    {
+      "id": "kling_adapter_testklingconnectivity",
+      "label": "testKlingConnectivity()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/kling-adapter.ts",
+      "source_location": "L127"
+    },
+    {
+      "id": "kling_adapter_submittask",
+      "label": "submitTask()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/kling-adapter.ts",
+      "source_location": "L156"
+    },
+    {
+      "id": "kling_adapter_polltask",
+      "label": "pollTask()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/kling-adapter.ts",
+      "source_location": "L201"
+    },
+    {
+      "id": "kling_adapter_generatewithkling",
+      "label": "generateWithKling()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/kling-adapter.ts",
+      "source_location": "L228"
+    }
+  ],
+  "edges": [
+    {
+      "source": "kling_adapter",
+      "target": "crypto",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/kling-adapter.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "kling_adapter",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/kling-adapter.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "kling_adapter",
+      "target": "kling_adapter_base64url",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/kling-adapter.ts",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "kling_adapter",
+      "target": "kling_adapter_generatejwt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/kling-adapter.ts",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "kling_adapter",
+      "target": "kling_adapter_parseapikey",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/kling-adapter.ts",
+      "source_location": "L62",
+      "weight": 1.0
+    },
+    {
+      "source": "kling_adapter",
+      "target": "kling_adapter_getdimensions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/kling-adapter.ts",
+      "source_location": "L107",
+      "weight": 1.0
+    },
+    {
+      "source": "kling_adapter",
+      "target": "kling_adapter_testklingconnectivity",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/kling-adapter.ts",
+      "source_location": "L127",
+      "weight": 1.0
+    },
+    {
+      "source": "kling_adapter",
+      "target": "kling_adapter_submittask",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/kling-adapter.ts",
+      "source_location": "L156",
+      "weight": 1.0
+    },
+    {
+      "source": "kling_adapter",
+      "target": "kling_adapter_polltask",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/kling-adapter.ts",
+      "source_location": "L201",
+      "weight": 1.0
+    },
+    {
+      "source": "kling_adapter",
+      "target": "kling_adapter_generatewithkling",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/kling-adapter.ts",
+      "source_location": "L228",
+      "weight": 1.0
+    },
+    {
+      "source": "kling_adapter_generatejwt",
+      "target": "kling_adapter_base64url",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/kling-adapter.ts",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "kling_adapter_testklingconnectivity",
+      "target": "kling_adapter_parseapikey",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/kling-adapter.ts",
+      "source_location": "L132",
+      "weight": 1.0
+    },
+    {
+      "source": "kling_adapter_testklingconnectivity",
+      "target": "kling_adapter_generatejwt",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/kling-adapter.ts",
+      "source_location": "L133",
+      "weight": 1.0
+    },
+    {
+      "source": "kling_adapter_generatewithkling",
+      "target": "kling_adapter_parseapikey",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/kling-adapter.ts",
+      "source_location": "L234",
+      "weight": 1.0
+    },
+    {
+      "source": "kling_adapter_generatewithkling",
+      "target": "kling_adapter_generatejwt",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/kling-adapter.ts",
+      "source_location": "L235",
+      "weight": 1.0
+    },
+    {
+      "source": "kling_adapter_generatewithkling",
+      "target": "kling_adapter_submittask",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/kling-adapter.ts",
+      "source_location": "L238",
+      "weight": 1.0
+    },
+    {
+      "source": "kling_adapter_generatewithkling",
+      "target": "kling_adapter_polltask",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/kling-adapter.ts",
+      "source_location": "L243",
+      "weight": 1.0
+    },
+    {
+      "source": "kling_adapter_generatewithkling",
+      "target": "kling_adapter_getdimensions",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/kling-adapter.ts",
+      "source_location": "L250",
+      "weight": 1.0
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "nodes": [
+    {
+      "id": "shapes",
+      "label": "shapes.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/configs/shapes.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "shapes",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/configs/shapes.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    }
+  ]
+}

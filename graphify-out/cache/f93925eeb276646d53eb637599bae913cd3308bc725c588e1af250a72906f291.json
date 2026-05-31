@@ -1,0 +1,145 @@
+{
+  "nodes": [
+    {
+      "id": "course_progress",
+      "label": "course-progress.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/course-progress.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "course_progress_getprogress",
+      "label": "getProgress()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/course-progress.ts",
+      "source_location": "L14"
+    },
+    {
+      "id": "course_progress_markcoursecomplete",
+      "label": "markCourseComplete()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/course-progress.ts",
+      "source_location": "L23"
+    },
+    {
+      "id": "course_progress_iscoursecomplete",
+      "label": "isCourseComplete()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/course-progress.ts",
+      "source_location": "L33"
+    },
+    {
+      "id": "course_progress_getquizresults",
+      "label": "getQuizResults()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/course-progress.ts",
+      "source_location": "L37"
+    },
+    {
+      "id": "course_progress_savequizresult",
+      "label": "saveQuizResult()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/course-progress.ts",
+      "source_location": "L46"
+    },
+    {
+      "id": "course_progress_getquizresult",
+      "label": "getQuizResult()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/course-progress.ts",
+      "source_location": "L59"
+    }
+  ],
+  "edges": [
+    {
+      "source": "course_progress",
+      "target": "course_progress_getprogress",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/course-progress.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "course_progress",
+      "target": "course_progress_markcoursecomplete",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/course-progress.ts",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "course_progress",
+      "target": "course_progress_iscoursecomplete",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/course-progress.ts",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "course_progress",
+      "target": "course_progress_getquizresults",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/course-progress.ts",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "course_progress",
+      "target": "course_progress_savequizresult",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/course-progress.ts",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "course_progress",
+      "target": "course_progress_getquizresult",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/course-progress.ts",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "course_progress_markcoursecomplete",
+      "target": "course_progress_getprogress",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/course-progress.ts",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "course_progress_iscoursecomplete",
+      "target": "course_progress_getprogress",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/course-progress.ts",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "course_progress_savequizresult",
+      "target": "course_progress_getquizresults",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/course-progress.ts",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "course_progress_getquizresult",
+      "target": "course_progress_getquizresults",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/course-progress.ts",
+      "source_location": "L62",
+      "weight": 1.0
+    }
+  ]
+}

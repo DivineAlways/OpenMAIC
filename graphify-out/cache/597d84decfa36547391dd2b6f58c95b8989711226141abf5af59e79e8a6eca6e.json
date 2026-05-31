@@ -1,0 +1,74 @@
+{
+  "nodes": [
+    {
+      "id": "lecture_notes_view",
+      "label": "lecture-notes-view.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/chat/lecture-notes-view.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "lecture_notes_view_cn",
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/chat/lecture-notes-view.tsx",
+      "source_location": "L87"
+    }
+  ],
+  "edges": [
+    {
+      "source": "lecture_notes_view",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/lecture-notes-view.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "lecture_notes_view",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/lecture-notes-view.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "lecture_notes_view",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/lecture-notes-view.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "lecture_notes_view",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/lecture-notes-view.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "lecture_notes_view",
+      "target": "chat",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/lecture-notes-view.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "lecture_notes_view",
+      "target": "lecture_notes_view_cn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/chat/lecture-notes-view.tsx",
+      "source_location": "L87",
+      "weight": 1.0
+    }
+  ]
+}

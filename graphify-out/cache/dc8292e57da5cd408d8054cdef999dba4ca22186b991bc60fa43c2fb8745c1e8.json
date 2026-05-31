@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "interactive_post_processor",
+      "label": "interactive-post-processor.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/interactive-post-processor.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "interactive_post_processor_postprocessinteractivehtml",
+      "label": "postProcessInteractiveHtml()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/interactive-post-processor.ts",
+      "source_location": "L16"
+    },
+    {
+      "id": "interactive_post_processor_convertlatexdelimiters",
+      "label": "convertLatexDelimiters()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/interactive-post-processor.ts",
+      "source_location": "L36"
+    },
+    {
+      "id": "interactive_post_processor_injectkatex",
+      "label": "injectKatex()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/interactive-post-processor.ts",
+      "source_location": "L73"
+    }
+  ],
+  "edges": [
+    {
+      "source": "interactive_post_processor",
+      "target": "interactive_post_processor_postprocessinteractivehtml",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/interactive-post-processor.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "interactive_post_processor",
+      "target": "interactive_post_processor_convertlatexdelimiters",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/interactive-post-processor.ts",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "interactive_post_processor",
+      "target": "interactive_post_processor_injectkatex",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/interactive-post-processor.ts",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "interactive_post_processor_postprocessinteractivehtml",
+      "target": "interactive_post_processor_convertlatexdelimiters",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/interactive-post-processor.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "interactive_post_processor_postprocessinteractivehtml",
+      "target": "interactive_post_processor_injectkatex",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/interactive-post-processor.ts",
+      "source_location": "L22",
+      "weight": 1.0
+    }
+  ]
+}

@@ -9,11 +9,7 @@
     "updatedAt": "2026-04-24T05:43:22.839636Z",
     "languageDirective": "en-US",
     "style": "academic",
-    "agentIds": [
-      "default-1",
-      "default-2",
-      "default-3"
-    ],
+    "agentIds": ["default-1", "default-2", "default-3"],
     "generatedAgentConfigs": []
   },
   "scenes": [
@@ -33,11 +29,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#3b82f6",
-              "#8b5cf6",
-              "#06b6d4"
-            ],
+            "themeColors": ["#3b82f6", "#8b5cf6", "#06b6d4"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -51,10 +43,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#3b82f6",
               "fixedRatio": false
             },
@@ -67,10 +56,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -107,10 +93,7 @@
               "height": 68,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#1e293b",
               "fixedRatio": false,
               "outline": {
@@ -140,10 +123,7 @@
               "height": 68,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#1e293b",
               "fixedRatio": false,
               "outline": {
@@ -173,10 +153,7 @@
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0a1628",
               "fixedRatio": false,
               "outline": {
@@ -194,10 +171,7 @@
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#3b82f620",
               "fixedRatio": false
             },
@@ -222,10 +196,7 @@
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0a1628",
               "fixedRatio": false,
               "outline": {
@@ -243,10 +214,7 @@
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf620",
               "fixedRatio": false
             },
@@ -351,11 +319,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f59e0b",
-              "#8b5cf6",
-              "#06b6d4"
-            ],
+            "themeColors": ["#f59e0b", "#8b5cf6", "#06b6d4"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -369,10 +333,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -385,10 +346,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -425,10 +383,7 @@
               "height": 176,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#020817",
               "fixedRatio": false,
               "outline": {
@@ -551,11 +506,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#22d3ee",
-              "#8b5cf6",
-              "#06b6d4"
-            ],
+            "themeColors": ["#22d3ee", "#8b5cf6", "#06b6d4"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -569,10 +520,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#22d3ee",
               "fixedRatio": false
             },
@@ -585,10 +533,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -625,10 +570,7 @@
               "height": 68,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#1e293b",
               "fixedRatio": false,
               "outline": {
@@ -658,10 +600,7 @@
               "height": 430,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0a1628",
               "fixedRatio": false,
               "outline": {
@@ -703,10 +642,7 @@
               "height": 430,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0a1628",
               "fixedRatio": false,
               "outline": {
@@ -748,10 +684,7 @@
               "height": 430,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0a1628",
               "fixedRatio": false,
               "outline": {
@@ -793,10 +726,7 @@
               "height": 430,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0a1628",
               "fixedRatio": false,
               "outline": {
@@ -918,11 +848,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#3b82f6",
-              "#8b5cf6",
-              "#06b6d4"
-            ],
+            "themeColors": ["#3b82f6", "#8b5cf6", "#06b6d4"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -936,10 +862,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#3b82f6",
               "fixedRatio": false
             },
@@ -952,10 +875,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -992,10 +912,7 @@
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0d0800",
               "fixedRatio": false,
               "outline": {
@@ -1025,10 +942,7 @@
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#1e293b",
               "fixedRatio": false
             },
@@ -1053,10 +967,7 @@
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#00100d",
               "fixedRatio": false,
               "outline": {
@@ -1144,11 +1055,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#ef4444",
-              "#8b5cf6",
-              "#06b6d4"
-            ],
+            "themeColors": ["#ef4444", "#8b5cf6", "#06b6d4"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1162,10 +1069,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#ef4444",
               "fixedRatio": false
             },
@@ -1178,10 +1082,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -1218,10 +1119,7 @@
               "height": 68,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#1e293b",
               "fixedRatio": false,
               "outline": {
@@ -1251,10 +1149,7 @@
               "height": 176,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#020817",
               "fixedRatio": false,
               "outline": {
@@ -1377,11 +1272,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#8b5cf6",
-              "#8b5cf6",
-              "#06b6d4"
-            ],
+            "themeColors": ["#8b5cf6", "#8b5cf6", "#06b6d4"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1395,10 +1286,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf6",
               "fixedRatio": false
             },
@@ -1411,10 +1299,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -1451,10 +1336,7 @@
               "height": 438,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1f3d",
               "fixedRatio": false,
               "outline": {
@@ -1472,10 +1354,7 @@
               "height": 438,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#3b82f6",
               "fixedRatio": false
             },
@@ -1500,10 +1379,7 @@
               "height": 438,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1f3d",
               "fixedRatio": false,
               "outline": {
@@ -1521,10 +1397,7 @@
               "height": 438,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#22d3ee",
               "fixedRatio": false
             },
@@ -1549,10 +1422,7 @@
               "height": 438,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1f3d",
               "fixedRatio": false,
               "outline": {
@@ -1570,10 +1440,7 @@
               "height": 438,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#a855f7",
               "fixedRatio": false
             },
@@ -1667,11 +1534,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#f59e0b",
-              "#8b5cf6",
-              "#06b6d4"
-            ],
+            "themeColors": ["#f59e0b", "#8b5cf6", "#06b6d4"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1685,10 +1548,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -1701,10 +1561,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -1741,10 +1598,7 @@
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0a1628",
               "fixedRatio": false,
               "outline": {
@@ -1762,10 +1616,7 @@
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b20",
               "fixedRatio": false
             },
@@ -1790,10 +1641,7 @@
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0a1628",
               "fixedRatio": false,
               "outline": {
@@ -1811,10 +1659,7 @@
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#3b82f620",
               "fixedRatio": false
             },
@@ -1922,11 +1767,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#8b5cf6",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#8b5cf6", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1940,10 +1781,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf6",
               "fixedRatio": false
             },
@@ -1956,10 +1794,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -2008,10 +1843,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf620",
               "fixedRatio": false,
               "outline": {
@@ -2041,10 +1873,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf620",
               "fixedRatio": false,
               "outline": {
@@ -2074,10 +1903,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf620",
               "fixedRatio": false,
               "outline": {
@@ -2107,10 +1933,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf620",
               "fixedRatio": false,
               "outline": {
@@ -2232,11 +2055,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#8b5cf6",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#8b5cf6", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -2250,10 +2069,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf6",
               "fixedRatio": false
             },
@@ -2266,10 +2082,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -2318,10 +2131,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf620",
               "fixedRatio": false,
               "outline": {
@@ -2351,10 +2161,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf620",
               "fixedRatio": false,
               "outline": {
@@ -2384,10 +2191,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf620",
               "fixedRatio": false,
               "outline": {
@@ -2417,10 +2221,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#8b5cf620",
               "fixedRatio": false,
               "outline": {
@@ -2553,9 +2354,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "A Merkle root lets you prove a transaction is included using only log₂(N) hashes — no need to download the full block.",
             "points": 1
           },
@@ -2581,9 +2380,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "A"
-            ],
+            "answer": ["A"],
             "analysis": "Bitcoin L1 handles ~7 tx/s vs Visa's ~24,000 tx/s. This throughput gap is what drives Layer 2 research.",
             "points": 1
           },
@@ -2609,9 +2406,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "C"
-            ],
+            "answer": ["C"],
             "analysis": "You need 3f+1 total participants to handle f traitors. With f=1, that means at least 4 generals.",
             "points": 1
           },
@@ -2637,10 +2432,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "A",
-              "C"
-            ],
+            "answer": ["A", "C"],
             "analysis": "PoS replaces energy with economic collateral and slashing — attacking costs you at least 1/3 of all staked ETH.",
             "points": 2
           },
@@ -2666,9 +2458,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "A"
-            ],
+            "answer": ["A"],
             "analysis": "Changing a transaction changes the block's hash. Each block contains the previous block's hash, so all subsequent blocks become invalid. The attacker must redo proof-of-work for every block after the altered one to create a longer chain — computationally infeasible when the network has 700+ exahashes/sec.",
             "points": 1
           },
@@ -2694,9 +2484,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "Hash functions like SHA-256 are deterministic and collision-resistant. In blockchain, each block's hash depends on its data AND the previous block's hash — creating an unbreakable chain. Altering any historical block changes all subsequent hashes, immediately detectable by nodes.",
             "points": 1
           },
@@ -2722,9 +2510,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "RPCA consensus with ~150 validators achieves 3-5 second finality because communication overhead is manageable. PoS Ethereum with 900,000+ validators achieves higher decentralization but requires more complex aggregation to reach consensus efficiently.",
             "points": 1
           },
@@ -2750,9 +2536,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "Optimistic rollups assume validity and allow a challenge window (7 days on Arbitrum). ZK rollups submit a cryptographic validity proof with every batch — the L1 contract mathematically verifies it. No waiting period, no trust assumption needed.",
             "points": 1
           }

@@ -272,7 +272,12 @@ export function useChatSessions(options: UseChatSessionsOptions = {}) {
                 const fallback: UIMessage<ChatMessageMetadata> = {
                   id: `fallback-${Date.now()}`,
                   role: 'assistant',
-                  parts: [{ type: 'text', text: "I'm not sure I caught that — could you rephrase your question? I'm here to help!" }],
+                  parts: [
+                    {
+                      type: 'text',
+                      text: "I'm not sure I caught that — could you rephrase your question? I'm here to help!",
+                    },
+                  ],
                   metadata: {
                     senderName: 'AI Teacher',
                     originalRole: 'agent' as const,

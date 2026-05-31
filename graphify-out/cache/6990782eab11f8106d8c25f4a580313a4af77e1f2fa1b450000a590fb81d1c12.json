@@ -1,0 +1,31 @@
+{
+  "nodes": [
+    {
+      "id": "marks",
+      "label": "marks.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/schema/marks.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "marks",
+      "target": "prosemirror_schema_basic",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/schema/marks.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "marks",
+      "target": "prosemirror_model",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/schema/marks.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    }
+  ]
+}

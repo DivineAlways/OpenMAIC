@@ -1,0 +1,183 @@
+{
+  "nodes": [
+    {
+      "id": "outlines_editor",
+      "label": "outlines-editor.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/generation/outlines-editor.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "outlines_editor_addoutline",
+      "label": "addOutline()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/generation/outlines-editor.tsx",
+      "source_location": "L34"
+    },
+    {
+      "id": "outlines_editor_updateoutline",
+      "label": "updateOutline()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/generation/outlines-editor.tsx",
+      "source_location": "L46"
+    },
+    {
+      "id": "outlines_editor_removeoutline",
+      "label": "removeOutline()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/generation/outlines-editor.tsx",
+      "source_location": "L52"
+    },
+    {
+      "id": "outlines_editor_moveoutline",
+      "label": "moveOutline()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/generation/outlines-editor.tsx",
+      "source_location": "L61"
+    },
+    {
+      "id": "outlines_editor_updatekeypoints",
+      "label": "updateKeyPoints()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/generation/outlines-editor.tsx",
+      "source_location": "L73"
+    }
+  ],
+  "edges": [
+    {
+      "source": "outlines_editor",
+      "target": "button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/outlines-editor.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "outlines_editor",
+      "target": "input",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/outlines-editor.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "outlines_editor",
+      "target": "textarea",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/outlines-editor.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "outlines_editor",
+      "target": "label",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/outlines-editor.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "outlines_editor",
+      "target": "card",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/outlines-editor.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "outlines_editor",
+      "target": "select",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/outlines-editor.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "outlines_editor",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/outlines-editor.tsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "outlines_editor",
+      "target": "nanoid",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/outlines-editor.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "outlines_editor",
+      "target": "generation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/outlines-editor.tsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "outlines_editor",
+      "target": "outlines_editor_addoutline",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/outlines-editor.tsx",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "outlines_editor",
+      "target": "outlines_editor_updateoutline",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/outlines-editor.tsx",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "outlines_editor",
+      "target": "outlines_editor_removeoutline",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/outlines-editor.tsx",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "outlines_editor",
+      "target": "outlines_editor_moveoutline",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/outlines-editor.tsx",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "outlines_editor",
+      "target": "outlines_editor_updatekeypoints",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/outlines-editor.tsx",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "outlines_editor_updatekeypoints",
+      "target": "outlines_editor_updateoutline",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/outlines-editor.tsx",
+      "source_location": "L78",
+      "weight": 1.0
+    }
+  ]
+}

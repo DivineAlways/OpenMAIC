@@ -1,0 +1,65 @@
+{
+  "nodes": [
+    {
+      "id": "gridlines",
+      "label": "GridLines.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/GridLines.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "gridlines_gridlines",
+      "label": "GridLines()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/GridLines.tsx",
+      "source_location": "L6"
+    }
+  ],
+  "edges": [
+    {
+      "source": "gridlines",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/GridLines.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "gridlines",
+      "target": "store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/GridLines.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "gridlines",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/GridLines.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "gridlines",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/GridLines.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "gridlines",
+      "target": "gridlines_gridlines",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/GridLines.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    }
+  ]
+}

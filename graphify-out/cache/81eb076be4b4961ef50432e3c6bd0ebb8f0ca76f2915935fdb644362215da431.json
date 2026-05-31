@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "qwen_image_adapter",
+      "label": "qwen-image-adapter.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/qwen-image-adapter.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "qwen_image_adapter_resolvedashscopesize",
+      "label": "resolveDashScopeSize()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/qwen-image-adapter.ts",
+      "source_location": "L27"
+    },
+    {
+      "id": "qwen_image_adapter_testqwenimageconnectivity",
+      "label": "testQwenImageConnectivity()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/qwen-image-adapter.ts",
+      "source_location": "L37"
+    },
+    {
+      "id": "qwen_image_adapter_generatewithqwenimage",
+      "label": "generateWithQwenImage()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/qwen-image-adapter.ts",
+      "source_location": "L70"
+    }
+  ],
+  "edges": [
+    {
+      "source": "qwen_image_adapter",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/qwen-image-adapter.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "qwen_image_adapter",
+      "target": "qwen_image_adapter_resolvedashscopesize",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/qwen-image-adapter.ts",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "qwen_image_adapter",
+      "target": "qwen_image_adapter_testqwenimageconnectivity",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/qwen-image-adapter.ts",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "qwen_image_adapter",
+      "target": "qwen_image_adapter_generatewithqwenimage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/qwen-image-adapter.ts",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
+      "source": "qwen_image_adapter_generatewithqwenimage",
+      "target": "qwen_image_adapter_resolvedashscopesize",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/qwen-image-adapter.ts",
+      "source_location": "L100",
+      "weight": 1.0
+    }
+  ]
+}

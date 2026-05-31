@@ -1,0 +1,40 @@
+{
+  "nodes": [
+    {
+      "id": "nodes",
+      "label": "nodes.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/prosemirror/schema/nodes.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "nodes",
+      "target": "prosemirror_schema_basic",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/schema/nodes.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "nodes",
+      "target": "prosemirror_model",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/schema/nodes.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "nodes",
+      "target": "prosemirror_schema_list",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/prosemirror/schema/nodes.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    }
+  ]
+}

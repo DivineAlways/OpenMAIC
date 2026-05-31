@@ -1,0 +1,299 @@
+{
+  "nodes": [
+    {
+      "id": "index",
+      "label": "index.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "index_canvas",
+      "label": "Canvas()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L62"
+    }
+  ],
+  "edges": [
+    {
+      "source": "index",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "canvas",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "scene_context",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "keyboard",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "useviewportsize",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "useselectelement",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "usedragelement",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "userotateelement",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "usemouseselection",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "usescaleelement",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "usedraglineelement",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "usemoveshapekeypoint",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "useinsertfromcreateselection",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "usedrop",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "alignmentline",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "mouseselection",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "viewportbackground",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "editableelement",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "operate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "multiselectoperate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "elementcreateselection",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "shapecreatecanvas",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "ruler",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "gridlines",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "edit",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "editableelement",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "use_canvas_operations",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "context_menu",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_canvas",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/index.tsx",
+      "source_location": "L62",
+      "weight": 1.0
+    }
+  ]
+}

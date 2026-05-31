@@ -1,0 +1,31 @@
+{
+  "nodes": [
+    {
+      "id": "minimax_tts_models_test",
+      "label": "minimax-tts-models.test.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/tests/audio/minimax-tts-models.test.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "minimax_tts_models_test",
+      "target": "vitest",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/tests/audio/minimax-tts-models.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "minimax_tts_models_test",
+      "target": "constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/tests/audio/minimax-tts-models.test.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    }
+  ]
+}

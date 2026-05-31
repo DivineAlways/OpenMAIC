@@ -1,0 +1,108 @@
+{
+  "nodes": [
+    {
+      "id": "action_parser",
+      "label": "action-parser.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/action-parser.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "action_parser_stripcodefences",
+      "label": "stripCodeFences()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/action-parser.ts",
+      "source_location": "L23"
+    },
+    {
+      "id": "action_parser_parseactionsfromstructuredoutput",
+      "label": "parseActionsFromStructuredOutput()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/action-parser.ts",
+      "source_location": "L42"
+    }
+  ],
+  "edges": [
+    {
+      "source": "action_parser",
+      "target": "action",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/action-parser.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "action_parser",
+      "target": "action",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/action-parser.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "action_parser",
+      "target": "nanoid",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/action-parser.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "action_parser",
+      "target": "partial_json",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/action-parser.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "action_parser",
+      "target": "jsonrepair",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/action-parser.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "action_parser",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/action-parser.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "action_parser",
+      "target": "action_parser_stripcodefences",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/action-parser.ts",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "action_parser",
+      "target": "action_parser_parseactionsfromstructuredoutput",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/action-parser.ts",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "action_parser_parseactionsfromstructuredoutput",
+      "target": "action_parser_stripcodefences",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/action-parser.ts",
+      "source_location": "L48",
+      "weight": 1.0
+    }
+  ]
+}

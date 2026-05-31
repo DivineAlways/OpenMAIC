@@ -3,7 +3,7 @@ const QUIZ_RESULTS_KEY = 'oc_quiz_results';
 const QUIZ_COOLDOWN_KEY = 'oc_quiz_cooldown';
 
 interface QuizCooldownEntry {
-  ts: number;       // timestamp of last failure
+  ts: number; // timestamp of last failure
   failCount: number; // total failures so far (1-indexed)
 }
 
@@ -56,14 +56,23 @@ function getQuizResults(): Record<string, QuizResult> {
   }
 }
 
-export function saveQuizResult(courseId: string, sceneId: string, score: number, total: number): void {
+export function saveQuizResult(
+  courseId: string,
+  sceneId: string,
+  score: number,
+  total: number,
+): void {
   try {
     const key = `${courseId}::${sceneId}`;
     const results = getQuizResults();
     results[key] = {
       score,
       total,
-      completedDate: new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
+      completedDate: new Date().toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      }),
     };
     localStorage.setItem(QUIZ_RESULTS_KEY, JSON.stringify(results));
   } catch {}

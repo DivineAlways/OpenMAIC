@@ -1,0 +1,679 @@
+{
+  "nodes": [
+    {
+      "id": "index",
+      "label": "index.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "index_t",
+      "label": "t()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L125"
+    },
+    {
+      "id": "index_handleaddttsprovider",
+      "label": "handleAddTTSProvider()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L265"
+    },
+    {
+      "id": "index_handleaddasrprovider",
+      "label": "handleAddASRProvider()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L270"
+    },
+    {
+      "id": "index_handlemousemove",
+      "label": "handleMouseMove()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L301"
+    },
+    {
+      "id": "index_handlemouseup",
+      "label": "handleMouseUp()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L313"
+    },
+    {
+      "id": "index_handlesave",
+      "label": "handleSave()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L331"
+    },
+    {
+      "id": "index_handleproviderselect",
+      "label": "handleProviderSelect()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L335"
+    },
+    {
+      "id": "index_handleproviderconfigchange",
+      "label": "handleProviderConfigChange()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L339"
+    },
+    {
+      "id": "index_handleproviderconfigsave",
+      "label": "handleProviderConfigSave()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L352"
+    },
+    {
+      "id": "index_handleeditmodel",
+      "label": "handleEditModel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L370"
+    },
+    {
+      "id": "index_handleaddmodel",
+      "label": "handleAddModel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L380"
+    },
+    {
+      "id": "index_handledeletemodel",
+      "label": "handleDeleteModel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L397"
+    },
+    {
+      "id": "index_handleautosavemodel",
+      "label": "handleAutoSaveModel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L403"
+    },
+    {
+      "id": "index_handlesavemodel",
+      "label": "handleSaveModel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L430"
+    },
+    {
+      "id": "index_handleaddprovider",
+      "label": "handleAddProvider()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L451"
+    },
+    {
+      "id": "index_handledeleteprovider",
+      "label": "handleDeleteProvider()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L466"
+    },
+    {
+      "id": "index_confirmdeleteprovider",
+      "label": "confirmDeleteProvider()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L474"
+    },
+    {
+      "id": "index_handleresetprovider",
+      "label": "handleResetProvider()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L499"
+    }
+  ],
+  "edges": [
+    {
+      "source": "index",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "dialog",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "alert_dialog",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "sonner",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "providers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "providers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "provider_list",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "provider_config_panel",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "pdf_settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "image_settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "image_providers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "video_settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "video_providers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "tts_settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "asr_settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "web_search_settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L56",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "general_settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "model_edit_dialog",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "add_provider_dialog",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "add_audio_provider_dialog",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L62",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_t",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L125",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_handleaddttsprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L265",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_handleaddasrprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L270",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_handlemousemove",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L301",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_handlemouseup",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L313",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_handlesave",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L331",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_handleproviderselect",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L335",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_handleproviderconfigchange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L339",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_handleproviderconfigsave",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L352",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_handleeditmodel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L370",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_handleaddmodel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L380",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_handledeletemodel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L397",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_handleautosavemodel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L403",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_handlesavemodel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L430",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_handleaddprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L451",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_handledeleteprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L466",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_confirmdeleteprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L474",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_handleresetprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L499",
+      "weight": 1.0
+    },
+    {
+      "source": "index_handlesavemodel",
+      "target": "index_t",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L434",
+      "weight": 1.0
+    },
+    {
+      "source": "index_handleaddprovider",
+      "target": "index_t",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L453",
+      "weight": 1.0
+    },
+    {
+      "source": "index_handledeleteprovider",
+      "target": "index_t",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L468",
+      "weight": 1.0
+    },
+    {
+      "source": "index_handleresetprovider",
+      "target": "index_t",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/index.tsx",
+      "source_location": "L503",
+      "weight": 1.0
+    }
+  ]
+}

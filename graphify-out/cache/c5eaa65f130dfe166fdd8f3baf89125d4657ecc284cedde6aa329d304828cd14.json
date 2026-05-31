@@ -1,0 +1,288 @@
+{
+  "nodes": [
+    {
+      "id": "prompt_builder",
+      "label": "prompt-builder.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "prompt_builder_buildpeercontextsection",
+      "label": "buildPeerContextSection()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L57"
+    },
+    {
+      "id": "prompt_builder_buildstructuredprompt",
+      "label": "buildStructuredPrompt()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L93"
+    },
+    {
+      "id": "prompt_builder_buildlengthguidelines",
+      "label": "buildLengthGuidelines()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L261"
+    },
+    {
+      "id": "prompt_builder_buildwhiteboardguidelines",
+      "label": "buildWhiteboardGuidelines()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L295"
+    },
+    {
+      "id": "prompt_builder_striphtml",
+      "label": "stripHtml()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L400"
+    },
+    {
+      "id": "prompt_builder_summarizeelement",
+      "label": "summarizeElement()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L408"
+    },
+    {
+      "id": "prompt_builder_summarizeelements",
+      "label": "summarizeElements()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L463"
+    },
+    {
+      "id": "prompt_builder_buildvirtualwhiteboardcontext",
+      "label": "buildVirtualWhiteboardContext()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L491"
+    },
+    {
+      "id": "prompt_builder_buildstatecontext",
+      "label": "buildStateContext()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L617"
+    },
+    {
+      "id": "prompt_builder_summarizeconversation",
+      "label": "summarizeConversation()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L712"
+    },
+    {
+      "id": "prompt_builder_convertmessagestoopenai",
+      "label": "convertMessagesToOpenAI()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L741"
+    }
+  ],
+  "edges": [
+    {
+      "source": "prompt_builder",
+      "target": "chat",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_builder",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_builder",
+      "target": "director_prompt",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_builder",
+      "target": "tool_schemas",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_builder",
+      "target": "prompt_builder_buildpeercontextsection",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_builder",
+      "target": "prompt_builder_buildstructuredprompt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L93",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_builder",
+      "target": "prompt_builder_buildlengthguidelines",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L261",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_builder",
+      "target": "prompt_builder_buildwhiteboardguidelines",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L295",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_builder",
+      "target": "prompt_builder_striphtml",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L400",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_builder",
+      "target": "prompt_builder_summarizeelement",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L408",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_builder",
+      "target": "prompt_builder_summarizeelements",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L463",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_builder",
+      "target": "prompt_builder_buildvirtualwhiteboardcontext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L491",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_builder",
+      "target": "prompt_builder_buildstatecontext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L617",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_builder",
+      "target": "prompt_builder_summarizeconversation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L712",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_builder",
+      "target": "prompt_builder_convertmessagestoopenai",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L741",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_builder_buildstructuredprompt",
+      "target": "prompt_builder_buildstatecontext",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L112",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_builder_buildstructuredprompt",
+      "target": "prompt_builder_buildvirtualwhiteboardcontext",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L115",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_builder_buildstructuredprompt",
+      "target": "prompt_builder_buildpeercontextsection",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L126",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_builder_buildstructuredprompt",
+      "target": "prompt_builder_buildlengthguidelines",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L205",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_builder_buildstructuredprompt",
+      "target": "prompt_builder_buildwhiteboardguidelines",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L218",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_builder_summarizeelement",
+      "target": "prompt_builder_striphtml",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L420",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_builder_buildstatecontext",
+      "target": "prompt_builder_summarizeelements",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/prompt-builder.ts",
+      "source_location": "L650",
+      "weight": 1.0
+    }
+  ]
+}

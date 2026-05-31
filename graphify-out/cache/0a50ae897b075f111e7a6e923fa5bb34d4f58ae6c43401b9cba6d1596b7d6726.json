@@ -1,0 +1,58 @@
+{
+  "nodes": [
+    {
+      "id": "full_happy_path_spec",
+      "label": "full-happy-path.spec.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/e2e/tests/full-happy-path.spec.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "full_happy_path_spec",
+      "target": "base",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/tests/full-happy-path.spec.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "full_happy_path_spec",
+      "target": "home_page",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/tests/full-happy-path.spec.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "full_happy_path_spec",
+      "target": "generation_preview_page",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/tests/full-happy-path.spec.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "full_happy_path_spec",
+      "target": "classroom_page",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/tests/full-happy-path.spec.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "full_happy_path_spec",
+      "target": "settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/tests/full-happy-path.spec.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    }
+  ]
+}

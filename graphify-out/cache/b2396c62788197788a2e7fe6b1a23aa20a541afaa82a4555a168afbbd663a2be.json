@@ -1,0 +1,170 @@
+{
+  "nodes": [
+    {
+      "id": "artifact",
+      "label": "artifact.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/artifact.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "artifact_artifact",
+      "label": "Artifact()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/artifact.tsx",
+      "source_location": "L11"
+    },
+    {
+      "id": "artifact_artifactheader",
+      "label": "ArtifactHeader()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/artifact.tsx",
+      "source_location": "L23"
+    },
+    {
+      "id": "artifact_artifactclose",
+      "label": "ArtifactClose()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/artifact.tsx",
+      "source_location": "L32"
+    },
+    {
+      "id": "artifact_artifacttitle",
+      "label": "ArtifactTitle()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/artifact.tsx",
+      "source_location": "L53"
+    },
+    {
+      "id": "artifact_artifactdescription",
+      "label": "ArtifactDescription()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/artifact.tsx",
+      "source_location": "L59"
+    },
+    {
+      "id": "artifact_artifactactions",
+      "label": "ArtifactActions()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/artifact.tsx",
+      "source_location": "L65"
+    },
+    {
+      "id": "artifact_artifactaction",
+      "label": "ArtifactAction()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/artifact.tsx",
+      "source_location": "L75"
+    }
+  ],
+  "edges": [
+    {
+      "source": "artifact",
+      "target": "button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/artifact.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "artifact",
+      "target": "tooltip",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/artifact.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "artifact",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/artifact.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "artifact",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/artifact.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "artifact",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/artifact.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "artifact",
+      "target": "artifact_artifact",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/artifact.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "artifact",
+      "target": "artifact_artifactheader",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/artifact.tsx",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "artifact",
+      "target": "artifact_artifactclose",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/artifact.tsx",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "artifact",
+      "target": "artifact_artifacttitle",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/artifact.tsx",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "artifact",
+      "target": "artifact_artifactdescription",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/artifact.tsx",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "artifact",
+      "target": "artifact_artifactactions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/artifact.tsx",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "artifact",
+      "target": "artifact_artifactaction",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/artifact.tsx",
+      "source_location": "L75",
+      "weight": 1.0
+    }
+  ]
+}

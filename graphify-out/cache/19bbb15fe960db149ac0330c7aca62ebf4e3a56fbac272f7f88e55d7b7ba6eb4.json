@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "edge",
+      "label": "edge.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/edge.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "edge_temporary",
+      "label": "Temporary()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/edge.tsx",
+      "source_location": "L12"
+    },
+    {
+      "id": "edge_gethandlecoordsbyposition",
+      "label": "getHandleCoordsByPosition()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/edge.tsx",
+      "source_location": "L42"
+    },
+    {
+      "id": "edge_getedgeparams",
+      "label": "getEdgeParams()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/edge.tsx",
+      "source_location": "L83"
+    }
+  ],
+  "edges": [
+    {
+      "source": "edge",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/edge.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "edge",
+      "target": "edge_temporary",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/edge.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "edge",
+      "target": "edge_gethandlecoordsbyposition",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/edge.tsx",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "edge",
+      "target": "edge_getedgeparams",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/edge.tsx",
+      "source_location": "L83",
+      "weight": 1.0
+    },
+    {
+      "source": "edge_getedgeparams",
+      "target": "edge_gethandlecoordsbyposition",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/edge.tsx",
+      "source_location": "L85",
+      "weight": 1.0
+    }
+  ]
+}

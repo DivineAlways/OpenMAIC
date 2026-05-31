@@ -1,0 +1,67 @@
+{
+  "nodes": [
+    {
+      "id": "canvas",
+      "label": "canvas.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/store/canvas.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "canvas",
+      "target": "zustand",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/canvas.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "canvas",
+      "target": "create_selectors",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/canvas.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "canvas",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/canvas.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "canvas",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/canvas.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "canvas",
+      "target": "edit",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/canvas.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "canvas",
+      "target": "action",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/canvas.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    }
+  ]
+}

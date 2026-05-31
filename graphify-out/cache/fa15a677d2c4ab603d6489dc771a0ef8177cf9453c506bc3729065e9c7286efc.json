@@ -1,0 +1,90 @@
+{
+  "nodes": [
+    {
+      "id": "route",
+      "label": "route.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/app/api/sso/route.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "route_verifyssotoken",
+      "label": "verifySSOToken()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/app/api/sso/route.ts",
+      "source_location": "L8"
+    },
+    {
+      "id": "route_get",
+      "label": "GET()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/app/api/sso/route.ts",
+      "source_location": "L27"
+    }
+  ],
+  "edges": [
+    {
+      "source": "route",
+      "target": "headers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/sso/route.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "crypto",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/sso/route.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "server",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/sso/route.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "route",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/sso/route.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "route_verifyssotoken",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/sso/route.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "route",
+      "target": "route_get",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/sso/route.ts",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "route_get",
+      "target": "route_verifyssotoken",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/app/api/sso/route.ts",
+      "source_location": "L35",
+      "weight": 1.0
+    }
+  ]
+}

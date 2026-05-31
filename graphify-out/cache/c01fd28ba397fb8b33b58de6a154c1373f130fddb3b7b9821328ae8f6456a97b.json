@@ -1,0 +1,128 @@
+{
+  "nodes": [
+    {
+      "id": "use_canvas_operations",
+      "label": "use-canvas-operations.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/hooks/use-canvas-operations.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "use_canvas_operations_usecanvasoperations",
+      "label": "useCanvasOperations()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/hooks/use-canvas-operations.ts",
+      "source_location": "L49"
+    }
+  ],
+  "edges": [
+    {
+      "source": "use_canvas_operations",
+      "target": "scene_context",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-canvas-operations.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "use_canvas_operations",
+      "target": "canvas",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-canvas-operations.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "use_canvas_operations",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-canvas-operations.ts",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "use_canvas_operations",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-canvas-operations.ts",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "use_canvas_operations",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-canvas-operations.ts",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "use_canvas_operations",
+      "target": "use_history_snapshot",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-canvas-operations.ts",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "use_canvas_operations",
+      "target": "sonner",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-canvas-operations.ts",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "use_canvas_operations",
+      "target": "edit",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-canvas-operations.ts",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "use_canvas_operations",
+      "target": "element",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-canvas-operations.ts",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "use_canvas_operations",
+      "target": "use_order_element",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-canvas-operations.ts",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "use_canvas_operations",
+      "target": "nanoid",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-canvas-operations.ts",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "use_canvas_operations",
+      "target": "use_canvas_operations_usecanvasoperations",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-canvas-operations.ts",
+      "source_location": "L49",
+      "weight": 1.0
+    }
+  ]
+}

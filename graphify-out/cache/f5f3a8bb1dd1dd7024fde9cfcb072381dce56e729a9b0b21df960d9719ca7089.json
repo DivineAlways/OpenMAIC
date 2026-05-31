@@ -1,0 +1,163 @@
+{
+  "nodes": [
+    {
+      "id": "text_container",
+      "label": "text_container.js",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/text_container.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "text_container_textcontainer",
+      "label": "textContainer()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/text_container.js",
+      "source_location": "L9"
+    },
+    {
+      "id": "text_container_mtext",
+      "label": "mtext()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/text_container.js",
+      "source_location": "L118"
+    },
+    {
+      "id": "text_container_mi",
+      "label": "mi()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/text_container.js",
+      "source_location": "L122"
+    },
+    {
+      "id": "text_container_mn",
+      "label": "mn()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/text_container.js",
+      "source_location": "L126"
+    },
+    {
+      "id": "text_container_mo",
+      "label": "mo()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/text_container.js",
+      "source_location": "L130"
+    },
+    {
+      "id": "text_container_ms",
+      "label": "ms()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/text_container.js",
+      "source_location": "L134"
+    }
+  ],
+  "edges": [
+    {
+      "source": "text_container",
+      "target": "text_style_js",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/text_container.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "text_container",
+      "target": "text_container_textcontainer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/text_container.js",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "text_container",
+      "target": "text_container_mtext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/text_container.js",
+      "source_location": "L118",
+      "weight": 1.0
+    },
+    {
+      "source": "text_container",
+      "target": "text_container_mi",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/text_container.js",
+      "source_location": "L122",
+      "weight": 1.0
+    },
+    {
+      "source": "text_container",
+      "target": "text_container_mn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/text_container.js",
+      "source_location": "L126",
+      "weight": 1.0
+    },
+    {
+      "source": "text_container",
+      "target": "text_container_mo",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/text_container.js",
+      "source_location": "L130",
+      "weight": 1.0
+    },
+    {
+      "source": "text_container",
+      "target": "text_container_ms",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/text_container.js",
+      "source_location": "L134",
+      "weight": 1.0
+    },
+    {
+      "source": "text_container_mtext",
+      "target": "text_container_textcontainer",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/text_container.js",
+      "source_location": "L119",
+      "weight": 1.0
+    },
+    {
+      "source": "text_container_mi",
+      "target": "text_container_textcontainer",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/text_container.js",
+      "source_location": "L123",
+      "weight": 1.0
+    },
+    {
+      "source": "text_container_mn",
+      "target": "text_container_textcontainer",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/text_container.js",
+      "source_location": "L127",
+      "weight": 1.0
+    },
+    {
+      "source": "text_container_mo",
+      "target": "text_container_textcontainer",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/text_container.js",
+      "source_location": "L131",
+      "weight": 1.0
+    },
+    {
+      "source": "text_container_ms",
+      "target": "text_container_textcontainer",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/text_container.js",
+      "source_location": "L135",
+      "weight": 1.0
+    }
+  ]
+}

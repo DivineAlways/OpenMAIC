@@ -1,0 +1,94 @@
+{
+  "nodes": [
+    {
+      "id": "shapeelementoperate",
+      "label": "ShapeElementOperate.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/ShapeElementOperate.tsx",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "shapeelementoperate",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/ShapeElementOperate.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "shapeelementoperate",
+      "target": "store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/ShapeElementOperate.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "shapeelementoperate",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/ShapeElementOperate.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "shapeelementoperate",
+      "target": "edit",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/ShapeElementOperate.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "shapeelementoperate",
+      "target": "shapes",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/ShapeElementOperate.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "shapeelementoperate",
+      "target": "usecommonoperate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/ShapeElementOperate.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "shapeelementoperate",
+      "target": "rotatehandler",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/ShapeElementOperate.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "shapeelementoperate",
+      "target": "resizehandler",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/ShapeElementOperate.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "shapeelementoperate",
+      "target": "borderline",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/ShapeElementOperate.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    }
+  ]
+}

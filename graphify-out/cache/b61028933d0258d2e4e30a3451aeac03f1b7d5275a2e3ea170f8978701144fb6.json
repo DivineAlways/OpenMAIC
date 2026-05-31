@@ -1,0 +1,694 @@
+{
+  "nodes": [
+    {
+      "id": "pptxgen",
+      "label": "pptxgen.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "pptxgen_pptxgenjs",
+      "label": "PptxGenJS",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L103"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_layout",
+      "label": ".layout()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L119"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_version",
+      "label": ".version()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L138"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_author",
+      "label": ".author()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L146"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_company",
+      "label": ".company()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L158"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_revision",
+      "label": ".revision()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L171"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_subject",
+      "label": ".subject()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L183"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_theme",
+      "label": ".theme()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L195"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_title",
+      "label": ".title()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L207"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_rtlmode",
+      "label": ".rtlMode()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L220"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_masterslide",
+      "label": ".masterSlide()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L230"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_slides",
+      "label": ".slides()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L236"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_sections",
+      "label": ".sections()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L242"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_slidelayouts",
+      "label": ".slideLayouts()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L248"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_alignh",
+      "label": ".AlignH()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L256"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_alignv",
+      "label": ".AlignV()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L261"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_charttype",
+      "label": ".ChartType()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L266"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_outputtype",
+      "label": ".OutputType()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L271"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_preslayout",
+      "label": ".presLayout()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L276"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_schemecolor",
+      "label": ".SchemeColor()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L281"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_shapetype",
+      "label": ".ShapeType()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L286"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_charts",
+      "label": ".charts()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L294"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_colors",
+      "label": ".colors()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L302"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_shapes",
+      "label": ".shapes()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L310"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L314"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_stream",
+      "label": ".stream()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L573"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_write",
+      "label": ".write()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L585"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_writefile",
+      "label": ".writeFile()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L602"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_addsection",
+      "label": ".addSection()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L640"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_addslide",
+      "label": ".addSlide()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L659"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_definelayout",
+      "label": ".defineLayout()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L720"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_defineslidemaster",
+      "label": ".defineSlideMaster()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L742"
+    },
+    {
+      "id": "pptxgen_pptxgenjs_tabletoslides",
+      "label": ".tableToSlides()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L782"
+    }
+  ],
+  "edges": [
+    {
+      "source": "pptxgen",
+      "target": "jszip",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L62",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen",
+      "target": "slide",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen",
+      "target": "core_enums",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen",
+      "target": "core_interfaces",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L80",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen",
+      "target": "gen_charts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L95",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen",
+      "target": "gen_objects",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L96",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen",
+      "target": "gen_media",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L97",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen",
+      "target": "gen_tables",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L98",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen",
+      "target": "gen_xml",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L99",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen",
+      "target": "pptxgen_pptxgenjs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L103",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_layout",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L119",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_layout",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L130",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_version",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L138",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_author",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L146",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_author",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L150",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_company",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L158",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_company",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L162",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_revision",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L171",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_revision",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L175",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_subject",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L183",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_subject",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L187",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_theme",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L195",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_theme",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L199",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_title",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L207",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_title",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L211",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_rtlmode",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L220",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_rtlmode",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L224",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_masterslide",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L230",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_slides",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L236",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_sections",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L242",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_slidelayouts",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L248",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_alignh",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L256",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_alignv",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L261",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_charttype",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L266",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_outputtype",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L271",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_preslayout",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L276",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_schemecolor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L281",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_shapetype",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L286",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_charts",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L294",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_colors",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L302",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_shapes",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L310",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L314",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_stream",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L573",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_write",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L585",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_writefile",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L602",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_addsection",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L640",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_addslide",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L659",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_definelayout",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L720",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_defineslidemaster",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L742",
+      "weight": 1.0
+    },
+    {
+      "source": "pptxgen_pptxgenjs",
+      "target": "pptxgen_pptxgenjs_tabletoslides",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/pptxgen.ts",
+      "source_location": "L782",
+      "weight": 1.0
+    }
+  ]
+}

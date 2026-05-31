@@ -1,0 +1,12 @@
+{
+  "nodes": [
+    {
+      "id": "mime",
+      "label": "mime.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/configs/mime.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": []
+}

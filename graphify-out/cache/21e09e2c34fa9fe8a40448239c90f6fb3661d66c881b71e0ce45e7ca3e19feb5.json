@@ -1,0 +1,63 @@
+{
+  "nodes": [
+    {
+      "id": "loader",
+      "label": "loader.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/loader.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "loader_loadericon",
+      "label": "LoaderIcon()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/loader.tsx",
+      "source_location": "L8"
+    },
+    {
+      "id": "loader_loader",
+      "label": "Loader()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/loader.tsx",
+      "source_location": "L81"
+    }
+  ],
+  "edges": [
+    {
+      "source": "loader",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/loader.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "loader",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/loader.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "loader",
+      "target": "loader_loadericon",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/loader.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "loader",
+      "target": "loader_loader",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/loader.tsx",
+      "source_location": "L81",
+      "weight": 1.0
+    }
+  ]
+}

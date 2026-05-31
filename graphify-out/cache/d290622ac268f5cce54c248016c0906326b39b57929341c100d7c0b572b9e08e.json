@@ -1,0 +1,115 @@
+{
+  "nodes": [
+    {
+      "id": "image_providers",
+      "label": "image-providers.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/image-providers.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "image_providers_testimageconnectivity",
+      "label": "testImageConnectivity()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/image-providers.ts",
+      "source_location": "L98"
+    },
+    {
+      "id": "image_providers_generateimage",
+      "label": "generateImage()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/image-providers.ts",
+      "source_location": "L120"
+    },
+    {
+      "id": "image_providers_aspectratiotodimensions",
+      "label": "aspectRatioToDimensions()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/image-providers.ts",
+      "source_location": "L140"
+    }
+  ],
+  "edges": [
+    {
+      "source": "image_providers",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/image-providers.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "image_providers",
+      "target": "seedream_adapter",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/image-providers.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "image_providers",
+      "target": "qwen_image_adapter",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/image-providers.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "image_providers",
+      "target": "nano_banana_adapter",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/image-providers.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "image_providers",
+      "target": "minimax_image_adapter",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/image-providers.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "image_providers",
+      "target": "grok_image_adapter",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/image-providers.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "image_providers",
+      "target": "image_providers_testimageconnectivity",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/image-providers.ts",
+      "source_location": "L98",
+      "weight": 1.0
+    },
+    {
+      "source": "image_providers",
+      "target": "image_providers_generateimage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/image-providers.ts",
+      "source_location": "L120",
+      "weight": 1.0
+    },
+    {
+      "source": "image_providers",
+      "target": "image_providers_aspectratiotodimensions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/image-providers.ts",
+      "source_location": "L140",
+      "weight": 1.0
+    }
+  ]
+}

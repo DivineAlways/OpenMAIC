@@ -1,0 +1,12 @@
+{
+  "nodes": [
+    {
+      "id": "generation_pipeline",
+      "label": "generation-pipeline.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/generation-pipeline.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": []
+}

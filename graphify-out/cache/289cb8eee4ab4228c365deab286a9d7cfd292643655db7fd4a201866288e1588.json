@@ -1,0 +1,47 @@
+{
+  "nodes": [
+    {
+      "id": "use_tts_preview",
+      "label": "use-tts-preview.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/use-tts-preview.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "use_tts_preview_usettspreview",
+      "label": "useTTSPreview()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/audio/use-tts-preview.ts",
+      "source_location": "L27"
+    }
+  ],
+  "edges": [
+    {
+      "source": "use_tts_preview",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/use-tts-preview.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "use_tts_preview",
+      "target": "browser_tts_preview",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/use-tts-preview.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "use_tts_preview",
+      "target": "use_tts_preview_usettspreview",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/audio/use-tts-preview.ts",
+      "source_location": "L27",
+      "weight": 1.0
+    }
+  ]
+}

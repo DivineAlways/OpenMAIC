@@ -1,0 +1,118 @@
+{
+  "nodes": [
+    {
+      "id": "classroom_page",
+      "label": "classroom.page.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/e2e/pages/classroom.page.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "classroom_page_classroompage",
+      "label": "ClassroomPage",
+      "file_type": "code",
+      "source_file": "OpenMAIC/e2e/pages/classroom.page.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "classroom_page_classroompage_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/e2e/pages/classroom.page.ts",
+      "source_location": "L8"
+    },
+    {
+      "id": "classroom_page_classroompage_goto",
+      "label": ".goto()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/e2e/pages/classroom.page.ts",
+      "source_location": "L14"
+    },
+    {
+      "id": "classroom_page_classroompage_waitforloaded",
+      "label": ".waitForLoaded()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/e2e/pages/classroom.page.ts",
+      "source_location": "L18"
+    },
+    {
+      "id": "classroom_page_classroompage_clickscene",
+      "label": ".clickScene()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/e2e/pages/classroom.page.ts",
+      "source_location": "L22"
+    },
+    {
+      "id": "classroom_page_classroompage_getscenetitle",
+      "label": ".getSceneTitle()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/e2e/pages/classroom.page.ts",
+      "source_location": "L27"
+    }
+  ],
+  "edges": [
+    {
+      "source": "classroom_page",
+      "target": "test",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/pages/classroom.page.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_page",
+      "target": "classroom_page_classroompage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/pages/classroom.page.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_page_classroompage",
+      "target": "classroom_page_classroompage_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/pages/classroom.page.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_page_classroompage",
+      "target": "classroom_page_classroompage_goto",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/pages/classroom.page.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_page_classroompage",
+      "target": "classroom_page_classroompage_waitforloaded",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/pages/classroom.page.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_page_classroompage",
+      "target": "classroom_page_classroompage_clickscene",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/pages/classroom.page.ts",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_page_classroompage",
+      "target": "classroom_page_classroompage_getscenetitle",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/pages/classroom.page.ts",
+      "source_location": "L27",
+      "weight": 1.0
+    }
+  ]
+}

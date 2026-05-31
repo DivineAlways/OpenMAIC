@@ -1,0 +1,144 @@
+{
+  "nodes": [
+    {
+      "id": "pdf_settings",
+      "label": "pdf-settings.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/pdf-settings.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "pdf_settings_getfeaturelabel",
+      "label": "getFeatureLabel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/pdf-settings.tsx",
+      "source_location": "L18"
+    },
+    {
+      "id": "pdf_settings_handletestconnection",
+      "label": "handleTestConnection()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/pdf-settings.tsx",
+      "source_location": "L58"
+    }
+  ],
+  "edges": [
+    {
+      "source": "pdf_settings",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/pdf-settings.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_settings",
+      "target": "label",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/pdf-settings.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_settings",
+      "target": "input",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/pdf-settings.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_settings",
+      "target": "badge",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/pdf-settings.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_settings",
+      "target": "button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/pdf-settings.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_settings",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/pdf-settings.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_settings",
+      "target": "settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/pdf-settings.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_settings",
+      "target": "constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/pdf-settings.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_settings",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/pdf-settings.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_settings",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/pdf-settings.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_settings",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/pdf-settings.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_settings",
+      "target": "pdf_settings_getfeaturelabel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/pdf-settings.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_settings",
+      "target": "pdf_settings_handletestconnection",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/pdf-settings.tsx",
+      "source_location": "L58",
+      "weight": 1.0
+    }
+  ]
+}

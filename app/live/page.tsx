@@ -1,86 +1,88 @@
-"use client"
+'use client';
 
-import { useState, useEffect } from "react"
-import { Radio, Calendar, ArrowLeft } from "lucide-react"
-import Link from "next/link"
-import { LiveRoom } from "@/components/live/live-room"
-import { GoLiveModal } from "@/components/live/go-live-modal"
-import { JoinSessionCard } from "@/components/live/join-session-card"
-import type { LiveSession } from "@/lib/live/daily-config"
+import { useState, useEffect } from 'react';
+import { Radio, Calendar, ArrowLeft } from 'lucide-react';
+import Link from 'next/link';
+import { LiveRoom } from '@/components/live/live-room';
+import { GoLiveModal } from '@/components/live/go-live-modal';
+import { JoinSessionCard } from '@/components/live/join-session-card';
+import type { LiveSession } from '@/lib/live/daily-config';
 
 interface UserInfo {
-  id: string
-  is_paid: boolean
-  is_admin: boolean
-  can_go_live: boolean
+  id: string;
+  is_paid: boolean;
+  is_admin: boolean;
+  can_go_live: boolean;
 }
 
 // Read user ID from SSO cookie payload (set by main platform SSO)
 // The cookie value is `sso.userId.timestamp.valid`
 function getUserIdFromCookies(): string | null {
-  if (typeof document === "undefined") return null
+  if (typeof document === 'undefined') return null;
   // We can't read httpOnly cookies from JS — userId must come from the SSO flow
   // The main platform passes user_id as a query param on SSO redirect
-  const params = new URLSearchParams(window.location.search)
-  return params.get("uid") ?? sessionStorage.getItem("oc_user_id")
+  const params = new URLSearchParams(window.location.search);
+  return params.get('uid') ?? sessionStorage.getItem('oc_user_id');
 }
 
 export default function LivePage() {
-  const [userId, setUserId] = useState<string | null>(null)
-  const [userInfo, setUserInfo] = useState<UserInfo | null>(null)
-  const [activeSessions, setActiveSessions] = useState<LiveSession[]>([])
-  const [upcomingSessions, setUpcomingSessions] = useState<LiveSession[]>([])
-  const [loading, setLoading] = useState(true)
-  const [showGoLive, setShowGoLive] = useState(false)
+  const [userId, setUserId] = useState<string | null>(null);
+  const [userInfo, setUserInfo] = useState<UserInfo | null>(null);
+  const [activeSessions, setActiveSessions] = useState<LiveSession[]>([]);
+  const [upcomingSessions, setUpcomingSessions] = useState<LiveSession[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [showGoLive, setShowGoLive] = useState(false);
   const [liveState, setLiveState] = useState<{
-    roomUrl: string
-    token: string
-    sessionId: string
-    isHost: boolean
-  } | null>(null)
+    roomUrl: string;
+    token: string;
+    sessionId: string;
+    isHost: boolean;
+  } | null>(null);
 
   useEffect(() => {
-    const uid = getUserIdFromCookies()
+    const uid = getUserIdFromCookies();
     if (uid) {
-      setUserId(uid)
-      sessionStorage.setItem("oc_user_id", uid)
+      setUserId(uid);
+      sessionStorage.setItem('oc_user_id', uid);
       // Check if this user is an admin
       fetch(`/api/live/user-info?uid=${encodeURIComponent(uid)}`)
-        .then(r => r.json())
-        .then(d => { if (d.user) setUserInfo(d.user) })
-        .catch(() => {})
+        .then((r) => r.json())
+        .then((d) => {
+          if (d.user) setUserInfo(d.user);
+        })
+        .catch(() => {});
     }
-    fetchSessions()
-  }, [])
+    fetchSessions();
+  }, []);
 
   const fetchSessions = async () => {
-    setLoading(true)
+    setLoading(true);
     try {
       // Active live sessions
-      const activeRes = await fetch("/api/live/join-room")
-      const activeData = await activeRes.json()
-      setActiveSessions(activeData.sessions ?? [])
+      const activeRes = await fetch('/api/live/join-room');
+      const activeData = await activeRes.json();
+      setActiveSessions(activeData.sessions ?? []);
 
       // Upcoming scheduled sessions (from main platform Supabase)
-      const upcomingRes = await fetch("/api/live/upcoming")
-      const upcomingData = await upcomingRes.json()
-      setUpcomingSessions(upcomingData.sessions ?? [])
+      const upcomingRes = await fetch('/api/live/upcoming');
+      const upcomingData = await upcomingRes.json();
+      setUpcomingSessions(upcomingData.sessions ?? []);
     } catch {
       // silently fail — page still usable
     } finally {
-      setLoading(false)
+      setLoading(false);
     }
-  }
+  };
 
   const handleJoined = (roomUrl: string, token: string, sessionId: string, isHost: boolean) => {
-    setShowGoLive(false)
-    setLiveState({ roomUrl, token, sessionId, isHost })
-  }
+    setShowGoLive(false);
+    setLiveState({ roomUrl, token, sessionId, isHost });
+  };
 
   const handleLeave = () => {
-    setLiveState(null)
-    fetchSessions()
-  }
+    setLiveState(null);
+    fetchSessions();
+  };
 
   // ── Active call view ─────────────────────────────────────────────────────────
   if (liveState) {
@@ -103,13 +105,13 @@ export default function LivePage() {
             roomUrl={liveState.roomUrl}
             token={liveState.token}
             sessionId={liveState.sessionId}
-            userId={userId ?? ""}
+            userId={userId ?? ''}
             isHost={liveState.isHost}
             onLeave={handleLeave}
           />
         </div>
       </div>
-    )
+    );
   }
 
   // ── Lobby view ───────────────────────────────────────────────────────────────
@@ -142,25 +144,20 @@ export default function LivePage() {
       <div className="max-w-2xl mx-auto px-6 py-8 space-y-8">
         {/* Active sessions */}
         <section className="space-y-3">
-          <h2 className="text-xs font-black uppercase tracking-widest text-zinc-400">
-            Live Now
-          </h2>
+          <h2 className="text-xs font-black uppercase tracking-widest text-zinc-400">Live Now</h2>
           {loading ? (
             <div className="animate-pulse h-16 rounded-xl bg-white/5" />
           ) : activeSessions.length === 0 ? (
             <div className="rounded-xl border border-white/5 bg-white/[0.02] p-6 text-center">
               <Radio size={24} className="text-zinc-600 mx-auto mb-2" />
               <p className="text-sm text-zinc-500">No sessions live right now</p>
-              <p className="text-xs text-zinc-600 mt-1">Check back for the next scheduled session</p>
+              <p className="text-xs text-zinc-600 mt-1">
+                Check back for the next scheduled session
+              </p>
             </div>
           ) : (
             activeSessions.map((s) => (
-              <JoinSessionCard
-                key={s.id}
-                session={s}
-                userId={userId ?? ""}
-                onJoin={handleJoined}
-              />
+              <JoinSessionCard key={s.id} session={s} userId={userId ?? ''} onJoin={handleJoined} />
             ))
           )}
         </section>
@@ -168,18 +165,24 @@ export default function LivePage() {
         {/* Upcoming sessions */}
         {upcomingSessions.length > 0 && (
           <section className="space-y-3">
-            <h2 className="text-xs font-black uppercase tracking-widest text-zinc-400">
-              Upcoming
-            </h2>
+            <h2 className="text-xs font-black uppercase tracking-widest text-zinc-400">Upcoming</h2>
             {upcomingSessions.map((s) => {
-              const dt = new Date(s.scheduled_at)
-              const diffMs = dt.getTime() - Date.now()
-              const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24))
-              const diffHrs = Math.floor((diffMs % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-              const countdown = diffDays > 0 ? `In ${diffDays}d ${diffHrs}h` : diffHrs > 0 ? `In ${diffHrs}h` : "Starting soon"
+              const dt = new Date(s.scheduled_at);
+              const diffMs = dt.getTime() - Date.now();
+              const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+              const diffHrs = Math.floor((diffMs % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              const countdown =
+                diffDays > 0
+                  ? `In ${diffDays}d ${diffHrs}h`
+                  : diffHrs > 0
+                    ? `In ${diffHrs}h`
+                    : 'Starting soon';
 
               return (
-                <div key={s.id} className="rounded-xl border border-white/10 bg-white/[0.02] p-4 flex items-center justify-between gap-4">
+                <div
+                  key={s.id}
+                  className="rounded-xl border border-white/10 bg-white/[0.02] p-4 flex items-center justify-between gap-4"
+                >
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center">
                       <Calendar size={14} className="text-zinc-400" />
@@ -187,13 +190,18 @@ export default function LivePage() {
                     <div>
                       <p className="font-bold text-sm">{s.title}</p>
                       <p className="text-xs text-zinc-500">
-                        {dt.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" })} · {dt.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" })}
+                        {dt.toLocaleDateString('en-US', {
+                          weekday: 'short',
+                          month: 'short',
+                          day: 'numeric',
+                        })}{' '}
+                        · {dt.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' })}
                       </p>
                     </div>
                   </div>
                   <span className="shrink-0 text-xs text-zinc-400 font-bold">{countdown}</span>
                 </div>
-              )
+              );
             })}
           </section>
         )}
@@ -203,7 +211,7 @@ export default function LivePage() {
           <div className="rounded-xl border border-amber-500/20 bg-amber-500/5 p-5 text-center">
             <p className="text-sm text-amber-300 font-bold">Members only</p>
             <p className="text-xs text-zinc-400 mt-1">
-              Access live sessions from your{" "}
+              Access live sessions from your{' '}
               <a href="https://onlycrypto.io/dashboard/learning" className="text-primary underline">
                 OnlyCrypto dashboard
               </a>
@@ -216,11 +224,11 @@ export default function LivePage() {
       {showGoLive && (
         <GoLiveModal
           sessions={upcomingSessions}
-          userId={userId ?? ""}
+          userId={userId ?? ''}
           onLive={handleJoined}
           onClose={() => setShowGoLive(false)}
         />
       )}
     </div>
-  )
+  );
 }

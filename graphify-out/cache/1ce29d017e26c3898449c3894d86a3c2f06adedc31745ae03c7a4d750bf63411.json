@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "alignmentline",
+      "label": "AlignmentLine.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/AlignmentLine.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "alignmentline_alignmentline",
+      "label": "AlignmentLine()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/AlignmentLine.tsx",
+      "source_location": "L13"
+    }
+  ],
+  "edges": [
+    {
+      "source": "alignmentline",
+      "target": "edit",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/AlignmentLine.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "alignmentline",
+      "target": "alignmentline_alignmentline",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/AlignmentLine.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    }
+  ]
+}

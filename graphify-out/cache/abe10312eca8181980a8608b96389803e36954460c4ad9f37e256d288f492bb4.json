@@ -1,0 +1,102 @@
+{
+  "nodes": [
+    {
+      "id": "noop",
+      "label": "noop.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/storage/providers/noop.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "noop_noopstorageprovider",
+      "label": "NoopStorageProvider",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/storage/providers/noop.ts",
+      "source_location": "L4"
+    },
+    {
+      "id": "noop_noopstorageprovider_upload",
+      "label": ".upload()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/storage/providers/noop.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "noop_noopstorageprovider_exists",
+      "label": ".exists()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/storage/providers/noop.ts",
+      "source_location": "L8"
+    },
+    {
+      "id": "noop_noopstorageprovider_geturl",
+      "label": ".getUrl()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/storage/providers/noop.ts",
+      "source_location": "L11"
+    },
+    {
+      "id": "noop_noopstorageprovider_batchexists",
+      "label": ".batchExists()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/storage/providers/noop.ts",
+      "source_location": "L14"
+    }
+  ],
+  "edges": [
+    {
+      "source": "noop",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/storage/providers/noop.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "noop",
+      "target": "noop_noopstorageprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/storage/providers/noop.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "noop_noopstorageprovider",
+      "target": "noop_noopstorageprovider_upload",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/storage/providers/noop.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "noop_noopstorageprovider",
+      "target": "noop_noopstorageprovider_exists",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/storage/providers/noop.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "noop_noopstorageprovider",
+      "target": "noop_noopstorageprovider_geturl",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/storage/providers/noop.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "noop_noopstorageprovider",
+      "target": "noop_noopstorageprovider_batchexists",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/storage/providers/noop.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    }
+  ]
+}

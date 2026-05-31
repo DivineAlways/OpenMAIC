@@ -1,0 +1,58 @@
+{
+  "nodes": [
+    {
+      "id": "highlightoverlay",
+      "label": "HighlightOverlay.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/HighlightOverlay.tsx",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "highlightoverlay",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/HighlightOverlay.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "highlightoverlay",
+      "target": "scene_context",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/HighlightOverlay.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "highlightoverlay",
+      "target": "canvas",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/HighlightOverlay.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "highlightoverlay",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/HighlightOverlay.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "highlightoverlay",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/HighlightOverlay.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    }
+  ]
+}

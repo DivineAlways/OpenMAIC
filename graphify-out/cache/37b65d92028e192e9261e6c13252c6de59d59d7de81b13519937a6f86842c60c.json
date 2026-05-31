@@ -1,0 +1,112 @@
+{
+  "nodes": [
+    {
+      "id": "header",
+      "label": "header.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/header.tsx",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "header",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/header.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "header",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/header.tsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "header",
+      "target": "use_theme",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/header.tsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "header",
+      "target": "language_switcher",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/header.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "header",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/header.tsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "header",
+      "target": "navigation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/header.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "header",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/header.tsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "header",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/header.tsx",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "header",
+      "target": "media_generation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/header.tsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "header",
+      "target": "use_export_pptx",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/header.tsx",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "header",
+      "target": "use_export_classroom",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/header.tsx",
+      "source_location": "L23",
+      "weight": 1.0
+    }
+  ]
+}

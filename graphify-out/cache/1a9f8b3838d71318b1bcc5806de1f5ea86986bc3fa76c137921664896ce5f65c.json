@@ -1,0 +1,384 @@
+{
+  "nodes": [
+    {
+      "id": "stage",
+      "label": "stage.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "stage_findnextcourse",
+      "label": "findNextCourse()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L71"
+    },
+    {
+      "id": "stage_findcoursetitle",
+      "label": "findCourseTitle()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L81"
+    },
+    {
+      "id": "stage_onfullscreenchange",
+      "label": "onFullscreenChange()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L358"
+    },
+    {
+      "id": "stage_handleactivity",
+      "label": "handleActivity()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L382"
+    },
+    {
+      "id": "stage_handlewhiteboardtoggle",
+      "label": "handleWhiteboardToggle()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L848"
+    },
+    {
+      "id": "stage_onkeydown",
+      "label": "onKeyDown()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L867"
+    },
+    {
+      "id": "stage_onf11",
+      "label": "onF11()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L961"
+    },
+    {
+      "id": "stage_async",
+      "label": "async()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L1110"
+    }
+  ],
+  "edges": [
+    {
+      "source": "stage",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "canvas",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "scene_sidebar",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "header",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "canvas_area",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "certificate_modal",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "roundtable",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "playback",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "playback",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "engine",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "audio_player",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "use_discussion_tts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "audio_indicator",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "action",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "chat_area",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "alert_dialog",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "radix_ui",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "navigation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "course_progress",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "stage_findnextcourse",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "stage_findcoursetitle",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L81",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "stage_onfullscreenchange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L358",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "stage_handleactivity",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L382",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "stage_handlewhiteboardtoggle",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L848",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "stage_onkeydown",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L867",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "stage_onf11",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L961",
+      "weight": 1.0
+    },
+    {
+      "source": "stage",
+      "target": "stage_async",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/stage.tsx",
+      "source_location": "L1110",
+      "weight": 1.0
+    }
+  ]
+}

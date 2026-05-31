@@ -1,0 +1,243 @@
+{
+  "nodes": [
+    {
+      "id": "element",
+      "label": "element.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "element_getrectrotatedrange",
+      "label": "getRectRotatedRange()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L21"
+    },
+    {
+      "id": "element_getrectrotatedoffset",
+      "label": "getRectRotatedOffset()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L56"
+    },
+    {
+      "id": "element_getelementrange",
+      "label": "getElementRange()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L81"
+    },
+    {
+      "id": "element_getelementlistrange",
+      "label": "getElementListRange()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L115"
+    },
+    {
+      "id": "element_getlineelementlength",
+      "label": "getLineElementLength()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L141"
+    },
+    {
+      "id": "element_uniqalignlines",
+      "label": "uniqAlignLines()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L157"
+    },
+    {
+      "id": "element_createslideidmap",
+      "label": "createSlideIdMap()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L179"
+    },
+    {
+      "id": "element_createelementidmap",
+      "label": "createElementIdMap()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L193"
+    },
+    {
+      "id": "element_gettablesubthemecolor",
+      "label": "getTableSubThemeColor()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L213"
+    },
+    {
+      "id": "element_getlineelementpath",
+      "label": "getLineElementPath()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L222"
+    },
+    {
+      "id": "element_iselementinviewport",
+      "label": "isElementInViewport()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L253"
+    }
+  ],
+  "edges": [
+    {
+      "source": "element",
+      "target": "tinycolor2",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "element",
+      "target": "nanoid",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "element",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "element",
+      "target": "element_getrectrotatedrange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "element",
+      "target": "element_getrectrotatedoffset",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L56",
+      "weight": 1.0
+    },
+    {
+      "source": "element",
+      "target": "element_getelementrange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L81",
+      "weight": 1.0
+    },
+    {
+      "source": "element",
+      "target": "element_getelementlistrange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L115",
+      "weight": 1.0
+    },
+    {
+      "source": "element",
+      "target": "element_getlineelementlength",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L141",
+      "weight": 1.0
+    },
+    {
+      "source": "element",
+      "target": "element_uniqalignlines",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L157",
+      "weight": 1.0
+    },
+    {
+      "source": "element",
+      "target": "element_createslideidmap",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L179",
+      "weight": 1.0
+    },
+    {
+      "source": "element",
+      "target": "element_createelementidmap",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L193",
+      "weight": 1.0
+    },
+    {
+      "source": "element",
+      "target": "element_gettablesubthemecolor",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L213",
+      "weight": 1.0
+    },
+    {
+      "source": "element",
+      "target": "element_getlineelementpath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L222",
+      "weight": 1.0
+    },
+    {
+      "source": "element",
+      "target": "element_iselementinviewport",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L253",
+      "weight": 1.0
+    },
+    {
+      "source": "element_getrectrotatedoffset",
+      "target": "element_getrectrotatedrange",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "element_getelementrange",
+      "target": "element_getrectrotatedrange",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "element_getlineelementpath",
+      "target": "element_getelementrange",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/element.ts",
+      "source_location": "L232",
+      "weight": 1.0
+    }
+  ]
+}

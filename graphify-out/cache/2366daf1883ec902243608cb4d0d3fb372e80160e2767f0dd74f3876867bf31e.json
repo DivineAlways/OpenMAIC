@@ -1,0 +1,307 @@
+{
+  "nodes": [
+    {
+      "id": "classroom_media_generation",
+      "label": "classroom-media-generation.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "classroom_media_generation_ensuredir",
+      "label": "ensureDir()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L44"
+    },
+    {
+      "id": "classroom_media_generation_downloadtobuffer",
+      "label": "downloadToBuffer()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L51"
+    },
+    {
+      "id": "classroom_media_generation_mediaservingurl",
+      "label": "mediaServingUrl()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L61"
+    },
+    {
+      "id": "classroom_media_generation_generatemediaforclassroom",
+      "label": "generateMediaForClassroom()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L69"
+    },
+    {
+      "id": "classroom_media_generation_replacemediaplaceholders",
+      "label": "replaceMediaPlaceholders()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L175"
+    },
+    {
+      "id": "classroom_media_generation_generatettsforclassroom",
+      "label": "generateTTSForClassroom()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L204"
+    }
+  ],
+  "edges": [
+    {
+      "source": "classroom_media_generation",
+      "target": "fs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_media_generation",
+      "target": "path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_media_generation",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_media_generation",
+      "target": "classroom_storage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_media_generation",
+      "target": "image_providers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_media_generation",
+      "target": "video_providers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_media_generation",
+      "target": "tts_providers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_media_generation",
+      "target": "constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_media_generation",
+      "target": "image_providers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_media_generation",
+      "target": "video_providers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_media_generation",
+      "target": "media_generation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_media_generation",
+      "target": "provider_config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_media_generation",
+      "target": "generation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_media_generation",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_media_generation",
+      "target": "action",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_media_generation",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_media_generation",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_media_generation",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_media_generation",
+      "target": "tts_utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_media_generation",
+      "target": "classroom_media_generation_ensuredir",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_media_generation",
+      "target": "classroom_media_generation_downloadtobuffer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_media_generation",
+      "target": "classroom_media_generation_mediaservingurl",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_media_generation",
+      "target": "classroom_media_generation_generatemediaforclassroom",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L69",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_media_generation",
+      "target": "classroom_media_generation_replacemediaplaceholders",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L175",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_media_generation",
+      "target": "classroom_media_generation_generatettsforclassroom",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L204",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_media_generation_generatemediaforclassroom",
+      "target": "classroom_media_generation_ensuredir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L75",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_media_generation_generatettsforclassroom",
+      "target": "classroom_media_generation_ensuredir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L210",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_media_generation_generatettsforclassroom",
+      "target": "classroom_media_generation_mediaservingurl",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/server/classroom-media-generation.ts",
+      "source_location": "L263",
+      "weight": 1.0
+    }
+  ]
+}

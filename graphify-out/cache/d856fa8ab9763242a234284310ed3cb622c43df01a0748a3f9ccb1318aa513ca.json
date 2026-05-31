@@ -1,0 +1,92 @@
+{
+  "nodes": [
+    {
+      "id": "use_discussion_tts",
+      "label": "use-discussion-tts.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/hooks/use-discussion-tts.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "use_discussion_tts_usediscussiontts",
+      "label": "useDiscussionTTS()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/hooks/use-discussion-tts.ts",
+      "source_location": "L31"
+    }
+  ],
+  "edges": [
+    {
+      "source": "use_discussion_tts",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-discussion-tts.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "use_discussion_tts",
+      "target": "settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-discussion-tts.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "use_discussion_tts",
+      "target": "use_browser_tts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-discussion-tts.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "use_discussion_tts",
+      "target": "voice_resolver",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-discussion-tts.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "use_discussion_tts",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-discussion-tts.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "use_discussion_tts",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-discussion-tts.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "use_discussion_tts",
+      "target": "audio_indicator",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-discussion-tts.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "use_discussion_tts",
+      "target": "use_discussion_tts_usediscussiontts",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/hooks/use-discussion-tts.ts",
+      "source_location": "L31",
+      "weight": 1.0
+    }
+  ]
+}

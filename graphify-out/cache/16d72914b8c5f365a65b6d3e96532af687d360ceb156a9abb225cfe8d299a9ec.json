@@ -1,0 +1,31 @@
+{
+  "nodes": [
+    {
+      "id": "minimax_provider_test",
+      "label": "minimax-provider.test.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/tests/ai/minimax-provider.test.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "minimax_provider_test",
+      "target": "vitest",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/tests/ai/minimax-provider.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "minimax_provider_test",
+      "target": "providers",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/tests/ai/minimax-provider.test.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    }
+  ]
+}

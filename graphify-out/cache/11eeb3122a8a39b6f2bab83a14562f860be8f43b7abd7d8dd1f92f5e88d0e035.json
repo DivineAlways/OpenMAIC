@@ -1,0 +1,206 @@
+{
+  "nodes": [
+    {
+      "id": "loader",
+      "label": "loader.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/prompts/loader.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "loader_getpromptsdir",
+      "label": "getPromptsDir()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/prompts/loader.ts",
+      "source_location": "L24"
+    },
+    {
+      "id": "loader_loadsnippet",
+      "label": "loadSnippet()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/prompts/loader.ts",
+      "source_location": "L32"
+    },
+    {
+      "id": "loader_processsnippets",
+      "label": "processSnippets()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/prompts/loader.ts",
+      "source_location": "L52"
+    },
+    {
+      "id": "loader_loadprompt",
+      "label": "loadPrompt()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/prompts/loader.ts",
+      "source_location": "L61"
+    },
+    {
+      "id": "loader_interpolatevariables",
+      "label": "interpolateVariables()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/prompts/loader.ts",
+      "source_location": "L101"
+    },
+    {
+      "id": "loader_buildprompt",
+      "label": "buildPrompt()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/prompts/loader.ts",
+      "source_location": "L113"
+    },
+    {
+      "id": "loader_clearpromptcache",
+      "label": "clearPromptCache()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/prompts/loader.ts",
+      "source_location": "L129"
+    }
+  ],
+  "edges": [
+    {
+      "source": "loader",
+      "target": "fs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/prompts/loader.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "loader",
+      "target": "path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/prompts/loader.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "loader",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/prompts/loader.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "loader",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/prompts/loader.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "loader",
+      "target": "loader_getpromptsdir",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/prompts/loader.ts",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "loader",
+      "target": "loader_loadsnippet",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/prompts/loader.ts",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "loader",
+      "target": "loader_processsnippets",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/prompts/loader.ts",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "loader",
+      "target": "loader_loadprompt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/prompts/loader.ts",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "loader",
+      "target": "loader_interpolatevariables",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/prompts/loader.ts",
+      "source_location": "L101",
+      "weight": 1.0
+    },
+    {
+      "source": "loader",
+      "target": "loader_buildprompt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/prompts/loader.ts",
+      "source_location": "L113",
+      "weight": 1.0
+    },
+    {
+      "source": "loader",
+      "target": "loader_clearpromptcache",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/prompts/loader.ts",
+      "source_location": "L129",
+      "weight": 1.0
+    },
+    {
+      "source": "loader_loadsnippet",
+      "target": "loader_getpromptsdir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/prompts/loader.ts",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "loader_loadprompt",
+      "target": "loader_getpromptsdir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/prompts/loader.ts",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "loader_loadprompt",
+      "target": "loader_processsnippets",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/prompts/loader.ts",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "loader_buildprompt",
+      "target": "loader_loadprompt",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/prompts/loader.ts",
+      "source_location": "L117",
+      "weight": 1.0
+    },
+    {
+      "source": "loader_buildprompt",
+      "target": "loader_interpolatevariables",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/prompts/loader.ts",
+      "source_location": "L121",
+      "weight": 1.0
+    }
+  ]
+}

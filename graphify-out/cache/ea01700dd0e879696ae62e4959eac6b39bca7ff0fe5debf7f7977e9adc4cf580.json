@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "id": "logger",
+      "label": "logger.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/logger.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "logger_getminlevel",
+      "label": "getMinLevel()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/logger.ts",
+      "source_location": "L4"
+    },
+    {
+      "id": "logger_isjsonformat",
+      "label": "isJsonFormat()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/logger.ts",
+      "source_location": "L9"
+    },
+    {
+      "id": "logger_formatline",
+      "label": "formatLine()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/logger.ts",
+      "source_location": "L13"
+    },
+    {
+      "id": "logger_createlogger",
+      "label": "createLogger()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/logger.ts",
+      "source_location": "L28"
+    }
+  ],
+  "edges": [
+    {
+      "source": "logger",
+      "target": "logger_getminlevel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/logger.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "logger",
+      "target": "logger_isjsonformat",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/logger.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "logger",
+      "target": "logger_formatline",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/logger.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "logger",
+      "target": "logger_createlogger",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/logger.ts",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "logger_formatline",
+      "target": "logger_isjsonformat",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/logger.ts",
+      "source_location": "L22",
+      "weight": 1.0
+    }
+  ]
+}

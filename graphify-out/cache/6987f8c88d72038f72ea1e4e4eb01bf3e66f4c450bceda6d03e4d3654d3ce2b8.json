@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    {
+      "id": "helpers",
+      "label": "helpers.js",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/helpers.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "helpers_gettextcontent",
+      "label": "getTextContent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/helpers.js",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "helpers",
+      "target": "helpers_gettextcontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/helpers.js",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ]
+}

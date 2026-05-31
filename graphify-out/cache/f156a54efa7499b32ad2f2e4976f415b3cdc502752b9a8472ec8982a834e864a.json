@@ -1,0 +1,63 @@
+{
+  "nodes": [
+    {
+      "id": "access_code_guard",
+      "label": "access-code-guard.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/access-code-guard.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "access_code_guard_membersonlywall",
+      "label": "MembersOnlyWall()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/access-code-guard.tsx",
+      "source_location": "L8"
+    },
+    {
+      "id": "access_code_guard_accesscodeguard",
+      "label": "AccessCodeGuard()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/access-code-guard.tsx",
+      "source_location": "L43"
+    }
+  ],
+  "edges": [
+    {
+      "source": "access_code_guard",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/access-code-guard.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "access_code_guard",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/access-code-guard.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "access_code_guard",
+      "target": "access_code_guard_membersonlywall",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/access-code-guard.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "access_code_guard",
+      "target": "access_code_guard_accesscodeguard",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/access-code-guard.tsx",
+      "source_location": "L43",
+      "weight": 1.0
+    }
+  ]
+}

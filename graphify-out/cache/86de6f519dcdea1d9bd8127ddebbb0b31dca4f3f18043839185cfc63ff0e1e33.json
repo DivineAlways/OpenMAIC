@@ -1,0 +1,129 @@
+{
+  "nodes": [
+    {
+      "id": "director_prompt",
+      "label": "director-prompt.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/director-prompt.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "director_prompt_builddirectorprompt",
+      "label": "buildDirectorPrompt()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/director-prompt.ts",
+      "source_location": "L52"
+    },
+    {
+      "id": "director_prompt_summarizeagentwhiteboardactions",
+      "label": "summarizeAgentWhiteboardActions()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/director-prompt.ts",
+      "source_location": "L143"
+    },
+    {
+      "id": "director_prompt_summarizewhiteboardfordirector",
+      "label": "summarizeWhiteboardForDirector()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/director-prompt.ts",
+      "source_location": "L203"
+    },
+    {
+      "id": "director_prompt_buildwhiteboardstatefordirector",
+      "label": "buildWhiteboardStateForDirector()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/director-prompt.ts",
+      "source_location": "L232"
+    },
+    {
+      "id": "director_prompt_parsedirectordecision",
+      "label": "parseDirectorDecision()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/director-prompt.ts",
+      "source_location": "L254"
+    }
+  ],
+  "edges": [
+    {
+      "source": "director_prompt",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-prompt.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "director_prompt",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-prompt.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "director_prompt",
+      "target": "director_prompt_builddirectorprompt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-prompt.ts",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "director_prompt",
+      "target": "director_prompt_summarizeagentwhiteboardactions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-prompt.ts",
+      "source_location": "L143",
+      "weight": 1.0
+    },
+    {
+      "source": "director_prompt",
+      "target": "director_prompt_summarizewhiteboardfordirector",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-prompt.ts",
+      "source_location": "L203",
+      "weight": 1.0
+    },
+    {
+      "source": "director_prompt",
+      "target": "director_prompt_buildwhiteboardstatefordirector",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-prompt.ts",
+      "source_location": "L232",
+      "weight": 1.0
+    },
+    {
+      "source": "director_prompt",
+      "target": "director_prompt_parsedirectordecision",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-prompt.ts",
+      "source_location": "L254",
+      "weight": 1.0
+    },
+    {
+      "source": "director_prompt_builddirectorprompt",
+      "target": "director_prompt_buildwhiteboardstatefordirector",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-prompt.ts",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "director_prompt_buildwhiteboardstatefordirector",
+      "target": "director_prompt_summarizewhiteboardfordirector",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-prompt.ts",
+      "source_location": "L235",
+      "weight": 1.0
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "nodes": [
+    {
+      "id": "types",
+      "label": "types.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/registry/types.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "types_createagentfromtemplate",
+      "label": "createAgentFromTemplate()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/registry/types.ts",
+      "source_location": "L48"
+    },
+    {
+      "id": "types_getactionsforrole",
+      "label": "getActionsForRole()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/registry/types.ts",
+      "source_location": "L88"
+    }
+  ],
+  "edges": [
+    {
+      "source": "types",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/registry/types.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "types",
+      "target": "types_createagentfromtemplate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/registry/types.ts",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "types",
+      "target": "types_getactionsforrole",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/registry/types.ts",
+      "source_location": "L88",
+      "weight": 1.0
+    }
+  ]
+}

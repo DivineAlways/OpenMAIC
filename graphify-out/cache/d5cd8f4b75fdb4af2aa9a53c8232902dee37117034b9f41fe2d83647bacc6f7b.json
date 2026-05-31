@@ -1,0 +1,296 @@
+{
+  "nodes": [
+    {
+      "id": "director_graph",
+      "label": "director-graph.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "director_graph_resolveagent",
+      "label": "resolveAgent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L84"
+    },
+    {
+      "id": "director_graph_directornode",
+      "label": "directorNode()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L102"
+    },
+    {
+      "id": "director_graph_directorcondition",
+      "label": "directorCondition()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L230"
+    },
+    {
+      "id": "director_graph_runagentgeneration",
+      "label": "runAgentGeneration()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L240"
+    },
+    {
+      "id": "director_graph_agentgeneratenode",
+      "label": "agentGenerateNode()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L439"
+    },
+    {
+      "id": "director_graph_createorchestrationgraph",
+      "label": "createOrchestrationGraph()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L484"
+    },
+    {
+      "id": "director_graph_buildinitialstate",
+      "label": "buildInitialState()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L502"
+    }
+  ],
+  "edges": [
+    {
+      "source": "director_graph",
+      "target": "langgraph",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "director_graph",
+      "target": "messages",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "director_graph",
+      "target": "langgraph",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "director_graph",
+      "target": "ai",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "director_graph",
+      "target": "ai_sdk_adapter",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "director_graph",
+      "target": "chat",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "director_graph",
+      "target": "chat",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "director_graph",
+      "target": "provider",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "director_graph",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "director_graph",
+      "target": "store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "director_graph",
+      "target": "prompt_builder",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "director_graph",
+      "target": "director_prompt",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "director_graph",
+      "target": "tool_schemas",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "director_graph",
+      "target": "director_prompt",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "director_graph",
+      "target": "stateless_generate",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "director_graph",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "director_graph",
+      "target": "director_graph_resolveagent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "director_graph",
+      "target": "director_graph_directornode",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L102",
+      "weight": 1.0
+    },
+    {
+      "source": "director_graph",
+      "target": "director_graph_directorcondition",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L230",
+      "weight": 1.0
+    },
+    {
+      "source": "director_graph",
+      "target": "director_graph_runagentgeneration",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L240",
+      "weight": 1.0
+    },
+    {
+      "source": "director_graph",
+      "target": "director_graph_agentgeneratenode",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L439",
+      "weight": 1.0
+    },
+    {
+      "source": "director_graph",
+      "target": "director_graph_createorchestrationgraph",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L484",
+      "weight": 1.0
+    },
+    {
+      "source": "director_graph",
+      "target": "director_graph_buildinitialstate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L502",
+      "weight": 1.0
+    },
+    {
+      "source": "director_graph_runagentgeneration",
+      "target": "director_graph_resolveagent",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L249",
+      "weight": 1.0
+    },
+    {
+      "source": "director_graph_agentgeneratenode",
+      "target": "director_graph_resolveagent",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L448",
+      "weight": 1.0
+    },
+    {
+      "source": "director_graph_agentgeneratenode",
+      "target": "director_graph_runagentgeneration",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/orchestration/director-graph.ts",
+      "source_location": "L449",
+      "weight": 1.0
+    }
+  ]
+}

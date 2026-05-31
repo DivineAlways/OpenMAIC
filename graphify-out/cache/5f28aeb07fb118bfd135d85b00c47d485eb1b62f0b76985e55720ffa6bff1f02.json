@@ -1,0 +1,65 @@
+{
+  "nodes": [
+    {
+      "id": "viewportbackground",
+      "label": "ViewportBackground.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/ViewportBackground.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "viewportbackground_viewportbackground",
+      "label": "ViewportBackground()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/ViewportBackground.tsx",
+      "source_location": "L12"
+    }
+  ],
+  "edges": [
+    {
+      "source": "viewportbackground",
+      "target": "scene_context",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/ViewportBackground.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "viewportbackground",
+      "target": "use_slide_background_style",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/ViewportBackground.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "viewportbackground",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/ViewportBackground.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "viewportbackground",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/ViewportBackground.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "viewportbackground",
+      "target": "viewportbackground_viewportbackground",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/ViewportBackground.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    }
+  ]
+}

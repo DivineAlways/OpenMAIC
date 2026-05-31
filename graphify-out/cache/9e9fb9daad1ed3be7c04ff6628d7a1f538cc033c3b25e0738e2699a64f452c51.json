@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "constants",
+      "label": "constants.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/web-search/constants.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "constants_getallwebsearchproviders",
+      "label": "getAllWebSearchProviders()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/web-search/constants.ts",
+      "source_location": "L22"
+    }
+  ],
+  "edges": [
+    {
+      "source": "constants",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/web-search/constants.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "constants",
+      "target": "constants_getallwebsearchproviders",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/web-search/constants.ts",
+      "source_location": "L22",
+      "weight": 1.0
+    }
+  ]
+}

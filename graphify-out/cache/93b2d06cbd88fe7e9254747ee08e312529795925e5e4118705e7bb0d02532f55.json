@@ -1,0 +1,133 @@
+{
+  "nodes": [
+    {
+      "id": "chat_panel",
+      "label": "chat-panel.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/chat-panel.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "chat_panel_handleinputchange",
+      "label": "handleInputChange()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/chat-panel.tsx",
+      "source_location": "L53"
+    },
+    {
+      "id": "chat_panel_handlesubmit",
+      "label": "handleSubmit()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/chat-panel.tsx",
+      "source_location": "L58"
+    },
+    {
+      "id": "chat_panel_handlekeydown",
+      "label": "handleKeyDown()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/chat-panel.tsx",
+      "source_location": "L65"
+    }
+  ],
+  "edges": [
+    {
+      "source": "chat_panel",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/chat-panel.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "chat_panel",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/chat-panel.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "chat_panel",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/chat-panel.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "chat_panel",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/chat-panel.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "chat_panel",
+      "target": "message",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/chat-panel.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "chat_panel",
+      "target": "use_draft_cache",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/chat-panel.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "chat_panel",
+      "target": "speech_button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/chat-panel.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "chat_panel",
+      "target": "chat_panel_handleinputchange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/chat-panel.tsx",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "chat_panel",
+      "target": "chat_panel_handlesubmit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/chat-panel.tsx",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "chat_panel",
+      "target": "chat_panel_handlekeydown",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/chat-panel.tsx",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "chat_panel_handlekeydown",
+      "target": "chat_panel_handlesubmit",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/scene-renderers/pbl/chat-panel.tsx",
+      "source_location": "L68",
+      "weight": 1.0
+    }
+  ]
+}

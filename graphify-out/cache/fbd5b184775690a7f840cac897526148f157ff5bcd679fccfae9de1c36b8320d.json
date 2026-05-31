@@ -1,0 +1,143 @@
+{
+  "nodes": [
+    {
+      "id": "prompt_formatters",
+      "label": "prompt-formatters.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/prompt-formatters.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "prompt_formatters_buildcoursecontext",
+      "label": "buildCourseContext()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/prompt-formatters.ts",
+      "source_location": "L9"
+    },
+    {
+      "id": "prompt_formatters_formatagentsforprompt",
+      "label": "formatAgentsForPrompt()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/prompt-formatters.ts",
+      "source_location": "L53"
+    },
+    {
+      "id": "prompt_formatters_formatteacherpersonaforprompt",
+      "label": "formatTeacherPersonaForPrompt()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/prompt-formatters.ts",
+      "source_location": "L65"
+    },
+    {
+      "id": "prompt_formatters_formatimagedescription",
+      "label": "formatImageDescription()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/prompt-formatters.ts",
+      "source_location": "L78"
+    },
+    {
+      "id": "prompt_formatters_formatimageplaceholder",
+      "label": "formatImagePlaceholder()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/prompt-formatters.ts",
+      "source_location": "L92"
+    },
+    {
+      "id": "prompt_formatters_buildvisionusercontent",
+      "label": "buildVisionUserContent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/prompt-formatters.ts",
+      "source_location": "L107"
+    },
+    {
+      "id": "prompt_formatters_buildlanguagetext",
+      "label": "buildLanguageText()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/prompt-formatters.ts",
+      "source_location": "L143"
+    }
+  ],
+  "edges": [
+    {
+      "source": "prompt_formatters",
+      "target": "generation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/prompt-formatters.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_formatters",
+      "target": "pipeline_types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/prompt-formatters.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_formatters",
+      "target": "prompt_formatters_buildcoursecontext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/prompt-formatters.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_formatters",
+      "target": "prompt_formatters_formatagentsforprompt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/prompt-formatters.ts",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_formatters",
+      "target": "prompt_formatters_formatteacherpersonaforprompt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/prompt-formatters.ts",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_formatters",
+      "target": "prompt_formatters_formatimagedescription",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/prompt-formatters.ts",
+      "source_location": "L78",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_formatters",
+      "target": "prompt_formatters_formatimageplaceholder",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/prompt-formatters.ts",
+      "source_location": "L92",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_formatters",
+      "target": "prompt_formatters_buildvisionusercontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/prompt-formatters.ts",
+      "source_location": "L107",
+      "weight": 1.0
+    },
+    {
+      "source": "prompt_formatters",
+      "target": "prompt_formatters_buildlanguagetext",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/prompt-formatters.ts",
+      "source_location": "L143",
+      "weight": 1.0
+    }
+  ]
+}

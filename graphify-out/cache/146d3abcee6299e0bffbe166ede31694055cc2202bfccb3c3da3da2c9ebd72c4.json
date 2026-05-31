@@ -1,0 +1,115 @@
+{
+  "nodes": [
+    {
+      "id": "checkpoint",
+      "label": "checkpoint.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/checkpoint.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "checkpoint_checkpoint",
+      "label": "Checkpoint()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/checkpoint.tsx",
+      "source_location": "L12"
+    },
+    {
+      "id": "checkpoint_checkpointicon",
+      "label": "CheckpointIcon()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/checkpoint.tsx",
+      "source_location": "L24"
+    },
+    {
+      "id": "checkpoint_checkpointtrigger",
+      "label": "CheckpointTrigger()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/checkpoint.tsx",
+      "source_location": "L31"
+    }
+  ],
+  "edges": [
+    {
+      "source": "checkpoint",
+      "target": "button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/checkpoint.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "checkpoint",
+      "target": "separator",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/checkpoint.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "checkpoint",
+      "target": "tooltip",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/checkpoint.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "checkpoint",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/checkpoint.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "checkpoint",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/checkpoint.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "checkpoint",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/checkpoint.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "checkpoint",
+      "target": "checkpoint_checkpoint",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/checkpoint.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "checkpoint",
+      "target": "checkpoint_checkpointicon",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/checkpoint.tsx",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "checkpoint",
+      "target": "checkpoint_checkpointtrigger",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/checkpoint.tsx",
+      "source_location": "L31",
+      "weight": 1.0
+    }
+  ]
+}

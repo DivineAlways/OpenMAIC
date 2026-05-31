@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    {
+      "id": "rotatehandler",
+      "label": "RotateHandler.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/RotateHandler.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "rotatehandler_rotatehandler",
+      "label": "RotateHandler()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/RotateHandler.tsx",
+      "source_location": "L7"
+    }
+  ],
+  "edges": [
+    {
+      "source": "rotatehandler",
+      "target": "rotatehandler_rotatehandler",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/Canvas/Operate/RotateHandler.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "nodes": [
+    {
+      "id": "roundtable",
+      "label": "roundtable.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/types/roundtable.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": []
+}

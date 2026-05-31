@@ -35,10 +35,7 @@
               "height": 562,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f172a",
               "fixedRatio": false
             },
@@ -51,10 +48,7 @@
               "height": 4,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -158,10 +152,7 @@
               "height": 562,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f172a",
               "fixedRatio": false
             },
@@ -174,10 +165,7 @@
               "height": 4,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -239,10 +227,7 @@
               "height": 562,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f172a",
               "fixedRatio": false
             },
@@ -255,10 +240,7 @@
               "height": 4,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -362,10 +344,7 @@
               "height": 562,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f172a",
               "fixedRatio": false
             },
@@ -378,10 +357,7 @@
               "height": 4,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -479,10 +455,7 @@
               "height": 562,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f172a",
               "fixedRatio": false
             },
@@ -495,10 +468,7 @@
               "height": 4,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -570,13 +540,13 @@
           "id": "action_hs-sc-s3a_0",
           "type": "speech",
           "text": "Exchange Safety: CEX vs DEX Risk. CEX Risk — Centralized Exchange Safety",
-          "audioUrl": "/audio/lessons/oc-hs-security/3-0.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-security/4-0.mp3"
         },
         {
           "id": "action_hs-sc-s3a_1",
           "type": "speech",
           "text": "DEX Risk — Decentralized Exchange Safety. FTX collapsed Nov 2022 — $8B in customer funds lost. Gox collapsed 2014 — 850,000 BTC lost. . CEX safety checklist:. ✓ Use regulated, audited exchanges (Coinbase, Kraken). ✓ Only keep trading amounts on exchange. ✓ Withdraw profits to self-custody regularly. ✓ Check Proof of Reserves (does exchange publish?). ✓ Separate exchange account email from personal. ✓ Never share 2FA codes with 'support'. ✓ Monitor for withdrawal whitelist options. DEX: non-custodial — you keep your keys. No registration, trade any token. . DEX risks:. • Smart contract bugs (no insurance). • Front-running bots (MEV) — sandwich attacks. inflate your buy price and dump after your tx. • Slippage — price moves between sign and confirm. • Fake token contracts (same name, different address). . Safety: use official frontend URLs, set max. slippage <1% for stablecoins, <2% for majors,. verify contract address before any new token trade",
-          "audioUrl": "/audio/lessons/oc-hs-security/3-1.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-security/4-1.mp3"
         }
       ]
     },
@@ -602,10 +572,7 @@
               "height": 562,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f172a",
               "fixedRatio": false
             },
@@ -618,10 +585,7 @@
               "height": 4,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -693,13 +657,13 @@
           "id": "action_hs-sc-s3b_0",
           "type": "speech",
           "text": "Recovery Planning & Your Security Edge. Recovery Planning",
-          "audioUrl": "/audio/lessons/oc-hs-security/3-2.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-security/5-0.mp3"
         },
         {
           "id": "action_hs-sc-s3b_1",
           "type": "speech",
           "text": "Security is Your Edge. What if something goes wrong?. . Create a crypto will:. • Secure location of seed phrases and hardware wallets. • List of exchanges, wallets, and approx holdings. • Instructions for next-of-kin (lawyer or trusted person). . If you're compromised:. 1. Move remaining funds to new wallet immediately. 2. Revoke all token approvals from compromised wallet. 3. Report to exchange if CEX was breached. 4. Document everything for tax/insurance. Most traders lose money to markets. The second-biggest loss category is security failures. . OnlyCrypto's copy trading model reduces risk:. • Trading through the platform — no private key exposure. • Expert traders manage the position. • You maintain control of entry and exit. . Security knowledge is protective alpha. Every attack you understand is one you avoid. The goal is to keep what you earn",
-          "audioUrl": "/audio/lessons/oc-hs-security/3-3.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-security/5-1.mp3"
         }
       ]
     },
@@ -717,13 +681,13 @@
           "id": "action_ohs-interactive_i0",
           "type": "speech",
           "text": "Let's explore this interactively. Use the simulation below to experiment with the concepts we just covered.",
-          "audioUrl": "/audio/lessons/oc-hs-security/7-0.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-security/6-0.mp3"
         },
         {
           "id": "action_ohs-interactive_i1",
           "type": "speech",
           "text": "Try different inputs and see how the outputs change. Hands-on exploration builds intuition faster than reading.",
-          "audioUrl": "/audio/lessons/oc-hs-security/7-1.mp3"
+          "audioUrl": "/audio/lessons/oc-hs-security/6-1.mp3"
         }
       ]
     },
@@ -757,9 +721,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "C"
-            ],
+            "answer": ["C"],
             "analysis": "In address poisoning, scammers send tiny amounts of crypto from a wallet address that looks nearly identical to one you've interacted with before — matching the first 4 and last 4 characters. When you copy an address from your transaction history, you accidentally copy theirs. Always verify the full address, not just the ends.",
             "points": 20,
             "hasAnswer": true
@@ -786,9 +748,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "C"
-            ],
+            "answer": ["C"],
             "analysis": "SIM swap attacks involve an attacker social-engineering your phone carrier into transferring your number to their SIM card. Once they have your number, they receive all SMS codes sent to it — bypassing SMS 2FA entirely. Use authenticator apps (Google Authenticator, Authy) or hardware keys instead.",
             "points": 20,
             "hasAnswer": true
@@ -815,9 +775,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "Reentrancy exploits a contract that sends funds before updating its internal balance. The attacker's malicious contract receives funds, then immediately calls back into the victim contract before the balance is updated — draining it repeatedly. The DAO hack in 2016 used this exact exploit to steal $60M in ETH.",
             "points": 20,
             "hasAnswer": true
@@ -844,9 +802,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "An unrestricted mint function gives the contract owner the ability to create new tokens at will. In a rug pull scenario, devs can mint millions of tokens and dump them on the market, collapsing the price. Legitimate tokens either have no mint function, a fixed supply, or governance-controlled minting.",
             "points": 20,
             "hasAnswer": true
@@ -873,9 +829,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "MEV (Maximal Extractable Value) sandwich attacks work in three steps: the bot sees your pending buy transaction, inserts its own buy before yours (front-run), lets your transaction execute (which moves the price), then immediately sells after yours (back-run). You buy at a higher price, the bot profits from the difference. Setting lower slippage tolerance limits how much they can extract.",
             "points": 20,
             "hasAnswer": true
@@ -902,9 +856,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "SIM swapping lets attackers receive your SMS messages, including 2FA codes. They call your carrier posing as you, request a SIM transfer, then use your number to bypass SMS-based authentication on exchanges.",
             "points": 1
           },
@@ -930,9 +882,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "Hardware wallets sign transactions internally on the device. Even if your computer is fully compromised by malware, the attacker cannot approve transactions without physical access to the hardware wallet and its PIN.",
             "points": 1
           }

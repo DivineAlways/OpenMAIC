@@ -1,0 +1,134 @@
+{
+  "nodes": [
+    {
+      "id": "agent_mcp",
+      "label": "agent-mcp.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/agent-mcp.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "agent_mcp_agentmcp",
+      "label": "AgentMCP",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/agent-mcp.ts",
+      "source_location": "L10"
+    },
+    {
+      "id": "agent_mcp_agentmcp_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/agent-mcp.ts",
+      "source_location": "L13"
+    },
+    {
+      "id": "agent_mcp_agentmcp_listagents",
+      "label": ".listAgents()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/agent-mcp.ts",
+      "source_location": "L17"
+    },
+    {
+      "id": "agent_mcp_agentmcp_getagentinfo",
+      "label": ".getAgentInfo()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/agent-mcp.ts",
+      "source_location": "L25"
+    },
+    {
+      "id": "agent_mcp_agentmcp_createagent",
+      "label": ".createAgent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/agent-mcp.ts",
+      "source_location": "L33"
+    },
+    {
+      "id": "agent_mcp_agentmcp_updateagent",
+      "label": ".updateAgent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/agent-mcp.ts",
+      "source_location": "L84"
+    },
+    {
+      "id": "agent_mcp_agentmcp_deleteagent",
+      "label": ".deleteAgent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/pbl/mcp/agent-mcp.ts",
+      "source_location": "L124"
+    }
+  ],
+  "edges": [
+    {
+      "source": "agent_mcp",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/agent-mcp.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_mcp",
+      "target": "agent_mcp_agentmcp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/agent-mcp.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_mcp_agentmcp",
+      "target": "agent_mcp_agentmcp_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/agent-mcp.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_mcp_agentmcp",
+      "target": "agent_mcp_agentmcp_listagents",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/agent-mcp.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_mcp_agentmcp",
+      "target": "agent_mcp_agentmcp_getagentinfo",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/agent-mcp.ts",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_mcp_agentmcp",
+      "target": "agent_mcp_agentmcp_createagent",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/agent-mcp.ts",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_mcp_agentmcp",
+      "target": "agent_mcp_agentmcp_updateagent",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/agent-mcp.ts",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "agent_mcp_agentmcp",
+      "target": "agent_mcp_agentmcp_deleteagent",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/pbl/mcp/agent-mcp.ts",
+      "source_location": "L124",
+      "weight": 1.0
+    }
+  ]
+}

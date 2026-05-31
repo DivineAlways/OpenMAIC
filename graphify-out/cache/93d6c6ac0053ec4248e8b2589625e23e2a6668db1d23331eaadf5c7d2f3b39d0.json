@@ -1,0 +1,12 @@
+{
+  "nodes": [
+    {
+      "id": "symbol",
+      "label": "symbol.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/configs/symbol.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": []
+}

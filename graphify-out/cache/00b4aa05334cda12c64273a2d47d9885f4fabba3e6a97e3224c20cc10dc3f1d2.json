@@ -1,0 +1,54 @@
+{
+  "nodes": [
+    {
+      "id": "index",
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/i18n/index.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "index_translate",
+      "label": "translate()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/i18n/index.ts",
+      "source_location": "L7"
+    },
+    {
+      "id": "index_getclienttranslation",
+      "label": "getClientTranslation()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/i18n/index.ts",
+      "source_location": "L11"
+    }
+  ],
+  "edges": [
+    {
+      "source": "index",
+      "target": "config",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/i18n/index.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_translate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/i18n/index.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_getclienttranslation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/i18n/index.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    }
+  ]
+}

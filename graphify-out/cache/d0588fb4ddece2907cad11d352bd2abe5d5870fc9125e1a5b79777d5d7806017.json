@@ -1,0 +1,88 @@
+{
+  "nodes": [
+    {
+      "id": "chat_storage",
+      "label": "chat-storage.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/chat-storage.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "chat_storage_savechatsessions",
+      "label": "saveChatSessions()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/chat-storage.ts",
+      "source_location": "L21"
+    },
+    {
+      "id": "chat_storage_loadchatsessions",
+      "label": "loadChatSessions()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/chat-storage.ts",
+      "source_location": "L57"
+    },
+    {
+      "id": "chat_storage_deletechatsessions",
+      "label": "deleteChatSessions()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/utils/chat-storage.ts",
+      "source_location": "L79"
+    }
+  ],
+  "edges": [
+    {
+      "source": "chat_storage",
+      "target": "chat",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/chat-storage.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "chat_storage",
+      "target": "ai",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/chat-storage.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "chat_storage",
+      "target": "database",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/chat-storage.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "chat_storage",
+      "target": "chat_storage_savechatsessions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/chat-storage.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "chat_storage",
+      "target": "chat_storage_loadchatsessions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/chat-storage.ts",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "chat_storage",
+      "target": "chat_storage_deletechatsessions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/utils/chat-storage.ts",
+      "source_location": "L79",
+      "weight": 1.0
+    }
+  ]
+}

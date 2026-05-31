@@ -1,0 +1,65 @@
+{
+  "nodes": [
+    {
+      "id": "classroom_interaction_spec",
+      "label": "classroom-interaction.spec.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/e2e/tests/classroom-interaction.spec.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "classroom_interaction_spec_seeddatabase",
+      "label": "seedDatabase()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/e2e/tests/classroom-interaction.spec.ts",
+      "source_location": "L11"
+    }
+  ],
+  "edges": [
+    {
+      "source": "classroom_interaction_spec",
+      "target": "base",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/tests/classroom-interaction.spec.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_interaction_spec",
+      "target": "classroom_page",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/tests/classroom-interaction.spec.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_interaction_spec",
+      "target": "settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/tests/classroom-interaction.spec.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_interaction_spec",
+      "target": "scene_content",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/tests/classroom-interaction.spec.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_interaction_spec",
+      "target": "classroom_interaction_spec_seeddatabase",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/e2e/tests/classroom-interaction.spec.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    }
+  ]
+}

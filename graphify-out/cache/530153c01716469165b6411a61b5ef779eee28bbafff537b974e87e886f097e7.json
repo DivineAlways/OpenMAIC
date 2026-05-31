@@ -1,0 +1,275 @@
+{
+  "nodes": [
+    {
+      "id": "gen_utils",
+      "label": "gen-utils.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "gen_utils_getsmartparsenumber",
+      "label": "getSmartParseNumber()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L19"
+    },
+    {
+      "id": "gen_utils_getuuid",
+      "label": "getUuid()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L50"
+    },
+    {
+      "id": "gen_utils_encodexmlentities",
+      "label": "encodeXmlEntities()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L63"
+    },
+    {
+      "id": "gen_utils_inch2emu",
+      "label": "inch2Emu()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L74"
+    },
+    {
+      "id": "gen_utils_valtopts",
+      "label": "valToPts()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L87"
+    },
+    {
+      "id": "gen_utils_convertrotationdegrees",
+      "label": "convertRotationDegrees()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L97"
+    },
+    {
+      "id": "gen_utils_componenttohex",
+      "label": "componentToHex()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L107"
+    },
+    {
+      "id": "gen_utils_rgbtohex",
+      "label": "rgbToHex()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L119"
+    },
+    {
+      "id": "gen_utils_createcolorelement",
+      "label": "createColorElement()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L136"
+    },
+    {
+      "id": "gen_utils_createglowelement",
+      "label": "createGlowElement()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L169"
+    },
+    {
+      "id": "gen_utils_genxmlcolorselection",
+      "label": "genXmlColorSelection()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L188"
+    },
+    {
+      "id": "gen_utils_getnewrelid",
+      "label": "getNewRelId()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L221"
+    },
+    {
+      "id": "gen_utils_correctshadowoptions",
+      "label": "correctShadowOptions()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L229"
+    }
+  ],
+  "edges": [
+    {
+      "source": "gen_utils",
+      "target": "core_enums",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_utils",
+      "target": "core_interfaces",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_utils",
+      "target": "gen_utils_getsmartparsenumber",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_utils",
+      "target": "gen_utils_getuuid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_utils",
+      "target": "gen_utils_encodexmlentities",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_utils",
+      "target": "gen_utils_inch2emu",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L74",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_utils",
+      "target": "gen_utils_valtopts",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_utils",
+      "target": "gen_utils_convertrotationdegrees",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L97",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_utils",
+      "target": "gen_utils_componenttohex",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L107",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_utils",
+      "target": "gen_utils_rgbtohex",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L119",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_utils",
+      "target": "gen_utils_createcolorelement",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L136",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_utils",
+      "target": "gen_utils_createglowelement",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L169",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_utils",
+      "target": "gen_utils_genxmlcolorselection",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L188",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_utils",
+      "target": "gen_utils_getnewrelid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L221",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_utils",
+      "target": "gen_utils_correctshadowoptions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L229",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_utils_getsmartparsenumber",
+      "target": "gen_utils_inch2emu",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_utils_rgbtohex",
+      "target": "gen_utils_componenttohex",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L120",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_utils_createglowelement",
+      "target": "gen_utils_createcolorelement",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L177",
+      "weight": 1.0
+    },
+    {
+      "source": "gen_utils_genxmlcolorselection",
+      "target": "gen_utils_createcolorelement",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/pptxgenjs/src/gen-utils.ts",
+      "source_location": "L205",
+      "weight": 1.0
+    }
+  ]
+}

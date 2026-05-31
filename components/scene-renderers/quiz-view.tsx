@@ -748,7 +748,14 @@ function ScoreBanner({
 
 // ─── Main Component ─────────────────────────────────────────────────────────
 
-export function QuizView({ questions, sceneId, courseId, courseTitle, onComplete, onNextLesson }: QuizViewProps) {
+export function QuizView({
+  questions,
+  sceneId,
+  courseId,
+  courseTitle,
+  onComplete,
+  onNextLesson,
+}: QuizViewProps) {
   const { t, locale } = useI18n();
   const [phase, setPhase] = useState<Phase>('not_started');
   const [answers, setAnswers] = useState<Record<string, string | string[]>>({});
@@ -757,7 +764,6 @@ export function QuizView({ questions, sceneId, courseId, courseTitle, onComplete
   const [results, setResults] = useState<QuestionResult[]>([]);
   const [retryUnlockMs, setRetryUnlockMs] = useState(0);
   const [retryCountdown, setRetryCountdown] = useState('');
-
 
   // Draft cache for quiz answers, keyed by sceneId to isolate across classrooms
   const {
@@ -929,9 +935,13 @@ export function QuizView({ questions, sceneId, courseId, courseTitle, onComplete
           <CheckCircle2 className="w-10 h-10 text-emerald-400" />
         </div>
         <div>
-          <p className="text-xs font-bold uppercase tracking-widest text-emerald-400 mb-2">Already Completed</p>
+          <p className="text-xs font-bold uppercase tracking-widest text-emerald-400 mb-2">
+            Already Completed
+          </p>
           <p className="text-2xl font-black text-white mb-1">You passed this quiz</p>
-          <p className="text-gray-400 text-sm">Score: {priorResult.score}/{priorResult.total} ({pct}%) — {priorResult.completedDate}</p>
+          <p className="text-gray-400 text-sm">
+            Score: {priorResult.score}/{priorResult.total} ({pct}%) — {priorResult.completedDate}
+          </p>
         </div>
         <div className="flex flex-col gap-3 w-full max-w-xs">
           <button
@@ -950,7 +960,9 @@ export function QuizView({ questions, sceneId, courseId, courseTitle, onComplete
             </button>
           )}
           <button
-            onClick={() => { setPriorResult(null); }}
+            onClick={() => {
+              setPriorResult(null);
+            }}
             className="text-xs text-gray-600 hover:text-gray-400 transition-colors"
           >
             Retake quiz
@@ -984,22 +996,22 @@ export function QuizView({ questions, sceneId, courseId, courseTitle, onComplete
   return (
     <div className="w-full h-full bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-900 overflow-hidden flex flex-col">
       <AnimatePresence mode="wait">
-      {phase === 'not_started' && (
-        <motion.div
-          key="cover"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0, x: -20 }}
-          className="flex-1"
-        >
-          <QuizCover
-            questionCount={questions.length}
-            totalPoints={totalPoints}
-            onStart={() => setPhase('answering')}
-            onSkip={onNextLesson}
-          />
-        </motion.div>
-      )}
+        {phase === 'not_started' && (
+          <motion.div
+            key="cover"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0, x: -20 }}
+            className="flex-1"
+          >
+            <QuizCover
+              questionCount={questions.length}
+              totalPoints={totalPoints}
+              onStart={() => setPhase('answering')}
+              onSkip={onNextLesson}
+            />
+          </motion.div>
+        )}
 
         {phase === 'answering' && (
           <motion.div
@@ -1117,196 +1129,209 @@ export function QuizView({ questions, sceneId, courseId, courseTitle, onComplete
           </motion.div>
         )}
 
-        {phase === 'reviewing' && (() => {
-          const pct = totalPoints > 0 ? Math.round((earnedScore / totalPoints) * 100) : 0;
-          const passed = pct >= 80;
-          const incorrectQuestions = results.filter((r) => r.status === 'incorrect');
+        {phase === 'reviewing' &&
+          (() => {
+            const pct = totalPoints > 0 ? Math.round((earnedScore / totalPoints) * 100) : 0;
+            const passed = pct >= 80;
+            const incorrectQuestions = results.filter((r) => r.status === 'incorrect');
 
-          return (
-          <motion.div
-            key="reviewing"
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            className="flex-1 flex flex-col min-h-0"
-          >
-            {/* Header bar */}
-            <div className="flex items-center justify-between px-6 py-3 border-b border-gray-100 dark:border-gray-700 bg-white/80 dark:bg-gray-900/80 backdrop-blur shrink-0">
-              <div className="flex items-center gap-2">
-                {passed
-                  ? <CheckCircle2 className="w-4 h-4 text-emerald-500" />
-                  : <XCircle className="w-4 h-4 text-red-400" />
-                }
-                <span className="text-sm font-semibold text-gray-700 dark:text-gray-200">
-                  {t('quiz.quizReport')}
-                </span>
-              </div>
-              {passed && (
-                <button
-                  onClick={handleRetry}
-                  className="flex items-center gap-1.5 text-xs text-gray-500 dark:text-gray-400 hover:text-violet-600 dark:hover:text-violet-400 transition-colors"
-                >
-                  <RotateCcw className="w-3.5 h-3.5" />
-                  {t('quiz.retry')}
-                </button>
-              )}
-            </div>
-
-            {/* Results */}
-            <div className="flex-1 overflow-y-auto px-6 py-4 space-y-4">
-              <ScoreBanner score={earnedScore} total={totalPoints} results={results} />
-
-              {/* Fail: study direction + cooldown */}
-              {!passed && (
-                <motion.div
-                  initial={{ opacity: 0, y: 8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="rounded-2xl border border-red-200 dark:border-red-800 bg-red-50 dark:bg-red-900/20 p-5 space-y-3"
-                >
-                  <div className="flex items-start gap-3">
-                    <BookOpenText className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
-                    <div>
-                      <p className="text-sm font-bold text-red-700 dark:text-red-400">
-                        You need 80% to pass. Go back and review the lesson before retrying.
-                      </p>
-                      {incorrectQuestions.length > 0 && (
-                        <p className="text-xs text-red-600/80 dark:text-red-400/70 mt-1">
-                          Focus on the {incorrectQuestions.length} question{incorrectQuestions.length > 1 ? 's' : ''} marked incorrect below. Re-read the slides that cover those topics, then return to retake.
-                        </p>
-                      )}
-                      {courseId && (() => {
-                        const failCount = getQuizFailCount(courseId, sceneId);
-                        const nextCooldown = failCount >= 3 ? '12h' : failCount === 2 ? '12h' : failCount === 1 ? '6h' : '1h';
-                        return (
-                          <p className="text-xs text-red-500/70 dark:text-red-400/60 mt-1.5">
-                            Attempt {failCount} — next failure locks you out for {nextCooldown}.
-                          </p>
-                        );
-                      })()}
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-2 pt-1">
-                    <RotateCcw className="w-4 h-4 text-red-400 shrink-0" />
-                    {retryUnlockMs > 0 ? (
-                      <p className="text-xs text-red-600 dark:text-red-400 font-medium">
-                        Retry unlocks in <span className="font-bold">{retryCountdown}</span> — use that time to study.
-                      </p>
+            return (
+              <motion.div
+                key="reviewing"
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                className="flex-1 flex flex-col min-h-0"
+              >
+                {/* Header bar */}
+                <div className="flex items-center justify-between px-6 py-3 border-b border-gray-100 dark:border-gray-700 bg-white/80 dark:bg-gray-900/80 backdrop-blur shrink-0">
+                  <div className="flex items-center gap-2">
+                    {passed ? (
+                      <CheckCircle2 className="w-4 h-4 text-emerald-500" />
                     ) : (
-                      <button
-                        onClick={handleRetry}
-                        className="text-xs font-bold text-red-600 dark:text-red-400 underline underline-offset-2 hover:text-red-800 dark:hover:text-red-300 transition-colors"
-                      >
-                        Retry now
-                      </button>
+                      <XCircle className="w-4 h-4 text-red-400" />
                     )}
+                    <span className="text-sm font-semibold text-gray-700 dark:text-gray-200">
+                      {t('quiz.quizReport')}
+                    </span>
                   </div>
-                </motion.div>
-              )}
+                  {passed && (
+                    <button
+                      onClick={handleRetry}
+                      className="flex items-center gap-1.5 text-xs text-gray-500 dark:text-gray-400 hover:text-violet-600 dark:hover:text-violet-400 transition-colors"
+                    >
+                      <RotateCcw className="w-3.5 h-3.5" />
+                      {t('quiz.retry')}
+                    </button>
+                  )}
+                </div>
 
-              {/* On fail: show only incorrect questions (no correct answers revealed) */}
-              {passed
-                ? questions.map((q, i) => {
-                    const r = resultMap[q.id];
-                    if (q.type === 'single') {
-                      return (
-                        <SingleChoiceQuestion
-                          key={q.id}
-                          question={q}
-                          index={i}
-                          value={answers[q.id] as string | undefined}
-                          onChange={() => {}}
-                          disabled
-                          result={r}
-                        />
-                      );
-                    }
-                    if (q.type === 'multiple') {
-                      return (
-                        <MultipleChoiceQuestion
-                          key={q.id}
-                          question={q}
-                          index={i}
-                          value={answers[q.id] as string[] | undefined}
-                          onChange={() => {}}
-                          disabled
-                          result={r}
-                        />
-                      );
-                    }
-                    return (
-                      <ShortAnswerQuestion
-                        key={q.id}
-                        question={q}
-                        index={i}
-                        value={answers[q.id] as string | undefined}
-                        onChange={() => {}}
-                        disabled
-                        result={r}
-                      />
-                    );
-                  })
-                : questions
-                    .filter((q) => resultMap[q.id]?.status === 'incorrect')
-                    .map((q, i) => {
-                      // Show the question and what the user answered, but NO correct answer highlights
-                      const r = resultMap[q.id];
-                      const failResult: QuestionResult = { ...r, status: 'incorrect' };
-                      if (q.type === 'single') {
+                {/* Results */}
+                <div className="flex-1 overflow-y-auto px-6 py-4 space-y-4">
+                  <ScoreBanner score={earnedScore} total={totalPoints} results={results} />
+
+                  {/* Fail: study direction + cooldown */}
+                  {!passed && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      className="rounded-2xl border border-red-200 dark:border-red-800 bg-red-50 dark:bg-red-900/20 p-5 space-y-3"
+                    >
+                      <div className="flex items-start gap-3">
+                        <BookOpenText className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
+                        <div>
+                          <p className="text-sm font-bold text-red-700 dark:text-red-400">
+                            You need 80% to pass. Go back and review the lesson before retrying.
+                          </p>
+                          {incorrectQuestions.length > 0 && (
+                            <p className="text-xs text-red-600/80 dark:text-red-400/70 mt-1">
+                              Focus on the {incorrectQuestions.length} question
+                              {incorrectQuestions.length > 1 ? 's' : ''} marked incorrect below.
+                              Re-read the slides that cover those topics, then return to retake.
+                            </p>
+                          )}
+                          {courseId &&
+                            (() => {
+                              const failCount = getQuizFailCount(courseId, sceneId);
+                              const nextCooldown =
+                                failCount >= 3
+                                  ? '12h'
+                                  : failCount === 2
+                                    ? '12h'
+                                    : failCount === 1
+                                      ? '6h'
+                                      : '1h';
+                              return (
+                                <p className="text-xs text-red-500/70 dark:text-red-400/60 mt-1.5">
+                                  Attempt {failCount} — next failure locks you out for{' '}
+                                  {nextCooldown}.
+                                </p>
+                              );
+                            })()}
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-2 pt-1">
+                        <RotateCcw className="w-4 h-4 text-red-400 shrink-0" />
+                        {retryUnlockMs > 0 ? (
+                          <p className="text-xs text-red-600 dark:text-red-400 font-medium">
+                            Retry unlocks in <span className="font-bold">{retryCountdown}</span> —
+                            use that time to study.
+                          </p>
+                        ) : (
+                          <button
+                            onClick={handleRetry}
+                            className="text-xs font-bold text-red-600 dark:text-red-400 underline underline-offset-2 hover:text-red-800 dark:hover:text-red-300 transition-colors"
+                          >
+                            Retry now
+                          </button>
+                        )}
+                      </div>
+                    </motion.div>
+                  )}
+
+                  {/* On fail: show only incorrect questions (no correct answers revealed) */}
+                  {passed
+                    ? questions.map((q, i) => {
+                        const r = resultMap[q.id];
+                        if (q.type === 'single') {
+                          return (
+                            <SingleChoiceQuestion
+                              key={q.id}
+                              question={q}
+                              index={i}
+                              value={answers[q.id] as string | undefined}
+                              onChange={() => {}}
+                              disabled
+                              result={r}
+                            />
+                          );
+                        }
+                        if (q.type === 'multiple') {
+                          return (
+                            <MultipleChoiceQuestion
+                              key={q.id}
+                              question={q}
+                              index={i}
+                              value={answers[q.id] as string[] | undefined}
+                              onChange={() => {}}
+                              disabled
+                              result={r}
+                            />
+                          );
+                        }
                         return (
-                          <SingleChoiceQuestion
+                          <ShortAnswerQuestion
                             key={q.id}
                             question={q}
                             index={i}
                             value={answers[q.id] as string | undefined}
                             onChange={() => {}}
                             disabled
-                            result={failResult}
-                            hideCorrect
+                            result={r}
                           />
                         );
-                      }
-                      if (q.type === 'multiple') {
-                        return (
-                          <MultipleChoiceQuestion
-                            key={q.id}
-                            question={q}
-                            index={i}
-                            value={answers[q.id] as string[] | undefined}
-                            onChange={() => {}}
-                            disabled
-                            result={failResult}
-                            hideCorrect
-                          />
-                        );
-                      }
-                      return (
-                        <ShortAnswerQuestion
-                          key={q.id}
-                          question={q}
-                          index={i}
-                          value={answers[q.id] as string | undefined}
-                          onChange={() => {}}
-                          disabled
-                          result={failResult}
-                        />
-                      );
-                    })
-              }
+                      })
+                    : questions
+                        .filter((q) => resultMap[q.id]?.status === 'incorrect')
+                        .map((q, i) => {
+                          // Show the question and what the user answered, but NO correct answer highlights
+                          const r = resultMap[q.id];
+                          const failResult: QuestionResult = { ...r, status: 'incorrect' };
+                          if (q.type === 'single') {
+                            return (
+                              <SingleChoiceQuestion
+                                key={q.id}
+                                question={q}
+                                index={i}
+                                value={answers[q.id] as string | undefined}
+                                onChange={() => {}}
+                                disabled
+                                result={failResult}
+                                hideCorrect
+                              />
+                            );
+                          }
+                          if (q.type === 'multiple') {
+                            return (
+                              <MultipleChoiceQuestion
+                                key={q.id}
+                                question={q}
+                                index={i}
+                                value={answers[q.id] as string[] | undefined}
+                                onChange={() => {}}
+                                disabled
+                                result={failResult}
+                                hideCorrect
+                              />
+                            );
+                          }
+                          return (
+                            <ShortAnswerQuestion
+                              key={q.id}
+                              question={q}
+                              index={i}
+                              value={answers[q.id] as string | undefined}
+                              onChange={() => {}}
+                              disabled
+                              result={failResult}
+                            />
+                          );
+                        })}
 
-              {onNextLesson && passed && (
-                <div className="pt-2 pb-4">
-                  <button
-                    onClick={onNextLesson}
-                    className="w-full flex items-center justify-center gap-2 py-3.5 px-6 bg-violet-500 hover:bg-violet-600 text-white font-bold rounded-2xl transition-colors"
-                  >
-                    Continue to Next Lesson
-                    <ChevronRight className="w-4 h-4" />
-                  </button>
+                  {onNextLesson && passed && (
+                    <div className="pt-2 pb-4">
+                      <button
+                        onClick={onNextLesson}
+                        className="w-full flex items-center justify-center gap-2 py-3.5 px-6 bg-violet-500 hover:bg-violet-600 text-white font-bold rounded-2xl transition-colors"
+                      >
+                        Continue to Next Lesson
+                        <ChevronRight className="w-4 h-4" />
+                      </button>
+                    </div>
+                  )}
                 </div>
-              )}
-            </div>
-          </motion.div>
-          );
-        })()}
+              </motion.div>
+            );
+          })()}
       </AnimatePresence>
     </div>
   );

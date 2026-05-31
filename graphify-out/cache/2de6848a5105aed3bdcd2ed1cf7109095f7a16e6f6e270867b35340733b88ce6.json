@@ -1,0 +1,113 @@
+{
+  "nodes": [
+    {
+      "id": "scene_context",
+      "label": "scene-context.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/contexts/scene-context.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "scene_context_sceneprovider",
+      "label": "SceneProvider()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/contexts/scene-context.tsx",
+      "source_location": "L38"
+    },
+    {
+      "id": "scene_context_usescenedata",
+      "label": "useSceneData()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/contexts/scene-context.tsx",
+      "source_location": "L119"
+    },
+    {
+      "id": "scene_context_usesceneselector",
+      "label": "useSceneSelector()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/contexts/scene-context.tsx",
+      "source_location": "L142"
+    },
+    {
+      "id": "scene_context_shallowequal",
+      "label": "shallowEqual()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/contexts/scene-context.tsx",
+      "source_location": "L186"
+    }
+  ],
+  "edges": [
+    {
+      "source": "scene_context",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/contexts/scene-context.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_context",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/contexts/scene-context.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_context",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/contexts/scene-context.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_context",
+      "target": "immer",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/contexts/scene-context.tsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_context",
+      "target": "scene_context_sceneprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/contexts/scene-context.tsx",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_context",
+      "target": "scene_context_usescenedata",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/contexts/scene-context.tsx",
+      "source_location": "L119",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_context",
+      "target": "scene_context_usesceneselector",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/contexts/scene-context.tsx",
+      "source_location": "L142",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_context",
+      "target": "scene_context_shallowequal",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/contexts/scene-context.tsx",
+      "source_location": "L186",
+      "weight": 1.0
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "nodes": [
+    {
+      "id": "classroom_zip_utils",
+      "label": "classroom-zip-utils.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/classroom-zip-utils.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "classroom_zip_utils_collectaudiofiles",
+      "label": "collectAudioFiles()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/classroom-zip-utils.ts",
+      "source_location": "L20"
+    },
+    {
+      "id": "classroom_zip_utils_collectmediafiles",
+      "label": "collectMediaFiles()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/classroom-zip-utils.ts",
+      "source_location": "L40"
+    },
+    {
+      "id": "classroom_zip_utils_actionstomanifest",
+      "label": "actionsToManifest()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/classroom-zip-utils.ts",
+      "source_location": "L53"
+    },
+    {
+      "id": "classroom_zip_utils_rewriteaudiorefstoids",
+      "label": "rewriteAudioRefsToIds()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/classroom-zip-utils.ts",
+      "source_location": "L74"
+    }
+  ],
+  "edges": [
+    {
+      "source": "classroom_zip_utils",
+      "target": "action",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/classroom-zip-utils.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_zip_utils",
+      "target": "classroom_zip_types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/classroom-zip-utils.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_zip_utils",
+      "target": "database",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/classroom-zip-utils.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_zip_utils",
+      "target": "database",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/classroom-zip-utils.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_zip_utils",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/classroom-zip-utils.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_zip_utils",
+      "target": "classroom_zip_utils_collectaudiofiles",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/classroom-zip-utils.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_zip_utils",
+      "target": "classroom_zip_utils_collectmediafiles",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/classroom-zip-utils.ts",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_zip_utils",
+      "target": "classroom_zip_utils_actionstomanifest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/classroom-zip-utils.ts",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "classroom_zip_utils",
+      "target": "classroom_zip_utils_rewriteaudiorefstoids",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/classroom-zip-utils.ts",
+      "source_location": "L74",
+      "weight": 1.0
+    }
+  ]
+}

@@ -1,0 +1,450 @@
+{
+  "nodes": [
+    {
+      "id": "use_export_pptx",
+      "label": "use-export-pptx.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "use_export_pptx_formatcolor",
+      "label": "formatColor()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L35"
+    },
+    {
+      "id": "use_export_pptx_formathtml",
+      "label": "formatHTML()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L49"
+    },
+    {
+      "id": "use_export_pptx_formatpoints",
+      "label": "formatPoints()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L208"
+    },
+    {
+      "id": "use_export_pptx_getshadowoption",
+      "label": "getShadowOption()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L252"
+    },
+    {
+      "id": "use_export_pptx_getoutlineoption",
+      "label": "getOutlineOption()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L310"
+    },
+    {
+      "id": "use_export_pptx_getlinkoption",
+      "label": "getLinkOption()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L322"
+    },
+    {
+      "id": "use_export_pptx_isbase64image",
+      "label": "isBase64Image()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L334"
+    },
+    {
+      "id": "use_export_pptx_issvgimage",
+      "label": "isSVGImage()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L338"
+    },
+    {
+      "id": "use_export_pptx_buildspeakernotes",
+      "label": "buildSpeakerNotes()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L350"
+    },
+    {
+      "id": "use_export_pptx_buildpptxblob",
+      "label": "buildPptxBlob()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L362"
+    },
+    {
+      "id": "use_export_pptx_useexportpptx",
+      "label": "useExportPPTX()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L1069"
+    }
+  ],
+  "edges": [
+    {
+      "source": "use_export_pptx",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "pptxgenjs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "tinycolor2",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "file_saver",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "sonner",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "canvas",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "media_generation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "action",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "element",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "html_parser",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "svg_path_parser",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "svg2base64",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "latex_to_omml",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "use_export_pptx_formatcolor",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "use_export_pptx_formathtml",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "use_export_pptx_formatpoints",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L208",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "use_export_pptx_getshadowoption",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L252",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "use_export_pptx_getoutlineoption",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L310",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "use_export_pptx_getlinkoption",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L322",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "use_export_pptx_isbase64image",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L334",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "use_export_pptx_issvgimage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L338",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "use_export_pptx_buildspeakernotes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L350",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "use_export_pptx_buildpptxblob",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L362",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx",
+      "target": "use_export_pptx_useexportpptx",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L1069",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx_getshadowoption",
+      "target": "use_export_pptx_formatcolor",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L253",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx_getoutlineoption",
+      "target": "use_export_pptx_formatcolor",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L311",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx_buildpptxblob",
+      "target": "use_export_pptx_buildspeakernotes",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L384",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx_buildpptxblob",
+      "target": "use_export_pptx_issvgimage",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L392",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx_buildpptxblob",
+      "target": "use_export_pptx_isbase64image",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L400",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx_buildpptxblob",
+      "target": "use_export_pptx_formatcolor",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L406",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx_buildpptxblob",
+      "target": "use_export_pptx_formathtml",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L430",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx_buildpptxblob",
+      "target": "use_export_pptx_getshadowoption",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L458",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx_buildpptxblob",
+      "target": "use_export_pptx_getoutlineoption",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L459",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx_buildpptxblob",
+      "target": "use_export_pptx_getlinkoption",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L512",
+      "weight": 1.0
+    },
+    {
+      "source": "use_export_pptx_buildpptxblob",
+      "target": "use_export_pptx_formatpoints",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/use-export-pptx.ts",
+      "source_location": "L584",
+      "weight": 1.0
+    }
+  ]
+}

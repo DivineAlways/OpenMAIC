@@ -1,0 +1,22 @@
+{
+  "nodes": [
+    {
+      "id": "keyboard",
+      "label": "keyboard.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/store/keyboard.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "keyboard",
+      "target": "zustand",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/store/keyboard.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ]
+}

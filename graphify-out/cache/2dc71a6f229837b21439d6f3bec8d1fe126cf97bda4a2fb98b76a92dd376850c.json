@@ -1,0 +1,174 @@
+{
+  "nodes": [
+    {
+      "id": "web_preview",
+      "label": "web-preview.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/web-preview.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "web_preview_usewebpreview",
+      "label": "useWebPreview()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/web-preview.tsx",
+      "source_location": "L21"
+    },
+    {
+      "id": "web_preview_webpreview",
+      "label": "WebPreview()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/web-preview.tsx",
+      "source_location": "L34"
+    },
+    {
+      "id": "web_preview_webpreviewnavigation",
+      "label": "WebPreviewNavigation()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/web-preview.tsx",
+      "source_location": "L70"
+    },
+    {
+      "id": "web_preview_webpreviewnavigationbutton",
+      "label": "WebPreviewNavigationButton()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/web-preview.tsx",
+      "source_location": "L84"
+    },
+    {
+      "id": "web_preview_webpreviewurl",
+      "label": "WebPreviewUrl()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/web-preview.tsx",
+      "source_location": "L114"
+    }
+  ],
+  "edges": [
+    {
+      "source": "web_preview",
+      "target": "button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/web-preview.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "web_preview",
+      "target": "collapsible",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/web-preview.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "web_preview",
+      "target": "input",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/web-preview.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "web_preview",
+      "target": "tooltip",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/web-preview.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "web_preview",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/web-preview.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "web_preview",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/web-preview.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "web_preview",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/web-preview.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "web_preview",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/web-preview.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "web_preview",
+      "target": "web_preview_usewebpreview",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/web-preview.tsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "web_preview",
+      "target": "web_preview_webpreview",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/web-preview.tsx",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "web_preview",
+      "target": "web_preview_webpreviewnavigation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/web-preview.tsx",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
+      "source": "web_preview",
+      "target": "web_preview_webpreviewnavigationbutton",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/web-preview.tsx",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "web_preview",
+      "target": "web_preview_webpreviewurl",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/web-preview.tsx",
+      "source_location": "L114",
+      "weight": 1.0
+    },
+    {
+      "source": "web_preview_webpreviewurl",
+      "target": "web_preview_usewebpreview",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/web-preview.tsx",
+      "source_location": "L115",
+      "weight": 1.0
+    }
+  ]
+}

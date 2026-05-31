@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "seedream_adapter",
+      "label": "seedream-adapter.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/seedream-adapter.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "seedream_adapter_resolveseedreamsize",
+      "label": "resolveSeedreamSize()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/seedream-adapter.ts",
+      "source_location": "L30"
+    },
+    {
+      "id": "seedream_adapter_testseedreamconnectivity",
+      "label": "testSeedreamConnectivity()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/seedream-adapter.ts",
+      "source_location": "L49"
+    },
+    {
+      "id": "seedream_adapter_generatewithseedream",
+      "label": "generateWithSeedream()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/media/adapters/seedream-adapter.ts",
+      "source_location": "L81"
+    }
+  ],
+  "edges": [
+    {
+      "source": "seedream_adapter",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/seedream-adapter.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "seedream_adapter",
+      "target": "seedream_adapter_resolveseedreamsize",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/seedream-adapter.ts",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "seedream_adapter",
+      "target": "seedream_adapter_testseedreamconnectivity",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/seedream-adapter.ts",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "seedream_adapter",
+      "target": "seedream_adapter_generatewithseedream",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/seedream-adapter.ts",
+      "source_location": "L81",
+      "weight": 1.0
+    },
+    {
+      "source": "seedream_adapter_generatewithseedream",
+      "target": "seedream_adapter_resolveseedreamsize",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/media/adapters/seedream-adapter.ts",
+      "source_location": "L96",
+      "weight": 1.0
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "nodes": [
+    {
+      "id": "setup_env",
+      "label": "setup-env.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/tests/setup-env.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "setup_env",
+      "target": "fs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/tests/setup-env.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "setup_env",
+      "target": "path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/tests/setup-env.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    }
+  ]
+}

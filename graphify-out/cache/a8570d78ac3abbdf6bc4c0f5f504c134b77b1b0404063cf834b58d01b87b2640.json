@@ -1,0 +1,92 @@
+{
+  "nodes": [
+    {
+      "id": "chain_of_thought",
+      "label": "chain-of-thought.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/chain-of-thought.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "chain_of_thought_usechainofthought",
+      "label": "useChainOfThought()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ai-elements/chain-of-thought.tsx",
+      "source_location": "L18"
+    }
+  ],
+  "edges": [
+    {
+      "source": "chain_of_thought",
+      "target": "react_use_controllable_state",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/chain-of-thought.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "chain_of_thought",
+      "target": "badge",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/chain-of-thought.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "chain_of_thought",
+      "target": "collapsible",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/chain-of-thought.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "chain_of_thought",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/chain-of-thought.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "chain_of_thought",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/chain-of-thought.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "chain_of_thought",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/chain-of-thought.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "chain_of_thought",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/chain-of-thought.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "chain_of_thought",
+      "target": "chain_of_thought_usechainofthought",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ai-elements/chain-of-thought.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    }
+  ]
+}

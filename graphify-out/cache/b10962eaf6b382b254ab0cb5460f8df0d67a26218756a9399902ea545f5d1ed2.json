@@ -1,0 +1,139 @@
+{
+  "nodes": [
+    {
+      "id": "screencanvas",
+      "label": "ScreenCanvas.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/ScreenCanvas.tsx",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "screencanvas",
+      "target": "screenelement",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/ScreenCanvas.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "screencanvas",
+      "target": "highlightoverlay",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/ScreenCanvas.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "screencanvas",
+      "target": "spotlightoverlay",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/ScreenCanvas.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "screencanvas",
+      "target": "laseroverlay",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/ScreenCanvas.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "screencanvas",
+      "target": "use_slide_background_style",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/ScreenCanvas.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "screencanvas",
+      "target": "store",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/ScreenCanvas.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "screencanvas",
+      "target": "scene_context",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/ScreenCanvas.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "screencanvas",
+      "target": "geometry",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/ScreenCanvas.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "screencanvas",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/ScreenCanvas.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "screencanvas",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/ScreenCanvas.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "screencanvas",
+      "target": "action",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/ScreenCanvas.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "screencanvas",
+      "target": "useviewportsize",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/ScreenCanvas.tsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "screencanvas",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/ScreenCanvas.tsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "screencanvas",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/slide-renderer/Editor/ScreenCanvas.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    }
+  ]
+}

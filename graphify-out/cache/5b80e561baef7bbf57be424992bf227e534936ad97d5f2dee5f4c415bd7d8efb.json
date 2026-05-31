@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "id": "avatar_display",
+      "label": "avatar-display.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ui/avatar-display.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "avatar_display_avatardisplay",
+      "label": "AvatarDisplay()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/ui/avatar-display.tsx",
+      "source_location": "L11"
+    }
+  ],
+  "edges": [
+    {
+      "source": "avatar_display",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/avatar-display.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "avatar_display",
+      "target": "avatar_display_avatardisplay",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/ui/avatar-display.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    }
+  ]
+}

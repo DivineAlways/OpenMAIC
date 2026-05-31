@@ -84,7 +84,9 @@ export function useAudioRecorder(options: UseAudioRecorderOptions = {}) {
         onTranscription?.(result.text);
       } catch (error) {
         log.error('Transcription error:', error);
-        onError?.(error instanceof Error ? error.message : 'Transcription failed — please try again');
+        onError?.(
+          error instanceof Error ? error.message : 'Transcription failed — please try again',
+        );
       } finally {
         setIsProcessing(false);
         setRecordingTime(0);
@@ -108,7 +110,9 @@ export function useAudioRecorder(options: UseAudioRecorderOptions = {}) {
         if (asrProviderId === 'browser-native') {
           // Check if Speech Recognition is supported
           if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
-            onError?.('Speech recognition is not supported in this browser. Please use Chrome or Edge.');
+            onError?.(
+              'Speech recognition is not supported in this browser. Please use Chrome or Edge.',
+            );
             busyRef.current = false;
             return;
           }
@@ -117,9 +121,13 @@ export function useAudioRecorder(options: UseAudioRecorderOptions = {}) {
           // Without this, webkitSpeechRecognition silently fails with no error in some
           // Chrome versions when the permission state is "prompt" (not yet granted).
           try {
-            const permResult = await navigator.permissions.query({ name: 'microphone' as PermissionName });
+            const permResult = await navigator.permissions.query({
+              name: 'microphone' as PermissionName,
+            });
             if (permResult.state === 'denied') {
-              onError?.('Microphone access is blocked. In Chrome: click the lock icon in the address bar → allow Microphone, then reload.');
+              onError?.(
+                'Microphone access is blocked. In Chrome: click the lock icon in the address bar → allow Microphone, then reload.',
+              );
               busyRef.current = false;
               return;
             }
@@ -129,7 +137,9 @@ export function useAudioRecorder(options: UseAudioRecorderOptions = {}) {
                 const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
                 stream.getTracks().forEach((t) => t.stop());
               } catch {
-                onError?.('Microphone permission denied. Click the mic icon in your browser address bar to allow access.');
+                onError?.(
+                  'Microphone permission denied. Click the mic icon in your browser address bar to allow access.',
+                );
                 busyRef.current = false;
                 return;
               }
@@ -186,7 +196,8 @@ export function useAudioRecorder(options: UseAudioRecorderOptions = {}) {
                 errorMessage = 'Microphone not accessible';
                 break;
               case 'not-allowed':
-                errorMessage = 'Microphone blocked — click the lock icon in your browser address bar, allow Microphone, then reload.';
+                errorMessage =
+                  'Microphone blocked — click the lock icon in your browser address bar, allow Microphone, then reload.';
                 break;
               case 'network':
                 errorMessage = 'Network error — check your internet connection and try again.';

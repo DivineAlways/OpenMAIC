@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    {
+      "id": "mrow",
+      "label": "mrow.js",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/mrow.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "mrow_mrow",
+      "label": "mrow()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/mrow.js",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "mrow",
+      "target": "mrow_mrow",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/packages/mathml2omml/src/mathml/mrow.js",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ]
+}

@@ -48,7 +48,8 @@ const STEPS: TourStep[] = [
     title: 'Auto-Play',
     target: 'autoplay',
     side: 'top',
-    description: 'When on, the lesson advances to the next scene automatically when narration ends.',
+    description:
+      'When on, the lesson advances to the next scene automatically when narration ends.',
   },
   {
     title: 'Whiteboard / Notes',
@@ -98,7 +99,8 @@ function tooltipPosition(rect: Rect, side: TourStep['side']) {
   const vw = window.innerWidth;
   const vh = window.innerHeight;
 
-  let top = 0, left = 0;
+  let top = 0,
+    left = 0;
 
   switch (side) {
     case 'bottom':
@@ -180,7 +182,9 @@ export function OnboardingTour() {
 
   const dismiss = useCallback(() => {
     setActive(false);
-    try { localStorage.setItem(TOUR_KEY, '1'); } catch {}
+    try {
+      localStorage.setItem(TOUR_KEY, '1');
+    } catch {}
   }, []);
 
   const next = useCallback(() => {
@@ -225,11 +229,7 @@ export function OnboardingTour() {
           </motion.div>
 
           {/* Click-capture layer (only outside spotlight) */}
-          <div
-            className="fixed inset-0 z-[301]"
-            onClick={next}
-            style={{ pointerEvents: 'auto' }}
-          />
+          <div className="fixed inset-0 z-[301]" onClick={next} style={{ pointerEvents: 'auto' }} />
 
           {/* Tooltip */}
           <AnimatePresence mode="wait">
@@ -283,9 +283,11 @@ export function OnboardingTour() {
                       className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-violet-500 hover:bg-violet-400 text-white text-xs font-semibold transition-colors"
                     >
                       {step < STEPS.length - 1 ? (
-                        <>Next <ChevronRight className="w-3 h-3" /></>
+                        <>
+                          Next <ChevronRight className="w-3 h-3" />
+                        </>
                       ) : (
-                        "Got it!"
+                        'Got it!'
                       )}
                     </button>
                   </div>

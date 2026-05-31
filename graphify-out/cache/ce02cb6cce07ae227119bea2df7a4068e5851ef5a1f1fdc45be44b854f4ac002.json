@@ -1,0 +1,292 @@
+{
+  "nodes": [
+    {
+      "id": "audio_settings",
+      "label": "audio-settings.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "audio_settings_getttsprovidername",
+      "label": "getTTSProviderName()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L35"
+    },
+    {
+      "id": "audio_settings_getasrprovidername",
+      "label": "getASRProviderName()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L50"
+    },
+    {
+      "id": "audio_settings_getlanguagename",
+      "label": "getLanguageName()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L59"
+    },
+    {
+      "id": "audio_settings_handlettsproviderchange",
+      "label": "handleTTSProviderChange()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L101"
+    },
+    {
+      "id": "audio_settings_handlettsproviderconfigchange",
+      "label": "handleTTSProviderConfigChange()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L106"
+    },
+    {
+      "id": "audio_settings_handleasrproviderchange",
+      "label": "handleASRProviderChange()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L114"
+    },
+    {
+      "id": "audio_settings_handleasrlanguagechange",
+      "label": "handleASRLanguageChange()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L119"
+    },
+    {
+      "id": "audio_settings_handleasrproviderconfigchange",
+      "label": "handleASRProviderConfigChange()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L124"
+    },
+    {
+      "id": "audio_settings_handletoggleasrrecording",
+      "label": "handleToggleASRRecording()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L262"
+    }
+  ],
+  "edges": [
+    {
+      "source": "audio_settings",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "audio_settings",
+      "target": "label",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "audio_settings",
+      "target": "input",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "audio_settings",
+      "target": "select",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "audio_settings",
+      "target": "switch",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "audio_settings",
+      "target": "button",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "audio_settings",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "audio_settings",
+      "target": "settings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "audio_settings",
+      "target": "constants",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "audio_settings",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "audio_settings",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "audio_settings",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "audio_settings",
+      "target": "utils",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "audio_settings",
+      "target": "azure_json",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "audio_settings",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "audio_settings",
+      "target": "audio_settings_getttsprovidername",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "audio_settings",
+      "target": "audio_settings_getasrprovidername",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "audio_settings",
+      "target": "audio_settings_getlanguagename",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "audio_settings",
+      "target": "audio_settings_handlettsproviderchange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L101",
+      "weight": 1.0
+    },
+    {
+      "source": "audio_settings",
+      "target": "audio_settings_handlettsproviderconfigchange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L106",
+      "weight": 1.0
+    },
+    {
+      "source": "audio_settings",
+      "target": "audio_settings_handleasrproviderchange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L114",
+      "weight": 1.0
+    },
+    {
+      "source": "audio_settings",
+      "target": "audio_settings_handleasrlanguagechange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L119",
+      "weight": 1.0
+    },
+    {
+      "source": "audio_settings",
+      "target": "audio_settings_handleasrproviderconfigchange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L124",
+      "weight": 1.0
+    },
+    {
+      "source": "audio_settings",
+      "target": "audio_settings_handletoggleasrrecording",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/settings/audio-settings.tsx",
+      "source_location": "L262",
+      "weight": 1.0
+    }
+  ]
+}

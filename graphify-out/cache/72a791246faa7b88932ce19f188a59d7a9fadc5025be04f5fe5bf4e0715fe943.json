@@ -1,0 +1,31 @@
+{
+  "nodes": [
+    {
+      "id": "thinking_context",
+      "label": "thinking-context.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/ai/thinking-context.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "thinking_context",
+      "target": "node_async_hooks",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/ai/thinking-context.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "thinking_context",
+      "target": "provider",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/ai/thinking-context.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    }
+  ]
+}

@@ -9,11 +9,7 @@
     "updatedAt": "2026-04-24T05:50:23.674090Z",
     "languageDirective": "en-US",
     "style": "academic",
-    "agentIds": [
-      "default-1",
-      "default-2",
-      "default-3"
-    ],
+    "agentIds": ["default-1", "default-2", "default-3"],
     "generatedAgentConfigs": []
   },
   "scenes": [
@@ -42,10 +38,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -58,10 +51,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -98,10 +88,7 @@
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0a1628",
               "fixedRatio": false,
               "outline": {
@@ -119,10 +106,7 @@
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b20",
               "fixedRatio": false
             },
@@ -191,10 +175,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b",
               "fixedRatio": false
             },
@@ -207,10 +188,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -247,10 +225,7 @@
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0a1628",
               "fixedRatio": false,
               "outline": {
@@ -268,10 +243,7 @@
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#ef444420",
               "fixedRatio": false
             },
@@ -331,11 +303,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#22d3ee",
-              "#8b5cf6",
-              "#06b6d4"
-            ],
+            "themeColors": ["#22d3ee", "#8b5cf6", "#06b6d4"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -349,10 +317,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#22d3ee",
               "fixedRatio": false
             },
@@ -365,10 +330,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -405,10 +367,7 @@
               "height": 68,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#1e293b",
               "fixedRatio": false,
               "outline": {
@@ -438,10 +397,7 @@
               "height": 176,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#020817",
               "fixedRatio": false,
               "outline": {
@@ -564,11 +520,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#3b82f6",
-              "#8b5cf6",
-              "#06b6d4"
-            ],
+            "themeColors": ["#3b82f6", "#8b5cf6", "#06b6d4"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -582,10 +534,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#3b82f6",
               "fixedRatio": false
             },
@@ -598,10 +547,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -638,10 +584,7 @@
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0d0800",
               "fixedRatio": false,
               "outline": {
@@ -671,10 +614,7 @@
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#1e293b",
               "fixedRatio": false
             },
@@ -699,10 +639,7 @@
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#00100d",
               "fixedRatio": false,
               "outline": {
@@ -799,10 +736,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#ef4444",
               "fixedRatio": false
             },
@@ -815,10 +749,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -855,10 +786,7 @@
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0a1628",
               "fixedRatio": false,
               "outline": {
@@ -876,10 +804,7 @@
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#ef444420",
               "fixedRatio": false
             },
@@ -948,10 +873,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#ef4444",
               "fixedRatio": false
             },
@@ -964,10 +886,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -1004,10 +923,7 @@
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0a1628",
               "fixedRatio": false,
               "outline": {
@@ -1025,10 +941,7 @@
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#f59e0b20",
               "fixedRatio": false
             },
@@ -1088,11 +1001,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#3b82f6",
-              "#8b5cf6",
-              "#06b6d4"
-            ],
+            "themeColors": ["#3b82f6", "#8b5cf6", "#06b6d4"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1106,10 +1015,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#3b82f6",
               "fixedRatio": false
             },
@@ -1122,10 +1028,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -1162,10 +1065,7 @@
               "height": 68,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#1e293b",
               "fixedRatio": false,
               "outline": {
@@ -1195,10 +1095,7 @@
               "height": 438,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1f3d",
               "fixedRatio": false,
               "outline": {
@@ -1216,10 +1113,7 @@
               "height": 438,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#3b82f6",
               "fixedRatio": false
             },
@@ -1244,10 +1138,7 @@
               "height": 438,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1f3d",
               "fixedRatio": false,
               "outline": {
@@ -1265,10 +1156,7 @@
               "height": 438,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#22d3ee",
               "fixedRatio": false
             },
@@ -1293,10 +1181,7 @@
               "height": 438,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1f3d",
               "fixedRatio": false,
               "outline": {
@@ -1314,10 +1199,7 @@
               "height": 438,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#a855f7",
               "fixedRatio": false
             },
@@ -1411,11 +1293,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#a855f7",
-              "#8b5cf6",
-              "#06b6d4"
-            ],
+            "themeColors": ["#a855f7", "#8b5cf6", "#06b6d4"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1429,10 +1307,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#a855f7",
               "fixedRatio": false
             },
@@ -1445,10 +1320,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -1485,10 +1357,7 @@
               "height": 430,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0a1628",
               "fixedRatio": false,
               "outline": {
@@ -1530,10 +1399,7 @@
               "height": 430,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0a1628",
               "fixedRatio": false,
               "outline": {
@@ -1575,10 +1441,7 @@
               "height": 430,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0a1628",
               "fixedRatio": false,
               "outline": {
@@ -1620,10 +1483,7 @@
               "height": 430,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0a1628",
               "fixedRatio": false,
               "outline": {
@@ -1754,10 +1614,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#22d3ee",
               "fixedRatio": false
             },
@@ -1770,10 +1627,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -1810,10 +1664,7 @@
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0a1628",
               "fixedRatio": false,
               "outline": {
@@ -1831,10 +1682,7 @@
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#22d3ee20",
               "fixedRatio": false
             },
@@ -1903,10 +1751,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#22d3ee",
               "fixedRatio": false
             },
@@ -1919,10 +1764,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -1959,10 +1801,7 @@
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0a1628",
               "fixedRatio": false,
               "outline": {
@@ -1980,10 +1819,7 @@
               "height": 450,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#3b82f620",
               "fixedRatio": false
             },
@@ -2068,11 +1904,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#06b6d4",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#06b6d4", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -2086,10 +1918,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#06b6d4",
               "fixedRatio": false
             },
@@ -2102,10 +1931,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -2154,10 +1980,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#06b6d420",
               "fixedRatio": false,
               "outline": {
@@ -2187,10 +2010,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#06b6d420",
               "fixedRatio": false,
               "outline": {
@@ -2220,10 +2040,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#06b6d420",
               "fixedRatio": false,
               "outline": {
@@ -2253,10 +2070,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#06b6d420",
               "fixedRatio": false,
               "outline": {
@@ -2377,11 +2191,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#06b6d4",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#06b6d4", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -2395,10 +2205,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#06b6d4",
               "fixedRatio": false
             },
@@ -2411,10 +2218,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -2463,10 +2267,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#06b6d420",
               "fixedRatio": false,
               "outline": {
@@ -2496,10 +2297,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#06b6d420",
               "fixedRatio": false,
               "outline": {
@@ -2529,10 +2327,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#06b6d420",
               "fixedRatio": false,
               "outline": {
@@ -2562,10 +2357,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#06b6d420",
               "fixedRatio": false,
               "outline": {
@@ -2722,9 +2514,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "High velocity means tokens are used then immediately sold — no one holds them. This keeps demand low even when the network is heavily used, suppressing price.",
             "points": 1
           },
@@ -2750,9 +2540,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "EIP-4844 introduced blob data — cheap temporary calldata for L2s posting batch proofs to Ethereum. It dramatically reduced L2 fees.",
             "points": 1
           },
@@ -2778,9 +2566,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "The attacker flash-loaned enough BEAN to pass a governance proposal in a single transaction — donating all funds to themselves. Governance must now have time-locks.",
             "points": 1
           },
@@ -2806,10 +2592,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "A",
-              "C"
-            ],
+            "answer": ["A", "C"],
             "analysis": "Tokenized assets can trade continuously in fractional amounts and embed compliance rules in smart contracts. They don't eliminate counterparty risk or guarantee returns.",
             "points": 2
           },
@@ -2835,9 +2618,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "A"
-            ],
+            "answer": ["A"],
             "analysis": "Governments have legitimate concerns: a run on a major stablecoin like USDC could trigger liquidity crises in the underlying assets (bank run risk), and widespread dollar stablecoins could undermine monetary policy in smaller economies. Counterarguments: regulated stablecoins enable near-instant cross-border transfers at near-zero cost and extend financial services to the 1.4B+ unbanked globally.",
             "points": 1
           },
@@ -2863,9 +2644,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "MiCA (Markets in Crypto-Assets) is the world's most comprehensive crypto regulatory framework. It covers issuance of crypto-assets, stablecoin rules (e-money tokens, asset-referenced tokens), and licensing for CASPs. It creates legal certainty for the EU crypto market.",
             "points": 1
           },
@@ -2891,9 +2670,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "Traditional cross-border payments require banks to pre-fund accounts (nostro) in every currency corridor — locking up trillions. ODL converts USD to XRP, transmits instantly, converts to destination currency — the whole process takes seconds. No idle pre-funded capital required.",
             "points": 1
           },
@@ -2919,9 +2696,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "The Howey Test (from a 1946 Supreme Court case) determines if something is an 'investment contract' — a security. Criteria: investment of money, in a common enterprise, with expectation of profit, from efforts of others. The SEC applies this to tokens — if they pass all four criteria, they're securities subject to SEC regulation.",
             "points": 1
           }
@@ -2933,13 +2708,13 @@
           "id": "action_ce-s8_q0",
           "type": "speech",
           "text": "Time to test your knowledge! Answer each question carefully — you can review the material after the quiz.",
-          "audioUrl": "/audio/lessons/oc-ecosystem/13-0.mp3"
+          "audioUrl": "/audio/lessons/oc-ecosystem/14-0.mp3"
         },
         {
           "id": "action_ce-s8_q1",
           "type": "speech",
           "text": "Take your time with these questions. The goal is to solidify your understanding, not just pass the quiz.",
-          "audioUrl": "/audio/lessons/oc-ecosystem/13-1.mp3"
+          "audioUrl": "/audio/lessons/oc-ecosystem/14-1.mp3"
         }
       ]
     }

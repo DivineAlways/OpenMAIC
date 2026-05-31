@@ -1,0 +1,65 @@
+{
+  "nodes": [
+    {
+      "id": "generating_progress",
+      "label": "generating-progress.tsx",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/generation/generating-progress.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "generating_progress_outlineready",
+      "label": "outlineReady()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/components/generation/generating-progress.tsx",
+      "source_location": "L108"
+    }
+  ],
+  "edges": [
+    {
+      "source": "generating_progress",
+      "target": "react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/generating-progress.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "generating_progress",
+      "target": "card",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/generating-progress.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "generating_progress",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/generating-progress.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "generating_progress",
+      "target": "use_i18n",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/generating-progress.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "generating_progress",
+      "target": "generating_progress_outlineready",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/components/generation/generating-progress.tsx",
+      "source_location": "L108",
+      "weight": 1.0
+    }
+  ]
+}

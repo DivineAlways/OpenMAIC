@@ -1,0 +1,721 @@
+{
+  "nodes": [
+    {
+      "id": "scene_generator",
+      "label": "scene-generator.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "scene_generator_generatefullscenes",
+      "label": "generateFullScenes()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L81"
+    },
+    {
+      "id": "scene_generator_generatesinglescene",
+      "label": "generateSingleScene()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L145"
+    },
+    {
+      "id": "scene_generator_generatescenecontent",
+      "label": "generateSceneContent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L171"
+    },
+    {
+      "id": "scene_generator_isimageidreference",
+      "label": "isImageIdReference()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L242"
+    },
+    {
+      "id": "scene_generator_isgeneratedimageid",
+      "label": "isGeneratedImageId()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L256"
+    },
+    {
+      "id": "scene_generator_resolveimageids",
+      "label": "resolveImageIds()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L273"
+    },
+    {
+      "id": "scene_generator_fixelementdefaults",
+      "label": "fixElementDefaults()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L335"
+    },
+    {
+      "id": "scene_generator_processlatexelements",
+      "label": "processLatexElements()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L453"
+    },
+    {
+      "id": "scene_generator_generateslidecontent",
+      "label": "generateSlideContent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L489"
+    },
+    {
+      "id": "scene_generator_generatequizcontent",
+      "label": "generateQuizContent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L658"
+    },
+    {
+      "id": "scene_generator_normalizequizoptions",
+      "label": "normalizeQuizOptions()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L714"
+    },
+    {
+      "id": "scene_generator_normalizequizanswer",
+      "label": "normalizeQuizAnswer()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L743"
+    },
+    {
+      "id": "scene_generator_generateinteractivecontent",
+      "label": "generateInteractiveContent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L763"
+    },
+    {
+      "id": "scene_generator_generatepblscenecontent",
+      "label": "generatePBLSceneContent()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L854"
+    },
+    {
+      "id": "scene_generator_extracthtml",
+      "label": "extractHtml()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L902"
+    },
+    {
+      "id": "scene_generator_generatesceneactions",
+      "label": "generateSceneActions()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L938"
+    },
+    {
+      "id": "scene_generator_generatedefaultpblactions",
+      "label": "generateDefaultPBLActions()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L1071"
+    },
+    {
+      "id": "scene_generator_formatelementsforprompt",
+      "label": "formatElementsForPrompt()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L1085"
+    },
+    {
+      "id": "scene_generator_formatquestionsforprompt",
+      "label": "formatQuestionsForPrompt()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L1112"
+    },
+    {
+      "id": "scene_generator_processactions",
+      "label": "processActions()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L1126"
+    },
+    {
+      "id": "scene_generator_generatedefaultslideactions",
+      "label": "generateDefaultSlideActions()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L1177"
+    },
+    {
+      "id": "scene_generator_generatedefaultquizactions",
+      "label": "generateDefaultQuizActions()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L1208"
+    },
+    {
+      "id": "scene_generator_generatedefaultinteractiveactions",
+      "label": "generateDefaultInteractiveActions()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L1222"
+    },
+    {
+      "id": "scene_generator_createscenewithactions",
+      "label": "createSceneWithActions()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L1236"
+    }
+  ],
+  "edges": [
+    {
+      "source": "scene_generator",
+      "target": "nanoid",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "katex",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "generation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "generation",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "ai",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "stage_api",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "stage_api",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "generate_pbl",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "prompts",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "interactive_post_processor",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "action_parser",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "json_repair",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "prompt_formatters",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "slides",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "stage",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "action",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "pipeline_types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "logger",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "scene_generator_generatefullscenes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L81",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "scene_generator_generatesinglescene",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L145",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "scene_generator_generatescenecontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L171",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "scene_generator_isimageidreference",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L242",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "scene_generator_isgeneratedimageid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L256",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "scene_generator_resolveimageids",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L273",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "scene_generator_fixelementdefaults",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L335",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "scene_generator_processlatexelements",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L453",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "scene_generator_generateslidecontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L489",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "scene_generator_generatequizcontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L658",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "scene_generator_normalizequizoptions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L714",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "scene_generator_normalizequizanswer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L743",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "scene_generator_generateinteractivecontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L763",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "scene_generator_generatepblscenecontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L854",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "scene_generator_extracthtml",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L902",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "scene_generator_generatesceneactions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L938",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "scene_generator_generatedefaultpblactions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L1071",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "scene_generator_formatelementsforprompt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L1085",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "scene_generator_formatquestionsforprompt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L1112",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "scene_generator_processactions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L1126",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "scene_generator_generatedefaultslideactions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L1177",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "scene_generator_generatedefaultquizactions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L1208",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "scene_generator_generatedefaultinteractiveactions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L1222",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator",
+      "target": "scene_generator_createscenewithactions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L1236",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator_generatesinglescene",
+      "target": "scene_generator_generatescenecontent",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L153",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator_generatesinglescene",
+      "target": "scene_generator_generatesceneactions",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L161",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator_generatesinglescene",
+      "target": "scene_generator_createscenewithactions",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L165",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator_generatescenecontent",
+      "target": "scene_generator_generateslidecontent",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L197",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator_generatescenecontent",
+      "target": "scene_generator_generatequizcontent",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L222",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator_generatescenecontent",
+      "target": "scene_generator_generateinteractivecontent",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L224",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator_generatescenecontent",
+      "target": "scene_generator_generatepblscenecontent",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L226",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator_generateslidecontent",
+      "target": "scene_generator_fixelementdefaults",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L613",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator_generateslidecontent",
+      "target": "scene_generator_processlatexelements",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L617",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator_generateslidecontent",
+      "target": "scene_generator_resolveimageids",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L621",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator_generateinteractivecontent",
+      "target": "scene_generator_extracthtml",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L834",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator_generatesceneactions",
+      "target": "scene_generator_formatelementsforprompt",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L953",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator_generatesceneactions",
+      "target": "scene_generator_generatedefaultslideactions",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L967",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator_generatesceneactions",
+      "target": "scene_generator_processactions",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L975",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator_generatesceneactions",
+      "target": "scene_generator_formatquestionsforprompt",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L983",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator_generatesceneactions",
+      "target": "scene_generator_generatedefaultquizactions",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L996",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator_generatesceneactions",
+      "target": "scene_generator_generatedefaultinteractiveactions",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L1024",
+      "weight": 1.0
+    },
+    {
+      "source": "scene_generator_generatesceneactions",
+      "target": "scene_generator_generatedefaultpblactions",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/generation/scene-generator.ts",
+      "source_location": "L1052",
+      "weight": 1.0
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "nodes": [
+    {
+      "id": "index",
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/storage/index.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "index_getstorageprovider",
+      "label": "getStorageProvider()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/storage/index.ts",
+      "source_location": "L6"
+    }
+  ],
+  "edges": [
+    {
+      "source": "index",
+      "target": "noop",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/storage/index.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "types",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/storage/index.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_getstorageprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/storage/index.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    }
+  ]
+}

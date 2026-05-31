@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "svg_path_parser",
+      "label": "svg-path-parser.ts",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/svg-path-parser.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "svg_path_parser_parsesvgpath",
+      "label": "parseSvgPath()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/svg-path-parser.ts",
+      "source_location": "L21"
+    },
+    {
+      "id": "svg_path_parser_topoints",
+      "label": "toPoints()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/svg-path-parser.ts",
+      "source_location": "L36"
+    },
+    {
+      "id": "svg_path_parser_getsvgpathrange",
+      "label": "getSvgPathRange()",
+      "file_type": "code",
+      "source_file": "OpenMAIC/lib/export/svg-path-parser.ts",
+      "source_location": "L114"
+    }
+  ],
+  "edges": [
+    {
+      "source": "svg_path_parser",
+      "target": "svg_pathdata",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/svg-path-parser.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "svg_path_parser",
+      "target": "svg_arc_to_cubic_bezier",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/svg-path-parser.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "svg_path_parser",
+      "target": "svg_path_parser_parsesvgpath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/svg-path-parser.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "svg_path_parser",
+      "target": "svg_path_parser_topoints",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/svg-path-parser.ts",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "svg_path_parser",
+      "target": "svg_path_parser_getsvgpathrange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OpenMAIC/lib/export/svg-path-parser.ts",
+      "source_location": "L114",
+      "weight": 1.0
+    }
+  ]
+}

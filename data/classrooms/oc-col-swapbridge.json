@@ -9,11 +9,7 @@
     "updatedAt": "2026-04-26T12:00:00.000Z",
     "languageDirective": "en-US",
     "style": "academic",
-    "agentIds": [
-      "default-1",
-      "default-2",
-      "default-3"
-    ],
+    "agentIds": ["default-1", "default-2", "default-3"],
     "generatedAgentConfigs": []
   },
   "scenes": [
@@ -34,11 +30,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#38bdf8",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#38bdf8", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -52,10 +44,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf8",
               "fixedRatio": false
             },
@@ -68,10 +57,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -120,10 +106,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf820",
               "fixedRatio": false,
               "outline": {
@@ -153,10 +136,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf820",
               "fixedRatio": false,
               "outline": {
@@ -186,10 +166,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf820",
               "fixedRatio": false,
               "outline": {
@@ -219,10 +196,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf820",
               "fixedRatio": false,
               "outline": {
@@ -343,11 +317,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#38bdf8",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#38bdf8", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -361,10 +331,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf8",
               "fixedRatio": false
             },
@@ -377,10 +344,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -429,10 +393,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf820",
               "fixedRatio": false,
               "outline": {
@@ -462,10 +423,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf820",
               "fixedRatio": false,
               "outline": {
@@ -495,10 +453,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf820",
               "fixedRatio": false,
               "outline": {
@@ -528,10 +483,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf820",
               "fixedRatio": false,
               "outline": {
@@ -652,11 +604,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#38bdf8",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#38bdf8", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -670,10 +618,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf8",
               "fixedRatio": false
             },
@@ -686,10 +631,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -738,10 +680,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf820",
               "fixedRatio": false,
               "outline": {
@@ -771,10 +710,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf820",
               "fixedRatio": false,
               "outline": {
@@ -804,10 +740,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf820",
               "fixedRatio": false,
               "outline": {
@@ -837,10 +770,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf820",
               "fixedRatio": false,
               "outline": {
@@ -961,11 +891,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#38bdf8",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#38bdf8", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -979,10 +905,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf8",
               "fixedRatio": false
             },
@@ -995,10 +918,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -1047,10 +967,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf820",
               "fixedRatio": false,
               "outline": {
@@ -1080,10 +997,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf820",
               "fixedRatio": false,
               "outline": {
@@ -1113,10 +1027,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf820",
               "fixedRatio": false,
               "outline": {
@@ -1146,10 +1057,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf820",
               "fixedRatio": false,
               "outline": {
@@ -1270,11 +1178,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#38bdf8",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#38bdf8", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1288,10 +1192,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf8",
               "fixedRatio": false
             },
@@ -1304,10 +1205,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -1356,10 +1254,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf820",
               "fixedRatio": false,
               "outline": {
@@ -1389,10 +1284,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf820",
               "fixedRatio": false,
               "outline": {
@@ -1422,10 +1314,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf820",
               "fixedRatio": false,
               "outline": {
@@ -1455,10 +1344,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf820",
               "fixedRatio": false,
               "outline": {
@@ -1579,11 +1465,7 @@
           },
           "theme": {
             "backgroundColor": "#0b1120",
-            "themeColors": [
-              "#38bdf8",
-              "#3b82f6",
-              "#8b5cf6"
-            ],
+            "themeColors": ["#38bdf8", "#3b82f6", "#8b5cf6"],
             "fontColor": "#f1f5f9",
             "fontName": "Inter"
           },
@@ -1597,10 +1479,7 @@
               "height": 6,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf8",
               "fixedRatio": false
             },
@@ -1613,10 +1492,7 @@
               "height": 96,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#0f1729",
               "fixedRatio": false
             },
@@ -1665,10 +1541,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf820",
               "fixedRatio": false,
               "outline": {
@@ -1698,10 +1571,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf820",
               "fixedRatio": false,
               "outline": {
@@ -1731,10 +1601,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf820",
               "fixedRatio": false,
               "outline": {
@@ -1764,10 +1631,7 @@
               "height": 100,
               "rotate": 0,
               "path": "M 0 0 L 1 0 L 1 1 L 0 1 Z",
-              "viewBox": [
-                1,
-                1
-              ],
+              "viewBox": [1, 1],
               "fill": "#38bdf820",
               "fixedRatio": false,
               "outline": {
@@ -1925,9 +1789,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "The attacker's bot sees your pending swap, buys the same token before you (raising the price), lets your swap execute at the worse price, then immediately sells (back-runs). Your swap paid the price increase — the bot pocketed the difference. Estimated $1B+ is extracted this way annually on Ethereum.",
             "points": 1
           },
@@ -1953,9 +1815,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "C"
-            ],
+            "answer": ["C"],
             "analysis": "ZK bridges submit a zero-knowledge validity proof with every batch proving the transactions were correctly executed on the source chain. The destination chain contract mathematically verifies the proof — no trust in validators, no waiting period. The most trustless design but computationally expensive.",
             "points": 1
           },
@@ -1981,9 +1841,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "V3 LPs specify a price range (e.g., ETH $1,800-$2,200). All capital earns fees only when price is in range — up to 4,000× more efficient than V2 for the same capital. Trade-off: higher impermanent loss if price exits the range, and active management is required.",
             "points": 1
           },
@@ -2009,9 +1867,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "XRPL has no traditional mempool. Transactions are submitted to validators and ordered deterministically during the consensus round. There's no window for bots to observe pending transactions and insert front-running orders — the protocol eliminates the MEV attack surface at the consensus layer.",
             "points": 1
           },
@@ -2037,9 +1893,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "Optimistic bridges assume validity and allow fraud challenges for 7 days — you must wait before funds are fully available. ZK bridges are mathematically verified immediately — no waiting period. But generating ZK proofs requires significant computation, increasing costs and slowing throughput.",
             "points": 1
           },
@@ -2065,9 +1919,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "Slippage tolerance sets the worst price you'll accept. A 10% tolerance means your swap can execute up to 10% worse than shown. Bots will deliberately sandwich your transaction to extract exactly up to your tolerance. Setting tight slippage (0.1–0.5%) limits extraction but risks reverts on volatile pairs.",
             "points": 1
           },
@@ -2093,9 +1945,7 @@
                 "value": "D"
               }
             ],
-            "answer": [
-              "B"
-            ],
+            "answer": ["B"],
             "analysis": "In lock-and-mint, your tokens are held in a smart contract on Chain A. An equivalent wrapped token is minted on Chain B. When you return, you burn the wrapped tokens on Chain B and unlock the originals on Chain A. WBTC on Ethereum is the most used example — 1 BTC locked per 1 WBTC minted.",
             "points": 1
           }
