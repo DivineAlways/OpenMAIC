@@ -11,15 +11,30 @@ function getUserId(req: NextRequest): string | null {
 // POST /api/game/session — start a new session
 export async function POST(req: NextRequest) {
   const userId = getUserId(req)
-  if (!userId) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
-
   const { mode = 'standard' } = await req.json().catch(() => ({}))
 
-  // Check user is a paid member for standard mode
-  const users = await dbGet('users', { 'id': `eq.${userId}`, 'select': 'id,is_paid' })
-  if (!users[0]) return NextResponse.json({ error: 'User not found' }, { status: 404 })
-  if (mode === 'standard' && !users[0].is_paid) {
-    return NextResponse.json({ error: 'Active membership required', code: 'not_paid' }, { status: 403 })
+  // Practice mode: no auth required — return a guest session
+  if (mode === 'practice') {
+    const zones = ALL_ZONES.map(z => ({ ...z, unlocked: true }))
+    if (!userId) {
+      return NextResponse.json({
+        session: { session_id: 'guest-' + Date.now(), user_id: 'guest', mode: 'practice' },
+        zones,
+        level: 1,
+        guest: true,
+      })
+    }
+  }
+
+  if (!userId) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+
+  // Standard mode: check paid membership
+  if (mode === 'standard') {
+    const users = await dbGet('users', { 'id': `eq.${userId}`, 'select': 'id,is_paid' })
+    if (!users[0]) return NextResponse.json({ error: 'User not found' }, { status: 404 })
+    if (!users[0].is_paid) {
+      return NextResponse.json({ error: 'Active membership required', code: 'not_paid' }, { status: 403 })
+    }
   }
 
   // Check daily OC cap
@@ -30,26 +45,16 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Daily OC limit reached — come back tomorrow', code: 'daily_cap' }, { status: 429 })
   }
 
-  // Get unlocked zones based on player level and academy completions
   const level = stats ? getLevel(stats.total_xp) : 1
   const zones = ALL_ZONES.map(z => ({
     ...z,
     unlocked: z.unlocked || level >= 5,
   }))
 
-  // Draw initial questions for first 8 zones
-  const activeZoneIds = zones.filter(z => z.unlocked).slice(0, 8).map(z => z.id)
-
   const session = await dbInsert('game_sessions', {
     user_id: userId,
     mode,
-    board_state: {
-      current_position: 0,
-      assets: [],
-      oc_balance: 0,
-      xp: 0,
-      active_effects: [],
-    },
+    board_state: { current_position: 0, assets: [], oc_balance: 0, xp: 0, active_effects: [] },
   })
 
   return NextResponse.json({ session, zones, level })
@@ -58,9 +63,12 @@ export async function POST(req: NextRequest) {
 // PATCH /api/game/session — end session and award XP + OC
 export async function PATCH(req: NextRequest) {
   const userId = getUserId(req)
-  if (!userId) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
-
-  const { session_id, score, zones_completed, xp_earned, oc_earned: rawOc, board_state } = await req.json()
+  const body = await req.json()
+  // Guest sessions (practice mode, not logged in) — nothing to save
+  if (!userId || String(body.session_id).startsWith('guest-')) {
+    return NextResponse.json({ ok: true, xp_earned: body.xp_earned ?? 0, oc_earned: 0, new_level: 1, leveled_up: false })
+  }
+  const { session_id, score, zones_completed, xp_earned, oc_earned: rawOc, board_state } = body
 
   // Enforce session OC cap
   const oc_earned = Math.min(rawOc ?? 0, SESSION_OC_CAP)
