@@ -802,8 +802,57 @@ export default function HomePage() {
           </>
         )}
 
-        {/* Final Exam — always visible at the bottom */}
+        {/* Game Hub — play the OnlyCrypto City game */}
         <div className="mt-16 pt-10 border-t border-white/5">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="flex-1">
+              <h2 className="text-sm font-bold uppercase tracking-widest text-gray-500">
+                🏙️ OnlyCrypto City Game
+              </h2>
+              <p className="text-xs text-gray-600 mt-1">
+                5 game modes · Earn OC coin · Compete on the leaderboard
+              </p>
+            </div>
+            <span className="text-xs font-bold px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">
+              New
+            </span>
+          </div>
+          <a
+            href="/game"
+            className="group w-full relative text-left rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 to-gray-900 border border-blue-500/30 hover:border-blue-500/60 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-500/10 block"
+          >
+            <div className="h-1.5 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500" />
+            <div className="p-6 flex flex-col sm:flex-row items-start sm:items-center gap-5">
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center text-3xl shadow-lg shrink-0">
+                🏙️
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-2 mb-1 flex-wrap">
+                  <h3 className="text-lg font-black text-white">OnlyCrypto City</h3>
+                  <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-blue-500/15 text-blue-400">5 Game Modes</span>
+                </div>
+                <p className="text-sm text-gray-400 leading-relaxed mb-3">
+                  Learn blockchain and crypto through play. Answer challenges, earn OC coin, compete in tournaments, duel other players, and predict real crypto history in Roulette mode.
+                </p>
+                <div className="flex items-center gap-3 text-xs text-gray-500 flex-wrap">
+                  <span>🏙️ Standard</span>
+                  <span>🏆 Tournament</span>
+                  <span>⚔️ Duel</span>
+                  <span>🎰 Roulette</span>
+                  <span>💰 Pot Room</span>
+                </div>
+              </div>
+            </div>
+            <div className="px-6 pb-6">
+              <div className="w-full py-3 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-sm font-bold text-center opacity-0 group-hover:opacity-100 transition-all duration-200 -translate-y-1 group-hover:translate-y-0">
+                Enter OnlyCrypto City →
+              </div>
+            </div>
+          </a>
+        </div>
+
+        {/* Final Exam — always visible at the bottom */}
+        <div className="mt-8 pt-8 border-t border-white/5">
           <div className="flex items-center gap-3 mb-6">
             <div className="flex-1">
               <h2 className="text-sm font-bold uppercase tracking-widest text-gray-500">
