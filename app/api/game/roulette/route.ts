@@ -1,15 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { getUserId } from '@/lib/game/supabase'
 import { dbGet, dbInsert, dbPatch, dbUpsert } from '@/lib/game/supabase'
 
 const MAX_ROUNDS_PER_SESSION = 5
 const DAILY_WAGER_CAP = 50
 const PAYOUT_MULTIPLIER = 1.9
 
-function getUserId(req: NextRequest): string | null {
-  const cookie = req.cookies.get('openmaic_access')
-  if (!cookie?.value?.startsWith('sso.')) return null
-  return cookie.value.split('.')[1] ?? null
-}
 
 // GET — fetch a random scenario + current session state
 export async function GET(req: NextRequest) {

@@ -1,13 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { getUserId } from '@/lib/game/supabase'
 import { dbGet, dbUpsert } from '@/lib/game/supabase'
 import { getLevel, LEVEL_THRESHOLDS, DAILY_OC_CAP } from '@/lib/game/types'
 
-function getUserId(req: NextRequest): string | null {
-  const cookie = req.cookies.get('openmaic_access')
-  if (!cookie?.value?.startsWith('sso.')) return null
-  const parts = cookie.value.split('.')
-  return parts[1] ?? null
-}
 
 export async function GET(req: NextRequest) {
   const userId = getUserId(req)

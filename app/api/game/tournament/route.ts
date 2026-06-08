@@ -1,15 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { getUserId } from '@/lib/game/supabase'
 import { dbGet, dbInsert, dbPatch, dbUpsert } from '@/lib/game/supabase'
 import { getLevel } from '@/lib/game/types'
 
 const PLATFORM_CUT_PCT = 0.1
 const PRIZE_SPLITS = [0.6, 0.3, 0.1] // top 3
 
-function getUserId(req: NextRequest): string | null {
-  const cookie = req.cookies.get('openmaic_access')
-  if (!cookie?.value?.startsWith('sso.')) return null
-  return cookie.value.split('.')[1] ?? null
-}
 
 // GET — list open tournaments + player's entries
 export async function GET(req: NextRequest) {

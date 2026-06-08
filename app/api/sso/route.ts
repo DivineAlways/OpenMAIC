@@ -36,10 +36,15 @@ export async function GET(request: NextRequest) {
     return NextResponse.redirect(new URL('/', request.url));
   }
 
-  // Issue the standard openmaic_access cookie
-  const accessToken = accessCode
-    ? `sso.${createAccessToken(accessCode)}`
-    : `sso.${Date.now()}.valid`;
+  // Extract userId from token (format: userId.timestamp.signature)
+  const tokenParts = token.split('.');
+  const userId = tokenParts.length >= 3 ? tokenParts[0] : null;
+
+  // Issue the standard openmaic_access cookie — embed userId so game routes can identify the user
+  const baseToken = accessCode
+    ? createAccessToken(accessCode)
+    : `${Date.now()}.valid`;
+  const accessToken = userId ? `sso.${userId}.${baseToken}` : `sso.${baseToken}`;
   const cookieStore = await cookies();
   cookieStore.set('openmaic_access', accessToken, {
     httpOnly: true,

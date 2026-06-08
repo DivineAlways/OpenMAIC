@@ -1,4 +1,20 @@
+import { type NextRequest } from 'next/server'
+
 const SUPABASE_URL = 'https://krgeexpexiodxkxightz.supabase.co'
+
+// Cookie format after SSO: sso.<userId>.<token>  (userId is a UUID)
+// Older format without userId: sso.<token>
+const UUID_REGEX = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i
+
+export function getUserId(req: NextRequest): string | null {
+  const cookie = req.cookies.get('openmaic_access')
+  if (!cookie?.value?.startsWith('sso.')) return null
+  const parts = cookie.value.split('.')
+  // Format: sso.<userId>.<rest...> — userId is always a UUID
+  // Try parts[1] as UUID first
+  if (parts[1] && UUID_REGEX.test(parts[1])) return parts[1]
+  return null
+}
 const SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY ?? ''
 
 function headers() {

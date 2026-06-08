@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { getUserId } from '@/lib/game/supabase'
 import { dbGet, dbInsert, dbPatch, dbUpsert } from '@/lib/game/supabase'
 import { getLevel } from '@/lib/game/types'
 
@@ -7,11 +8,6 @@ const MIN_WAGER = 2
 const PLATFORM_CUT_PCT = 0.05
 const QUESTIONS_PER_DUEL = 5
 
-function getUserId(req: NextRequest): string | null {
-  const cookie = req.cookies.get('openmaic_access')
-  if (!cookie?.value?.startsWith('sso.')) return null
-  return cookie.value.split('.')[1] ?? null
-}
 
 // GET — find open duels waiting for opponent (matchmaking)
 export async function GET(req: NextRequest) {

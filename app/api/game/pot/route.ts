@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { getUserId } from '@/lib/game/supabase'
 import { dbGet, dbInsert, dbPatch, dbUpsert } from '@/lib/game/supabase'
 import { getLevel } from '@/lib/game/types'
 
@@ -9,11 +10,6 @@ const ROOM_CONFIG = {
   whale:  { entry_fee_oc: 50, max_players: 20, min_players: 3, min_level: 6 },
 }
 
-function getUserId(req: NextRequest): string | null {
-  const cookie = req.cookies.get('openmaic_access')
-  if (!cookie?.value?.startsWith('sso.')) return null
-  return cookie.value.split('.')[1] ?? null
-}
 
 // GET — list open pot rooms + player entries
 export async function GET(req: NextRequest) {

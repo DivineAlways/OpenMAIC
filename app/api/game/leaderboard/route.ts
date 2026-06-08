@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { getUserId } from '@/lib/game/supabase'
 import { dbGet } from '@/lib/game/supabase'
 
 export async function GET(req: NextRequest) {

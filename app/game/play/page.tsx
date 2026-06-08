@@ -114,6 +114,11 @@ function GameBoard() {
     })
     const data = await res.json()
     if (!res.ok) {
+      // Not logged in via SSO — redirect back to main platform to sign in
+      if (res.status === 401) {
+        window.location.href = 'https://onlycrypto.io/dashboard'
+        return
+      }
       setMessage(data.error ?? 'Could not start game')
       setGamePhase('done')
       return

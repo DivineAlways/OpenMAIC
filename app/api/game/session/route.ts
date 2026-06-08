@@ -1,12 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { getUserId } from '@/lib/game/supabase'
 import { dbGet, dbInsert, dbPatch, dbUpsert } from '@/lib/game/supabase'
 import { getLevel, XP_REWARDS, OC_REWARDS, SESSION_OC_CAP, DAILY_OC_CAP, ALL_ZONES } from '@/lib/game/types'
 
-function getUserId(req: NextRequest): string | null {
-  const cookie = req.cookies.get('openmaic_access')
-  if (!cookie?.value?.startsWith('sso.')) return null
-  return cookie.value.split('.')[1] ?? null
-}
 
 // POST /api/game/session — start a new session
 export async function POST(req: NextRequest) {
