@@ -13,17 +13,18 @@ export async function POST(req: NextRequest) {
   const userId = getUserId(req)
   const { mode = 'standard' } = await req.json().catch(() => ({}))
 
-  // Practice mode: no auth required — return a guest session
+  // Practice mode: always return an in-memory session — no DB write, no auth required
   if (mode === 'practice') {
     const zones = ALL_ZONES.map(z => ({ ...z, unlocked: true }))
-    if (!userId) {
-      return NextResponse.json({
-        session: { session_id: 'guest-' + Date.now(), user_id: 'guest', mode: 'practice' },
-        zones,
-        level: 1,
-        guest: true,
-      })
-    }
+    const statsRows = userId ? await dbGet('game_player_stats', { 'user_id': `eq.${userId}` }) : []
+    const stats = statsRows[0]
+    const level = stats ? getLevel(stats.total_xp) : 1
+    return NextResponse.json({
+      session: { session_id: 'guest-' + Date.now(), user_id: userId ?? 'guest', mode: 'practice' },
+      zones,
+      level,
+      guest: !userId,
+    })
   }
 
   if (!userId) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })

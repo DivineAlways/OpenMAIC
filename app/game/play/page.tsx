@@ -118,6 +118,11 @@ function GameBoard() {
       setGamePhase('done')
       return
     }
+    if (!data.session) {
+      setMessage('Could not create game session. Please try again.')
+      setGamePhase('done')
+      return
+    }
     setSession({
       session_id: data.session.session_id,
       position: 0,
