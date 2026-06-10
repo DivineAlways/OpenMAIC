@@ -53,11 +53,13 @@ export async function middleware(request: NextRequest) {
 
   const { pathname } = request.nextUrl;
 
-  // Whitelist: access-code endpoints, SSO endpoint, health check
+  // Whitelist: access-code endpoints, SSO endpoint, health check, locked page itself
   if (
     pathname.startsWith('/api/access-code/') ||
     pathname.startsWith('/api/sso') ||
-    pathname === '/api/health'
+    pathname === '/api/health' ||
+    pathname === '/locked' ||
+    pathname.startsWith('/locked/')
   ) {
     return NextResponse.next();
   }
@@ -83,8 +85,8 @@ export async function middleware(request: NextRequest) {
     );
   }
 
-  // Page requests → let through, frontend shows members-only wall
-  return NextResponse.next();
+  // Page requests without valid cookie → locked page
+  return NextResponse.redirect(new URL('/locked', request.url));
 }
 
 export const config = {
