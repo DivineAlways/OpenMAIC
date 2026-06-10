@@ -867,7 +867,7 @@ export default function HomePage() {
             </span>
           </div>
           <button
-            onClick={() => goToCourse('oc-final-exam', 'OC Academy — Final Exam', 'final')}
+            onClick={() => goToCourse('oc-final-exam', 'OnlyCrypto Academy — Final Exam', 'final')}
             className="group w-full relative text-left rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 to-gray-900 border border-amber-500/30 hover:border-amber-500/60 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-amber-500/10"
           >
             <div className="h-1.5 bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500" />
@@ -877,7 +877,7 @@ export default function HomePage() {
               </div>
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 mb-1 flex-wrap">
-                  <h3 className="text-lg font-black text-white">OC Academy — Final Exam</h3>
+                  <h3 className="text-lg font-black text-white">OnlyCrypto Academy — Final Exam</h3>
                   <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-400">
                     100 Questions
                   </span>
@@ -958,7 +958,7 @@ export default function HomePage() {
         <GraduationModal
           title="You're an Operator!"
           subtitle="🖥️ Full Curriculum Complete"
-          body="You completed the entire OC Academy — all 25 courses. You understand consensus design, tokenomics engineering, DeFi protocol architecture, MEV, ZK proofs, regulatory frameworks, and XRPL infrastructure. You don't just participate in crypto — you understand the systems that run it. That's Operator level. Elite."
+          body="You completed the entire OnlyCrypto Academy — all 25 courses. You understand consensus design, tokenomics engineering, DeFi protocol architecture, MEV, ZK proofs, regulatory frameworks, and XRPL infrastructure. You don't just participate in crypto — you understand the systems that run it. That's Operator level. Elite."
           unlockText="You've mastered the full OnlyCrypto curriculum"
           ctaLabel="View Your Badges"
           onCta={() => setShowCollegeGraduation(false)}

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'OpenMAIC Academy — Master Crypto & Web3',
+  title: 'OnlyCrypto Academy — Master Crypto & Web3',
   description:
     'Interactive AI-powered crypto education. 25 courses across 3 levels. XRP trading strategy, DeFi, blockchain, and the OnlyCrypto City game. Get instant access for $49.',
 }
@@ -50,9 +50,10 @@ const FEATURES = [
   },
 ]
 
-export default function HomePage() {
-  const paypalLink = process.env.NEXT_PUBLIC_PAYPAL_LINK || '#'
+const ACCESS_URL = 'https://onlycrypto.io/academy/access'
+const OC_JOIN_URL = 'https://onlycrypto.io/auth/signup?ref=divinity2'
 
+export default function HomePage() {
   return (
     <div className="min-h-screen bg-[#080810] text-white">
       {/* Nav */}
@@ -61,7 +62,7 @@ export default function HomePage() {
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-violet-600 flex items-center justify-center text-xs font-black">
             OC
           </div>
-          <span className="font-bold text-white tracking-tight">OpenMAIC Academy</span>
+          <span className="font-bold text-white tracking-tight">OnlyCrypto Academy</span>
         </div>
         <div className="flex items-center gap-3">
           <a
@@ -71,9 +72,7 @@ export default function HomePage() {
             OnlyCrypto.io
           </a>
           <a
-            href={paypalLink}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={ACCESS_URL}
             className="px-4 py-2 rounded-lg bg-blue-500 hover:bg-blue-600 text-white font-bold text-sm transition-colors"
           >
             Get Access — $49
@@ -98,15 +97,13 @@ export default function HomePage() {
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href={paypalLink}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={ACCESS_URL}
             className="w-full sm:w-auto px-10 py-4 rounded-xl bg-blue-500 hover:bg-blue-600 text-white font-black text-base uppercase tracking-widest transition-colors shadow-xl shadow-blue-500/20"
           >
             Get Instant Access — $49
           </a>
           <a
-            href="https://onlycrypto.io/dashboard/wallet?tab=deposit"
+            href="https://onlycrypto.io/auth/signup?ref=divinity2"
             className="w-full sm:w-auto px-10 py-4 rounded-xl border border-white/10 hover:border-white/20 bg-white/5 hover:bg-white/10 text-white font-bold text-base transition-colors"
           >
             Join OnlyCrypto (includes academy)
@@ -232,7 +229,7 @@ export default function HomePage() {
               ))}
             </ul>
             <a
-              href={paypalLink}
+              href={ACCESS_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center py-3.5 rounded-xl bg-blue-500 hover:bg-blue-600 text-white font-black uppercase tracking-widest text-xs transition-colors"
@@ -268,7 +265,7 @@ export default function HomePage() {
               ))}
             </ul>
             <a
-              href="https://onlycrypto.io/dashboard/wallet?tab=deposit"
+              href="https://onlycrypto.io/auth/signup?ref=divinity2"
               className="block w-full text-center py-3.5 rounded-xl border border-white/10 hover:border-white/20 hover:bg-white/5 text-white font-bold text-xs uppercase tracking-widest transition-colors"
             >
               Join OnlyCrypto Pro →
@@ -283,7 +280,7 @@ export default function HomePage() {
           <div className="w-6 h-6 rounded-md bg-gradient-to-br from-blue-500 to-violet-600 flex items-center justify-center text-[10px] font-black">
             OC
           </div>
-          <span className="font-bold text-sm text-gray-400">OpenMAIC Academy</span>
+          <span className="font-bold text-sm text-gray-400">OnlyCrypto Academy</span>
         </div>
         <p className="text-xs text-gray-600">
           by{' '}

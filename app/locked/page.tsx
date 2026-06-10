@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Access Required — OC Academy',
-  description: 'OpenMAIC Academy requires a Pro membership or standalone access.',
+  title: 'Access Required — OnlyCrypto Academy',
+  description: 'OnlyCrypto Academy requires a Pro membership or standalone access.',
 }
 
 export default function LockedPage() {
@@ -17,7 +17,7 @@ export default function LockedPage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.966 8.966 0 00-6 2.292m0-14.25v14.25" />
             </svg>
           </div>
-          <h1 className="text-2xl font-black uppercase tracking-tight text-white">OpenMAIC Academy</h1>
+          <h1 className="text-2xl font-black uppercase tracking-tight text-white">OnlyCrypto Academy</h1>
           <p className="text-sm text-gray-500 mt-1">by OnlyCrypto</p>
         </div>
 
@@ -32,7 +32,7 @@ export default function LockedPage() {
           <div>
             <h2 className="text-xl font-black text-white uppercase tracking-tight mb-2">Members Only</h2>
             <p className="text-sm text-gray-400 leading-relaxed">
-              OpenMAIC Academy is an exclusive learning platform. Access is included with the
+              OnlyCrypto Academy is an exclusive learning platform. Access is included with the
               OnlyCrypto <strong className="text-white">Pro membership</strong> — or available as a
               standalone purchase.
             </p>
@@ -60,7 +60,7 @@ export default function LockedPage() {
           {/* CTAs */}
           <div className="space-y-3">
             <a
-              href="https://onlycrypto.io/dashboard/wallet?tab=deposit"
+              href="https://onlycrypto.io/auth/signup?ref=divinity2"
               className="block w-full rounded-xl bg-blue-500 hover:bg-blue-600 text-white font-black uppercase tracking-widest text-xs py-3.5 text-center transition-colors"
             >
               Upgrade to Pro on OnlyCrypto →

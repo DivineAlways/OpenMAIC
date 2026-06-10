@@ -25,7 +25,7 @@ const inter = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'OC Academy',
+  title: 'OnlyCrypto Academy',
   description:
     'OnlyCrypto Academy — interactive AI-powered crypto education. Learn blockchain, DeFi, trading, and more.',
 };
