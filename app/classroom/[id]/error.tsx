@@ -32,7 +32,7 @@ export default function ClassroomError({
             Try Again
           </button>
           <a
-            href="/"
+            href="/courses"
             className="px-4 py-2 bg-gray-800 text-gray-300 rounded-lg text-sm hover:bg-gray-700"
           >
             Back to Courses

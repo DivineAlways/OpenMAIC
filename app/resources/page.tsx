@@ -857,7 +857,7 @@ export default function ResourcesPage() {
       <header className="sticky top-0 z-10 bg-gray-950/80 backdrop-blur-xl border-b border-white/5 px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <button
-            onClick={() => router.push('/')}
+            onClick={() => router.push('/courses')}
             className="p-1.5 rounded-lg text-gray-500 hover:bg-white/10 hover:text-white transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
@@ -1178,7 +1178,7 @@ export default function ResourcesPage() {
                 Open Dashboard
               </a>
               <button
-                onClick={() => router.push('/')}
+                onClick={() => router.push('/courses')}
                 className="flex items-center gap-2 px-6 py-3 rounded-xl border border-white/20 text-gray-300 hover:bg-white/5 text-sm font-bold transition-all"
               >
                 <BookOpen className="w-4 h-4" />

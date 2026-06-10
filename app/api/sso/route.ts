@@ -33,7 +33,7 @@ export async function GET(request: NextRequest) {
   const accessCode = process.env.ACCESS_CODE;
 
   if (!secret || !token || !verifySSOToken(token, secret)) {
-    return NextResponse.redirect(new URL('/', request.url));
+    return NextResponse.redirect(new URL('/locked', request.url));
   }
 
   // Extract userId from token (format: userId.timestamp.signature)
@@ -54,6 +54,6 @@ export async function GET(request: NextRequest) {
     secure: process.env.NODE_ENV === 'production',
   });
 
-  const safeRedirect = redirect.startsWith('/') ? redirect : '/';
+  const safeRedirect = redirect.startsWith('/') ? redirect : '/courses';
   return NextResponse.redirect(new URL(safeRedirect, request.url));
 }

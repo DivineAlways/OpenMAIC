@@ -120,7 +120,7 @@ export default function LivePage() {
       {/* Header */}
       <div className="border-b border-white/10 px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <Link href="/" className="text-zinc-500 hover:text-white">
+          <Link href="/courses" className="text-zinc-500 hover:text-white">
             <ArrowLeft size={16} />
           </Link>
           <div>

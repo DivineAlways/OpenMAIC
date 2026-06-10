@@ -69,7 +69,7 @@ export default function LockedPage() {
               href="https://onlycrypto.io/academy/access"
               className="block w-full rounded-xl border border-white/10 hover:border-white/20 bg-white/5 hover:bg-white/10 text-white font-bold text-xs py-3.5 text-center transition-colors"
             >
-              Buy Standalone Access — $49
+              Buy Standalone Access — $49 (No OC membership needed)
             </a>
           </div>
 

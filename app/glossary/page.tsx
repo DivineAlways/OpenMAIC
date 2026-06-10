@@ -806,7 +806,7 @@ export default function GlossaryPage() {
       {/* Header */}
       <header className="sticky top-0 z-10 bg-gray-950/90 backdrop-blur-xl border-b border-white/5 px-4 py-3 flex items-center gap-3">
         <button
-          onClick={() => router.push('/')}
+          onClick={() => router.push('/courses')}
           className="p-1.5 rounded-lg hover:bg-white/10 transition-colors"
         >
           <ArrowLeft className="w-5 h-5 text-gray-400" />

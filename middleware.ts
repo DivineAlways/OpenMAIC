@@ -53,13 +53,14 @@ export async function middleware(request: NextRequest) {
 
   const { pathname } = request.nextUrl;
 
-  // Whitelist: access-code endpoints, SSO endpoint, health check, locked page itself
+  // Public routes: home (marketing page), locked page, access API, SSO, health
   if (
+    pathname === '/' ||
+    pathname === '/locked' ||
+    pathname.startsWith('/locked/') ||
     pathname.startsWith('/api/access-code/') ||
     pathname.startsWith('/api/sso') ||
-    pathname === '/api/health' ||
-    pathname === '/locked' ||
-    pathname.startsWith('/locked/')
+    pathname === '/api/health'
   ) {
     return NextResponse.next();
   }

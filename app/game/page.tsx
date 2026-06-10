@@ -103,7 +103,7 @@ export default function GameHome() {
     <div className="min-h-screen bg-[#0a0a0f] text-white">
       {/* Header */}
       <div className="border-b border-white/10 px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="text-white/50 hover:text-white text-sm transition-colors">
+        <Link href="/courses" className="text-white/50 hover:text-white text-sm transition-colors">
           ← Academy
         </Link>
         <Link href="/game/leaderboard" className="text-white/50 hover:text-white text-sm transition-colors">
