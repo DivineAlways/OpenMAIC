@@ -287,7 +287,10 @@ export default function HomePage() {
           <a href="https://onlycrypto.io" className="text-gray-500 hover:text-white transition-colors">
             OnlyCrypto.io
           </a>
-          {' '}· The education arm of the OnlyCrypto trading platform
+          {' '}·{' '}
+          <a href="https://onlycrypto.io/academy/whitelabel" className="text-gray-500 hover:text-white transition-colors">
+            White-Label Licensing
+          </a>
         </p>
       </footer>
     </div>
