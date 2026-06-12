@@ -412,146 +412,199 @@ function GameBoard() {
   }
 
   // ── BOARD VIEW (+ buy/card modals) ─────────────────────────────────────────
+  // Crypto Monopoly Classic: wooden table, parchment board, dark skyline center.
   const currentSpace = board[position]
 
   return (
-    <div className="min-h-screen bg-[#0a0a0f] text-white">
-      <div className="border-b border-white/10 px-4 py-3 flex items-center justify-between text-sm">
-        <Link href="/game" className="text-white/40 hover:text-white transition-colors">← Hub</Link>
+    <div className="min-h-screen text-white" style={{ background: 'radial-gradient(ellipse at 50% 0%, #3a2414 0%, #241407 55%, #160c04 100%)' }}>
+      <div className="border-b border-[#5a3c22]/60 px-4 py-3 flex items-center justify-between text-sm" style={{ background: 'rgba(20,11,4,0.6)' }}>
+        <Link href="/game" className="text-[#cdb68a]/60 hover:text-[#f0e3c0] transition-colors">← Hub</Link>
         <div className="flex gap-4 md:gap-5 flex-wrap justify-end">
           {!practice && <span className="text-amber-400 font-semibold">{balance.toFixed(1)} OCC</span>}
-          <span className="text-blue-400 font-medium">{sessionXP} XP</span>
-          <span className="text-green-400 font-medium">🏠 {myProperties.length}</span>
-          <span className="text-white/40">Turn {turn}</span>
+          <span className="text-sky-300 font-medium">{sessionXP} XP</span>
+          <span className="text-emerald-400 font-medium">🏠 {myProperties.length}</span>
+          <span className="text-[#cdb68a]/50">Turn {turn}</span>
         </div>
-        <button onClick={endGame} className="text-white/30 hover:text-white/60 text-xs transition-colors">End Game</button>
+        <button onClick={endGame} className="text-[#cdb68a]/40 hover:text-[#f0e3c0] text-xs transition-colors">End Game</button>
       </div>
 
       <div className="max-w-5xl mx-auto px-2 md:px-6 py-4 md:py-8">
         {practice && (
-          <div className="text-center text-xs text-amber-400/70 mb-3">Practice mode — no OCC is earned or spent</div>
+          <div className="text-center text-xs text-amber-400/80 mb-3">Practice mode — no OCC is earned or spent</div>
         )}
 
-        {/* Monopoly perimeter board */}
-        <div className="grid gap-1 mx-auto" style={{ gridTemplateColumns: 'repeat(7, minmax(0, 1fr))', gridTemplateRows: 'repeat(7, minmax(0, 1fr))', aspectRatio: '1 / 1', maxWidth: 'min(92vw, 760px)' }}>
-          {board.map(space => {
-            const { row, col } = gridCell(space.position)
-            const isHere = position === space.position
-            const owner = space.zone_id ? owners[space.zone_id] : undefined
-            const isCorner = space.space_type === 'corner'
-            return (
-              <div key={space.position}
-                style={{ gridRow: row, gridColumn: col }}
-                className={`relative rounded-md border flex flex-col overflow-hidden text-center ${
-                  isHere
-                    ? 'border-white/70 bg-white/15 shadow-lg shadow-white/10'
-                    : owner?.mine
-                    ? 'border-green-500/50 bg-green-500/10'
-                    : owner
-                    ? 'border-amber-500/40 bg-amber-500/5'
-                    : 'border-white/10 bg-white/[0.03]'
-                }`}>
-                {/* district color band — the classic Monopoly stripe */}
-                {space.space_type === 'district' && (
-                  <div className="h-1.5 w-full shrink-0" style={{ backgroundColor: space.color ?? '#666' }} />
-                )}
-                <div className={`flex-1 flex flex-col items-center justify-center px-0.5 py-0.5 ${isCorner ? 'bg-white/[0.04]' : ''}`}>
-                  <div className="text-base md:text-2xl leading-none">{space.emoji}</div>
-                  <div className="text-[8px] md:text-[10px] font-medium text-white/70 leading-tight mt-0.5 line-clamp-2">{space.name}</div>
+        {/* Monopoly perimeter board — parchment on wood */}
+        <div className="mx-auto rounded-lg p-2 md:p-3 shadow-2xl" style={{ maxWidth: 'min(92vw, 780px)', background: 'linear-gradient(135deg, #6b4a28, #4a3018)', boxShadow: '0 24px 60px rgba(0,0,0,0.6)' }}>
+          <div className="grid gap-[3px] rounded" style={{ gridTemplateColumns: 'repeat(7, minmax(0, 1fr))', gridTemplateRows: 'repeat(7, minmax(0, 1fr))', aspectRatio: '1 / 1', background: '#3d2a16' }}>
+            {board.map(space => {
+              const { row, col } = gridCell(space.position)
+              const isHere = position === space.position
+              const owner = space.zone_id ? owners[space.zone_id] : undefined
+              const isCorner = space.space_type === 'corner'
+              return (
+                <div key={space.position}
+                  style={{
+                    gridRow: row,
+                    gridColumn: col,
+                    background: isHere ? '#fdf6dd' : isCorner ? '#e7dcba' : '#f0e7c8',
+                    outline: isHere ? '2px solid #b45309' : owner?.mine ? '2px solid #15803d' : owner ? '2px solid #b45309aa' : 'none',
+                    outlineOffset: '-2px',
+                  }}
+                  className="relative rounded-sm flex flex-col overflow-hidden text-center">
+                  {/* classic Monopoly color band */}
                   {space.space_type === 'district' && (
-                    <div className="text-[8px] md:text-[10px] mt-0.5">
-                      {owner
-                        ? <span className={owner.mine ? 'text-green-400 font-semibold' : 'text-amber-400'}>{owner.mine ? 'YOURS' : owner.name.slice(0, 8)}</span>
-                        : <span className="text-white/35">{Number(space.purchase_price_oc)} OCC</span>}
+                    <div className="h-2 md:h-2.5 w-full shrink-0 border-b border-black/25" style={{ backgroundColor: space.color ?? '#666' }} />
+                  )}
+                  <div className="flex-1 flex flex-col items-center justify-center px-0.5 py-0.5">
+                    <div className="text-base md:text-2xl leading-none">{space.emoji}</div>
+                    <div className="text-[8px] md:text-[10px] font-bold uppercase tracking-tight leading-tight mt-0.5 line-clamp-2 text-[#3a2a15]">{space.name}</div>
+                    {space.space_type === 'district' && (
+                      <div className="text-[8px] md:text-[10px] mt-0.5 font-semibold">
+                        {owner
+                          ? <span className={owner.mine ? 'text-green-700' : 'text-amber-700'}>{owner.mine ? '★ YOURS' : `★ ${owner.name.slice(0, 8)}`}</span>
+                          : <span className="text-[#7a6845]">{Number(space.purchase_price_oc)} OCC</span>}
+                      </div>
+                    )}
+                  </div>
+                  {isHere && (
+                    <div className="absolute -top-1 left-1/2 -translate-x-1/2 text-[9px] bg-red-600 text-white px-1.5 py-0.5 rounded-full font-bold z-10 shadow">
+                      YOU
                     </div>
                   )}
                 </div>
-                {isHere && (
-                  <div className="absolute -top-1.5 left-1/2 -translate-x-1/2 text-[9px] bg-blue-600 text-white px-1.5 py-0.5 rounded-full font-bold z-10">
-                    YOU
+              )
+            })}
+
+            {/* Center: dark skyline panel, like the classic board art */}
+            <div style={{ gridRow: '2 / 7', gridColumn: '2 / 7', background: '#f0e7c8' }} className="relative rounded-sm flex flex-col items-center justify-center px-4 overflow-hidden">
+              <svg viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice" className="absolute inset-0 w-full h-full">
+                <rect width="400" height="240" fill="#1c1812" />
+                {/* skyline silhouette */}
+                <g fill="#2e2418">
+                  <rect x="0" y="120" width="34" height="120" />
+                  <rect x="40" y="84" width="26" height="156" />
+                  <rect x="72" y="140" width="38" height="100" />
+                  <rect x="116" y="60" width="30" height="180" />
+                  <rect x="152" y="110" width="24" height="130" />
+                  <rect x="182" y="44" width="36" height="196" />
+                  <rect x="224" y="96" width="26" height="144" />
+                  <rect x="256" y="70" width="32" height="170" />
+                  <rect x="294" y="128" width="24" height="112" />
+                  <rect x="324" y="88" width="30" height="152" />
+                  <rect x="360" y="138" width="40" height="102" />
+                  <polygon points="197,20 203,20 203,44 197,44" />
+                </g>
+                {/* lit windows */}
+                <g fill="#caa64a" opacity="0.5">
+                  <rect x="48" y="96" width="4" height="5" /><rect x="56" y="110" width="4" height="5" />
+                  <rect x="124" y="74" width="4" height="5" /><rect x="132" y="92" width="4" height="5" />
+                  <rect x="190" y="60" width="4" height="5" /><rect x="202" y="80" width="4" height="5" /><rect x="196" y="120" width="4" height="5" />
+                  <rect x="264" y="84" width="4" height="5" /><rect x="272" y="104" width="4" height="5" />
+                  <rect x="332" y="100" width="4" height="5" /><rect x="340" y="124" width="4" height="5" />
+                </g>
+              </svg>
+              <div className="relative flex flex-col items-center">
+                <div className="text-center mb-3 md:mb-4">
+                  <div className="text-lg md:text-3xl font-black tracking-wide" style={{ color: '#f0e3c0', textShadow: '0 2px 8px rgba(0,0,0,0.8)' }}>
+                    ONLYCRYPTO<span className="text-amber-400">CITY</span>
+                  </div>
+                  <div className="text-[10px] md:text-xs tracking-widest mt-1" style={{ color: '#cdb68a' }}>LEARN · PLAY · EARN · BUILD</div>
+                </div>
+                <div className="text-5xl md:text-7xl mb-3 select-none" style={{ transform: rolling ? 'rotate(20deg)' : 'none', transition: 'transform 0.1s', filter: 'drop-shadow(0 4px 6px rgba(0,0,0,0.6))' }}>
+                  {diceValue ? DICE_FACES[diceValue] : '🎲'}
+                </div>
+                <button onClick={handleRoll} disabled={rolling}
+                  className="bg-amber-500 hover:bg-amber-400 disabled:opacity-40 disabled:cursor-not-allowed text-black font-extrabold px-8 md:px-10 py-3 md:py-4 rounded-lg text-base md:text-lg transition-colors shadow-lg uppercase tracking-wide">
+                  {rolling ? 'Rolling…' : 'Roll Dice'}
+                </button>
+                {lastTurn && !rolling && (
+                  <div className="text-[11px] md:text-sm mt-3 text-center space-y-0.5" style={{ color: '#cdb68a' }}>
+                    <div>Rolled {lastTurn.dice} → {currentSpace?.emoji} {currentSpace?.name}</div>
+                    {lastTurn.lap_bonus > 0 && <div className="text-green-400">🏁 Passed START +{lastTurn.lap_bonus} OCC</div>}
+                    {(lastTurn.staking_bonus ?? 0) > 0 && <div className="text-green-400">🪙 Free Staking +{lastTurn.staking_bonus} OCC</div>}
+                    {lastTurn.moved_to_crash && <div className="text-red-400">🚨 Sent to Market Crash!</div>}
+                    {lastTurn.rent && lastTurn.rent.amount > 0 && <div className="text-red-400">Paid {lastTurn.rent.amount} OCC rent to {lastTurn.rent.to}</div>}
                   </div>
                 )}
+                {message && <div className="text-amber-300 text-xs md:text-sm mt-3 text-center max-w-xs">{message}</div>}
               </div>
-            )
-          })}
-
-          {/* Center: wordmark + dice + roll */}
-          <div style={{ gridRow: '2 / 7', gridColumn: '2 / 7' }} className="flex flex-col items-center justify-center rounded-xl border border-white/5 bg-gradient-to-b from-white/[0.02] to-white/[0.05] m-1 px-4">
-            <div className="text-center mb-4">
-              <div className="text-lg md:text-3xl font-black tracking-wide">
-                ONLYCRYPTO<span className="text-blue-500">CITY</span>
-              </div>
-              <div className="text-[10px] md:text-xs text-white/30 tracking-widest mt-1">LEARN · PLAY · EARN · BUILD</div>
             </div>
-            <div className="text-5xl md:text-7xl mb-3 select-none" style={{ transform: rolling ? 'rotate(20deg)' : 'none', transition: 'transform 0.1s' }}>
-              {diceValue ? DICE_FACES[diceValue] : '🎲'}
-            </div>
-            <button onClick={handleRoll} disabled={rolling}
-              className="bg-blue-600 hover:bg-blue-500 disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 md:px-10 py-3 md:py-4 rounded-xl text-base md:text-lg transition-colors">
-              {rolling ? 'Rolling...' : 'Roll Dice'}
-            </button>
-            {lastTurn && !rolling && (
-              <div className="text-white/40 text-[11px] md:text-sm mt-3 text-center space-y-0.5">
-                <div>Rolled {lastTurn.dice} → {currentSpace?.emoji} {currentSpace?.name}</div>
-                {lastTurn.lap_bonus > 0 && <div className="text-green-400">🏁 Passed START +{lastTurn.lap_bonus} OCC</div>}
-                {(lastTurn.staking_bonus ?? 0) > 0 && <div className="text-green-400">🪙 Free Staking +{lastTurn.staking_bonus} OCC</div>}
-                {lastTurn.moved_to_crash && <div className="text-red-400">🚨 Sent to Market Crash!</div>}
-                {lastTurn.rent && lastTurn.rent.amount > 0 && <div className="text-red-400">Paid {lastTurn.rent.amount} OCC rent to {lastTurn.rent.to}</div>}
-              </div>
-            )}
-            {message && <div className="text-amber-400 text-xs md:text-sm mt-3 text-center max-w-xs">{message}</div>}
           </div>
+        </div>
+
+        {/* Card legend — like the mockup's example cards */}
+        <div className="mx-auto mt-4 md:mt-6 grid grid-cols-1 md:grid-cols-3 gap-3" style={{ maxWidth: 'min(92vw, 780px)' }}>
+          {[
+            { head: 'MARKET EVENT', color: '#b91c1c', icon: '⚡', text: 'XRP pumps 20%! Collect OCC — or a rug pull costs you.' },
+            { head: 'KNOWLEDGE CHALLENGE', color: '#1d4ed8', icon: '🎓', text: 'Land on a district and answer 3 questions to earn rewards.' },
+            { head: 'CRYPTO OPPORTUNITY', color: '#15803d', icon: '🎁', text: 'Airdrops, staking yield, and early-investor bonuses.' },
+          ].map(c => (
+            <div key={c.head} className="rounded-md overflow-hidden shadow-lg" style={{ background: '#f0e7c8' }}>
+              <div className="px-3 py-1.5 text-[10px] md:text-xs font-extrabold tracking-wider text-white" style={{ background: c.color }}>{c.head}</div>
+              <div className="px-3 py-2.5 text-[11px] md:text-xs text-[#3a2a15] flex items-center gap-2">
+                <span className="text-xl">{c.icon}</span>{c.text}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 
-      {/* Buy offer modal */}
+      {/* Buy offer modal — parchment deed card */}
       {gamePhase === 'buy-offer' && lastTurn?.space && (
-        <div className="fixed inset-0 bg-black/70 flex items-center justify-center px-6 z-50">
-          <div className="bg-[#13131a] border border-white/15 rounded-2xl p-6 max-w-sm w-full text-center">
-            <div className="h-2 w-full rounded-full mb-4" style={{ backgroundColor: lastTurn.space.color ?? '#666' }} />
-            <div className="text-5xl mb-3">{lastTurn.space.emoji}</div>
-            <h3 className="text-xl font-bold mb-1">{lastTurn.space.name}</h3>
-            <p className="text-white/50 text-sm mb-5">Unowned district — buy it and collect {Number(lastTurn.space.base_rent_oc)} OCC rent when other players land here.</p>
-            <div className="bg-white/5 rounded-xl p-4 mb-5 flex justify-between text-sm">
-              <span className="text-white/50">Price</span>
-              <span className="font-bold text-amber-400">{Number(lastTurn.space.purchase_price_oc)} OCC</span>
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center px-6 z-50">
+          <div className="rounded-lg overflow-hidden max-w-sm w-full text-center shadow-2xl" style={{ background: '#f0e7c8' }}>
+            <div className="px-4 py-2 border-b border-black/25" style={{ backgroundColor: lastTurn.space.color ?? '#666' }}>
+              <span className="text-xs font-extrabold tracking-widest text-white uppercase">Title Deed</span>
             </div>
-            <div className="flex justify-between text-xs text-white/40 mb-5 px-1">
-              <span>Your balance</span>
-              <span>{balance.toFixed(1)} OCC</span>
-            </div>
-            <div className="flex gap-3">
-              <button onClick={handleBuy} disabled={buying || balance < Number(lastTurn.space.purchase_price_oc)}
-                className="flex-1 bg-green-600 hover:bg-green-500 disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold py-3 rounded-xl transition-colors">
-                {buying ? 'Buying…' : 'Buy District'}
-              </button>
-              <button onClick={afterBuyDecision} disabled={buying}
-                className="flex-1 bg-white/10 hover:bg-white/15 text-white font-semibold py-3 rounded-xl transition-colors">
-                Skip
-              </button>
+            <div className="p-6">
+              <div className="text-5xl mb-3">{lastTurn.space.emoji}</div>
+              <h3 className="text-xl font-extrabold mb-1 uppercase tracking-wide text-[#2b2118]">{lastTurn.space.name}</h3>
+              <p className="text-[#6b5b3d] text-sm mb-5">Unowned district — buy it and collect {Number(lastTurn.space.base_rent_oc)} OCC rent when other players land here.</p>
+              <div className="rounded-md p-4 mb-3 flex justify-between text-sm border border-[#c9b88e]" style={{ background: '#e7dcba' }}>
+                <span className="text-[#6b5b3d] font-semibold">Price</span>
+                <span className="font-extrabold text-amber-700">{Number(lastTurn.space.purchase_price_oc)} OCC</span>
+              </div>
+              <div className="flex justify-between text-xs text-[#8a7752] mb-5 px-1">
+                <span>Your balance</span>
+                <span>{balance.toFixed(1)} OCC</span>
+              </div>
+              <div className="flex gap-3">
+                <button onClick={handleBuy} disabled={buying || balance < Number(lastTurn.space.purchase_price_oc)}
+                  className="flex-1 bg-green-700 hover:bg-green-600 disabled:opacity-40 disabled:cursor-not-allowed text-white font-extrabold py-3 rounded-md transition-colors uppercase tracking-wide text-sm">
+                  {buying ? 'Buying…' : 'Buy District'}
+                </button>
+                <button onClick={afterBuyDecision} disabled={buying}
+                  className="flex-1 bg-[#3a2a15] hover:bg-[#4d3a22] text-[#f0e3c0] font-bold py-3 rounded-md transition-colors uppercase tracking-wide text-sm">
+                  Skip
+                </button>
+              </div>
             </div>
           </div>
         </div>
       )}
 
-      {/* Market Event / Crypto Opportunity card modal */}
+      {/* Market Event / Crypto Opportunity card modal — classic deck card */}
       {gamePhase === 'card' && lastTurn?.card && (
-        <div className="fixed inset-0 bg-black/70 flex items-center justify-center px-6 z-50">
-          <div className={`border rounded-2xl p-6 max-w-sm w-full text-center ${lastTurn.card.deck === 'event' ? 'bg-[#1a1212] border-orange-500/40' : 'bg-[#121a14] border-green-500/40'}`}>
-            <div className="text-5xl mb-3">{lastTurn.card.deck === 'event' ? '⚡' : '🎁'}</div>
-            <div className={`text-xs font-bold tracking-widest mb-3 ${lastTurn.card.deck === 'event' ? 'text-orange-400' : 'text-green-400'}`}>
-              {lastTurn.card.deck === 'event' ? 'MARKET EVENT' : 'CRYPTO OPPORTUNITY'}
+        <div className="fixed inset-0 bg-black/75 flex items-center justify-center px-6 z-50">
+          <div className="rounded-lg overflow-hidden max-w-sm w-full text-center shadow-2xl" style={{ background: '#f0e7c8' }}>
+            <div className="px-4 py-2 border-b border-black/25" style={{ background: lastTurn.card.deck === 'event' ? '#b91c1c' : '#15803d' }}>
+              <span className="text-xs font-extrabold tracking-widest text-white uppercase">
+                {lastTurn.card.deck === 'event' ? 'Market Event' : 'Crypto Opportunity'}
+              </span>
             </div>
-            <p className="text-lg font-semibold mb-4">{lastTurn.card.text}</p>
-            {!practice && (
-              <div className={`text-sm mb-5 ${(lastTurn.card.applied ?? lastTurn.card.delta_oc) >= 0 ? 'text-green-400' : 'text-red-400'}`}>
-                {(lastTurn.card.applied ?? 0) >= 0 ? '+' : ''}{(lastTurn.card.applied ?? 0).toFixed(1)} OCC
-                {lastTurn.card.applied === 0 && lastTurn.card.delta_oc > 0 && ' (daily cap reached)'}
-              </div>
-            )}
-            <button onClick={dismissCard} className="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 rounded-xl transition-colors">
-              Continue
-            </button>
+            <div className="p-6">
+              <div className="text-5xl mb-3">{lastTurn.card.deck === 'event' ? '⚡' : '🎁'}</div>
+              <p className="text-lg font-bold mb-4 text-[#2b2118]">{lastTurn.card.text}</p>
+              {!practice && (
+                <div className={`text-sm font-extrabold mb-5 ${(lastTurn.card.applied ?? lastTurn.card.delta_oc) >= 0 ? 'text-green-700' : 'text-red-700'}`}>
+                  {(lastTurn.card.applied ?? 0) >= 0 ? '+' : ''}{(lastTurn.card.applied ?? 0).toFixed(1)} OCC
+                  {lastTurn.card.applied === 0 && lastTurn.card.delta_oc > 0 && ' (daily cap reached)'}
+                </div>
+              )}
+              <button onClick={dismissCard} className="w-full bg-amber-500 hover:bg-amber-400 text-black font-extrabold py-3 rounded-md transition-colors uppercase tracking-wide">
+                Continue
+              </button>
+            </div>
           </div>
         </div>
       )}
