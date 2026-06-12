@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getUserId } from '@/lib/game/supabase'
-import { dbGet, dbInsert, dbPatch, dbUpsert } from '@/lib/game/supabase'
+import { dbGet, dbInsert, dbPatch, dbUpsert, dbRpc } from '@/lib/game/supabase'
 import { getLevel, XP_REWARDS, OC_REWARDS, SESSION_OC_CAP, DAILY_OC_CAP, ALL_ZONES } from '@/lib/game/types'
 
 
@@ -92,18 +92,22 @@ export async function PATCH(req: NextRequest) {
       board_state,
       completed: true,
     }),
-    // Update player stats
+    // Update player stats — never write oc_balance or the earn counters here:
+    // game_adjust_oc owns both (balance + capped daily/weekly counters), and a
+    // stale read-modify-write would overwrite board purchases/rent mid-session.
     dbUpsert('game_player_stats', {
       user_id: userId,
       total_xp: newXp,
       level: newLevel,
-      oc_balance: (stats.oc_balance ?? 0) + cappedOc,
-      oc_earned_today: todayOc + cappedOc,
-      oc_earned_week: (stats.oc_earned_week ?? 0) + cappedOc,
-      last_daily_reset: today,
       updated_at: new Date().toISOString(),
     }, 'user_id'),
   ])
+
+  // Credit quiz OC through the atomic ledger function (no-op when 0);
+  // it also rolls oc_earned_today/oc_earned_week forward.
+  if (cappedOc > 0) {
+    await dbRpc('game_adjust_oc', { p_user: userId, p_amount: cappedOc, p_reason: 'quiz_reward', p_ref: String(session_id) })
+  }
 
   return NextResponse.json({
     ok: true,

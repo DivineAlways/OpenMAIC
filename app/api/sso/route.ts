@@ -2,6 +2,7 @@ import { cookies } from 'next/headers';
 import { createHmac, timingSafeEqual } from 'crypto';
 import { NextRequest, NextResponse } from 'next/server';
 import { createAccessToken } from '@/app/api/access-code/verify/route';
+import { createGameToken } from '@/lib/game/auth';
 
 const TOKEN_MAX_AGE_MS = 5 * 60 * 1000; // 5 minutes
 
@@ -40,11 +41,13 @@ export async function GET(request: NextRequest) {
   const tokenParts = token.split('.');
   const userId = tokenParts.length >= 3 ? tokenParts[0] : null;
 
-  // Issue the standard openmaic_access cookie — embed userId so game routes can identify the user
+  // Issue the standard openmaic_access cookie.
+  // With a userId: HMAC-signed game token (sso.v2.<id>.<exp>.<sig>) so game routes
+  // can trust the identity. Without: legacy unsigned site-access token.
   const baseToken = accessCode
     ? createAccessToken(accessCode)
     : `${Date.now()}.valid`;
-  const accessToken = userId ? `sso.${userId}.${baseToken}` : `sso.${baseToken}`;
+  const accessToken = userId ? createGameToken(userId, secret) : `sso.${baseToken}`;
   const cookieStore = await cookies();
   cookieStore.set('openmaic_access', accessToken, {
     httpOnly: true,

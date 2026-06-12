@@ -88,15 +88,33 @@ const MODES = [
   },
 ]
 
+interface MyDistrict {
+  zone_id: string
+  name: string
+  emoji: string | null
+  color: string | null
+  base_rent_oc: number | null
+}
+
 export default function GameHome() {
   const [stats, setStats] = useState<PlayerStats | null>(null)
   const [loading, setLoading] = useState(true)
+  const [districts, setDistricts] = useState<MyDistrict[]>([])
 
   useEffect(() => {
     fetch('/api/game/stats')
       .then(r => r.json())
       .then(d => { if (d.stats) setStats(d.stats) })
       .finally(() => setLoading(false))
+    fetch('/api/game/board')
+      .then(r => r.json())
+      .then(d => {
+        if (d.me?.properties?.length && d.board) {
+          const mine = new Set(d.me.properties)
+          setDistricts(d.board.filter((s: any) => s.zone_id && mine.has(s.zone_id)))
+        }
+      })
+      .catch(() => {})
   }, [])
 
   return (
@@ -149,6 +167,22 @@ export default function GameHome() {
         {!loading && !stats && (
           <div className="bg-amber-500/10 border border-amber-500/30 rounded-xl p-5 mb-10 text-center text-amber-300">
             Sign in through OnlyCrypto to track your progress and earn OC rewards.
+          </div>
+        )}
+
+        {/* My Districts */}
+        {districts.length > 0 && (
+          <div className="bg-white/5 border border-green-500/20 rounded-xl p-5 mb-10">
+            <div className="text-white/40 text-xs uppercase tracking-wider mb-3">🏠 My Districts ({districts.length}/16)</div>
+            <div className="flex flex-wrap gap-2">
+              {districts.map(d => (
+                <span key={d.zone_id} className="flex items-center gap-1.5 bg-white/5 border border-white/10 rounded-lg px-3 py-1.5 text-sm">
+                  <span className="w-2 h-2 rounded-full inline-block" style={{ backgroundColor: d.color ?? '#666' }} />
+                  {d.emoji} {d.name}
+                  <span className="text-amber-400/70 text-xs ml-1">{Number(d.base_rent_oc)} OCC rent</span>
+                </span>
+              ))}
+            </div>
           </div>
         )}
 
