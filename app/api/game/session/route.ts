@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getUserId } from '@/lib/game/supabase'
 import { dbGet, dbInsert, dbPatch, dbUpsert, dbRpc } from '@/lib/game/supabase'
-import { getLevel, XP_REWARDS, OC_REWARDS, SESSION_OC_CAP, DAILY_OC_CAP, ALL_ZONES } from '@/lib/game/types'
+import { getLevel, DAILY_OC_CAP, ALL_ZONES } from '@/lib/game/types'
 
 
 // POST /api/game/session — start a new session
@@ -57,7 +57,10 @@ export async function POST(req: NextRequest) {
   return NextResponse.json({ session, zones, level })
 }
 
-// PATCH /api/game/session — end session and award XP + OC
+// PATCH /api/game/session — end session and update XP.
+// Phase 3: oc_earned is no longer accepted from the client — all OCC is awarded
+// server-side via game_adjust_oc in /api/game/answer and /api/game/turn.
+// Accepting it here was the spoofable faucet identified in the Phase 1 incident log.
 export async function PATCH(req: NextRequest) {
   const userId = getUserId(req)
   const body = await req.json()
@@ -65,10 +68,9 @@ export async function PATCH(req: NextRequest) {
   if (!userId || String(body.session_id).startsWith('guest-')) {
     return NextResponse.json({ ok: true, xp_earned: body.xp_earned ?? 0, oc_earned: 0, new_level: 1, leveled_up: false })
   }
-  const { session_id, score, zones_completed, xp_earned, oc_earned: rawOc, board_state } = body
-
-  // Enforce session OC cap
-  const oc_earned = Math.min(rawOc ?? 0, SESSION_OC_CAP)
+  // oc_earned intentionally ignored — OCC is credited turn-by-turn, not at session end.
+  const { session_id, score, zones_completed, xp_earned, board_state } = body
+  const oc_earned = 0
 
   // Get current stats
   const statsRows = await dbGet('game_player_stats', { 'user_id': `eq.${userId}` })

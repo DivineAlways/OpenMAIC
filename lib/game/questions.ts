@@ -64,7 +64,7 @@ export const BOARD_QUESTIONS: Record<string, QuizQuestion[]> = {
 }
 
 
-// n distinct random questions for a zone (empty array if the zone has none yet — 8 of 16 zones pending)
+// n distinct random questions for a zone (empty array if the zone has none yet)
 export function getZoneQuestions(zoneId: string, n = 3, rand: () => number = Math.random): QuizQuestion[] {
   const pool = BOARD_QUESTIONS[zoneId] ?? []
   const shuffled = [...pool]
@@ -73,4 +73,12 @@ export function getZoneQuestions(zoneId: string, n = 3, rand: () => number = Mat
     ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
   }
   return shuffled.slice(0, n)
+}
+
+// Phase 3: safe variant — strips correct_index before returning to API routes.
+// The turn route uses this as its local fallback when game_questions DB is empty.
+export type QuizQuestionPublic = Omit<QuizQuestion, 'correct_index'>
+
+export function getZoneQuestionsPublic(zoneId: string, n = 3, rand: () => number = Math.random): QuizQuestionPublic[] {
+  return getZoneQuestions(zoneId, n, rand).map(({ correct_index: _ci, ...rest }) => rest)
 }

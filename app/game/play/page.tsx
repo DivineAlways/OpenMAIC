@@ -1,13 +1,13 @@
 'use client'
 
-// OnlyCrypto City — Monopoly Classic board (Phase 1).
-// Server-authoritative: /api/game/turn rolls and resolves; /api/game/buy purchases.
-// This page renders state — it never computes OCC.
+// OnlyCrypto City — Monopoly Classic board (Phase 1 + 2 + 3).
+// Server-authoritative: /api/game/turn rolls and resolves; /api/game/buy purchases;
+// /api/game/answer grades and awards OCC. This page renders state only.
 
 import { useState, useEffect, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
-import { XP_REWARDS, LEVEL_NAMES, getLevel, type QuizQuestion } from '@/lib/game/types'
+import { XP_REWARDS, LEVEL_NAMES, getLevel } from '@/lib/game/types'
 
 type GamePhase = 'loading' | 'board' | 'buy-offer' | 'card' | 'zone-quiz' | 'zone-result' | 'done'
 
@@ -24,6 +24,25 @@ interface BoardSpace {
 
 interface OwnerInfo { user_id: string; name: string; mine: boolean }
 
+// Phase 3: questions no longer include correct_index (stripped server-side)
+interface PublicQuestion {
+  question_id: string
+  zone: string
+  question_text: string
+  options: string[]
+  difficulty?: string
+}
+
+interface AnswerResult {
+  correct: boolean
+  explanation?: string
+  oc_awarded: number
+  balance: number
+  quiz_streak: number
+  effects_applied: string[]
+  active_effects: unknown[]
+}
+
 interface TurnResult {
   dice: number
   position: number
@@ -32,12 +51,15 @@ interface TurnResult {
   lap_bonus: number
   staking_bonus?: number
   moved_to_crash?: boolean
+  skipped?: boolean
   space: BoardSpace
-  card: { deck: string; text: string; delta_oc: number; applied?: number } | null
+  card: { deck: string; text: string; delta_oc: number; applied?: number; pending?: boolean; effect_type?: string; effect_applied?: string } | null
   rent: { amount: number; to: string } | null
   can_buy: boolean
   owner: { mine: boolean; name?: string } | null
-  questions: QuizQuestion[] | null
+  questions: PublicQuestion[] | null
+  pending_penalty: number | null
+  active_effects: unknown[]
   balance: number | null
   error?: string
   code?: string
@@ -45,15 +67,26 @@ interface TurnResult {
 
 // 7×7 perimeter, classic Monopoly orientation: START bottom-right, counterclockwise.
 function gridCell(position: number): { row: number; col: number } {
-  if (position <= 6) return { row: 7, col: 7 - position }          // bottom: right → left
-  if (position <= 11) return { row: 7 - (position - 6), col: 1 }   // left: bottom → top
-  if (position === 12) return { row: 1, col: 1 }                   // top-left corner
-  if (position <= 17) return { row: 1, col: position - 11 }        // top: left → right
-  if (position === 18) return { row: 1, col: 7 }                   // top-right corner
-  return { row: position - 17, col: 7 }                            // right: top → bottom
+  if (position <= 6) return { row: 7, col: 7 - position }
+  if (position <= 11) return { row: 7 - (position - 6), col: 1 }
+  if (position === 12) return { row: 1, col: 1 }
+  if (position <= 17) return { row: 1, col: position - 11 }
+  if (position === 18) return { row: 1, col: 7 }
+  return { row: position - 17, col: 7 }
 }
 
 const DICE_FACES = ['', '⚀', '⚁', '⚂', '⚃', '⚄', '⚅']
+
+function effectLabel(kind: string): string {
+  switch (kind) {
+    case 'protect_next_loss': return '🛡️ Protected from next loss'
+    case 'skip_turn': return '⏭️ Skip next turn'
+    case 'double_next_reward': return '⚡ Double next reward'
+    case 'buy_discount': return '🏷️ 10% buy discount earned!'
+    case 'own_district_bonus': return '🏠 District owner bonus!'
+    default: return kind
+  }
+}
 
 function GameBoard() {
   const searchParams = useSearchParams()
@@ -74,14 +107,15 @@ function GameBoard() {
   const [message, setMessage] = useState<string | null>(null)
   const [buying, setBuying] = useState(false)
 
-  // quiz state
-  const [questions, setQuestions] = useState<QuizQuestion[]>([])
+  // quiz state — Phase 3: no correct_index client-side
+  const [questions, setQuestions] = useState<PublicQuestion[]>([])
   const [qIndex, setQIndex] = useState(0)
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null)
   const [answerRevealed, setAnswerRevealed] = useState(false)
+  const [lastAnswer, setLastAnswer] = useState<AnswerResult | null>(null)
   const [quizCorrect, setQuizCorrect] = useState(0)
+  const [submittingAnswer, setSubmittingAnswer] = useState(false)
   const [sessionXP, setSessionXP] = useState(0)
-  const [sessionQuizOC, setSessionQuizOC] = useState(0)
   const [zonesCompleted, setZonesCompleted] = useState<string[]>([])
 
   useEffect(() => {
@@ -134,7 +168,6 @@ function GameBoard() {
     setMessage(null)
     setLastTurn(null)
 
-    // request the server turn while the dice spins
     const turnPromise = fetch('/api/game/turn', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -156,7 +189,6 @@ function GameBoard() {
       setMessage('Connection problem — try rolling again.')
       return
     }
-    // let the spin run at least ~0.8s so it feels like a roll
     if (ticks < 8) await new Promise(r => setTimeout(r, (8 - ticks) * 100))
     clearInterval(spin)
 
@@ -172,12 +204,18 @@ function GameBoard() {
       return
     }
 
+    // Skip-turn effect
+    if ((data as any).skipped) {
+      setMessage((data as any).reason ?? 'Your turn was skipped!')
+      setTurn(prev => prev + 1)
+      return
+    }
+
     setDiceValue(data.dice)
     setPosition(data.position)
     setTurn(data.turn)
     setLastTurn(data)
     if (data.balance !== null && data.balance !== undefined) setBalance(data.balance)
-    // always reset — a zone with an empty pool must not replay last turn's quiz
     setQuestions(data.questions ?? [])
 
     if (data.card) {
@@ -191,12 +229,13 @@ function GameBoard() {
     }
   }
 
-  function startQuiz(qs: QuizQuestion[]) {
+  function startQuiz(qs: PublicQuestion[]) {
     setQuestions(qs)
     setQIndex(0)
     setQuizCorrect(0)
     setSelectedAnswer(null)
     setAnswerRevealed(false)
+    setLastAnswer(null)
     setGamePhase('zone-quiz')
   }
 
@@ -237,20 +276,44 @@ function GameBoard() {
   }
 
   function dismissCard() {
-    setGamePhase('board')
+    // After card is dismissed: if there were questions queued, start the quiz
+    if (questions.length > 0) startQuiz(questions)
+    else setGamePhase('board')
   }
 
-  function selectAnswer(index: number) {
-    if (answerRevealed || selectedAnswer !== null) return
-    setSelectedAnswer(index)
-    setAnswerRevealed(true)
-    const q = questions[qIndex]
-    const correct = q && index === q.correct_index
-    setSessionXP(prev => Math.max(0, prev + (correct ? XP_REWARDS.correct_answer : XP_REWARDS.wrong_answer)))
-    if (correct) {
-      setQuizCorrect(prev => prev + 1)
-      if (!practice) setSessionQuizOC(prev => Math.min(25, prev + 0.5))
+  // Phase 3: submit answer to server — no local grading
+  async function selectAnswer(index: number) {
+    if (answerRevealed || selectedAnswer !== null || submittingAnswer) return
+    if (!sessionId || practice) {
+      // Practice mode: no server call, just mark selected (no correct_index to reveal)
+      setSelectedAnswer(index)
+      setAnswerRevealed(true)
+      setSessionXP(prev => Math.max(0, prev + XP_REWARDS.correct_answer))
+      return
     }
+    const q = questions[qIndex]
+    if (!q) return
+
+    setSelectedAnswer(index)
+    setSubmittingAnswer(true)
+
+    const res = await fetch('/api/game/answer', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ session_id: sessionId, question_id: q.question_id, answer_index: index }),
+    })
+    const data: AnswerResult = await res.json().catch(() => ({ correct: false, oc_awarded: 0, balance, quiz_streak: 0, effects_applied: [], active_effects: [] }))
+    setSubmittingAnswer(false)
+    setAnswerRevealed(true)
+    setLastAnswer(data)
+
+    if (data.correct) {
+      setQuizCorrect(prev => prev + 1)
+      setSessionXP(prev => Math.max(0, prev + XP_REWARDS.correct_answer))
+    } else {
+      setSessionXP(prev => Math.max(0, prev + XP_REWARDS.wrong_answer))
+    }
+    if (data.balance !== undefined) setBalance(data.balance)
   }
 
   function nextQuestion() {
@@ -259,7 +322,6 @@ function GameBoard() {
       if (zone && !zonesCompleted.includes(zone)) setZonesCompleted(prev => [...prev, zone])
       if (quizCorrect >= questions.length) {
         setSessionXP(prev => prev + XP_REWARDS.perfect_zone)
-        if (!practice) setSessionQuizOC(prev => Math.min(25, prev + 2))
       }
       setGamePhase('zone-result')
       return
@@ -267,6 +329,7 @@ function GameBoard() {
     setQIndex(prev => prev + 1)
     setSelectedAnswer(null)
     setAnswerRevealed(false)
+    setLastAnswer(null)
   }
 
   async function endGame() {
@@ -279,7 +342,7 @@ function GameBoard() {
           score: sessionXP,
           zones_completed: zonesCompleted,
           xp_earned: sessionXP,
-          oc_earned: sessionQuizOC,
+          // oc_earned intentionally omitted — server handles OCC
         }),
       })
     }
@@ -309,8 +372,8 @@ function GameBoard() {
               <div className="font-bold text-blue-400 text-xl">{sessionXP}</div>
             </div>
             <div>
-              <div className="text-white/40 text-xs mb-1">Quiz OCC Earned</div>
-              <div className="font-bold text-amber-400 text-xl">{sessionQuizOC.toFixed(1)}</div>
+              <div className="text-white/40 text-xs mb-1">OCC Balance</div>
+              <div className="font-bold text-amber-400 text-xl">{balance.toFixed(1)}</div>
             </div>
             <div>
               <div className="text-white/40 text-xs mb-1">Level</div>
@@ -336,6 +399,7 @@ function GameBoard() {
 
   if (gamePhase === 'zone-quiz' && questions[qIndex]) {
     const q = questions[qIndex]
+    const pendingPenalty = lastTurn?.pending_penalty ?? null
     return (
       <div className="min-h-screen bg-[#0a0a0f] text-white">
         <div className="border-b border-white/10 px-6 py-3 flex items-center justify-between text-sm">
@@ -346,21 +410,26 @@ function GameBoard() {
           </div>
         </div>
         <div className="max-w-2xl mx-auto px-6 py-10">
-          <div className="text-xs text-white/30 mb-6">Knowledge Challenge — Question {qIndex + 1} of {questions.length}</div>
+          <div className="text-xs text-white/30 mb-2">Knowledge Challenge — Question {qIndex + 1} of {questions.length}</div>
+          {pendingPenalty !== null && pendingPenalty < 0 && !answerRevealed && (
+            <div className="bg-amber-500/10 border border-amber-500/30 rounded-lg px-4 py-2 mb-4 text-xs text-amber-300">
+              ⚠️ Pending penalty: {Math.abs(pendingPenalty).toFixed(1)} OCC — answer correctly to halve it
+            </div>
+          )}
           <h2 className="text-xl font-semibold mb-8 leading-relaxed">{q.question_text}</h2>
           <div className="space-y-3 mb-8">
-            {q.options.map((opt, i) => {
+            {q.options.map((opt: string, i: number) => {
               let cls = 'border-white/10 bg-white/5 text-white/70 hover:border-white/30 hover:bg-white/8'
-              if (answerRevealed) {
-                if (i === q.correct_index) cls = 'border-green-500 bg-green-500/20 text-white'
-                else if (i === selectedAnswer) cls = 'border-red-500 bg-red-500/20 text-white'
+              if (answerRevealed && lastAnswer) {
+                if (lastAnswer.correct && i === selectedAnswer) cls = 'border-green-500 bg-green-500/20 text-white'
+                else if (!lastAnswer.correct && i === selectedAnswer) cls = 'border-red-500 bg-red-500/20 text-white'
                 else cls = 'border-white/5 bg-white/3 text-white/30'
               } else if (selectedAnswer === i) {
                 cls = 'border-blue-500 bg-blue-500/20 text-white'
               }
               return (
-                <button key={i} onClick={() => selectAnswer(i)} disabled={answerRevealed}
-                  className={`w-full text-left px-5 py-4 rounded-xl border transition-all ${cls}`}>
+                <button key={i} onClick={() => selectAnswer(i)} disabled={answerRevealed || submittingAnswer}
+                  className={`w-full text-left px-5 py-4 rounded-xl border transition-all ${cls} ${submittingAnswer ? 'opacity-60 cursor-wait' : ''}`}>
                   <span className="text-white/30 mr-3">{['A', 'B', 'C', 'D'][i]}.</span>
                   {opt}
                 </button>
@@ -368,12 +437,27 @@ function GameBoard() {
             })}
           </div>
 
-          {answerRevealed && (
-            <div className={`rounded-xl p-5 mb-6 ${selectedAnswer === q.correct_index ? 'bg-green-500/10 border border-green-500/30' : 'bg-red-500/10 border border-red-500/30'}`}>
-              <div className={`font-semibold mb-2 ${selectedAnswer === q.correct_index ? 'text-green-400' : 'text-red-400'}`}>
-                {selectedAnswer === q.correct_index ? '✓ Correct!' : '✗ Wrong'}
+          {answerRevealed && lastAnswer && (
+            <div className={`rounded-xl p-5 mb-4 ${lastAnswer.correct ? 'bg-green-500/10 border border-green-500/30' : 'bg-red-500/10 border border-red-500/30'}`}>
+              <div className={`font-semibold mb-2 ${lastAnswer.correct ? 'text-green-400' : 'text-red-400'}`}>
+                {lastAnswer.correct ? '✓ Correct!' : '✗ Wrong'}
+                {lastAnswer.oc_awarded > 0 && <span className="ml-2 text-amber-400 text-sm">+{lastAnswer.oc_awarded.toFixed(2)} OCC</span>}
               </div>
-              {q.explanation && <p className="text-white/70 text-sm">{q.explanation}</p>}
+              {lastAnswer.explanation && <p className="text-white/70 text-sm">{lastAnswer.explanation}</p>}
+              {lastAnswer.effects_applied.length > 0 && (
+                <div className="mt-3 space-y-1">
+                  {lastAnswer.effects_applied.map(e => (
+                    <div key={e} className="text-xs text-amber-300">{effectLabel(e)}</div>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Practice mode: no server answer — just allow continue */}
+          {answerRevealed && practice && (
+            <div className="bg-white/5 border border-white/10 rounded-xl p-4 mb-4 text-sm text-white/60">
+              Practice mode — answers are not graded. Play standard mode to earn OCC.
             </div>
           )}
 
@@ -396,7 +480,7 @@ function GameBoard() {
           <p className="text-white/50 mb-8">{quizCorrect} of {questions.length} correct</p>
           <div className="bg-white/5 border border-white/10 rounded-xl p-5 mb-8 grid grid-cols-2 gap-4 text-center">
             <div><div className="text-white/40 text-xs mb-1">Session XP</div><div className="font-bold text-blue-400">{sessionXP}</div></div>
-            {!practice && <div><div className="text-white/40 text-xs mb-1">Quiz OCC (pending)</div><div className="font-bold text-amber-400">{sessionQuizOC.toFixed(1)}</div></div>}
+            {!practice && <div><div className="text-white/40 text-xs mb-1">OCC Balance</div><div className="font-bold text-amber-400">{balance.toFixed(1)}</div></div>}
           </div>
           <div className="flex gap-3 justify-center">
             <button onClick={() => setGamePhase('board')} className="bg-blue-600 hover:bg-blue-500 text-white font-bold px-6 py-3 rounded-xl transition-colors">
@@ -412,7 +496,6 @@ function GameBoard() {
   }
 
   // ── BOARD VIEW (+ buy/card modals) ─────────────────────────────────────────
-  // Crypto Monopoly Classic: wooden table, parchment board, dark skyline center.
   const currentSpace = board[position]
 
   return (
@@ -451,7 +534,6 @@ function GameBoard() {
                     outlineOffset: '-2px',
                   }}
                   className="relative rounded-sm flex flex-col overflow-hidden text-center">
-                  {/* classic Monopoly color band */}
                   {space.space_type === 'district' && (
                     <div className="h-2 md:h-2.5 w-full shrink-0 border-b border-black/25" style={{ backgroundColor: space.color ?? '#666' }} />
                   )}
@@ -475,11 +557,10 @@ function GameBoard() {
               )
             })}
 
-            {/* Center: dark skyline panel, like the classic board art */}
+            {/* Center: dark skyline panel */}
             <div style={{ gridRow: '2 / 7', gridColumn: '2 / 7', background: '#f0e7c8' }} className="relative rounded-sm flex flex-col items-center justify-center px-4 overflow-hidden">
               <svg viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice" className="absolute inset-0 w-full h-full">
                 <rect width="400" height="240" fill="#1c1812" />
-                {/* skyline silhouette */}
                 <g fill="#2e2418">
                   <rect x="0" y="120" width="34" height="120" />
                   <rect x="40" y="84" width="26" height="156" />
@@ -494,7 +575,6 @@ function GameBoard() {
                   <rect x="360" y="138" width="40" height="102" />
                   <polygon points="197,20 203,20 203,44 197,44" />
                 </g>
-                {/* lit windows */}
                 <g fill="#caa64a" opacity="0.5">
                   <rect x="48" y="96" width="4" height="5" /><rect x="56" y="110" width="4" height="5" />
                   <rect x="124" y="74" width="4" height="5" /><rect x="132" y="92" width="4" height="5" />
@@ -524,6 +604,7 @@ function GameBoard() {
                     {(lastTurn.staking_bonus ?? 0) > 0 && <div className="text-green-400">🪙 Free Staking +{lastTurn.staking_bonus} OCC</div>}
                     {lastTurn.moved_to_crash && <div className="text-red-400">🚨 Sent to Market Crash!</div>}
                     {lastTurn.rent && lastTurn.rent.amount > 0 && <div className="text-red-400">Paid {lastTurn.rent.amount} OCC rent to {lastTurn.rent.to}</div>}
+                    {lastTurn.card?.effect_applied && <div className="text-amber-300">{effectLabel(lastTurn.card.effect_applied)}</div>}
                   </div>
                 )}
                 {message && <div className="text-amber-300 text-xs md:text-sm mt-3 text-center max-w-xs">{message}</div>}
@@ -532,89 +613,89 @@ function GameBoard() {
           </div>
         </div>
 
-        {/* Card legend — like the mockup's example cards */}
+        {/* Card legend */}
         <div className="mx-auto mt-4 md:mt-6 grid grid-cols-1 md:grid-cols-3 gap-3" style={{ maxWidth: 'min(92vw, 780px)' }}>
-          {[
-            { head: 'MARKET EVENT', color: '#b91c1c', icon: '⚡', text: 'XRP pumps 20%! Collect OCC — or a rug pull costs you.' },
-            { head: 'KNOWLEDGE CHALLENGE', color: '#1d4ed8', icon: '🎓', text: 'Land on a district and answer 3 questions to earn rewards.' },
-            { head: 'CRYPTO OPPORTUNITY', color: '#15803d', icon: '🎁', text: 'Airdrops, staking yield, and early-investor bonuses.' },
-          ].map(c => (
-            <div key={c.head} className="rounded-md overflow-hidden shadow-lg" style={{ background: '#f0e7c8' }}>
-              <div className="px-3 py-1.5 text-[10px] md:text-xs font-extrabold tracking-wider text-white" style={{ background: c.color }}>{c.head}</div>
-              <div className="px-3 py-2.5 text-[11px] md:text-xs text-[#3a2a15] flex items-center gap-2">
-                <span className="text-xl">{c.icon}</span>{c.text}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Buy offer modal — parchment deed card */}
-      {gamePhase === 'buy-offer' && lastTurn?.space && (
-        <div className="fixed inset-0 bg-black/75 flex items-center justify-center px-6 z-50">
-          <div className="rounded-lg overflow-hidden max-w-sm w-full text-center shadow-2xl" style={{ background: '#f0e7c8' }}>
-            <div className="px-4 py-2 border-b border-black/25" style={{ backgroundColor: lastTurn.space.color ?? '#666' }}>
-              <span className="text-xs font-extrabold tracking-widest text-white uppercase">Title Deed</span>
-            </div>
-            <div className="p-6">
-              <div className="text-5xl mb-3">{lastTurn.space.emoji}</div>
-              <h3 className="text-xl font-extrabold mb-1 uppercase tracking-wide text-[#2b2118]">{lastTurn.space.name}</h3>
-              <p className="text-[#6b5b3d] text-sm mb-5">Unowned district — buy it and collect {Number(lastTurn.space.base_rent_oc)} OCC rent when other players land here.</p>
-              <div className="rounded-md p-4 mb-3 flex justify-between text-sm border border-[#c9b88e]" style={{ background: '#e7dcba' }}>
-                <span className="text-[#6b5b3d] font-semibold">Price</span>
-                <span className="font-extrabold text-amber-700">{Number(lastTurn.space.purchase_price_oc)} OCC</span>
-              </div>
-              <div className="flex justify-between text-xs text-[#8a7752] mb-5 px-1">
-                <span>Your balance</span>
-                <span>{balance.toFixed(1)} OCC</span>
-              </div>
-              <div className="flex gap-3">
-                <button onClick={handleBuy} disabled={buying || balance < Number(lastTurn.space.purchase_price_oc)}
-                  className="flex-1 bg-green-700 hover:bg-green-600 disabled:opacity-40 disabled:cursor-not-allowed text-white font-extrabold py-3 rounded-md transition-colors uppercase tracking-wide text-sm">
-                  {buying ? 'Buying…' : 'Buy District'}
-                </button>
-                <button onClick={afterBuyDecision} disabled={buying}
-                  className="flex-1 bg-[#3a2a15] hover:bg-[#4d3a22] text-[#f0e3c0] font-bold py-3 rounded-md transition-colors uppercase tracking-wide text-sm">
-                  Skip
-                </button>
-              </div>
-            </div>
+          <div className="rounded-lg p-3 text-xs" style={{ background: 'rgba(30,18,8,0.7)', border: '1px solid rgba(90,60,34,0.4)' }}>
+            <div className="font-bold mb-1" style={{ color: '#f97316' }}>⚡ Market Events</div>
+            <p style={{ color: '#cdb68a99' }}>Land on an event space to draw a Market Event card — bull runs, exploits, gas spikes, and more.</p>
+          </div>
+          <div className="rounded-lg p-3 text-xs" style={{ background: 'rgba(30,18,8,0.7)', border: '1px solid rgba(90,60,34,0.4)' }}>
+            <div className="font-bold mb-1" style={{ color: '#22c55e' }}>🎁 Crypto Opportunities</div>
+            <p style={{ color: '#cdb68a99' }}>Airdrop! Staking yield! DAO grant! Opportunity cards reward good behavior and crypto knowledge.</p>
+          </div>
+          <div className="rounded-lg p-3 text-xs" style={{ background: 'rgba(30,18,8,0.7)', border: '1px solid rgba(90,60,34,0.4)' }}>
+            <div className="font-bold mb-1" style={{ color: '#60a5fa' }}>🧠 Knowledge Leverage</div>
+            <p style={{ color: '#cdb68a99' }}>3/3 correct = 10% buy discount. Correct answer halves a negative event penalty. Education wins.</p>
           </div>
         </div>
-      )}
 
-      {/* Market Event / Crypto Opportunity card modal — classic deck card */}
-      {gamePhase === 'card' && lastTurn?.card && (
-        <div className="fixed inset-0 bg-black/75 flex items-center justify-center px-6 z-50">
-          <div className="rounded-lg overflow-hidden max-w-sm w-full text-center shadow-2xl" style={{ background: '#f0e7c8' }}>
-            <div className="px-4 py-2 border-b border-black/25" style={{ background: lastTurn.card.deck === 'event' ? '#b91c1c' : '#15803d' }}>
-              <span className="text-xs font-extrabold tracking-widest text-white uppercase">
+        {/* Card draw modal */}
+        {gamePhase === 'card' && lastTurn?.card && (
+          <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 px-4">
+            <div className="max-w-sm w-full rounded-2xl p-6 text-center shadow-2xl"
+              style={{ background: lastTurn.card.deck === 'event' ? 'linear-gradient(135deg,#431407,#7c2d12)' : 'linear-gradient(135deg,#052e16,#14532d)', border: `1px solid ${lastTurn.card.deck === 'event' ? '#f97316' : '#22c55e'}55` }}>
+              <div className="text-4xl mb-3">{lastTurn.card.deck === 'event' ? '⚡' : '🎁'}</div>
+              <div className="text-xs tracking-widest uppercase mb-2 opacity-60" style={{ color: lastTurn.card.deck === 'event' ? '#fb923c' : '#4ade80' }}>
                 {lastTurn.card.deck === 'event' ? 'Market Event' : 'Crypto Opportunity'}
-              </span>
-            </div>
-            <div className="p-6">
-              <div className="text-5xl mb-3">{lastTurn.card.deck === 'event' ? '⚡' : '🎁'}</div>
-              <p className="text-lg font-bold mb-4 text-[#2b2118]">{lastTurn.card.text}</p>
-              {!practice && (
-                <div className={`text-sm font-extrabold mb-5 ${(lastTurn.card.applied ?? lastTurn.card.delta_oc) >= 0 ? 'text-green-700' : 'text-red-700'}`}>
-                  {(lastTurn.card.applied ?? 0) >= 0 ? '+' : ''}{(lastTurn.card.applied ?? 0).toFixed(1)} OCC
-                  {lastTurn.card.applied === 0 && lastTurn.card.delta_oc > 0 && ' (daily cap reached)'}
+              </div>
+              <p className="text-white font-semibold text-lg leading-snug mb-4">{lastTurn.card.text}</p>
+              {lastTurn.card.pending && lastTurn.card.delta_oc < 0 && (
+                <div className="bg-amber-500/20 border border-amber-500/40 rounded-lg px-3 py-2 mb-3 text-xs text-amber-300">
+                  ⚠️ Penalty of {Math.abs(lastTurn.card.delta_oc).toFixed(1)} OCC pending — answer the knowledge challenge correctly to halve it
                 </div>
               )}
-              <button onClick={dismissCard} className="w-full bg-amber-500 hover:bg-amber-400 text-black font-extrabold py-3 rounded-md transition-colors uppercase tracking-wide">
-                Continue
+              {lastTurn.card.effect_applied && (
+                <div className="bg-white/10 rounded-lg px-3 py-2 mb-3 text-xs text-white/70">
+                  {effectLabel(lastTurn.card.effect_applied)}
+                </div>
+              )}
+              {lastTurn.card.applied !== undefined && lastTurn.card.applied !== 0 && !lastTurn.card.pending && (
+                <div className={`text-sm font-bold mb-3 ${lastTurn.card.applied > 0 ? 'text-green-400' : 'text-red-400'}`}>
+                  {lastTurn.card.applied > 0 ? '+' : ''}{lastTurn.card.applied.toFixed(2)} OCC
+                </div>
+              )}
+              <button onClick={dismissCard}
+                className="w-full py-3 rounded-xl font-bold text-white transition-colors"
+                style={{ background: lastTurn.card.deck === 'event' ? '#ea580c' : '#16a34a' }}>
+                {questions.length > 0 ? 'Continue to Knowledge Challenge' : 'Continue'}
               </button>
             </div>
           </div>
-        </div>
-      )}
+        )}
+
+        {/* Buy offer modal */}
+        {gamePhase === 'buy-offer' && lastTurn?.space && (
+          <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 px-4">
+            <div className="max-w-sm w-full rounded-2xl p-6 text-center shadow-2xl" style={{ background: 'linear-gradient(135deg,#0c1445,#1e3a8a)', border: '1px solid #3b82f655' }}>
+              <div className="text-4xl mb-2">{lastTurn.space.emoji}</div>
+              <h3 className="text-white font-bold text-xl mb-1">{lastTurn.space.name}</h3>
+              <p className="text-white/50 text-sm mb-4">Purchase this district?</p>
+              <div className="bg-white/10 rounded-xl p-4 mb-5 grid grid-cols-2 gap-3 text-sm">
+                <div><div className="text-white/40 text-xs mb-0.5">Price</div><div className="font-bold text-amber-400">{lastTurn.space.purchase_price_oc} OCC</div></div>
+                <div><div className="text-white/40 text-xs mb-0.5">Rent earned</div><div className="font-bold text-green-400">{lastTurn.space.base_rent_oc} OCC</div></div>
+                <div><div className="text-white/40 text-xs mb-0.5">Your balance</div><div className="font-bold">{balance.toFixed(1)} OCC</div></div>
+                <div><div className="text-white/40 text-xs mb-0.5">After purchase</div><div className={`font-bold ${balance - (lastTurn.space.purchase_price_oc ?? 0) < 0 ? 'text-red-400' : 'text-white'}`}>{(balance - (lastTurn.space.purchase_price_oc ?? 0)).toFixed(1)} OCC</div></div>
+              </div>
+              <div className="flex gap-3">
+                <button onClick={handleBuy} disabled={buying || balance < (lastTurn.space.purchase_price_oc ?? 0)}
+                  className="flex-1 py-3 rounded-xl font-bold text-white bg-blue-600 hover:bg-blue-500 disabled:opacity-40 disabled:cursor-not-allowed transition-colors">
+                  {buying ? 'Buying…' : 'Buy District'}
+                </button>
+                <button onClick={afterBuyDecision} className="flex-1 py-3 rounded-xl font-semibold text-white/70 bg-white/10 hover:bg-white/15 transition-colors">
+                  Pass
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   )
 }
 
-export default function PlayPage() {
+export default function GamePage() {
   return (
-    <Suspense fallback={<div className="min-h-screen bg-[#0a0a0f] flex items-center justify-center"><div className="text-white/40 animate-pulse">Loading...</div></div>}>
+    <Suspense fallback={<div className="min-h-screen bg-[#0a0a0f] flex items-center justify-center"><div className="text-white/40 animate-pulse">Loading…</div></div>}>
       <GameBoard />
     </Suspense>
   )
