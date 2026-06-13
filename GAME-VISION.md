@@ -137,6 +137,27 @@ from onlycrypto.io (`/api/academy/game-link`).
 
 ---
 
+## Compliance & Disclosures (required before launch)
+
+Flagged 2026-06-12 as a gap in the Phase 1 audit — these must exist before the board
+game launches, not after:
+
+**OCC disclaimer** — on every page that presents OCC:
+- OCC is a utility token.
+- OCC is not guaranteed to increase in value.
+- OCC should not be purchased with an expectation of profit.
+- Digital assets involve risk.
+
+**Game rewards disclosure** — on the game hub and anywhere rewards are advertised:
+- Rewards may change.
+- OCC values may fluctuate.
+- Participation does not guarantee rewards.
+
+Ship each as one shared component per repo so the wording has a single source of truth.
+Full requirement: `ARCHITECT/ADR/ADR-005` (main repo).
+
+---
+
 ## Phased Roadmap (board game first — no metaverse)
 
 ### Phase 1 — Monopoly board + ownership core
